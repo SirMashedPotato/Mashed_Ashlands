@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_VolcanicAshlands</defName>
-		<label>volcanic ashlands</label>
-		<description>An area of ashlands that is still experiencing extreme volcanic activity. Intense heat emanating from lava pools combined with frequent ash storms have limited the variety of life found here. Luckily these regions are largely untouched by blight. The terrain found here is a mix of fertile ash, cracked ground and volcanic stone, with lava pools commonly scattering the surface.</description>
-		<workerClass>MorrowRim2.BiomeWorker_VolcanicAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_VolcanicAshlands</texture>
+		<defName>MorrowRim_SwampAshlands</defName>
+		<label>ashland swamp</label>
+		<description>An ashland region that over time has become a swampy wilderness. Soil is highly fertile, though much of it is covered in marsh.</description>
+		<workerClass>MorrowRim2.BiomeWorker_SwampAshlands</workerClass>
+		<texture>World/Biomes/MorrowRim_SwampAshlands</texture>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

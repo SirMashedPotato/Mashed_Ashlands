@@ -15,6 +15,11 @@ namespace MorrowRim2
             BiomeDefOf.MorrowRim_VolcanicAshlands
         };
 
+        public static readonly List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef>
+        {
+            BiomeDefOf.MorrowRim_SwampAshlands
+        };
+
         public static float DistanceToClosestVolcano(int tileID, WorldObjectDef worldObject)
         {
             WorldObjectsHolder worldObjectsHolder = Find.WorldObjects;

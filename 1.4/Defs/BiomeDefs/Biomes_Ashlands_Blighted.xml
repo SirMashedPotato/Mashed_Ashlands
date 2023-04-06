@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef>
+	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_BlightedAshlands</defName>
 		<label>blighted ashlands</label>
 		<description>Once a thriving ashlands, the landscape has been devastated by a nearby blighted volcano, leaving an inhospitable wasteland behind. The sky is almost permanently covered in a thick cloud of ash. Any rain that falls here contains ash-blight, driving animals mad and causing crop blights. Few animals and plants are capable of living here, with the waters being completely devoid of life. Unless you enjoy eating scathecraw, food will be difficult to obtain.</description>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef>
+	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_Ashlands</defName>
 		<label>ashlands</label>
 		<description>Highly fertile soil allows for a thriving, if unusual, ecosystem. Frequent ash storms slowly kill all life-forms that are not adapted to the area, making this a difficult place to settle.</description>

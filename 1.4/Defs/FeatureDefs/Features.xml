@@ -34,4 +34,18 @@
 		</rootBiomes>
 		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
 	</FeatureDef>
+	<!-- ==========[MorrowRim_SwampAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_SwampAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>442</order>
+		<rootBiomes>
+			<li>MorrowRim_SwampAshlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+			<li>TemperateSwamp</li>
+			<li>TropicalSwamp</li>
+		</acceptableBiomes>
+		<nameMaker>NamerSwamp</nameMaker>
+	</FeatureDef>
 </Defs>

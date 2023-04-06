@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="World\WorldGenStep\WorldGenStep_AshlandBiomes.cs" />
+    <Compile Include="World\WorldGenStep\WorldGenStep_AshlandBiomesLate.cs" />
     <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoActive.cs" />
     <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoBlighted.cs" />
     <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoDormant.cs" />
