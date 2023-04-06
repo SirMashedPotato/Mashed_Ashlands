@@ -11,21 +11,30 @@ namespace MorrowRim2
         /// </summary>
         public override float GetScore(Tile tile, int tileID)
         {
+            if (MorrowRim_ModSettings.OldBiomeGen)
+            {
+
+            }
+
             return 0;
         }
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
+            if (!MorrowRim_ModSettings.EnableVolcanicAshlands)
+            {
+                return -100f;
+            }
             if (tile.WaterCovered)
             {
                 return -100f;
             }
             float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, WorldObjectDefOf.MorrowRim_VolcanoActive);
-            if (distanceToClosestVolcano > 50 || distanceToClosestVolcano == -1)
+            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
             }
-            return Rand.Range(200, 400) / distanceToClosestVolcano;
+            return Rand.Range(8, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }

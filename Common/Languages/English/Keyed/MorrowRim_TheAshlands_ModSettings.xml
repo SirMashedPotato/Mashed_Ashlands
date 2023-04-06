@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[General]==========-->
+	<MorrowRim_TheAshlands_ModName>MorrowRim Redone - The Ashlands</MorrowRim_TheAshlands_ModName>
+	<MorrowRim_Reset>Reset all settings</MorrowRim_Reset>
+	<MorrowRim_ResetPage>Reset {0}</MorrowRim_ResetPage>
+	<!-- ==========[General page]==========-->
+	<MorrowRim_TheAshlands_PageGeneral>General Settings</MorrowRim_TheAshlands_PageGeneral>
+	<!-- ==========[World Gen]==========-->
+	<MorrowRim_TheAshlands_PageWorldGen>World Generation Settings</MorrowRim_TheAshlands_PageWorldGen>
+	<!-- big changes -->
+	<MorrowRim_TheAshlands_OldBiomeGen>Use the old biome worker system.</MorrowRim_TheAshlands_OldBiomeGen>
+	<MorrowRim_TheAshlands_OldBiomeGen_Tooltip>This completely disables the new volcano based biome worker system, and switches to the worker system used in the original MorrowRim mod.</MorrowRim_TheAshlands_OldBiomeGen_Tooltip>
+	<!-- dormant volcano -->
+	<MorrowRim_TheAshlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</MorrowRim_TheAshlands_EnableDormantVolcano>
+	<MorrowRim_TheAshlands_EnableDormantVolcano_Tooltip>Many of the MorrowRim biomes will only generate near dormant volcanos. As such, disabling this will also prevent those from generating.</MorrowRim_TheAshlands_EnableDormantVolcano_Tooltip>
+	<MorrowRim_TheAshlands_NumberOfDormantVolcano>The number of dormant volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfDormantVolcano>
+	<!-- active volcano -->
+	<MorrowRim_TheAshlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableActiveVolcano>
+	<MorrowRim_TheAshlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</MorrowRim_TheAshlands_EnableActiveVolcano_Tooltip>
+	<MorrowRim_TheAshlands_NumberOfActiveVolcano>The number of active volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfActiveVolcano>
+	<!-- blighted volcano -->
+	<MorrowRim_TheAshlands_EnableBlightedVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableBlightedVolcano>
+	<MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>
+	<MorrowRim_TheAshlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfBlightedVolcano>
+	<!-- biome related -->
+	<MorrowRim_TheAshlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</MorrowRim_TheAshlands_BiomesMaxDistance>
+	<!-- specific biomes -->
+	<MorrowRim_TheAshlands_EnableStandardAshlands>Enable the generation of the standard ashlands biome.</MorrowRim_TheAshlands_EnableStandardAshlands>
+	<MorrowRim_TheAshlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands biome.</MorrowRim_TheAshlands_EnableBlightedAshlands>
+	<MorrowRim_TheAshlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands biome.</MorrowRim_TheAshlands_EnableVolcanicAshlands>
+	<MorrowRim_TheAshlands_EnableCoastAshlands>Enable the generation of the ashland coast biome.</MorrowRim_TheAshlands_EnableCoastAshlands>
+	<MorrowRim_TheAshlands_EnableVolcanicCoastAshlands>Enable the generation of the volcanic ashland coast biome.</MorrowRim_TheAshlands_EnableVolcanicCoastAshlands>
+	<MorrowRim_TheAshlands_EnableForestAshlands>Enable the generation of the ashland forest biome.</MorrowRim_TheAshlands_EnableForestAshlands>
+	<MorrowRim_TheAshlands_EnableSwampAshlands>Enable the generation of the ashland swamp biome.</MorrowRim_TheAshlands_EnableSwampAshlands>
+	<MorrowRim_TheAshlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands biome.</MorrowRim_TheAshlands_EnableGrazelandAshlands>
+	<MorrowRim_TheAshlands_EnableHighlandAshlands>Enable the generation of the ashland highlands biome.</MorrowRim_TheAshlands_EnableHighlandAshlands>
+	<MorrowRim_TheAshlands_EnableSaltplainAshlands>Enable the generation of the ashland saltplains biome.</MorrowRim_TheAshlands_EnableSaltplainAshlands>
+</LanguageData>

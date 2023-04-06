@@ -32,4 +32,15 @@
 		<li>OskarPotocki.VFE.Insectoid</li>
 		<li>vanillaexpanded.outposts</li>
 	</loadAfter>
+	<incompatibleWith>
+      <li>SirMashedPotato.MorrowRim</li>
+      <li>SirMashedPotato.MorrowRim.AshSwamp</li>
+      <li>SirMashedPotato.MorrowRim.VolcanicAshlands</li>
+      <li>SirMashedPotato.MorrowRim.Grazelands</li>
+      <li>SirMashedPotato.MorrowRim.BiomesPatch</li>
+      <li>SirMashedPotato.MorrowRim.Bloatspore</li>
+      <li>SirMashedPotato.MorrowRim.JustTheAnimals</li>
+      <li>SirMashedPotato.MorrowRim.JustTheKwama</li>
+      <li>SirMashedPotato.MorrowRim.JustThePlants</li>
+    </incompatibleWith>
 </ModMetaData>

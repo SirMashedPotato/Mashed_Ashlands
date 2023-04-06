@@ -10,12 +10,15 @@ namespace MorrowRim2
 
         public override void GenerateFresh(string seed)
         {
-            WorldGrid grid = Find.WorldGrid;
-            for (int i = 0; i < grid.TilesCount; i++)
+            if (!MorrowRim_ModSettings.OldBiomeGen)
             {
-                if (!grid[i].WaterCovered)
+                WorldGrid grid = Find.WorldGrid;
+                for (int i = 0; i < grid.TilesCount; i++)
                 {
-                    grid[i].biome = AshlandBiomeFrom(grid[i], i);
+                    if (!grid[i].WaterCovered)
+                    {
+                        grid[i].biome = AshlandBiomeFrom(grid[i], i);
+                    }
                 }
             }
         }

@@ -1,0 +1,147 @@
+﻿using Verse;
+
+namespace MorrowRim2
+{
+    public class MorrowRim_ModSettings : ModSettings
+    {
+        private static MorrowRim_ModSettings _instance;
+
+        /* ==========[GETTERS]========== */
+        //world gen
+        public static bool OldBiomeGen => _instance.MorrowRim_TheAshlands_OldBiomeGen;
+
+        public static bool EnableDormantVolcano => _instance.MorrowRim_TheAshlands_EnableDormantVolcano;
+        public static int NumberOfDormantVolcano => _instance.MorrowRim_TheAshlands_NumberOfDormantVolcano;
+        public static bool EnableActiveVolcano => _instance.MorrowRim_TheAshlands_EnableActiveVolcano;
+        public static int NumberOfActiveVolcano => _instance.MorrowRim_TheAshlands_NumberOfActiveVolcano;
+        public static bool EnableBlightedVolcano => _instance.MorrowRim_TheAshlands_EnableBlightedVolcano;
+        public static int NumberOfBlightedVolcano => _instance.MorrowRim_TheAshlands_NumberOfBlightedVolcano;
+
+        public static int BiomesMaxDistance => _instance.MorrowRim_TheAshlands_BiomesMaxDistance;
+
+        public static bool EnableStandardAshlands => _instance.MorrowRim_TheAshlands_EnableStandardAshlands;
+        public static bool EnableBlightedAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedAshlands;
+        public static bool EnableVolcanicAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicAshlands;
+        public static bool EnableCoastAshlands => _instance.MorrowRim_TheAshlands_EnableCoastAshlands;
+        public static bool EnableVolcanicCoastAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands;
+        public static bool EnableForestAshlands => _instance.MorrowRim_TheAshlands_EnableForestAshlands;
+        public static bool EnableSwampAshlands => _instance.MorrowRim_TheAshlands_EnableSwampAshlands;
+        public static bool EnableGrazelandAshlands => _instance.MorrowRim_TheAshlands_EnableGrazelandAshlands;
+        public static bool EnableHighlandAshlands => _instance.MorrowRim_TheAshlands_EnableHighlandAshlands;
+        public static bool EnableSaltplainAshlands => _instance.MorrowRim_TheAshlands_EnableSaltplainAshlands;
+
+        /* ==========[VARIABLES]========== */
+        //world gen
+        public bool MorrowRim_TheAshlands_OldBiomeGen = MorrowRim_TheAshlands_OldBiomeGen_def;
+
+        public bool MorrowRim_TheAshlands_EnableDormantVolcano = MorrowRim_TheAshlands_EnableDormantVolcano_def;
+        public int MorrowRim_TheAshlands_NumberOfDormantVolcano = MorrowRim_TheAshlands_NumberOfDormantVolcano_def;
+        public bool MorrowRim_TheAshlands_EnableActiveVolcano = MorrowRim_TheAshlands_EnableActiveVolcano_def;
+        public int MorrowRim_TheAshlands_NumberOfActiveVolcano = MorrowRim_TheAshlands_NumberOfActiveVolcano_def;
+        public bool MorrowRim_TheAshlands_EnableBlightedVolcano = MorrowRim_TheAshlands_EnableBlightedVolcano_def;
+        public int MorrowRim_TheAshlands_NumberOfBlightedVolcano = MorrowRim_TheAshlands_NumberOfBlightedVolcano_def;
+
+        public int MorrowRim_TheAshlands_BiomesMaxDistance = MorrowRim_TheAshlands_BiomesMaxDistance_def;
+
+        public bool MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableVolcanicAshlands = MorrowRim_TheAshlands_EnableVolcanicAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableCoastAshlands = MorrowRim_TheAshlands_EnableCoastAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableVolcanicCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableForestAshlands = MorrowRim_TheAshlands_EnableForestAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableSwampAshlands = MorrowRim_TheAshlands_EnableSwampAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableGrazelandAshlands = MorrowRim_TheAshlands_EnableGrazelandAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableHighlandAshlands = MorrowRim_TheAshlands_EnableHighlandAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableSaltplainAshlands = MorrowRim_TheAshlands_EnableSaltplainAshlands_def;
+
+        /* ==========[DEFAULTS]========== */
+        //world gen
+        private static readonly bool MorrowRim_TheAshlands_OldBiomeGen_def = false;
+
+        private static readonly bool MorrowRim_TheAshlands_EnableDormantVolcano_def = true;
+        private static readonly int MorrowRim_TheAshlands_NumberOfDormantVolcano_def = 5;
+        private static readonly bool MorrowRim_TheAshlands_EnableActiveVolcano_def = true;
+        private static readonly int MorrowRim_TheAshlands_NumberOfActiveVolcano_def = 2;
+        private static readonly bool MorrowRim_TheAshlands_EnableBlightedVolcano_def = true;
+        private static readonly int MorrowRim_TheAshlands_NumberOfBlightedVolcano_def = 1;
+
+        private static readonly int MorrowRim_TheAshlands_BiomesMaxDistance_def = 50;
+
+        private static readonly bool MorrowRim_TheAshlands_EnableStandardAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableBlightedAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableVolcanicAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableCoastAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableForestAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableSwampAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableGrazelandAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableHighlandAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableSaltplainAshlands_def = true;
+
+        public MorrowRim_ModSettings()
+        {
+            _instance = this;
+        }
+
+        /* ==========[SAVING]========== */
+        public override void ExposeData()
+        {
+            //world gen
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_OldBiomeGen, "MorrowRim_TheAshlands_OldBiomeGen", MorrowRim_TheAshlands_OldBiomeGen);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableDormantVolcano, "MorrowRim_TheAshlands_EnableDormantVolcano", MorrowRim_TheAshlands_EnableDormantVolcano);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_NumberOfDormantVolcano, "MorrowRim_TheAshlands_NumberOfDormantVolcano", MorrowRim_TheAshlands_NumberOfDormantVolcano);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableActiveVolcano, "MorrowRim_TheAshlands_EnableActiveVolcano", MorrowRim_TheAshlands_EnableActiveVolcano);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_NumberOfActiveVolcano, "MorrowRim_TheAshlands_NumberOfActiveVolcano", MorrowRim_TheAshlands_NumberOfActiveVolcano);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedVolcano, "MorrowRim_TheAshlands_EnableBlightedVolcano", MorrowRim_TheAshlands_EnableBlightedVolcano);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_NumberOfBlightedVolcano, "MorrowRim_TheAshlands_NumberOfBlightedVolcano", MorrowRim_TheAshlands_NumberOfBlightedVolcano);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BiomesMaxDistance, "MorrowRim_TheAshlands_BiomesMaxDistance", MorrowRim_TheAshlands_BiomesMaxDistance);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableStandardAshlands, "MorrowRim_TheAshlands_EnableStandardAshlands", MorrowRim_TheAshlands_EnableStandardAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedAshlands, "MorrowRim_TheAshlands_EnableBlightedAshlands", MorrowRim_TheAshlands_EnableBlightedAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicAshlands, "MorrowRim_TheAshlands_EnableVolcanicAshlands", MorrowRim_TheAshlands_EnableVolcanicAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableCoastAshlands, "MorrowRim_TheAshlands_EnableCoastAshlands", MorrowRim_TheAshlands_EnableCoastAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicCoastAshlands, "MorrowRim_TheAshlands_EnableVolcanicCoastAshlands", MorrowRim_TheAshlands_EnableVolcanicCoastAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableForestAshlands, "MorrowRim_TheAshlands_EnableForestAshlands", MorrowRim_TheAshlands_EnableForestAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSwampAshlands, "MorrowRim_TheAshlands_EnableSwampAshlands", MorrowRim_TheAshlands_EnableSwampAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableGrazelandAshlands, "MorrowRim_TheAshlands_EnableGrazelandAshlands", MorrowRim_TheAshlands_EnableGrazelandAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableHighlandAshlands, "MorrowRim_TheAshlands_EnableHighlandAshlands", MorrowRim_TheAshlands_EnableHighlandAshlands);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSaltplainAshlands, "MorrowRim_TheAshlands_EnableSaltplainAshlands", MorrowRim_TheAshlands_EnableSaltplainAshlands);
+
+
+            base.ExposeData();
+        }
+
+        /* ==========[RESETTING]========== */
+        public static void ResetSettings()
+        {
+            ResetSettings_WorldGen();
+        }
+
+        public static void ResetSettings_WorldGen()
+        {
+            _instance.MorrowRim_TheAshlands_OldBiomeGen = MorrowRim_TheAshlands_OldBiomeGen_def;
+
+            _instance.MorrowRim_TheAshlands_EnableDormantVolcano = MorrowRim_TheAshlands_EnableDormantVolcano_def;
+            _instance.MorrowRim_TheAshlands_NumberOfDormantVolcano = MorrowRim_TheAshlands_NumberOfDormantVolcano_def;
+            _instance.MorrowRim_TheAshlands_EnableActiveVolcano = MorrowRim_TheAshlands_EnableActiveVolcano_def;
+            _instance.MorrowRim_TheAshlands_NumberOfActiveVolcano = MorrowRim_TheAshlands_NumberOfActiveVolcano_def;
+            _instance.MorrowRim_TheAshlands_EnableBlightedVolcano = MorrowRim_TheAshlands_EnableBlightedVolcano_def;
+            _instance.MorrowRim_TheAshlands_NumberOfBlightedVolcano = MorrowRim_TheAshlands_NumberOfBlightedVolcano_def;
+
+            _instance.MorrowRim_TheAshlands_BiomesMaxDistance = MorrowRim_TheAshlands_BiomesMaxDistance_def;
+
+            _instance.MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableVolcanicAshlands = MorrowRim_TheAshlands_EnableVolcanicAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableCoastAshlands = MorrowRim_TheAshlands_EnableCoastAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableForestAshlands = MorrowRim_TheAshlands_EnableForestAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableSwampAshlands = MorrowRim_TheAshlands_EnableSwampAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableGrazelandAshlands = MorrowRim_TheAshlands_EnableGrazelandAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableHighlandAshlands = MorrowRim_TheAshlands_EnableHighlandAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableSaltplainAshlands = MorrowRim_TheAshlands_EnableSaltplainAshlands_def;
+        }
+    }
+}

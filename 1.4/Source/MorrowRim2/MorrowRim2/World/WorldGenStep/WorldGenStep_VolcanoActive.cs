@@ -6,23 +6,24 @@ namespace MorrowRim2
     public class WorldGenStep_VolcanoActive : WorldGenStep
     {
         public override int SeedPart => 238931215;
-
-        //TODO settings
         public int numGenerated = 0;
-        public int maxGenerated = 1;
 
         public override void GenerateFresh(string seed)
         {
-            numGenerated = 0;
-            GenerateVolcanos();
+            if (MorrowRim_ModSettings.EnableActiveVolcano)
+            {
+                numGenerated = 0;
+                GenerateVolcanos();
+            }
         }
 
         private void GenerateVolcanos()
         {
+            int maxNumber = MorrowRim_ModSettings.NumberOfActiveVolcano;
             WorldGrid grid = Find.WorldGrid;
             for (int i = 0; i < grid.TilesCount; i++)
             {
-                if (numGenerated >= maxGenerated)
+                if (numGenerated >= maxNumber)
                 {
                     return;
                 }

@@ -20,7 +20,7 @@
 		<defName>MorrowRim_VolcanoDormant</defName>
 		<label>dormant volcano</label>
 		<description>A volcano that has been dormant for a considerable amount of time. Previous eruptions have created a sizeable area of ashlands around it.</description>
-		<expandingIconColor>255,255,255</expandingIconColor>
+		<expandingIconColor>155,155,155</expandingIconColor>
 		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO dormant volcano 'hole' -->
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoActive]==========-->
@@ -28,7 +28,7 @@
 		<defName>MorrowRim_VolcanoActive</defName>
 		<label>active volcano</label>
 		<description>A highly active volcano, frequently releasing intense clouds of scalding ash. While much of the surrounding region is incredibly fertile, life here struggles due to the constant volcanic activity.</description>
-		<expandingIconColor>255,155,155</expandingIconColor>
+		<expandingIconColor>255,100,100</expandingIconColor>
 		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO active volcano 'hole' -->
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
@@ -36,7 +36,7 @@
 		<defName>MorrowRim_VolcanoBlighted</defName>
 		<label>blighted volcano</label>
 		<description>An active volcano that is releasing a near constant cloud of tainted ash. The surrounding region is nothing more than a bleak wasteland.</description>
-		<expandingIconColor>155,155,155</expandingIconColor>
+		<expandingIconColor>55,55,55</expandingIconColor>
 		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO blighted volcano 'hole' -->
 	</WorldObjectDef>
 </Defs>
