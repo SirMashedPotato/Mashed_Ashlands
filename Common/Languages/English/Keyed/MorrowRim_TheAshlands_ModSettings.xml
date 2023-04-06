@@ -23,7 +23,8 @@
 	<MorrowRim_TheAshlands_EnableBlightedVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableBlightedVolcano>
 	<MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>
 	<MorrowRim_TheAshlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfBlightedVolcano>
-	<!-- biome related -->
+	<!-- distances -->
+	<MorrowRim_TheAshlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMinDistance>
 	<MorrowRim_TheAshlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</MorrowRim_TheAshlands_BiomesMaxDistance>
 	<!-- specific biomes -->
 	<MorrowRim_TheAshlands_EnableStandardAshlands>Enable the generation of the standard ashlands biome.</MorrowRim_TheAshlands_EnableStandardAshlands>

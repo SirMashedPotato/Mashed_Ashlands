@@ -1,4 +1,5 @@
 ﻿using RimWorld.Planet;
+using Verse;
 
 namespace MorrowRim2
 {
@@ -28,19 +29,16 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.swampiness < 0.5f)
+            if (tile.swampiness < 0.5f && tile.rainfall < 2500f)
             {
                 return 0f;
             }
-            if (tile.rainfall < 600f)
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, WorldObjectDefOf.MorrowRim_VolcanoDormant);
+            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
             {
-                return 0f;
+                return 0;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
-            {
-                return 0f;
-            }
-            return tile.swampiness * 30;
+            return Rand.Range(10, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }

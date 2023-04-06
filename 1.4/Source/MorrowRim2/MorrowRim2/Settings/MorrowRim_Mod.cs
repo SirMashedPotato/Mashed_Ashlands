@@ -167,6 +167,10 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));
+            settings.MorrowRim_TheAshlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMinDistance, 1, 200);
+            listing_Standard.Gap();
+
             listing_Standard.Label("MorrowRim_TheAshlands_BiomesMaxDistance".Translate(settings.MorrowRim_TheAshlands_BiomesMaxDistance));
             settings.MorrowRim_TheAshlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_BiomesMaxDistance, 1, 200);
             listing_Standard.Gap();

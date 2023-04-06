@@ -31,7 +31,7 @@ namespace MorrowRim2
                 if (grid[i].hilliness == Hilliness.Impassable)
                 {
                     float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestVolcano(i);
-                    if (distanceToClosestVolcano >= 20)
+                    if (distanceToClosestVolcano >= MorrowRim_ModSettings.VolcanoMinDistance)
                     {
                         WorldObject volcano = WorldObjectMaker.MakeWorldObject(WorldObjectDefOf.MorrowRim_VolcanoBlighted);
                         volcano.Tile = i;
