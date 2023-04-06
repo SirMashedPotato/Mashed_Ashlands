@@ -18,7 +18,7 @@
 	<!-- active volcano -->
 	<MorrowRim_TheAshlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableActiveVolcano>
 	<MorrowRim_TheAshlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</MorrowRim_TheAshlands_EnableActiveVolcano_Tooltip>
-	<MorrowRim_TheAshlands_NumberOfActiveVolcano>The number of active volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfActiveVolcano>
+	<MorrowRim_TheAshlands_NumberOfActiveVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfActiveVolcano>
 	<!-- blighted volcano -->
 	<MorrowRim_TheAshlands_EnableBlightedVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableBlightedVolcano>
 	<MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>

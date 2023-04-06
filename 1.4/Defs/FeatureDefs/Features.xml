@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Ashlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_Ashlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>451</order>
+		<rootBiomes>
+			<li>MorrowRim_Ashlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+    </acceptableBiomes>
+		<nameMaker>MorrowRim_NamerAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_BlightedAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_BlightedAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>442</order>
+		<rootBiomes>
+			<li>MorrowRim_BlightedAshlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+    </acceptableBiomes>
+		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_VolcanicAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_VolcanicAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_VolcanicAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

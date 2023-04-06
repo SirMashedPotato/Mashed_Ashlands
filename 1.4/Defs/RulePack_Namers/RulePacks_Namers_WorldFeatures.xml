@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_NamerAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->ashlands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerBlightedAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerBlightedAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->blight</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanicAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanicAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=8)->foyoda</li>
+				<li>terrain_word(p=4)->scar</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
