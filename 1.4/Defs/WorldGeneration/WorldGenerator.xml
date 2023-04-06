@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_VolcanoDormant]==========-->
+	<WorldGenStepDef>
+		<defName>MorrowRim_VolcanoDormant</defName>
+		<order>110</order>
+		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoDormant"/>
+	</WorldGenStepDef>
+	<!-- ==========[MorrowRim_VolcanoActive]==========-->
+	<WorldGenStepDef>
+		<defName>MorrowRim_VolcanoActive</defName>
+		<order>111</order>
+		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoActive"/>
+	</WorldGenStepDef>
+	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
+	<WorldGenStepDef>
+		<defName>MorrowRim_VolcanoBlighted</defName>
+		<order>112</order>
+		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoBlighted"/>
+	</WorldGenStepDef>
+	<!-- ==========[MorrowRim_AshlandBiomes]==========-->
+	<WorldGenStepDef>
+		<defName>MorrowRim_AshlandBiomes</defName>
+		<order>115</order>
+		<worldGenStep Class="MorrowRim2.WorldGenStep_AshlandBiomes"/>
+	</WorldGenStepDef>
+</Defs>
