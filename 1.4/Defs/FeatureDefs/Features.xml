@@ -71,6 +71,16 @@
 		</rootBiomes>
 		<nameMaker>MorrowRim_NamerSaltplainAshlands</nameMaker>
 	</FeatureDef>
+	<!-- ==========[MorrowRim_GrazelandAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_GrazelandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_GrazelandAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerGrazelandAshlands</nameMaker>
+	</FeatureDef>
 	<!-- ==========[MorrowRim_HighlandAshlands]==========-->
 	<FeatureDef>
 		<defName>MorrowRim_HighlandAshlands</defName>

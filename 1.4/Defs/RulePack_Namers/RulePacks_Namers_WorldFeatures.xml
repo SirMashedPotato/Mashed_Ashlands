@@ -73,6 +73,19 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerGrazelandAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerGrazelandAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=6)->grazeland</li>
+				<li>terrain_word(p=4)->plains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[MorrowRim_NamerHighlandAshlands]==========-->
 	<RulePackDef>
 		<defName>MorrowRim_NamerHighlandAshlands</defName>
