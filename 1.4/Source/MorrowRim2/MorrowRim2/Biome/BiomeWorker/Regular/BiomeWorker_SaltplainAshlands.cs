@@ -1,4 +1,5 @@
 ﻿using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 
 namespace MorrowRim2
@@ -33,7 +34,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            if (tile.rainfall >= 340f)
+            if (tile.rainfall >= 350f)
             {
                 return 0f;
             }
@@ -41,7 +42,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            return Rand.Range(10, 20);
+            return Rand.Range(5, 10) + Mathf.Abs(tile.temperature) / 2;
         }
     }
 }

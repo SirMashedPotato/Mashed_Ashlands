@@ -37,7 +37,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            return Rand.Range(10, 15) + (tile.swampiness * 15);
+            return Rand.Range(10, 15) + (tile.swampiness * 20);
         }
     }
 }

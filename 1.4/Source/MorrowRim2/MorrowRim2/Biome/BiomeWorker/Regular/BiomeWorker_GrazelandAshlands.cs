@@ -45,7 +45,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            return Rand.Range(10, 20);
+            return Rand.Range(5, 10) + (tile.rainfall / 150) + (tile.elevation / 150);
         }
     }
 }

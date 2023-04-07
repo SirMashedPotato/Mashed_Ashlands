@@ -29,7 +29,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.temperature < -10f)
+            if (tile.temperature < 0f)
             {
                 return 0f;
             }
@@ -37,7 +37,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            return Rand.Range(10, 20);
+            return Rand.Range(5, 10) + tile.rainfall / 200;
         }
     }
 }
