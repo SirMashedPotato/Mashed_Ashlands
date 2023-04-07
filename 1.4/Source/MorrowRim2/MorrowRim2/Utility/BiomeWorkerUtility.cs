@@ -8,7 +8,7 @@ namespace MorrowRim2
 {
     public static class BiomeWorkerUtility
     {
-        public static readonly List<BiomeDef> ashlandBiomeDefs = new List<BiomeDef>
+        public static readonly List<BiomeDef> earlyAshlandBiomeDefs = new List<BiomeDef>
         {
             BiomeDefOf.MorrowRim_Ashlands,
             BiomeDefOf.MorrowRim_BlightedAshlands,

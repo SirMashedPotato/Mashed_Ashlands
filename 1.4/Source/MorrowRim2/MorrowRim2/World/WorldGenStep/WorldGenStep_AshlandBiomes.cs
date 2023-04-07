@@ -24,7 +24,7 @@ namespace MorrowRim2
         {
             BiomeDef biomeDef = null;
             float num = 0f;
-            foreach(BiomeDef biomeDef2 in BiomeWorkerUtility.ashlandBiomeDefs)
+            foreach(BiomeDef biomeDef2 in BiomeWorkerUtility.earlyAshlandBiomeDefs)
             {
                 if (biomeDef2.implemented && biomeDef2.Worker is AshlandBiomeWorker)
                 {
