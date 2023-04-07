@@ -1,6 +1,4 @@
-﻿using RimWorld;
-using RimWorld.Planet;
-using System.Collections.Generic;
+﻿using RimWorld.Planet;
 using Verse;
 
 namespace MorrowRim2
@@ -27,7 +25,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.WaterCovered)
+            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
             {
                 return -100f;
             }
@@ -39,12 +37,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, new List<WorldObjectDef> { WorldObjectDefOf.MorrowRim_VolcanoDormant, WorldObjectDefOf.MorrowRim_VolcanoExtinct });
-            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
-            {
-                return 0;
-            }
-            return Rand.Range(10, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return Rand.Range(10, 15) + (tile.swampiness * 15);
         }
     }
 }

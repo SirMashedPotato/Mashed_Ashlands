@@ -4,7 +4,7 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_CoastalAshlands : AshlandBiomeWorker
+    public class BiomeWorker_CoralCoastAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -26,18 +26,13 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.WaterCovered)
+            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
             {
                 return -100f;
             }
-            if (tile.temperature < 0f)
+            if (tile.temperature < 10f)
             {
                 return 0f;
-            }
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, WorldObjectDefOf.MorrowRim_VolcanoDormant);
-            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
-            {
-                return 0;
             }
             int numberCoastalTiles = 0;
             List<int> neighbourTiles = new List<int>();
@@ -47,21 +42,17 @@ namespace MorrowRim2
                 Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
                 if (neighbourTile != null)
                 {
-                    if (neighbourTile.WaterCovered && Rand.Chance(0.8f))
-                    {
-                        numberCoastalTiles++;
-                    }
-                    if (neighbourTile.biome != null && neighbourTile.biome == BiomeDefOf.MorrowRim_CoralCoastAshlands && Rand.Bool)
+                    if (neighbourTile.WaterCovered || neighbourTile.biome == BiomeDefOf.MorrowRim_CoralCoastAshlands)
                     {
                         numberCoastalTiles++;
                     }
                 }
             }
-            if (numberCoastalTiles == 0)
+            if (numberCoastalTiles < 2)
             {
                 return 0;
             }
-            return (Rand.Range(6, 10) + numberCoastalTiles) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return Rand.Range(12, 18) + numberCoastalTiles;
         }
     }
 }

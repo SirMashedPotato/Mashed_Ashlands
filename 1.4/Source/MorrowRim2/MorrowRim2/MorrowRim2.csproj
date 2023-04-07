@@ -66,20 +66,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_CoralCoastAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_CragIslandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_ForestAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_GrazelandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_HighlandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_SaltplainAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_SwampAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_VolcanicAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CragIslandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_ForestAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SaltplainAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_Ashlands.cs" />
-    <Compile Include="Biome\BiomeWorker\BiomeWorker_BlightedAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedAshlands.cs" />
     <Compile Include="DefOf\BiomeDefOf.cs" />
     <Compile Include="DefOf\WorldObjectDefOf.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />

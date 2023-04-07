@@ -49,7 +49,7 @@ namespace MorrowRim2
                     }
                 }
             }
-            return (Rand.Range(2, 8)) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return Rand.Range(2, 8) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }
