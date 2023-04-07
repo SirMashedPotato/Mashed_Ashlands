@@ -13,6 +13,7 @@ namespace MorrowRim2
             WorldObjectDefOf.MorrowRim_VolcanoActive,
             WorldObjectDefOf.MorrowRim_VolcanoBlighted,
             WorldObjectDefOf.MorrowRim_VolcanoDormant,
+            WorldObjectDefOf.MorrowRim_VolcanoExtinct
         };
 
         public static float DistanceToClosestVolcano(int tileID)

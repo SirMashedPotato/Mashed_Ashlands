@@ -17,8 +17,28 @@ namespace MorrowRim2
 
         public static readonly List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef>
         {
-            BiomeDefOf.MorrowRim_SwampAshlands
+            BiomeDefOf.MorrowRim_SwampAshlands,
+            BiomeDefOf.MorrowRim_CoastalAshlands,
+            BiomeDefOf.MorrowRim_VolcanicCoastalAshlands,
+            BiomeDefOf.MorrowRim_GrazelandAshlands,
+            BiomeDefOf.MorrowRim_SaltplainAshlands,
+            BiomeDefOf.MorrowRim_HighlandAshlands,
+            BiomeDefOf.MorrowRim_CragIslandAshlands
         };
+
+        public static float DistanceToClosestVolcano(int tileID, List<WorldObjectDef> worldObjects)
+        {
+            float closest = -1;
+            foreach (WorldObjectDef worldObject in worldObjects)
+            {
+                float num = DistanceToClosestVolcano(tileID, worldObject);
+                if (closest == -1 || closest > num)
+                {
+                    closest = num;
+                }
+            }
+            return closest;
+        }
 
         public static float DistanceToClosestVolcano(int tileID, WorldObjectDef worldObject)
         {

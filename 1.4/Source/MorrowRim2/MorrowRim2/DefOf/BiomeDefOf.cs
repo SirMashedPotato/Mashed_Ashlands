@@ -13,5 +13,11 @@ namespace MorrowRim2
         public static BiomeDef MorrowRim_BlightedAshlands;
         public static BiomeDef MorrowRim_VolcanicAshlands;
         public static BiomeDef MorrowRim_SwampAshlands;
+        public static BiomeDef MorrowRim_CoastalAshlands;
+        public static BiomeDef MorrowRim_VolcanicCoastalAshlands;
+        public static BiomeDef MorrowRim_GrazelandAshlands;
+        public static BiomeDef MorrowRim_SaltplainAshlands;
+        public static BiomeDef MorrowRim_HighlandAshlands;
+        public static BiomeDef MorrowRim_CragIslandAshlands;
     }
 }

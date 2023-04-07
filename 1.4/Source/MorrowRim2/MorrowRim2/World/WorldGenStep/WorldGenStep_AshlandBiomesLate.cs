@@ -15,10 +15,7 @@ namespace MorrowRim2
                 WorldGrid grid = Find.WorldGrid;
                 for (int i = 0; i < grid.TilesCount; i++)
                 {
-                    if (!grid[i].WaterCovered)
-                    {
-                        grid[i].biome = AshlandBiomeFrom(grid[i], i);
-                    }
+                    grid[i].biome = AshlandBiomeFrom(grid[i], i);
                 }
             }
         }

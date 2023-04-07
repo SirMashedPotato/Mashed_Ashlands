@@ -5,7 +5,7 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_SwampAshlands : AshlandBiomeWorker
+    public class BiomeWorker_HighlandAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -23,7 +23,7 @@ namespace MorrowRim2
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!MorrowRim_ModSettings.EnableSwampAshlands)
+            if (!MorrowRim_ModSettings.EnableHighlandAshlands)
             {
                 return -100f;
             }
@@ -31,11 +31,11 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            if (tile.temperature > 20f)
             {
                 return 0f;
             }
-            if (tile.swampiness < 0.5f && tile.rainfall < 2500f)
+            if (tile.elevation < 1000f)
             {
                 return 0f;
             }
@@ -44,7 +44,7 @@ namespace MorrowRim2
             {
                 return 0;
             }
-            return Rand.Range(10, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return Rand.Range(8, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }

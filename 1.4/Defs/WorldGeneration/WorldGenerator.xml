@@ -18,16 +18,22 @@
 		<order>113</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoBlighted"/>
 	</WorldGenStepDef>
+	<!-- ==========[MorrowRim_VolcanoExtinct]==========-->
+	<WorldGenStepDef>
+		<defName>MorrowRim_VolcanoExtinct</defName>
+		<order>114</order>
+		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoExtinct"/>
+	</WorldGenStepDef>
 	<!-- ==========[MorrowRim_AshlandBiomes]==========-->
 	<WorldGenStepDef>
 		<defName>MorrowRim_AshlandBiomes</defName>
-		<order>114</order>
+		<order>115</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_AshlandBiomes"/>
 	</WorldGenStepDef>
 	<!-- ==========[MorrowRim_AshlandBiomesLate]==========-->
 	<WorldGenStepDef>
 		<defName>MorrowRim_AshlandBiomesLate</defName>
-		<order>115</order>
+		<order>116</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_AshlandBiomesLate"/>
 	</WorldGenStepDef>
 </Defs>

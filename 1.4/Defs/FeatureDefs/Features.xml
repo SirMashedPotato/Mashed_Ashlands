@@ -8,8 +8,6 @@
 		<rootBiomes>
 			<li>MorrowRim_Ashlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-    </acceptableBiomes>
 		<nameMaker>MorrowRim_NamerAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_BlightedAshlands]==========-->
@@ -20,25 +18,26 @@
 		<rootBiomes>
 			<li>MorrowRim_BlightedAshlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-    </acceptableBiomes>
 		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_VolcanicAshlands]==========-->
 	<FeatureDef>
 		<defName>MorrowRim_VolcanicAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>443</order>
+		<order>442</order>
 		<rootBiomes>
 			<li>MorrowRim_VolcanicAshlands</li>
 		</rootBiomes>
+		<acceptableBiomes>
+			<li>MorrowRim_VolcanicCoastalAshlands</li>
+		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_SwampAshlands]==========-->
 	<FeatureDef>
 		<defName>MorrowRim_SwampAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>442</order>
+		<order>443</order>
 		<rootBiomes>
 			<li>MorrowRim_SwampAshlands</li>
 		</rootBiomes>
@@ -47,5 +46,46 @@
 			<li>TropicalSwamp</li>
 		</acceptableBiomes>
 		<nameMaker>NamerSwamp</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_CoastalAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_CoastalAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_CoastalAshlands</li>
+			<li>MorrowRim_VolcanicCoastalAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerCoastalAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_SaltplainAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_SaltplainAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_SaltplainAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerSaltplainAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_HighlandAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_HighlandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_HighlandAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerHighlandAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_CragIslandAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_CragIslandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_CragIslandAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerCragIslandAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

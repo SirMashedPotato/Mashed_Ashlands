@@ -150,6 +150,13 @@ namespace MorrowRim2
             settings.MorrowRim_TheAshlands_NumberOfDormantVolcano = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_NumberOfDormantVolcano, 1, 50);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableExtinctVolcano".Translate(), ref settings.MorrowRim_TheAshlands_EnableExtinctVolcano, "MorrowRim_TheAshlands_EnableExtinctVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_NumberOfExtinctVolcano".Translate(settings.MorrowRim_TheAshlands_NumberOfExtinctVolcano));
+            settings.MorrowRim_TheAshlands_NumberOfExtinctVolcano = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_NumberOfExtinctVolcano, 1, 50);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableActiveVolcano".Translate(), ref settings.MorrowRim_TheAshlands_EnableActiveVolcano, "MorrowRim_TheAshlands_EnableActiveVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -191,6 +198,9 @@ namespace MorrowRim2
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCragIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableForestAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableForestAshlands);

@@ -12,5 +12,6 @@ namespace MorrowRim2
         public static WorldObjectDef MorrowRim_VolcanoDormant;
         public static WorldObjectDef MorrowRim_VolcanoActive;
         public static WorldObjectDef MorrowRim_VolcanoBlighted;
+        public static WorldObjectDef MorrowRim_VolcanoExtinct;
     }
 }

@@ -5,7 +5,7 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_SwampAshlands : AshlandBiomeWorker
+    public class BiomeWorker_CragIslandAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -23,28 +23,33 @@ namespace MorrowRim2
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!MorrowRim_ModSettings.EnableSwampAshlands)
+            if (!MorrowRim_ModSettings.EnableCragIslandAshlands)
             {
                 return -100f;
             }
-            if (tile.WaterCovered)
+            if (!tile.WaterCovered)
             {
                 return -100f;
-            }
-            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
-            {
-                return 0f;
-            }
-            if (tile.swampiness < 0.5f && tile.rainfall < 2500f)
-            {
-                return 0f;
             }
             float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, new List<WorldObjectDef> { WorldObjectDefOf.MorrowRim_VolcanoDormant, WorldObjectDefOf.MorrowRim_VolcanoExtinct });
             if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
             }
-            return Rand.Range(10, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            List<int> neighbourTiles = new List<int>();
+            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
+            foreach (int neighbourID in neighbourTiles)
+            {
+                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
+                if (neighbourTile != null)
+                {
+                    if (!neighbourTile.WaterCovered)
+                    {
+                        return 0;
+                    }
+                }
+            }
+            return (Rand.Range(2, 8)) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }

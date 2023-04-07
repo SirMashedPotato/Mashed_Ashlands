@@ -23,6 +23,10 @@
 	<MorrowRim_TheAshlands_EnableBlightedVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableBlightedVolcano>
 	<MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</MorrowRim_TheAshlands_EnableBlightedVolcano_Tooltip>
 	<MorrowRim_TheAshlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfBlightedVolcano>
+	<!-- extinct volcano -->
+	<MorrowRim_TheAshlands_EnableExtinctVolcano>Enable the generation of active volcanos on the world map</MorrowRim_TheAshlands_EnableExtinctVolcano>
+	<MorrowRim_TheAshlands_EnableExtinctVolcano_Tooltip>Extinct volcanos will allow for the generation of several ashland biomes around them. As they are extinct, there is no risk of volcanic incidents.</MorrowRim_TheAshlands_EnableExtinctVolcano_Tooltip>
+	<MorrowRim_TheAshlands_NumberOfExtinctVolcano>The number of extinct volcanos that are generated: ({0} volcano/s)</MorrowRim_TheAshlands_NumberOfExtinctVolcano>
 	<!-- distances -->
 	<MorrowRim_TheAshlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMinDistance>
 	<MorrowRim_TheAshlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</MorrowRim_TheAshlands_BiomesMaxDistance>
@@ -37,4 +41,5 @@
 	<MorrowRim_TheAshlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands biome.</MorrowRim_TheAshlands_EnableGrazelandAshlands>
 	<MorrowRim_TheAshlands_EnableHighlandAshlands>Enable the generation of the ashland highlands biome.</MorrowRim_TheAshlands_EnableHighlandAshlands>
 	<MorrowRim_TheAshlands_EnableSaltplainAshlands>Enable the generation of the ashland saltplains biome.</MorrowRim_TheAshlands_EnableSaltplainAshlands>
+	<MorrowRim_TheAshlands_EnableCragIslandAshlands>Enable the generation of the ashland crag islands biome.</MorrowRim_TheAshlands_EnableCragIslandAshlands>
 </LanguageData>
