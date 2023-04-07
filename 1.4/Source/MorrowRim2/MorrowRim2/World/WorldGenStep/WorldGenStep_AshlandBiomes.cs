@@ -15,7 +15,10 @@ namespace MorrowRim2
                 WorldGrid grid = Find.WorldGrid;
                 for (int i = 0; i < grid.TilesCount; i++)
                 {
-                    grid[i].biome = AshlandBiomeFrom(grid[i], i);
+                    if (grid[i].biome != RimWorld.BiomeDefOf.SeaIce && grid[i].biome != RimWorld.BiomeDefOf.IceSheet)
+                    {
+                        grid[i].biome = AshlandBiomeFrom(grid[i], i);
+                    }
                 }
             }
         }

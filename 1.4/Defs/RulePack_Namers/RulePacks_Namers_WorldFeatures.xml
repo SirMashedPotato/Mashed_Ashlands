@@ -32,8 +32,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=8)->foyoda</li>
-				<li>terrain_word(p=4)->scar</li>
+				<li>terrain_word(p=10)->scar</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -47,6 +46,18 @@
 			<rulesStrings>
 				<li>terrain_word(p=8)->coast</li>
 				<li>terrain_word(p=2)->forest</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerSwampAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerSwampAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->swamp</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -96,7 +107,8 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=10)->woods</li>
+				<li>terrain_word(p=8)->woods</li>
+				<li>terrain_word(p=2)->mora</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

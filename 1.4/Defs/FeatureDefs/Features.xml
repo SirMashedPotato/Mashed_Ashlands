@@ -49,11 +49,7 @@
 		<rootBiomes>
 			<li>MorrowRim_SwampAshlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-			<li>TemperateSwamp</li>
-			<li>TropicalSwamp</li>
-		</acceptableBiomes>
-		<nameMaker>NamerSwamp</nameMaker>
+		<nameMaker>MorrowRim_NamerSwampAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_ForestAshlands]==========-->
 	<FeatureDef>

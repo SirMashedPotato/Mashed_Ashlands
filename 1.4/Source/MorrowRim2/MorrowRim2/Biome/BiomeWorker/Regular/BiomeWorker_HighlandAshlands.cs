@@ -33,15 +33,11 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            if (tile.temperature > 15f)
+            if (tile.temperature > 10f)
             {
                 return 0f;
             }
-            if (tile.elevation < 1000f)
-            {
-                return 0f;
-            }
-            return Rand.Range(10, 15) + (tile.elevation / 100);
+            return 15 + (tile.elevation / 100);
         }
     }
 }

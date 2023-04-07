@@ -33,11 +33,15 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            if (tile.swampiness < 0.5f && tile.rainfall < 2500f)
+            if (tile.temperature < 15f)
             {
                 return 0f;
             }
-            return Rand.Range(10, 15) + (tile.swampiness * 20);
+            if (tile.rainfall < 1500f)
+            {
+                return 0f;
+            }
+            return 15 + (tile.swampiness * 15);
         }
     }
 }

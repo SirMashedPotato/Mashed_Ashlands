@@ -1,5 +1,4 @@
 ﻿using RimWorld.Planet;
-using UnityEngine;
 using Verse;
 
 namespace MorrowRim2
@@ -26,7 +25,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
+            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands && tile.biome != BiomeDefOf.MorrowRim_ForestAshlands)
             {
                 return -100f;
             }
@@ -34,15 +33,11 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            if (tile.rainfall >= 350f)
+            if (tile.rainfall > 250f)
             {
                 return 0f;
             }
-            if (tile.elevation >= 400f)
-            {
-                return 0f;
-            }
-            return Rand.Range(5, 10) + Mathf.Abs(tile.temperature) / 2;
+            return 15 + (tile.rainfall / 50);
         }
     }
 }
