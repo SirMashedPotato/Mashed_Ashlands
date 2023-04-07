@@ -35,6 +35,7 @@ namespace MorrowRim2
         public static bool EnableCragIslandAshlands => _instance.MorrowRim_TheAshlands_EnableCragIslandAshlands;
         public static bool EnableBlightedCragIslandAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands;
         public static bool EnableVolcanicCragIslandAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands;
+        public static bool EnableSwampIslandAshlands => _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands;
 
         /* ==========[VARIABLES]========== */
         //world gen
@@ -65,6 +66,7 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_EnableCragIslandAshlands = MorrowRim_TheAshlands_EnableCragIslandAshlands_def;
         public bool MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands = MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands_def;
         public bool MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands = MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
 
         /* ==========[DEFAULTS]========== */
         //world gen
@@ -95,6 +97,7 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_EnableCragIslandAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableSwampIslandAshlands_def = true;
 
         public MorrowRim_ModSettings()
         {
@@ -132,6 +135,7 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableCragIslandAshlands, "MorrowRim_TheAshlands_EnableCragIslandAshlands", MorrowRim_TheAshlands_EnableCragIslandAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands, "MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands", MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands, "MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands", MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSwampIslandAshlands, "MorrowRim_TheAshlands_EnableSwampIslandAshlands", MorrowRim_TheAshlands_EnableSwampIslandAshlands_def);
 
             base.ExposeData();
         }
@@ -171,6 +175,7 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_EnableCragIslandAshlands = MorrowRim_TheAshlands_EnableCragIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands = MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands = MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
         }
     }
 }

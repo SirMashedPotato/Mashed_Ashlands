@@ -90,6 +90,7 @@
 			<li>MorrowRim_CragIslandAshlands</li>
 			<li>MorrowRim_BlightedCragIslandAshlands</li>
 			<li>MorrowRim_VolcanicCragIslandAshlands</li>
+			<li>MorrowRim_SwampIslandAshlands</li>
 		</rootBiomes>
 		<nameMaker>MorrowRim_NamerCragIslandAshlands</nameMaker>
 	</FeatureDef>

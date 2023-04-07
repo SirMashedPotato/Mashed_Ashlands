@@ -2,7 +2,7 @@
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_VolcanicCoralCoastAshlands : AshlandBiomeWorker
+    public class BiomeWorker_SwampIslandAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -20,15 +20,15 @@ namespace MorrowRim2
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!MorrowRim_ModSettings.EnableVolcanicCoralCoastAshlands)
+            if (!MorrowRim_ModSettings.EnableSwampIslandAshlands)
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_VolcanicAshlands)
+            if (!tile.WaterCovered)
             {
                 return -100f;
             }
-            return CoastBiomeWorker(tileID, BiomeDefOf.MorrowRim_VolcanicCoralCoastAshlands);
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoExtinct);
         }
     }
 }

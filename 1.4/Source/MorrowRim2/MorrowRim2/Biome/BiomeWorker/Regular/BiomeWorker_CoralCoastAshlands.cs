@@ -1,6 +1,4 @@
 ﻿using RimWorld.Planet;
-using System.Collections.Generic;
-using Verse;
 
 namespace MorrowRim2
 {
@@ -34,25 +32,7 @@ namespace MorrowRim2
             {
                 return 0f;
             }
-            int numberCoastalTiles = 0;
-            List<int> neighbourTiles = new List<int>();
-            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
-            foreach (int neighbourID in neighbourTiles)
-            {
-                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
-                if (neighbourTile != null)
-                {
-                    if (neighbourTile.WaterCovered || neighbourTile.biome == BiomeDefOf.MorrowRim_CoralCoastAshlands)
-                    {
-                        numberCoastalTiles++;
-                    }
-                }
-            }
-            if (numberCoastalTiles < 2)
-            {
-                return 0;
-            }
-            return Rand.Range(12, 18) + numberCoastalTiles;
+            return CoastBiomeWorker(tileID, BiomeDefOf.MorrowRim_CoralCoastAshlands);
         }
     }
 }

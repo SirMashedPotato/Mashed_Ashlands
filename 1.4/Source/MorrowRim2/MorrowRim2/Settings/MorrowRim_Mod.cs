@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Verse;
-using System;
 
 namespace MorrowRim2
 {
@@ -207,6 +206,9 @@ namespace MorrowRim2
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableSwampAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableSwampAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableSwampIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableSwampIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

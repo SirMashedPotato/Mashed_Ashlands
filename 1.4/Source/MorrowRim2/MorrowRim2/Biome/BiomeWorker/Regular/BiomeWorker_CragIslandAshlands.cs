@@ -1,7 +1,4 @@
-﻿using RimWorld;
-using RimWorld.Planet;
-using System.Collections.Generic;
-using Verse;
+﻿using RimWorld.Planet;
 
 namespace MorrowRim2
 {
@@ -31,25 +28,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, new List<WorldObjectDef> { WorldObjectDefOf.MorrowRim_VolcanoDormant, WorldObjectDefOf.MorrowRim_VolcanoExtinct });
-            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
-            {
-                return 0;
-            }
-            List<int> neighbourTiles = new List<int>();
-            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
-            foreach (int neighbourID in neighbourTiles)
-            {
-                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
-                if (neighbourTile != null)
-                {
-                    if (!neighbourTile.WaterCovered)
-                    {
-                        return 0;
-                    }
-                }
-            }
-            return Rand.Range(2, 8) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoDormant);
         }
     }
 }
