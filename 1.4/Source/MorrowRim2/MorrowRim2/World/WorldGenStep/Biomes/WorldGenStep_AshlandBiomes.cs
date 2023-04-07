@@ -1,33 +1,17 @@
 ﻿using Verse;
 using RimWorld;
 using RimWorld.Planet;
+using System.Collections.Generic;
 
 namespace MorrowRim2
 {
-    public class WorldGenStep_AshlandBiomes : WorldGenStep
+    public abstract class WorldGenStep_AshlandBiomes : WorldGenStep
     {
-        public override int SeedPart => 48151623;
-
-        public override void GenerateFresh(string seed)
-        {
-            if (!MorrowRim_ModSettings.OldBiomeGen)
-            {
-                WorldGrid grid = Find.WorldGrid;
-                for (int i = 0; i < grid.TilesCount; i++)
-                {
-                    if (grid[i].biome != RimWorld.BiomeDefOf.SeaIce && grid[i].biome != RimWorld.BiomeDefOf.IceSheet)
-                    {
-                        grid[i].biome = AshlandBiomeFrom(grid[i], i);
-                    }
-                }
-            }
-        }
-
-        private BiomeDef AshlandBiomeFrom(Tile tile, int tileID)
+        public BiomeDef AshlandBiomeFrom(Tile tile, int tileID, List<BiomeDef> biomeDefs)
         {
             BiomeDef biomeDef = null;
             float num = 0f;
-            foreach(BiomeDef biomeDef2 in OnStartupUtility.earlyAshlandBiomeDefs)
+            foreach (BiomeDef biomeDef2 in biomeDefs)
             {
                 if (biomeDef2.implemented && biomeDef2.Worker is AshlandBiomeWorker)
                 {

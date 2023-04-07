@@ -91,12 +91,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_AshlandBiomes.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_AshlandBiomesLate.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoActive.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoBlighted.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoDormant.cs" />
-    <Compile Include="World\WorldGenStep\WorldGenStep_VolcanoExtinct.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesEarly.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesLate.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoActive.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoBlighted.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoDormant.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoExtinct.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
