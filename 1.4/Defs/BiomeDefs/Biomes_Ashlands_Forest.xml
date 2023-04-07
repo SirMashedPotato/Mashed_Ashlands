@@ -6,6 +6,12 @@
 		<description>An ashland region that over time has become a dense forest.</description>
 		<workerClass>MorrowRim2.BiomeWorker_ForestAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_ForestAshlands</texture>
+		<modExtensions>
+			<li Class="MorrowRim2.BiomeProperties">
+                <earlyLoader>true</earlyLoader>
+                <baseBiome>true</baseBiome>
+            </li>
+		</modExtensions>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

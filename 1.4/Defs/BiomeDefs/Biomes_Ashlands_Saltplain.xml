@@ -6,6 +6,11 @@
 		<description>Salt</description>
 		<workerClass>MorrowRim2.BiomeWorker_SaltplainAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_SaltplainAshlands</texture>
+		<modExtensions>
+			<li Class="MorrowRim2.BiomeProperties">
+                <lateLoader>true</lateLoader>
+            </li>
+		</modExtensions>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

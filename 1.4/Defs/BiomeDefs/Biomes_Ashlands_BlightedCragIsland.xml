@@ -6,6 +6,11 @@
 		<description>Azuras coast / Dagon fel but blighted.</description>
 		<workerClass>MorrowRim2.BiomeWorker_BlightedCragIslandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_BlightedCragIslandAshlands</texture>
+		<modExtensions>
+			<li Class="MorrowRim2.BiomeProperties">
+                <earlyLoader>true</earlyLoader>
+            </li>
+		</modExtensions>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

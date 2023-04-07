@@ -6,6 +6,12 @@
 		<description>Highly fertile soil allows for a thriving, if unusual, ecosystem. Frequent ash storms slowly kill all life-forms that are not adapted to the area, making this a difficult place to settle.</description>
 		<workerClass>MorrowRim2.BiomeWorker_Ashlands</workerClass>
 		<texture>World/Biomes/MorrowRim_Ashlands</texture>
+		<modExtensions>
+			<li Class="MorrowRim2.BiomeProperties">
+                <earlyLoader>true</earlyLoader>
+                <baseBiome>true</baseBiome>
+            </li>
+		</modExtensions>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

@@ -8,27 +8,6 @@ namespace MorrowRim2
 {
     public static class BiomeWorkerUtility
     {
-        public static readonly List<BiomeDef> earlyAshlandBiomeDefs = new List<BiomeDef>
-        {
-            BiomeDefOf.MorrowRim_Ashlands,
-            BiomeDefOf.MorrowRim_BlightedAshlands,
-            BiomeDefOf.MorrowRim_VolcanicAshlands,
-            BiomeDefOf.MorrowRim_ForestAshlands,
-            BiomeDefOf.MorrowRim_CragIslandAshlands, 
-            BiomeDefOf.MorrowRim_BlightedCragIslandAshlands,
-            BiomeDefOf.MorrowRim_VolcanicCragIslandAshlands
-        };
-
-        public static readonly List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef>
-        {
-            BiomeDefOf.MorrowRim_SwampAshlands,
-            BiomeDefOf.MorrowRim_CoralCoastAshlands,
-            BiomeDefOf.MorrowRim_VolcanicCoralCoastAshlands,
-            BiomeDefOf.MorrowRim_GrazelandAshlands,
-            BiomeDefOf.MorrowRim_SaltplainAshlands,
-            BiomeDefOf.MorrowRim_HighlandAshlands
-        };
-
         public static float DistanceToClosestVolcano(int tileID, List<WorldObjectDef> worldObjects)
         {
             float closest = -1;

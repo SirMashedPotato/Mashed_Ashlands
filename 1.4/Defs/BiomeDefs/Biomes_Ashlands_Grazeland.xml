@@ -6,6 +6,11 @@
 		<description>Flat pastoral land, covered in grass and occasional mushroom trees. These plains were once covered in clouds of ash from a nearby volcano, now the clouds have settled, and much of the ash has been absorbed into the ground. Much like the ashlands, the terrain here is highly fertile, though large swathes of this fertility have been lost over time, and there is an almost complete lack of ash storms to replenish it.</description>
 		<workerClass>MorrowRim2.BiomeWorker_GrazelandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_GrazelandAshlands</texture>
+		<modExtensions>
+			<li Class="MorrowRim2.BiomeProperties">
+                <lateLoader>true</lateLoader>
+            </li>
+		</modExtensions>
 		<animalDensity>3.7</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>1</settlementSelectionWeight>

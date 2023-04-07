@@ -15,7 +15,7 @@ namespace MorrowRim2
                 WorldGrid grid = Find.WorldGrid;
                 for (int i = 0; i < grid.TilesCount; i++)
                 {
-                    if (!grid[i].WaterCovered && BiomeWorkerUtility.earlyAshlandBiomeDefs.Contains(grid[i].biome))
+                    if (!grid[i].WaterCovered && OnStartupUtility.baseAshlandBiomeDefs.Contains(grid[i].biome))
                     {
                         grid[i].biome = AshlandBiomeFrom(grid[i], i);
                     }
@@ -27,7 +27,7 @@ namespace MorrowRim2
         {
             BiomeDef biomeDef = null;
             float num = 0f;
-            foreach (BiomeDef biomeDef2 in BiomeWorkerUtility.lateAshlandBiomeDefs)
+            foreach (BiomeDef biomeDef2 in OnStartupUtility.lateAshlandBiomeDefs)
             {
                 if (biomeDef2.implemented && biomeDef2.Worker is AshlandBiomeWorker)
                 {
