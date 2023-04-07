@@ -4,7 +4,7 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_CoralCoastAshlands : AshlandBiomeWorker
+    public class BiomeWorker_CoastalAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
