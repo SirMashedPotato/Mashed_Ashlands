@@ -2,7 +2,7 @@
 <Defs>
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_SaltplainAshlands</defName>
-		<label>ashlands saltplain</label>
+		<label>ashland saltplain</label>
 		<description>Salt</description>
 		<workerClass>MorrowRim2.BiomeWorker_SaltplainAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_SaltplainAshlands</texture>
