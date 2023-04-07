@@ -73,13 +73,13 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_OldBiomeGen_def = false;
 
         private static readonly bool MorrowRim_TheAshlands_EnableDormantVolcano_def = true;
-        private static readonly int MorrowRim_TheAshlands_NumberOfDormantVolcano_def = 8;
+        private static readonly int MorrowRim_TheAshlands_NumberOfDormantVolcano_def = 7;
         private static readonly bool MorrowRim_TheAshlands_EnableActiveVolcano_def = true;
         private static readonly int MorrowRim_TheAshlands_NumberOfActiveVolcano_def = 2;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedVolcano_def = true;
         private static readonly int MorrowRim_TheAshlands_NumberOfBlightedVolcano_def = 1;
         private static readonly bool MorrowRim_TheAshlands_EnableExtinctVolcano_def = true;
-        private static readonly int MorrowRim_TheAshlands_NumberOfExtinctVolcano_def = 2;
+        private static readonly int MorrowRim_TheAshlands_NumberOfExtinctVolcano_def = 3;
 
         private static readonly int MorrowRim_TheAshlands_VolcanoMinDistance_def = 25;
         private static readonly int MorrowRim_TheAshlands_BiomesMaxDistance_def = 50;
