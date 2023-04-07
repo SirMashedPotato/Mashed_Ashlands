@@ -25,7 +25,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
+            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands && tile.biome != BiomeDefOf.MorrowRim_ForestAshlands)
             {
                 return -100f;
             }

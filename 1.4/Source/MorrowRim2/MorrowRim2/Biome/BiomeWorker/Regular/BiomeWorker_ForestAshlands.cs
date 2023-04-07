@@ -25,19 +25,16 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
+            if (tile.WaterCovered)
             {
                 return -100f;
             }
-            if (tile.temperature < 0f)
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, WorldObjectDefOf.MorrowRim_VolcanoExtinct);
+            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
             {
-                return 0f;
+                return 0;
             }
-            if (tile.swampiness > 0.5f && tile.rainfall < 1000f)
-            {
-                return 0f;
-            }
-            return Rand.Range(5, 10) + tile.rainfall / 200;
+            return Rand.Range(8, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
         }
     }
 }
