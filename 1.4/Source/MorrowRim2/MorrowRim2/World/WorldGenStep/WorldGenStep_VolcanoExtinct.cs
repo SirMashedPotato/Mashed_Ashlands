@@ -10,7 +10,7 @@ namespace MorrowRim2
 
         public override void GenerateFresh(string seed)
         {
-            if (MorrowRim_ModSettings.EnableBlightedVolcano)
+            if (MorrowRim_ModSettings.EnableExtinctVolcano)
             {
                 numGenerated = 0;
                 GenerateVolcanos();
