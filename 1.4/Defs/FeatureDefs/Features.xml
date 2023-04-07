@@ -92,6 +92,8 @@
 		<order>443</order>
 		<rootBiomes>
 			<li>MorrowRim_CragIslandAshlands</li>
+			<li>MorrowRim_BlightedCragIslandAshlands</li>
+			<li>MorrowRim_VolcanicCragIslandAshlands</li>
 		</rootBiomes>
 		<nameMaker>MorrowRim_NamerCragIslandAshlands</nameMaker>
 	</FeatureDef>

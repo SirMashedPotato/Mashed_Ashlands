@@ -42,4 +42,6 @@
 	<MorrowRim_TheAshlands_EnableHighlandAshlands>Enable the generation of the ashland highlands biome.</MorrowRim_TheAshlands_EnableHighlandAshlands>
 	<MorrowRim_TheAshlands_EnableSaltplainAshlands>Enable the generation of the ashland saltplains biome.</MorrowRim_TheAshlands_EnableSaltplainAshlands>
 	<MorrowRim_TheAshlands_EnableCragIslandAshlands>Enable the generation of the ashland crag islands biome.</MorrowRim_TheAshlands_EnableCragIslandAshlands>
+	<MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands>Enable the generation of the blighted crag islands biome.</MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands>
+	<MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>
 </LanguageData>

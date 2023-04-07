@@ -13,7 +13,9 @@ namespace MorrowRim2
             BiomeDefOf.MorrowRim_Ashlands,
             BiomeDefOf.MorrowRim_BlightedAshlands,
             BiomeDefOf.MorrowRim_VolcanicAshlands,
-            BiomeDefOf.MorrowRim_CragIslandAshlands
+            BiomeDefOf.MorrowRim_CragIslandAshlands, 
+            BiomeDefOf.MorrowRim_BlightedCragIslandAshlands,
+            BiomeDefOf.MorrowRim_VolcanicCragIslandAshlands
         };
 
         public static readonly List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef>

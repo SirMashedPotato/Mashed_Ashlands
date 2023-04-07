@@ -188,10 +188,10 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableStandardAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableStandardAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCoralCoastAshlands);
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCragIslandAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCragIslandAshlands);
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCoralCoastAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableForestAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableForestAshlands);
@@ -215,10 +215,16 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands);

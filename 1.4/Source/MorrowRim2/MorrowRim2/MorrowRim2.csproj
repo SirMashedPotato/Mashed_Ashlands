@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedCragIslandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CragIslandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_ForestAshlands.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCragIslandAshlands.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
