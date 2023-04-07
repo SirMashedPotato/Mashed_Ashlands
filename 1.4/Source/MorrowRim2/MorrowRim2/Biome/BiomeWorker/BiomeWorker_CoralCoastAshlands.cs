@@ -4,7 +4,7 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_CoastalAshlands : AshlandBiomeWorker
+    public class BiomeWorker_CoralCoastAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -22,7 +22,7 @@ namespace MorrowRim2
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!MorrowRim_ModSettings.EnableCoastAshlands)
+            if (!MorrowRim_ModSettings.EnableCoralCoastAshlands)
             {
                 return -100f;
             }
@@ -51,7 +51,7 @@ namespace MorrowRim2
                     {
                         numberCoastalTiles++;
                     }
-                    if (neighbourTile.biome != null && neighbourTile.biome == BiomeDefOf.MorrowRim_CoastalAshlands && Rand.Bool)
+                    if (neighbourTile.biome != null && neighbourTile.biome == BiomeDefOf.MorrowRim_CoralCoastAshlands && Rand.Bool)
                     {
                         numberCoastalTiles++;
                     }

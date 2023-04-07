@@ -37,9 +37,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerCoastalAshlands]==========-->
+	<!-- ==========[MorrowRim_NamerCoralCoastAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerCoastalAshlands</defName>
+		<defName>MorrowRim_NamerCoralCoastAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -85,6 +85,18 @@
 			<rulesStrings>
 				<li>terrain_word(p=8)->islands</li>
 				<li>terrain_word(p=2)->coast</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerCoralCoastAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerForestAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->woods</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

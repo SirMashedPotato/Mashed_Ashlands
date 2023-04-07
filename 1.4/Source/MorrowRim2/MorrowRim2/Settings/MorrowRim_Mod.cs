@@ -136,13 +136,13 @@ namespace MorrowRim2
             listing_Standard.Label("MorrowRim_TheAshlands_PageWorldGen".Translate());
             listing_Standard.GapLine();
             listing_Standard.Gap();
-
+            /*
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_OldBiomeGen".Translate(), ref settings.MorrowRim_TheAshlands_OldBiomeGen, "MorrowRim_TheAshlands_OldBiomeGen_Tooltip".Translate());
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
-
+            */
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableDormantVolcano".Translate(), ref settings.MorrowRim_TheAshlands_EnableDormantVolcano, "MorrowRim_TheAshlands_EnableDormantVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -188,25 +188,13 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableStandardAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableStandardAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCoastAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands);
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCoralCoastAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableCragIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableForestAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableForestAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableSwampAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableSwampAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableGrazelandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableGrazelandAshlands);
@@ -216,6 +204,24 @@ namespace MorrowRim2
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableSaltplainAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableSaltplainAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableSwampAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableSwampAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

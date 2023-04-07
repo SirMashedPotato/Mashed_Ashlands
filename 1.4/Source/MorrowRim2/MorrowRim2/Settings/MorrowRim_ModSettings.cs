@@ -25,8 +25,8 @@ namespace MorrowRim2
         public static bool EnableStandardAshlands => _instance.MorrowRim_TheAshlands_EnableStandardAshlands;
         public static bool EnableBlightedAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedAshlands;
         public static bool EnableVolcanicAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicAshlands;
-        public static bool EnableCoastAshlands => _instance.MorrowRim_TheAshlands_EnableCoastAshlands;
-        public static bool EnableVolcanicCoastAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands;
+        public static bool EnableCoralCoastAshlands => _instance.MorrowRim_TheAshlands_EnableCoralCoastAshlands;
+        public static bool EnableVolcanicCoralCoastAshlands => _instance.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands;
         public static bool EnableForestAshlands => _instance.MorrowRim_TheAshlands_EnableForestAshlands;
         public static bool EnableSwampAshlands => _instance.MorrowRim_TheAshlands_EnableSwampAshlands;
         public static bool EnableGrazelandAshlands => _instance.MorrowRim_TheAshlands_EnableGrazelandAshlands;
@@ -53,8 +53,8 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
         public bool MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;
         public bool MorrowRim_TheAshlands_EnableVolcanicAshlands = MorrowRim_TheAshlands_EnableVolcanicAshlands_def;
-        public bool MorrowRim_TheAshlands_EnableCoastAshlands = MorrowRim_TheAshlands_EnableCoastAshlands_def;
-        public bool MorrowRim_TheAshlands_EnableVolcanicCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableCoralCoastAshlands = MorrowRim_TheAshlands_EnableCoralCoastAshlands_def;
+        public bool MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands_def;
         public bool MorrowRim_TheAshlands_EnableForestAshlands = MorrowRim_TheAshlands_EnableForestAshlands_def;
         public bool MorrowRim_TheAshlands_EnableSwampAshlands = MorrowRim_TheAshlands_EnableSwampAshlands_def;
         public bool MorrowRim_TheAshlands_EnableGrazelandAshlands = MorrowRim_TheAshlands_EnableGrazelandAshlands_def;
@@ -81,8 +81,8 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_EnableStandardAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableVolcanicAshlands_def = true;
-        private static readonly bool MorrowRim_TheAshlands_EnableCoastAshlands_def = true;
-        private static readonly bool MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableCoralCoastAshlands_def = true;
+        private static readonly bool MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableForestAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableSwampAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableGrazelandAshlands_def = true;
@@ -116,8 +116,8 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableStandardAshlands, "MorrowRim_TheAshlands_EnableStandardAshlands", MorrowRim_TheAshlands_EnableStandardAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedAshlands, "MorrowRim_TheAshlands_EnableBlightedAshlands", MorrowRim_TheAshlands_EnableBlightedAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicAshlands, "MorrowRim_TheAshlands_EnableVolcanicAshlands", MorrowRim_TheAshlands_EnableVolcanicAshlands_def);
-            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableCoastAshlands, "MorrowRim_TheAshlands_EnableCoastAshlands", MorrowRim_TheAshlands_EnableCoastAshlands_def);
-            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicCoastAshlands, "MorrowRim_TheAshlands_EnableVolcanicCoastAshlands", MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableCoralCoastAshlands, "MorrowRim_TheAshlands_EnableCoralCoastAshlands", MorrowRim_TheAshlands_EnableCoralCoastAshlands_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands, "MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands", MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableForestAshlands, "MorrowRim_TheAshlands_EnableForestAshlands", MorrowRim_TheAshlands_EnableForestAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSwampAshlands, "MorrowRim_TheAshlands_EnableSwampAshlands", MorrowRim_TheAshlands_EnableSwampAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableGrazelandAshlands, "MorrowRim_TheAshlands_EnableGrazelandAshlands", MorrowRim_TheAshlands_EnableGrazelandAshlands_def);
@@ -154,8 +154,8 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableVolcanicAshlands = MorrowRim_TheAshlands_EnableVolcanicAshlands_def;
-            _instance.MorrowRim_TheAshlands_EnableCoastAshlands = MorrowRim_TheAshlands_EnableCoastAshlands_def;
-            _instance.MorrowRim_TheAshlands_EnableVolcanicCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoastAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableCoralCoastAshlands = MorrowRim_TheAshlands_EnableCoralCoastAshlands_def;
+            _instance.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands = MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableForestAshlands = MorrowRim_TheAshlands_EnableForestAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableSwampAshlands = MorrowRim_TheAshlands_EnableSwampAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableGrazelandAshlands = MorrowRim_TheAshlands_EnableGrazelandAshlands_def;

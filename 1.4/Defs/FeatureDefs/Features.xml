@@ -28,10 +28,18 @@
 		<rootBiomes>
 			<li>MorrowRim_VolcanicAshlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-			<li>MorrowRim_VolcanicCoastalAshlands</li>
-		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_CoralCoastAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_CoralCoastAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_CoralCoastAshlands</li>
+			<li>MorrowRim_VolcanicCoralCoastAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerCoralCoastAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_SwampAshlands]==========-->
 	<FeatureDef>
@@ -47,16 +55,15 @@
 		</acceptableBiomes>
 		<nameMaker>NamerSwamp</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_CoastalAshlands]==========-->
+	<!-- ==========[MorrowRim_ForestAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_CoastalAshlands</defName>
+		<defName>MorrowRim_ForestAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_CoastalAshlands</li>
-			<li>MorrowRim_VolcanicCoastalAshlands</li>
+			<li>MorrowRim_ForestAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerCoastalAshlands</nameMaker>
+		<nameMaker>MorrowRim_NamerForestAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_SaltplainAshlands]==========-->
 	<FeatureDef>
