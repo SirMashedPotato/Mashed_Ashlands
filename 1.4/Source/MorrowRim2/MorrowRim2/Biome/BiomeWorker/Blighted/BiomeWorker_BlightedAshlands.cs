@@ -1,5 +1,4 @@
 ﻿using RimWorld.Planet;
-using Verse;
 
 namespace MorrowRim2
 {
@@ -29,12 +28,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, WorldObjectDefOf.MorrowRim_VolcanoBlighted);
-            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
-            {
-                return 0;
-            }
-            return Rand.Range(8, 16) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return BaseBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoBlighted);
         }
     }
 }

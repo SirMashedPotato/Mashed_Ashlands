@@ -24,7 +24,7 @@ namespace MorrowRim2
             var secondColumnWidth = inRect.width - Listing.ColumnSpacing - firstColumnWidth;
 
             var outerRect = new Rect(inRect.x, inRect.y, firstColumnWidth, inRect.height);
-            var innerRect = new Rect(0f, 0f, firstColumnWidth - 24f, inRect.height * 2);
+            var innerRect = new Rect(0f, 0f, firstColumnWidth - 24f, inRect.height * 2.5f);
             Widgets.BeginScrollView(outerRect, ref scrollPosition, innerRect, true);
 
             var listing_Standard = new Listing_Standard();
@@ -171,6 +171,12 @@ namespace MorrowRim2
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BiomeScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_BiomeScaleWithWorldSize, "MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip".Translate());
             listing_Standard.Gap();
 
             listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));

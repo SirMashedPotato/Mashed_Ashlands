@@ -21,6 +21,9 @@ namespace MorrowRim2
 
         public static int VolcanoMinDistance => _instance.MorrowRim_TheAshlands_VolcanoMinDistance;
         public static int BiomesMaxDistance => _instance.MorrowRim_TheAshlands_BiomesMaxDistance;
+        public static bool VolcanoScaleWithWorldSize => _instance.MorrowRim_TheAshlands_VolcanoScaleWithWorldSize;
+        public static bool BiomeScaleWithWorldSize => _instance.MorrowRim_TheAshlands_BiomeScaleWithWorldSize;
+
 
         public static bool EnableStandardAshlands => _instance.MorrowRim_TheAshlands_EnableStandardAshlands;
         public static bool EnableBlightedAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedAshlands;
@@ -50,8 +53,10 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_EnableExtinctVolcano = MorrowRim_TheAshlands_EnableExtinctVolcano_def;
         public int MorrowRim_TheAshlands_NumberOfExtinctVolcano = MorrowRim_TheAshlands_NumberOfExtinctVolcano_def;
 
-        public int MorrowRim_TheAshlands_VolcanoMinDistance = MorrowRim_TheAshlands_BiomesMaxDistance_def;
+        public int MorrowRim_TheAshlands_VolcanoMinDistance = MorrowRim_TheAshlands_VolcanoMinDistance_def;
         public int MorrowRim_TheAshlands_BiomesMaxDistance = MorrowRim_TheAshlands_BiomesMaxDistance_def;
+        public bool MorrowRim_TheAshlands_VolcanoScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_def;
+        public bool MorrowRim_TheAshlands_BiomeScaleWithWorldSize = MorrowRim_TheAshlands_BiomeScaleWithWorldSize_def;
 
         public bool MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
         public bool MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;
@@ -82,7 +87,9 @@ namespace MorrowRim2
         private static readonly int MorrowRim_TheAshlands_NumberOfExtinctVolcano_def = 3;
 
         private static readonly int MorrowRim_TheAshlands_VolcanoMinDistance_def = 25;
-        private static readonly int MorrowRim_TheAshlands_BiomesMaxDistance_def = 50;
+        private static readonly int MorrowRim_TheAshlands_BiomesMaxDistance_def = 25;
+        private static readonly bool MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_def = true;
+        private static readonly bool MorrowRim_TheAshlands_BiomeScaleWithWorldSize_def = true;
 
         private static readonly bool MorrowRim_TheAshlands_EnableStandardAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedAshlands_def = true;
@@ -121,6 +128,8 @@ namespace MorrowRim2
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoMinDistance, "MorrowRim_TheAshlands_VolcanoMinDistance", MorrowRim_TheAshlands_VolcanoMinDistance_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_BiomesMaxDistance, "MorrowRim_TheAshlands_BiomesMaxDistance", MorrowRim_TheAshlands_BiomesMaxDistance_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoScaleWithWorldSize", MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BiomeScaleWithWorldSize, "MorrowRim_TheAshlands_BiomeScaleWithWorldSize", MorrowRim_TheAshlands_BiomeScaleWithWorldSize_def);
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableStandardAshlands, "MorrowRim_TheAshlands_EnableStandardAshlands", MorrowRim_TheAshlands_EnableStandardAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedAshlands, "MorrowRim_TheAshlands_EnableBlightedAshlands", MorrowRim_TheAshlands_EnableBlightedAshlands_def);
@@ -161,6 +170,8 @@ namespace MorrowRim2
 
             _instance.MorrowRim_TheAshlands_VolcanoMinDistance = MorrowRim_TheAshlands_VolcanoMinDistance_def;
             _instance.MorrowRim_TheAshlands_BiomesMaxDistance = MorrowRim_TheAshlands_BiomesMaxDistance_def;
+            _instance.MorrowRim_TheAshlands_VolcanoScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_def;
+            _instance.MorrowRim_TheAshlands_BiomeScaleWithWorldSize = MorrowRim_TheAshlands_BiomeScaleWithWorldSize_def;
 
             _instance.MorrowRim_TheAshlands_EnableStandardAshlands = MorrowRim_TheAshlands_EnableStandardAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableBlightedAshlands = MorrowRim_TheAshlands_EnableBlightedAshlands_def;

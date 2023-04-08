@@ -40,8 +40,18 @@ namespace MorrowRim2
         /// </summary>
         public float IslandBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
         {
+            int maxDistance = MorrowRim_ModSettings.BiomesMaxDistance;
+            if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+            {
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxDistance < 10)
+                {
+                    maxDistance = 10;
+                }
+            }
+
             float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
-            if (distanceToClosestVolcano > MorrowRim_ModSettings.BiomesMaxDistance || distanceToClosestVolcano == -1)
+            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
             }
@@ -58,7 +68,31 @@ namespace MorrowRim2
                     }
                 }
             }
-            return Rand.Range(2, 8) * (MorrowRim_ModSettings.BiomesMaxDistance / 2) / distanceToClosestVolcano;
+            return Rand.Range(2, 8) * maxDistance / distanceToClosestVolcano;
+        }
+
+        /// <summary>
+        /// Used for all Base type biomes
+        /// </summary>
+        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        {
+            int maxDistance = MorrowRim_ModSettings.BiomesMaxDistance;
+            if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+            {
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxDistance < 10)
+                {
+                    maxDistance = 10;
+                }
+            }
+
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            {
+                return 0;
+            }
+           
+            return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
         }
     }
 }

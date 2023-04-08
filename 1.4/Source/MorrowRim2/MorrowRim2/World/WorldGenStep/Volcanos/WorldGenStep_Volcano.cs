@@ -6,9 +6,18 @@ namespace MorrowRim2
 {
     public abstract class WorldGenStep_Volcano : WorldGenStep
     {
-        public void GenerateVolcanos(WorldObjectDef volcanoDef, int maxNumber)
+        public void GenerateVolcanos(WorldObjectDef volcanoDef, float initialMaxNum)
         {
             int numGenerated = 0;
+            int maxNumber = (int)initialMaxNum;
+            if (MorrowRim_ModSettings.VolcanoScaleWithWorldSize)
+            {
+                maxNumber = (int)(initialMaxNum * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxNumber < 1)
+                {
+                    maxNumber = 1;
+                }
+            }
             WorldGrid grid = Find.WorldGrid;
             for (int i = 0; i < grid.TilesCount; i++)
             {

@@ -30,6 +30,10 @@
 	<!-- distances -->
 	<MorrowRim_TheAshlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMinDistance>
 	<MorrowRim_TheAshlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</MorrowRim_TheAshlands_BiomesMaxDistance>
+	<MorrowRim_TheAshlands_VolcanoScaleWithWorldSize>Scale the number of volcanos that are spawned based on world coverage.</MorrowRim_TheAshlands_VolcanoScaleWithWorldSize>
+	<MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set above will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>
+	<MorrowRim_TheAshlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</MorrowRim_TheAshlands_BiomeScaleWithWorldSize>
+	<MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip>
 	<!-- specific biomes -->
 	<MorrowRim_TheAshlands_EnableStandardAshlands>Enable the generation of the standard ashlands biome.</MorrowRim_TheAshlands_EnableStandardAshlands>
 	<MorrowRim_TheAshlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands biome.</MorrowRim_TheAshlands_EnableBlightedAshlands>
