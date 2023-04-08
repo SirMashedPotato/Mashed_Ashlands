@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedCragIslandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CragIslandAshlands.cs" />

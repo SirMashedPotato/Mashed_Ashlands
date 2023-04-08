@@ -226,6 +226,9 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedCragIslandAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableBlightedBogAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableBlightedBogAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

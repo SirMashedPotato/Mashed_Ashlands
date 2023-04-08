@@ -17,7 +17,10 @@
 		<order>442</order>
 		<rootBiomes>
 			<li>MorrowRim_BlightedAshlands</li>
+			<li>MorrowRim_BlightedBogAshlands</li>
 		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[MorrowRim_VolcanicAshlands]==========-->
