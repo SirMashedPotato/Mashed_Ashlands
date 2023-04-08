@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_NamerVolcanoCommon]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanoCommon</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>volcano(p=10)->Mountain</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanoActive]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanoActive</defName>
+		<include>
+			<li>MorrowRim_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[narrative_name] [volcano]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanoBlighted]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanoBlighted</defName>
+		<include>
+			<li>MorrowRim_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor(p=10)->blighted</li>
+				<li>descriptor(p=5)->tainted</li>
+				<li>descriptor(p=5)->defiled</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanoDormant]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanoDormant</defName>
+		<include>
+			<li>MorrowRim_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[narrative_name] [volcano]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanoExtinct]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanoExtinct</defName>
+		<include>
+			<li>MorrowRim_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor(p=10)->overgrown</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

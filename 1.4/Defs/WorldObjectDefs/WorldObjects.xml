@@ -2,12 +2,11 @@
 <Defs>
 	<!-- ==========[MorrowRim_VolcanoBase]==========-->
 	<WorldObjectDef Name="MorrowRim_VolcanoBase" Abstract="True">
+		<worldObjectClass>MorrowRim2.Volcano</worldObjectClass>
 		<canHaveFaction>false</canHaveFaction>
 		<!-- Can probably have it force weather and incidents through these
 		<inspectorTabs>
 		</inspectorTabs>
-		<comps>
-		</comps>
 		-->
 		<useDynamicDrawer>false</useDynamicDrawer>
 		<expandingIcon>true</expandingIcon>
@@ -21,7 +20,13 @@
 		<label>dormant volcano</label>
 		<description>A volcano that has not had a major eruption for a long time, though still exhibits occasional volcanic activity. Previous eruptions have created a sizeable area of ashlands around it. Dense forests are largely unable to grow here due to frequent ash storms.</description>
 		<expandingIconColor>155,155,155</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO dormant volcano 'hole' -->
+		<texture>World/WorldObjects/MorrowRim_Volcano</texture>
+		<!-- TODO dormant volcano 'hole' -->
+		<comps>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+				<nameNamer>MorrowRim_NamerVolcanoDormant</nameNamer>
+			</li>
+		</comps>
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoActive]==========-->
 	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
@@ -29,7 +34,13 @@
 		<label>active volcano</label>
 		<description>A highly active volcano, frequently releasing intense clouds of scalding ash. While much of the surrounding region is incredibly fertile, life here struggles due to the constant volcanic activity.</description>
 		<expandingIconColor>255,100,100</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO active volcano 'hole' -->
+		<texture>World/WorldObjects/MorrowRim_Volcano</texture>
+		<!-- TODO active volcano 'hole' -->
+		<comps>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+				<nameNamer>MorrowRim_NamerVolcanoActive</nameNamer>
+			</li>
+		</comps>
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
 	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
@@ -37,7 +48,13 @@
 		<label>blighted volcano</label>
 		<description>An active volcano that is releasing a near constant cloud of tainted ash. The surrounding region is nothing more than a bleak wasteland.</description>
 		<expandingIconColor>55,55,55</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO blighted volcano 'hole' -->
+		<texture>World/WorldObjects/MorrowRim_Volcano</texture>
+		<!-- TODO blighted volcano 'hole' -->
+		<comps>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+				<nameNamer>MorrowRim_NamerVolcanoBlighted</nameNamer>
+			</li>
+		</comps>
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoExtinct]==========-->
 	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
@@ -45,6 +62,12 @@
 		<label>extinct volcano</label>
 		<description>A volcano that has been dormant for a considerable amount of time. Plant life in the surrounding region is able to thrive due to the lack of ash storms.</description>
 		<expandingIconColor>100,155,100</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_Volcano</texture> <!-- TODO extinct volcano 'hole' -->
+		<texture>World/WorldObjects/MorrowRim_Volcano</texture>
+		<!-- TODO extinct volcano 'hole' -->
+		<comps>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+				<nameNamer>MorrowRim_NamerVolcanoExtinct</nameNamer>
+			</li>
+		</comps>
 	</WorldObjectDef>
 </Defs>
