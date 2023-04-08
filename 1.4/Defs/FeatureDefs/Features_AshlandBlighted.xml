@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_BlightedAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_BlightedAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>451</order>
+		<rootBiomes>
+			<li>MorrowRim_BlightedAshlands</li>
+			<li>MorrowRim_BlightedBogAshlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
+		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

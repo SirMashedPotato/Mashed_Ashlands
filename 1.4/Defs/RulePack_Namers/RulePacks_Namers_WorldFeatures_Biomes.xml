@@ -24,18 +24,6 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanicAshlands]==========-->
-	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanicAshlands</defName>
-		<include>
-			<li>WorldFeatureNamerCommon</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>terrain_word(p=10)->scar</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
 	<!-- ==========[MorrowRim_NamerCoralCoastAshlands]==========-->
 	<RulePackDef>
 		<defName>MorrowRim_NamerCoralCoastAshlands</defName>
@@ -46,6 +34,56 @@
 			<rulesStrings>
 				<li>terrain_word(p=8)->coast</li>
 				<li>terrain_word(p=2)->forest</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerForestAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerForestAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->woods</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerGrazelandAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerGrazelandAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=6)->grazelands</li>
+				<li>terrain_word(p=4)->plains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerHighlandAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerHighlandAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=6)->highlands</li>
+				<li>terrain_word(p=4)->mountains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerSaltplainAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerSaltplainAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->saltplains</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -61,66 +99,15 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerSaltplainAshlands]==========-->
+	<!-- ==========[MorrowRim_NamerVolcanicAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerSaltplainAshlands</defName>
+		<defName>MorrowRim_NamerVolcanicAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=10)->saltplain</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerGrazelandAshlands]==========-->
-	<RulePackDef>
-		<defName>MorrowRim_NamerGrazelandAshlands</defName>
-		<include>
-			<li>WorldFeatureNamerCommon</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>terrain_word(p=6)->grazeland</li>
-				<li>terrain_word(p=4)->plains</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerHighlandAshlands]==========-->
-	<RulePackDef>
-		<defName>MorrowRim_NamerHighlandAshlands</defName>
-		<include>
-			<li>WorldFeatureNamerCommon</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>terrain_word(p=6)->highland</li>
-				<li>terrain_word(p=4)->mountains</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerCragIslandAshlands]==========-->
-	<RulePackDef>
-		<defName>MorrowRim_NamerCragIslandAshlands</defName>
-		<include>
-			<li>WorldFeatureNamerCommon</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>terrain_word(p=8)->islands</li>
-				<li>terrain_word(p=2)->coast</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerForestAshlands]==========-->
-	<RulePackDef>
-		<defName>MorrowRim_NamerForestAshlands</defName>
-		<include>
-			<li>WorldFeatureNamerCommon</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>terrain_word(p=10)->woods</li>
+				<li>terrain_word(p=10)->scar</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
