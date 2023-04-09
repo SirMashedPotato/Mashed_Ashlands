@@ -10,6 +10,7 @@ namespace MorrowRim2.Harmony
         /// <summary>
         /// Forces plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
         /// </summary>
+        /* Currently completely fucks map gen, go back to how it was in MorrowRim
         [HarmonyPatch(typeof(WildPlantSpawner))]
         [HarmonyPatch("CalculatePlantsWhichCanGrowAt")]
         public static class WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch
@@ -39,7 +40,8 @@ namespace MorrowRim2.Harmony
                 }
             }
         }
-
+        */
+ 
         /// <summary>
         /// Replaces terrain with different terrain.
         /// </summary>
