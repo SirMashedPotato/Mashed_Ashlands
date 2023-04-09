@@ -108,6 +108,8 @@
     <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoDormant.cs" />
     <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoExtinct.cs" />
     <Compile Include="World\WorldObjectComp\Properties\WorldObjectCompProperties_VolcanoDetails.cs" />
+    <Compile Include="World\WorldObjectComp\Properties\WorldObjectCompProperties_PermanentCondition.cs" />
+    <Compile Include="World\WorldObjectComp\WorldObjectComp_PermanentCondition.cs" />
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
   </ItemGroup>
