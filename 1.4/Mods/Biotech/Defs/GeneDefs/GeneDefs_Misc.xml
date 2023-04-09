@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_GeneAshBase]==========-->
+	<GeneDef Name="MorrowRim_GeneAshBase" Abstract="True">
+		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<exclusionTags>
+			<li>MorrowRim_AshResistance</li>
+		</exclusionTags>
+		<displayOrderInCategory>31</displayOrderInCategory>
+	</GeneDef>
+	<!-- ==========[MorrowRim_AshResistance_Partial]==========-->
+	<GeneDef ParentName="MorrowRim_GeneAshBase">
+		<defName>MorrowRim_AshResistance_Partial</defName>
+		<label>partial antiash lungs</label>
+		<labelShortAdj>ash-resistant</labelShortAdj>
+		<description>Carriers of this gene have special mucous lining the respiratory system, proving some resistance to ash buildup during an ash storm.</description>
+		<iconPath>UI/Icons/Genes/MorrowRim_Gene_PartialAshResistance</iconPath>
+		<statOffsets>
+			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+		</statOffsets>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>ash</symbol>
+					<weight>2</weight>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!-- ==========[MorrowRim_AshResistance_Total]==========-->
+	<GeneDef ParentName="MorrowRim_GeneAshBase">
+		<defName>MorrowRim_AshResistance_Total</defName>
+		<label>total antiash lungs</label>
+		<labelShortAdj>ash-resistant</labelShortAdj>
+		<description>Carriers of this gene have special mucous lining the respiratory system, allowing them to breathe unhindered during an ash storm.</description>
+		<iconPath>UI/Icons/Genes/MorrowRim_Gene_TotalAshResistance</iconPath>
+		<statOffsets>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statOffsets>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>ash</symbol>
+					<weight>4</weight>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>
