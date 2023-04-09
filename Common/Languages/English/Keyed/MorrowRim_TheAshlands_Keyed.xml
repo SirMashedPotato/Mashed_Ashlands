@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- ==========[Volcanos]==========-->
-	<MorrowRim_TheAshlands_VolcanoDescription>Status: {0}\nCategory: {1}</MorrowRim_TheAshlands_VolcanoDescription>
+	<MorrowRim_TheAshlands_VolcanoDescription>Category {0} {1}</MorrowRim_TheAshlands_VolcanoDescription>
 </LanguageData>

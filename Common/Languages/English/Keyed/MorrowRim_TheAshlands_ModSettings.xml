@@ -52,4 +52,9 @@
 	<MorrowRim_TheAshlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</MorrowRim_TheAshlands_EnableBlightedBogAshlands>
 	<!-- ==========[Volcano]==========-->
 	<MorrowRim_TheAshlands_PageVolcano>Volcano Settings</MorrowRim_TheAshlands_PageVolcano>
+	<!-- distances -->
+	<MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize>
+	<MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
+	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMaxAffectedArea>
+	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The above value is used for a category 5 volcano.</MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>
 </LanguageData>

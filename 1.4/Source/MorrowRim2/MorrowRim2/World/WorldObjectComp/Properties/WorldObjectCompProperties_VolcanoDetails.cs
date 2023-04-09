@@ -6,6 +6,7 @@ namespace MorrowRim2
 {
     public class WorldObjectCompProperties_VolcanoDetails : WorldObjectCompProperties
     {
+        public bool extinct = false;
         public RulePackDef nameNamer;
         public List<CategoryWeights> categoryWeights;
             

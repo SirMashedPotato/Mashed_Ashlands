@@ -43,6 +43,27 @@ namespace MorrowRim2
             }
         }
 
+        public int MaximumEffectRadius
+        {
+            get
+            {
+                if (volcanoCategory > 0)
+                {
+                    int maxDistance = MorrowRim_ModSettings.VolcanoMaxAffectedArea;
+                    if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+                    {
+                        maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                        if (maxDistance < 10)
+                        {
+                            maxDistance = 10;
+                        }
+                    }
+                    return (int)((volcanoCategory * 0.2f) * maxDistance);
+                }
+                return -1;
+            }
+        }
+
         public override void SpawnSetup()
         {
             base.SpawnSetup();

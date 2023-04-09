@@ -192,6 +192,7 @@
 		<!-- TODO extinct volcano 'hole' -->
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+				<extinct>true</extinct>
 				<nameNamer>MorrowRim_NamerVolcanoExtinct</nameNamer>
 				<categoryWeights>
 					<li>

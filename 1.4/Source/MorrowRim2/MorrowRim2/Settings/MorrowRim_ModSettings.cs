@@ -41,6 +41,10 @@ namespace MorrowRim2
         public static bool EnableSwampIslandAshlands => _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands;
         public static bool EnableBlightedBogAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedBogAshlands;
 
+        //volcano
+        public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize;
+        public static int VolcanoMaxAffectedArea => _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea;
+
         /* ==========[VARIABLES]========== */
         //world gen
         public bool MorrowRim_TheAshlands_OldBiomeGen = MorrowRim_TheAshlands_OldBiomeGen_def;
@@ -75,6 +79,10 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
         public bool MorrowRim_TheAshlands_EnableBlightedBogAshlands = MorrowRim_TheAshlands_EnableBlightedBogAshlands_def;
 
+        //volcano
+        public bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
+        public int MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
+
         /* ==========[DEFAULTS]========== */
         //world gen
         private static readonly bool MorrowRim_TheAshlands_OldBiomeGen_def = false;
@@ -108,6 +116,10 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableSwampIslandAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedBogAshlands_def = true;
+
+        //volcano
+        private static readonly bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
+        private static readonly int MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def = 10;
 
         public MorrowRim_ModSettings()
         {
@@ -149,6 +161,10 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands, "MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands", MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSwampIslandAshlands, "MorrowRim_TheAshlands_EnableSwampIslandAshlands", MorrowRim_TheAshlands_EnableSwampIslandAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedBogAshlands, "MorrowRim_TheAshlands_EnableBlightedBogAshlands", MorrowRim_TheAshlands_EnableBlightedBogAshlands_def);
+
+            //volcano
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize", MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoMaxAffectedArea, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea", MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def);
 
             base.ExposeData();
         }
@@ -197,7 +213,8 @@ namespace MorrowRim2
 
         public static void ResetSettings_Volcano()
         {
-
+            _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
+            _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
         }
     }
 }

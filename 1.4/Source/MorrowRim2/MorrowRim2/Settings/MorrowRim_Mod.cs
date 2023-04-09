@@ -276,6 +276,15 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMaxAffectedArea".Translate(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea), -1, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip".Translate());
+            settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea, 1, 200);
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             return listing_Standard;
         }
     }
