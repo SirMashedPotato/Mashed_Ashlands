@@ -157,6 +157,7 @@ namespace MorrowRim2
         public static void ResetSettings()
         {
             ResetSettings_WorldGen();
+            ResetSettings_Volcano();
         }
 
         public static void ResetSettings_WorldGen()
@@ -192,6 +193,11 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands = MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableBlightedBogAshlands = MorrowRim_TheAshlands_EnableBlightedBogAshlands_def;
+        }
+
+        public static void ResetSettings_Volcano()
+        {
+
         }
     }
 }

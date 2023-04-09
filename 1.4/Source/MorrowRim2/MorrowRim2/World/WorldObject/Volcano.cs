@@ -19,6 +19,18 @@ namespace MorrowRim2
             }
         }
 
+        public float Category
+        {
+            get
+            {
+                return volcanoCategory;
+            }
+            set
+            {
+                volcanoCategory = value;
+            }
+        }
+
         public override string Label
         {
             get
@@ -41,10 +53,12 @@ namespace MorrowRim2
             base.ExposeData();
             if (HasName)
             {
-                Scribe_Values.Look(ref nameInt, "name", null, false);
+                Scribe_Values.Look(ref nameInt, "name", null);
             }
+            Scribe_Values.Look(ref volcanoCategory, "category", 1);
         }
 
         private string nameInt = null;
+        private float volcanoCategory = 1;
     }
 }

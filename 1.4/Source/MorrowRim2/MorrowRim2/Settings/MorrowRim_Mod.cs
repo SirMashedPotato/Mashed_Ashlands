@@ -36,6 +36,9 @@ namespace MorrowRim2
                 case 1:
                     listing_Standard = SettingsPage_WorldGen(listing_Standard);
                     break;
+                case 2:
+                    listing_Standard = SettingsPage_Volcano(listing_Standard);
+                    break;
 
                 default:
                     listing_Standard = SettingsPage_General(listing_Standard);
@@ -70,11 +73,19 @@ namespace MorrowRim2
             }
             listing_Standard.Gap();
 
-            Rect rectPageAsh = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageAsh, "MorrowRim_TheAshlands_PageWorldGen".Translate());
-            if (Widgets.ButtonText(rectPageAsh, "MorrowRim_TheAshlands_PageWorldGen".Translate(), true, true, true))
+            Rect rectPageWorldGen = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageWorldGen, "MorrowRim_TheAshlands_PageWorldGen".Translate());
+            if (Widgets.ButtonText(rectPageWorldGen, "MorrowRim_TheAshlands_PageWorldGen".Translate(), true, true, true))
             {
                 page = 1;
+            }
+            listing_Standard.Gap();
+
+            Rect rectPageVolcano = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageVolcano, "MorrowRim_TheAshlands_PageVolcano".Translate());
+            if (Widgets.ButtonText(rectPageVolcano, "MorrowRim_TheAshlands_PageVolcano".Translate(), true, true, true))
+            {
+                page = 2;
             }
             listing_Standard.Gap();
 
@@ -107,6 +118,15 @@ namespace MorrowRim2
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageWorldGen".Translate()), true, true, true))
                     {
                         MorrowRim_ModSettings.ResetSettings_WorldGen();
+                    }
+                    break;
+
+                case 2:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageVolcano".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageVolcano".Translate()), true, true, true))
+                    {
+                        MorrowRim_ModSettings.ResetSettings_Volcano();
                     }
                     break;
 
@@ -241,6 +261,18 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private Listing_Standard SettingsPage_Volcano(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("MorrowRim_TheAshlands_PageVolcano".Translate());
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

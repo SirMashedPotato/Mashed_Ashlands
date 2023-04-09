@@ -25,6 +25,48 @@
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>MorrowRim_NamerVolcanoDormant</nameNamer>
+				<categoryWeights>
+					<li>
+						<category>1</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>2</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>3</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>4</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>5</category>
+						<weight>1</weight>
+					</li>
+					<li>
+						<category>6</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>7</category>
+						<weight>0.3</weight>
+					</li>
+					<li>
+						<category>8</category>
+						<weight>0.1</weight>
+					</li>
+					<li>
+						<category>9</category>
+						<weight>0.05</weight>
+					</li>
+					<li>
+						<category>10</category>
+						<weight>0.01</weight>
+					</li>
+				</categoryWeights>
 			</li>
 		</comps>
 	</WorldObjectDef>
@@ -39,6 +81,48 @@
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>MorrowRim_NamerVolcanoActive</nameNamer>
+				<categoryWeights>
+					<li>
+						<category>1</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>2</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>3</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>4</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>5</category>
+						<weight>1</weight>
+					</li>
+					<li>
+						<category>6</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>7</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>8</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>9</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>10</category>
+						<weight>0.05</weight>
+					</li>
+				</categoryWeights>
 			</li>
 		</comps>
 	</WorldObjectDef>
@@ -53,6 +137,48 @@
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>MorrowRim_NamerVolcanoBlighted</nameNamer>
+				<categoryWeights>
+					<li>
+						<category>1</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>2</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>3</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>4</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>5</category>
+						<weight>1</weight>
+					</li>
+					<li>
+						<category>6</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>7</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>8</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>9</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>10</category>
+						<weight>0.05</weight>
+					</li>
+				</categoryWeights>
 			</li>
 		</comps>
 	</WorldObjectDef>
@@ -67,6 +193,48 @@
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>MorrowRim_NamerVolcanoExtinct</nameNamer>
+				<categoryWeights>
+					<li>
+						<category>1</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>2</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>3</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>4</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>5</category>
+						<weight>1</weight>
+					</li>
+					<li>
+						<category>6</category>
+						<weight>0.8</weight>
+					</li>
+					<li>
+						<category>7</category>
+						<weight>0.6</weight>
+					</li>
+					<li>
+						<category>8</category>
+						<weight>0.4</weight>
+					</li>
+					<li>
+						<category>9</category>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<category>10</category>
+						<weight>0.05</weight>
+					</li>
+				</categoryWeights>
 			</li>
 		</comps>
 	</WorldObjectDef>

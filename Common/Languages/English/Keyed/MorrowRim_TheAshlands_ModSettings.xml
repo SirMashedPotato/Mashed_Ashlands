@@ -50,4 +50,6 @@
 	<MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>
 	<MorrowRim_TheAshlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</MorrowRim_TheAshlands_EnableSwampIslandAshlands>
 	<MorrowRim_TheAshlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</MorrowRim_TheAshlands_EnableBlightedBogAshlands>
+	<!-- ==========[Volcano]==========-->
+	<MorrowRim_TheAshlands_PageVolcano>Volcano Settings</MorrowRim_TheAshlands_PageVolcano>
 </LanguageData>
