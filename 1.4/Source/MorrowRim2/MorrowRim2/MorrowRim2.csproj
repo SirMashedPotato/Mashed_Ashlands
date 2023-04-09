@@ -110,7 +110,9 @@
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Volcano\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

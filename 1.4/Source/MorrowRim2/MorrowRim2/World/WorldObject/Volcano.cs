@@ -1,5 +1,7 @@
 ﻿using Verse;
 using RimWorld.Planet;
+using System.Collections.Generic;
+using RimWorld;
 
 namespace MorrowRim2
 {
@@ -19,7 +21,7 @@ namespace MorrowRim2
             }
         }
 
-        public float Category
+        public int Category
         {
             get
             {
@@ -43,6 +45,36 @@ namespace MorrowRim2
             }
         }
 
+        public string LastIncident
+        {
+            get
+            {
+                return lastIncident;
+            }
+            set
+            {
+                lastIncident = value;
+            }
+        }
+
+        public int TotalIncidents
+        {
+            get
+            {
+                return totalIncidents;
+            }
+            set
+            {
+                totalIncidents = value;
+            }
+        }
+
+        public void IncidentTriggered(int category, string label)
+        {
+            totalIncidents++;
+            lastIncident = GenDate.DateFullStringAt(Find.TickManager.TicksAbs, DrawPos);
+        }
+
         public int MaximumEffectRadius
         {
             get
@@ -58,7 +90,7 @@ namespace MorrowRim2
                             maxDistance = 10;
                         }
                     }
-                    return (int)((volcanoCategory * 0.2f) * maxDistance);
+                    return (int)(volcanoCategory * 0.2f * maxDistance);
                 }
                 return -1;
             }
@@ -77,9 +109,13 @@ namespace MorrowRim2
                 Scribe_Values.Look(ref nameInt, "name", null);
             }
             Scribe_Values.Look(ref volcanoCategory, "category", 1);
+            Scribe_Values.Look(ref lastIncident, "lastIncident", "Unknown");
+            Scribe_Values.Look(ref totalIncidents, "totalIncidents", 0);
         }
 
         private string nameInt = null;
-        private float volcanoCategory = 1;
+        private int volcanoCategory = 1;
+        private string lastIncident = "MorrowRim_TheAshlands_Unknown".Translate();
+        private int totalIncidents = 0;
     }
 }

@@ -39,7 +39,7 @@ namespace MorrowRim2
 
         public override string CompInspectStringExtra()
         {
-            return "MorrowRim_TheAshlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label);
+            return "MorrowRim_TheAshlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label, ParentVolcano.TotalIncidents, ParentVolcano.LastIncident);
         }
 
         public override void PostDrawExtraSelectionOverlays()
@@ -81,6 +81,16 @@ namespace MorrowRim2
                     },
                     disabled = categoryIndex >= Props.categoryWeights.Count - 1
                 };
+
+                 yield return new Command_Action
+                 {
+                     defaultLabel = "DEV: Simulate incident",
+                     action = delegate ()
+                     {
+                         ParentVolcano.IncidentTriggered(ParentVolcano.Category, Rand.Range(1000, 9999).ToString());
+                     },
+                     disabled = categoryIndex >= Props.categoryWeights.Count - 1
+                 };
             }
         }
     }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- ==========[Volcanos]==========-->
-	<MorrowRim_TheAshlands_VolcanoDescription>Category {0} {1}</MorrowRim_TheAshlands_VolcanoDescription>
+	<MorrowRim_TheAshlands_VolcanoDescription>Category {0} {1}\nRecorded incidents: {2}\nLast incident: {3}</MorrowRim_TheAshlands_VolcanoDescription>
+	<MorrowRim_TheAshlands_Unknown>Unknown</MorrowRim_TheAshlands_Unknown>
 </LanguageData>

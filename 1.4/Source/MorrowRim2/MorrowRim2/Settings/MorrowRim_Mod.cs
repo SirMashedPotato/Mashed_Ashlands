@@ -20,14 +20,14 @@ namespace MorrowRim2
         /// </summary>
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            var firstColumnWidth = (inRect.width - Listing.ColumnSpacing) * 3.5f / 5f;
-            var secondColumnWidth = inRect.width - Listing.ColumnSpacing - firstColumnWidth;
+            float firstColumnWidth = (inRect.width - Listing.ColumnSpacing) * 3.5f / 5f;
+            float secondColumnWidth = inRect.width - Listing.ColumnSpacing - firstColumnWidth;
 
-            var outerRect = new Rect(inRect.x, inRect.y, firstColumnWidth, inRect.height);
-            var innerRect = new Rect(0f, 0f, firstColumnWidth - 24f, inRect.height * 2.5f);
+            Rect outerRect = new Rect(inRect.x, inRect.y, firstColumnWidth, inRect.height);
+            Rect innerRect = new Rect(0f, 0f, firstColumnWidth - 24f, inRect.height * 2.5f);
             Widgets.BeginScrollView(outerRect, ref scrollPosition, innerRect, true);
 
-            var listing_Standard = new Listing_Standard();
+            Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(innerRect);
 
             //get page

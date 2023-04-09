@@ -4,10 +4,7 @@
 	<WorldObjectDef Name="MorrowRim_VolcanoBase" Abstract="True">
 		<worldObjectClass>MorrowRim2.Volcano</worldObjectClass>
 		<canHaveFaction>false</canHaveFaction>
-		<!-- Can probably have it force weather and incidents through these
-		<inspectorTabs>
-		</inspectorTabs>
-		-->
+		<inspectorTabs/>
 		<useDynamicDrawer>false</useDynamicDrawer>
 		<expandingIcon>true</expandingIcon>
 		<expandingIconTexture>World/WorldObjects/MorrowRim_Volcano</expandingIconTexture>
