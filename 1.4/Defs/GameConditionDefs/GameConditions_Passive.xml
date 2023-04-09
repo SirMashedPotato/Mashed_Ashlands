@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_DenseAshClouds]==========-->
+	<GameConditionDef>
+		<defName>MorrowRim_DenseAshClouds</defName>
+		<conditionClass>MorrowRim2.GameCondition_DenseAshClouds</conditionClass>
+		<label>dense ash clouds</label>
+		<description>Dense ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
+		<canBePermanent>false</canBePermanent>
+		<exclusiveConditions>
+			<li>VolcanicWinter</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[MorrowRim_VolcanicHeat]==========-->
+	<GameConditionDef>
+		<defName>MorrowRim_VolcanicHeat</defName>
+		<conditionClass>MorrowRim2.GameCondition_VolcanicHeat</conditionClass>
+		<label>volcanic heat</label>
+		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
+		<canBePermanent>false</canBePermanent>
+		<exclusiveConditions>
+			<li>HeatWave</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+</Defs>

@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace MorrowRim2
 {
+    /// TODO
+    /// Tidy up
+    /// Potentially rework, using it for randomly generated non-permanent conditions
     public class WorldObjectComp_PermanentCondition : WorldObjectComp
     {
 		public WorldObjectCompProperties_PermanentCondition Props
@@ -44,7 +47,7 @@ namespace MorrowRim2
             tmpDeadConditionMaps.Clear();
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
-                if (!InAoE(keyValuePair.Key.Tile))
+                if (!InAoE(keyValuePair.Key.Tile) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
                 {
                     keyValuePair.Value.End();
                     tmpDeadConditionMaps.Add(keyValuePair.Key);

@@ -86,6 +86,8 @@
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
+    <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
@@ -113,9 +115,7 @@
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Volcano\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

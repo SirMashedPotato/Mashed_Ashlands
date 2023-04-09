@@ -122,8 +122,7 @@
 				</categoryWeights>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>HeatWave</conditionDef>
-				<!-- TODO potential custom condition ClimateAdjustment -->
+				<conditionDef>MorrowRim_VolcanicHeat</conditionDef>
 			</li>
 		</comps>
 	</WorldObjectDef>
@@ -182,8 +181,7 @@
 				</categoryWeights>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>VolcanicWinter</conditionDef>
-				<!-- TODO potential custom condition GiantSmokeCloud -->
+				<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
 			</li>
 		</comps>
 	</WorldObjectDef>
