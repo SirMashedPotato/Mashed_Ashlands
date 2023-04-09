@@ -69,36 +69,54 @@ namespace MorrowRim2
             }
         }
 
-        public void IncidentTriggered(int category, string label)
+        public void IncidentTriggered()
         {
             totalIncidents++;
             lastIncident = GenDate.DateFullStringAt(Find.TickManager.TicksAbs, DrawPos);
         }
 
-        public int MaximumEffectRadius
+        public int EffectRadiusFor(int category)
         {
-            get
+            if (category > 0)
             {
-                if (volcanoCategory > 0)
+                int maxDistance = MorrowRim_ModSettings.VolcanoMaxAffectedArea;
+                if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
                 {
-                    int maxDistance = MorrowRim_ModSettings.VolcanoMaxAffectedArea;
-                    if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+                    maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                    if (maxDistance < 1)
                     {
-                        maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
-                        if (maxDistance < 10)
-                        {
-                            maxDistance = 10;
-                        }
+                        maxDistance = 1;
                     }
-                    return (int)(volcanoCategory * 0.2f * maxDistance);
                 }
-                return -1;
+                return (int)(category * 0.2f * maxDistance);
             }
+            return -1;
         }
 
         public override void SpawnSetup()
         {
             base.SpawnSetup();
+        }
+
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats
+        {
+            get
+            {
+                WorldObjectComp_VolcanoDetails compDetails = GetComponent<WorldObjectComp_VolcanoDetails>();
+                if (compDetails != null && !compDetails.Props.extinct)
+                {
+                    int categoryIndex = compDetails.Props.categoryWeights.FindIndex(x => x.category == Category);
+                    for (int i = 0; i <= categoryIndex; i++)
+                    {
+                        int category = compDetails.Props.categoryWeights[i].category;
+                        yield return new StatDrawEntry(StatCategoryDefOf.MorrowRim_VolcanoIncidentRadius, "MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel".Translate(category),
+                            "MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius".Translate(EffectRadiusFor(category)), 
+                            "MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription".Translate(category), 1, null, null, false);
+                    }
+                }
+
+                //return base.SpecialDisplayStats;
+            }
         }
 
         public override void ExposeData()

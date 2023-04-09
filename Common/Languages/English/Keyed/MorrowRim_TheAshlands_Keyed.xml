@@ -2,5 +2,9 @@
 <LanguageData>
 	<!-- ==========[Volcanos]==========-->
 	<MorrowRim_TheAshlands_VolcanoDescription>Category {0} {1}\nRecorded incidents: {2}\nLast incident: {3}</MorrowRim_TheAshlands_VolcanoDescription>
+	<MorrowRim_TheAshlands_VolcanoDescriptionRange>\nThis volcano can cause incidents up to category {0} in scale.\nThe expected area affected by a category {0} incident is {1} tiles in radius.</MorrowRim_TheAshlands_VolcanoDescriptionRange>
 	<MorrowRim_TheAshlands_Unknown>Unknown</MorrowRim_TheAshlands_Unknown>
+	<MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel>Category {0} incident</MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel>
+	<MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius>{0} tiles</MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius>
+	<MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription>The radius around the volcano affected by a category {0} incident.</MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription>
 </LanguageData>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<StatCategoryDef>
+		<defName>MorrowRim_VolcanoIncidentRadius</defName>
+		<label>potential incident radius</label>
+		<displayOrder>40</displayOrder>
+	</StatCategoryDef>
+</Defs>

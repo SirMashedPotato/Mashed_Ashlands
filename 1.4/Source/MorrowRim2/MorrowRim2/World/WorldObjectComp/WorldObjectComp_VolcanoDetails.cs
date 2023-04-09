@@ -39,15 +39,20 @@ namespace MorrowRim2
 
         public override string CompInspectStringExtra()
         {
-            return "MorrowRim_TheAshlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label, ParentVolcano.TotalIncidents, ParentVolcano.LastIncident);
+            string output = "MorrowRim_TheAshlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label, ParentVolcano.TotalIncidents, ParentVolcano.LastIncident);
+            return output;
         }
 
         public override void PostDrawExtraSelectionOverlays()
         {
             base.PostDrawExtraSelectionOverlays();
-            if (!Props.extinct && ParentVolcano.MaximumEffectRadius != -1)
+            if (!Props.extinct)
             {
-                GenDraw.DrawWorldRadiusRing(parent.Tile, ParentVolcano.MaximumEffectRadius);
+                int radius = ParentVolcano.EffectRadiusFor(ParentVolcano.Category);
+                if (radius != -1)
+                {
+                    GenDraw.DrawWorldRadiusRing(parent.Tile, radius);
+                }
             }
         }
 
@@ -87,9 +92,8 @@ namespace MorrowRim2
                      defaultLabel = "DEV: Simulate incident",
                      action = delegate ()
                      {
-                         ParentVolcano.IncidentTriggered(ParentVolcano.Category, Rand.Range(1000, 9999).ToString());
+                         ParentVolcano.IncidentTriggered();
                      },
-                     disabled = categoryIndex >= Props.categoryWeights.Count - 1
                  };
             }
         }

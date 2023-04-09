@@ -84,6 +84,7 @@
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />
