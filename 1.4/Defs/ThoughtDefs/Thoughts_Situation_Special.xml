@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>MorrowRim_AshStorm</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>MorrowRim2.ThoughtWorker_AshStorm</workerClass>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ToxResist_Total</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ToxicEnvironmentResistance_Total</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>ash storm</label>
+				<description>There's ash getting everywhere!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

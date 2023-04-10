@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_ProstheticAshFilter]==========-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>MorrowRim_ProstheticAshFilter</defName>
+		<label>prosthetic ash filter</label>
+		<labelNoun>a prosthetic ash filter</labelNoun>
+		<description>An installed prosthetic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_ProstheticAshFilter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>MorrowRim_ProstheticAshFilter</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[MorrowRim_ProstheticAshFilter]==========-->
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>MorrowRim_ProstheticAshFilter</defName>
+		<label>prosthetic ash filter</label>
+		<description>A fairly simple prosthetic, typically installed into the sinuses. A rudimentary filtration system prevents most larger particles from entering further into the respiratory system. Particularly useful when travelling during ash storms.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>MorrowRim_Install_ProstheticAshFilter</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Install_ProstheticAshFilter]==========-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>MorrowRim_Install_ProstheticAshFilter</defName>
+		<label>install prosthetic ash filter</label>
+		<description>Install a prosthetic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_ProstheticAshFilter</ThingDef>
+			<HediffDef>MorrowRim_ProstheticAshFilter</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic ash filter.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_ProstheticAshFilter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_ProstheticAshFilter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MorrowRim_ProstheticAshFilter</addsHediff>
+	</RecipeDef>
+</Defs>

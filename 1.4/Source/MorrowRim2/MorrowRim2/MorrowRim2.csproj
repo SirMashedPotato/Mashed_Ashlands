@@ -84,6 +84,7 @@
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedAshlands.cs" />

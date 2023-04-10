@@ -10,5 +10,6 @@
 		<endMessage>The winds begin to calm.</endMessage>
 		<letterDef>NegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
 	</GameConditionDef>
 </Defs>

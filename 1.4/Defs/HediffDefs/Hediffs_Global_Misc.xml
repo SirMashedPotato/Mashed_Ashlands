@@ -10,7 +10,7 @@
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
-		<taleOnVisible>ToxicityRevealed</taleOnVisible>		<!-- TODO -->
+		<taleOnVisible>MorrowRim_AshBuildupRevealed</taleOnVisible>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
 				<compClass>MorrowRim2.HediffComp_ImmunizableAsh</compClass>
@@ -102,5 +102,24 @@
 				</hediffGivers>
 			</li>
 		</stages>
+	</HediffDef>
+	<!-- ==========[MorrowRim_AshCloggedServo]==========-->
+	<HediffDef>
+		<defName>MorrowRim_AshCloggedServo</defName>
+		<label>ash clogged servo</label>
+		<description>A servo that has been clogged with ash, reducing part efficiency. Will be cleared over time.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.02</healAmount>
+			</li>
+		</comps>
 	</HediffDef>
 </Defs>

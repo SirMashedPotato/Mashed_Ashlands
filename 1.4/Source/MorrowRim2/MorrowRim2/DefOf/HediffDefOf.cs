@@ -11,5 +11,7 @@ namespace MorrowRim2
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
         }
         public static HediffDef MorrowRim_AshBuildup;
+        public static HediffDef MorrowRim_AshCloggedServo;
+        public static HediffDef MorrowRim_AshInEyes;
     }
 }

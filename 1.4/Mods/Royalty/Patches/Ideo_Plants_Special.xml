@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_TreeAnima" or defName="Plant_GrassAnima"]/statBases</xpath>
+		<value>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</value>
+	</Operation>
+</Patch>
