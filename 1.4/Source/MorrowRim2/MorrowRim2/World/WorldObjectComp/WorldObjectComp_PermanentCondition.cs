@@ -5,10 +5,7 @@ using System.Collections.Generic;
 
 namespace MorrowRim2
 {
-    /// TODO
-    /// Tidy up
-    /// Potentially rework, using it for randomly generated non-permanent conditions
-    public class WorldObjectComp_PermanentCondition : WorldObjectComp
+    public class WorldObjectComp_PermanentCondition : WorldObjectComp_ConditionCauser
     {
 		public WorldObjectCompProperties_PermanentCondition Props
 		{
@@ -18,36 +15,24 @@ namespace MorrowRim2
 			}
 		}
 
-        public Volcano ParentVolcano
-        {
-            get
-            {
-                return parent as Volcano;
-            }
-        }
+        public Volcano ParentVolcano => parent as Volcano;
 
-        public IEnumerable<GameCondition> CausedConditions
-        {
-            get
-            {
-                return causedConditions.Values;
-            }
-        }
+        public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
 
         public override void CompTick()
         {
             base.CompTick();
             foreach (Map map in Find.Maps)
             {
-                if (InAoE(map.Tile))
+                if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
                 {
-                    EnforceConditionOn(map);
+                    EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
                 }
             }
             tmpDeadConditionMaps.Clear();
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
-                if (!InAoE(keyValuePair.Key.Tile) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                if (!InAoE(keyValuePair.Key.Tile, ParentVolcano.Category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
                 {
                     keyValuePair.Value.End();
                     tmpDeadConditionMaps.Add(keyValuePair.Key);
@@ -70,63 +55,6 @@ namespace MorrowRim2
             if (Scribe.mode == LoadSaveMode.ResolvingCrossRefs)
             {
                 causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => x.Value == null);
-            }
-        }
-
-        public bool InAoE(int tile)
-        {
-            int worldRange = ParentVolcano.EffectRadiusFor(ParentVolcano.Category);
-            return Find.WorldGrid.TraversalDistanceBetween(ParentVolcano.Tile, tile, true, worldRange + 1) <= worldRange;
-        }
-
-        protected GameCondition GetConditionInstance(Map map)
-        {
-            if (!causedConditions.TryGetValue(map, out GameCondition activeCondition) && Props.preventConditionStacking)
-            {
-                activeCondition = map.GameConditionManager.GetActiveCondition(Props.conditionDef);
-                if (activeCondition != null)
-                {
-                    causedConditions.Add(map, activeCondition);
-                    SetupCondition(activeCondition, map);
-                }
-            }
-            return activeCondition;
-        }
-
-        private GameCondition EnforceConditionOn(Map map)
-        {
-            GameCondition gameCondition = GetConditionInstance(map);
-            if (gameCondition == null)
-            {
-                gameCondition = CreateConditionOn(map);
-            }
-            else
-            {
-                gameCondition.TicksLeft = gameCondition.TransitionTicks;
-            }
-            return gameCondition;
-        }
-
-        protected virtual GameCondition CreateConditionOn(Map map)
-        {
-            GameCondition gameCondition = GameConditionMaker.MakeCondition(Props.conditionDef, -1);
-            gameCondition.Duration = gameCondition.TransitionTicks;
-            map.gameConditionManager.RegisterCondition(gameCondition);
-            causedConditions.Add(map, gameCondition);
-            SetupCondition(gameCondition, map);
-            return gameCondition;
-        }
-
-        protected virtual void SetupCondition(GameCondition condition, Map map)
-        {
-            condition.suppressEndMessage = true;
-        }
-
-        protected void ReSetupAllConditions()
-        {
-            foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
-            {
-                SetupCondition(keyValuePair.Value, keyValuePair.Key);
             }
         }
 

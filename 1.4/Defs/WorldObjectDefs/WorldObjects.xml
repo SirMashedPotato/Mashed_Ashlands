@@ -65,6 +65,26 @@
 					</li>
 				</categoryWeights>
 			</li>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoConditionCauser">
+				<potentialConditions>
+					<!-- TODO proper numbers -->
+					<li>
+						<!-- null condition -->
+						<duration>0</duration>
+						<gracePeriodAfter>100~900</gracePeriodAfter>
+						<weight>15</weight>
+					</li>
+					<li>
+						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<duration>100~900</duration>
+						<gracePeriodAfter>100~900</gracePeriodAfter>
+						<weight>3</weight>
+						<sendLetter>true</sendLetter>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+				</potentialConditions>
+			</li>
 		</comps>
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoActive]==========-->

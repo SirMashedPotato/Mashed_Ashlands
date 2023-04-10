@@ -11,5 +11,6 @@
 		<letterDef>NegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<weather>MorrowRim_IntenseWind</weather>
 	</GameConditionDef>
 </Defs>
