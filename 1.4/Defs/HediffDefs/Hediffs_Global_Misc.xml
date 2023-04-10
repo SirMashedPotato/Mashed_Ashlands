@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AshBuildup]==========-->
+	<HediffDef>
+		<defName>MorrowRim_AshBuildup</defName>
+		<label>ash buildup</label>
+		<description>Ash building up in the respiratory system. Primarily comes from being outside during ash-storms.\n\nAs buildup increases, breathing capabilities decrease. Higher levels of buildup can cause permanent breathing impairment. Extreme buildup will cause asphyxiation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<taleOnVisible>ToxicityRevealed</taleOnVisible>		<!-- TODO -->
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<compClass>MorrowRim2.HediffComp_ImmunizableAsh</compClass>
+				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>146</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>37</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.80</minSeverity>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.10</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>13</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
