@@ -56,6 +56,23 @@ namespace MorrowRim2
             }
         }
 
+        public bool CategoryCanBeChanged()
+        {
+            return CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne();
+        }
+
+        public bool CategoryCanBeIncreasedByOne()
+        {
+            int categoryIndex = Props.categoryWeights.FindIndex(x => x.category == ParentVolcano.Category);
+            return categoryIndex < Props.categoryWeights.Count - 1; 
+        }
+
+        public bool CategoryCanBeDecreasedByOne()
+        {
+            int categoryIndex = Props.categoryWeights.FindIndex(x => x.category == ParentVolcano.Category);
+            return categoryIndex > 1;
+        }
+
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (Gizmo gizmo in base.GetGizmos())

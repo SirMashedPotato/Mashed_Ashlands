@@ -108,6 +108,7 @@
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
+    <Compile Include="World\IncidentWorker\IncidentWorker_VolcanoCategoryChange.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesEarly.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesLate.cs" />
