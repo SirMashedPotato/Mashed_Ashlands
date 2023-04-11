@@ -6,7 +6,7 @@
 		<conditionClass>MorrowRim2.GameCondition_DenseAshClouds</conditionClass>
 		<label>dense ash clouds</label>
 		<description>Dense ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
-		<endMessage>The ash cloud disperses.</endMessage>
+		<endMessage>The ash clouds disperse.</endMessage>
 		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>

@@ -232,7 +232,7 @@ namespace MorrowRim2
 
         private int conditionTicksLeft = 0;
         private int graceTicksLeft = 0;
-        private IntRange initialGraceTicks = new IntRange(300,400); //TODO
+        private IntRange initialGraceTicks = new IntRange(1500000, 300000);
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
         private static List<Map> tmpDeadConditionMaps = new List<Map>();

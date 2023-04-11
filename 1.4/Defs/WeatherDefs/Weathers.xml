@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_VolcanicWind]==========-->
+	<!-- Currently only ever forced -->
 	<WeatherDef>
 		<defName>MorrowRim_VolcanicWind</defName>
 		<label>volcanic wind</label>

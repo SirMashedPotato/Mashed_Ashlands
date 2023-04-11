@@ -9,7 +9,7 @@ namespace MorrowRim2
 		public WeatherOverlay_AshStormSecondary()
 		{
 			worldOverlayMat = AshStormWorld;
-			OverlayColor = new Color(64f, 55f, 57f);
+			OverlayColor = new Color(84f, 75f, 77f);
 			worldOverlayPanSpeed1 = 0.045f;
 			worldOverlayPanSpeed2 = 0.045f;
 			worldPanDir1 = new Vector2(1f, 1f);

@@ -113,7 +113,7 @@ namespace MorrowRim2
 			{
 				return;
 			}
-			if (Rand.Chance(0.5f))  //potential setting, chance
+			if (Rand.Chance(0.25f))  //potential setting, chance
 			{
 				if (PawnImmuneToBlinding(p, out BodyPartRecord targetPart))
 				{
@@ -142,7 +142,7 @@ namespace MorrowRim2
 			{
 				return;
 			}
-			if (Rand.Chance(0.5f))	//potential setting, chance
+			if (Rand.Chance(0.25f))	//potential setting, chance
 			{
 				BodyPartRecord part = p.RaceProps.body.AllParts.RandomElement();
 				p.health.AddHediff(HediffDefOf.MorrowRim_AshCloggedServo, part);

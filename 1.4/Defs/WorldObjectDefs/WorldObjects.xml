@@ -67,17 +67,16 @@
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoConditionCauser">
 				<potentialConditions>
-					<!-- TODO proper numbers -->
 					<li>
 						<!-- null condition -->
 						<duration>0</duration>
-						<gracePeriodAfter>100~900</gracePeriodAfter>
+						<gracePeriodAfter>100000~150000</gracePeriodAfter>
 						<weight>20</weight>
 					</li>
 					<li>
 						<conditionDef>MorrowRim_AshStorm</conditionDef>
-						<duration>100~900</duration>
-						<gracePeriodAfter>100~900</gracePeriodAfter>
+						<duration>10000~60000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>5</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -86,9 +85,9 @@
 					</li>
 					<li>
 						<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
-						<duration>100~900</duration>
-						<gracePeriodAfter>100~900</gracePeriodAfter>
-						<weight>2</weight>
+						<duration>10000~50000</duration>
+						<gracePeriodAfter>10000~50000</gracePeriodAfter>
+						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
@@ -155,6 +154,36 @@
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
 				<conditionDef>MorrowRim_VolcanicHeat</conditionDef>
 			</li>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoConditionCauser">
+				<potentialConditions>
+					<li>
+						<!-- null condition -->
+						<duration>0</duration>
+						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<weight>15</weight>
+					</li>
+					<li>
+						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<duration>10000~90000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<weight>8</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+					<li>
+						<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+						<duration>20000~100000</duration>
+						<gracePeriodAfter>10000~50000</gracePeriodAfter>
+						<weight>5</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+				</potentialConditions>
+			</li>
 		</comps>
 	</WorldObjectDef>
 	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
@@ -213,6 +242,26 @@
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
 				<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+			</li>
+			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoConditionCauser">
+				<potentialConditions>
+					<li>
+						<!-- null condition -->
+						<duration>0</duration>
+						<gracePeriodAfter>100000~100000</gracePeriodAfter>
+						<weight>15</weight>
+					</li>
+					<li>
+						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<duration>10000~60000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<weight>5</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+				</potentialConditions>
 			</li>
 		</comps>
 	</WorldObjectDef>
