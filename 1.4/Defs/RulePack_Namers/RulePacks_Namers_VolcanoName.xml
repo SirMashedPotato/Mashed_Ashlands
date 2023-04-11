@@ -20,7 +20,13 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[narrative_name] [volcano]</li>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor(p=5)->smouldering</li>
+				<li>descriptor(p=5)->infernal</li>
+				<li>descriptor(p=5)->charred</li>
+				<li>descriptor(p=5)->charred</li>
+				<li>descriptor(p=5)->searing</li>
+				<li>descriptor(p=5)->scorching</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -35,7 +41,9 @@
 				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
 				<li>descriptor(p=10)->blighted</li>
 				<li>descriptor(p=5)->tainted</li>
+				<li>descriptor(p=5)->corrupted</li>
 				<li>descriptor(p=5)->defiled</li>
+				<li>descriptor(p=5)->desolate</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -61,6 +69,8 @@
 			<rulesStrings>
 				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
 				<li>descriptor(p=10)->overgrown</li>
+				<li>descriptor(p=5)->ancient</li>
+				<li>descriptor(p=5)->verdant</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

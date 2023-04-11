@@ -22,6 +22,7 @@ namespace MorrowRim2
         public IntRange gracePeriodAfter;
         public float weight = 1f;
         public bool sendLetter = false;
+        public bool sendEndMessage = false;
         public bool countAsIncident = false;
         public bool randomCategory = false;
     }

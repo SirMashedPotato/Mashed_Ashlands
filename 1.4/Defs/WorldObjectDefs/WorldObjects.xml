@@ -72,14 +72,25 @@
 						<!-- null condition -->
 						<duration>0</duration>
 						<gracePeriodAfter>100~900</gracePeriodAfter>
-						<weight>15</weight>
+						<weight>20</weight>
 					</li>
 					<li>
 						<conditionDef>MorrowRim_AshStorm</conditionDef>
 						<duration>100~900</duration>
 						<gracePeriodAfter>100~900</gracePeriodAfter>
-						<weight>3</weight>
+						<weight>5</weight>
 						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+					<li>
+						<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+						<duration>100~900</duration>
+						<gracePeriodAfter>100~900</gracePeriodAfter>
+						<weight>2</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
 						<randomCategory>true</randomCategory>
 					</li>

@@ -24,10 +24,10 @@ namespace MorrowRim2
         /// </summary>
         public void TriggerCondition()
         {
-            Log.Message("New conditon triggered for: " + ParentVolcano.Name);
             PotentialConditions condition = Props.potentialConditions.RandomElementByWeight(x => x.weight);
             if (condition != null)
             {
+                EndConditions();
                 SetCondition(condition, ParentVolcano);
                 if (condition.countAsIncident)
                 {
@@ -38,12 +38,11 @@ namespace MorrowRim2
                     Find.LetterStack.ReceiveLetter(
                         "MorrowRim_TheAshlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, category, currentConditionDef.label).CapitalizeFirst(),
                         "MorrowRim_TheAshlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description), 
-                        LetterDefOf.NegativeEvent, ParentVolcano, null, null);
+                        currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
-                Log.Message("It is: " + currentConditionDef);
                 conditionTicksLeft = duration;
                 graceTicksLeft = gracePeriodAfter;
-                EndConditions();
+                endMessage = condition.sendEndMessage;
             }
         }
 
@@ -62,7 +61,7 @@ namespace MorrowRim2
             }
             duration = condition.duration.RandomInRange;
             gracePeriodAfter = condition.gracePeriodAfter.RandomInRange;
-            category = (Rand.RangeInclusive(1, parentVolcano.Category));
+            category = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
         /// <summary>
@@ -70,6 +69,10 @@ namespace MorrowRim2
         /// </summary>
         public void EndConditions()
         {
+            if (endMessage)
+            {
+                Messages.Message(currentConditionDef.endMessage, ParentVolcano, MessageTypeDefOf.NeutralEvent, false);
+            }
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
                 keyValuePair.Value.End();
@@ -225,6 +228,7 @@ namespace MorrowRim2
         private int duration = 0;
         private int gracePeriodAfter = 0;
         private int category = 1;
+        private bool endMessage = false;
 
         private int conditionTicksLeft = 0;
         private int graceTicksLeft = 0;

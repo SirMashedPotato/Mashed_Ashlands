@@ -7,8 +7,8 @@
 		<label>ash storm</label>
 		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region.</description>
 		<descriptionFuture>an intense ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
-		<endMessage>The winds begin to calm.</endMessage>
-		<letterDef>NegativeEvent</letterDef>
+		<endMessage>The winds begin to calm. The ash storm has ended.</endMessage>
+		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<weatherDef>MorrowRim_VolcanicWind</weatherDef>
