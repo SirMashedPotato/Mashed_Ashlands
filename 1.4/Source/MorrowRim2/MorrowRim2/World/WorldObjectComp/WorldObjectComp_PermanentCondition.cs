@@ -51,7 +51,7 @@ namespace MorrowRim2
             {
                 causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => !Find.Maps.Contains(x.Key));
             }
-            Scribe_Collections.Look(ref causedConditions, "causedConditions", LookMode.Reference, LookMode.Reference);
+            Scribe_Collections.Look(ref causedConditions, "permanentCausedConditions", LookMode.Reference, LookMode.Reference);
             if (Scribe.mode == LoadSaveMode.ResolvingCrossRefs)
             {
                 causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => x.Value == null);

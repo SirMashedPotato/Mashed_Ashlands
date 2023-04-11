@@ -10,6 +10,7 @@
 			<li Class="MorrowRim2.BiomeProperties">
                 <earlyLoader>true</earlyLoader>
                 <baseBiome>true</baseBiome>
+				<forcedRockType>MorrowRim_Basalt</forcedRockType>
             </li>
 		</modExtensions>
 		<animalDensity>3.7</animalDensity>

@@ -84,6 +84,7 @@
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefModExtension\RockOnlyIfForced.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />
+    <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />

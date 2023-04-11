@@ -13,7 +13,7 @@ namespace MorrowRim2
         /* for biome gen */
         public bool disableBeaches = false;
         public List<TerrainReplacer> terrainReplacers;
-        public List<ThingDef> allowedRockTypes;
+        public ThingDef forcedRockType;
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;
