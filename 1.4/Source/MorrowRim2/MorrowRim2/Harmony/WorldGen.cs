@@ -26,7 +26,8 @@ namespace MorrowRim2
                 List<ThingDef> newList = new List<ThingDef>();
                 foreach (ThingDef rockDef in __result)
                 {
-                    if (RockOnlyIfForced.Get(rockDef) == null)
+                    RockProperties rockProps = RockProperties.Get(rockDef);
+                    if (rockProps == null || !rockProps.onlyAllowIfForced)
                     {
                         newList.Add(rockDef);
                     }

@@ -3,7 +3,9 @@
 	<!-- ==========[MorrowRim_BasaltBase]==========-->
 	<ThingDef ParentName="UglyRockBase" Name="MorrowRim_BasaltBase" Abstract="True">
 		<modExtensions>
-			<li Class="MorrowRim2.RockOnlyIfForced"/>
+			<li Class="MorrowRim2.RockProperties">
+				<onlyAllowIfForced>true</onlyAllowIfForced>
+			</li>
 		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/RockTypes/MorrowRim_MorrowRim_ColumnarBasalt</texPath>

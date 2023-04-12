@@ -3,7 +3,7 @@ using Verse;
 using RimWorld;
 using System.Collections.Generic;
 
-namespace MorrowRim2.Harmony
+namespace MorrowRim2
 {
     public static class BiomeGen
     {

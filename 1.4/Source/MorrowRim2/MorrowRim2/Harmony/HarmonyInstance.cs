@@ -2,14 +2,14 @@
 using Verse;
 using System.Reflection;
 
-namespace ESCP_NecromanticThralls
+namespace MorrowRim2
 {
     [StaticConstructorOnStartup]
     public class Main
     {
         static Main()
         {
-            var harmony = new Harmony("com.MorrowRimRemade");
+            Harmony harmony = new Harmony("com.MorrowRimRemade");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
