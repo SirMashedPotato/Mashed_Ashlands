@@ -5,6 +5,10 @@
 		<modExtensions>
 			<li Class="MorrowRim2.RockProperties">
 				<onlyAllowIfForced>true</onlyAllowIfForced>
+				<roughTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltRough</roughTexPathReplacer>
+				<roughHewnTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltRoughHewn</roughHewnTexPathReplacer>
+				<smoothTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltSmooth</smoothTexPathReplacer>
+				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
 			</li>
 		</modExtensions>
 		<graphicData>
