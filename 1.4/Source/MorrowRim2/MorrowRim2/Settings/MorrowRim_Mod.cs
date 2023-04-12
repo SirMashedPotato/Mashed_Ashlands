@@ -39,6 +39,12 @@ namespace MorrowRim2
                 case 2:
                     listing_Standard = SettingsPage_Volcano(listing_Standard);
                     break;
+                case 3:
+                    listing_Standard = SettingsPage_AshStorm(listing_Standard);
+                    break;
+                case 4:
+                    listing_Standard = SettingsPage_Biome(listing_Standard);
+                    break;
 
                 default:
                     listing_Standard = SettingsPage_General(listing_Standard);
@@ -89,6 +95,22 @@ namespace MorrowRim2
             }
             listing_Standard.Gap();
 
+            Rect rectPageAshStorm = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageAshStorm, "MorrowRim_TheAshlands_PageAshStorm".Translate());
+            if (Widgets.ButtonText(rectPageAshStorm, "MorrowRim_TheAshlands_PageAshStorm".Translate(), true, true, true))
+            {
+                page = 3;
+            }
+            listing_Standard.Gap();
+
+            Rect rectPageBiome = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageBiome, "MorrowRim_TheAshlands_PageBiome".Translate());
+            if (Widgets.ButtonText(rectPageBiome, "MorrowRim_TheAshlands_PageBiome".Translate(), true, true, true))
+            {
+                page = 4;
+            }
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
@@ -127,6 +149,24 @@ namespace MorrowRim2
                     if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageVolcano".Translate()), true, true, true))
                     {
                         MorrowRim_ModSettings.ResetSettings_Volcano();
+                    }
+                    break;
+
+                case 3:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageAshStorm".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageAshStorm".Translate()), true, true, true))
+                    {
+                        MorrowRim_ModSettings.ResetSettings_AshStorm();
+                    }
+                    break;
+
+                case 4:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageBiome".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageBiome".Translate()), true, true, true))
+                    {
+                        MorrowRim_ModSettings.ResetSettings_Biome();
                     }
                     break;
 
@@ -281,6 +321,36 @@ namespace MorrowRim2
 
             listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMaxAffectedArea".Translate(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea), -1, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip".Translate());
             settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea, 1, 200);
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private Listing_Standard SettingsPage_AshStorm(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("MorrowRim_TheAshlands_PageAshStorm".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private Listing_Standard SettingsPage_Biome(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("MorrowRim_TheAshlands_PageBiome".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

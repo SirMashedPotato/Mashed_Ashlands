@@ -216,5 +216,15 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
             _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
         }
+
+        public static void ResetSettings_AshStorm()
+        {
+
+        }
+
+        public static void ResetSettings_Biome()
+        {
+
+        }
     }
 }
