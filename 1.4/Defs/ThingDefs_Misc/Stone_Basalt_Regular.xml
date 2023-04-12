@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_Basalt]==========-->
-	<ThingDef ParentName="UglyRockBase" Name="MorrowRim_BasaltBase">
+	<ThingDef ParentName="MorrowRim_BasaltBase">
 		<defName>MorrowRim_Basalt</defName>
 		<label>columnar basalt</label>
 		<description>Large columns of basalt, typically found in regions experiencing high volcanic activity.</description>
 		<graphicData>
 			<color>(102,96,98)</color>
-			<texPath>Things/Building/RockTypes/MorrowRim_MorrowRim_ColumnarBasalt</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<linkType>None</linkType>
-			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<statBases>
-			<MaxHitPoints>900</MaxHitPoints>
-		</statBases>
 		<building>
 			<mineableThing>MorrowRim_ChunkBasalt</mineableThing>
-			<mineableDropChance>0.25</mineableDropChance>
 			<!--<smoothedThing>MorrowRim_SmoothedBasalt</smoothedThing>-->
 		</building>
 	</ThingDef>
@@ -46,42 +38,26 @@
 	</ThingDef>
 	-->
 	<!-- ==========[MorrowRim_ChunkBasalt]==========-->
-	<ThingDef ParentName="ChunkRockBase">
+	<ThingDef ParentName="MorrowRim_ChunkBasaltBase">
 		<defName>MorrowRim_ChunkBasalt</defName>
 		<label>basalt chunk</label>
 		<graphicData>
 			<color>(102,96,98)</color>
 		</graphicData>
-		<statBases>
-			<Mass>25</Mass>
-		</statBases>
-		<soundDrop>ChunkRock_Drop</soundDrop>
 		<butcherProducts>
 			<MorrowRim_BlocksBasalt>20</MorrowRim_BlocksBasalt>
 		</butcherProducts>
 	</ThingDef>
 	<!-- ==========[MorrowRim_BlocksBasalt]==========-->
-	<ThingDef ParentName="StoneBlocksBase">
+	<ThingDef ParentName="MorrowRim_BlocksBasaltBase">
 		<defName>MorrowRim_BlocksBasalt</defName>
 		<label>basalt blocks</label>
 		<description>Blocks of solid basalt. Basalt is a very hard stone.</description>
 		<graphicData>
 			<color>(102,96,98)</color>
 		</graphicData>
-		<statBases>
-			<Mass>1.25</Mass>
-			<SharpDamageMultiplier>0.65</SharpDamageMultiplier>
-		</statBases>
 		<stuffProps>
 			<color>(102,96,98)</color>
-			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
-			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-			<stuffAdjective>basalt</stuffAdjective>
-			<statFactors>
-				<MaxHitPoints>1.7</MaxHitPoints>
-			</statFactors>
-			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Make_StoneBlocksBasalt]==========-->
