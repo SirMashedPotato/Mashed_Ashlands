@@ -255,6 +255,8 @@ namespace MorrowRim2
         {
             ResetSettings_WorldGen();
             ResetSettings_Volcano();
+            ResetSettings_AshStorm();
+            ResetSettings_Biome();
         }
 
         public static void ResetSettings_WorldGen()

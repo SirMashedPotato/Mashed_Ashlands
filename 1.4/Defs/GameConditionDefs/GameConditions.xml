@@ -13,4 +13,6 @@
 		<preventRain>true</preventRain>
 		<weatherDef>MorrowRim_VolcanicWind</weatherDef>
 	</GameConditionDef>
+	<!-- ==========[MorrowRim_AshStorm_Blight]==========-->
+	<!-- ==========[MorrowRim_AshStorm_Metallic]==========-->
 </Defs>
