@@ -1,240 +1,68 @@
 ﻿using Verse;
 using RimWorld;
+using RimWorld.Planet;
 using System.Collections.Generic;
 
 namespace MorrowRim2
 {
-    public class WorldObjectComp_VolcanoConditionCauser : WorldObjectComp_ConditionCauser
+    public abstract class WorldObjectComp_VolcanoConditionCauser : WorldObjectComp
     {
-		public WorldObjectCompProperties_VolcanoConditionCauser Props
-		{
-			get
-			{
-				return (WorldObjectCompProperties_VolcanoConditionCauser)props;
-			}
-		}
 
-        public Volcano ParentVolcano => parent as Volcano;
-        public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
-        public bool CanCauseCondition => graceTicksLeft == 0;
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public void TriggerCondition()
+        public bool InAoE(int tile, int category, Volcano parentVolcano)
         {
-            PotentialConditions condition = Props.potentialConditions.RandomElementByWeight(x => x.weight);
-            if (condition != null)
-            {
-                EndConditions();
-                SetCondition(condition, ParentVolcano);
-                if (condition.countAsIncident)
-                {
-                    ParentVolcano.IncidentTriggered();
-                }
-                if (condition.sendLetter)
-                {
-                    Find.LetterStack.ReceiveLetter(
-                        "MorrowRim_TheAshlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, category, currentConditionDef.label).CapitalizeFirst(),
-                        "MorrowRim_TheAshlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description), 
-                        currentConditionDef.letterDef, ParentVolcano, null, null);
-                }
-                conditionTicksLeft = duration;
-                graceTicksLeft = gracePeriodAfter;
-                endMessage = condition.sendEndMessage;
-            }
+            int worldRange = parentVolcano.EffectRadiusFor(category);
+            return Find.WorldGrid.TraversalDistanceBetween(parentVolcano.Tile, tile, true, worldRange + 1) <= worldRange;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public void SetCondition(PotentialConditions condition, Volcano parentVolcano)
+        public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)
         {
-            if (condition.conditionDef != null)
+            if (!causedConditions.TryGetValue(map, out GameCondition activeCondition) && preventConditionStacking)
             {
-                currentConditionDef = condition.conditionDef;
+                activeCondition = map.GameConditionManager.GetActiveCondition(conditionDef);
+                if (activeCondition != null)
+                {
+                    causedConditions.Add(map, activeCondition);
+                    SetupCondition(activeCondition, map);
+                }
+            }
+            return activeCondition;
+        }
+
+        public GameCondition EnforceConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)
+        {
+            GameCondition gameCondition = GetConditionInstance(ref causedConditions, map, conditionDef, preventConditionStacking);
+            if (gameCondition == null)
+            {
+                gameCondition = CreateConditionOn(ref causedConditions, map, conditionDef);
             }
             else
             {
-                currentConditionDef = null;
+                gameCondition.TicksLeft = gameCondition.TransitionTicks;
             }
-            duration = condition.duration.RandomInRange;
-            gracePeriodAfter = condition.gracePeriodAfter.RandomInRange;
-            category = Rand.RangeInclusive(1, parentVolcano.Category);
+            return gameCondition;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public void EndConditions()
+        public virtual GameCondition CreateConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef)
         {
-            if (endMessage)
-            {
-                Messages.Message(currentConditionDef.endMessage, ParentVolcano, MessageTypeDefOf.NeutralEvent, false);
-            }
+            GameCondition gameCondition = GameConditionMaker.MakeCondition(conditionDef, -1);
+            gameCondition.Duration = gameCondition.TransitionTicks;
+            map.gameConditionManager.RegisterCondition(gameCondition);
+            causedConditions.Add(map, gameCondition);
+            SetupCondition(gameCondition, map);
+            return gameCondition;
+        }
+
+        public virtual void SetupCondition(GameCondition condition, Map map)
+        {
+            condition.suppressEndMessage = true;
+        }
+
+        public void ReSetupAllConditions(ref Dictionary<Map, GameCondition> causedConditions)
+        {
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
-                keyValuePair.Value.End();
-            }
-            causedConditions.Clear();
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public override void CompTick()
-        {
-            base.CompTick();
-            if (conditionTicksLeft > 0)
-            {
-                if (currentConditionDef != null)
-                {
-                    foreach (Map map in Find.Maps)
-                    {
-                        if (InAoE(map.Tile, category, ParentVolcano))
-                        {
-                            EnforceConditionOn(ref causedConditions, map, currentConditionDef, Props.preventConditionStacking);
-                        }
-                    }
-                }
-                conditionTicksLeft--;
-            }
-            else
-            {
-                if (graceTicksLeft > 0)
-                {
-                    graceTicksLeft--;
-                }
-                else
-                {
-                    TriggerCondition();
-                }
-            }
-            ///for cleaning out conditions
-            tmpDeadConditionMaps.Clear();
-            foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
-            {
-                if (!InAoE(keyValuePair.Key.Tile, category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
-                {
-                    keyValuePair.Value.End();
-                    tmpDeadConditionMaps.Add(keyValuePair.Key);
-                }
-            }
-            foreach (Map key in tmpDeadConditionMaps)
-            {
-                causedConditions.Remove(key);
+                SetupCondition(keyValuePair.Value, keyValuePair.Key);
             }
         }
-
-        public override void Initialize(WorldObjectCompProperties props)
-        {
-            base.Initialize(props);
-            graceTicksLeft = initialGraceTicks.RandomInRange;
-        }
-
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            if (Scribe.mode == LoadSaveMode.Saving)
-            {
-                causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => !Find.Maps.Contains(x.Key));
-            }
-            Scribe_Collections.Look(ref causedConditions, "tempraryCausedConditions", LookMode.Reference, LookMode.Reference);
-            if (Scribe.mode == LoadSaveMode.ResolvingCrossRefs)
-            {
-                causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => x.Value == null);
-            }
-
-            if (currentConditionDef != null)
-            {
-                Scribe_Defs.Look(ref currentConditionDef, "conditionDef");
-            }
-            Scribe_Values.Look(ref category, "category", 1);
-            Scribe_Values.Look(ref conditionTicksLeft, "conditionTicksLeft", 0);
-            Scribe_Values.Look(ref graceTicksLeft, "graceTicksLeft", 0);
-        }
-
-        public override string CompInspectStringExtra()
-        {
-            if (currentConditionDef != null)
-            {
-                return "MorrowRim_TheAshlands_VolcanoTriggeredCondition".Translate(category, currentConditionDef.label);
-            }
-            return base.CompInspectStringExtra();
-        }
-
-        public override void PostDrawExtraSelectionOverlays()
-        {
-            if(currentConditionDef != null)
-            {
-                if (category != ParentVolcano.Category)
-                {
-                    int radius = ParentVolcano.EffectRadiusFor(category);
-                    if (radius != -1)
-                    {
-                        GenDraw.DrawWorldRadiusRing(parent.Tile, radius);
-                    }
-                }
-            }
-            base.PostDrawExtraSelectionOverlays();
-        }
-
-        public override IEnumerable<Gizmo> GetGizmos()
-        {
-            foreach (Gizmo gizmo in base.GetGizmos())
-            {
-                yield return gizmo;
-            }
-
-            if (DebugSettings.ShowDevGizmos)
-            {
-                yield return new Command_Action
-                {
-                    defaultLabel = "DEV: Set duration ticks to 0",
-                    action = delegate ()
-                    {
-                        conditionTicksLeft = 0;
-                    },
-                };
-
-                yield return new Command_Action
-                {
-                    defaultLabel = "DEV: Set grace ticks to 0",
-                    action = delegate ()
-                    {
-                        graceTicksLeft = 0;
-                    },
-                };
-
-                yield return new Command_Action
-                {
-                    defaultLabel = "DEV: Force new condition",
-                    action = delegate ()
-                    {
-                        TriggerCondition();
-                    },
-                };
-            }
-        }
-
-        public override void PostDestroy()
-        {
-            EndConditions();
-            base.PostDestroy();
-        }
-
-        private GameConditionDef currentConditionDef = null;
-        private int duration = 0;
-        private int gracePeriodAfter = 0;
-        private int category = 1;
-        private bool endMessage = false;
-
-        private int conditionTicksLeft = 0;
-        private int graceTicksLeft = 0;
-        private IntRange initialGraceTicks = new IntRange(1500000, 300000);
-
-        private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
-        private static List<Map> tmpDeadConditionMaps = new List<Map>();
     }
 }

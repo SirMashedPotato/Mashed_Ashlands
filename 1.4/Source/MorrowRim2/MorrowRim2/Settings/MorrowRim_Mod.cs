@@ -241,18 +241,15 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));
-            settings.MorrowRim_TheAshlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMinDistance, 1, 200);
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BiomeScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_BiomeScaleWithWorldSize, "MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip".Translate());
             listing_Standard.Gap();
 
             listing_Standard.Label("MorrowRim_TheAshlands_BiomesMaxDistance".Translate(settings.MorrowRim_TheAshlands_BiomesMaxDistance));
             settings.MorrowRim_TheAshlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_BiomesMaxDistance, 1, 200);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));
+            settings.MorrowRim_TheAshlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMinDistance, 1, 200);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
@@ -312,6 +309,12 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableExclusiveRocks".Translate(), ref settings.MorrowRim_TheAshlands_EnableExclusiveRocks, "MorrowRim_TheAshlands_EnableExclusiveRocks_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             return listing_Standard;
         }
 
@@ -329,6 +332,15 @@ namespace MorrowRim2
 
             listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMaxAffectedArea".Translate(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea), -1, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip".Translate());
             settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMaxAffectedArea, 1, 200);
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoEnablePermanentConditions".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoEnablePermanentConditions);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoEnableRandomConditions".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoEnableRandomConditions);
+            listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

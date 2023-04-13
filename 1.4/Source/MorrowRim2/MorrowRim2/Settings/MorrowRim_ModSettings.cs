@@ -41,9 +41,14 @@ namespace MorrowRim2
         public static bool EnableSwampIslandAshlands => _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands;
         public static bool EnableBlightedBogAshlands => _instance.MorrowRim_TheAshlands_EnableBlightedBogAshlands;
 
+        public static bool EnableExclusiveRocks => _instance.MorrowRim_TheAshlands_EnableExclusiveRocks;
+
         //volcano
         public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize;
         public static int VolcanoMaxAffectedArea => _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea;
+
+        public static bool VolcanoEnablePermanentConditions => _instance.MorrowRim_TheAshlands_VolcanoEnablePermanentConditions;
+        public static bool VolcanoEnableRandomConditions => _instance.MorrowRim_TheAshlands_VolcanoEnableRandomConditions;
 
         //ash storm
         public static bool AshStormCauseBuildup => _instance.MorrowRim_TheAshlands_AshStormCauseBuildup;
@@ -94,9 +99,14 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
         public bool MorrowRim_TheAshlands_EnableBlightedBogAshlands = MorrowRim_TheAshlands_EnableBlightedBogAshlands_def;
 
+        public bool MorrowRim_TheAshlands_EnableExclusiveRocks = MorrowRim_TheAshlands_EnableExclusiveRocks_def;
+
         //volcano
         public bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
         public int MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
+
+        public bool MorrowRim_TheAshlands_VolcanoEnablePermanentConditions = MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def;
+        public bool MorrowRim_TheAshlands_VolcanoEnableRandomConditions = MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def;
 
         //ash storm
         public bool MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
@@ -147,9 +157,15 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_EnableSwampIslandAshlands_def = true;
         private static readonly bool MorrowRim_TheAshlands_EnableBlightedBogAshlands_def = true;
 
+        private static readonly bool MorrowRim_TheAshlands_EnableExclusiveRocks_def = true;
+
         //volcano
         private static readonly bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
         private static readonly int MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def = 10;
+
+        private static readonly bool MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def = true;
+        private static readonly bool MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def = true;
+
 
         //ash storm
         private static readonly bool MorrowRim_TheAshlands_AshStormCauseBuildup_def = true;
@@ -207,10 +223,14 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableSwampIslandAshlands, "MorrowRim_TheAshlands_EnableSwampIslandAshlands", MorrowRim_TheAshlands_EnableSwampIslandAshlands_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableBlightedBogAshlands, "MorrowRim_TheAshlands_EnableBlightedBogAshlands", MorrowRim_TheAshlands_EnableBlightedBogAshlands_def);
 
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_EnableExclusiveRocks, "MorrowRim_TheAshlands_EnableExclusiveRocks", MorrowRim_TheAshlands_EnableExclusiveRocks_def);
+
             //volcano
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize", MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoMaxAffectedArea, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea", MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def);
 
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoEnablePermanentConditions, "MorrowRim_TheAshlands_VolcanoEnablePermanentConditions", MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoEnableRandomConditions, "MorrowRim_TheAshlands_VolcanoEnableRandomConditions", MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def);
 
             //ash storm
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBuildup, "MorrowRim_TheAshlands_AshStormCauseBuildup", MorrowRim_TheAshlands_AshStormCauseBuildup_def);
@@ -270,12 +290,17 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands = MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableSwampIslandAshlands = MorrowRim_TheAshlands_EnableSwampIslandAshlands_def;
             _instance.MorrowRim_TheAshlands_EnableBlightedBogAshlands = MorrowRim_TheAshlands_EnableBlightedBogAshlands_def;
+
+            _instance.MorrowRim_TheAshlands_EnableExclusiveRocks = MorrowRim_TheAshlands_EnableExclusiveRocks_def;
         }
 
         public static void ResetSettings_Volcano()
         {
             _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
             _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
+
+            _instance.MorrowRim_TheAshlands_VolcanoEnablePermanentConditions = MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def;
+            _instance.MorrowRim_TheAshlands_VolcanoEnableRandomConditions = MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def;
         }
 
         public static void ResetSettings_AshStorm()

@@ -1,11 +1,10 @@
 ﻿using Verse;
 using RimWorld;
-using RimWorld.Planet;
 using System.Collections.Generic;
 
 namespace MorrowRim2
 {
-    public class WorldObjectComp_PermanentCondition : WorldObjectComp_ConditionCauser
+    public class WorldObjectComp_PermanentCondition : WorldObjectComp_VolcanoConditionCauser
     {
 		public WorldObjectCompProperties_PermanentCondition Props
 		{
@@ -22,13 +21,17 @@ namespace MorrowRim2
         public override void CompTick()
         {
             base.CompTick();
-            foreach (Map map in Find.Maps)
+            if (MorrowRim_ModSettings.VolcanoEnablePermanentConditions)
             {
-                if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                foreach (Map map in Find.Maps)
                 {
-                    EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
+                    if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                    {
+                        EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
+                    }
                 }
             }
+            ///for cleaning out conditions
             tmpDeadConditionMaps.Clear();
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
@@ -60,7 +63,11 @@ namespace MorrowRim2
 
         public override string CompInspectStringExtra()
         {
-            return "MorrowRim_TheAshlands_VolcanoPermanentCondition".Translate(Props.conditionDef.label);
+            if (MorrowRim_ModSettings.VolcanoEnablePermanentConditions)
+            {
+                return "MorrowRim_TheAshlands_VolcanoPermanentCondition".Translate(Props.conditionDef.label);
+            }
+            return base.CompInspectStringExtra();
         }
 
         public override string GetDescriptionPart()

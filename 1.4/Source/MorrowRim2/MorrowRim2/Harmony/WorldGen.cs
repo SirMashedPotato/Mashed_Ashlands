@@ -21,12 +21,16 @@ namespace MorrowRim2
                  * potential setting here
                  * disables first half of the function, therefore custom rocks are always removed from all biomes
                  */
-                BiomeProperties props = BiomeProperties.Get(__instance.grid[tile].biome);
-                if (props != null && props.forcedRockType != null)
+                if (MorrowRim_ModSettings.EnableExclusiveRocks)
                 {
-                    __result = new List<ThingDef> { props.forcedRockType };
-                    return;
+                    BiomeProperties props = BiomeProperties.Get(__instance.grid[tile].biome);
+                    if (props != null && props.forcedRockType != null)
+                    {
+                        __result = new List<ThingDef> { props.forcedRockType };
+                        return;
+                    }
                 }
+
                 List<ThingDef> newList = new List<ThingDef>();
                 foreach (ThingDef rockDef in __result)
                 {

@@ -50,6 +50,11 @@
 	<MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>
 	<MorrowRim_TheAshlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</MorrowRim_TheAshlands_EnableSwampIslandAshlands>
 	<MorrowRim_TheAshlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</MorrowRim_TheAshlands_EnableBlightedBogAshlands>
+	
+	<!-- Other features -->
+	<MorrowRim_TheAshlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</MorrowRim_TheAshlands_EnableExclusiveRocks>
+	<MorrowRim_TheAshlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</MorrowRim_TheAshlands_EnableExclusiveRocks_Tooltip>
+
 	<!-- ==========[Volcano]==========-->
 	<MorrowRim_TheAshlands_PageVolcano>Volcano Settings</MorrowRim_TheAshlands_PageVolcano>
 	<!-- distances -->
@@ -57,6 +62,8 @@
 	<MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
 	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMaxAffectedArea>
 	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>
+	<MorrowRim_TheAshlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</MorrowRim_TheAshlands_VolcanoEnablePermanentConditions>
+	<MorrowRim_TheAshlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</MorrowRim_TheAshlands_VolcanoEnableRandomConditions>
 	<!-- ==========[Ash storm]==========-->
 	<MorrowRim_TheAshlands_PageAshStorm>Ash storm Settings</MorrowRim_TheAshlands_PageAshStorm>
 	<MorrowRim_TheAshlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</MorrowRim_TheAshlands_AshStormCauseBuildup>

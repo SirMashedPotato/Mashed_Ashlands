@@ -4,11 +4,11 @@ using Verse;
 
 namespace MorrowRim2
 {
-    public class WorldObjectCompProperties_VolcanoConditionCauser : WorldObjectCompProperties
+    public class WorldObjectCompProperties_RandomConditionCauser : WorldObjectCompProperties
     {
-        public WorldObjectCompProperties_VolcanoConditionCauser()
+        public WorldObjectCompProperties_RandomConditionCauser()
         {
-            compClass = typeof(WorldObjectComp_VolcanoConditionCauser);
+            compClass = typeof(WorldObjectComp_RandomConditionCauser);
         }
 
         public bool preventConditionStacking = true;
