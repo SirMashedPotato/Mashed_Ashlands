@@ -30,7 +30,7 @@ namespace MorrowRim2
 		public override void GameConditionTick()
 		{
 			List<Map> affectedMaps = AffectedMaps;
-			if (Find.TickManager.TicksGame % CheckInterval == 0)	//potential setting, disable
+			if (Find.TickManager.TicksGame % CheckInterval == 0)
 			{
 				for (int i = 0; i < affectedMaps.Count; i++)
 				{
@@ -52,15 +52,18 @@ namespace MorrowRim2
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
 				AshResistanceProperties props = AshResistanceProperties.Get(allPawnsSpawned[i].def);
-                if (props != null && props.treatAsMechanical)
+                if (props != null && props.treatAsMechanical && MorrowRim_ModSettings.AshStormCauseCloggedServo)
                 {
 					DoMechAshDamage(allPawnsSpawned[i], true);
 				}
 				else
                 {
-					DoPawnAshDamage(allPawnsSpawned[i], true, 1f);
-                    if (props == null || !props.immuneToAshBlinding)
+                    if (MorrowRim_ModSettings.AshStormCauseBuildup)
                     {
+						DoPawnAshDamage(allPawnsSpawned[i], true, 1f);
+					}
+					if ((props == null || !props.immuneToAshBlinding) && MorrowRim_ModSettings.AshStormCauseBlinded)
+					{
 						TryBlindPawn(allPawnsSpawned[i], true);
 					}
 				}
@@ -84,7 +87,7 @@ namespace MorrowRim2
 			float num = 0.0230066683f;
 			num *= Mathf.Max(1f - ashResistanceValue);
 			num /= p.BodySize / p.health.capacities.GetLevel(PawnCapacityDefOf.Breathing);
-			num *= extraFactor; //potential setting, * extraMult, default to 1f
+			num *= extraFactor * MorrowRim_ModSettings.AshStormBuildupMult;
 			if (num != 0f)
 			{
 				float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
@@ -113,7 +116,7 @@ namespace MorrowRim2
 			{
 				return;
 			}
-			if (Rand.Chance(0.25f))  //potential setting, chance
+			if (Rand.Chance(MorrowRim_ModSettings.AshStormBlindedChance))
 			{
 				if (PawnImmuneToBlinding(p, out BodyPartRecord targetPart))
 				{
@@ -142,7 +145,7 @@ namespace MorrowRim2
 			{
 				return;
 			}
-			if (Rand.Chance(0.25f))	//potential setting, chance
+			if (Rand.Chance(MorrowRim_ModSettings.AshStormCloggedServoChance))
 			{
 				BodyPartRecord part = p.RaceProps.body.AllParts.RandomElement();
 				p.health.AddHediff(HediffDefOf.MorrowRim_AshCloggedServo, part);
@@ -157,7 +160,7 @@ namespace MorrowRim2
 				for (int i = 0; i < thingList.Count; i++)
 				{
 					Thing thing = thingList[i];
-					if (thing is Plant)	//potential setting, disable
+					if (thing is Plant && MorrowRim_ModSettings.AshStormDamagePlants)
 					{
 						if (!PlantImmuneToAsh(thing as Plant, out float ashResistanceValue) && Rand.Value < 0.065f)	//potential setting, probablity
 						{
@@ -165,11 +168,11 @@ namespace MorrowRim2
 							{
 								Def = DamageDefOf.Deterioration
 							};
-							info.SetAmount(Rand.Gaussian(10 * (1 - ashResistanceValue)));   //potential setting, damage amount
+							info.SetAmount(Rand.Gaussian(MorrowRim_ModSettings.AshStormAvgPlantDamage * (1 - ashResistanceValue)));
 							thing.TakeDamage(info);
 						}
 					}
-                    else if (thing is Building) //potential setting, disable
+					if (thing is Building && MorrowRim_ModSettings.AshStormDamageBuildings)
 					{
 						AshResistanceProperties props = AshResistanceProperties.Get(thing.def);
                         if (props != null && props.buildingTakesDamage && Rand.Chance(props.chanceDamaged))
@@ -178,7 +181,7 @@ namespace MorrowRim2
 							{
 								Def = DamageDefOf.Deterioration
 							};
-							info.SetAmount(Rand.Gaussian(props.avgDamageTaken));   //potential setting, damage factor
+							info.SetAmount(Rand.Gaussian(props.avgDamageTaken));
 							thing.TakeDamage(info);
 						}
                     }

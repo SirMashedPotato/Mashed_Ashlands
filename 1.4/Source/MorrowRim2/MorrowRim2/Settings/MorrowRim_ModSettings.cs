@@ -45,6 +45,21 @@ namespace MorrowRim2
         public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize;
         public static int VolcanoMaxAffectedArea => _instance.MorrowRim_TheAshlands_VolcanoMaxAffectedArea;
 
+        //ash storm
+        public static bool AshStormCauseBuildup => _instance.MorrowRim_TheAshlands_AshStormCauseBuildup;
+        public static float AshStormBuildupMult => _instance.MorrowRim_TheAshlands_AshStormBuildupMult;
+
+        public static bool AshStormCauseBlinded => _instance.MorrowRim_TheAshlands_AshStormCauseBlinded;
+        public static float AshStormBlindedChance => _instance.MorrowRim_TheAshlands_AshStormBlindedChance;
+
+        public static bool AshStormCauseCloggedServo => _instance.MorrowRim_TheAshlands_AshStormCauseCloggedServo;
+        public static float AshStormCloggedServoChance => _instance.MorrowRim_TheAshlands_AshStormCloggedServoChance;
+
+        public static bool AshStormDamagePlants => _instance.MorrowRim_TheAshlands_AshStormDamagePlants;
+        public static int AshStormAvgPlantDamage => _instance.MorrowRim_TheAshlands_AshStormAvgPlantDamage;
+
+        public static bool AshStormDamageBuildings => _instance.MorrowRim_TheAshlands_AshStormDamageBuildings;
+
         /* ==========[VARIABLES]========== */
         //world gen
         public bool MorrowRim_TheAshlands_OldBiomeGen = MorrowRim_TheAshlands_OldBiomeGen_def;
@@ -83,6 +98,21 @@ namespace MorrowRim2
         public bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize = MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def;
         public int MorrowRim_TheAshlands_VolcanoMaxAffectedArea = MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def;
 
+        //ash storm
+        public bool MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
+        public float MorrowRim_TheAshlands_AshStormBuildupMult = MorrowRim_TheAshlands_AshStormBuildupMult_def;
+
+        public bool MorrowRim_TheAshlands_AshStormCauseBlinded = MorrowRim_TheAshlands_AshStormCauseBlinded_def;
+        public float MorrowRim_TheAshlands_AshStormBlindedChance = MorrowRim_TheAshlands_AshStormBlindedChance_def;
+
+        public bool MorrowRim_TheAshlands_AshStormCauseCloggedServo = MorrowRim_TheAshlands_AshStormCauseCloggedServo_def;
+        public float MorrowRim_TheAshlands_AshStormCloggedServoChance = MorrowRim_TheAshlands_AshStormCloggedServoChance_def;
+
+        public bool MorrowRim_TheAshlands_AshStormDamagePlants = MorrowRim_TheAshlands_AshStormDamagePlants_def;
+        public int MorrowRim_TheAshlands_AshStormAvgPlantDamage = MorrowRim_TheAshlands_AshStormAvgPlantDamage_def;
+
+        public bool MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
+
         /* ==========[DEFAULTS]========== */
         //world gen
         private static readonly bool MorrowRim_TheAshlands_OldBiomeGen_def = false;
@@ -120,6 +150,21 @@ namespace MorrowRim2
         //volcano
         private static readonly bool MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
         private static readonly int MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def = 10;
+
+        //ash storm
+        private static readonly bool MorrowRim_TheAshlands_AshStormCauseBuildup_def = true;
+        private static readonly float MorrowRim_TheAshlands_AshStormBuildupMult_def = 1f;
+
+        private static readonly bool MorrowRim_TheAshlands_AshStormCauseBlinded_def = true;
+        private static readonly float MorrowRim_TheAshlands_AshStormBlindedChance_def = 0.25f;
+
+        private static readonly bool MorrowRim_TheAshlands_AshStormCauseCloggedServo_def = true;
+        private static readonly float MorrowRim_TheAshlands_AshStormCloggedServoChance_def = 0.25f;
+
+        private static readonly bool MorrowRim_TheAshlands_AshStormDamagePlants_def = true;
+        private static readonly int MorrowRim_TheAshlands_AshStormAvgPlantDamage_def = 10;
+
+        private static readonly bool MorrowRim_TheAshlands_AshStormDamageBuildings_def = true;
 
         public MorrowRim_ModSettings()
         {
@@ -165,6 +210,22 @@ namespace MorrowRim2
             //volcano
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize", MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoMaxAffectedArea, "MorrowRim_TheAshlands_VolcanoMaxAffectedArea", MorrowRim_TheAshlands_VolcanoMaxAffectedArea_def);
+
+
+            //ash storm
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBuildup, "MorrowRim_TheAshlands_AshStormCauseBuildup", MorrowRim_TheAshlands_AshStormCauseBuildup_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormBuildupMult, "MorrowRim_TheAshlands_AshStormBuildupMult", MorrowRim_TheAshlands_AshStormBuildupMult_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBlinded, "MorrowRim_TheAshlands_AshStormCauseBlinded", MorrowRim_TheAshlands_AshStormCauseBlinded_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormBlindedChance, "MorrowRim_TheAshlands_AshStormBlindedChance", MorrowRim_TheAshlands_AshStormBlindedChance_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseCloggedServo, "MorrowRim_TheAshlands_AshStormCauseCloggedServo", MorrowRim_TheAshlands_AshStormCauseCloggedServo_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCloggedServoChance, "MorrowRim_TheAshlands_AshStormCloggedServoChance", MorrowRim_TheAshlands_AshStormCloggedServoChance_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormDamagePlants, "MorrowRim_TheAshlands_AshStormDamagePlants", MorrowRim_TheAshlands_AshStormDamagePlants_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormAvgPlantDamage, "MorrowRim_TheAshlands_AshStormAvgPlantDamage", MorrowRim_TheAshlands_AshStormAvgPlantDamage_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormDamageBuildings, "MorrowRim_TheAshlands_AshStormDamageBuildings", MorrowRim_TheAshlands_AshStormDamageBuildings_def);
 
             base.ExposeData();
         }
@@ -219,7 +280,19 @@ namespace MorrowRim2
 
         public static void ResetSettings_AshStorm()
         {
+            _instance.MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
+            _instance.MorrowRim_TheAshlands_AshStormBuildupMult = MorrowRim_TheAshlands_AshStormBuildupMult_def;
 
+            _instance.MorrowRim_TheAshlands_AshStormCauseBlinded = MorrowRim_TheAshlands_AshStormCauseBlinded_def;
+            _instance.MorrowRim_TheAshlands_AshStormBlindedChance = MorrowRim_TheAshlands_AshStormBlindedChance_def;
+
+            _instance.MorrowRim_TheAshlands_AshStormCauseCloggedServo = MorrowRim_TheAshlands_AshStormCauseCloggedServo_def;
+            _instance.MorrowRim_TheAshlands_AshStormCloggedServoChance = MorrowRim_TheAshlands_AshStormCloggedServoChance_def;
+
+            _instance.MorrowRim_TheAshlands_AshStormDamagePlants = MorrowRim_TheAshlands_AshStormDamagePlants_def;
+            _instance.MorrowRim_TheAshlands_AshStormAvgPlantDamage = MorrowRim_TheAshlands_AshStormAvgPlantDamage_def;
+
+            _instance.MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
         }
 
         public static void ResetSettings_Biome()

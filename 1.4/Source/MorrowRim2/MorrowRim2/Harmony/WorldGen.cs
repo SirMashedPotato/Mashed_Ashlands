@@ -17,6 +17,10 @@ namespace MorrowRim2
             [HarmonyPostfix]
             public static void MorrowRim_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
             {
+                /*
+                 * potential setting here
+                 * disables first half of the function, therefore custom rocks are always removed from all biomes
+                 */
                 BiomeProperties props = BiomeProperties.Get(__instance.grid[tile].biome);
                 if (props != null && props.forcedRockType != null)
                 {

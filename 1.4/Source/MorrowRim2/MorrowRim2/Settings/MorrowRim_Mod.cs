@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Verse;
 
 namespace MorrowRim2
@@ -202,6 +203,13 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
             */
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableDormantVolcano".Translate(), ref settings.MorrowRim_TheAshlands_EnableDormantVolcano, "MorrowRim_TheAshlands_EnableDormantVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -233,14 +241,14 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoScaleWithWorldSize, "MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
+            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));
+            settings.MorrowRim_TheAshlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMinDistance, 1, 200);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BiomeScaleWithWorldSize".Translate(), ref settings.MorrowRim_TheAshlands_BiomeScaleWithWorldSize, "MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("MorrowRim_TheAshlands_VolcanoMinDistance".Translate(settings.MorrowRim_TheAshlands_VolcanoMinDistance));
-            settings.MorrowRim_TheAshlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.MorrowRim_TheAshlands_VolcanoMinDistance, 1, 200);
             listing_Standard.Gap();
 
             listing_Standard.Label("MorrowRim_TheAshlands_BiomesMaxDistance".Translate(settings.MorrowRim_TheAshlands_BiomesMaxDistance));
@@ -335,6 +343,45 @@ namespace MorrowRim2
         {
             listing_Standard.Label("MorrowRim_TheAshlands_PageAshStorm".Translate());
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormCauseBuildup".Translate(), ref settings.MorrowRim_TheAshlands_AshStormCauseBuildup);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_AshStormBuildupMult".Translate(settings.MorrowRim_TheAshlands_AshStormBuildupMult * 100), -1);
+            settings.MorrowRim_TheAshlands_AshStormBuildupMult = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormBuildupMult, 0.05f, 5f) * 10) / 10;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormCauseBlinded".Translate(), ref settings.MorrowRim_TheAshlands_AshStormCauseBlinded);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_AshStormBlindedChance".Translate(settings.MorrowRim_TheAshlands_AshStormBlindedChance * 100), -1);
+            settings.MorrowRim_TheAshlands_AshStormBlindedChance = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormBlindedChance, 0.05f, 1f) * 20) / 20;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormCauseCloggedServo".Translate(), ref settings.MorrowRim_TheAshlands_AshStormCauseCloggedServo);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_AshStormCloggedServoChance".Translate(settings.MorrowRim_TheAshlands_AshStormCloggedServoChance * 100), -1);
+            settings.MorrowRim_TheAshlands_AshStormCloggedServoChance = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormCloggedServoChance, 0.05f, 1f) * 20) / 20;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormDamagePlants".Translate(), ref settings.MorrowRim_TheAshlands_AshStormDamagePlants);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_AshStormAvgPlantDamage".Translate(settings.MorrowRim_TheAshlands_AshStormAvgPlantDamage), -1);
+            settings.MorrowRim_TheAshlands_AshStormAvgPlantDamage = (int)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormAvgPlantDamage, 1, 50));
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormDamageBuildings".Translate(), ref settings.MorrowRim_TheAshlands_AshStormDamageBuildings);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

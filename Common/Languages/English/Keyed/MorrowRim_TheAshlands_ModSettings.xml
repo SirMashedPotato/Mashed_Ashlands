@@ -31,7 +31,7 @@
 	<MorrowRim_TheAshlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMinDistance>
 	<MorrowRim_TheAshlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</MorrowRim_TheAshlands_BiomesMaxDistance>
 	<MorrowRim_TheAshlands_VolcanoScaleWithWorldSize>Scale the number of volcanos that are spawned based on world coverage.</MorrowRim_TheAshlands_VolcanoScaleWithWorldSize>
-	<MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set above will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>
+	<MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</MorrowRim_TheAshlands_VolcanoScaleWithWorldSize_Tooltip>
 	<MorrowRim_TheAshlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</MorrowRim_TheAshlands_BiomeScaleWithWorldSize>
 	<MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</MorrowRim_TheAshlands_BiomeScaleWithWorldSize_Tooltip>
 	<!-- specific biomes -->
@@ -56,9 +56,19 @@
 	<MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize>
 	<MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</MorrowRim_TheAshlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
 	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</MorrowRim_TheAshlands_VolcanoMaxAffectedArea>
-	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The above value is used for a category 5 volcano.</MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>
+	<MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</MorrowRim_TheAshlands_VolcanoMaxAffectedArea_Tooltip>
 	<!-- ==========[Ash storm]==========-->
 	<MorrowRim_TheAshlands_PageAshStorm>Ash storm Settings</MorrowRim_TheAshlands_PageAshStorm>
+	<MorrowRim_TheAshlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</MorrowRim_TheAshlands_AshStormCauseBuildup>
+	<MorrowRim_TheAshlands_AshStormBuildupMult>Multiplier for the amount of ash buildup pawns receive: ({0}%)</MorrowRim_TheAshlands_AshStormBuildupMult>
+	<MorrowRim_TheAshlands_AshStormCauseBlinded>Enable ash storms randomly blinding unprotected pawns.</MorrowRim_TheAshlands_AshStormCauseBlinded>
+	<MorrowRim_TheAshlands_AshStormBlindedChance>The chance a pawn is blinded: ({0}%)</MorrowRim_TheAshlands_AshStormBlindedChance>
+	<MorrowRim_TheAshlands_AshStormCauseCloggedServo>Enable ash storms randomly clogging the servos of mechanical pawns.</MorrowRim_TheAshlands_AshStormCauseCloggedServo>
+	<MorrowRim_TheAshlands_AshStormCloggedServoChance>The chance a pawn receives a clogged servo: ({0}%)</MorrowRim_TheAshlands_AshStormCloggedServoChance>
+	<MorrowRim_TheAshlands_AshStormDamagePlants>Enable ash storms randomly damaging unprotected plants.</MorrowRim_TheAshlands_AshStormDamagePlants>
+	<MorrowRim_TheAshlands_AshStormAvgPlantDamage>The average amount of damage a plant receives: ({0} points)</MorrowRim_TheAshlands_AshStormAvgPlantDamage>
+	<MorrowRim_TheAshlands_AshStormDamageBuildings>Enable ash storms randomly damaging certain buildings.</MorrowRim_TheAshlands_AshStormDamageBuildings>
 	<!-- ==========[Biome]==========-->
 	<MorrowRim_TheAshlands_PageBiome>Biome Settings</MorrowRim_TheAshlands_PageBiome>
+	<!-- disable custom rock types -->
 </LanguageData>
