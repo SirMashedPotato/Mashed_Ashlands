@@ -4,10 +4,6 @@
 		<defName>MorrowRim_AshStorm</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>MorrowRim2.ThoughtWorker_AshStorm</workerClass>
-		<nullifyingGenes>
-			<li MayRequire="Ludeon.RimWorld.Biotech">ToxResist_Total</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">ToxicEnvironmentResistance_Total</li>
-		</nullifyingGenes>
 		<stages>
 			<li>
 				<label>ash storm</label>
