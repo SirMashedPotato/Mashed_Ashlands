@@ -160,7 +160,7 @@ namespace MorrowRim2
 					Thing thing = thingList[i];
 					if (thing is Plant && MorrowRim_ModSettings.AshStormDamagePlants)
 					{
-						if (!PlantImmuneToAsh(thing as Plant, out float ashResistanceValue) && Rand.Value < 0.065f)	//potential setting, probablity
+						if (!PlantImmuneToAsh(thing as Plant, out float ashResistanceValue) && Rand.Value < 0.065f)
 						{
 							DamageInfo info = new DamageInfo
 							{
