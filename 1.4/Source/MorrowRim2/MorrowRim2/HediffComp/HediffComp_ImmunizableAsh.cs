@@ -12,7 +12,7 @@ namespace MorrowRim2
 			{
 				if (!Pawn.Position.Roofed(Pawn.Map))
 				{
-					if (Pawn.Map.gameConditionManager.ActiveConditions.Any((GameCondition x) => x.def.conditionClass == typeof(GameCondition_AshStorm))
+					if (Utility.MapHasAshStorm(Pawn)
 						&& Pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1) < 1f)
 					{
 						num = 0f;

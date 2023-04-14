@@ -67,6 +67,7 @@
 	<!-- ==========[Ash storm]==========-->
 	<MorrowRim_TheAshlands_PageAshStorm>Ash storm Settings</MorrowRim_TheAshlands_PageAshStorm>
 	<MorrowRim_TheAshlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</MorrowRim_TheAshlands_AshStormCauseBuildup>
+	<MorrowRim_TheAshlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in caravans.</MorrowRim_TheAshlands_AshStormAffectsCaravan>
 	<MorrowRim_TheAshlands_AshStormBuildupMult>Multiplier for the amount of ash buildup pawns receive: ({0}%)</MorrowRim_TheAshlands_AshStormBuildupMult>
 	<MorrowRim_TheAshlands_AshStormCauseBlinded>Enable ash storms randomly blinding unprotected pawns.</MorrowRim_TheAshlands_AshStormCauseBlinded>
 	<MorrowRim_TheAshlands_AshStormBlindedChance>The chance a pawn is blinded: ({0}%)</MorrowRim_TheAshlands_AshStormBlindedChance>

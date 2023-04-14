@@ -7,8 +7,7 @@ namespace MorrowRim2
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			//If terrible performance, swap to: p.MapHeld.gameConditionManager.ConditionIsActive(GameConditionDefOf.MorrowRim_AshStorm))
-			if (p.MapHeld != null && !p.PositionHeld.Roofed(p.MapHeld) && p.MapHeld.gameConditionManager.ActiveConditions.Any((GameCondition x) => x.def.conditionClass == typeof(GameCondition_AshStorm)))
+			if (p.MapHeld != null && !p.PositionHeld.Roofed(p.MapHeld) && Utility.MapHasAshStorm(p))
 			{
 				return ThoughtState.ActiveDefault;
 			}

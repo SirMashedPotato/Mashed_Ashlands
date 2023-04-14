@@ -1,6 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
+using RimWorld.Planet;
 
 namespace MorrowRim2
 {
@@ -97,6 +98,23 @@ namespace MorrowRim2
                             if (InAoE(map.Tile, category, ParentVolcano))
                             {
                                 EnforceConditionOn(ref causedConditions, map, currentConditionDef, Props.preventConditionStacking);
+                            }
+                        }
+                        ///Causes ash buildup to pawns in caravans during an ash storm
+                        if (Find.TickManager.TicksGame % CheckInterval == 0)
+                        {
+                            if (MorrowRim_ModSettings.AshStormAffectsCaravan && currentConditionDef.conditionClass == typeof(GameCondition_AshStorm))
+                            {
+                                foreach (Caravan caravan in Find.World.worldObjects.Caravans)
+                                {
+                                    if (InAoE(caravan.Tile, category, ParentVolcano))
+                                    {
+                                        foreach (Pawn p in caravan.PawnsListForReading)
+                                        {
+                                            GameCondition_AshStorm.DoPawnAshDamage(p, false);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -236,5 +254,6 @@ namespace MorrowRim2
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
         private static List<Map> tmpDeadConditionMaps = new List<Map>();
+        public const int CheckInterval = 3451;
     }
 }

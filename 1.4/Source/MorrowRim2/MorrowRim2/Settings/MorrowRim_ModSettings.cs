@@ -52,6 +52,7 @@ namespace MorrowRim2
 
         //ash storm
         public static bool AshStormCauseBuildup => _instance.MorrowRim_TheAshlands_AshStormCauseBuildup;
+        public static bool AshStormAffectsCaravan => _instance.MorrowRim_TheAshlands_AshStormAffectsCaravan;
         public static float AshStormBuildupMult => _instance.MorrowRim_TheAshlands_AshStormBuildupMult;
 
         public static bool AshStormCauseBlinded => _instance.MorrowRim_TheAshlands_AshStormCauseBlinded;
@@ -110,6 +111,7 @@ namespace MorrowRim2
 
         //ash storm
         public bool MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
+        public bool MorrowRim_TheAshlands_AshStormAffectsCaravan = MorrowRim_TheAshlands_AshStormAffectsCaravan_def;
         public float MorrowRim_TheAshlands_AshStormBuildupMult = MorrowRim_TheAshlands_AshStormBuildupMult_def;
 
         public bool MorrowRim_TheAshlands_AshStormCauseBlinded = MorrowRim_TheAshlands_AshStormCauseBlinded_def;
@@ -169,6 +171,7 @@ namespace MorrowRim2
 
         //ash storm
         private static readonly bool MorrowRim_TheAshlands_AshStormCauseBuildup_def = true;
+        private static readonly bool MorrowRim_TheAshlands_AshStormAffectsCaravan_def = true;
         private static readonly float MorrowRim_TheAshlands_AshStormBuildupMult_def = 1f;
 
         private static readonly bool MorrowRim_TheAshlands_AshStormCauseBlinded_def = true;
@@ -234,6 +237,7 @@ namespace MorrowRim2
 
             //ash storm
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBuildup, "MorrowRim_TheAshlands_AshStormCauseBuildup", MorrowRim_TheAshlands_AshStormCauseBuildup_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormAffectsCaravan, "MorrowRim_TheAshlands_AshStormAffectsCaravan", MorrowRim_TheAshlands_AshStormAffectsCaravan_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormBuildupMult, "MorrowRim_TheAshlands_AshStormBuildupMult", MorrowRim_TheAshlands_AshStormBuildupMult_def);
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBlinded, "MorrowRim_TheAshlands_AshStormCauseBlinded", MorrowRim_TheAshlands_AshStormCauseBlinded_def);
@@ -308,6 +312,7 @@ namespace MorrowRim2
         public static void ResetSettings_AshStorm()
         {
             _instance.MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
+            _instance.MorrowRim_TheAshlands_AshStormAffectsCaravan = MorrowRim_TheAshlands_AshStormAffectsCaravan_def;
             _instance.MorrowRim_TheAshlands_AshStormBuildupMult = MorrowRim_TheAshlands_AshStormBuildupMult_def;
 
             _instance.MorrowRim_TheAshlands_AshStormCauseBlinded = MorrowRim_TheAshlands_AshStormCauseBlinded_def;

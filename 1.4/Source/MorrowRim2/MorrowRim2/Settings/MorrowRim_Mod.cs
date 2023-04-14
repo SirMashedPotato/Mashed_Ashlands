@@ -360,6 +360,9 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormCauseBuildup".Translate(), ref settings.MorrowRim_TheAshlands_AshStormCauseBuildup);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormAffectsCaravan".Translate(), ref settings.MorrowRim_TheAshlands_AshStormAffectsCaravan);
+            listing_Standard.Gap();
+
             listing_Standard.Label("MorrowRim_TheAshlands_AshStormBuildupMult".Translate(settings.MorrowRim_TheAshlands_AshStormBuildupMult * 100), -1);
             settings.MorrowRim_TheAshlands_AshStormBuildupMult = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormBuildupMult, 0.05f, 5f) * 10) / 10;
 

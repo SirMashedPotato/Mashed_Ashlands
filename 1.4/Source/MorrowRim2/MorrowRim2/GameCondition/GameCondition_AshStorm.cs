@@ -48,16 +48,14 @@ namespace MorrowRim2
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
 				AshResistanceProperties props = AshResistanceProperties.Get(allPawnsSpawned[i].def);
-                if (props != null && props.treatAsMechanical && MorrowRim_ModSettings.AshStormCauseCloggedServo)
-                {
+				if (props != null && props.treatAsMechanical && MorrowRim_ModSettings.AshStormCauseCloggedServo)
+				{
 					DoMechAshDamage(allPawnsSpawned[i], true);
 				}
 				else
-                {
-                    if (MorrowRim_ModSettings.AshStormCauseBuildup)
-                    {
-						DoPawnAshDamage(allPawnsSpawned[i], true, 1f);
-					}
+				{
+					DoPawnAshDamage(allPawnsSpawned[i], true);
+
 					if ((props == null || !props.immuneToAshBlinding) && MorrowRim_ModSettings.AshStormCauseBlinded)
 					{
 						TryBlindPawn(allPawnsSpawned[i], true);
@@ -70,8 +68,12 @@ namespace MorrowRim2
 		/// Specifically for fleshy pawns
 		/// Causes ash buildup
 		/// </summary>
-		public void DoPawnAshDamage(Pawn p, bool protectedByRoof = true, float extraFactor = 1f)
+		public static void DoPawnAshDamage(Pawn p, bool protectedByRoof = true)
 		{
+            if (!MorrowRim_ModSettings.AshStormCauseBuildup)
+            {
+				return;
+            }
 			if (p.Spawned && protectedByRoof && p.Position.Roofed(p.Map))
 			{
 				return;
@@ -83,7 +85,7 @@ namespace MorrowRim2
 			float num = 0.0230066683f;
 			num *= Mathf.Max(1f - ashResistanceValue);
 			num /= p.BodySize / p.health.capacities.GetLevel(PawnCapacityDefOf.Breathing);
-			num *= extraFactor * MorrowRim_ModSettings.AshStormBuildupMult;
+			num *= MorrowRim_ModSettings.AshStormBuildupMult;
 			if (num != 0f)
 			{
 				float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
@@ -95,7 +97,7 @@ namespace MorrowRim2
 		/// <summary>
 		/// Meant for use as a hook for potential Harmony patches
 		/// </summary>
-		public bool PawnImmuneToAsh(Pawn p, out float ashResistanceValue)
+		public static bool PawnImmuneToAsh(Pawn p, out float ashResistanceValue)
 		{
 			ashResistanceValue = p.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1);
 			return !p.health.capacities.CapableOf(PawnCapacityDefOf.Breathing) || ashResistanceValue >= 1f
