@@ -10,7 +10,7 @@ namespace MorrowRim2
     {
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			if (!base.CanFireNowSub(parms))	//potential setting, disable
+			if (!base.CanFireNowSub(parms) || !MorrowRim_ModSettings.VolcanoEnableCategoryChange)
 			{
 				return false;
 			}

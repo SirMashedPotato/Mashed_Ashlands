@@ -16,14 +16,14 @@ namespace MorrowRim2
 
         public override void FireEvent()
         {
-            if (true)   //potential setting, disable for plant
+            if (MorrowRim_ModSettings.BlightStormBlightPlants)
             {
                 List<Thing> potentialTargets = (from x in map.listerThings.ThingsInGroup(ThingRequestGroup.Plant)
-                               where PlantImmuneToBlight(x as Plant)
+                               where !PlantImmuneToBlight(x as Plant)
                                select x).ToList();
                 if (!potentialTargets.NullOrEmpty())
                 {
-                    int numberBlighted = (int)Rand.Gaussian(3); //potential setting, average number blighted
+                    int numberBlighted = (int)Rand.Gaussian(MorrowRim_ModSettings.BlightStormBlightPlantsNumber);
                     List<Plant> actualTargets = new List<Plant>();
                     if (numberBlighted > potentialTargets.Count())
                     {
@@ -50,8 +50,11 @@ namespace MorrowRim2
         /// </summary>
         public bool PlantImmuneToBlight(Plant p)
         {
-            //potential settings, allow sown, allow wild
-            return !p.Blighted && p.def.plant.Blightable && p.sown && p.LifeStage != PlantLifeStage.Sowing;
+            if (!p.sown && !MorrowRim_ModSettings.BlightStormBlightWildPlants)
+            {
+                return true;
+            }
+            return !p.Blighted && p.def.plant.Blightable && p.LifeStage != PlantLifeStage.Sowing;
         }
 
         public void SendLetter(List<Plant> plants)
@@ -75,7 +78,6 @@ namespace MorrowRim2
 
         public override void WeatherEventTick()
         {
-            throw new System.NotImplementedException();
         }
     }
 }

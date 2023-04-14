@@ -345,6 +345,12 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_VolcanoEnableCategoryChange".Translate(), ref settings.MorrowRim_TheAshlands_VolcanoEnableCategoryChange);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             return listing_Standard;
         }
 
@@ -398,6 +404,30 @@ namespace MorrowRim2
 
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormDamageBuildings".Translate(), ref settings.MorrowRim_TheAshlands_AshStormDamageBuildings);
             listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightAnimals".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightAnimals);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightPlants".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightPlants);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightWildPlants".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightWildPlants);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_BlightStormBlightPlantsNumber".Translate(settings.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber), -1);
+            settings.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber = (int)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber, 1, 50));
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

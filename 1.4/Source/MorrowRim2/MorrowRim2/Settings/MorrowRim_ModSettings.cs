@@ -50,6 +50,8 @@ namespace MorrowRim2
         public static bool VolcanoEnablePermanentConditions => _instance.MorrowRim_TheAshlands_VolcanoEnablePermanentConditions;
         public static bool VolcanoEnableRandomConditions => _instance.MorrowRim_TheAshlands_VolcanoEnableRandomConditions;
 
+        public static bool VolcanoEnableCategoryChange => _instance.MorrowRim_TheAshlands_VolcanoEnableCategoryChange;
+
         //ash storm
         public static bool AshStormCauseBuildup => _instance.MorrowRim_TheAshlands_AshStormCauseBuildup;
         public static bool AshStormAffectsCaravan => _instance.MorrowRim_TheAshlands_AshStormAffectsCaravan;
@@ -65,6 +67,14 @@ namespace MorrowRim2
         public static int AshStormAvgPlantDamage => _instance.MorrowRim_TheAshlands_AshStormAvgPlantDamage;
 
         public static bool AshStormDamageBuildings => _instance.MorrowRim_TheAshlands_AshStormDamageBuildings;
+
+        public static bool BlightStormBlightAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightAnimals;
+        public static bool BlightStormBlightPlayerAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals;
+        public static bool BlightStormBlightNonPlayerAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals;
+
+        public static bool BlightStormBlightPlants => _instance.MorrowRim_TheAshlands_BlightStormBlightPlants;
+        public static bool BlightStormBlightWildPlants => _instance.MorrowRim_TheAshlands_BlightStormBlightWildPlants;
+        public static int BlightStormBlightPlantsNumber => _instance.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber;
 
         /* ==========[VARIABLES]========== */
         //world gen
@@ -108,6 +118,8 @@ namespace MorrowRim2
 
         public bool MorrowRim_TheAshlands_VolcanoEnablePermanentConditions = MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def;
         public bool MorrowRim_TheAshlands_VolcanoEnableRandomConditions = MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def;
+        public bool MorrowRim_TheAshlands_VolcanoEnableCategoryChange = MorrowRim_TheAshlands_VolcanoEnableCategoryChange_def;
+
 
         //ash storm
         public bool MorrowRim_TheAshlands_AshStormCauseBuildup = MorrowRim_TheAshlands_AshStormCauseBuildup_def;
@@ -124,6 +136,14 @@ namespace MorrowRim2
         public int MorrowRim_TheAshlands_AshStormAvgPlantDamage = MorrowRim_TheAshlands_AshStormAvgPlantDamage_def;
 
         public bool MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
+
+        public bool MorrowRim_TheAshlands_BlightStormBlightAnimals = MorrowRim_TheAshlands_BlightStormBlightAnimals_def;
+        public bool MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def;
+        public bool MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals_def;
+
+        public bool MorrowRim_TheAshlands_BlightStormBlightPlants = MorrowRim_TheAshlands_BlightStormBlightPlants_def;
+        public bool MorrowRim_TheAshlands_BlightStormBlightWildPlants = MorrowRim_TheAshlands_BlightStormBlightWildPlants_def;
+        public int MorrowRim_TheAshlands_BlightStormBlightPlantsNumber = MorrowRim_TheAshlands_BlightStormBlightPlantsNumber_def;
 
         /* ==========[DEFAULTS]========== */
         //world gen
@@ -168,6 +188,7 @@ namespace MorrowRim2
         private static readonly bool MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def = true;
         private static readonly bool MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def = true;
 
+        private static readonly bool MorrowRim_TheAshlands_VolcanoEnableCategoryChange_def = true;
 
         //ash storm
         private static readonly bool MorrowRim_TheAshlands_AshStormCauseBuildup_def = true;
@@ -184,6 +205,14 @@ namespace MorrowRim2
         private static readonly int MorrowRim_TheAshlands_AshStormAvgPlantDamage_def = 10;
 
         private static readonly bool MorrowRim_TheAshlands_AshStormDamageBuildings_def = true;
+
+        private static readonly bool MorrowRim_TheAshlands_BlightStormBlightAnimals_def = true;
+        private static readonly bool MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def = false;
+        private static readonly bool MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals_def = false;
+
+        private static readonly bool MorrowRim_TheAshlands_BlightStormBlightPlants_def = true;
+        private static readonly bool MorrowRim_TheAshlands_BlightStormBlightWildPlants_def = false;
+        private static readonly int MorrowRim_TheAshlands_BlightStormBlightPlantsNumber_def = 3;
 
         public MorrowRim_ModSettings()
         {
@@ -235,6 +264,8 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoEnablePermanentConditions, "MorrowRim_TheAshlands_VolcanoEnablePermanentConditions", MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoEnableRandomConditions, "MorrowRim_TheAshlands_VolcanoEnableRandomConditions", MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def);
 
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_VolcanoEnableCategoryChange, "MorrowRim_TheAshlands_VolcanoEnableCategoryChange", MorrowRim_TheAshlands_VolcanoEnableCategoryChange_def);
+
             //ash storm
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormCauseBuildup, "MorrowRim_TheAshlands_AshStormCauseBuildup", MorrowRim_TheAshlands_AshStormCauseBuildup_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormAffectsCaravan, "MorrowRim_TheAshlands_AshStormAffectsCaravan", MorrowRim_TheAshlands_AshStormAffectsCaravan_def);
@@ -250,6 +281,15 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormAvgPlantDamage, "MorrowRim_TheAshlands_AshStormAvgPlantDamage", MorrowRim_TheAshlands_AshStormAvgPlantDamage_def);
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormDamageBuildings, "MorrowRim_TheAshlands_AshStormDamageBuildings", MorrowRim_TheAshlands_AshStormDamageBuildings_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightAnimals, "MorrowRim_TheAshlands_BlightStormBlightAnimals", MorrowRim_TheAshlands_BlightStormBlightAnimals_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals, "MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals", MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals, "MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals", MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightPlants, "MorrowRim_TheAshlands_BlightStormBlightPlants", MorrowRim_TheAshlands_BlightStormBlightPlants_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightWildPlants, "MorrowRim_TheAshlands_BlightStormBlightWildPlants", MorrowRim_TheAshlands_BlightStormBlightWildPlants_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightPlantsNumber, "MorrowRim_TheAshlands_BlightStormBlightPlantsNumber", MorrowRim_TheAshlands_BlightStormBlightPlantsNumber_def);
+
 
             base.ExposeData();
         }
@@ -307,6 +347,8 @@ namespace MorrowRim2
 
             _instance.MorrowRim_TheAshlands_VolcanoEnablePermanentConditions = MorrowRim_TheAshlands_VolcanoEnablePermanentConditions_def;
             _instance.MorrowRim_TheAshlands_VolcanoEnableRandomConditions = MorrowRim_TheAshlands_VolcanoEnableRandomConditions_def;
+
+            _instance.MorrowRim_TheAshlands_VolcanoEnableCategoryChange = MorrowRim_TheAshlands_VolcanoEnableCategoryChange_def;
         }
 
         public static void ResetSettings_AshStorm()
@@ -325,7 +367,15 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_AshStormAvgPlantDamage = MorrowRim_TheAshlands_AshStormAvgPlantDamage_def;
 
             _instance.MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
-        }
+
+            _instance.MorrowRim_TheAshlands_BlightStormBlightAnimals = MorrowRim_TheAshlands_BlightStormBlightAnimals_def;
+            _instance.MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def;
+            _instance.MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals_def;
+
+            _instance.MorrowRim_TheAshlands_BlightStormBlightPlants = MorrowRim_TheAshlands_BlightStormBlightPlants_def;
+            _instance.MorrowRim_TheAshlands_BlightStormBlightWildPlants = MorrowRim_TheAshlands_BlightStormBlightWildPlants_def;
+            _instance.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber = MorrowRim_TheAshlands_BlightStormBlightPlantsNumber_def;
+    }
 
         public static void ResetSettings_Biome()
         {

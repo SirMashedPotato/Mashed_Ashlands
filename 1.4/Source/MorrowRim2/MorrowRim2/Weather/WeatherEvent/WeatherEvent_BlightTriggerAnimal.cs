@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace MorrowRim2
@@ -13,7 +14,7 @@ namespace MorrowRim2
 
         public override void FireEvent()
         {
-            if (true)   //potential setting, disable for animal
+            if (MorrowRim_ModSettings.BlightStormBlightAnimals)
             {
                 List<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
                 List<Pawn> validTargets = new List<Pawn>();
@@ -39,7 +40,17 @@ namespace MorrowRim2
 		/// </summary>
 		public bool PawnImmuneToBlight(Pawn p)
         {
-            //potential settings, target animals with factions, target animals of player faction
+            if (p.Faction != null)
+            {
+                if (p.Faction == Faction.OfPlayerSilentFail && !MorrowRim_ModSettings.BlightStormBlightPlayerAnimals)
+                {
+                    return true;
+                }
+                if (p.Faction != Faction.OfPlayerSilentFail && !MorrowRim_ModSettings.BlightStormBlightNonPlayerAnimals)
+                {
+                    return true;
+                }
+            }
 
             return false;
         }
