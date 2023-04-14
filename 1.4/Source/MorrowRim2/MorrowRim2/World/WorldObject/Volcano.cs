@@ -80,7 +80,7 @@ namespace MorrowRim2
             if (category > 0)
             {
                 int maxDistance = MorrowRim_ModSettings.VolcanoMaxAffectedArea;
-                if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+                if (MorrowRim_ModSettings.VolcanoAffectedAreaScaleWithWorldSize)
                 {
                     maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
                     if (maxDistance < 1)
