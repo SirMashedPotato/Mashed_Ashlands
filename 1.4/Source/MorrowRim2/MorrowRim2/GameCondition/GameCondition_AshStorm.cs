@@ -21,10 +21,6 @@ namespace MorrowRim2
 			LessonAutoActivator.TeachOpportunity(RimWorld.ConceptDefOf.ForbiddingDoors, OpportunityType.Critical);
 			LessonAutoActivator.TeachOpportunity(RimWorld.ConceptDefOf.AllowedAreas, OpportunityType.Critical);
 			//protecting against ash storms concept TODO
-			if (def.weatherDef != null)
-			{
-				weather = def.weatherDef;
-			}
 		}
 
 		public override void GameConditionTick()
@@ -237,21 +233,23 @@ namespace MorrowRim2
 			return overlays;
 		}
 
-		public override void ExposeData()
-		{
-			base.ExposeData();
-            if (weather != null)
-            {
-				Scribe_Defs.Look(ref weather, "weather");
-			}
-		}
-
 		public override WeatherDef ForcedWeather()
 		{
-			return weather;
+			return def.weatherDef;
 		}
 
-		public WeatherDef weather = null;
+        public override void End()
+        {
+            if (ForcedWeather() != null)
+            {
+				foreach (Map map in AffectedMaps)
+				{
+					map.weatherManager.TransitionTo(WeatherDefOf.Clear);
+				}
+			}
+            base.End();
+        }
+
 		private const float MaxSkyLerpFactor = 0.5f;
 		private const float SkyGlow = 0.55f;
 		private SkyColorSet AshStormColours = new SkyColorSet(new ColorInt(204, 204, 204).ToColor, new ColorInt(234, 234, 234).ToColor, new Color(1f, 1f, 1f), SkyGlow);

@@ -149,10 +149,7 @@ namespace MorrowRim2
                 causedConditions.RemoveAll((KeyValuePair<Map, GameCondition> x) => x.Value == null);
             }
 
-            if (currentConditionDef != null)
-            {
-                Scribe_Defs.Look(ref currentConditionDef, "conditionDef");
-            }
+            Scribe_Defs.Look(ref currentConditionDef, "conditionDef");
             Scribe_Values.Look(ref category, "category", 1);
             Scribe_Values.Look(ref conditionTicksLeft, "conditionTicksLeft", 0);
             Scribe_Values.Look(ref graceTicksLeft, "graceTicksLeft", 0);
@@ -227,7 +224,7 @@ namespace MorrowRim2
             base.PostDestroy();
         }
 
-        private GameConditionDef currentConditionDef = null;
+        private GameConditionDef currentConditionDef;
         private int duration = 0;
         private int gracePeriodAfter = 0;
         private int category = 1;

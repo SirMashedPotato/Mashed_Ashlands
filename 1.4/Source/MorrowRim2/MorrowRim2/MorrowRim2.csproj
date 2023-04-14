@@ -87,6 +87,7 @@
     <Compile Include="DefModExtension\RockProperties.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
@@ -108,6 +109,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
+    <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
+    <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
     <Compile Include="World\IncidentWorker\IncidentWorker_VolcanoCategoryChange.cs" />

@@ -13,5 +13,6 @@ namespace MorrowRim2
         public static HediffDef MorrowRim_AshBuildup;
         public static HediffDef MorrowRim_AshCloggedServo;
         public static HediffDef MorrowRim_AshInEyes;
+        public static HediffDef MorrowRim_AshBlight;
     }
 }

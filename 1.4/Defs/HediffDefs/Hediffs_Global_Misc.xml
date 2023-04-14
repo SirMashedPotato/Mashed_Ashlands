@@ -122,4 +122,72 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<!-- ==========[MorrowRim_AshBlight]==========-->
+	<HediffDef>
+		<defName>MorrowRim_AshBlight</defName>
+		<label>ash blight</label>
+		<description>One of the many forms of Blight caused by blighted ash. This particular one drives infected animals mad, causing them to attack anything nearby. While the disease can be cured, the lack of self preservation caused by it will likely result in the creatures death.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<comps>
+			 <li Class="HediffCompProperties_KillAfterDays">
+				<days>30</days>
+			</li>
+			<li Class="HediffCompProperties_CauseMentalState">
+				<animalMentalState>MorrowRim_BlightedPermanent</animalMentalState>
+				<humanMentalState>Berserk</humanMentalState>
+				<letterDef>ThreatSmall</letterDef>
+				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>0.2</offset>
+				  </li>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>0.2</offset>
+				  </li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[MorrowRim_CureAshBlight]==========-->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>MorrowRim_CureAshBlight</defName>
+		<label>cure ash blight</label>
+		<description>This special medical operation cures ash blight.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing ash blight.</jobString>
+		<workAmount>4500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>MorrowRim_AshBlight</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s ash blight.</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<!-- TODO potentially requires a special thing to cure it -->
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
 </Defs>
