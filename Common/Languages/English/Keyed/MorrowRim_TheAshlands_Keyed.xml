@@ -7,6 +7,7 @@
 	<MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel>Category {0} incident</MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel>
 	<MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius>{0} tiles</MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius>
 	<MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription>The radius around the volcano affected by a category {0} incident.</MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription>
+	<MorrowRim_TheAshlands_VolcanoConditionWeight>{0} weight</MorrowRim_TheAshlands_VolcanoConditionWeight>
 	<MorrowRim_TheAshlands_VolcanoPermanentCondition>Causes permanent {0} in radius.</MorrowRim_TheAshlands_VolcanoPermanentCondition>
 	<MorrowRim_TheAshlands_VolcanoTriggeredCondition>Currently causing a category {0} {1}</MorrowRim_TheAshlands_VolcanoTriggeredCondition>
 	<MorrowRim_TheAshlands_VolcanoConditionLetter_Label>{0} (Category {1} {2})</MorrowRim_TheAshlands_VolcanoConditionLetter_Label>

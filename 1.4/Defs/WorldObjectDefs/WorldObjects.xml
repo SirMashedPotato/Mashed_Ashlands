@@ -265,7 +265,7 @@
 						<conditionDef>MorrowRim_AshStorm</conditionDef>
 						<duration>10000~60000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
-						<weight>5</weight>
+						<weight>4</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
@@ -275,7 +275,7 @@
 						<conditionDef>MorrowRim_AshStorm_Blighted</conditionDef>
 						<duration>5000~40000</duration>
 						<gracePeriodAfter>50000~100000</gracePeriodAfter>
-						<weight>2</weight>
+						<weight>4</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>

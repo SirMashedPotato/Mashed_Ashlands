@@ -5,4 +5,9 @@
 		<label>potential incident radius</label>
 		<displayOrder>40</displayOrder>
 	</StatCategoryDef>
+	<StatCategoryDef>
+		<defName>MorrowRim_VolcanoPotentialIncidents</defName>
+		<label>potential incidents</label>
+		<displayOrder>41</displayOrder>
+	</StatCategoryDef>
 </Defs>

@@ -102,20 +102,32 @@ namespace MorrowRim2
         {
             get
             {
-                WorldObjectComp_VolcanoDetails compDetails = GetComponent<WorldObjectComp_VolcanoDetails>();
-                if (compDetails != null && !compDetails.Props.extinct)
+                WorldObjectComp_VolcanoDetails compDetailsRadius = GetComponent<WorldObjectComp_VolcanoDetails>();
+                if (compDetailsRadius != null && !compDetailsRadius.Props.extinct)
                 {
-                    int categoryIndex = compDetails.Props.categoryWeights.FindIndex(x => x.category == Category);
+                    int categoryIndex = compDetailsRadius.Props.categoryWeights.FindIndex(x => x.category == Category);
                     for (int i = 0; i <= categoryIndex; i++)
                     {
-                        int category = compDetails.Props.categoryWeights[i].category;
+                        int category = compDetailsRadius.Props.categoryWeights[i].category;
                         yield return new StatDrawEntry(StatCategoryDefOf.MorrowRim_VolcanoIncidentRadius, "MorrowRim_TheAshlands_VolcanoRadiusCategoryLabel".Translate(category),
                             "MorrowRim_TheAshlands_VolcanoRadiusCategoryRadius".Translate(EffectRadiusFor(category)), 
                             "MorrowRim_TheAshlands_VolcanoRadiusCategoryDescription".Translate(category), 1, null, null, false);
                     }
                 }
 
-                //return base.SpecialDisplayStats;
+                WorldObjectComp_RandomConditionCauser compDetailsConditons = GetComponent<WorldObjectComp_RandomConditionCauser>();
+                if (compDetailsConditons != null && !compDetailsConditons.Props.potentialConditions.NullOrEmpty())
+                {
+                    foreach(PotentialConditions condition in compDetailsConditons.Props.potentialConditions) 
+                    {
+                        if (condition.conditionDef != null)
+                        {
+                            yield return new StatDrawEntry(StatCategoryDefOf.MorrowRim_VolcanoPotentialIncidents, condition.conditionDef.label, 
+                                "MorrowRim_TheAshlands_VolcanoConditionWeight".Translate(condition.weight.ToString()), 
+                                condition.conditionDef.description, 1, null, null, false);
+                        }
+                    }
+                }
             }
         }
 
