@@ -39,4 +39,11 @@
 		<preventRain>true</preventRain>
 		<weatherDef>MorrowRim_VolcanicWindThunder</weatherDef>
 	</GameConditionDef>
+	<!-- ==========[MorrowRim_IntenseVolcanicHeat]==========-->
+	<GameConditionDef ParentName="MorrowRim_VolcanicHeatBase">
+		<defName>MorrowRim_VolcanicHeatIntense</defName>
+		<label>intense volcanic heat</label>
+		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
+		<endMessage>The air begins to cool.</endMessage>
+	</GameConditionDef>
 </Defs>

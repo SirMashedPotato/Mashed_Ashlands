@@ -131,6 +131,11 @@ namespace MorrowRim2
             }
         }
 
+        public override bool AllMatchingObjectsOnScreenMatchesWith(WorldObject other)
+        {
+            return def == other.def;
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();

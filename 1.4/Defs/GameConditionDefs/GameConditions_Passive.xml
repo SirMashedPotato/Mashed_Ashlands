@@ -14,7 +14,7 @@
 		</exclusiveConditions>
 	</GameConditionDef>
 	<!-- ==========[MorrowRim_VolcanicHeat]==========-->
-	<GameConditionDef>
+	<GameConditionDef Name="MorrowRim_VolcanicHeatBase">
 		<defName>MorrowRim_VolcanicHeat</defName>
 		<conditionClass>MorrowRim2.GameCondition_VolcanicHeat</conditionClass>
 		<label>volcanic heat</label>

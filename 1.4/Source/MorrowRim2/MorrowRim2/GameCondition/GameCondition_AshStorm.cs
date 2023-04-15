@@ -194,7 +194,6 @@ namespace MorrowRim2
 		{
 			ashResistanceValue = p.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1);
 			return ashResistanceValue >= 1f;
-
 		}
 
 		public override void GameConditionDraw(Map map)

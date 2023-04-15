@@ -5,7 +5,7 @@ using Verse.AI;
 
 namespace MorrowRim2
 {
-    public static class AshStorm
+    public static class UnsafeConditions
     {
         /// <summary>
         /// Disables meditation outside during an ash storm
@@ -21,7 +21,7 @@ namespace MorrowRim2
                 {
                     if(!cell.Roofed(map))
                     {
-                        __result = !Utility.MapHasAshStorm(map);
+                        __result = !Utility.MapHasUnsafeCondition(map);
                     }
                 }
             }
@@ -42,7 +42,7 @@ namespace MorrowRim2
                     float resistance = pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance);
                     if (resistance < 1f)
                     {
-                        __result = Utility.MapHasAshStorm(pawn);
+                        __result = Utility.MapHasUnsafeCondition(pawn);
                     }
                 }
             }
@@ -63,7 +63,7 @@ namespace MorrowRim2
                     float resistance = pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance);
                     if (resistance < 1f)
                     {
-                        __result = !Utility.MapHasAshStorm(pawn);
+                        __result = !Utility.MapHasUnsafeCondition(pawn);
                     }
                 }
             }
@@ -84,7 +84,7 @@ namespace MorrowRim2
                 {
                     if (parms.target is Map map)
                     {
-                        __result = !Utility.MapHasAshStorm(map);
+                        __result = !Utility.MapHasUnsafeCondition(map);
                     }
                 }
             }

@@ -1,11 +1,21 @@
 ﻿using Verse;
 using RimWorld;
-using RimWorld.Planet;
 
 namespace MorrowRim2
 {
     public static class Utility
     {
+
+        public static bool MapHasUnsafeCondition(Thing thing)
+        {
+            return MapHasAshStorm(thing.MapHeld);
+        }
+
+        public static bool MapHasUnsafeCondition(Map map)
+        {
+            return MapHasAshStorm(map);
+        }
+
         public static bool MapHasAshStorm(Thing thing)
         {
             return MapHasAshStorm(thing.MapHeld);

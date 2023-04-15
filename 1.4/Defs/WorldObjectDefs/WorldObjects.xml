@@ -192,6 +192,16 @@
 						<countAsIncident>true</countAsIncident>
 						<randomCategory>true</randomCategory>
 					</li>
+					<li>
+						<conditionDef>MorrowRim_VolcanicHeatIntense</conditionDef>
+						<duration>10000~100000</duration>
+						<gracePeriodAfter>60000~200000</gracePeriodAfter>
+						<weight>3</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
 				</potentialConditions>
 			</li>
 		</comps>

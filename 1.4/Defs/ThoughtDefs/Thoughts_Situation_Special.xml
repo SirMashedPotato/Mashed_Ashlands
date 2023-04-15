@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_AshStorm]==========-->
 	<ThoughtDef>
 		<defName>MorrowRim_AshStorm</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>MorrowRim2.ThoughtWorker_AshStorm</workerClass>
 		<stages>
 			<li>
-				<label>ash storm</label>
+				<label>outside in ash storm</label>
 				<description>There's ash getting everywhere!</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
