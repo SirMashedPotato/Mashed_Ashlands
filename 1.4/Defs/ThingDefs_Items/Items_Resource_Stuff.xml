@@ -6,7 +6,7 @@
 		<label>parasol wood</label>
 		<description>Wood from a parasol mushroom tree. Useful for building structures and weapons. Softer than regular wood, though comparatively more fire resistant.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/WoodLog</texPath>
+			<texPath>Things/Item/Resource/MorrowRim_ParasolWoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-20</equippedAngleOffset>
