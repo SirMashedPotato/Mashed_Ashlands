@@ -13,7 +13,7 @@
 		</graphicData>
 		<skyfaller>
 			<shadowSize>(3, 3)</shadowSize>
-			<explosionRadius>4</explosionRadius>
+			<explosionRadius>2</explosionRadius>
 			<explosionDamage>Flame</explosionDamage>
 			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
 			<speed>1.2</speed>

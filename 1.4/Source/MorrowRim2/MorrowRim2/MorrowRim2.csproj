@@ -102,6 +102,8 @@
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
+    <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />

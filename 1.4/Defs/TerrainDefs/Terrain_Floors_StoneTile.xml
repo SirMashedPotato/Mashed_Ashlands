@@ -22,7 +22,7 @@
 	<TerrainDef ParentName="TileStoneBase">
 		<defName>MorrowRim_TileBasaltScorched</defName>
 		<label>scorched basalt tile</label>
-		<color>(102,96,98)</color>
+		<color>(73,70,71)</color>
 		<costList>
 			<MorrowRim_BlocksBasaltScorched>4</MorrowRim_BlocksBasaltScorched>
 		</costList>
@@ -31,7 +31,7 @@
 	<TerrainDef ParentName="FlagstoneBase">
 		<defName>MorrowRim_FlagstoneBasaltScorched</defName>
 		<label>scorched basalt flagstone</label>
-		<color>(102,96,98)</color>
+		<color>(73,70,71)</color>
 		<costList>
 			<MorrowRim_BlocksBasaltScorched>4</MorrowRim_BlocksBasaltScorched>
 		</costList>
