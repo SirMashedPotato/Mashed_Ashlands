@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_ParasolWoodPlankFloor]==========-->
+	<TerrainDef ParentName="FloorBase">
+		<defName>MorrowRim_ParasolWoodPlankFloor</defName>
+		<label>parasol wood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(146,137,89)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>2000</uiOrder>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_KreshCarpet]==========-->
+	<TerrainDef ParentName="FloorBase">
+		<defName>MorrowRim_KreshCarpet</defName>
+		<label>kresh carpet</label>
+		<description>Coarse carpet, made from kresh fiber.</description>
+		<color>(108,98,68)</color>
+		<texturePath>Terrain/Surfaces/Carpet</texturePath>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		<burnedDef>BurnedCarpet</burnedDef>
+		<costList>
+			<MorrowRim_KreshCloth>7</MorrowRim_KreshCloth>
+		</costList>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Flammability>0.22</Flammability>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+		<renderPrecedence>200</renderPrecedence>
+	</TerrainDef>
+</Defs>
