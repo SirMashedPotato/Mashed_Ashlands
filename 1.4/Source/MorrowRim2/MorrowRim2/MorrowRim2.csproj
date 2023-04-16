@@ -90,7 +90,9 @@
     <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
+    <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />

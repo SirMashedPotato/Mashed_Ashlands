@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_VolcanicDebris]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>MorrowRim_VolcanicDebris</defName>
+		<thingClass>Mineable</thingClass>
+		<label>volcanic debris</label>
+		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
+		<graphicData>
+			<texPath>Things/Building/Natural/MorrowRim_VolcanicDebris</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>None</linkType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<mineable>true</mineable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
+				<fleckDef>Owl_SmokeHeavy</fleckDef>
+				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

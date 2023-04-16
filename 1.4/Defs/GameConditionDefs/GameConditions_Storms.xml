@@ -12,6 +12,10 @@
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<weatherDef>MorrowRim_VolcanicWind</weatherDef>
+		<exclusiveConditions>
+			<li>MorrowRim_AshStorm_Blighted</li>
+			<li>MorrowRim_AshStorm_Metallic</li>
+		</exclusiveConditions>
 	</GameConditionDef>
 	<!-- ==========[MorrowRim_AshStorm_Blighted]==========-->
 	<GameConditionDef>
@@ -24,7 +28,10 @@
 		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
-		<weatherDef>MorrowRim_VolcanicWindBlight</weatherDef>
+		<exclusiveConditions>
+			<li>MorrowRim_AshStorm</li>
+			<li>MorrowRim_AshStorm_Metallic</li>
+		</exclusiveConditions>
 	</GameConditionDef>
 	<!-- ==========[MorrowRim_AshStorm_Metallic]==========-->
 	<GameConditionDef>
@@ -38,12 +45,9 @@
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<weatherDef>MorrowRim_VolcanicWindThunder</weatherDef>
-	</GameConditionDef>
-	<!-- ==========[MorrowRim_IntenseVolcanicHeat]==========-->
-	<GameConditionDef ParentName="MorrowRim_VolcanicHeatBase">
-		<defName>MorrowRim_VolcanicHeatIntense</defName>
-		<label>intense volcanic heat</label>
-		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
-		<endMessage>The air begins to cool.</endMessage>
+		<exclusiveConditions>
+			<li>MorrowRim_AshStorm</li>
+			<li>MorrowRim_AshStorm_Blighted</li>
+		</exclusiveConditions>
 	</GameConditionDef>
 </Defs>

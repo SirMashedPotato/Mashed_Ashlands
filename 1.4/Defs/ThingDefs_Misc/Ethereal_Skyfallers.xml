@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_VolcanicDebrisIncoming]==========-->
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>MorrowRim_VolcanicDebrisIncoming</defName>
+		<label>volcanic debris (incoming)</label>
+		<size>(2, 2)</size>
+		<graphicData>
+			<texPath>Things/Skyfaller/Meteorite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(10, 10)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3, 3)</shadowSize>
+			<explosionRadius>4</explosionRadius>
+			<explosionDamage>Flame</explosionDamage>
+			<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+			<speed>1.2</speed>
+		</skyfaller>
+	</ThingDef>
+</Defs>
