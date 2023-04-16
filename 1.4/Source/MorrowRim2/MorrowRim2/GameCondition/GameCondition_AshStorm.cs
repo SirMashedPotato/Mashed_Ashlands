@@ -100,8 +100,7 @@ namespace MorrowRim2
 		public static bool PawnImmuneToAsh(Pawn p, out float ashResistanceValue)
 		{
 			ashResistanceValue = p.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1);
-			return !p.health.capacities.CapableOf(PawnCapacityDefOf.Breathing) || ashResistanceValue >= 1f
-				|| (p.apparel != null && p.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead));
+			return !p.health.capacities.CapableOf(PawnCapacityDefOf.Breathing) || ashResistanceValue >= 1f;
 		}
 
 		/// <summary>

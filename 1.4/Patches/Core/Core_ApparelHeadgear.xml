@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_WarVeil"]/equippedStatOffsets</xpath>
+		<value>
+			<MorrowRim_AshResistance>0.25</MorrowRim_AshResistance>
+		</value>
+	</Operation>
+</Patch>

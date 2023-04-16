@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_GasMask"]/equippedStatOffsets</xpath>
+		<value>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_ClothMask"]/equippedStatOffsets</xpath>
+		<value>
+			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+		</value>
+	</Operation>
+</Patch>

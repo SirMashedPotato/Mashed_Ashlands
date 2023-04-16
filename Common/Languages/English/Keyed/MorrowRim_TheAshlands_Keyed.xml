@@ -15,4 +15,6 @@
 	<!-- Incidents -->
 	<MorrowRim_TheAshlands_BlightedPlants_Label>plant blight</MorrowRim_TheAshlands_BlightedPlants_Label>
 	<MorrowRim_TheAshlands_BlightdPlants_Description>Several plants have become blighted due to the blight storm. The blight may spread if not dealt with quickly.\n\nThe following plants have become blighted:\n\n</MorrowRim_TheAshlands_BlightdPlants_Description>
+	<!-- ==========[Stat parts]==========-->
+	<MorrowRim_TheAshlands_WearingHeadGear>Wearing {0}</MorrowRim_TheAshlands_WearingHeadGear>
 </LanguageData>
