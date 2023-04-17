@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_Ash</defName>
+		<label>ash</label>
+		<graphicData>
+			<texPath>Things/Filth/Grainy</texPath>
+			<color>(71,71,71,97)</color>
+		</graphicData>
+		<filth>
+			<placementMask>
+				<li>Terrain</li>
+			</placementMask>
+			<disappearsInDays>45~50</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>
