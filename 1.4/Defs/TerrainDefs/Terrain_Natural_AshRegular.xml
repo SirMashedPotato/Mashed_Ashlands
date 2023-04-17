@@ -41,7 +41,7 @@
 		<defName>MorrowRim_AshSoil</defName>
 		<label>ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSoil</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSoilPolluted</pollutedTexturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_MossyAshSoil]==========-->
@@ -49,7 +49,7 @@
 		<defName>MorrowRim_MossyAshSoil</defName>
 		<label>moss-covered ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_MossyAshSoil</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_MossyAshSoilPolluted</pollutedTexturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshSoil]==========-->
@@ -57,7 +57,7 @@
 		<defName>MorrowRim_RichAshSoil</defName>
 		<label>rich ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSoil</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSoilPolluted</pollutedTexturePath>
 		<fertility>1.5</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshGravel]==========-->
@@ -65,8 +65,7 @@
 		<defName>MorrowRim_AshGravel</defName>
 		<label>stony ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshGravel</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
-		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshGravelPolluted</pollutedTexturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.8</fertility>
 	</TerrainDef>
@@ -75,7 +74,7 @@
 		<defName>MorrowRim_AshSand</defName>
 		<label>sandy ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSand</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSandPolluted</pollutedTexturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.4</fertility>
 	</TerrainDef>
@@ -84,6 +83,7 @@
 		<defName>MorrowRim_PackedAsh</defName>
 		<label>packed ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_PackedAsh</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_PackedAshPolluted</pollutedTexturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>360</renderPrecedence>
 		<pathCost>1</pathCost>
@@ -99,8 +99,8 @@
 			<li>Heavy</li>
 			<li>Diggable</li>
 		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0.0</fertility>
+		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
+		<fertility>0</fertility>
 		<tags>
 			<li>Road</li>
 		</tags>

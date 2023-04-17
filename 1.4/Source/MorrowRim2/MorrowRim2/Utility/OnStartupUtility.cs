@@ -53,15 +53,15 @@ namespace MorrowRim2
                 RockProperties props = RockProperties.Get(thingDef);
                 if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
                 }
                 if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
                 }
                 if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
                 }
             }
         }
@@ -69,12 +69,17 @@ namespace MorrowRim2
         /// <summary>
         /// Need to reset graphic, and call postLoad, to update the terrain texture
         /// </summary>
-        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, string scatterType = null)
+        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, bool applyToPolluted, string scatterType = null)
         {
             def.texturePath = newTexPath;
             if (scatterType != null)
             {
                 def.scatterType = scatterType;
+            }
+            if (ModsConfig.BiotechActive && applyToPolluted)
+            {
+                def.pollutedTexturePath = newTexPath;
+                def.graphicPolluted = BaseContent.BadGraphic;
             }
             def.graphic = BaseContent.BadGraphic;
             def.PostLoad();

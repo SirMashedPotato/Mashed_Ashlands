@@ -9,6 +9,7 @@
 				<roughHewnTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltRoughHewn</roughHewnTexPathReplacer>
 				<smoothTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltSmooth</smoothTexPathReplacer>
 				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
+				<applyToPolluted>true</applyToPolluted>
 			</li>
 		</modExtensions>
 		<graphicData>

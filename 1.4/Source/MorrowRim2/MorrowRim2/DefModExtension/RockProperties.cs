@@ -9,6 +9,7 @@ namespace MorrowRim2
         public string roughHewnTexPathReplacer;
         public string smoothTexPathReplacer;
         public string scatterTypeReplacer = null;
+        public bool applyToPolluted = false;
 
         public static RockProperties Get(Def def)
         {
