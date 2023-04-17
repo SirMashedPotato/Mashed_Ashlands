@@ -18,6 +18,7 @@
 			<li>GrowSoil</li>
 			<li>Diggable</li>
 			<li>MorrowRim_AshCastle</li>
+			<li>MorrowRim_PackableAsh</li>
 		</affordances>
 		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
 		<takeFootprints>True</takeFootprints>
@@ -86,10 +87,18 @@
 		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_PackedAshPolluted</pollutedTexturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>360</renderPrecedence>
+		<description>Packed ash, making it comparatively less arduous to trek across.</description>
+		<layerable>true</layerable>
+		<designationCategory>Floors</designationCategory>
+		<constructEffect>ConstructDirt</constructEffect>
+		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
 		<pathCost>1</pathCost>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<statBases>
+			<WorkToBuild>120</WorkToBuild>
+			<MarketValue>0</MarketValue>
 			<Beauty>-1</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>
 		<scatterType>Rocky</scatterType>
