@@ -100,7 +100,7 @@
 						<max>0.80</max>
 					</li>
 					<li>
-						<terrain>Mud</terrain>
+						<terrain>MorrowRim_AshMud</terrain>
 						<min>0.80</min>
 						<max>0.93</max>
 					</li>

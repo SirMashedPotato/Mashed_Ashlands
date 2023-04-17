@@ -53,6 +53,14 @@
 		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_MossyAshSoilPolluted</pollutedTexturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
+	<!-- ==========[MorrowRim_GrazelandSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBase">
+		<defName>MorrowRim_GrazelandSoil</defName>
+		<label>grazeland soil</label>
+		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoilPolluted</pollutedTexturePath>
+		<fertility>1.1</fertility>
+	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshSoil]==========-->
 	<TerrainDef ParentName="MorrowRim_AshBase">
 		<defName>MorrowRim_RichAshSoil</defName>
@@ -113,5 +121,41 @@
 		<tags>
 			<li>Road</li>
 		</tags>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshMud]==========-->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_AshMud</defName>
+		<label>waterlogged ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshMud</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshMudPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>330</renderPrecedence>
+		<pathCost>14</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+		<driesTo>MorrowRim_RichAshSoil</driesTo>
+		<tools>
+			<li>
+				<label>mud</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>MudInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
 	</TerrainDef>
 </Defs>
