@@ -90,6 +90,7 @@
     <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
@@ -100,9 +101,12 @@
     <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />
     <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
+    <Compile Include="Jobs\JobDriver\JobDriver_BuildAshCastle.cs" />
+    <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
+    <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
@@ -138,7 +142,9 @@
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Jobs\JobGiver\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

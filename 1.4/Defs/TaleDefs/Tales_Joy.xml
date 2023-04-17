@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TaleDef>
+		<defName>MorrowRim_BuiltAshCastle</defName>
+		<label>built ashcano</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>1</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] building an ashcano</li>
+				<li>tale_noun->[PAWN_nameDef] playing in the ash</li>
+				<li>image->[PAWN_nameFull] forming an ashpile [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] forming a giant pile of ash on the ground [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] lying down in the snow [circumstance_group]</li>
+				<li>circumstance_phrase->while enveloped in [Quantity_adjphrase] parkas</li>
+				<li>circumstance_phrase->while obscured in light ash fall</li>
+				<li>circumstance_phrase->while [PAWN_possessive] friends build a volcano</li>
+				<li>desc_sentence->A [Color] ash clouds the sky in the background.</li>
+				<li>desc_sentence->In the distance, a [Community] is covered with ash.</li>
+				<li>desc_sentence->An ash-covered [TerrainFeature] can be seen far away.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+</Defs>

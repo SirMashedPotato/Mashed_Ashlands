@@ -13,5 +13,6 @@ namespace MorrowRim2
 
         public static ThingDef MorrowRim_VolcanicDebris;
         public static ThingDef MorrowRim_VolcanicDebrisIncoming;
+        public static ThingDef MorrowRim_AshCastle;
     }
 }

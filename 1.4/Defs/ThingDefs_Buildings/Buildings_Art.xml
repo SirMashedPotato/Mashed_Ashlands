@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AshCastle]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>MorrowRim_AshCastle</defName>
+		<label>ashcano</label>
+		<description>A pile of ash, shaped into a small volcano. People make these for the fun of it.</description>
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<useHitPoints>true</useHitPoints>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/MorrowRim_AshCastle</texPath>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Rare</tickerType>
+		<drawDamagedOverlay>false</drawDamagedOverlay>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<MarketValue>0</MarketValue>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>MorrowRim2.Comp_AshCastleCollapser</compClass>
+			</li>
+		</comps>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<repairable>false</repairable>
+			<isInert>true</isInert>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+	</ThingDef>
+</Defs>
