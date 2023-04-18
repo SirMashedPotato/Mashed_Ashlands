@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_Plant_AshYam]==========-->
-	<ThingDef Name="MorrowRim_Plant_AshYamBase" ParentName="PlantBase">
+	<ThingDef Name="MorrowRim_Plant_AshYamBase" ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_AshYam</defName>
 		<label>ash yam plant</label>
 		<description>A highly nutritious tuber. Clusters of wild ash yams are a common sight in ashland regions, and thanks to their innate resistance to ash storms are very often farmed by those that settle there. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
@@ -10,6 +10,9 @@
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -19,23 +22,15 @@
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_AshYamPlant</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
 		<pathCost>14</pathCost>
-		<ingestible/>
 		<plant>
 			<immatureGraphicPath>Things/Plant/MorrowRim_AshYamPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>MorrowRim_RawAshYams</harvestedThingDef>
 			<harvestYield>8</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
@@ -45,7 +40,6 @@
 			<purpose>Food</purpose>
 			<maxMeshCount>4</maxMeshCount>
 			<humanFoodPlant>true</humanFoodPlant>
-			<!-- not sure this is actually working for me -->
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>

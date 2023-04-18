@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_MuckSponge]==========-->
+	<ThingDef Name="MorrowRim_Plant_MuckSpongeBase" ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_MuckSponge</defName>
+		<label>muck sponge plant</label>
+		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<allowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_MuckSpongePlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/MorrowRim_MuckSpongePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawMuck</harvestedThingDef>
+			<harvestYield>16</harvestYield>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>10</sowMinSkill>
+			<topWindExposure>0</topWindExposure>
+			<growDays>13</growDays>
+			<visualSizeRange>1.8~2.2</visualSizeRange>
+			<purpose>Health</purpose>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+</Defs>

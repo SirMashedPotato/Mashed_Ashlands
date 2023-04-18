@@ -96,7 +96,7 @@
 				<thresholds>
 					<li>
 						<terrain>MorrowRim_RichAshSoil</terrain>
-						<min>0.70</min>
+						<min>0.68</min>
 						<max>0.76</max>
 					</li>
 					<li>
@@ -135,12 +135,14 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Plant_Grass>8.0</Plant_Grass>
-			<Plant_TallGrass>8.0</Plant_TallGrass>
+			<Plant_Grass>8</Plant_Grass>
+			<MorrowRim_Plant_AshlandGrass>12</MorrowRim_Plant_AshlandGrass>
+			<MorrowRim_Plant_AshlandFungus>1</MorrowRim_Plant_AshlandFungus>
 			<Plant_Moss>0.4</Plant_Moss>
 			<!-- Nutrition plants -->
 			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
 			<!-- Resource plants -->
+			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
 			<!-- Aesthetic plants -->
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
 			<!-- Trees -->	

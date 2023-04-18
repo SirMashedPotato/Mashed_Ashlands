@@ -8,7 +8,6 @@ namespace MorrowRim2
     /// <summary>
     /// Forces plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
     /// </summary>
-    /* Currently completely fucks map gen, go back to how it was in MorrowRim
     [HarmonyPatch(typeof(WildPlantSpawner))]
     [HarmonyPatch("CalculatePlantsWhichCanGrowAt")]
     public static class WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch
@@ -18,27 +17,28 @@ namespace MorrowRim2
         {
             if (!outPlants.NullOrEmpty())
             {
-                for (int i = outPlants.Count - 1; i >= 0; )
+                List<ThingDef> PlantsToRemove = new List<ThingDef>();
+                foreach (ThingDef plant in outPlants)
                 {
-                    PlantProperties props = PlantProperties.Get(outPlants[i]);
+                    PlantProperties props = PlantProperties.Get(plant);
                     if (props != null)
                     {
                         TerrainDef terrainDef = c.GetTerrain(___map);
-                        if ((!props.allowedTerrain.NullOrEmpty() && !props.allowedTerrain.Contains(terrainDef))
-                            || !props.disallowedTerrain.NullOrEmpty() && props.allowedTerrain.Contains(terrainDef))
+                        if ((!props.allowedTerrainForWild.NullOrEmpty() && !props.allowedTerrainForWild.Contains(terrainDef))
+                            || !props.disallowedTerrainForWild.NullOrEmpty() && props.disallowedTerrainForWild.Contains(terrainDef))
                         {
-                            outPlants.Remove(outPlants[i]);
-                        }
-                        else
-                        {
-                            i--;
+                            PlantsToRemove.Add(plant);
                         }
                     }
                 }
+                foreach (ThingDef plant in PlantsToRemove)
+                {
+                    outPlants.Remove(plant);
+                }
+                PlantsToRemove.Clear();
             }
         }
     }
-    */
 
     /// <summary>
     /// Replaces terrain with different terrain.

@@ -1,7 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Plant_AshlandGrass]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_AshlandGrass</defName>
+		<label>ashland grass</label>
+		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.45</Nutrition>
+			<Flammability>1.0</Flammability>
+			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_AshlandGrass</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>170</sowWork>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_AshlandFungus]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_AshlandFungus</defName>
+		<label>ashland fungus</label>
+		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.35</Nutrition>
+			<Flammability>0.8</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_AshlandFungus</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<fertilityMin>0.6</fertilityMin>
+			<growDays>2.5</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>170</sowWork>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandFern]==========-->
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_AshlandFern</defName>
 		<label>ashland fern</label>
 		<description>A small fern that can often be found growing regions with ash rich ground. While rather resistant to ash storms, it is not immune to the effects of them.</description>

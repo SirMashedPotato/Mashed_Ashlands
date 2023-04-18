@@ -5,9 +5,8 @@ namespace MorrowRim2
 {
     class PlantProperties : DefModExtension
     {
-        public List<TerrainDef> allowedTerrain = new List<TerrainDef>();
-        public List<TerrainDef> disallowedTerrain = new List<TerrainDef>();
-
+        public List<TerrainDef> allowedTerrainForWild = new List<TerrainDef>();
+        public List<TerrainDef> disallowedTerrainForWild = new List<TerrainDef>();
         public List<TerrainAffordanceDef> terrainAffordancesToSow = new List<TerrainAffordanceDef>();
 
         public bool growthBoostDuringAsh = false;

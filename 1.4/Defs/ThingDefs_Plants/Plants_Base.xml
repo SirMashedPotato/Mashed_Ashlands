@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_PlantBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="MorrowRim_PlantBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<harvestTag>Standard</harvestTag>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_PseudoTreeBase]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_PseudoTreeBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>195</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<sowWork>4000</sowWork>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>24</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ====================[Food]====================-->
 	<!-- ==========[MorrowRim_RawAshYams]==========-->
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>MorrowRim_RawAshYams</defName>
@@ -21,5 +22,33 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ====================[Rough]====================-->
+	<!-- ==========[MorrowRim_RawMuck]==========-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>MorrowRim_RawMuck</defName>
+		<label>muck</label>
+		<description>Raw muck harvested from a muck-sponge. While it can be refined into several useful items, many of which are perfectly safe to ingest, raw muck itself should not be consumed.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_Muck</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.3</MarketValue>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
 	</ThingDef>
 </Defs>
