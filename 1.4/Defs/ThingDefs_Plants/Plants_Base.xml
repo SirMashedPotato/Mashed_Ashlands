@@ -14,6 +14,30 @@
 			</sowTags>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_BushBase]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_BushBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<pathCost>30</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<harvestWork>250</harvestWork>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestTag>Wood</harvestTag>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_PseudoTreeBase]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_PseudoTreeBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
