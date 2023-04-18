@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BiomeDef Name="MorrowRim_AshlandsBase" Abstract="True">
-		
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+		</allowedPackAnimals>
 	</BiomeDef>
 </Defs>

@@ -96,6 +96,7 @@
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="Harmony\PlantUtility.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />

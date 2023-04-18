@@ -17,6 +17,7 @@
 			<li>Heavy</li>
 			<li>GrowSoil</li>
 			<li>Diggable</li>
+			<li>MorrowRim_GrowAsh</li>
 			<li>MorrowRim_AshCastle</li>
 			<li>MorrowRim_PackableAsh</li>
 		</affordances>
@@ -59,7 +60,7 @@
 		<label>grazeland soil</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoil</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoilPolluted</pollutedTexturePath>
-		<fertility>1.1</fertility>
+		<fertility>1</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshSoil]==========-->
 	<TerrainDef ParentName="MorrowRim_AshBase">

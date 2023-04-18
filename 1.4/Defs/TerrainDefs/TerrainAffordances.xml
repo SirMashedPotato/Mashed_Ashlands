@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<TerrainAffordanceDef>
+		<defName>MorrowRim_GrowAsh</defName>
+		<label>growable ash</label>
+		<order>3000</order>
+	</TerrainAffordanceDef>
+	<TerrainAffordanceDef>
 		<defName>MorrowRim_PackableAsh</defName>
 		<label>packable ash</label>
-		<order>3000</order>
+		<order>3100</order>
 	</TerrainAffordanceDef>
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_AshCastle</defName>

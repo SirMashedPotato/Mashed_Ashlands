@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_RawAshYams]==========-->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>MorrowRim_RawAshYams</defName>
+		<label>ash yams</label>
+		<description>Raw ash yams.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshYams</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

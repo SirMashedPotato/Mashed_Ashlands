@@ -29,17 +29,17 @@
 				</roadReplacers>
             </li>
 		</modExtensions>
-		<animalDensity>3.7</animalDensity>
-		<plantDensity>0.65</plantDensity>
-		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<animalDensity>2.4</animalDensity>
+		<plantDensity>0.3</plantDensity>
+		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
-		<forageability>1</forageability>
-		<foragedFood>RawBerries</foragedFood>
+		<forageability>0.75</forageability>
+		<foragedFood>MorrowRim_RawAshYams</foragedFood>
 		<wildPlantRegrowDays>20</wildPlantRegrowDays>
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
-		<diseaseMtbDays>50</diseaseMtbDays>
+		<diseaseMtbDays>60</diseaseMtbDays>
 		<diseases>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
@@ -85,7 +85,7 @@
 				<max>0.87</max>
 			</li>
 			<li>
-				<terrain>MorrowRim_RichAshSoil</terrain>
+				<terrain>MorrowRim_AshGravel</terrain>
 				<min>0.87</min>
 				<max>999</max>
 			</li>
@@ -96,28 +96,24 @@
 				<thresholds>
 					<li>
 						<terrain>MorrowRim_RichAshSoil</terrain>
-						<min>0.73</min>
-						<max>0.80</max>
-					</li>
-					<li>
-						<terrain>MorrowRim_AshMud</terrain>
-						<min>0.80</min>
-						<max>0.93</max>
+						<min>0.70</min>
+						<max>0.76</max>
 					</li>
 					<li>
 						<terrain>WaterShallow</terrain>
-						<min>0.93</min>
-						<max>1.06</max>
+						<min>0.76</min>
+						<max>0.98</max>
 					</li>
 					<li>
-						<terrain>WaterDeep</terrain>
-						<min>1.06</min>
-						<max>999</max>
+						<terrain>MorrowRim_RichAshSoil</terrain>
+						<min>0.98</min>
+						<max>99</max>
 					</li>
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
+		<!-- Vanilla Weather -->
 			<Clear>18</Clear>
 			<Fog>1</Fog>
 			<Rain>2</Rain>
@@ -126,20 +122,33 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<!-- MorrowRim weather -->
+			<MorrowRim_Ashfall>4</MorrowRim_Ashfall>
+			<MorrowRim_FoggyAshfall>2</MorrowRim_FoggyAshfall>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
+			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
+			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_Grass>5.0</Plant_Grass>
-			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
-			<Plant_TallGrass>2.0</Plant_TallGrass>
-			<Plant_Brambles>1.0</Plant_Brambles>
-			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
-			<Plant_Dandelion>0.5</Plant_Dandelion>
-			<Plant_Bush>0.6</Plant_Bush>
-			<Plant_TreeOak>0.5</Plant_TreeOak>
-			<Plant_TreePoplar>0.5</Plant_TreePoplar>
-			<Plant_Berry>0.05</Plant_Berry>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+			<!-- Ground covers -->
+			<Plant_Grass>8.0</Plant_Grass>
+			<Plant_TallGrass>8.0</Plant_TallGrass>
+			<Plant_Moss>0.4</Plant_Moss>
+			<!-- Nutrition plants -->
+			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
+			<!-- Resource plants -->
+			<!-- Aesthetic plants -->
+			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
+			<!-- Trees -->	
+			<MorrowRim_Plant_TreeEmperorParasol>0.5</MorrowRim_Plant_TreeEmperorParasol>
+			<!-- Polluted ground covers -->
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">16</Plant_GrayGrass>
+			<!-- Polluted plants -->
+			<!-- Polluted trees -->	
 		</wildPlants>
 		<wildAnimals>
 			<Donkey>0.20</Donkey>
@@ -179,9 +188,6 @@
 			<Boomalope>0.1</Boomalope>
 			<Warg>0.05</Warg>
 		</pollutionWildAnimals>
-		<allowedPackAnimals>
-			<li>Muffalo</li>
-			<li>Alpaca</li>
-		</allowedPackAnimals>
+		<allowedPackAnimals/>
 	</BiomeDef>
 </Defs>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_AshlandFern]==========-->
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_Plant_AshlandFern</defName>
+		<label>ashland fern</label>
+		<description>A small fern that can often be found growing regions with ash rich ground. While rather resistant to ash storms, it is not immune to the effects of them.</description>
+		<modExtensions>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.4</Flammability>
+			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_AshlandFernPlant</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<harvestWork>60</harvestWork>
+			<visualSizeRange>0.95~1.15</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+</Defs>
