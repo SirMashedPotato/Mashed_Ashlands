@@ -133,4 +133,48 @@
 			<wildClusterWeight>100</wildClusterWeight>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Scathecraw]==========-->
+	<ThingDef Name="MorrowRim_Plant_ScathecrawBase" ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_Scathecraw</defName>
+		<label>scathecraw plant</label>
+		<description>An incredibly hardy grass, typically found growing in the less-hospitable regions of the ashlands. While the soft flesh inside of the grass is tempting to some, those that try it will quickly learn why scathecraw isn't considered a delicacy. Scathecraw are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Flammability>0.8</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_ScathecrawPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<neverBlightable>true</neverBlightable>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawScathecraw</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.95~1.6</visualSizeRange>
+			<purpose>Food</purpose>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 </Defs>
