@@ -43,7 +43,6 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
-			
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_ParasolBush]==========-->
