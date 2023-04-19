@@ -27,4 +27,24 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[MorrowRim_RawTramaRoot]==========-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>MorrowRim_RawTramaRoot</defName>
+		<label>trama root</label>
+		<description>Raw trama root. Often brewed into a calming tea, not very enjoyable to eat raw.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_TramaRoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.3</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
 </Defs>

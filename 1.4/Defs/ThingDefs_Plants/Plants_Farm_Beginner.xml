@@ -84,7 +84,54 @@
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<topWindExposure>0.2</topWindExposure>
-			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_TramaShrub]==========-->
+	<ThingDef Name="MorrowRim_Plant_TramaShrubBase" ParentName="MorrowRim_BushBase">
+		<defName>MorrowRim_Plant_TramaShrub</defName>
+		<label>trama shrub</label>
+		<description>An incredibly hardy shrub, typically found growing in the less-hospitable regions of the ashlands. The roots are often brewed into a calming tea, though can also be fed to livestock when times are hard. Trama shrub are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_TramaShrub</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<growDays>10</growDays>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<neverBlightable>true</neverBlightable>
+			<harvestedThingDef>MorrowRim_RawTramaRoot</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>0.95~2.0</visualSizeRange>
+			<harvestWork>150</harvestWork>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterWeight>100</wildClusterWeight>
 		</plant>
 	</ThingDef>
 </Defs>

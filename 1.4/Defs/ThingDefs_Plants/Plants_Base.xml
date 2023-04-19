@@ -36,6 +36,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_PseudoTreeBase]==========-->

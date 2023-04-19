@@ -1,10 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Plant_TreeParasol]==========-->
+	<!-- If emperor parasol is an oak, this is a poplar
+	<ThingDef Name="MorrowRim_Plant_TreeParasolBase" ParentName="TreeBase">
+		<defName>MorrowRim_Plant_TreeParasol</defName>
+		<label>parasol mushroom</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol. It is solely found growing in regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_TreeParasol</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<Flammability>0.4</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<plant>
+			<growDays>20</growDays>
+			<fertilityMin>1</fertilityMin>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+			<burnedThingDef>BurnedTree</burnedThingDef>
+			<choppedThingDef>ChoppedStump</choppedThingDef>
+			<smashedThingDef>SmashedStump</smashedThingDef>
+		</plant>
+	</ThingDef>
+	-->
 	<!-- ==========[MorrowRim_Plant_TreeEmperorParasol]==========-->
 	<ThingDef Name="MorrowRim_Plant_TreeEmperorParasolBase" ParentName="TreeBase">
 		<defName>MorrowRim_Plant_TreeEmperorParasol</defName>
 		<label>emperor parasol</label>
-		<description>An enormous fungal tree, solely found growing regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<description>An enormous fungal tree, solely found growing in regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>

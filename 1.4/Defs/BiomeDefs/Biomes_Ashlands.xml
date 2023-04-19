@@ -143,9 +143,10 @@
 			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
 			<!-- Resource plants -->
 			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
+			<MorrowRim_Plant_ParasolBush>0.4</MorrowRim_Plant_ParasolBush>
+			<MorrowRim_Plant_TramaShrub>0.2</MorrowRim_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
-			<MorrowRim_Plant_ParasolBush>0.5</MorrowRim_Plant_ParasolBush>
 			<!-- Trees -->	
 			<MorrowRim_Plant_TreeEmperorParasol>0.5</MorrowRim_Plant_TreeEmperorParasol>
 			<!-- Polluted ground covers -->
