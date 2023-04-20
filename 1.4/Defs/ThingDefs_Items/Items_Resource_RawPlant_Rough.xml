@@ -55,6 +55,32 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[MorrowRim_RawEmperorParasolMoss]==========-->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>MorrowRim_RawEmperorParasolMoss</defName>
+		<label>emperor parasol moss</label>
+		<description>Moss from an emperor parasol. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create an elixir that boosts resistance to ash buildup during ash storms.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_EmperorParasolMoss</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.6</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<ingestible>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+	</ThingDef>
 	<!-- ==========[MorrowRim_RawMuck]==========-->
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>MorrowRim_RawMuck</defName>

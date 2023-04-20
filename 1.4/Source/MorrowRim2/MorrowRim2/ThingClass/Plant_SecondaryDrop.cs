@@ -1,0 +1,26 @@
+﻿using RimWorld;
+using Verse;
+
+namespace MorrowRim2
+{
+    public class Plant_SecondaryDrop : Plant
+    {
+        public override void PlantCollected(Pawn by, PlantDestructionMode plantDestructionMode)
+        {
+            if (HarvestableNow)
+            {
+                PlantProperties props = PlantProperties.Get(def);
+                if (props != null && props.secondaryDrop != null)
+                {
+                    if (Rand.Chance(props.secondaryDropChance))
+                    {
+                        Thing droppedThing = ThingMaker.MakeThing(props.secondaryDrop);
+                        droppedThing.stackCount = props.secondaryDropAmountRange.RandomInRange;
+                        GenPlace.TryPlaceThing(droppedThing, Position, Map, ThingPlaceMode.Near);
+                    }
+                }
+            }
+            base.PlantCollected(by, plantDestructionMode);
+        }
+    }
+}

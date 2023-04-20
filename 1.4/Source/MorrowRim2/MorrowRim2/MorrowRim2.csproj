@@ -109,6 +109,7 @@
     <Compile Include="Settings\MorrowRim_Mod.cs" />
     <Compile Include="Settings\MorrowRim_ModSettings.cs" />
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
+    <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />

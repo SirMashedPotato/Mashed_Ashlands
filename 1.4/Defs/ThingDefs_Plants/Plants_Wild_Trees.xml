@@ -51,9 +51,13 @@
 	<ThingDef Name="MorrowRim_Plant_TreeEmperorParasolBase" ParentName="TreeBase">
 		<defName>MorrowRim_Plant_TreeEmperorParasol</defName>
 		<label>emperor parasol</label>
-		<description>An enormous fungal tree, solely found growing in regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<description>An enormous fungal tree, solely found growing in regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nA symbiotic moss grows from the underside of the emperor parsols cap. While not particularly tasty, it makes for a decent animal feed, and is a primary ingredient in a useful elixir.</description>
+		<thingClass>MorrowRim2.Plant_SecondaryDrop</thingClass>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
+				<secondaryDrop>MorrowRim_RawEmperorParasolMoss</secondaryDrop>
+				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
