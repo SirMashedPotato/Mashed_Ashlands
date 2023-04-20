@@ -138,7 +138,8 @@
 			<Plant_Grass>8</Plant_Grass>
 			<MorrowRim_Plant_AshlandGrass>12</MorrowRim_Plant_AshlandGrass>
 			<MorrowRim_Plant_AshlandFungus>1</MorrowRim_Plant_AshlandFungus>
-			<Plant_Moss>0.4</Plant_Moss>
+			<MorrowRim_Plant_Ashreed>0.4</MorrowRim_Plant_Ashreed>
+			<Plant_Moss>0.2</Plant_Moss>
 			<!-- Nutrition plants -->
 			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
 			<MorrowRim_Plant_Scathecraw>0.2</MorrowRim_Plant_Scathecraw>
