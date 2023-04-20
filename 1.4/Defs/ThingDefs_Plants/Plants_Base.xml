@@ -48,7 +48,7 @@
 		</statBases>
 		<passability>PassThroughOnly</passability>
 		<pathCost>130</pathCost>
-		<fillPercent>0.2</fillPercent>
+		<fillPercent>0.4</fillPercent>
 		<blockWind>false</blockWind>
 		<ingestible>
 			<foodType>Tree</foodType>

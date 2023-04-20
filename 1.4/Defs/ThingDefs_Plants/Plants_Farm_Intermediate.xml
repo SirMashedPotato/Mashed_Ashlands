@@ -1,10 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Plant_Corkbulb]==========-->
+	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_Corkbulb</defName>
+		<label>corkbulb tree</label>
+		<description>A small tree that can often be found growing in regions with ash rich ground. Farmed for its tough roots, which make for a reasonable wood replacement. The roots are also often consumed by wild animals, such as guar and kagouti. While structurally quite sturdy, corkbulb will slowly be worn down by ash storms.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_CorkbulbPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawCorkbulbRoot</harvestedThingDef>
+			<harvestYield>20</harvestYield>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>15</growDays>
+			<visualSizeRange>1.0~2.4</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_MuckSponge]==========-->
 	<ThingDef Name="MorrowRim_Plant_MuckSpongeBase" ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_MuckSponge</defName>
 		<label>muck sponge plant</label>
-		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms</description>
+		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
