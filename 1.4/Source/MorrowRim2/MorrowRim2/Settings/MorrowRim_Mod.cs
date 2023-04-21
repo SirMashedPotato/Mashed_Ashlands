@@ -408,6 +408,15 @@ namespace MorrowRim2
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_AshStormBreakdownBuildings".Translate(), ref settings.MorrowRim_TheAshlands_AshStormBreakdownBuildings);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance".Translate(settings.MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance * 100), -1);
+            settings.MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance = (float)Math.Round(listing_Standard.Slider(settings.MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance, 0.05f, 1f) * 20) / 20;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_BlightStormBlightAnimals".Translate(), ref settings.MorrowRim_TheAshlands_BlightStormBlightAnimals);
             listing_Standard.Gap();
 

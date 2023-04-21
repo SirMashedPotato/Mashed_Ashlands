@@ -6,6 +6,7 @@ namespace MorrowRim2
     {
         public bool treatAsMechanical = false;
         public bool immuneToAshBlinding = false;
+        public bool buildingImmuneToBreakDowns = false;
         public bool buildingTakesDamage = false;
         public float avgDamageTaken = 5;
         public float chanceDamaged = 0.5f;

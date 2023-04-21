@@ -77,6 +77,8 @@
 	<MorrowRim_TheAshlands_AshStormDamagePlants>Enable ash storms randomly damaging unprotected plants.</MorrowRim_TheAshlands_AshStormDamagePlants>
 	<MorrowRim_TheAshlands_AshStormAvgPlantDamage>The average amount of damage a plant receives: ({0} points)</MorrowRim_TheAshlands_AshStormAvgPlantDamage>
 	<MorrowRim_TheAshlands_AshStormDamageBuildings>Enable ash storms randomly damaging certain buildings.</MorrowRim_TheAshlands_AshStormDamageBuildings>
+	<MorrowRim_TheAshlands_AshStormBreakdownBuildings>Enable ash storms randomly causing certain buildings to breakdown.</MorrowRim_TheAshlands_AshStormBreakdownBuildings>
+	<MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance>The chance a building has a breakdown: ({0}%)</MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance>
 	<!-- blight storm -->
 	<MorrowRim_TheAshlands_BlightStormBlightAnimals>Enable blighted ash storms randomly blighting wild animals.</MorrowRim_TheAshlands_BlightStormBlightAnimals>
 	<MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals>Blighted ash storms can also blight player faction animals.</MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals>

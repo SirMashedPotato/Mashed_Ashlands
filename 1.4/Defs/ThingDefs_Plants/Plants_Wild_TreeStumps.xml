@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_BurnedParasolStump]==========-->
+	<ThingDef ParentName="StumpBase">
+		<defName>MorrowRim_BurnedParasolStump</defName>
+		<label>burned parasol stump</label>
+		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/MorrowRim_ParasolBurned</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[MorrowRim_ChoppedParasolStump]==========-->
+	<ThingDef ParentName="StumpChoppedBase">
+		<defName>MorrowRim_ChoppedParasolStump</defName>
+		<label>chopped parasol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/MorrowRim_ParasolChopped</texPath>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			 <visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_SmashedParasolStump]==========-->
+	<ThingDef ParentName="StumpSmashedBase">
+		<defName>MorrowRim_SmashedParasolStump</defName>
+		<label>smashed parasol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/MorrowRim_ParasolSmashed</texPath>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>

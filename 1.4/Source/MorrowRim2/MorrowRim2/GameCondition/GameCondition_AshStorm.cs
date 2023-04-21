@@ -169,19 +169,33 @@ namespace MorrowRim2
 							thing.TakeDamage(info);
 						}
 					}
-					if (thing is Building && MorrowRim_ModSettings.AshStormDamageBuildings)
+					if (thing is Building)
 					{
 						AshResistanceProperties props = AshResistanceProperties.Get(thing.def);
-                        if (props != null && props.buildingTakesDamage && Rand.Chance(props.chanceDamaged))
+                        if (MorrowRim_ModSettings.AshStormDamageBuildings)
                         {
-							DamageInfo info = new DamageInfo
+							if (props != null && props.buildingTakesDamage && Rand.Chance(props.chanceDamaged))
 							{
-								Def = DamageDefOf.Deterioration
-							};
-							info.SetAmount(Rand.Gaussian(props.avgDamageTaken));
-							thing.TakeDamage(info);
+								DamageInfo info = new DamageInfo
+								{
+									Def = DamageDefOf.Deterioration
+								};
+								info.SetAmount(Rand.Gaussian(props.avgDamageTaken));
+								thing.TakeDamage(info);
+							}
 						}
-                    }
+						if (MorrowRim_ModSettings.AshStormBreakdownBuildings && Rand.Chance(MorrowRim_ModSettings.AshStormBreakdownBuildingsChance))
+						{
+							if (props == null || !props.buildingImmuneToBreakDowns)
+							{
+								CompBreakdownable compBreakdownable = thing.TryGetComp<CompBreakdownable>();
+                                if (compBreakdownable != null && !compBreakdownable.BrokenDown)
+                                {
+									compBreakdownable.DoBreakdown();
+								}
+							}
+						}
+					}
 				}
 			}
 		}

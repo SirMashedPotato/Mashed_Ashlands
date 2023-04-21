@@ -8,6 +8,7 @@ namespace MorrowRim2
         public ThingDef secondaryDrop = null;
         public IntRange secondaryDropAmountRange;
         public float secondaryDropChance = 1f;
+        public bool secondaryNotWhenLeafless = false;
 
         public List<TerrainDef> allowedTerrainForWild = new List<TerrainDef>();
         public List<TerrainDef> disallowedTerrainForWild = new List<TerrainDef>();

@@ -12,11 +12,14 @@ namespace MorrowRim2
                 PlantProperties props = PlantProperties.Get(def);
                 if (props != null && props.secondaryDrop != null)
                 {
-                    if (Rand.Chance(props.secondaryDropChance))
+                    if (!props.secondaryNotWhenLeafless || !LeaflessNow)
                     {
-                        Thing droppedThing = ThingMaker.MakeThing(props.secondaryDrop);
-                        droppedThing.stackCount = props.secondaryDropAmountRange.RandomInRange;
-                        GenPlace.TryPlaceThing(droppedThing, Position, Map, ThingPlaceMode.Near);
+                        if (Rand.Chance(props.secondaryDropChance))
+                        {
+                            Thing droppedThing = ThingMaker.MakeThing(props.secondaryDrop);
+                            droppedThing.stackCount = props.secondaryDropAmountRange.RandomInRange;
+                            GenPlace.TryPlaceThing(droppedThing, Position, Map, ThingPlaceMode.Near);
+                        }
                     }
                 }
             }

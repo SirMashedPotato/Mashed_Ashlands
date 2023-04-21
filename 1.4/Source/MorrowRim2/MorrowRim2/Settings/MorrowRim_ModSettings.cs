@@ -68,6 +68,9 @@ namespace MorrowRim2
 
         public static bool AshStormDamageBuildings => _instance.MorrowRim_TheAshlands_AshStormDamageBuildings;
 
+        public static bool AshStormBreakdownBuildings => _instance.MorrowRim_TheAshlands_AshStormBreakdownBuildings;
+        public static float AshStormBreakdownBuildingsChance => _instance.MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance;
+
         public static bool BlightStormBlightAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightAnimals;
         public static bool BlightStormBlightPlayerAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals;
         public static bool BlightStormBlightNonPlayerAnimals => _instance.MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals;
@@ -137,6 +140,9 @@ namespace MorrowRim2
 
         public bool MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
 
+        public bool MorrowRim_TheAshlands_AshStormBreakdownBuildings = MorrowRim_TheAshlands_AshStormBreakdownBuildings_def;
+        public float MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance = MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance_def;
+
         public bool MorrowRim_TheAshlands_BlightStormBlightAnimals = MorrowRim_TheAshlands_BlightStormBlightAnimals_def;
         public bool MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def;
         public bool MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightNonPlayerAnimals_def;
@@ -205,6 +211,9 @@ namespace MorrowRim2
         private static readonly int MorrowRim_TheAshlands_AshStormAvgPlantDamage_def = 10;
 
         private static readonly bool MorrowRim_TheAshlands_AshStormDamageBuildings_def = true;
+
+        private static readonly bool MorrowRim_TheAshlands_AshStormBreakdownBuildings_def = false;
+        private static readonly float MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance_def = 0.05f;
 
         private static readonly bool MorrowRim_TheAshlands_BlightStormBlightAnimals_def = true;
         private static readonly bool MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def = false;
@@ -281,6 +290,9 @@ namespace MorrowRim2
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormAvgPlantDamage, "MorrowRim_TheAshlands_AshStormAvgPlantDamage", MorrowRim_TheAshlands_AshStormAvgPlantDamage_def);
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormDamageBuildings, "MorrowRim_TheAshlands_AshStormDamageBuildings", MorrowRim_TheAshlands_AshStormDamageBuildings_def);
+
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormBreakdownBuildings, "MorrowRim_TheAshlands_AshStormBreakdownBuildings", MorrowRim_TheAshlands_AshStormBreakdownBuildings_def);
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance, "MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance", MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance_def);
 
             Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightAnimals, "MorrowRim_TheAshlands_BlightStormBlightAnimals", MorrowRim_TheAshlands_BlightStormBlightAnimals_def);
             Scribe_Values.Look(ref MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals, "MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals", MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def);
@@ -367,6 +379,9 @@ namespace MorrowRim2
             _instance.MorrowRim_TheAshlands_AshStormAvgPlantDamage = MorrowRim_TheAshlands_AshStormAvgPlantDamage_def;
 
             _instance.MorrowRim_TheAshlands_AshStormDamageBuildings = MorrowRim_TheAshlands_AshStormDamageBuildings_def;
+
+            _instance.MorrowRim_TheAshlands_AshStormBreakdownBuildings = MorrowRim_TheAshlands_AshStormBreakdownBuildings_def;
+            _instance.MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance = MorrowRim_TheAshlands_AshStormBreakdownBuildingsChance_def;
 
             _instance.MorrowRim_TheAshlands_BlightStormBlightAnimals = MorrowRim_TheAshlands_BlightStormBlightAnimals_def;
             _instance.MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals = MorrowRim_TheAshlands_BlightStormBlightPlayerAnimals_def;
