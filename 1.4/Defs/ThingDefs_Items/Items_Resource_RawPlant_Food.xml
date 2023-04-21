@@ -1,11 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_PlantFoodRawBase]==========-->
+	<ThingDef ParentName="PlantFoodRawBase" Name="MorrowRim_PlantFoodRawBase" Abstract="True">
+		<possessionCount>10</possessionCount>
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawPlant</li>
+			<li>MorrowRim_AshlandsRawFoodPlant</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawAshFungus]==========-->
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+		<defName>MorrowRim_RawAshFungus</defName>
+		<label>ash fungus</label>
+		<description>Raw flesh from an ashland fungus. Perfectly edible, and rather tasty.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshFungus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_RawAshYams]==========-->
-	<ThingDef ParentName="PlantFoodRawBase">
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
 		<defName>MorrowRim_RawAshYams</defName>
 		<label>ash yams</label>
 		<description>Raw ash yams.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshYams</texPath>
 		</graphicData>
@@ -14,6 +42,73 @@
 		</statBases>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawMarshmerrow]==========-->
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+		<defName>MorrowRim_RawMarshmerrow</defName>
+		<label>marshmerrow</label>
+		<description>Raw marshmerrow. Nice to eat, even when raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawMarshmerrow</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawSaltrice]==========-->
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+		<defName>MorrowRim_RawSaltrice</defName>
+		<label>saltrice</label>
+		<description>Raw saltrice. While usually fermented into mazte, it can also be used in cooking.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawSaltrice</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Seed</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawWickwheat]==========-->
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+		<defName>MorrowRim_RawWickwheat</defName>
+		<label>wickwheat</label>
+		<description>Raw wickwheat. While often fermented into sujamma, it can also be used in cooking.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawWickwheat</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Seed</foodType>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">

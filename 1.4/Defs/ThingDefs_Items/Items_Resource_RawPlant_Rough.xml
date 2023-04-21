@@ -1,11 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_PlantRoughBase]==========-->
+	<ThingDef ParentName="RoughPlantBase" Name="MorrowRim_PlantRoughBase" Abstract="True">
+		<possessionCount>10</possessionCount>
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawPlant</li>
+			<li>MorrowRim_AshlandsRawRoughPlant</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[MorrowRim_RawCorkbulbRoot]==========-->
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawCorkbulbRoot</defName>
 		<label>corkbulb root</label>
 		<description>Raw corkbulb root. Sometimes used as a replacement for wood when wood is not an option. Also makes for a decent animal feed, especially loved by guar and kagouti.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_CorkbulbRoot</texPath>
 		</graphicData>
@@ -56,11 +63,10 @@
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawEmperorParasolMoss]==========-->
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawEmperorParasolMoss</defName>
 		<label>emperor parasol moss</label>
 		<description>Moss from an emperor parasol. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create an elixir that boosts resistance to ash buildup during ash storms.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_EmperorParasolMoss</texPath>
 		</graphicData>
@@ -82,11 +88,10 @@
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawMuck]==========-->
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawMuck</defName>
 		<label>muck</label>
 		<description>Raw muck harvested from a muck-sponge. While it can be refined into several useful items, many of which are perfectly safe to ingest, raw muck itself should not be consumed.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_Muck</texPath>
 		</graphicData>
@@ -109,11 +114,10 @@
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawScathecraw]==========-->
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawScathecraw</defName>
 		<label>scathecraw</label>
 		<description>Raw scathecraw. Tough and chewy, not particularly pleasant to eat, though animals don't seem to mind.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawScathecraw</texPath>
 		</graphicData>
@@ -135,11 +139,10 @@
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawTramaRoot]==========-->
-	<ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawTramaRoot</defName>
 		<label>trama root</label>
 		<description>Raw trama root. Often brewed into a calming tea, not very enjoyable to eat raw.</description>
-		<possessionCount>10</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_TramaRoot</texPath>
 		</graphicData>
