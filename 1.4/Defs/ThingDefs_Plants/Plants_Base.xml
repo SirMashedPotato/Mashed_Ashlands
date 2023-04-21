@@ -62,4 +62,31 @@
 			<wildOrder>3</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_FlowerBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="MorrowRim_FlowerBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
 </Defs>
