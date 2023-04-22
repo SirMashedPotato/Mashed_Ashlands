@@ -100,7 +100,7 @@
     <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
-    <Compile Include="Harmony\Biotech_PollutionStimulus.cs" />
+    <Compile Include="Harmony\BiotechPatches.cs" />
     <Compile Include="Harmony\WildAnimalSpawner.cs" />
     <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />

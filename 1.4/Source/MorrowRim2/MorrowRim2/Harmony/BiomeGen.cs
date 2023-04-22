@@ -53,6 +53,33 @@ namespace MorrowRim2
     }
 
     /// <summary>
+    /// Replaces the gravel in caves with a custom terrain.
+    /// </summary>
+    [HarmonyPatch(typeof(GenStep_CavesTerrain))]
+    [HarmonyPatch("Generate")]
+    public static class GenStep_CavesTerrain_Generate_Patch
+    {
+        [HarmonyPostfix]
+        public static void MorrowRim_CaveTerrain_Patch(Map map)
+        {
+            BiomeProperties props = BiomeProperties.Get(map.Biome);
+            if (props != null && props.caveGravelReplacer != null)
+            {
+                MapGenFloatGrid caves = MapGenerator.Caves;
+                foreach (IntVec3 intVec in map.AllCells)
+                {
+                    if (caves[intVec] > 0f && !intVec.GetTerrain(map).IsRiver)
+                    {
+                        if (map.terrainGrid.TerrainAt(intVec) == TerrainDefOf.Gravel)
+                        {
+                            map.terrainGrid.SetTerrain(intVec, props.caveGravelReplacer);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /// <summary>
     /// Replaces road terrain with different terrain.
     /// </summary>
     [HarmonyPatch(typeof(RoadDefGenStep_Place))]

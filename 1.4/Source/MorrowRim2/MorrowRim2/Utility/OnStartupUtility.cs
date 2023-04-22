@@ -12,9 +12,12 @@ namespace MorrowRim2
         public static List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef> { };
         public static List<BiomeDef> baseAshlandBiomeDefs = new List<BiomeDef> { };
 
+        public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
+
         static OnStartupUtility()
         {
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
+            FillCavePlantList(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
             EditRockTerrain();
         }
 
@@ -37,6 +40,18 @@ namespace MorrowRim2
                     {
                         baseAshlandBiomeDefs.Add(biomeDef);
                     }
+                }
+            }
+        }
+
+        public static void FillCavePlantList(List<ThingDef> plantDefs)
+        {
+            foreach(ThingDef thingDef in plantDefs)
+            {
+                PlantProperties props = PlantProperties.Get(thingDef);
+                if (props != null && props.ashlandCavePlant)
+                {
+                    ashlandCavePlants.Add(thingDef);
                 }
             }
         }

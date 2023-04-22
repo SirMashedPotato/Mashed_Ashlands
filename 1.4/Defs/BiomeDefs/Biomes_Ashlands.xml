@@ -8,10 +8,12 @@
 		<texture>World/Biomes/MorrowRim_Ashlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
-                <earlyLoader>true</earlyLoader>
-                <baseBiome>true</baseBiome>
-				<ignorePollutionForPlantCommonality>true</ignorePollutionForPlantCommonality>
+				<earlyLoader>true</earlyLoader>
+				<baseBiome>true</baseBiome>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<forcedRockType>MorrowRim_Basalt</forcedRockType>
+				<caveGravelReplacer>MorrowRim_RichAshSoil</caveGravelReplacer>
 				<terrainReplacers>
 					<li>
 						<originalTerrain>Gravel</originalTerrain>
@@ -28,7 +30,7 @@
 						<replacedTerrain>MorrowRim_PackedAsh</replacedTerrain>
 					</li>
 				</roadReplacers>
-            </li>
+			</li>
 		</modExtensions>
 		<animalDensity>2.4</animalDensity>
 		<plantDensity>0.3</plantDensity>
@@ -114,7 +116,7 @@
 			</li>
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
-		<!-- Vanilla Weather -->
+			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
 			<Fog>1</Fog>
 			<Rain>2</Rain>
@@ -154,8 +156,9 @@
 			<MorrowRim_Plant_WillowFlower>0.05</MorrowRim_Plant_WillowFlower>
 			<MorrowRim_Plant_Stoneflower>0.1</MorrowRim_Plant_Stoneflower>
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
-			<!-- Trees -->	
+			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.4</MorrowRim_Plant_TreeEmperorParasol>
+			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">16</Plant_GrayGrass>
 			<MorrowRim_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingAshreed>
@@ -165,7 +168,7 @@
 			<!-- Polluted resource plants -->
 			<MorrowRim_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_TramaMass>
 			<MorrowRim_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_Plant_WasteSponge>
-			<!-- Polluted trees -->	
+			<!-- Polluted trees -->
 			<MorrowRim_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
