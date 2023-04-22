@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_WasteSponge]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_MuckSpongeBase">
+		<defName>MorrowRim_Plant_WasteSponge</defName>
+		<label>waste sponge plant</label>
+		<description>A highly mutated sponge-like fungus, often found around sources of polluted water in the ashlands. Slowly fills with toxic waste, a byproduct of the mushroom digesting nutrients from the ground. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
+		<statBases>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_WasteSpongePlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<immatureGraphicPath>Things/Plant/MorrowRim_WasteSpongePlant_Immature</immatureGraphicPath>
+			<harvestedThingDef>Wastepack</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.0~1.6</visualSizeRange>
+			<purpose>Misc</purpose>
+		</plant>
+	</ThingDef>
+</Defs>

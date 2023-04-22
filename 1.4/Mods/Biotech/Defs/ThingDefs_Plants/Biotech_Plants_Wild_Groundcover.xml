@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_GlowingAshreed]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_AshreedBase">
+		<defName>MorrowRim_Plant_GlowingAshreed</defName>
+		<label>glowing ashreed</label>
+		<description>A mutated species of wild grass adapted for life in polluted ashland regions. Often found growing near sources of polluted water.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingAshreed</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

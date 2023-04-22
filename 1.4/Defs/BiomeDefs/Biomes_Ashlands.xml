@@ -10,6 +10,7 @@
 			<li Class="MorrowRim2.BiomeProperties">
                 <earlyLoader>true</earlyLoader>
                 <baseBiome>true</baseBiome>
+				<ignorePollutionForPlantCommonality>true</ignorePollutionForPlantCommonality>
 				<forcedRockType>MorrowRim_Basalt</forcedRockType>
 				<terrainReplacers>
 					<li>
@@ -157,8 +158,15 @@
 			<MorrowRim_Plant_TreeEmperorParasol>0.4</MorrowRim_Plant_TreeEmperorParasol>
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">16</Plant_GrayGrass>
-			<!-- Polluted plants -->
+			<MorrowRim_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingAshreed>
+			<!-- Polluted nutrition plants -->
+			<MorrowRim_Plant_ToxYam MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_ToxYam>
+			<MorrowRim_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_GlowingParasolBush>
+			<!-- Polluted resource plants -->
+			<MorrowRim_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_TramaMass>
+			<MorrowRim_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_Plant_WasteSponge>
 			<!-- Polluted trees -->	
+			<MorrowRim_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
 			<Donkey>0.20</Donkey>

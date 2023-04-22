@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_ToxYam]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_AshYamBase">
+		<defName>MorrowRim_Plant_ToxYam</defName>
+		<label>tox yam plant</label>
+		<description>A variety of the ash yam, adapted to grow in highly toxic environments. Provides a comparatively smaller yield than the regular ash yam, as much of the outer flesh is completely inedible. They are only able to grow in ash rich ground that has been sufficiently polluted.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_ToxYamPlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/MorrowRim_ToxYamPlant_Immature</immatureGraphicPath>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<harvestedThingDef>MorrowRim_RawToxYams</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<growDays>4.9</growDays>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_GlowingParasolBush]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_ParasolBushBase">
+		<defName>MorrowRim_Plant_GlowingParasolBush</defName>
+		<label>glowing parasol bush</label>
+		<description>A mutated breed of the parasol mushroom bush, adapted to grow in highly polluted environments. It has a much softer stem than its cousin, which can no longer be harvested for wood. The flesh however is perfectly edible, though the eerie green glow prevents many from even trying to eat it. Can only grow on ash rich ground that has been sufficiently polluted.</description>
+		<statBases>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingParasolBush</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>8</growDays>
+			<harvestYield>6</harvestYield>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_TramaMass]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_TramaShrubBase">
+		<defName>MorrowRim_Plant_TramaMass</defName>
+		<label>trama mass</label>
+		<description>A large mass of mutated trama roots, their growth greatly enhanced by high levels of pollution. The mass is so dense that you can't even walk through it, not that many would dare risk trying. Can only grow on ash rich ground that has been sufficiently polluted</description>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+			<MaxHitPoints>140</MaxHitPoints>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>0.1</fillPercent>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_TramaMass</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>24</growDays>
+			<harvestedThingDef>MorrowRim_RawTramaRoot</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.6~2.4</visualSizeRange>
+			<harvestWork>300</harvestWork>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+	</ThingDef>
+</Defs>

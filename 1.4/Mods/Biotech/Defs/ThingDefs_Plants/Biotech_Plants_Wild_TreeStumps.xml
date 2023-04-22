@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_ChoppedToxisolStump]==========-->
+	<ThingDef ParentName="MorrowRim_ChoppedParasolStumpBase">
+		<defName>MorrowRim_ChoppedToxisolStump</defName>
+		<label>chopped toxisol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/MorrowRim_ToxisolChopped</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[MorrowRim_SmashedToxisolStump]==========-->
+	<ThingDef ParentName="MorrowRim_SmashedParasolStumpBase">
+		<defName>MorrowRim_SmashedToxisolStump</defName>
+		<label>smashed toxisol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/MorrowRim_ToxisolSmashed</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

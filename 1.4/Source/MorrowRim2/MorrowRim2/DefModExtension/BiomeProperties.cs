@@ -15,6 +15,7 @@ namespace MorrowRim2
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
         public ThingDef forcedRockType;
+        public bool ignorePollutionForPlantCommonality = false;
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;

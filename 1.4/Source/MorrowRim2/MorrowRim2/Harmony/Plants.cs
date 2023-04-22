@@ -6,6 +6,32 @@ using Verse;
 namespace MorrowRim2
 {
     /// <summary>
+    /// Reduces the fertilty loss caused by pollution for specific biomes
+    /// It makes the polluted regions of the map look less like a wasteland
+    /// ~0.1ms tick impact
+    /// </summary>
+    [HarmonyPatch(typeof(FertilityGrid))]
+    [HarmonyPatch("CalculateFertilityAt")]
+    public static class FertilityGrid_CalculateFertilityAt_Patch
+    {
+        [HarmonyPostfix]
+        public static void MorrowRim_CalculateFertilityAt_Patch(IntVec3 loc, ref float __result, Map ___map)
+        {
+            if (ModsConfig.BiotechActive)
+            {
+                if (loc.IsPolluted(___map))
+                {
+                    BiomeProperties props = BiomeProperties.Get(___map.Biome);
+                    if (props != null && props.ignorePollutionForPlantCommonality)
+                    {
+                        __result = loc.GetTerrain(___map).fertility * 0.8f;
+                    }
+                }
+            }
+        }
+    }
+
+    /// <summary>
     /// Forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
     /// </summary>
     [HarmonyPatch(typeof(WildPlantSpawner))]
