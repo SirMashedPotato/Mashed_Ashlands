@@ -91,7 +91,7 @@
 	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawMuck</defName>
 		<label>muck</label>
-		<description>Raw muck harvested from a muck-sponge. While it can be refined into several useful items, many of which are perfectly safe to ingest, raw muck itself should not be consumed.</description>
+		<description>Raw muck harvested from a mucksponge. While it can be refined into several useful items, many of which are perfectly safe to ingest, raw muck itself should not be consumed.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_Muck</texPath>
 		</graphicData>

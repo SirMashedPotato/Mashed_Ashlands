@@ -39,11 +39,12 @@
 	<!-- ==========[MorrowRim_Plant_MuckSponge]==========-->
 	<ThingDef Name="MorrowRim_Plant_MuckSpongeBase" ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_MuckSponge</defName>
-		<label>muck sponge plant</label>
+		<label>mucksponge plant</label>
 		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.05</cavePlantCommonality>
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -62,7 +63,7 @@
 			<immatureGraphicPath>Things/Plant/MorrowRim_MuckSpongePlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawMuck</harvestedThingDef>

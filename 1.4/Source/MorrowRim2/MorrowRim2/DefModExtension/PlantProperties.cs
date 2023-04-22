@@ -6,6 +6,7 @@ namespace MorrowRim2
     class PlantProperties : DefModExtension
     {
         public bool ashlandCavePlant = false;
+        public float cavePlantCommonality = 0.5f;
 
         public ThingDef secondaryDrop = null;
         public IntRange secondaryDropAmountRange;

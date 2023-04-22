@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_Bloatspore]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_Bloatspore</defName>
+		<label>bloatspore</label>
+		<description>A small brown mushroom that somewhat resembles a toilet, in more than one way. Only found growing in damp caves in ashland regions. Slowly fills up with bloat, a byproduct of the mushroom digesting nutrients from the ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.2</cavePlantCommonality>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_Bloatspore</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilityMin>0.6</fertilityMin>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<dieIfLeafless>true</dieIfLeafless>
+			<topWindExposure>0</topWindExposure>
+			<growDays>7.8</growDays>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>

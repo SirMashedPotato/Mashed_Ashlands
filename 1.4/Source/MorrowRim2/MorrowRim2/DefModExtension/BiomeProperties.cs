@@ -12,12 +12,19 @@ namespace MorrowRim2
 
         /* for biome gen */
         public bool disableBeaches = false;
-        public TerrainDef caveGravelReplacer;
+        
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
         public ThingDef forcedRockType;
         public bool increasePollutedFertility = false;
+
+        /* for cave gen */
         public bool useAshlandCavePlants = false;
+        public bool useCustomCaveTerrain = false;
+        public TerrainDef otherTerrainDef;
+        public TerrainDef waterTerrainDef;
+        public float otherTerrainThreshold = 0.55f;
+        public float waterThreshold = 0.93f;
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;

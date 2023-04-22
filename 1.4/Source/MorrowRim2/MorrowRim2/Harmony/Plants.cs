@@ -64,6 +64,34 @@ namespace MorrowRim2
     }
 
     /// <summary>
+    /// Increases the weight of ashland cave plants in ashland biomes, specifically for cave tiles
+    /// </summary>
+    [HarmonyPatch(typeof(WildPlantSpawner))]
+    [HarmonyPatch("PlantChoiceWeight")]
+    public static class WildPlantSpawner_PlantChoiceWeight_Patch
+    {
+        [HarmonyPostfix]
+        public static void MorrowRim_PlantChoiceWeight_Patch(ThingDef plantDef, IntVec3 c, ref float __result, Map ___map)
+        {
+            BiomeProperties biomeProps = BiomeProperties.Get(___map.Biome);
+            if (biomeProps != null && biomeProps.useAshlandCavePlants)
+            {
+                RoofDef roof = c.GetRoof(___map);
+                if (roof != null && roof.isNatural)
+                {
+                    {
+                        PlantProperties plantProps = PlantProperties.Get(plantDef);
+                        if (plantProps != null && plantProps.ashlandCavePlant)
+                        {
+                            __result = plantProps.cavePlantCommonality;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /// <summary>
     /// Forces specific plants to only be sowable on specific terrain
     /// </summary>
     [HarmonyPatch(typeof(PlantUtility))]

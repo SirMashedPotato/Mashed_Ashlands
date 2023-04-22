@@ -3,8 +3,8 @@
 	<!-- ==========[MorrowRim_Plant_WasteSponge]==========-->
 	<ThingDef ParentName="MorrowRim_Plant_MuckSpongeBase">
 		<defName>MorrowRim_Plant_WasteSponge</defName>
-		<label>waste sponge plant</label>
-		<description>A highly mutated sponge-like fungus, often found around sources of polluted water in the ashlands. Slowly fills with toxic waste, a byproduct of the mushroom digesting nutrients from the ground. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
+		<label>wastesponge plant</label>
+		<description>A highly mutated sponge-like fungus, often found around sources of polluted water in the ashlands. Slowly fills with toxic waste, a byproduct of the mushroom digesting nutrients from the ground. While structurally quite sturdy, wastesponge will slowly be worn down by ash storms.</description>
 		<statBases>
 			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
 		</statBases>
