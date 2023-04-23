@@ -119,4 +119,37 @@
 		</thingCategories>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
+	<!-- ==========[MorrowRim_PurpleCrystalShard]==========-->
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>MorrowRim_PurpleCrystalShard</defName>
+		<label>purple crystal shards</label>
+		<description>Shards from a purple crystal pylon. Not exactly durable, but can be used to make exquisite looking sculptures.</description>
+		<graphicData>
+		      <texPath>Things/Item/Resource/MorrowRim_PurpleCrystalShard</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>1.25</Mass>
+			<MarketValue>1.2</MarketValue>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<commonality>0</commonality>
+			<color>(186,151,248)</color>
+			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>crystalline</stuffAdjective>
+			<statFactors>
+				<Beauty>1.5</Beauty>
+				<MaxHitPoints>0.6</MaxHitPoints>
+				<WorkToBuild>6</WorkToBuild>
+				<WorkToMake>1.2</WorkToMake>
+			</statFactors>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+	</ThingDef>
 </Defs>

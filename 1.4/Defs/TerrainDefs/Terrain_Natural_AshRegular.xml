@@ -77,6 +77,14 @@
 		<scatterType>Rocky</scatterType>
 		<fertility>0.8</fertility>
 	</TerrainDef>
+	<!-- ==========[MorrowRim_RichAshGravel]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBase">
+		<defName>MorrowRim_RichAshGravel</defName>
+		<label>rich stony ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshGravel</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>1.1</fertility>
+	</TerrainDef>
 	<!-- ==========[MorrowRim_AshSand]==========-->
 	<TerrainDef ParentName="MorrowRim_AshBase">
 		<defName>MorrowRim_AshSand</defName>

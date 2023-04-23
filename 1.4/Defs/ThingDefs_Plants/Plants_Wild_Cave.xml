@@ -9,9 +9,6 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<selectable>false</selectable>
@@ -36,5 +33,44 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<wildOrder>1</wildOrder>
 		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_PurpleCrystal]==========-->
+	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_PurpleCrystal</defName>
+		<label>purple crystal pylon</label>
+		<description>A large purple crystal, often found growing in caves in ashland regions. It hums with a strange energy, and emits a strong purple glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.1</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_PurpleCrystalPlant</texPath>
+		</graphicData>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0</fertilityMin>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_PurpleCrystalShard</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<growDays>15</growDays>
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>1.2~2.6</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(186,151,248,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

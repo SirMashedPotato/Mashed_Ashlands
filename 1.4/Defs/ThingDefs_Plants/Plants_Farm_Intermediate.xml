@@ -31,7 +31,7 @@
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>8</sowMinSkill>
-			<growDays>15</growDays>
+			<growDays>13</growDays>
 			<visualSizeRange>1.0~2.4</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
