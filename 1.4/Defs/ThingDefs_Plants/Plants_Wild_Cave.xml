@@ -52,6 +52,7 @@
 			<texPath>Things/Plant/MorrowRim_PurpleCrystalPlant</texPath>
 		</graphicData>
 		<plant>
+			<pollution>Any</pollution>
 			<neverBlightable>true</neverBlightable>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<fertilityMin>0</fertilityMin>
