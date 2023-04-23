@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_TeaTramaRoot]==========-->
+	<ThingDef ParentName="MorrowRim_TeaBase">
+		<defName>MorrowRim_TeaTramaRoot</defName>
+		<label>trama root tea</label>
+		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_TeaTramaRootHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/MorrowRim_TeaTramaRoot</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MorrowRim_TeaTramaRootHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>MorrowRim_AshSowing_Beginner</researchPrerequisite>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<MorrowRim_RawTramaRoot>3</MorrowRim_RawTramaRoot>
+		</costList>
+	</ThingDef>
+	<!-- ==========[MorrowRim_TeaTramaRootHigh]==========-->
+	<HediffDef ParentName="MorrowRim_TeaHighBase">
+		<defName>MorrowRim_TeaTramaRootHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>trama root tea</label>
+		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

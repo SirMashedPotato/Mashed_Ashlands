@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_TeaBase]==========-->
+	<ThingDef ParentName="DrugBase" Name="MorrowRim_TeaBase" Abstract="True">
+		<possessionCount>6</possessionCount>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<MarketValue>8</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Gluttonous</joyKind>
+			<joy>0.1</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<tableDesired>false</tableDesired>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>999</listOrder>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[MorrowRim_TramaRootTeaHigh]==========-->
+	<HediffDef Name="MorrowRim_TeaHighBase" Abstract="True">
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

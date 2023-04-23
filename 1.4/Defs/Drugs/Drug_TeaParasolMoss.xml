@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_TeaParasolMoss]==========-->
+	<ThingDef ParentName="MorrowRim_TeaBase">
+		<defName>MorrowRim_TeaParasolMoss</defName>
+		<label>parasol moss tea</label>
+		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_TeaParasolMossHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/MorrowRim_TeaParasolMoss</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MorrowRim_TeaParasolMossHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>MorrowRim_AshSowing_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+				<Intellectual>3</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<MorrowRim_RawEmperorParasolMoss>3</MorrowRim_RawEmperorParasolMoss>
+		</costList>
+	</ThingDef>
+	<!-- ==========[MorrowRim_TeaParasolMossHigh]==========-->
+	<HediffDef ParentName="MorrowRim_TeaHighBase">
+		<defName>MorrowRim_TeaParasolMossHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>parasol moss tea</label>
+		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MorrowRim_AshResistance>0.25</MorrowRim_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
