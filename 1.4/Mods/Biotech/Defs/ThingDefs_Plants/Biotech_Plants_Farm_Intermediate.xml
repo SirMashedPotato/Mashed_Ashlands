@@ -54,7 +54,7 @@
 	<ThingDef ParentName="MorrowRim_Plant_TramaShrubBase">
 		<defName>MorrowRim_Plant_TramaMass</defName>
 		<label>trama mass</label>
-		<description>A large mass of mutated trama roots, their growth greatly enhanced by high levels of pollution. The mass is so dense that you can't even walk through it, not that many would dare risk trying. Can only grow on ash rich ground that has been sufficiently polluted</description>
+		<description>A large mass of mutated trama roots, their growth greatly enhanced by high levels of pollution. The mass is so dense that you can't even walk through it, not that many would dare risk trying. Can only grow on ash rich ground that has been sufficiently polluted.</description>
 		<statBases>
 			<Beauty>-2</Beauty>
 			<BeautyOutdoors>-2</BeautyOutdoors>
@@ -84,5 +84,30 @@
 			<harvestWork>300</harvestWork>
 			<topWindExposure>0.05</topWindExposure>
 		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Scathecraw]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_ScathecrawBase">
+		<defName>MorrowRim_Plant_GlowingScathecraw</defName>
+		<label>glowing scathecraw plant</label>
+		<description>A highly mutated scathecraw, typically found growing in polluted ashland regions. Its ability to thrive on polluted ash has allowed it to grow larger than the regular scathecraw, while at the same time barely affecting the flesh of the leaves. Can only grow on ash rich ground that has been sufficiently polluted.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingScathecrawPlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<harvestYield>18</harvestYield>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.1~1.9</visualSizeRange>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

@@ -36,7 +36,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
-				<glowColor>(186,248,151,0)</glowColor>
+				<glowColor>(146,208,111,0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
