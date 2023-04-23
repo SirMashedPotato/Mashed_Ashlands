@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_GlowingCrystal]==========-->
+	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_GlowingCrystal</defName>
+		<label>glowing crystal pylon</label>
+		<description>A large glowing crystal, often found growing in caves in polluted ashland regions. It hums with a strange energy, and emits a strong eerie glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.1</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingCrystalPlant</texPath>
+		</graphicData>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0</fertilityMin>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_GlowingCrystalShard</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<growDays>15</growDays>
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>1.2~2.6</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(186,248,151,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
