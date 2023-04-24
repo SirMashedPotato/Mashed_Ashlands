@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_MakeClothFromKresh]==========-->
+	<RecipeDef Name="MorrowRim_MakeClothFromKreshBase">
+		<defName>MorrowRim_KreshToCloth</defName>
+		<label>weave kresh cloth into cloth</label>
+		<description>Weave 20 kresh cloth into 10 cloth.</description>
+		<jobString>Weaving kresh.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>900</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_KreshCloth</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_KreshCloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>10</Cloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>MorrowRim_AshSowing_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[MorrowRim_KreshToClothBulk]==========-->
+	<RecipeDef ParentName="MorrowRim_MakeClothFromKreshBase">
+		<defName>MorrowRim_KreshToClothBulk</defName>
+		<label>weave kresh cloth into cloth x4</label>
+		<description>Weave 80 kresh cloth into 40 cloth.</description>
+		<workAmount>1800</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_KreshCloth</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<Cloth>40</Cloth>
+		</products>
+	</RecipeDef>
+</Defs>
