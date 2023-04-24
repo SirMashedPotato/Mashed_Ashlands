@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_RefineMuckBase]==========-->
+	<RecipeDef Name="MorrowRim_RefineMuckBase" Abstract="True">
+		<jobString>Refining herbal medicine from muck.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_RawMuck</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_RawMuck</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	<!-- ==========[MorrowRim_RefineMuck]==========-->
+	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
+		<defName>MorrowRim_RefineMuck</defName>
+		<label>refine muck</label>
+		<description>Refines 10 buckets of muck into 5 herbal medicine.</description>
+		<products>
+			<MedicineHerbal>5</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_AshSowing_Intermediate</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[MorrowRim_RefineMuckWithKwamaEgg]==========-->
+	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
+		<defName>MorrowRim_RefineMuckWithKwamaEgg</defName>
+		<label>refine muck with kwama eggs</label>
+		<description>Refines 10 buckets of muck and 2 kwama eggs into 10 herbal medicine.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_KwamaEgg</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_KwamaEgg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineHerbal>10</MedicineHerbal>
+		</products>
+		<researchPrerequisite>MorrowRim_AshSowing_Advanced</researchPrerequisite>
+	</RecipeDef>
+</Defs>

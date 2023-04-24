@@ -67,7 +67,7 @@
 			<growOptimalGlow>1</growOptimalGlow>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawMuck</harvestedThingDef>
-			<harvestYield>16</harvestYield>
+			<harvestYield>8</harvestYield>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
