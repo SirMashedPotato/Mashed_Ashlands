@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="LeatherBase" Name="MorrowRim_LeatherBase" Abstract="True">
+		<tradeTags>
+			<li>MorrowRim_AshlandLeather</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_NetchLeather]==========-->
+	<ThingDef ParentName="MorrowRim_LeatherBase">
+		<defName>MorrowRim_NetchLeather</defName>
+		<label>netch leather</label>
+		<description>Tanned, dried, scraped netch skin. Tough and flexible, but a poor insulator. Provides a slight increase to toxic resistance.</description>
+		<graphicData>
+			<color>(133,111,94)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<Flammability>0.8</Flammability>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(133,111,94)</color>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+			</statFactors>
+			<statOffsets>
+				<ToxicResistance>0.02</ToxicResistance>
+			</statOffsets>
+		</stuffProps>
+		<tradeTags>
+			<li>MorrowRim_AshlandLeather</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

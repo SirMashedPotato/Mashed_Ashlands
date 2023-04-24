@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_TentacleAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+</Defs>

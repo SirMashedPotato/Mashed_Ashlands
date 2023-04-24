@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Filth_Ash]==========-->
 	<ThingDef ParentName="BaseFilth">
 		<defName>MorrowRim_Filth_Ash</defName>
 		<label>ash</label>
@@ -16,6 +17,24 @@
 			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
 			<canFilthAttach>true</canFilthAttach>
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Filth_NetchBlood]==========-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_NetchBlood</defName>
+		<label>netch blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(146, 100, 156, 50)</color>
+		</graphicData>
+		<filth>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
 		</filth>
 	</ThingDef>
 </Defs>

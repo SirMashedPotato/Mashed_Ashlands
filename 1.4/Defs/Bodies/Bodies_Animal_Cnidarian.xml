@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_CnidarianShellBody]==========-->
+	<BodyDef>
+		<defName>MorrowRim_CnidarianShellBody</defName>
+		<label>cnidarian like with shell</label>
+		<corePart>
+			<def>MorrowRim_CnidarianShell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MorrowRim_CnidarianUnderbelly</def>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianGastricCavity</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianLevitationSac</def>
+					<customLabel>first levitation sac</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianLevitationSac</def>
+					<customLabel>second levitation sac</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianLevitationSac</def>
+					<customLabel>third levitation sac</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.12</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Brain</def>
+							<coverage>0.18</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<customLabel>left sensory organ</customLabel>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<customLabel>right sensory organ</customLabel>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>AnimalJaw</def>
+							<coverage>0.20</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>front left tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>front right tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>middle left tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>middle right tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>rear left tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>MorrowRim_CnidarianTentacle</def>
+					<customLabel>rear right tentacle</customLabel>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>MorrowRim_TentacleAttackTool</li>
+					</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

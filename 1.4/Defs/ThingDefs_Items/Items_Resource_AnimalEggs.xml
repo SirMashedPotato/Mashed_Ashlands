@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_FleshNetch]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NetchFertilized</defName>
+		<label>netch egg (fert.)</label>
+		<description>A fertilised netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As netch are rather protective of their eggs, netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<color>(172,110,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_Netch</hatcherPawn>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

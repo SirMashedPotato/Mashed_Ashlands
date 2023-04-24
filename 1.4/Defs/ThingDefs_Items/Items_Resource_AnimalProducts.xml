@@ -11,8 +11,7 @@
 			<li>AnimalProductRaw</li>
 		</thingCategories>
 		<tradeTags>
-			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>MorrowRim_AshlandsRawRoughPlant</li>
+			<li>MorrowRim_AshlandsAnimalProduct</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_KwamaEgg]==========-->
@@ -21,7 +20,7 @@
 		<label>kwama egg</label>
 		<description>An infertile kwama egg, gathered from a kwama egg mine. While the idea of eating an insect egg the size of a small child may seem strange to some people, kwama eggs are considered to be quite the delicacy.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/MorrowRim_KwamaEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_KwamaEgg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
@@ -39,6 +38,35 @@
 		</comps>
 		<ingestible>
 			<preferability>RawBad</preferability>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[MorrowRim_NetchJelly]==========-->
+	<ThingDef ParentName="MorrowRim_OrganicProductBase">
+		<defName>MorrowRim_NetchJelly</defName>
+		<label>netch jelly</label>
+		<description>A jelly like substance 'milked' from a netch. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_NetchJelly</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>8</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
 </Defs>
