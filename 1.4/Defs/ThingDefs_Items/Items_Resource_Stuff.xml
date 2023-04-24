@@ -149,7 +149,6 @@
 			<statOffsets>
 				<Beauty>2</Beauty>
 			</statOffsets>
-			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
 		</stuffProps>
 	</ThingDef>
 </Defs>

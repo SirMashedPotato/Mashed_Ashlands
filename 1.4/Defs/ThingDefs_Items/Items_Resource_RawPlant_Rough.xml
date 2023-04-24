@@ -21,7 +21,7 @@
 			<categories>
 				<li>Woody</li>
 			</categories>
-			<commonality>0.5</commonality>
+			<commonality>0</commonality>
 			<color>(184,150,104)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
@@ -36,7 +36,6 @@
 				<WorkToBuild>0.7</WorkToBuild>
 				<DoorOpenSpeed>1.2</DoorOpenSpeed>
 			</statFactors>
-			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
 		</stuffProps>
 		<statBases>
 			<MarketValue>1</MarketValue>
