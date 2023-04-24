@@ -13,7 +13,9 @@
 			<MeatAmount>120</MeatAmount>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
-		<!-- VE float comp -->
+		<comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
+		</comps>
 		<tools>
 			<li>
 				<label>head</label>
