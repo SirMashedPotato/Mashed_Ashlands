@@ -31,8 +31,30 @@
 				<ToxicResistance>0.02</ToxicResistance>
 			</statOffsets>
 		</stuffProps>
-		<tradeTags>
-			<li>MorrowRim_AshlandLeather</li>
-		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_NixOxChitin]==========-->
+	<ThingDef ParentName="MorrowRim_LeatherBase">
+		<defName>MorrowRim_NixOxChitin</defName>
+		<label>nix-ox chitin</label>
+		<description>Chitin plates harvested from a nix-ox. Tough and absorbent, but a very poor insulator.</description>
+		<graphicData>
+			<color>(98,87,70)</color>
+			<texPath>Things/Item/Resource/MorrowRim_ChitinPlate</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<Flammability>0.6</Flammability>
+			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(98,87,70)</color>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
 	</ThingDef>
 </Defs>

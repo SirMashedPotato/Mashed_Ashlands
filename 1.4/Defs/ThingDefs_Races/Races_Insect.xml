@@ -20,7 +20,6 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<body>MorrowRim_CnidarianShellBody</body>
-			<leatherDef>MorrowRim_NetchLeather</leatherDef>
 		</race>
 		<ingredient>
 			<mergeCompatibilityTags>
@@ -73,6 +72,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<body>MorrowRim_InsectTickLike</body>
+			<leatherDef>MorrowRim_NixOxChitin</leatherDef>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.45</baseHealthScale>
 			<baseHungerRate>0.435</baseHungerRate>
