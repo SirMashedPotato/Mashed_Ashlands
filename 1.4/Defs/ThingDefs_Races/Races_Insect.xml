@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_InsectBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_InsectThingBase" Abstract="True">
+		<modExtensions>
+			<li Class="MorrowRim2.PollutionProperties">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<body>MorrowRim_CnidarianShellBody</body>
+			<leatherDef>MorrowRim_NetchLeather</leatherDef>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+	<!-- ==========[MorrowRim_NixOx]========== -->
+	<ThingDef ParentName="MorrowRim_InsectThingBase">
+		<defName>MorrowRim_NixOx</defName>
+		<label>nix-ox</label>
+		<description>A large grazing insect native to the ashland regions. Surprising to many, they are closely related to the nix-hound. However unlike their relatives, the nix-ox is a gentle herbivore, that primarily feeds on the mushrooms that grow in ashland regions.\n\nWhile they are often farmed for their chitin, meat, or 'milk', most greatly dislike the taste and consistency of the latter two, and also find the chitin rather difficult to work with. As such, domesticated nix-ox are usually used as pack animals.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<FilthRate>10</FilthRate>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_NixOxFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>MorrowRim_NixOxMilk</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>24</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>MorrowRim_InsectTickLike</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>1.45</baseHealthScale>
+			<baseHungerRate>0.435</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.6</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>15</lifeExpectancy>
+			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<roamMtbDays>2</roamMtbDays>
+			<!-- made by Yoann from yoann.babiesanimals -->
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.001,100)</li>
+					<li>(10.125,100)</li>
+					<li>(11.25,30)</li>
+					<li>(13.125,18)</li>
+					<li>(15,10)</li>
+					<li>(16.875,3)</li>
+					<li>(18.75,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.333</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+			<li>MorrowRim_AshlandAnimalCommon</li>
+			<li>MorrowRim_AshlandAnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_NixOx" ParentName="AnimalKindBase">
+		<defName>MorrowRim_NixOx</defName>
+		<label>nix-ox</label>
+		<labelMale>nix-ox bull</labelMale>
+		<labelFemale>nix-ox cow</labelFemale>
+		<race>MorrowRim_NixOx</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~9</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>nix-ox calf</label>
+				<labelPlural>nix-ox calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxCalf</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOx</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOx</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOx</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOx</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

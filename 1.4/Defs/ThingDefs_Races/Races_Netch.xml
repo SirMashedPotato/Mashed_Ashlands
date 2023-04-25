@@ -4,6 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_NetchThingBase" Abstract="True">
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 			<MoveSpeed>3.0</MoveSpeed>
 			<MarketValue>300</MarketValue>
@@ -13,9 +14,6 @@
 			<MeatAmount>120</MeatAmount>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
-		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
-		</comps>
 		<tools>
 			<li>
 				<label>head</label>
@@ -45,7 +43,9 @@
 				</surpriseAttack>
 			</li>
 		</tools>
-		<comps/>
+		<comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
+		</comps>
 		<race>
 			<fleshType>MorrowRim_FleshNetch</fleshType>
 			<bloodDef>MorrowRim_Filth_NetchBlood</bloodDef>

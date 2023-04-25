@@ -181,6 +181,7 @@
 			<Rat>1.0</Rat>
 			<!-- herd animals -->
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
+			<MorrowRim_NixOx>0.2</MorrowRim_NixOx>
 			<!-- predators -->
 			<!-- special -->
 		</wildAnimals>

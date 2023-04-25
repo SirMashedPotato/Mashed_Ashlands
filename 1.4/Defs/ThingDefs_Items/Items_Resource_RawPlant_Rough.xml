@@ -110,6 +110,7 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<specialThoughtDirect>MorrowRim_AteRawMuck</specialThoughtDirect>
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawScathecraw]==========-->

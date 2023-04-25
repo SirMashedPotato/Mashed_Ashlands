@@ -69,4 +69,34 @@
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[MorrowRim_NixOxMilk]==========-->
+	<ThingDef ParentName="MorrowRim_OrganicProductBase">
+		<defName>MorrowRim_NixOxMilk</defName>
+		<label>nix-ox mucous</label>
+		<description>A viscous liquid secreted by a nix-ox. Rather unpleasant when consumed raw, though surprisingly tasty when cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_NixOxMilk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>16</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<specialThoughtDirect>MorrowRim_AteNixOxMilk</specialThoughtDirect>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+	</ThingDef>
 </Defs>

@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_FleshNetch]==========-->
+	<!-- ==========[MorrowRim_Egg_NixOxFertilized]==========-->
+	<ThingDef ParentName="EggFertBase" Name="MorrowRim_InsectEggFertBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_InsectEgg</texPath>
+		</graphicData>
+		<ingestible>
+			<specialThoughtDirect>MorrowRim_AteInsectEggDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient>MorrowRim_AteInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NetchFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_NetchFertilized</defName>
 		<label>netch egg (fert.)</label>
@@ -18,8 +28,23 @@
 				<hatcherPawn>MorrowRim_Netch</hatcherPawn>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>AshlandRare</li>
-		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NixOxFertilized]==========-->
+	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
+		<defName>MorrowRim_Egg_NixOxFertilized</defName>
+		<label>nix-ox egg (fert.)</label>
+		<description>A fertilised nix-ox egg. If all goes well, it should hatch into a nix-ox calf. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(108,94,79)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NixOx</hatcherPawn>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

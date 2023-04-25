@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AteRawMuck]==========-->
+	<ThoughtDef>
+		<defName>MorrowRim_AteRawMuck</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>consumed muck</label>
+				<description>Good thing I have a bucket right here.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[MorrowRim_AteNixOxMilk]==========-->
+	<ThoughtDef>
+		<defName>MorrowRim_AteNixOxMilk</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>consumed raw nix ox mucus</label>
+				<description>Bleh, tastes like old socks!</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[MorrowRim_AteInsectEggDirect]==========-->
+	<ThoughtDef>
+		<defName>MorrowRim_AteInsectEggDirect</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate insect egg</label>
+				<description>I ate some slimy insect eggs. It was, possibly, the most disgusting thing I've ever tasted.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[MorrowRim_AteInsectEggAsIngredient]==========-->
+	<ThoughtDef>
+		<defName>MorrowRim_AteInsectEggAsIngredient</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate cooked insect egg</label>
+				<description>I ate a meal cooked with slimy insect eggs. The seasoning partly covered the taste, but there were fluid pockets in there that I can't identify.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
