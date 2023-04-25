@@ -12,6 +12,7 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<race>
 			<fleshType>Insectoid</fleshType>

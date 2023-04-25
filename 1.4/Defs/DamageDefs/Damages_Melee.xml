@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_BurnBite</defName>
+		<label>fire bite</label>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+</Defs>
