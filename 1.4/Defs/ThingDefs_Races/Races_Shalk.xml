@@ -142,4 +142,90 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[MorrowRim_ShalkFungal]========== -->
+	<ThingDef ParentName="MorrowRim_ShalkThingBase">
+		<defName>MorrowRim_ShalkFungal</defName>
+		<label>fungal shalk</label>
+		<description>A subspecies of the shalk that has evolved a symbiotic bond with a species of ashland fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk blend into the surroundings. Taming a fungal shalk will allow one to regularly harvest these mushrooms.\n\nWhile many would think fungal shalk pose little threat due to their size, the mandibles of fungal shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_ShalkFungalFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>MorrowRim_RawAshFungus</woolDef>
+				<shearIntervalDays>4</shearIntervalDays>
+				<woolAmount>10</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+		</race>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+					<li>MorrowRim_BurnBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Chemfuel>1</Chemfuel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_ShalkFungal</defName>
+		<label>fungal shalk</label>
+		<race>MorrowRim_ShalkFungal</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkFungal</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkFungal</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkFungal</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>

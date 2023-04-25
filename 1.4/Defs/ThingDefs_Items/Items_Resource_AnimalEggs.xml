@@ -66,4 +66,23 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
+		<defName>MorrowRim_Egg_ShalkFungalFertilized</defName>
+		<label>fungal shalk egg (fert.)</label>
+		<description>A fertilised fungal shalk egg. If all goes well, it should hatch into a baby fungal shalk. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(109,111,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_ShalkFungal</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

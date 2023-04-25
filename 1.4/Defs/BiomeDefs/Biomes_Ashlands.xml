@@ -178,11 +178,12 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>1.0</Rat>
+			<Rat>0.6</Rat>
 			<!-- herd animals -->
+			<MorrowRim_Shalk>0.2</MorrowRim_Shalk>
+			<MorrowRim_ShalkFungal>0.1</MorrowRim_ShalkFungal>
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_NixOx>0.2</MorrowRim_NixOx>
-			<MorrowRim_Shalk>0.2</MorrowRim_Shalk>
 			<!-- predators -->
 			<!-- special -->
 		</wildAnimals>
