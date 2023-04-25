@@ -34,7 +34,7 @@
 			<Cloth>10</Cloth>
 		</products>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>MorrowRim_AshSowing_Beginner</researchPrerequisite>
+		<researchPrerequisite>MorrowRim_AshSurvival_Beginner</researchPrerequisite>
 	</RecipeDef>
 	<!-- ==========[MorrowRim_KreshToClothBulk]==========-->
 	<RecipeDef ParentName="MorrowRim_MakeClothFromKreshBase">

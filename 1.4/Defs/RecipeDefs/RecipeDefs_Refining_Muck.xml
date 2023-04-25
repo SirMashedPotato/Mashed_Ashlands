@@ -1,16 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_RefineMuckBase]==========-->
-	<RecipeDef Name="MorrowRim_RefineMuckBase" Abstract="True">
+	<RecipeDef ParentName="MorrowRim_RefineBase" Name="MorrowRim_RefineMuckBase" Abstract="True">
 		<jobString>Refining herbal medicine from muck.</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-			<li>DrugLab</li>
-		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -26,7 +18,6 @@
 				<li>MorrowRim_RawMuck</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<workSkill>Medicine</workSkill>
 	</RecipeDef>
 	<!-- ==========[MorrowRim_RefineMuck]==========-->
 	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
@@ -36,7 +27,7 @@
 		<products>
 			<MedicineHerbal>5</MedicineHerbal>
 		</products>
-		<researchPrerequisite>MorrowRim_AshSowing_Intermediate</researchPrerequisite>
+		<researchPrerequisite>MorrowRim_AshSurvival_Intermediate</researchPrerequisite>
 	</RecipeDef>
 	<!-- ==========[MorrowRim_RefineMuckWithKwamaEgg]==========-->
 	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
@@ -61,6 +52,6 @@
 		<products>
 			<MedicineHerbal>10</MedicineHerbal>
 		</products>
-		<researchPrerequisite>MorrowRim_AshSowing_Advanced</researchPrerequisite>
+		<researchPrerequisite>MorrowRim_AshSurvival_Advanced</researchPrerequisite>
 	</RecipeDef>
 </Defs>

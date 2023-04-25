@@ -42,4 +42,46 @@
 			<li>MorrowRim_AshSowing_Intermediate</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	<!-- ==========[MorrowRim_AshSurvival_Beginner]==========-->
+	<ResearchProjectDef>
+		<defName>MorrowRim_AshSurvival_Beginner</defName>
+		<label>beginner ashland survival</label>
+		<description>TODO</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+		<tags>
+			<li>MorrowRim_AshlandBasic</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[MorrowRim_AshSurvival_Intermediate]==========-->
+	<ResearchProjectDef>
+		<defName>MorrowRim_AshSurvival_Intermediate</defName>
+		<label>intermediate ashland survival</label>
+		<description>TODO.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+		<prerequisites>
+			<li>MorrowRim_AshSurvival_Beginner</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[MorrowRim_AshSurvival_Advanced]==========-->
+	<ResearchProjectDef>
+		<defName>MorrowRim_AshSurvival_Advanced</defName>
+		<label>advanced ashland survival</label>
+		<description>TODO.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+		<prerequisites>
+			<li>MorrowRim_AshSurvival_Intermediate</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>

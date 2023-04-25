@@ -20,7 +20,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<researchPrerequisite>MorrowRim_AshSowing_Advanced</researchPrerequisite>
+			<researchPrerequisite>MorrowRim_AshSurvival_Advanced</researchPrerequisite>
 			<skillRequirements>
 				<Cooking>5</Cooking>
 				<Intellectual>3</Intellectual>

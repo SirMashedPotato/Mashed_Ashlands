@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_RefineNixOxMilk]==========-->
+	<RecipeDef ParentName="MorrowRim_RefineBase" Name="MorrowRim_RefineNixOxMilkBase">
+		<defName>MorrowRim_RefineNixOxMilk</defName>
+		<label>refine nix-ox mucous</label>
+		<description>Refines 10 nix-ox mucous into 5 chemfuel.</description>
+		<jobString>Refining chemfuel from nix-ox mucous.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_NixOxMilk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_NixOxMilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>5</Chemfuel>
+		</products>
+		<researchPrerequisite>MorrowRim_AshSurvival_Intermediate</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[MorrowRim_RefineNixOxMilkWithShalkResin]==========-->
+	<RecipeDef ParentName="MorrowRim_RefineNixOxMilkBase">
+		<defName>MorrowRim_RefineNixOxMilkWithShalkResin</defName>
+		<label>refine nix-ox mucous with shalk resin</label>
+		<description>Refines 10 nix-ox mucous and 5 shalk resin into 10 chemfuel.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MorrowRim_ShalkResin</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MorrowRim_ShalkResin</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products Inherit="False">
+			<Chemfuel>10</Chemfuel>
+		</products>
+		<researchPrerequisite>MorrowRim_AshSurvival_Advanced</researchPrerequisite>
+	</RecipeDef>
+</Defs>

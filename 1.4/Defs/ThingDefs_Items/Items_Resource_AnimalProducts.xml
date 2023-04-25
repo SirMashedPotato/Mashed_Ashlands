@@ -73,7 +73,7 @@
 	<ThingDef ParentName="MorrowRim_OrganicProductBase">
 		<defName>MorrowRim_NixOxMilk</defName>
 		<label>nix-ox mucous</label>
-		<description>A viscous liquid secreted by a nix-ox. Rather unpleasant when consumed raw, though surprisingly tasty when cooked.</description>
+		<description>A viscous liquid secreted by a nix-ox. Rather unpleasant when consumed raw, though surprisingly tasty when cooked. Some have even figured out how to refine it into chemfuel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_NixOxMilk</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
