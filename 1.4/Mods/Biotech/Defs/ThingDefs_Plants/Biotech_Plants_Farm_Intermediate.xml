@@ -39,6 +39,8 @@
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>8</growDays>
 			<harvestYield>6</harvestYield>
+			<harvestedThingDef>MorrowRim_RawGlowingAshFungus</harvestedThingDef>
+			<harvestTag>Standard</harvestTag>
 			<sowResearchPrerequisites Inherit="False">
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>

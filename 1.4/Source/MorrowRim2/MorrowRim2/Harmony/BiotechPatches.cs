@@ -7,7 +7,7 @@ namespace MorrowRim2
     /// <summary>
     /// Reduces the fertilty loss caused by pollution for specific biomes
     /// It makes the polluted regions of the map look less like a wasteland
-    /// ~0.1ms tick impact
+    /// ~0.005ms tick impact on average at speed 1
     /// </summary>
     [HarmonyPatch(typeof(FertilityGrid))]
     [HarmonyPatch("CalculateFertilityAt")]
@@ -20,8 +20,7 @@ namespace MorrowRim2
             {
                 if (loc.IsPolluted(___map))
                 {
-                    BiomeProperties props = BiomeProperties.Get(___map.Biome);
-                    if (props != null && props.increasePollutedFertility)
+                    if (OnStartupUtility.modifiedPollutionFertilityBiomes.Contains(___map.Biome))
                     {
                         __result = loc.GetTerrain(___map).fertility * 0.8f;
                     }

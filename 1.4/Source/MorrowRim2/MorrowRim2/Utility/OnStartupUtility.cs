@@ -11,6 +11,7 @@ namespace MorrowRim2
         public static List<BiomeDef> earlyAshlandBiomeDefs = new List<BiomeDef> { };
         public static List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef> { };
         public static List<BiomeDef> baseAshlandBiomeDefs = new List<BiomeDef> { };
+        public static List<BiomeDef> modifiedPollutionFertilityBiomes = new List<BiomeDef> { };
 
         public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
 
@@ -39,6 +40,10 @@ namespace MorrowRim2
                     if (props.baseBiome)
                     {
                         baseAshlandBiomeDefs.Add(biomeDef);
+                    }
+                    if (props.increasePollutedFertility)
+                    {
+                        modifiedPollutionFertilityBiomes.Add(biomeDef);
                     }
                 }
             }
