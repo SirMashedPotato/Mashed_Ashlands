@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_KagoutiBase">
 		<defName>MorrowRim_Kagouti</defName>
 		<label>kagouti</label>
-		<description>large bipedal reptiles native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams and corkbulb roots.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
+		<description>large bipedal reptiles native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
 		<statBases>
 			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
 			<MoveSpeed>4.8</MoveSpeed>
