@@ -57,4 +57,27 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_HeavyScaledLeather]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_HeavyScaledLeather</defName>
+		<label>heavy scaled leather</label>
+		<description>Thick scaly leather. Harvested from a large reptile. This thick skin insulates relatively well and protects very well.</description>
+		<graphicData>
+		  <color>(121,113,83)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>3.4</MarketValue>
+		  <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(121,113,83)</color>
+		  <commonality>0.025</commonality>
+		  <statFactors>
+			<MaxHitPoints>1.5</MaxHitPoints>
+			<Beauty>1.85</Beauty>
+		  </statFactors>
+		</stuffProps>
+	</ThingDef>
 </Defs>

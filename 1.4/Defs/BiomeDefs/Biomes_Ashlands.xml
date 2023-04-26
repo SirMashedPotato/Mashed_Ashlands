@@ -185,6 +185,7 @@
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_NixOx>0.2</MorrowRim_NixOx>
 			<!-- predators -->
+			<MorrowRim_Kagouti>0.2</MorrowRim_Kagouti>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
