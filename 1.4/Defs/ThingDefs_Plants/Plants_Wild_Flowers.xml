@@ -9,6 +9,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshGravel</li>
+					<li>MorrowRim_GrazelandSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
