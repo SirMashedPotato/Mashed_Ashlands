@@ -129,6 +129,12 @@
 		<combatPower>220</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
+		<modExtensions>
+			<li MayRequire="owlchemist.giddyup" Class="GiddyUp.CustomStats">
+				<speedModifier>1.1</speedModifier>
+				<armorModifier>1.1</armorModifier>
+			</li>
+		</modExtensions>
 		<lifeStages>
 			<li>
 				<label>kagouti calf</label>
