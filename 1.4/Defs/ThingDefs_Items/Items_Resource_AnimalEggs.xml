@@ -117,6 +117,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ScuttlerFertilized</defName>
+		<label>scuttler egg (fert.)</label>
+		<description>A fertilised scuttler egg. If all goes well, it should hatch into a scuttler whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_Scuttler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_ShalkFertilized]==========-->
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_ShalkFertilized</defName>
