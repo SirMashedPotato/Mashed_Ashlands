@@ -10,6 +10,26 @@
 			<specialThoughtAsIngredient>MorrowRim_AteInsectEggAsIngredient</specialThoughtAsIngredient>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_AlitFertilized</defName>
+		<label>alit egg (fert.)</label>
+		<description>A fertilised alit egg. If all goes well, it should hatch into a alit whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(124,138,109)</color>
+		  <drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_Alit</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_KagoutiFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_KagoutiFertilized</defName>

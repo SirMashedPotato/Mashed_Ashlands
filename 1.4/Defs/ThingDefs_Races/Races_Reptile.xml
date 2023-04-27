@@ -1,14 +1,189 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Alit]========== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_Alit</defName>
+		<label>alit</label>
+		<description>A large bipedal reptile native to ashland regions, closely related to the kagouti and guar. Tough scales, powerful legs, and a menacing bacteria-filled maw, make alit dangerous beasts to face in combat. Even then, alit prefer going after prey that won't fight back, and occasionally dig around in the ash for corkbulb roots.\n\nThose foolish enough to tame one, and lucky enough to succeed, will quickly find out that alit aren't exactly intelligent.</description>
+		<statBases>
+			<ToxicResistance>0.6</ToxicResistance>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<MoveSpeed>4.5</MoveSpeed>
+			<MarketValue>700</MarketValue>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>5</FilthRate>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+				<customThingToDig>MorrowRim_RawCorkbulbRoot</customThingToDig>
+				<customAmountToDig>10</customAmountToDig>
+				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
+				<spawnForbidden>true</spawnForbidden>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_AlitFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>1.8</maxPreyBodySize>
+			<body>MorrowRim_BipedalWithNoArms</body>
+			<baseHungerRate>0.45</baseHungerRate>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>MorrowRim_HeavyScaledLeather</leatherDef>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<wildness>0.80</wildness>
+			<lifeExpectancy>33</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>MorrowRim_AshlandAnimalUncommon</li>
+			<li>MorrowRim_AshlandAnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_Alit" ParentName="AnimalKindBase">
+		<defName>MorrowRim_Alit</defName>
+		<label>alit</label>
+		<race>MorrowRim_Alit</race>
+		<combatPower>220</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>alit whelp</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<drawSize>2.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<drawSize>2.4</drawSize>
+				</dessicatedBodyGraphicData>
+
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[MorrowRim_Kagouti]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_KagoutiBase">
 		<defName>MorrowRim_Kagouti</defName>
 		<label>kagouti</label>
-		<description>large bipedal reptiles native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
+		<description>A large bipedal reptile native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
 		<statBases>
 			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
 			<MoveSpeed>4.8</MoveSpeed>
 			<MarketValue>750</MarketValue>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
@@ -78,7 +253,7 @@
 			</li>
 		</comps>
 		<race>
-			<herdAnimal>false</herdAnimal>
+			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>3</maxPreyBodySize>
 			<body>MorrowRim_BipedalWithTusksAndCrest</body>
