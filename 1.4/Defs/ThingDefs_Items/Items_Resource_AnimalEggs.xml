@@ -18,7 +18,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(124,138,109)</color>
-		  <drawSize>1.35</drawSize>
+			<drawSize>1.35</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>21</MarketValue>
@@ -30,6 +30,36 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>MorrowRim_Egg_BantamGuarUnfertilized</defName>
+		<label>bantam guar egg (unfert.)</label>
+		<description>An unfertilised bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(228,185,135)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_BantamGuarFertilized</defName>
+		<label>bantam guar egg (fert.)</label>
+		<description>A fertilised bantam guar egg. If all goes well, it should hatch into a bantam guar whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_BantamGuar</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_KagoutiFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_KagoutiFertilized</defName>
@@ -38,7 +68,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(138,124,109)</color>
-		  <drawSize>1.35</drawSize>
+			<drawSize>1.35</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>21</MarketValue>
