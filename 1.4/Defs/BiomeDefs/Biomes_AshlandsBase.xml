@@ -2,6 +2,8 @@
 <Defs>
 	<BiomeDef Name="MorrowRim_AshlandsBase" Abstract="True">
 		<allowedPackAnimals>
+			<li>MorrowRim_Guar</li>
+			<li>MorrowRim_NixOx</li>
 			<li>Muffalo</li>
 			<li>Alpaca</li>
 		</allowedPackAnimals>
