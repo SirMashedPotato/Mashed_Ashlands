@@ -30,7 +30,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>MorrowRim_HeavyScaledLeather</defName>
 		<label>heavy scaled leather</label>
-		<description>Thick scaly leather. Harvested from a large reptile. This thick skin insulates relatively well and protects very well.</description>
+		<description>Thick scaly leather, harvested from a large reptile. This thick skin insulates relatively well and protects very well.</description>
 		<graphicData>
 		  <color>(121,113,83)</color>
 		</graphicData>
