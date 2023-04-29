@@ -86,7 +86,7 @@
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -449,6 +449,7 @@
 			<nuzzleMtbHours>80</nuzzleMtbHours>
 			<petness>0.3</petness>
 			<roamMtbDays>2.5</roamMtbDays>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<!-- made by Yoann from yoann.babiesanimals -->
 			<ageGenerationCurve>
 				<points>
@@ -677,7 +678,7 @@
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

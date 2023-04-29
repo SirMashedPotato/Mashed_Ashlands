@@ -119,13 +119,34 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NixHoundFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NixHoundFertilized</defName>
+		<label>nix-hound egg (fert.)</label>
+		<description>A fertilised nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,94,79)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NixHound</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_NixOxFertilized]==========-->
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_NixOxFertilized</defName>
 		<label>nix-ox egg (fert.)</label>
-		<description>A fertilised nix-ox egg. If all goes well, it should hatch into a nix-ox calf. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilised nix-ox egg. If all goes well, it should hatch into a nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
 			<color>(108,94,79)</color>
+			<drawSize>1.4</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>19</MarketValue>
@@ -161,7 +182,7 @@
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_ShalkFertilized</defName>
 		<label>shalk egg (fert.)</label>
-		<description>A fertilised shalk egg. If all goes well, it should hatch into a baby shalk. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilised shalk egg. If all goes well, it should hatch into a baby shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
 			<color>(109,111,109)</color>
 			<drawSize>0.8</drawSize>
@@ -180,7 +201,7 @@
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_ShalkFungalFertilized</defName>
 		<label>fungal shalk egg (fert.)</label>
-		<description>A fertilised fungal shalk egg. If all goes well, it should hatch into a baby fungal shalk. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilised fungal shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
 			<color>(109,111,109)</color>
 			<drawSize>0.8</drawSize>
