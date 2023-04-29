@@ -79,6 +79,7 @@
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCragIslandAshlands.cs" />
+    <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />

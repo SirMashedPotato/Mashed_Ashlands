@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_BurnBite]==========-->
 	<DamageDef ParentName="Bite">
 		<defName>MorrowRim_BurnBite</defName>
 		<label>fire bite</label>
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	<!-- ==========[MorrowRim_DrainingStab]==========-->
+	<DamageDef>
+		<defName>MorrowRim_DrainingStab</defName>
+		<label>draining stab</label>
+		<workerClass>MorrowRim2.DamageWorker_DrainingStab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
 	</DamageDef>
 </Defs>

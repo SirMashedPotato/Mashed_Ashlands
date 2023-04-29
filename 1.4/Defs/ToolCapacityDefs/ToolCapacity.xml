@@ -4,4 +4,8 @@
 		<defName>MorrowRim_BurnBite</defName>
 		<label>fire bite</label>
 	</ToolCapacityDef>
+	<ToolCapacityDef>
+		<defName>MorrowRim_DrainingStab</defName>
+		<label>draining stab</label>
+	</ToolCapacityDef>
 </Defs>

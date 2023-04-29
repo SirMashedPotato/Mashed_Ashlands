@@ -29,7 +29,7 @@
 	<ThingDef ParentName="MorrowRim_InsectThingBase">
 		<defName>MorrowRim_NixHound</defName>
 		<label>nix-hound</label>
-		<description>A rather strange insect the size of a large dog, native to ashland regions. Nix-hounds lack functioning jaws, and instead drain prey dry using their proboscis. large packs of nix-hound can quickly take down even the greatest of warriors.\n\nWhile their unconventional appearance may turn away many, nix-hounds are highly intelligent, and make for loyal companions.</description>
+		<description>A rather strange insect the size of a large dog, native to ashland regions. Nix-hounds lack functioning jaws, and instead drain prey dry using their proboscis. Large packs of nix-hound can quickly take down even the greatest of warriors, leaving them nothing more than a dry husk.\n\nWhile their unconventional appearance may turn away many, nix-hounds are highly intelligent, and make for loyal companions.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>350</MarketValue>
@@ -75,9 +75,9 @@
 			<li>
 				<label>proboscis</label>
 				<capacities>
-					<li>Stab</li>
+					<li>MorrowRim_DrainingStab</li>
 				</capacities>
-				<power>12</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
