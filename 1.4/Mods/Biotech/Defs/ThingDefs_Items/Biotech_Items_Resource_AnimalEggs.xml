@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Egg_GlowingNetchFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NetchGlowingFertilized</defName>
+		<label>glowing netch egg (fert.)</label>
+		<description>A fertilised glowing netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As glowing netch are rather protective of their eggs, glowing netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<color>(125,173,102)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NetchGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_GlowingNixHoundFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NixHoundGlowingFertilized</defName>
+		<label>glowing nix-hound egg (fert.)</label>
+		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,79)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NixHoundGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_GlowingNixOxFertilized]==========-->
+	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
+		<defName>MorrowRim_Egg_NixOxGlowingFertilized</defName>
+		<label>glowing nix-ox egg (fert.)</label>
+		<description>A fertilised glowing nix-ox egg. If all goes well, it should hatch into a nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NixOxGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_ShalkGlowingFertilized]==========-->
+	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
+		<defName>MorrowRim_Egg_ShalkGlowingFertilized</defName>
+		<label>glowing shalk egg (fert.)</label>
+		<description>A fertilised glowing shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,161,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_ShalkGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

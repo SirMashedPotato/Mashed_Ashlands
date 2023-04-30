@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>MorrowRim_PollutionAbsorption</defName>
+		<label>pollution absorption</label>
+		<description>This creature has absorbed nutrients from pollution.\n\nSome species of animals have adapted to life in highly polluted regions, and are now able to absorb nutrients directly from environmental pollution. While this is not enough to sustain them in the long term, it can help them survive off of the limited food available in these regions.</description>
+		<descriptionShort>This creature has absorbed nutrients from pollution.</descriptionShort>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<isBad>false</isBad>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0.01</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Pollution">
+				<pollutedSeverity>0.0333</pollutedSeverity>
+				<unpollutedSeverity>-0.003</unpollutedSeverity>
+				<interval>60</interval>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.20</minSeverity>
+				<hungerRateFactorOffset>-0.30</hungerRateFactorOffset>
+			</li>
+			<li>
+				<label>maximum</label>
+				<minSeverity>0.50</minSeverity>
+				<hungerRateFactorOffset>-0.60</hungerRateFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

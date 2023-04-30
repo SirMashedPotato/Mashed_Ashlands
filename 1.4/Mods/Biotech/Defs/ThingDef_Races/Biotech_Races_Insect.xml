@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_NixHoundGlowing]========== -->
+	<ThingDef ParentName="MorrowRim_NixHoundThingBase">
+		<defName>MorrowRim_NixHoundGlowing</defName>
+		<label>glowing nix-hound</label>
+		<description>A subspecies of nix-hound that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow far larger than the common nix-hound. Heavy chitin plates along their back, and their increased size, easily make them an apex predator.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-hound can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim2.PollutionProperties">
+				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_NixHoundGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		</statBases>
+		<tools Inherit="False">
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>proboscis</label>
+				<capacities>
+					<li>MorrowRim_DrainingStab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<baseBodySize>1.4</baseBodySize>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseHealthScale>1.4</baseHealthScale>
+			<maxPreyBodySize>2.8</maxPreyBodySize>
+			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_NixHoundGlowing" ParentName="AnimalKindBase">
+		<defName>MorrowRim_NixHoundGlowing</defName>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
+		<label>glowing nix-hound</label>
+		<labelPlural>nix-hounds</labelPlural>
+		<race>MorrowRim_NixHoundGlowing</race>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>glowing nix-hound pup</label>
+				<labelPlural>glowing nix-hound pups</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHoundGlowing</texPath>
+					<drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHoundGlowing</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHoundGlowing</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[MorrowRim_NixOxGlowing]========== -->
+	<ThingDef ParentName="MorrowRim_NixOxThingBase">
+		<defName>MorrowRim_NixOxGlowing</defName>
+		<label>glowing nix-ox</label>
+		<description>A subspecies of nix-ox that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, helping them survive on limited vegetation. Rather aggressive when compared to the common nix-ox, this subspecies will defend members of their herd even against the most dangerous of foes.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-ox can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim2.PollutionProperties">
+				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_NixOxGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>MorrowRim_NixOxMilk</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_NixOxGlowing" ParentName="AnimalKindBase">
+		<defName>MorrowRim_NixOxGlowing</defName>
+		<label>glowing nix-ox</label>
+		<labelMale>glowing nix-ox bull</labelMale>
+		<labelFemale>glowing nix-ox cow</labelFemale>
+		<race>MorrowRim_NixOxGlowing</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>0.8</ecoSystemWeight>
+		<wildGroupSize>3~9</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>glowing nix-ox calf</label>
+				<labelPlural>glowing nix-ox calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxGlowingCalf</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxGlowing</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxGlowing</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxGlowing</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_NixOxGlowing</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixOx/MorrowRim_Dessicated_NixOx</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[MorrowRim_ShalkGlowing]========== -->
+	<ThingDef ParentName="MorrowRim_ShalkThingBase">
+		<defName>MorrowRim_ShalkGlowing</defName>
+		<label>glowing shalk</label>
+		<description>A subspecies of shalk that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk absorb nutrients from environmental pollution. Taming a glowing shalk will allow one to regularly harvest these mushrooms.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing shalk can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim2.PollutionProperties">
+				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_ShalkGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>MorrowRim_RawGlowingAshFungus</woolDef>
+				<shearIntervalDays>4</shearIntervalDays>
+				<woolAmount>16</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+		</race>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<butcherProducts>
+			<Chemfuel>1</Chemfuel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_ShalkGlowing</defName>
+		<label>glowing shalk</label>
+		<race>MorrowRim_ShalkGlowing</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkGlowing</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkGlowing</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_ShalkGlowing</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Shalk/MorrowRim_Dessicated_Shalk</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>
