@@ -66,6 +66,7 @@
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollutedGraphicPath>Things/Plant/MorrowRim_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
