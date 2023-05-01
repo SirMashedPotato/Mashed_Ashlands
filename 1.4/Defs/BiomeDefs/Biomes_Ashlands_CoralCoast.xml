@@ -40,12 +40,12 @@
 		<foragedFood>MorrowRim_RawAshYams</foragedFood>
 		<terrainsByFertility>
 			<li>
-				<terrain>MorrowRim_AshSand</terrain>
+				<terrain>MorrowRim_AshSoil</terrain>
 				<min>-999</min>
 				<max>0.47</max>
 			</li>
 			<li>
-				<terrain>MorrowRim_AshSoil</terrain>
+				<terrain>MorrowRim_AshGravel</terrain>
 				<min>0.47</min>
 				<max>999</max>
 			</li>
