@@ -45,7 +45,7 @@
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
+				<glowRadius>1</glowRadius>
 				<glowColor>(255,152,67,0)</glowColor>
 			</li>
 		</comps>
@@ -95,7 +95,7 @@
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
+				<glowRadius>2</glowRadius>
 				<glowColor>(255,152,67,0)</glowColor>
 			</li>
 		</comps>
