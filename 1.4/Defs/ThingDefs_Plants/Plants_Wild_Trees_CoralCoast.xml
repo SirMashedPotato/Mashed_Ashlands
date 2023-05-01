@@ -24,8 +24,8 @@
 			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>6</Beauty>
-			<BeautyOutdoors>6</BeautyOutdoors>
+			<Beauty>9</Beauty>
+			<BeautyOutdoors>9</BeautyOutdoors>
 			<Flammability>0.4</Flammability>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
@@ -50,7 +50,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
-				<glowColor>(85,39,20,0)</glowColor>
+				<glowColor>(255,152,67,0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
