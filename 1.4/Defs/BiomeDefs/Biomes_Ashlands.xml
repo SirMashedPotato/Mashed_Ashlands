@@ -38,53 +38,7 @@
 		</modExtensions>
 		<animalDensity>2.4</animalDensity>
 		<plantDensity>0.3</plantDensity>
-		<settlementSelectionWeight>0.6</settlementSelectionWeight>
-		<movementDifficulty>1</movementDifficulty>
-		<forageability>0.75</forageability>
 		<foragedFood>MorrowRim_RawAshYams</foragedFood>
-		<wildPlantRegrowDays>20</wildPlantRegrowDays>
-		<soundsAmbient>
-			<li>Ambient_NightInsects_Standard</li>
-		</soundsAmbient>
-		<diseaseMtbDays>60</diseaseMtbDays>
-		<diseases>
-			<li>
-				<diseaseInc>Disease_Flu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Plague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Malaria</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_GutWorms</diseaseInc>
-				<commonality>50</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
-				<commonality>30</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
-				<commonality>30</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_MuscleParasites</diseaseInc>
-				<commonality>50</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_AnimalFlu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_AnimalPlague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-		</diseases>
 		<terrainsByFertility>
 			<li>
 				<terrain>MorrowRim_AshSoil</terrain>
@@ -202,6 +156,5 @@
 			<MorrowRim_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_NixOxGlowing>
 			<MorrowRim_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</MorrowRim_NixHoundGlowing>
 		</pollutionWildAnimals>
-		<allowedPackAnimals/>
 	</BiomeDef>
 </Defs>
