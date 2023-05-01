@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_TreeLandCoral]==========-->
+	<ThingDef Name="MorrowRim_Plant_TreeLandCoralBase" ParentName="TreeBase">
+		<defName>MorrowRim_Plant_TreeLandCoral</defName>
+		<label>land coral tree</label>
+		<description>An enormous land coral tree, solely found growing in coastal regions with ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshSand</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_TreeLandCoral</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Flammability>0.4</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<plant>
+			<growDays>40</growDays>
+			<fertilityMin>0.4</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<harvestYield>50</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+			<burnedThingDef>MorrowRim_BurnedParasolStump</burnedThingDef>
+			<choppedThingDef>MorrowRim_ChoppedParasolStump</choppedThingDef>
+			<smashedThingDef>MorrowRim_SmashedParasolStump</smashedThingDef>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(85,39,20,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_LandCoral]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_LandCoral</defName>
+		<label>land coral</label>
+		<description>A small land coral that can often be found growing coastal regions with ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshSand</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.4</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_LandCoralPlant</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.4</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<harvestWork>60</harvestWork>
+			<visualSizeRange>0.95~1.15</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(85,39,20,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

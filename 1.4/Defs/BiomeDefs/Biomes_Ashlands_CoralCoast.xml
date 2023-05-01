@@ -76,7 +76,7 @@
 				<thresholds>
 					<li>
 						<terrain>MorrowRim_AshSand</terrain>
-						<min>0.48</min>
+						<min>0.38</min>
 						<max>0.76</max>
 					</li>
 					<li>
@@ -90,7 +90,7 @@
 		<baseWeatherCommonalities>
 			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
-			<Fog>1</Fog>
+			<Fog>4</Fog>
 			<Rain>2</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>1</RainyThunderstorm>
@@ -110,17 +110,15 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Plant_Grass>6</Plant_Grass>
-			<MorrowRim_Plant_AshlandGrass>13</MorrowRim_Plant_AshlandGrass>
-			<MorrowRim_Plant_AshlandDuneGrass>2</MorrowRim_Plant_AshlandDuneGrass>
+			<Plant_Grass>4</Plant_Grass>
+			<MorrowRim_Plant_AshlandGrass>10</MorrowRim_Plant_AshlandGrass>
+			<MorrowRim_Plant_AshlandDuneGrass>10</MorrowRim_Plant_AshlandDuneGrass>
 			<MorrowRim_Plant_AshlandFungus>1</MorrowRim_Plant_AshlandFungus>
 			<MorrowRim_Plant_Ashreed>0.2</MorrowRim_Plant_Ashreed>
-			<Plant_Moss>0.2</Plant_Moss>
 			<!-- Nutrition plants -->
 			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
 			<MorrowRim_Plant_Scathecraw>0.2</MorrowRim_Plant_Scathecraw>
 			<!-- Resource plants -->
-			<MorrowRim_Plant_Corkbulb>0.1</MorrowRim_Plant_Corkbulb>
 			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
 			<MorrowRim_Plant_ParasolBush>0.4</MorrowRim_Plant_ParasolBush>
 			<MorrowRim_Plant_TramaShrub>0.2</MorrowRim_Plant_TramaShrub>
@@ -128,8 +126,10 @@
 			<MorrowRim_Plant_WillowFlower>0.05</MorrowRim_Plant_WillowFlower>
 			<MorrowRim_Plant_Stoneflower>0.1</MorrowRim_Plant_Stoneflower>
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
+			<MorrowRim_Plant_LandCoral>6</MorrowRim_Plant_LandCoral>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.4</MorrowRim_Plant_TreeEmperorParasol>
+			<MorrowRim_Plant_TreeLandCoral>10</MorrowRim_Plant_TreeLandCoral>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">16</Plant_GrayGrass>
