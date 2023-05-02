@@ -4,7 +4,7 @@
 	<ThingDef Name="MorrowRim_Plant_LandCoralSmallBase" ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_LandCoralSmall</defName>
 		<label>small land coral</label>
-		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
@@ -39,7 +39,7 @@
 			<harvestedThingDef>BlocksMarble</harvestedThingDef>
 			<harvestYield>3</harvestYield>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>MorrowRim_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<visualSizeRange>0.95~1.15</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
@@ -59,7 +59,7 @@
 	<ThingDef Name="MorrowRim_Plant_LandCoralMediumBase" ParentName="MorrowRim_BushBase">
 		<defName>MorrowRim_Plant_LandCoralMedium</defName>
 		<label>medium land coral</label>
-		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
@@ -93,7 +93,7 @@
 			<harvestedThingDef>BlocksMarble</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>MorrowRim_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
@@ -109,7 +109,7 @@
 	<ThingDef Name="MorrowRim_Plant_LandCoralLargeBase" ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_LandCoralLarge</defName>
 		<label>large land coral</label>
-		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
