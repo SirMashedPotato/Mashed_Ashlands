@@ -62,6 +62,11 @@
 					<li>
 						<terrain>WaterShallow</terrain>
 						<min>0.68</min>
+						<max>0.98</max>
+					</li>
+					<li>
+						<terrain>WaterDeep</terrain>
+						<min>0.98</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -77,13 +82,9 @@
 					<li>
 						<terrain>WaterShallow</terrain>
 						<min>0.76</min>
-						<max>1</max>
-					</li>
-					<li>
-						<terrain>WaterDeep</terrain>
-						<min>1</min>
 						<max>99</max>
 					</li>
+					
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
@@ -122,15 +123,15 @@
 			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
 			<MorrowRim_Plant_ParasolBush>0.4</MorrowRim_Plant_ParasolBush>
 			<MorrowRim_Plant_TramaShrub>0.2</MorrowRim_Plant_TramaShrub>
-			<MorrowRim_Plant_LandCoralSmall>6</MorrowRim_Plant_LandCoralSmall>
+			<MorrowRim_Plant_LandCoralSmall>10</MorrowRim_Plant_LandCoralSmall>
 			<MorrowRim_Plant_LandCoralMedium>8</MorrowRim_Plant_LandCoralMedium>
+			<MorrowRim_Plant_LandCoralLarge>6</MorrowRim_Plant_LandCoralLarge>
 			<!-- Aesthetic plants -->
 			<MorrowRim_Plant_WillowFlower>0.05</MorrowRim_Plant_WillowFlower>
 			<MorrowRim_Plant_Stoneflower>0.1</MorrowRim_Plant_Stoneflower>
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.4</MorrowRim_Plant_TreeEmperorParasol>
-			<MorrowRim_Plant_LandCoralLarge>10</MorrowRim_Plant_LandCoralLarge>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">16</Plant_GrayGrass>
