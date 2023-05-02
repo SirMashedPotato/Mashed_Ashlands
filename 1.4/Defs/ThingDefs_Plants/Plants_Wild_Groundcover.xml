@@ -163,9 +163,8 @@
 		<description>A species of wild grass adapted for life in the ashlands. Often found growing near sources of water.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
-				<allowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
-				</allowedTerrainForWild>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
 		</modExtensions>
 		<selectable>false</selectable>

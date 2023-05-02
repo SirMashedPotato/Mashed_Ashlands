@@ -9,6 +9,7 @@
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
 				<lateLoader>true</lateLoader>
+				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<forcedRockType>MorrowRim_Basalt</forcedRockType>
 				<terrainReplacers>

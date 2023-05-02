@@ -16,21 +16,17 @@ namespace MorrowRim2
         [HarmonyPrefix]
         public static bool MorrowRim_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (cavePlants)
+            if (cavePlants && OnStartupUtility.ashlandCavePlantsBiomes.Contains(___map.Biome))
             {
-                BiomeProperties props = BiomeProperties.Get(___map.Biome);
-                if (props != null && props.useAshlandCavePlants)
+                outPlants.Clear();
+                for (int i = 0; i < OnStartupUtility.ashlandCavePlants.Count; i++)
                 {
-                    outPlants.Clear();
-                    for (int i = 0; i < OnStartupUtility.ashlandCavePlants.Count; i++)
+                    if (OnStartupUtility.ashlandCavePlants[i].CanEverPlantAt(c, ___map, false))
                     {
-                        if (OnStartupUtility.ashlandCavePlants[i].CanEverPlantAt(c, ___map, false))
-                        {
-                            outPlants.Add(OnStartupUtility.ashlandCavePlants[i]);
-                        }
+                        outPlants.Add(OnStartupUtility.ashlandCavePlants[i]);
                     }
-                    return false;
                 }
+                return false;
             }
             return true;
         }
@@ -38,7 +34,7 @@ namespace MorrowRim2
         [HarmonyPostfix]
         public static void MorrowRim_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (!cavePlants && !outPlants.NullOrEmpty())
+            if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.Biome))
             {
                 List<ThingDef> PlantsToRemove = new List<ThingDef>();
                 foreach (ThingDef plant in outPlants)
@@ -51,6 +47,29 @@ namespace MorrowRim2
                             || !props.disallowedTerrainForWild.NullOrEmpty() && props.disallowedTerrainForWild.Contains(terrainDef))
                         {
                             PlantsToRemove.Add(plant);
+                        }
+                        else
+                        {
+                            if (props.requireWaterForWild)
+                            {
+                                bool waterFlag = false;
+                                foreach (IntVec3 neighbour in GenAdj.CellsAdjacent8Way(c, Rot4.North, new IntVec2(props.minTilesToWaterForWild, props.minTilesToWaterForWild)))
+                                {
+                                    if (neighbour.InBounds(___map))
+                                    {
+                                        TerrainDef neighbourTerrain = neighbour.GetTerrain(___map);
+                                        if (neighbourTerrain != null && neighbourTerrain.IsWater)
+                                        {
+                                            waterFlag = true;
+                                            break;
+                                        }
+                                    }
+                                }
+                                if (!waterFlag)
+                                {
+                                    PlantsToRemove.Add(plant);
+                                }
+                            }
                         }
                     }
                 }

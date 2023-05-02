@@ -16,6 +16,7 @@ namespace MorrowRim2
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
         public ThingDef forcedRockType;
+        public bool restrictPlantsToTerrain = false;
         public bool increasePollutedFertility = false;
 
         /* for cave gen */

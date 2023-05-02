@@ -10,6 +10,7 @@
 			<li Class="MorrowRim2.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
+				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<forcedRockType>MorrowRim_Basalt</forcedRockType>
 				<terrainReplacers>

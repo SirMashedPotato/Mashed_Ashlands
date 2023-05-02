@@ -17,9 +17,11 @@ namespace MorrowRim2
         public List<TerrainDef> disallowedTerrainForWild = new List<TerrainDef>();
         public List<TerrainAffordanceDef> terrainAffordancesToSow = new List<TerrainAffordanceDef>();
 
-        //currently don't do anything
+
         public bool requireWaterForWild = false;
         public int minTilesToWaterForWild = 3;
+
+        //currently don't do anything
         public bool growthBoostDuringAsh = false;
         public float growthBoostDuringAshDegree = 0.1f;
         public static PlantProperties Get(Def def)

@@ -48,9 +48,8 @@
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
-				<allowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
-				</allowedTerrainForWild>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
 		</modExtensions>
 		<statBases>
