@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_LandCoral]==========-->
-	<ThingDef Name="MorrowRim_Plant_LandCoralBase" ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_LandCoral</defName>
-		<label>land coral</label>
-		<description>A small land coral that can often be found growing coastal regions with ash rich ground.</description>
+	<!-- ==========[MorrowRim_Plant_LandCoralSmall]==========-->
+	<ThingDef Name="MorrowRim_Plant_LandCoralSmallBase" ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_LandCoralSmall</defName>
+		<label>small land coral</label>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
@@ -20,22 +20,27 @@
 			<Beauty>5</Beauty>
 			<BeautyOutdoors>5</BeautyOutdoors>
 			<Nutrition>0.2</Nutrition>
-			<Flammability>0.4</Flammability>
+			<Flammability>0</Flammability>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
 		<pathCost>3</pathCost>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_LandCoralPlant</texPath>
+			<texPath>Things/Plant/MorrowRim_LandCoralSmall</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<ingestible/>
 		<plant>
 			<fertilityMin>0.4</fertilityMin>
-			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
-			<growDays>3.5</growDays>
+			<growDays>4.5</growDays>
 			<harvestWork>60</harvestWork>
+			<harvestedThingDef>BlocksMarble</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
 			<visualSizeRange>0.95~1.15</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
@@ -50,11 +55,11 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_LandCoralBush]==========-->
-	<ThingDef Name="MorrowRim_Plant_LandCoralBushBase" ParentName="MorrowRim_BushBase">
-		<defName>MorrowRim_Plant_LandCoralBush</defName>
-		<label>land coral bush</label>
-		<description>A medium land coral that can often be found growing coastal regions with ash rich ground.</description>
+	<!-- ==========[MorrowRim_Plant_LandCoralMedium]==========-->
+	<ThingDef Name="MorrowRim_Plant_LandCoralMediumBase" ParentName="MorrowRim_BushBase">
+		<defName>MorrowRim_Plant_LandCoralMedium</defName>
+		<label>medium land coral</label>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
@@ -68,11 +73,11 @@
 		<statBases>
 			<Beauty>7</Beauty>
 			<BeautyOutdoors>7</BeautyOutdoors>
-			<Flammability>0.5</Flammability>
+			<Flammability>0</Flammability>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_LandCoralBush</texPath>
+			<texPath>Things/Plant/MorrowRim_LandCoralMedium</texPath>
 			<shadowData>
 				<volume>(0.2, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.0)</offset>
@@ -81,12 +86,12 @@
 		<uiIconScale>0.85</uiIconScale>
 		<plant>
 			<fertilityMin>0.4</fertilityMin>
-			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
-			<growDays>6</growDays>
-			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
-			<harvestYield>2</harvestYield>
+			<growDays>12</growDays>
+			<harvestedThingDef>BlocksMarble</harvestedThingDef>
+			<harvestYield>8</harvestYield>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
@@ -96,6 +101,61 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
+				<glowColor>(255,152,67,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_LandCoralLarge]==========-->
+	<ThingDef Name="MorrowRim_Plant_LandCoralLargeBase" ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_LandCoralLarge</defName>
+		<label>large land coral</label>
+		<description>A land coral that can often be found growing coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.\n\nSome believe this specific species of coral is an extension of a greater life-form.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshSand</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_LandCoralLarge</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>9</Beauty>
+			<BeautyOutdoors>9</BeautyOutdoors>
+			<Flammability>0</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<plant>
+			<growDays>30</growDays>
+			<fertilityMin>0.4</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+			<harvestedThingDef>BlocksMarble</harvestedThingDef>
+			<harvestYield>24</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+			<!--
+			<choppedThingDef>MorrowRim_ChoppedParasolStump</choppedThingDef>
+			<smashedThingDef>MorrowRim_SmashedParasolStump</smashedThingDef>
+			-->
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
 				<glowColor>(255,152,67,0)</glowColor>
 			</li>
 		</comps>
