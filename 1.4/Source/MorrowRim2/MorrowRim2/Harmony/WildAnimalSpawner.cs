@@ -25,7 +25,7 @@ namespace MorrowRim2
                         __result = 0;
                         return;
                     }
-                    if (props.requireCoast && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
+                    if ((props.requireCoast || props.requireWater) && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
                     {
                         __result = 0;
                         return;
@@ -35,7 +35,7 @@ namespace MorrowRim2
                         __result = 0;
                         return;
                     }
-                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
+                    if ((props.requireRiver || props.requireWater) && Find.WorldGrid[___map.Tile].Rivers == null)
                     {
                         __result = 0;
                         return;

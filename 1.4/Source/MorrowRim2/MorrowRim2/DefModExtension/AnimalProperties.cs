@@ -6,6 +6,7 @@ namespace MorrowRim2
     {
         public bool requireRiver = false;
         public bool requireCoast = false;
+        public bool requireWater = false;
         public bool requireCaves = false;
         public bool requireHills = false;
 
