@@ -7,6 +7,17 @@
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
+	<!-- ==========[MorrowRim_SwampBite]==========-->
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_SwampBite</defName>
+		<label>swamp bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>MorrowRim_SwampFever</hediff>
+				<severityPerDamageDealt>0.001</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 	<!-- ==========[MorrowRim_DrainingStab]==========-->
 	<DamageDef>
 		<defName>MorrowRim_DrainingStab</defName>

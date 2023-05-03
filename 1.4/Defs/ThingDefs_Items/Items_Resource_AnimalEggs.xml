@@ -100,6 +100,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_MudcrabFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_MudcrabFertilized</defName>
+		<label>mudcrab egg (fert.)</label>
+		<description>A fertilised mudcrab egg. If all goes well, it should hatch into a baby mudcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,111,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_Mudcrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_NetchFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_NetchFertilized</defName>

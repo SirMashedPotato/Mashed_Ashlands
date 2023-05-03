@@ -5,6 +5,10 @@
 		<label>fire bite</label>
 	</ToolCapacityDef>
 	<ToolCapacityDef>
+		<defName>MorrowRim_SwampBite</defName>
+		<label>swamp bite</label>
+	</ToolCapacityDef>
+	<ToolCapacityDef>
 		<defName>MorrowRim_DrainingStab</defName>
 		<label>draining stab</label>
 	</ToolCapacityDef>
