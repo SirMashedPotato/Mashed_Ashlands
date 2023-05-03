@@ -9,6 +9,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshSand</li>
+					<li>MorrowRim_RichAshSand</li>
 				</allowedTerrainForWild>
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
@@ -64,6 +65,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshSand</li>
+					<li>MorrowRim_RichAshSand</li>
 				</allowedTerrainForWild>
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
@@ -115,6 +117,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshSand</li>
+					<li>MorrowRim_RichAshSand</li>
 				</allowedTerrainForWild>
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>

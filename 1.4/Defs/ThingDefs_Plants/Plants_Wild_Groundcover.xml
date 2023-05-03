@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_Plant_AshlandGrass]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_GrassBase">
 		<defName>MorrowRim_Plant_AshlandGrass</defName>
 		<label>ashland grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
@@ -15,29 +15,10 @@
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.45</Nutrition>
-			<Flammability>1.0</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
-		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_AshlandGrass</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.4~0.6</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
-			<wildClusterRadius>5</wildClusterRadius>
-			<wildClusterWeight>80</wildClusterWeight>
-			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
@@ -45,7 +26,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandDuneGrass]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_GrassBase">
 		<defName>MorrowRim_Plant_AshlandDuneGrass</defName>
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
@@ -56,30 +37,9 @@
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.45</Nutrition>
-			<Flammability>1.0</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
-		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_AshlandDuneGrass</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
-			<wildClusterRadius>5</wildClusterRadius>
-			<wildClusterWeight>80</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandFungus]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">

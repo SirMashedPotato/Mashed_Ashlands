@@ -11,7 +11,7 @@
 		  <LeatherAmount>0</LeatherAmount>
 		  <FilthRate>10</FilthRate>
 		</statBases>
-		<uiIconScale>2</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<tools>
 			<li>
 			<label>head</label>
@@ -160,6 +160,81 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[MorrowRim_Coralcrab]========== -->
+	<ThingDef ParentName="MorrowRim_MudcrabThingBase">
+		<defName>MorrowRim_Coralcrab</defName>
+		<label>ashland coralcrab</label>
+		<description>A subspecies of the common ashland mudcrab that lives in coastal ashland regions. They have developed a symbiotic relationship with the land coral that can be found growing in these regions. The crab protects the coral from being eaten, whilst the coral help the crab blend into the surroundings.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_CoralcrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>pincers</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+	<race>
+		<herdAnimal>true</herdAnimal>
+		<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+	</race>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_Coralcrab</defName>
+		<label>ashland coralcrab</label>
+		<race>MorrowRim_Coralcrab</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<drawSize>1.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
