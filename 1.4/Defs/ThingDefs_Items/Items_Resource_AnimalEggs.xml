@@ -67,7 +67,7 @@
 		<description>A fertilised coralcrab egg. If all goes well, it should hatch into a baby coralcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(109,111,109)</color>
+			<color>(111,109,111)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>11</MarketValue>

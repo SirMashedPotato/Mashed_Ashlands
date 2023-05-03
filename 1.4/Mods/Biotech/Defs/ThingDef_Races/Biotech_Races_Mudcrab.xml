@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_CoralcrabGlowing]========== -->
+	<ThingDef ParentName="MorrowRim_MudcrabThingBase">
+		<defName>MorrowRim_CoralcrabGlowing</defName>
+		<label>glowing coralcrab</label>
+		<description>A subspecies of the common ashland coralcrab that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing land coral. The coralcrab protects the coral from being eaten, whilst the coral help the coralcrab absorb nutrients from environmental pollution.</description>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim2.PollutionProperties">
+				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_CoralcrabGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>pincers</label>
+				<capacities>
+					<li>Bite</li>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+	<race>
+		<herdAnimal>true</herdAnimal>
+		<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+	</race>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_CoralcrabGlowing</defName>
+		<label>glowing coralcrab</label>
+		<race>MorrowRim_CoralcrabGlowing</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<wildGroupSize>3~8</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<drawSize>1.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

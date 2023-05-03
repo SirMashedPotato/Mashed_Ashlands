@@ -1,6 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Egg_GlowingNetchFertilized]==========-->
+	<!-- ==========[MorrowRim_Egg_CoralcrabFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_CoralcrabGlowingFertilized</defName>
+		<label>glowing coralcrab egg (fert.)</label>
+		<description>A fertilised glowing coralcrab egg. If all goes well, it should hatch into a baby coralcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(111,130,111)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_CoralcrabGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NetchGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_NetchGlowingFertilized</defName>
 		<label>glowing netch egg (fert.)</label>
@@ -19,7 +39,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_GlowingNixHoundFertilized]==========-->
+	<!-- ==========[MorrowRim_Egg_NixHoundGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_NixHoundGlowingFertilized</defName>
 		<label>glowing nix-hound egg (fert.)</label>
@@ -39,7 +59,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_GlowingNixOxFertilized]==========-->
+	<!-- ==========[MorrowRim_Egg_NixOxGlowingFertilized]==========-->
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_NixOxGlowingFertilized</defName>
 		<label>glowing nix-ox egg (fert.)</label>
