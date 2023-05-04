@@ -40,8 +40,9 @@
 			<harvestedThingDef>BlocksMarble</harvestedThingDef>
 			<harvestYield>3</harvestYield>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
 			<visualSizeRange>0.95~1.15</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
@@ -96,8 +97,9 @@
 			<harvestedThingDef>BlocksMarble</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<sowMinSkill>10</sowMinSkill>
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 		</plant>
@@ -148,8 +150,9 @@
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<sowMinSkill>12</sowMinSkill>
 			<visualSizeRange>1.5~3.2</visualSizeRange>
 			<harvestedThingDef>BlocksMarble</harvestedThingDef>
 			<harvestYield>24</harvestYield>

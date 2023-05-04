@@ -59,7 +59,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawMarshmerrow</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.2</MarketValue>
+			<MarketValue>1.4</MarketValue>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<ingestible>
 			<preferability>RawTasty</preferability>

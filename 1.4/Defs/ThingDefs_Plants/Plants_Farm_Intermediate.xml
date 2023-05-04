@@ -36,6 +36,53 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Marshmerrow]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_Marshmerrow</defName>
+		<label>marshmerrow plant</label>
+		<description>A reed often found growing near water in ashland regions. The pulp harvested from them is rather tasty, surprisingly sweet, and perfectly safe to consume raw. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_MarshmerrowPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawMarshmerrow</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			 <sowMinSkill>5</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<purpose>Food</purpose>
+			<maxMeshCount>4</maxMeshCount>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_MuckSponge]==========-->
 	<ThingDef Name="MorrowRim_Plant_MuckSpongeBase" ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_MuckSponge</defName>
