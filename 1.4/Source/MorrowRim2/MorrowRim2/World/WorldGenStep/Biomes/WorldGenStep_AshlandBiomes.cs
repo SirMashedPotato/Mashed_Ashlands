@@ -28,6 +28,18 @@ namespace MorrowRim2
             {
                 biomeDef = tile.biome;
             }
+
+            BiomeProperties props = BiomeProperties.Get(biomeDef);
+            if (props != null)
+            {
+                if (props.forceHilliness)
+                {
+                    ///Necessary for rock walls to generate
+                    tile.elevation = Rand.Range(1, 10);
+                    tile.hilliness = Rand.Chance(0.75f) ? Hilliness.SmallHills : Rand.Chance(0.75f) ? Hilliness.Flat : Hilliness.LargeHills;
+                }
+            }
+
             return biomeDef;
         }
     }

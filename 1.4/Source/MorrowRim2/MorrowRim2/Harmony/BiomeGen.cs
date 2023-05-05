@@ -2,6 +2,7 @@
 using Verse;
 using RimWorld;
 using Verse.Noise;
+using RimWorld.Planet;
 
 namespace MorrowRim2
 {
@@ -94,6 +95,7 @@ namespace MorrowRim2
             return true;
         }
     }
+
     /// <summary>
     /// Replaces road terrain with different terrain.
     /// </summary>
@@ -115,6 +117,26 @@ namespace MorrowRim2
                     }
                 }
             }
+        }
+    }
+
+
+    /// <summary>
+    /// Disables the generation of beaches for specific biomes
+    /// </summary>
+    [HarmonyPatch(typeof(BeachMaker))]
+    [HarmonyPatch("Init")]
+    public static class BeachMaker_Init_Patch
+    {
+        [HarmonyPrefix]
+        public static bool MorrowRim_BeachMaker_Init_Patch(Map map)
+        {
+            BiomeProperties props = BiomeProperties.Get(map.Biome);
+            if (props != null && props.disableBeaches)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

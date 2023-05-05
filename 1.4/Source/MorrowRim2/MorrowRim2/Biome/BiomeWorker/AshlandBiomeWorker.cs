@@ -38,7 +38,7 @@ namespace MorrowRim2
         /// <summary>
         /// Used for all Island type biomes
         /// </summary>
-        public float IslandBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        public float IslandBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef, BiomeDef biomeDef)
         {
             int maxDistance = MorrowRim_ModSettings.BiomesMaxDistance;
             if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
@@ -62,7 +62,7 @@ namespace MorrowRim2
                 Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
                 if (neighbourTile != null)
                 {
-                    if (!neighbourTile.WaterCovered)
+                    if (!neighbourTile.WaterCovered && neighbourTile.biome != biomeDef)
                     {
                         return 0;
                     }

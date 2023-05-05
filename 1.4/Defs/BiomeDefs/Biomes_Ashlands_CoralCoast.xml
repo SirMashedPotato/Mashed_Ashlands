@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_CoralCoastAshlands</defName>
 		<label>ashland coral coast</label>
-		<description>Home to an ecosystem that seems alien, even when compared to other ashland regions. Fertile ash has allowed for the growth of a forest of enormous land coral. Serene coast, illuminated by an orange glow, makes this a rather nice place to settle.</description>
+		<description>Home to an ecosystem that seems alien, even when compared to other ashland regions. Fertile ash has allowed for the growth of a forest of enormous land coral. Herds of ashland coralcrabs can often be found foraging among the dunes. Serene coast, illuminated by an orange glow, makes this a rather nice place to settle.</description>
 		<workerClass>MorrowRim2.BiomeWorker_CoralCoastAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_CoralCoastAshlands</texture>
 		<modExtensions>

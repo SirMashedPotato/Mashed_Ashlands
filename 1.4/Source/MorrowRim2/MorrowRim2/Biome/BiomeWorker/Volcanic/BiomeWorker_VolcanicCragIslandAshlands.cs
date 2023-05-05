@@ -28,7 +28,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoActive);
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoActive, BiomeDefOf.MorrowRim_VolcanicCragIslandAshlands);
         }
     }
 }

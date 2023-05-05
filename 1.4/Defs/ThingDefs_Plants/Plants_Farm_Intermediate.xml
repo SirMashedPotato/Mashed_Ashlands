@@ -64,7 +64,7 @@
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawMarshmerrow</harvestedThingDef>
-			<harvestYield>6</harvestYield>
+			<harvestYield>7</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Intermediate</li>
@@ -73,7 +73,7 @@
 				<li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>3</growDays>
+			<growDays>4</growDays>
 			<visualSizeRange>0.6~1.2</visualSizeRange>
 			<purpose>Food</purpose>
 			<maxMeshCount>4</maxMeshCount>
@@ -125,9 +125,9 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_SaltRice]==========-->
+	<!-- ==========[MorrowRim_Plant_Saltrice]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_SaltRice</defName>
+		<defName>MorrowRim_Plant_Saltrice</defName>
 		<label>saltrice plant</label>
 		<description>A grass often found growing near water in ashland regions. Farmed in great quantities by those that settle the ashlands, as raw saltrice is a popular export. Can only grow on ash rich ground.</description>
 		<modExtensions>

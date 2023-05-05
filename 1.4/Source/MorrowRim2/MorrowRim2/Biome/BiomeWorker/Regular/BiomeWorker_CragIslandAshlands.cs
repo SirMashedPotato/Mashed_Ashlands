@@ -1,4 +1,5 @@
-﻿using RimWorld.Planet;
+﻿using RimWorld;
+using RimWorld.Planet;
 
 namespace MorrowRim2
 {
@@ -28,7 +29,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoDormant);
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoDormant, BiomeDefOf.MorrowRim_CragIslandAshlands);
         }
     }
 }

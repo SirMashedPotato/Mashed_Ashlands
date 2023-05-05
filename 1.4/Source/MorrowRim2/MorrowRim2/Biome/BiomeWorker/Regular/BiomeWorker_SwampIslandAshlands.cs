@@ -28,7 +28,7 @@ namespace MorrowRim2
             {
                 return -100f;
             }
-            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoExtinct);
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoExtinct, BiomeDefOf.MorrowRim_SwampIslandAshlands);
         }
     }
 }
