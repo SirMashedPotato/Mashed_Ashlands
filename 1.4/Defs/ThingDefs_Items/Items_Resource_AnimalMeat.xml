@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_MeatBase]==========-->
+	<ThingDef ParentName="OrganicProductBase" Name="MorrowRim_MeatBase" Abstract="True">
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Beauty>-4</Beauty>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>Meat</foodType>
+			<babiesCanIngest>true</babiesCanIngest>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>MorrowRim_AshlandsAnimalProduct</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_CrabMeat]==========-->
+	<ThingDef ParentName="MorrowRim_MeatBase">
+		<defName>MorrowRim_CrabMeat</defName>
+		<label>crab meat</label>
+		<description>Tasty meat harvested from a crab native to the ashlands. Has a slightly ashy taste to it. Perfectly safe to consume raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Insect</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(245,236,186)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

@@ -1,31 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_CrabThingBase]========== -->
-	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_CrabThingBase" Abstract="True">
+	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_CrabThingBase" Abstract="True">
 		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MoveSpeed>2.8</MoveSpeed>
-		  <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
-		  <ArmorRating_Sharp>0.12</ArmorRating_Sharp>
-		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
-		  <MarketValue>100</MarketValue>
-		  <LeatherAmount>0</LeatherAmount>
-		  <FilthRate>10</FilthRate>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<FilthRate>10</FilthRate>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>
 			<li>
-			<label>head</label>
-			<capacities>
-			  <li>Blunt</li>
-			</capacities>
-			<power>4</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.1</chanceFactor>
-		  </li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
 		</tools>
 		<race>
+			<fleshType>MorrowRim_FleshCrab</fleshType>
+			<bloodDef>MorrowRim_Filth_CrabBlood</bloodDef>
+			<specificMeatDef>MorrowRim_CrabMeat</specificMeatDef>
 			<body>MorrowRim_CrabLike</body>
 			<baseBodySize>0.35</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>

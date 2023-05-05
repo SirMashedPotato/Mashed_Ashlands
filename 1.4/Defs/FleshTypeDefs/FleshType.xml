@@ -30,4 +30,34 @@
 			</li>
 		</bandagedWounds>
 	</FleshTypeDef>
+	<!-- ==========[MorrowRim_FleshCrab]==========-->
+	<FleshTypeDef>
+		<defName>MorrowRim_FleshCrab</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundA</texture>
+				<color>0.63,0.6,0.5</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundB</texture>
+				<color>0.63,0.6,0.5</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundC</texture>
+				<color>0.63,0.6,0.5</color>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+	</FleshTypeDef>
 </Defs>

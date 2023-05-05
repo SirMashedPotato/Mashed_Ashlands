@@ -22,14 +22,32 @@
 	<!-- ==========[MorrowRim_Filth_NetchBlood]==========-->
 	<ThingDef ParentName="BaseFilth">
 		<defName>MorrowRim_Filth_NetchBlood</defName>
-		<label>netch blood</label>
+		<label>netchblood</label>
 		<statBases>
 			<Beauty>-30</Beauty>
-			<Cleanliness>-5</Cleanliness>
+			<Cleanliness>-10</Cleanliness>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Filth/PoolSoft</texPath>
 			<color>(146, 100, 156, 50)</color>
+		</graphicData>
+		<filth>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+		</filth>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Filth_CrabBlood]==========-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_CrabBlood</defName>
+		<label>crabblood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(132, 138, 91, 180)</color>
 		</graphicData>
 		<filth>
 			<rainWashes>true</rainWashes>
