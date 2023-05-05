@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_MudcrabThingBase]========== -->
-	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_MudcrabThingBase" Abstract="True">
+	<!-- ==========[MorrowRim_CrabThingBase]========== -->
+	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_CrabThingBase" Abstract="True">
 		<statBases>
 			<MoveSpeed>2.8</MoveSpeed>
 		  <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
@@ -64,7 +64,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Mudcrab]========== -->
-	<ThingDef ParentName="MorrowRim_MudcrabThingBase">
+	<ThingDef ParentName="MorrowRim_CrabThingBase">
 		<defName>MorrowRim_Mudcrab</defName>
 		<label>ashland mudcrab</label>
 		<description>A large crab often found around water, especially in swampier regions. While not particularly dangerous, unless someone mistakes it for a rock, the ashland mudcrab are is a vector for swamp fever, a disease that drains strength.</description>
@@ -166,7 +166,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- ==========[MorrowRim_Coralcrab]========== -->
-	<ThingDef ParentName="MorrowRim_MudcrabThingBase">
+	<ThingDef ParentName="MorrowRim_CrabThingBase">
 		<defName>MorrowRim_Coralcrab</defName>
 		<label>ashland coralcrab</label>
 		<description>A subspecies of the common ashland mudcrab that lives in coastal ashland regions. They have developed a symbiotic relationship with the land coral that can be found growing in these regions. The crab protects the coral from being eaten, whilst the coral help the crab blend into the surroundings.</description>

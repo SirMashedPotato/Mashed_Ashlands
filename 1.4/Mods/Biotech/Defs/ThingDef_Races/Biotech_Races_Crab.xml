@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_CoralcrabGlowing]========== -->
-	<ThingDef ParentName="MorrowRim_MudcrabThingBase">
+	<ThingDef ParentName="MorrowRim_CrabThingBase">
 		<defName>MorrowRim_CoralcrabGlowing</defName>
 		<label>glowing coralcrab</label>
 		<description>A subspecies of the common ashland coralcrab that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing land coral. The coralcrab protects the coral from being eaten, whilst the coral help the coralcrab absorb nutrients from environmental pollution.</description>
