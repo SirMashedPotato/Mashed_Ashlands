@@ -65,7 +65,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawMarshmerrow</harvestedThingDef>
 			<harvestYield>6</harvestYield>
-			 <sowMinSkill>5</sowMinSkill>
+			<sowMinSkill>5</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
@@ -123,6 +123,54 @@
 			<visualSizeRange>1.8~2.2</visualSizeRange>
 			<purpose>Health</purpose>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_SaltRice]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_SaltRice</defName>
+		<label>saltrice plant</label>
+		<description>A grass often found growing near water in ashland regions. Farmed in great quantities by those that settle the ashlands, as raw saltrice is a popular export. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_SaltricePlant</texPath>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<plant>
+			<immatureGraphicPath>Things/Plant/MorrowRim_SaltricePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawSaltrice</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>2.5</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<purpose>Food</purpose>
+			<maxMeshCount>4</maxMeshCount>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
 </Defs>

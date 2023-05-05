@@ -45,6 +45,47 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Kreshweed]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_Kreshweed</defName>
+		<label>kreshweed plant</label>
+		<description>A coarse grass often found growing near water in ashland regions. Often farmed for its fiber, which can be woven into a durable cloth. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_KreshweedPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_KreshCloth</harvestedThingDef>
+			<harvestYield>14</harvestYield>
+			<sowMinSkill>4</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>12</growDays>
+			<visualSizeRange>0.95~1.6</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_ParasolBush]==========-->
 	<ThingDef Name="MorrowRim_Plant_ParasolBushBase" ParentName="MorrowRim_BushBase">
 		<defName>MorrowRim_Plant_ParasolBush</defName>
