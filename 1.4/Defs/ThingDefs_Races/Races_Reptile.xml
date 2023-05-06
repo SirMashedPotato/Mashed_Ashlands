@@ -353,6 +353,168 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[MorrowRim_CliffRacer]========== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_CliffRacer</defName>
+		<label>cliff racer</label>
+		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.</description>
+		<statBases>
+		  <MoveSpeed>6.0</MoveSpeed>
+		  <MarketValue>350</MarketValue>
+		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		  <MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		  <FilthRate>0</FilthRate>
+		</statBases>
+		<tools>
+		  <li>
+			<label>beak</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		  <li>
+			<label>tail</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>MorrowRim_TailAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_CliffRacerFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>MorrowRim_Egg_CliffRacerFertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~5</eggCountRange>
+			</li>
+		</comps>
+		<race>
+	  <!--<deathActionWorkerClass>MorrowRim.DeathActionWorker_CliffRacer</deathActionWorkerClass>-->
+		  <body>MorrowRim_FlyingHellSpawn</body>
+		  <herdAnimal>true</herdAnimal>
+		  <predator>true</predator>
+		  <maxPreyBodySize>3.3</maxPreyBodySize>
+		  <baseBodySize>0.75</baseBodySize>
+		  <baseHungerRate>0.3</baseHungerRate>
+		  <baseHealthScale>0.6</baseHealthScale>
+		  <foodType>CarnivoreAnimal</foodType>
+		  <leatherDef>MorrowRim_CliffRacerLeather</leatherDef>
+		  <nameOnTameChance>1</nameOnTameChance>
+		  <trainability>Intermediate</trainability>
+		  <wildness>0.95</wildness>
+		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+		  <lifeExpectancy>8</lifeExpectancy>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.2</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.4</minAge>
+			  <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+			  <soundDeath>Pawn_Boomrat_Death</soundDeath>
+			  <soundCall>Pawn_Boomrat_Call</soundCall>
+			  <soundAngry>Pawn_Boomrat_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef Name="MorrowRim_CliffRacer" ParentName="AnimalKindBase">
+		<defName>MorrowRim_CliffRacer</defName>
+		<combatPower>60</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<label>cliff racer</label>
+		<labelPlural>cliff racer swarm</labelPlural>
+		<race>MorrowRim_CliffRacer</race>
+		<wildGroupSize>1~5</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<label>cliff racer spawn</label>
+			<labelPlural>cliff racer spawn</labelPlural>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Netch/MorrowRim_CliffRacer</texPath>
+			  <drawSize>1.05</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Netch/MorrowRim_Dessicated_CliffRacer</texPath>
+			  <drawSize>1.05</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_CliffRacer</texPath>
+			  <drawSize>1.5</drawSize>
+			  <shadowData>
+				<volume>(0.25, 0.3, 0.25)</volume>
+				<offset>(0,0,-0.15)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_Dessicated_CliffRacer</texPath>
+			  <drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_CliffRacer</texPath>
+			  <drawSize>1.95</drawSize>
+			  <shadowData>
+				<volume>(0.3, 0.4, 0.3)</volume>
+				<offset>(0,0,-0.15)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_Dessicated_CliffRacer</texPath>
+			  <drawSize>1.95</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[MorrowRim_Guar]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_GuarBase">
 		<defName>MorrowRim_Guar</defName>

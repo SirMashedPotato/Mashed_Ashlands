@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Egg_NixOxFertilized]==========-->
+	<!-- ==========[MorrowRim_InsectEggFertBase]==========-->
 	<ThingDef ParentName="EggFertBase" Name="MorrowRim_InsectEggFertBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_InsectEgg</texPath>
@@ -30,7 +30,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<!-- ==========[MorrowRim_Egg_BantamGuarUnfertilized]==========-->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>MorrowRim_Egg_BantamGuarUnfertilized</defName>
 		<label>bantam guar egg (unfert.)</label>
@@ -42,7 +42,7 @@
 			<MarketValue>7.0</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<!-- ==========[MorrowRim_Egg_BantamGuarFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_BantamGuarFertilized</defName>
 		<label>bantam guar egg (fert.)</label>
@@ -58,6 +58,26 @@
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
 				<hatcherPawn>MorrowRim_BantamGuar</hatcherPawn>
 			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_CliffRacerFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_CliffRacerFertilized</defName>
+		<label>cliff racer egg (fert.)</label>
+		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>15</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>1</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_CliffRacer</hatcherPawn>
+		  </li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_CoralcrabFertilized]==========-->

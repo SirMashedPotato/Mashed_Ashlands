@@ -173,13 +173,14 @@
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_Mudcrab>0.3</MorrowRim_Mudcrab>
 			<!-- predators -->
-			<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
+			<MorrowRim_CliffRacer>0.3</MorrowRim_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">1</MorrowRim_NetchGlowing>
+			<MorrowRim_CliffRacer>0.5</MorrowRim_CliffRacer>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

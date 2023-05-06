@@ -37,7 +37,7 @@
 				<waterThreshold>0.9</waterThreshold>
 			</li>
 		</modExtensions>
-		<animalDensity>2.4</animalDensity>
+		<animalDensity>2.8</animalDensity>
 		<plantDensity>0.3</plantDensity>
 		<foragedFood>MorrowRim_RawAshYams</foragedFood>
 		<terrainsByFertility>
@@ -148,6 +148,7 @@
 			<MorrowRim_NixHound>0.3</MorrowRim_NixHound>
 			<MorrowRim_Kagouti>0.2</MorrowRim_Kagouti>
 			<MorrowRim_Alit>0.1</MorrowRim_Alit>
+			<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
@@ -157,6 +158,7 @@
 			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</MorrowRim_NetchGlowing>
 			<MorrowRim_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_NixOxGlowing>
 			<MorrowRim_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</MorrowRim_NixHoundGlowing>
+			<MorrowRim_CliffRacer>0.2</MorrowRim_CliffRacer>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

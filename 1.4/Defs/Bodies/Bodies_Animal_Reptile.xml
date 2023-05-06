@@ -324,4 +324,136 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+	<!-- ==========[MorrowRim_FlyingHellSpawn]==========-->
+	<BodyDef>
+		<defName>MorrowRim_FlyingHellSpawn</defName>
+		<label>bird</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Tail</def>
+					<coverage>0.10</coverage>
+					<groups>
+						<li>MorrowRim_TailAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>Spine</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Neck</def>
+					<coverage>0.2</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>Head</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.30</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.60</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Beak</def>
+									<coverage>0.25</coverage>
+									<groups>
+										<li>Beak</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MorrowRim_Wing</def>
+					<customLabel>left wing</customLabel>
+					<coverage>0.07</coverage>
+					<height>Middle</height>
+				</li>
+				<li>
+					<def>MorrowRim_Wing</def>
+					<customLabel>right wing</customLabel>
+					<coverage>0.07</coverage>
+					<height>Middle</height>
+				</li>
+				<li>
+					<def>MorrowRim_Sail</def>
+					<customLabel>upper sail</customLabel>
+					<coverage>0.03</coverage>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>MorrowRim_Sail</def>
+					<customLabel>lower sail</customLabel>
+					<coverage>0.03</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
 </Defs>

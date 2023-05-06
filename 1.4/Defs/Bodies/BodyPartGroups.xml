@@ -5,4 +5,9 @@
 		<defName>MorrowRim_TentacleAttackTool</defName>
 		<label>tentacle</label>
 	</BodyPartGroupDef>
+	<!-- ==========[MorrowRim_TailAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TailAttackTool</defName>
+		<label>tail stinger</label>
+	</BodyPartGroupDef>
 </Defs>

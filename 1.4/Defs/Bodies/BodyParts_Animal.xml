@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_HeadCrest]==========-->
 	<BodyPartDef>
 		<defName>MorrowRim_HeadCrest</defName>
 		<label>head crest</label>
@@ -8,5 +9,27 @@
 		<canScarify>true</canScarify>
 		<canSuggestAmputation>false</canSuggestAmputation>
 		<bleedRate>0.5</bleedRate>
+	</BodyPartDef>
+	<!-- ==========[MorrowRim_Wing]==========-->
+	<BodyPartDef>
+		<defName>MorrowRim_Wing</defName>
+		<label>wing</label>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!-- ==========[MorrowRim_Sail]==========-->
+	<BodyPartDef>
+		<defName>MorrowRim_Sail</defName>
+		<label>sail</label>
+		<frostbiteVulnerability>4</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
 	</BodyPartDef>
 </Defs>

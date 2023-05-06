@@ -7,6 +7,34 @@
 	</ThingDef>
 	<!-- ==========[MorrowRim_GuarLeather]==========-->
 	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_CliffRacerLeather</defName>
+		<label>cliff racer leather</label>
+		<description>Tanned, dried, scraped cliff racer skin. Light and flimsy, but offers good protection against the heat. Most people who frequent the ashlands despise the sight of it.</description>
+		<graphicData>
+			<color>(89,99,86)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.4</MarketValue>
+			<StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+			<Beauty>-5</Beauty>
+			<Comfort>-1</Comfort>
+		</statBases>
+		<stuffProps>
+			<color>(89,99,86)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>-5</Beauty>
+				<Comfort>-1</Comfort>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_GuarLeather]==========-->
+	<ThingDef ParentName="LeatherBase">
 		<defName>MorrowRim_GuarLeather</defName>
 		<label>guar leather</label>
 		<description>Tough scaled hide harvested from a guar. It is difficult to pierce and insulates rather well against the heat.</description>
