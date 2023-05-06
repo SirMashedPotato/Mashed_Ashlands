@@ -45,6 +45,42 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_HackleLo]==========-->
+	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
+		<defName>MorrowRim_Plant_HackleLo</defName>
+		<label>hackle-lo plant</label>
+		<description>A large and leafy succulent, often found growing in grasslands with ash rich soil. The leaves are rather tasty, and can easily be harvested from the plant without killing it. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_HackleLoPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawHackleLo</harvestedThingDef>
+			<harvestYield>24</harvestYield>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>12</growDays>
+			<visualSizeRange>1.0~1.8</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Kreshweed]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_Kreshweed</defName>

@@ -3,6 +3,9 @@
 	<!-- ==========[MorrowRim_PlantFoodRawBase]==========-->
 	<ThingDef ParentName="PlantFoodRawBase" Name="MorrowRim_PlantFoodRawBase" Abstract="True">
 		<possessionCount>10</possessionCount>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
 		<tradeTags>
 			<li>MorrowRim_AshlandsRawPlant</li>
 			<li>MorrowRim_AshlandsRawFoodPlant</li>
@@ -16,9 +19,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshFungus</texPath>
 		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
@@ -37,9 +37,24 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshYams</texPath>
 		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawHackleLo]==========-->
+	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+		<defName>MorrowRim_RawHackleLo</defName>
+		<label>hackle-lo leaves</label>
+		<description>Raw hackle-lo leaves.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawHackleLo</texPath>
+		</graphicData>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
@@ -84,9 +99,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawSaltrice</texPath>
 		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
 		<ingestible>
 			<foodType>Seed</foodType>
 		</ingestible>
@@ -105,9 +117,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawWickwheat</texPath>
 		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
 		<ingestible>
 			<foodType>Seed</foodType>
 		</ingestible>
