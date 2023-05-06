@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_CragIslandAshlands</defName>
 		<label>ashland crag islands</label>
-		<description>A collection of small, and often rocky, islands. Much of the ground here is gravel, though there are pockets of rich ash. While many plants struggle to grow here, ample access to coast allows for large clusters of marshmerrow and saltrice. Many of the animals native to the ashlands are not found here. The islands are instead dominated by netch, molecrabs... and cliff racers.</description>
+		<description>A collection of small, and often rocky, islands. Much of the ground here is gravel, though there are pockets of rich ash. While many plants struggle to grow here, ample access to coast allows for large clusters of marshmerrow and saltrice. Many of the animals native to the ashlands are not found here. The islands are instead dominated by netch, crabs... and cliff racers.</description>
 		<workerClass>MorrowRim2.BiomeWorker_CragIslandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_CragIslandAshlands</texture>
 		<modExtensions>
@@ -171,7 +171,9 @@
 			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
 			<!-- herd animals -->
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
+			<MorrowRim_Mudcrab>0.3</MorrowRim_Mudcrab>
 			<!-- predators -->
+			<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
