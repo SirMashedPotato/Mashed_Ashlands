@@ -30,7 +30,7 @@
 				</roadReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>MorrowRim_RichAshSoil</otherTerrainDef>
+				<otherTerrainDef>MorrowRim_RichAshGravel</otherTerrainDef>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.75</waterThreshold>
