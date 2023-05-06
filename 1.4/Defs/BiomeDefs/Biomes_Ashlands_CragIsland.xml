@@ -39,7 +39,7 @@
 				<waterThreshold>0.4</waterThreshold>
 			</li>
 		</modExtensions>
-		<animalDensity>1.5</animalDensity>
+		<animalDensity>1.7</animalDensity>
 		<plantDensity>0.3</plantDensity>
 		<foragedFood>MorrowRim_RawMarshmerrow</foragedFood>
 		<movementDifficulty>2</movementDifficulty>
