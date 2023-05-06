@@ -112,8 +112,10 @@
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
     <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
+    <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
