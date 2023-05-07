@@ -197,11 +197,11 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+		</race>
 	</ThingDef>
-	<race>
-		<herdAnimal>true</herdAnimal>
-		<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-	</race>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MorrowRim_Coralcrab</defName>
 		<label>ashland coralcrab</label>
