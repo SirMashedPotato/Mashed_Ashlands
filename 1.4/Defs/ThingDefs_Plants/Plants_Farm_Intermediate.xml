@@ -173,4 +173,50 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Wickwheat]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_Wickwheat</defName>
+		<label>wickwheat plant</label>
+		<description>A grass often found growing often found growing in grasslands with ash rich soil. Farmed in great quantities by those that settle the ashlands, as raw wickwheat is a popular export. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_GrazelandSoil</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_WickwheatPlant</texPath>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<plant>
+			<immatureGraphicPath>Things/Plant/MorrowRim_WickwheatPlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>MorrowRim_RawWickwheat</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.5</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 </Defs>

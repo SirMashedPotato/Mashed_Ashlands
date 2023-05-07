@@ -3,72 +3,56 @@
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_GrazelandAshlands</defName>
 		<label>ashland grazelands</label>
-		<description>Flat pastoral land, covered in grass and occasional mushroom trees. These plains were once covered in clouds of ash from a nearby volcano, now the clouds have settled, and much of the ash has been absorbed into the ground. Much like the ashlands, the terrain here is highly fertile, though large swathes of this fertility have been lost over time, and there is an almost complete lack of ash storms to replenish it.</description>
+		<description>Flat pastoral land, covered in grass and occasional mushroom trees. These plains were once covered in clouds of ash from a nearby volcano, now the clouds have settled, and much of the ash has been absorbed into the ground. Much like the ashlands, the terrain here is highly fertile, though large swathes of this fertility have been lost over time, and there is an almost complete lack of ash storms to replenish it.\n\nThe landscape is largely dominated by wickwheat and hackle-lo, and large herds of grazing herbivores can often be found here.</description>
 		<workerClass>MorrowRim2.BiomeWorker_GrazelandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_GrazelandAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
                 <lateLoader>true</lateLoader>
+				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<forcedRockType>MorrowRim_Basalt</forcedRockType>
+				<terrainReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Sand</originalTerrain>
+						<replacedTerrain>MorrowRim_AshSand</replacedTerrain>
+					</li>
+				</terrainReplacers>
+				<roadReplacers>
+					<li>
+						<originalTerrain>PackedDirt</originalTerrain>
+						<replacedTerrain>MorrowRim_PackedAsh</replacedTerrain>
+					</li>
+				</roadReplacers>
+				<useAshlandCavePlants>true</useAshlandCavePlants>
+				<useCustomCaveTerrain>true</useCustomCaveTerrain>
+				<otherTerrainDef>MorrowRim_RichAshGravel</otherTerrainDef>
+				<waterTerrainDef>WaterShallow</waterTerrainDef>
+				<otherTerrainThreshold>0.25</otherTerrainThreshold>
+				<waterThreshold>0.9</waterThreshold>
             </li>
 		</modExtensions>
-		<animalDensity>3.7</animalDensity>
-		<plantDensity>0.65</plantDensity>
-		<settlementSelectionWeight>1</settlementSelectionWeight>
-		<movementDifficulty>1</movementDifficulty>
-		<forageability>1</forageability>
-		<foragedFood>RawBerries</foragedFood>
-		<wildPlantRegrowDays>20</wildPlantRegrowDays>
-		<soundsAmbient>
-			<li>Ambient_NightInsects_Standard</li>
-		</soundsAmbient>
-		<diseaseMtbDays>50</diseaseMtbDays>
-		<diseases>
-			<li>
-				<diseaseInc>Disease_Flu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Plague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Malaria</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_GutWorms</diseaseInc>
-				<commonality>50</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
-				<commonality>30</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
-				<commonality>30</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_MuscleParasites</diseaseInc>
-				<commonality>50</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_AnimalFlu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_AnimalPlague</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-		</diseases>
+		<animalDensity>3</animalDensity>
+		<plantDensity>0.4</plantDensity>
+		<foragedFood>MorrowRim_RawHackleLo</foragedFood>
 		<terrainsByFertility>
 			<li>
-				<terrain>Soil</terrain>
+				<terrain>MorrowRim_AshSoil</terrain>
 				<min>-999</min>
-				<max>0.87</max>
+				<max>0.45</max>
 			</li>
 			<li>
-				<terrain>SoilRich</terrain>
-				<min>0.87</min>
+				<terrain>MorrowRim_GrazelandSoil</terrain>
+				<min>0.45</min>
+				<max>0.90</max>
+			</li>
+			<li>
+				<terrain>MorrowRim_AshGravel</terrain>
+				<min>0.90</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -77,29 +61,36 @@
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>SoilRich</terrain>
-						<min>0.73</min>
-						<max>0.80</max>
-					</li>
-					<li>
-						<terrain>Mud</terrain>
-						<min>0.80</min>
-						<max>0.93</max>
+						<terrain>MorrowRim_RichAshSoil</terrain>
+						<min>0.78</min>
+						<max>0.86</max>
 					</li>
 					<li>
 						<terrain>WaterShallow</terrain>
-						<min>0.93</min>
-						<max>1.06</max>
+						<min>0.86</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MorrowRim_GrazelandSoil</terrain>
+						<min>0.68</min>
+						<max>0.86</max>
 					</li>
 					<li>
-						<terrain>WaterDeep</terrain>
-						<min>1.06</min>
-						<max>999</max>
+						<terrain>MorrowRim_AshGravel</terrain>
+						<min>0.86</min>
+						<max>99</max>
 					</li>
+					
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
+			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
 			<Fog>1</Fog>
 			<Rain>2</Rain>
@@ -108,62 +99,71 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<!-- MorrowRim weather -->
+			<MorrowRim_Ashfall>4</MorrowRim_Ashfall>
+			<MorrowRim_FoggyAshfall>2</MorrowRim_FoggyAshfall>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
+			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
+			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_Grass>5.0</Plant_Grass>
-			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
-			<Plant_TallGrass>2.0</Plant_TallGrass>
-			<Plant_Brambles>1.0</Plant_Brambles>
-			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
-			<Plant_Dandelion>0.5</Plant_Dandelion>
-			<Plant_Bush>0.6</Plant_Bush>
-			<Plant_TreeOak>0.5</Plant_TreeOak>
-			<Plant_TreePoplar>0.5</Plant_TreePoplar>
-			<Plant_Berry>0.05</Plant_Berry>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+			<!-- Ground covers -->
+			<Plant_Grass>10</Plant_Grass>
+			<MorrowRim_Plant_AshlandGrass>18</MorrowRim_Plant_AshlandGrass>
+			<MorrowRim_Plant_AshlandDuneGrass>2</MorrowRim_Plant_AshlandDuneGrass>
+			<MorrowRim_Plant_AshlandFungus>2</MorrowRim_Plant_AshlandFungus>
+			<MorrowRim_Plant_Ashreed>0.2</MorrowRim_Plant_Ashreed>
+			<!-- Nutrition plants -->
+			<MorrowRim_Plant_Wickwheat>0.7</MorrowRim_Plant_Wickwheat>
+			<MorrowRim_Plant_HackleLo>0.7</MorrowRim_Plant_HackleLo>
+			<MorrowRim_Plant_Marshmerrow>0.05</MorrowRim_Plant_Marshmerrow>
+			<MorrowRim_Plant_Saltrice>0.05</MorrowRim_Plant_Saltrice>
+			<!-- Resource plants -->
+			<MorrowRim_Plant_MuckSponge>0.05</MorrowRim_Plant_MuckSponge>
+			<MorrowRim_Plant_ParasolBush>0.2</MorrowRim_Plant_ParasolBush>
+			<MorrowRim_Plant_TramaShrub>0.1</MorrowRim_Plant_TramaShrub>
+			<!-- Aesthetic plants -->
+			<MorrowRim_Plant_Stoneflower>0.2</MorrowRim_Plant_Stoneflower>
+			<!-- Trees -->
+			<MorrowRim_Plant_TreeEmperorParasol>0.2</MorrowRim_Plant_TreeEmperorParasol>
+			<!-- ==========[Pollution]========== -->
+			<!-- Polluted ground covers -->
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">20</Plant_GrayGrass>
+			<MorrowRim_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingAshreed>
+			<!-- Polluted nutrition plants -->
+			<MorrowRim_Plant_ToxYam MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_ToxYam>
+			<MorrowRim_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingScathecraw>
+			<MorrowRim_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingParasolBush>
+			<!-- Polluted resource plants -->
+			<MorrowRim_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_TramaMass>
+			<MorrowRim_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_Plant_WasteSponge>
+			<!-- Polluted trees -->
+			<MorrowRim_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
-			<Donkey>0.20</Donkey>
-			<GuineaPig>0.45</GuineaPig>
-			<Yak>0.06</Yak>
-			<Bison>0.07</Bison>
-			<Horse>0.20</Horse>
-			<Hare>1.0</Hare>
-			<Squirrel>1.0</Squirrel>
-			<Rat>1.0</Rat>
-			<Deer>0.5</Deer>
-			<WildBoar>0.5</WildBoar>
-			<Turkey>0.5</Turkey>
-			<Raccoon>0.5</Raccoon>
-			<Ibex>0.5</Ibex>
-			<Muffalo>0.5</Muffalo>
-			<Alpaca>0.5</Alpaca>
-			<Boomalope>0.4</Boomalope>
-			<Boomrat>0.4</Boomrat>
-			<Tortoise>0.3</Tortoise>
-			<Gazelle>0.3</Gazelle>
-			<Megasloth>0.2</Megasloth>
-			<Rhinoceros>0.1</Rhinoceros>
-			<Bear_Grizzly>0.07</Bear_Grizzly>
-			<Wolf_Timber>0.07</Wolf_Timber>
-			<Fox_Red>0.07</Fox_Red>
-			<Cougar>0.07</Cougar>
-			<Lynx>0.07</Lynx>
-			<Warg>0.07</Warg>
+			<!-- prey animals -->
+			<Rat>0.6</Rat>
+			<MorrowRim_BantamGuar>0.2</MorrowRim_BantamGuar>
+			<MorrowRim_Scuttler>0.2</MorrowRim_Scuttler>
+			<MorrowRim_Vvardvark>0.2</MorrowRim_Vvardvark>
+			<!-- herd animals -->
+			<MorrowRim_Shalk>0.6</MorrowRim_Shalk>
+			<MorrowRim_ShalkFungal>0.1</MorrowRim_ShalkFungal>
+			<MorrowRim_Guar>0.2</MorrowRim_Guar>
+			<MorrowRim_NixOx>0.6</MorrowRim_NixOx>
+			<!-- predators -->
+			<MorrowRim_NixHound>0.1</MorrowRim_NixHound>
+			<MorrowRim_Kagouti>0.1</MorrowRim_Kagouti>
+			<MorrowRim_Alit>0.2</MorrowRim_Alit>
+			<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
-			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
-			<Rat>1</Rat>
-			<Raccoon>0.5</Raccoon>
-			<Boomrat>0.4</Boomrat>
-			<Boomalope>0.1</Boomalope>
-			<Warg>0.05</Warg>
+			
 		</pollutionWildAnimals>
-		<allowedPackAnimals>
-			<li>Muffalo</li>
-			<li>Alpaca</li>
-		</allowedPackAnimals>
 	</BiomeDef>
 </Defs>

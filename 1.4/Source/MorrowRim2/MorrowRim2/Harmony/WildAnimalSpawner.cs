@@ -15,31 +15,32 @@ namespace MorrowRim2
         [HarmonyPostfix]
         public static void MorrowRim_CommonalityOfAnimalNow_Patch(PawnKindDef def, ref Map ___map, ref float __result)
         {
-            if (true)   //potential mod setting, toggle
+            AnimalProperties props = AnimalProperties.Get(def.race);
+            if (props != null)
             {
-                AnimalProperties props = AnimalProperties.Get(def.race);
-                if (props != null)
+                if (!props.ignoreRequirementsInBiomes.NullOrEmpty() && props.ignoreRequirementsInBiomes.Contains(___map.Biome))
                 {
-                    if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
-                    {
-                        __result = 0;
-                        return;
-                    }
-                    if ((props.requireCoast || props.requireWater) && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
-                    {
-                        __result = 0;
-                        return;
-                    }
-                    if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
-                    {
-                        __result = 0;
-                        return;
-                    }
-                    if ((props.requireRiver || props.requireWater) && Find.WorldGrid[___map.Tile].Rivers == null)
-                    {
-                        __result = 0;
-                        return;
-                    }
+                    return;
+                }
+                if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
+                {
+                    __result = 0;
+                    return;
+                }
+                if ((props.requireCoast || props.requireWater) && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
+                {
+                    __result = 0;
+                    return;
+                }
+                if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
+                {
+                    __result = 0;
+                    return;
+                }
+                if ((props.requireRiver || props.requireWater) && Find.WorldGrid[___map.Tile].Rivers == null)
+                {
+                    __result = 0;
+                    return;
                 }
             }
         }

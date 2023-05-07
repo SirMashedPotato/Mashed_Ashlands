@@ -1,4 +1,6 @@
-﻿using Verse;
+﻿using RimWorld;
+using System.Collections.Generic;
+using Verse;
 
 namespace MorrowRim2
 {
@@ -9,6 +11,7 @@ namespace MorrowRim2
         public bool requireWater = false;
         public bool requireCaves = false;
         public bool requireHills = false;
+        public List<BiomeDef> ignoreRequirementsInBiomes;
 
         public static AnimalProperties Get(Def def)
         {
