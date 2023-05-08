@@ -153,7 +153,7 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>0.6</Rat>
+			<Rat>0.3</Rat>
 			<MorrowRim_BantamGuar>0.05</MorrowRim_BantamGuar>
 			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
 			<MorrowRim_Vvardvark>0.1</MorrowRim_Vvardvark>
