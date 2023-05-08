@@ -164,14 +164,17 @@
 			<Plant_Chokevine>0.8</Plant_Chokevine>
 			<MorrowRim_Plant_AshlandGrass>1</MorrowRim_Plant_AshlandGrass>
 			<MorrowRim_Plant_AshlandFungus>0.2</MorrowRim_Plant_AshlandFungus>
-			<MorrowRim_Plant_LuminousRussula>0.2</MorrowRim_Plant_LuminousRussula>
-			<MorrowRim_Plant_VioletCoprinus>0.2</MorrowRim_Plant_VioletCoprinus>
 			<!-- Nutrition plants -->
 			<MorrowRim_Plant_Marshmerrow>0.05</MorrowRim_Plant_Marshmerrow>
 			<MorrowRim_Plant_Saltrice>0.05</MorrowRim_Plant_Saltrice>
 			<!-- Resource plants -->
 			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
 			<!-- Aesthetic plants -->
+			<MorrowRim_Plant_SomnaliusFern>0.1</MorrowRim_Plant_SomnaliusFern>
+			<MorrowRim_Plant_AshenFern>0.01</MorrowRim_Plant_AshenFern>
+			<MorrowRim_Plant_LuminousRussula>0.2</MorrowRim_Plant_LuminousRussula>
+			<MorrowRim_Plant_VioletCoprinus>0.2</MorrowRim_Plant_VioletCoprinus>
+			<MorrowRim_Plant_DraggleTails>0.2</MorrowRim_Plant_DraggleTails>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.4</MorrowRim_Plant_TreeEmperorParasol>
 			<Plant_TreeWillow>0.5</Plant_TreeWillow>

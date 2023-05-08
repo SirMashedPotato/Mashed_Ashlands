@@ -86,40 +86,6 @@
 			<sowWork>170</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_AshlandFern]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_AshlandFern</defName>
-		<label>ashland fern</label>
-		<description>A small fern that can often be found growing regions with ash rich ground. While rather resistant to ash storms, it is not immune to the effects of them.</description>
-		<modExtensions>
-		</modExtensions>
-		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
-			<Beauty>3</Beauty>
-			<BeautyOutdoors>3</BeautyOutdoors>
-			<Nutrition>0.2</Nutrition>
-			<Flammability>0.4</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
-		</statBases>
-		<pathCost>3</pathCost>
-		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshlandFernPlant</texPath>
-		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0.2</fertilityMin>
-			<fertilitySensitivity>0.6</fertilitySensitivity>
-			<growDays>3.5</growDays>
-			<harvestWork>60</harvestWork>
-			<visualSizeRange>0.95~1.15</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>40</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-		</plant>
-	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Ashreed]==========-->
 	<ThingDef Name="MorrowRim_Plant_AshreedBase" ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_Ashreed</defName>
@@ -154,6 +120,51 @@
 			<wildClusterWeight>80</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_DraggleTails]==========-->
+	<ThingDef Name="MorrowRim_Plant_DraggleTailsBase" ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_DraggleTails</defName>
+		<label>draggle tails</label>
+		<description>A primitive flowering plant, only found growing in humid ashland regions. They emit a faint glow, often used by explorers to aide in navigating the treacherous marshes at night.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>1.0</Flammability>
+			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_DraggleTails</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.6</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>7</growDays>
+			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.8~1.4</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(53,94,84,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_LuminousRussula]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">
