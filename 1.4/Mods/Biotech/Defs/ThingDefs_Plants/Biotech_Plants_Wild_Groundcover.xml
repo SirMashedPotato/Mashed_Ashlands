@@ -20,6 +20,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_GlowingDraggleTails]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_DraggleTailsBase">
+		<defName>MorrowRim_Plant_GlowingDraggleTails</defName>
+		<label>glowing draggle tails</label>
+		<description>A mutated species of the common draggle tails, adapted for life in highly polluted ashland regions. They produce an ominous glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingDraggleTails</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_GlowingRussula]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_GlowingRussula</defName>

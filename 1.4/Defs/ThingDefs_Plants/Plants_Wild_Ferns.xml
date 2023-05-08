@@ -36,11 +36,36 @@
 		</graphicData>
 		<ingestible/>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_SloughFern]==========-->
+	<ThingDef ParentName="MorrowRim_FernBase">
+		<defName>MorrowRim_Plant_SloughFern</defName>
+		<label>slough fern</label>
+		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_SloughFernPlant</texPath>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<visualSizeRange>0.9~1.6</visualSizeRange>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_SomnaliusFern]==========-->
 	<ThingDef ParentName="MorrowRim_FernBase">
 		<defName>MorrowRim_Plant_SomnaliusFern</defName>
 		<label>ashland somnalius fern</label>
-		<description>A small fern that can often be found growing humid ashland regions.</description>
+		<description>A small fern that can often be found growing in humid ashland regions.</description>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>

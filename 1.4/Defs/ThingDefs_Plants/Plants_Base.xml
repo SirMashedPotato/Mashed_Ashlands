@@ -126,6 +126,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>2.5</growDays>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
 			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
 			<harvestWork>40</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
