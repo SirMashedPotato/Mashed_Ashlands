@@ -28,6 +28,16 @@
 						<replacedTerrain>MorrowRim_PackedAsh</replacedTerrain>
 					</li>
 				</roadReplacers>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>WaterShallow</originalTerrain>
+						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>WaterOceanShallow</originalTerrain>
+						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+					</li>
+				</dryToReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
 				<otherTerrainDef>MorrowRim_RichAshGravel</otherTerrainDef>
