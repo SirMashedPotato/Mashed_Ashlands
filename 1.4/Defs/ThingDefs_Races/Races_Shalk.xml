@@ -232,7 +232,7 @@
 	<ThingDef ParentName="MorrowRim_ShalkThingBase">
 		<defName>MorrowRim_Thunderbug</defName>
 		<label>ashland thunderbug</label>
-		<description>A subspecies of the shalk, often found in humid ashland regions. A special organ allows the thunderbug to emit electrical pulses when threatened. Though not particularly strong, the shock is usually enough to deter would-be predators. Those determined enough will quickly find out that the thunderbug is also capable of producing painful shocks with its mandibles, which are strong enough to sear flesh.</description>
+		<description>A subspecies of the shalk, often found in humid ashland regions. A special organ allows the thunderbug to emit electrical pulses when threatened. Though not particularly strong, the shock is usually enough to deter would-be predators. Those determined enough will quickly find out that the thunderbug is also capable of producing painful shocks with its mandibles, which are strong enough to sear flesh.\n\n&lt;color=#E5E54C&gt;Electrical Discharge&lt;/color&gt;\nThunderbugs are able to periodically release electrical explosions when damaged.</description>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>

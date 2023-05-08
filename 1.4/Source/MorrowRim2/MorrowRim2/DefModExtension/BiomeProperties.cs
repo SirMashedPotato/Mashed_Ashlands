@@ -12,6 +12,7 @@ namespace MorrowRim2
 
         /* for biome gen */
         public bool disableBeaches = false;
+        public bool nullifyBeachTerrain = false;
         public bool forceHilliness = false;
         
         public List<TerrainReplacer> terrainReplacers;

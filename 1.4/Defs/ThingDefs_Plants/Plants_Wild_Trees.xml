@@ -59,6 +59,7 @@
 				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
 					<li>MorrowRim_AshSand</li>
 					<li>MorrowRim_RichAshSand</li>
 				</disallowedTerrainForWild>

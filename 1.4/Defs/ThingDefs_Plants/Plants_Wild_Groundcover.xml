@@ -11,6 +11,7 @@
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
 					<li>MorrowRim_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
@@ -51,6 +52,9 @@
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<selectable>false</selectable>

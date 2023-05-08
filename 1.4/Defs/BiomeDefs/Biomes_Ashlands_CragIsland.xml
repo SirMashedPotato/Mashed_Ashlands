@@ -8,8 +8,7 @@
 		<texture>World/Biomes/MorrowRim_CragIslandAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
-				<earlyLoader>true</earlyLoader>
-				<baseBiome>true</baseBiome>
+				<lateLoader>true</lateLoader>
 				<disableBeaches>true</disableBeaches>
 				<forceHilliness>true</forceHilliness>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>

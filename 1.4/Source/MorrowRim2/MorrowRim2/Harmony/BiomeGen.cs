@@ -139,4 +139,25 @@ namespace MorrowRim2
             return true;
         }
     }
+
+    /// <summary>
+    /// Prevents BeachMaker placing sand for specific biomes
+    /// </summary>
+    [HarmonyPatch(typeof(BeachMaker))]
+    [HarmonyPatch("BeachTerrainAt")]
+    public static class BeachMaker_BeachTerrainAt_Patch
+    {
+        [HarmonyPostfix]
+        public static void MorrowRim_BeachMaker_BeachTerrainAt_Patch(BiomeDef biome, ref TerrainDef __result)
+        {
+            BiomeProperties props = BiomeProperties.Get(biome);
+            if (props != null && props.nullifyBeachTerrain)
+            {
+                if (__result == TerrainDefOf.Sand)
+                {
+                    __result = null;
+                }
+            }
+        }
+    }
 }
