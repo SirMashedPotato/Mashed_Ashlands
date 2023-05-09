@@ -218,6 +218,27 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_SandcrabBlueFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_SandcrabBlueFertilized</defName>
+		<label>blue sandcrab egg (fert.)</label>
+		<description>A fertilised blue sandcrab egg. If all goes well, it should hatch into a baby blue sandcrab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,109,121)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_SandcrabBlue</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_ShalkFungalFertilized]==========-->
 	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
 		<defName>MorrowRim_Egg_ScuttlerFertilized</defName>
@@ -273,6 +294,25 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
 				<hatcherPawn>MorrowRim_ShalkFungal</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NetchFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_SwampJellyFertilized</defName>
+		<label>swamp jelly egg (fert.)</label>
+		<description>A fertilised swamp jelly egg. If all goes well, it should hatch into a swamp jelly calf. It can be eaten raw, but it's much better cooked. As swamp jelly are rather protective of their eggs, swamp jelly eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<color>(110,172,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_SwampJelly</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

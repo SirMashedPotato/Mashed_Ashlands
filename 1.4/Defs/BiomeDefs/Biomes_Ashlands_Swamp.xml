@@ -198,6 +198,7 @@
 			<!-- prey animals -->
 			<Rat>0.6</Rat>
 			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
+			<MorrowRim_SwampJelly>0.6</MorrowRim_SwampJelly>
 			<!-- <MorrowRim_SwampJelly>1</MorrowRim_SwampJelly> -->
 			<!-- herd animals -->
 			<MorrowRim_Mudcrab>0.5</MorrowRim_Mudcrab>

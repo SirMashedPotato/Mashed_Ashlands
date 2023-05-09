@@ -41,7 +41,7 @@
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[MorrowRim_NetchJelly]==========-->
-	<ThingDef ParentName="MorrowRim_OrganicProductBase">
+	<ThingDef Name="MorrowRim_NetchJellyBase" ParentName="MorrowRim_OrganicProductBase">
 		<defName>MorrowRim_NetchJelly</defName>
 		<label>netch jelly</label>
 		<description>A jelly like substance 'milked' from a netch. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
@@ -98,5 +98,14 @@
 			<specialThoughtDirect>MorrowRim_AteNixOxMilk</specialThoughtDirect>
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
+	</ThingDef>
+	<!-- ==========[MorrowRim_SwampJellyEdible]==========-->
+	<ThingDef ParentName="MorrowRim_NetchJellyBase">
+		<defName>MorrowRim_SwampJellyEdible</defName>
+		<label>swamp jelly</label>
+		<description>A jelly like substance harvested from a swamp jelly. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_SwampJelly</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>

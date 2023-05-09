@@ -188,7 +188,7 @@
 		<race>MorrowRim_NixOxGlowing</race>
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>0.8</ecoSystemWeight>
-		<wildGroupSize>3~9</wildGroupSize>
+		<wildGroupSize>3~5</wildGroupSize>
 		<lifeStages>
 			<li>
 				<label>glowing nix-ox calf</label>

@@ -8,7 +8,7 @@
 		<texture>World/Biomes/MorrowRim_CragIslandAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
-				<lateLoader>true</lateLoader>
+				<earlyLoader>true</earlyLoader>
 				<disableBeaches>true</disableBeaches>
 				<forceHilliness>true</forceHilliness>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
@@ -178,6 +178,7 @@
 			<!-- prey animals -->
 			<Rat>0.2</Rat>
 			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
+			<MorrowRim_SandcrabBlue>0.4</MorrowRim_SandcrabBlue>
 			<!-- herd animals -->
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_Mudcrab>0.3</MorrowRim_Mudcrab>

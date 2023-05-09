@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using RimWorld.Planet;
+﻿using RimWorld.Planet;
 
 namespace MorrowRim2
 {

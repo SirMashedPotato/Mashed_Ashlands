@@ -13,7 +13,7 @@
 			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			<FilthRate>10</FilthRate>
+			<FilthRate>6</FilthRate>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>
@@ -243,6 +243,84 @@
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
 					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[MorrowRim_Coralcrab]========== -->
+	<ThingDef ParentName="MorrowRim_CrabThingBase">
+		<defName>MorrowRim_SandcrabBlue</defName>
+		<label>blue sandcrab</label>
+		<description>A relatively small species of crab, often found along the coast in ashland regions.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_SandcrabBlueFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools Inherit="False">
+			<li>
+				<label>pincers</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_SandcrabBlue</defName>
+		<label>blue sandcrab</label>
+		<race>MorrowRim_SandcrabBlue</race>
+		<combatPower>20</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<wildGroupSize>3~8</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
