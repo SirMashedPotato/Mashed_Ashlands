@@ -86,7 +86,7 @@
 	<ThingDef ParentName="MorrowRim_CnidarianThingBase">
 		<defName>MorrowRim_SwampJelly</defName>
 		<label>ashland swamp jelly</label>
-		<description>.</description>
+		<description>Smaller cousins of the netch, usually found in humid ashland regions.  Swamp jelly come in a wide variety of colours, which has inspired some to collect them as pets. While they lack the protective shell of the netch, their tentacles are still covered in nematocysts</description>
 		<race>
 			<specificMeatDef>MorrowRim_SwampJellyEdible</specificMeatDef>
 		</race>
