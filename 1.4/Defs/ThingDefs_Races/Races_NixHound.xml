@@ -2,6 +2,11 @@
 <Defs>
 	<!-- ==========[MorrowRim_NixHoundThingBase]========== -->
 	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_NixHoundThingBase" Abstract="True">
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="NocturnalAnimals.ExtendedRaceProperties">
+				<bodyClock>Nocturnal</bodyClock>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>350</MarketValue>

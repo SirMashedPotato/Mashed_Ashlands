@@ -247,11 +247,16 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Coralcrab]========== -->
+	<!-- ==========[MorrowRim_SandcrabBlue]========== -->
 	<ThingDef ParentName="MorrowRim_CrabThingBase">
 		<defName>MorrowRim_SandcrabBlue</defName>
 		<label>blue sandcrab</label>
 		<description>A relatively small species of crab, often found along the coast in ashland regions.</description>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="NocturnalAnimals.ExtendedRaceProperties">
+				<bodyClock>Crepuscular</bodyClock>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>MorrowRim_Egg_SandcrabBlueFertilized</eggFertilizedDef>

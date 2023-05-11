@@ -6,6 +6,10 @@
 			<li Class="MorrowRim2.PollutionProperties">
 				<AllowPollutionStimulis>false</AllowPollutionStimulis>
 			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
+			</li>
 		</modExtensions>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
@@ -13,6 +17,7 @@
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<BoneAmount MayRequire="sihv.rombones">0</BoneAmount>
 		</statBases>
 		<race>
 			<fleshType>Insectoid</fleshType>

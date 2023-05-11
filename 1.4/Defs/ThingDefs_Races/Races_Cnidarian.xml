@@ -2,6 +2,12 @@
 <Defs>
 	<!-- ==========[MorrowRim_CnidarianThingBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_CnidarianThingBase" Abstract="True">
+		<modExtensions>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>false</hasFat>
+			</li>
+		</modExtensions>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
@@ -13,6 +19,7 @@
 			<FilthRate>0</FilthRate>
 			<MeatAmount>120</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones">0</BoneAmount>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>

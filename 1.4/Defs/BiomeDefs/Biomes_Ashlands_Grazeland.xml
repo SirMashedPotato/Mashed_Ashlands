@@ -140,6 +140,8 @@
 			<MorrowRim_Plant_Stoneflower>0.2</MorrowRim_Plant_Stoneflower>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.2</MorrowRim_Plant_TreeEmperorParasol>
+			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
+			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">20</Plant_GrayGrass>
