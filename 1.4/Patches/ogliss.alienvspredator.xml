@@ -18,6 +18,31 @@
 						<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 					</value>
 				</li>
+				<!-- Yuatja Apparel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AvP_Yautja_Armour_BioMaskLight"]/equippedStatOffsets</xpath>
+					<value>
+						<MorrowRim_AshResistance>0.55</MorrowRim_AshResistance>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AvP_Yautja_Armour_BioMask"]/equippedStatOffsets</xpath>
+					<value>
+						<MorrowRim_AshResistance>0.4</MorrowRim_AshResistance>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AvP_Yautja_Armour_BioMaskElite" or defName="AvP_Yautja_Armour_BioMaskFalconer"]/equippedStatOffsets</xpath>
+					<value>
+						<MorrowRim_AshResistance>0.6</MorrowRim_AshResistance>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AvP_Yautja_Armour_BioMaskOrnate"]/equippedStatOffsets</xpath>
+					<value>
+						<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
