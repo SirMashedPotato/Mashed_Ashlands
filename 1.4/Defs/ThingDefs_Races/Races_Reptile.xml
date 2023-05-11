@@ -514,6 +514,163 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[MorrowRim_Durzog]========== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_Durzog</defName>
+		<label>durzog</label>
+		<description>A large six-eyed dog-like reptile, often found in humid ashland regions. Often referred to as 'sludgepuppies' due to their love of bathing in both mud, and raw sewage. Rather intelligent, and surprisingly loyal, durzog are sometimes tamed for use as guard dogs. While rather deadly thanks to their large tusks, durzog are not the most durable creatures.</description>
+		<statBases>
+		  <ToxicResistance>0.8</ToxicResistance>
+		  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		  <MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+		  <MoveSpeed>4.2</MoveSpeed>
+		  <MarketValue>300</MarketValue>
+		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <FilthRate>3</FilthRate>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+		  <li>
+			<label>tusk</label>
+			<capacities>
+			  <li>Scratch</li>
+			  <li>Stab</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.6</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_DurzogFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<race>
+		  <body>MorrowRim_QuadrupedWithSixEyes</body>
+		  <herdAnimal>true</herdAnimal>
+		  <predator>true</predator>
+		  <maxPreyBodySize>2</maxPreyBodySize>
+		  <baseBodySize>1.1</baseBodySize>
+		  <baseHealthScale>0.8</baseHealthScale>
+		  <baseHungerRate>0.5</baseHungerRate>
+		  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+		  <wildness>0.55</wildness>
+		  <trainability>Advanced</trainability>
+		  <leatherDef>MorrowRim_DurzogLeather</leatherDef>
+		  <gestationPeriodDays>10</gestationPeriodDays>
+		  <lifeExpectancy>19</lifeExpectancy>
+		  <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+		  <nuzzleMtbHours>100</nuzzleMtbHours>
+		  <petness>0.2</petness>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.24</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.5</minAge>
+			  <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+			  <soundDeath>Pawn_Wildboar_Death</soundDeath>
+			  <soundCall>Pawn_Wildboar_Call</soundCall>
+			  <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>MorrowRim_AshlandAnimalCommon</li>
+			<li>MorrowRim_AshlandAnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef Name="MorrowRim_Durzog" ParentName="AnimalKindBase">
+		<defName>MorrowRim_Durzog</defName>
+		<label>durzog</label>
+		<race>MorrowRim_Durzog</race>
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<label>durzog pup</label>
+			<labelPlural>durzog pups</labelPlural>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+			  <drawSize>1.0</drawSize>
+			  <shadowData>
+				<volume>(0.30, 0.25, 0.20)</volume>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+			  <drawSize>1.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+			  <drawSize>1.5</drawSize>
+			  <shadowData>
+				<volume>(0.375, 0.375, 0.375)</volume>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+			  <drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+			  <drawSize>2.0</drawSize>
+			  <shadowData>
+				<volume>(0.5, 0.5, 0.4)</volume>
+				<offset>(0,0,-0.05)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+			  <drawSize>2.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[MorrowRim_Guar]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_GuarBase">
 		<defName>MorrowRim_Guar</defName>

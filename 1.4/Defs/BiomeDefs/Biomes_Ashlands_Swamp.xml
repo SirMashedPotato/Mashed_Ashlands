@@ -208,8 +208,8 @@
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_Guar>0.05</MorrowRim_Guar>
 			<!-- predators -->
-			<MorrowRim_NixHound>0.4</MorrowRim_NixHound>
-			<!-- <MorrowRim_Durzog>0.2</MorrowRim_Durzog> -->
+			<MorrowRim_NixHound>0.3</MorrowRim_NixHound>
+			<MorrowRim_Durzog>0.2</MorrowRim_Durzog>
 			<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
@@ -220,6 +220,7 @@
 			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</MorrowRim_NetchGlowing>
 			<MorrowRim_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</MorrowRim_NixHoundGlowing>
 			<MorrowRim_CliffRacer>0.2</MorrowRim_CliffRacer>
+			<MorrowRim_Durzog>0.5</MorrowRim_Durzog>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

@@ -5,6 +5,26 @@
 			<li>MorrowRim_AshlandLeather</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[MorrowRim_DurzogLeather]==========-->
+	<ThingDef ParentName="MorrowRim_LeatherBase">
+		<defName>MorrowRim_DurzogLeather</defName>
+		<label>durzog leather</label>
+		<description>Tanned, dried, scraped durzog skin. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+		  <color>(111,118,71)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.9</MarketValue>
+		  <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.21</StuffPower_Armor_Blunt>
+		  <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(111,118,71)</color>
+		  <commonality>0.05</commonality>
+		</stuffProps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_GuarLeather]==========-->
 	<ThingDef ParentName="LeatherBase">
 		<defName>MorrowRim_CliffRacerLeather</defName>

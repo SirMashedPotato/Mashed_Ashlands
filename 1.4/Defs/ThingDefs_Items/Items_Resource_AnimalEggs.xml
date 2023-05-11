@@ -100,6 +100,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_DurzogFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_DurzogFertilized</defName>
+		<label>durzog egg (fert.)</label>
+		<description>A fertilised durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>5</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Durzog</hatcherPawn>
+		  </li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Egg_GuarFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>MorrowRim_Egg_GuarFertilized</defName>
