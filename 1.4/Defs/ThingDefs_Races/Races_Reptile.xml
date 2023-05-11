@@ -585,8 +585,8 @@
 		  <leatherDef>MorrowRim_DurzogLeather</leatherDef>
 		  <gestationPeriodDays>10</gestationPeriodDays>
 		  <lifeExpectancy>19</lifeExpectancy>
-		  <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
-		  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+		  <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 		  <nuzzleMtbHours>100</nuzzleMtbHours>
 		  <petness>0.2</petness>
 		  <lifeStageAges>
