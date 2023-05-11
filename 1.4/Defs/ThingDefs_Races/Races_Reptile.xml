@@ -583,7 +583,6 @@
 		  <wildness>0.55</wildness>
 		  <trainability>Advanced</trainability>
 		  <leatherDef>MorrowRim_DurzogLeather</leatherDef>
-		  <gestationPeriodDays>10</gestationPeriodDays>
 		  <lifeExpectancy>19</lifeExpectancy>
 		  <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
