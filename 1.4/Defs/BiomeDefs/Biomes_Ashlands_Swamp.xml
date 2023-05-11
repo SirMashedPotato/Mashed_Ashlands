@@ -170,6 +170,7 @@
 			<!-- Resource plants -->
 			<MorrowRim_Plant_MuckSponge>0.1</MorrowRim_Plant_MuckSponge>
 			<!-- Aesthetic plants -->
+			<RG_Plant_SwampPod MayRequire="regrowth.botr.swampexpansion">0.05</RG_Plant_SwampPod>
 			<MorrowRim_Plant_SloughFern>0.05</MorrowRim_Plant_SloughFern>
 			<MorrowRim_Plant_SomnaliusFern>0.05</MorrowRim_Plant_SomnaliusFern>
 			<MorrowRim_Plant_AshenFern>0.01</MorrowRim_Plant_AshenFern>

@@ -124,7 +124,7 @@
 	<!-- ==========[MorrowRim_Plant_DraggleTails]==========-->
 	<ThingDef Name="MorrowRim_Plant_DraggleTailsBase" ParentName="MorrowRim_PlantBase">
 		<defName>MorrowRim_Plant_DraggleTails</defName>
-		<label>draggle tails</label>
+		<label>draggle-tails</label>
 		<description>A primitive flowering plant, only found growing in humid ashland regions. They emit a faint glow, often used by explorers to aide in navigating the treacherous marshes at night.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
