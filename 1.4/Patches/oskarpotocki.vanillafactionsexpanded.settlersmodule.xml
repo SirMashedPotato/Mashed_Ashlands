@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Windmill"]</xpath>
+					<value>
+						<li Class="MorrowRim2.AshResistanceProperties">
+							<buildingTakesDamage>true</buildingTakesDamage>
+							<avgDamageTaken>3</avgDamageTaken>
+							<chanceDamaged>0.5</chanceDamaged>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

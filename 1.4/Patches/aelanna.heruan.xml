@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Heruan Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Heruan_Helmet"]/equippedStatOffsets</xpath>
+					<value>
+						<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
