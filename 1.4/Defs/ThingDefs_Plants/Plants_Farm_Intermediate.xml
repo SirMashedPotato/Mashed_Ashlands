@@ -1,5 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Plant_AshlandHayGrass]==========-->
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_Plant_AshlandHayGrass</defName>
+		<label>ashland haygrass</label>
+		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Nutrition>0.2</Nutrition>
+		  <MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Plant/MorrowRim_AshlandHayGrassPlant</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.8</fertilitySensitivity>
+		  <fertilityMin>1.1</fertilityMin>
+		  <harvestWork>400</harvestWork>
+		  <growDays>9</growDays>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <maxMeshCount>4</maxMeshCount>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>Hay</harvestedThingDef>
+		  <harvestYield>18</harvestYield>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <topWindExposure>0.1</topWindExposure>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+		  </sowResearchPrerequisites>
+		  <wildOrder>2</wildOrder>
+		  <purpose>Food</purpose>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Corkbulb]==========-->
 	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_Corkbulb</defName>
