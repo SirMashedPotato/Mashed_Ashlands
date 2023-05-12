@@ -8,7 +8,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>0.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<tags>
 			<li>MorrowRim_AshlandBasic</li>
@@ -22,7 +22,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>0.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<prerequisites>
 			<li>MorrowRim_AshSowing_Beginner</li>
@@ -36,7 +36,7 @@
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>0.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<prerequisites>
 			<li>MorrowRim_AshSowing_Intermediate</li>
@@ -50,7 +50,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<tags>
 			<li>MorrowRim_AshlandBasic</li>
@@ -64,7 +64,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<prerequisites>
 			<li>MorrowRim_AshSurvival_Beginner</li>
@@ -78,7 +78,7 @@
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<tab>MorrowRim_Tab</tab>
 		<prerequisites>
 			<li>MorrowRim_AshSurvival_Intermediate</li>
