@@ -108,34 +108,11 @@
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
-		<alternateGraphicChance>1</alternateGraphicChance>
-		<alternateGraphics>
-			<li>
-				<color>(108,94,66)</color>
-			</li>
-			<li>
-				<color>(85,75,52)</color>
-			</li>
-			<li>
-				<color>(85,75,52)</color>
-			</li>
-			<li>
-				<color>(65,51,30)</color>
-			</li>
-			<li>
-				<color>(116,108,84)</color>
-			</li>
-			<li>
-				<color>(79,74,56)</color>
-			</li>
-		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
 					<drawSize>1.2</drawSize>
-					<color>(108,94,66)</color>
-					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
@@ -146,8 +123,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
 					<drawSize>1.45</drawSize>
-					<color>(108,94,66)</color>
-					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
@@ -158,8 +133,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
 					<drawSize>1.7</drawSize>
-					<color>(108,94,66)</color>
-					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
