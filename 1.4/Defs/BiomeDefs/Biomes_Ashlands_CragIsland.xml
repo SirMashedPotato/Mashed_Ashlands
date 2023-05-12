@@ -47,6 +47,10 @@
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.4</waterThreshold>
 			</li>
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+			</li>
 		</modExtensions>
 		<animalDensity>1.7</animalDensity>
 		<plantDensity>0.3</plantDensity>
@@ -116,7 +120,6 @@
 						<min>0.86</min>
 						<max>99</max>
 					</li>
-					
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
