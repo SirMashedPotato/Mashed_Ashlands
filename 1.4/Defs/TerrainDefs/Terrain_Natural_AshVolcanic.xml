@@ -64,7 +64,7 @@
 		<defName>MorrowRim_PackedAshVolcanic</defName>
 		<label>packed volcanic ash</label>
 		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_PackedAshVolcanic</texturePath>
-		<description>Packed ash, making it comparatively less arduous to trek across.</description>
-		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
+		<description>Packed volcanic ash, making it comparatively less arduous to trek across.</description>
+		<terrainAffordanceNeeded>MorrowRim_PackableAshVolcanic</terrainAffordanceNeeded>
 	</TerrainDef>
 </Defs>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AshBlightedBase]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBase" Name="MorrowRim_AshBlightedBase" Abstract="True">
+		<affordances>
+			<li>MorrowRim_PackableAshBlighted</li>
+		</affordances>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBlightedBase">
+		<defName>MorrowRim_AshSoilBlighted</defName>
+		<label>blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_AshSoilBlighted</texturePath>
+		<fertility>0.5</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBlightedBase">
+		<defName>MorrowRim_CrackedAshSoilBlighted</defName>
+		<label>cracked blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_CrackedAshSoilBlighted</texturePath>
+		<fertility>0.1</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshGravel]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBlightedBase">
+		<defName>MorrowRim_AshGravelBlighted</defName>
+		<label>blighted stony ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_AshGravelBlighted</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.3</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSand]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBlightedBase">
+		<defName>MorrowRim_AshSandBlighted</defName>
+		<label>blighted sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_AshSandBlighted</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.1</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_PackedAsh]==========-->
+	<TerrainDef ParentName="MorrowRim_PackedAshBase">
+		<defName>MorrowRim_PackedAshBlighted</defName>
+		<label>packed blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_PackedAshBlighted</texturePath>
+		<description>Packed blighted ash, making it comparatively less arduous to trek across.</description>
+		<terrainAffordanceNeeded>MorrowRim_PackableAshBlighted</terrainAffordanceNeeded>
+	</TerrainDef>
+</Defs>
