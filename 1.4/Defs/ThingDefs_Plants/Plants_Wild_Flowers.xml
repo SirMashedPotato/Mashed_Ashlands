@@ -1,5 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_Plant_BlackAntherflower]==========-->
+	<ThingDef ParentName="MorrowRim_FlowerBase">
+		<defName>MorrowRim_Plant_BlackAntherflower</defName>
+		<label>black anther flower</label>
+		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_RichAshGravel</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>10</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_BlackAntherFlower</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Stoneflower]==========-->
 	<ThingDef ParentName="MorrowRim_FlowerBase">
 		<defName>MorrowRim_Plant_Stoneflower</defName>
@@ -9,6 +35,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshGravel</li>
+					<li>MorrowRim_RichAshGravel</li>
 					<li>MorrowRim_GrazelandSoil</li>
 				</allowedTerrainForWild>
 			</li>
