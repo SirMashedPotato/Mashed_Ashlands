@@ -2,12 +2,37 @@
 using RimWorld.Planet;
 using System.Collections.Generic;
 using Verse;
+using Verse.Noise;
 
 namespace MorrowRim2
 {
     public abstract class AshlandBiomeWorker : BiomeWorker
     {
         public abstract float GetScore_Main(Tile tile, int tileID);
+
+        /// <summary>
+        /// Used for all Base type biomes
+        /// </summary>
+        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        {
+            int maxDistance = MorrowRim_ModSettings.BiomesMaxDistance;
+            if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+            {
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxDistance < 10)
+                {
+                    maxDistance = 10;
+                }
+            }
+
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            {
+                return 0;
+            }
+
+            return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
+        }
 
         /// <summary>
         /// Used for all Coast type biomes
@@ -72,27 +97,24 @@ namespace MorrowRim2
         }
 
         /// <summary>
-        /// Used for all Base type biomes
+        /// Used for all Extra type biomes
         /// </summary>
-        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        public float ExtraBiomeWorker(Tile tile, int tileID, int perlinSeed = 35, float perlinCulling = 0.75f)
         {
-            int maxDistance = MorrowRim_ModSettings.BiomesMaxDistance;
-            if (MorrowRim_ModSettings.BiomeScaleWithWorldSize)
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
-                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
-                if (maxDistance < 10)
-                {
-                    maxDistance = 10;
-                }
+                return 0f;
             }
 
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
-            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            Perlin perlin = new Perlin(0.1, 10, 0.6, 12, perlinSeed, QualityMode.Low);
+            float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+
+            if (perlinValue <= perlinCulling)
             {
-                return 0;
+                return 0f;
             }
-           
-            return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
+
+            return 16;
         }
     }
 }

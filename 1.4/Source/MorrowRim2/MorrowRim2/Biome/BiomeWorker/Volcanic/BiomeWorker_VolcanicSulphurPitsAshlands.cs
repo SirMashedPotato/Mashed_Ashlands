@@ -2,7 +2,7 @@
 
 namespace MorrowRim2
 {
-    public class BiomeWorker_BlightedBogAshlands : AshlandBiomeWorker
+    public class BiomeWorker_VolcanicSulphurPitsAshlands : AshlandBiomeWorker
     {
         /// <summary>
         /// Only here to prevent gen through standard methods
@@ -20,11 +20,11 @@ namespace MorrowRim2
 
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!MorrowRim_ModSettings.EnableBlightedBogAshlands)
+            if (!MorrowRim_ModSettings.EnableVolcanicSulphurPitsAshlands)
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_BlightedAshlands)
+            if (tile.biome != BiomeDefOf.MorrowRim_VolcanicAshlands)
             {
                 return -100f;
             }

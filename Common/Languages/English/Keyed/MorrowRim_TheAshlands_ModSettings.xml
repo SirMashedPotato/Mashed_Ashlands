@@ -50,6 +50,7 @@
 	<MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</MorrowRim_TheAshlands_EnableVolcanicCragIslandAshlands>
 	<MorrowRim_TheAshlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</MorrowRim_TheAshlands_EnableSwampIslandAshlands>
 	<MorrowRim_TheAshlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</MorrowRim_TheAshlands_EnableBlightedBogAshlands>
+	<MorrowRim_TheAshlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic sulphur pits biome.</MorrowRim_TheAshlands_EnableVolcanicSulphurPitsAshlands>
 	<!-- Other features -->
 	<MorrowRim_TheAshlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</MorrowRim_TheAshlands_EnableExclusiveRocks>
 	<MorrowRim_TheAshlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</MorrowRim_TheAshlands_EnableExclusiveRocks_Tooltip>

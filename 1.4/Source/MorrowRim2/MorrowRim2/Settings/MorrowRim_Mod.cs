@@ -306,6 +306,9 @@ namespace MorrowRim2
             listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicCoralCoastAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_EnableVolcanicSulphurPitsAshlands".Translate(), ref settings.MorrowRim_TheAshlands_EnableVolcanicSulphurPitsAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
