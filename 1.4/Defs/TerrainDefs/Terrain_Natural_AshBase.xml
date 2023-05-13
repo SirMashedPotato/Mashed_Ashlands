@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AshBase]==========-->
+	<TerrainDef ParentName="NaturalTerrainBase" Name="MorrowRim_AshBase" Abstract="True">
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+			<li>MorrowRim_GrowAsh</li>
+			<li>MorrowRim_AshCastle</li>
+		</affordances>
+		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>ash</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>MorrowRim_AshInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+			<li>MorrowRim_Ash</li>
+		</tags>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_PackedAshBase]==========-->
+	<TerrainDef ParentName="TerrainRoadBase" Name="MorrowRim_PackedAshBase" Abstract="True">
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>360</renderPrecedence>
+		<layerable>true</layerable>
+		<designationCategory>Floors</designationCategory>
+		<constructEffect>ConstructDirt</constructEffect>
+		<pathCost>1</pathCost>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<WorkToBuild>120</WorkToBuild>
+			<MarketValue>0</MarketValue>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<designatorDropdown>MorrowRim_Floor_PackedAsh</designatorDropdown>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
+		<fertility>0</fertility>
+		<tags>
+			<li>Road</li>
+		</tags>
+	</TerrainDef>
+</Defs>

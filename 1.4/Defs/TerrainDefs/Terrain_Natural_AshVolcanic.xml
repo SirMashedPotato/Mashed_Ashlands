@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_AshVolcanicBase]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBase" Name="MorrowRim_AshVolcanicBase" Abstract="True">
+		<affordances>
+			<li>MorrowRim_PackableAshVolcanic</li>
+		</affordances>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_AshSoilVolcanic</defName>
+		<label>volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_AshSoilVolcanic</texturePath>
+		<fertility>1.3</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_CrackedAshSoilVolcanic</defName>
+		<label>cracked volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_CrackedAshSoilVolcanic</texturePath>
+		<fertility>0.4</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_RichAshSoil]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_RichAshSoilVolcanic</defName>
+		<label>rich volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_RichAshSoilVolcanic</texturePath>
+		<fertility>1.6</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshGravel]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_AshGravelVolcanic</defName>
+		<label>volcanic stony ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_AshGravelVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.9</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_RichAshGravel]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_RichAshGravelVolcanic</defName>
+		<label>rich volcanic stony ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_RichAshGravelVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>1.2</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_AshSand]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_AshSandVolcanic</defName>
+		<label>volcanic sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_AshSandVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.5</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_RichAshSand]==========-->
+	<TerrainDef ParentName="MorrowRim_AshVolcanicBase">
+		<defName>MorrowRim_RichAshSandVolcanic</defName>
+		<label>rich volcanic sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_RichAshSandVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.8</fertility>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_PackedAsh]==========-->
+	<TerrainDef ParentName="MorrowRim_PackedAshBase">
+		<defName>MorrowRim_PackedAshVolcanic</defName>
+		<label>packed volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/MorrowRim_PackedAshVolcanic</texturePath>
+		<description>Packed ash, making it comparatively less arduous to trek across.</description>
+		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
+	</TerrainDef>
+</Defs>

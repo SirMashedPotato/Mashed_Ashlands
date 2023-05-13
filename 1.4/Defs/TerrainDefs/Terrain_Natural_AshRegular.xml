@@ -1,76 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshBase]==========-->
-	<TerrainDef ParentName="NaturalTerrainBase" Name="MorrowRim_AshBase" Abstract="True">
-		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>340</renderPrecedence>
-		<pathCost>2</pathCost>
-		<statBases>
-			<Beauty>-3</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-			<Cleanliness>-1</Cleanliness>
-		</statBases>
-		<scatterType>SoftGray</scatterType>
+	<!-- ==========[MorrowRim_AshRegularBase]==========-->
+	<TerrainDef ParentName="MorrowRim_AshBase" Name="MorrowRim_AshRegularBase" Abstract="True">
 		<affordances>
-			<li>Light</li>
-			<li>Medium</li>
-			<li>Heavy</li>
-			<li>GrowSoil</li>
-			<li>Diggable</li>
-			<li>MorrowRim_GrowAsh</li>
-			<li>MorrowRim_AshCastle</li>
 			<li>MorrowRim_PackableAsh</li>
 		</affordances>
-		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
-		<takeFootprints>True</takeFootprints>
-		<tools>
-			<li>
-				<label>ash</label>
-				<capacities>
-					<li>KickMaterialInEyes</li>
-				</capacities>
-				<hediff>MorrowRim_AshInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-		</tools>
-		<tags>
-			<li>Soil</li>
-			<li>MorrowRim_Ash</li>
-		</tags>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
-		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
-		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_AshSoil</defName>
 		<label>ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSoil</texturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_MossyAshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_MossyAshSoil</defName>
 		<label>moss-covered ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_MossyAshSoil</texturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_GrazelandSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_GrazelandSoil</defName>
 		<label>grazeland soil</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoil</texturePath>
 		<fertility>1</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_RichAshSoil</defName>
 		<label>rich ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSoil</texturePath>
 		<fertility>1.5</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshGravel]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_AshGravel</defName>
 		<label>stony ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshGravel</texturePath>
@@ -78,7 +43,7 @@
 		<fertility>0.8</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshGravel]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_RichAshGravel</defName>
 		<label>rich stony ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshGravel</texturePath>
@@ -86,7 +51,7 @@
 		<fertility>1.1</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshSand]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_AshSand</defName>
 		<label>sandy ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSand</texturePath>
@@ -94,7 +59,7 @@
 		<fertility>0.4</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_RichAshSand]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase">
+	<TerrainDef ParentName="MorrowRim_AshRegularBase">
 		<defName>MorrowRim_RichAshSand</defName>
 		<label>rich sandy ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSand</texturePath>
@@ -102,39 +67,12 @@
 		<fertility>0.7</fertility>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_PackedAsh]==========-->
-	<TerrainDef ParentName="TerrainRoadBase">
+	<TerrainDef ParentName="MorrowRim_PackedAshBase">
 		<defName>MorrowRim_PackedAsh</defName>
 		<label>packed ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_PackedAsh</texturePath>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
-		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>360</renderPrecedence>
 		<description>Packed ash, making it comparatively less arduous to trek across.</description>
-		<layerable>true</layerable>
-		<designationCategory>Floors</designationCategory>
-		<constructEffect>ConstructDirt</constructEffect>
 		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
-		<pathCost>1</pathCost>
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-		<statBases>
-			<WorkToBuild>120</WorkToBuild>
-			<MarketValue>0</MarketValue>
-			<Beauty>-1</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-			<Cleanliness>-1</Cleanliness>
-		</statBases>
-		<scatterType>Rocky</scatterType>
-		<affordances>
-			<li>Light</li>
-			<li>Medium</li>
-			<li>Heavy</li>
-			<li>Diggable</li>
-		</affordances>
-		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
-		<fertility>0</fertility>
-		<tags>
-			<li>Road</li>
-		</tags>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshMud]==========-->
 	<TerrainDef ParentName="NaturalTerrainBase">

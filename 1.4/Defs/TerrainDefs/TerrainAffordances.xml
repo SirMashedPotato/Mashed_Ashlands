@@ -11,6 +11,16 @@
 		<order>3100</order>
 	</TerrainAffordanceDef>
 	<TerrainAffordanceDef>
+		<defName>MorrowRim_PackableAshVolcanic</defName>
+		<label>packable volcanic ash</label>
+		<order>3100</order>
+	</TerrainAffordanceDef>
+	<TerrainAffordanceDef>
+		<defName>MorrowRim_PackableAshBlighted</defName>
+		<label>packable blighted ash</label>
+		<order>3100</order>
+	</TerrainAffordanceDef>
+	<TerrainAffordanceDef>
 		<defName>MorrowRim_AshCastle</defName>
 		<label>ashcanoable</label>
 		<order>3500</order>
