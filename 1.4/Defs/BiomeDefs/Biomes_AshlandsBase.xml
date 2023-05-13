@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_AshlandsBase]==========-->
 	<BiomeDef Name="MorrowRim_AshlandsBase" Abstract="True">
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
@@ -53,5 +54,18 @@
 			<li>Muffalo</li>
 			<li>Alpaca</li>
 		</allowedPackAnimals>
+	</BiomeDef>
+	<!-- ==========[MorrowRim_AshlandsBlightedBase]==========-->
+	<BiomeDef Name="MorrowRim_AshlandsBlightedBase" ParentName="MorrowRim_AshlandsBase" Abstract="True">
+		<canAutoChoose>false</canAutoChoose>
+		<movementDifficulty>2</movementDifficulty>
+		<settlementSelectionWeight>0.1</settlementSelectionWeight>
+		<forageability>0.1</forageability>
+		<foragedFood>MorrowRim_RawScathecraw</foragedFood>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<diseaseMtbDays>40</diseaseMtbDays>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
 	</BiomeDef>
 </Defs>

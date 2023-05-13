@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_BurnedParasolStumpPermanent]==========-->
+	<ThingDef ParentName="MorrowRim_BurnedParasolStumpBase">
+		<defName>MorrowRim_BurnedParasolStumpPermanent</defName>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>MorrowRim_CrackedAshSoilBlighted</li>
+					<li>MorrowRim_AshSandBlighted</li>
+					<li>MorrowRim_AshGravelBlighted</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases Inherit="False">
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-8</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+	</ThingDef>
+</Defs>
