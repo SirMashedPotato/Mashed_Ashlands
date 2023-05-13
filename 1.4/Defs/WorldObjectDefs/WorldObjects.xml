@@ -308,6 +308,16 @@
 						<countAsIncident>true</countAsIncident>
 						<randomCategory>true</randomCategory>
 					</li>
+					<li>
+						<conditionDef>MorrowRim_VolcanicDebrisRain</conditionDef>
+						<duration>1000~2500</duration>
+						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<weight>2</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
 				</potentialConditions>
 			</li>
 		</comps>
