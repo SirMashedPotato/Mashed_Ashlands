@@ -156,12 +156,10 @@
 			<MorrowRim_ShalkFungal>0.1</MorrowRim_ShalkFungal>
 			<MorrowRim_Netch>0.5</MorrowRim_Netch>
 			<MorrowRim_Guar>0.5</MorrowRim_Guar>
-			<MorrowRim_NixOx>0.2</MorrowRim_NixOx>
 			<!-- predators -->
-			<MorrowRim_NixHound>0.3</MorrowRim_NixHound>
-			<MorrowRim_Kagouti>0.2</MorrowRim_Kagouti>
-			<MorrowRim_Alit>0.1</MorrowRim_Alit>
-			<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+			<MorrowRim_Kagouti>0.3</MorrowRim_Kagouti>
+			<MorrowRim_Alit>0.2</MorrowRim_Alit>
+			<MorrowRim_CliffRacer>0.2</MorrowRim_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">

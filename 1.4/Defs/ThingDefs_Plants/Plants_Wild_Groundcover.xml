@@ -35,6 +35,7 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MorrowRim_AshSand</li>
+					<li>MorrowRim_AshSandVolcanic</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>

@@ -55,6 +55,7 @@
 			<li>Alpaca</li>
 		</allowedPackAnimals>
 	</BiomeDef>
+	<!-- ==========[MorrowRim_AshlandsRegularBase]==========-->
 	<!-- ==========[MorrowRim_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="MorrowRim_AshlandsBlightedBase" ParentName="MorrowRim_AshlandsBase" Abstract="True">
 		<canAutoChoose>false</canAutoChoose>
@@ -64,6 +65,16 @@
 		<foragedFood>MorrowRim_RawScathecraw</foragedFood>
 		<wildPlantRegrowDays>30</wildPlantRegrowDays>
 		<diseaseMtbDays>40</diseaseMtbDays>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+	</BiomeDef>
+	<!-- ==========[MorrowRim_AshlandsVolcanicBase]==========-->
+	<BiomeDef Name="MorrowRim_AshlandsVolcanicBase" ParentName="MorrowRim_AshlandsBase" Abstract="True">
+		<movementDifficulty>3</movementDifficulty>
+		<settlementSelectionWeight>0.3</settlementSelectionWeight>
+		<forageability>0.5</forageability>
+		<foragedFood>MorrowRim_RawScathecraw</foragedFood>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
