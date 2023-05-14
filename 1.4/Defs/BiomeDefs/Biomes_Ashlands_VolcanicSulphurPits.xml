@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_SulphurPitsAshlands</defName>
+		<defName>MorrowRim_VolcanicSulphurPitsAshlands</defName>
 		<label>volcanic sulphur pits</label>
 		<description>Volcanic with sulphur pools and crystals. https://www.nexusmods.com/morrowind/mods/48918?tab=posts</description>
 		<workerClass>MorrowRim2.BiomeWorker_VolcanicSulphurPitsAshlands</workerClass>

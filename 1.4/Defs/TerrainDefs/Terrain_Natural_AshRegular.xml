@@ -75,38 +75,10 @@
 		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_AshMud]==========-->
-	<TerrainDef ParentName="NaturalTerrainBase">
+	<TerrainDef ParentName="MorrowRim_AshMudBase">
 		<defName>MorrowRim_AshMud</defName>
 		<label>waterlogged ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshMud</texturePath>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
-		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
-		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>330</renderPrecedence>
-		<pathCost>14</pathCost>
-		<statBases>
-			<Beauty>-3</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-			<Cleanliness>-2</Cleanliness>
-		</statBases>
-		<affordances>
-			<li>Bridgeable</li>
-		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0</fertility>
-		<takeFootprints>True</takeFootprints>
-		<avoidWander>true</avoidWander>
 		<driesTo>MorrowRim_RichAshSoil</driesTo>
-		<tools>
-			<li>
-				<label>mud</label>
-				<capacities>
-					<li>KickMaterialInEyes</li>
-				</capacities>
-				<hediff>MudInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-		</tools>
 	</TerrainDef>
 </Defs>

@@ -71,4 +71,35 @@
 			<li>Road</li>
 		</tags>
 	</TerrainDef>
+	<!-- ==========[MorrowRim_AshMudBase]==========-->
+	<TerrainDef Name="MorrowRim_AshMudBase" ParentName="NaturalTerrainBase" Abstract="True">
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>330</renderPrecedence>
+		<pathCost>14</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<avoidWander>true</avoidWander>
+		<tools>
+			<li>
+				<label>mud</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>MudInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
 </Defs>

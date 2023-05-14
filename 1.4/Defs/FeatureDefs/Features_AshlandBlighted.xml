@@ -13,4 +13,14 @@
 		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
 	</FeatureDef>
+	<!-- ==========[MorrowRim_BlightedBogAshlands]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_BlightedBogAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_BlightedBogAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerBlightedBogAshlands</nameMaker>
+	</FeatureDef>
 </Defs>

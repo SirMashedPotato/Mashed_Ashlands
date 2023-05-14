@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_BlightedSludge]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>MorrowRim_BlightedSludge</defName>
+		<label>blighted sludge</label>
+		<texturePath>Terrain/Surfaces/Water/MorrowRim_BlightedSludgeRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>40</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>MorrowRim_AshGravelBlighted</driesTo>
+	</TerrainDef>
+</Defs>

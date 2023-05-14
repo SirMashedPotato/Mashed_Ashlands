@@ -24,6 +24,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerBlightedBogAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerBlightedBogAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->bog</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[MorrowRim_NamerCoralCoastAshlands]==========-->
 	<RulePackDef>
 		<defName>MorrowRim_NamerCoralCoastAshlands</defName>
@@ -108,6 +120,18 @@
 		<rulePack>
 			<rulesStrings>
 				<li>terrain_word(p=10)->scar</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[MorrowRim_NamerVolcanicSulphurPitsAshlands]==========-->
+	<RulePackDef>
+		<defName>MorrowRim_NamerVolcanicSulphurPitsAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->scathes</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

@@ -10,7 +10,18 @@
 		</rootBiomes>
 		<acceptableBiomes>
 			<li>MorrowRim_VolcanicCoralCoastAshlands</li>
+			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[MorrowRim_VolcanicSulphurPitsAshlandss]==========-->
+	<FeatureDef>
+		<defName>MorrowRim_VolcanicSulphurPitsAshlandss</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
+		</rootBiomes>
+		<nameMaker>MorrowRim_NamerVolcanicSulphurPitsAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

@@ -44,4 +44,11 @@
 		<description>Packed blighted ash, making it comparatively less arduous to trek across.</description>
 		<terrainAffordanceNeeded>MorrowRim_PackableAshBlighted</terrainAffordanceNeeded>
 	</TerrainDef>
+	<!-- ==========[MorrowRim_AshMudBlighted]==========-->
+	<TerrainDef ParentName="MorrowRim_AshMudBase">
+		<defName>MorrowRim_AshMudBlighted</defName>
+		<label>blighted mud</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_AshMudBlighted</texturePath>
+		<driesTo>MorrowRim_AshSoilBlighted</driesTo>
+	</TerrainDef>
 </Defs>
