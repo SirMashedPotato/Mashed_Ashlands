@@ -19,6 +19,7 @@
 		<defName>MorrowRim_VolcanicSulphurPitsAshlandss</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
+		<minSize>10</minSize>
 		<rootBiomes>
 			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
 		</rootBiomes>

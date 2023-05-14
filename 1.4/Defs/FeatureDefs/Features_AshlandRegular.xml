@@ -10,6 +10,11 @@
 		</rootBiomes>
 		<acceptableBiomes>
 			<li>MorrowRim_CoralCoastAshlands</li>
+			<li>MorrowRim_ForestAshlands</li>
+			<li>MorrowRim_GrazelandAshlands</li>
+			<li>MorrowRim_HighlandAshlands</li>
+			<li>MorrowRim_SaltplainAshlands</li>
+			<li>MorrowRim_SwampAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>MorrowRim_NamerAshlands</nameMaker>
 	</FeatureDef>
@@ -18,6 +23,7 @@
 		<defName>MorrowRim_CoralCoastAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
+		<minSize>10</minSize>
 		<rootBiomes>
 			<li>MorrowRim_CoralCoastAshlands</li>
 			<li>MorrowRim_VolcanicCoralCoastAshlands</li>

@@ -24,6 +24,8 @@ namespace MorrowRim2
             }
         }
 
+        private bool IsRedMountain => ParentVolcano.Name.ToLower().Contains("MorrowRim_RedMountain".Translate().ToLower());
+
         public override void Initialize(WorldObjectCompProperties props)
         {
             base.Initialize(props);
@@ -33,7 +35,14 @@ namespace MorrowRim2
             }
             if (!Props.categoryWeights.NullOrEmpty())
             {
-                ParentVolcano.Category = Props.categoryWeights.RandomElementByWeight(x => x.weight).category;
+                if (IsRedMountain)
+                {
+                    ParentVolcano.Category = Props.categoryWeights[Props.categoryWeights.Count-1].category;
+                }
+                else
+                {
+                    ParentVolcano.Category = Props.categoryWeights.RandomElementByWeight(x => x.weight).category;
+                }
             }
         }
 
@@ -58,7 +67,7 @@ namespace MorrowRim2
 
         public bool CategoryCanBeChanged()
         {
-            return CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne();
+            return !IsRedMountain && (CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne());
         }
 
         public bool CategoryCanBeIncreasedByOne()

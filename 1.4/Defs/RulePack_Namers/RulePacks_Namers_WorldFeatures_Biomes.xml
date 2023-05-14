@@ -44,8 +44,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=8)->coast</li>
-				<li>terrain_word(p=2)->forest</li>
+				<li>terrain_word(p=10)->coast</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
