@@ -107,7 +107,7 @@ namespace MorrowRim2
                             {
                                 foreach (Caravan caravan in Find.World.worldObjects.Caravans)
                                 {
-                                    if (InAoE(caravan.Tile, category, ParentVolcano))
+                                    if (InAoE(caravan.Tile, category, ParentVolcano) && caravan.pather.MovingNow)
                                     {
                                         foreach (Pawn p in caravan.PawnsListForReading)
                                         {
