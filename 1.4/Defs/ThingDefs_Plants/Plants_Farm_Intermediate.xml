@@ -40,6 +40,55 @@
 		  <purpose>Food</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Bittergreen]==========-->
+	<ThingDef ParentName="MorrowRim_BushBase">
+		<defName>MorrowRim_Plant_Bittergreen</defName>
+		<label>bittergreen plant</label>
+		<description>An incredibly hardy, and very strange looking, plant, typically found growing in the less-hospitable regions of the ashlands. Some have taken to harvesting the flowers that grow on the tendrils of the bittergreen plant. In their raw form the petals are highly toxic, and used by some to create potent poisons. The petals are safe to consume when boiled, and often used to make bittergreen tea. Bittergreen are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>MorrowRim_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_BittergreenPlant</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<growDays>10</growDays>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<neverBlightable>true</neverBlightable>
+			<harvestedThingDef>MorrowRim_RawBittergreen</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<harvestTag>Standard</harvestTag>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.1~2.3</visualSizeRange>
+			<harvestWork>150</harvestWork>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterWeight>100</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Corkbulb]==========-->
 	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_Corkbulb</defName>
@@ -154,6 +203,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawMuck</harvestedThingDef>
 			<harvestYield>8</harvestYield>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>

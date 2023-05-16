@@ -75,7 +75,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>MorrowRim_RawHackleLo</harvestedThingDef>
 			<harvestYield>24</harvestYield>
-			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
@@ -212,7 +212,7 @@
 			</sowResearchPrerequisites>
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<harvestWork>150</harvestWork>
-			<topWindExposure>0.2</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterWeight>100</wildClusterWeight>
 		</plant>
 	</ThingDef>
