@@ -9,7 +9,7 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawBittergreen]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawBittergreen</defName>
 		<label>bittergreen petals</label>
 		<description>Raw bittergreen petals. Not safe to eat raw, but perfectly safe when properly cooked. Often brewed into a fortifying tea.</description>
