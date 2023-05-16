@@ -3,7 +3,7 @@
 	<BiomeDef>
 		<defName>MorrowRim_SwampIslandAshlands</defName>
 		<label>ashland swamp islands</label>
-		<description>Azuras coast / Dagon fel but swampy.</description>
+		<description>A collection of small, and swampy, islands. Pockets of land are hidden inside overgrown marsh, those that choose to settle will need to decide between using this land for farming, or for building. Many of the animals found in swampier ashland regions can be found here... though cliff racers are a very more common sight.</description>
 		<workerClass>MorrowRim2.BiomeWorker_SwampIslandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_SwampIslandAshlands</texture>
 		<modExtensions Inherit="False">
@@ -53,7 +53,7 @@
 		</modExtensions>
 		<animalDensity>2.6</animalDensity>
 		<plantDensity>0.5</plantDensity>
-		<foragedFood>MorrowRim_RawMarshmerrow</foragedFood>
+		<foragedFood>MorrowRim_RawSaltrice</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
 		<terrainsByFertility>
 			<li>
@@ -67,12 +67,12 @@
 				<max>0.77</max>
 			</li>
 			<li>
-				<terrain>Marsh</terrain>
+				<terrain>MarshyTerrain</terrain>
 				<min>0.77</min>
 				<max>0.87</max>
 			</li>
 			<li>
-				<terrain>MarshyTerrain</terrain>
+				<terrain>MorrowRim_AshSoil</terrain>
 				<min>0.87</min>
 				<max>999</max>
 			</li>
@@ -82,18 +82,13 @@
 				<perlinFrequency>0.04</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>Marsh</terrain>
-						<min>0.35</min>
-						<max>0.55</max>
-					</li>
-					<li>
 						<terrain>MarshyTerrain</terrain>
-						<min>0.55</min>
-						<max>0.75</max>
+						<min>0.35</min>
+						<max>0.65</max>
 					</li>
 					<li>
 						<terrain>Marsh</terrain>
-						<min>0.75</min>
+						<min>0.65</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -102,18 +97,18 @@
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>Marsh</terrain>
-						<min>0.26</min>
-						<max>0.46</max>
+						<terrain>MarshyTerrain</terrain>
+						<min>0.4</min>
+						<max>0.76</max>
 					</li>
 					<li>
-						<terrain>MarshyTerrain</terrain>
-						<min>0.46</min>
-						<max>0.78</max>
+						<terrain>MorrowRim_AshSoil</terrain>
+						<min>0.76</min>
+						<max>0.88</max>
 					</li>
 					<li>
 						<terrain>MorrowRim_RichAshSoil</terrain>
-						<min>0.78</min>
+						<min>0.88</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -122,18 +117,18 @@
 				<perlinFrequency>0.035</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>Marsh</terrain>
-						<min>0.28</min>
-						<max>0.48</max>
-					</li>
-					<li>
 						<terrain>MarshyTerrain</terrain>
-						<min>0.48</min>
-						<max>0.76</max>
+						<min>0.4</min>
+						<max>0.68</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_AshSoil</terrain>
-						<min>0.76</min>
+						<terrain>MorrowRim_AshMud</terrain>
+						<min>0.68</min>
+						<max>0.86</max>
+					</li>
+					<li>
+						<terrain>MorrowRim_RichAshSoil</terrain>
+						<min>0.86</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -166,12 +161,12 @@
 			<Plant_Grass>2.5</Plant_Grass>
 			<Plant_Chokevine>0.4</Plant_Chokevine>
 			<MorrowRim_Plant_AshlandGrass>0.5</MorrowRim_Plant_AshlandGrass>
-			<MorrowRim_Plant_AshlandFungus>0.2</MorrowRim_Plant_AshlandFungus>
+			<MorrowRim_Plant_AshlandFungus>0.1</MorrowRim_Plant_AshlandFungus>
 			<!-- Nutrition plants -->
-			<MorrowRim_Plant_Marshmerrow>0.3</MorrowRim_Plant_Marshmerrow>
-			<MorrowRim_Plant_Saltrice>0.3</MorrowRim_Plant_Saltrice>
+			<MorrowRim_Plant_Marshmerrow>0.5</MorrowRim_Plant_Marshmerrow>
+			<MorrowRim_Plant_Saltrice>1</MorrowRim_Plant_Saltrice>
 			<!-- Resource plants -->
-			<MorrowRim_Plant_MuckSponge>0.2</MorrowRim_Plant_MuckSponge>
+			<MorrowRim_Plant_MuckSponge>0.3</MorrowRim_Plant_MuckSponge>
 			<!-- Aesthetic plants -->
 			<RG_Plant_SwampPod MayRequire="regrowth.botr.swampexpansion">0.05</RG_Plant_SwampPod>
 			<MorrowRim_Plant_SloughFern>0.05</MorrowRim_Plant_SloughFern>
@@ -181,7 +176,7 @@
 			<MorrowRim_Plant_VioletCoprinus>0.2</MorrowRim_Plant_VioletCoprinus>
 			<MorrowRim_Plant_DraggleTails>0.2</MorrowRim_Plant_DraggleTails>
 			<!-- Trees -->
-			<MorrowRim_Plant_TreeEmperorParasol>0.3</MorrowRim_Plant_TreeEmperorParasol>
+			<MorrowRim_Plant_TreeEmperorParasol>0.2</MorrowRim_Plant_TreeEmperorParasol>
 			<Plant_TreeWillow>0.5</Plant_TreeWillow>
 			<Plant_TreeCypress>0.5</Plant_TreeCypress>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
