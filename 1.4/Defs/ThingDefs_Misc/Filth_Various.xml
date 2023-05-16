@@ -19,6 +19,25 @@
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
 		</filth>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Filth_Sulphur]==========-->
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_Sulphur</defName>
+		<label>sulphur</label>
+		<graphicData>
+			<texPath>Things/Filth/Grainy</texPath>
+			<color>(150,150,100,97)</color>
+		</graphicData>
+		<filth>
+			<placementMask>
+				<li>Terrain</li>
+			</placementMask>
+			<disappearsInDays>45~50</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Filth_NetchBlood]==========-->
 	<ThingDef ParentName="BaseFilth">
 		<defName>MorrowRim_Filth_NetchBlood</defName>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_SulphurFloor]==========-->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>MorrowRim_SulphurFloor</defName>
+		<label>sulphur</label>
+		<texturePath>Terrain/Surfaces/MorrowRim_SulphurFloor</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-4</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+			<li>MorrowRim_GrowSulphur</li>
+		</affordances>
+		<generatedFilth>MorrowRim_Filth_Sulphur</generatedFilth>
+		<fertility>0.05</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sulphur</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>MorrowRim_SulphurInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>MorrowRim_Sulphur</li>
+		</tags>
+	</TerrainDef>
+</Defs>

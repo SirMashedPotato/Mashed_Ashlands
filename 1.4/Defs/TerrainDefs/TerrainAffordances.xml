@@ -1,25 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_GrowAsh]==========-->
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_GrowAsh</defName>
 		<label>growable ash</label>
 		<order>3000</order>
 	</TerrainAffordanceDef>
+	<!-- ==========[MorrowRim_GrowSulphur]==========-->
+	<TerrainAffordanceDef>
+		<defName>MorrowRim_GrowSulphur</defName>
+		<label>growable sulphur</label>
+		<order>3000</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[MorrowRim_PackableAsh]==========-->
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_PackableAsh</defName>
 		<label>packable ash</label>
 		<order>3100</order>
 	</TerrainAffordanceDef>
+	<!-- ==========[MorrowRim_PackableAshVolcanic]==========-->
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_PackableAshVolcanic</defName>
 		<label>packable volcanic ash</label>
 		<order>3100</order>
 	</TerrainAffordanceDef>
+	<!-- ==========[MorrowRim_PackableAshBlighted]==========-->
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_PackableAshBlighted</defName>
 		<label>packable blighted ash</label>
 		<order>3100</order>
 	</TerrainAffordanceDef>
+	<!-- ==========[MorrowRim_AshCastle]==========-->
 	<TerrainAffordanceDef>
 		<defName>MorrowRim_AshCastle</defName>
 		<label>ashcanoable</label>

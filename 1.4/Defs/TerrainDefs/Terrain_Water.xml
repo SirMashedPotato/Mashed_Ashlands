@@ -5,10 +5,34 @@
 		<defName>MorrowRim_BlightedSludge</defName>
 		<label>blighted sludge</label>
 		<texturePath>Terrain/Surfaces/Water/MorrowRim_BlightedSludgeRamp</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>
+		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<pathCost>40</pathCost>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>MorrowRim_AshGravelBlighted</driesTo>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_Lava]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>MorrowRim_Lava</defName>
+		<label>lava</label>
+		<texturePath>Terrain/Surfaces/Water/MorrowRim_LavaRamp</texturePath>
+		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<passability>Impassable</passability>
+		<pathCost>300</pathCost>
+		<changeable>false</changeable>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>MorrowRim_AshGravelVolcanic</driesTo>
+	</TerrainDef>
+	<!-- ==========[MorrowRim_SulphurPool]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>MorrowRim_SulphurPool</defName>
+		<label>sulphur pool</label>
+		<texturePath>Terrain/Surfaces/Water/MorrowRim_SulphurPoolRamp</texturePath>
+		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>30</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>MorrowRim_SulphurFloor</driesTo>
 	</TerrainDef>
 </Defs>
