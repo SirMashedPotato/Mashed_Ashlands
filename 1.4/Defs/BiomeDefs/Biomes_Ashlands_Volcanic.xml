@@ -49,7 +49,6 @@
 		</modExtensions>
 		<animalDensity>1.8</animalDensity>
 		<plantDensity>0.15</plantDensity>
-
 		<terrainsByFertility>
 			<li>
 				<terrain>MorrowRim_AshGravelVolcanic</terrain>
