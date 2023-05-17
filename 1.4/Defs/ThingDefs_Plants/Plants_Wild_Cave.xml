@@ -37,7 +37,7 @@
 	<!-- ==========[MorrowRim_Plant_PurpleCrystal]==========-->
 	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
 		<defName>MorrowRim_Plant_PurpleCrystal</defName>
-		<label>purple crystal pylon</label>
+		<label>large purple crystal</label>
 		<description>A large purple crystal, often found growing in caves in ashland regions. It hums with a strange energy, and emits a strong purple glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
