@@ -1,5 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[MorrowRim_FernBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="MorrowRim_FernBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+		</statBases>
+		<pathCost>3</pathCost>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<harvestWork>60</harvestWork>
+			<visualSizeRange>0.95~1.15</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>40</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshenFern]==========-->
 	<ThingDef ParentName="MorrowRim_FernBase">
 		<defName>MorrowRim_Plant_AshenFern</defName>
