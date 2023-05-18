@@ -52,6 +52,7 @@
 			<!-- prey animals -->
 			<!-- TODO May need to be specified per biome -->
 			<MorrowRim_KwamaScrib>0.3</MorrowRim_KwamaScrib>
+			<MorrowRim_KwamaForager>0.2</MorrowRim_KwamaForager>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>MorrowRim_Guar</li>

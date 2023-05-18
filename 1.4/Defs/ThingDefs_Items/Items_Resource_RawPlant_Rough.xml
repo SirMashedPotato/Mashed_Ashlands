@@ -111,6 +111,33 @@
 		</ingestible>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
+	<!-- ==========[MorrowRim_FungalMash]==========-->
+	<ThingDef ParentName="MorrowRim_PlantRoughBase">
+		<defName>MorrowRim_FungalMash</defName>
+		<label>fungal mash</label>
+		<description>A variety of partially digested fungus, gathered from deep underground by a kwama forager. It is very likely that some, if not all, of the fungus is unsafe for human consumption.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_FungalMash</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<Nutrition>0.1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.9</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
 	<!-- ==========[MorrowRim_RawMuck]==========-->
 	<ThingDef ParentName="MorrowRim_PlantRoughBase">
 		<defName>MorrowRim_RawMuck</defName>
