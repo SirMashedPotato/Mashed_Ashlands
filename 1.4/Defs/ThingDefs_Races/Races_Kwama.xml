@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_KwamaThingBase]========== -->
+	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_KwamaThingBase" Abstract="True">
+	</ThingDef>
+	<!-- ==========[MorrowRim_KwamaScrib]========== -->
+	<ThingDef ParentName="MorrowRim_KwamaThingBase">
+		<defName>MorrowRim_KwamaScrib</defName>
+		<label>kwama scrib</label>
+		<description>The fragile larval form of the kwama. While one would expect scrib to remain in the nest until maturity, they can often be found aimlessly wandering across ashland regions.\n\nUsually very peaceful, scrib are sometimes kept as pets, and some have even managed to teach them various tricks. The bite of a scrib can be surprisingly deadly, as they are able to produce a powerful paralytic venom.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>25</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<uiIconScale>1</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>5</amount>
+						<chance>0.8</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>MorrowRim_InsectScribLike</body>
+			<useMeatFrom IsNull="True"/>
+			<specificMeatDef>MorrowRim_ScribJelly</specificMeatDef>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>0.10</baseHungerRate>
+			<baseHealthScale>0.2</baseHealthScale>
+			<wildness>0.6</wildness>
+			<lifeExpectancy>4</lifeExpectancy>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<trainability>Intermediate</trainability>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>MorrowRim_AnimalKwama</li>
+			<li>MorrowRim_AshlandAnimalCommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_KwamaScrib</defName>
+		<label>kwama scrib</label>
+		<race>MorrowRim_KwamaScrib</race>
+		<combatPower>10</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.05</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_KwamaScrib</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_Dessicated_KwamaScrib</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_KwamaScrib</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_Dessicated_KwamaScrib</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_KwamaScrib</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_KwamaScrib/MorrowRim_Dessicated_KwamaScrib</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

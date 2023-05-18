@@ -96,6 +96,34 @@
 			<preferability>RawBad</preferability>
 			<foodType>AnimalProduct, Fluid</foodType>
 			<specialThoughtDirect>MorrowRim_AteNixOxMilk</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[MorrowRim_ScribJelly]==========-->
+	<ThingDef ParentName="MorrowRim_OrganicProductBase">
+		<defName>MorrowRim_ScribJelly</defName>
+		<label>scrib jelly</label>
+		<description>A dead scrib, crushed into a jelly-like substance. Has a noticeable sour taste, but is very nutritious. Often consumed raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_ScribJelly</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>

@@ -16,7 +16,6 @@
 		<ingestible>
 			<preferability>RawBad</preferability>
 			<foodType>Meat</foodType>
-			<babiesCanIngest>true</babiesCanIngest>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 		</ingestible>

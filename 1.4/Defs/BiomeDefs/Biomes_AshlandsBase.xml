@@ -48,6 +48,11 @@
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
+		<wildAnimals>
+			<!-- prey animals -->
+			<!-- TODO May need to be specified per biome -->
+			<MorrowRim_KwamaScrib>0.3</MorrowRim_KwamaScrib>
+		</wildAnimals>
 		<allowedPackAnimals>
 			<li>MorrowRim_Guar</li>
 			<li>MorrowRim_NixOx</li>
