@@ -41,7 +41,7 @@
 			<Flammability>0.6</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshenFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/MorrowRim_AshenFernPlant</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandFern]==========-->
@@ -55,7 +55,7 @@
 			<Flammability>0.4</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshlandFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/MorrowRim_AshlandFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>
@@ -77,7 +77,7 @@
 			<Flammability>0.8</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_SloughFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/MorrowRim_SloughFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 		<plant>
@@ -95,7 +95,7 @@
 			<Flammability>0.8</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_SomnaliusFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/MorrowRim_SomnaliusFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>
@@ -111,7 +111,7 @@
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_FireFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/MorrowRim_FireFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>

@@ -17,7 +17,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers/MorrowRim_AshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -40,7 +40,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshlandDuneGrass</texPath>
+			<texPath>Things/Plant/Groundcovers/MorrowRim_AshlandDuneGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowTags Inherit="False"/>
@@ -65,7 +65,7 @@
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_AshlandFungus</texPath>
+			<texPath>Things/Plant/Mushrooms/MorrowRim_AshlandFungus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>2.5</growDays>
@@ -96,7 +96,7 @@
 			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_Ashreed</texPath>
+			<texPath>Things/Plant/Groundcovers/MorrowRim_Ashreed</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>
@@ -133,7 +133,7 @@
 			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_BlueEntoloma</texPath>
+			<texPath>Things/Plant/Mushrooms/MorrowRim_BlueEntoloma</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
@@ -166,7 +166,7 @@
 			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_DraggleTails</texPath>
+			<texPath>Things/Plant/Groundcovers/MorrowRim_DraggleTails</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>
@@ -211,7 +211,7 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_InkCap</texPath>
+			<texPath>Things/Plant/Mushrooms/MorrowRim_InkCap</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
@@ -241,7 +241,7 @@
 			<BeautyOutdoors>4</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_LuminousRussula</texPath>
+			<texPath>Things/Plant/Mushrooms/MorrowRim_LuminousRussula</texPath>
 		</graphicData>
 		<plant>
 			<growDays>4.6</growDays>
@@ -277,7 +277,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_VioletCoprinus</texPath>
+			<texPath>Things/Plant/Mushrooms/MorrowRim_VioletCoprinus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3.8</growDays>

@@ -97,7 +97,7 @@
 		</statBases>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<fertilityMin>0.6</fertilityMin>
 			<harvestWork>40</harvestWork>

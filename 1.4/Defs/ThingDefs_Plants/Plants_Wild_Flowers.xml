@@ -45,7 +45,7 @@
 			<BeautyOutdoors>10</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_BlackAntherFlower</texPath>
+			<texPath>Things/Plant/Flowers/MorrowRim_BlackAntherFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -73,7 +73,7 @@
 			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_Stoneflower</texPath>
+			<texPath>Things/Plant/Flowers/MorrowRim_Stoneflower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -98,7 +98,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_WillowFlower</texPath>
+			<texPath>Things/Plant/Flowers/MorrowRim_WillowFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
