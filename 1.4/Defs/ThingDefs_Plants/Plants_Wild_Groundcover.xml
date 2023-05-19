@@ -75,8 +75,8 @@
 			<fertilityMin>0.6</fertilityMin>
 			<growDays>2.5</growDays>
 			<harvestWork>40</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
@@ -166,6 +166,43 @@
 				<glowColor>(53,94,84,0)</glowColor>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_InkCap]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase">
+		<defName>MorrowRim_Plant_InkCap</defName>
+		<label>ink-cap</label>
+		<description>A small mushroom commonly found growing in humid ashland regions. The intense red colouration of the cap serves as a warning for anyone that would try to consume it.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshGravel</li>
+					<li>MorrowRim_AshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_InkCap</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<fertilityMin>0.6</fertilityMin>
+			<growDays>3</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.15~0.35</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_LuminousRussula]==========-->
 	<ThingDef ParentName="MorrowRim_PlantBase">
