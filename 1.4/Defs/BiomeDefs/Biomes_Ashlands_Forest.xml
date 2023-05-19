@@ -134,6 +134,7 @@
 			<MorrowRim_Plant_BlueEntoloma>0.2</MorrowRim_Plant_BlueEntoloma>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.8</MorrowRim_Plant_TreeEmperorParasol>
+			<Plant_TreePoplar>0.3</Plant_TreePoplar>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
