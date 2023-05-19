@@ -44,7 +44,7 @@
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandFungus]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
 		<defName>MorrowRim_Plant_AshlandFungus</defName>
 		<label>ashland fungus</label>
 		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
@@ -58,29 +58,16 @@
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
 		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.35</Nutrition>
-			<Flammability>0.8</Flammability>
 			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_AshlandFungus</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>0.6</fertilityMin>
 			<growDays>2.5</growDays>
-			<harvestWork>40</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
-			<topWindExposure>0.1</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
@@ -120,6 +107,37 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>80</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_BlueEntoloma]==========-->
+	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
+		<defName>MorrowRim_Plant_BlueEntoloma</defName>
+		<label>blue entoloma</label>
+		<description>A small mushroom commonly found growing in densely forested ashland regions. Many enjoy the sight of its brilliant blue colouration.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_MossyAshSoil</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_BlueEntoloma</texPath>
+		</graphicData>
+		<plant>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_DraggleTails]==========-->
@@ -168,7 +186,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_InkCap]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
 		<defName>MorrowRim_Plant_InkCap</defName>
 		<label>ink-cap</label>
 		<description>A small mushroom commonly found growing in humid ashland regions. The intense red colouration of the cap serves as a warning for anyone that would try to consume it.</description>
@@ -178,34 +196,29 @@
 					<li>MorrowRim_AshGravel</li>
 					<li>MorrowRim_AshSoil</li>
 				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
 		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
-			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_InkCap</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>0.6</fertilityMin>
 			<growDays>3</growDays>
-			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.15~0.35</visualSizeRange>
-			<topWindExposure>0.05</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>1</wildOrder>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_LuminousRussula]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
 		<defName>MorrowRim_Plant_LuminousRussula</defName>
 		<label>luminous russula</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
@@ -218,28 +231,16 @@
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
 		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
-			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_LuminousRussula</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>0.6</fertilityMin>
 			<growDays>4.6</growDays>
-			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.15~0.35</visualSizeRange>
-			<topWindExposure>0.05</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
@@ -253,7 +254,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_VioletCoprinus]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
+	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
 		<defName>MorrowRim_Plant_VioletCoprinus</defName>
 		<label>violet coprinus</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
@@ -266,28 +267,16 @@
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
-		<selectable>false</selectable>
 		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>
-			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_VioletCoprinus</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>0.6</fertilityMin>
 			<growDays>3.8</growDays>
-			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
-			<topWindExposure>0.05</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
 				<li>MorrowRim_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>

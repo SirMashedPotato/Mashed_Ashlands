@@ -87,4 +87,26 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_SmallMushroomBase]==========-->
+	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_SmallMushroomBase" Abstract="True">
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.35</Nutrition>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<fertilityMin>0.6</fertilityMin>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
 </Defs>
