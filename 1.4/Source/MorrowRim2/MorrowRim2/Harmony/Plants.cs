@@ -112,6 +112,7 @@ namespace MorrowRim2
 
     /// <summary>
     /// Forces specific plants to only be sowable on specific terrain
+    /// This one prevents unsowable plants from being sown
     /// </summary>
     [HarmonyPatch(typeof(PlantUtility))]
     [HarmonyPatch("CanNowPlantAt")]
@@ -136,6 +137,44 @@ namespace MorrowRim2
                             }
                         }
                         __result = false;
+                    }
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Forces specific plants to only be sowable on specific terrain
+    /// This one prevents unsowable plants from showing up as an option
+    /// </summary>
+    [HarmonyPatch(typeof(PlantUtility))]
+    [HarmonyPatch("CanSowOnGrower")]
+    public static class PlantUtility_CanSowOnGrower_Patch
+    {
+        [HarmonyPostfix]
+        public static void MorrowRim_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
+        {
+            if (__result)
+            {
+                PlantProperties props = PlantProperties.Get(plantDef);
+                if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
+                {
+                    if (obj is IPlantToGrowSettable settable)
+                    {
+                        using (IEnumerator<IntVec3> enumerator = settable.Cells.GetEnumerator())
+                        {
+                            while (enumerator.MoveNext())
+                            {
+                                foreach (TerrainAffordanceDef affordanceDef in props.terrainAffordancesToSow)
+                                {
+                                    if (enumerator.Current.GetTerrain(settable.Map).affordances.Contains(affordanceDef))
+                                    {
+                                        return;
+                                    }
+                                }
+                            }
+                            __result = false;
+                        }
                     }
                 }
             }

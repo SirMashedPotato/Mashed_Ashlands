@@ -32,6 +32,7 @@
 			<maxMeshCount>4</maxMeshCount>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_PurpleCrystal]==========-->
@@ -43,6 +44,9 @@
 			<li Class="MorrowRim2.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.1</cavePlantCommonality>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -63,6 +67,10 @@
 			<harvestedThingDef>MorrowRim_PurpleCrystalShard</harvestedThingDef>
 			<harvestYield>25</harvestYield>
 			<growDays>15</growDays>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>10</sowMinSkill>
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>

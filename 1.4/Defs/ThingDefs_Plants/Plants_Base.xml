@@ -108,5 +108,10 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
-
+	<!-- ==========[MorrowRim_TreeBase]==========-->
+	<ThingDef ParentName="TreeBase" Name="MorrowRim_TreeBase" Abstract="True">
+		<plant>
+			<mustBeWildToSow>False</mustBeWildToSow>
+		</plant>
+	</ThingDef>
 </Defs>

@@ -42,6 +42,9 @@
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_AshlandDuneGrass</texPath>
 		</graphicData>
+		<plant>
+			<sowTags Inherit="False"/>
+		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_AshlandFungus]==========-->
 	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
@@ -107,6 +110,7 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>80</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
 		</plant>
 	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_BlueEntoloma]==========-->
@@ -177,6 +181,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
