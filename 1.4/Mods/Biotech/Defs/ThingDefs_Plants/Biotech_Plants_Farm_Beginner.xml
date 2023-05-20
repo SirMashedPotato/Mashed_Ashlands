@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_ToxYam]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_AshYamBase">
+		<defName>MorrowRim_Plant_ToxYam</defName>
+		<label>tox yam plant</label>
+		<description>A variety of the ash yam, adapted to grow in highly toxic environments. Provides a comparatively smaller yield than the regular ash yam, as much of the outer flesh is completely inedible. They are only able to grow in ash rich ground that has been sufficiently polluted.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_ToxYamPlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/MorrowRim_ToxYamPlant_Immature</immatureGraphicPath>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<harvestedThingDef>MorrowRim_RawToxYams</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<growDays>4.9</growDays>
+		</plant>
+	</ThingDef>
+</Defs>

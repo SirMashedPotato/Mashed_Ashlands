@@ -33,7 +33,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
-		<comps>
+		<comps Inherit="False">
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>
@@ -83,7 +83,7 @@
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
-		<comps>
+		<comps Inherit="False">
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(3,69,47,0)</glowColor>
@@ -133,7 +133,7 @@
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
-		<comps>
+		<comps Inherit="False">
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>

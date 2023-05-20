@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_Glowstalk]==========-->
+	<ThingDef ParentName="MorrowRim_PseudoTreeBase" Name="MorrowRim_Plant_GlowstalkBase">
+		<defName>MorrowRim_Plant_Glowstalk</defName>
+		<label>glowstalk</label>
+		<description>An incredibly strange plant that can only be found growing in certain ashland regions. The bulb at the end of the stem emits a strong glow, quite useful during dark nights. Some choose to grow these plants as a form of natural lighting. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<MorrowRim_AshResistance>0.6</MorrowRim_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_Glowstalk</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>13</growDays>
+			<visualSizeRange>1.0~2.4</visualSizeRange>
+			<wildClusterWeight>0</wildClusterWeight>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

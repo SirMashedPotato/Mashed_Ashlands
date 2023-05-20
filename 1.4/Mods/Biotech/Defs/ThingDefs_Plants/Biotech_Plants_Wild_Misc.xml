@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_Plant_GlowingGlowstalk]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_GlowstalkBase">
+		<defName>MorrowRim_Plant_GlowingGlowstalk</defName>
+		<label>glowing glowstalk</label>
+		<description>A highly mutated subspecies of the common glowstalk, solely found growing in regions with ash rich ground, and high levels of pollution. The normally quite soothing glow is replaced by an eerie glow that is quite unsettling.</description>
+		<graphicData>
+			<texPath>Things/Plant/MorrowRim_GlowingGlowstalk</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites Inherit="False">
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
