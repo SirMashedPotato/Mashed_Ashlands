@@ -72,10 +72,6 @@
 				<terrainAffordancesToSow>
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
-				<allowedTerrainForWild>
-					<li>MorrowRim_MossyAshSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
-				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -95,10 +91,33 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!--
-		<growDays>20</growDays>
-		<visualSizeRange>1.3~2.8</visualSizeRange>
-		<harvestYield>25</harvestYield>
-		<harvestWork>800</harvestWork>
-	-->
+	<!-- ==========[MorrowRim_Plant_TreeSpongecap]==========-->
+	<ThingDef ParentName="MorrowRim_Plant_TreeParasolBase">
+		<defName>MorrowRim_Plant_TreeSpongecap</defName>
+		<label>spongecap tree</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol, and considered to be somewhat hideous by most. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/MorrowRim_TreeSpongecap</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>20</growDays>
+			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<harvestYield>25</harvestYield>
+			<harvestWork>800</harvestWork>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 </Defs>
