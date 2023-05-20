@@ -127,9 +127,10 @@
 			<MorrowRim_Plant_MuckSponge>0.05</MorrowRim_Plant_MuckSponge>
 			<MorrowRim_Plant_ParasolBush>0.2</MorrowRim_Plant_ParasolBush>
 			<!-- Aesthetic plants -->
-			<MorrowRim_Plant_WillowFlower>0.05</MorrowRim_Plant_WillowFlower>
-			<MorrowRim_Plant_Stoneflower>0.1</MorrowRim_Plant_Stoneflower>
-			<MorrowRim_Plant_BlackAntherflower>0.05</MorrowRim_Plant_BlackAntherflower>
+			<MorrowRim_Plant_GoldenSedgeflower>0.05</MorrowRim_Plant_GoldenSedgeflower>
+			<MorrowRim_Plant_HornLilyflower>0.05</MorrowRim_Plant_HornLilyflower>
+			<MorrowRim_Plant_Nirthflyflower>0.05</MorrowRim_Plant_Nirthflyflower>
+			<MorrowRim_Plant_NobleSedgeflower>0.05</MorrowRim_Plant_NobleSedgeflower>
 			<MorrowRim_Plant_AshlandFern>0.2</MorrowRim_Plant_AshlandFern>
 			<MorrowRim_Plant_BlueEntoloma>0.2</MorrowRim_Plant_BlueEntoloma>
 			<!-- Trees -->

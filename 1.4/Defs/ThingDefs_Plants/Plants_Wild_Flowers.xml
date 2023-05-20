@@ -53,6 +53,118 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_GoldenSedgeflower]==========-->
+	<ThingDef ParentName="MorrowRim_FlowerBase">
+		<defName>MorrowRim_Plant_GoldenSedgeflower</defName>
+		<label>golden sedge flower</label>
+		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshSoil</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>15</Beauty>
+			<BeautyOutdoors>15</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/MorrowRim_GoldenSedgeFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_HornLilyflower]==========-->
+	<ThingDef ParentName="MorrowRim_FlowerBase">
+		<defName>MorrowRim_Plant_HornLilyflower</defName>
+		<label>horn lily flower</label>
+		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_MossyAshSoil</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/MorrowRim_HornLilyFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_Nirthflyflower]==========-->
+	<ThingDef ParentName="MorrowRim_FlowerBase">
+		<defName>MorrowRim_Plant_Nirthflyflower</defName>
+		<label>nirthfly flower</label>
+		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_MossyAshSoil</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/MorrowRim_NirthflyFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Plant_NobleSedgeflower]==========-->
+	<ThingDef ParentName="MorrowRim_FlowerBase">
+		<defName>MorrowRim_Plant_NobleSedgeflower</defName>
+		<label>noble sedge flower</label>
+		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
+		<modExtensions>
+			<li Class="MorrowRim2.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MorrowRim_AshSoil</li>
+					<li>MorrowRim_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>15</Beauty>
+			<BeautyOutdoors>15</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/MorrowRim_NobleSedgeFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 	<!-- ==========[MorrowRim_Plant_Stoneflower]==========-->
 	<ThingDef ParentName="MorrowRim_FlowerBase">
 		<defName>MorrowRim_Plant_Stoneflower</defName>
