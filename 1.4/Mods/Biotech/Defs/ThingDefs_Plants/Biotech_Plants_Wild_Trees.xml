@@ -3,7 +3,7 @@
 	<!-- ==========[MorrowRim_Plant_TreeEmperorToxisol]==========-->
 	<ThingDef ParentName="MorrowRim_Plant_TreeEmperorParasolBase">
 		<defName>MorrowRim_Plant_TreeEmperorToxisol</defName>
-		<label>emperor toxisol</label>
+		<label>emperor toxisol tree</label>
 		<description>A highly mutated subspecies of the emperor parasol, solely found growing in regions with ash rich ground, and high levels of pollution. Its stem hardens into an almost wood-like material as it matures. Several large pustules can be found growing on the underside of the cap. These pustules will often burst when the tree is felled, releasing clouds of toxic gas into the air.</description>
 		<thingClass>MorrowRim2.Plant_SecondaryDrop</thingClass>
 		<modExtensions Inherit="False">

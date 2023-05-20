@@ -11,6 +11,7 @@
 					<li>MorrowRim_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
+					<li>MorrowRim_MossyAshSoil</li>
 					<li>MorrowRim_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
@@ -58,9 +59,6 @@
 				<allowedTerrainForWild>
 					<li>MorrowRim_GrazelandSoil</li>
 				</allowedTerrainForWild>
-				<disallowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
-				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>

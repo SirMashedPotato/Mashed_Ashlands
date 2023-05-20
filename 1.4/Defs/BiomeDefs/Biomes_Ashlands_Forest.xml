@@ -136,7 +136,8 @@
 			<MorrowRim_Plant_Glowstalk>0.05</MorrowRim_Plant_Glowstalk>
 			<!-- Trees -->
 			<MorrowRim_Plant_TreeEmperorParasol>0.8</MorrowRim_Plant_TreeEmperorParasol>
-			<Plant_TreePoplar>0.3</Plant_TreePoplar>
+			<MorrowRim_Plant_TreeNetchShield>0.6</MorrowRim_Plant_TreeNetchShield>
+			<Plant_TreePoplar>0.4</Plant_TreePoplar>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
