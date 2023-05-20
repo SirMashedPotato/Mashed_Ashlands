@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="MorrowRim_BlightedAshlandsBase">
 		<defName>MorrowRim_BlightedBogAshlands</defName>
 		<label>blighted bog</label>
-		<description>Blighted ashlands but muddy. Possibly the old blighted mud, as well as blighted sludge (watery). Something something more plant life thanks to groundwater, but less farmable terrain.</description>
+		<description>While somewhat reminiscent of the blighted ashlands, pools of what can only be described as sludge are a common sight here. Draining the sludge may reveal fertile ground, but otherwise most of the land is barren. Plant life is sparse, and only the most desperate animals can be found here.</description>
 		<workerClass>MorrowRim2.BiomeWorker_BlightedBogAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_BlightedBogAshlands</texture>
 		<modExtensions Inherit="False">
@@ -57,21 +57,6 @@
 		<plantDensity>0.05</plantDensity>
 		<terrainPatchMakers Inherit="False">
 			<li>
-				<perlinFrequency>0.04</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>MorrowRim_CrackedAshSoilBlighted</terrain>
-						<min>0.35</min>
-						<max>0.85</max>
-					</li>
-					<li>
-						<terrain>MorrowRim_AshMudBlighted</terrain>
-						<min>0.85</min>
-						<max>99</max>
-					</li>
-				</thresholds>
-			</li>
-			<li>
 				<perlinFrequency>0.027</perlinFrequency>
 				<thresholds>
 					<li>
@@ -87,6 +72,21 @@
 					<li>
 						<terrain>MorrowRim_BlightedSludge</terrain>
 						<min>0.7</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MorrowRim_CrackedAshSoilBlighted</terrain>
+						<min>0.35</min>
+						<max>0.85</max>
+					</li>
+					<li>
+						<terrain>MorrowRim_AshMudBlighted</terrain>
+						<min>0.85</min>
 						<max>99</max>
 					</li>
 				</thresholds>

@@ -135,6 +135,15 @@ namespace MorrowRim2
             Rect rectDefault = listing_Standard.GetRect(30f);
             switch (page)
             {
+                case 0:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageGeneral".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageGeneral".Translate()), true, true, true))
+                    {
+                        MorrowRim_ModSettings.ResetSettings_General();
+                    }
+                    break;
+
                 case 1:
                     listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("MorrowRim_TheAshlands_PageWorldGen".Translate()));
@@ -182,6 +191,12 @@ namespace MorrowRim2
         private Listing_Standard SettingsPage_General(Listing_Standard listing_Standard)
         {
             listing_Standard.Label("MorrowRim_TheAshlands_PageGeneral".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("MorrowRim_TheAshlands_OnlySowOnAsh".Translate(), ref settings.MorrowRim_TheAshlands_OnlySowOnAsh);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

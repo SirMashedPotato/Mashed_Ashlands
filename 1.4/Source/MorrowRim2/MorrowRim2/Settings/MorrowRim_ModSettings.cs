@@ -7,6 +7,9 @@ namespace MorrowRim2
         private static MorrowRim_ModSettings _instance;
 
         /* ==========[GETTERS]========== */
+        //general
+        public static bool TheAshlands_OnlySowOnAsh => _instance.MorrowRim_TheAshlands_OnlySowOnAsh;
+
         //world gen
         public static bool OldBiomeGen => _instance.MorrowRim_TheAshlands_OldBiomeGen;
 
@@ -81,6 +84,9 @@ namespace MorrowRim2
         public static int BlightStormBlightPlantsNumber => _instance.MorrowRim_TheAshlands_BlightStormBlightPlantsNumber;
 
         /* ==========[VARIABLES]========== */
+        //general
+        public bool MorrowRim_TheAshlands_OnlySowOnAsh = MorrowRim_TheAshlands_OnlySowOnAsh_def;
+
         //world gen
         public bool MorrowRim_TheAshlands_OldBiomeGen = MorrowRim_TheAshlands_OldBiomeGen_def;
 
@@ -154,6 +160,9 @@ namespace MorrowRim2
         public int MorrowRim_TheAshlands_BlightStormBlightPlantsNumber = MorrowRim_TheAshlands_BlightStormBlightPlantsNumber_def;
 
         /* ==========[DEFAULTS]========== */
+        //general
+        private static readonly bool MorrowRim_TheAshlands_OnlySowOnAsh_def = true;
+
         //world gen
         private static readonly bool MorrowRim_TheAshlands_OldBiomeGen_def = false;
 
@@ -234,6 +243,9 @@ namespace MorrowRim2
         /* ==========[SAVING]========== */
         public override void ExposeData()
         {
+            //general
+            Scribe_Values.Look(ref MorrowRim_TheAshlands_OnlySowOnAsh, "MorrowRim_TheAshlands_OnlySowOnAsh", MorrowRim_TheAshlands_OnlySowOnAsh_def);
+
             //world gen
             Scribe_Values.Look(ref MorrowRim_TheAshlands_OldBiomeGen, "MorrowRim_TheAshlands_OldBiomeGen", MorrowRim_TheAshlands_OldBiomeGen);
 
@@ -313,10 +325,16 @@ namespace MorrowRim2
         /* ==========[RESETTING]========== */
         public static void ResetSettings()
         {
+            ResetSettings_General();
             ResetSettings_WorldGen();
             ResetSettings_Volcano();
             ResetSettings_AshStorm();
             ResetSettings_Biome();
+        }
+
+        public static void ResetSettings_General()
+        {
+            _instance.MorrowRim_TheAshlands_OnlySowOnAsh = MorrowRim_TheAshlands_OnlySowOnAsh_def;
         }
 
         public static void ResetSettings_WorldGen()

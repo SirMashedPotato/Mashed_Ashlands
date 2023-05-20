@@ -121,7 +121,7 @@ namespace MorrowRim2
         [HarmonyPostfix]
         public static void MorrowRim_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
         {
-            if (__result)
+            if (__result && MorrowRim_ModSettings.TheAshlands_OnlySowOnAsh)
             {
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
@@ -154,7 +154,7 @@ namespace MorrowRim2
         [HarmonyPostfix]
         public static void MorrowRim_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
         {
-            if (__result)
+            if (__result && MorrowRim_ModSettings.TheAshlands_OnlySowOnAsh)
             {
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())

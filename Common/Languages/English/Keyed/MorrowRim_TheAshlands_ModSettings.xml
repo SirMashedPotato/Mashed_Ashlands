@@ -6,6 +6,8 @@
 	<MorrowRim_ResetPage>Reset {0}</MorrowRim_ResetPage>
 	<!-- ==========[General page]==========-->
 	<MorrowRim_TheAshlands_PageGeneral>General Settings</MorrowRim_TheAshlands_PageGeneral>
+	<!-- -->
+	<MorrowRim_TheAshlands_OnlySowOnAsh>Certain plants can only be sown on ash terrain.</MorrowRim_TheAshlands_OnlySowOnAsh>
 	<!-- ==========[World Gen]==========-->
 	<MorrowRim_TheAshlands_PageWorldGen>World Generation Settings</MorrowRim_TheAshlands_PageWorldGen>
 	<!-- big changes -->

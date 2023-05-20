@@ -49,6 +49,6 @@
 		<defName>MorrowRim_AshMudBlighted</defName>
 		<label>blighted mud</label>
 		<texturePath>Terrain/Surfaces/AshBlighted/MorrowRim_AshMudBlighted</texturePath>
-		<driesTo>MorrowRim_AshSoilBlighted</driesTo>
+		<driesTo>MorrowRim_AshGravel</driesTo>
 	</TerrainDef>
 </Defs>

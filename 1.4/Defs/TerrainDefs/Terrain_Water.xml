@@ -9,7 +9,7 @@
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<pathCost>40</pathCost>
 		<renderPrecedence>394</renderPrecedence>
-		<driesTo>MorrowRim_AshGravelBlighted</driesTo>
+		<driesTo>MorrowRim_AshSoil</driesTo>
 	</TerrainDef>
 	<!-- ==========[MorrowRim_Lava]==========-->
 	<TerrainDef ParentName="WaterShallowBase">
