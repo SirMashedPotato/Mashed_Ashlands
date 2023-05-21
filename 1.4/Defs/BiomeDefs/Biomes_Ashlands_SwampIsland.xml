@@ -3,7 +3,7 @@
 	<BiomeDef>
 		<defName>MorrowRim_SwampIslandAshlands</defName>
 		<label>ashland swamp islands</label>
-		<description>A collection of small, and swampy, islands. Pockets of land are hidden inside overgrown marsh, those that choose to settle will need to decide between using this land for farming, or for building. Many of the animals found in swampier ashland regions can be found here... though cliff racers are a very more common sight.</description>
+		<description>A collection of small, and swampy, islands. Pockets of land are hidden inside overgrown marsh, those that choose to settle will need to decide between using this land for farming, or for building. Many of the animals found in swampier ashland regions can be found here... though cliff racers are a very common sight.</description>
 		<workerClass>MorrowRim2.BiomeWorker_SwampIslandAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_SwampIslandAshlands</texture>
 		<modExtensions Inherit="False">

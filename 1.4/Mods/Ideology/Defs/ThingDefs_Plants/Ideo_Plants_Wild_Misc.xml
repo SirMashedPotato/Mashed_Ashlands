@@ -4,7 +4,16 @@
 	<ThingDef ParentName="MorrowRim_Plant_GlowstalkBase">
 		<defName>MorrowRim_Plant_DarkshadeGlowstalk</defName>
 		<label>darkshade glowstalk</label>
-		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While it is only known to naturally occur in very specific locations, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
+		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While they can very rarely be found growing in caves in ashland regions, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
+		<modExtensions Inherit="False">
+			<li Class="MorrowRim2.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.01</cavePlantCommonality>
+				<terrainAffordancesToSow>
+					<li>MorrowRim_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/MorrowRim_DarkshadeGlowstalk</texPath>
 		</graphicData>
