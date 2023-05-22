@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="MorrowRim_AshlandsBase">
 		<defName>MorrowRim_ForestAshlands</defName>
 		<label>ashland forest</label>
-		<description>The complete lack of ash storms from the nearby extinct volcano has allowed for plant life here to take full advantage of the fertile ash. A dense forest of strange fungal trees covers this region, which in turn is home to some even stranger animals.</description>
+		<description>A densely forested region of ashlands, full of colourful mushrooms, and a variety of wild flowers. Plant life here has been able to thrive thanks to the lack of ash storms from the nearby extinct volcano. In turn, both large herds of grazing animals, and packs of predators, can be found here.</description>
 		<workerClass>MorrowRim2.BiomeWorker_ForestAshlands</workerClass>
 		<texture>World/Biomes/MorrowRim_ForestAshlands</texture>
 		<modExtensions>
@@ -121,9 +121,10 @@
 			<MorrowRim_Plant_Ashreed>0.2</MorrowRim_Plant_Ashreed>
 			<Plant_Moss>0.2</Plant_Moss>
 			<!-- Nutrition plants -->
-			<MorrowRim_Plant_AshYam>0.2</MorrowRim_Plant_AshYam>
+			<MorrowRim_Plant_Buttercake>0.3</MorrowRim_Plant_Buttercake>
 			<MorrowRim_Plant_Marshmerrow>0.1</MorrowRim_Plant_Marshmerrow>
 			<!-- Resource plants -->
+			<MorrowRim_Plant_Corkbulb>0.05</MorrowRim_Plant_Corkbulb>
 			<MorrowRim_Plant_MuckSponge>0.05</MorrowRim_Plant_MuckSponge>
 			<MorrowRim_Plant_ParasolBush>0.2</MorrowRim_Plant_ParasolBush>
 			<!-- Aesthetic plants -->
@@ -175,8 +176,12 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
-			
+			<Rat>0.6</Rat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
+			<MorrowRim_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_ShalkGlowing>
+			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</MorrowRim_NetchGlowing>
+			<MorrowRim_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</MorrowRim_NixHoundGlowing>
+			<MorrowRim_CliffRacer>0.2</MorrowRim_CliffRacer>
 		</pollutionWildAnimals>
-
 	</BiomeDef>
 </Defs>
