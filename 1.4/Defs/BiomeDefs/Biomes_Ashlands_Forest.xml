@@ -122,6 +122,7 @@
 			<Plant_Moss>0.2</Plant_Moss>
 			<!-- Nutrition plants -->
 			<MorrowRim_Plant_Buttercake>0.3</MorrowRim_Plant_Buttercake>
+			<MorrowRim_Plant_Comberry>0.1</MorrowRim_Plant_Comberry>
 			<MorrowRim_Plant_Marshmerrow>0.1</MorrowRim_Plant_Marshmerrow>
 			<!-- Resource plants -->
 			<MorrowRim_Plant_Corkbulb>0.05</MorrowRim_Plant_Corkbulb>
