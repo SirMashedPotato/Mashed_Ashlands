@@ -124,11 +124,11 @@
 			</statOffsets>
 		</stuffProps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_NixHoundLeather]==========-->
+	<!-- ==========[MorrowRim_NixLeather]==========-->
 	<ThingDef ParentName="LeatherBase">
-		<defName>MorrowRim_NixHoundLeather</defName>
-		<label>nix hound leather</label>
-		<description>Tanned, dried, scraped nix hound skin. Tough and light, but a poor insulator.</description>
+		<defName>MorrowRim_NixLeather</defName>
+		<label>nix leather</label>
+		<description>Tanned, dried, scraped nix-hound or nix-steed skin. Tough and light, but a poor insulator.</description>
 		<graphicData>
 			<color>(129,132,75)</color>
 		</graphicData>

@@ -88,7 +88,7 @@
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<leatherDef>MorrowRim_NixHoundLeather</leatherDef>
+			<leatherDef>MorrowRim_NixLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_NixSteedThingBase]========== -->
+	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_NixSteedThingBase" Abstract="True">
+		<statBases>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>550</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>MorrowRim_InsectDogLike</body>
+			<leatherDef>MorrowRim_NixLeather</leatherDef>
+			<baseBodySize>1.9</baseBodySize>
+			<baseHealthScale>1.45</baseHealthScale>
+			<baseHungerRate>0.425</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.8</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>20</lifeExpectancy>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<roamMtbDays>2</roamMtbDays>
+			<!-- made by Yoann from yoann.babiesanimals -->
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.001,100)</li>
+					<li>(13.5,100)</li>
+					<li>(15,30)</li>
+					<li>(17.5,18)</li>
+					<li>(20,10)</li>
+					<li>(22.5,3)</li>
+					<li>(25,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.333</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+			<li>MorrowRim_AshlandAnimalCommon</li>
+			<li>MorrowRim_AshlandAnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[MorrowRim_NixSteed]========== -->
+	<ThingDef ParentName="MorrowRim_NixSteedThingBase">
+		<defName>MorrowRim_NixSteed</defName>
+		<label>nix-steed</label>
+		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_NixSteedFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_NixSteed" ParentName="AnimalKindBase">
+		<defName>MorrowRim_NixSteed</defName>
+		<label>nix-steed</label>
+		<labelMale>nix-steed stallion</labelMale>
+		<labelFemale>nix-steed mare</labelFemale>
+		<race>MorrowRim_NixSteed</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>nix-steed foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedCalf</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedMale</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteed</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedMale</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteed</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

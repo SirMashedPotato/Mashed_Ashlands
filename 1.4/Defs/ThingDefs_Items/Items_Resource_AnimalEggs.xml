@@ -205,7 +205,7 @@
 		<label>nix-hound egg (fert.)</label>
 		<description>A fertilised nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
-			<color>(108,94,79)</color>
+			<color>(79,108,94)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -235,6 +235,25 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
 				<hatcherPawn>MorrowRim_NixOx</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_Egg_NixSteedFertilized]==========-->
+	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
+		<defName>MorrowRim_Egg_NixSteedFertilized</defName>
+		<label>nix-steed egg (fert.)</label>
+		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>MorrowRim_NixSteed</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
