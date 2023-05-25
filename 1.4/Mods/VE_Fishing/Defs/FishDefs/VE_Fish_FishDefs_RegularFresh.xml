@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Small]==========-->
+	<!--
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_SmallSlaughterfishFish</defName>
+		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_RegularAshland</li>
+			<li>MorrowRim_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>20</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	-->
+	<!-- ==========[Medium]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_JuvenileMudcrabFish</defName>
+		<thingDef>MorrowRim_RawJuvenileMudcrab</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_RegularAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>4</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Large]==========-->
+	<!--
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_SlaughterfishFishLarge</defName>
+		<thingDef>MorrowRim_RawSlaughterfish</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_RegularAshland</li>
+			<li>MorrowRim_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>10</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	-->
+</Defs>

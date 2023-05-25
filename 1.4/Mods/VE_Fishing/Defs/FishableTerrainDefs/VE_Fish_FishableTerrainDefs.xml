@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[MorrowRim_VanillaFishableTerrainsAshlandFresh]==========-->
+	<VCE_Fishing.FishableTerrainDef>
+		<defName>MorrowRim_VanillaFishableTerrainsAshlandFresh</defName>
+		<isOcean>false</isOcean>
+		<allowedTerrains>
+			<li>MorrowRim_BlightedSludge</li>
+			<li>MorrowRim_SulphurPool</li>
+		</allowedTerrains>
+	</VCE_Fishing.FishableTerrainDef>
+	<!-- ==========[MorrowRim_VanillaFishableTerrainsAshlandOcean]==========-->
+	<VCE_Fishing.FishableTerrainDef>
+		<defName>MorrowRim_VanillaFishableTerrainsAshlandOcean</defName>
+		<isOcean>true</isOcean>
+		<allowedTerrains>         
+	
+		</allowedTerrains>
+	</VCE_Fishing.FishableTerrainDef>
+</Defs>

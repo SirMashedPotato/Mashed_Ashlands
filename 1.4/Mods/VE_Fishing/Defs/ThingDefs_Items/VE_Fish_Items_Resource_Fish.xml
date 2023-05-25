@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_RawFishBase]==========-->
+	<ThingDef Name="MorrowRim_RawFishBase" Abstract="True" ParentName="VCEF_RawFishBase">
+		<tradeTags>
+			<li>MorrowRim_AshlandsRawFish</li>
+		</tradeTags>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawJuvenileBlueSandcrab]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawJuvenileBlueSandcrab</defName>
+		<label>juvenile blue sandcrab</label>
+		<description>Raw juvenile blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawJuvenileBlueSandcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawJuvenileMudcrab]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawJuvenileMudcrab</defName>
+		<label>juvenile ashland mudcrab</label>
+		<description>Raw juvenile mudcrab. Adult mudcrab are most often found in swampy regions, though juveniles such as these may be found anywhere with fresh water and warm temperatures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawJuvenileMudcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>4</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawSlaughterfish]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawSlaughterfish</defName>
+		<label>ashland slaughterfish</label>
+		<description>Raw slaughterfish. There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in ashland regions.\n\nAshland slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.12</Nutrition>
+			<MarketValue>2.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawSlaughterfish]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawSmallSlaughterfish</defName>
+		<label>small slaughterfish</label>
+		<description>Raw small slaughterfish. A comparatively smaller breed of slaughterfish, though just as dangerous in numbers. Usually found infesting waterways in ashland regions.\n\nSome choose to keep these fish as pets, due to their iridescent colouration. Those that do are often surprised when their fish tank is bright red, and full of little bits of bone.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawSmallSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawTelvannisCephalopod]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawTelvannisCephalopod</defName>
+		<label>Telvannis cephalopod</label>
+		<description>Raw Telvannis cephalopod. This particular species of cephalopod can often be found in the waters around Port Telvannis, although they have also been found further abroad in warmer waters.\n\nMembers of Great House Telvanni can often be found wearing the hollowed out shell of larger Telvannis cephalopod as a helmet. The process of preparing these shells is said to take years to master.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawTelvannisCephalopod</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>
