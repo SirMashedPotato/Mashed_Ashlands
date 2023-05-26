@@ -17,7 +17,7 @@
 	-->
 	<!-- ==========[Medium]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_JuvenileMudcrabFish</defName>
+		<defName>MorrowRim_JuvenileMudcrab</defName>
 		<thingDef>MorrowRim_RawJuvenileMudcrab</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>

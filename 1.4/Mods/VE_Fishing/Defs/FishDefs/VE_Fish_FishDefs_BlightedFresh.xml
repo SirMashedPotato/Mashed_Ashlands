@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Small]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_SleeperCoffinfish</defName>
+		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_BlightedAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>15</baseFishingYield>
+	</VCE_Fishing.FishDef>
+</Defs>

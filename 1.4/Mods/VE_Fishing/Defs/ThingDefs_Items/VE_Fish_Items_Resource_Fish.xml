@@ -55,7 +55,7 @@
 			<MarketValue>2.8</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawSlaughterfish]==========-->
+	<!-- ==========[MorrowRim_RawSmallSlaughterfish]==========-->
 	<ThingDef ParentName="MorrowRim_RawFishBase">
 		<defName>MorrowRim_RawSmallSlaughterfish</defName>
 		<label>small slaughterfish</label>

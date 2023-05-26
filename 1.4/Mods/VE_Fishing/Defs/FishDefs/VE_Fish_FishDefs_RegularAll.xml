@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ==========[Small]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SmallSlaughterfishFish</defName>
+		<defName>MorrowRim_SmallSlaughterfish</defName>
 		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
@@ -15,7 +15,7 @@
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SlaughterfishFishMedium</defName>
+		<defName>MorrowRim_MediumSlaughterfish</defName>
 		<thingDef>MorrowRim_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
@@ -28,7 +28,7 @@
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SlaughterfishFishLarge</defName>
+		<defName>MorrowRim_LargeSlaughterfish</defName>
 		<thingDef>MorrowRim_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
