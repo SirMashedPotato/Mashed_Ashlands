@@ -24,4 +24,16 @@
 		</allowedBiomes>
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>
+	<!-- ==========[Large]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_Oanna</defName>
+		<thingDef>MorrowRim_RawOanna</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_BlightedAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>4</baseFishingYield>
+	</VCE_Fishing.FishDef>
 </Defs>

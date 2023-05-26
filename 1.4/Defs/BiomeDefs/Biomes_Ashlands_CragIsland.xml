@@ -61,12 +61,12 @@
 		</soundsAmbient>
 		<terrainsByFertility>
 			<li>
-				<terrain>WaterDeep</terrain>
+				<terrain>WaterOceanDeep</terrain>
 				<min>-999</min>
 				<max>0.47</max>
 			</li>
 			<li>
-				<terrain>WaterShallow</terrain>
+				<terrain>WaterOceanShallow</terrain>
 				<min>-0.47</min>
 				<max>0.77</max>
 			</li>
@@ -86,7 +86,7 @@
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>WaterShallow</terrain>
+						<terrain>WaterOceanShallow</terrain>
 						<min>0.5</min>
 						<max>0.66</max>
 					</li>
@@ -106,7 +106,7 @@
 				<perlinFrequency>0.035</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>WaterShallow</terrain>
+						<terrain>WaterOceanShallow</terrain>
 						<min>0.5</min>
 						<max>0.68</max>
 					</li>
