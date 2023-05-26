@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[MorrowRim_RawFishAdeptBase]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" Name="MorrowRim_RawFishAdeptBase" ParentName="MorrowRim_RawFishBase" Abstract="True">
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</ThingDef>
+</Defs>

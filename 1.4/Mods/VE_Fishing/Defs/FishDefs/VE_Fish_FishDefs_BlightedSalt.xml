@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Small]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_SleeperCoffinfish</defName>
+		<thingDef>MorrowRim_RawSleeperCoffinfish</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_BlightedAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>15</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Medium]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_FiremouthGuiyu</defName>
+		<thingDef>MorrowRim_RawFiremouthGuiyu</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_BlightedAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>4</baseFishingYield>
+	</VCE_Fishing.FishDef>
+</Defs>

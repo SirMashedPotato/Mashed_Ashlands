@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[MorrowRim_RawFishBase]==========-->
-	<ThingDef Name="MorrowRim_RawFishBase" Abstract="True" ParentName="VCEF_RawFishBase">
+	<ThingDef Name="MorrowRim_RawFishBase" ParentName="VCEF_RawFishBase" Abstract="True">
 		<tradeTags>
 			<li>MorrowRim_AshlandsRawFish</li>
 		</tradeTags>
@@ -12,6 +12,20 @@
 			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawFiremouthGuiyu]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawFiremouthGuiyu</defName>
+		<label>firemouth guiyu</label>
+		<description>Raw firemouth guiyu. An incredibly primitive fish, only found in found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawFiremouthGuiyu</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.4</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawJuvenileBlueSandcrab]==========-->
 	<ThingDef ParentName="MorrowRim_RawFishBase">
@@ -67,6 +81,20 @@
 			<Mass>0.01</Mass>
 			<Nutrition>0.02</Nutrition>
 			<MarketValue>0.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[MorrowRim_RawSleeperCoffinfish]==========-->
+	<ThingDef ParentName="MorrowRim_RawFishBase">
+		<defName>MorrowRim_RawSleeperCoffinfish</defName>
+		<label>sleeper coffinfish</label>
+		<description>Raw sleeper coffinfish. A rather rotund, and quite small, fish. The sleeper coffinfish is almost solely found in the tainted oceans around blighted ashland regions, making it one of the few aquatic species found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/MorrowRim_RawSleeperCoffinfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.015</Nutrition>
+			<MarketValue>0.7</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[MorrowRim_RawTelvannisCephalopod]==========-->

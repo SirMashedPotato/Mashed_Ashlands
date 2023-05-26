@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/VCE_Fishing.FishDef[defName="VCEF_SpecialSteel" or defName="VCEF_SpecialGold" or defName="VCEF_SpecialJade"]/allowedBiomes</xpath>
+		<value>
+			<li>MorrowRim_RegularAshland</li>
+			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BlightedAshland</li>	
+		</value>
+	</Operation>
+</Patch>
