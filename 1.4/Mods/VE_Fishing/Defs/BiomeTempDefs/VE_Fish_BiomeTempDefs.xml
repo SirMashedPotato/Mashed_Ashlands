@@ -11,9 +11,6 @@
 			<li>MorrowRim_ForestAshlands</li>
 			<li>MorrowRim_GrazelandAshlands</li>
 			<li>MorrowRim_HighlandAshlands</li>
-			<li>MorrowRim_SaltplainAshlands</li>
-			<li>MorrowRim_SwampAshlands</li>
-			<li>MorrowRim_SwampIslandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[MorrowRim_BiomeTempAshlandBlighted]==========-->
@@ -37,12 +34,28 @@
 			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
+	<!-- ==========[MorrowRim_BiomeTempAshlandBrine]==========-->
+	<VCE_Fishing.BiomeTempDef>
+		<defName>MorrowRim_BiomeTempAshlandBrine</defName>
+		<biomeTempLabel>MorrowRim_BrineAshland</biomeTempLabel>
+		<biomes>
+			<li>MorrowRim_SaltplainAshlands</li>
+		</biomes>
+	</VCE_Fishing.BiomeTempDef>
+	<!-- ==========[MorrowRim_BiomeTempAshlandSwamp]==========-->
+	<VCE_Fishing.BiomeTempDef>
+		<defName>MorrowRim_BiomeTempAshlandSwamp</defName>
+		<biomeTempLabel>MorrowRim_SwampAshland</biomeTempLabel>
+		<biomes>
+			<li>MorrowRim_SwampAshlands</li>
+			<li>MorrowRim_SwampIslandAshlands</li>
+		</biomes>
+	</VCE_Fishing.BiomeTempDef>
 	<!--
 		Other potential ones
 			Humid
 			Lush
 			Coral
-			Brine
 			Sulphur
 	-->
 </Defs>

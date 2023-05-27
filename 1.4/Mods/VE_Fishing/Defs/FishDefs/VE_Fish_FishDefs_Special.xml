@@ -24,6 +24,9 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BlightedAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes> 
 		<commonality>1</commonality>			
 		<baseFishingYield>10</baseFishingYield>		
@@ -38,6 +41,8 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>10</baseFishingYield>		
@@ -51,6 +56,7 @@
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>1</commonality>	
 		<baseFishingYield>3</baseFishingYield>		
@@ -66,6 +72,8 @@
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
 			<li>MorrowRim_BlightedAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>1</baseFishingYield>		
@@ -78,7 +86,7 @@
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.3</commonality>		
 		<baseFishingYield>2</baseFishingYield>		
@@ -93,7 +101,7 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>	
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.2</commonality>		
 		<baseFishingYield>1</baseFishingYield>		
@@ -108,7 +116,9 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>	
+			<li>MorrowRim_BlightedAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>			
 		</allowedBiomes>  	
 		<commonality>1</commonality>	
 		<baseFishingYield>10</baseFishingYield>		
@@ -137,8 +147,23 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>6</baseFishingYield>		
+	</VCE_Fishing.FishDef>
+	<!-- ==========[MorrowRim_NetchEgg]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_SwampJellyEgg</defName>
+		<thingDef>MorrowRim_Egg_SwampJellyFertilized</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_SwampAshland</li>
+		</allowedBiomes>  	
+		<commonality>0.2</commonality>		
+		<baseFishingYield>2</baseFishingYield>		
 	</VCE_Fishing.FishDef>
 </Defs>

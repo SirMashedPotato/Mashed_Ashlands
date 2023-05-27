@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
+	<!-- 
+		Ghost octopus
+		armorhead
+	-->
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_JuvenileBlueSandcrab</defName>
 		<thingDef>MorrowRim_RawJuvenileBlueSandcrab</thingDef>
@@ -14,6 +18,10 @@
 		<baseFishingYield>40</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
+	<!-- 
+		Weeping pygmy shark
+		Mustard eel
+	-->
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_TelvannisCephalopod</defName>
 		<thingDef>MorrowRim_RawTelvannisCephalopod</thingDef>
@@ -26,6 +34,10 @@
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
+	<!-- 
+		monkfish
+		Trevally
+	-->
 	<!--
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_SlaughterfishFishLarge</defName>

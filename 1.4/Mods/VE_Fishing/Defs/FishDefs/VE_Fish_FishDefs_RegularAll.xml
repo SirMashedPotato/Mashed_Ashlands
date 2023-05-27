@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
+	<!-- 
+		Pilgrim goby
+	-->
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_SmallSlaughterfish</defName>
 		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>
@@ -10,6 +13,8 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>20</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -23,6 +28,8 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>6</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -36,6 +43,8 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>10</baseFishingYield>
 	</VCE_Fishing.FishDef>

@@ -5,6 +5,8 @@
 		<allowedBiomes>
 			<li>MorrowRim_RegularAshland</li>
 			<li>MorrowRim_VolcanicAshland</li>
+			<li>MorrowRim_BrineAshland</li>
+			<li>MorrowRim_SwampAshland</li>
 		</allowedBiomes>
 		<preceptsRequired>
 			<li>VME_Fishing_Adept</li>

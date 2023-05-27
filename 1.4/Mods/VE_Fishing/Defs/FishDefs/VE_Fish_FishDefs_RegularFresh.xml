@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
+	<!-- 
+		Hoaga oto
+		Gourami
+	-->
 	<!--
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_SmallSlaughterfishFish</defName>
@@ -16,18 +20,19 @@
 	</VCE_Fishing.FishDef>
 	-->
 	<!-- ==========[Medium]==========-->
-	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_JuvenileMudcrab</defName>
-		<thingDef>MorrowRim_RawJuvenileMudcrab</thingDef>
-		<fishSizeCategory>Medium</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>false</canBeSaltwater>
-		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-		</allowedBiomes>
-		<baseFishingYield>4</baseFishingYield>
-	</VCE_Fishing.FishDef>
+	<!-- 
+		Pity bombil
+		Ash blindfish
+		Ide
+		Cuthroat troat
+		Toadstool tilapia
+		Tench
+	-->
 	<!-- ==========[Large]==========-->
+	<!-- 
+		Netch-hook eel
+		Mouthbrooder (arrowana)
+	-->
 	<!--
 	<VCE_Fishing.FishDef>
 		<defName>MorrowRim_SlaughterfishFishLarge</defName>
