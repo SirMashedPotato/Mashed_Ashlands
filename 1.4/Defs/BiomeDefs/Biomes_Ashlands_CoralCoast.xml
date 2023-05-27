@@ -183,7 +183,7 @@
 			<MorrowRim_Alit>0.1</MorrowRim_Alit>
 			<!-- special -->
 		</wildAnimals>
-		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<MorrowRim_CoralcrabGlowing MayRequire="Ludeon.RimWorld.Biotech">0.6</MorrowRim_CoralcrabGlowing>

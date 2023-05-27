@@ -152,7 +152,7 @@
 			<Lynx>0.07</Lynx>
 			<Warg>0.07</Warg>
 		</wildAnimals>
-		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		<pollutionWildAnimals>
 			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
 			<Rat>1</Rat>

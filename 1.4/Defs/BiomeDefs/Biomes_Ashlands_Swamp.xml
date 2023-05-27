@@ -216,7 +216,7 @@
 			<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
-		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<MorrowRim_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_ShalkGlowing>
