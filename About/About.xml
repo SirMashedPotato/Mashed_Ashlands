@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>MorrowRim Remade - The Ashlands</name>
-	<packageId>SirMashedPotato.MorrowRimRemade</packageId>
+	<name>Mashed's Ashlands</name>
+	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
 	<modVersion>1.0.0</modVersion>
 	<supportedVersions>
     	<li>1.4</li>
 	</supportedVersions>
-	<description>TODO\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	<description>TODO\n-Very much inspired by the Elder Scrolls series by Bethesda Sutios, with a heavy focus on the nation of Morrowind.\n-Original map used in background made by Bethesda Softworks, and edited together by Raptormeat.\n-Big thanks to Ranger Rick for being a generally great person.
 	</description>
 	<modDependencies>
       <li>
@@ -23,14 +23,14 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Biotech</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>SirMashedPotato.MorrowRim.AlcoholRemade</li>
 		<!-- loadfolders -->
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>vanillaexpanded.achievements</li>
 		<li>VanillaExpanded.VCookE</li>
 		<li>VanillaExpanded.VCEF</li>
 		<li>OskarPotocki.VFE.Insectoid</li>
 		<li>vanillaexpanded.outposts</li>
+		<li>syrchalis.processor.framework</li>
 	</loadAfter>
 	<incompatibleWith>
       <li>SirMashedPotato.MorrowRim</li>
@@ -42,5 +42,8 @@
       <li>SirMashedPotato.MorrowRim.JustTheAnimals</li>
       <li>SirMashedPotato.MorrowRim.JustTheKwama</li>
       <li>SirMashedPotato.MorrowRim.JustThePlants</li>
+      <li>SirMashedPotato.MorrowRim.GlassAndEbony</li>
+      <li>SirMashedPotato.MorrowRim.Scuttle</li>
+      <li>SirMashedPotato.MorrowRim.AlcoholRemade</li>
     </incompatibleWith>
 </ModMetaData>
