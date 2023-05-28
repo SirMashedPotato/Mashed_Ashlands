@@ -9,7 +9,15 @@
 		Scum carp
 	-->
 	<!-- ==========[Large]==========-->
-	<!-- 
-		Foyada fish
-	-->
+	<VCE_Fishing.FishDef>
+		<defName>MorrowRim_FoyadaHopper</defName>
+		<thingDef>MorrowRim_RawFoyadaHopper</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>MorrowRim_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>8</baseFishingYield>
+	</VCE_Fishing.FishDef>
 </Defs>
