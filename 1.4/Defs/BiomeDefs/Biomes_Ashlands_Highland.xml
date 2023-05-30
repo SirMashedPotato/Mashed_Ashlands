@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_HighlandAshlands</defName>
 		<label>ashland highlands</label>
 		<description>Mountains and shit.</description>
-		<workerClass>MorrowRim2.BiomeWorker_HighlandAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_HighlandAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_HighlandAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
                 <lateLoader>true</lateLoader>
             </li>
 		</modExtensions>

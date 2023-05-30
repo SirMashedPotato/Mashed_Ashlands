@@ -9,7 +9,7 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(StatCategoryDefOf));
         }
-        public static StatCategoryDef MorrowRim_VolcanoIncidentRadius;
-        public static StatCategoryDef MorrowRim_VolcanoPotentialIncidents;
+        public static StatCategoryDef Mashed_Ashlands_VolcanoIncidentRadius;
+        public static StatCategoryDef Mashed_Ashlands_VolcanoPotentialIncidents;
     }
 }

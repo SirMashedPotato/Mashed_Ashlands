@@ -68,7 +68,7 @@ namespace Mashed_Ashlands
                 }
                 plantDetails.Append("  - " + p.LabelNoCount);
             }
-            Find.LetterStack.ReceiveLetter("Mashed_Ashlands_BlightedPlants_Label".Translate(), "Mashed_Ashlands_BlightdPlants_Description".Translate() + plantDetails.ToString(), LetterDefOf.MorrowRim_VolcanoNegativeEvent, plants, null, null);
+            Find.LetterStack.ReceiveLetter("Mashed_Ashlands_BlightedPlants_Label".Translate(), "Mashed_Ashlands_BlightdPlants_Description".Translate() + plantDetails.ToString(), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, plants, null, null);
         }
 
         public void BlightPlant(Plant p)

@@ -9,7 +9,7 @@
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[@Name="BaseMechanoid"]</xpath>
 		<value>
-			<li Class="MorrowRim2.AshResistanceProperties">
+			<li Class="Mashed_Ashlands.AshResistanceProperties">
 				<treatAsMechanical>true</treatAsMechanical>
 			</li>
 		</value>

@@ -10,6 +10,6 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(LetterDefOf));
         }
-        public static LetterDef MorrowRim_VolcanoNegativeEvent;
+        public static LetterDef Mashed_Ashlands_VolcanoNegativeEvent;
     }
 }

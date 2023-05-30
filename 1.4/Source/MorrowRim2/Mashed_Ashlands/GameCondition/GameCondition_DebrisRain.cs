@@ -31,14 +31,14 @@ namespace Mashed_Ashlands
 			{
 				return;
 			}
-			SkyfallerMaker.SpawnSkyfaller(ThingDefOf.MorrowRim_VolcanicDebrisIncoming, ThingMaker.MakeThing(ThingDefOf.MorrowRim_VolcanicDebris), intVec, map);
+			SkyfallerMaker.SpawnSkyfaller(ThingDefOf.Mashed_Ashlands_VolcanicDebrisIncoming, ThingMaker.MakeThing(ThingDefOf.Mashed_Ashlands_VolcanicDebris), intVec, map);
 			checkInterval = checkIntervalRange.RandomInRange;
 		}
 
 		private bool TryFindCell(out IntVec3 cell, Map map)
 		{
 			int maxMineables = ThingSetMaker_Meteorite.MineablesCountRange.max;
-			return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.MorrowRim_VolcanicDebrisIncoming, map, out cell, 10, default, -1, true, false, false, false, true, true);
+			return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.Mashed_Ashlands_VolcanicDebrisIncoming, map, out cell, 10, default, -1, true, false, false, false, true, true);
 		}
 
 		public int checkInterval;

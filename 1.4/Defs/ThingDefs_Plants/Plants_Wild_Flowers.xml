@@ -33,7 +33,7 @@
 		<label>black anther flower</label>
 		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_RichAshGravel</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -59,7 +59,7 @@
 		<label>golden sedge flower</label>
 		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -87,7 +87,7 @@
 		<label>horn lily flower</label>
 		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -115,7 +115,7 @@
 		<label>nirthfly flower</label>
 		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -143,7 +143,7 @@
 		<label>noble sedge flower</label>
 		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -171,7 +171,7 @@
 		<label>stoneflower</label>
 		<description>A blue flower that can often be found growing in stony ash. Though it looks fragile, it is surprisingly resistant to the effects of ash storms.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_RichAshGravel</li>
@@ -199,7 +199,7 @@
 		<label>willow flower</label>
 		<description>A pink flower that can often be found growing in regions with ash rich ground.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 				</allowedTerrainForWild>

@@ -2,7 +2,7 @@
 <Defs>
 	<JobDef>
 		<defName>Mashed_Ashlands_BuildAshCastle</defName>
-		<driverClass>MorrowRim2.JobDriver_BuildAshCastle</driverClass>
+		<driverClass>Mashed_Ashlands.JobDriver_BuildAshCastle</driverClass>
 		<reportString>building ashcano.</reportString>
 		<joyDuration>8000</joyDuration>
 		<joyKind>Meditative</joyKind>

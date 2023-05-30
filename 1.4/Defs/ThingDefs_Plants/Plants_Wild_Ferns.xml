@@ -29,7 +29,7 @@
 		<label>ashen fern</label>
 		<description>A rare fern that can sometimes be found growing in humid ashland regions. Certain local tribes use the flowers of this fern to mask their scent whilst hunting.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
 				</disallowedTerrainForWild>
@@ -65,7 +65,7 @@
 		<label>slough fern</label>
 		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MarshyTerrain</li>
 				</allowedTerrainForWild>

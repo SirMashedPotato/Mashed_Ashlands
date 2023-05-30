@@ -27,7 +27,7 @@ namespace Mashed_Ashlands
 				workLeft -= doWork.actor.GetStatValue(RimWorld.StatDefOf.ConstructionSpeed, true) * 1.7f;
 				if (workLeft <= 0f)
 				{
-					Thing thing = ThingMaker.MakeThing(ThingDefOf.MorrowRim_AshCastle, null);
+					Thing thing = ThingMaker.MakeThing(ThingDefOf.Mashed_Ashlands_AshCastle, null);
 					thing.SetFaction(pawn.Faction, null);
 					GenSpawn.Spawn(thing, TargetLocA, Map, WipeMode.Vanish);
 					ReadyForNextToil();

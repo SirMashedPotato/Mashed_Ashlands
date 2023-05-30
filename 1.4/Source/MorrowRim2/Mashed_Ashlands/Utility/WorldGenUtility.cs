@@ -10,10 +10,10 @@ namespace Mashed_Ashlands
     {
         public static readonly List<WorldObjectDef> volcanoDefs = new List<WorldObjectDef>
         {
-            WorldObjectDefOf.MorrowRim_VolcanoActive,
-            WorldObjectDefOf.MorrowRim_VolcanoBlighted,
-            WorldObjectDefOf.MorrowRim_VolcanoDormant,
-            WorldObjectDefOf.MorrowRim_VolcanoExtinct
+            WorldObjectDefOf.Mashed_Ashlands_VolcanoActive,
+            WorldObjectDefOf.Mashed_Ashlands_VolcanoBlighted,
+            WorldObjectDefOf.Mashed_Ashlands_VolcanoDormant,
+            WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct
         };
 
         public static float DistanceToClosestVolcano(int tileID)

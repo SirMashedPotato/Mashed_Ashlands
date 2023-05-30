@@ -26,7 +26,7 @@
 			<claimable>false</claimable>
 		</building>
 		<comps>
-			<li Class="MorrowRim2.CompProperties_DropOnDestroy">
+			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
 				<potentialDrops>
 					<li>
 						<thingDef>Mashed_Ashlands_ChunkBasalt</thingDef>

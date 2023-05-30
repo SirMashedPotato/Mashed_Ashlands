@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_CoralCoastAshlands</defName>
 		<label>ashland coral coast</label>
 		<description>Home to an ecosystem that seems alien, even when compared to other ashland regions. Fertile ash has allowed for the growth of a forest of enormous land coral. Herds of ashland coralcrabs can often be found foraging among the dunes. Serene coast, illuminated by an orange glow, makes this a rather nice place to settle.</description>
-		<workerClass>MorrowRim2.BiomeWorker_CoralCoastAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_CoralCoastAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_CoralCoastAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>

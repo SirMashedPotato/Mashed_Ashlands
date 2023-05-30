@@ -10,7 +10,7 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_Ashlands)
+            if (tile.biome != BiomeDefOf.Mashed_Ashlands_Ashlands)
             {
                 return -100f;
             }
@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
             {
                 return 0f;
             }
-            return CoastBiomeWorker(tileID, BiomeDefOf.MorrowRim_CoralCoastAshlands);
+            return CoastBiomeWorker(tileID, BiomeDefOf.Mashed_Ashlands_CoralCoastAshlands);
         }
     }
 }

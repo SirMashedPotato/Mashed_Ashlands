@@ -22,7 +22,7 @@
 	<DamageDef>
 		<defName>Mashed_Ashlands_DrainingStab</defName>
 		<label>draining stab</label>
-		<workerClass>MorrowRim2.DamageWorker_DrainingStab</workerClass>
+		<workerClass>Mashed_Ashlands.DamageWorker_DrainingStab</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been stabbed to death.</deathMessage>
 		<hediff>Stab</hediff>

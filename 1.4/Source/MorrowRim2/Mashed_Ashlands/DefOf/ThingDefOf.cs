@@ -11,8 +11,8 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
         }
 
-        public static ThingDef MorrowRim_VolcanicDebris;
-        public static ThingDef MorrowRim_VolcanicDebrisIncoming;
-        public static ThingDef MorrowRim_AshCastle;
+        public static ThingDef Mashed_Ashlands_VolcanicDebris;
+        public static ThingDef Mashed_Ashlands_VolcanicDebrisIncoming;
+        public static ThingDef Mashed_Ashlands_AshCastle;
     }
 }

@@ -8,7 +8,7 @@
         {
             if (Mashed_Ashlands_ModSettings.EnableDormantVolcano)
             {
-                GenerateVolcanos(WorldObjectDefOf.MorrowRim_VolcanoDormant, Mashed_Ashlands_ModSettings.NumberOfDormantVolcano);
+                GenerateVolcanos(WorldObjectDefOf.Mashed_Ashlands_VolcanoDormant, Mashed_Ashlands_ModSettings.NumberOfDormantVolcano);
             }
         }
     }

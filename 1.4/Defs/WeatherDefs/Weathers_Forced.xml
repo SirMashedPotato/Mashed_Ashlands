@@ -66,11 +66,11 @@
 		<eventMakers>
 			<li>
 				<averageInterval>8000</averageInterval>
-				<eventClass>MorrowRim2.WeatherEvent_BlightTriggerAnimal</eventClass>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerAnimal</eventClass>
 			</li>
 			<li>
 				<averageInterval>10000</averageInterval>
-				<eventClass>MorrowRim2.WeatherEvent_BlightTriggerPlant</eventClass>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerPlant</eventClass>
 			</li>
 		</eventMakers>
 		<!-- Same as clear, but with a red tint -->

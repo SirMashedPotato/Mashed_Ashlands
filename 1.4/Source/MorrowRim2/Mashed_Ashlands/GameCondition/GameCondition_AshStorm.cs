@@ -90,7 +90,7 @@ namespace Mashed_Ashlands
 			{
 				float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(p.thingIDNumber ^ 74374237));
 				num *= num2;
-				HealthUtility.AdjustSeverity(p, HediffDefOf.MorrowRim_AshBuildup, num);
+				HealthUtility.AdjustSeverity(p, HediffDefOf.Mashed_Ashlands_AshBuildup, num);
 			}
 		}
 
@@ -99,7 +99,7 @@ namespace Mashed_Ashlands
 		/// </summary>
 		public static bool PawnImmuneToAsh(Pawn p, out float ashResistanceValue)
 		{
-			ashResistanceValue = p.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1);
+			ashResistanceValue = p.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance, true, -1);
 			return !p.health.capacities.CapableOf(PawnCapacityDefOf.Breathing) || ashResistanceValue >= 1f;
 		}
 
@@ -119,7 +119,7 @@ namespace Mashed_Ashlands
 				{
 					return;
 				}
-				p.health.AddHediff(HediffDefOf.MorrowRim_AshInEyes, targetPart);
+				p.health.AddHediff(HediffDefOf.Mashed_Ashlands_AshInEyes, targetPart);
 			}
 		}
 
@@ -145,7 +145,7 @@ namespace Mashed_Ashlands
 			if (Rand.Chance(Mashed_Ashlands_ModSettings.AshStormCloggedServoChance))
 			{
 				BodyPartRecord part = p.RaceProps.body.AllParts.RandomElement();
-				p.health.AddHediff(HediffDefOf.MorrowRim_AshCloggedServo, part);
+				p.health.AddHediff(HediffDefOf.Mashed_Ashlands_AshCloggedServo, part);
 			}
 		}
 
@@ -205,7 +205,7 @@ namespace Mashed_Ashlands
 		/// </summary>
 		public bool PlantImmuneToAsh(Plant p, out float ashResistanceValue)
 		{
-			ashResistanceValue = p.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1);
+			ashResistanceValue = p.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance, true, -1);
 			return ashResistanceValue >= 1f;
 		}
 

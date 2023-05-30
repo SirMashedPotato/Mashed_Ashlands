@@ -10,6 +10,6 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(GameConditionDefOf));
         }
-        public static GameConditionDef MorrowRim_AshStorm;
+        public static GameConditionDef Mashed_Ashlands_AshStorm;
     }
 }

@@ -16,7 +16,7 @@
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android" or defName="ATR_Tier2Android"]</xpath>
 					<value>
-						<li Class="MorrowRim2.AshResistanceProperties">
+						<li Class="Mashed_Ashlands.AshResistanceProperties">
 							<treatAsMechanical>true</treatAsMechanical>
 						</li>
 					</value>
@@ -31,7 +31,7 @@
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[@Name="ATR_MechanicalAnimalThingBase"]</xpath>
 					<value>
-						<li Class="MorrowRim2.AshResistanceProperties">
+						<li Class="Mashed_Ashlands.AshResistanceProperties">
 							<treatAsMechanical>true</treatAsMechanical>
 						</li>
 					</value>

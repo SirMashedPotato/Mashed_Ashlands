@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_GrazelandAshlands</defName>
 		<label>ashland grazelands</label>
 		<description>Flat pastoral land, covered in grass and occasional mushroom trees. These plains were once covered in clouds of ash from a nearby volcano, now the clouds have settled, and much of the ash has been absorbed into the ground. Much like the ashlands, the terrain here is highly fertile, though large swathes of this fertility have been lost over time, and there is an almost complete lack of ash storms to replenish it.\n\nThe landscape is largely dominated by wickwheat and hackle-lo, and large herds of grazing herbivores can often be found here.</description>
-		<workerClass>MorrowRim2.BiomeWorker_GrazelandAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_GrazelandAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_GrazelandAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
                 <lateLoader>true</lateLoader>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>

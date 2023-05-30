@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_BasaltBase]==========-->
 	<ThingDef ParentName="UglyRockBase" Name="Mashed_Ashlands_BasaltBase" Abstract="True">
 		<modExtensions>
-			<li Class="MorrowRim2.RockProperties">
+			<li Class="Mashed_Ashlands.RockProperties">
 				<onlyAllowIfForced>true</onlyAllowIfForced>
 				<roughTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltRough</roughTexPathReplacer>
 				<roughHewnTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltRoughHewn</roughHewnTexPathReplacer>

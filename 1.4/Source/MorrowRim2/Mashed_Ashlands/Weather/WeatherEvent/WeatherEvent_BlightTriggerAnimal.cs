@@ -57,7 +57,7 @@ namespace Mashed_Ashlands
 
         public void BlightAnimal(Pawn p)
         {
-            p.health.AddHediff(HediffDefOf.MorrowRim_AshBlight);
+            p.health.AddHediff(HediffDefOf.Mashed_Ashlands_AshBlight);
         }
 
         public override void WeatherEventTick()

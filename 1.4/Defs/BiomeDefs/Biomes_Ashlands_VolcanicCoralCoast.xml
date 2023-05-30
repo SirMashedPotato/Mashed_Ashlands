@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_VolcanicCoralCoastAshlands</defName>
 		<label>volcanic coral coast</label>
 		<description>The volcanic ash that settled here has allowed for the growth of a forest of land coral. Infrequent ashstorms, and large glowing coral trees, make this a rather nice place to settle.</description>
-		<workerClass>MorrowRim2.BiomeWorker_VolcanicCoralCoastAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicCoralCoastAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_VolcanicCoralCoastAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
                 <lateLoader>true</lateLoader>
             </li>
 		</modExtensions>

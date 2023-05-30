@@ -6,7 +6,7 @@
 		<label>glowstalk</label>
 		<description>An incredibly strange plant that can only be found growing in certain ashland regions. The bulb at the end of the stem emits a strong glow, quite useful during dark nights. Some choose to grow these plants as a form of natural lighting. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>

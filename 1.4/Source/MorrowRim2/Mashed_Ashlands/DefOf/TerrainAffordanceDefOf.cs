@@ -11,6 +11,6 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(TerrainAffordanceDefOf));
         }
 
-        public static TerrainAffordanceDef MorrowRim_AshCastle;
+        public static TerrainAffordanceDef Mashed_Ashlands_AshCastle;
     }
 }

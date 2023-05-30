@@ -27,7 +27,7 @@
 		</statBases>
 		<comps>
 			<li>
-				<compClass>MorrowRim2.Comp_AshCastleCollapser</compClass>
+				<compClass>Mashed_Ashlands.Comp_AshCastleCollapser</compClass>
 			</li>
 		</comps>
 		<forceDebugSpawnable>true</forceDebugSpawnable>

@@ -36,7 +36,7 @@ namespace Mashed_Ashlands
 
 		private WorldObject GetTarget()
         {
-			List<WorldObject> potentialTargets = Find.WorldObjects.AllWorldObjects.Where(x => x is Volcano && x.def != WorldObjectDefOf.MorrowRim_VolcanoExtinct).ToList();
+			List<WorldObject> potentialTargets = Find.WorldObjects.AllWorldObjects.Where(x => x is Volcano && x.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct).ToList();
 			return potentialTargets.Where(x => x.GetComponent<WorldObjectComp_VolcanoDetails>().CategoryCanBeChanged()).RandomElement();
 		}
 

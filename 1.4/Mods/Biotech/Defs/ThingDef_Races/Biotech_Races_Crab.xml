@@ -6,7 +6,7 @@
 		<label>glowing coralcrab</label>
 		<description>A subspecies of the common ashland coralcrab that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing land coral. The coralcrab protects the coral from being eaten, whilst the coral help the coralcrab absorb nutrients from environmental pollution.</description>
 		<modExtensions Inherit="False">
-			<li Class="MorrowRim2.PollutionProperties">
+			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
 		</modExtensions>

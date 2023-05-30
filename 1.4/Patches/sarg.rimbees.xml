@@ -9,7 +9,7 @@
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[@Name="RB_TreeHiveBase"]</xpath>
 					<value>
-						<li Class="MorrowRim2.PlantProperties">
+						<li Class="Mashed_Ashlands.PlantProperties">
 							<disallowedTerrainForWild>
 								<li>Mashed_Ashlands_AshSand</li>
 								<li>Mashed_Ashlands_RichAshSand</li>

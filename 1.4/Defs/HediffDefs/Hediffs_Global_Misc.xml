@@ -13,7 +13,7 @@
 		<taleOnVisible>Mashed_Ashlands_AshBuildupRevealed</taleOnVisible>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<compClass>MorrowRim2.HediffComp_ImmunizableAsh</compClass>
+				<compClass>Mashed_Ashlands.HediffComp_ImmunizableAsh</compClass>
 				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
 			</li>
 		</comps>

@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_BlightedCragIslandAshlands</defName>
 		<label>blighted crag islands</label>
 		<description>A collection of small, lifeless, islands, turned into a wasteland by a nearby blighted volcano. Almost nothing living can be found here... except for cliff racers</description>
-		<workerClass>MorrowRim2.BiomeWorker_BlightedCragIslandAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedCragIslandAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedCragIslandAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
                 <earlyLoader>true</earlyLoader>
 				<disableBeaches>true</disableBeaches>
 				<forceHilliness>true</forceHilliness>

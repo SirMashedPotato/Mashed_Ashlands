@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="WindTurbine"]</xpath>
 		<value>
-			<li Class="MorrowRim2.AshResistanceProperties">
+			<li Class="Mashed_Ashlands.AshResistanceProperties">
 				<buildingTakesDamage>true</buildingTakesDamage>
 				<avgDamageTaken>3</avgDamageTaken>
 				<chanceDamaged>0.5</chanceDamaged>

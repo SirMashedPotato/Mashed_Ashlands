@@ -10,7 +10,7 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.MorrowRim_BlightedAshlands)
+            if (tile.biome != BiomeDefOf.Mashed_Ashlands_BlightedAshlands)
             {
                 return -100f;
             }

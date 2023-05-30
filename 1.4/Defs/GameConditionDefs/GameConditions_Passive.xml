@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
 	<GameConditionDef>
 		<defName>Mashed_Ashlands_DenseAshClouds</defName>
-		<conditionClass>MorrowRim2.GameCondition_DenseAshClouds</conditionClass>
+		<conditionClass>Mashed_Ashlands.GameCondition_DenseAshClouds</conditionClass>
 		<label>dense ash clouds</label>
 		<description>Dense ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
 		<endMessage>The ash clouds disperse.</endMessage>
@@ -16,7 +16,7 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicHeat]==========-->
 	<GameConditionDef Name="Mashed_Ashlands_VolcanicHeatBase">
 		<defName>Mashed_Ashlands_VolcanicHeat</defName>
-		<conditionClass>MorrowRim2.GameCondition_VolcanicHeat</conditionClass>
+		<conditionClass>Mashed_Ashlands.GameCondition_VolcanicHeat</conditionClass>
 		<label>volcanic heat</label>
 		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
 		<endMessage>The air begins to cool.</endMessage>

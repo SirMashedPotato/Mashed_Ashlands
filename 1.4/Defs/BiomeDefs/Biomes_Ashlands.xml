@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_Ashlands</defName>
 		<label>ashlands</label>
 		<description>Highly fertile soil allows for a thriving, if unusual, ecosystem. Frequent ash storms slowly kill all life-forms that are not adapted to the area, making this a difficult place to settle.</description>
-		<workerClass>MorrowRim2.BiomeWorker_Ashlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_Ashlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_Ashlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>

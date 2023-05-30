@@ -9,9 +9,9 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(WorldObjectDefOf));
         }
-        public static WorldObjectDef MorrowRim_VolcanoDormant;
-        public static WorldObjectDef MorrowRim_VolcanoActive;
-        public static WorldObjectDef MorrowRim_VolcanoBlighted;
-        public static WorldObjectDef MorrowRim_VolcanoExtinct;
+        public static WorldObjectDef Mashed_Ashlands_VolcanoDormant;
+        public static WorldObjectDef Mashed_Ashlands_VolcanoActive;
+        public static WorldObjectDef Mashed_Ashlands_VolcanoBlighted;
+        public static WorldObjectDef Mashed_Ashlands_VolcanoExtinct;
     }
 }

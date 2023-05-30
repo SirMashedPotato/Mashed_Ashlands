@@ -9,6 +9,6 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(StatDefOf));
         }
-        public static StatDef MorrowRim_AshResistance;
+        public static StatDef Mashed_Ashlands_AshResistance;
     }
 }

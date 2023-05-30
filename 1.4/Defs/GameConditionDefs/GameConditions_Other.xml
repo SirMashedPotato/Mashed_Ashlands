@@ -10,7 +10,7 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicDebrisRain]==========-->
 	<GameConditionDef>
 		<defName>Mashed_Ashlands_VolcanicDebrisRain</defName>
-		<conditionClass>MorrowRim2.GameCondition_DebrisRain</conditionClass>
+		<conditionClass>Mashed_Ashlands.GameCondition_DebrisRain</conditionClass>
 		<label>volcanic debris rain</label>
 		<description>Recent volcanic activity has launched large pieces of rock into the air. While the debris will rapidly cool, it will likely ignite anything nearby on impact.</description>
 		<descriptionFuture>volcanic debris will begin falling in the area around [map_definite] for [gameConditionDuration_duration]</descriptionFuture>

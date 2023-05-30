@@ -37,7 +37,7 @@ namespace Mashed_Ashlands
         {
             if (!__result)
             {
-                float resistance = pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance);
+                float resistance = pawn.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance);
                 if (resistance < 1f)
                 {
                     __result = Utility.MapHasUnsafeCondition(pawn);
@@ -58,7 +58,7 @@ namespace Mashed_Ashlands
         {
             if (__result)
             {
-                float resistance = pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance);
+                float resistance = pawn.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance);
                 if (resistance < 1f)
                 {
                     __result = !Utility.MapHasUnsafeCondition(pawn);

@@ -4,10 +4,10 @@
 		<defName>Mashed_Ashlands_VolcanicCragIslandAshlands</defName>
 		<label>volcanic crag islands</label>
 		<description>Azuras coast / Dagon fel but volcanic.</description>
-		<workerClass>MorrowRim2.BiomeWorker_VolcanicCragIslandAshlands</workerClass>
+		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicCragIslandAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_VolcanicCragIslandAshlands</texture>
 		<modExtensions>
-			<li Class="MorrowRim2.BiomeProperties">
+			<li Class="Mashed_Ashlands.BiomeProperties">
                 <earlyLoader>true</earlyLoader>
             </li>
 		</modExtensions>

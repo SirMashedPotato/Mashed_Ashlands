@@ -9,18 +9,18 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(BiomeDefOf));
         }
-        public static BiomeDef MorrowRim_Ashlands;
-        public static BiomeDef MorrowRim_ForestAshlands;
-        public static BiomeDef MorrowRim_CoralCoastAshlands;
+        public static BiomeDef Mashed_Ashlands_Ashlands;
+        public static BiomeDef Mashed_Ashlands_ForestAshlands;
+        public static BiomeDef Mashed_Ashlands_CoralCoastAshlands;
 
-        public static BiomeDef MorrowRim_BlightedAshlands;
+        public static BiomeDef Mashed_Ashlands_BlightedAshlands;
 
-        public static BiomeDef MorrowRim_VolcanicAshlands;
-        public static BiomeDef MorrowRim_VolcanicCoralCoastAshlands;
+        public static BiomeDef Mashed_Ashlands_VolcanicAshlands;
+        public static BiomeDef Mashed_Ashlands_VolcanicCoralCoastAshlands;
 
-        public static BiomeDef MorrowRim_CragIslandAshlands;
-        public static BiomeDef MorrowRim_BlightedCragIslandAshlands;
-        public static BiomeDef MorrowRim_SwampIslandAshlands;
-        public static BiomeDef MorrowRim_VolcanicCragIslandAshlands;
+        public static BiomeDef Mashed_Ashlands_CragIslandAshlands;
+        public static BiomeDef Mashed_Ashlands_BlightedCragIslandAshlands;
+        public static BiomeDef Mashed_Ashlands_SwampIslandAshlands;
+        public static BiomeDef Mashed_Ashlands_VolcanicCragIslandAshlands;
     }
 }

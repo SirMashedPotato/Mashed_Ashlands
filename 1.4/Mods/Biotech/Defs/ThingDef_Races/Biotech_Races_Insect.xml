@@ -6,7 +6,7 @@
 		<label>glowing nix-hound</label>
 		<description>A subspecies of nix-hound that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow far larger than the common nix-hound. Heavy chitin plates along their back, and their increased size, easily make them an apex predator.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-hound can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
-			<li Class="MorrowRim2.PollutionProperties">
+			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
 		</modExtensions>
@@ -157,7 +157,7 @@
 		<label>glowing nix-ox</label>
 		<description>A subspecies of nix-ox that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, helping them survive on limited vegetation. Rather aggressive when compared to the common nix-ox, this subspecies will defend members of their herd even against the most dangerous of foes.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-ox can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
-			<li Class="MorrowRim2.PollutionProperties">
+			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
 		</modExtensions>
@@ -269,7 +269,7 @@
 			<MarketValue>150</MarketValue>
 		</statBases>
 		<modExtensions Inherit="False">
-			<li Class="MorrowRim2.PollutionProperties">
+			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
 		</modExtensions>

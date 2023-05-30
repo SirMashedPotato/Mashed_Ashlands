@@ -56,7 +56,7 @@ namespace Mashed_Ashlands
 			{
 				return false;
 			}
-			if (!c.GetTerrain(pawn.Map).affordances.Contains(TerrainAffordanceDefOf.MorrowRim_AshCastle))
+			if (!c.GetTerrain(pawn.Map).affordances.Contains(TerrainAffordanceDefOf.Mashed_Ashlands_AshCastle))
 			{
 				return false;
 			}
@@ -88,7 +88,7 @@ namespace Mashed_Ashlands
 					return false;
 				}
 			}
-			List<Thing> list = pawn.Map.listerThings.ThingsOfDef(ThingDefOf.MorrowRim_AshCastle);
+			List<Thing> list = pawn.Map.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_AshCastle);
 			for (int j = 0; j < list.Count; j++)
 			{
 				if (list[j].Position.InHorDistOf(c, MinDistBetweenAshCastle))

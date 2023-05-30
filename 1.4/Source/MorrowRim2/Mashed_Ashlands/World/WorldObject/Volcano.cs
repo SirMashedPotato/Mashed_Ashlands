@@ -109,7 +109,7 @@ namespace Mashed_Ashlands
                     for (int i = 0; i <= categoryIndex; i++)
                     {
                         int category = compDetailsRadius.Props.categoryWeights[i].category;
-                        yield return new StatDrawEntry(StatCategoryDefOf.MorrowRim_VolcanoIncidentRadius, "Mashed_Ashlands_VolcanoRadiusCategoryLabel".Translate(category),
+                        yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoIncidentRadius, "Mashed_Ashlands_VolcanoRadiusCategoryLabel".Translate(category),
                             "Mashed_Ashlands_VolcanoRadiusCategoryRadius".Translate(EffectRadiusFor(category)), 
                             "Mashed_Ashlands_VolcanoRadiusCategoryDescription".Translate(category), 1, null, null, false);
                     }
@@ -122,7 +122,7 @@ namespace Mashed_Ashlands
                     {
                         if (condition.conditionDef != null)
                         {
-                            yield return new StatDrawEntry(StatCategoryDefOf.MorrowRim_VolcanoPotentialIncidents, condition.conditionDef.label, 
+                            yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label, 
                                 "Mashed_Ashlands_VolcanoConditionWeight".Translate(condition.weight.ToString()), 
                                 condition.conditionDef.description, 1, null, null, false);
                         }

@@ -14,7 +14,7 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            return IslandBiomeWorker(tileID, WorldObjectDefOf.MorrowRim_VolcanoBlighted, BiomeDefOf.MorrowRim_BlightedCragIslandAshlands);
+            return IslandBiomeWorker(tileID, WorldObjectDefOf.Mashed_Ashlands_VolcanoBlighted, BiomeDefOf.Mashed_Ashlands_BlightedCragIslandAshlands);
         }
     }
 }

@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_InsectBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_InsectThingBase" Abstract="True">
 		<modExtensions>
-			<li Class="MorrowRim2.PollutionProperties">
+			<li Class="Mashed_Ashlands.PollutionProperties">
 				<AllowPollutionStimulis>false</AllowPollutionStimulis>
 			</li>
 			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">

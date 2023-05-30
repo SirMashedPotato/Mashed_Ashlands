@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_VolcanoBase]==========-->
 	<WorldObjectDef Name="Mashed_Ashlands_VolcanoBase" Abstract="True">
-		<worldObjectClass>MorrowRim2.Volcano</worldObjectClass>
+		<worldObjectClass>Mashed_Ashlands.Volcano</worldObjectClass>
 		<canHaveFaction>false</canHaveFaction>
 		<inspectorTabs/>
 		<useDynamicDrawer>false</useDynamicDrawer>
@@ -19,7 +19,7 @@
 		<expandingIconColor>155,155,155</expandingIconColor>
 		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoDormant</texture>
 		<comps>
-			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>Mashed_Ashlands_NamerVolcanoDormant</nameNamer>
 				<categoryWeights>
 					<li>
@@ -64,7 +64,7 @@
 					</li>
 				</categoryWeights>
 			</li>
-			<li Class="MorrowRim2.WorldObjectCompProperties_RandomConditionCauser">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
@@ -114,7 +114,7 @@
 		<expandingIconColor>255,100,100</expandingIconColor>
 		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoActive</texture>
 		<comps>
-			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>Mashed_Ashlands_NamerVolcanoActive</nameNamer>
 				<categoryWeights>
 					<li>
@@ -159,10 +159,10 @@
 					</li>
 				</categoryWeights>
 			</li>
-			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_PermanentCondition">
 				<conditionDef>Mashed_Ashlands_VolcanicHeat</conditionDef>
 			</li>
-			<li Class="MorrowRim2.WorldObjectCompProperties_RandomConditionCauser">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
@@ -232,7 +232,7 @@
 		<expandingIconColor>55,55,55</expandingIconColor>
 		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoBlighted</texture>
 		<comps>
-			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_VolcanoDetails">
 				<nameNamer>Mashed_Ashlands_NamerVolcanoBlighted</nameNamer>
 				<categoryWeights>
 					<li>
@@ -277,10 +277,10 @@
 					</li>
 				</categoryWeights>
 			</li>
-			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_PermanentCondition">
 				<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 			</li>
-			<li Class="MorrowRim2.WorldObjectCompProperties_RandomConditionCauser">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
@@ -330,7 +330,7 @@
 		<expandingIconColor>100,155,100</expandingIconColor>
 		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoExtinct</texture>
 		<comps>
-			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
+			<li Class="Mashed_Ashlands.WorldObjectCompProperties_VolcanoDetails">
 				<extinct>true</extinct>
 				<nameNamer>Mashed_Ashlands_NamerVolcanoExtinct</nameNamer>
 				<categoryWeights>

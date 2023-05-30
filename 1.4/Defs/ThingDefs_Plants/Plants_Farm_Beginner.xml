@@ -6,7 +6,7 @@
 		<label>ash yam plant</label>
 		<description>A highly nutritious tuber. Clusters of wild ash yams are a common sight in ashland regions, and thanks to their innate resistance to ash storms are very often farmed by those that settle there. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -52,7 +52,7 @@
 		<label>buttercap mushroom</label>
 		<description>A rather strange mushroom, that somewhat resembles a stack of pancakes. The flesh is surprisingly tasty, and completely safe to eat. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -97,7 +97,7 @@
 		<label>hackle-lo plant</label>
 		<description>A large and leafy succulent, often found growing in grasslands with ash rich soil. The leaves are rather tasty, and can easily be harvested from the plant without killing it. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -136,7 +136,7 @@
 		<label>kreshweed plant</label>
 		<description>A coarse grass often found growing near water in ashland regions. Often farmed for its fiber, which can be woven into a durable cloth. Can only grow on ash rich ground.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -177,7 +177,7 @@
 		<label>parasol bush</label>
 		<description>A significantly smaller cousin of the emperor parasol. While reasonably sturdy, the stem provides little usable material, and the flesh is completely inedible. Can only grow on ash rich ground.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -217,7 +217,7 @@
 		<label>trama shrub</label>
 		<description>An incredibly hardy shrub, typically found growing in the less-hospitable regions of the ashlands. The roots are often brewed into a calming tea, though can also be fed to livestock when times are hard. Trama shrub are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -265,7 +265,7 @@
 		<label>scathecraw plant</label>
 		<description>An incredibly hardy grass, typically found growing in the less-hospitable regions of the ashlands. While the soft flesh inside of the grass is tempting to some, those that try it will quickly learn why scathecraw isn't considered a delicacy. Scathecraw are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>

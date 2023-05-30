@@ -10,9 +10,9 @@ namespace Mashed_Ashlands
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
         }
-        public static HediffDef MorrowRim_AshBuildup;
-        public static HediffDef MorrowRim_AshCloggedServo;
-        public static HediffDef MorrowRim_AshInEyes;
-        public static HediffDef MorrowRim_AshBlight;
+        public static HediffDef Mashed_Ashlands_AshBuildup;
+        public static HediffDef Mashed_Ashlands_AshCloggedServo;
+        public static HediffDef Mashed_Ashlands_AshInEyes;
+        public static HediffDef Mashed_Ashlands_AshBlight;
     }
 }

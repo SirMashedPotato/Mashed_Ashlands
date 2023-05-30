@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
 				if (!Pawn.Position.Roofed(Pawn.Map))
 				{
 					if (Utility.MapHasAshStorm(Pawn)
-						&& Pawn.GetStatValue(StatDefOf.MorrowRim_AshResistance, true, -1) < 1f)
+						&& Pawn.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance, true, -1) < 1f)
 					{
 						num = 0f;
 					}

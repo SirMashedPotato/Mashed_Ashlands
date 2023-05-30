@@ -6,7 +6,7 @@
 		<label>ashland grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -32,7 +32,7 @@
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshSand</li>
 					<li>Mashed_Ashlands_AshSandVolcanic</li>
@@ -52,7 +52,7 @@
 		<label>ashland fungus</label>
 		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -83,7 +83,7 @@
 		<label>ashreed</label>
 		<description>A species of wild grass adapted for life in the ashlands. Often found growing near sources of water.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
@@ -119,7 +119,7 @@
 		<label>blue entoloma</label>
 		<description>A small mushroom commonly found growing in densely forested ashland regions. Many enjoy the sight of its brilliant blue colouration.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 				</allowedTerrainForWild>
@@ -150,7 +150,7 @@
 		<label>draggle-tails</label>
 		<description>A primitive flowering plant, only found growing in humid ashland regions. They emit a faint glow, often used by explorers to aide in navigating the treacherous marshes at night.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MarshyTerrain</li>
 				</allowedTerrainForWild>
@@ -196,7 +196,7 @@
 		<label>ink-cap</label>
 		<description>A small mushroom commonly found growing in humid ashland regions. The intense red colouration of the cap serves as a warning for anyone that would try to consume it.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_AshSoil</li>
@@ -228,7 +228,7 @@
 		<label>luminous russula</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
@@ -264,7 +264,7 @@
 		<label>violet coprinus</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
-			<li Class="MorrowRim2.PlantProperties">
+			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
