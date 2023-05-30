@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_PlantBase]==========-->
-	<ThingDef ParentName="PlantBase" Name="MorrowRim_PlantBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_PlantBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_PlantBase" Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
@@ -14,8 +14,8 @@
 			</sowTags>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_BushBase]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_BushBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_BushBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_BushBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -39,8 +39,8 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_PseudoTreeBase]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_PseudoTreeBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_PseudoTreeBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_PseudoTreeBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>195</MaxHitPoints>
@@ -62,14 +62,14 @@
 			<wildOrder>3</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_GrassBase]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_GrassBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_GrassBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_GrassBase" Abstract="True">
 		<selectable>false</selectable>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.45</Nutrition>
 			<Flammability>1.0</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
@@ -87,8 +87,8 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SmallMushroomBase]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_SmallMushroomBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_SmallMushroomBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_SmallMushroomBase" Abstract="True">
 		<selectable>false</selectable>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
@@ -108,8 +108,8 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_TreeBase]==========-->
-	<ThingDef ParentName="TreeBase" Name="MorrowRim_TreeBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_TreeBase]==========-->
+	<ThingDef ParentName="TreeBase" Name="Mashed_Ashlands_TreeBase" Abstract="True">
 		<plant>
 			<mustBeWildToSow>False</mustBeWildToSow>
 		</plant>

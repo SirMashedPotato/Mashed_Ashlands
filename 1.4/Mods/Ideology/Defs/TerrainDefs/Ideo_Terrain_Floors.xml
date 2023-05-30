@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Tile_MorbidBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_MorbidBasalt]==========-->
 	<TerrainDef ParentName="MorbidStoneTile">
-		<defName>MorrowRim_Tile_MorbidBasalt</defName>
+		<defName>Mashed_Ashlands_Tile_MorbidBasalt</defName>
 		<label>morbid basalt tile</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>20</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_Tile_SpikecoreBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_SpikecoreBasalt]==========-->
 	<TerrainDef ParentName="SpikecoreStoneTile">
-		<defName>MorrowRim_Tile_SpikecoreBasalt</defName>
+		<defName>Mashed_Ashlands_Tile_SpikecoreBasalt</defName>
 		<label>basalt spikecore tile</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>20</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_Tile_TotemicBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_TotemicBasalt]==========-->
 	<TerrainDef ParentName="TotemicStoneTile">
-		<defName>MorrowRim_Tile_TotemicBasalt</defName>
+		<defName>Mashed_Ashlands_Tile_TotemicBasalt</defName>
 		<label>totemic basalt tile</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>20</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_Tile_MorbidBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_MorbidBasaltScorched]==========-->
 	<TerrainDef ParentName="MorbidStoneTile">
-		<defName>MorrowRim_Tile_MorbidBasaltScorched</defName>
+		<defName>Mashed_Ashlands_Tile_MorbidBasaltScorched</defName>
 		<label>morbid scorched basalt tile</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_Tile_SpikecoreBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_SpikecoreBasaltScorched]==========-->
 	<TerrainDef ParentName="SpikecoreStoneTile">
-		<defName>MorrowRim_Tile_SpikecoreBasaltScorched</defName>
+		<defName>Mashed_Ashlands_Tile_SpikecoreBasaltScorched</defName>
 		<label>scorched basalt spikecore tile</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_Tile_TotemicBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_Tile_TotemicBasaltScorched]==========-->
 	<TerrainDef ParentName="TotemicStoneTile">
-		<defName>MorrowRim_Tile_TotemicBasaltScorched</defName>
+		<defName>Mashed_Ashlands_Tile_TotemicBasaltScorched</defName>
 		<label>totemic scorched basalt tile</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

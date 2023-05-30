@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanoDormant]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanoDormant]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_VolcanoDormant</defName>
+		<defName>Mashed_Ashlands_VolcanoDormant</defName>
 		<order>111</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoDormant"/>
 	</WorldGenStepDef>
-	<!-- ==========[MorrowRim_VolcanoActive]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanoActive]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_VolcanoActive</defName>
+		<defName>Mashed_Ashlands_VolcanoActive</defName>
 		<order>112</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoActive"/>
 	</WorldGenStepDef>
-	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanoBlighted]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_VolcanoBlighted</defName>
+		<defName>Mashed_Ashlands_VolcanoBlighted</defName>
 		<order>113</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoBlighted"/>
 	</WorldGenStepDef>
-	<!-- ==========[MorrowRim_VolcanoExtinct]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanoExtinct]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_VolcanoExtinct</defName>
+		<defName>Mashed_Ashlands_VolcanoExtinct</defName>
 		<order>114</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_VolcanoExtinct"/>
 	</WorldGenStepDef>
-	<!-- ==========[MorrowRim_AshlandBiomesEarly]==========-->
+	<!-- ==========[Mashed_Ashlands_AshlandBiomesEarly]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_AshlandBiomesEarly</defName>
+		<defName>Mashed_Ashlands_AshlandBiomesEarly</defName>
 		<order>115</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_AshlandBiomesEarly"/>
 	</WorldGenStepDef>
-	<!-- ==========[MorrowRim_AshlandBiomesLate]==========-->
+	<!-- ==========[Mashed_Ashlands_AshlandBiomesLate]==========-->
 	<WorldGenStepDef>
-		<defName>MorrowRim_AshlandBiomesLate</defName>
+		<defName>Mashed_Ashlands_AshlandBiomesLate</defName>
 		<order>116</order>
 		<worldGenStep Class="MorrowRim2.WorldGenStep_AshlandBiomesLate"/>
 	</WorldGenStepDef>

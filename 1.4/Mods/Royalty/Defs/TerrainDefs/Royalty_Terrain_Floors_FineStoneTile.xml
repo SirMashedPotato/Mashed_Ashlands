@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_FineTileBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_FineTileBasalt]==========-->
 	<TerrainDef ParentName="FineTileStoneBase">
-		<defName>MorrowRim_FineTileBasalt</defName>
+		<defName>Mashed_Ashlands_FineTileBasalt</defName>
 		<label>fine basalt tile</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>20</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_FineTileBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_FineTileBasaltScorched]==========-->
 	<TerrainDef ParentName="FineTileStoneBase">
-		<defName>MorrowRim_FineTileBasaltScorched</defName>
+		<defName>Mashed_Ashlands_FineTileBasaltScorched</defName>
 		<label>fine scorched basalt tile</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

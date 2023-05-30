@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshCastle]==========-->
+	<!-- ==========[Mashed_Ashlands_AshCastle]==========-->
 	<ThingDef ParentName="BuildingBase">
-		<defName>MorrowRim_AshCastle</defName>
+		<defName>Mashed_Ashlands_AshCastle</defName>
 		<label>ashcano</label>
 		<description>A pile of ash, shaped into a small volcano. People make these for the fun of it.</description>
 		<thingClass>Building</thingClass>
@@ -13,7 +13,7 @@
 		<useHitPoints>true</useHitPoints>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
-			<texPath>Things/Building/Art/MorrowRim_AshCastle</texPath>
+			<texPath>Things/Building/Art/Mashed_Ashlands_AshCastle</texPath>
 		</graphicData>
 		<fillPercent>0.35</fillPercent>
 		<rotatable>false</rotatable>

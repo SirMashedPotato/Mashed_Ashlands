@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanicDebrisIncoming]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisIncoming]==========-->
 	<ThingDef ParentName="SkyfallerBase">
-		<defName>MorrowRim_VolcanicDebrisIncoming</defName>
+		<defName>Mashed_Ashlands_VolcanicDebrisIncoming</defName>
 		<label>volcanic debris (incoming)</label>
 		<size>(2, 2)</size>
 		<graphicData>

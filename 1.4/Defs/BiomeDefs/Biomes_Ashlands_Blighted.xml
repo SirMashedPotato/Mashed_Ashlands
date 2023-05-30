@@ -1,55 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_AshlandsBlightedBase" Name="MorrowRim_BlightedAshlandsBase">
-		<defName>MorrowRim_BlightedAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase" Name="Mashed_Ashlands_BlightedAshlandsBase">
+		<defName>Mashed_Ashlands_BlightedAshlands</defName>
 		<label>blighted ashlands</label>
 		<description>Once a thriving ashlands, the landscape has been devastated by a nearby blighted volcano, leaving an inhospitable wasteland behind. The sky is almost permanently covered in a thick cloud of ash. Few animals and plants are capable of living here, with the waters being completely devoid of life. Unless you enjoy eating scathecraw, food will be difficult to obtain.</description>
 		<workerClass>MorrowRim2.BiomeWorker_BlightedAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_BlightedAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_BlightedAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>false</increasePollutedFertility>
-				<forcedRockType>MorrowRim_Basalt</forcedRockType>
+				<forcedRockType>Mashed_Ashlands_Basalt</forcedRockType>
 				<terrainReplacers>
 					<li>
 						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>MorrowRim_AshSandBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterMovingShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_CrackedAshSoilBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterMovingChestDeep</originalTerrain>
-						<replacedTerrain>MorrowRim_CrackedAshSoilBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
 					</li>
 				</terrainReplacers>
 				<roadReplacers>
 					<li>
 						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>MorrowRim_PackedAshBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_PackedAshBlighted</replacedTerrain>
 					</li>
 				</roadReplacers>
 				<dryToReplacers>
 					<li>
 						<originalTerrain>WaterShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterOceanShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 				</dryToReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>MorrowRim_AshGravel</otherTerrainDef>
+				<otherTerrainDef>Mashed_Ashlands_AshGravel</otherTerrainDef>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.9</waterThreshold>
@@ -59,12 +59,12 @@
 		<plantDensity>0.03</plantDensity>
 		<terrainsByFertility>
 			<li>
-				<terrain>MorrowRim_AshSoilBlighted</terrain>
+				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>
 				<min>-999</min>
 				<max>0.87</max>
 			</li>
 			<li>
-				<terrain>MorrowRim_AshGravelBlighted</terrain>
+				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
 				<min>0.87</min>
 				<max>999</max>
 			</li>
@@ -74,12 +74,12 @@
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>MorrowRim_AshGravelBlighted</terrain>
+						<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
 						<min>0.68</min>
 						<max>0.76</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_CrackedAshSoilBlighted</terrain>
+						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
 						<min>0.76</min>
 						<max>99</max>
 					</li>
@@ -93,8 +93,8 @@
 			<Rain>0.1</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
 			<!-- MorrowRim weather -->
-			<MorrowRim_Ashfall>4</MorrowRim_Ashfall>
-			<MorrowRim_FoggyAshfall>2</MorrowRim_FoggyAshfall>
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">0.3</RG_Drizzle>
 			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
@@ -102,42 +102,42 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
-			<MorrowRim_Plant_AshlandGrass>0.2</MorrowRim_Plant_AshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandGrass>0.2</Mashed_Ashlands_Plant_AshlandGrass>
 			<!-- Nutrition plants -->
-			<MorrowRim_Plant_Scathecraw>0.2</MorrowRim_Plant_Scathecraw>
-			<MorrowRim_Plant_Bittergreen>0.1</MorrowRim_Plant_Bittergreen>
+			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_Bittergreen>0.1</Mashed_Ashlands_Plant_Bittergreen>
 			<!-- Resource plants -->
-			<MorrowRim_Plant_TramaShrub>0.5</MorrowRim_Plant_TramaShrub>
+			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<!-- Trees -->
-			<MorrowRim_BurnedParasolStumpPermanent>0.1</MorrowRim_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.1</Mashed_Ashlands_BurnedParasolStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<!-- Polluted nutrition plants -->
-			<MorrowRim_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingScathecraw>
+			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
 			<!-- Polluted resource plants -->
-			<MorrowRim_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">1</MorrowRim_Plant_TramaMass>
+			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_Plant_TramaMass>
 			<!-- Polluted trees -->
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
 			<Rat>0.6</Rat>
-			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
+			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<!-- herd animals -->
-			<MorrowRim_Shalk>0.3</MorrowRim_Shalk>
-			<MorrowRim_Netch>0.2</MorrowRim_Netch>
-			<MorrowRim_Guar>0.2</MorrowRim_Guar>
+			<Mashed_Ashlands_Shalk>0.3</Mashed_Ashlands_Shalk>
+			<Mashed_Ashlands_Netch>0.2</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Guar>0.2</Mashed_Ashlands_Guar>
 			<!-- predators -->
-			<MorrowRim_Kagouti>0.1</MorrowRim_Kagouti>
-			<MorrowRim_Alit>0.1</MorrowRim_Alit>
-			<MorrowRim_CliffRacer>0.4</MorrowRim_CliffRacer>
+			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
+			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
-			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_NetchGlowing>
-			<MorrowRim_CliffRacer>0.4</MorrowRim_CliffRacer>
+			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NetchGlowing>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

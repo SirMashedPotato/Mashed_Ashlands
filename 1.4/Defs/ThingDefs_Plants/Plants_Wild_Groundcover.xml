@@ -1,60 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_AshlandGrass]==========-->
-	<ThingDef ParentName="MorrowRim_GrassBase">
-		<defName>MorrowRim_Plant_AshlandGrass</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandGrass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
+		<defName>Mashed_Ashlands_Plant_AshlandGrass</defName>
 		<label>ashland grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/MorrowRim_AshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>170</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_AshlandDuneGrass]==========-->
-	<ThingDef ParentName="MorrowRim_GrassBase">
-		<defName>MorrowRim_Plant_AshlandDuneGrass</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
+		<defName>Mashed_Ashlands_Plant_AshlandDuneGrass</defName>
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshSand</li>
-					<li>MorrowRim_AshSandVolcanic</li>
+					<li>Mashed_Ashlands_AshSand</li>
+					<li>Mashed_Ashlands_AshSandVolcanic</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/MorrowRim_AshlandDuneGrass</texPath>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowTags Inherit="False"/>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_AshlandFungus]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_AshlandFungus</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_AshlandFungus</defName>
 		<label>ashland fungus</label>
 		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
@@ -62,24 +62,24 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_AshlandFungus</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>2.5</growDays>
 			<maxMeshCount>9</maxMeshCount>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>170</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Ashreed]==========-->
-	<ThingDef Name="MorrowRim_Plant_AshreedBase" ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_Ashreed</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Ashreed]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_AshreedBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Ashreed</defName>
 		<label>ashreed</label>
 		<description>A species of wild grass adapted for life in the ashlands. Often found growing near sources of water.</description>
 		<modExtensions>
@@ -93,10 +93,10 @@
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.5</Nutrition>
 			<Flammability>1.0</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/MorrowRim_Ashreed</texPath>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>
@@ -113,18 +113,18 @@
 			<sowTags Inherit="False"/>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_BlueEntoloma]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_BlueEntoloma</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_BlueEntoloma]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_BlueEntoloma</defName>
 		<label>blue entoloma</label>
 		<description>A small mushroom commonly found growing in densely forested ashland regions. Many enjoy the sight of its brilliant blue colouration.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_MossyAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
 				</allowedTerrainForWild>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -133,20 +133,20 @@
 			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_BlueEntoloma</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_BlueEntoloma</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_DraggleTails]==========-->
-	<ThingDef Name="MorrowRim_Plant_DraggleTailsBase" ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_DraggleTails</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_DraggleTails]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_DraggleTailsBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_DraggleTails</defName>
 		<label>draggle-tails</label>
 		<description>A primitive flowering plant, only found growing in humid ashland regions. They emit a faint glow, often used by explorers to aide in navigating the treacherous marshes at night.</description>
 		<modExtensions>
@@ -163,10 +163,10 @@
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.05</Nutrition>
 			<Flammability>1.0</Flammability>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/MorrowRim_DraggleTails</texPath>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_DraggleTails</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>
@@ -190,19 +190,19 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_InkCap]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_InkCap</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_InkCap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_InkCap</defName>
 		<label>ink-cap</label>
 		<description>A small mushroom commonly found growing in humid ashland regions. The intense red colouration of the cap serves as a warning for anyone that would try to consume it.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshGravel</li>
-					<li>MorrowRim_AshSoil</li>
+					<li>Mashed_Ashlands_AshGravel</li>
+					<li>Mashed_Ashlands_AshSoil</li>
 				</allowedTerrainForWild>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -211,20 +211,20 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_InkCap</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_InkCap</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
 			<visualSizeRange>0.15~0.35</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_LuminousRussula]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_LuminousRussula</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_LuminousRussula]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_LuminousRussula</defName>
 		<label>luminous russula</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
@@ -232,7 +232,7 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -241,13 +241,13 @@
 			<BeautyOutdoors>4</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_LuminousRussula</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_LuminousRussula</texPath>
 		</graphicData>
 		<plant>
 			<growDays>4.6</growDays>
 			<visualSizeRange>0.15~0.35</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
@@ -258,9 +258,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_VioletCoprinus]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_VioletCoprinus</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_VioletCoprinus</defName>
 		<label>violet coprinus</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
@@ -268,7 +268,7 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -277,13 +277,13 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_VioletCoprinus</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_VioletCoprinus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3.8</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>

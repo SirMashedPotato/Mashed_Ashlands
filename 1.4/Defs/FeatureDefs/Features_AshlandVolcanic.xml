@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanicAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanicAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_VolcanicAshlands</defName>
+		<defName>Mashed_Ashlands_VolcanicAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>451</order>
 		<rootBiomes>
-			<li>MorrowRim_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
-			<li>MorrowRim_VolcanicCoralCoastAshlands</li>
-			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</acceptableBiomes>
-		<nameMaker>MorrowRim_NamerVolcanicAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_VolcanicSulphurPitsAshlandss]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanicSulphurPitsAshlandss]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_VolcanicSulphurPitsAshlandss</defName>
+		<defName>Mashed_Ashlands_VolcanicSulphurPitsAshlandss</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<minSize>10</minSize>
 		<rootBiomes>
-			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerVolcanicSulphurPitsAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

@@ -10,14 +10,14 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ATR_BaseMechanicalPawn"]/statBases</xpath>
 					<value>
-						<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
 				<!-- 'Animals' -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[@Name="ATR_MechanicalAnimalThingBase"]/statBases</xpath>
 					<value>
-						<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">

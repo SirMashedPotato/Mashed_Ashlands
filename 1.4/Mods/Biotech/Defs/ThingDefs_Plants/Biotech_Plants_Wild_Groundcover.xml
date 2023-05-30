@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_GlowingAshreed]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_AshreedBase">
-		<defName>MorrowRim_Plant_GlowingAshreed</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingAshreed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshreedBase">
+		<defName>Mashed_Ashlands_Plant_GlowingAshreed</defName>
 		<label>glowing ashreed</label>
 		<description>A mutated species of wild grass adapted for life in polluted ashland regions. Often found growing near sources of polluted water.</description>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingAshreed</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingAshreed</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -20,13 +20,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GlowingDraggleTails]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_DraggleTailsBase">
-		<defName>MorrowRim_Plant_GlowingDraggleTails</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingDraggleTails]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_DraggleTailsBase">
+		<defName>Mashed_Ashlands_Plant_GlowingDraggleTails</defName>
 		<label>glowing draggle-tails</label>
 		<description>A mutated species of the common draggle-tails, adapted for life in highly polluted ashland regions. They produce an ominous glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingDraggleTails</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingDraggleTails</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -40,9 +40,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GlowingRussula]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_GlowingRussula</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingRussula]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_GlowingRussula</defName>
 		<label>glowing russula</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
@@ -50,7 +50,7 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -62,7 +62,7 @@
 			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingRussula</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingRussula</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
@@ -79,7 +79,7 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
@@ -90,9 +90,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GlowingCoprinus]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_GlowingCoprinus</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_GlowingCoprinus</defName>
 		<label>glowing coprinus</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
@@ -100,7 +100,7 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
@@ -112,7 +112,7 @@
 			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingCoprinus</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingCoprinus</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<plant>
@@ -129,7 +129,7 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>

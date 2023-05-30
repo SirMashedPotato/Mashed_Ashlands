@@ -7,14 +7,14 @@
 	-->
 	<!--
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SmallSlaughterfishFish</defName>
-		<thingDef>MorrowRim_RawSmallSlaughterfish</thingDef>
+		<defName>Mashed_Ashlands_SmallSlaughterfishFish</defName>
+		<thingDef>Mashed_Ashlands_RawSmallSlaughterfish</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>20</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -35,14 +35,14 @@
 	-->
 	<!--
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SlaughterfishFishLarge</defName>
-		<thingDef>MorrowRim_RawSlaughterfish</thingDef>
+		<defName>Mashed_Ashlands_SlaughterfishFishLarge</defName>
+		<thingDef>Mashed_Ashlands_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>10</baseFishingYield>
 	</VCE_Fishing.FishDef>

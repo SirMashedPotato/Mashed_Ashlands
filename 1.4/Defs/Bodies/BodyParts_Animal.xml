@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_HeadCrest]==========-->
+	<!-- ==========[Mashed_Ashlands_HeadCrest]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_HeadCrest</defName>
+		<defName>Mashed_Ashlands_HeadCrest</defName>
 		<label>head crest</label>
 		<hitPoints>50</hitPoints>
 		<skinCovered>true</skinCovered>
@@ -10,9 +10,9 @@
 		<canSuggestAmputation>false</canSuggestAmputation>
 		<bleedRate>0.5</bleedRate>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_Wing]==========-->
+	<!-- ==========[Mashed_Ashlands_Wing]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_Wing</defName>
+		<defName>Mashed_Ashlands_Wing</defName>
 		<label>wing</label>
 		<frostbiteVulnerability>8</frostbiteVulnerability>
 		<hitPoints>20</hitPoints>
@@ -21,9 +21,9 @@
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_Sail]==========-->
+	<!-- ==========[Mashed_Ashlands_Sail]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_Sail</defName>
+		<defName>Mashed_Ashlands_Sail</defName>
 		<label>sail</label>
 		<frostbiteVulnerability>4</frostbiteVulnerability>
 		<hitPoints>20</hitPoints>

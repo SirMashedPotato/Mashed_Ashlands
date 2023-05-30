@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanoCategoryChange]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanoCategoryChange]==========-->
 	<IncidentDef>
-		<defName>MorrowRim_VolcanoCategoryChange</defName>
+		<defName>Mashed_Ashlands_VolcanoCategoryChange</defName>
 		<label>volcano category chance</label>
 		<category>Misc</category>
 		<targetTags>
@@ -11,7 +11,7 @@
 		<workerClass>MorrowRim2.IncidentWorker_VolcanoCategoryChange</workerClass>
 		<letterLabel>category change ({0})</letterLabel>
 		<letterText>{0}, formerly a category {1} volcano, has been reclassified due to recent changes in volcanic activity, and is now a category {2} volcano.</letterText>
-		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<baseChance>1</baseChance>
 		<minRefireDays>20</minRefireDays>
 	</IncidentDef>

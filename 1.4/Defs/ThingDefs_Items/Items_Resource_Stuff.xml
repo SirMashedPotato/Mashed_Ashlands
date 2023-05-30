@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_ParasolWoodLog]==========-->
+	<!-- ==========[Mashed_Ashlands_ParasolWoodLog]==========-->
 	<ThingDef ParentName="ResourceVerbBase">
-		<defName>MorrowRim_ParasolWoodLog</defName>
+		<defName>Mashed_Ashlands_ParasolWoodLog</defName>
 		<label>parasol wood</label>
 		<description>Wood from a parasol mushroom tree. Useful for building structures and weapons. Softer than regular wood, though comparatively more fire resistant.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/MorrowRim_ParasolWoodLog</texPath>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_ParasolWoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-20</equippedAngleOffset>
@@ -76,9 +76,9 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>
-	<!-- ==========[MorrowRim_KreshCloth]==========-->
+	<!-- ==========[Mashed_Ashlands_KreshCloth]==========-->
 	<ThingDef ParentName="ResourceBase">
-		<defName>MorrowRim_KreshCloth</defName>
+		<defName>Mashed_Ashlands_KreshCloth</defName>
 		<label>kresh cloth</label>
 		<description>Cloth woven from kresh fibers.</description>
 		<graphicData>

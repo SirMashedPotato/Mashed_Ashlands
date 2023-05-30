@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_FlowerBase]==========-->
-	<ThingDef ParentName="PlantBase" Name="MorrowRim_FlowerBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_FlowerBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_FlowerBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -27,16 +27,16 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_BlackAntherflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_BlackAntherflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_BlackAntherflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_BlackAntherflower</defName>
 		<label>black anther flower</label>
 		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_RichAshGravel</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_RichAshGravel</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -45,24 +45,24 @@
 			<BeautyOutdoors>10</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_BlackAntherFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_BlackAntherFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GoldenSedgeflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_GoldenSedgeflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GoldenSedgeflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_GoldenSedgeflower</defName>
 		<label>golden sedge flower</label>
 		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -71,26 +71,26 @@
 			<BeautyOutdoors>15</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_GoldenSedgeFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_GoldenSedgeFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
 			<sowMinSkill>6</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_HornLilyflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_HornLilyflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_HornLilyflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_HornLilyflower</defName>
 		<label>horn lily flower</label>
 		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_MossyAshSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -99,26 +99,26 @@
 			<BeautyOutdoors>20</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_HornLilyFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_HornLilyFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
 			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Nirthflyflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_Nirthflyflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_Nirthflyflower</defName>
 		<label>nirthfly flower</label>
 		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_MossyAshSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -127,26 +127,26 @@
 			<BeautyOutdoors>20</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_NirthflyFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NirthflyFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
 			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_NobleSedgeflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_NobleSedgeflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_NobleSedgeflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_NobleSedgeflower</defName>
 		<label>noble sedge flower</label>
 		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -155,53 +155,53 @@
 			<BeautyOutdoors>15</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_NobleSedgeFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NobleSedgeFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
 			<sowMinSkill>6</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Stoneflower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_Stoneflower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Stoneflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_Stoneflower</defName>
 		<label>stoneflower</label>
 		<description>A blue flower that can often be found growing in stony ash. Though it looks fragile, it is surprisingly resistant to the effects of ash storms.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshGravel</li>
-					<li>MorrowRim_RichAshGravel</li>
-					<li>MorrowRim_GrazelandSoil</li>
+					<li>Mashed_Ashlands_AshGravel</li>
+					<li>Mashed_Ashlands_RichAshGravel</li>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_Stoneflower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_Stoneflower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_WillowFlower]==========-->
-	<ThingDef ParentName="MorrowRim_FlowerBase">
-		<defName>MorrowRim_Plant_WillowFlower</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_WillowFlower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_WillowFlower</defName>
 		<label>willow flower</label>
 		<description>A pink flower that can often be found growing in regions with ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MorrowRim_AshSoil</li>
+					<li>Mashed_Ashlands_AshSoil</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -210,11 +210,11 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/MorrowRim_WillowFlower</texPath>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_WillowFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>

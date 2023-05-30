@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_VolcanicCoralCoastAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+		<defName>Mashed_Ashlands_VolcanicCoralCoastAshlands</defName>
 		<label>volcanic coral coast</label>
 		<description>The volcanic ash that settled here has allowed for the growth of a forest of land coral. Infrequent ashstorms, and large glowing coral trees, make this a rather nice place to settle.</description>
 		<workerClass>MorrowRim2.BiomeWorker_VolcanicCoralCoastAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_VolcanicCoralCoastAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_VolcanicCoralCoastAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
                 <lateLoader>true</lateLoader>

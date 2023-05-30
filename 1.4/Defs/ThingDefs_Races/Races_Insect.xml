@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_InsectBase]========== -->
-	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_InsectThingBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_InsectBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_InsectThingBase" Abstract="True">
 		<modExtensions>
 			<li Class="MorrowRim2.PollutionProperties">
 				<AllowPollutionStimulis>false</AllowPollutionStimulis>
@@ -14,7 +14,7 @@
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<BoneAmount MayRequire="sihv.rombones">0</BoneAmount>

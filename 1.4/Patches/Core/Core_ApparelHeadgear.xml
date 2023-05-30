@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_WarVeil"]/equippedStatOffsets</xpath>
 		<value>
-			<MorrowRim_AshResistance>0.25</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.25</Mashed_Ashlands_AshResistance>
 		</value>
 	</Operation>
 </Patch>

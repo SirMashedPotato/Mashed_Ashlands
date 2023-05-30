@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanoBase]==========-->
-	<WorldObjectDef Name="MorrowRim_VolcanoBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_VolcanoBase]==========-->
+	<WorldObjectDef Name="Mashed_Ashlands_VolcanoBase" Abstract="True">
 		<worldObjectClass>MorrowRim2.Volcano</worldObjectClass>
 		<canHaveFaction>false</canHaveFaction>
 		<inspectorTabs/>
 		<useDynamicDrawer>false</useDynamicDrawer>
 		<expandingIcon>true</expandingIcon>
-		<expandingIconTexture>World/WorldObjects/Expanding/MorrowRim_Volcano</expandingIconTexture>
+		<expandingIconTexture>World/WorldObjects/Expanding/Mashed_Ashlands_Volcano</expandingIconTexture>
 		<expandingIconDrawSize>0.8</expandingIconDrawSize>
 		<neverMultiSelect>true</neverMultiSelect>
 	</WorldObjectDef>
-	<!-- ==========[MorrowRim_VolcanoDormant]==========-->
-	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
-		<defName>MorrowRim_VolcanoDormant</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanoDormant]==========-->
+	<WorldObjectDef ParentName="Mashed_Ashlands_VolcanoBase">
+		<defName>Mashed_Ashlands_VolcanoDormant</defName>
 		<label>dormant volcano</label>
 		<description>A volcano that has not had a major eruption for a long time, though still exhibits occasional volcanic activity. Previous eruptions have created a sizeable area of ashlands around it. Dense forests are largely unable to grow here due to frequent ash storms.</description>
 		<expandingIconColor>155,155,155</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_VolcanoDormant</texture>
+		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoDormant</texture>
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
-				<nameNamer>MorrowRim_NamerVolcanoDormant</nameNamer>
+				<nameNamer>Mashed_Ashlands_NamerVolcanoDormant</nameNamer>
 				<categoryWeights>
 					<li>
 						<category>1</category>
@@ -73,7 +73,7 @@
 						<weight>20</weight>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<duration>10000~60000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>5</weight>
@@ -83,7 +83,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<duration>10000~50000</duration>
 						<gracePeriodAfter>10000~50000</gracePeriodAfter>
 						<weight>3</weight>
@@ -93,7 +93,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_VolcanicDebrisRain</conditionDef>
+						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<duration>6000~9000</duration>
 						<gracePeriodAfter>10000~80000</gracePeriodAfter>
 						<weight>1</weight>
@@ -106,16 +106,16 @@
 			</li>
 		</comps>
 	</WorldObjectDef>
-	<!-- ==========[MorrowRim_VolcanoActive]==========-->
-	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
-		<defName>MorrowRim_VolcanoActive</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanoActive]==========-->
+	<WorldObjectDef ParentName="Mashed_Ashlands_VolcanoBase">
+		<defName>Mashed_Ashlands_VolcanoActive</defName>
 		<label>active volcano</label>
 		<description>A highly active volcano, frequently releasing intense clouds of scalding ash. While much of the surrounding region is incredibly fertile, life here struggles due to the constant volcanic activity.</description>
 		<expandingIconColor>255,100,100</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_VolcanoActive</texture>
+		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoActive</texture>
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
-				<nameNamer>MorrowRim_NamerVolcanoActive</nameNamer>
+				<nameNamer>Mashed_Ashlands_NamerVolcanoActive</nameNamer>
 				<categoryWeights>
 					<li>
 						<category>1</category>
@@ -160,7 +160,7 @@
 				</categoryWeights>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>MorrowRim_VolcanicHeat</conditionDef>
+				<conditionDef>Mashed_Ashlands_VolcanicHeat</conditionDef>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
@@ -171,7 +171,7 @@
 						<weight>15</weight>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<duration>10000~90000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>5</weight>
@@ -181,7 +181,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_AshStorm_Metallic</conditionDef>
+						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
 						<duration>10000~90000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>3</weight>
@@ -191,7 +191,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<duration>20000~100000</duration>
 						<gracePeriodAfter>10000~50000</gracePeriodAfter>
 						<weight>5</weight>
@@ -201,7 +201,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_VolcanicHeatIntense</conditionDef>
+						<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
 						<duration>10000~100000</duration>
 						<gracePeriodAfter>60000~200000</gracePeriodAfter>
 						<weight>3</weight>
@@ -211,7 +211,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_VolcanicDebrisRain</conditionDef>
+						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<duration>1000~2500</duration>
 						<gracePeriodAfter>100000~150000</gracePeriodAfter>
 						<weight>3</weight>
@@ -224,16 +224,16 @@
 			</li>
 		</comps>
 	</WorldObjectDef>
-	<!-- ==========[MorrowRim_VolcanoBlighted]==========-->
-	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
-		<defName>MorrowRim_VolcanoBlighted</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanoBlighted]==========-->
+	<WorldObjectDef ParentName="Mashed_Ashlands_VolcanoBase">
+		<defName>Mashed_Ashlands_VolcanoBlighted</defName>
 		<label>blighted volcano</label>
 		<description>An active volcano that is releasing a near constant cloud of blighted ash. The surrounding region is nothing more than a bleak wasteland.</description>
 		<expandingIconColor>55,55,55</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_VolcanoBlighted</texture>
+		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoBlighted</texture>
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
-				<nameNamer>MorrowRim_NamerVolcanoBlighted</nameNamer>
+				<nameNamer>Mashed_Ashlands_NamerVolcanoBlighted</nameNamer>
 				<categoryWeights>
 					<li>
 						<category>1</category>
@@ -278,7 +278,7 @@
 				</categoryWeights>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>MorrowRim_DenseAshClouds</conditionDef>
+				<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 			</li>
 			<li Class="MorrowRim2.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
@@ -289,7 +289,7 @@
 						<weight>15</weight>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_AshStorm</conditionDef>
+						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<duration>10000~60000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>4</weight>
@@ -299,7 +299,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_AshStorm_Blighted</conditionDef>
+						<conditionDef>Mashed_Ashlands_AshStorm_Blighted</conditionDef>
 						<duration>5000~40000</duration>
 						<gracePeriodAfter>50000~100000</gracePeriodAfter>
 						<weight>4</weight>
@@ -309,7 +309,7 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
-						<conditionDef>MorrowRim_VolcanicDebrisRain</conditionDef>
+						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<duration>1000~2500</duration>
 						<gracePeriodAfter>100000~150000</gracePeriodAfter>
 						<weight>2</weight>
@@ -322,17 +322,17 @@
 			</li>
 		</comps>
 	</WorldObjectDef>
-	<!-- ==========[MorrowRim_VolcanoExtinct]==========-->
-	<WorldObjectDef ParentName="MorrowRim_VolcanoBase">
-		<defName>MorrowRim_VolcanoExtinct</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanoExtinct]==========-->
+	<WorldObjectDef ParentName="Mashed_Ashlands_VolcanoBase">
+		<defName>Mashed_Ashlands_VolcanoExtinct</defName>
 		<label>extinct volcano</label>
 		<description>A volcano that has been dormant for a considerable amount of time. Plant life in the surrounding region is able to thrive due to the lack of ash storms.</description>
 		<expandingIconColor>100,155,100</expandingIconColor>
-		<texture>World/WorldObjects/MorrowRim_VolcanoExtinct</texture>
+		<texture>World/WorldObjects/Mashed_Ashlands_VolcanoExtinct</texture>
 		<comps>
 			<li Class="MorrowRim2.WorldObjectCompProperties_VolcanoDetails">
 				<extinct>true</extinct>
-				<nameNamer>MorrowRim_NamerVolcanoExtinct</nameNamer>
+				<nameNamer>Mashed_Ashlands_NamerVolcanoExtinct</nameNamer>
 				<categoryWeights>
 					<li>
 						<category>1</category>

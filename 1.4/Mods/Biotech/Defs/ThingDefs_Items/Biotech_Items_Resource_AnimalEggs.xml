@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Egg_CoralcrabFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_CoralcrabGlowingFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_CoralcrabGlowingFertilized</defName>
 		<label>glowing coralcrab egg (fert.)</label>
 		<description>A fertilised glowing coralcrab egg. If all goes well, it should hatch into a baby coralcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -16,17 +16,17 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_CoralcrabGlowing</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_CoralcrabGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NetchGlowingFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_NetchGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_NetchGlowingFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_NetchGlowingFertilized</defName>
 		<label>glowing netch egg (fert.)</label>
 		<description>A fertilised glowing netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As glowing netch are rather protective of their eggs, glowing netch eggs somewhat valuable.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
 			<color>(125,173,102)</color>
 		</graphicData>
 		<statBases>
@@ -35,13 +35,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NetchGlowing</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NetchGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NixHoundGlowingFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_NixHoundGlowingFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_NixHoundGlowingFertilized</defName>
 		<label>glowing nix-hound egg (fert.)</label>
 		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -55,13 +55,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NixHoundGlowing</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NixHoundGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NixOxGlowingFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_NixOxGlowingFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxGlowingFertilized</defName>
 		<label>glowing nix-ox egg (fert.)</label>
 		<description>A fertilised glowing nix-ox egg. If all goes well, it should hatch into a nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -74,13 +74,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NixOxGlowing</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NixOxGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_ShalkGlowingFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_ShalkGlowingFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkGlowingFertilized</defName>
 		<label>glowing shalk egg (fert.)</label>
 		<description>A fertilised glowing shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -93,7 +93,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_ShalkGlowing</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_ShalkGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

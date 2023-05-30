@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_CnidarianShell]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianShell]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianShell</defName>
+		<defName>Mashed_Ashlands_CnidarianShell</defName>
 		<label>shell</label>
 		<hitPoints>50</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -11,9 +11,9 @@
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_CnidarianGastricCavity]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianGastricCavity]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianGastricCavity</defName>
+		<defName>Mashed_Ashlands_CnidarianGastricCavity</defName>
 		<label>gastric cavity</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>false</skinCovered>
@@ -21,18 +21,18 @@
 			<li>MetabolismSource</li>
 		</tags>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_CnidarianUnderbelly]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianUnderbelly]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianUnderbelly</defName>
+		<defName>Mashed_Ashlands_CnidarianUnderbelly</defName>
 		<label>underbelly</label>
 		<hitPoints>20</hitPoints>
 		<tags>
 			<li>BreathingSource</li>
 		</tags>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_CnidarianSensoryOrgan]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianSensoryOrgan]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianSensoryOrgan</defName>
+		<defName>Mashed_Ashlands_CnidarianSensoryOrgan</defName>
 		<label>sensory organ</label>
 		<hitPoints>10</hitPoints>
 		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
@@ -42,9 +42,9 @@
 			<li>SightSource</li>
 		</tags>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_CnidarianTentacle]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianTentacle]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianTentacle</defName>
+		<defName>Mashed_Ashlands_CnidarianTentacle</defName>
 		<label>tentacle</label>
 		<frostbiteVulnerability>10</frostbiteVulnerability>
 		<hitPoints>20</hitPoints>
@@ -52,9 +52,9 @@
 			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
-	<!-- ==========[MorrowRim_CnidarianLevitationSac]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianLevitationSac]==========-->
 	<BodyPartDef>
-		<defName>MorrowRim_CnidarianLevitationSac</defName>
+		<defName>Mashed_Ashlands_CnidarianLevitationSac</defName>
 		<label>levitation sac</label>
 		<hitPoints>20</hitPoints>
 		<delicate>true</delicate>

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_CrabThingBase]========== -->
-	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_CrabThingBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_CrabThingBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_CrabThingBase" Abstract="True">
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MoveSpeed>2.8</MoveSpeed>
@@ -30,10 +30,10 @@
 			</li>
 		</tools>
 		<race>
-			<fleshType>MorrowRim_FleshCrab</fleshType>
-			<bloodDef>MorrowRim_Filth_CrabBlood</bloodDef>
-			<specificMeatDef>MorrowRim_CrabMeat</specificMeatDef>
-			<body>MorrowRim_CrabLike</body>
+			<fleshType>Mashed_Ashlands_FleshCrab</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_CrabBlood</bloodDef>
+			<specificMeatDef>Mashed_Ashlands_CrabMeat</specificMeatDef>
+			<body>Mashed_Ashlands_CrabLike</body>
 			<baseBodySize>0.35</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -67,20 +67,20 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>MorrowRim_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Mudcrab]========== -->
-	<ThingDef ParentName="MorrowRim_CrabThingBase">
-		<defName>MorrowRim_Mudcrab</defName>
+	<!-- ==========[Mashed_Ashlands_Mudcrab]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_Mudcrab</defName>
 		<label>ashland mudcrab</label>
 		<description>A large crab often found around water, especially in swampier regions. While not particularly dangerous, unless someone mistakes it for a rock, the ashland mudcrab are is a vector for swamp fever, a disease that drains strength.</description>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_SwampFever</HediffDef>
+			<HediffDef>Mashed_Ashlands_SwampFever</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_MudcrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_MudcrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -92,7 +92,7 @@
 				<label>pincers</label>
 				<capacities>
 					<li>Bite</li>
-					<li>MorrowRim_SwampBite</li>
+					<li>Mashed_Ashlands_SwampBite</li>
 				</capacities>
 				<power>5</power>
 				<cooldownTime>2</cooldownTime>
@@ -101,9 +101,9 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_Mudcrab</defName>
+		<defName>Mashed_Ashlands_Mudcrab</defName>
 		<label>ashland mudcrab</label>
-		<race>MorrowRim_Mudcrab</race>
+		<race>Mashed_Ashlands_Mudcrab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
@@ -111,27 +111,27 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Mudcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Mudcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Mudcrab</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
@@ -139,20 +139,20 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Mudcrab/MorrowRim_Dessicated_Mudcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Coralcrab]========== -->
-	<ThingDef ParentName="MorrowRim_CrabThingBase">
-		<defName>MorrowRim_Coralcrab</defName>
+	<!-- ==========[Mashed_Ashlands_Coralcrab]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_Coralcrab</defName>
 		<label>ashland coralcrab</label>
 		<description>A subspecies of the common ashland mudcrab that lives in coastal ashland regions. They have developed a symbiotic relationship with the land coral that can be found growing in these regions. The crab protects the coral from being eaten, whilst the coral help the crab blend into the surroundings.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_CoralcrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_CoralcrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -176,9 +176,9 @@
 		</race>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_Coralcrab</defName>
+		<defName>Mashed_Ashlands_Coralcrab</defName>
 		<label>ashland coralcrab</label>
-		<race>MorrowRim_Coralcrab</race>
+		<race>Mashed_Ashlands_Coralcrab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
@@ -186,27 +186,27 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Coralcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Coralcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Coralcrab</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
@@ -214,15 +214,15 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_SandcrabBlue]========== -->
-	<ThingDef ParentName="MorrowRim_CrabThingBase">
-		<defName>MorrowRim_SandcrabBlue</defName>
+	<!-- ==========[Mashed_Ashlands_SandcrabBlue]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_SandcrabBlue</defName>
 		<label>blue sandcrab</label>
 		<description>A relatively small species of crab, often found along the coast in ashland regions.</description>
 		<modExtensions>
@@ -232,7 +232,7 @@
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_SandcrabBlueFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_SandcrabBlueFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -259,9 +259,9 @@
 		</race>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_SandcrabBlue</defName>
+		<defName>Mashed_Ashlands_SandcrabBlue</defName>
 		<label>blue sandcrab</label>
-		<race>MorrowRim_SandcrabBlue</race>
+		<race>Mashed_Ashlands_SandcrabBlue</race>
 		<combatPower>20</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
@@ -269,27 +269,27 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabBlue</texPath>
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabBlue</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_SandcrabBlue</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabBlue</texPath>
 					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
@@ -297,7 +297,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Sandcrab/MorrowRim_Dessicated_Sandcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

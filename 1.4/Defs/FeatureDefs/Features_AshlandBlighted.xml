@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BlightedAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_BlightedAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_BlightedAshlands</defName>
+		<defName>Mashed_Ashlands_BlightedAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>451</order>
 		<rootBiomes>
-			<li>MorrowRim_BlightedAshlands</li>
-			<li>MorrowRim_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
 		</acceptableBiomes>
-		<nameMaker>MorrowRim_NamerBlightedAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerBlightedAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_BlightedBogAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_BlightedBogAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_BlightedBogAshlands</defName>
+		<defName>Mashed_Ashlands_BlightedBogAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<minSize>10</minSize>
 		<rootBiomes>
-			<li>MorrowRim_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerBlightedBogAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerBlightedBogAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

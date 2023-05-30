@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AteRawMuck]==========-->
+	<!-- ==========[Mashed_Ashlands_AteRawMuck]==========-->
 	<ThoughtDef>
-		<defName>MorrowRim_AteRawMuck</defName>
+		<defName>Mashed_Ashlands_AteRawMuck</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -13,9 +13,9 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	<!-- ==========[MorrowRim_AteNixOxMilk]==========-->
+	<!-- ==========[Mashed_Ashlands_AteNixOxMilk]==========-->
 	<ThoughtDef>
-		<defName>MorrowRim_AteNixOxMilk</defName>
+		<defName>Mashed_Ashlands_AteNixOxMilk</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -26,9 +26,9 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	<!-- ==========[MorrowRim_AteInsectEggDirect]==========-->
+	<!-- ==========[Mashed_Ashlands_AteInsectEggDirect]==========-->
 	<ThoughtDef>
-		<defName>MorrowRim_AteInsectEggDirect</defName>
+		<defName>Mashed_Ashlands_AteInsectEggDirect</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -39,9 +39,9 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	<!-- ==========[MorrowRim_AteInsectEggAsIngredient]==========-->
+	<!-- ==========[Mashed_Ashlands_AteInsectEggAsIngredient]==========-->
 	<ThoughtDef>
-		<defName>MorrowRim_AteInsectEggAsIngredient</defName>
+		<defName>Mashed_Ashlands_AteInsectEggAsIngredient</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>

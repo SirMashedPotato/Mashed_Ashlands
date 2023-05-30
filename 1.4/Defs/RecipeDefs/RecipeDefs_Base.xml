@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_RefineBase]==========-->
-	<RecipeDef Name="MorrowRim_RefineBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_RefineBase]==========-->
+	<RecipeDef Name="Mashed_Ashlands_RefineBase" Abstract="True">
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>

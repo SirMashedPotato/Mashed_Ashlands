@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Alit]========== -->
+	<!-- ==========[Mashed_Ashlands_Alit]========== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_Alit</defName>
+		<defName>Mashed_Ashlands_Alit</defName>
 		<label>alit</label>
 		<description>A large bipedal reptile native to ashland regions, closely related to the kagouti and guar. Tough scales, powerful legs, and a menacing bacteria-filled maw, make alit dangerous beasts to face in combat. Even then, alit prefer going after prey that won't fight back, and occasionally dig around in the ash for corkbulb roots.\n\nThose foolish enough to tame one, and lucky enough to succeed, will quickly find out that alit aren't exactly intelligent.</description>
 		<statBases>
 			<ToxicResistance>0.6</ToxicResistance>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>700</MarketValue>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -58,13 +58,13 @@
 		</tools>
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>MorrowRim_RawCorkbulbRoot</customThingToDig>
+				<customThingToDig>Mashed_Ashlands_RawCorkbulbRoot</customThingToDig>
 				<customAmountToDig>10</customAmountToDig>
 				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
 				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_AlitFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_AlitFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -75,12 +75,12 @@
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>1.8</maxPreyBodySize>
-			<body>MorrowRim_BipedalWithNoArms</body>
+			<body>Mashed_Ashlands_BipedalWithNoArms</body>
 			<baseHungerRate>0.45</baseHungerRate>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<leatherDef>MorrowRim_HeavyScaledLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
@@ -112,14 +112,14 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
-			<li>MorrowRim_AshlandAnimalUncommon</li>
-			<li>MorrowRim_AshlandAnimalFighter</li>
+			<li>Mashed_Ashlands_AshlandAnimalUncommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_Alit" ParentName="AnimalKindBase">
-		<defName>MorrowRim_Alit</defName>
+	<PawnKindDef Name="Mashed_Ashlands_Alit" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Alit</defName>
 		<label>alit</label>
-		<race>MorrowRim_Alit</race>
+		<race>Mashed_Ashlands_Alit</race>
 		<combatPower>220</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
@@ -127,7 +127,7 @@
 			<li>
 				<label>alit whelp</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Alit</texPath>
 					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -135,13 +135,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Dessicated_Alit</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Alit</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -149,13 +149,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Dessicated_Alit</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Alit</texPath>
 					<drawSize>2.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -163,19 +163,19 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Alit/MorrowRim_Dessicated_Alit</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Alit/Mashed_Ashlands_Dessicated_Alit</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_BantamGuar]========== -->
+	<!-- ==========[Mashed_Ashlands_BantamGuar]========== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_BantamGuar</defName>
+		<defName>Mashed_Ashlands_BantamGuar</defName>
 		<label>bantam guar</label>
 		<description>A small reptile native to ashland regions. Even though its name may fool some, the bantam guar is actually more closely related to the cliff racer, and even retains vestigial wings.\n\nWhile rather wild compared to the chicken, bantam guar are often farmed for their eggs by those that inhabit the ashlands, as chickens tend to not survive ash storms. When taming a bantam guar, one must be careful not to anger it, especially if it's part of a group.</description>
 		<statBases>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>2.1</MoveSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -213,8 +213,8 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>MorrowRim_Egg_BantamGuarUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>MorrowRim_Egg_BantamGuarFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_BantamGuarUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_BantamGuarFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -222,7 +222,7 @@
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>MorrowRim_BipedalWithNoArms</body>
+			<body>Mashed_Ashlands_BipedalWithNoArms</body>
 			<baseBodySize>0.35</baseBodySize>
 			<baseHealthScale>0.6</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
@@ -271,14 +271,14 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 			<li>AnimalFarm</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_BantamGuar</defName>
+		<defName>Mashed_Ashlands_BantamGuar</defName>
 		<label>bantam guar</label>
-		<race>MorrowRim_BantamGuar</race>
+		<race>Mashed_Ashlands_BantamGuar</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
@@ -313,31 +313,31 @@
 			<li>
 				<label>bantam guar whelp</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_BantamGuar</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(251,230,184)</color>
 					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_Dessicated_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_Dessicated_BantamGuar</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_BantamGuar</texPath>
 					<drawSize>0.75</drawSize>
 					<color>(251,230,184)</color>
 					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_Dessicated_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_Dessicated_BantamGuar</texPath>
 					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_BantamGuar</texPath>
 					<drawSize>0.87</drawSize>
 					<color>(251,230,184)</color>
 					<shaderType>CutoutComplex</shaderType>
@@ -347,15 +347,15 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_BantamGuar/MorrowRim_Dessicated_BantamGuar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_BantamGuar/Mashed_Ashlands_Dessicated_BantamGuar</texPath>
 					<drawSize>0.87</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_CliffRacer]========== -->
+	<!-- ==========[Mashed_Ashlands_CliffRacer]========== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_CliffRacer</defName>
+		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<label>cliff racer</label>
 		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.</description>
 		<statBases>
@@ -364,7 +364,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<FilthRate>0</FilthRate>
 		</statBases>
 		<tools>
@@ -404,7 +404,7 @@
 				</capacities>
 				<power>7</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>MorrowRim_TailAttackTool</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Mashed_Ashlands_TailAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
@@ -412,8 +412,8 @@
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_CliffRacerFertilized</eggFertilizedDef>
-				<eggUnfertilizedDef>MorrowRim_Egg_CliffRacerFertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_CliffRacerFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_CliffRacerFertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -422,7 +422,7 @@
 		</comps>
 		<race>
 			<!--<deathActionWorkerClass>MorrowRim.DeathActionWorker_CliffRacer</deathActionWorkerClass>-->
-			<body>MorrowRim_FlyingHellSpawn</body>
+			<body>Mashed_Ashlands_FlyingHellSpawn</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>3.3</maxPreyBodySize>
@@ -430,7 +430,7 @@
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<leatherDef>MorrowRim_CliffRacerLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_CliffRacerLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.95</wildness>
@@ -463,30 +463,30 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_CliffRacer" ParentName="AnimalKindBase">
-		<defName>MorrowRim_CliffRacer</defName>
+	<PawnKindDef Name="Mashed_Ashlands_CliffRacer" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<combatPower>60</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<label>cliff racer</label>
 		<labelPlural>cliff racer swarm</labelPlural>
-		<race>MorrowRim_CliffRacer</race>
+		<race>Mashed_Ashlands_CliffRacer</race>
 		<wildGroupSize>1~5</wildGroupSize>
 		<lifeStages>
 			<li>
 				<label>cliff racer spawn</label>
 				<labelPlural>cliff racer spawn</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Netch/MorrowRim_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_CliffRacer</texPath>
 					<drawSize>1.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Netch/MorrowRim_Dessicated_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_CliffRacer</texPath>
 					<drawSize>1.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_CliffRacer</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -494,13 +494,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_Dessicated_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_Dessicated_CliffRacer</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_CliffRacer</texPath>
 					<drawSize>1.95</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -508,21 +508,21 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_CliffRacer/MorrowRim_Dessicated_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_Dessicated_CliffRacer</texPath>
 					<drawSize>1.95</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Durzog]========== -->
+	<!-- ==========[Mashed_Ashlands_Durzog]========== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_Durzog</defName>
+		<defName>Mashed_Ashlands_Durzog</defName>
 		<label>durzog</label>
 		<description>A large six-eyed dog-like reptile, often found in humid ashland regions. Often referred to as 'sludgepuppies' due to their love of bathing in both mud, and raw sewage. Rather intelligent, and surprisingly loyal, durzog are sometimes tamed for use as guard dogs. While rather deadly thanks to their large tusks, durzog are not the most durable creatures.</description>
 		<statBases>
 			<ToxicResistance>0.8</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>4.2</MoveSpeed>
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -564,7 +564,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_DurzogFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_DurzogFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -572,7 +572,7 @@
 			</li>
 		</comps>
 		<race>
-			<body>MorrowRim_QuadrupedWithSixEyes</body>
+			<body>Mashed_Ashlands_QuadrupedWithSixEyes</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
@@ -582,7 +582,7 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.55</wildness>
 			<trainability>Advanced</trainability>
-			<leatherDef>MorrowRim_DurzogLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_DurzogLeather</leatherDef>
 			<lifeExpectancy>19</lifeExpectancy>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
@@ -613,14 +613,14 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalFighter</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_Durzog" ParentName="AnimalKindBase">
-		<defName>MorrowRim_Durzog</defName>
+	<PawnKindDef Name="Mashed_Ashlands_Durzog" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Durzog</defName>
 		<label>durzog</label>
-		<race>MorrowRim_Durzog</race>
+		<race>Mashed_Ashlands_Durzog</race>
 		<combatPower>55</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
@@ -629,33 +629,33 @@
 				<label>durzog pup</label>
 				<labelPlural>durzog pups</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Durzog</texPath>
 					<drawSize>1.0</drawSize>
 					<shadowData>
 						<volume>(0.30, 0.25, 0.20)</volume>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Durzog</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.375, 0.375, 0.375)</volume>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Durzog</texPath>
 					<drawSize>2.0</drawSize>
 					<shadowData>
 						<volume>(0.5, 0.5, 0.4)</volume>
@@ -663,19 +663,19 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Durzog/MorrowRim_Dessicated_Durzog</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Guar]========== -->
-	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_GuarBase">
-		<defName>MorrowRim_Guar</defName>
+	<!-- ==========[Mashed_Ashlands_Guar]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_GuarBase">
+		<defName>Mashed_Ashlands_Guar</defName>
 		<label>guar</label>
 		<description>A large bipedal reptile native to ashland regions, closely related to the alit and kagouti. Unlike its cousins, the guar still retains its arms, though they are rather underdeveloped. Very much like its cousins, the guar will eagerly devour anything it comes across, and can often be found digging in the ground for ash yams and corkbulb roots.\n\nOften farmed for its leather and meat, guar also make for both excellent pack animals, and mounts for long distance trips. Some wrongfully believe that guar can be milked. Which is a very strange thing to believe, as guar are reptiles.</description>
 		<statBases>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>320</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -725,12 +725,12 @@
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
 				<customThingToDig>
-					<li>MorrowRim_RawAshYams</li>
-					<li>MorrowRim_RawAshYams</li>
-					<li>MorrowRim_RawAshYams</li>
-					<li>MorrowRim_RawCorkbulbRoot</li>
-					<li>MorrowRim_RawCorkbulbRoot</li>
-					<li>MorrowRim_RawCorkbulbRoot</li>
+					<li>Mashed_Ashlands_RawAshYams</li>
+					<li>Mashed_Ashlands_RawAshYams</li>
+					<li>Mashed_Ashlands_RawAshYams</li>
+					<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+					<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+					<li>Mashed_Ashlands_RawCorkbulbRoot</li>
 				</customThingToDig>
 				<customAmountToDig>
 					<li>1</li>
@@ -743,7 +743,7 @@
 				<ticksToDig>90000</ticksToDig>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_GuarFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_GuarFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3.3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -752,12 +752,12 @@
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>MorrowRim_BipedalWithNoArms</body>
+			<body>Mashed_Ashlands_BipedalWithNoArms</body>
 			<baseBodySize>1.7</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherDef>MorrowRim_GuarLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_GuarLeather</leatherDef>
 			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
@@ -804,14 +804,14 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 			<li>AnimalFarm</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_Guar" ParentName="AnimalKindBase">
-		<defName>MorrowRim_Guar</defName>
+	<PawnKindDef Name="Mashed_Ashlands_Guar" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Guar</defName>
 		<label>guar</label>
-		<race>MorrowRim_Guar</race>
+		<race>Mashed_Ashlands_Guar</race>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>2~5</wildGroupSize>
@@ -852,7 +852,7 @@
 				<label>guar calf</label>
 				<labelPlural>guar calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Guar</texPath>
 					<color>(215,183,143)</color>
 					<drawSize>1.8</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -862,13 +862,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Dessicated_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Guar</texPath>
 					<color>(215,183,143)</color>
 					<drawSize>2.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -878,13 +878,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Dessicated_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Guar</texPath>
 					<color>(215,183,143)</color>
 					<drawSize>2.6</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -894,19 +894,19 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Guar/MorrowRim_Dessicated_Guar</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Kagouti]========== -->
-	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_KagoutiBase">
-		<defName>MorrowRim_Kagouti</defName>
+	<!-- ==========[Mashed_Ashlands_Kagouti]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_KagoutiBase">
+		<defName>Mashed_Ashlands_Kagouti</defName>
 		<label>kagouti</label>
 		<description>A large bipedal reptile native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
 		<statBases>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>4.8</MoveSpeed>
 			<MarketValue>750</MarketValue>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
@@ -966,13 +966,13 @@
 		</tools>
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>MorrowRim_RawAshYams</customThingToDig>
+				<customThingToDig>Mashed_Ashlands_RawAshYams</customThingToDig>
 				<customAmountToDig>10</customAmountToDig>
 				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
 				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_KagoutiFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_KagoutiFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -983,12 +983,12 @@
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>3</maxPreyBodySize>
-			<body>MorrowRim_BipedalWithTusksAndCrest</body>
+			<body>Mashed_Ashlands_BipedalWithTusksAndCrest</body>
 			<baseHungerRate>0.35</baseHungerRate>
 			<baseBodySize>2.15</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<leatherDef>MorrowRim_HeavyScaledLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
@@ -1020,14 +1020,14 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
-			<li>MorrowRim_AshlandAnimalUncommon</li>
-			<li>MorrowRim_AshlandAnimalFighter</li>
+			<li>Mashed_Ashlands_AshlandAnimalUncommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_Kagouti" ParentName="AnimalKindBase">
-		<defName>MorrowRim_Kagouti</defName>
+	<PawnKindDef Name="Mashed_Ashlands_Kagouti" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Kagouti</defName>
 		<label>kagouti</label>
-		<race>MorrowRim_Kagouti</race>
+		<race>Mashed_Ashlands_Kagouti</race>
 		<combatPower>220</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
@@ -1042,7 +1042,7 @@
 				<label>kagouti calf</label>
 				<labelPlural>kagouti calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_KagoutiCalf</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiCalf</texPath>
 					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1050,13 +1050,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Dessicated_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Dessicated_Kagouti</texPath>
 					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_KagoutiCalf</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiCalf</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1064,7 +1064,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_KagoutiCalf</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiCalf</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -1072,18 +1072,18 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Dessicated_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Dessicated_Kagouti</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Dessicated_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Dessicated_Kagouti</texPath>
 					<drawSize>1.7</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>kagouti bull</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_KagoutiBull</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiBull</texPath>
 					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -1091,7 +1091,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Kagouti</texPath>
 					<drawSize>2.6</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -1099,23 +1099,23 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Dessicated_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Dessicated_Kagouti</texPath>
 					<drawSize>2.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Kagouti/MorrowRim_Dessicated_Kagouti</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Dessicated_Kagouti</texPath>
 					<drawSize>2.8</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<!-- ==========[MorrowRim_Scuttler]========== -->
+	<!-- ==========[Mashed_Ashlands_Scuttler]========== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>MorrowRim_Scuttler</defName>
+		<defName>Mashed_Ashlands_Scuttler</defName>
 		<label>scuttler</label>
 		<description>A small reptile native to ashland regions. A voracious predator of tiny insects, it will often end up consuming plant matter in an attempt of devouring the tasty insectoid morsels. While the scuttler is closely related to the cliff racer, it completely lacks even vestigial wings.\n\nSometimes kept as pets, one just has to be careful of their fingers when around scuttlers.</description>
 		<statBases>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -1160,7 +1160,7 @@
 				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_ScuttlerFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_ScuttlerFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -1168,7 +1168,7 @@
 			</li>
 		</comps>
 		<race>
-			<body>MorrowRim_BipedalWithNoArms</body>
+			<body>Mashed_Ashlands_BipedalWithNoArms</body>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.5</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
@@ -1205,13 +1205,13 @@
 		</race>
 		<tradeTags>
 			<li>AnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_Scuttler</defName>
+		<defName>Mashed_Ashlands_Scuttler</defName>
 		<label>scuttler</label>
-		<race>MorrowRim_Scuttler</race>
+		<race>Mashed_Ashlands_Scuttler</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
@@ -1246,31 +1246,31 @@
 			<li>
 				<label>scuttler whelp</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Scuttler</texPath>
 					<drawSize>0.95</drawSize>
 					<color>(169,141,136)</color>
 					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Dessicated_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Dessicated_Scuttler</texPath>
 					<drawSize>0.95</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Scuttler</texPath>
 					<drawSize>1.25</drawSize>
 					<color>(169,141,136)</color>
 					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Dessicated_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Dessicated_Scuttler</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Scuttler</texPath>
 					<drawSize>1.37</drawSize>
 					<color>(169,141,136)</color>
 					<shaderType>CutoutComplex</shaderType>
@@ -1280,7 +1280,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Scuttler/MorrowRim_Dessicated_Scuttler</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Dessicated_Scuttler</texPath>
 					<drawSize>1.37</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshBase]==========-->
-	<TerrainDef ParentName="NaturalTerrainBase" Name="MorrowRim_AshBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshBase]==========-->
+	<TerrainDef ParentName="NaturalTerrainBase" Name="Mashed_Ashlands_AshBase" Abstract="True">
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>340</renderPrecedence>
 		<pathCost>2</pathCost>
@@ -17,10 +17,10 @@
 			<li>Heavy</li>
 			<li>GrowSoil</li>
 			<li>Diggable</li>
-			<li>MorrowRim_GrowAsh</li>
-			<li>MorrowRim_AshCastle</li>
+			<li>Mashed_Ashlands_GrowAsh</li>
+			<li>Mashed_Ashlands_AshCastle</li>
 		</affordances>
-		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
+		<generatedFilth>Mashed_Ashlands_Filth_Ash</generatedFilth>
 		<takeFootprints>True</takeFootprints>
 		<tools>
 			<li>
@@ -28,21 +28,21 @@
 				<capacities>
 					<li>KickMaterialInEyes</li>
 				</capacities>
-				<hediff>MorrowRim_AshInEyes</hediff>
+				<hediff>Mashed_Ashlands_AshInEyes</hediff>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
 		<tags>
 			<li>Soil</li>
-			<li>MorrowRim_Ash</li>
+			<li>Mashed_Ashlands_Ash</li>
 		</tags>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
 		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
 		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_PackedAshBase]==========-->
-	<TerrainDef ParentName="TerrainRoadBase" Name="MorrowRim_PackedAshBase" Abstract="True">
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+	<!-- ==========[Mashed_Ashlands_PackedAshBase]==========-->
+	<TerrainDef ParentName="TerrainRoadBase" Name="Mashed_Ashlands_PackedAshBase" Abstract="True">
+		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>360</renderPrecedence>
 		<layerable>true</layerable>
@@ -57,7 +57,7 @@
 			<BeautyOutdoors>0</BeautyOutdoors>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>
-		<designatorDropdown>MorrowRim_Floor_PackedAsh</designatorDropdown>
+		<designatorDropdown>Mashed_Ashlands_Floor_PackedAsh</designatorDropdown>
 		<scatterType>Rocky</scatterType>
 		<affordances>
 			<li>Light</li>
@@ -65,14 +65,14 @@
 			<li>Heavy</li>
 			<li>Diggable</li>
 		</affordances>
-		<generatedFilth>MorrowRim_Filth_Ash</generatedFilth>
+		<generatedFilth>Mashed_Ashlands_Filth_Ash</generatedFilth>
 		<fertility>0</fertility>
 		<tags>
 			<li>Road</li>
 		</tags>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_AshMudBase]==========-->
-	<TerrainDef Name="MorrowRim_AshMudBase" ParentName="NaturalTerrainBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshMudBase]==========-->
+	<TerrainDef Name="Mashed_Ashlands_AshMudBase" ParentName="NaturalTerrainBase" Abstract="True">
 		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 		<pollutionColor>(1, 1, 1, 1)</pollutionColor>

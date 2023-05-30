@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_TeaBase]==========-->
-	<ThingDef ParentName="DrugBase" Name="MorrowRim_TeaBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_TeaBase]==========-->
+	<ThingDef ParentName="DrugBase" Name="Mashed_Ashlands_TeaBase" Abstract="True">
 		<possessionCount>6</possessionCount>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -47,8 +47,8 @@
 			<bulkRecipeCount>4</bulkRecipeCount>
 		</recipeMaker>
 	</ThingDef>
-	<!-- ==========[MorrowRim_TramaRootTeaHigh]==========-->
-	<HediffDef Name="MorrowRim_TeaHighBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_TramaRootTeaHigh]==========-->
+	<HediffDef Name="Mashed_Ashlands_TeaHighBase" Abstract="True">
 		<hediffClass>Hediff_High</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>

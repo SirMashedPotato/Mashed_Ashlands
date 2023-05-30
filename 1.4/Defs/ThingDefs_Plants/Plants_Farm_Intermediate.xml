@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_AshlandHayGrass]==========-->
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandHayGrass]==========-->
 	<ThingDef ParentName="PlantBase">
-		<defName>MorrowRim_Plant_AshlandHayGrass</defName>
+		<defName>Mashed_Ashlands_Plant_AshlandHayGrass</defName>
 		<label>ashland haygrass</label>
 		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
 		<statBases>
 		  <MaxHitPoints>100</MaxHitPoints>
 		  <Flammability>1.0</Flammability>
 		  <Nutrition>0.2</Nutrition>
-		  <MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+		  <Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-		  <texPath>Things/Plant/MorrowRim_AshlandHayGrassPlant</texPath>
+		  <texPath>Things/Plant/Mashed_Ashlands_AshlandHayGrassPlant</texPath>
 		  <graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -34,48 +34,48 @@
 		  <topWindExposure>0.1</topWindExposure>
 		  <visualSizeRange>0.3~0.8</visualSizeRange>
 		  <sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 		  </sowResearchPrerequisites>
 		  <wildOrder>2</wildOrder>
 		  <purpose>Food</purpose>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Comberry]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_Comberry</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Comberry]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Comberry</defName>
 		<label>comberry bush</label>
 		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberry berries are a popular export. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
-			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_ComberryPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_ComberryPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/MorrowRim_ComberryPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_ComberryPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawComberry</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawComberry</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<harvestAfterGrowth>0.30</harvestAfterGrowth>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>8</growDays>
@@ -87,18 +87,18 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Bittergreen]==========-->
-	<ThingDef ParentName="MorrowRim_BushBase">
-		<defName>MorrowRim_Plant_Bittergreen</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Bittergreen]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BushBase">
+		<defName>Mashed_Ashlands_Plant_Bittergreen</defName>
 		<label>bittergreen plant</label>
 		<description>An incredibly hardy, and very strange looking, plant, typically found growing in the less-hospitable regions of the ashlands. Some have taken to harvesting the flowers that grow on the tendrils of the bittergreen plant. In their raw form the petals are highly toxic, and used by some to create potent poisons. The petals are safe to consume when boiled, and often used to make bittergreen tea. Bittergreen are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -106,10 +106,10 @@
 			<Beauty>-2</Beauty>
 			<BeautyOutdoors>-2</BeautyOutdoors>
 			<Flammability>0.8</Flammability>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_BittergreenPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_BittergreenPlant</texPath>
 			<shadowData>
 				<volume>(0.2, 0.2, 0.2)</volume>
 				<offset>(0,0,0.2)</offset>
@@ -123,12 +123,12 @@
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<neverBlightable>true</neverBlightable>
-			<harvestedThingDef>MorrowRim_RawBittergreen</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawBittergreen</harvestedThingDef>
 			<harvestYield>6</harvestYield>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestTag>Standard</harvestTag>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<visualSizeRange>1.1~2.3</visualSizeRange>
 			<harvestWork>150</harvestWork>
@@ -136,35 +136,35 @@
 			<wildClusterWeight>100</wildClusterWeight>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Corkbulb]==========-->
-	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
-		<defName>MorrowRim_Plant_Corkbulb</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Corkbulb]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_Corkbulb</defName>
 		<label>corkbulb tree</label>
 		<description>A small tree that can often be found growing in regions with ash rich ground. Farmed for its tough roots, which make for a reasonable wood replacement. The roots are also often consumed by wild animals, such as guar and kagouti. While structurally quite sturdy, corkbulb will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_CorkbulbPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_CorkbulbPlant</texPath>
 		</graphicData>
 		<plant>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawCorkbulbRoot</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawCorkbulbRoot</harvestedThingDef>
 			<harvestYield>20</harvestYield>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>8</sowMinSkill>
 			<growDays>13</growDays>
@@ -172,15 +172,15 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Marshmerrow]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_Marshmerrow</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Marshmerrow]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Marshmerrow</defName>
 		<label>marshmerrow plant</label>
 		<description>A reed often found growing near water in ashland regions. The pulp harvested from them is rather tasty, surprisingly sweet, and perfectly safe to consume raw. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
@@ -189,21 +189,21 @@
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
-			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_MarshmerrowPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_MarshmerrowPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawMarshmerrow</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawMarshmerrow</harvestedThingDef>
 			<harvestYield>7</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowTags>
 				<li>Hydroponic</li>
@@ -219,9 +219,9 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_MuckSponge]==========-->
-	<ThingDef Name="MorrowRim_Plant_MuckSpongeBase" ParentName="MorrowRim_PseudoTreeBase">
-		<defName>MorrowRim_Plant_MuckSponge</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_MuckSponge]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_MuckSpongeBase" ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_MuckSponge</defName>
 		<label>mucksponge plant</label>
 		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
 		<modExtensions>
@@ -229,30 +229,30 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.05</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
 		</modExtensions>
 		<statBases>
-			<MorrowRim_AshResistance>0.8</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_MuckSpongePlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_MuckSpongePlant</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/MorrowRim_MuckSpongePlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_MuckSpongePlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawMuck</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawMuck</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>10</sowMinSkill>
 			<topWindExposure>0</topWindExposure>
@@ -262,15 +262,15 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Saltrice]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_Saltrice</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Saltrice]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Saltrice</defName>
 		<label>saltrice plant</label>
 		<description>A grass often found growing near water in ashland regions. Farmed in great quantities by those that settle the ashlands, as raw saltrice is a popular export. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
@@ -279,22 +279,22 @@
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
-			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_SaltricePlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_SaltricePlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/MorrowRim_SaltricePlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_SaltricePlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawSaltrice</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawSaltrice</harvestedThingDef>
 			<harvestYield>5</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowTags>
 				<li>Hydroponic</li>
@@ -310,41 +310,41 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_Wickwheat]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase">
-		<defName>MorrowRim_Plant_Wickwheat</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Wickwheat]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Wickwheat</defName>
 		<label>wickwheat plant</label>
 		<description>A grass often found growing in grasslands with ash rich soil. Farmed in great quantities by those that settle the ashlands, as raw wickwheat is a popular export. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
-					<li>MorrowRim_GrazelandSoil</li>
-					<li>MorrowRim_RichAshSoil</li>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
-			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_WickwheatPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_WickwheatPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/MorrowRim_WickwheatPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_WickwheatPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_RawWickwheat</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawWickwheat</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Intermediate</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.5</growDays>

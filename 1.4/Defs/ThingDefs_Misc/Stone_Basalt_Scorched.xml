@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BasaltScorched]==========-->
-	<ThingDef ParentName="MorrowRim_BasaltBase">
-		<defName>MorrowRim_BasaltScorched</defName>
+	<!-- ==========[Mashed_Ashlands_BasaltScorched]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+		<defName>Mashed_Ashlands_BasaltScorched</defName>
 		<label>scorched columnar basalt</label>
 		<description>Large columns of basalt, typically found in regions experiencing high volcanic activity. These particular columns have been scorched by intense volcanic heat.</description>
 		<graphicData>
 			<color>(73,70,71)</color>
 		</graphicData>
 		<building>
-			<mineableThing>MorrowRim_ChunkBasaltScorched</mineableThing>
-			<!--<smoothedThing>MorrowRim_SmoothedBasalt</smoothedThing>-->
+			<mineableThing>Mashed_Ashlands_ChunkBasaltScorched</mineableThing>
+			<!--<smoothedThing>Mashed_Ashlands_SmoothedBasalt</smoothedThing>-->
 		</building>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SmoothedBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_SmoothedBasalt]==========-->
 	<!--
-	<ThingDef ParentName="MorrowRim_BasaltBase">
-		<defName>MorrowRim_SmoothedBasalt</defName>
+	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+		<defName>Mashed_Ashlands_SmoothedBasalt</defName>
 		<label>smoothed basalt</label>
 		<description>A very hard igneous rock. The shining surface is filled with a mosaic of black, white, and pink speckles.</description>
 		<graphicData>
@@ -37,20 +37,20 @@
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
 	-->
-	<!-- ==========[MorrowRim_ChunkBasaltScorched]==========-->
-	<ThingDef ParentName="MorrowRim_ChunkBasaltBase">
-		<defName>MorrowRim_ChunkBasaltScorched</defName>
+	<!-- ==========[Mashed_Ashlands_ChunkBasaltScorched]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_ChunkBasaltBase">
+		<defName>Mashed_Ashlands_ChunkBasaltScorched</defName>
 		<label>scorched basalt chunk</label>
 		<graphicData>
 			<color>(73,70,71)</color>
 		</graphicData>
 		<butcherProducts>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</butcherProducts>
 	</ThingDef>
-	<!-- ==========[MorrowRim_BlocksBasaltScorched]==========-->
-	<ThingDef ParentName="MorrowRim_BlocksBasaltBase">
-		<defName>MorrowRim_BlocksBasaltScorched</defName>
+	<!-- ==========[Mashed_Ashlands_BlocksBasaltScorched]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BlocksBasaltBase">
+		<defName>Mashed_Ashlands_BlocksBasaltScorched</defName>
 		<label>scorched basalt blocks</label>
 		<description>Blocks of solid basalt. Basalt is a very hard stone.</description>
 		<graphicData>
@@ -60,16 +60,16 @@
 			<color>(73,70,71)</color>
 		</stuffProps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Make_StoneBlocksBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_Make_StoneBlocksBasaltScorched]==========-->
 	<RecipeDef ParentName="MakeStoneBlocksBase">
-		<defName>MorrowRim_Make_StoneBlocksBasaltScorched</defName>
+		<defName>Mashed_Ashlands_Make_StoneBlocksBasaltScorched</defName>
 		<label>make scorched basalt blocks</label>
 		<description>Cuts scorched basalt chunks into usable blocks.</description>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MorrowRim_ChunkBasaltScorched</li>
+						<li>Mashed_Ashlands_ChunkBasaltScorched</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -77,11 +77,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MorrowRim_ChunkBasaltScorched</li>
+				<li>Mashed_Ashlands_ChunkBasaltScorched</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<MorrowRim_BlocksBasaltScorched>20</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</products>
 	</RecipeDef>
 </Defs>

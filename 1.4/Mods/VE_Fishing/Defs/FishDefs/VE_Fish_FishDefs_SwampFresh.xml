@@ -9,13 +9,13 @@
 		Mud lamprey
 	-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_JuvenileMudcrab</defName>
-		<thingDef>MorrowRim_RawJuvenileMudcrab</thingDef>
+		<defName>Mashed_Ashlands_JuvenileMudcrab</defName>
+		<thingDef>Mashed_Ashlands_RawJuvenileMudcrab</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>

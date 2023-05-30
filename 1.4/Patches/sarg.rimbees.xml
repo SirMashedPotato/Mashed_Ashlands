@@ -11,8 +11,8 @@
 					<value>
 						<li Class="MorrowRim2.PlantProperties">
 							<disallowedTerrainForWild>
-								<li>MorrowRim_AshSand</li>
-								<li>MorrowRim_RichAshSand</li>
+								<li>Mashed_Ashlands_AshSand</li>
+								<li>Mashed_Ashlands_RichAshSand</li>
 							</disallowedTerrainForWild>
 						</li>
 					</value>

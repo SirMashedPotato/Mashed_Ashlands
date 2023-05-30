@@ -1,167 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_CoralcrabEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_CoralcrabEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_CoralcrabEgg</defName>
-		<thingDef>MorrowRim_Egg_CoralcrabFertilized</thingDef>    
+		<defName>Mashed_Ashlands_CoralcrabEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_CoralcrabFertilized</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.3</commonality>		
 		<baseFishingYield>2</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_KreshCloth]==========-->
+	<!-- ==========[Mashed_Ashlands_KreshCloth]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_KreshCloth</defName>
-		<thingDef>MorrowRim_KreshCloth</thingDef>    
+		<defName>Mashed_Ashlands_KreshCloth</defName>
+		<thingDef>Mashed_Ashlands_KreshCloth</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>
-			<li>MorrowRim_BrineAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes> 
 		<commonality>1</commonality>			
 		<baseFishingYield>10</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_RawMarshmerrow]==========-->
+	<!-- ==========[Mashed_Ashlands_RawMarshmerrow]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_RawMarshmerrow</defName>
-		<thingDef>MorrowRim_RawMarshmerrow</thingDef>    
+		<defName>Mashed_Ashlands_RawMarshmerrow</defName>
+		<thingDef>Mashed_Ashlands_RawMarshmerrow</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BrineAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>10</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_RawMuck]==========-->
+	<!-- ==========[Mashed_Ashlands_RawMuck]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_RawMuck</defName>
-		<thingDef>MorrowRim_RawMuck</thingDef>    
+		<defName>Mashed_Ashlands_RawMuck</defName>
+		<thingDef>Mashed_Ashlands_RawMuck</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>1</commonality>	
 		<baseFishingYield>3</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_KwamaEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_KwamaEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_KwamaEgg</defName>
-		<thingDef>MorrowRim_KwamaEgg</thingDef>    
+		<defName>Mashed_Ashlands_KwamaEgg</defName>
+		<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>
-			<li>MorrowRim_BrineAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>1</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_MudcrabEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_MudcrabEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_MudcrabEgg</defName>
-		<thingDef>MorrowRim_Egg_MudcrabFertilized</thingDef>    
+		<defName>Mashed_Ashlands_MudcrabEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_MudcrabFertilized</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.3</commonality>		
 		<baseFishingYield>2</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_NetchEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_NetchEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_NetchEgg</defName>
-		<thingDef>MorrowRim_Egg_NetchFertilized</thingDef>    
+		<defName>Mashed_Ashlands_NetchEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_NetchFertilized</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.2</commonality>		
 		<baseFishingYield>1</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_ParasolWood]==========-->
+	<!-- ==========[Mashed_Ashlands_ParasolWood]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_ParasolWood</defName>
-		<thingDef>MorrowRim_ParasolWoodLog</thingDef>    
+		<defName>Mashed_Ashlands_ParasolWood</defName>
+		<thingDef>Mashed_Ashlands_ParasolWoodLog</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>
-			<li>MorrowRim_BrineAshland</li>
-			<li>MorrowRim_SwampAshland</li>			
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>			
 		</allowedBiomes>  	
 		<commonality>1</commonality>	
 		<baseFishingYield>10</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_SandcrabBlueEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_SandcrabBlueEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SandcrabBlueEgg</defName>
-		<thingDef>MorrowRim_Egg_SandcrabBlueFertilized</thingDef>    
+		<defName>Mashed_Ashlands_SandcrabBlueEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_SandcrabBlueFertilized</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.3</commonality>		
 		<baseFishingYield>3</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_RawSaltrice]==========-->
+	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_RawSaltrice</defName>
-		<thingDef>MorrowRim_RawSaltrice</thingDef>    
+		<defName>Mashed_Ashlands_RawSaltrice</defName>
+		<thingDef>Mashed_Ashlands_RawSaltrice</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BrineAshland</li>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  
 		<commonality>1</commonality>	
 		<baseFishingYield>6</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[MorrowRim_NetchEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_NetchEgg]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SwampJellyEgg</defName>
-		<thingDef>MorrowRim_Egg_SwampJellyFertilized</thingDef>    
+		<defName>Mashed_Ashlands_SwampJellyEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_SwampJellyFertilized</thingDef>    
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_SwampAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>  	
 		<commonality>0.2</commonality>		
 		<baseFishingYield>2</baseFishingYield>		

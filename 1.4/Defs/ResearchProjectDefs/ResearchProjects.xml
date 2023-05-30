@@ -1,87 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshSowing_Beginner]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSowing_Beginner]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSowing_Beginner</defName>
+		<defName>Mashed_Ashlands_AshSowing_Beginner</defName>
 		<label>beginner ashland farming</label>
 		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<tags>
-			<li>MorrowRim_AshlandBasic</li>
+			<li>Mashed_Ashlands_AshlandBasic</li>
 		</tags>
 	</ResearchProjectDef>
-	<!-- ==========[MorrowRim_AshSowing_Intermediate]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSowing_Intermediate]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSowing_Intermediate</defName>
+		<defName>Mashed_Ashlands_AshSowing_Intermediate</defName>
 		<label>intermediate ashland farming</label>
 		<description>TODO.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<prerequisites>
-			<li>MorrowRim_AshSowing_Beginner</li>
+			<li>Mashed_Ashlands_AshSowing_Beginner</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<!-- ==========[MorrowRim_AshSowing_Advanced]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSowing_Advanced]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSowing_Advanced</defName>
+		<defName>Mashed_Ashlands_AshSowing_Advanced</defName>
 		<label>advanced ashland farming</label>
 		<description>TODO.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<prerequisites>
-			<li>MorrowRim_AshSowing_Intermediate</li>
+			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<!-- ==========[MorrowRim_AshSurvival_Beginner]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Beginner]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSurvival_Beginner</defName>
+		<defName>Mashed_Ashlands_AshSurvival_Beginner</defName>
 		<label>beginner ashland survival</label>
 		<description>TODO</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<tags>
-			<li>MorrowRim_AshlandBasic</li>
+			<li>Mashed_Ashlands_AshlandBasic</li>
 		</tags>
 	</ResearchProjectDef>
-	<!-- ==========[MorrowRim_AshSurvival_Intermediate]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Intermediate]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSurvival_Intermediate</defName>
+		<defName>Mashed_Ashlands_AshSurvival_Intermediate</defName>
 		<label>intermediate ashland survival</label>
 		<description>TODO.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<prerequisites>
-			<li>MorrowRim_AshSurvival_Beginner</li>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<!-- ==========[MorrowRim_AshSurvival_Advanced]==========-->
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Advanced]==========-->
 	<ResearchProjectDef>
-		<defName>MorrowRim_AshSurvival_Advanced</defName>
+		<defName>Mashed_Ashlands_AshSurvival_Advanced</defName>
 		<label>advanced ashland survival</label>
 		<description>TODO.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>MorrowRim_Tab</tab>
+		<tab>Mashed_Ashlands_Tab</tab>
 		<prerequisites>
-			<li>MorrowRim_AshSurvival_Intermediate</li>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
 		</prerequisites>
 	</ResearchProjectDef>
 </Defs>

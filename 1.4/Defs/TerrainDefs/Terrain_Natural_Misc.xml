@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_SulphurFloor]==========-->
+	<!-- ==========[Mashed_Ashlands_SulphurFloor]==========-->
 	<TerrainDef ParentName="NaturalTerrainBase">
-		<defName>MorrowRim_SulphurFloor</defName>
+		<defName>Mashed_Ashlands_SulphurFloor</defName>
 		<label>sulphur</label>
-		<texturePath>Terrain/Surfaces/MorrowRim_SulphurFloor</texturePath>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MorrowRim_PollutionAsh</pollutionOverlayTexturePath>
+		<texturePath>Terrain/Surfaces/Mashed_Ashlands_SulphurFloor</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
 		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
 		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
 		<edgeType>Fade</edgeType>
@@ -22,9 +22,9 @@
 			<li>Medium</li>
 			<li>Heavy</li>
 			<li>Diggable</li>
-			<li>MorrowRim_GrowSulphur</li>
+			<li>Mashed_Ashlands_GrowSulphur</li>
 		</affordances>
-		<generatedFilth>MorrowRim_Filth_Sulphur</generatedFilth>
+		<generatedFilth>Mashed_Ashlands_Filth_Sulphur</generatedFilth>
 		<fertility>0.05</fertility>
 		<takeFootprints>True</takeFootprints>
 		<tools>
@@ -33,12 +33,12 @@
 				<capacities>
 					<li>KickMaterialInEyes</li>
 				</capacities>
-				<hediff>MorrowRim_SulphurInEyes</hediff>
+				<hediff>Mashed_Ashlands_SulphurInEyes</hediff>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
 		<tags>
-			<li>MorrowRim_Sulphur</li>
+			<li>Mashed_Ashlands_Sulphur</li>
 		</tags>
 	</TerrainDef>
 </Defs>

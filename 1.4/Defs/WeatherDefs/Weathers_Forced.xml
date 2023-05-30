@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshStormWeatherBase]==========-->
-	<WeatherDef Name="MorrowRim_AshStormWeatherBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshStormWeatherBase]==========-->
+	<WeatherDef Name="Mashed_Ashlands_AshStormWeatherBase" Abstract="True">
 		<repeatable>true</repeatable>
 		<perceivePriority>0</perceivePriority>
 		<windSpeedFactor>2</windSpeedFactor>
@@ -36,15 +36,15 @@
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
-	<!-- ==========[MorrowRim_VolcanicWind]==========-->
-	<WeatherDef ParentName="MorrowRim_AshStormWeatherBase">
-		<defName>MorrowRim_VolcanicWind</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanicWind]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWind</defName>
 		<label>volcanic wind</label>
 		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.</description>
 	</WeatherDef>
-	<!-- ==========[MorrowRim_VolcanicWindThunder]==========-->
-	<WeatherDef ParentName="MorrowRim_AshStormWeatherBase">
-		<defName>MorrowRim_VolcanicWindThunder</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanicWindThunder]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWindThunder</defName>
 		<label>volcanic wind thunderstorm</label>
 		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.\n\nFriction between metallic particles causes frequent lightning strikes.</description>
 		<eventMakers>
@@ -58,9 +58,9 @@
 			</li>
 		</eventMakers>
 	</WeatherDef>
-	<!-- ==========[MorrowRim_VolcanicWindBlight]==========-->
-	<WeatherDef ParentName="MorrowRim_AshStormWeatherBase">
-		<defName>MorrowRim_VolcanicWindBlight</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanicWindBlight]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWindBlight</defName>
 		<label>volcanic wind blight storm</label>
 		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.\n\nAsh particles carry blight, wild animals are driven mad, and crops become blighted.</description>
 		<eventMakers>

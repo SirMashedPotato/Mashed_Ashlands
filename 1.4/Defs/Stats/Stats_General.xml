@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<StatDef>
-		<defName>MorrowRim_AshResistance</defName>
+		<defName>Mashed_Ashlands_AshResistance</defName>
 		<label>ash resistance</label>
 		<description>How resistant this organism is to certain effects of ash storms. This controls how much ash buildup animals, and humanlikes, will receive while outside during an ash storm. And how much damage a plant will take while outside during an ash storm.</description>
 		<category>Basics</category>

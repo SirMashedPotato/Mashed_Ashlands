@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_OrganicProductBase]==========-->
-	<ThingDef ParentName="OrganicProductBase" Name="MorrowRim_OrganicProductBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_OrganicProductBase]==========-->
+	<ThingDef ParentName="OrganicProductBase" Name="Mashed_Ashlands_OrganicProductBase" Abstract="True">
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<possessionCount>10</possessionCount>
 		<ingestible>
@@ -11,16 +11,16 @@
 			<li>AnimalProductRaw</li>
 		</thingCategories>
 		<tradeTags>
-			<li>MorrowRim_AshlandsAnimalProduct</li>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_KwamaEgg]==========-->
-	<ThingDef ParentName="MorrowRim_OrganicProductBase">
-		<defName>MorrowRim_KwamaEgg</defName>
+	<!-- ==========[Mashed_Ashlands_KwamaEgg]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase">
+		<defName>Mashed_Ashlands_KwamaEgg</defName>
 		<label>kwama egg</label>
 		<description>An infertile kwama egg, gathered from a kwama egg mine. While the idea of eating an insect egg the size of a small child may seem strange to some people, kwama eggs are considered to be quite the delicacy.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_KwamaEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KwamaEgg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
@@ -40,13 +40,13 @@
 			<preferability>RawBad</preferability>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_NetchJelly]==========-->
-	<ThingDef Name="MorrowRim_NetchJellyBase" ParentName="MorrowRim_OrganicProductBase">
-		<defName>MorrowRim_NetchJelly</defName>
+	<!-- ==========[Mashed_Ashlands_NetchJelly]==========-->
+	<ThingDef Name="Mashed_Ashlands_NetchJellyBase" ParentName="Mashed_Ashlands_OrganicProductBase">
+		<defName>Mashed_Ashlands_NetchJelly</defName>
 		<label>netch jelly</label>
 		<description>A jelly like substance 'milked' from a netch. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_NetchJelly</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NetchJelly</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -69,13 +69,13 @@
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_NixOxMilk]==========-->
-	<ThingDef ParentName="MorrowRim_OrganicProductBase">
-		<defName>MorrowRim_NixOxMilk</defName>
+	<!-- ==========[Mashed_Ashlands_NixOxMilk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase">
+		<defName>Mashed_Ashlands_NixOxMilk</defName>
 		<label>nix-ox mucous</label>
 		<description>A viscous liquid secreted by a nix-ox. Rather unpleasant when consumed raw, though surprisingly tasty when cooked. Some have even figured out how to refine it into chemfuel.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_NixOxMilk</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NixOxMilk</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -95,16 +95,16 @@
 		<ingestible>
 			<preferability>RawBad</preferability>
 			<foodType>AnimalProduct, Fluid</foodType>
-			<specialThoughtDirect>MorrowRim_AteNixOxMilk</specialThoughtDirect>
+			<specialThoughtDirect>Mashed_Ashlands_AteNixOxMilk</specialThoughtDirect>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_ScribJelly]==========-->
-	<ThingDef ParentName="MorrowRim_OrganicProductBase">
-		<defName>MorrowRim_ScribJelly</defName>
+	<!-- ==========[Mashed_Ashlands_ScribJelly]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase">
+		<defName>Mashed_Ashlands_ScribJelly</defName>
 		<label>scrib jelly</label>
 		<description>A dead scrib, crushed into a jelly-like substance. Has a noticeable sour taste, but is very nutritious. Often consumed raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_ScribJelly</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_ScribJelly</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -127,13 +127,13 @@
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SwampJellyEdible]==========-->
-	<ThingDef ParentName="MorrowRim_NetchJellyBase">
-		<defName>MorrowRim_SwampJellyEdible</defName>
+	<!-- ==========[Mashed_Ashlands_SwampJellyEdible]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_NetchJellyBase">
+		<defName>Mashed_Ashlands_SwampJellyEdible</defName>
 		<label>swamp jelly</label>
 		<description>A jelly like substance harvested from a swamp jelly. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_SwampJelly</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_SwampJelly</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

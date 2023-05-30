@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_FernBase]==========-->
-	<ThingDef ParentName="PlantBase" Name="MorrowRim_FernBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_FernBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_FernBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
-			<MorrowRim_AshResistance>0.9</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<pathCost>3</pathCost>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -23,9 +23,9 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_AshenFern]==========-->
-	<ThingDef ParentName="MorrowRim_FernBase">
-		<defName>MorrowRim_Plant_AshenFern</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_AshenFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_AshenFern</defName>
 		<label>ashen fern</label>
 		<description>A rare fern that can sometimes be found growing in humid ashland regions. Certain local tribes use the flowers of this fern to mask their scent whilst hunting.</description>
 		<modExtensions>
@@ -41,12 +41,12 @@
 			<Flammability>0.6</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Ferns/MorrowRim_AshenFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshenFernPlant</texPath>
 		</graphicData>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_AshlandFern]==========-->
-	<ThingDef ParentName="MorrowRim_FernBase">
-		<defName>MorrowRim_Plant_AshlandFern</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_AshlandFern</defName>
 		<label>ashland fern</label>
 		<description>A small fern that can often be found growing regions with ash rich ground. While rather resistant to ash storms, it is not immune to the effects of them.</description>
 		<statBases>
@@ -55,13 +55,13 @@
 			<Flammability>0.4</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Ferns/MorrowRim_AshlandFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_SloughFern]==========-->
-	<ThingDef ParentName="MorrowRim_FernBase">
-		<defName>MorrowRim_Plant_SloughFern</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_SloughFern</defName>
 		<label>slough fern</label>
 		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
 		<modExtensions>
@@ -77,16 +77,16 @@
 			<Flammability>0.8</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Ferns/MorrowRim_SloughFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 		<plant>
 			<visualSizeRange>0.9~1.6</visualSizeRange>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_SomnaliusFern]==========-->
-	<ThingDef ParentName="MorrowRim_FernBase">
-		<defName>MorrowRim_Plant_SomnaliusFern</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
 		<label>ashland somnalius fern</label>
 		<description>A small fern that can often be found growing in humid ashland regions.</description>
 		<statBases>
@@ -95,23 +95,23 @@
 			<Flammability>0.8</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Ferns/MorrowRim_SomnaliusFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_FireFern]==========-->
-	<ThingDef ParentName="MorrowRim_FernBase">
-		<defName>MorrowRim_Plant_FireFern</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_FireFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_FireFern</defName>
 		<label>fire fern</label>
 		<description>A small fern that can often be found growing regions experiencing extreme volcanic activity. It's ability to withstand extreme heat has allowed it to grow where no other ferns dare.</description>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>
 			<Flammability>0.1</Flammability>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Ferns/MorrowRim_FireFernPlant</texPath>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_FireFernPlant</texPath>
 		</graphicData>
 		<ingestible/>
 	</ThingDef>

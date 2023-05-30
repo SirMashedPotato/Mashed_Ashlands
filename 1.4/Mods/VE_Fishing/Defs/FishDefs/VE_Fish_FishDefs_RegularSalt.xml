@@ -6,14 +6,14 @@
 		armorhead
 	-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_JuvenileBlueSandcrab</defName>
-		<thingDef>MorrowRim_RawJuvenileBlueSandcrab</thingDef>
+		<defName>Mashed_Ashlands_JuvenileBlueSandcrab</defName>
+		<thingDef>Mashed_Ashlands_RawJuvenileBlueSandcrab</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>40</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -23,13 +23,13 @@
 		Mustard eel
 	-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_TelvannisCephalopod</defName>
-		<thingDef>MorrowRim_RawTelvannisCephalopod</thingDef>
+		<defName>Mashed_Ashlands_TelvannisCephalopod</defName>
+		<thingDef>Mashed_Ashlands_RawTelvannisCephalopod</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -40,14 +40,14 @@
 	-->
 	<!--
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SlaughterfishFishLarge</defName>
-		<thingDef>MorrowRim_RawSlaughterfish</thingDef>
+		<defName>Mashed_Ashlands_SlaughterfishFishLarge</defName>
+		<thingDef>Mashed_Ashlands_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>10</baseFishingYield>
 	</VCE_Fishing.FishDef>

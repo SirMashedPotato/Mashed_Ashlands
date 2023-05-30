@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<StuffCategoryDef>
-		<defName>MorrowRim_Crystalline</defName>
+		<defName>Mashed_Ashlands_Crystalline</defName>
 		<label>crystalline</label>
 		<noun>crystal</noun>
 		<destroySoundSmall>BuildingDestroyed_Metal_Small</destroySoundSmall>

@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_InsectEggFertBase]==========-->
-	<ThingDef ParentName="EggFertBase" Name="MorrowRim_InsectEggFertBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
+	<ThingDef ParentName="EggFertBase" Name="Mashed_Ashlands_InsectEggFertBase" Abstract="True">
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_InsectEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_InsectEgg</texPath>
 		</graphicData>
 		<ingestible>
-			<specialThoughtDirect>MorrowRim_AteInsectEggDirect</specialThoughtDirect>
-			<specialThoughtAsIngredient>MorrowRim_AteInsectEggAsIngredient</specialThoughtAsIngredient>
+			<specialThoughtDirect>Mashed_Ashlands_AteInsectEggDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient>Mashed_Ashlands_AteInsectEggAsIngredient</specialThoughtAsIngredient>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_AlitFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_AlitFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_AlitFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_AlitFertilized</defName>
 		<label>alit egg (fert.)</label>
 		<description>A fertilised alit egg. If all goes well, it should hatch into a alit whelp. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -26,13 +26,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Alit</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Alit</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_BantamGuarUnfertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
 	<ThingDef ParentName="EggUnfertBase">
-		<defName>MorrowRim_Egg_BantamGuarUnfertilized</defName>
+		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
 		<label>bantam guar egg (unfert.)</label>
 		<description>An unfertilised bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
@@ -42,9 +42,9 @@
 			<MarketValue>7.0</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_BantamGuarFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_BantamGuarFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_BantamGuarFertilized</defName>
 		<label>bantam guar egg (fert.)</label>
 		<description>A fertilised bantam guar egg. If all goes well, it should hatch into a bantam guar whelp. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -56,13 +56,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_BantamGuar</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_BantamGuar</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_CliffRacerFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_CliffRacerFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_CliffRacerFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_CliffRacerFertilized</defName>
 		<label>cliff racer egg (fert.)</label>
 		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -76,13 +76,13 @@
 		<comps>
 		  <li Class="CompProperties_Hatcher">
 			<hatcherDaystoHatch>1</hatcherDaystoHatch>
-			<hatcherPawn>MorrowRim_CliffRacer</hatcherPawn>
+			<hatcherPawn>Mashed_Ashlands_CliffRacer</hatcherPawn>
 		  </li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_CoralcrabFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_CoralcrabFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_CoralcrabFertilized</defName>
 		<label>ashland coralcrab egg (fert.)</label>
 		<description>A fertilised coralcrab egg. If all goes well, it should hatch into a baby coralcrab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -96,13 +96,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Coralcrab</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Coralcrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_DurzogFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_DurzogFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_DurzogFertilized</defName>
 		<label>durzog egg (fert.)</label>
 		<description>A fertilised durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -116,13 +116,13 @@
 		<comps>
 		  <li Class="CompProperties_Hatcher">
 			<hatcherDaystoHatch>5</hatcherDaystoHatch>
-			<hatcherPawn>MorrowRim_Durzog</hatcherPawn>
+			<hatcherPawn>Mashed_Ashlands_Durzog</hatcherPawn>
 		  </li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_GuarFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_GuarFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_GuarFertilized</defName>
 		<label>guar egg (fert.)</label>
 		<description>A fertilised guar egg. If all goes well, it should hatch into a guar calf. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -136,13 +136,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>4</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Guar</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Guar</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_KagoutiFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_KagoutiFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_KagoutiFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_KagoutiFertilized</defName>
 		<label>kagouti egg (fert.)</label>
 		<description>A fertilised kagouti egg. If all goes well, it should hatch into a kagouti calf. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -156,13 +156,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Kagouti</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Kagouti</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_MudcrabFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_MudcrabFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_MudcrabFertilized</defName>
 		<label>ashland mudcrab egg (fert.)</label>
 		<description>A fertilised mudcrab egg. If all goes well, it should hatch into a baby mudcrab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -176,17 +176,17 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Mudcrab</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Mudcrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NetchFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_NetchFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_NetchFertilized</defName>
 		<label>netch egg (fert.)</label>
 		<description>A fertilised netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As netch are rather protective of their eggs, netch eggs somewhat valuable.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
 			<color>(172,110,193)</color>
 		</graphicData>
 		<statBases>
@@ -195,13 +195,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Netch</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Netch</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NixHoundFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_NixHoundFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixHoundFertilized</defName>
 		<label>nix-hound egg (fert.)</label>
 		<description>A fertilised nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -215,13 +215,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NixHound</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NixHound</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NixOxFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_NixOxFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxFertilized</defName>
 		<label>nix-ox egg (fert.)</label>
 		<description>A fertilised nix-ox egg. If all goes well, it should hatch into a nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -234,13 +234,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NixOx</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NixOx</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NixSteedFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_NixSteedFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedFertilized</defName>
 		<label>nix-steed egg (fert.)</label>
 		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -253,13 +253,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_NixSteed</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_NixSteed</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_SandcrabBlueFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_SandcrabBlueFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_SandcrabBlueFertilized</defName>
 		<label>blue sandcrab egg (fert.)</label>
 		<description>A fertilised blue sandcrab egg. If all goes well, it should hatch into a baby blue sandcrab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -274,13 +274,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_SandcrabBlue</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_SandcrabBlue</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_ShalkFungalFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_ScuttlerFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ScuttlerFertilized</defName>
 		<label>scuttler egg (fert.)</label>
 		<description>A fertilised scuttler egg. If all goes well, it should hatch into a scuttler whelp. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -294,13 +294,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Scuttler</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Scuttler</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_ShalkFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_ShalkFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkFertilized</defName>
 		<label>shalk egg (fert.)</label>
 		<description>A fertilised shalk egg. If all goes well, it should hatch into a baby shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -313,13 +313,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Shalk</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Shalk</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_ShalkFungalFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_ShalkFungalFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkFungalFertilized</defName>
 		<label>fungal shalk egg (fert.)</label>
 		<description>A fertilised fungal shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -332,17 +332,17 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_ShalkFungal</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_ShalkFungal</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_NetchFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
-		<defName>MorrowRim_Egg_SwampJellyFertilized</defName>
+		<defName>Mashed_Ashlands_Egg_SwampJellyFertilized</defName>
 		<label>swamp jelly egg (fert.)</label>
 		<description>A fertilised swamp jelly egg. If all goes well, it should hatch into a swamp jelly calf. It can be eaten raw, but it's much better cooked. As swamp jelly are rather protective of their eggs, swamp jelly eggs somewhat valuable.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_JellyEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
 			<color>(110,172,193)</color>
 		</graphicData>
 		<statBases>
@@ -351,13 +351,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_SwampJelly</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_SwampJelly</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Egg_ThunderbugFertilized]==========-->
-	<ThingDef ParentName="MorrowRim_InsectEggFertBase">
-		<defName>MorrowRim_Egg_ThunderbugFertilized</defName>
+	<!-- ==========[Mashed_Ashlands_Egg_ThunderbugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ThunderbugFertilized</defName>
 		<label>ashland thunderbug egg (fert.)</label>
 		<description>A fertilised thunderbug egg. If all goes well, it should hatch into a baby thunderbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
@@ -370,7 +370,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
-				<hatcherPawn>MorrowRim_Thunderbug</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_Thunderbug</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

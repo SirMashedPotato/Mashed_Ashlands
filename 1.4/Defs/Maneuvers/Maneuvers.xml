@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BurnBite]==========-->
+	<!-- ==========[Mashed_Ashlands_BurnBite]==========-->
 	<ManeuverDef>
-		<defName>MorrowRim_BurnBite</defName>
-		<requiredCapacity>MorrowRim_BurnBite</requiredCapacity>
+		<defName>Mashed_Ashlands_BurnBite</defName>
+		<requiredCapacity>Mashed_Ashlands_BurnBite</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>MorrowRim_BurnBite</meleeDamageDef>
+			<meleeDamageDef>Mashed_Ashlands_BurnBite</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
@@ -14,13 +14,13 @@
 		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-	<!-- ==========[MorrowRim_SwampBite]==========-->
+	<!-- ==========[Mashed_Ashlands_SwampBite]==========-->
 	<ManeuverDef>
-		<defName>MorrowRim_SwampBite</defName>
-		<requiredCapacity>MorrowRim_SwampBite</requiredCapacity>
+		<defName>Mashed_Ashlands_SwampBite</defName>
+		<requiredCapacity>Mashed_Ashlands_SwampBite</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>MorrowRim_SwampBite</meleeDamageDef>
+			<meleeDamageDef>Mashed_Ashlands_SwampBite</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
@@ -28,13 +28,13 @@
 		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
-	<!-- ==========[MorrowRim_DrainingStab]==========-->
+	<!-- ==========[Mashed_Ashlands_DrainingStab]==========-->
 	<ManeuverDef>
-		<defName>MorrowRim_DrainingStab</defName>
-		<requiredCapacity>MorrowRim_DrainingStab</requiredCapacity>
+		<defName>Mashed_Ashlands_DrainingStab</defName>
+		<requiredCapacity>Mashed_Ashlands_DrainingStab</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>MorrowRim_DrainingStab</meleeDamageDef>
+			<meleeDamageDef>Mashed_Ashlands_DrainingStab</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BurnBite]==========-->
+	<!-- ==========[Mashed_Ashlands_BurnBite]==========-->
 	<DamageDef ParentName="Bite">
-		<defName>MorrowRim_BurnBite</defName>
+		<defName>Mashed_Ashlands_BurnBite</defName>
 		<label>fire bite</label>
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
-	<!-- ==========[MorrowRim_SwampBite]==========-->
+	<!-- ==========[Mashed_Ashlands_SwampBite]==========-->
 	<DamageDef ParentName="Bite">
-		<defName>MorrowRim_SwampBite</defName>
+		<defName>Mashed_Ashlands_SwampBite</defName>
 		<label>swamp bite</label>
 		<additionalHediffs>
 			<li>
-				<hediff>MorrowRim_SwampFever</hediff>
+				<hediff>Mashed_Ashlands_SwampFever</hediff>
 				<severityPerDamageDealt>0.001</severityPerDamageDealt>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	<!-- ==========[MorrowRim_DrainingStab]==========-->
+	<!-- ==========[Mashed_Ashlands_DrainingStab]==========-->
 	<DamageDef>
-		<defName>MorrowRim_DrainingStab</defName>
+		<defName>Mashed_Ashlands_DrainingStab</defName>
 		<label>draining stab</label>
 		<workerClass>MorrowRim2.DamageWorker_DrainingStab</workerClass>
 		<externalViolence>true</externalViolence>

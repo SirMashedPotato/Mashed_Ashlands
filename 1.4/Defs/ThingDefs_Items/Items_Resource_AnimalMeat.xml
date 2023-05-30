@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_MeatBase]==========-->
-	<ThingDef ParentName="OrganicProductBase" Name="MorrowRim_MeatBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_MeatBase]==========-->
+	<ThingDef ParentName="OrganicProductBase" Name="Mashed_Ashlands_MeatBase" Abstract="True">
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
@@ -23,7 +23,7 @@
 			<li>MeatRaw</li>
 		</thingCategories>
 		<tradeTags>
-			<li>MorrowRim_AshlandsAnimalProduct</li>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
 		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -32,9 +32,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_CrabMeat]==========-->
-	<ThingDef ParentName="MorrowRim_MeatBase">
-		<defName>MorrowRim_CrabMeat</defName>
+	<!-- ==========[Mashed_Ashlands_CrabMeat]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MeatBase">
+		<defName>Mashed_Ashlands_CrabMeat</defName>
 		<label>crab meat</label>
 		<description>Tasty meat harvested from a crab native to the ashlands. Has a slightly ashy taste to it. Perfectly safe to consume raw.</description>
 		<graphicData>

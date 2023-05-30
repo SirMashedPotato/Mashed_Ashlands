@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_RawGlowingAshFungus]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawGlowingAshFungus</defName>
+	<!-- ==========[Mashed_Ashlands_RawGlowingAshFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawGlowingAshFungus</defName>
 		<label>glowing ash fungus</label>
 		<description>Raw flesh from a glowing ashland fungus. Perfectly edible, at least when it's cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshFungus</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshFungus</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>0.7</MarketValue>
@@ -22,13 +22,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawToxYams]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawToxYams</defName>
+	<!-- ==========[Mashed_Ashlands_RawToxYams]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawToxYams</defName>
 		<label>tox yams</label>
 		<description>Raw tox yams. Ignoring the strange metallic taste, tox yam is perfectly safe to eat... when cooked at least.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawToxYams</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawToxYams</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>0.7</MarketValue>

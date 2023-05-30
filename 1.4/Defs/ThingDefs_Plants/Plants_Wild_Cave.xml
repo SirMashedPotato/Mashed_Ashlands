@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_Bloatspore]==========-->
-	<ThingDef ParentName="MorrowRim_SmallMushroomBase">
-		<defName>MorrowRim_Plant_Bloatspore</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_Bloatspore]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_Bloatspore</defName>
 		<label>bloatspore</label>
 		<description>A small brown mushroom that somewhat resembles a toilet, in more than one way. Only found growing in damp caves in ashland regions. Slowly fills up with bloat, a byproduct of the mushroom digesting nutrients from the ground.</description>
 		<modExtensions>
@@ -15,7 +15,7 @@
 			<Beauty>-2</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/MorrowRim_Bloatspore</texPath>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_Bloatspore</texPath>
 		</graphicData>
 		<plant>
 			<growOptimalGlow>0</growOptimalGlow>
@@ -26,9 +26,9 @@
 			<sowTags Inherit="False"/>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_PurpleCrystal]==========-->
-	<ThingDef ParentName="MorrowRim_PseudoTreeBase">
-		<defName>MorrowRim_Plant_PurpleCrystal</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_PurpleCrystal]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_PurpleCrystal</defName>
 		<label>large purple crystal</label>
 		<description>A large purple crystal, often found growing in caves in ashland regions. It hums with a strange energy, and emits a strong purple glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
 		<modExtensions>
@@ -36,15 +36,15 @@
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.1</cavePlantCommonality>
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_PurpleCrystalPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant</texPath>
 		</graphicData>
 		<plant>
 			<pollution>Any</pollution>
@@ -55,17 +55,17 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<harvestWork>1500</harvestWork>
 			<dieIfLeafless>false</dieIfLeafless>
-			<harvestedThingDef>MorrowRim_PurpleCrystalShard</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_PurpleCrystalShard</harvestedThingDef>
 			<harvestYield>25</harvestYield>
 			<growDays>15</growDays>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>10</sowMinSkill>
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<pollutedGraphicPath>Things/Plant/MorrowRim_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
+			<pollutedGraphicPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshlandsBase]==========-->
-	<BiomeDef Name="MorrowRim_AshlandsBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<forageability>0.75</forageability>
@@ -51,36 +51,36 @@
 		<wildAnimals>
 			<!-- prey animals -->
 			<!-- TODO May need to be specified per biome -->
-			<MorrowRim_KwamaScrib>0.3</MorrowRim_KwamaScrib>
-			<MorrowRim_KwamaForager>0.2</MorrowRim_KwamaForager>
+			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
+			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
 		</wildAnimals>
 		<allowedPackAnimals>
-			<li>MorrowRim_Guar</li>
-			<li>MorrowRim_NixOx</li>
+			<li>Mashed_Ashlands_Guar</li>
+			<li>Mashed_Ashlands_NixOx</li>
 			<li>Muffalo</li>
 			<li>Alpaca</li>
 		</allowedPackAnimals>
 	</BiomeDef>
-	<!-- ==========[MorrowRim_AshlandsRegularBase]==========-->
-	<!-- ==========[MorrowRim_AshlandsBlightedBase]==========-->
-	<BiomeDef Name="MorrowRim_AshlandsBlightedBase" ParentName="MorrowRim_AshlandsBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
+	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<canAutoChoose>false</canAutoChoose>
 		<movementDifficulty>2</movementDifficulty>
 		<settlementSelectionWeight>0.1</settlementSelectionWeight>
 		<forageability>0.1</forageability>
-		<foragedFood>MorrowRim_RawScathecraw</foragedFood>
+		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
 		<wildPlantRegrowDays>30</wildPlantRegrowDays>
 		<diseaseMtbDays>40</diseaseMtbDays>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
 	</BiomeDef>
-	<!-- ==========[MorrowRim_AshlandsVolcanicBase]==========-->
-	<BiomeDef Name="MorrowRim_AshlandsVolcanicBase" ParentName="MorrowRim_AshlandsBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<movementDifficulty>3</movementDifficulty>
 		<settlementSelectionWeight>0.3</settlementSelectionWeight>
 		<forageability>0.5</forageability>
-		<foragedFood>MorrowRim_RawScathecraw</foragedFood>
+		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>

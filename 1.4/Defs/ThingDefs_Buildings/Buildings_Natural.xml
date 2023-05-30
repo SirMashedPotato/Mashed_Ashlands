@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_VolcanicDebris]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>MorrowRim_VolcanicDebris</defName>
+		<defName>Mashed_Ashlands_VolcanicDebris</defName>
 		<thingClass>Mineable</thingClass>
 		<label>volcanic debris</label>
 		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
 		<graphicData>
-			<texPath>Things/Building/Natural/MorrowRim_VolcanicDebris</texPath>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
@@ -29,17 +29,17 @@
 			<li Class="MorrowRim2.CompProperties_DropOnDestroy">
 				<potentialDrops>
 					<li>
-						<thingDef>MorrowRim_ChunkBasalt</thingDef>
+						<thingDef>Mashed_Ashlands_ChunkBasalt</thingDef>
 						<amountRange>1</amountRange>
 						<weight>1</weight>
 					</li>
 					<li>
-						<thingDef>MorrowRim_ChunkBasaltScorched</thingDef>
+						<thingDef>Mashed_Ashlands_ChunkBasaltScorched</thingDef>
 						<amountRange>1</amountRange>
 						<weight>1</weight>
 					</li>
 					<li>
-						<thingDef>MorrowRim_PurpleCrystalShard</thingDef>
+						<thingDef>Mashed_Ashlands_PurpleCrystalShard</thingDef>
 						<amountRange>15~25</amountRange>
 						<weight>0.5</weight>
 					</li>
@@ -49,17 +49,17 @@
 						<weight>0.5</weight>
 					</li>
 					<li MayRequire="sirmashedpotato.morrowrim.glassandebony">
-						<thingDef>MorrowRim_Glass</thingDef>
+						<thingDef>Mashed_Ashlands_Glass</thingDef>
 						<amountRange>5~10</amountRange>
 						<weight>0.3</weight>
 					</li>
 					<li MayRequire="sirmashedpotato.morrowrim.glassandebony">
-						<thingDef>MorrowRim_Ebony</thingDef>
+						<thingDef>Mashed_Ashlands_Ebony</thingDef>
 						<amountRange>5~10</amountRange>
 						<weight>0.3</weight>
 					</li>
 					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
-						<thingDef>MorrowRim_HeartStone</thingDef>
+						<thingDef>Mashed_Ashlands_HeartStone</thingDef>
 						<amountRange>1~3</amountRange>
 						<weight>0.1</weight>
 					</li>

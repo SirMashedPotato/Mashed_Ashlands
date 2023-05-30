@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_CragIslandAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+		<defName>Mashed_Ashlands_CragIslandAshlands</defName>
 		<label>ashland crag islands</label>
 		<description>A collection of small, and often rocky, islands. Much of the ground here is gravel, though there are pockets of rich ash. While many plants struggle to grow here, ample access to coast allows for large clusters of marshmerrow and saltrice. Many of the animals native to the ashlands are not found here. The islands are instead dominated by netch, mudcrabs... and cliff racers.</description>
 		<workerClass>MorrowRim2.BiomeWorker_CragIslandAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_CragIslandAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_CragIslandAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
@@ -13,36 +13,36 @@
 				<forceHilliness>true</forceHilliness>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<forcedRockType>MorrowRim_Basalt</forcedRockType>
+				<forcedRockType>Mashed_Ashlands_Basalt</forcedRockType>
 				<terrainReplacers>
 					<li>
 						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
 					</li>
 				</terrainReplacers>
 				<roadReplacers>
 					<li>
 						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>MorrowRim_PackedAsh</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_PackedAsh</replacedTerrain>
 					</li>
 				</roadReplacers>
 				<dryToReplacers>
 					<li>
 						<originalTerrain>WaterShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterOceanShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravel</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
 					</li>
 				</dryToReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>MorrowRim_RichAshGravel</otherTerrainDef>
+				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.4</waterThreshold>
@@ -54,7 +54,7 @@
 		</modExtensions>
 		<animalDensity>1.7</animalDensity>
 		<plantDensity>0.3</plantDensity>
-		<foragedFood>MorrowRim_RawMarshmerrow</foragedFood>
+		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>2</movementDifficulty>
 		<soundsAmbient>
 			<!-- seabirds? -->
@@ -71,12 +71,12 @@
 				<max>0.77</max>
 			</li>
 			<li>
-				<terrain>MorrowRim_AshGravel</terrain>
+				<terrain>Mashed_Ashlands_AshGravel</terrain>
 				<min>0.77</min>
 				<max>0.87</max>
 			</li>
 			<li>
-				<terrain>MorrowRim_AshSoil</terrain>
+				<terrain>Mashed_Ashlands_AshSoil</terrain>
 				<min>0.87</min>
 				<max>999</max>
 			</li>
@@ -91,12 +91,12 @@
 						<max>0.66</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_RichAshGravel</terrain>
+						<terrain>Mashed_Ashlands_RichAshGravel</terrain>
 						<min>0.66</min>
 						<max>0.88</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_RichAshSoil</terrain>
+						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
 						<min>0.88</min>
 						<max>99</max>
 					</li>
@@ -111,12 +111,12 @@
 						<max>0.68</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_AshGravel</terrain>
+						<terrain>Mashed_Ashlands_AshGravel</terrain>
 						<min>0.68</min>
 						<max>0.86</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_RichAshGravel</terrain>
+						<terrain>Mashed_Ashlands_RichAshGravel</terrain>
 						<min>0.86</min>
 						<max>99</max>
 					</li>
@@ -134,8 +134,8 @@
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
 			<!-- MorrowRim weather -->
-			<MorrowRim_Ashfall>4</MorrowRim_Ashfall>
-			<MorrowRim_FoggyAshfall>2</MorrowRim_FoggyAshfall>
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">3</RG_Drizzle>
 			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
@@ -147,56 +147,56 @@
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_Grass>6</Plant_Grass>
-			<MorrowRim_Plant_AshlandGrass>8</MorrowRim_Plant_AshlandGrass>
-			<MorrowRim_Plant_AshlandFungus>1</MorrowRim_Plant_AshlandFungus>
-			<MorrowRim_Plant_Ashreed>10</MorrowRim_Plant_Ashreed>
+			<Mashed_Ashlands_Plant_AshlandGrass>8</Mashed_Ashlands_Plant_AshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandFungus>1</Mashed_Ashlands_Plant_AshlandFungus>
+			<Mashed_Ashlands_Plant_Ashreed>10</Mashed_Ashlands_Plant_Ashreed>
 			<!-- Nutrition plants -->
-			<MorrowRim_Plant_Marshmerrow>5</MorrowRim_Plant_Marshmerrow>
-			<MorrowRim_Plant_Saltrice>4</MorrowRim_Plant_Saltrice>
+			<Mashed_Ashlands_Plant_Marshmerrow>5</Mashed_Ashlands_Plant_Marshmerrow>
+			<Mashed_Ashlands_Plant_Saltrice>4</Mashed_Ashlands_Plant_Saltrice>
 			<!-- Resource plants -->
-			<MorrowRim_Plant_MuckSponge>2</MorrowRim_Plant_MuckSponge>
-			<MorrowRim_Plant_Kreshweed>2</MorrowRim_Plant_Kreshweed>
-			<MorrowRim_Plant_ParasolBush>0.2</MorrowRim_Plant_ParasolBush>
-			<MorrowRim_Plant_TramaShrub>0.1</MorrowRim_Plant_TramaShrub>
+			<Mashed_Ashlands_Plant_MuckSponge>2</Mashed_Ashlands_Plant_MuckSponge>
+			<Mashed_Ashlands_Plant_Kreshweed>2</Mashed_Ashlands_Plant_Kreshweed>
+			<Mashed_Ashlands_Plant_ParasolBush>0.2</Mashed_Ashlands_Plant_ParasolBush>
+			<Mashed_Ashlands_Plant_TramaShrub>0.1</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
-			<MorrowRim_Plant_BlackAntherflower>0.1</MorrowRim_Plant_BlackAntherflower>
-			<MorrowRim_Plant_WillowFlower>0.05</MorrowRim_Plant_WillowFlower>
-			<MorrowRim_Plant_Stoneflower>0.05</MorrowRim_Plant_Stoneflower>
-			<MorrowRim_Plant_AshlandFern>0.1</MorrowRim_Plant_AshlandFern>
+			<Mashed_Ashlands_Plant_BlackAntherflower>0.1</Mashed_Ashlands_Plant_BlackAntherflower>
+			<Mashed_Ashlands_Plant_WillowFlower>0.05</Mashed_Ashlands_Plant_WillowFlower>
+			<Mashed_Ashlands_Plant_Stoneflower>0.05</Mashed_Ashlands_Plant_Stoneflower>
+			<Mashed_Ashlands_Plant_AshlandFern>0.1</Mashed_Ashlands_Plant_AshlandFern>
 			<!-- Trees -->
-			<MorrowRim_Plant_TreeEmperorParasol>0.2</MorrowRim_Plant_TreeEmperorParasol>
+			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.2</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">8</Plant_GrayGrass>
-			<MorrowRim_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">10</MorrowRim_Plant_GlowingAshreed>
+			<Mashed_Ashlands_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">10</Mashed_Ashlands_Plant_GlowingAshreed>
 			<!-- Polluted nutrition plants -->
-			<MorrowRim_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_GlowingScathecraw>
-			<MorrowRim_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_GlowingParasolBush>
+			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
+			<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_GlowingParasolBush>
 			<!-- Polluted resource plants -->
-			<MorrowRim_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.1</MorrowRim_Plant_TramaMass>
-			<MorrowRim_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_Plant_WasteSponge>
+			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TramaMass>
+			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_WasteSponge>
 			<!-- Polluted trees -->
-			<MorrowRim_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_Plant_TreeEmperorToxisol>
+			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
 			<Rat>0.2</Rat>
-			<MorrowRim_Scuttler>0.1</MorrowRim_Scuttler>
-			<MorrowRim_SandcrabBlue>0.4</MorrowRim_SandcrabBlue>
+			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
+			<Mashed_Ashlands_SandcrabBlue>0.4</Mashed_Ashlands_SandcrabBlue>
 			<!-- herd animals -->
-			<MorrowRim_Netch>0.5</MorrowRim_Netch>
-			<MorrowRim_Mudcrab>0.3</MorrowRim_Mudcrab>
+			<Mashed_Ashlands_Netch>0.5</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Mudcrab>0.3</Mashed_Ashlands_Mudcrab>
 			<!-- predators -->
-			<MorrowRim_CliffRacer>0.5</MorrowRim_CliffRacer>
+			<Mashed_Ashlands_CliffRacer>0.5</Mashed_Ashlands_CliffRacer>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
-			<MorrowRim_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">1</MorrowRim_NetchGlowing>
-			<MorrowRim_CliffRacer>1</MorrowRim_CliffRacer>
+			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_NetchGlowing>
+			<Mashed_Ashlands_CliffRacer>1</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

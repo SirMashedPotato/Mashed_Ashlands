@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_ShalkResin]==========-->
+	<!-- ==========[Mashed_Ashlands_ShalkResin]==========-->
 	<ThingDef ParentName="ResourceBase">
-		<defName>MorrowRim_ShalkResin</defName>
+		<defName>Mashed_Ashlands_ShalkResin</defName>
 		<label>shalk resin</label>
 		<description>Resin obtained by butchering a shalk. While often used in crafting bonemold and chitin armour, it can also used to refine more chemfuel from nix-ox mucous.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/AnimalProductRaw/MorrowRim_ShalkResin</texPath>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_ShalkResin</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>75</stackLimit>
@@ -22,7 +22,7 @@
 		  <li>Manufactured</li>
 		</thingCategories>
 		<tradeTags>
-			<li>MorrowRim_AshlandsAnimalProduct</li>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_NamerVolcanoCommon]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoCommon]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanoCommon</defName>
+		<defName>Mashed_Ashlands_NamerVolcanoCommon</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -12,11 +12,11 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanoActive]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoActive]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanoActive</defName>
+		<defName>Mashed_Ashlands_NamerVolcanoActive</defName>
 		<include>
-			<li>MorrowRim_NamerVolcanoCommon</li>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -30,11 +30,11 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanoBlighted]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoBlighted]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanoBlighted</defName>
+		<defName>Mashed_Ashlands_NamerVolcanoBlighted</defName>
 		<include>
-			<li>MorrowRim_NamerVolcanoCommon</li>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -47,11 +47,11 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanoDormant]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoDormant]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanoDormant</defName>
+		<defName>Mashed_Ashlands_NamerVolcanoDormant</defName>
 		<include>
-			<li>MorrowRim_NamerVolcanoCommon</li>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -59,11 +59,11 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanoExtinct]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoExtinct]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanoExtinct</defName>
+		<defName>Mashed_Ashlands_NamerVolcanoExtinct</defName>
 		<include>
-			<li>MorrowRim_NamerVolcanoCommon</li>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>

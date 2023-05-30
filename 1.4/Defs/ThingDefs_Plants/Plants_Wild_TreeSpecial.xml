@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BurnedParasolStumpPermanent]==========-->
-	<ThingDef ParentName="MorrowRim_BurnedParasolStumpBase">
-		<defName>MorrowRim_BurnedParasolStumpPermanent</defName>
+	<!-- ==========[Mashed_Ashlands_BurnedParasolStumpPermanent]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BurnedParasolStumpBase">
+		<defName>Mashed_Ashlands_BurnedParasolStumpPermanent</defName>
 		<modExtensions>
 			<li Class="MorrowRim2.PlantProperties">
 				<disallowedTerrainForWild>
-					<li>MorrowRim_CrackedAshSoilBlighted</li>
-					<li>MorrowRim_AshSandBlighted</li>
-					<li>MorrowRim_AshGravelBlighted</li>
+					<li>Mashed_Ashlands_CrackedAshSoilBlighted</li>
+					<li>Mashed_Ashlands_AshSandBlighted</li>
+					<li>Mashed_Ashlands_AshGravelBlighted</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>

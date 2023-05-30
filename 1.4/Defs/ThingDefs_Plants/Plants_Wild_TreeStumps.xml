@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BurnedParasolStump]==========-->
-	<ThingDef ParentName="StumpBase" Name="MorrowRim_BurnedParasolStumpBase">
-		<defName>MorrowRim_BurnedParasolStump</defName>
+	<!-- ==========[Mashed_Ashlands_BurnedParasolStump]==========-->
+	<ThingDef ParentName="StumpBase" Name="Mashed_Ashlands_BurnedParasolStumpBase">
+		<defName>Mashed_Ashlands_BurnedParasolStump</defName>
 		<label>burned parasol stump</label>
 		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
 		<statBases>
@@ -10,7 +10,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/MorrowRim_ParasolBurned</texPath>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolBurned</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
 			<shadowData>
@@ -19,31 +19,31 @@
 			</shadowData>
 		</graphicData>
 		<plant>
-			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<visualSizeRange>1.5~3.2</visualSizeRange>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_ChoppedParasolStump]==========-->
-	<ThingDef ParentName="StumpChoppedBase" Name="MorrowRim_ChoppedParasolStumpBase">
-		<defName>MorrowRim_ChoppedParasolStump</defName>
+	<!-- ==========[Mashed_Ashlands_ChoppedParasolStump]==========-->
+	<ThingDef ParentName="StumpChoppedBase" Name="Mashed_Ashlands_ChoppedParasolStumpBase">
+		<defName>Mashed_Ashlands_ChoppedParasolStump</defName>
 		<label>chopped parasol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/MorrowRim_ParasolChopped</texPath>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolChopped</texPath>
 		</graphicData>
 		<plant>
-			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<visualSizeRange>1.5~3.2</visualSizeRange>
 		</plant>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SmashedParasolStump]==========-->
-	<ThingDef ParentName="StumpSmashedBase" Name="MorrowRim_SmashedParasolStumpBase">
-		<defName>MorrowRim_SmashedParasolStump</defName>
+	<!-- ==========[Mashed_Ashlands_SmashedParasolStump]==========-->
+	<ThingDef ParentName="StumpSmashedBase" Name="Mashed_Ashlands_SmashedParasolStumpBase">
+		<defName>Mashed_Ashlands_SmashedParasolStump</defName>
 		<label>smashed parasol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/MorrowRim_ParasolSmashed</texPath>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolSmashed</texPath>
 		</graphicData>
 		<plant>
-			<harvestedThingDef>MorrowRim_ParasolWoodLog</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<visualSizeRange>1.5~3.2</visualSizeRange>
 		</plant>
 	</ThingDef>

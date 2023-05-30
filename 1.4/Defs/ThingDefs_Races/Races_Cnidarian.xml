@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_CnidarianThingBase]========== -->
-	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_CnidarianThingBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_CnidarianThingBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_CnidarianThingBase" Abstract="True">
 		<modExtensions>
 			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
 				<hasBone>false</hasBone>
@@ -11,7 +11,7 @@
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>2.2</MoveSpeed>
 			<MarketValue>60</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -40,16 +40,16 @@
 				</capacities>
 				<power>5</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
 		</comps>
 		<race>
-			<fleshType>MorrowRim_FleshNetch</fleshType>
-			<bloodDef>MorrowRim_Filth_NetchBlood</bloodDef>
-			<body>MorrowRim_CnidarianBody</body>
+			<fleshType>Mashed_Ashlands_FleshNetch</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_NetchBlood</bloodDef>
+			<body>Mashed_Ashlands_CnidarianBody</body>
 			<herdAnimal>true</herdAnimal>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
@@ -89,23 +89,23 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SwampJelly]========== -->
-	<ThingDef ParentName="MorrowRim_CnidarianThingBase">
-		<defName>MorrowRim_SwampJelly</defName>
+	<!-- ==========[Mashed_Ashlands_SwampJelly]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CnidarianThingBase">
+		<defName>Mashed_Ashlands_SwampJelly</defName>
 		<label>ashland swamp jelly</label>
 		<description>Smaller cousins of the netch, usually found in humid ashland regions.  Swamp jelly come in a wide variety of colours, which has inspired some to collect them as pets. While they lack the protective shell of the netch, their tentacles are still covered in nematocysts</description>
 		<race>
-			<specificMeatDef>MorrowRim_SwampJellyEdible</specificMeatDef>
+			<specificMeatDef>Mashed_Ashlands_SwampJellyEdible</specificMeatDef>
 		</race>
 		<tradeTags>
 			<li>AnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalRare</li>
+			<li>Mashed_Ashlands_AshlandAnimalRare</li>
 		</tradeTags>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_SwampJelly" ParentName="AnimalKindBase">
-		<defName>MorrowRim_SwampJelly</defName>
+	<PawnKindDef Name="Mashed_Ashlands_SwampJelly" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_SwampJelly</defName>
 		<label>ashland swamp jelly</label>
-		<race>MorrowRim_SwampJelly</race>
+		<race>Mashed_Ashlands_SwampJelly</race>
 		<combatPower>60</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
@@ -151,31 +151,31 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
 					<drawSize>0.6</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<color>(127,180,219)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_Dessicated_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
 					<drawSize>0.9</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<color>(127,180,219)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_Dessicated_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
 					<drawSize>1.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<color>(127,180,219)</color>
@@ -185,7 +185,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_SwampJelly/MorrowRim_Dessicated_SwampJelly</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

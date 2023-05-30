@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_PlantRoughBase]==========-->
-	<ThingDef ParentName="RoughPlantBase" Name="MorrowRim_PlantRoughBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_PlantRoughBase]==========-->
+	<ThingDef ParentName="RoughPlantBase" Name="Mashed_Ashlands_PlantRoughBase" Abstract="True">
 		<possessionCount>10</possessionCount>
 		<tradeTags>
-			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>MorrowRim_AshlandsRawRoughPlant</li>
+			<li>Mashed_Ashlands_AshlandsRawPlant</li>
+			<li>Mashed_Ashlands_AshlandsRawRoughPlant</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawBittergreen]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawBittergreen</defName>
+	<!-- ==========[Mashed_Ashlands_RawBittergreen]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawBittergreen</defName>
 		<label>bittergreen petals</label>
 		<description>Raw bittergreen petals. Not safe to eat raw, but perfectly safe when properly cooked. Often brewed into a fortifying tea.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_BittergreenPetals</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_BittergreenPetals</texPath>
 		</graphicData>
 		<statBases>
 			<FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
@@ -33,13 +33,13 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawCorkbulbRoot]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawCorkbulbRoot</defName>
+	<!-- ==========[Mashed_Ashlands_RawCorkbulbRoot]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawCorkbulbRoot</defName>
 		<label>corkbulb root</label>
 		<description>Raw corkbulb root. Sometimes used as a replacement for wood when wood is not an option. Also makes for a decent animal feed, especially loved by guar and kagouti.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_CorkbulbRoot</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot</texPath>
 		</graphicData>
 		<stuffProps>
 			<stuffAdjective>corkwood</stuffAdjective>
@@ -86,13 +86,13 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawEmperorParasolMoss]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawEmperorParasolMoss</defName>
+	<!-- ==========[Mashed_Ashlands_RawEmperorParasolMoss]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawEmperorParasolMoss</defName>
 		<label>emperor parasol moss</label>
 		<description>Moss from an emperor parasol. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create an elixir that boosts resistance to ash buildup during ash storms.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_EmperorParasolMoss</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_EmperorParasolMoss</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>0.6</MarketValue>
@@ -111,13 +111,13 @@
 		</ingestible>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
-	<!-- ==========[MorrowRim_FungalMash]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_FungalMash</defName>
+	<!-- ==========[Mashed_Ashlands_FungalMash]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_FungalMash</defName>
 		<label>fungal mash</label>
 		<description>A variety of partially digested fungus, gathered from deep underground by a kwama forager. It is very likely that some, if not all, of the fungus is unsafe for human consumption.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_FungalMash</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_FungalMash</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1</MarketValue>
@@ -138,13 +138,13 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawMuck]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawMuck</defName>
+	<!-- ==========[Mashed_Ashlands_RawMuck]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawMuck</defName>
 		<label>muck</label>
 		<description>Raw muck harvested from a mucksponge. While it can be refined into several useful items, many of which are perfectly safe to ingest, raw muck itself should not be consumed.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_Muck</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_Muck</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.3</MarketValue>
@@ -162,16 +162,16 @@
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-			<specialThoughtDirect>MorrowRim_AteRawMuck</specialThoughtDirect>
+			<specialThoughtDirect>Mashed_Ashlands_AteRawMuck</specialThoughtDirect>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawScathecraw]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawScathecraw</defName>
+	<!-- ==========[Mashed_Ashlands_RawScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawScathecraw</defName>
 		<label>scathecraw</label>
 		<description>Raw scathecraw. Tough and chewy, not particularly pleasant to eat, though animals don't seem to mind.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawScathecraw</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawScathecraw</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>0.6</MarketValue>
@@ -190,13 +190,13 @@
 		</ingestible>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawTramaRoot]==========-->
-	<ThingDef ParentName="MorrowRim_PlantRoughBase">
-		<defName>MorrowRim_RawTramaRoot</defName>
+	<!-- ==========[Mashed_Ashlands_RawTramaRoot]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawTramaRoot</defName>
 		<label>trama root</label>
 		<description>Raw trama root. Often brewed into a calming tea, not very enjoyable to eat raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_TramaRoot</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_TramaRoot</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.3</MarketValue>

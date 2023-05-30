@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffDef ParentName="InfectionBase">
-		<defName>MorrowRim_SwampFever</defName>
+		<defName>Mashed_Ashlands_SwampFever</defName>
 		<label>swamp fever</label>
 		<description>An infectious disease found in wet and humid ashland regions, and often carried by the mudcrabs found there.\nWhile not particularly lethal, swamp fever will slowly drain the strength and movement of its victims, leaving them so weak they couldn't even crawl away from a mudcrab. Lethal levels of severity will almost solely be achieved by those who cannot keep their hands away from mudcrabs.</description>
 		<makesSickThought>true</makesSickThought>

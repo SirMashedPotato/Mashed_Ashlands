@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Ashfall]==========-->
-	<WeatherDef Name="MorrowRim_AshfallBase">
-		<defName>MorrowRim_Ashfall</defName>
+	<!-- ==========[Mashed_Ashlands_Ashfall]==========-->
+	<WeatherDef Name="Mashed_Ashlands_AshfallBase">
+		<defName>Mashed_Ashlands_Ashfall</defName>
 		<label>ash fall</label>
 		<description>A light cloud of ash, either disturbed by wind or volcanic activity, is descending over the area. Ash will harmlessly fall from the sky.</description>
 		<ambientSounds>
@@ -37,9 +37,9 @@
 			<saturation>0.8</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
-	<!-- ==========[MorrowRim_FoggyAshfall]==========-->
-	<WeatherDef ParentName="MorrowRim_AshfallBase">
-		<defName>MorrowRim_FoggyAshfall</defName>
+	<!-- ==========[Mashed_Ashlands_FoggyAshfall]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshfallBase">
+		<defName>Mashed_Ashlands_FoggyAshfall</defName>
 		<label>foggy ash fall</label>
 		<windSpeedFactor>0.5</windSpeedFactor>
 		<accuracyMultiplier>0.5</accuracyMultiplier>

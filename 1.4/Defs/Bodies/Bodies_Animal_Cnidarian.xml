@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_CnidarianBody]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianBody]==========-->
 	<BodyDef>
-		<defName>MorrowRim_CnidarianBody</defName>
+		<defName>Mashed_Ashlands_CnidarianBody</defName>
 		<label>cnidarian like</label>
 		<corePart>
 			<def>Body</def>
@@ -10,12 +10,12 @@
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>MorrowRim_CnidarianUnderbelly</def>
+					<def>Mashed_Ashlands_CnidarianUnderbelly</def>
 					<coverage>0.06</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianGastricCavity</def>
+					<def>Mashed_Ashlands_CnidarianGastricCavity</def>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -25,19 +25,19 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>first levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>second levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>third levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
@@ -55,13 +55,13 @@
 							<depth>Inside</depth>
 						</li>
 						<li>
-							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<def>Mashed_Ashlands_CnidarianSensoryOrgan</def>
 							<customLabel>left sensory organ</customLabel>
 							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
-							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<def>Mashed_Ashlands_CnidarianSensoryOrgan</def>
 							<customLabel>right sensory organ</customLabel>
 							<coverage>0.15</coverage>
 							<depth>Inside</depth>
@@ -73,60 +73,60 @@
 					</parts>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>front left tentacle</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>front right tentacle</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>rear left tentacle</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>rear right tentacle</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 			</parts>
 		</corePart>
 	</BodyDef>
-	<!-- ==========[MorrowRim_CnidarianShellBody]==========-->
+	<!-- ==========[Mashed_Ashlands_CnidarianShellBody]==========-->
 	<BodyDef>
-		<defName>MorrowRim_CnidarianShellBody</defName>
+		<defName>Mashed_Ashlands_CnidarianShellBody</defName>
 		<label>cnidarian like with shell</label>
 		<corePart>
-			<def>MorrowRim_CnidarianShell</def>
+			<def>Mashed_Ashlands_CnidarianShell</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>MorrowRim_CnidarianUnderbelly</def>
+					<def>Mashed_Ashlands_CnidarianUnderbelly</def>
 					<coverage>0.06</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianGastricCavity</def>
+					<def>Mashed_Ashlands_CnidarianGastricCavity</def>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -136,19 +136,19 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>first levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>second levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianLevitationSac</def>
+					<def>Mashed_Ashlands_CnidarianLevitationSac</def>
 					<customLabel>third levitation sac</customLabel>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
@@ -166,13 +166,13 @@
 							<depth>Inside</depth>
 						</li>
 						<li>
-							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<def>Mashed_Ashlands_CnidarianSensoryOrgan</def>
 							<customLabel>left sensory organ</customLabel>
 							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
-							<def>MorrowRim_CnidarianSensoryOrgan</def>
+							<def>Mashed_Ashlands_CnidarianSensoryOrgan</def>
 							<customLabel>right sensory organ</customLabel>
 							<coverage>0.15</coverage>
 							<depth>Inside</depth>
@@ -184,57 +184,57 @@
 					</parts>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>front left tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>front right tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>middle left tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>middle right tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>rear left tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 				<li>
-					<def>MorrowRim_CnidarianTentacle</def>
+					<def>Mashed_Ashlands_CnidarianTentacle</def>
 					<customLabel>rear right tentacle</customLabel>
 					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>MorrowRim_TentacleAttackTool</li>
+						<li>Mashed_Ashlands_TentacleAttackTool</li>
 					</groups>
 				</li>
 			</parts>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_CrystalBase]==========-->
-	<ThingDef ParentName="MorrowRim_PlantBase" Name="MorrowRim_Plant_CrystalBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_Plant_CrystalBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_Plant_CrystalBase" Abstract="True">
 		<statBases>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>

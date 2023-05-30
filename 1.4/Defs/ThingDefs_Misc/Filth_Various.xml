@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Filth_Ash]==========-->
+	<!-- ==========[Mashed_Ashlands_Filth_Ash]==========-->
 	<ThingDef ParentName="BaseFilth">
-		<defName>MorrowRim_Filth_Ash</defName>
+		<defName>Mashed_Ashlands_Filth_Ash</defName>
 		<label>ash</label>
 		<graphicData>
 			<texPath>Things/Filth/Grainy</texPath>
@@ -19,9 +19,9 @@
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
 		</filth>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Filth_Sulphur]==========-->
+	<!-- ==========[Mashed_Ashlands_Filth_Sulphur]==========-->
 	<ThingDef ParentName="BaseFilth">
-		<defName>MorrowRim_Filth_Sulphur</defName>
+		<defName>Mashed_Ashlands_Filth_Sulphur</defName>
 		<label>sulphur</label>
 		<graphicData>
 			<texPath>Things/Filth/Grainy</texPath>
@@ -38,9 +38,9 @@
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
 		</filth>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Filth_NetchBlood]==========-->
+	<!-- ==========[Mashed_Ashlands_Filth_NetchBlood]==========-->
 	<ThingDef ParentName="BaseFilth">
-		<defName>MorrowRim_Filth_NetchBlood</defName>
+		<defName>Mashed_Ashlands_Filth_NetchBlood</defName>
 		<label>netchblood</label>
 		<statBases>
 			<Beauty>-30</Beauty>
@@ -56,9 +56,9 @@
 			<canFilthAttach>true</canFilthAttach>
 		</filth>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Filth_CrabBlood]==========-->
+	<!-- ==========[Mashed_Ashlands_Filth_CrabBlood]==========-->
 	<ThingDef ParentName="BaseFilth">
-		<defName>MorrowRim_Filth_CrabBlood</defName>
+		<defName>Mashed_Ashlands_Filth_CrabBlood</defName>
 		<label>crabblood</label>
 		<statBases>
 			<Beauty>-30</Beauty>

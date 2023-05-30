@@ -2,37 +2,37 @@
 <Defs>
 	<!-- ==========[Small]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_SleeperCoffinfish</defName>
-		<thingDef>MorrowRim_RawSleeperCoffinfish</thingDef>
+		<defName>Mashed_Ashlands_SleeperCoffinfish</defName>
+		<thingDef>Mashed_Ashlands_RawSleeperCoffinfish</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_BlightedAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>15</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_FiremouthGuiyu</defName>
-		<thingDef>MorrowRim_RawFiremouthGuiyu</thingDef>
+		<defName>Mashed_Ashlands_FiremouthGuiyu</defName>
+		<thingDef>Mashed_Ashlands_RawFiremouthGuiyu</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_BlightedAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>MorrowRim_Oanna</defName>
-		<thingDef>MorrowRim_RawOanna</thingDef>
+		<defName>Mashed_Ashlands_Oanna</defName>
+		<thingDef>Mashed_Ashlands_RawOanna</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>MorrowRim_BlightedAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>

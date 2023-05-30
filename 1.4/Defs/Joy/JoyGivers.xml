@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JoyGiverDef>
-		<defName>MorrowRim_BuildAshCastle</defName>
+		<defName>Mashed_Ashlands_BuildAshCastle</defName>
 		<giverClass>MorrowRim2.JoyGiver_BuildAshCastle</giverClass>
 		<baseChance>0.75</baseChance>
-		<jobDef>MorrowRim_BuildAshCastle</jobDef>
+		<jobDef>Mashed_Ashlands_BuildAshCastle</jobDef>
 		<joyKind>Meditative</joyKind>
 		<requiredCapacities>
 			<li>Manipulation</li>

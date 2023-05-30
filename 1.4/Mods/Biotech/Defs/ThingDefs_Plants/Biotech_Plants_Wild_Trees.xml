@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_TreeEmperorToxisol]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_TreeEmperorParasolBase">
-		<defName>MorrowRim_Plant_TreeEmperorToxisol</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorToxisol]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeEmperorParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeEmperorToxisol</defName>
 		<label>emperor toxisol tree</label>
 		<description>A highly mutated subspecies of the emperor parasol, solely found growing in regions with ash rich ground, and high levels of pollution. Its stem hardens into an almost wood-like material as it matures. Several large pustules can be found growing on the underside of the cap. These pustules will often burst when the tree is felled, releasing clouds of toxic gas into the air.</description>
 		<thingClass>MorrowRim2.Plant_SecondaryDrop</thingClass>
 		<modExtensions Inherit="False">
 			<li Class="MorrowRim2.PlantProperties">
 				<terrainAffordancesToSow>
-					<li>MorrowRim_GrowAsh</li>
+					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_TreeEmperorToxisol</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/MorrowRim_TreeEmperorToxisol_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol_Immature</immatureGraphicPath>
 			<pollution>PollutedOnly</pollution>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<sowResearchPrerequisites>
-				<li>MorrowRim_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<harvestYield>40</harvestYield>
-			<burnedThingDef>MorrowRim_BurnedParasolStump</burnedThingDef>
-			<choppedThingDef>MorrowRim_ChoppedToxisolStump</choppedThingDef>
-			<smashedThingDef>MorrowRim_SmashedToxisolStump</smashedThingDef>
+			<burnedThingDef>Mashed_Ashlands_BurnedParasolStump</burnedThingDef>
+			<choppedThingDef>Mashed_Ashlands_ChoppedToxisolStump</choppedThingDef>
+			<smashedThingDef>Mashed_Ashlands_SmashedToxisolStump</smashedThingDef>
 		</plant>
 		<comps>
 			<li Class="MorrowRim2.CompProperties_GasOnDestroy">

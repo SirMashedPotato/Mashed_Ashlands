@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_NixHoundThingBase]========== -->
-	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_NixHoundThingBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_NixHoundThingBase]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_NixHoundThingBase" Abstract="True">
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="NocturnalAnimals.ExtendedRaceProperties">
 				<bodyClock>Nocturnal</bodyClock>
@@ -52,7 +52,7 @@
 			<li>
 				<label>proboscis</label>
 				<capacities>
-					<li>MorrowRim_DrainingStab</li>
+					<li>Mashed_Ashlands_DrainingStab</li>
 				</capacities>
 				<power>8</power>
 				<cooldownTime>2</cooldownTime>
@@ -80,7 +80,7 @@
 			</li>
 		</tools>
 		<race>
-			<body>MorrowRim_InsectDogLike</body>
+			<body>Mashed_Ashlands_InsectDogLike</body>
 			<predator>true</predator>
 			<maxPreyBodySize>2.3</maxPreyBodySize>
 			<petness>0.1</petness>
@@ -88,7 +88,7 @@
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<leatherDef>MorrowRim_NixLeather</leatherDef>
+			<leatherDef>Mashed_Ashlands_NixLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>
@@ -119,18 +119,18 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalFighter</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_NixHound]========== -->
-	<ThingDef ParentName="MorrowRim_NixHoundThingBase">
-		<defName>MorrowRim_NixHound</defName>
+	<!-- ==========[Mashed_Ashlands_NixHound]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NixHoundThingBase">
+		<defName>Mashed_Ashlands_NixHound</defName>
 		<label>nix-hound</label>
 		<description>A rather strange insect the size of a large dog, native to ashland regions. Nix-hounds lack functioning jaws, and instead drain prey dry using their proboscis. Large packs of nix-hound can quickly take down even the greatest of warriors, leaving them nothing more than a dry husk.\n\nWhile their unconventional appearance may turn away many, nix-hounds are highly intelligent, and make for loyal companions.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_NixHoundFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixHoundFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -138,13 +138,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_NixHound" ParentName="AnimalKindBase">
-		<defName>MorrowRim_NixHound</defName>
+	<PawnKindDef Name="Mashed_Ashlands_NixHound" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixHound</defName>
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<label>nix-hound</label>
 		<labelPlural>nix-hounds</labelPlural>
-		<race>MorrowRim_NixHound</race>
+		<race>Mashed_Ashlands_NixHound</race>
 		<wildGroupSize>1~3</wildGroupSize>
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
@@ -175,19 +175,19 @@
 				<label>nix-hound pup</label>
 				<labelPlural>nix-hound pups</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound</texPath>
 					<drawSize>1.25</drawSize>
 					<color>(145,140,114)</color>
 					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_Dessicated_NixHound</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound</texPath>
 					<drawSize>1.7</drawSize>
 					<color>(145,140,114)</color>
 					<shaderType>CutoutComplex</shaderType>
@@ -197,13 +197,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_Dessicated_NixHound</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound</texPath>
 					<drawSize>2.15</drawSize>
 					<color>(145,140,114)</color>
 					<shaderType>CutoutComplex</shaderType>
@@ -213,7 +213,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixHound/MorrowRim_Dessicated_NixHound</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_Dessicated_NixHound</texPath>
 					<drawSize>2.15</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

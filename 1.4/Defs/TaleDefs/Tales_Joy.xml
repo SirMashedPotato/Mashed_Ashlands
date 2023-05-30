@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<TaleDef>
-		<defName>MorrowRim_BuiltAshCastle</defName>
+		<defName>Mashed_Ashlands_BuiltAshCastle</defName>
 		<label>built ashcano</label>
 		<taleClass>Tale_SinglePawn</taleClass>
 		<type>Volatile</type>

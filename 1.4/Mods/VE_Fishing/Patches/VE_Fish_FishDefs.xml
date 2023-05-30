@@ -3,9 +3,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.FishDef[defName="VCEF_SpecialSteel" or defName="VCEF_SpecialGold" or defName="VCEF_SpecialJade"]/allowedBiomes</xpath>
 		<value>
-			<li>MorrowRim_RegularAshland</li>
-			<li>MorrowRim_VolcanicAshland</li>
-			<li>MorrowRim_BlightedAshland</li>	
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>	
 		</value>
 	</Operation>
 </Patch>

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_IntenseVolcanicHeat]==========-->
-	<GameConditionDef ParentName="MorrowRim_VolcanicHeatBase">
-		<defName>MorrowRim_VolcanicHeatIntense</defName>
+	<!-- ==========[Mashed_Ashlands_IntenseVolcanicHeat]==========-->
+	<GameConditionDef ParentName="Mashed_Ashlands_VolcanicHeatBase">
+		<defName>Mashed_Ashlands_VolcanicHeatIntense</defName>
 		<label>intense volcanic heat</label>
 		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
 		<endMessage>The air begins to cool.</endMessage>
 	</GameConditionDef>
-	<!-- ==========[MorrowRim_VolcanicDebrisRain]==========-->
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisRain]==========-->
 	<GameConditionDef>
-		<defName>MorrowRim_VolcanicDebrisRain</defName>
+		<defName>Mashed_Ashlands_VolcanicDebrisRain</defName>
 		<conditionClass>MorrowRim2.GameCondition_DebrisRain</conditionClass>
 		<label>volcanic debris rain</label>
 		<description>Recent volcanic activity has launched large pieces of rock into the air. While the debris will rapidly cool, it will likely ignite anything nearby on impact.</description>
 		<descriptionFuture>volcanic debris will begin falling in the area around [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
 		<endMessage>The volcanic debris stops falling.</endMessage>
-		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
 </Defs>

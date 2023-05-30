@@ -3,8 +3,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RulePackDef[defName="GlobalUtility"]/rulePack/rulesFiles</xpath>
 		<value>
-			<li>Animal(p=0.2)->MorrowRim_MiscStrings/MorrowRim_Animals</li>
-			<li>AnimalBadass(p=0.2)->MorrowRim_MiscStrings/MorrowRim_AnimalsBadass</li>
+			<li>Animal(p=0.2)->Mashed_Ashlands_MiscStrings/Mashed_Ashlands_Animals</li>
+			<li>AnimalBadass(p=0.2)->Mashed_Ashlands_MiscStrings/Mashed_Ashlands_AnimalsBadass</li>
 		</value>
 	</Operation>
 </Patch>

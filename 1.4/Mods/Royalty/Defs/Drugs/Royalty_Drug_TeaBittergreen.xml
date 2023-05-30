@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_TeaBittergreen]==========-->
-	<ThingDef ParentName="MorrowRim_TeaBase">
-		<defName>MorrowRim_TeaBittergreen</defName>
+	<!-- ==========[Mashed_Ashlands_TeaBittergreen]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
+		<defName>Mashed_Ashlands_TeaBittergreen</defName>
 		<label>bittergreen tea</label>
 		<description>A fortifying tea brewed from bittergreen. While it has an odd bitter taste, it does help to reduce neural heat buildup.</description>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_TeaBittergreenHigh</HediffDef>
+			<HediffDef>Mashed_Ashlands_TeaBittergreenHigh</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Drug/MorrowRim_TeaBittergreen</texPath>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_TeaBittergreen</texPath>
 		</graphicData>
 		<ingestible>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>MorrowRim_TeaBittergreenHigh</hediffDef>
+					<hediffDef>Mashed_Ashlands_TeaBittergreenHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<researchPrerequisite>MorrowRim_AshSurvival_Intermediate</researchPrerequisite>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
 			<skillRequirements>
 				<Cooking>5</Cooking>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<MorrowRim_RawBittergreen>3</MorrowRim_RawBittergreen>
+			<Mashed_Ashlands_RawBittergreen>3</Mashed_Ashlands_RawBittergreen>
 		</costList>
 	</ThingDef>
-	<!-- ==========[MorrowRim_TeaBittergreenHigh]==========-->
-	<HediffDef ParentName="MorrowRim_TeaHighBase">
-		<defName>MorrowRim_TeaBittergreenHigh</defName>
+	<!-- ==========[Mashed_Ashlands_TeaBittergreenHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_TeaHighBase">
+		<defName>Mashed_Ashlands_TeaBittergreenHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>bittergreen tea</label>
 		<description>A fortifying tea brewed from bittergreen. While it has an odd bitter taste, it does help to reduce neural heat buildup.</description>

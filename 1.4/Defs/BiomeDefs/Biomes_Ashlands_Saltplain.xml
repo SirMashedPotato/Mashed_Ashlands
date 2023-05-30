@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_SaltplainAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+		<defName>Mashed_Ashlands_SaltplainAshlands</defName>
 		<label>ashland saltplain</label>
 		<description>Salt</description>
 		<workerClass>MorrowRim2.BiomeWorker_SaltplainAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_SaltplainAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_SaltplainAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
                 <lateLoader>true</lateLoader>

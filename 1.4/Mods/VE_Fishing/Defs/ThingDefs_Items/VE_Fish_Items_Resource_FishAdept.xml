@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_RawFishAdeptBase]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" Name="MorrowRim_RawFishAdeptBase" ParentName="MorrowRim_RawFishBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_RawFishAdeptBase]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" Name="Mashed_Ashlands_RawFishAdeptBase" ParentName="Mashed_Ashlands_RawFishBase" Abstract="True">
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawAkaviriWrasse]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawAkaviriWrasse</defName>
+	<!-- ==========[Mashed_Ashlands_RawAkaviriWrasse]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawAkaviriWrasse</defName>
 		<label>akaviri wrasse (adept catch)</label>
 		<description>Raw akaviri wrasse. A rare species of wrasse, rarely found in the oceanic waters around ashland regions. Many believe the Akaviri wrasse is originally from a far off, and very strange, land.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawAkaviriWrasse</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawAkaviriWrasse</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.03</Mass>
@@ -18,13 +18,13 @@
 			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawOldManGar]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawOldManGar</defName>
+	<!-- ==========[Mashed_Ashlands_RawOldManGar]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawOldManGar</defName>
 		<label>old man gar (adept catch)</label>
 		<description>Raw old man gar. A rare species of gar, rarely found in fresh waters in ashland regions.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawOldManGar</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawOldManGar</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.25</Mass>
@@ -32,13 +32,13 @@
 			<MarketValue>4.4</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawPikeblenny]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawPikeblenny</defName>
+	<!-- ==========[Mashed_Ashlands_RawPikeblenny]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawPikeblenny</defName>
 		<label>pikeblenny(adept catch)</label>
 		<description>Raw pikeblenny. A strange little fish, rarely found in the oceanic waters around ashland regions. Their small size allows them to hide in tight crevices, keeping them safe from slaughterfish.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawPikeblenny</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawPikeblenny</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.01</Mass>
@@ -46,13 +46,13 @@
 			<MarketValue>0.4</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawRainbowZander]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawRainbowZander</defName>
+	<!-- ==========[Mashed_Ashlands_RawRainbowZander]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawRainbowZander</defName>
 		<label>rainbow zander (adept catch)</label>
 		<description>Raw rainbow zander. A rare species of fish, rarely found in the fresh waters in ashland regions. While its multi-coloured scales are rather beautiful, they do make the rainbow zander a prime target for slaughterfish.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawRainbowZander</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawRainbowZander</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.03</Mass>
@@ -60,13 +60,13 @@
 			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawResdaynianSailfin]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawResdaynianSailfin</defName>
+	<!-- ==========[Mashed_Ashlands_RawResdaynianSailfin]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawResdaynianSailfin</defName>
 		<label>Resdaynian sailfin (adept catch)</label>
 		<description>Raw Resdaynian sailfin. A rare species of sailfish, rarely found in the oceanic waters around ashland regions.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawResdaynianSailfin</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawResdaynianSailfin</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.25</Mass>
@@ -74,13 +74,13 @@
 			<MarketValue>4.4</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawShalkBrotherCrayfish]==========-->
-	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="MorrowRim_RawFishAdeptBase">
-		<defName>MorrowRim_RawShalkBrotherCrayfish</defName>
+	<!-- ==========[Mashed_Ashlands_RawShalkBrotherCrayfish]==========-->
+	<ThingDef MayRequire="vanillaexpanded.vcef" ParentName="Mashed_Ashlands_RawFishAdeptBase">
+		<defName>Mashed_Ashlands_RawShalkBrotherCrayfish</defName>
 		<label>shalk-brother crayfish(adept catch)</label>
 		<description>Raw shalk-brother crayfish. A brilliant blue species of crayfish, often found in the fresh waters of ashland regions. A rather rare sight due to slaughterfish infestations.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Adept/MorrowRim_RawShalkBrotherCrayfish</texPath>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawShalkBrotherCrayfish</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.01</Mass>

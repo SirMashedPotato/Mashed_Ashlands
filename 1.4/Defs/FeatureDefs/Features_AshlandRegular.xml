@@ -1,83 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Ashlands]==========-->
+	<!-- ==========[Mashed_Ashlands_Ashlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_Ashlands</defName>
+		<defName>Mashed_Ashlands_Ashlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>451</order>
 		<rootBiomes>
-			<li>MorrowRim_Ashlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
-			<li>MorrowRim_CoralCoastAshlands</li>
-			<li>MorrowRim_ForestAshlands</li>
-			<li>MorrowRim_GrazelandAshlands</li>
-			<li>MorrowRim_HighlandAshlands</li>
-			<li>MorrowRim_SaltplainAshlands</li>
-			<li>MorrowRim_SwampAshlands</li>
+			<li>Mashed_Ashlands_CoralCoastAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SaltplainAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
 		</acceptableBiomes>
-		<nameMaker>MorrowRim_NamerAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_CoralCoastAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_CoralCoastAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_CoralCoastAshlands</defName>
+		<defName>Mashed_Ashlands_CoralCoastAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<minSize>10</minSize>
 		<rootBiomes>
-			<li>MorrowRim_CoralCoastAshlands</li>
-			<li>MorrowRim_VolcanicCoralCoastAshlands</li>
+			<li>Mashed_Ashlands_CoralCoastAshlands</li>
+			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerCoralCoastAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerCoralCoastAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_ForestAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_ForestAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_ForestAshlands</defName>
+		<defName>Mashed_Ashlands_ForestAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_ForestAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerForestAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_GrazelandAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_GrazelandAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_GrazelandAshlands</defName>
+		<defName>Mashed_Ashlands_GrazelandAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerGrazelandAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerGrazelandAshlands</nameMaker>
 	</FeatureDef>
-		<!-- ==========[MorrowRim_HighlandAshlands]==========-->
+		<!-- ==========[Mashed_Ashlands_HighlandAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_HighlandAshlands</defName>
+		<defName>Mashed_Ashlands_HighlandAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_HighlandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerHighlandAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerHighlandAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_SaltplainAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_SaltplainAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_SaltplainAshlands</defName>
+		<defName>Mashed_Ashlands_SaltplainAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_SaltplainAshlands</li>
+			<li>Mashed_Ashlands_SaltplainAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerSaltplainAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerSaltplainAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[MorrowRim_SwampAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_SwampAshlands]==========-->
 	<FeatureDef>
-		<defName>MorrowRim_SwampAshlands</defName>
+		<defName>Mashed_Ashlands_SwampAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>MorrowRim_SwampAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
 		</rootBiomes>
-		<nameMaker>MorrowRim_NamerSwampAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerSwampAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

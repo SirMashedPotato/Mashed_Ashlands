@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_InsectDogLike]==========-->
+	<!-- ==========[Mashed_Ashlands_InsectDogLike]==========-->
 	<BodyDef>
-		<defName>MorrowRim_InsectDogLike</defName>
+		<defName>Mashed_Ashlands_InsectDogLike</defName>
 		<label>dog like insect</label>
 		<corePart>
 			<def>Shell</def>
@@ -105,9 +105,9 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-	<!-- ==========[MorrowRim_InsectLeechLike]==========-->
+	<!-- ==========[Mashed_Ashlands_InsectLeechLike]==========-->
 	<BodyDef>
-		<defName>MorrowRim_InsectLeechLike</defName>
+		<defName>Mashed_Ashlands_InsectLeechLike</defName>
 		<label>leech like insect</label>
 		<corePart>
 			<def>SnakeBody</def>
@@ -171,9 +171,9 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-	<!-- ==========[MorrowRim_InsectTickLike]==========-->
+	<!-- ==========[Mashed_Ashlands_InsectTickLike]==========-->
 	<BodyDef>
-		<defName>MorrowRim_InsectTickLike</defName>
+		<defName>Mashed_Ashlands_InsectTickLike</defName>
 		<label>tick like insect</label>
 		<corePart>
 			<def>Shell</def>
@@ -271,9 +271,9 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-	<!-- ==========[MorrowRim_InsectScribLike]==========-->
+	<!-- ==========[Mashed_Ashlands_InsectScribLike]==========-->
 	<BodyDef>
-		<defName>MorrowRim_InsectScribLike</defName>
+		<defName>Mashed_Ashlands_InsectScribLike</defName>
 		<label>scrib like insect</label>
 		<corePart>
 			<def>Shell</def>

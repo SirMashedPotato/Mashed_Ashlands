@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<LetterDef ParentName="NegativeEvent">
-		<defName>MorrowRim_VolcanoNegativeEvent</defName>
+		<defName>Mashed_Ashlands_VolcanoNegativeEvent</defName>
 		<color>(255, 192, 110)</color>
 		<flashColor>(255, 167, 108)</flashColor>
 	</LetterDef>

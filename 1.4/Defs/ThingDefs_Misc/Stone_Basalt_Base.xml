@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BasaltBase]==========-->
-	<ThingDef ParentName="UglyRockBase" Name="MorrowRim_BasaltBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_BasaltBase]==========-->
+	<ThingDef ParentName="UglyRockBase" Name="Mashed_Ashlands_BasaltBase" Abstract="True">
 		<modExtensions>
 			<li Class="MorrowRim2.RockProperties">
 				<onlyAllowIfForced>true</onlyAllowIfForced>
-				<roughTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltRough</roughTexPathReplacer>
-				<roughHewnTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltRoughHewn</roughHewnTexPathReplacer>
-				<smoothTexPathReplacer>Terrain/Surfaces/MorrowRim_BasaltSmooth</smoothTexPathReplacer>
+				<roughTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltRough</roughTexPathReplacer>
+				<roughHewnTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltRoughHewn</roughHewnTexPathReplacer>
+				<smoothTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltSmooth</smoothTexPathReplacer>
 				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
 				<applyToPolluted>true</applyToPolluted>
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Building/RockTypes/MorrowRim_MorrowRim_ColumnarBasalt</texPath>
+			<texPath>Things/Building/RockTypes/Mashed_Ashlands_Mashed_Ashlands_ColumnarBasalt</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>None</linkType>
 			<drawSize>(3,3)</drawSize>
@@ -25,15 +25,15 @@
 			<mineableDropChance>0.25</mineableDropChance>
 		</building>
 	</ThingDef>
-	<!-- ==========[MorrowRim_ChunkBasaltBase]==========-->
-	<ThingDef ParentName="ChunkRockBase" Name="MorrowRim_ChunkBasaltBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_ChunkBasaltBase]==========-->
+	<ThingDef ParentName="ChunkRockBase" Name="Mashed_Ashlands_ChunkBasaltBase" Abstract="True">
 		<statBases>
 			<Mass>25</Mass>
 		</statBases>
 		<soundDrop>ChunkRock_Drop</soundDrop>
 	</ThingDef>
-	<!-- ==========[MorrowRim_BlocksBasaltBase]==========-->
-	<ThingDef ParentName="StoneBlocksBase" Name="MorrowRim_BlocksBasaltBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_BlocksBasaltBase]==========-->
+	<ThingDef ParentName="StoneBlocksBase" Name="Mashed_Ashlands_BlocksBasaltBase" Abstract="True">
 		<statBases>
 			<Mass>1.25</Mass>
 			<SharpDamageMultiplier>0.65</SharpDamageMultiplier>

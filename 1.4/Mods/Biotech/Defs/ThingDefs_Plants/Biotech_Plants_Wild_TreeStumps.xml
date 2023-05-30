@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_ChoppedToxisolStump]==========-->
-	<ThingDef ParentName="MorrowRim_ChoppedParasolStumpBase">
-		<defName>MorrowRim_ChoppedToxisolStump</defName>
+	<!-- ==========[Mashed_Ashlands_ChoppedToxisolStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_ChoppedParasolStumpBase">
+		<defName>Mashed_Ashlands_ChoppedToxisolStump</defName>
 		<label>chopped toxisol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/MorrowRim_ToxisolChopped</texPath>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ToxisolChopped</texPath>
 		</graphicData>
 	</ThingDef>
-	<!-- ==========[MorrowRim_SmashedToxisolStump]==========-->
-	<ThingDef ParentName="MorrowRim_SmashedParasolStumpBase">
-		<defName>MorrowRim_SmashedToxisolStump</defName>
+	<!-- ==========[Mashed_Ashlands_SmashedToxisolStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmashedParasolStumpBase">
+		<defName>Mashed_Ashlands_SmashedToxisolStump</defName>
 		<label>smashed toxisol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/MorrowRim_ToxisolSmashed</texPath>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ToxisolSmashed</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

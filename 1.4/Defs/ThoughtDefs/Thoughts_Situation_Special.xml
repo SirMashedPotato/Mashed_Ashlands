@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshStorm]==========-->
+	<!-- ==========[Mashed_Ashlands_AshStorm]==========-->
 	<ThoughtDef>
-		<defName>MorrowRim_AshStorm</defName>
+		<defName>Mashed_Ashlands_AshStorm</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>MorrowRim2.ThoughtWorker_AshStorm</workerClass>
 		<stages>

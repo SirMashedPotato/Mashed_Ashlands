@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_AshlandsBase">
-		<defName>MorrowRim_VolcanicCragIslandAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+		<defName>Mashed_Ashlands_VolcanicCragIslandAshlands</defName>
 		<label>volcanic crag islands</label>
 		<description>Azuras coast / Dagon fel but volcanic.</description>
 		<workerClass>MorrowRim2.BiomeWorker_VolcanicCragIslandAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_VolcanicCragIslandAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_VolcanicCragIslandAshlands</texture>
 		<modExtensions>
 			<li Class="MorrowRim2.BiomeProperties">
                 <earlyLoader>true</earlyLoader>

@@ -9,7 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Heruan_Helmet"]/equippedStatOffsets</xpath>
 					<value>
-						<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+						<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
 			</operations>

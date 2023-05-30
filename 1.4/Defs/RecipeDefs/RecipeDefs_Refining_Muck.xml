@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_RefineMuckBase]==========-->
-	<RecipeDef ParentName="MorrowRim_RefineBase" Name="MorrowRim_RefineMuckBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_RefineMuckBase]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineBase" Name="Mashed_Ashlands_RefineMuckBase" Abstract="True">
 		<jobString>Refining herbal medicine from muck.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MorrowRim_RawMuck</li>
+						<li>Mashed_Ashlands_RawMuck</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -15,30 +15,30 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MorrowRim_RawMuck</li>
+				<li>Mashed_Ashlands_RawMuck</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>
-	<!-- ==========[MorrowRim_RefineMuck]==========-->
-	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
-		<defName>MorrowRim_RefineMuck</defName>
+	<!-- ==========[Mashed_Ashlands_RefineMuck]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
+		<defName>Mashed_Ashlands_RefineMuck</defName>
 		<label>refine muck</label>
 		<description>Refines 10 buckets of muck into 5 herbal medicine.</description>
 		<products>
 			<MedicineHerbal>5</MedicineHerbal>
 		</products>
-		<researchPrerequisite>MorrowRim_AshSurvival_Intermediate</researchPrerequisite>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
 	</RecipeDef>
-	<!-- ==========[MorrowRim_RefineMuckWithKwamaEgg]==========-->
-	<RecipeDef ParentName="MorrowRim_RefineMuckBase">
-		<defName>MorrowRim_RefineMuckWithKwamaEgg</defName>
+	<!-- ==========[Mashed_Ashlands_RefineMuckWithKwamaEgg]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
+		<defName>Mashed_Ashlands_RefineMuckWithKwamaEgg</defName>
 		<label>refine muck with kwama eggs</label>
 		<description>Refines 10 buckets of muck and 2 kwama eggs into 10 herbal medicine.</description>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MorrowRim_KwamaEgg</li>
+						<li>Mashed_Ashlands_KwamaEgg</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -46,12 +46,12 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MorrowRim_KwamaEgg</li>
+				<li>Mashed_Ashlands_KwamaEgg</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MedicineHerbal>10</MedicineHerbal>
 		</products>
-		<researchPrerequisite>MorrowRim_AshSurvival_Advanced</researchPrerequisite>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
 	</RecipeDef>
 </Defs>

@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_BiomeTempAshlandRegular]==========-->
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandRegular]==========-->
 	<VCE_Fishing.BiomeTempDef>
-		<defName>MorrowRim_BiomeTempAshlandRegular</defName>
-		<biomeTempLabel>MorrowRim_RegularAshland</biomeTempLabel>
+		<defName>Mashed_Ashlands_BiomeTempAshlandRegular</defName>
+		<biomeTempLabel>Mashed_Ashlands_RegularAshland</biomeTempLabel>
 		<biomes>
-			<li>MorrowRim_Ashlands</li>
-			<li>MorrowRim_CoralCoastAshlands</li>
-			<li>MorrowRim_CragIslandAshlands</li>
-			<li>MorrowRim_ForestAshlands</li>
-			<li>MorrowRim_GrazelandAshlands</li>
-			<li>MorrowRim_HighlandAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_CoralCoastAshlands</li>
+			<li>Mashed_Ashlands_CragIslandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!-- ==========[MorrowRim_BiomeTempAshlandBlighted]==========-->
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandBlighted]==========-->
 	<VCE_Fishing.BiomeTempDef>
-		<defName>MorrowRim_BiomeTempAshlandBlighted</defName>
-		<biomeTempLabel>MorrowRim_BlightedAshland</biomeTempLabel>
+		<defName>Mashed_Ashlands_BiomeTempAshlandBlighted</defName>
+		<biomeTempLabel>Mashed_Ashlands_BlightedAshland</biomeTempLabel>
 		<biomes>
-			<li>MorrowRim_BlightedAshlands</li>
-			<li>MorrowRim_BlightedBogAshlands</li>
-			<li>MorrowRim_BlightedCragIslandAshlands</li>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedCragIslandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!-- ==========[MorrowRim_BiomeTempAshlandVolcanic]==========-->
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandVolcanic]==========-->
 	<VCE_Fishing.BiomeTempDef>
-		<defName>MorrowRim_BiomeTempAshlandVolcanic</defName>
-		<biomeTempLabel>MorrowRim_VolcanicAshland</biomeTempLabel>
+		<defName>Mashed_Ashlands_BiomeTempAshlandVolcanic</defName>
+		<biomeTempLabel>Mashed_Ashlands_VolcanicAshland</biomeTempLabel>
 		<biomes>
-			<li>MorrowRim_VolcanicAshlands</li>
-			<li>MorrowRim_VolcanicCoralCoastAshlands</li>
-			<li>MorrowRim_VolcanicCragIslandAshlands</li>
-			<li>MorrowRim_VolcanicSulphurPitsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
+			<li>Mashed_Ashlands_VolcanicCragIslandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!-- ==========[MorrowRim_BiomeTempAshlandBrine]==========-->
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandBrine]==========-->
 	<VCE_Fishing.BiomeTempDef>
-		<defName>MorrowRim_BiomeTempAshlandBrine</defName>
-		<biomeTempLabel>MorrowRim_BrineAshland</biomeTempLabel>
+		<defName>Mashed_Ashlands_BiomeTempAshlandBrine</defName>
+		<biomeTempLabel>Mashed_Ashlands_BrineAshland</biomeTempLabel>
 		<biomes>
-			<li>MorrowRim_SaltplainAshlands</li>
+			<li>Mashed_Ashlands_SaltplainAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!-- ==========[MorrowRim_BiomeTempAshlandSwamp]==========-->
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandSwamp]==========-->
 	<VCE_Fishing.BiomeTempDef>
-		<defName>MorrowRim_BiomeTempAshlandSwamp</defName>
-		<biomeTempLabel>MorrowRim_SwampAshland</biomeTempLabel>
+		<defName>Mashed_Ashlands_BiomeTempAshlandSwamp</defName>
+		<biomeTempLabel>Mashed_Ashlands_SwampAshland</biomeTempLabel>
 		<biomes>
-			<li>MorrowRim_SwampAshlands</li>
-			<li>MorrowRim_SwampIslandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_SwampIslandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!--

@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_TeaTramaRoot]==========-->
-	<ThingDef ParentName="MorrowRim_TeaBase">
-		<defName>MorrowRim_TeaTramaRoot</defName>
+	<!-- ==========[Mashed_Ashlands_TeaTramaRoot]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
+		<defName>Mashed_Ashlands_TeaTramaRoot</defName>
 		<label>trama root tea</label>
 		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>
 		<descriptionHyperlinks>
-			<HediffDef>MorrowRim_TeaTramaRootHigh</HediffDef>
+			<HediffDef>Mashed_Ashlands_TeaTramaRootHigh</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Drug/MorrowRim_TeaTramaRoot</texPath>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_TeaTramaRoot</texPath>
 		</graphicData>
 		<ingestible>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>MorrowRim_TeaTramaRootHigh</hediffDef>
+					<hediffDef>Mashed_Ashlands_TeaTramaRootHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<researchPrerequisite>MorrowRim_AshSurvival_Beginner</researchPrerequisite>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
 			<skillRequirements>
 				<Cooking>3</Cooking>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<MorrowRim_RawTramaRoot>3</MorrowRim_RawTramaRoot>
+			<Mashed_Ashlands_RawTramaRoot>3</Mashed_Ashlands_RawTramaRoot>
 		</costList>
 	</ThingDef>
-	<!-- ==========[MorrowRim_TeaTramaRootHigh]==========-->
-	<HediffDef ParentName="MorrowRim_TeaHighBase">
-		<defName>MorrowRim_TeaTramaRootHigh</defName>
+	<!-- ==========[Mashed_Ashlands_TeaTramaRootHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_TeaHighBase">
+		<defName>Mashed_Ashlands_TeaTramaRootHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>trama root tea</label>
 		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>

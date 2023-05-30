@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_PlantFoodRawBase]==========-->
-	<ThingDef ParentName="PlantFoodRawBase" Name="MorrowRim_PlantFoodRawBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_PlantFoodRawBase]==========-->
+	<ThingDef ParentName="PlantFoodRawBase" Name="Mashed_Ashlands_PlantFoodRawBase" Abstract="True">
 		<possessionCount>10</possessionCount>
 		<statBases>
 			<MarketValue>1.1</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>MorrowRim_AshlandsRawPlant</li>
-			<li>MorrowRim_AshlandsRawFoodPlant</li>
+			<li>Mashed_Ashlands_AshlandsRawPlant</li>
+			<li>Mashed_Ashlands_AshlandsRawFoodPlant</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawAshFungus]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawAshFungus</defName>
+	<!-- ==========[Mashed_Ashlands_RawAshFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawAshFungus</defName>
 		<label>ash fungus</label>
 		<description>Raw flesh from an ashland fungus. Perfectly edible, and rather tasty.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshFungus</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshFungus</texPath>
 		</graphicData>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
@@ -29,13 +29,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawComberry]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawComberry</defName>
+	<!-- ==========[Mashed_Ashlands_RawComberry]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawComberry</defName>
 		<label>comberry berries</label>
 		<description>Raw comberry berries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawComberry</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawComberry</texPath>
 		</graphicData>
 		<ingestible>
 			<preferability>RawTasty</preferability>
@@ -48,13 +48,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawAshYams]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawAshYams</defName>
+	<!-- ==========[Mashed_Ashlands_RawAshYams]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawAshYams</defName>
 		<label>ash yams</label>
 		<description>Raw ash yams.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawAshYams</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshYams</texPath>
 		</graphicData>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
@@ -66,13 +66,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawHackleLo]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawHackleLo</defName>
+	<!-- ==========[Mashed_Ashlands_RawHackleLo]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawHackleLo</defName>
 		<label>hackle-lo leaves</label>
 		<description>Raw hackle-lo leaves.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawHackleLo</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawHackleLo</texPath>
 		</graphicData>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
@@ -84,13 +84,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawMarshmerrow]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawMarshmerrow</defName>
+	<!-- ==========[Mashed_Ashlands_RawMarshmerrow]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawMarshmerrow</defName>
 		<label>marshmerrow</label>
 		<description>Raw marshmerrow. Nice to eat, even when raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawMarshmerrow</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawMarshmerrow</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.4</MarketValue>
@@ -108,15 +108,15 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawSaltrice]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawSaltrice</defName>
+	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawSaltrice</defName>
 		<label>saltrice</label>
 		<description>Raw saltrice. While usually fermented into mazte, it can also be used in cooking.</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawSaltrice</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawSaltrice</texPath>
 		</graphicData>
 		<ingestible>
 			<foodType>Seed</foodType>
@@ -128,13 +128,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_RawWickwheat]==========-->
-	<ThingDef ParentName="MorrowRim_PlantFoodRawBase">
-		<defName>MorrowRim_RawWickwheat</defName>
+	<!-- ==========[Mashed_Ashlands_RawWickwheat]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawWickwheat</defName>
 		<label>wickwheat</label>
 		<description>Raw wickwheat. While often fermented into sujamma, it can also be used in cooking.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/MorrowRim_RawWickwheat</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawWickwheat</texPath>
 		</graphicData>
 		<ingestible>
 			<foodType>Seed</foodType>

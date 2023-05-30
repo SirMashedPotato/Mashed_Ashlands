@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_DenseAshClouds]==========-->
+	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
 	<GameConditionDef>
-		<defName>MorrowRim_DenseAshClouds</defName>
+		<defName>Mashed_Ashlands_DenseAshClouds</defName>
 		<conditionClass>MorrowRim2.GameCondition_DenseAshClouds</conditionClass>
 		<label>dense ash clouds</label>
 		<description>Dense ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
 		<endMessage>The ash clouds disperse.</endMessage>
-		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
 			<li>VolcanicWinter</li>
 		</exclusiveConditions>
 	</GameConditionDef>
-	<!-- ==========[MorrowRim_VolcanicHeat]==========-->
-	<GameConditionDef Name="MorrowRim_VolcanicHeatBase">
-		<defName>MorrowRim_VolcanicHeat</defName>
+	<!-- ==========[Mashed_Ashlands_VolcanicHeat]==========-->
+	<GameConditionDef Name="Mashed_Ashlands_VolcanicHeatBase">
+		<defName>Mashed_Ashlands_VolcanicHeat</defName>
 		<conditionClass>MorrowRim2.GameCondition_VolcanicHeat</conditionClass>
 		<label>volcanic heat</label>
 		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
 		<endMessage>The air begins to cool.</endMessage>
-		<letterDef>MorrowRim_VolcanoNegativeEvent</letterDef>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>false</canBePermanent>
 		<exclusiveConditions>
 			<li>HeatWave</li>

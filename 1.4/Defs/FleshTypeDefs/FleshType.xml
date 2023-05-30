@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_FleshNetch]==========-->
+	<!-- ==========[Mashed_Ashlands_FleshNetch]==========-->
 	<FleshTypeDef>
-		<defName>MorrowRim_FleshNetch</defName>
+		<defName>Mashed_Ashlands_FleshNetch</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
 		<genericWounds>
 			<li>
@@ -30,9 +30,9 @@
 			</li>
 		</bandagedWounds>
 	</FleshTypeDef>
-	<!-- ==========[MorrowRim_FleshCrab]==========-->
+	<!-- ==========[Mashed_Ashlands_FleshCrab]==========-->
 	<FleshTypeDef>
-		<defName>MorrowRim_FleshCrab</defName>
+		<defName>Mashed_Ashlands_FleshCrab</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
 		<genericWounds>
 			<li>

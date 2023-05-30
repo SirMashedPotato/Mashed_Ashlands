@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[MorrowRim_GeneAshBase]==========-->
-	<GeneDef Name="MorrowRim_GeneAshBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_GeneAshBase]==========-->
+	<GeneDef Name="Mashed_Ashlands_GeneAshBase" Abstract="True">
 		<displayCategory>ResistanceAndWeakness</displayCategory>
 		<exclusionTags>
-			<li>MorrowRim_AshResistance</li>
+			<li>Mashed_Ashlands_AshResistance</li>
 		</exclusionTags>
 		<displayOrderInCategory>31</displayOrderInCategory>
 	</GeneDef>
-	<!-- ==========[MorrowRim_AshResistance_Partial]==========-->
-	<GeneDef ParentName="MorrowRim_GeneAshBase">
-		<defName>MorrowRim_AshResistance_Partial</defName>
+	<!-- ==========[Mashed_Ashlands_AshResistance_Partial]==========-->
+	<GeneDef ParentName="Mashed_Ashlands_GeneAshBase">
+		<defName>Mashed_Ashlands_AshResistance_Partial</defName>
 		<label>partial antiash lungs</label>
 		<labelShortAdj>ash-resistant</labelShortAdj>
 		<description>Carriers of this gene have special mucous lining the respiratory system, proving some resistance to ash buildup during an ash storm.</description>
-		<iconPath>UI/Icons/Genes/MorrowRim_Gene_PartialAshResistance</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_PartialAshResistance</iconPath>
 		<statOffsets>
-			<MorrowRim_AshResistance>0.5</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statOffsets>
 		<biostatMet>-1</biostatMet>
 		<symbolPack>
@@ -28,15 +28,15 @@
 			</prefixSymbols>
 		</symbolPack>
 	</GeneDef>
-	<!-- ==========[MorrowRim_AshResistance_Total]==========-->
-	<GeneDef ParentName="MorrowRim_GeneAshBase">
-		<defName>MorrowRim_AshResistance_Total</defName>
+	<!-- ==========[Mashed_Ashlands_AshResistance_Total]==========-->
+	<GeneDef ParentName="Mashed_Ashlands_GeneAshBase">
+		<defName>Mashed_Ashlands_AshResistance_Total</defName>
 		<label>total antiash lungs</label>
 		<labelShortAdj>ash-resistant</labelShortAdj>
 		<description>Carriers of this gene have special mucous lining the respiratory system, allowing them to breathe unhindered during an ash storm.</description>
-		<iconPath>UI/Icons/Genes/MorrowRim_Gene_TotalAshResistance</iconPath>
+		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_TotalAshResistance</iconPath>
 		<statOffsets>
-			<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statOffsets>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>

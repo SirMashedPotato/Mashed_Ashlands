@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_CoralcrabGlowing]========== -->
-	<ThingDef ParentName="MorrowRim_CrabThingBase">
-		<defName>MorrowRim_CoralcrabGlowing</defName>
+	<!-- ==========[Mashed_Ashlands_CoralcrabGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_CoralcrabGlowing</defName>
 		<label>glowing coralcrab</label>
 		<description>A subspecies of the common ashland coralcrab that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing land coral. The coralcrab protects the coral from being eaten, whilst the coral help the coralcrab absorb nutrients from environmental pollution.</description>
 		<modExtensions Inherit="False">
 			<li Class="MorrowRim2.PollutionProperties">
-				<alternativePollutionStimulis>MorrowRim_PollutionAbsorption</alternativePollutionStimulis>
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_CoralcrabGlowingFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_CoralcrabGlowingFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -37,9 +37,9 @@
 		<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 	</race>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>MorrowRim_CoralcrabGlowing</defName>
+		<defName>Mashed_Ashlands_CoralcrabGlowing</defName>
 		<label>glowing coralcrab</label>
-		<race>MorrowRim_CoralcrabGlowing</race>
+		<race>Mashed_Ashlands_CoralcrabGlowing</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.2</ecoSystemWeight>
@@ -47,27 +47,27 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_CoralcrabGlowing</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_CoralcrabGlowing</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_CoralcrabGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_CoralcrabGlowing</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
@@ -75,7 +75,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_Coralcrab/MorrowRim_Dessicated_Coralcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Coralcrab/Mashed_Ashlands_Dessicated_Coralcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

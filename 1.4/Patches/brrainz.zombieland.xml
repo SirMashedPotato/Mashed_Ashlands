@@ -9,7 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[@Name="BaseZombie"]/statBases</xpath>
 					<value>
-						<MorrowRim_AshResistance>1</MorrowRim_AshResistance>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
 			</operations>

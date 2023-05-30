@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_TileBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_TileBasalt]==========-->
 	<TerrainDef ParentName="TileStoneBase">
-		<defName>MorrowRim_TileBasalt</defName>
+		<defName>Mashed_Ashlands_TileBasalt</defName>
 		<label>basalt tile</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>4</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_FlagstoneBasalt]==========-->
+	<!-- ==========[Mashed_Ashlands_FlagstoneBasalt]==========-->
 	<TerrainDef ParentName="FlagstoneBase">
-		<defName>MorrowRim_FlagstoneBasalt</defName>
+		<defName>Mashed_Ashlands_FlagstoneBasalt</defName>
 		<label>basalt flagstone</label>
 		<color>(102,96,98)</color>
 		<costList>
-			<MorrowRim_BlocksBasalt>4</MorrowRim_BlocksBasalt>
+			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_TileBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_TileBasaltScorched]==========-->
 	<TerrainDef ParentName="TileStoneBase">
-		<defName>MorrowRim_TileBasaltScorched</defName>
+		<defName>Mashed_Ashlands_TileBasaltScorched</defName>
 		<label>scorched basalt tile</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>4</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>4</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_FlagstoneBasaltScorched]==========-->
+	<!-- ==========[Mashed_Ashlands_FlagstoneBasaltScorched]==========-->
 	<TerrainDef ParentName="FlagstoneBase">
-		<defName>MorrowRim_FlagstoneBasaltScorched</defName>
+		<defName>Mashed_Ashlands_FlagstoneBasaltScorched</defName>
 		<label>scorched basalt flagstone</label>
 		<color>(73,70,71)</color>
 		<costList>
-			<MorrowRim_BlocksBasaltScorched>4</MorrowRim_BlocksBasaltScorched>
+			<Mashed_Ashlands_BlocksBasaltScorched>4</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

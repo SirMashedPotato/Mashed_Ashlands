@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_NamerAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerAshlands</defName>
+		<defName>Mashed_Ashlands_NamerAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -12,9 +12,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerBlightedAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerBlightedAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerBlightedAshlands</defName>
+		<defName>Mashed_Ashlands_NamerBlightedAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -24,9 +24,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerBlightedBogAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerBlightedBogAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerBlightedBogAshlands</defName>
+		<defName>Mashed_Ashlands_NamerBlightedBogAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -36,9 +36,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerCoralCoastAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerCoralCoastAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerCoralCoastAshlands</defName>
+		<defName>Mashed_Ashlands_NamerCoralCoastAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -48,9 +48,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerForestAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerForestAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerForestAshlands</defName>
+		<defName>Mashed_Ashlands_NamerForestAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -60,9 +60,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerGrazelandAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerGrazelandAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerGrazelandAshlands</defName>
+		<defName>Mashed_Ashlands_NamerGrazelandAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -73,9 +73,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerHighlandAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerHighlandAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerHighlandAshlands</defName>
+		<defName>Mashed_Ashlands_NamerHighlandAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -86,9 +86,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerSaltplainAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerSaltplainAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerSaltplainAshlands</defName>
+		<defName>Mashed_Ashlands_NamerSaltplainAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -98,9 +98,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerSwampAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerSwampAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerSwampAshlands</defName>
+		<defName>Mashed_Ashlands_NamerSwampAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -110,9 +110,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanicAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanicAshlands</defName>
+		<defName>Mashed_Ashlands_NamerVolcanicAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -122,9 +122,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[MorrowRim_NamerVolcanicSulphurPitsAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands]==========-->
 	<RulePackDef>
-		<defName>MorrowRim_NamerVolcanicSulphurPitsAshlands</defName>
+		<defName>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>

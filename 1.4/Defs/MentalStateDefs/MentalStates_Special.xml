@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_BlightedPermanent]==========-->
+	<!-- ==========[Mashed_Ashlands_BlightedPermanent]==========-->
 	<MentalStateDef ParentName="Manhunter">
-		<defName>MorrowRim_BlightedPermanent</defName>
+		<defName>Mashed_Ashlands_BlightedPermanent</defName>
 		<label>blighted</label>
 		<stateClass>MentalState_Berserk</stateClass>
 		<minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
@@ -10,7 +10,7 @@
 		<recoverFromSleep>false</recoverFromSleep>
 		<recoverFromDowned>false</recoverFromDowned>
 		<recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
-		<beginLetterDef>MorrowRim_VolcanoNegativeEvent</beginLetterDef>
+		<beginLetterDef>Mashed_Ashlands_VolcanoNegativeEvent</beginLetterDef>
 		<beginLetter>{0} has become blighted.\n\n[PAWN_pronoun] will attack anything [PAWN_pronoun] sees.</beginLetter>
 		<recoveryMessage>{0}'s blighted rage has come to an end.</recoveryMessage>
 		<baseInspectLine>Maddened: Blighted</baseInspectLine>

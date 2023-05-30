@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<StatCategoryDef>
-		<defName>MorrowRim_VolcanoIncidentRadius</defName>
+		<defName>Mashed_Ashlands_VolcanoIncidentRadius</defName>
 		<label>potential incident radius</label>
 		<displayOrder>40</displayOrder>
 	</StatCategoryDef>
 	<StatCategoryDef>
-		<defName>MorrowRim_VolcanoPotentialIncidents</defName>
+		<defName>Mashed_Ashlands_VolcanoPotentialIncidents</defName>
 		<label>potential incidents</label>
 		<displayOrder>41</displayOrder>
 	</StatCategoryDef>

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ToolCapacityDef>
-		<defName>MorrowRim_BurnBite</defName>
+		<defName>Mashed_Ashlands_BurnBite</defName>
 		<label>fire bite</label>
 	</ToolCapacityDef>
 	<ToolCapacityDef>
-		<defName>MorrowRim_SwampBite</defName>
+		<defName>Mashed_Ashlands_SwampBite</defName>
 		<label>swamp bite</label>
 	</ToolCapacityDef>
 	<ToolCapacityDef>
-		<defName>MorrowRim_DrainingStab</defName>
+		<defName>Mashed_Ashlands_DrainingStab</defName>
 		<label>draining stab</label>
 	</ToolCapacityDef>
 </Defs>

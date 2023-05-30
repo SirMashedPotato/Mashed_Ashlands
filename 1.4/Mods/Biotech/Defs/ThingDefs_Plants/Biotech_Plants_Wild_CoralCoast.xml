@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_Plant_GlowingLandCoralSmall]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_LandCoralSmallBase">
-		<defName>MorrowRim_Plant_GlowingLandCoralSmall</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingLandCoralSmall]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_LandCoralSmallBase">
+		<defName>Mashed_Ashlands_Plant_GlowingLandCoralSmall</defName>
 		<label>small glowing land coral</label>
 		<description>A variety of land coral, adapted to grow in highly toxic environments. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.</description>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingLandCoralSmall</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingLandCoralSmall</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -20,13 +20,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GlowingLandCoralMedium]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_LandCoralMediumBase">
-		<defName>MorrowRim_Plant_GlowingLandCoralMedium</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingLandCoralMedium]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_LandCoralMediumBase">
+		<defName>Mashed_Ashlands_Plant_GlowingLandCoralMedium</defName>
 		<label>medium glowing land coral</label>
 		<description>A variety of land coral, adapted to grow in highly toxic environments. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.</description>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingLandCoralMedium</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingLandCoralMedium</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -40,13 +40,13 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[MorrowRim_Plant_GlowingLandCoralLarge]==========-->
-	<ThingDef ParentName="MorrowRim_Plant_LandCoralLargeBase">
-		<defName>MorrowRim_Plant_GlowingLandCoralLarge</defName>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingLandCoralLarge]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_LandCoralLargeBase">
+		<defName>Mashed_Ashlands_Plant_GlowingLandCoralLarge</defName>
 		<label>large glowing land coral</label>
 		<description>A variety of land coral, adapted to grow in highly toxic environments. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The bioluminescent polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.</description>
 		<graphicData>
-			<texPath>Things/Plant/MorrowRim_GlowingLandCoralLarge</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingLandCoralLarge</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>

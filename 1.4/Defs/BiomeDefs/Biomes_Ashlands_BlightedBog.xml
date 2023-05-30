@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="MorrowRim_BlightedAshlandsBase">
-		<defName>MorrowRim_BlightedBogAshlands</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_BlightedAshlandsBase">
+		<defName>Mashed_Ashlands_BlightedBogAshlands</defName>
 		<label>blighted bog</label>
 		<description>While somewhat reminiscent of the blighted ashlands, pools of what can only be described as sludge are a common sight here. Draining the sludge may reveal fertile ground, but otherwise most of the land is barren. Plant life is sparse, and only the most desperate animals can be found here.</description>
 		<workerClass>MorrowRim2.BiomeWorker_BlightedBogAshlands</workerClass>
-		<texture>World/Biomes/MorrowRim_BlightedBogAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_BlightedBogAshlands</texture>
 		<modExtensions Inherit="False">
 			<li Class="MorrowRim2.BiomeProperties">
 				<lateLoader>true</lateLoader>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>false</increasePollutedFertility>
-				<forcedRockType>MorrowRim_Basalt</forcedRockType>
+				<forcedRockType>Mashed_Ashlands_Basalt</forcedRockType>
 				<terrainReplacers>
 					<li>
 						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>MorrowRim_AshSandBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterMovingShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_CrackedAshSoilBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterMovingChestDeep</originalTerrain>
-						<replacedTerrain>MorrowRim_CrackedAshSoilBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
 					</li>
 				</terrainReplacers>
 				<roadReplacers>
 					<li>
 						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>MorrowRim_PackedAshBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_PackedAshBlighted</replacedTerrain>
 					</li>
 				</roadReplacers>
 				<dryToReplacers>
 					<li>
 						<originalTerrain>WaterShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 					<li>
 						<originalTerrain>WaterOceanShallow</originalTerrain>
-						<replacedTerrain>MorrowRim_AshGravelBlighted</replacedTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
 					</li>
 				</dryToReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>MorrowRim_AshGravel</otherTerrainDef>
+				<otherTerrainDef>Mashed_Ashlands_AshGravel</otherTerrainDef>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.9</waterThreshold>
@@ -60,17 +60,17 @@
 				<perlinFrequency>0.027</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>MorrowRim_CrackedAshSoilBlighted</terrain>
+						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
 						<min>0.2</min>
 						<max>0.4</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_AshMudBlighted</terrain>
+						<terrain>Mashed_Ashlands_AshMudBlighted</terrain>
 						<min>0.4</min>
 						<max>0.7</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_BlightedSludge</terrain>
+						<terrain>Mashed_Ashlands_BlightedSludge</terrain>
 						<min>0.7</min>
 						<max>99</max>
 					</li>
@@ -80,12 +80,12 @@
 				<perlinFrequency>0.04</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>MorrowRim_CrackedAshSoilBlighted</terrain>
+						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
 						<min>0.35</min>
 						<max>0.85</max>
 					</li>
 					<li>
-						<terrain>MorrowRim_AshMudBlighted</terrain>
+						<terrain>Mashed_Ashlands_AshMudBlighted</terrain>
 						<min>0.85</min>
 						<max>99</max>
 					</li>

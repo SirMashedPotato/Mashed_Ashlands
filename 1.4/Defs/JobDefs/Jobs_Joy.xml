@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JobDef>
-		<defName>MorrowRim_BuildAshCastle</defName>
+		<defName>Mashed_Ashlands_BuildAshCastle</defName>
 		<driverClass>MorrowRim2.JobDriver_BuildAshCastle</driverClass>
 		<reportString>building ashcano.</reportString>
 		<joyDuration>8000</joyDuration>
 		<joyKind>Meditative</joyKind>
-		<taleOnCompletion>MorrowRim_BuiltAshCastle</taleOnCompletion>
+		<taleOnCompletion>Mashed_Ashlands_BuiltAshCastle</taleOnCompletion>
 	</JobDef>
 </Defs>

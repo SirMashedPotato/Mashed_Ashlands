@@ -19,7 +19,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
 		<value>
-			<li>MorrowRim_Crystalline</li>
+			<li>Mashed_Ashlands_Crystalline</li>
 		</value>
 	</Operation>
 </Patch>

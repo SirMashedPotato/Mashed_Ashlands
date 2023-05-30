@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_TentacleAttackTool]==========-->
+	<!-- ==========[Mashed_Ashlands_TentacleAttackTool]==========-->
 	<BodyPartGroupDef>
-		<defName>MorrowRim_TentacleAttackTool</defName>
+		<defName>Mashed_Ashlands_TentacleAttackTool</defName>
 		<label>tentacle</label>
 	</BodyPartGroupDef>
-	<!-- ==========[MorrowRim_TailAttackTool]==========-->
+	<!-- ==========[Mashed_Ashlands_TailAttackTool]==========-->
 	<BodyPartGroupDef>
-		<defName>MorrowRim_TailAttackTool</defName>
+		<defName>Mashed_Ashlands_TailAttackTool</defName>
 		<label>tail stinger</label>
 	</BodyPartGroupDef>
 </Defs>

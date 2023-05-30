@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_NixSteedThingBase]========== -->
-	<ThingDef ParentName="MorrowRim_InsectThingBase" Name="MorrowRim_NixSteedThingBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_NixSteedThingBase]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_NixSteedThingBase" Abstract="True">
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>550</MarketValue>
@@ -47,8 +47,8 @@
 		</tools>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>MorrowRim_InsectDogLike</body>
-			<leatherDef>MorrowRim_NixLeather</leatherDef>
+			<body>Mashed_Ashlands_InsectDogLike</body>
+			<leatherDef>Mashed_Ashlands_NixLeather</leatherDef>
 			<baseBodySize>1.9</baseBodySize>
 			<baseHealthScale>1.45</baseHealthScale>
 			<baseHungerRate>0.425</baseHungerRate>
@@ -98,18 +98,18 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 			<li>AnimalFarm</li>
-			<li>MorrowRim_AshlandAnimalCommon</li>
-			<li>MorrowRim_AshlandAnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[MorrowRim_NixSteed]========== -->
-	<ThingDef ParentName="MorrowRim_NixSteedThingBase">
-		<defName>MorrowRim_NixSteed</defName>
+	<!-- ==========[Mashed_Ashlands_NixSteed]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+		<defName>Mashed_Ashlands_NixSteed</defName>
 		<label>nix-steed</label>
 		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>MorrowRim_Egg_NixSteedFertilized</eggFertilizedDef>
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3.3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -117,12 +117,12 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef Name="MorrowRim_NixSteed" ParentName="AnimalKindBase">
-		<defName>MorrowRim_NixSteed</defName>
+	<PawnKindDef Name="Mashed_Ashlands_NixSteed" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixSteed</defName>
 		<label>nix-steed</label>
 		<labelMale>nix-steed stallion</labelMale>
 		<labelFemale>nix-steed mare</labelFemale>
-		<race>MorrowRim_NixSteed</race>
+		<race>Mashed_Ashlands_NixSteed</race>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
@@ -130,7 +130,7 @@
 			<li>
 				<label>nix-steed foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedCalf</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedCalf</texPath>
 					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -138,13 +138,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedMale</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -152,7 +152,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
 					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -160,17 +160,17 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<drawSize>1.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteedMale</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -178,7 +178,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
 					<drawSize>1.9</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -186,11 +186,11 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MorrowRim_NixSteed/MorrowRim_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<drawSize>1.9</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>

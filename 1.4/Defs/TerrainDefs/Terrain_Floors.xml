@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_ParasolWoodPlankFloor]==========-->
+	<!-- ==========[Mashed_Ashlands_ParasolWoodPlankFloor]==========-->
 	<TerrainDef ParentName="FloorBase">
-		<defName>MorrowRim_ParasolWoodPlankFloor</defName>
+		<defName>Mashed_Ashlands_ParasolWoodPlankFloor</defName>
 		<label>parasol wood floor</label>
 		<renderPrecedence>250</renderPrecedence>
 		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
@@ -22,9 +22,9 @@
 		<constructEffect>ConstructWood</constructEffect>
 		<uiOrder>2000</uiOrder>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_KreshCarpet]==========-->
+	<!-- ==========[Mashed_Ashlands_KreshCarpet]==========-->
 	<TerrainDef ParentName="FloorBase">
-		<defName>MorrowRim_KreshCarpet</defName>
+		<defName>Mashed_Ashlands_KreshCarpet</defName>
 		<label>kresh carpet</label>
 		<description>Coarse carpet, made from kresh fiber.</description>
 		<color>(108,98,68)</color>
@@ -34,7 +34,7 @@
 		</researchPrerequisites>
 		<burnedDef>BurnedCarpet</burnedDef>
 		<costList>
-			<MorrowRim_KreshCloth>7</MorrowRim_KreshCloth>
+			<Mashed_Ashlands_KreshCloth>7</Mashed_Ashlands_KreshCloth>
 		</costList>
 		<statBases>
 			<Beauty>1</Beauty>

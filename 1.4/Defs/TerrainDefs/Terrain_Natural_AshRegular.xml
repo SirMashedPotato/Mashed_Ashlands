@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_AshRegularBase]==========-->
-	<TerrainDef ParentName="MorrowRim_AshBase" Name="MorrowRim_AshRegularBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_AshRegularBase]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBase" Name="Mashed_Ashlands_AshRegularBase" Abstract="True">
 		<affordances>
-			<li>MorrowRim_PackableAsh</li>
+			<li>Mashed_Ashlands_PackableAsh</li>
 		</affordances>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_AshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_AshSoil</defName>
+	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshSoil</defName>
 		<label>ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSoil</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshSoil</texturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_MossyAshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_MossyAshSoil</defName>
+	<!-- ==========[Mashed_Ashlands_MossyAshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_MossyAshSoil</defName>
 		<label>moss-covered ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_MossyAshSoil</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_MossyAshSoil</texturePath>
 		<fertility>1.2</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_GrazelandSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_GrazelandSoil</defName>
+	<!-- ==========[Mashed_Ashlands_GrazelandSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_GrazelandSoil</defName>
 		<label>grazeland soil</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_GrazelandSoil</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_GrazelandSoil</texturePath>
 		<fertility>1</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_RichAshSoil]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_RichAshSoil</defName>
+	<!-- ==========[Mashed_Ashlands_RichAshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_RichAshSoil</defName>
 		<label>rich ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSoil</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_RichAshSoil</texturePath>
 		<fertility>1.5</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_AshGravel]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_AshGravel</defName>
+	<!-- ==========[Mashed_Ashlands_AshGravel]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshGravel</defName>
 		<label>stony ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshGravel</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshGravel</texturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.8</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_RichAshGravel]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_RichAshGravel</defName>
+	<!-- ==========[Mashed_Ashlands_RichAshGravel]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_RichAshGravel</defName>
 		<label>rich stony ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshGravel</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_RichAshGravel</texturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>1.1</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_AshSand]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_AshSand</defName>
+	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshSand</defName>
 		<label>sandy ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshSand</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshSand</texturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.4</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_RichAshSand]==========-->
-	<TerrainDef ParentName="MorrowRim_AshRegularBase">
-		<defName>MorrowRim_RichAshSand</defName>
+	<!-- ==========[Mashed_Ashlands_RichAshSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_RichAshSand</defName>
 		<label>rich sandy ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_RichAshSand</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_RichAshSand</texturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.7</fertility>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_PackedAsh]==========-->
-	<TerrainDef ParentName="MorrowRim_PackedAshBase">
-		<defName>MorrowRim_PackedAsh</defName>
+	<!-- ==========[Mashed_Ashlands_PackedAsh]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_PackedAshBase">
+		<defName>Mashed_Ashlands_PackedAsh</defName>
 		<label>packed ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_PackedAsh</texturePath>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_PackedAsh</texturePath>
 		<description>Packed ash, making it comparatively less arduous to trek across.</description>
-		<terrainAffordanceNeeded>MorrowRim_PackableAsh</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Mashed_Ashlands_PackableAsh</terrainAffordanceNeeded>
 	</TerrainDef>
-	<!-- ==========[MorrowRim_AshMud]==========-->
-	<TerrainDef ParentName="MorrowRim_AshMudBase">
-		<defName>MorrowRim_AshMud</defName>
+	<!-- ==========[Mashed_Ashlands_AshMud]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
+		<defName>Mashed_Ashlands_AshMud</defName>
 		<label>waterlogged ash</label>
-		<texturePath>Terrain/Surfaces/AshRegular/MorrowRim_AshMud</texturePath>
-		<driesTo>MorrowRim_RichAshSoil</driesTo>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshMud</texturePath>
+		<driesTo>Mashed_Ashlands_RichAshSoil</driesTo>
 	</TerrainDef>
 </Defs>

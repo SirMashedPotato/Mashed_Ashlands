@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[MorrowRim_MakeClothFromKresh]==========-->
-	<RecipeDef Name="MorrowRim_MakeClothFromKreshBase">
-		<defName>MorrowRim_KreshToCloth</defName>
+	<!-- ==========[Mashed_Ashlands_MakeClothFromKresh]==========-->
+	<RecipeDef Name="Mashed_Ashlands_MakeClothFromKreshBase">
+		<defName>Mashed_Ashlands_KreshToCloth</defName>
 		<label>weave kresh cloth into cloth</label>
 		<description>Weave 20 kresh cloth into 10 cloth.</description>
 		<jobString>Weaving kresh.</jobString>
@@ -20,7 +20,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MorrowRim_KreshCloth</li>
+						<li>Mashed_Ashlands_KreshCloth</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -28,18 +28,18 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MorrowRim_KreshCloth</li>
+				<li>Mashed_Ashlands_KreshCloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<Cloth>10</Cloth>
 		</products>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>MorrowRim_AshSurvival_Beginner</researchPrerequisite>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
 	</RecipeDef>
-	<!-- ==========[MorrowRim_KreshToClothBulk]==========-->
-	<RecipeDef ParentName="MorrowRim_MakeClothFromKreshBase">
-		<defName>MorrowRim_KreshToClothBulk</defName>
+	<!-- ==========[Mashed_Ashlands_KreshToClothBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeClothFromKreshBase">
+		<defName>Mashed_Ashlands_KreshToClothBulk</defName>
 		<label>weave kresh cloth into cloth x4</label>
 		<description>Weave 80 kresh cloth into 40 cloth.</description>
 		<workAmount>1800</workAmount>
@@ -47,7 +47,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MorrowRim_KreshCloth</li>
+						<li>Mashed_Ashlands_KreshCloth</li>
 					</thingDefs>
 				</filter>
 				<count>80</count>
