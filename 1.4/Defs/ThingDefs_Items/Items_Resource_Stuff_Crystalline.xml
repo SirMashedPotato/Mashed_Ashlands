@@ -15,6 +15,7 @@
 			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
 		</statBases>
 		<burnableByRecipe>false</burnableByRecipe>
+		<possessionCount>5</possessionCount>
 		<minRewardCount>10</minRewardCount>
 		<thingCategories>
 			<li>ResourcesRaw</li>
@@ -53,7 +54,7 @@
 		</graphicData>
 		<stuffProps>
 			<color>(186,151,248)</color>
-			<stuffAdjective>purple crystal</stuffAdjective>
+			<stuffAdjective>crystalline</stuffAdjective>
 			<statFactors>
 				<Beauty>1.5</Beauty>
 			</statFactors>

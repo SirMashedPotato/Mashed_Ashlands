@@ -43,4 +43,44 @@
 		</statBases>
 		<renderPrecedence>200</renderPrecedence>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEbonyTile]==========-->
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>Mashed_Ashlands_VolcanicEbonyTile</defName>
+		<label>volcanic ebony tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>Tiles made out of pure volcanic ebony. While very extravagant, most will question why you wasted volcanic glass on flooring.</description>
+		<color>(55,44,55)</color>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_VolcanicEbony>7</Mashed_Ashlands_VolcanicEbony>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicGlassTile]==========-->
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>Mashed_Ashlands_VolcanicGlassTile</defName>
+		<label>volcanic glass tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>Tiles made out of pure volcanic glass. While very extravagant, most will question why you wasted volcanic glass on flooring.</description>
+		<color>(153,243,134)</color>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_VolcanicGlass>7</Mashed_Ashlands_VolcanicGlass>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
 </Defs>

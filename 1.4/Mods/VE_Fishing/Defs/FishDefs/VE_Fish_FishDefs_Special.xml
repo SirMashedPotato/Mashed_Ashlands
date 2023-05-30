@@ -153,7 +153,7 @@
 		<commonality>1</commonality>	
 		<baseFishingYield>6</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[Mashed_Ashlands_NetchEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_SwampJellyEgg]==========-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_SwampJellyEgg</defName>
 		<thingDef>Mashed_Ashlands_Egg_SwampJellyFertilized</thingDef>    
@@ -165,5 +165,39 @@
 		</allowedBiomes>  	
 		<commonality>0.2</commonality>		
 		<baseFishingYield>2</baseFishingYield>		
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEbony]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_VolcanicEbony</defName>
+		<thingDef>Mashed_Ashlands_VolcanicEbony</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>  	
+		<commonality>0.1</commonality>			
+		<baseFishingYield>10</baseFishingYield>		
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicGlass]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_VolcanicGlass</defName>
+		<thingDef>Mashed_Ashlands_VolcanicGlass</thingDef>    
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_BrineAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>  	
+		<commonality>0.1</commonality>			
+		<baseFishingYield>10</baseFishingYield>		
 	</VCE_Fishing.FishDef>
 </Defs>
