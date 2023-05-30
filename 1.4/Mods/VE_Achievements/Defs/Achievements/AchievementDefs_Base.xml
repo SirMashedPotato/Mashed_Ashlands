@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AchievementBase]========== -->
 	<AchievementsExpanded.AchievementDef Name="Mashed_Ashlands_Achievement_Base" Abstract="True">
-		<bgtexPath>Achievements/Mashed_Ashlands_AchievementBackground</bgtexPath>
-		<tab>Mashed_Ashlands_AchievementsTab</tab>
+		<bgtexPath>Achievements/Mashed_AchievementBackground_Ashlands</bgtexPath>
+		<tab>Mashed_AchievementsTab</tab>
 	</AchievementsExpanded.AchievementDef>
 </Defs>

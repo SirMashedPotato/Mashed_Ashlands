@@ -9,7 +9,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
 		</tags>
@@ -23,7 +23,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSowing_Beginner</li>
 		</prerequisites>
@@ -37,7 +37,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 		</prerequisites>
@@ -51,7 +51,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
 		</tags>
@@ -65,7 +65,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
 		</prerequisites>
@@ -79,7 +79,7 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>1.00</researchViewY>
-		<tab>Mashed_Ashlands_Tab</tab>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
 		</prerequisites>
