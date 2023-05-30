@@ -1,0 +1,120 @@
+﻿using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
+using Verse;
+using Verse.Noise;
+
+namespace Mashed_Ashlands
+{
+    public abstract class AshlandBiomeWorker : BiomeWorker
+    {
+        public abstract float GetScore_Main(Tile tile, int tileID);
+
+        /// <summary>
+        /// Used for all Base type biomes
+        /// </summary>
+        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        {
+            int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
+            if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
+            {
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxDistance < 10)
+                {
+                    maxDistance = 10;
+                }
+            }
+
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            {
+                return 0;
+            }
+
+            return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
+        }
+
+        /// <summary>
+        /// Used for all Coast type biomes
+        /// </summary>
+        public float CoastBiomeWorker(int tileID, BiomeDef extraBiomeDef)
+        {
+            int numberCoastalTiles = 0;
+            List<int> neighbourTiles = new List<int>();
+            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
+            foreach (int neighbourID in neighbourTiles)
+            {
+                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
+                if (neighbourTile != null)
+                {
+                    if (neighbourTile.WaterCovered || neighbourTile.biome == extraBiomeDef)
+                    {
+                        numberCoastalTiles++;
+                    }
+                }
+            }
+            if (numberCoastalTiles < 2)
+            {
+                return 0;
+            }
+            return Rand.Range(12, 18) + numberCoastalTiles;
+        }
+
+        /// <summary>
+        /// Used for all Island type biomes
+        /// </summary>
+        public float IslandBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef, BiomeDef biomeDef)
+        {
+            int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
+            if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
+            {
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                if (maxDistance < 10)
+                {
+                    maxDistance = 10;
+                }
+            }
+
+            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            {
+                return 0;
+            }
+            List<int> neighbourTiles = new List<int>();
+            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
+            foreach (int neighbourID in neighbourTiles)
+            {
+                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
+                if (neighbourTile != null)
+                {
+                    if (!neighbourTile.WaterCovered && neighbourTile.biome != biomeDef)
+                    {
+                        return 0;
+                    }
+                }
+            }
+            return Rand.Range(2, 8) * maxDistance / distanceToClosestVolcano;
+        }
+
+        /// <summary>
+        /// Used for all Extra type biomes
+        /// </summary>
+        public float ExtraBiomeWorker(Tile tile, int tileID, int perlinSeed = 35, float perlinCulling = 0.75f)
+        {
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            {
+                return 0f;
+            }
+
+            Perlin perlin = new Perlin(0.1, 10, 0.6, 12, perlinSeed, QualityMode.Low);
+            float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+
+            if (perlinValue <= perlinCulling)
+            {
+                return 0f;
+            }
+
+            return 16;
+        }
+    }
+}

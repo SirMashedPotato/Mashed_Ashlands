@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B83AEB0-830D-4E9A-8F89-851F277C43B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mashed_Ashlands</RootNamespace>
+    <AssemblyName>Mashed_Ashlands</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert\Alert_AshBuildup.cs" />
+    <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedCragIslandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CragIslandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_ForestAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SaltplainAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampIslandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCragIslandAshlands.cs" />
+    <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
+    <Compile Include="DefModExtension\AnimalProperties.cs" />
+    <Compile Include="DefModExtension\AshResistanceProperties.cs" />
+    <Compile Include="DefModExtension\BiomeProperties.cs" />
+    <Compile Include="DefModExtension\PlantProperties.cs" />
+    <Compile Include="DefModExtension\PollutionProperties.cs" />
+    <Compile Include="DefModExtension\RaceProperties.cs" />
+    <Compile Include="DefModExtension\RockProperties.cs" />
+    <Compile Include="DefOf\GameConditionDefOf.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\LetterDefOf.cs" />
+    <Compile Include="DefOf\StatCategoryDefOf.cs" />
+    <Compile Include="DefOf\StatDefOf.cs" />
+    <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
+    <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
+    <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
+    <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="Harmony\Plants.cs" />
+    <Compile Include="Harmony\UnsafeConditions.cs" />
+    <Compile Include="Harmony\BiomeGen.cs" />
+    <Compile Include="Harmony\BiotechPatches.cs" />
+    <Compile Include="Harmony\WildAnimalSpawner.cs" />
+    <Compile Include="Harmony\WorldGen.cs" />
+    <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
+    <Compile Include="Jobs\JobDriver\JobDriver_BuildAshCastle.cs" />
+    <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
+    <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />
+    <Compile Include="Settings\Mashed_Ashlands_ModSettings.cs" />
+    <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
+    <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
+    <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
+    <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />
+    <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
+    <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_DischargeOnDamage.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
+    <Compile Include="Utility\BiomeWorkerUtility.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedAshlands.cs" />
+    <Compile Include="DefOf\BiomeDefOf.cs" />
+    <Compile Include="DefOf\WorldObjectDefOf.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\OnStartupUtility.cs" />
+    <Compile Include="Utility\Utility.cs" />
+    <Compile Include="Utility\WorldGenUtility.cs" />
+    <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
+    <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_VolcanoCategoryChange.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesEarly.cs" />
+    <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesLate.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_Volcano.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoActive.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoBlighted.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoDormant.cs" />
+    <Compile Include="World\WorldGenStep\Volcanos\WorldGenStep_VolcanoExtinct.cs" />
+    <Compile Include="World\WorldObjectComp\Properties\WorldObjectCompProperties_RandomConditionCauser.cs" />
+    <Compile Include="World\WorldObjectComp\Properties\WorldObjectCompProperties_VolcanoDetails.cs" />
+    <Compile Include="World\WorldObjectComp\Properties\WorldObjectCompProperties_PermanentCondition.cs" />
+    <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoConditionCauser.cs" />
+    <Compile Include="World\WorldObjectComp\WorldObjectComp_PermanentCondition.cs" />
+    <Compile Include="World\WorldObjectComp\WorldObjectComp_RandomConditionCauser.cs" />
+    <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
+    <Compile Include="World\WorldObject\Volcano.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jobs\JobGiver\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
