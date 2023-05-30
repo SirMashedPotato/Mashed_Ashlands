@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[Volcanos]==========-->
+	<Mashed_Ashlands_VolcanoDescription>Category {0} {1}\nRecorded incidents: {2}\nLast incident: {3}</Mashed_Ashlands_VolcanoDescription>
+	<Mashed_Ashlands_VolcanoDescriptionRange>\nThis volcano can cause incidents up to category {0} in scale.\nThe expected area affected by a category {0} incident is {1} tiles in radius.</Mashed_Ashlands_VolcanoDescriptionRange>
+	<Mashed_Ashlands_Unknown>Unknown</Mashed_Ashlands_Unknown>
+	<Mashed_Ashlands_VolcanoRadiusCategoryLabel>Category {0} incident</Mashed_Ashlands_VolcanoRadiusCategoryLabel>
+	<Mashed_Ashlands_VolcanoRadiusCategoryRadius>{0} tiles</Mashed_Ashlands_VolcanoRadiusCategoryRadius>
+	<Mashed_Ashlands_VolcanoRadiusCategoryDescription>The radius around the volcano affected by a category {0} incident.</Mashed_Ashlands_VolcanoRadiusCategoryDescription>
+	<Mashed_Ashlands_VolcanoConditionWeight>{0} weight</Mashed_Ashlands_VolcanoConditionWeight>
+	<Mashed_Ashlands_VolcanoPermanentCondition>Causes permanent {0} in radius.</Mashed_Ashlands_VolcanoPermanentCondition>
+	<Mashed_Ashlands_VolcanoTriggeredCondition>Currently causing a category {0} {1}</Mashed_Ashlands_VolcanoTriggeredCondition>
+	<Mashed_Ashlands_VolcanoConditionLetter_Label>{0} (Category {1} {2})</Mashed_Ashlands_VolcanoConditionLetter_Label>
+	<Mashed_Ashlands_VolcanoConditionLetter_Description>Recent volcanic activity from {0} has caused a category {1} {2}.\n\n{3}</Mashed_Ashlands_VolcanoConditionLetter_Description>
+	<!-- Incidents -->
+	<Mashed_Ashlands_BlightedPlants_Label>plant blight</Mashed_Ashlands_BlightedPlants_Label>
+	<Mashed_Ashlands_BlightdPlants_Description>Several plants have become blighted due to the blight storm. The blight may spread if not dealt with quickly.\n\nThe following plants have become blighted:\n\n</Mashed_Ashlands_BlightdPlants_Description>
+	<!-- ==========[Ash buildup]==========-->
+	<Mashed_Ashlands_AlertAshBuildup>Ash buildup</Mashed_Ashlands_AlertAshBuildup>
+	<Mashed_Ashlands_AlertAshBuildupDesc>These colonists have serious ash buildup:\n\n{0}\n\nAsh buildup is usually caused by being outside, or in a caravan, during an ash storm. Buildup will reduce while under a roof, or once the storm has ended. Caravans will be protected against ash buildup while resting, allowing members to recover from buildup.</Mashed_Ashlands_AlertAshBuildupDesc>
+	<!-- ==========[Stat parts]==========-->
+	<Mashed_Ashlands_WearingHeadGear>Wearing {0}</Mashed_Ashlands_WearingHeadGear>
+	<!-- ==========[Misc]==========-->
+	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
+</LanguageData>

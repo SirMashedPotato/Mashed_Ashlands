@@ -116,8 +116,8 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             Rect rectDefault = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectDefault, "MorrowRim_Reset".Translate());
-            if (Widgets.ButtonText(rectDefault, "MorrowRim_Reset".Translate(), true, true, true))
+            TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_Reset".Translate());
+            if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_Reset".Translate(), true, true, true))
             {
                 Mashed_Ashlands_ModSettings.ResetSettings();
             }
@@ -137,8 +137,8 @@ namespace Mashed_Ashlands
             {
                 case 0:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()), true, true, true))
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_General();
                     }
@@ -146,8 +146,8 @@ namespace Mashed_Ashlands
 
                 case 1:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()), true, true, true))
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_WorldGen();
                     }
@@ -155,8 +155,8 @@ namespace Mashed_Ashlands
 
                 case 2:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()), true, true, true))
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_Volcano();
                     }
@@ -164,8 +164,8 @@ namespace Mashed_Ashlands
 
                 case 3:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()), true, true, true))
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_AshStorm();
                     }
@@ -173,8 +173,8 @@ namespace Mashed_Ashlands
 
                 case 4:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "MorrowRim_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_Biome();
                     }

@@ -9,7 +9,7 @@ namespace Mashed_Ashlands
     {
         public Alert_AshBuildup()
         {
-            defaultLabel = "MorrowRim_AlertAshBuildup".Translate();
+            defaultLabel = "Mashed_Ashlands_AlertAshBuildup".Translate();
             defaultPriority = AlertPriority.High;
         }
 
@@ -34,7 +34,7 @@ namespace Mashed_Ashlands
         {
             string value = (from p in AshBuildupColonists
                             select p.NameShortColored.Resolve()).ToLineList(" - ", false);
-            return "MorrowRim_AlertAshBuildupDesc".Translate(value);
+            return "Mashed_Ashlands_AlertAshBuildupDesc".Translate(value);
         }
 
         public override AlertReport GetReport()

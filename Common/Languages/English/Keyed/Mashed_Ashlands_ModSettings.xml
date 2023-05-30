@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[General]==========-->
+	<Mashed_Ashlands_ModName>MorrowRim Redone - The Ashlands</Mashed_Ashlands_ModName>
+	<Mashed_Ashlands_Reset>Reset all settings</Mashed_Ashlands_Reset>
+	<Mashed_Ashlands_ResetPage>Reset {0}</Mashed_Ashlands_ResetPage>
+	<!-- ==========[General page]==========-->
+	<Mashed_Ashlands_PageGeneral>General Settings</Mashed_Ashlands_PageGeneral>
+	<!-- -->
+	<Mashed_Ashlands_OnlySowOnAsh>Certain plants can only be sown on ash terrain.</Mashed_Ashlands_OnlySowOnAsh>
+	<!-- ==========[World Gen]==========-->
+	<Mashed_Ashlands_PageWorldGen>World Generation Settings</Mashed_Ashlands_PageWorldGen>
+	<!-- dormant volcano -->
+	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
+	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>Many of the ashland biomes will only generate near dormant volcanos. As such, disabling this will also prevent those from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfDormantVolcano>The number of dormant volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfDormantVolcano>
+	<!-- active volcano -->
+	<Mashed_Ashlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</Mashed_Ashlands_EnableActiveVolcano>
+	<Mashed_Ashlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</Mashed_Ashlands_EnableActiveVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfActiveVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfActiveVolcano>
+	<!-- blighted volcano -->
+	<Mashed_Ashlands_EnableBlightedVolcano>Enable the generation of blighted volcanos on the world map</Mashed_Ashlands_EnableBlightedVolcano>
+	<Mashed_Ashlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</Mashed_Ashlands_EnableBlightedVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfBlightedVolcano>
+	<!-- extinct volcano -->
+	<Mashed_Ashlands_EnableExtinctVolcano>Enable the generation of extinct volcanos on the world map</Mashed_Ashlands_EnableExtinctVolcano>
+	<Mashed_Ashlands_EnableExtinctVolcano_Tooltip>The ashland forest biome will only generate near extinct volcanos. As such, disabling this will also prevent ashland forest from generating.</Mashed_Ashlands_EnableExtinctVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfExtinctVolcano>The number of extinct volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfExtinctVolcano>
+	<!-- distances -->
+	<Mashed_Ashlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMinDistance>
+	<Mashed_Ashlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</Mashed_Ashlands_BiomesMaxDistance>
+	<Mashed_Ashlands_VolcanoScaleWithWorldSize>Scale the number of volcanos that are spawned based on world coverage.</Mashed_Ashlands_VolcanoScaleWithWorldSize>
+	<Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize>
+	<Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>
+	<!-- specific biomes -->
+	<Mashed_Ashlands_EnableStandardAshlands>Enable the generation of the standard ashlands biome.</Mashed_Ashlands_EnableStandardAshlands>
+	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands biome.</Mashed_Ashlands_EnableBlightedAshlands>
+	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands biome.</Mashed_Ashlands_EnableVolcanicAshlands>
+	<Mashed_Ashlands_EnableCoralCoastAshlands>Enable the generation of the ashland coral coast biome.</Mashed_Ashlands_EnableCoralCoastAshlands>
+	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
+	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest biome.</Mashed_Ashlands_EnableForestAshlands>
+	<Mashed_Ashlands_EnableSwampAshlands>Enable the generation of the ashland swamp biome.</Mashed_Ashlands_EnableSwampAshlands>
+	<Mashed_Ashlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands biome.</Mashed_Ashlands_EnableGrazelandAshlands>
+	<Mashed_Ashlands_EnableHighlandAshlands>Enable the generation of the ashland highlands biome.</Mashed_Ashlands_EnableHighlandAshlands>
+	<Mashed_Ashlands_EnableSaltplainAshlands>Enable the generation of the ashland saltplains biome.</Mashed_Ashlands_EnableSaltplainAshlands>
+	<Mashed_Ashlands_EnableCragIslandAshlands>Enable the generation of the ashland crag islands biome.</Mashed_Ashlands_EnableCragIslandAshlands>
+	<Mashed_Ashlands_EnableBlightedCragIslandAshlands>Enable the generation of the blighted crag islands biome.</Mashed_Ashlands_EnableBlightedCragIslandAshlands>
+	<Mashed_Ashlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</Mashed_Ashlands_EnableVolcanicCragIslandAshlands>
+	<Mashed_Ashlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</Mashed_Ashlands_EnableSwampIslandAshlands>
+	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
+	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic sulphur pits biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
+	<!-- Other features -->
+	<Mashed_Ashlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</Mashed_Ashlands_EnableExclusiveRocks>
+	<Mashed_Ashlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</Mashed_Ashlands_EnableExclusiveRocks_Tooltip>
+
+	<!-- ==========[Volcano]==========-->
+	<Mashed_Ashlands_PageVolcano>Volcano Settings</Mashed_Ashlands_PageVolcano>
+	<!-- distances -->
+	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>
+	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMaxAffectedArea>
+	<Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>
+	<Mashed_Ashlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</Mashed_Ashlands_VolcanoEnablePermanentConditions>
+	<Mashed_Ashlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</Mashed_Ashlands_VolcanoEnableRandomConditions>
+	<!-- incidents -->
+	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the volcano category change incident.</Mashed_Ashlands_VolcanoEnableCategoryChange>
+	<!-- ==========[Ash storm]==========-->
+	<Mashed_Ashlands_PageAshStorm>Ash storm Settings</Mashed_Ashlands_PageAshStorm>
+	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>
+	<Mashed_Ashlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in caravans.</Mashed_Ashlands_AshStormAffectsCaravan>
+	<Mashed_Ashlands_AshStormBuildupMult>Multiplier for the amount of ash buildup pawns receive: ({0}%)</Mashed_Ashlands_AshStormBuildupMult>
+	<Mashed_Ashlands_AshStormCauseBlinded>Enable ash storms randomly blinding unprotected pawns.</Mashed_Ashlands_AshStormCauseBlinded>
+	<Mashed_Ashlands_AshStormBlindedChance>The chance a pawn is blinded: ({0}%)</Mashed_Ashlands_AshStormBlindedChance>
+	<Mashed_Ashlands_AshStormCauseCloggedServo>Enable ash storms randomly clogging the servos of mechanical pawns.</Mashed_Ashlands_AshStormCauseCloggedServo>
+	<Mashed_Ashlands_AshStormCloggedServoChance>The chance a pawn receives a clogged servo: ({0}%)</Mashed_Ashlands_AshStormCloggedServoChance>
+	<Mashed_Ashlands_AshStormDamagePlants>Enable ash storms randomly damaging unprotected plants.</Mashed_Ashlands_AshStormDamagePlants>
+	<Mashed_Ashlands_AshStormAvgPlantDamage>The average amount of damage a plant receives: ({0} points)</Mashed_Ashlands_AshStormAvgPlantDamage>
+	<Mashed_Ashlands_AshStormDamageBuildings>Enable ash storms randomly damaging certain buildings.</Mashed_Ashlands_AshStormDamageBuildings>
+	<Mashed_Ashlands_AshStormBreakdownBuildings>Enable ash storms randomly causing certain buildings to breakdown.</Mashed_Ashlands_AshStormBreakdownBuildings>
+	<Mashed_Ashlands_AshStormBreakdownBuildingsChance>The chance a building has a breakdown: ({0}%)</Mashed_Ashlands_AshStormBreakdownBuildingsChance>
+	<!-- blight storm -->
+	<Mashed_Ashlands_BlightStormBlightAnimals>Enable blighted ash storms randomly blighting wild animals.</Mashed_Ashlands_BlightStormBlightAnimals>
+	<Mashed_Ashlands_BlightStormBlightPlayerAnimals>Blighted ash storms can also blight player faction animals.</Mashed_Ashlands_BlightStormBlightPlayerAnimals>
+	<Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>Blighted ash storms can also blight non-player faction animals.</Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>
+	<Mashed_Ashlands_BlightStormBlightPlants>Enable blighted ash storms randomly blighting crops.</Mashed_Ashlands_BlightStormBlightPlants>
+	<Mashed_Ashlands_BlightStormBlightWildPlants>Blighted ash storms can also blight wild plants.</Mashed_Ashlands_BlightStormBlightWildPlants>
+	<Mashed_Ashlands_BlightStormBlightPlantsNumber>The average number of randomly selected plants blighted at once: ({0} plants)</Mashed_Ashlands_BlightStormBlightPlantsNumber>
+	<!-- ==========[Biome]==========-->
+	<Mashed_Ashlands_PageBiome>Biome Settings</Mashed_Ashlands_PageBiome>
+	<!-- disable custom rock types -->
+</LanguageData>

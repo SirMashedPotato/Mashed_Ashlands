@@ -8,6 +8,14 @@ namespace Mashed_Ashlands
 {
     public abstract class AshlandBiomeWorker : BiomeWorker
     {
+        /// <summary>
+        /// Ensure biomes only spawn my way, not the vanilla way 
+        /// </summary>
+        public override float GetScore(Tile tile, int tileID)
+        {
+            return -100;
+        }
+
         public abstract float GetScore_Main(Tile tile, int tileID);
 
         /// <summary>

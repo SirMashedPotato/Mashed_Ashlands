@@ -11,8 +11,6 @@ namespace Mashed_Ashlands
         public static bool TheAshlands_OnlySowOnAsh => _instance.Mashed_Ashlands_OnlySowOnAsh;
 
         //world gen
-        public static bool OldBiomeGen => _instance.Mashed_Ashlands_OldBiomeGen;
-
         public static bool EnableDormantVolcano => _instance.Mashed_Ashlands_EnableDormantVolcano;
         public static int NumberOfDormantVolcano => _instance.Mashed_Ashlands_NumberOfDormantVolcano;
         public static bool EnableActiveVolcano => _instance.Mashed_Ashlands_EnableActiveVolcano;
@@ -88,7 +86,6 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_OnlySowOnAsh = Mashed_Ashlands_OnlySowOnAsh_def;
 
         //world gen
-        public bool Mashed_Ashlands_OldBiomeGen = Mashed_Ashlands_OldBiomeGen_def;
 
         public bool Mashed_Ashlands_EnableDormantVolcano = Mashed_Ashlands_EnableDormantVolcano_def;
         public int Mashed_Ashlands_NumberOfDormantVolcano = Mashed_Ashlands_NumberOfDormantVolcano_def;
@@ -164,7 +161,6 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_OnlySowOnAsh_def = true;
 
         //world gen
-        private static readonly bool Mashed_Ashlands_OldBiomeGen_def = false;
 
         private static readonly bool Mashed_Ashlands_EnableDormantVolcano_def = true;
         private static readonly int Mashed_Ashlands_NumberOfDormantVolcano_def = 7;
@@ -247,8 +243,6 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_OnlySowOnAsh, "Mashed_Ashlands_OnlySowOnAsh", Mashed_Ashlands_OnlySowOnAsh_def);
 
             //world gen
-            Scribe_Values.Look(ref Mashed_Ashlands_OldBiomeGen, "Mashed_Ashlands_OldBiomeGen", Mashed_Ashlands_OldBiomeGen);
-
             Scribe_Values.Look(ref Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano", Mashed_Ashlands_EnableDormantVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_NumberOfDormantVolcano, "Mashed_Ashlands_NumberOfDormantVolcano", Mashed_Ashlands_NumberOfDormantVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableActiveVolcano, "Mashed_Ashlands_EnableActiveVolcano", Mashed_Ashlands_EnableActiveVolcano_def);
@@ -339,8 +333,6 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_WorldGen()
         {
-            _instance.Mashed_Ashlands_OldBiomeGen = Mashed_Ashlands_OldBiomeGen_def;
-
             _instance.Mashed_Ashlands_EnableDormantVolcano = Mashed_Ashlands_EnableDormantVolcano_def;
             _instance.Mashed_Ashlands_NumberOfDormantVolcano = Mashed_Ashlands_NumberOfDormantVolcano_def;
             _instance.Mashed_Ashlands_EnableActiveVolcano = Mashed_Ashlands_EnableActiveVolcano_def;

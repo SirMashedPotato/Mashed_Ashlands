@@ -24,7 +24,7 @@ namespace Mashed_Ashlands
             }
         }
 
-        private bool IsRedMountain => ParentVolcano.Name.ToLower().Contains("MorrowRim_RedMountain".Translate().ToLower());
+        private bool IsRedMountain => ParentVolcano.Name.ToLower().Contains("Mashed_Ashlands_RedMountain".Translate().ToLower());
 
         public override void Initialize(WorldObjectCompProperties props)
         {
