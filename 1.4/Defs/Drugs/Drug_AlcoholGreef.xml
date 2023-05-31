@@ -23,6 +23,28 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Brewing</li>
+				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+			</skillRequirements>
+			<recipeUsers>
+				<li>Brewery</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+			<soundWorking>Recipe_Brewing</soundWorking>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<productCount>8</productCount>
+			<workAmount>1000</workAmount>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_AlcoholShein>10</Mashed_Ashlands_AlcoholShein>
+		</costList>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GreefHigh]==========-->
 	<HediffDef ParentName="Mashed_Ashlands_AlcoholHighBase">
