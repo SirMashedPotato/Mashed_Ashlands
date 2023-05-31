@@ -32,7 +32,7 @@
 		</statBases>
 		<costList>
 		  <Steel>10</Steel>
-		  <WoodLog>30</WoodLog>
+		  <Mashed_Ashlands_ParasolWoodLog>30</Mashed_Ashlands_ParasolWoodLog>
 		</costList>
 		<comps>
 		  <li Class="ItemProcessor.CompProperties_ItemProcessor">
