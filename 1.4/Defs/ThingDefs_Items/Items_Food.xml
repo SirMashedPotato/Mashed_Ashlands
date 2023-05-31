@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Scuttle]==========-->
+	<ThingDef ParentName="MealBaseIngredientless">
+		<defName>Mashed_Ashlands_Scuttle</defName>
+		<label>scuttle</label>
+		<description>A greasy substance that some would describe as cheese-like, made from insect meat. While some consider it a delicacy, most consider it an acquired taste. Regardless of what one thinks of it, everyone can agree it's an improvement over insect meat.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Mashed_Ashlands_Scuttle</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconForStackCount>-1</uiIconForStackCount>
+		<statBases>
+			<!--<MarketValue>5</MarketValue>-->
+			<Nutrition>0.6</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<tasteThought>Mashed_Ashlands_AteScuttle</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>25</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -5,6 +5,9 @@
 		<defName>Mashed_Ashlands_AteRawMuck</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+		</nullifyingGenes>
 		<stages>
 			<li>
 				<label>consumed muck</label>
@@ -18,6 +21,13 @@
 		<defName>Mashed_Ashlands_AteNixOxMilk</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+		</nullifyingGenes>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>consumed raw nix ox mucus</label>
@@ -31,6 +41,10 @@
 		<defName>Mashed_Ashlands_AteInsectEggDirect</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>ate insect egg</label>
@@ -44,11 +58,32 @@
 		<defName>Mashed_Ashlands_AteInsectEggAsIngredient</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>ate cooked insect egg</label>
 				<description>I ate a meal cooked with slimy insect eggs. The seasoning partly covered the taste, but there were fluid pockets in there that I can't identify.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_AteScuttle]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_AteScuttle</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>ate scuttle</label>
+				<description>I just don't understand it.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
