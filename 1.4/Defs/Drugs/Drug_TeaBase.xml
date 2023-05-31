@@ -47,7 +47,7 @@
 			<bulkRecipeCount>4</bulkRecipeCount>
 		</recipeMaker>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_TramaRootTeaHigh]==========-->
+	<!-- ==========[Mashed_Ashlands_TeaHighBase]==========-->
 	<HediffDef Name="Mashed_Ashlands_TeaHighBase" Abstract="True">
 		<hediffClass>Hediff_High</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
