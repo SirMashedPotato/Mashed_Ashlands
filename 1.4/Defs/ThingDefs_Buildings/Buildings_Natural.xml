@@ -49,6 +49,11 @@
 						<weight>0.5</weight>
 					</li>
 					<li>
+						<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>
+						<amountRange>5~15</amountRange>
+						<weight>0.3</weight>
+					</li>
+					<li>
 						<thingDef>Mashed_Ashlands_VolcanicEbony</thingDef>
 						<amountRange>10~25</amountRange>
 						<weight>0.2</weight>

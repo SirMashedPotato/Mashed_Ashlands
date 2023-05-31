@@ -108,6 +108,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMeadowRye]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawMeadowRye</defName>
+		<label>meadow rye</label>
+		<description>Raw meadow rye. While usually fermented into flin, it can also be used in cooking.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawMeadowRye</texPath>
+		</graphicData>
+		<ingestible>
+			<foodType>Seed</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawSaltrice</defName>

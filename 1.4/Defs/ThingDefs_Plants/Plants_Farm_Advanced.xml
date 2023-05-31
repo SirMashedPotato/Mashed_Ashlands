@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_MeadowRye</defName>
+		<label>meadow rye</label>
+		<description>A grass that can sometimes be found growing in calmer ashlands regions. Considered notoriously difficult to grow, raw meadow rye can be fermented into flin, a highly sought after alcoholic drink. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.2</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_MeadowRyePlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_MeadowRyePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<growDays>14</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>Mashed_Ashlands_RawMeadowRye</harvestedThingDef>
+			<harvestYield>22</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.6~1</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>
