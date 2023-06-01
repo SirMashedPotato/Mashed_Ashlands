@@ -13,6 +13,20 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawArmourhead]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawArmourhead</defName>
+		<label>armourhead</label>
+		<description>Raw armourhead. Often found in reefs near ashland regions, they have several large spines along their back, that can make handling them somewhat risky.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawArmourhead</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawFiremouthGuiyu]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawFiremouthGuiyu</defName>
@@ -67,6 +81,20 @@
 			<Mass>0.35</Mass>
 			<Nutrition>0.15</Nutrition>
 			<MarketValue>3.3</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawGhostOctopus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawGhostOctopus</defName>
+		<label>ghost octopus</label>
+		<description>Raw ghost octopus. While usually only found in deep water, this particular species can also be found closer to shore in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.025</Nutrition>
+			<MarketValue>0.55</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawOanna]==========-->

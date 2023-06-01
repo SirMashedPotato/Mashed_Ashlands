@@ -13,7 +13,6 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
-			<li>Mashed_Ashlands_BrineAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>20</baseFishingYield>
@@ -28,7 +27,6 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
-			<li>Mashed_Ashlands_BrineAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>6</baseFishingYield>
@@ -43,7 +41,6 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
-			<li>Mashed_Ashlands_BrineAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>10</baseFishingYield>

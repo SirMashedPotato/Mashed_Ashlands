@@ -2,9 +2,20 @@
 <Defs>
 	<!-- ==========[Small]==========-->
 	<!-- 
-		Ghost octopus
-		armorhead
+		Weeping pygmy shark https://en.wikipedia.org/wiki/Pygmy_shark
 	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_GhostOctopus</defName>
+		<thingDef>Mashed_Ashlands_RawGhostOctopus</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_JuvenileBlueSandcrab</defName>
 		<thingDef>Mashed_Ashlands_RawJuvenileBlueSandcrab</thingDef>
@@ -19,9 +30,21 @@
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
 	<!-- 
-		Weeping pygmy shark
-		Mustard eel
+		Mustard eel https://en.wikipedia.org/wiki/Dysomma_anguillare
 	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Armourhead</defName>
+		<thingDef>Mashed_Ashlands_RawArmourhead</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_TelvannisCephalopod</defName>
 		<thingDef>Mashed_Ashlands_RawTelvannisCephalopod</thingDef>
@@ -30,6 +53,7 @@
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
