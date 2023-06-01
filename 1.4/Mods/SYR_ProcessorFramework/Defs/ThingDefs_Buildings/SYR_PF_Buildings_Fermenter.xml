@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandFermentingBarrel_VEF]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_AshlandFermentingBarrel_SYR</defName>
+		<label>ashland fermenting barrel (SYR)</label>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>false</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>Mashed_Ashlands_FermentingFlin</li>
+					<li>Mashed_Ashlands_FermentingMazte</li>
+					<li>Mashed_Ashlands_FermentingShein</li>
+					<li>Mashed_Ashlands_FermentingSujamma</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+</Defs>

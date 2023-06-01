@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_ComberryPrecursorToShein]==========-->
 	<ItemProcessor.CombinationDef>
 		<defName>Mashed_Ashlands_ComberryPrecursorToShein</defName>
-		<building>Mashed_Ashlands_AshlandFermentingBarrel</building>
+		<building>Mashed_Ashlands_AshlandFermentingBarrel_VEF</building>
 		<items>
 			<li>Mashed_Ashlands_ComberryPrecursor</li>
 		</items>	
@@ -18,7 +18,7 @@
 	<!-- ==========[Mashed_Ashlands_MeadowRyePrecursorToFlin]==========-->
 	<ItemProcessor.CombinationDef>
 		<defName>Mashed_Ashlands_MeadowRyePrecursorToFlin</defName>
-		<building>Mashed_Ashlands_AshlandFermentingBarrel</building>
+		<building>Mashed_Ashlands_AshlandFermentingBarrel_VEF</building>
 		<items>
 			<li>Mashed_Ashlands_MeadowRyePrecursor</li>
 		</items>	
@@ -33,7 +33,7 @@
 	<!-- ==========[Mashed_Ashlands_SaltricePrecursorToMazte]==========-->
 	<ItemProcessor.CombinationDef>
 		<defName>Mashed_Ashlands_SaltricePrecursorToMazte</defName>
-		<building>Mashed_Ashlands_AshlandFermentingBarrel</building>
+		<building>Mashed_Ashlands_AshlandFermentingBarrel_VEF</building>
 		<items>
 			<li>Mashed_Ashlands_SaltricePrecursor</li>
 		</items>	
@@ -48,7 +48,7 @@
 	<!-- ==========[Mashed_Ashlands_WickwheatPrecursorToSujamma]==========-->
 	<ItemProcessor.CombinationDef>
 		<defName>Mashed_Ashlands_WickwheatPrecursorToSujamma</defName>
-		<building>Mashed_Ashlands_AshlandFermentingBarrel</building>
+		<building>Mashed_Ashlands_AshlandFermentingBarrel_VEF</building>
 		<items>
 			<li>Mashed_Ashlands_WickwheatPrecursor</li>
 		</items>	

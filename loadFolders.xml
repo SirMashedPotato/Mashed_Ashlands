@@ -10,5 +10,7 @@
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.4/Mods/VE_Framework</li>	
 		<li IfModActive="vanillaexpanded.achievements">1.4/Mods/VE_Achievements</li>	
 		<li IfModActive="vanillaexpanded.vcef">1.4/Mods/VE_Fishing</li>	
+		<!-- Other -->
+		<li IfModActive="syrchalis.processor.framework">1.4/Mods/SYR_ProcessorFramework</li>	
 	</v1.4>
 </loadFolders>

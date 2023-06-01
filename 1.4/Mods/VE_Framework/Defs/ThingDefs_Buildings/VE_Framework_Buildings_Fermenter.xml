@@ -1,41 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AshlandFermentingBarrel]==========-->
-	<ThingDef ParentName="BuildingBase">
-		<defName>Mashed_Ashlands_AshlandFermentingBarrel</defName>
+	<!-- ==========[Mashed_Ashlands_AshlandFermentingBarrel_VEF]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_AshlandFermentingBarrel_VEF</defName>
 		<label>ashland fermenting barrel (VEF)</label>
-		<description>A barrel for fermenting ashland alcoholic beverages.</description>
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
-		<graphicData>
-		  <texPath>Things/Building/Production/Mashed_Ashlands_AshlandFermentingBarrel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <damageData>
-			<rect>(0.05,0.1,0.9,0.9)</rect>
-		  </damageData>
-		  <shadowData>
-			<volume>(0.75, 0.35, 0.33)</volume>
-		  </shadowData>
-		</graphicData>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.45</fillPercent>
-		<pathCost>60</pathCost>
-		<thingCategories>
-		  <li>BuildingsProduction</li>
-		</thingCategories>
-		<statBases>
-		  <WorkToBuild>600</WorkToBuild>
-		  <Mass>10</Mass>
-		  <MaxHitPoints>100</MaxHitPoints>
-		  <Flammability>1.0</Flammability>
-		</statBases>
-		<costList>
-		  <Steel>10</Steel>
-		  <Mashed_Ashlands_ParasolWoodLog>30</Mashed_Ashlands_ParasolWoodLog>
-		</costList>
 		<comps>
-		  <li Class="ItemProcessor.CompProperties_ItemProcessor">
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
 				<buildingOnGraphic>Things/Building/Production/FermentingBarrel</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
@@ -47,10 +18,10 @@
 				<chooseIngredientsIcon>UI/Mashed_Ashlands_EmptyPrecursor</chooseIngredientsIcon>
 				<bringIngredientsText>Mashed_Ashlands_StartInsertionAshlandBarrel</bringIngredientsText>
 				<bringIngredientsDesc>Mashed_Ashlands_StartInsertionAshlandBarrelDesc</bringIngredientsDesc>
-				<bringIngredientsIcon>UI/Mashed_Ashlands_InsertPrecursor</bringIngredientsIcon >
-				<cancelIngredientsText>Mashed_Ashlands_CancelBringingAshlandBarrel</cancelIngredientsText> 
+				<bringIngredientsIcon>UI/Mashed_Ashlands_InsertPrecursor</bringIngredientsIcon>
+				<cancelIngredientsText>Mashed_Ashlands_CancelBringingAshlandBarrel</cancelIngredientsText>
 				<cancelIngredientsDesc>Mashed_Ashlands_CancelBringingAshlandBarrelDesc</cancelIngredientsDesc>
-				<cancelIngredientsIcon>UI/Mashed_Ashlands_CancelPrecursor</cancelIngredientsIcon> 
+				<cancelIngredientsIcon>UI/Mashed_Ashlands_CancelPrecursor</cancelIngredientsIcon>
 				<isLightDependingMachine>false</isLightDependingMachine>
 				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
 				<minTemp>10</minTemp>
@@ -58,15 +29,5 @@
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
 			</li>
 		</comps>
-		<tickerType>Rare</tickerType>
-		<rotatable>false</rotatable>
-		<designationCategory>Production</designationCategory>
-		<constructEffect>ConstructWood</constructEffect>
-		<researchPrerequisites>
-		  <li>Brewing</li>
-		  <li>Mashed_Ashlands_AshSurvival_Beginner</li>
-		</researchPrerequisites>
-		<hasInteractionCell>false</hasInteractionCell>
-		<surfaceType>Item</surfaceType>
 	</ThingDef>
 </Defs>

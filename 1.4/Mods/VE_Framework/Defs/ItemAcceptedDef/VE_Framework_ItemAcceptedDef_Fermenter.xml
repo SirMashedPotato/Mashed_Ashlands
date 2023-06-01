@@ -2,7 +2,7 @@
 <Defs>
 	<ItemProcessor.ItemAcceptedDef>
 		<defName>Mashed_Ashlands_AshlandFermentingBarrel_FirstItem</defName>
-		<building>Mashed_Ashlands_AshlandFermentingBarrel</building>
+		<building>Mashed_Ashlands_AshlandFermentingBarrel_VEF</building>
 		<slot>1</slot>
 		<items>
 			<li>Mashed_Ashlands_ComberryPrecursor</li>
