@@ -87,7 +87,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawGhostOctopus</defName>
 		<label>ghost octopus</label>
-		<description>Raw ghost octopus. While usually only found in deep water, this particular species can also be found closer to shore in ashland regions.</description>
+		<description>Raw ghost octopus. A tiny species of octopus usually only found in deep water. Ghost octopus are a fairly common sight in the large coral reefs found around ashland regions.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus</texPath>
 		</graphicData>
@@ -165,6 +165,20 @@
 			<Mass>0.06</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+<!-- ==========[Mashed_Ashlands_RawWeepingPygmyShark]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawWeepingPygmyShark</defName>
+		<label>weeping pygmy shark</label>
+		<description>Raw weeping pygmy shark. One of the smallest species of shark. This particular species is almost solely found in the nutrient rich waters near ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawWeepingPygmyShark</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
 </Defs>

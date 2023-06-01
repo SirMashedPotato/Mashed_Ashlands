@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
-	<!-- 
-		Weeping pygmy shark https://en.wikipedia.org/wiki/Pygmy_shark
-	-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_GhostOctopus</defName>
 		<thingDef>Mashed_Ashlands_RawGhostOctopus</thingDef>
@@ -27,6 +24,18 @@
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>40</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_WeepingPygmyShark</defName>
+		<thingDef>Mashed_Ashlands_RawWeepingPygmyShark</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
 	<!-- 
