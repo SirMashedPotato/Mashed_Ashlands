@@ -67,14 +67,22 @@
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
-	<!-- 
-		monkfish
-		Trevally
-	-->
-	<!--
 	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_SlaughterfishFishLarge</defName>
-		<thingDef>Mashed_Ashlands_RawSlaughterfish</thingDef>
+		<defName>Mashed_Ashlands_Monkfish</defName>
+		<thingDef>Mashed_Ashlands_RawMonkfish</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>5</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Trevally</defName>
+		<thingDef>Mashed_Ashlands_RawTrevally</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
@@ -82,7 +90,6 @@
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
-		<baseFishingYield>10</baseFishingYield>
+		<baseFishingYield>12</baseFishingYield>
 	</VCE_Fishing.FishDef>
-	-->
 </Defs>

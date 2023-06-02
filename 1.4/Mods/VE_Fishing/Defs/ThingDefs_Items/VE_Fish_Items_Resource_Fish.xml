@@ -97,6 +97,20 @@
 			<MarketValue>0.55</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMonkfish</defName>
+		<label>monkfish</label>
+		<description>Raw monkfish. Monkfish can grow rather large, especially of the coast of ashland regions. While rather hideous, monkfish is considered to be quite a delicacy by many. Some locals have tales of enormous monkfish swallowing ill-prepared anglers whole.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMonkfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawOanna]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawOanna</defName>
@@ -163,6 +177,20 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+<!-- ==========[Mashed_Ashlands_RawTrevally]==========-->
+<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawTrevally</defName>
+		<label>trevally</label>
+		<description>Raw trevally. Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large Telvannis cephalopod populations.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
 		</statBases>
