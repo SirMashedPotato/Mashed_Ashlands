@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
-	<!-- 
-		Pilgrim goby
-	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_PilgrimGoby</defName>
+		<thingDef>Mashed_Ashlands_RawPilgrimGoby</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_SmallSlaughterfish</defName>
 		<thingDef>Mashed_Ashlands_RawSmallSlaughterfish</thingDef>
@@ -30,6 +40,18 @@
 			<li>Mashed_Ashlands_SwampAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>6</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Siltfish</defName>
+		<thingDef>Mashed_Ashlands_RawSiltfish</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>12</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<VCE_Fishing.FishDef>

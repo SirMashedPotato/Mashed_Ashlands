@@ -52,7 +52,7 @@
 		<statBases>
 			<Mass>0.01</Mass>
 			<Nutrition>0.01</Nutrition>
-			<MarketValue>0.4</MarketValue>
+			<MarketValue>0.22</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawJuvenileMudcrab]==========-->
@@ -139,18 +139,32 @@
 			<MarketValue>3</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawSlaughterfish]==========-->
+	<!-- ==========[Mashed_Ashlands_RawPilgrimGoby]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
-		<defName>Mashed_Ashlands_RawSlaughterfish</defName>
-		<label>ashland slaughterfish</label>
-		<description>Raw slaughterfish. There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in ashland regions.\n\nAshland slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<defName>Mashed_Ashlands_RawPilgrimGoby</defName>
+		<label>pilgrim goby</label>
+		<description>Raw pilgrim goby. A species of goby common in ashland regions, named after being found basically anywhere there is water.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish</texPath>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawPilgrimGoby</texPath>
 		</graphicData>
 		<statBases>
-			<Mass>0.1</Mass>
-			<Nutrition>0.12</Nutrition>
-			<MarketValue>2.8</MarketValue>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSiltfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSiltfish</defName>
+		<label>siltfish</label>
+		<description>Raw siltfish. A lobe-finned fish that can often found in the shallow silty waters of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSiltfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.06</Nutrition>
+			<MarketValue>1.4</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSmallSlaughterfish]==========-->
@@ -165,6 +179,20 @@
 			<Mass>0.01</Mass>
 			<Nutrition>0.02</Nutrition>
 			<MarketValue>0.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSlaughterfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSlaughterfish</defName>
+		<label>ashland slaughterfish</label>
+		<description>Raw slaughterfish. There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in ashland regions.\n\nAshland slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.12</Nutrition>
+			<MarketValue>2.8</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSleeperCoffinfish]==========-->
