@@ -195,8 +195,8 @@
 			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
-<!-- ==========[Mashed_Ashlands_RawTrevally]==========-->
-<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+	<!-- ==========[Mashed_Ashlands_RawTrevally]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawTrevally</defName>
 		<label>trevally</label>
 		<description>Raw trevally. Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large Telvannis cephalopod populations.</description>
@@ -209,7 +209,7 @@
 			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
-<!-- ==========[Mashed_Ashlands_RawWeepingPygmyShark]==========-->
+	<!-- ==========[Mashed_Ashlands_RawWeepingPygmyShark]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawWeepingPygmyShark</defName>
 		<label>weeping pygmy shark</label>
