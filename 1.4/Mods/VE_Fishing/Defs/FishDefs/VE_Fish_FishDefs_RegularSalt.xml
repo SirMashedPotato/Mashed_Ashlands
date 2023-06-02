@@ -38,12 +38,22 @@
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
-	<!-- 
-		Mustard eel https://en.wikipedia.org/wiki/Dysomma_anguillare
-	-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_Armourhead</defName>
 		<thingDef>Mashed_Ashlands_RawArmourhead</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_MustardEel</defName>
+		<thingDef>Mashed_Ashlands_RawMustardEel</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>false</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
