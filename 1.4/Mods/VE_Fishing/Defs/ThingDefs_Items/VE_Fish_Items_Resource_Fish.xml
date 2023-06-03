@@ -45,12 +45,12 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawFiremouthGuiyu</defName>
 		<label>firemouth guiyu</label>
-		<description>Raw firemouth guiyu. An incredibly primitive fish, only found in found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
+		<description>Raw firemouth guiyu. An incredibly primitive fish, most often found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFiremouthGuiyu</texPath>
 		</graphicData>
 		<statBases>
-			<Mass>0.2</Mass>
+			<Mass>0.15</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.4</MarketValue>
 		</statBases>
@@ -143,12 +143,12 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawOanna</defName>
 		<label>oanna</label>
-		<description>Raw oanna. A primate ray-like fish, only found in found in the tainted oceans around blighted ashland regions. Unlike most aquatic life around blighted ashland regions, the oanna is actually rather peaceful.</description>
+		<description>Raw oanna. A primitive ray-like fish, most often found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawOanna</texPath>
 		</graphicData>
 		<statBases>
-			<Mass>0.15</Mass>
+			<Mass>0.2</Mass>
 			<Nutrition>0.15</Nutrition>
 			<MarketValue>3</MarketValue>
 		</statBases>
