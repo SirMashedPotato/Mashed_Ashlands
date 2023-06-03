@@ -78,6 +78,19 @@
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Crabeater</defName>
+		<thingDef>Mashed_Ashlands_RawCrabeater</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>5</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_Monkfish</defName>
 		<thingDef>Mashed_Ashlands_RawMonkfish</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>

@@ -27,6 +27,20 @@
 			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawCrabeater</defName>
+		<label>crabeater</label>
+		<description>Raw crabeater. A primitive and heavily armoured fish, the jaws of the crabeater are designed specifically for crushing shell. Quite common in the oceanic waters near ashlands, due  to the abundance of crabs that can be found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawFiremouthGuiyu]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawFiremouthGuiyu</defName>
