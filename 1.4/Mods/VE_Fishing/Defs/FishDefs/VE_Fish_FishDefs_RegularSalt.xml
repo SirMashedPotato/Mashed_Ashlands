@@ -52,6 +52,18 @@
 		<baseFishingYield>16</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_FiremouthGuiyu</defName>
+		<thingDef>Mashed_Ashlands_RawFiremouthGuiyu</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>8</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_HorseshoeCrab</defName>
 		<thingDef>Mashed_Ashlands_RawHorseshoeCrab</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>

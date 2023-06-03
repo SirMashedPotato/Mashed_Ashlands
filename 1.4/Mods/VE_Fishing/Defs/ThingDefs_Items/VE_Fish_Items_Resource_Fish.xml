@@ -45,14 +45,14 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawFiremouthGuiyu</defName>
 		<label>firemouth guiyu</label>
-		<description>Raw firemouth guiyu. An incredibly primitive fish, most often found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
+		<description>Raw firemouth guiyu. An incredibly primitive fish, solely found in oceanic waters near ashland regions. Unlike most fish found in these waters, the firemouth guiyu will often travel to the tainted waters around blighted volcanos, where they are believed to spawn.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFiremouthGuiyu</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>0.15</Mass>
 			<Nutrition>0.1</Nutrition>
-			<MarketValue>2.4</MarketValue>
+			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawJuvenileBlueSandcrab]==========-->
