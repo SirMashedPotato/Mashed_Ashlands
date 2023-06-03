@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
-	<!-- 
-		Hoaga oto
-		Gourami
-	-->
-	<!--
 	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_SmallSlaughterfishFish</defName>
-		<thingDef>Mashed_Ashlands_RawSmallSlaughterfish</thingDef>
+		<defName>Mashed_Ashlands_Gourami</defName>
+		<thingDef>Mashed_Ashlands_RawGourami</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>true</canBeSaltwater>
+		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
-		<baseFishingYield>20</baseFishingYield>
+		<baseFishingYield>16</baseFishingYield>
 	</VCE_Fishing.FishDef>
-	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_HoagaOto</defName>
+		<thingDef>Mashed_Ashlands_RawHoagaOto</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	
 	<!-- ==========[Medium]==========-->
 	<!-- 
 		Pity bombil

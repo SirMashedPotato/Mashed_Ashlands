@@ -111,6 +111,34 @@
 			<MarketValue>0.55</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawGourami]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawGourami</defName>
+		<label>gourami</label>
+		<description>Raw gourami. Small, and rather colourful, fish that are often kept as pets. This particular species has adapted to life in ashland regions, and has been able to thrive in the nutrient rich ponds found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.025</Nutrition>
+			<MarketValue>0.55</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawHoagaOto]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawHoagaOto</defName>
+		<label>hoaga oto</label>
+		<description>Raw hoaga oto. A species of Loricariidae that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawHoagaOto</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawHorseshoeCrab]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawHorseshoeCrab</defName>
