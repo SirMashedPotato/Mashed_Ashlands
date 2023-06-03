@@ -111,6 +111,20 @@
 			<MarketValue>0.55</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawHorseshoeCrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawHorseshoeCrab</defName>
+		<label>horseshoe crab</label>
+		<description>Raw horseshoe crab. An incredibly primitive creature, more closely related to spiders and scorpions, than to true crabs. They can often be found in large numbers along the coast of ashland regions, especially under a full moon.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawHorseshoeCrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawMonkfish</defName>
@@ -143,7 +157,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawOanna</defName>
 		<label>oanna</label>
-		<description>Raw oanna. A primitive ray-like fish, most often found in the tainted oceans around blighted ashland regions. While reasonably heavy, there is little edible meat.</description>
+		<description>Raw oanna. A primate ray-like fish, only found in found in the tainted oceans around blighted ashland regions. Unlike most aquatic life in these waters, the oanna is actually rather peaceful.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawOanna</texPath>
 		</graphicData>

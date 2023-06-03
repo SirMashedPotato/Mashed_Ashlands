@@ -35,8 +35,6 @@
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_BlightedAshland</li>
-			<li>Mashed_Ashlands_RegularAshland</li>
-			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>
