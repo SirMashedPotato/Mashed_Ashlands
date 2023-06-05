@@ -237,6 +237,20 @@
 			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawNetchHookEel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawNetchHookEel</defName>
+		<label>netch-hook eel</label>
+		<description>Raw netch-hook eel. A species of freshwater eel native to ashland regions. Named after their long barbels, which are capable of releasing frightfully heart-stopping shocks. Some individuals are believed to be over 100 years old, and are certainly of a size that matches their age.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawNetchHookEel</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawOanna]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawOanna</defName>
