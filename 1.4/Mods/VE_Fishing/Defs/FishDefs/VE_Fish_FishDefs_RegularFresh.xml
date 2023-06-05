@@ -92,8 +92,20 @@
 	<!-- ==========[Large]==========-->
 	<!-- 
 		Netch-hook eel
-		Mouthbrooder (arrowana)
 	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Mouthbrooder</defName>
+		<thingDef>Mashed_Ashlands_RawMouthbrooder</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>5</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<!--
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_SlaughterfishFishLarge</defName>
