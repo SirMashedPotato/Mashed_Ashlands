@@ -27,6 +27,34 @@
 			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawAshBlindfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawAshBlindfish</defName>
+		<label>ash blindfish</label>
+		<description>Raw ash blindfish. As its name suggest, the ash blindfish completely lacks functioning eyes. Most people mistake these for diseased fish, and just throw them back in the water.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawAshBlindfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawCutthroatTrout]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawCutthroatTrout</defName>
+		<label>cutthroat trout</label>
+		<description>Raw cutthroat trout. A species of trout that is usually found in clear waters, which leads many to assume it was introduced to the waterways of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCutthroatTrout</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawCrabeater</defName>
@@ -137,6 +165,20 @@
 			<Mass>0.01</Mass>
 			<Nutrition>0.01</Nutrition>
 			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawIde]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawIde</defName>
+		<label>ide</label>
+		<description>Raw ide. Often found in rivers and lakes in ashland regions. Develops a beautiful golden shine as it ages, though ide in ashland regions don't usually live long enough for that.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawIde</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawHorseshoeCrab]==========-->
@@ -275,6 +317,34 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawTench]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawTench</defName>
+		<label>tench</label>
+		<description>Raw tench. A fairly common sight in stagnant pools of water in ashland regions, tench are able to grow quite large thanks to the abundance of prey found in these waters.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTench</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawToadstoolTilapia]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawToadstoolTilapia</defName>
+		<label>toadstool tilapia</label>
+		<description>Raw toadstool tilapia. A species of tilapia native to the freshwater of ashland regions. Named after its striking red colouration, which many associate with that of a toadstool.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawToadstoolTilapia</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
 		</statBases>

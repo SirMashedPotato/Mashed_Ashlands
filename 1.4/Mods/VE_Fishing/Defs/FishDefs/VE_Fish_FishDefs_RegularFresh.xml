@@ -28,14 +28,67 @@
 	</VCE_Fishing.FishDef>
 	
 	<!-- ==========[Medium]==========-->
-	<!-- 
-		Pity bombil
-		Ash blindfish
-		Ide
-		Cuthroat troat
-		Toadstool tilapia
-		Tench
-	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_AshBlindfish</defName>
+		<thingDef>Mashed_Ashlands_RawAshBlindfish</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_CutthroatTrout</defName>
+		<thingDef>Mashed_Ashlands_RawCutthroatTrout</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Ide</defName>
+		<thingDef>Mashed_Ashlands_RawIde</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>8</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Tench</defName>
+		<thingDef>Mashed_Ashlands_RawTench</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>8</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_ToadstoolTilapia</defName>
+		<thingDef>Mashed_Ashlands_RawToadstoolTilapia</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<!-- 
 		Netch-hook eel
