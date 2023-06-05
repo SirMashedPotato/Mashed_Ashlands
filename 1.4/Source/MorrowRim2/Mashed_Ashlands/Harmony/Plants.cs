@@ -14,7 +14,7 @@ namespace Mashed_Ashlands
     public static class WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch
     {
         [HarmonyPrefix]
-        public static bool MorrowRim_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
+        public static bool Mashed_Ashlands_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
             if (cavePlants && OnStartupUtility.ashlandCavePlantsBiomes.Contains(___map.Biome))
             {
@@ -32,7 +32,7 @@ namespace Mashed_Ashlands
         }
 
         [HarmonyPostfix]
-        public static void MorrowRim_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
+        public static void Mashed_Ashlands_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
             if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.Biome))
             {
@@ -90,7 +90,7 @@ namespace Mashed_Ashlands
     public static class WildPlantSpawner_PlantChoiceWeight_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_PlantChoiceWeight_Patch(ThingDef plantDef, IntVec3 c, ref float __result, Map ___map)
+        public static void Mashed_Ashlands_PlantChoiceWeight_Patch(ThingDef plantDef, IntVec3 c, ref float __result, Map ___map)
         {
             BiomeProperties biomeProps = BiomeProperties.Get(___map.Biome);
             if (biomeProps != null && biomeProps.useAshlandCavePlants)
@@ -119,7 +119,7 @@ namespace Mashed_Ashlands
     public static class PlantUtility_CanNowPlantAt_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
+        public static void Mashed_Ashlands_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
         {
             if (__result && Mashed_Ashlands_ModSettings.TheAshlands_OnlySowOnAsh)
             {
@@ -152,7 +152,7 @@ namespace Mashed_Ashlands
     public static class PlantUtility_CanSowOnGrower_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
+        public static void Mashed_Ashlands_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
         {
             if (__result && Mashed_Ashlands_ModSettings.TheAshlands_OnlySowOnAsh)
             {

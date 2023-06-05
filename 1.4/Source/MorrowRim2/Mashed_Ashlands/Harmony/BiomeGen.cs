@@ -2,7 +2,6 @@
 using Verse;
 using RimWorld;
 using Verse.Noise;
-using RimWorld.Planet;
 
 namespace Mashed_Ashlands
 {
@@ -14,7 +13,7 @@ namespace Mashed_Ashlands
     public static class GenStep_Terrain_TerrainFrom_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_TerrainFrom_Patch(Map map, ref TerrainDef __result)
+        public static void Mashed_Ashlands_TerrainFrom_Patch(Map map, ref TerrainDef __result)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.terrainReplacers.NullOrEmpty())
@@ -38,7 +37,7 @@ namespace Mashed_Ashlands
     public static class GetTerrainToDryTo_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_GetTerrainToDryTo_Patch(Map map, TerrainDef terrainDef, ref TerrainDef __result)
+        public static void Mashed_Ashlands_GetTerrainToDryTo_Patch(Map map, TerrainDef terrainDef, ref TerrainDef __result)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.dryToReplacers.NullOrEmpty())
@@ -63,7 +62,7 @@ namespace Mashed_Ashlands
     public static class GenStep_CavesTerrain_Generate_Patch
     {
         [HarmonyPrefix]
-        public static bool MorrowRim_CaveTerrain_Patch(Map map)
+        public static bool Mashed_Ashlands_CaveTerrain_Patch(Map map)
         {
             if (Find.World.HasCaves(map.Tile))
             {
@@ -104,7 +103,7 @@ namespace Mashed_Ashlands
     public static class RoadDefGenStep_Place_Place_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_RoadDefGenStep_Place_Patch(Map map, IntVec3 position)
+        public static void Mashed_Ashlands_RoadDefGenStep_Place_Patch(Map map, IntVec3 position)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.roadReplacers.NullOrEmpty())
@@ -129,7 +128,7 @@ namespace Mashed_Ashlands
     public static class BeachMaker_Init_Patch
     {
         [HarmonyPrefix]
-        public static bool MorrowRim_BeachMaker_Init_Patch(Map map)
+        public static bool Mashed_Ashlands_BeachMaker_Init_Patch(Map map)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && props.disableBeaches)
@@ -148,7 +147,7 @@ namespace Mashed_Ashlands
     public static class BeachMaker_BeachTerrainAt_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_BeachMaker_BeachTerrainAt_Patch(BiomeDef biome, ref TerrainDef __result)
+        public static void Mashed_Ashlands_BeachMaker_BeachTerrainAt_Patch(BiomeDef biome, ref TerrainDef __result)
         {
             BiomeProperties props = BiomeProperties.Get(biome);
             if (props != null && props.nullifyBeachTerrain)

@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
     public static class WildAnimalSpawner_CommonalityOfAnimalNow_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_CommonalityOfAnimalNow_Patch(PawnKindDef def, ref Map ___map, ref float __result)
+        public static void Mashed_Ashlands_CommonalityOfAnimalNow_Patch(PawnKindDef def, ref Map ___map, ref float __result)
         {
             AnimalProperties props = AnimalProperties.Get(def.race);
             if (props != null)

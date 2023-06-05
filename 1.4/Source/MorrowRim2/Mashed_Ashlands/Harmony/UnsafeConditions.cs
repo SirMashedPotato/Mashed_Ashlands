@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
     public static class MeditationUtility_SafeEnvironmentalConditions_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_SafeEnvironmentalConditions_Patch(IntVec3 cell, Map map, ref bool __result)
+        public static void Mashed_Ashlands_SafeEnvironmentalConditions_Patch(IntVec3 cell, Map map, ref bool __result)
         {
             if (__result)
             {
@@ -33,7 +33,7 @@ namespace Mashed_Ashlands
     public static class JobGiver_WanderInRoofedCellsInPen_ShouldSeekRoofedCells_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_SafeEnvironmentalConditions_Patch(Pawn pawn, ref bool __result)
+        public static void Mashed_Ashlands_SafeEnvironmentalConditions_Patch(Pawn pawn, ref bool __result)
         {
             if (!__result)
             {
@@ -54,7 +54,7 @@ namespace Mashed_Ashlands
     public static class MentalBreakWorker_RunWild_BreakCanOccur_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_MentalBreakWorker_RunWild_Patch(Pawn pawn, ref bool __result)
+        public static void Mashed_Ashlands_MentalBreakWorker_RunWild_Patch(Pawn pawn, ref bool __result)
         {
             if (__result)
             {
@@ -76,7 +76,7 @@ namespace Mashed_Ashlands
     public static class IncidentWorker_PawnsArrive_CanFireNowSub_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_MentalBreakWorker_RunWild_Patch(IncidentParms parms, ref bool __result)
+        public static void Mashed_Ashlands_MentalBreakWorker_RunWild_Patch(IncidentParms parms, ref bool __result)
         {
             if (__result)
             {

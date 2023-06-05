@@ -14,7 +14,7 @@ namespace Mashed_Ashlands
     public static class FertilityGrid_CalculateFertilityAt_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_CalculateFertilityAt_Patch(IntVec3 loc, ref float __result, Map ___map)
+        public static void Mashed_Ashlands_CalculateFertilityAt_Patch(IntVec3 loc, ref float __result, Map ___map)
         {
             if (ModsConfig.BiotechActive)
             {
@@ -37,7 +37,7 @@ namespace Mashed_Ashlands
     public static class PollutionUtility_StimulatedByPollution_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_StimulatedByPollution_Patch(Pawn pawn, ref bool __result)
+        public static void Mashed_Ashlands_StimulatedByPollution_Patch(Pawn pawn, ref bool __result)
         {
             PollutionProperties props = PollutionProperties.Get(pawn.def);
             if (props != null)
@@ -55,7 +55,7 @@ namespace Mashed_Ashlands
     public static class PollutionUtility_PawnPollutionTick_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_AlternativePollutionStimulus_Patch(Pawn pawn)
+        public static void Mashed_Ashlands_AlternativePollutionStimulus_Patch(Pawn pawn)
         {
             if (!pawn.Spawned)
             {

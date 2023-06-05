@@ -9,7 +9,7 @@ namespace Mashed_Ashlands
     {
         static Main()
         {
-            Harmony harmony = new Harmony("com.MorrowRimRemade");
+            Harmony harmony = new Harmony("com.Mashed_Ashlands");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }

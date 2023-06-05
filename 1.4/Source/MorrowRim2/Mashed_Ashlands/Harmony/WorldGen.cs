@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
     public static class World_NaturalRockTypesIn_Patch
     {
         [HarmonyPostfix]
-        public static void MorrowRim_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
+        public static void Mashed_Ashlands_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
         {
             if (Mashed_Ashlands_ModSettings.EnableExclusiveRocks)
             {
