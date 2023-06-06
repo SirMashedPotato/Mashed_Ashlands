@@ -35,14 +35,6 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandBrine]==========-->
-	<VCE_Fishing.BiomeTempDef>
-		<defName>Mashed_Ashlands_BiomeTempAshlandBrine</defName>
-		<biomeTempLabel>Mashed_Ashlands_BrineAshland</biomeTempLabel>
-		<biomes>
-			<li>Mashed_Ashlands_SaltplainAshlands</li>
-		</biomes>
-	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandSwamp]==========-->
 	<VCE_Fishing.BiomeTempDef>
 		<defName>Mashed_Ashlands_BiomeTempAshlandSwamp</defName>

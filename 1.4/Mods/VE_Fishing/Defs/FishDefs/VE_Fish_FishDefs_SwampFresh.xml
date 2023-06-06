@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<!-- ==========[Small]==========-->
-	<!-- 
-		Thorny catfish
-	-->
 	<!-- ==========[Medium]==========-->
-	<!-- 
-		Mud lamprey
-	-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_JuvenileMudcrab</defName>
 		<thingDef>Mashed_Ashlands_RawJuvenileMudcrab</thingDef>
@@ -20,7 +14,4 @@
 		<baseFishingYield>4</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
-	<!-- 
-		
-	-->
 </Defs>

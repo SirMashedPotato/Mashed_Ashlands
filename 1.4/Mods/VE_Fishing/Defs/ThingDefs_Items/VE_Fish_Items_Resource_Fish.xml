@@ -167,20 +167,6 @@
 			<MarketValue>0.22</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawIde]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
-		<defName>Mashed_Ashlands_RawIde</defName>
-		<label>ide</label>
-		<description>Raw ide. Often found in rivers and lakes in ashland regions. Develops a beautiful golden shine as it ages, though ide in ashland regions don't usually live long enough for that.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawIde</texPath>
-		</graphicData>
-		<statBases>
-			<Mass>0.1</Mass>
-			<Nutrition>0.1</Nutrition>
-			<MarketValue>2.2</MarketValue>
-		</statBases>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawHorseshoeCrab]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawHorseshoeCrab</defName>
@@ -191,6 +177,20 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawIde]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawIde</defName>
+		<label>ide</label>
+		<description>Raw ide. Often found in rivers and lakes in ashland regions. Develops a beautiful golden shine as it ages, though ide in ashland regions don't usually live long enough for that.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawIde</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
 		</statBases>
@@ -335,6 +335,22 @@
 			<MarketValue>0.7</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawRicefish]==========-->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawRicefish</defName>
+		<label>ricefish</label>
+		<description>Raw ricefish. A small species of fish that can often be found hiding between saltrice stems.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawRicefish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_RawTelvannisCephalopod]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawTelvannisCephalopod</defName>
@@ -361,6 +377,20 @@
 			<Mass>0.1</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawThornyCatfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawThornyCatfish</defName>
+		<label>thorny catfish</label>
+		<description>Raw thorny catfish. A small species of catfish that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawThornyCatfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawToadstoolTilapia]==========-->
