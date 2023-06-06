@@ -293,6 +293,20 @@
 			<MarketValue>1.4</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawScumCarp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawScumCarp</defName>
+		<label>scum carp</label>
+		<description>Raw scum carp. A species of carp that can often be found in ashland regions experiencing extreme volcanic activity. It has quite an odd taste, and doesn't exactly smell great when cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawScumCarp</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSmallSlaughterfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawSmallSlaughterfish</defName>

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- ==========[Small]==========-->
-	<!-- 
-		Stinkfish
-	-->
 	<!-- ==========[Medium]==========-->
-	<!-- 
-		Scum carp
-	-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_ScumCarp</defName>
+		<thingDef>Mashed_Ashlands_RawScumCarp</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<!-- ==========[Large]==========-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_FoyadaHopper</defName>
