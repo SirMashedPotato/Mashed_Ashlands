@@ -56,7 +56,7 @@
 			</li>
 		</modExtensions>
 		<animalDensity>2.6</animalDensity>
-		<plantDensity>0.5</plantDensity>
+		<plantDensity>0.6</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
 		<diseases>
@@ -177,11 +177,12 @@
 			<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 			<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
 			<Mashed_Ashlands_Plant_InkCap>0.1</Mashed_Ashlands_Plant_InkCap>
-			<Mashed_Ashlands_Plant_DraggleTails>0.2</Mashed_Ashlands_Plant_DraggleTails>
+			<Mashed_Ashlands_Plant_DraggleTails>0.3</Mashed_Ashlands_Plant_DraggleTails>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.4</Mashed_Ashlands_Plant_TreeEmperorParasol>
-			<Plant_TreeWillow>0.5</Plant_TreeWillow>
-			<Plant_TreeCypress>0.5</Plant_TreeCypress>
+			<Mashed_Ashlands_Plant_Stinkcap>0.1</Mashed_Ashlands_Plant_Stinkcap>
+			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.5</Mashed_Ashlands_Plant_TreeEmperorParasol>
+			<Plant_TreeWillow>0.6</Plant_TreeWillow>
+			<Plant_TreeCypress>0.6</Plant_TreeCypress>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Swamp MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Swamp>
 			<!-- ==========[Pollution]========== -->

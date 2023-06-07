@@ -39,4 +39,44 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Stinkcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_Stinkcap</defName>
+		<label>stinkcap</label>
+		<description>A rather disgusting looking mushroom, often found growing in humid ashland regions. While the mushroom itself doesn't provide anything useful when harvested, it does release a rather foul cloud of gas.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_Stinkcap</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>9</growDays>
+			<visualSizeRange>1~2</visualSizeRange>
+			<wildClusterWeight>0</wildClusterWeight>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_GasOnDestroy">
+				<gasType>RotStink</gasType>
+				<radius>1</radius>
+				<onlyIfHarvestable>false</onlyIfHarvestable>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

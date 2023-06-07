@@ -11,5 +11,6 @@ namespace Mashed_Ashlands
 
 		public GasType gasType;
 		public float radius = 3f;
+		public bool onlyIfHarvestable = true;
 	}
 }
