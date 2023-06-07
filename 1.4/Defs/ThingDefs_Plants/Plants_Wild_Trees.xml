@@ -35,6 +35,7 @@
 				<secondaryDrop>Mashed_Ashlands_RawEmperorParasolMoss</secondaryDrop>
 				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
 					<li>Mashed_Ashlands_AshSand</li>
@@ -60,10 +61,11 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase" Name="Mashed_Ashlands_Plant_TreeNetchShieldBase">
 		<defName>Mashed_Ashlands_Plant_TreeNetchShield</defName>
 		<label>netch shield tree</label>
 		<description>A large fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
@@ -90,6 +92,19 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShieldVibrant]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeNetchShieldBase">
+		<defName>Mashed_Ashlands_Plant_TreeNetchShieldVibrant</defName>
+		<label>vibrant netch shield tree</label>
+		<description>A large and quite colourful fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeSpongecap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">

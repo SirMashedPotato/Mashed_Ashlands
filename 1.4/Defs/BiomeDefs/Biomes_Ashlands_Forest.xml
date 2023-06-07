@@ -140,7 +140,7 @@
 			<Mashed_Ashlands_Plant_Glowstalk>0.05</Mashed_Ashlands_Plant_Glowstalk>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.8</Mashed_Ashlands_Plant_TreeEmperorParasol>
-			<Mashed_Ashlands_Plant_TreeNetchShield>0.6</Mashed_Ashlands_Plant_TreeNetchShield>
+			<Mashed_Ashlands_Plant_TreeNetchShieldVibrant>0.6</Mashed_Ashlands_Plant_TreeNetchShieldVibrant>
 			<Mashed_Ashlands_Plant_TreeSpongecap>0.4</Mashed_Ashlands_Plant_TreeSpongecap>
 			<Plant_TreePoplar>0.4</Plant_TreePoplar>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>

@@ -48,16 +48,21 @@
 			</li>
 		</modExtensions>
 		<animalDensity>2.8</animalDensity>
-		<plantDensity>0.3</plantDensity>
+		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
 		<terrainsByFertility>
 			<li>
-				<terrain>Mashed_Ashlands_AshSoil</terrain>
+				<terrain>Mashed_Ashlands_AshGravel</terrain>
 				<min>-999</min>
+				<max>0.27</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshSoil</terrain>
+				<min>0.27</min>
 				<max>0.87</max>
 			</li>
 			<li>
-				<terrain>Mashed_Ashlands_AshGravel</terrain>
+				<terrain>Mashed_Ashlands_RichAshSoil</terrain>
 				<min>0.87</min>
 				<max>999</max>
 			</li>
@@ -117,7 +122,6 @@
 			<Mashed_Ashlands_Plant_AshYam>0.2</Mashed_Ashlands_Plant_AshYam>
 			<Mashed_Ashlands_Plant_Marshmerrow>0.1</Mashed_Ashlands_Plant_Marshmerrow>
 			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
-			<Mashed_Ashlands_Plant_Comberry>0.05</Mashed_Ashlands_Plant_Comberry>
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_Corkbulb>0.1</Mashed_Ashlands_Plant_Corkbulb>
 			<Mashed_Ashlands_Plant_MuckSponge>0.1</Mashed_Ashlands_Plant_MuckSponge>
@@ -130,6 +134,7 @@
 			<Mashed_Ashlands_Plant_BlackAntherflower>0.05</Mashed_Ashlands_Plant_BlackAntherflower>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.4</Mashed_Ashlands_Plant_TreeEmperorParasol>
+			<Mashed_Ashlands_Plant_TreeNetchShield>0.1</Mashed_Ashlands_Plant_TreeNetchShield>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
