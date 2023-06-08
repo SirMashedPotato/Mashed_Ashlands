@@ -64,6 +64,38 @@
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeMilkcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeMilkcap</defName>
+		<label>milkcap tree</label>
+		<description>A rather small fungal tree, very unimpressive, especially when compared to the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</disallowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>20</growDays>
+			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<harvestYield>25</harvestYield>
+			<harvestWork>600</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase" Name="Mashed_Ashlands_Plant_TreeNetchShieldBase">
 		<defName>Mashed_Ashlands_Plant_TreeNetchShield</defName>
@@ -126,9 +158,9 @@
 			<BeautyOutdoors>-1</BeautyOutdoors>
 		</statBases>
 		<plant>
-			<growDays>20</growDays>
+			<growDays>10</growDays>
 			<visualSizeRange>1.1~2.4</visualSizeRange>
-			<harvestYield>25</harvestYield>
+			<harvestYield>15</harvestYield>
 			<harvestWork>800</harvestWork>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
