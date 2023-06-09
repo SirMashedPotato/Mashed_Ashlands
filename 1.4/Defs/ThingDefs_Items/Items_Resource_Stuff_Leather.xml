@@ -25,7 +25,7 @@
 		  <commonality>0.05</commonality>
 		</stuffProps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_GuarLeather]==========-->
+	<!-- ==========[Mashed_Ashlands_CliffRacerLeather]==========-->
 	<ThingDef ParentName="LeatherBase">
 		<defName>Mashed_Ashlands_CliffRacerLeather</defName>
 		<label>cliff racer leather</label>
@@ -51,6 +51,25 @@
 				<Beauty>-5</Beauty>
 				<Comfort>-1</Comfort>
 			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FungalLeather]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Ashlands_FungalLeather</defName>
+		<label>fungal leather</label>
+		<description>A leathery material harvested from a fungal tree. It is somewhat difficult to pierce and insulates rather well against the heat.</description>
+		<graphicData>
+			<color>(62,63,71)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(62,63,71)</color>
+			<commonality>0</commonality>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GuarLeather]==========-->
