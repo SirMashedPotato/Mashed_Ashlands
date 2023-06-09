@@ -17,7 +17,7 @@ namespace Mashed_Ashlands
         {
             if (parent is Plant p)
             {
-                if (!Props.onlyIfHarvestable || p.def.plant.Harvestable)
+                if ((!Props.onlyIfHarvestable || p.def.plant.Harvestable) && p.Growth >= Props.minGrowth)
                 {
                     GasUtility.AddGas(parent.Position, previousMap, Props.gasType, Props.radius);
                 }

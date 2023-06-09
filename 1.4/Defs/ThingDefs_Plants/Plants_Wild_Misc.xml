@@ -43,7 +43,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
 		<defName>Mashed_Ashlands_Plant_Stinkcap</defName>
 		<label>stinkcap</label>
-		<description>A rather disgusting looking mushroom, often found growing in humid ashland regions. While the mushroom itself doesn't provide anything useful when harvested, it does release a rather foul cloud of gas.</description>
+		<description>A rather disgusting looking mushroom, often found growing in humid ashland regions. While the mushroom itself doesn't provide anything useful when harvested, it does release a rather foul cloud of gas once matured enough.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<terrainAffordancesToSow>
@@ -76,6 +76,7 @@
 				<gasType>RotStink</gasType>
 				<radius>1</radius>
 				<onlyIfHarvestable>false</onlyIfHarvestable>
+				<minGrowth>0.7</minGrowth>
 			</li>
 		</comps>
 	</ThingDef>
