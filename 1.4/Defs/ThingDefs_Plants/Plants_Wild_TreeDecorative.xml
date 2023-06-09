@@ -25,6 +25,7 @@
 		<statBases>
 			<Beauty>30</Beauty>
 			<BeautyOutdoors>30</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
 			<growDays>20</growDays>
