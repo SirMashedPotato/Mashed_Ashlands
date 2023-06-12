@@ -33,28 +33,30 @@
 	<Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize>
 	<Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>
+	<!-- General biomes -->
+	<Mashed_Ashlands_BaseBiome_Tooltip>Required for any of the below biomes to generate.</Mashed_Ashlands_BaseBiome_Tooltip>
 	<!-- Regular biomes -->
-	<Mashed_Ashlands_EnableStandardAshlands>Enable the generation of the standard ashlands biome.</Mashed_Ashlands_EnableStandardAshlands>
-	<Mashed_Ashlands_EnableCoralCoastAshlands>Enable the generation of the ashland coral coast biome.</Mashed_Ashlands_EnableCoralCoastAshlands>
-	<Mashed_Ashlands_EnableSwampAshlands>Enable the generation of the ashland swamp biome.</Mashed_Ashlands_EnableSwampAshlands>
-	<Mashed_Ashlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands biome.</Mashed_Ashlands_EnableGrazelandAshlands>
+	<Mashed_Ashlands_EnableStandardAshlands>Enable the generation of the standard ashlands base biome.</Mashed_Ashlands_EnableStandardAshlands>
+	<Mashed_Ashlands_EnableCoralCoastAshlands>Enable the generation of the ashland coral coast sub-biome.</Mashed_Ashlands_EnableCoralCoastAshlands>
+	<Mashed_Ashlands_EnableSwampAshlands>Enable the generation of the ashland swamp sub-biome.</Mashed_Ashlands_EnableSwampAshlands>
+	<Mashed_Ashlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands sub-biome.</Mashed_Ashlands_EnableGrazelandAshlands>
 	<Mashed_Ashlands_EnableCragIslandAshlands>Enable the generation of the ashland crag islands biome.</Mashed_Ashlands_EnableCragIslandAshlands>
 	<!-- Thriving biomes -->
-	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest biome.</Mashed_Ashlands_EnableForestAshlands>
+	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest base biome.</Mashed_Ashlands_EnableForestAshlands>
 	<Mashed_Ashlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</Mashed_Ashlands_EnableSwampIslandAshlands>
-	<Mashed_Ashlands_EnableMeadowAshlands>Enable the generation of the ashland meadows biome.</Mashed_Ashlands_EnableMeadowAshlands>
-	<Mashed_Ashlands_EnableSaltmarshAshlands>Enable the generation of the ashland saltmarsh biome.</Mashed_Ashlands_EnableSaltmarshAshlands>
+	<Mashed_Ashlands_EnableMeadowAshlands>Enable the generation of the ashland meadows sub-biome.</Mashed_Ashlands_EnableMeadowAshlands>
+	<Mashed_Ashlands_EnableSaltmarshAshlands>Enable the generation of the ashland saltmarsh sub-biome.</Mashed_Ashlands_EnableSaltmarshAshlands>
 	<!-- Blighted biomes -->
-	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands biome.</Mashed_Ashlands_EnableBlightedAshlands>
+	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands base biome.</Mashed_Ashlands_EnableBlightedAshlands>
 	<Mashed_Ashlands_EnableBlightedCragIslandAshlands>Enable the generation of the blighted crag islands biome.</Mashed_Ashlands_EnableBlightedCragIslandAshlands>
-	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
+	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog sub-biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
 	<!-- Volcanic biomes -->
-	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands biome.</Mashed_Ashlands_EnableVolcanicAshlands>
-	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
+	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands base biome.</Mashed_Ashlands_EnableVolcanicAshlands>
+	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
 	<Mashed_Ashlands_EnableVolcanicCragIslandAshlands>Enable the generation of the volcanic crag islands biome.</Mashed_Ashlands_EnableVolcanicCragIslandAshlands>
-	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic sulphur pits biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
-	<Mashed_Ashlands_EnableVolcanicThermalValleyAshlands>Enable the generation of the volcanic thermal valley biome.</Mashed_Ashlands_EnableVolcanicThermalValleyAshlands>
-	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
+	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic sulphur pits sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
+	<Mashed_Ashlands_EnableVolcanicThermalValleyAshlands>Enable the generation of the volcanic thermal valley sub-biome.</Mashed_Ashlands_EnableVolcanicThermalValleyAshlands>
+	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
 	<!-- Old biomes -->
 	<Mashed_Ashlands_EnableHighlandAshlands>Enable the generation of the ashland highlands biome.</Mashed_Ashlands_EnableHighlandAshlands>
 	<Mashed_Ashlands_EnableSaltplainAshlands>Enable the generation of the ashland saltplains biome.</Mashed_Ashlands_EnableSaltplainAshlands>
