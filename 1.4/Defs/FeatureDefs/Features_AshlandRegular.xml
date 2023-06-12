@@ -12,8 +12,6 @@
 			<li>Mashed_Ashlands_CoralCoastAshlands</li>
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<li>Mashed_Ashlands_SaltplainAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
@@ -30,16 +28,6 @@
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerCoralCoastAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[Mashed_Ashlands_ForestAshlands]==========-->
-	<FeatureDef>
-		<defName>Mashed_Ashlands_ForestAshlands</defName>
-		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>443</order>
-		<rootBiomes>
-			<li>Mashed_Ashlands_ForestAshlands</li>
-		</rootBiomes>
-		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
-	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_GrazelandAshlands]==========-->
 	<FeatureDef>
 		<defName>Mashed_Ashlands_GrazelandAshlands</defName>
@@ -49,26 +37,6 @@
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerGrazelandAshlands</nameMaker>
-	</FeatureDef>
-		<!-- ==========[Mashed_Ashlands_HighlandAshlands]==========-->
-	<FeatureDef>
-		<defName>Mashed_Ashlands_HighlandAshlands</defName>
-		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>443</order>
-		<rootBiomes>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-		</rootBiomes>
-		<nameMaker>Mashed_Ashlands_NamerHighlandAshlands</nameMaker>
-	</FeatureDef>
-	<!-- ==========[Mashed_Ashlands_SaltplainAshlands]==========-->
-	<FeatureDef>
-		<defName>Mashed_Ashlands_SaltplainAshlands</defName>
-		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>443</order>
-		<rootBiomes>
-			<li>Mashed_Ashlands_SaltplainAshlands</li>
-		</rootBiomes>
-		<nameMaker>Mashed_Ashlands_NamerSaltplainAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_SwampAshlands]==========-->
 	<FeatureDef>

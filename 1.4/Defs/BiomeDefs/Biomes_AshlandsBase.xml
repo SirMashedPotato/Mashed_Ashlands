@@ -48,9 +48,31 @@
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
+		<baseWeatherCommonalities>
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<!-- MorrowRim weather -->
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
+			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
+			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
+		</baseWeatherCommonalities>
 		<wildAnimals>
 			<!-- prey animals -->
 			<!-- TODO May need to be specified per biome -->
+			<Rat>0.6</Rat>
 			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
 			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
 		</wildAnimals>
@@ -63,7 +85,9 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
-		
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
