@@ -72,12 +72,12 @@
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedCragIslandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CragIslandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_ForestAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SaltplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampIslandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_SwampIslandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCragIslandAshlands.cs" />

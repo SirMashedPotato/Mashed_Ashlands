@@ -42,6 +42,10 @@ namespace Mashed_Ashlands
         public static bool EnableSwampIslandAshlands => _instance.Mashed_Ashlands_EnableSwampIslandAshlands;
         public static bool EnableBlightedBogAshlands => _instance.Mashed_Ashlands_EnableBlightedBogAshlands;
         public static bool EnableVolcanicSulphurPitsAshlands => _instance.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands;
+        public static bool EnableMeadowAshlands => _instance.Mashed_Ashlands_EnableMeadowAshlands;
+        public static bool EnableSaltmarshAshlands => _instance.Mashed_Ashlands_EnableSaltmarshAshlands;
+        public static bool EnableVolcanicThermalValleyAshlands => _instance.Mashed_Ashlands_EnableVolcanicThermalValleyAshlands;
+        public static bool EnableVolcanicBadlandsAshlands => _instance.Mashed_Ashlands_EnableVolcanicBadlandsAshlands;
 
         public static bool EnableExclusiveRocks => _instance.Mashed_Ashlands_EnableExclusiveRocks;
 
@@ -117,6 +121,10 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_EnableSwampIslandAshlands = Mashed_Ashlands_EnableSwampIslandAshlands_def;
         public bool Mashed_Ashlands_EnableBlightedBogAshlands = Mashed_Ashlands_EnableBlightedBogAshlands_def;
         public bool Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands = Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def;
+        public bool Mashed_Ashlands_EnableMeadowAshlands = Mashed_Ashlands_EnableMeadowAshlands_def;
+        public bool Mashed_Ashlands_EnableSaltmarshAshlands = Mashed_Ashlands_EnableSaltmarshAshlands_def;
+        public bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands = Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def;
+        public bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands = Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def;
 
         public bool Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
 
@@ -192,6 +200,10 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_EnableSwampIslandAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableBlightedBogAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def = true;
+        private static readonly bool Mashed_Ashlands_EnableMeadowAshlands_def = true;
+        private static readonly bool Mashed_Ashlands_EnableSaltmarshAshlands_def = true;
+        private static readonly bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def = true;
+        private static readonly bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def = true;
 
         private static readonly bool Mashed_Ashlands_EnableExclusiveRocks_def = true;
 
@@ -273,6 +285,10 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableSwampIslandAshlands, "Mashed_Ashlands_EnableSwampIslandAshlands", Mashed_Ashlands_EnableSwampIslandAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableBlightedBogAshlands, "Mashed_Ashlands_EnableBlightedBogAshlands", Mashed_Ashlands_EnableBlightedBogAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands, "Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands", Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableMeadowAshlands, "Mashed_Ashlands_EnableMeadowAshlands", Mashed_Ashlands_EnableMeadowAshlands_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableSaltmarshAshlands, "Mashed_Ashlands_EnableSaltmarshAshlands", Mashed_Ashlands_EnableSaltmarshAshlands_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicThermalValleyAshlands, "Mashed_Ashlands_EnableVolcanicThermalValleyAshlands", Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicBadlandsAshlands, "Mashed_Ashlands_EnableVolcanicBadlandsAshlands", Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks", Mashed_Ashlands_EnableExclusiveRocks_def);
 

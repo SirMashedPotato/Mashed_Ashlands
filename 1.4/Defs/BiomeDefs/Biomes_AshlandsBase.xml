@@ -62,6 +62,9 @@
 		</allowedPackAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		
+	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<canAutoChoose>false</canAutoChoose>

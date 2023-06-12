@@ -211,63 +211,33 @@ namespace Mashed_Ashlands
             listing_Standard.Label("Mashed_Ashlands_PageWorldGen".Translate());
             listing_Standard.GapLine();
             listing_Standard.Gap();
-            /*
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_OldBiomeGen".Translate(), ref settings.Mashed_Ashlands_OldBiomeGen, "Mashed_Ashlands_OldBiomeGen_Tooltip".Translate());
-            listing_Standard.Gap();
 
-            listing_Standard.GapLine();
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExclusiveRocks".Translate(), ref settings.Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks_Tooltip".Translate());
             listing_Standard.Gap();
-            */
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_VolcanoScaleWithWorldSize, "Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
             listing_Standard.Gap();
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableDormantVolcano".Translate(), ref settings.Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_NumberOfDormantVolcano".Translate(settings.Mashed_Ashlands_NumberOfDormantVolcano));
-            settings.Mashed_Ashlands_NumberOfDormantVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfDormantVolcano, 1, 50);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExtinctVolcano".Translate(), ref settings.Mashed_Ashlands_EnableExtinctVolcano, "Mashed_Ashlands_EnableExtinctVolcano_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_NumberOfExtinctVolcano".Translate(settings.Mashed_Ashlands_NumberOfExtinctVolcano));
-            settings.Mashed_Ashlands_NumberOfExtinctVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfExtinctVolcano, 1, 50);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableActiveVolcano".Translate(), ref settings.Mashed_Ashlands_EnableActiveVolcano, "Mashed_Ashlands_EnableActiveVolcano_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_NumberOfActiveVolcano".Translate(settings.Mashed_Ashlands_NumberOfActiveVolcano));
-            settings.Mashed_Ashlands_NumberOfActiveVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfActiveVolcano, 1, 50);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedVolcano".Translate(), ref settings.Mashed_Ashlands_EnableBlightedVolcano, "Mashed_Ashlands_EnableBlightedVolcano_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_NumberOfBlightedVolcano".Translate(settings.Mashed_Ashlands_NumberOfBlightedVolcano));
-            settings.Mashed_Ashlands_NumberOfBlightedVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfBlightedVolcano, 1, 50);
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BiomeScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_BiomeScaleWithWorldSize, "Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_BiomesMaxDistance".Translate(settings.Mashed_Ashlands_BiomesMaxDistance));
-            settings.Mashed_Ashlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_BiomesMaxDistance, 1, 200);
             listing_Standard.Gap();
 
             listing_Standard.Label("Mashed_Ashlands_VolcanoMinDistance".Translate(settings.Mashed_Ashlands_VolcanoMinDistance));
             settings.Mashed_Ashlands_VolcanoMinDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_VolcanoMinDistance, 1, 200);
             listing_Standard.Gap();
 
+            listing_Standard.Label("Mashed_Ashlands_BiomesMaxDistance".Translate(settings.Mashed_Ashlands_BiomesMaxDistance));
+            settings.Mashed_Ashlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_BiomesMaxDistance, 1, 200);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //Dormant and biomes
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableDormantVolcano".Translate(), ref settings.Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_NumberOfDormantVolcano".Translate(settings.Mashed_Ashlands_NumberOfDormantVolcano));
+            settings.Mashed_Ashlands_NumberOfDormantVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfDormantVolcano, 1, 50);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableStandardAshlands".Translate(), ref settings.Mashed_Ashlands_EnableStandardAshlands);
@@ -279,37 +249,44 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableCoralCoastAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableForestAshlands);
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableGrazelandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableGrazelandAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableHighlandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableHighlandAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSaltplainAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSaltplainAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSwampAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSwampAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //Extinct and biomes
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExtinctVolcano".Translate(), ref settings.Mashed_Ashlands_EnableExtinctVolcano, "Mashed_Ashlands_EnableExtinctVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_NumberOfExtinctVolcano".Translate(settings.Mashed_Ashlands_NumberOfExtinctVolcano));
+            settings.Mashed_Ashlands_NumberOfExtinctVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfExtinctVolcano, 1, 50);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableForestAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSwampIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSwampIslandAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.GapLine();
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableMeadowAshlands".Translate(), ref settings.Mashed_Ashlands_EnableMeadowAshlands);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedCragIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedCragIslandAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSaltmarshAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSaltmarshAshlands);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //Active and biomes
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableActiveVolcano".Translate(), ref settings.Mashed_Ashlands_EnableActiveVolcano, "Mashed_Ashlands_EnableActiveVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_NumberOfActiveVolcano".Translate(settings.Mashed_Ashlands_NumberOfActiveVolcano));
+            settings.Mashed_Ashlands_NumberOfActiveVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfActiveVolcano, 1, 50);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicAshlands);
@@ -324,15 +301,41 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicThermalValleyAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicThermalValleyAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBadlandsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBadlandsAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExclusiveRocks".Translate(), ref settings.Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks_Tooltip".Translate());
+            //Blighted and biomes
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedVolcano".Translate(), ref settings.Mashed_Ashlands_EnableBlightedVolcano, "Mashed_Ashlands_EnableBlightedVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_NumberOfBlightedVolcano".Translate(settings.Mashed_Ashlands_NumberOfBlightedVolcano));
+            settings.Mashed_Ashlands_NumberOfBlightedVolcano = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfBlightedVolcano, 1, 50);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedCragIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedCragIslandAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
+            /*
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableHighlandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableHighlandAshlands);
+            listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSaltplainAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSaltplainAshlands);
+            listing_Standard.Gap();
+            */
             return listing_Standard;
         }
 
