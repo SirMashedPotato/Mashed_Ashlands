@@ -98,27 +98,6 @@
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
-		<baseWeatherCommonalities>
-			<!-- Vanilla Weather -->
-			<Clear>18</Clear>
-			<Fog>1</Fog>
-			<Rain>1</Rain>
-			<DryThunderstorm>1</DryThunderstorm>
-			<RainyThunderstorm>0.5</RainyThunderstorm>
-			<FoggyRain>1</FoggyRain>
-			<SnowGentle>4</SnowGentle>
-			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
-			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
-			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">1</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.1</RG_Monsoon>
-		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_Grass>3</Plant_Grass>

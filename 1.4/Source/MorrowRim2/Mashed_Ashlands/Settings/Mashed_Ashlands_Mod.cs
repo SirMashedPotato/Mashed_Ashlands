@@ -300,10 +300,10 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands);
             listing_Standard.Gap();
-
+            /*
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicThermalValleyAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicThermalValleyAshlands);
             listing_Standard.Gap();
-
+            */
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBadlandsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBadlandsAshlands);
             listing_Standard.Gap();
 
