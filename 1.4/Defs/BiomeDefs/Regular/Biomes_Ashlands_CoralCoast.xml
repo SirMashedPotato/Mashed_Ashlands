@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_CoralCoastAshlands</defName>
 		<label>ashland coral coast</label>
 		<description>Home to an ecosystem that seems alien, even when compared to other ashland regions. Fertile ash has allowed for the growth of a forest of enormous land coral. Herds of ashland coralcrabs can often be found foraging among the dunes. Serene coast, illuminated by an orange glow, makes this a rather nice place to settle.</description>
@@ -166,7 +166,6 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>0.3</Rat>
 			<Mashed_Ashlands_BantamGuar>0.05</Mashed_Ashlands_BantamGuar>
 			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_Vvardvark>0.1</Mashed_Ashlands_Vvardvark>
@@ -185,8 +184,6 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<Mashed_Ashlands_CoralcrabGlowing MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_CoralcrabGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NixOxGlowing>

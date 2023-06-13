@@ -10,7 +10,7 @@
 		</rootBiomes>
 		<acceptableBiomes>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
-			<li>Mashed_Ashlands_SaltmarshAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
 	</FeatureDef>
@@ -24,14 +24,14 @@
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerMeadowAshlands</nameMaker>
 	</FeatureDef>
-	<!-- ==========[Mashed_Ashlands_SaltmarshAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_MarshAshlands]==========-->
 	<FeatureDef>
-		<defName>Mashed_Ashlands_SaltmarshAshlands</defName>
+		<defName>Mashed_Ashlands_MarshAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>443</order>
 		<rootBiomes>
-			<li>Mashed_Ashlands_SaltmarshAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
 		</rootBiomes>
-		<nameMaker>Mashed_Ashlands_NamerSaltmarshAshlands</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerMarshAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

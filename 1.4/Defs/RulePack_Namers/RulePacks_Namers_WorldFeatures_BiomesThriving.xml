@@ -24,9 +24,9 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerSaltmarshAshlands]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerMarshAshlands]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerSaltmarshAshlands</defName>
+		<defName>Mashed_Ashlands_NamerMarshAshlands</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>

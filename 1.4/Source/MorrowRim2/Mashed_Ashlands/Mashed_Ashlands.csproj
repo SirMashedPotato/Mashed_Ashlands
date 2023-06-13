@@ -68,7 +68,7 @@
     <Compile Include="Alert\Alert_AshBuildup.cs" />
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MeadowAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_SaltmarshAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MarshAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />

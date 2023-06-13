@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_CragIslandAshlands</defName>
 		<label>ashland crag islands</label>
 		<description>A collection of small, and often rocky, islands. Much of the ground here is gravel, though there are pockets of rich ash. While many plants struggle to grow here, ample access to coast allows for large clusters of marshmerrow and saltrice. Many of the animals native to the ashlands are not found here. The islands are instead dominated by netch, mudcrabs... and cliff racers.</description>
@@ -123,27 +123,6 @@
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
-		<baseWeatherCommonalities>
-			<!-- Vanilla Weather -->
-			<Clear>18</Clear>
-			<Fog>5</Fog>
-			<Rain>3</Rain>
-			<DryThunderstorm>1</DryThunderstorm>
-			<RainyThunderstorm>1</RainyThunderstorm>
-			<FoggyRain>2</FoggyRain>
-			<SnowGentle>4</SnowGentle>
-			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
-			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
-			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">3</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
-		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_Grass>6</Plant_Grass>
@@ -182,7 +161,6 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>0.2</Rat>
 			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_SandcrabBlue>0.4</Mashed_Ashlands_SandcrabBlue>
 			<!-- herd animals -->
@@ -193,8 +171,6 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_CliffRacer>1</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsThrivingBase">
 		<defName>Mashed_Ashlands_SwampIslandAshlands</defName>
 		<label>ashland swamp islands</label>
 		<description>A collection of small, and swampy, islands. Pockets of land are hidden inside overgrown marsh, those that choose to settle will need to decide between using this land for farming, or for building. Many of the animals found in swampier ashland regions can be found here... though cliff racers are a very common sight.</description>
@@ -134,27 +134,6 @@
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
-		<baseWeatherCommonalities>
-			<!-- Vanilla Weather -->
-			<Clear>18</Clear>
-			<Fog>6</Fog>
-			<Rain>4</Rain>
-			<DryThunderstorm>1</DryThunderstorm>
-			<RainyThunderstorm>1</RainyThunderstorm>
-			<FoggyRain>1</FoggyRain>
-			<SnowGentle>4</SnowGentle>
-			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
-			<Mashed_Ashlands_Ashfall>2</Mashed_Ashlands_Ashfall>
-			<Mashed_Ashlands_FoggyAshfall>1</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
-		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_TallGrass>2.5</Plant_TallGrass>
@@ -200,7 +179,6 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>0.2</Rat>
 			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_SwampJelly>0.4</Mashed_Ashlands_SwampJelly>
 			<!-- herd animals -->
@@ -214,7 +192,6 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_ShalkGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_NetchGlowing>

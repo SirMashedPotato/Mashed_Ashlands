@@ -45,7 +45,7 @@
 	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest base biome.</Mashed_Ashlands_EnableForestAshlands>
 	<Mashed_Ashlands_EnableSwampIslandAshlands>Enable the generation of the ashland swamp islands biome.</Mashed_Ashlands_EnableSwampIslandAshlands>
 	<Mashed_Ashlands_EnableMeadowAshlands>Enable the generation of the ashland meadows sub-biome.</Mashed_Ashlands_EnableMeadowAshlands>
-	<Mashed_Ashlands_EnableSaltmarshAshlands>Enable the generation of the ashland saltmarsh sub-biome.</Mashed_Ashlands_EnableSaltmarshAshlands>
+	<Mashed_Ashlands_EnableMarshAshlands>Enable the generation of the ashland marsh sub-biome.</Mashed_Ashlands_EnableMarshAshlands>
 	<!-- Blighted biomes -->
 	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands base biome.</Mashed_Ashlands_EnableBlightedAshlands>
 	<Mashed_Ashlands_EnableBlightedCragIslandAshlands>Enable the generation of the blighted crag islands biome.</Mashed_Ashlands_EnableBlightedCragIslandAshlands>

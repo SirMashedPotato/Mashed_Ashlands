@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_SwampAshlands</defName>
 		<label>ashland swamp</label>
 		<description>An ashland region that has become a swampy wilderness over time. Much of the land is covered by pools of stagnant water, making the landscape difficult to traverse, and especially difficult to build upon. Draggletails, violet coprinus and luminious russula can help navigating the marshes at night.\n\nFew apex predators can be found here, with nix-hounds and durzogs being the most dangerous predators one is likely to face. Of course those that frequent these swamps must also be careful around suspiciously shaped rocks, and especially careful around netch during the breeding season.</description>
@@ -59,14 +59,6 @@
 		<plantDensity>0.6</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
-		<diseases>
-			<!--
-			<li>
-				<diseaseInc>Mashed_Ashlands_SwampFever</diseaseInc>
-				<commonality>150</commonality>
-			</li>
-			-->
-		</diseases>
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>
@@ -136,27 +128,6 @@
 				</thresholds>
 			</li>
 		</terrainPatchMakers>
-		<baseWeatherCommonalities>
-			<!-- Vanilla Weather -->
-			<Clear>18</Clear>
-			<Fog>6</Fog>
-			<Rain>4</Rain>
-			<DryThunderstorm>1</DryThunderstorm>
-			<RainyThunderstorm>1</RainyThunderstorm>
-			<FoggyRain>1</FoggyRain>
-			<SnowGentle>4</SnowGentle>
-			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
-			<Mashed_Ashlands_Ashfall>2</Mashed_Ashlands_Ashfall>
-			<Mashed_Ashlands_FoggyAshfall>1</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
-		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_TallGrass>3.2</Plant_TallGrass>
@@ -202,7 +173,6 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
-			<Rat>0.6</Rat>
 			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_SwampJelly>0.6</Mashed_Ashlands_SwampJelly>
 			<!-- herd animals -->
@@ -218,8 +188,6 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_ShalkGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>

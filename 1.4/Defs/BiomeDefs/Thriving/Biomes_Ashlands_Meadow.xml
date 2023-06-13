@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBase">
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsThrivingBase">
 		<defName>Mashed_Ashlands_MeadowAshlands</defName>
 		<label>ashland meadows</label>
 		<description>TODO.</description>

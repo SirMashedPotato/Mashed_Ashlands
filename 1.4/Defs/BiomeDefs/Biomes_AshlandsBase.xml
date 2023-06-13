@@ -76,6 +76,10 @@
 			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
 			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
 		</wildAnimals>
+		<pollutionWildAnimals>
+			<Rat>0.6</Rat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
+		</pollutionWildAnimals>
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
 			<li>Mashed_Ashlands_NixOx</li>

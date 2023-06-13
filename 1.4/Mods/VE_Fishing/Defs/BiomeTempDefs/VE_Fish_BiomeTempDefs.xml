@@ -42,7 +42,7 @@
 		<biomes>
 			<li>Mashed_Ashlands_SwampAshlands</li>
 			<li>Mashed_Ashlands_SwampIslandAshlands</li>
-			<li>Mashed_Ashlands_SaltmarshAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 </Defs>
