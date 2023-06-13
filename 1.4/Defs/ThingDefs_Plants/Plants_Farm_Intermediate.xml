@@ -35,6 +35,49 @@
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Chillshroom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Chillshroom</defName>
+		<label>chillshroom mushroom</label>
+		<description>A comparatively small mushroom, often found growing in volcanically active ashland regions. The cap secretes a cooling liquid, that some use to create a tea. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ChillshroomPlant</texPath>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawChillshroom</harvestedThingDef>
+			<harvestYield>4</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>8</growDays>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<wildClusterRadius>2</wildClusterRadius>
+			<wildClusterWeight>100</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Comberry]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Comberry</defName>

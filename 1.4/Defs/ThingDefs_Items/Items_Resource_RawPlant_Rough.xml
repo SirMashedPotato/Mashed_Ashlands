@@ -33,6 +33,31 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawChillshroom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawChillshroom</defName>
+		<label>chillshroom</label>
+		<description>Raw chillshroom. Not safe to eat raw, but perfectly safe when properly cooked. Often brewed into a cooling tea.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawChillshroom</texPath>
+		</graphicData>
+		<statBases>
+			<FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawCorkbulbRoot]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawCorkbulbRoot</defName>
