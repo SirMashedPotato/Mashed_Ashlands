@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NamerBlightedAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerBlightedAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->blight</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerBlightedBogAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerBlightedBogAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->bog</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

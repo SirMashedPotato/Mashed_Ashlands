@@ -134,15 +134,11 @@ namespace Mashed_Ashlands
             {
                 return 0f;
             }
-            if (tile.rainfall >= 600f)
+            if (tile.rainfall > 250f)
             {
                 return 0f;
             }
-            if (tile.elevation <= 600f || tile.elevation >= 1000f)
-            {
-                return 0f;
-            }
-            return 15 + (tile.temperature / 50);
+            return 15 + (tile.rainfall / 50);
         }
 
         /// <summary>
@@ -162,15 +158,11 @@ namespace Mashed_Ashlands
             {
                 return 0f;
             }
-            if (tile.rainfall < 600f || tile.rainfall >= 1800f)
+            if (tile.rainfall < 300f || tile.rainfall >= 1500f)
             {
                 return 0f;
             }
-            if (tile.elevation <= 600f || tile.elevation >= 1000f)
-            {
-                return 0f;
-            }
-            return 15 + (tile.rainfall / 100) + (tile.elevation / 100) + (tile.temperature / 100);
+            return 13 + (tile.rainfall / 100) + (tile.temperature / 100);
         }
 
         /// <summary>
@@ -190,7 +182,7 @@ namespace Mashed_Ashlands
             {
                 return 0f;
             }
-            return 15 + (tile.swampiness * 15);
+            return 13 + (tile.swampiness * 15);
         }
 
     }

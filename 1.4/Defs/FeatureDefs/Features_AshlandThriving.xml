@@ -8,6 +8,30 @@
 		<rootBiomes>
 			<li>Mashed_Ashlands_ForestAshlands</li>
 		</rootBiomes>
+		<acceptableBiomes>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_SaltmarshAshlands</li>
+		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_MeadowAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_MeadowAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerMeadowAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_SaltmarshAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_SaltmarshAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_SaltmarshAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerSaltmarshAshlands</nameMaker>
 	</FeatureDef>
 </Defs>
