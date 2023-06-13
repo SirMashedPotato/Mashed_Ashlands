@@ -171,13 +171,13 @@ namespace Mashed_Ashlands
         //world gen
 
         private static readonly bool Mashed_Ashlands_EnableDormantVolcano_def = true;
-        private static readonly int Mashed_Ashlands_NumberOfDormantVolcano_def = 7;
+        private static readonly int Mashed_Ashlands_NumberOfDormantVolcano_def = 4;
         private static readonly bool Mashed_Ashlands_EnableActiveVolcano_def = true;
-        private static readonly int Mashed_Ashlands_NumberOfActiveVolcano_def = 2;
+        private static readonly int Mashed_Ashlands_NumberOfActiveVolcano_def = 4;
         private static readonly bool Mashed_Ashlands_EnableBlightedVolcano_def = true;
-        private static readonly int Mashed_Ashlands_NumberOfBlightedVolcano_def = 1;
+        private static readonly int Mashed_Ashlands_NumberOfBlightedVolcano_def = 2;
         private static readonly bool Mashed_Ashlands_EnableExtinctVolcano_def = true;
-        private static readonly int Mashed_Ashlands_NumberOfExtinctVolcano_def = 3;
+        private static readonly int Mashed_Ashlands_NumberOfExtinctVolcano_def = 4;
 
         private static readonly int Mashed_Ashlands_VolcanoMinDistance_def = 25;
         private static readonly int Mashed_Ashlands_BiomesMaxDistance_def = 25;
