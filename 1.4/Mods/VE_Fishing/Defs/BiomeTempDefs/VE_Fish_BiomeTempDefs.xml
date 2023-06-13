@@ -8,10 +8,9 @@
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_CoralCoastAshlands</li>
 			<li>Mashed_Ashlands_CragIslandAshlands</li>
-			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<li>Mashed_Ashlands_SaltplainAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandBlighted]==========-->
@@ -33,6 +32,7 @@
 			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
 			<li>Mashed_Ashlands_VolcanicCragIslandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandSwamp]==========-->
@@ -42,13 +42,7 @@
 		<biomes>
 			<li>Mashed_Ashlands_SwampAshlands</li>
 			<li>Mashed_Ashlands_SwampIslandAshlands</li>
+			<li>Mashed_Ashlands_SaltmarshAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
-	<!--
-		Other potential ones
-			Humid
-			Lush
-			Coral
-			Sulphur
-	-->
 </Defs>
