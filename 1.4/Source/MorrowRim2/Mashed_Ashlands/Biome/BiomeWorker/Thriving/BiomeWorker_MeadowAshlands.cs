@@ -2,15 +2,15 @@
 
 namespace Mashed_Ashlands
 {
-    public class BiomeWorker_GrazelandAshlands : AshlandBiomeWorker
+    public class BiomeWorker_MeadowAshlands : AshlandBiomeWorker
     {
         public override float GetScore_Main(Tile tile, int tileID)
         {
-            if (!Mashed_Ashlands_ModSettings.EnableGrazelandAshlands)
+            if (!Mashed_Ashlands_ModSettings.EnableMeadowAshlands)
             {
                 return -100f;
             }
-            if (tile.biome != BiomeDefOf.Mashed_Ashlands_Ashlands)
+            if (tile.biome != BiomeDefOf.Mashed_Ashlands_ForestAshlands)
             {
                 return -100f;
             }

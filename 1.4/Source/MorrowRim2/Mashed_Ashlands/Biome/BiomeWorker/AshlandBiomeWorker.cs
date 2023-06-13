@@ -124,5 +124,74 @@ namespace Mashed_Ashlands
 
             return 16;
         }
+
+        /// <summary>
+        /// Used for all Arid type biomes
+        /// </summary>
+        public float AridBiomeWorker(Tile tile)
+        {
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            {
+                return 0f;
+            }
+            if (tile.rainfall >= 600f)
+            {
+                return 0f;
+            }
+            if (tile.elevation <= 600f || tile.elevation >= 1000f)
+            {
+                return 0f;
+            }
+            return 15 + (tile.temperature / 50);
+        }
+
+        /// <summary>
+        /// Used for all Grassland type biomes
+        /// </summary>
+        public float GrasslandBiomeWorker(Tile tile)
+        {
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            {
+                return 0f;
+            }
+            if (tile.swampiness > 0.2f)
+            {
+                return 0f;
+            }
+            if (tile.temperature < 0f)
+            {
+                return 0f;
+            }
+            if (tile.rainfall < 600f || tile.rainfall >= 1800f)
+            {
+                return 0f;
+            }
+            if (tile.elevation <= 600f || tile.elevation >= 1000f)
+            {
+                return 0f;
+            }
+            return 15 + (tile.rainfall / 100) + (tile.elevation / 100) + (tile.temperature / 100);
+        }
+
+        /// <summary>
+        /// Used for all Swamp type biomes
+        /// </summary>
+        public float SwampBiomeWorker(Tile tile)
+        {
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            {
+                return 0f;
+            }
+            if (tile.temperature < 15f)
+            {
+                return 0f;
+            }
+            if (tile.rainfall < 1500f)
+            {
+                return 0f;
+            }
+            return 15 + (tile.swampiness * 15);
+        }
+
     }
 }

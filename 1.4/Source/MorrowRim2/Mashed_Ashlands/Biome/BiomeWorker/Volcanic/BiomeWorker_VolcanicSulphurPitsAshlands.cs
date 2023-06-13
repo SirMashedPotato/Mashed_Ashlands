@@ -15,7 +15,7 @@ namespace Mashed_Ashlands
                 return -100f;
             }
 
-            return ExtraBiomeWorker(tile, tileID);
+            return SwampBiomeWorker(tile);
         }
     }
 }
