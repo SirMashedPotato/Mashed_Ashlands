@@ -29,21 +29,26 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawComberry]==========-->
+	<!-- ==========[Mashed_Ashlands_RawAshYams]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
-		<defName>Mashed_Ashlands_RawComberry</defName>
-		<label>comberry berries</label>
-		<description>Raw comberry berries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
+		<defName>Mashed_Ashlands_RawAshPomegranate</defName>
+		<label>ash pomegranate</label>
+		<description>Raw ash pomegranates. Nice to eat, even when raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawComberry</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshPomegranate</texPath>
 		</graphicData>
+		<statBases>
+			<MarketValue>1.4</MarketValue>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
 		<ingestible>
 			<preferability>RawTasty</preferability>
+			<tasteThought/>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>12</daysToRotStart>
+				<daysToRotStart>15</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
@@ -62,6 +67,25 @@
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawComberry]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawComberry</defName>
+		<label>comberry berries</label>
+		<description>Raw comberry berries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawComberry</texPath>
+		</graphicData>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>12</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

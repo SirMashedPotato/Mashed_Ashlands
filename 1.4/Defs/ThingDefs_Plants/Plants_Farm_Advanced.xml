@@ -1,5 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_AshPomegranate]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_AshPomegranate</defName>
+		<label>ash pomegranate tree</label>
+		<description>An incredibly hardy tree that can be found growing in volcanically active ashland regions. Visually quite distinct compared to the common pomegranate tree. The branches of the ash pomegranate almost completely lack leaves, and are covered in large thorns. The fruits this tree produces are just as edible, though they do have a slightly odd ashy taste.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<blockWind>true</blockWind>
+		<statBases>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<harvestedThingDef>Mashed_Ashlands_RawAshPomegranate</harvestedThingDef>
+			<harvestYield>40</harvestYield>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>25</growDays>
+			<visualSizeRange>1.8~2.6</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_MeadowRye</defName>
