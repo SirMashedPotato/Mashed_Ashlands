@@ -55,7 +55,7 @@
 				<waterThreshold>0.4</waterThreshold>
 			</li>
 		</modExtensions>
-		<animalDensity>2.6</animalDensity>
+		<animalDensity>3</animalDensity>
 		<plantDensity>0.65</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawSaltrice</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
@@ -151,6 +151,7 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->
+			<Mashed_Ashlands_BantamGuar>0.1</Mashed_Ashlands_BantamGuar>
 			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_SwampJelly>0.3</Mashed_Ashlands_SwampJelly>
 			<!-- herd animals -->

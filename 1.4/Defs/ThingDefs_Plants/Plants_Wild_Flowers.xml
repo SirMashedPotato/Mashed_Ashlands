@@ -5,6 +5,7 @@
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.2</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -108,6 +109,35 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerBlue]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
+		<label>meadow flower</label>
+		<description>A colourful flower often found growing in large clusters. Most common in regions with ash rich soil, but without ash storms.</description>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerRed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
+		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
