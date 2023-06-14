@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsThrivingBase">
 		<defName>Mashed_Ashlands_MarshAshlands</defName>
 		<label>ashland marsh</label>
-		<description>A thriving region of ashlands.</description>
+		<description>A thriving region of ashlands, large fields of grass are broken up by sizeable pools of water. While trees aren't commonly found growing here, wild saltrice is a common sight.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_MarshAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_MarshAshlands</texture>
 		<modExtensions>
@@ -121,11 +121,13 @@
 			<Mashed_Ashlands_Plant_SomnaliusFern>0.05</Mashed_Ashlands_Plant_SomnaliusFern>
 			<Mashed_Ashlands_Plant_LuminousRussula>0.5</Mashed_Ashlands_Plant_LuminousRussula>
 			<Mashed_Ashlands_Plant_VioletCoprinus>0.5</Mashed_Ashlands_Plant_VioletCoprinus>
+			<Mashed_Ashlands_Plant_WillowFlower>0.5</Mashed_Ashlands_Plant_WillowFlower>
 			<Mashed_Ashlands_Plant_Glowstalk>0.1</Mashed_Ashlands_Plant_Glowstalk>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_Stinkcap>0.1</Mashed_Ashlands_Plant_Stinkcap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.2</Mashed_Ashlands_Plant_TreeEmperorParasol>
-			<Mashed_Ashlands_Plant_TreeMilkcap>0.1</Mashed_Ashlands_Plant_TreeMilkcap>
+			<Mashed_Ashlands_Plant_TreeNetchShieldVibrant>0.1</Mashed_Ashlands_Plant_TreeNetchShieldVibrant>
+			<Mashed_Ashlands_Plant_TreeMilkcap>0.05</Mashed_Ashlands_Plant_TreeMilkcap>
 			<Mashed_Ashlands_DuskCapMauve>0.05</Mashed_Ashlands_DuskCapMauve>
 			<Plant_TreeWillow>0.1</Plant_TreeWillow>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
@@ -158,6 +160,7 @@
 			<Mashed_Ashlands_Netch>0.6</Mashed_Ashlands_Netch>
 			<Mashed_Ashlands_NixSteed>0.3</Mashed_Ashlands_NixSteed>
 			<Mashed_Ashlands_Guar>0.1</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_NixOx>0.05</Mashed_Ashlands_NixOx>
 			<!-- predators -->
 			<Mashed_Ashlands_NixHound>0.3</Mashed_Ashlands_NixHound>
 			<Mashed_Ashlands_Durzog>0.2</Mashed_Ashlands_Durzog>
@@ -167,8 +170,6 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_ShalkGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
