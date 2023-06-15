@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandGrass]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
+	<ThingDef ParentName="Mashed_Ashlands_GrassBase" Name="Mashed_Ashlands_Plant_AshlandGrassBase">
 		<defName>Mashed_Ashlands_Plant_AshlandGrass</defName>
 		<label>ashland grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
@@ -24,6 +24,17 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>170</sowWork>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_CharredAshlandGrass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandGrassBase">
+		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
+		<label>charred ashland grass</label>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Plant_CharredAshlandGrass</texPath>
+		</graphicData>
+		<plant>
+			<maxMeshCount>4</maxMeshCount>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrass]==========-->
@@ -189,6 +200,35 @@
 				<glowColor>(53,94,84,0)</glowColor>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_FoyadaFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_FoyadaFungus</defName>
+		<label>foyada fungus</label>
+		<description>A small mushroom commonly found growing in volcanically active ashland regions. Many enjoy the sight of its striking orange colouration.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_FoyadaFungus</texPath>
+		</graphicData>
+		<plant>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_InkCap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">

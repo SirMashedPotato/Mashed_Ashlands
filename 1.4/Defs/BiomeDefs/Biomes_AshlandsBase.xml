@@ -95,6 +95,7 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<allowFarmingCamps>false</allowFarmingCamps>
 		<canAutoChoose>false</canAutoChoose>
 		<movementDifficulty>2</movementDifficulty>
 		<settlementSelectionWeight>0.1</settlementSelectionWeight>
@@ -122,10 +123,11 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<allowFarmingCamps>false</allowFarmingCamps>
 		<movementDifficulty>3</movementDifficulty>
 		<settlementSelectionWeight>0.3</settlementSelectionWeight>
 		<forageability>0.5</forageability>
-		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
+		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
