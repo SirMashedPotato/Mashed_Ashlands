@@ -115,6 +115,15 @@
 		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
 		<label>meadow flower</label>
 		<description>A colourful flower often found growing in large clusters. Most common in regions with ash rich soil, but without ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
