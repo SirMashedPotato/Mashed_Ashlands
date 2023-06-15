@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_SulphurFloor]==========-->
+	<!-- ==========[Mashed_Ashlands_SulphuricSand]==========-->
 	<TerrainDef ParentName="NaturalTerrainBase">
-		<defName>Mashed_Ashlands_SulphurFloor</defName>
-		<label>sulphur</label>
-		<texturePath>Terrain/Surfaces/Mashed_Ashlands_SulphurFloor</texturePath>
+		<defName>Mashed_Ashlands_SulphuricSand</defName>
+		<label>sulphuric sand</label>
+		<texturePath>Terrain/Surfaces/Mashed_Ashlands_SulphuricSand</texturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
 		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
 		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
@@ -29,11 +29,11 @@
 		<takeFootprints>True</takeFootprints>
 		<tools>
 			<li>
-				<label>sulphur</label>
+				<label>sand</label>
 				<capacities>
 					<li>KickMaterialInEyes</li>
 				</capacities>
-				<hediff>Mashed_Ashlands_SulphurInEyes</hediff>
+				<hediff>SandInEyes</hediff>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>

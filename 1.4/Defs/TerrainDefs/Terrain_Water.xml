@@ -24,15 +24,23 @@
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_AshGravelVolcanic</driesTo>
 	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_SulphurPool]==========-->
-	<TerrainDef ParentName="WaterShallowBase">
-		<defName>Mashed_Ashlands_SulphurPool</defName>
-		<label>sulphur pool</label>
-		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_SulphurPoolRamp</texturePath>
+	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_ShallowSulphuricWaterBase">
+		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
+		<label>shallow sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRamp</texturePath>
 		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<pathCost>30</pathCost>
 		<renderPrecedence>394</renderPrecedence>
-		<driesTo>Mashed_Ashlands_SulphurFloor</driesTo>
+		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_DeepSulphuricWater</defName>
+		<label>deep sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRamp</texturePath>
+		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
+		<renderPrecedence>397</renderPrecedence>
 	</TerrainDef>
 </Defs>
