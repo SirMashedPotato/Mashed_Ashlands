@@ -31,7 +31,7 @@
 		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
 		<label>charred ashland grass</label>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Plant_CharredAshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
@@ -297,6 +297,39 @@
 				<glowColor>(3,47,69,0)</glowColor>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SulphurFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_SulphurFungus</defName>
+		<label>sulphur fungus</label>
+		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. Can only be grown on ground dense in sulphur.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_SulphuricSand</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowSulphur</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">

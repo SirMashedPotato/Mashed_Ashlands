@@ -39,4 +39,38 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GiantSulphuricCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
+		<defName>Mashed_Ashlands_GiantSulphuricCoprinus</defName>
+		<label>sulphuric coprinus tree</label>
+		<description>A large fungal tree, solely found growing around sulphur lakes. While it offers nothing of practical use, most find it incredibly beautiful. Can only be grown on ground dense in sulphur.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_SulphuricSand</li>
+				</allowedTerrainForWild>
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowSulphur</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<growDays>20</growDays>
+			<visualSizeRange>1.3~2.4</visualSizeRange>
+			<harvestWork>600</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
 </Defs>

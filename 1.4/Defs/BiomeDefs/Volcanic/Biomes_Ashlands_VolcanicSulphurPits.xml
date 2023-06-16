@@ -46,8 +46,8 @@
 				<waterThreshold>0.9</waterThreshold>
 			</li>
 		</modExtensions>
-		<animalDensity>0.8</animalDensity>
-		<plantDensity>0.2</plantDensity>
+		<animalDensity>1</animalDensity>
+		<plantDensity>0.3</plantDensity>
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>
@@ -109,7 +109,7 @@
 		</terrainPatchMakers>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Mashed_Ashlands_Plant_CharredAshlandGrass>8</Mashed_Ashlands_Plant_CharredAshlandGrass>
+			<Mashed_Ashlands_Plant_CharredAshlandGrass>10</Mashed_Ashlands_Plant_CharredAshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>0.5</Mashed_Ashlands_Plant_AshlandFungus>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.05</Mashed_Ashlands_Plant_AshYam>
@@ -122,9 +122,11 @@
 			<Mashed_Ashlands_Plant_TramaShrub>0.6</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
-			<Mashed_Ashlands_Plant_FireFern>0.1</Mashed_Ashlands_Plant_FireFern>
+			<Mashed_Ashlands_Plant_SulphurFungus>1</Mashed_Ashlands_Plant_SulphurFungus>
+			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.1</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
+			<Mashed_Ashlands_GiantSulphuricCoprinus>0.2</Mashed_Ashlands_GiantSulphuricCoprinus>
+			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.05</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.2</Mashed_Ashlands_BurnedParasolStumpPermanent>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
