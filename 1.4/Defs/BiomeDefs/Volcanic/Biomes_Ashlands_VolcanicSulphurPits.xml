@@ -71,17 +71,17 @@
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
-						<min>0.3</min>
+						<min>0.25</min>
 						<max>0.5</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_ShallowSulphuricWater</terrain>
 						<min>0.5</min>
-						<max>0.7</max>
+						<max>0.8</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_DeepSulphuricWater</terrain>
-						<min>0.7</min>
+						<min>0.8</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -97,11 +97,11 @@
 					<li>
 						<terrain>Mashed_Ashlands_ShallowSulphuricWater</terrain>
 						<min>0.65</min>
-						<max>0.85</max>
+						<max>0.9</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_DeepSulphuricWater</terrain>
-						<min>0.85</min>
+						<min>0.9</min>
 						<max>99</max>
 					</li>
 				</thresholds>
