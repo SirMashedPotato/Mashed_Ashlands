@@ -13,4 +13,17 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_OutsideInSulphurRain]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_OutsideInSulphurRain</defName>
+		<durationDays>0.4</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>outside in sulphuric rain</label>
+				<description>Ow! Why does the rain burn?</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

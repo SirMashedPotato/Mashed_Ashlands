@@ -58,7 +58,7 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
+			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
@@ -112,7 +112,7 @@
 			<Fog>1</Fog>
 			<Rain>0.1</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
-			<!-- MorrowRim weather -->
+			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
@@ -135,15 +135,17 @@
 			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
 			<Fog>1</Fog>
-			<Rain>1</Rain>
+			<Rain>0.5</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>0.5</RainyThunderstorm>
-			<FoggyRain>1</FoggyRain>
+			<FoggyRain>0.5</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
-			<!-- MorrowRim weather -->
+			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_SulphuricRain>0.5</Mashed_Ashlands_SulphuricRain>
+			<Mashed_Ashlands_FoggySulphuricRain>0.5</Mashed_Ashlands_FoggySulphuricRain>
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">1</RG_Drizzle>
 			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
