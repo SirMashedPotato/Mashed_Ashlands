@@ -17,17 +17,4 @@
 			</li>
 		</modExtensions>
 	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_Lava]==========-->
-	<TerrainDef ParentName="WaterShallowBase">
-		<defName>Mashed_Ashlands_Lava</defName>
-		<label>lava</label>
-		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_LavaRamp</texturePath>
-		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
-		<waterDepthShader>Map/WaterDepth</waterDepthShader>
-		<passability>Impassable</passability>
-		<pathCost>300</pathCost>
-		<changeable>false</changeable>
-		<renderPrecedence>394</renderPrecedence>
-		<driesTo>Mashed_Ashlands_AshGravelVolcanic</driesTo>
-	</TerrainDef>
 </Defs>

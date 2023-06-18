@@ -13,12 +13,20 @@
 		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshSoilVolcanic</texturePath>
 		<fertility>1.3</fertility>
 	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
+	<!-- ==========[Mashed_Ashlands_CrackedAshSoilVolcanic]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
 		<defName>Mashed_Ashlands_CrackedAshSoilVolcanic</defName>
 		<label>cracked volcanic ash</label>
 		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_CrackedAshSoilVolcanic</texturePath>
 		<fertility>0.4</fertility>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ScorchedAshSoilVolcanic]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_ScorchedAshSoilVolcanic</defName>
+		<label>scorched volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_ScorchedAshSoilVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.05</fertility>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshSoil]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
