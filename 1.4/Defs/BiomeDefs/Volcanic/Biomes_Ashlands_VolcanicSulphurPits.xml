@@ -2,7 +2,7 @@
 <Defs>
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsVolcanicBase">
 		<defName>Mashed_Ashlands_VolcanicSulphurPitsAshlands</defName>
-		<label>volcanic sulphur pits</label>
+		<label>volcanic sulphur pools</label>
 		<description>Volcanic with sulphur pools and crystals. https://www.nexusmods.com/morrowind/mods/48918?tab=posts</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicSulphurPitsAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_VolcanicSulphurPitsAshlands</texture>

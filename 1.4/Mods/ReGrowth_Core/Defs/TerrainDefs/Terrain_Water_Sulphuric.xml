@@ -21,7 +21,7 @@
 				<velocityAngle>0~360</velocityAngle>
 				<velocitySpeed>0.05~0.1</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
+				<reqTempRangeToSpawn>-200~200</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 				<spawnChance>0.04</spawnChance>
 			</li>
