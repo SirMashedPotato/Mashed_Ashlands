@@ -124,6 +124,7 @@
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<allowFarmingCamps>false</allowFarmingCamps>
+		<allowRivers>false</allowRivers>
 		<movementDifficulty>3</movementDifficulty>
 		<settlementSelectionWeight>0.3</settlementSelectionWeight>
 		<forageability>0.5</forageability>
