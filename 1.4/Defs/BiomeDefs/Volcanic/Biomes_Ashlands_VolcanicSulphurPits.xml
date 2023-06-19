@@ -46,8 +46,8 @@
 				<waterThreshold>0.9</waterThreshold>
 			</li>
 		</modExtensions>
-		<animalDensity>1</animalDensity>
-		<plantDensity>0.3</plantDensity>
+		<animalDensity>1.2</animalDensity>
+		<plantDensity>0.4</plantDensity>
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>
