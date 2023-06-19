@@ -124,6 +124,7 @@
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
+			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_GlowingEntoloma>
 			<!-- Polluted nutrition plants -->
 			<Mashed_Ashlands_Plant_ToxYam MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_ToxYam>
 			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_GlowingScathecraw>

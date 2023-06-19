@@ -99,6 +99,7 @@
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.1</Mashed_Ashlands_BurnedParasolStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
+			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_GlowingEntoloma>
 			<!-- Polluted nutrition plants -->
 			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
 			<!-- Polluted resource plants -->
