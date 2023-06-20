@@ -10,6 +10,7 @@
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<commonality>0.2</commonality>
 		<baseFishingYield>1</baseFishingYield>

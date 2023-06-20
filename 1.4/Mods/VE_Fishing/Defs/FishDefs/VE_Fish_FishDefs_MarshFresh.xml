@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Small]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_Ricefish</defName>
+		<thingDef>Mashed_Ashlands_RawRicefish</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_MarshAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>40</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Medium]==========-->
+	<!-- ==========[Large]==========-->
+</Defs>

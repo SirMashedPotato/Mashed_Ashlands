@@ -25,20 +25,6 @@
 		</allowedBiomes>
 		<baseFishingYield>40</baseFishingYield>
 	</VCE_Fishing.FishDef>
-	<!--
-	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_Ricefish</defName>
-		<thingDef>Mashed_Ashlands_RawRicefish</thingDef>
-		<fishSizeCategory>Small</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>false</canBeSaltwater>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_RegularAshland</li>
-			<li>Mashed_Ashlands_SwampAshland</li>
-		</allowedBiomes>
-		<baseFishingYield>40</baseFishingYield>
-	</VCE_Fishing.FishDef>
-	-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_ThornyCatfish</defName>
 		<thingDef>Mashed_Ashlands_RawThornyCatfish</thingDef>
@@ -48,6 +34,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>40</baseFishingYield>
@@ -62,6 +49,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>16</baseFishingYield>
@@ -86,8 +74,21 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>8</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_MagmaSalmon</defName>
+		<thingDef>Mashed_Ashlands_RawMagmaSalmon</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>16</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_Tench</defName>
@@ -98,6 +99,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -110,6 +112,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>16</baseFishingYield>
@@ -124,6 +127,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>5</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -136,6 +140,7 @@
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>12</baseFishingYield>

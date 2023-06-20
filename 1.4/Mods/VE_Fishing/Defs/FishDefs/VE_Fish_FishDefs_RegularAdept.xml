@@ -6,6 +6,7 @@
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<preceptsRequired>
 			<li>VME_Fishing_Adept</li>

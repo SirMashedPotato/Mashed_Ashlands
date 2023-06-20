@@ -55,7 +55,7 @@
 			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
+	<!-- ==========[Mashed_Ashlands_RawCrabeater]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawCrabeater</defName>
 		<label>crabeater</label>
@@ -81,34 +81,6 @@
 			<Mass>0.15</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
-		</statBases>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawJuvenileBlueSandcrab]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
-		<defName>Mashed_Ashlands_RawJuvenileBlueSandcrab</defName>
-		<label>juvenile blue sandcrab</label>
-		<description>Raw juvenile blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab</texPath>
-		</graphicData>
-		<statBases>
-			<Mass>0.01</Mass>
-			<Nutrition>0.01</Nutrition>
-			<MarketValue>0.22</MarketValue>
-		</statBases>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawJuvenileMudcrab]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
-		<defName>Mashed_Ashlands_RawJuvenileMudcrab</defName>
-		<label>juvenile ashland mudcrab</label>
-		<description>Raw juvenile mudcrab. Adult mudcrab are most often found in swampy regions, though juveniles such as these may be found anywhere with fresh water and warm temperatures.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileMudcrab</texPath>
-		</graphicData>
-		<statBases>
-			<Mass>0.1</Mass>
-			<Nutrition>0.2</Nutrition>
-			<MarketValue>4</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawFoyadaHopper]==========-->
@@ -193,6 +165,48 @@
 			<Mass>0.1</Mass>
 			<Nutrition>0.1</Nutrition>
 			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawJuvenileBlueSandcrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawJuvenileBlueSandcrab</defName>
+		<label>juvenile blue sandcrab</label>
+		<description>Raw juvenile blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawJuvenileMudcrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawJuvenileMudcrab</defName>
+		<label>juvenile ashland mudcrab</label>
+		<description>Raw juvenile mudcrab. Adult mudcrab are most often found in swampy regions, though juveniles such as these may be found anywhere with fresh water and warm temperatures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileMudcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>4</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMagmaSalmon]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMagmaSalmon</defName>
+		<label>magma salmon</label>
+		<description>Raw magma salmon. A species of salmon often found in ashland regions. Named after its vibrant red colouration, not because it lives in magma.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMagmaSalmon</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
@@ -350,7 +364,6 @@
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawRicefish]==========-->
-	<!--
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawRicefish</defName>
 		<label>ricefish</label>
@@ -364,7 +377,6 @@
 			<MarketValue>0.22</MarketValue>
 		</statBases>
 	</ThingDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_RawTelvannisCephalopod]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawTelvannisCephalopod</defName>
