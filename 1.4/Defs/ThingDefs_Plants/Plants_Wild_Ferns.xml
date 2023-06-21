@@ -21,6 +21,7 @@
 			<wildClusterWeight>40</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<leaflessGraphicPath>Things/Plant/Ferns/Mashed_Ashlands_LeaflessFern</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenFern]==========-->
