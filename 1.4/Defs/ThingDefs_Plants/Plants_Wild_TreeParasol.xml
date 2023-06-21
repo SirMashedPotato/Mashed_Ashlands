@@ -94,6 +94,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
@@ -123,6 +124,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShieldVibrant]==========-->
@@ -165,6 +167,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeWeepingLeathercap]==========-->
@@ -200,6 +203,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

@@ -37,6 +37,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GiantSulphuricCoprinus]==========-->
@@ -71,6 +72,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>
