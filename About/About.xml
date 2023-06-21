@@ -32,6 +32,7 @@
 		<li>vanillaexpanded.outposts</li>
 		<li>syrchalis.processor.framework</li>
 		<li>regrowth.botr.core</li>
+		<li>odeum.wmbp</li>
 	</loadAfter>
 	<incompatibleWith>
       <li>SirMashedPotato.MorrowRim</li>
