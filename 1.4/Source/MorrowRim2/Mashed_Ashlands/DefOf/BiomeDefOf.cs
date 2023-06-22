@@ -17,10 +17,5 @@ namespace Mashed_Ashlands
 
         public static BiomeDef Mashed_Ashlands_VolcanicAshlands;
         public static BiomeDef Mashed_Ashlands_VolcanicCoralCoastAshlands;
-
-        public static BiomeDef Mashed_Ashlands_CragIslandAshlands;
-        public static BiomeDef Mashed_Ashlands_BlightedCragIslandAshlands;
-        public static BiomeDef Mashed_Ashlands_SwampIslandAshlands;
-        public static BiomeDef Mashed_Ashlands_VolcanicCragIslandAshlands;
     }
 }

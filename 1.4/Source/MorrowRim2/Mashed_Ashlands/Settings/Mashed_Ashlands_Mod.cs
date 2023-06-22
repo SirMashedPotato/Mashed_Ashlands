@@ -243,9 +243,6 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableStandardAshlands".Translate(), ref settings.Mashed_Ashlands_EnableStandardAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCragIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableCragIslandAshlands);
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableCoralCoastAshlands);
             listing_Standard.Gap();
 
@@ -269,9 +266,6 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableForestAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSwampIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSwampIslandAshlands);
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableMarshAshlands".Translate(), ref settings.Mashed_Ashlands_EnableMarshAshlands);
             listing_Standard.Gap();
 
@@ -290,9 +284,6 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicCragIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicCragIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicCoralCoastAshlands);
@@ -319,9 +310,6 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedCragIslandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedCragIslandAshlands);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);

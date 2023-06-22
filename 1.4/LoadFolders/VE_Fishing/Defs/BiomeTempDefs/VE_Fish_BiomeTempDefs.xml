@@ -7,7 +7,6 @@
 		<biomes>
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_CoralCoastAshlands</li>
-			<li>Mashed_Ashlands_CragIslandAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
@@ -20,7 +19,6 @@
 		<biomes>
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
-			<li>Mashed_Ashlands_BlightedCragIslandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandVolcanic]==========-->
@@ -30,7 +28,6 @@
 		<biomes>
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
-			<li>Mashed_Ashlands_VolcanicCragIslandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</biomes>
@@ -41,7 +38,6 @@
 		<biomeTempLabel>Mashed_Ashlands_SwampAshland</biomeTempLabel>
 		<biomes>
 			<li>Mashed_Ashlands_SwampAshlands</li>
-			<li>Mashed_Ashlands_SwampIslandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandMarsh]==========-->
