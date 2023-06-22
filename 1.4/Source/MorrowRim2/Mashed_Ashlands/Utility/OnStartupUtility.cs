@@ -8,13 +8,13 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public static class OnStartupUtility
     {
-        public static List<BiomeDef> earlyAshlandBiomeDefs = new List<BiomeDef> { };
-        public static List<BiomeDef> lateAshlandBiomeDefs = new List<BiomeDef> { };
-        public static List<BiomeDef> baseAshlandBiomeDefs = new List<BiomeDef> { };
+        public static HashSet<BiomeDef> earlyAshlandBiomeDefs = new HashSet<BiomeDef> { };
+        public static HashSet<BiomeDef> lateAshlandBiomeDefs = new HashSet<BiomeDef> { };
+        public static HashSet<BiomeDef> baseAshlandBiomeDefs = new HashSet<BiomeDef> { };
 
-        public static List<BiomeDef> restrictedTerrainPlantsBiomes = new List<BiomeDef> { };
-        public static List<BiomeDef> ashlandCavePlantsBiomes = new List<BiomeDef> { };
-        public static List<BiomeDef> modifiedPollutionFertilityBiomes = new List<BiomeDef> { };
+        public static HashSet<BiomeDef> restrictedTerrainPlantsBiomes = new HashSet<BiomeDef> { };
+        public static HashSet<BiomeDef> ashlandCavePlantsBiomes = new HashSet<BiomeDef> { };
+        public static HashSet<BiomeDef> modifiedPollutionFertilityBiomes = new HashSet<BiomeDef> { };
 
         public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
 

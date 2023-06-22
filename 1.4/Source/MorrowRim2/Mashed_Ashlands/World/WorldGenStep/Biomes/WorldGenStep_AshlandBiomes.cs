@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
 {
     public abstract class WorldGenStep_AshlandBiomes : WorldGenStep
     {
-        public BiomeDef AshlandBiomeFrom(Tile tile, int tileID, List<BiomeDef> biomeDefs)
+        public BiomeDef AshlandBiomeFrom(Tile tile, int tileID, HashSet<BiomeDef> biomeDefs)
         {
             BiomeDef biomeDef = null;
             float num = 0f;
