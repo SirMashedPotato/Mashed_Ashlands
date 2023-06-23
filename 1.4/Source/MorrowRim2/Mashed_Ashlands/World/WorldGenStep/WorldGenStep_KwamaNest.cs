@@ -4,9 +4,19 @@ using RimWorld;
 
 namespace Mashed_Ashlands
 {
-    public abstract class WorldGenStep_Volcano : WorldGenStep
+    public class WorldGenStep_KwamaNest : WorldGenStep
     {
-        public void GenerateVolcanos(WorldObjectDef volcanoDef, float initialMaxNum)
+        public override int SeedPart => 1245234752;
+
+        public override void GenerateFresh(string seed)
+        {
+            if (Mashed_Ashlands_ModSettings.EnableActiveVolcano)
+            {
+                GenerateKwamaNests(WorldObjectDefOf.Mashed_Ashlands_KwamaNest, Mashed_Ashlands_ModSettings.NumberOfActiveVolcano);
+            }
+        }
+
+        public void GenerateKwamaNests(WorldObjectDef kwamaNestDef, float initialMaxNum)
         {
             int numGenerated = 0;
             int maxNumber = (int)initialMaxNum;
@@ -27,16 +37,16 @@ namespace Mashed_Ashlands
                 }
                 if (grid[i].hilliness == Hilliness.Impassable && !Find.WorldObjects.AnyWorldObjectAt(i))
                 {
-                    if (grid[i].biome != RimWorld.BiomeDefOf.IceSheet && grid[i].biome != RimWorld.BiomeDefOf.SeaIce)
+                    if (OnStartupUtility.baseAshlandBiomeDefs.Contains(grid[i].biome))
                     {
-                        float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestVolcano(i);
-                        if (distanceToClosestVolcano >= Mashed_Ashlands_ModSettings.VolcanoMinDistance)
-                        {
-                            WorldObject volcano = WorldObjectMaker.MakeWorldObject(volcanoDef);
+                        //float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestVolcano(i);
+                        //if (distanceToClosestVolcano >= Mashed_Ashlands_ModSettings.VolcanoMinDistance)
+                        //{
+                            WorldObject volcano = WorldObjectMaker.MakeWorldObject(kwamaNestDef);
                             volcano.Tile = i;
                             Find.WorldObjects.Add(volcano);
                             numGenerated++;
-                        }
+                        //}
                     }
                 }
             }

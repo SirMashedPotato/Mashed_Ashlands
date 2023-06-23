@@ -8,6 +8,7 @@ namespace Mashed_Ashlands
     /// <summary>
     /// Limit specific animals to tiles with specific landmarks
     /// </summary>
+    /*
     [HarmonyPatch(typeof(WildAnimalSpawner))]
     [HarmonyPatch("CommonalityOfAnimalNow")]
     public static class WildAnimalSpawner_CommonalityOfAnimalNow_Patch
@@ -45,4 +46,5 @@ namespace Mashed_Ashlands
             }
         }
     }
+    */
 }
