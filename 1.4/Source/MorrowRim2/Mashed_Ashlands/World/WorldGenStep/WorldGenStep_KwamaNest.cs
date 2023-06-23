@@ -10,9 +10,9 @@ namespace Mashed_Ashlands
 
         public override void GenerateFresh(string seed)
         {
-            if (Mashed_Ashlands_ModSettings.EnableActiveVolcano)
+            if (Mashed_Ashlands_ModSettings.EnableWorldKwamaNests)
             {
-                GenerateKwamaNests(WorldObjectDefOf.Mashed_Ashlands_KwamaNest, Mashed_Ashlands_ModSettings.NumberOfActiveVolcano);
+                GenerateKwamaNests(WorldObjectDefOf.Mashed_Ashlands_KwamaNest, Mashed_Ashlands_ModSettings.NumberOfWorldKwamaNests);
             }
         }
 
@@ -20,7 +20,7 @@ namespace Mashed_Ashlands
         {
             int numGenerated = 0;
             int maxNumber = (int)initialMaxNum;
-            if (Mashed_Ashlands_ModSettings.VolcanoScaleWithWorldSize)
+            if (Mashed_Ashlands_ModSettings.KwamaNestsScaleWithWorldSize)
             {
                 maxNumber = (int)(initialMaxNum * ((Find.World.PlanetCoverage * 3) + 0.1f));
                 if (maxNumber < 1)
@@ -39,14 +39,14 @@ namespace Mashed_Ashlands
                 {
                     if (OnStartupUtility.baseAshlandBiomeDefs.Contains(grid[i].biome))
                     {
-                        //float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestVolcano(i);
-                        //if (distanceToClosestVolcano >= Mashed_Ashlands_ModSettings.VolcanoMinDistance)
-                        //{
+                        float distanceToClosestKwamaNest = WorldGenUtility.DistanceToClosestKwamaNest(i);
+                        if (distanceToClosestKwamaNest >= Mashed_Ashlands_ModSettings.WorldKwamaNestMinDistance)
+                        {
                             WorldObject volcano = WorldObjectMaker.MakeWorldObject(kwamaNestDef);
                             volcano.Tile = i;
                             Find.WorldObjects.Add(volcano);
                             numGenerated++;
-                        //}
+                        }
                     }
                 }
             }

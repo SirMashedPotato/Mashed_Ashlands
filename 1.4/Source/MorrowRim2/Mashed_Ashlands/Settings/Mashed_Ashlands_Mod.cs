@@ -38,12 +38,18 @@ namespace Mashed_Ashlands
                     listing_Standard = SettingsPage_WorldGen(listing_Standard);
                     break;
                 case 2:
-                    listing_Standard = SettingsPage_Volcano(listing_Standard);
+                    listing_Standard = SettingsPage_WorldGenTwo(listing_Standard);
                     break;
                 case 3:
-                    listing_Standard = SettingsPage_AshStorm(listing_Standard);
+                    listing_Standard = SettingsPage_Volcano(listing_Standard);
                     break;
                 case 4:
+                    listing_Standard = SettingsPage_Kwama(listing_Standard);
+                    break;
+                case 5:
+                    listing_Standard = SettingsPage_AshStorm(listing_Standard);
+                    break;
+                case 6:
                     listing_Standard = SettingsPage_Biome(listing_Standard);
                     break;
 
@@ -88,11 +94,27 @@ namespace Mashed_Ashlands
             }
             listing_Standard.Gap();
 
+            Rect rectPageWorldGenTwo = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageWorldGenTwo, "Mashed_Ashlands_PageWorldGenTwo".Translate());
+            if (Widgets.ButtonText(rectPageWorldGenTwo, "Mashed_Ashlands_PageWorldGenTwo".Translate(), true, true, true))
+            {
+                page = 2;
+            }
+            listing_Standard.Gap();
+
             Rect rectPageVolcano = listing_Standard.GetRect(30f);
             TooltipHandler.TipRegion(rectPageVolcano, "Mashed_Ashlands_PageVolcano".Translate());
             if (Widgets.ButtonText(rectPageVolcano, "Mashed_Ashlands_PageVolcano".Translate(), true, true, true))
             {
-                page = 2;
+                page = 3;
+            }
+            listing_Standard.Gap();
+
+            Rect rectPageKwama = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageKwama, "Mashed_Ashlands_PageKwama".Translate());
+            if (Widgets.ButtonText(rectPageKwama, "Mashed_Ashlands_PageKwama".Translate(), true, true, true))
+            {
+                page = 4;
             }
             listing_Standard.Gap();
 
@@ -100,7 +122,7 @@ namespace Mashed_Ashlands
             TooltipHandler.TipRegion(rectPageAshStorm, "Mashed_Ashlands_PageAshStorm".Translate());
             if (Widgets.ButtonText(rectPageAshStorm, "Mashed_Ashlands_PageAshStorm".Translate(), true, true, true))
             {
-                page = 3;
+                page = 5;
             }
             listing_Standard.Gap();
 
@@ -108,7 +130,7 @@ namespace Mashed_Ashlands
             TooltipHandler.TipRegion(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate());
             if (Widgets.ButtonText(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate(), true, true, true))
             {
-                page = 4;
+                page = 6;
             }
             listing_Standard.Gap();
 
@@ -155,6 +177,15 @@ namespace Mashed_Ashlands
 
                 case 2:
                     listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGenTwo".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGenTwo".Translate()), true, true, true))
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_WorldGenTwo();
+                    }
+                    break;
+
+                case 3:
+                    listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()));
                     if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()), true, true, true))
                     {
@@ -162,7 +193,16 @@ namespace Mashed_Ashlands
                     }
                     break;
 
-                case 3:
+                case 4:
+                    listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageKwama".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageKwama".Translate()), true, true, true))
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_Volcano();
+                    }
+                    break;
+
+                case 5:
                     listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()));
                     if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()), true, true, true))
@@ -171,7 +211,7 @@ namespace Mashed_Ashlands
                     }
                     break;
 
-                case 4:
+                case 6:
                     listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
                     if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
@@ -330,6 +370,35 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
+        private Listing_Standard SettingsPage_WorldGenTwo(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("Mashed_Ashlands_PageWorldGenTwo".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableWorldKwamaNests".Translate(), ref settings.Mashed_Ashlands_EnableWorldKwamaNests);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_KwamaNestsScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_KwamaNestsScaleWithWorldSize, "Mashed_Ashlands_KwamaNestsScaleWithWorldSize_Toolti[".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_NumberOfWorldKwamaNests".Translate(settings.Mashed_Ashlands_NumberOfWorldKwamaNests));
+            settings.Mashed_Ashlands_NumberOfWorldKwamaNests = (int)listing_Standard.Slider(settings.Mashed_Ashlands_NumberOfWorldKwamaNests, 1, 50);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_WorldKwamaNestMinDistance".Translate(settings.Mashed_Ashlands_WorldKwamaNestMinDistance));
+            settings.Mashed_Ashlands_WorldKwamaNestMinDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_WorldKwamaNestMinDistance, 1, 200);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         private Listing_Standard SettingsPage_Volcano(Listing_Standard listing_Standard)
         {
             listing_Standard.Label("Mashed_Ashlands_PageVolcano".Translate());
@@ -356,6 +425,27 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnableCategoryChange".Translate(), ref settings.Mashed_Ashlands_VolcanoEnableCategoryChange);
             listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private Listing_Standard SettingsPage_Kwama(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("Mashed_Ashlands_PageKwama".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_KwamaNestMaxAffectedArea".Translate(settings.Mashed_Ashlands_KwamaNestMaxAffectedArea), -1, "Mashed_Ashlands_KwamaNestMaxAffectedArea_Tooltip".Translate());
+            settings.Mashed_Ashlands_KwamaNestMaxAffectedArea = (int)listing_Standard.Slider(settings.Mashed_Ashlands_KwamaNestMaxAffectedArea, 1, 200);
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

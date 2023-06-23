@@ -47,8 +47,8 @@ namespace Mashed_Ashlands
         {
             if (kwamaNestSize > 0)
             {
-                int maxDistance = Mashed_Ashlands_ModSettings.VolcanoMaxAffectedArea;
-                if (Mashed_Ashlands_ModSettings.VolcanoAffectedAreaScaleWithWorldSize)
+                int maxDistance = Mashed_Ashlands_ModSettings.KwamaNestMaxAffectedArea;
+                if (Mashed_Ashlands_ModSettings.KwamaNestAffectedAreaScaleWithWorldSize)
                 {
                     maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
                     if (maxDistance < 1)

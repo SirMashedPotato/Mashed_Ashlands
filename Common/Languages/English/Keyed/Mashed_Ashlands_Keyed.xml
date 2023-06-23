@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- ==========[Kwama nests]==========-->
-	<Mashed_Ashlands_KwamaNestDescription>Size {0} {1}</Mashed_Ashlands_KwamaNestDescription>
+	<Mashed_Ashlands_KwamaNestDescription>Size {0} {1}\nMaximum affected radius of {2} tiles</Mashed_Ashlands_KwamaNestDescription>
 	<!-- ==========[Volcanos]==========-->
-	<Mashed_Ashlands_VolcanoDescription>Category {0} {1}\nRecorded incidents: {2}\nLast incident: {3}</Mashed_Ashlands_VolcanoDescription>
+	<Mashed_Ashlands_VolcanoDescription>Category {0} {1}\nMaximum affected radius of {2} tiles\nRecorded incidents: {3}\nLast incident: {4}</Mashed_Ashlands_VolcanoDescription>
 	<Mashed_Ashlands_VolcanoDescriptionRange>\nThis volcano can cause incidents up to category {0} in scale.\nThe expected area affected by a category {0} incident is {1} tiles in radius.</Mashed_Ashlands_VolcanoDescriptionRange>
 	<Mashed_Ashlands_Unknown>Unknown</Mashed_Ashlands_Unknown>
 	<Mashed_Ashlands_VolcanoRadiusCategoryLabel>Category {0} incident</Mashed_Ashlands_VolcanoRadiusCategoryLabel>

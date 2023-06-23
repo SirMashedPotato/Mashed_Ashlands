@@ -49,6 +49,12 @@ namespace Mashed_Ashlands
 
         public static bool EnableExclusiveRocks => _instance.Mashed_Ashlands_EnableExclusiveRocks;
 
+        //world gen two
+        public static bool EnableWorldKwamaNests => _instance.Mashed_Ashlands_EnableWorldKwamaNests;
+        public static bool KwamaNestsScaleWithWorldSize => _instance.Mashed_Ashlands_KwamaNestsScaleWithWorldSize;
+        public static int NumberOfWorldKwamaNests => _instance.Mashed_Ashlands_NumberOfWorldKwamaNests;
+        public static int WorldKwamaNestMinDistance => _instance.Mashed_Ashlands_WorldKwamaNestMinDistance;
+   
         //volcano
         public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize;
         public static int VolcanoMaxAffectedArea => _instance.Mashed_Ashlands_VolcanoMaxAffectedArea;
@@ -57,6 +63,10 @@ namespace Mashed_Ashlands
         public static bool VolcanoEnableRandomConditions => _instance.Mashed_Ashlands_VolcanoEnableRandomConditions;
 
         public static bool VolcanoEnableCategoryChange => _instance.Mashed_Ashlands_VolcanoEnableCategoryChange;
+
+        //kwama
+        public static bool KwamaNestAffectedAreaScaleWithWorldSize => _instance.Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize;
+        public static int KwamaNestMaxAffectedArea => _instance.Mashed_Ashlands_KwamaNestMaxAffectedArea;
 
         //ash storm
         public static bool AshStormCauseBuildup => _instance.Mashed_Ashlands_AshStormCauseBuildup;
@@ -128,6 +138,12 @@ namespace Mashed_Ashlands
 
         public bool Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
 
+        //world gen two
+        public bool Mashed_Ashlands_EnableWorldKwamaNests = Mashed_Ashlands_EnableWorldKwamaNests_def;
+        public bool Mashed_Ashlands_KwamaNestsScaleWithWorldSize = Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def;
+        public int Mashed_Ashlands_NumberOfWorldKwamaNests = Mashed_Ashlands_NumberOfWorldKwamaNests_def;
+        public int Mashed_Ashlands_WorldKwamaNestMinDistance = Mashed_Ashlands_WorldKwamaNestMinDistance_def;
+
         //volcano
         public bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
         public int Mashed_Ashlands_VolcanoMaxAffectedArea = Mashed_Ashlands_VolcanoMaxAffectedArea_def;
@@ -136,6 +152,9 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
         public bool Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
 
+        //kwama
+        public bool Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize = Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize_def;
+        public int Mashed_Ashlands_KwamaNestMaxAffectedArea = Mashed_Ashlands_KwamaNestMaxAffectedArea_def;
 
         //ash storm
         public bool Mashed_Ashlands_AshStormCauseBuildup = Mashed_Ashlands_AshStormCauseBuildup_def;
@@ -207,6 +226,12 @@ namespace Mashed_Ashlands
 
         private static readonly bool Mashed_Ashlands_EnableExclusiveRocks_def = true;
 
+        //world gen two
+        private static readonly bool Mashed_Ashlands_EnableWorldKwamaNests_def = true;
+        private static readonly bool Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def = true;
+        private static readonly int Mashed_Ashlands_NumberOfWorldKwamaNests_def = 9;
+        private static readonly int Mashed_Ashlands_WorldKwamaNestMinDistance_def = 10;
+        
         //volcano
         private static readonly bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
         private static readonly int Mashed_Ashlands_VolcanoMaxAffectedArea_def = 10;
@@ -215,6 +240,10 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_VolcanoEnableRandomConditions_def = true;
 
         private static readonly bool Mashed_Ashlands_VolcanoEnableCategoryChange_def = true;
+
+        //kwama
+        private static readonly bool Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize_def = true;
+        private static readonly int Mashed_Ashlands_KwamaNestMaxAffectedArea_def = 10;
 
         //ash storm
         private static readonly bool Mashed_Ashlands_AshStormCauseBuildup_def = true;
@@ -292,14 +321,24 @@ namespace Mashed_Ashlands
 
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks", Mashed_Ashlands_EnableExclusiveRocks_def);
 
+            //world gen two
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableWorldKwamaNests, "Mashed_Ashlands_EnableWorldKwamaNests", Mashed_Ashlands_EnableWorldKwamaNests_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_KwamaNestsScaleWithWorldSize, "Mashed_Ashlands_KwamaNestsScaleWithWorldSize", Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_NumberOfWorldKwamaNests, "Mashed_Ashlands_NumberOfWorldKwamaNests", Mashed_Ashlands_NumberOfWorldKwamaNests_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_WorldKwamaNestMinDistance, "Mashed_Ashlands_WorldKwamaNestMinDistance", Mashed_Ashlands_WorldKwamaNestMinDistance_def);
+
             //volcano
-            Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
+             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoMaxAffectedArea, "Mashed_Ashlands_VolcanoMaxAffectedArea", Mashed_Ashlands_VolcanoMaxAffectedArea_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnablePermanentConditions, "Mashed_Ashlands_VolcanoEnablePermanentConditions", Mashed_Ashlands_VolcanoEnablePermanentConditions_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableRandomConditions, "Mashed_Ashlands_VolcanoEnableRandomConditions", Mashed_Ashlands_VolcanoEnableRandomConditions_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableCategoryChange, "Mashed_Ashlands_VolcanoEnableCategoryChange", Mashed_Ashlands_VolcanoEnableCategoryChange_def);
+
+            //kwama
+            Scribe_Values.Look(ref Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize", Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_KwamaNestMaxAffectedArea, "Mashed_Ashlands_KwamaNestMaxAffectedArea", Mashed_Ashlands_KwamaNestMaxAffectedArea_def);
 
             //ash storm
             Scribe_Values.Look(ref Mashed_Ashlands_AshStormCauseBuildup, "Mashed_Ashlands_AshStormCauseBuildup", Mashed_Ashlands_AshStormCauseBuildup_def);
@@ -337,7 +376,9 @@ namespace Mashed_Ashlands
         {
             ResetSettings_General();
             ResetSettings_WorldGen();
+            ResetSettings_WorldGenTwo();
             ResetSettings_Volcano();
+            ResetSettings_Kwama();
             ResetSettings_AshStorm();
             ResetSettings_Biome();
         }
@@ -383,6 +424,14 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
         }
 
+        public static void ResetSettings_WorldGenTwo()
+        {
+            _instance.Mashed_Ashlands_EnableWorldKwamaNests = Mashed_Ashlands_EnableWorldKwamaNests_def;
+            _instance.Mashed_Ashlands_KwamaNestsScaleWithWorldSize = Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def;
+            _instance.Mashed_Ashlands_NumberOfWorldKwamaNests = Mashed_Ashlands_NumberOfWorldKwamaNests_def;
+            _instance.Mashed_Ashlands_WorldKwamaNestMinDistance = Mashed_Ashlands_WorldKwamaNestMinDistance_def;
+        }
+
         public static void ResetSettings_Volcano()
         {
             _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
@@ -392,6 +441,12 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
 
             _instance.Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
+        }
+
+        public static void ResetSettings_Kwama()
+        {
+            _instance.Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize = Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize_def;
+            _instance.Mashed_Ashlands_KwamaNestMaxAffectedArea = Mashed_Ashlands_KwamaNestMaxAffectedArea_def;
         }
 
         public static void ResetSettings_AshStorm()

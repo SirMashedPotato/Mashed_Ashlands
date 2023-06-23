@@ -26,5 +26,16 @@ namespace Mashed_Ashlands
             }
             return 999f;
         }
+
+        public static float DistanceToClosestKwamaNest(int tileID)
+        {
+            WorldObjectsHolder worldObjectsHolder = Find.WorldObjects;
+            List<WorldObject> kwamaNests = new List<WorldObject>(worldObjectsHolder.AllWorldObjects.Where(x => x.def == WorldObjectDefOf.Mashed_Ashlands_KwamaNest));
+            if (!kwamaNests.NullOrEmpty())
+            {
+                return BiomeWorkerUtility.DistanceToClosest(tileID, kwamaNests);
+            }
+            return 999f;
+        }
     }
 }

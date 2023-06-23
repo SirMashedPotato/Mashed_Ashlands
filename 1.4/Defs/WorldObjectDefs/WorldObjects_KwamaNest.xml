@@ -18,7 +18,7 @@
 		<comps>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_KwamaNestDetails">
 				<nameNamer>Mashed_Ashlands_NamerKwamaNest</nameNamer>
-				<sizeRange>3~10</sizeRange>
+				<sizeRange>1~10</sizeRange>
 			</li>
 		</comps>
 	</WorldObjectDef>

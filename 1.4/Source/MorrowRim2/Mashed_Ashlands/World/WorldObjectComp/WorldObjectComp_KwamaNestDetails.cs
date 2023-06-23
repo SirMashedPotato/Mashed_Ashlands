@@ -42,7 +42,7 @@ namespace Mashed_Ashlands
 
         public override string CompInspectStringExtra()
         {
-            string output = "Mashed_Ashlands_KwamaNestDescription".Translate(ParentNest.NestSize, parent.def.label);
+            string output = "Mashed_Ashlands_KwamaNestDescription".Translate(ParentNest.NestSize, parent.def.label, ParentNest.EffectRadiusFor(ParentNest.NestSize));
             return output;
         }
 

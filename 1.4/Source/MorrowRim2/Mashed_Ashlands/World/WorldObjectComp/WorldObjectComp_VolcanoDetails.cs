@@ -48,7 +48,7 @@ namespace Mashed_Ashlands
 
         public override string CompInspectStringExtra()
         {
-            string output = "Mashed_Ashlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label, ParentVolcano.TotalIncidents, ParentVolcano.LastIncident);
+            string output = "Mashed_Ashlands_VolcanoDescription".Translate(ParentVolcano.Category, parent.def.label, ParentVolcano.EffectRadiusFor(ParentVolcano.Category), ParentVolcano.TotalIncidents, ParentVolcano.LastIncident);
             return output;
         }
 
