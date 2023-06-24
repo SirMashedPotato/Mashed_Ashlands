@@ -9,7 +9,7 @@
 	<!-- -->
 	<Mashed_Ashlands_OnlySowOnAsh>Certain plants can only be sown on ash terrain.</Mashed_Ashlands_OnlySowOnAsh>
 	<!-- ==========[World Gen 1]==========-->
-	<Mashed_Ashlands_PageWorldGen>World Generation Settings (V/B)</Mashed_Ashlands_PageWorldGen>
+	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>
 	<!-- dormant volcano -->
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
 	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>Many of the ashland biomes will only generate near dormant volcanos. As such, disabling this will also prevent those from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
@@ -63,14 +63,13 @@
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</Mashed_Ashlands_EnableExclusiveRocks>
 	<Mashed_Ashlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</Mashed_Ashlands_EnableExclusiveRocks_Tooltip>
-	<!-- ==========[World Gen 2]==========-->
-	<Mashed_Ashlands_PageWorldGenTwo>World Generation Settings (K)</Mashed_Ashlands_PageWorldGenTwo>
-	<!-- amount -->
+	<!-- kwama nest amount -->
 	<Mashed_Ashlands_EnableWorldKwamaNests>Enable the generation of kwama nests on the world map</Mashed_Ashlands_EnableWorldKwamaNests>
+	<Mashed_Ashlands_EnableWorldKwamaNests_Tooltip>Kwama nests will only spawn on ashland tiles with impassible mountains.</Mashed_Ashlands_EnableWorldKwamaNests_Tooltip>
 	<Mashed_Ashlands_KwamaNestsScaleWithWorldSize>Scale the number of kwama nests that are spawned based on world coverage.</Mashed_Ashlands_KwamaNestsScaleWithWorldSize>
 	<Mashed_Ashlands_KwamaNestsScaleWithWorldSize_Tooltip>The number of kwama nests set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</Mashed_Ashlands_KwamaNestsScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_NumberOfWorldKwamaNests>The number of kwama nests that are generated: ({0} nest/s)</Mashed_Ashlands_NumberOfWorldKwamaNests>
-	<!-- distance between -->
+	<!-- kwama nest distance between -->
 	<Mashed_Ashlands_WorldKwamaNestMinDistance>The minimum distance between kwama nests on the world map: ({0} tile/s)</Mashed_Ashlands_WorldKwamaNestMinDistance>
 	<!-- ==========[Volcano]==========-->
 	<Mashed_Ashlands_PageVolcano>Volcano Settings</Mashed_Ashlands_PageVolcano>
@@ -111,6 +110,7 @@
 	<Mashed_Ashlands_BlightStormBlightWildPlants>Blighted ash storms can also blight wild plants.</Mashed_Ashlands_BlightStormBlightWildPlants>
 	<Mashed_Ashlands_BlightStormBlightPlantsNumber>The average number of randomly selected plants blighted at once: ({0} plants)</Mashed_Ashlands_BlightStormBlightPlantsNumber>
 	<!-- ==========[Biome]==========-->
-	<Mashed_Ashlands_PageBiome>Biome Settings</Mashed_Ashlands_PageBiome>
-	<!-- disable custom rock types -->
+	<Mashed_Ashlands_PageBiome>Biome &amp; Map Gen. Settings</Mashed_Ashlands_PageBiome>
+	<!-- misc -->
+	<Mashed_Ashlands_EnableExtraGeysers>Enable certain ashland biomes generating with additional steam geysers during map generation.</Mashed_Ashlands_EnableExtraGeysers>
 </LanguageData>

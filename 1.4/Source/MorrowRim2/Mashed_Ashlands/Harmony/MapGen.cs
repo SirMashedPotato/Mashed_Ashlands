@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_SteamGeyserNumber_Patch(Map map, ref GenStepDef ___def, ref int __result)
         {
-            if (Mashed_Ashlands_ModSettings.EnableExclusiveRocks && ___def == GenStepDefOf.SteamGeysers)   //TODO setting in biomes
+            if (Mashed_Ashlands_ModSettings.EnableExtraGeysers && ___def == GenStepDefOf.SteamGeysers)
             {
                 BiomeProperties props = BiomeProperties.Get(map.Biome);
                 if (props != null && props.steamGeyserMultiplier != 1f)

@@ -49,7 +49,6 @@ namespace Mashed_Ashlands
 
         public static bool EnableExclusiveRocks => _instance.Mashed_Ashlands_EnableExclusiveRocks;
 
-        //world gen two
         public static bool EnableWorldKwamaNests => _instance.Mashed_Ashlands_EnableWorldKwamaNests;
         public static bool KwamaNestsScaleWithWorldSize => _instance.Mashed_Ashlands_KwamaNestsScaleWithWorldSize;
         public static int NumberOfWorldKwamaNests => _instance.Mashed_Ashlands_NumberOfWorldKwamaNests;
@@ -95,6 +94,9 @@ namespace Mashed_Ashlands
         public static bool BlightStormBlightWildPlants => _instance.Mashed_Ashlands_BlightStormBlightWildPlants;
         public static int BlightStormBlightPlantsNumber => _instance.Mashed_Ashlands_BlightStormBlightPlantsNumber;
 
+        //biome
+        public static bool EnableExtraGeysers => _instance.Mashed_Ashlands_EnableExtraGeysers;
+
         /* ==========[VARIABLES]========== */
         //general
         public bool Mashed_Ashlands_OnlySowOnAsh = Mashed_Ashlands_OnlySowOnAsh_def;
@@ -138,7 +140,6 @@ namespace Mashed_Ashlands
 
         public bool Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
 
-        //world gen two
         public bool Mashed_Ashlands_EnableWorldKwamaNests = Mashed_Ashlands_EnableWorldKwamaNests_def;
         public bool Mashed_Ashlands_KwamaNestsScaleWithWorldSize = Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def;
         public int Mashed_Ashlands_NumberOfWorldKwamaNests = Mashed_Ashlands_NumberOfWorldKwamaNests_def;
@@ -183,6 +184,9 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_BlightStormBlightWildPlants = Mashed_Ashlands_BlightStormBlightWildPlants_def;
         public int Mashed_Ashlands_BlightStormBlightPlantsNumber = Mashed_Ashlands_BlightStormBlightPlantsNumber_def;
 
+        //biome
+        public bool Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
+
         /* ==========[DEFAULTS]========== */
         //general
         private static readonly bool Mashed_Ashlands_OnlySowOnAsh_def = true;
@@ -226,7 +230,6 @@ namespace Mashed_Ashlands
 
         private static readonly bool Mashed_Ashlands_EnableExclusiveRocks_def = true;
 
-        //world gen two
         private static readonly bool Mashed_Ashlands_EnableWorldKwamaNests_def = true;
         private static readonly bool Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def = true;
         private static readonly int Mashed_Ashlands_NumberOfWorldKwamaNests_def = 9;
@@ -271,6 +274,9 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_BlightStormBlightPlants_def = true;
         private static readonly bool Mashed_Ashlands_BlightStormBlightWildPlants_def = false;
         private static readonly int Mashed_Ashlands_BlightStormBlightPlantsNumber_def = 3;
+
+        //biome
+        private static readonly bool Mashed_Ashlands_EnableExtraGeysers_def = true;
 
         public Mashed_Ashlands_ModSettings()
         {
@@ -367,6 +373,8 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightWildPlants, "Mashed_Ashlands_BlightStormBlightWildPlants", Mashed_Ashlands_BlightStormBlightWildPlants_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightPlantsNumber, "Mashed_Ashlands_BlightStormBlightPlantsNumber", Mashed_Ashlands_BlightStormBlightPlantsNumber_def);
 
+            //biome
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableExtraGeysers, "Mashed_Ashlands_EnableExtraGeysers", Mashed_Ashlands_EnableExtraGeysers_def);
 
             base.ExposeData();
         }
@@ -376,7 +384,6 @@ namespace Mashed_Ashlands
         {
             ResetSettings_General();
             ResetSettings_WorldGen();
-            ResetSettings_WorldGenTwo();
             ResetSettings_Volcano();
             ResetSettings_Kwama();
             ResetSettings_AshStorm();
@@ -422,10 +429,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands = Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def;
 
             _instance.Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
-        }
 
-        public static void ResetSettings_WorldGenTwo()
-        {
             _instance.Mashed_Ashlands_EnableWorldKwamaNests = Mashed_Ashlands_EnableWorldKwamaNests_def;
             _instance.Mashed_Ashlands_KwamaNestsScaleWithWorldSize = Mashed_Ashlands_KwamaNestsScaleWithWorldSize_def;
             _instance.Mashed_Ashlands_NumberOfWorldKwamaNests = Mashed_Ashlands_NumberOfWorldKwamaNests_def;
@@ -480,7 +484,7 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_Biome()
         {
-
+            _instance.Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
         }
     }
 }
