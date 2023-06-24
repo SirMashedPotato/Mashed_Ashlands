@@ -89,6 +89,7 @@
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefModExtension\RockProperties.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
+    <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="Harmony\MapGen.cs" />
     <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />

@@ -9,7 +9,6 @@
 		</statBases>
 		<pathCost>3</pathCost>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible/>
 		<plant>
 			<fertilityMin>0.2</fertilityMin>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
@@ -58,7 +57,6 @@
 		<graphicData>
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernPlant</texPath>
 		</graphicData>
-		<ingestible/>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
@@ -80,7 +78,6 @@
 		<graphicData>
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant</texPath>
 		</graphicData>
-		<ingestible/>
 		<plant>
 			<visualSizeRange>0.9~1.6</visualSizeRange>
 		</plant>
@@ -98,7 +95,6 @@
 		<graphicData>
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant</texPath>
 		</graphicData>
-		<ingestible/>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_FireFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
@@ -114,6 +110,5 @@
 		<graphicData>
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_FireFernPlant</texPath>
 		</graphicData>
-		<ingestible/>
 	</ThingDef>
 </Defs>
