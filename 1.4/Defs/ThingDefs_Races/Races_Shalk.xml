@@ -93,9 +93,6 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<butcherProducts>
-			<Chemfuel>1</Chemfuel>
-		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Shalk</defName>
@@ -139,6 +136,10 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>Mouth</bodyPartGroup>
+					<thing>Chemfuel</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -179,9 +180,6 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<butcherProducts>
-			<Chemfuel>1</Chemfuel>
-		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_ShalkFungal</defName>
@@ -225,6 +223,10 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>Mouth</bodyPartGroup>
+					<thing>Chemfuel</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -265,22 +267,19 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<extraMeleeDamages>
-				  <li>
-					<def>Stun</def>
-					<amount>3</amount>
-					<chance>0.5</chance>
-				  </li>
-				  <li>
-					<def>EMP</def>
-					<amount>3</amount>
-					<chance>0.3</chance>
-				  </li>
+					<li>
+						<def>Stun</def>
+						<amount>3</amount>
+						<chance>0.5</chance>
+					</li>
+					<li>
+						<def>EMP</def>
+						<amount>3</amount>
+						<chance>0.3</chance>
+					</li>
 				</extraMeleeDamages>
 			</li>
 		</tools>
-		<butcherProducts>
-			<Chemfuel>1</Chemfuel>
-		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Thunderbug</defName>
@@ -324,6 +323,10 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>Mouth</bodyPartGroup>
+					<thing>Chemfuel</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
