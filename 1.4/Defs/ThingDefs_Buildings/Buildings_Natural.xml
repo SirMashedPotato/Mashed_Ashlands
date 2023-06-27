@@ -1,5 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSac]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_KwamaEggSac</defName>
+		<label>kwama egg sac</label>
+		<description>A sac containing several kwama eggs. Contains bio-luminescent bacteria, producing an orange glow. While most usually harvest these for the eggs contained inside, some use them as a source of light... those people are considered weird by others.</description>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<tickerType>Rare</tickerType>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<costList>
+			<Mashed_Ashlands_KwamaEgg>12</Mashed_Ashlands_KwamaEgg>
+		</costList>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>1.0</Flammability>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(85,39,20,0)</glowColor>
+			</li>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaEggSac</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestEntrance]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_KwamaNestEntrance</defName>
+		<label>kwama nest entrance</label>
+		<description>The entrance to deeper portions of a kwama nest. Kwama workers will occasionally deposit raw fungus and kwama egg sacs around the entrance. The kwama will only attack if they feel the nest is threatened, otherwise they will remain peaceful.\n\nKwama will become highly aggressive if their nest is threatened. They will return to a calm state after they feel the threat is gone.</description>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaNestEntrance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<color>(102,96,98)</color>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<pathCost>50</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>false</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<Mashed_Ashlands_ChunkBasalt>9</Mashed_Ashlands_ChunkBasalt>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Mashed_Ashlands_KwamaEggSac</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>100000~250000</spawnIntervalRange>
+				<spawnMaxAdjacent>9</spawnMaxAdjacent>
+				<saveKeysPrefix>eggSac</saveKeysPrefix>
+				<inheritFaction>true</inheritFaction>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_VolcanicDebris</defName>
