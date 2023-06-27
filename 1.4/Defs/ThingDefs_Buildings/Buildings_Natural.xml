@@ -71,7 +71,7 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<Mashed_Ashlands_ChunkBasalt>9</Mashed_Ashlands_ChunkBasalt>
+			<Mashed_Ashlands_ChunkBasalt>6</Mashed_Ashlands_ChunkBasalt>
 		</killedLeavings>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
