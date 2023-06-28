@@ -13,6 +13,5 @@ namespace Mashed_Ashlands
         public static WorldObjectDef Mashed_Ashlands_VolcanoActive;
         public static WorldObjectDef Mashed_Ashlands_VolcanoBlighted;
         public static WorldObjectDef Mashed_Ashlands_VolcanoExtinct;
-        public static WorldObjectDef Mashed_Ashlands_KwamaNest;
     }
 }

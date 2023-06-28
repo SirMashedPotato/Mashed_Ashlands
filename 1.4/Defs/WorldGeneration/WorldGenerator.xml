@@ -30,12 +30,7 @@
 		<order>115</order>
 		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_AshlandBiomesEarly"/>
 	</WorldGenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNest]==========-->
-	<WorldGenStepDef>
-		<defName>Mashed_Ashlands_KwamaNest</defName>
-		<order>116</order>
-		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_KwamaNest"/>
-	</WorldGenStepDef>
+	<!-- World kwama nests as 116 -->
 	<!-- ==========[Mashed_Ashlands_AshlandBiomesLate]==========-->
 	<WorldGenStepDef>
 		<defName>Mashed_Ashlands_AshlandBiomesLate</defName>
