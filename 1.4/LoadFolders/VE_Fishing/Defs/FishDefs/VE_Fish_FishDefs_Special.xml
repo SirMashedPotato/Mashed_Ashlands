@@ -62,23 +62,6 @@
 		<commonality>1</commonality>	
 		<baseFishingYield>3</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	<!-- ==========[Mashed_Ashlands_KwamaEgg]==========-->
-	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_KwamaEgg</defName>
-		<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>    
-		<fishSizeCategory>Special</fishSizeCategory>
-		<canBeFreshwater>true</canBeFreshwater>
-		<canBeSaltwater>true</canBeSaltwater>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_RegularAshland</li>
-			<li>Mashed_Ashlands_VolcanicAshland</li>
-			<li>Mashed_Ashlands_BlightedAshland</li>
-			<li>Mashed_Ashlands_SwampAshland</li>
-			<li>Mashed_Ashlands_MarshAshland</li>
-		</allowedBiomes>  
-		<commonality>1</commonality>	
-		<baseFishingYield>1</baseFishingYield>		
-	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_MudcrabEgg]==========-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_MudcrabEgg</defName>

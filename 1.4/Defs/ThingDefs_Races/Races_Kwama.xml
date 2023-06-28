@@ -46,9 +46,9 @@
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
 				<customThingToDig>
-					<li>Mashed_Ashlands_FungalMash</li>
-					<li>Mashed_Ashlands_FungalMash</li>
-					<li>Mashed_Ashlands_FungalMash</li>
+					<li>Mashed_Ashlands_RawAshFungus</li>
+					<li>Mashed_Ashlands_RawAshFungus</li>
+					<li>Mashed_Ashlands_RawAshFungus</li>
 				</customThingToDig>
 				<customAmountToDig>
 					<li>3</li>

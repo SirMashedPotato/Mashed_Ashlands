@@ -1,78 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_KwamaEggSacBase]==========-->
-	<ThingDef ParentName="BuildingNaturalBase" Name="Mashed_Ashlands_KwamaEggSacBase" Abstract="True">
-		<thingClass>Building</thingClass>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<selectable>true</selectable>
-		<fillPercent>0.20</fillPercent>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
-		<tickerType>Rare</tickerType>
-		<thingCategories>
-			<li>BuildingsSpecial</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Mass>4</Mass>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<graphicData>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-				<offset>(0,0,-0.1)</offset>
-			</shadowData>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
-		</graphicData>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_KwamaEggSac]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_KwamaEggSacBase">
-		<defName>Mashed_Ashlands_KwamaEggSac</defName>
-		<label>kwama egg sac</label>
-		<description>A sac containing several kwama eggs. Contains bio-luminescent bacteria, producing an orange glow. While most usually harvest these for the eggs contained inside, some use them as a source of light... those people are considered weird by others.</description>
-		<costList>
-			<Mashed_Ashlands_KwamaEgg>12</Mashed_Ashlands_KwamaEgg>
-		</costList>
-		<statBases>
-			<MarketValue>50</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(239,97,26,0)</glowColor>
-			</li>
-		</comps>
-		<graphicData>
-			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaEggSac</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_KwamaEggSacGolden]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_KwamaEggSacBase">
-		<defName>Mashed_Ashlands_KwamaEggSacGolden</defName>
-		<label>golden kwama egg sac</label>
-		<description>A kwama egg sac containing a single kwama egg. Considered to be extremely rare, the scrib contained in this kwama egg will mature into a kwama queen. With the right knowledge, someone would be able to use this egg sac to establish a new kwama nest.</description>
-		<statBases>
-			<MarketValue>300</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>4</glowRadius>
-				<glowColor>(239,168,26,0)</glowColor>
-			</li>
-		</comps>
-		<building>
-			<deconstructible>false</deconstructible>
-		</building>
-		<graphicData>
-			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaEggSacGolden</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_VolcanicDebris</defName>
@@ -122,8 +49,8 @@
 						<weight>0.5</weight>
 					</li>
 					<li>
-						<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>
-						<amountRange>5~15</amountRange>
+						<thingDef>Mashed_Ashlands_RawAshFungus</thingDef>
+						<amountRange>15~25</amountRange>
 						<weight>0.3</weight>
 					</li>
 					<li>

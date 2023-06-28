@@ -14,32 +14,6 @@
 			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_KwamaEgg]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase">
-		<defName>Mashed_Ashlands_KwamaEgg</defName>
-		<label>kwama egg</label>
-		<description>An infertile kwama egg, gathered from a kwama egg mine. While the idea of eating an insect egg the size of a small child may seem strange to some people, kwama eggs are considered to be quite the delicacy.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KwamaEgg</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<stackLimit>25</stackLimit>
-		<statBases>
-			<MarketValue>5</MarketValue>
-			<Mass>0.5</Mass>
-			<Nutrition>0.08</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>90</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<preferability>RawBad</preferability>
-		</ingestible>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_NetchJelly]==========-->
 	<ThingDef Name="Mashed_Ashlands_NetchJellyBase" ParentName="Mashed_Ashlands_OrganicProductBase">
 		<defName>Mashed_Ashlands_NetchJelly</defName>

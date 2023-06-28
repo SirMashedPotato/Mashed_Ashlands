@@ -136,33 +136,6 @@
 		</ingestible>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_FungalMash]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
-		<defName>Mashed_Ashlands_FungalMash</defName>
-		<label>fungal mash</label>
-		<description>A variety of partially digested fungus, gathered from deep underground by a kwama forager. It is very likely that some, if not all, of the fungus is unsafe for human consumption.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_FungalMash</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1</MarketValue>
-			<Nutrition>0.1</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.9</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>15</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
-		<ingestible>
-			<preferability>DesperateOnlyForHumanlikes</preferability>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-		</ingestible>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMuck]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawMuck</defName>

@@ -63,14 +63,6 @@
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</Mashed_Ashlands_EnableExclusiveRocks>
 	<Mashed_Ashlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</Mashed_Ashlands_EnableExclusiveRocks_Tooltip>
-	<!-- kwama nest amount -->
-	<Mashed_Ashlands_EnableWorldKwamaNests>Enable the generation of kwama nests on the world map</Mashed_Ashlands_EnableWorldKwamaNests>
-	<Mashed_Ashlands_EnableWorldKwamaNests_Tooltip>Kwama nests will only spawn on ashland tiles with impassible mountains.</Mashed_Ashlands_EnableWorldKwamaNests_Tooltip>
-	<Mashed_Ashlands_KwamaNestsScaleWithWorldSize>Scale the number of kwama nests that are spawned based on world coverage.</Mashed_Ashlands_KwamaNestsScaleWithWorldSize>
-	<Mashed_Ashlands_KwamaNestsScaleWithWorldSize_Tooltip>The number of kwama nests set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</Mashed_Ashlands_KwamaNestsScaleWithWorldSize_Tooltip>
-	<Mashed_Ashlands_NumberOfWorldKwamaNests>The number of kwama nests that are generated: ({0} nest/s)</Mashed_Ashlands_NumberOfWorldKwamaNests>
-	<!-- kwama nest distance between -->
-	<Mashed_Ashlands_WorldKwamaNestMinDistance>The minimum distance between kwama nests on the world map: ({0} tile/s)</Mashed_Ashlands_WorldKwamaNestMinDistance>
 	<!-- ==========[Volcano]==========-->
 	<Mashed_Ashlands_PageVolcano>Volcano Settings</Mashed_Ashlands_PageVolcano>
 	<!-- distances -->
@@ -82,12 +74,6 @@
 	<Mashed_Ashlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</Mashed_Ashlands_VolcanoEnableRandomConditions>
 	<!-- incidents -->
 	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the volcano category change incident.</Mashed_Ashlands_VolcanoEnableCategoryChange>
-	<!-- ==========[Kwama]==========-->
-	<Mashed_Ashlands_PageKwama>Kwama Settings</Mashed_Ashlands_PageKwama>
-	<!-- distances -->
-	<Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize>Scale the distance affected by kwama nests based on world coverage.</Mashed_Ashlands_KwamaNestAffectedAreaScaleWithWorldSize>
-	<Mashed_Ashlands_KwamaNestMaxAffectedArea>The maximum distance affected by kwama nests on the world map: ({0} tile/s)</Mashed_Ashlands_KwamaNestMaxAffectedArea>
-	<Mashed_Ashlands_KwamaNestMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with nest size increase. The displayed value is used for a size 5 kwama nest.</Mashed_Ashlands_KwamaNestMaxAffectedArea_Tooltip>
 	<!-- ==========[Ash storm]==========-->
 	<Mashed_Ashlands_PageAshStorm>Ash storm Settings</Mashed_Ashlands_PageAshStorm>
 	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>

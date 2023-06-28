@@ -29,24 +29,24 @@
 		</products>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
 	</RecipeDef>
-	<!-- ==========[Mashed_Ashlands_RefineMuckWithKwamaEgg]==========-->
+	<!-- ==========[Mashed_Ashlands_RefineMuckWithNetchJelly]==========-->
 	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
-		<defName>Mashed_Ashlands_RefineMuckWithKwamaEgg</defName>
-		<label>refine muck with kwama eggs</label>
-		<description>Refines 10 buckets of muck and 2 kwama eggs into 10 herbal medicine.</description>
+		<defName>Mashed_Ashlands_RefineMuckWithNetchJelly</defName>
+		<label>refine muck with netch jelly</label>
+		<description>Refines 10 buckets of muck and 5 netch jelly into 10 herbal medicine.</description>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Mashed_Ashlands_KwamaEgg</li>
+						<li>Mashed_Ashlands_NetchJelly</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Mashed_Ashlands_KwamaEgg</li>
+				<li>Mashed_Ashlands_NetchJelly</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
