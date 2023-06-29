@@ -38,8 +38,6 @@
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_AshSand</li>
-					<li>Mashed_Ashlands_RichAshSand</li>
 				</disallowedTerrainForWild>
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
@@ -71,9 +69,6 @@
 		<description>A rather small fungal tree, very unimpressive, especially when compared to the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
-					<li>MarshyTerrain</li>
-				</disallowedTerrainForWild>
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
@@ -206,4 +201,31 @@
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeEmperorParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeWeepingParasol</defName>
+		<label>weeping parasol tree</label>
+		<description>An enormous fungal tree, solely found growing in humid ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nA symbiotic moss grows from the underside of the emperor parasols cap. While not particularly tasty, it makes for a decent animal feed, and can be brewed into a tea.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<secondaryDrop>Mashed_Ashlands_RawEmperorParasolMoss</secondaryDrop>
+				<secondaryDropAmountRange>15~25</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeWeepingParasol</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>1.4~3</visualSizeRange>
+			<harvestYield>40</harvestYield>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingParasol_Leafless</leaflessGraphicPath>
+		</plant>
+	</ThingDef>
+	-->
 </Defs>
