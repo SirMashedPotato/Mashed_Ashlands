@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<!-- Must use <success>Always</success> because of the PatchOperationTest -->
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="SculptureBase"]</xpath>
-				<value>
-					<stuffCategories/>
-				</value>
-			</li>
-		</operations>
+	<!-- add stuffCategories if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="SculptureBase"]</xpath>
+			<value>
+				<stuffCategories/>
+			</value>
+		</nomatch>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
