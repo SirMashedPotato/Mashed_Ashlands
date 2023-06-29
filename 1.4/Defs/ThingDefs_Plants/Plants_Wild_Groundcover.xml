@@ -238,38 +238,6 @@
 			<sowWork>200</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_InkCap]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
-		<defName>Mashed_Ashlands_Plant_InkCap</defName>
-		<label>ink-cap</label>
-		<description>A small mushroom commonly found growing in humid ashland regions. The intense red colouration of the cap serves as a warning for anyone that would try to consume it.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_AshGravel</li>
-					<li>Mashed_Ashlands_AshSoil</li>
-				</allowedTerrainForWild>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_InkCap</texPath>
-		</graphicData>
-		<plant>
-			<growDays>3</growDays>
-			<visualSizeRange>0.15~0.35</visualSizeRange>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
-			</sowResearchPrerequisites>
-			<sowWork>200</sowWork>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LuminousRussula]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
 		<defName>Mashed_Ashlands_Plant_LuminousRussula</defName>
