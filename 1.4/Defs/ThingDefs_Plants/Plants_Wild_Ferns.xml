@@ -81,6 +81,11 @@
 		<plant>
 			<visualSizeRange>0.9~1.6</visualSizeRange>
 		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
