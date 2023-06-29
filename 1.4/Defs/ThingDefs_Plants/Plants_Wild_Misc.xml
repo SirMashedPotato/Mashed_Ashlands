@@ -37,6 +37,9 @@
 				<glowRadius>4</glowRadius>
 				<glowColor>(214,148,94,0)</glowColor>
 			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_ScorchedBush]==========-->

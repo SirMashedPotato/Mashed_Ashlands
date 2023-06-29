@@ -21,6 +21,9 @@
 				<glowRadius>4</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>
 			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>

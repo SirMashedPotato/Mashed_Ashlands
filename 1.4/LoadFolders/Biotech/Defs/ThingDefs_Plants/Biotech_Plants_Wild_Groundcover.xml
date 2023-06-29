@@ -13,10 +13,13 @@
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
-		<comps>
+		<comps Inherit="False">
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -37,6 +40,9 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>

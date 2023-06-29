@@ -123,6 +123,11 @@
 			<wildOrder>1</wildOrder>
 			<sowTags Inherit="False"/>
 		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_BlueEntoloma]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
@@ -198,6 +203,9 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(53,94,84,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>
