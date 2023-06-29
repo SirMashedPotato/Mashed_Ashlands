@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_TorchbugEffecter</defName>
 		<children>
 			<li>
-				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
 				<scale>0.3~0.5</scale>
 				<chancePerTick>1</chancePerTick>
 				<positionRadius>1</positionRadius>
