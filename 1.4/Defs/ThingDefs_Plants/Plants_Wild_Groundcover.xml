@@ -56,6 +56,11 @@
 		<plant>
 			<sowTags Inherit="False"/>
 		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandFungus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">

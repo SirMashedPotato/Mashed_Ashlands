@@ -185,7 +185,7 @@
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
-				<minTilesToWaterForWild>3</minTilesToWaterForWild>
+				<minTilesToWaterForWild>5</minTilesToWaterForWild>
 			</li>
 		</modExtensions>
 		<statBases>

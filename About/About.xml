@@ -30,6 +30,7 @@
 		<li>syrchalis.processor.framework</li>
 		<li>regrowth.botr.core</li>
 		<li>odeum.wmbp</li>
+		<li>owlchemist.seedspleaselite</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim</li>
