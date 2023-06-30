@@ -181,6 +181,17 @@
 			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
 			<ESCP_ReefViperKind MayRequire="SirMashedPotato.ESCP.Maormer">0.1</ESCP_ReefViperKind>
+			<!-- ESCP Trolls -->
+			<ESCP_TrollHill MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollHill>
+			<ESCP_TrollRiver MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollRiver>
+			<ESCP_TrollCave MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollCave>
+			<ESCP_TrollCoastal MayRequire="sirmashedpotato.escp.trolls">0.05</ESCP_TrollCoastal>
+			<ESCP_TrollUdyrfrykte MayRequire="sirmashedpotato.escp.trolls">0.01</ESCP_TrollUdyrfrykte>
+			<!-- ESCP Spriggan-->
+			<ESCP_Spriggan_Parasol MayRequire="pphhyy.escp.spriggan">0.05</ESCP_Spriggan_Parasol>
+			<ESCP_Spriggan_Burnt MayRequire="pphhyy.escp.spriggan">0.025</ESCP_Spriggan_Burnt>
+			<ESCP_Spriggan_Matron MayRequire="pphhyy.escp.spriggan">0.01</ESCP_Spriggan_Matron>
+			<ESCP_Spriggan_EarthMother MayRequire="pphhyy.escp.spriggan">0.005</ESCP_Spriggan_EarthMother>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
