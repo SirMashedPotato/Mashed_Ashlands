@@ -5,6 +5,14 @@
 		<defName>Mashed_Ashlands_Plant_AshlandHayGrass</defName>
 		<label>ashland haygrass</label>
 		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<terrainAffordancesToSow>
+					<li>Mashed_Ashlands_GrowAsh</li>
+				</terrainAffordancesToSow>
+			</li>
+			<li MayRequire="owlchemist.seedspleaselite" Class="SeedsPleaseLite.Seedless"/>
+		</modExtensions>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>

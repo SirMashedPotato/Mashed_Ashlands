@@ -14,11 +14,4 @@
 			<harvestedThingDef>Mashed_Ashlands_RawInkCap</harvestedThingDef>
 		</value>
 	</Operation>
-	<!-- Exclusion patch -->
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_AshlandHayGrass"]</xpath>
-		<value>
-			<li Class="SeedsPleaseLite.Seedless"/>
-		</value>
-	</Operation>
 </Patch> 

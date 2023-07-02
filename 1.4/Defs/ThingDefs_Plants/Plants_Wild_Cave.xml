@@ -35,10 +35,8 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.1</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
+			<li MayRequire="owlchemist.seedspleaselite" Class="SeedsPleaseLite.Seedless"/>
 		</modExtensions>
 		<statBases>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
@@ -58,10 +56,7 @@
 			<harvestedThingDef>Mashed_Ashlands_PurpleCrystalShard</harvestedThingDef>
 			<harvestYield>25</harvestYield>
 			<growDays>15</growDays>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
-			</sowResearchPrerequisites>
-			<sowMinSkill>10</sowMinSkill>
+			<sowTags Inherit="False"/>
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
