@@ -166,8 +166,8 @@
 	<!-- ==========[Mashed_Ashlands_RawScathecraw]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawScathecraw</defName>
-		<label>scathecraw</label>
-		<description>Raw scathecraw. Tough and chewy, not particularly pleasant to eat, though animals don't seem to mind.</description>
+		<label>scathecraw leaves</label>
+		<description>Raw scathecraw leaves. Tough and chewy, not particularly pleasant to eat, though animals don't seem to mind.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawScathecraw</texPath>
 		</graphicData>

@@ -59,17 +59,19 @@
 	<!-- ==========[Mashed_Ashlands_SeedTramaShrub]==========-->
 	<ThingDef ParentName="SeedBase">
 		<defName>Mashed_Ashlands_SeedTramaShrub</defName>
-		<label>trama shrub seeds</label>
+		<label>trama seeds</label>
 		<graphicData>
 			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedTramaShrub</texPath>
 		</graphicData>
 		<descriptionHyperlinks>
 			<ThingDef>Mashed_Ashlands_Plant_TramaShrub</ThingDef>
+			<ThingDef MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</ThingDef>
 		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="SeedsPleaseLite.Seed">
 				<sources>
 					<li>Mashed_Ashlands_Plant_TramaShrub</li>
+					<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</li>
 				</sources>
 				<priority>20</priority>
 			</li>

@@ -42,6 +42,7 @@
 		<race>
 			<body>Mashed_Ashlands_CnidarianShellBody</body>
 			<leatherDef>Mashed_Ashlands_NetchLeather</leatherDef>
+			<specificMeatDef>Mashed_Ashlands_NetchJelly</specificMeatDef>
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.35</baseHungerRate>

@@ -12,7 +12,7 @@
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_Milkable">
-				<milkDef>Mashed_Ashlands_NetchJelly</milkDef>
+				<milkDef>Mashed_Ashlands_GlowingNetchJelly</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
@@ -21,6 +21,7 @@
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
 			<canBePredatorPrey>false</canBePredatorPrey>
+			<specificMeatDef>Mashed_Ashlands_GlowingNetchJelly</specificMeatDef>
 		</race>
 		<tradeTags>
 			<li>AnimalCommon</li>

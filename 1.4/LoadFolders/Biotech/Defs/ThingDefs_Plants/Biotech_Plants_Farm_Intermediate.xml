@@ -79,6 +79,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<harvestYield>18</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawGlowingScathecraw</harvestedThingDef>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
