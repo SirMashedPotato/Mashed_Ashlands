@@ -174,42 +174,6 @@
 			<wildClusterWeight>100</wildClusterWeight>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_Corkbulb]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
-		<defName>Mashed_Ashlands_Plant_Corkbulb</defName>
-		<label>corkbulb tree</label>
-		<description>A small tree that can often be found growing in regions with ash rich ground. Farmed for its tough roots, which make for a reasonable wood replacement. The roots are also often consumed by wild animals, such as guar and kagouti. While structurally quite sturdy, corkbulb will slowly be worn down by ash storms.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_CorkbulbPlant</texPath>
-		</graphicData>
-		<plant>
-			<fertilitySensitivity>1</fertilitySensitivity>
-			<fertilityMin>0.8</fertilityMin>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>Mashed_Ashlands_RawCorkbulbRoot</harvestedThingDef>
-			<harvestYield>20</harvestYield>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
-			</sowResearchPrerequisites>
-			<sowMinSkill>8</sowMinSkill>
-			<growDays>13</growDays>
-			<visualSizeRange>1.0~2.4</visualSizeRange>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Marshmerrow]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Marshmerrow</defName>

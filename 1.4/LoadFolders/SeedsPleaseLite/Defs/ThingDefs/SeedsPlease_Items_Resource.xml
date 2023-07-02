@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_RawKreshweed]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
-		<defName>Mashed_Ashlands_RawKreshweed</defName>
-		<label>raw kreshweed</label>
-		<description>Raw kreshweed. Usually woven into kresh cloth, though it can also be used as animal feed when necessary.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawKreshweed</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>2.5</MarketValue>
-		</statBases>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
-		<ingestible>
-			<preferability>DesperateOnly</preferability>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-		</ingestible>
-		<allowedArchonexusCount>75</allowedArchonexusCount>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawInkCap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawInkCap</defName>
@@ -30,6 +10,26 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawKreshweed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawKreshweed</defName>
+		<label>raw kreshweed</label>
+		<description>Raw kreshweed. Usually woven into kresh cloth, though it can also be used as animal feed when necessary.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawKreshweed</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.5</MarketValue>
 		</statBases>
 		<thingCategories>
 			<li>PlantMatter</li>
