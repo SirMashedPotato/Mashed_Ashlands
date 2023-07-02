@@ -72,4 +72,22 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedEmperorToxisol]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedEmperorToxisol</defName>
+		<label>emperor toxisol spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedEmperorToxisol</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeEmperorToxisol</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeEmperorToxisol</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>
