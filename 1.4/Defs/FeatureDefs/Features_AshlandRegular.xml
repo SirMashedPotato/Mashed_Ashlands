@@ -9,13 +9,13 @@
 			<li>Mashed_Ashlands_Ashlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
-			<li>Mashed_Ashlands_CoralCoastAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_CoralCoastAshlands]==========-->
+	<!--
 	<FeatureDef>
 		<defName>Mashed_Ashlands_CoralCoastAshlands</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
@@ -27,6 +27,7 @@
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerCoralCoastAshlands</nameMaker>
 	</FeatureDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_GrazelandAshlands]==========-->
 	<FeatureDef>
 		<defName>Mashed_Ashlands_GrazelandAshlands</defName>

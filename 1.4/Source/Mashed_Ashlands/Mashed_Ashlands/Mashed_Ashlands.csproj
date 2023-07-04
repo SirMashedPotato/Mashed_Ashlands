@@ -72,14 +72,12 @@
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_HighlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_SaltplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
