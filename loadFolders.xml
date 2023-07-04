@@ -4,7 +4,6 @@
 		<li>Common</li>
 		<li>1.4</li>
 		<!-- Royalty -->
-		<li IfModActive="Ludeon.RimWorld.Royalty">LoadFolders/RoyaltyTextures</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/LoadFolders/Royalty</li>
 		<!-- Ideology -->
 		<li IfModActive="Ludeon.RimWorld.Ideology">LoadFolders/IdeologyTextures</li>

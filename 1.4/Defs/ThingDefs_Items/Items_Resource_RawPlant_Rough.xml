@@ -8,31 +8,6 @@
 			<li>Mashed_Ashlands_AshlandsRawRoughPlant</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawBittergreen]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
-		<defName>Mashed_Ashlands_RawBittergreen</defName>
-		<label>bittergreen petals</label>
-		<description>Raw bittergreen petals. Not safe to eat raw, but perfectly safe when properly cooked. Often brewed into a fortifying tea.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_BittergreenPetals</texPath>
-		</graphicData>
-		<statBases>
-			<FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>40</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<thingCategories>
-			<li>Foods</li>
-		</thingCategories>
-		<ingestible>
-			<preferability>DesperateOnly</preferability>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-		</ingestible>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawChillshroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawChillshroom</defName>

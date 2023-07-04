@@ -1,23 +1,4 @@
 <Defs>
-	<!-- ==========[Mashed_Ashlands_SeedBittergreen]==========-->
-	<ThingDef ParentName="SeedBase">
-		<defName>Mashed_Ashlands_SeedBittergreen</defName>
-		<label>bittergreen spores</label>
-		<graphicData>
-			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedBittergreen</texPath>
-		</graphicData>
-		<descriptionHyperlinks>
-			<ThingDef>Mashed_Ashlands_Plant_Bittergreen</ThingDef>
-		</descriptionHyperlinks>
-		<modExtensions>
-			<li Class="SeedsPleaseLite.Seed">
-				<sources>
-					<li>Mashed_Ashlands_Plant_Bittergreen</li>
-				</sources>
-				<priority>20</priority>
-			</li>
-		</modExtensions>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedChillshroom]==========-->
 	<ThingDef ParentName="SeedBase">
 		<defName>Mashed_Ashlands_SeedChillshroom</defName>

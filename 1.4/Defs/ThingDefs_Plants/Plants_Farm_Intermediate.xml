@@ -133,55 +133,6 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_Bittergreen]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_BushBase">
-		<defName>Mashed_Ashlands_Plant_Bittergreen</defName>
-		<label>bittergreen plant</label>
-		<description>An incredibly hardy, and very strange looking, plant, typically found growing in the less-hospitable regions of the ashlands. Some have taken to harvesting the flowers that grow on the tendrils of the bittergreen plant. In their raw form the petals are highly toxic, and used by some to create potent poisons. The petals are safe to consume when boiled, and often used to make bittergreen tea. Bittergreen are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>-2</Beauty>
-			<BeautyOutdoors>-2</BeautyOutdoors>
-			<Flammability>0.8</Flammability>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_BittergreenPlant</texPath>
-			<shadowData>
-				<volume>(0.2, 0.2, 0.2)</volume>
-				<offset>(0,0,0.2)</offset>
-			</shadowData>
-		</graphicData>
-		<uiIconScale>0.85</uiIconScale>
-		<plant>
-			<fertilitySensitivity>0.6</fertilitySensitivity>
-			<fertilityMin>0.4</fertilityMin>
-			<growDays>10</growDays>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<neverBlightable>true</neverBlightable>
-			<harvestedThingDef>Mashed_Ashlands_RawBittergreen</harvestedThingDef>
-			<harvestYield>6</harvestYield>
-			<harvestAfterGrowth>0.3</harvestAfterGrowth>
-			<harvestTag>Standard</harvestTag>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
-			</sowResearchPrerequisites>
-			<visualSizeRange>1.1~2.3</visualSizeRange>
-			<harvestWork>150</harvestWork>
-			<topWindExposure>0</topWindExposure>
-			<wildClusterWeight>100</wildClusterWeight>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Marshmerrow]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Marshmerrow</defName>
