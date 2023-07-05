@@ -10,6 +10,7 @@ namespace Mashed_Ashlands
         public string smoothTexPathReplacer;
         public string scatterTypeReplacer = null;
         public bool applyToPolluted = false;
+        public bool requireIdeoForTex = false;
 
         public static RockProperties Get(Def def)
         {

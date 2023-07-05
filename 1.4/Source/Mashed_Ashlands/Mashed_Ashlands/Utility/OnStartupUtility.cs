@@ -82,17 +82,20 @@ namespace Mashed_Ashlands
                                           select def)
             {
                 RockProperties props = RockProperties.Get(thingDef);
-                if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
+                if (!props.requireIdeoForTex || ModsConfig.IdeologyActive)
                 {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
-                }
-                if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
-                {
-                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
-                }
-                if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
-                {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
+                    {
+                        EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    }
+                    if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
+                    {
+                        EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    }
+                    if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
+                    {
+                        EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    }
                 }
             }
         }

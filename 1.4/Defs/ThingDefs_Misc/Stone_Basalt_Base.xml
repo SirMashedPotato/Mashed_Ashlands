@@ -10,6 +10,7 @@
 				<smoothTexPathReplacer>Terrain/Surfaces/Mashed_Ashlands_BasaltSmooth</smoothTexPathReplacer>
 				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
 				<applyToPolluted>true</applyToPolluted>
+				<requireIdeoForTex>true</requireIdeoForTex>
 			</li>
 		</modExtensions>
 		<graphicData>
