@@ -3,7 +3,6 @@ using RimWorld;
 
 namespace Mashed_Ashlands
 {
-    //TODO, maybe uses a setting?
     public class StatPart_WearingHeadgear : StatPart
     {
         public float boostAmount = 0.5f;
@@ -28,16 +27,19 @@ namespace Mashed_Ashlands
 
 		private bool ActiveFor(Thing t, out Thing apparel)
 		{
-            if (t is Pawn pawn)
+            if (Mashed_Ashlands_ModSettings.BaseAshResistance)
             {
-                if (pawn.apparel != null)
+                if (t is Pawn pawn)
                 {
-                    foreach (Apparel a in pawn.apparel.WornApparel)
+                    if (pawn.apparel != null)
                     {
-                        if (a.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead))
+                        foreach (Apparel a in pawn.apparel.WornApparel)
                         {
-                            apparel = a;
-                            return true;
+                            if (a.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead))
+                            {
+                                apparel = a;
+                                return true;
+                            }
                         }
                     }
                 }

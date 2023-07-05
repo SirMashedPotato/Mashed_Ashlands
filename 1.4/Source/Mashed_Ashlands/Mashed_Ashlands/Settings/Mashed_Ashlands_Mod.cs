@@ -197,6 +197,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_OnlySowOnAsh".Translate(), ref settings.Mashed_Ashlands_OnlySowOnAsh);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BaseAshResistance".Translate(), ref settings.Mashed_Ashlands_BaseAshResistance);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

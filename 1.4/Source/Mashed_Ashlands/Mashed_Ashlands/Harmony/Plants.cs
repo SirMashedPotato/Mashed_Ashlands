@@ -121,7 +121,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
         {
-            if (__result && Mashed_Ashlands_ModSettings.TheAshlands_OnlySowOnAsh)
+            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
             {
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
@@ -154,7 +154,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
         {
-            if (__result && Mashed_Ashlands_ModSettings.TheAshlands_OnlySowOnAsh)
+            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
             {
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
