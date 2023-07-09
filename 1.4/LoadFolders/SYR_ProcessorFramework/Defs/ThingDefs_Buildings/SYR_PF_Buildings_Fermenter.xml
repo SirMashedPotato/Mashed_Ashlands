@@ -5,6 +5,7 @@
 		<defName>Mashed_Ashlands_AshlandFermentingBarrel_SYR</defName>
 		<label>ashland fermenting barrel (SYR)</label>
 		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<DrawerType>MapMeshAndRealTime</DrawerType>
 		<comps>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>25</capacity>
