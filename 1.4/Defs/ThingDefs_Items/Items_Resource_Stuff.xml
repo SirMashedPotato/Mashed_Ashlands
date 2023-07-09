@@ -127,7 +127,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Mashed_Ashlands_ChitinPlate</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(85,72,57)</color>
+			<color>(139,119,85)</color>
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
@@ -160,7 +160,7 @@
 			</categories>
 			<commonality>0</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<color>(85,72,57)</color>
+			<color>(139,119,85)</color>
 			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
