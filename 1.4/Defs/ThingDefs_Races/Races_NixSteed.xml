@@ -130,7 +130,7 @@
 			<li>
 				<label>nix-steed foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedCalf</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
 					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -138,13 +138,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -152,7 +152,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
 					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -160,17 +160,17 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>1.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -178,7 +178,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
 					<drawSize>1.9</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -186,11 +186,11 @@
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>1.9</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
