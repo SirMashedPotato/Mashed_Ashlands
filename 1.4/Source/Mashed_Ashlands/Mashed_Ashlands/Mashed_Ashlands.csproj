@@ -90,6 +90,7 @@
     <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\LetterDefOf.cs" />
+    <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Harmony\WildAnimalSpawner.cs" />
     <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
     <Compile Include="Jobs\JobDriver\JobDriver_BuildAshCastle.cs" />
     <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
     <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />

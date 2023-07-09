@@ -66,18 +66,18 @@
 		<label>cliff racer egg (fert.)</label>
 		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
-		  <color>(109,111,109)</color>
-		  <drawSize>1.0</drawSize>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<statBases>
-		  <MarketValue>15</MarketValue>
+			<MarketValue>15</MarketValue>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Hatcher">
-			<hatcherDaystoHatch>1</hatcherDaystoHatch>
-			<hatcherPawn>Mashed_Ashlands_CliffRacer</hatcherPawn>
-		  </li>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_CliffRacer</hatcherPawn>
+			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabFertilized]==========-->
@@ -106,18 +106,18 @@
 		<label>durzog egg (fert.)</label>
 		<description>A fertilised durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-		  <color>(138,124,109)</color>
-		  <drawSize>1.2</drawSize>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-		  <MarketValue>19.0</MarketValue>
+			<MarketValue>19.0</MarketValue>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Hatcher">
-			<hatcherDaystoHatch>5</hatcherDaystoHatch>
-			<hatcherPawn>Mashed_Ashlands_Durzog</hatcherPawn>
-		  </li>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Durzog</hatcherPawn>
+			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
@@ -335,6 +335,31 @@
 				<hatcherPawn>Mashed_Ashlands_ShalkFungal</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_SiltStriderFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_SiltStriderFertilized</defName>
+		<label>silt strider egg (fert.)</label>
+		<description>A fertilised silt strider egg. If all goes well, it should hatch into a silt strider nymph. While it could be cooked, it is far more valuable in its current form.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_StriderEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(90,80,80)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_SiltStrider</hatcherPawn>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">

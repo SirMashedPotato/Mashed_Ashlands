@@ -32,4 +32,15 @@
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_InsectArm]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_InsectArm</defName>
+		<label>arm</label>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
 </Defs>

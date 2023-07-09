@@ -119,4 +119,57 @@
 		</thingCategories>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_StriderChitin]==========-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_StriderChitin</defName>
+		<label>strider chitin</label>
+		<description>Tough chitin plates harvested from a large strider. Sturdy enough to be used as a building material, but also relatively light.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_ChitinPlate</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(85,72,57)</color>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>2.4</MarketValue>
+			<Mass>0.3</Mass>
+			<StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0.001</deepCommonality>
+		<deepCountPerPortion>35</deepCountPerPortion>
+		<deepLumpSizeRange>20~40</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+				<li>Woody</li>
+				<li>Metallic</li>
+			</categories>
+			<commonality>0</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(85,72,57)</color>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0.2</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
 </Defs>

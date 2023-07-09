@@ -14,5 +14,6 @@ namespace Mashed_Ashlands
         public static ThingDef Mashed_Ashlands_VolcanicDebris;
         public static ThingDef Mashed_Ashlands_VolcanicDebrisIncoming;
         public static ThingDef Mashed_Ashlands_AshCastle;
+        public static ThingDef Mashed_Ashlands_SiltStrider;
     }
 }
