@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshHopperThingBase]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_AshHopperThingBase" Abstract="True">
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<FilthRate>1</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+			<label>mandibles</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		  </li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Mashed_Ashlands_InsectScribLike</body>
+			<useMeatFrom IsNull="True"/>
+			<specificMeatDef>Mashed_Ashlands_AshHopperJelly</specificMeatDef>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHungerRate>0.10</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.8</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>7</lifeExpectancy>
+			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_AshHopper]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_AshHopperThingBase">
+		<defName>Mashed_Ashlands_AshHopper</defName>
+		<label>ash hopper</label>
+		<description>A large insect often found throughout ashland regions. Some farm ash hoppers for the nourishing jelly produced by crushing their corpses, others raise them as pets.\n\nOften mistaken for a kwama scrib. Ash hopper are significantly faster, with powerful hind legs than can rapidly propel themselves forwards. And while they don't produce paralytic venom, their bite is somewhat painful.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_AshHopperFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_AshHopper</defName>
+		<label>ash hopper</label>
+		<race>Mashed_Ashlands_AshHopper</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -30,6 +30,25 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperFertilized</defName>
+		<label>ash hopper egg (fert.)</label>
+		<description>A fertilised ash hopper egg. If all goes well, it should hatch into an ash hopper nymph. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(121,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_AshHopper</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
