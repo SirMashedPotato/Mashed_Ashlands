@@ -155,6 +155,7 @@
 			<Mashed_Ashlands_BantamGuar>0.2</Mashed_Ashlands_BantamGuar>
 			<Mashed_Ashlands_Scuttler>0.2</Mashed_Ashlands_Scuttler>
 			<Mashed_Ashlands_Vvardvark>0.2</Mashed_Ashlands_Vvardvark>
+			<Mashed_Ashlands_AshHopper>0.1</Mashed_Ashlands_AshHopper>
 			<!-- herd animals -->
 			<Mashed_Ashlands_Shalk>0.6</Mashed_Ashlands_Shalk>
 			<Mashed_Ashlands_ShalkFungal>0.1</Mashed_Ashlands_ShalkFungal>
@@ -181,9 +182,11 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
+			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_AshHopperGlowing>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_ShalkGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NixOxGlowing>
+			<Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NixSteedGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>

@@ -224,7 +224,7 @@
 		<label>nix-hound egg (fert.)</label>
 		<description>A fertilised nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
-			<color>(79,108,94)</color>
+			<color>(108,94,94)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -263,7 +263,7 @@
 		<label>nix-steed egg (fert.)</label>
 		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
-			<color>(94,108,79)</color>
+			<color>(108,79,94)</color>
 			<drawSize>1.4</drawSize>
 		</graphicData>
 		<statBases>

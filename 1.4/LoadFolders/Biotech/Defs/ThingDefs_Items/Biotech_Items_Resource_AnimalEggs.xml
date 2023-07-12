@@ -1,6 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperGlowingFertilized</defName>
+		<label>glowing ash hopper egg (fert.)</label>
+		<description>A fertilised glowing ash hopper egg. If all goes well, it should hatch into an ash hopper nymph. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,121,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_AshHopperGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_CoralcrabGlowingFertilized</defName>
 		<label>glowing coralcrab egg (fert.)</label>
@@ -45,7 +64,7 @@
 		<label>glowing nix-hound egg (fert.)</label>
 		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
-			<color>(94,108,79)</color>
+			<color>(94,108,94)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -75,6 +94,25 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_NixOxGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedGlowingFertilized</defName>
+		<label>glowing nix-steed egg (fert.)</label>
+		<description>A fertilised glowing nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(79,108,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixSteedGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

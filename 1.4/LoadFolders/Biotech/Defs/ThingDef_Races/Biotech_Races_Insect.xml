@@ -1,5 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_AshHopperGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_AshHopperThingBase">
+		<defName>Mashed_Ashlands_AshHopperGlowing</defName>
+		<label>glowing ash hopper</label>
+		<description>A subspecies of ash hopper that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow noticeably larger than their cousins. Even with their increased size, glowing ash hopper are relatively docile, though they can move just as fast when needed.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing ash hopper can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MarketValue>130</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_AshHopperGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<baseBodySize>0.5</baseBodySize>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_AshHopperGlowing</defName>
+		<label>glowing ash hopper</label>
+		<race>Mashed_Ashlands_AshHopperGlowing</race>
+		<combatPower>55</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_NixHoundGlowing]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_NixHoundThingBase">
 		<defName>Mashed_Ashlands_NixHoundGlowing</defName>
@@ -255,6 +325,112 @@
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_NixSteedGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
+		<label>glowing nix-steed</label>
+		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing ash hopper can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NixSteedGlowing" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
+		<label>glowing nix-steed</label>
+		<labelMale>glowing nix-steed stallion</labelMale>
+		<labelFemale>glowing nix-steed mare</labelFemale>
+		<race>Mashed_Ashlands_NixSteedGlowing</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.8</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>glowing nix-steed foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
 					<drawSize>1.9</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>

@@ -124,7 +124,7 @@
 		<labelFemale>nix-steed mare</labelFemale>
 		<race>Mashed_Ashlands_NixSteed</race>
 		<combatPower>100</combatPower>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>1</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
 		<lifeStages>
 			<li>

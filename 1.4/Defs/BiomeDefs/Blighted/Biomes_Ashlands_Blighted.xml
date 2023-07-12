@@ -133,6 +133,7 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
+			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_AshHopperGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>
