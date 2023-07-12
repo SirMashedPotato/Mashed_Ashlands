@@ -2,6 +2,13 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>	<!-- breaks my plant stuff if enabled, cba fixing it atm -->
+			</li>
+		</modExtensions>
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<forageability>0.75</forageability>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
-    class PlantProperties : DefModExtension
+    public class PlantProperties : DefModExtension
     {
         public bool ashlandCavePlant = false;
         public float cavePlantCommonality = 0.5f;
