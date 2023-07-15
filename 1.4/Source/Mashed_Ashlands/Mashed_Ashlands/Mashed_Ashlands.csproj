@@ -89,6 +89,7 @@
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
@@ -109,7 +110,10 @@
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
     <Compile Include="Jobs\JobDriver\JobDriver_BuildAshCastle.cs" />
+    <Compile Include="Jobs\JobDriver\JobDriver_FeedFromAshlandFlower.cs" />
+    <Compile Include="Jobs\JobGiver\JobGiver_FeedFromAshlandFlower.cs" />
     <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
+    <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalAshlandFlowerFeeding.cs" />
     <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />
     <Compile Include="Settings\Mashed_Ashlands_ModSettings.cs" />
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
@@ -156,9 +160,7 @@
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Jobs\JobGiver\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

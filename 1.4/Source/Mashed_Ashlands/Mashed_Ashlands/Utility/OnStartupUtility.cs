@@ -17,11 +17,12 @@ namespace Mashed_Ashlands
         public static HashSet<BiomeDef> modifiedPollutionFertilityBiomes = new HashSet<BiomeDef> { };
 
         public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
+        public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
 
         static OnStartupUtility()
         {
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
-            FillCavePlantList(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
+            FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
             EditRockTerrain();
         }
 
@@ -60,14 +61,21 @@ namespace Mashed_Ashlands
             }
         }
 
-        public static void FillCavePlantList(List<ThingDef> plantDefs)
+        public static void FillPlantLists(List<ThingDef> plantDefs)
         {
             foreach(ThingDef thingDef in plantDefs)
             {
                 PlantProperties props = PlantProperties.Get(thingDef);
-                if (props != null && props.ashlandCavePlant)
+                if (props != null)
                 {
-                    ashlandCavePlants.Add(thingDef);
+                    if (props.ashlandCavePlant)
+                    {
+                        ashlandCavePlants.Add(thingDef);
+                    }
+                    if (props.ashlandFlowerPlant)
+                    {
+                        ashlandFlowerPlants.Add(thingDef);
+                    }
                 }
             }
         }

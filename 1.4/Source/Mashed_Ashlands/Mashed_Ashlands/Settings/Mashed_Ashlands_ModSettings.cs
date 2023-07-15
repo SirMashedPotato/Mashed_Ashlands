@@ -10,6 +10,7 @@ namespace Mashed_Ashlands
         //general
         public static bool OnlySowOnAsh => _instance.Mashed_Ashlands_OnlySowOnAsh;
         public static bool BaseAshResistance => _instance.Mashed_Ashlands_BaseAshResistance;
+        public static bool FlowerFeeding => _instance.Mashed_Ashlands_FlowerFeeding;
 
         //world gen
         public static bool EnableDormantVolcano => _instance.Mashed_Ashlands_EnableDormantVolcano;
@@ -93,6 +94,7 @@ namespace Mashed_Ashlands
         //general
         public bool Mashed_Ashlands_OnlySowOnAsh = Mashed_Ashlands_OnlySowOnAsh_def;
         public bool Mashed_Ashlands_BaseAshResistance = Mashed_Ashlands_BaseAshResistance_def;
+        public bool Mashed_Ashlands_FlowerFeeding = Mashed_Ashlands_FlowerFeeding_def;
 
         //world gen
 
@@ -175,6 +177,7 @@ namespace Mashed_Ashlands
         //general
         private static readonly bool Mashed_Ashlands_OnlySowOnAsh_def = true;
         private static readonly bool Mashed_Ashlands_BaseAshResistance_def = true;
+        private static readonly bool Mashed_Ashlands_FlowerFeeding_def = true;
 
         //world gen
 
@@ -265,6 +268,7 @@ namespace Mashed_Ashlands
             //general
             Scribe_Values.Look(ref Mashed_Ashlands_OnlySowOnAsh, "Mashed_Ashlands_OnlySowOnAsh", Mashed_Ashlands_OnlySowOnAsh_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BaseAshResistance, "Mashed_Ashlands_BaseAshResistance", Mashed_Ashlands_BaseAshResistance_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_FlowerFeeding, "Mashed_Ashlands_FlowerFeeding", Mashed_Ashlands_FlowerFeeding_def);
 
             //world gen
             Scribe_Values.Look(ref Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano", Mashed_Ashlands_EnableDormantVolcano_def);
@@ -360,6 +364,7 @@ namespace Mashed_Ashlands
         {
             _instance.Mashed_Ashlands_OnlySowOnAsh = Mashed_Ashlands_OnlySowOnAsh_def;
             _instance.Mashed_Ashlands_BaseAshResistance = Mashed_Ashlands_BaseAshResistance_def;
+            _instance.Mashed_Ashlands_FlowerFeeding = Mashed_Ashlands_FlowerFeeding_def;
         }
 
         public static void ResetSettings_WorldGen()

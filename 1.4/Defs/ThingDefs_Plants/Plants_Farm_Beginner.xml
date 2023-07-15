@@ -217,6 +217,7 @@
 		<description>A coarse grass often found growing near water in ashland regions. Often farmed for its fiber, which can be woven into a durable cloth. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>

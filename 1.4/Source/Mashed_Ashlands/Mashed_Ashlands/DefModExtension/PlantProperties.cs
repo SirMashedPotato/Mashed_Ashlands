@@ -6,6 +6,7 @@ namespace Mashed_Ashlands
     public class PlantProperties : DefModExtension
     {
         public bool ashlandCavePlant = false;
+        public bool ashlandFlowerPlant = false;
         public float cavePlantCommonality = 0.5f;
 
         public ThingDef secondaryDrop = null;
