@@ -6,7 +6,6 @@ namespace Mashed_Ashlands
 {
     public class ThinkNode_ConditionalAshlandFlowerFeeding : ThinkNode_Conditional
     {
-        //todo potential setting to disable
         protected override bool Satisfied(Pawn pawn)
         {
             return Mashed_Ashlands_ModSettings.FlowerFeeding && animalDefs.Contains(pawn.def);

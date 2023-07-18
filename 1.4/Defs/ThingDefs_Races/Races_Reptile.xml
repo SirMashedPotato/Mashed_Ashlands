@@ -357,7 +357,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<label>cliff racer</label>
-		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.</description>
+		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.\n\nUnder currently unknown circumstances, a cliff racer is able to produce fertile eggs asexually. These individuals are best dealt with immediately.</description>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
 			<MarketValue>350</MarketValue>
@@ -421,7 +421,7 @@
 			</li>
 		</comps>
 		<race>
-			<!--<deathActionWorkerClass>MorrowRim.DeathActionWorker_CliffRacer</deathActionWorkerClass>-->
+			<deathActionWorkerClass>Mashed_Ashlands.DeathActionWorker_CliffRacer</deathActionWorkerClass>
 			<body>Mashed_Ashlands_FlyingHellSpawn</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -476,11 +476,11 @@
 				<label>cliff racer spawn</label>
 				<labelPlural>cliff racer spawn</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_CliffRacer</texPath>
 					<drawSize>1.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_CliffRacer</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_Dessicated_CliffRacer</texPath>
 					<drawSize>1.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

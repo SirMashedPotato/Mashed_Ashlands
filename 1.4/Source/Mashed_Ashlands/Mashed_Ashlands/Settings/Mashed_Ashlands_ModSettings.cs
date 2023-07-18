@@ -60,6 +60,9 @@ namespace Mashed_Ashlands
 
         public static bool VolcanoEnableCategoryChange => _instance.Mashed_Ashlands_VolcanoEnableCategoryChange;
 
+        //cliff racer
+        public static bool EnableCliffRacerExtinction => true;
+
         //ash storm
         public static bool AshStormCauseBuildup => _instance.Mashed_Ashlands_AshStormCauseBuildup;
         public static bool AshStormAffectsCaravan => _instance.Mashed_Ashlands_AshStormAffectsCaravan;

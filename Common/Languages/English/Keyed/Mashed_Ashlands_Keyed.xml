@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<!-- ==========[Cliff racer extinction]==========-->
+	<Mashed_Ashlands_CliffRacerExtinction_Label>The Winged Menace no more!</Mashed_Ashlands_CliffRacerExtinction_Label>
+	<Mashed_Ashlands_CliffRacerExtinction_Description>As yet another cliff racer falls to the ground, now rendered nothing more than a lifeless corpse, everything grows oddly silent. The cacophony of wails can no longer be heard. The chorus of screams no longer fills the air. All that is left, is silence.\n\nThe wild cliff racer population has been diminished to the point of no return, the stragglers will be easily dealt with. The Winged Menace is no more.\n\nCongratulations, Saint.</Mashed_Ashlands_CliffRacerExtinction_Description>
+	<!-- ==========[Cliff racer return]==========-->
+	<Mashed_Ashlands_CliffRacerReturn_Label>The Winged Menace returns!</Mashed_Ashlands_CliffRacerReturn_Label>
+	<Mashed_Ashlands_CliffRacerReturn_Description>Some complete psychopath has taken it upon themselves to reintroduce the, formerly extinct, cliff racer back into the wild. Swarms have been sighted in the skies, and their calls haunt the dreams of travellers.\n\nThe reintroduction has resulted in a massive population boom, which will only grow over time if left unchecked.</Mashed_Ashlands_CliffRacerReturn_Description>
 	<!-- ==========[Volcanos]==========-->
 	<Mashed_Ashlands_VolcanoDescription>Category {0} {1}\nMaximum affected radius of {2} tiles\nRecorded incidents: {3}\nLast incident: {4}</Mashed_Ashlands_VolcanoDescription>
 	<Mashed_Ashlands_VolcanoDescriptionRange>\nThis volcano can cause incidents up to category {0} in scale.\nThe expected area affected by a category {0} incident is {1} tiles in radius.</Mashed_Ashlands_VolcanoDescriptionRange>
