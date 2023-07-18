@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using Verse;
 using RimWorld.Planet;
 
 namespace Mashed_Ashlands
@@ -29,6 +27,15 @@ namespace Mashed_Ashlands
             {
                 world.GetComponent<WorldComp_CliffRacerTracker>().ModifyProgress(change, source);
             }
+        }
+
+        public static int WildPopulation()
+        {
+            if (GetWorld(out World world))
+            {
+                return world.GetComponent<WorldComp_CliffRacerTracker>().WildPopulation;
+            }
+            return 0;
         }
     }
 }

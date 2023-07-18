@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<!-- ==========[Cliff racer alert]==========-->
+	<Mashed_Ashlands_AlertCliffRacerTracker>Cliff racer extinction</Mashed_Ashlands_AlertCliffRacerTracker>
+	<Mashed_Ashlands_AlertCliffRacerTracker_Description>The Winged Menace, a seemingly endless swarm of cliff racers, a blight upon the ashlands. Anyone who helps further their extinction will be remembered as a Saint.\n\nKilling, or taming, wild cliff racers will push them further to extinction. However allowing wild eggs to hatch, or releasing cliff racers into the wild, will instead bolster their numbers even more.\n\nApproximate wild cliff racers remaining: {0}</Mashed_Ashlands_AlertCliffRacerTracker_Description>
 	<!-- ==========[Cliff racer extinction]==========-->
 	<Mashed_Ashlands_CliffRacerExtinction_Label>The Winged Menace no more!</Mashed_Ashlands_CliffRacerExtinction_Label>
 	<Mashed_Ashlands_CliffRacerExtinction_Description>As yet another cliff racer falls to the ground, now rendered nothing more than a lifeless corpse, everything grows oddly silent. The cacophony of wails can no longer be heard. The chorus of screams no longer fills the air. All that is left, is silence.\n\nThe wild cliff racer population has been diminished to the point of no return, the stragglers will be easily dealt with. The Winged Menace is no more.\n\nCongratulations, Saint.</Mashed_Ashlands_CliffRacerExtinction_Description>

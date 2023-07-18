@@ -62,6 +62,7 @@ namespace Mashed_Ashlands
 
         //cliff racer
         public static bool EnableCliffRacerExtinction => true;
+        public static bool EnableCliffRacerExtinctionAlert => true;
 
         //ash storm
         public static bool AshStormCauseBuildup => _instance.Mashed_Ashlands_AshStormCauseBuildup;
