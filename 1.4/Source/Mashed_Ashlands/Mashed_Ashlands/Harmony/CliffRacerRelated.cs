@@ -37,4 +37,21 @@ namespace Mashed_Ashlands
             }
         }
     }
+
+    [HarmonyPatch(typeof(RecruitUtility))]
+    [HarmonyPatch("Recruit")]
+    public static class InteractionWorker_RecruitAttempt_DoRecruit_Patch
+    {
+        [HarmonyPostfix]
+        public static void Mashed_Ashlands_TameAnimal_Patch(Pawn pawn)
+        {
+            if (Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction)
+            {
+                if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer)
+                {
+                    CliffRacerTrackerUtility.ModifyProgress(-1);
+                }
+            }
+        }
+    }
 }
