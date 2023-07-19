@@ -54,4 +54,21 @@ namespace Mashed_Ashlands
             }
         }
     }
+
+    /// <summary>
+    /// Used as it affects both normal and polluted animals
+    /// </summary>
+    [HarmonyPatch(typeof(WildAnimalSpawner))]
+    [HarmonyPatch("CommonalityOfAnimalNow")]
+    public static class WildAnimalSpawner_CommonalityOfAnimalNow_Patch
+    {
+        [HarmonyPostfix]
+        public static void Mashed_Ashlands_CliffRacerCommonality_Patch(PawnKindDef def, ref float __result)
+        {
+            if (def.race == ThingDefOf.Mashed_Ashlands_CliffRacer && Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction && CliffRacerTrackerUtility.ExtinctionReached())
+            {
+                __result = 0;
+            }
+        }
+    }
 }
