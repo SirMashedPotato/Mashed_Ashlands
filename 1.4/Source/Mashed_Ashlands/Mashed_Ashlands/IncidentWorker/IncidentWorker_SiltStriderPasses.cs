@@ -10,7 +10,7 @@ namespace Mashed_Ashlands
 			Map map = (Map)parms.target;
             return !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.ToxicFallout)
                 && (!ModsConfig.BiotechActive || !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.NoxiousHaze))
-                && map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.Mashed_Ashlands_SiltStrider) && TryFindEntryCell(map, out IntVec3 intVec);
+                && map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.Mashed_Ashlands_SiltStrider) && TryFindEntryCell(map, out _);
         }
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
@@ -20,17 +20,15 @@ namespace Mashed_Ashlands
 			{
 				return false;
 			}
-			PawnKindDef strider = PawnKindDefOf.Mashed_Ashlands_SiltStrider;
 			int stayTicks = Rand.RangeInclusive(90000, 150000);
-			IntVec3 invalid = IntVec3.Invalid;
-			if (!RCellFinder.TryFindRandomCellOutsideColonyNearTheCenterOfTheMap(intVec, map, 10f, out invalid))
-			{
-				invalid = IntVec3.Invalid;
-			}
-			Pawn pawn = null;
+            if (!RCellFinder.TryFindRandomCellOutsideColonyNearTheCenterOfTheMap(intVec, map, 10f, out IntVec3 invalid))
+            {
+                invalid = IntVec3.Invalid;
+            }
+            Pawn pawn = null;
 
 			IntVec3 loc = CellFinder.RandomClosewalkCellNear(intVec, map, 10, null);
-			pawn = PawnGenerator.GeneratePawn(strider, null);
+			pawn = PawnGenerator.GeneratePawn(PawnKindDefOf.Mashed_Ashlands_SiltStrider, null);
 			GenSpawn.Spawn(pawn, loc, map, Rot4.Random, WipeMode.Vanish, false);
 			pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + stayTicks;
 			if (invalid.IsValid)

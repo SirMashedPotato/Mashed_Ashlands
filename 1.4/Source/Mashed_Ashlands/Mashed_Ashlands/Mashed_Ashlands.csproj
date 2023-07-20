@@ -111,6 +111,7 @@
     <Compile Include="Harmony\WildAnimalSpawner.cs" />
     <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
     <Compile Include="Jobs\JobDriver\JobDriver_BuildAshCastle.cs" />
     <Compile Include="Jobs\JobDriver\JobDriver_FeedFromAshlandFlower.cs" />
