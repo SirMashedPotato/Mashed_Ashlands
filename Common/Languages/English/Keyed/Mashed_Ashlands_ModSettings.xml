@@ -10,7 +10,7 @@
 	<Mashed_Ashlands_OnlySowOnAsh>Certain plants can only be sown on ash terrain.</Mashed_Ashlands_OnlySowOnAsh>
 	<Mashed_Ashlands_BaseAshResistance>Enable a base 50% ash resistance for all apparel that covers the full head.</Mashed_Ashlands_BaseAshResistance>
 	<Mashed_Ashlands_FlowerFeeding>Enable certain animals feeding from ashland flowers.</Mashed_Ashlands_FlowerFeeding>
-	<!-- ==========[World Gen 1]==========-->
+	<!-- ==========[World Gen]==========-->
 	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>
 	<!-- dormant volcano -->
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
@@ -65,17 +65,29 @@
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</Mashed_Ashlands_EnableExclusiveRocks>
 	<Mashed_Ashlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</Mashed_Ashlands_EnableExclusiveRocks_Tooltip>
-	<!-- ==========[Volcano]==========-->
-	<Mashed_Ashlands_PageVolcano>Volcano Settings</Mashed_Ashlands_PageVolcano>
-	<!-- distances -->
+	<!-- ==========[Incidents]==========-->
+	<Mashed_Ashlands_PageIncident>Incident &amp; Event Settings</Mashed_Ashlands_PageIncident>
+	<!-- Volcano related -->
 	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>
 	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMaxAffectedArea>
 	<Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>
 	<Mashed_Ashlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</Mashed_Ashlands_VolcanoEnablePermanentConditions>
 	<Mashed_Ashlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</Mashed_Ashlands_VolcanoEnableRandomConditions>
-	<!-- incidents -->
 	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the volcano category change incident.</Mashed_Ashlands_VolcanoEnableCategoryChange>
+	<!-- Cliff racer related -->
+	<Mashed_Ashlands_CliffRacerEnableExtinction>Enable wild cliff racer extinction.</Mashed_Ashlands_CliffRacerEnableExtinction>
+	<Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>Wild cliff racers will become extinct once a certain number of them have been either killed, or tamed.</Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableTracker>Enable the cliff racer tracker alert.</Mashed_Ashlands_CliffRacerEnableTracker>
+	<Mashed_Ashlands_CliffRacerWildPopulation>The initial number of wild cliff racers: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerWildPopulation>
+	<Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>Changes to this will not take effect mid-save.</Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturn>Enable wild cliff racer return.</Mashed_Ashlands_CliffRacerEnableReturn>
+	<Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>Wild cliff racers will return from extinction once a certain number of them have been released into the wild.</Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturnThreshold>The minimum number of wild cliff racers before they return: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerEnableReturnThreshold>
+	<Mashed_Ashlands_CliffRacerEnableSwarm>Enable the cliff racer swarm incident.</Mashed_Ashlands_CliffRacerEnableSwarm>
+	<Mashed_Ashlands_CliffRacerSwarmMinSize>The minimum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMinSize>
+	<Mashed_Ashlands_CliffRacerSwarmMaxSize>The maximum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMaxSize>
+	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer has the asexual reproduction mutation: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
 	<!-- ==========[Ash storm]==========-->
 	<Mashed_Ashlands_PageAshStorm>Ash storm Settings</Mashed_Ashlands_PageAshStorm>
 	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>

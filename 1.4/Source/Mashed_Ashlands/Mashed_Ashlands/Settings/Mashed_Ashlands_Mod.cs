@@ -38,14 +38,15 @@ namespace Mashed_Ashlands
                     listing_Standard = SettingsPage_WorldGen(listing_Standard);
                     break;
                 case 2:
-                    listing_Standard = SettingsPage_Volcano(listing_Standard);
+                    listing_Standard = SettingsPage_Biome(listing_Standard);
                     break;
                 case 3:
                     listing_Standard = SettingsPage_AshStorm(listing_Standard);
                     break;
                 case 4:
-                    listing_Standard = SettingsPage_Biome(listing_Standard);
+                    listing_Standard = SettingsPage_Incidents(listing_Standard);
                     break;
+               
 
                 default:
                     listing_Standard = SettingsPage_General(listing_Standard);
@@ -88,9 +89,9 @@ namespace Mashed_Ashlands
             }
             listing_Standard.Gap();
 
-            Rect rectPageVolcano = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageVolcano, "Mashed_Ashlands_PageVolcano".Translate());
-            if (Widgets.ButtonText(rectPageVolcano, "Mashed_Ashlands_PageVolcano".Translate(), true, true, true))
+            Rect rectPageBiome = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate());
+            if (Widgets.ButtonText(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate(), true, true, true))
             {
                 page = 2;
             }
@@ -104,9 +105,9 @@ namespace Mashed_Ashlands
             }
             listing_Standard.Gap();
 
-            Rect rectPageBiome = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate());
-            if (Widgets.ButtonText(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate(), true, true, true))
+            Rect rectPageIncident = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate());
+            if (Widgets.ButtonText(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate(), true, true, true))
             {
                 page = 4;
             }
@@ -155,10 +156,10 @@ namespace Mashed_Ashlands
 
                 case 2:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageVolcano".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
                     {
-                        Mashed_Ashlands_ModSettings.ResetSettings_Volcano();
+                        Mashed_Ashlands_ModSettings.ResetSettings_Biome();
                     }
                     break;
 
@@ -173,10 +174,10 @@ namespace Mashed_Ashlands
 
                 case 4:
                     listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()), true, true, true))
                     {
-                        Mashed_Ashlands_ModSettings.ResetSettings_Biome();
+                        Mashed_Ashlands_ModSettings.ResetSettings_Incident();
                     }
                     break;
 
@@ -327,9 +328,9 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_Volcano(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_Incidents(Listing_Standard listing_Standard)
         {
-            listing_Standard.Label("Mashed_Ashlands_PageVolcano".Translate());
+            listing_Standard.Label("Mashed_Ashlands_PageIncident".Translate());
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
@@ -339,20 +340,50 @@ namespace Mashed_Ashlands
             listing_Standard.Label("Mashed_Ashlands_VolcanoMaxAffectedArea".Translate(settings.Mashed_Ashlands_VolcanoMaxAffectedArea), -1, "Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip".Translate());
             settings.Mashed_Ashlands_VolcanoMaxAffectedArea = (int)listing_Standard.Slider(settings.Mashed_Ashlands_VolcanoMaxAffectedArea, 1, 200);
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnablePermanentConditions".Translate(), ref settings.Mashed_Ashlands_VolcanoEnablePermanentConditions);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnableRandomConditions".Translate(), ref settings.Mashed_Ashlands_VolcanoEnableRandomConditions);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnableCategoryChange".Translate(), ref settings.Mashed_Ashlands_VolcanoEnableCategoryChange);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnableCategoryChange".Translate(), ref settings.Mashed_Ashlands_VolcanoEnableCategoryChange);
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_CliffRacerEnableExtinction".Translate(), ref settings.Mashed_Ashlands_CliffRacerEnableExtinction, "Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip".Translate());
             listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_CliffRacerEnableTracker".Translate(), ref settings.Mashed_Ashlands_CliffRacerEnableTracker);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_CliffRacerWildPopulation".Translate(settings.Mashed_Ashlands_CliffRacerWildPopulation.ToString("N0")), -1f, "Mashed_Ashlands_CliffRacerWildPopulation_Tooltip".Translate());
+            settings.Mashed_Ashlands_CliffRacerWildPopulation = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_CliffRacerWildPopulation, 0, 1000000) / 1000) * 1000;
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_CliffRacerEnableReturn".Translate(), ref settings.Mashed_Ashlands_CliffRacerEnableReturn, "Mashed_Ashlands_CliffRacerEnableReturn_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_CliffRacerEnableReturnThreshold".Translate(settings.Mashed_Ashlands_CliffRacerEnableReturnThreshold.ToString("N0")));
+            settings.Mashed_Ashlands_CliffRacerEnableReturnThreshold = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_CliffRacerEnableReturnThreshold, 10, 10000) / 10) * 10;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_CliffRacerEnableSwarm".Translate(), ref settings.Mashed_Ashlands_CliffRacerEnableSwarm);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_CliffRacerSwarmMinSize".Translate(settings.Mashed_Ashlands_CliffRacerSwarmMinSize));
+            settings.Mashed_Ashlands_CliffRacerSwarmMinSize = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_CliffRacerSwarmMinSize, 1, settings.Mashed_Ashlands_CliffRacerSwarmMaxSize));
+
+            listing_Standard.Label("Mashed_Ashlands_CliffRacerSwarmMaxSize".Translate(settings.Mashed_Ashlands_CliffRacerSwarmMaxSize));
+            settings.Mashed_Ashlands_CliffRacerSwarmMaxSize = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_CliffRacerSwarmMaxSize, settings.Mashed_Ashlands_CliffRacerSwarmMinSize, 200));
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_CliffRacerMutantChance".Translate(settings.Mashed_Ashlands_CliffRacerMutantChance * 100), -1);
+            settings.Mashed_Ashlands_CliffRacerMutantChance = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_CliffRacerMutantChance, 0f, 1f) * 20) / 20;
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

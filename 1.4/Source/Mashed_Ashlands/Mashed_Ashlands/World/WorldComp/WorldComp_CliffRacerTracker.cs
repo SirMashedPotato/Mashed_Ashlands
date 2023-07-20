@@ -7,8 +7,11 @@ namespace Mashed_Ashlands
     {
         public WorldComp_CliffRacerTracker(World world) : base(world)
         {
-            Log.Message("WorldComp_CliffRacerTracker init");
-            wildPopulation = initialNum;
+            if (wildPopulation == -1)
+            { 
+                Log.Message("WorldComp_CliffRacerTracker init");
+                wildPopulation = Mashed_Ashlands_ModSettings.CliffRacerWildPopulation;
+            }
         }
 
         public int WildPopulation => wildPopulation;
@@ -23,13 +26,18 @@ namespace Mashed_Ashlands
 
         public void ModifyProgress(int change, Thing source = null)
         {
-            wildPopulation += change;
             if (change < 0)
             {
-                IncrementDeaths(source);
+                ///Don't want it going negative
+                if (wildPopulation > 0)
+                {
+                    wildPopulation += change;
+                    IncrementDeaths(source);
+                }
             } 
             else
             {
+                wildPopulation += change;
                 IncrementAlive(source);
             }
         }
@@ -60,12 +68,10 @@ namespace Mashed_Ashlands
 
         public bool ReturnCheck()
         {
-            return wildPopulation >= returnThreshold;
+            return Mashed_Ashlands_ModSettings.CliffRacerEnableReturn && wildPopulation >= Mashed_Ashlands_ModSettings.CliffRacerEnableReturnThreshold;
         }
 
         private bool extinct = false;
-        private int wildPopulation;
-        public int initialNum = 1000;    //todo switch to setting
-        public int returnThreshold = 20; //todo switch to setting
+        private int wildPopulation = -1;
     }
 }

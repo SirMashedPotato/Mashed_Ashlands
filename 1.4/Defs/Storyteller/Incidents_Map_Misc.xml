@@ -42,6 +42,6 @@
 		<letterText>A large swarm of {0} cliff racers has entered the area, and doesn't seem to be going anywhere anytime soon. It may be best to deal with them quickly, as they could affect the balance of the ecosystem... or of your colony.</letterText>
 		<letterDef>ThreatSmall</letterDef>
 		<baseChance>1</baseChance>
-		<minRefireDays>20</minRefireDays>
+		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
 </Defs>

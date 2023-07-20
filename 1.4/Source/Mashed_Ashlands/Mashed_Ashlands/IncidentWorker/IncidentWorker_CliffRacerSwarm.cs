@@ -10,7 +10,8 @@ namespace Mashed_Ashlands
         protected override bool CanFireNowSub(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-			return (!Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction || !CliffRacerTrackerUtility.ExtinctionReached())
+			return Mashed_Ashlands_ModSettings.CliffRacerEnableSwarm 
+				&& (!Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction || !CliffRacerTrackerUtility.ExtinctionReached())
 				&& !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.ToxicFallout)
                 && (!ModsConfig.BiotechActive || !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.NoxiousHaze))
 				&& map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.Mashed_Ashlands_CliffRacer) && TryFindEntryCell(map, out _);
@@ -26,7 +27,7 @@ namespace Mashed_Ashlands
 
 			float freeColonistsCount = map.mapPawns.FreeColonistsCount;
 			float randomInRange = CountPerColonistRange.RandomInRange;
-			int num = Mathf.Clamp(GenMath.RoundRandom(freeColonistsCount * randomInRange), MinCount, MaxCount);
+			int num = Mathf.Clamp(GenMath.RoundRandom(freeColonistsCount * randomInRange), Mashed_Ashlands_ModSettings.CliffRacerSwarmMinSize, Mashed_Ashlands_ModSettings.CliffRacerSwarmMaxSize);
 			List<Pawn> cliffRacers = new List<Pawn> { };
 
 			for (int i = 0; i < num; i++)
@@ -46,9 +47,6 @@ namespace Mashed_Ashlands
 			return RCellFinder.TryFindRandomPawnEntryCell(out cell, map, CellFinder.EdgeRoadChance_Animal + 0.2f, false, null);
 		}
 
-		//TODO potential settings
 		private static readonly FloatRange CountPerColonistRange = new FloatRange(1f, 3f);
-		private const int MinCount = 5;
-		private const int MaxCount = 30;
 	}
 }

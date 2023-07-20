@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
     {
         public override void PawnDied(Corpse corpse)
         {
-            if (corpse.InnerPawn.Faction == null && Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction)
+            if (corpse.InnerPawn.Faction == null && Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction)
             {
                 CliffRacerTrackerUtility.ModifyProgress(-1, corpse);
             }

@@ -13,15 +13,15 @@ namespace Mashed_Ashlands
 
         public override AlertReport GetReport()
         {
-            return Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction 
-                && Mashed_Ashlands_ModSettings.EnableCliffRacerExtinctionAlert
+            return Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction 
+                && Mashed_Ashlands_ModSettings.CliffRacerEnableTracker
                 && !CliffRacerTrackerUtility.ExtinctionReached()
                 ? AlertReport.Active : AlertReport.Inactive;
         }
 
         public override TaggedString GetExplanation()
         {
-            return "Mashed_Ashlands_AlertCliffRacerTracker_Description".Translate(CliffRacerTrackerUtility.WildPopulation());
+            return "Mashed_Ashlands_AlertCliffRacerTracker_Description".Translate(CliffRacerTrackerUtility.WildPopulation().ToString("N0"));
         }
     }
 }

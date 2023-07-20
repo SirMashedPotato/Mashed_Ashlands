@@ -61,8 +61,15 @@ namespace Mashed_Ashlands
         public static bool VolcanoEnableCategoryChange => _instance.Mashed_Ashlands_VolcanoEnableCategoryChange;
 
         //cliff racer
-        public static bool EnableCliffRacerExtinction => true;
-        public static bool EnableCliffRacerExtinctionAlert => true;
+        public static bool CliffRacerEnableExtinction => _instance.Mashed_Ashlands_CliffRacerEnableExtinction;
+        public static bool CliffRacerEnableTracker => _instance.Mashed_Ashlands_CliffRacerEnableTracker;
+        public static int CliffRacerWildPopulation => _instance.Mashed_Ashlands_CliffRacerWildPopulation;
+        public static bool CliffRacerEnableReturn => _instance.Mashed_Ashlands_CliffRacerEnableReturn;
+        public static int CliffRacerEnableReturnThreshold => _instance.Mashed_Ashlands_CliffRacerEnableReturnThreshold;
+        public static bool CliffRacerEnableSwarm => _instance.Mashed_Ashlands_CliffRacerEnableSwarm;
+        public static int CliffRacerSwarmMinSize => _instance.Mashed_Ashlands_CliffRacerSwarmMinSize;
+        public static int CliffRacerSwarmMaxSize => _instance.Mashed_Ashlands_CliffRacerSwarmMaxSize;
+        public static float CliffRacerMutantChance => _instance.Mashed_Ashlands_CliffRacerMutantChance;
 
         //ash storm
         public static bool AshStormCauseBuildup => _instance.Mashed_Ashlands_AshStormCauseBuildup;
@@ -146,6 +153,17 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
         public bool Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
         public bool Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
+
+        //cliff racer
+        public bool Mashed_Ashlands_CliffRacerEnableExtinction = Mashed_Ashlands_CliffRacerEnableExtinction_def;
+        public bool Mashed_Ashlands_CliffRacerEnableTracker = Mashed_Ashlands_CliffRacerEnableTracker_def;
+        public int Mashed_Ashlands_CliffRacerWildPopulation = Mashed_Ashlands_CliffRacerWildPopulation_def;
+        public bool Mashed_Ashlands_CliffRacerEnableReturn = Mashed_Ashlands_CliffRacerEnableReturn_def;
+        public int Mashed_Ashlands_CliffRacerEnableReturnThreshold = Mashed_Ashlands_CliffRacerEnableReturnThreshold_def;
+        public bool Mashed_Ashlands_CliffRacerEnableSwarm = Mashed_Ashlands_CliffRacerEnableSwarm_def;
+        public int Mashed_Ashlands_CliffRacerSwarmMinSize = Mashed_Ashlands_CliffRacerSwarmMinSize_def;
+        public int Mashed_Ashlands_CliffRacerSwarmMaxSize = Mashed_Ashlands_CliffRacerSwarmMaxSize_def;
+        public float Mashed_Ashlands_CliffRacerMutantChance = Mashed_Ashlands_CliffRacerMutantChance_def;
 
         //ash storm
         public bool Mashed_Ashlands_AshStormCauseBuildup = Mashed_Ashlands_AshStormCauseBuildup_def;
@@ -231,6 +249,17 @@ namespace Mashed_Ashlands
 
         private static readonly bool Mashed_Ashlands_VolcanoEnableCategoryChange_def = true;
 
+        //cliff racer
+        private static readonly bool Mashed_Ashlands_CliffRacerEnableExtinction_def = true;
+        private static readonly bool Mashed_Ashlands_CliffRacerEnableTracker_def = true;
+        private static readonly int Mashed_Ashlands_CliffRacerWildPopulation_def = 100000;
+        private static readonly bool Mashed_Ashlands_CliffRacerEnableReturn_def = true;
+        private static readonly int Mashed_Ashlands_CliffRacerEnableReturnThreshold_def = 50;
+        private static readonly bool Mashed_Ashlands_CliffRacerEnableSwarm_def = true;
+        private static readonly int Mashed_Ashlands_CliffRacerSwarmMinSize_def = 3;
+        private static readonly int Mashed_Ashlands_CliffRacerSwarmMaxSize_def = 30;
+        private static readonly float Mashed_Ashlands_CliffRacerMutantChance_def = 0.05f;
+
         //ash storm
         private static readonly bool Mashed_Ashlands_AshStormCauseBuildup_def = true;
         private static readonly bool Mashed_Ashlands_AshStormAffectsCaravan_def = true;
@@ -313,13 +342,24 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks", Mashed_Ashlands_EnableExclusiveRocks_def);
 
             //volcano
-             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoMaxAffectedArea, "Mashed_Ashlands_VolcanoMaxAffectedArea", Mashed_Ashlands_VolcanoMaxAffectedArea_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnablePermanentConditions, "Mashed_Ashlands_VolcanoEnablePermanentConditions", Mashed_Ashlands_VolcanoEnablePermanentConditions_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableRandomConditions, "Mashed_Ashlands_VolcanoEnableRandomConditions", Mashed_Ashlands_VolcanoEnableRandomConditions_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableCategoryChange, "Mashed_Ashlands_VolcanoEnableCategoryChange", Mashed_Ashlands_VolcanoEnableCategoryChange_def);
+
+            //cliff racer
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableExtinction, "Mashed_Ashlands_CliffRacerEnableExtinction", Mashed_Ashlands_CliffRacerEnableExtinction_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableTracker, "Mashed_Ashlands_CliffRacerEnableTracker", Mashed_Ashlands_CliffRacerEnableTracker_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerWildPopulation, "Mashed_Ashlands_CliffRacerWildPopulation", Mashed_Ashlands_CliffRacerWildPopulation_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableReturn, "Mashed_Ashlands_CliffRacerEnableReturn", Mashed_Ashlands_CliffRacerEnableReturn_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableReturnThreshold, "Mashed_Ashlands_CliffRacerEnableReturnThreshold", Mashed_Ashlands_CliffRacerEnableReturnThreshold_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableSwarm, "Mashed_Ashlands_CliffRacerEnableSwarm", Mashed_Ashlands_CliffRacerEnableSwarm_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerSwarmMinSize, "Mashed_Ashlands_CliffRacerSwarmMinSize", Mashed_Ashlands_CliffRacerSwarmMinSize_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerSwarmMaxSize, "Mashed_Ashlands_CliffRacerSwarmMaxSize", Mashed_Ashlands_CliffRacerSwarmMaxSize_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerMutantChance, "Mashed_Ashlands_CliffRacerMutantChance", Mashed_Ashlands_CliffRacerMutantChance_def);
 
             //ash storm
             Scribe_Values.Look(ref Mashed_Ashlands_AshStormCauseBuildup, "Mashed_Ashlands_AshStormCauseBuildup", Mashed_Ashlands_AshStormCauseBuildup_def);
@@ -359,7 +399,7 @@ namespace Mashed_Ashlands
         {
             ResetSettings_General();
             ResetSettings_WorldGen();
-            ResetSettings_Volcano();
+            ResetSettings_Incident();
             ResetSettings_AshStorm();
             ResetSettings_Biome();
         }
@@ -407,18 +447,26 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
         }
 
-        public static void ResetSettings_Volcano()
+        public static void ResetSettings_Incident()
         {
             _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
             _instance.Mashed_Ashlands_VolcanoMaxAffectedArea = Mashed_Ashlands_VolcanoMaxAffectedArea_def;
-
             _instance.Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
             _instance.Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
-
             _instance.Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
-        }
 
-        public static void ResetSettings_AshStorm()
+            _instance.Mashed_Ashlands_CliffRacerEnableExtinction = Mashed_Ashlands_CliffRacerEnableExtinction_def;
+            _instance.Mashed_Ashlands_CliffRacerEnableTracker = Mashed_Ashlands_CliffRacerEnableTracker_def;
+            _instance.Mashed_Ashlands_CliffRacerWildPopulation = Mashed_Ashlands_CliffRacerWildPopulation_def;
+            _instance.Mashed_Ashlands_CliffRacerEnableReturn = Mashed_Ashlands_CliffRacerEnableReturn_def;
+            _instance.Mashed_Ashlands_CliffRacerEnableReturnThreshold = Mashed_Ashlands_CliffRacerEnableReturnThreshold_def;
+            _instance.Mashed_Ashlands_CliffRacerEnableSwarm = Mashed_Ashlands_CliffRacerEnableSwarm_def;
+            _instance.Mashed_Ashlands_CliffRacerSwarmMinSize = Mashed_Ashlands_CliffRacerSwarmMinSize_def;
+            _instance.Mashed_Ashlands_CliffRacerSwarmMaxSize = Mashed_Ashlands_CliffRacerSwarmMaxSize_def;
+            _instance.Mashed_Ashlands_CliffRacerMutantChance = Mashed_Ashlands_CliffRacerMutantChance_def;
+    }
+
+    public static void ResetSettings_AshStorm()
         {
             _instance.Mashed_Ashlands_AshStormCauseBuildup = Mashed_Ashlands_AshStormCauseBuildup_def;
             _instance.Mashed_Ashlands_AshStormAffectsCaravan = Mashed_Ashlands_AshStormAffectsCaravan_def;

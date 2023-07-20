@@ -11,7 +11,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_Hatch_Patch(ref CompHatcher __instance, ref Faction ___hatcheeFaction)
         {
-            if (Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction)
+            if (Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction)
             {
                 if (___hatcheeFaction == null && __instance.parent.def == ThingDefOf.Mashed_Ashlands_Egg_CliffRacerFertilized)
                 {
@@ -28,7 +28,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_ReleaseAnimal_Patch(Pawn animal)
         {
-            if (Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction)
+            if (Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction)
             {
                 if (animal.def == ThingDefOf.Mashed_Ashlands_CliffRacer)
                 {
@@ -45,7 +45,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_TameAnimal_Patch(Pawn pawn)
         {
-            if (Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction)
+            if (Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction)
             {
                 if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer)
                 {
@@ -65,7 +65,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CliffRacerCommonality_Patch(PawnKindDef def, ref float __result)
         {
-            if (def.race == ThingDefOf.Mashed_Ashlands_CliffRacer && Mashed_Ashlands_ModSettings.EnableCliffRacerExtinction && CliffRacerTrackerUtility.ExtinctionReached())
+            if (def.race == ThingDefOf.Mashed_Ashlands_CliffRacer && Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction && CliffRacerTrackerUtility.ExtinctionReached())
             {
                 __result = 0;
             }
