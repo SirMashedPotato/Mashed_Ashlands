@@ -9,7 +9,6 @@ namespace Mashed_Ashlands
         {
             if (wildPopulation == -1)
             { 
-                Log.Message("WorldComp_CliffRacerTracker init");
                 wildPopulation = Mashed_Ashlands_ModSettings.CliffRacerWildPopulation;
             }
         }
