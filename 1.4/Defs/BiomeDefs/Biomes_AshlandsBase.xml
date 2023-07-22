@@ -90,8 +90,7 @@
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
 			<li>Mashed_Ashlands_NixOx</li>
-			<li>Muffalo</li>
-			<li>Alpaca</li>
+			<li>Mashed_Ashlands_NixSteed</li>
 		</allowedPackAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->

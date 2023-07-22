@@ -33,13 +33,15 @@
 			<sowMinSkill>8</sowMinSkill>
 			<growDays>25</growDays>
 			<visualSizeRange>1.8~2.6</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_MeadowRye</defName>
-		<label>meadow rye</label>
+		<label>meadow rye plant</label>
 		<description>A grass that can sometimes be found growing in calmer ashlands regions. Considered notoriously difficult to grow, raw meadow rye can be fermented into flin, a highly sought after alcoholic drink. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">

@@ -31,7 +31,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_BlackAntherflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_BlackAntherflower</defName>
-		<label>black anther flower</label>
+		<label>black anther</label>
 		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
@@ -58,7 +58,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_GoldenSedgeflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_GoldenSedgeflower</defName>
-		<label>golden sedge flower</label>
+		<label>golden sedge</label>
 		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
@@ -87,7 +87,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_HornLilyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_HornLilyflower</defName>
-		<label>horn lily flower</label>
+		<label>horn lily</label>
 		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
@@ -188,7 +188,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_Nirthflyflower</defName>
-		<label>nirthfly flower</label>
+		<label>nirthfly</label>
 		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
@@ -217,7 +217,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_NobleSedgeflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_NobleSedgeflower</defName>
-		<label>noble sedge flower</label>
+		<label>noble sedge</label>
 		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">

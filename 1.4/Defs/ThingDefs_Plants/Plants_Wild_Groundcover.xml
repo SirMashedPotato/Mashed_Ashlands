@@ -163,6 +163,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_DraggleTails]==========-->
@@ -241,6 +242,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LuminousRussula]==========-->
@@ -271,6 +273,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -310,6 +313,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
@@ -340,6 +344,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
