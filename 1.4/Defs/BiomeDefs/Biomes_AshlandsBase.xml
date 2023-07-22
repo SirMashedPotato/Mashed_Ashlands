@@ -82,6 +82,8 @@
 			<Rat>0.6</Rat>
 			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
 			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
+			<!-- Special -->
+			<JE_JagothGrr MayRequire="sarg.jorisexperience">0.06</JE_JagothGrr>
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
