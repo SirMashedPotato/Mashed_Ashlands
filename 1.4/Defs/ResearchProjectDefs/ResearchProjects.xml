@@ -18,7 +18,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSowing_Intermediate</defName>
 		<label>intermediate ashland farming</label>
-		<description>TODO.</description>
+		<description>Learn how to sow even more of the plants native to the ashlands.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
@@ -32,7 +32,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSowing_Advanced</defName>
 		<label>advanced ashland farming</label>
-		<description>TODO.</description>
+		<description>Learn how to sow the rest of the plants native to the ashlands.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
@@ -46,7 +46,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSurvival_Beginner</defName>
 		<label>beginner ashland survival</label>
-		<description>TODO</description>
+		<description>Learn how to craft useful products from materials native to the ashlands.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
@@ -60,7 +60,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSurvival_Intermediate</defName>
 		<label>intermediate ashland survival</label>
-		<description>TODO.</description>
+		<description>Learn how to refine useful products from materials native to the ashlands.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
@@ -74,7 +74,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSurvival_Advanced</defName>
 		<label>advanced ashland survival</label>
-		<description>TODO.</description>
+		<description>Learn how to more efficiently refine useful products from materials native to the ashlands.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
