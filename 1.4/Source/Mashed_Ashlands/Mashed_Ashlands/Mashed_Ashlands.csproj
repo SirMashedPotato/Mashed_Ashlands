@@ -118,11 +118,13 @@
     <Compile Include="Jobs\JobGiver\JobGiver_FeedFromAshlandFlower.cs" />
     <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalAshlandFlowerFeeding.cs" />
+    <Compile Include="LifeStageWorker\LifeStageWorker_AnimalAdultCliffRacer.cs" />
     <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />
     <Compile Include="Settings\Mashed_Ashlands_ModSettings.cs" />
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
     <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
+    <Compile Include="ThingComp\Comp_CliffRacerMutation.cs" />
     <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />

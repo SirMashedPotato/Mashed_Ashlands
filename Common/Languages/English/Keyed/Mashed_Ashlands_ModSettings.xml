@@ -87,7 +87,7 @@
 	<Mashed_Ashlands_CliffRacerEnableSwarm>Enable the cliff racer swarm incident.</Mashed_Ashlands_CliffRacerEnableSwarm>
 	<Mashed_Ashlands_CliffRacerSwarmMinSize>The minimum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMinSize>
 	<Mashed_Ashlands_CliffRacerSwarmMaxSize>The maximum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMaxSize>
-	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer has the asexual reproduction mutation: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
+	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer gains the asexual reproduction mutation upon reaching maturity: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
 	<!-- ==========[Ash storm]==========-->
 	<Mashed_Ashlands_PageAshStorm>Ash storm Settings</Mashed_Ashlands_PageAshStorm>
 	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>

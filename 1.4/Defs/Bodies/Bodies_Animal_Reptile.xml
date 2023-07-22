@@ -327,7 +327,7 @@
 	<!-- ==========[Mashed_Ashlands_FlyingHellSpawn]==========-->
 	<BodyDef>
 		<defName>Mashed_Ashlands_FlyingHellSpawn</defName>
-		<label>bird</label>
+		<label>pterodactyl-like</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>

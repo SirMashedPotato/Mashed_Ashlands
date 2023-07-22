@@ -91,6 +91,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>15</MarketValue>
+			<DeteriorationRate>0.5</DeteriorationRate>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">

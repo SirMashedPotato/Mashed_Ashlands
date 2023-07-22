@@ -42,7 +42,7 @@ namespace Mashed_Ashlands
             return AlertReport.CulpritsAre(AshBuildupColonists);
         }
 
-        private const float ashBuildupSeverityThreshold = 0.6f; //TODO Potential setting
+        private const float ashBuildupSeverityThreshold = 0.6f;
         private List<Pawn> ashBuildupColonists = new List<Pawn>();
     }
 }
