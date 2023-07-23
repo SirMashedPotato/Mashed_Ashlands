@@ -138,7 +138,8 @@
 			<Mashed_Ashlands_GiantSulphuricCoprinus>0.2</Mashed_Ashlands_GiantSulphuricCoprinus>
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.05</Mashed_Ashlands_Plant_TreeEmperorParasol>
-			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.2</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.15</Mashed_Ashlands_BurnedStumpPermanent>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->

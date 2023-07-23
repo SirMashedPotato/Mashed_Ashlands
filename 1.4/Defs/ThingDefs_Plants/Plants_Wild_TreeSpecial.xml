@@ -19,4 +19,34 @@
 			<Flammability>0</Flammability>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_BurnedStumpPermanent]==========-->
+	<ThingDef ParentName="StumpBase">
+		<defName>Mashed_Ashlands_BurnedStumpPermanent</defName>
+		<label>burned stump</label>
+		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_CrackedAshSoilBlighted</li>
+					<li>Mashed_Ashlands_AshSandBlighted</li>
+					<li>Mashed_Ashlands_AshGravelBlighted</li>
+					<li>Mashed_Ashlands_AshSandVolcanic</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases Inherit="False">
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-8</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/BurnedTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
 </Defs>

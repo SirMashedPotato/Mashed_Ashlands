@@ -106,7 +106,8 @@
 			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<!-- Trees -->
-			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.1</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.05</Mashed_Ashlands_BurnedStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_GlowingEntoloma>
