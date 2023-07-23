@@ -379,6 +379,7 @@
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->

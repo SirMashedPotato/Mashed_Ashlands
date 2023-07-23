@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedAshlands</defName>
 		<label>blighted ashlands</label>
-		<description>Once a thriving ashlands, the landscape has been devastated by a nearby blighted volcano, leaving an inhospitable wasteland behind. The sky is almost permanently covered in a thick cloud of ash. Few animals and plants are capable of living here, with the waters being completely devoid of life. Unless you enjoy eating scathecraw, food will be difficult to obtain.</description>
+		<description>Once a thriving ashlands, the landscape has been devastated by a nearby blighted volcano, leaving an inhospitable wasteland behind. The sky is almost permanently covered in a thick cloud of ash. Few animals and plants are capable of living here, with the waters being almost completely devoid of life. Unless you enjoy eating scathecraw, food will be difficult to obtain.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedAshlands</texture>
 		<modExtensions>
