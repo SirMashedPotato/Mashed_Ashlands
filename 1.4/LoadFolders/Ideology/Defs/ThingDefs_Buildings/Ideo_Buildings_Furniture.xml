@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DarklightTorchbugLamp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
+		<defName>Mashed_Ashlands_DarklightTorchbugLamp</defName>
+		<label>glowshade torchbug lamp</label>
+		<description>A small lamp made of parasol wood, and containing glowshade torchbugs. Provides a reasonable amount of darklight, though not as much as a regular darktorch. The torchbugs will need to be fed either insect meat, raw ash fungus, or parasol moss, every now and then</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_DarklightTorchbugLamp</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_DarklightTorchbugEffecter</effecterDef>
+				<tickInterval>750</tickInterval>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

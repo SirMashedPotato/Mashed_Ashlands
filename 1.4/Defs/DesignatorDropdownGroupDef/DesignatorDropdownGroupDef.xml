@@ -3,4 +3,7 @@
 	<DesignatorDropdownGroupDef>
 		<defName>Mashed_Ashlands_Floor_PackedAsh</defName>
 	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Mashed_Ashlands_Building_TorchbugLamp</defName>
+	</DesignatorDropdownGroupDef>
 </Defs>

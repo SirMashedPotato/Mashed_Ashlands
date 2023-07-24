@@ -14,6 +14,18 @@ namespace Mashed_Ashlands
             }
         }
 
+        public override void CompTick()
+        {
+            if (parent.IsHashIntervalTick(Props.tickInterval))
+            {
+                if (GenLocalDate.DayPercent(parent) < 0.25f || GenLocalDate.DayPercent(parent) > 0.8f)
+                {
+                    TickEffecter();
+                }
+            }
+            base.CompTick();
+        }
+
         //used by plants
         public override void CompTickLong()
         {
