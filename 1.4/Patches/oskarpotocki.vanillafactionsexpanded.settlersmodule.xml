@@ -16,6 +16,12 @@
 						</li>
 					</value>
 				</li>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="VFES_Headgear_Bandana"]/equippedStatOffsets</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>0.25</Mashed_Ashlands_AshResistance>
+					</value>
+				</Operation>
 			</operations>
 		</match>
 	</Operation>

@@ -17,7 +17,7 @@
 			<Flammability>0.22</Flammability>
 		</statBases>
 		<costList>
-			<WoodLog>3</WoodLog>
+			<Mashed_Ashlands_ParasolWoodLog>3</Mashed_Ashlands_ParasolWoodLog>
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
 		<uiOrder>2000</uiOrder>

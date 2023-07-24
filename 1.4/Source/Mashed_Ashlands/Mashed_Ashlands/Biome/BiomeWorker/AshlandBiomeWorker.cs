@@ -26,7 +26,7 @@ namespace Mashed_Ashlands
             int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
             if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
             {
-                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 2) + 0.4f));
                 if (maxDistance < 10)
                 {
                     maxDistance = 10;

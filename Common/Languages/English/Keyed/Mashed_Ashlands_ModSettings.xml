@@ -32,9 +32,9 @@
 	<Mashed_Ashlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMinDistance>
 	<Mashed_Ashlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</Mashed_Ashlands_BiomesMaxDistance>
 	<Mashed_Ashlands_VolcanoScaleWithWorldSize>Scale the number of volcanos that are spawned based on world coverage.</Mashed_Ashlands_VolcanoScaleWithWorldSize>
-	<Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.\n(maximum number * ((Planet Coverage * 3) + 10%)</Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize>
-	<Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>
 	<!-- General biomes -->
 	<Mashed_Ashlands_BaseBiome_Tooltip>Required for any of the below biomes to generate.</Mashed_Ashlands_BaseBiome_Tooltip>
 	<!-- Regular biomes -->
@@ -69,7 +69,7 @@
 	<Mashed_Ashlands_PageIncident>Incident &amp; Event Settings</Mashed_Ashlands_PageIncident>
 	<!-- Volcano related -->
 	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>
-	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.\n(maximum distance * ((Planet Coverage * 3) + 10%).</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMaxAffectedArea>
 	<Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>
 	<Mashed_Ashlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</Mashed_Ashlands_VolcanoEnablePermanentConditions>

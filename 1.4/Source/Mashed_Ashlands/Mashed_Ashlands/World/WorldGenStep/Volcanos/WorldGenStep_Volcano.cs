@@ -12,7 +12,7 @@ namespace Mashed_Ashlands
             int maxNumber = (int)initialMaxNum;
             if (Mashed_Ashlands_ModSettings.VolcanoScaleWithWorldSize)
             {
-                maxNumber = (int)(initialMaxNum * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                maxNumber = (int)(initialMaxNum * ((Find.World.PlanetCoverage * 2) + 0.4f));
                 if (maxNumber < 1)
                 {
                     maxNumber = 1;

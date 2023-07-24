@@ -11,7 +11,8 @@ namespace Mashed_Ashlands
         public bool InAoE(int tile, int category, Volcano parentVolcano)
         {
             int worldRange = parentVolcano.EffectRadiusFor(category);
-            return Find.WorldGrid.TraversalDistanceBetween(parentVolcano.Tile, tile, true, worldRange + 1) <= worldRange;
+            WorldGrid worldGrid = Find.WorldGrid;
+            return worldGrid.ApproxDistanceInTiles(parentVolcano.Tile, tile) <= worldRange;
         }
 
         public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)

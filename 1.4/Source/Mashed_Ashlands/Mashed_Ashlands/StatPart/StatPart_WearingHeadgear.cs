@@ -11,9 +11,12 @@ namespace Mashed_Ashlands
         {
             if (ActiveFor(req.Thing, out Thing apparel))
             {
-				return "Mashed_Ashlands_WearingHeadGear".Translate(apparel.Label);
-
-			}
+                if (apparel != null)
+                {
+                    return "Mashed_Ashlands_WearingHeadGear".Translate(apparel.Label);
+                }
+                return "Mashed_Ashlands_WearingHeadGearSettingEnabled".Translate();
+            }
 			return null;
         }
 
@@ -40,6 +43,16 @@ namespace Mashed_Ashlands
                                 apparel = a;
                                 return true;
                             }
+                        }
+                    }
+                } else
+                {
+                    if (t is Apparel headGear)
+                    {
+                        if (headGear.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead))
+                        {
+                            apparel = null;
+                            return true;
                         }
                     }
                 }
