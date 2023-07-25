@@ -57,6 +57,7 @@ namespace Mashed_Ashlands
 
         public static bool VolcanoEnablePermanentConditions => _instance.Mashed_Ashlands_VolcanoEnablePermanentConditions;
         public static bool VolcanoEnableRandomConditions => _instance.Mashed_Ashlands_VolcanoEnableRandomConditions;
+        public static bool VolcanoOnlyLetterIfInRadius => _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius;
 
         public static bool VolcanoEnableCategoryChange => _instance.Mashed_Ashlands_VolcanoEnableCategoryChange;
 
@@ -152,6 +153,7 @@ namespace Mashed_Ashlands
 
         public bool Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
         public bool Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
+        public bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
         public bool Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
 
         //cliff racer
@@ -246,6 +248,7 @@ namespace Mashed_Ashlands
 
         private static readonly bool Mashed_Ashlands_VolcanoEnablePermanentConditions_def = true;
         private static readonly bool Mashed_Ashlands_VolcanoEnableRandomConditions_def = true;
+        private static readonly bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def = true;
 
         private static readonly bool Mashed_Ashlands_VolcanoEnableCategoryChange_def = true;
 
@@ -347,6 +350,7 @@ namespace Mashed_Ashlands
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnablePermanentConditions, "Mashed_Ashlands_VolcanoEnablePermanentConditions", Mashed_Ashlands_VolcanoEnablePermanentConditions_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableRandomConditions, "Mashed_Ashlands_VolcanoEnableRandomConditions", Mashed_Ashlands_VolcanoEnableRandomConditions_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_VolcanoOnlyLetterIfInRadius, "Mashed_Ashlands_VolcanoOnlyLetterIfInRadius", Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableCategoryChange, "Mashed_Ashlands_VolcanoEnableCategoryChange", Mashed_Ashlands_VolcanoEnableCategoryChange_def);
 
@@ -453,6 +457,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_VolcanoMaxAffectedArea = Mashed_Ashlands_VolcanoMaxAffectedArea_def;
             _instance.Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
             _instance.Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
+            _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
             _instance.Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
 
             _instance.Mashed_Ashlands_CliffRacerEnableExtinction = Mashed_Ashlands_CliffRacerEnableExtinction_def;

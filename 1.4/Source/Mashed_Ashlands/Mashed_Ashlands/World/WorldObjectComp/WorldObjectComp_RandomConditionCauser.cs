@@ -36,10 +36,37 @@ namespace Mashed_Ashlands
                 }
                 if (condition.sendLetter)
                 {
-                    Find.LetterStack.ReceiveLetter(
+                    bool sendLetterFlag = true;
+                    if (Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius)
+                    {
+                        sendLetterFlag = false;
+                        foreach (Map map in Find.Maps)
+                        {
+                            if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                            {
+                                sendLetterFlag = true;
+                            }
+                        }
+
+                        if (!sendLetterFlag)
+                        {
+                            foreach (Caravan caravan in Find.World.worldObjects.Caravans)
+                            {
+                                if (InAoE(caravan.Tile, ParentVolcano.Category, ParentVolcano))
+                                {
+                                    sendLetterFlag = true;
+                                }
+                            }
+                        }
+                    }
+
+                    if (sendLetterFlag)
+                    {
+                        Find.LetterStack.ReceiveLetter(
                         "Mashed_Ashlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, category, currentConditionDef.label).CapitalizeFirst(),
-                        "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description), 
+                        "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
                         currentConditionDef.letterDef, ParentVolcano, null, null);
+                    }
                 }
                 conditionTicksLeft = duration;
                 graceTicksLeft = gracePeriodAfter;
