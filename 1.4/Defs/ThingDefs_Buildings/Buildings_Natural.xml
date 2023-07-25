@@ -64,6 +64,11 @@
 						<weight>0.2</weight>
 					</li>
 					<li>
+						<thingDef>Chemfuel</thingDef>
+						<amountRange>10~25</amountRange>
+						<weight>0.1</weight>
+					</li>
+					<li>
 						<thingDef>Mashed_Ashlands_Egg_SiltStriderFertilized</thingDef>
 						<amountRange>1~1</amountRange>
 						<weight>0.01</weight>

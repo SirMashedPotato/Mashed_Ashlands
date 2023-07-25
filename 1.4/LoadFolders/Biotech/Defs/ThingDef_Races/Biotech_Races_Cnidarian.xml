@@ -21,6 +21,8 @@
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
 			<canBePredatorPrey>false</canBePredatorPrey>
+			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 			<specificMeatDef>Mashed_Ashlands_GlowingNetchJelly</specificMeatDef>
 		</race>
 		<tradeTags>

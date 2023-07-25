@@ -35,6 +35,8 @@
 	<race>
 		<herdAnimal>true</herdAnimal>
 		<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+		<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
+		<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 	</race>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_CoralcrabGlowing</defName>
