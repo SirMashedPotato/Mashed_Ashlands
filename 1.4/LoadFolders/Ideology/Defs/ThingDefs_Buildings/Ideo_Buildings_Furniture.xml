@@ -18,5 +18,8 @@
 				<tickInterval>750</tickInterval>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</researchPrerequisites>
 	</ThingDef>
 </Defs>

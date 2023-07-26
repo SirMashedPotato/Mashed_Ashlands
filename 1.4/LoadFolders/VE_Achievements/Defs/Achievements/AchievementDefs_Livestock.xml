@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_TameKwamaScrib]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameKwamaScrib</defName>
+		<label>Thump Thump Thump</label>
+		<description>Have three tame kwama scrib at the same time</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_KwamaScrib</key>
+					<value>3</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameKwamaScrib</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_TameSiltStrider]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameSiltStrider</defName>
+		<label>Why Walk When You Can Ride?</label>
+		<description>Tame a silt strider</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_SiltStrider</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameSiltStrider</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

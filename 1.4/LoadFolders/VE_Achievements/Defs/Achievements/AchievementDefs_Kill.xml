@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_KillMudcrab]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillMudcrab</defName>
+		<label>Horrible Things</label>
+		<description>Kill 333 mudcrab</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_Mudcrab</kindDef>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillMudcrab</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_KillCliffRacerA]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillCliffRacerA</defName>
+		<label>Cliff Racer Hunter</label>
+		<description>Kill some cliff racers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_CliffRacer</kindDef>
+			<count>10</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillCliffRacerA</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_KillCliffRacerB]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillCliffRacerB</defName>
+		<label>Cliff Racer Killer</label>
+		<description>Kill more cliff racers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_CliffRacer</kindDef>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillCliffRacerB</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_KillCliffRacerC]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillCliffRacerC</defName>
+		<label>Cliff Racer Slayer</label>
+		<description>Kill many cliff racers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_CliffRacer</kindDef>
+			<count>1000</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillCliffRacerC</texPath>
+		<points>30</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_KillCliffRacerD]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillCliffRacerD</defName>
+		<label>Cliff Racer Exterminator</label>
+		<description>Kill even more cliff racers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_CliffRacer</kindDef>
+			<count>10000</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillCliffRacerD</texPath>
+		<points>40</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_KillCliffRacerE]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillCliffRacerE</defName>
+		<label>Cliff Racer Eradicator</label>
+		<description>Kill an absurd number of cliff racers</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_CliffRacer</kindDef>
+			<count>100000</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillCliffRacerE</texPath>
+		<points>300</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>
