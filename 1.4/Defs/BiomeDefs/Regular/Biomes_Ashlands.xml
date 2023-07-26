@@ -124,8 +124,9 @@
 			<Mashed_Ashlands_Plant_AshlandFern>0.2</Mashed_Ashlands_Plant_AshlandFern>
 			<Mashed_Ashlands_Plant_BlackAntherflower>0.05</Mashed_Ashlands_Plant_BlackAntherflower>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.4</Mashed_Ashlands_Plant_TreeEmperorParasol>
+			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.3</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_Plant_TreeNetchShield>0.1</Mashed_Ashlands_Plant_TreeNetchShield>
+			<Mashed_Ashlands_Plant_TreeAshland>0.1</Mashed_Ashlands_Plant_TreeAshland>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->

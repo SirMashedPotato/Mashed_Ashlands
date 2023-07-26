@@ -1,4 +1,22 @@
 <Defs>
+	<!-- ==========[Mashed_Ashlands_SeedAshlandTree]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedAshlandTree</defName>
+		<label>ashland tree seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshlandTree</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeAshland</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeAshland</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedParasolBush]==========-->
 	<ThingDef ParentName="SeedBase">
 		<defName>Mashed_Ashlands_SeedParasolBush</defName>

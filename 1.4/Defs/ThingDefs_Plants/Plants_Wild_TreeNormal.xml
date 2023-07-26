@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeAshland]==========-->
+	<ThingDef ParentName="TreeBase">
+		<defName>Mashed_Ashlands_Plant_TreeAshland</defName>
+		<label>ashland tree</label>
+		<description>A hardy tree, often found growing in ashland regions. While it doesn't provide much usable wood, it is rather resilient to ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
+					<li>Mashed_Ashlands_AshGravel</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeAshland</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.35, 0.13)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>15</growDays>
+			<harvestWork>660</harvestWork>
+			<harvestYield>20</harvestYield>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>3</wildClusterWeight>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeAshland_Leafless</leaflessGraphicPath>
+			<visualSizeRange>1.4~2.8</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>
