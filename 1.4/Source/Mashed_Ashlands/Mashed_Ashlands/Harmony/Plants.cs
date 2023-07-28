@@ -16,7 +16,7 @@ namespace Mashed_Ashlands
         [HarmonyPrefix]
         public static bool Mashed_Ashlands_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (cavePlants && OnStartupUtility.ashlandCavePlantsBiomes.Contains(___map.Biome))
+            if (cavePlants && Mashed_Ashlands_ModSettings.EnableCavePlants && OnStartupUtility.ashlandCavePlantsBiomes.Contains(___map.Biome))
             {
                 outPlants.Clear();
                 for (int i = 0; i < OnStartupUtility.ashlandCavePlants.Count; i++)

@@ -19,6 +19,7 @@
 			<li>Diggable</li>
 			<li>Mashed_Ashlands_GrowAsh</li>
 			<li>Mashed_Ashlands_AshCastle</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
 		</affordances>
 		<generatedFilth>Mashed_Ashlands_Filth_Ash</generatedFilth>
 		<takeFootprints>True</takeFootprints>

@@ -505,6 +505,9 @@ namespace Mashed_Ashlands
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCavePlants".Translate(), ref settings.Mashed_Ashlands_EnableCavePlants);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExtraGeysers".Translate(), ref settings.Mashed_Ashlands_EnableExtraGeysers);
             listing_Standard.Gap();
 

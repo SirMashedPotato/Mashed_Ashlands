@@ -46,14 +46,14 @@
 			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
 				<moteDef>RG_Mote_WaterFog</moteDef>
 				<tickInterval>60~500</tickInterval>
-				<size>2~8</size>
+				<size>6~30</size>
 				<rotationRate>0</rotationRate>
 				<velocityAngle>0~360</velocityAngle>
 				<velocitySpeed>0.05~0.1</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
 				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
-				<spawnChance>0.04</spawnChance>
+				<spawnChance>0.10</spawnChance>
 			</li>
 		</terrainComps>
 		<modExtensions>
