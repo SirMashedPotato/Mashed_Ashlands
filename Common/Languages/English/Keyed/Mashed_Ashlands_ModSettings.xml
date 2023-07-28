@@ -7,8 +7,9 @@
 	<!-- ==========[General page]==========-->
 	<Mashed_Ashlands_PageGeneral>General Settings</Mashed_Ashlands_PageGeneral>
 	<!-- -->
-	<Mashed_Ashlands_OnlySowOnAsh>Certain plants can only be sown on ash terrain.</Mashed_Ashlands_OnlySowOnAsh>
-	<Mashed_Ashlands_BaseAshResistance>Enable a base 50% ash resistance for all apparel that covers the full head.</Mashed_Ashlands_BaseAshResistance>
+	<Mashed_Ashlands_OnlySowOnAsh>Enable certain plants only being sowable on ash terrain.</Mashed_Ashlands_OnlySowOnAsh>
+	<Mashed_Ashlands_BaseAshResistance>Enable a base ash resistance value for all apparel that covers the full head.</Mashed_Ashlands_BaseAshResistance>
+	<Mashed_Ashlands_BaseAshResistanceValue>The base ash resistance for all apparel that covers the full head: ({0}%)</Mashed_Ashlands_BaseAshResistanceValue>
 	<Mashed_Ashlands_FlowerFeeding>Enable certain animals feeding from ashland flowers.</Mashed_Ashlands_FlowerFeeding>
 	<!-- ==========[World Gen]==========-->
 	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>

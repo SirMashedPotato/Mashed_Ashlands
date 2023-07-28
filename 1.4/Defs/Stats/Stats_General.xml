@@ -11,9 +11,7 @@
 		<toStringStyle>PercentZero</toStringStyle>
 		<displayPriorityInCategory>3452</displayPriorityInCategory>
 		<parts>
-			<li Class="Mashed_Ashlands.StatPart_WearingHeadgear">
-				<boostAmount>0.5</boostAmount>
-			</li>
+			<li Class="Mashed_Ashlands.StatPart_WearingHeadgear"/>
 		</parts>
 	</StatDef>
 </Defs>

@@ -5,7 +5,6 @@ namespace Mashed_Ashlands
 {
     public class StatPart_WearingHeadgear : StatPart
     {
-        public float boostAmount = 0.5f;
 
         public override string ExplanationPart(StatRequest req)
         {
@@ -24,7 +23,7 @@ namespace Mashed_Ashlands
         {
             if (ActiveFor(req.Thing, out _))
             {
-                val += boostAmount;
+                val += Mashed_Ashlands_ModSettings.BaseAshResistanceValue;
             }
         }
 

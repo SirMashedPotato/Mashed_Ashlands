@@ -195,10 +195,16 @@ namespace Mashed_Ashlands
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_OnlySowOnAsh".Translate(), ref settings.Mashed_Ashlands_OnlySowOnAsh);
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BaseAshResistance".Translate(), ref settings.Mashed_Ashlands_BaseAshResistance);
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BaseAshResistance".Translate(), ref settings.Mashed_Ashlands_BaseAshResistance);
+            listing_Standard.Label("Mashed_Ashlands_BaseAshResistanceValue".Translate(settings.Mashed_Ashlands_BaseAshResistanceValue * 100), -1);
+            settings.Mashed_Ashlands_BaseAshResistanceValue = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_BaseAshResistanceValue, 0.05f, 1f) * 20) / 20;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_OnlySowOnAsh".Translate(), ref settings.Mashed_Ashlands_OnlySowOnAsh);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_FlowerFeeding".Translate(), ref settings.Mashed_Ashlands_FlowerFeeding);

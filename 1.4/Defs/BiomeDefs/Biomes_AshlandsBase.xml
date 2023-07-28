@@ -78,7 +78,7 @@
 		</baseWeatherCommonalities>
 		<wildAnimals>
 			<!-- prey animals -->
-			<!-- TODO May need to be specified per biome -->
+			<Boomrat>0.05</Boomrat>
 			<Rat>0.6</Rat>
 			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
 			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>

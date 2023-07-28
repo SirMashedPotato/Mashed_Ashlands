@@ -34,8 +34,9 @@
 			<harvestYield>20</harvestYield>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>3</wildClusterWeight>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeAshland_Leafless</leaflessGraphicPath>
 			<visualSizeRange>1.4~2.8</visualSizeRange>

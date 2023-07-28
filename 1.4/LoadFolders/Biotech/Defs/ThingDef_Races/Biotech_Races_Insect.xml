@@ -38,36 +38,36 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
-					<drawSize>0.8</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_AshHopperGlowing</texPath>
+					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
-					<drawSize>0.8</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_Dessicated_AshHopper</texPath>
+					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
-					<drawSize>1.1</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_AshHopperGlowing</texPath>
+					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
-					<drawSize>1.1</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_Dessicated_AshHopper</texPath>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTexGlowing</texPath>
-					<drawSize>1.4</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_AshHopperGlowing</texPath>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_Dessicated_MissingTex</texPath>
-					<drawSize>1.4</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_AshHopper/Mashed_Ashlands_Dessicated_AshHopper</texPath>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

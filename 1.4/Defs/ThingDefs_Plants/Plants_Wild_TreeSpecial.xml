@@ -18,6 +18,9 @@
 			<Beauty>-8</Beauty>
 			<Flammability>0</Flammability>
 		</statBases>
+		<plant>
+			<pollution>Any</pollution>
+		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_BurnedStumpPermanent]==========-->
 	<ThingDef ParentName="StumpBase">
@@ -48,5 +51,8 @@
 				<offset>(-0.03,0,-0.44)</offset>
 			</shadowData>
 		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+		</plant>
 	</ThingDef>
 </Defs>
