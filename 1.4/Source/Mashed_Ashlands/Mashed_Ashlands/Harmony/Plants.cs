@@ -6,6 +6,15 @@ using Verse;
 namespace Mashed_Ashlands
 {
     /// <summary>
+    /// Postfix forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
+    /// Patching PlantUtility.CanEverPlantAt allows this to work with Biome Transitions.
+    /// However this also affects sown plants, so not exactly usable
+    /// </summary>
+    ///[HarmonyPatch(typeof(PlantUtility))]
+    ///[HarmonyPatch("CanEverPlantAt")]
+    ///[HarmonyPatch(new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) })]
+
+    /// <summary>
     /// Prefixes allows for custom cave plants for specific biomes.
     /// Postfix forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
     /// </summary>
@@ -13,6 +22,7 @@ namespace Mashed_Ashlands
     [HarmonyPatch("CalculatePlantsWhichCanGrowAt")]
     public static class WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch
     {
+
         [HarmonyPrefix]
         public static bool Mashed_Ashlands_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
@@ -30,7 +40,7 @@ namespace Mashed_Ashlands
             }
             return true;
         }
-
+ 
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
@@ -119,7 +129,7 @@ namespace Mashed_Ashlands
     public static class PlantUtility_CanNowPlantAt_Patch
     {
         [HarmonyPostfix]
-        public static void Mashed_Ashlands_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
+        public static void Mashed_Ashlands_CanNowPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
         {
             if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
             {
