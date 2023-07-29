@@ -242,6 +242,9 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
 			<topWindExposure>0.05</topWindExposure>
 			<growDays>12</growDays>
 			<visualSizeRange>0.95~1.6</visualSizeRange>
@@ -332,6 +335,9 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<harvestWork>150</harvestWork>
 			<topWindExposure>0</topWindExposure>

@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -10,10 +11,54 @@ namespace Mashed_Ashlands
     /// Patching PlantUtility.CanEverPlantAt allows this to work with Biome Transitions.
     /// However this also affects sown plants, so not exactly usable
     /// </summary>
-    ///[HarmonyPatch(typeof(PlantUtility))]
-    ///[HarmonyPatch("CanEverPlantAt")]
-    ///[HarmonyPatch(new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) })]
-
+    /*
+    [HarmonyPatch(typeof(PlantUtility))]
+    [HarmonyPatch("CanEverPlantAt")]
+    [HarmonyPatch(new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) })]
+    public static class PlantUtility_CanEverPlantAt_Patch
+    {
+        [HarmonyPostfix]
+        public static void Mashed_Ashlands_CalculatePlantsWhichCanGrowAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
+        {
+            if (OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(map.Biome))
+            {
+                PlantProperties props = PlantProperties.Get(plantDef);
+                if (props != null)
+                {
+                    TerrainDef terrainDef = c.GetTerrain(map);
+                    if ((!props.allowedTerrainForWild.NullOrEmpty() && !props.allowedTerrainForWild.Contains(terrainDef))
+                        || !props.disallowedTerrainForWild.NullOrEmpty() && props.disallowedTerrainForWild.Contains(terrainDef))
+                    {
+                        __result = false;
+                    }
+                    else
+                    {
+                        if (props.requireWaterForWild)
+                        {
+                            bool waterFlag = false;
+                            foreach (IntVec3 neighbour in GenAdj.CellsAdjacent8Way(c, Rot4.North, new IntVec2(props.minTilesToWaterForWild, props.minTilesToWaterForWild)))
+                            {
+                                if (neighbour.InBounds(map))
+                                {
+                                    TerrainDef neighbourTerrain = neighbour.GetTerrain(map);
+                                    if (neighbourTerrain != null && neighbourTerrain.IsWater)
+                                    {
+                                        waterFlag = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (!waterFlag)
+                            {
+                                __result = false;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    */
     /// <summary>
     /// Prefixes allows for custom cave plants for specific biomes.
     /// Postfix forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
@@ -164,7 +209,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
         {
-            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
+            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh && obj is Zone)
             {
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
