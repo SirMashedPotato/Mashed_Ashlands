@@ -53,10 +53,6 @@
 				<terrainAffordancesToSow>
 					<li>Mashed_Ashlands_GrowAsh</li>
 				</terrainAffordancesToSow>
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_GrazelandSoil</li>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
 		<statBases>
