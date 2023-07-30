@@ -27,6 +27,12 @@ namespace Mashed_Ashlands
                 harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
             }
 
+            ///Patching in support for Smart Farming
+            if (ModsConfig.IsActive("owlchemist.smartfarming"))
+            {
+
+            }
+
             ///If biome transitions is enabled, swap to version with more overhead, but with better compatability
             if (ModsConfig.IsActive("m00nl1ght.geologicallandforms.biometransitions"))
             {
@@ -81,18 +87,22 @@ namespace Mashed_Ashlands
                 PlantProperties props = PlantProperties.Get(plantDef);
                 if (props != null)
                 {
-                    ///checking for zone and grower building
-                    if (map.zoneManager.ZoneAt(c) is Zone_GrowingAsh)
+                    ///Don't worry about checking this for unsowable plants
+                    if (!plantDef.plant.sowTags.NullOrEmpty())
                     {
-                        return;
-                    }
-
-                    List<Thing> list = map.thingGrid.ThingsListAt(c);
-                    for (int i = 0; i < list.Count; i++)
-                    {
-                        if (list[i] is Building_PlantGrower)
+                        ///checking for zone and grower building
+                        if (map.zoneManager.ZoneAt(c) is Zone_GrowingAsh)
                         {
                             return;
+                        }
+
+                        List<Thing> list = map.thingGrid.ThingsListAt(c);
+                        for (int i = 0; i < list.Count; i++)
+                        {
+                            if (list[i] is Building_PlantGrower)
+                            {
+                                return;
+                            }
                         }
                     }
 
