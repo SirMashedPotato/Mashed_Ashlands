@@ -7,9 +7,6 @@
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
@@ -69,9 +66,6 @@
 		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
 				</disallowedTerrainForWild>
@@ -144,9 +138,6 @@
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 				</allowedTerrainForWild>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -220,13 +211,6 @@
 		<defName>Mashed_Ashlands_Plant_FoyadaFungus</defName>
 		<label>foyada fungus</label>
 		<description>A small mushroom commonly found growing in volcanically active ashland regions. Many enjoy the sight of its striking orange colouration.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>
@@ -254,9 +238,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -286,15 +267,12 @@
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
 		<defName>Mashed_Ashlands_Plant_SulphurFungus</defName>
 		<label>sulphur fungus</label>
-		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. Can only be grown on ground dense in sulphur.</description>
+		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_SulphuricSand</li>
 				</allowedTerrainForWild>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowSulphur</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -325,9 +303,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>

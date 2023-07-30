@@ -6,11 +6,6 @@
 		<label>ashland haygrass</label>
 		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
 		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
 			<li MayRequire="owlchemist.seedspleaselite" Class="SeedsPleaseLite.Seedless"/>
 		</modExtensions>
 		<statBases>
@@ -48,13 +43,6 @@
 		<defName>Mashed_Ashlands_Plant_Chillshroom</defName>
 		<label>chillshroom mushroom</label>
 		<description>A comparatively small mushroom, often found growing in volcanically active ashland regions. The cap secretes a cooling liquid, that some use to create a tea. Can only grow on ash rich ground.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -89,9 +77,6 @@
 		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberry berries are a popular export, and can also be fermented into shein. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
@@ -136,9 +121,6 @@
 		<description>A reed often found growing near water in ashland regions. The pulp harvested from them is rather tasty, surprisingly sweet, and perfectly safe to consume raw. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
@@ -185,9 +167,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.05</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
@@ -226,9 +205,6 @@
 		<description>A grass often found growing near water in ashland regions. Farmed in great quantities by those that settle the ashlands, as raw saltrice is a popular export, and can also be fermented into mazte. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
@@ -274,9 +250,6 @@
 		<description>A grass often found growing in grasslands with ash rich soil. Farmed in great quantities by those that settle the ashlands, as raw wickwheat is a popular export, and can also be fermented into sujamma. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<disallowedTerrainForWild>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>

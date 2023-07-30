@@ -6,7 +6,7 @@
 			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<allowLandforms>true</allowLandforms>
-				<allowBiomeTransitions>false</allowBiomeTransitions>	<!-- breaks my plant stuff if enabled, cba fixing it atm -->
+				<allowBiomeTransitions>true</allowBiomeTransitions>
 			</li>
 		</modExtensions>
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>

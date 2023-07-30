@@ -12,5 +12,6 @@ namespace Mashed_Ashlands
         }
 
         public static TerrainAffordanceDef Mashed_Ashlands_AshCastle;
+        public static TerrainAffordanceDef Mashed_Ashlands_GrowAsh;
     }
 }

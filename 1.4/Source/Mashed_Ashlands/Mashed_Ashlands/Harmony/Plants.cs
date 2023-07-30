@@ -1,67 +1,13 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
 {
+    
     /// <summary>
-    /// Postfix forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
-    /// Patching PlantUtility.CanEverPlantAt allows this to work with Biome Transitions.
-    /// However this also affects sown plants, so not exactly usable
-    /// </summary>
-    /*
-    [HarmonyPatch(typeof(PlantUtility))]
-    [HarmonyPatch("CanEverPlantAt")]
-    [HarmonyPatch(new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) })]
-    public static class PlantUtility_CanEverPlantAt_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_CalculatePlantsWhichCanGrowAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
-        {
-            if (OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(map.Biome))
-            {
-                PlantProperties props = PlantProperties.Get(plantDef);
-                if (props != null)
-                {
-                    TerrainDef terrainDef = c.GetTerrain(map);
-                    if ((!props.allowedTerrainForWild.NullOrEmpty() && !props.allowedTerrainForWild.Contains(terrainDef))
-                        || !props.disallowedTerrainForWild.NullOrEmpty() && props.disallowedTerrainForWild.Contains(terrainDef))
-                    {
-                        __result = false;
-                    }
-                    else
-                    {
-                        if (props.requireWaterForWild)
-                        {
-                            bool waterFlag = false;
-                            foreach (IntVec3 neighbour in GenAdj.CellsAdjacent8Way(c, Rot4.North, new IntVec2(props.minTilesToWaterForWild, props.minTilesToWaterForWild)))
-                            {
-                                if (neighbour.InBounds(map))
-                                {
-                                    TerrainDef neighbourTerrain = neighbour.GetTerrain(map);
-                                    if (neighbourTerrain != null && neighbourTerrain.IsWater)
-                                    {
-                                        waterFlag = true;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (!waterFlag)
-                            {
-                                __result = false;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    */
-    /// <summary>
-    /// Prefixes allows for custom cave plants for specific biomes.
-    /// Postfix forces wild plants to spawn on specific terrain, and prevents them from spawning on specific terrain.
+    /// Allows for custom cave plants for specific biomes.
     /// </summary>
     [HarmonyPatch(typeof(WildPlantSpawner))]
     [HarmonyPatch("CalculatePlantsWhichCanGrowAt")]
@@ -84,56 +30,6 @@ namespace Mashed_Ashlands
                 return false;
             }
             return true;
-        }
- 
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
-        {
-            if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.Biome))
-            {
-                List<ThingDef> PlantsToRemove = new List<ThingDef>();
-                foreach (ThingDef plant in outPlants)
-                {
-                    PlantProperties props = PlantProperties.Get(plant);
-                    if (props != null)
-                    {
-                        TerrainDef terrainDef = c.GetTerrain(___map);
-                        if ((!props.allowedTerrainForWild.NullOrEmpty() && !props.allowedTerrainForWild.Contains(terrainDef))
-                            || !props.disallowedTerrainForWild.NullOrEmpty() && props.disallowedTerrainForWild.Contains(terrainDef))
-                        {
-                            PlantsToRemove.Add(plant);
-                        }
-                        else
-                        {
-                            if (props.requireWaterForWild)
-                            {
-                                bool waterFlag = false;
-                                foreach (IntVec3 neighbour in GenAdj.CellsAdjacent8Way(c, Rot4.North, new IntVec2(props.minTilesToWaterForWild, props.minTilesToWaterForWild)))
-                                {
-                                    if (neighbour.InBounds(___map))
-                                    {
-                                        TerrainDef neighbourTerrain = neighbour.GetTerrain(___map);
-                                        if (neighbourTerrain != null && neighbourTerrain.IsWater)
-                                        {
-                                            waterFlag = true;
-                                            break;
-                                        }
-                                    }
-                                }
-                                if (!waterFlag)
-                                {
-                                    PlantsToRemove.Add(plant);
-                                }
-                            }
-                        }
-                    }
-                }
-                foreach (ThingDef plant in PlantsToRemove)
-                {
-                    outPlants.Remove(plant);
-                }
-                PlantsToRemove.Clear();
-            }
         }
     }
 
@@ -166,41 +62,8 @@ namespace Mashed_Ashlands
     }
 
     /// <summary>
-    /// Forces specific plants to only be sowable on specific terrain
-    /// This one prevents unsowable plants from being sown
-    /// </summary>
-    [HarmonyPatch(typeof(PlantUtility))]
-    [HarmonyPatch("CanNowPlantAt")]
-    public static class PlantUtility_CanNowPlantAt_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_CanNowPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
-        {
-            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
-            {
-                PlantProperties props = PlantProperties.Get(plantDef);
-                if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
-                {
-                    TerrainDef terrainDef = c.GetTerrain(map);
-                    if (!terrainDef.affordances.NullOrEmpty())
-                    {
-                        foreach (TerrainAffordanceDef affordanceDef in props.terrainAffordancesToSow)
-                        {
-                            if (terrainDef.affordances.Contains(affordanceDef))
-                            {
-                                return;
-                            }
-                        }
-                        __result = false;
-                    }
-                }
-            }
-        }
-    }
-
-    /// <summary>
-    /// Forces specific plants to only be sowable on specific terrain
-    /// This one prevents unsowable plants from showing up as an option
+    /// Ensures only ashland plants show up in the ashland growing zone
+    /// And that exclusive ashland plants do not show up in the regular growing zone
     /// </summary>
     [HarmonyPatch(typeof(PlantUtility))]
     [HarmonyPatch("CanSowOnGrower")]
@@ -209,28 +72,15 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
         {
-            if (__result && Mashed_Ashlands_ModSettings.OnlySowOnAsh && obj is Zone)
+            if (__result)
             {
-                PlantProperties props = PlantProperties.Get(plantDef);
-                if (props != null && !props.terrainAffordancesToSow.NullOrEmpty())
+                if (obj is Zone_GrowingAsh)
                 {
-                    if (obj is IPlantToGrowSettable settable)
-                    {
-                        using (IEnumerator<IntVec3> enumerator = settable.Cells.GetEnumerator())
-                        {
-                            while (enumerator.MoveNext())
-                            {
-                                foreach (TerrainAffordanceDef affordanceDef in props.terrainAffordancesToSow)
-                                {
-                                    if (enumerator.Current.GetTerrain(settable.Map).affordances.Contains(affordanceDef))
-                                    {
-                                        return;
-                                    }
-                                }
-                            }
-                            __result = false;
-                        }
-                    }
+                    __result = plantDef.plant.sowTags.Contains("Mashed_Ashlands_Ash");
+                }
+                if (obj is Zone_Growing && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
+                {
+                    __result = !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive");
                 }
             }
         }

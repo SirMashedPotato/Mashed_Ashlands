@@ -118,6 +118,9 @@
     <Compile Include="Jobs\JobGiver\JobGiver_FeedFromAshlandFlower.cs" />
     <Compile Include="Jobs\JoyGiver\JoyGiver_BuildAshCastle.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalAshlandFlowerFeeding.cs" />
+    <Compile Include="Jobs\WorkGiver\WorkGiver_GrowerAsh.cs" />
+    <Compile Include="Jobs\WorkGiver\WorkGiver_GrowerHarvestAsh.cs" />
+    <Compile Include="Jobs\WorkGiver\WorkGiver_GrowerSowAsh.cs" />
     <Compile Include="LifeStageWorker\LifeStageWorker_AnimalAdultCliffRacer.cs" />
     <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />
     <Compile Include="Settings\Mashed_Ashlands_ModSettings.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
+    <Compile Include="Utility\PlantPropsUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
@@ -167,6 +171,10 @@
     <Compile Include="World\WorldObjectComp\WorldObjectComp_RandomConditionCauser.cs" />
     <Compile Include="World\WorldObjectComp\WorldObjectComp_VolcanoDetails.cs" />
     <Compile Include="World\WorldObject\Volcano.cs" />
+    <Compile Include="Zone\Designator\Designator_ZoneAdd_GrowingAsh.cs" />
+    <Compile Include="Zone\Designator\Designator_ZoneAdd_GrowingAsh_Expand.cs" />
+    <Compile Include="Zone\ZoneUtility.cs" />
+    <Compile Include="Zone\Zone_GrowingAsh.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

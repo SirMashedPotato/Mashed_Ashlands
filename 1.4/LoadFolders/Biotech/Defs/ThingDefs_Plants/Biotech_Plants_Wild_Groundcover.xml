@@ -51,13 +51,6 @@
 		<defName>Mashed_Ashlands_GlowingEntoloma</defName>
 		<label>glowing entoloma</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions. Many enjoy the sight of its vibrant green colouration. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>8</Beauty>
 			<BeautyOutdoors>8</BeautyOutdoors>
@@ -92,9 +85,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -115,7 +105,7 @@
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
-		<comps Inherit="False">
+		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(3,69,47,0)</glowColor>
@@ -131,9 +121,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.2</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -154,7 +141,7 @@
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 		</plant>
-		<comps Inherit="False">
+		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(84,94,33,0)</glowColor>

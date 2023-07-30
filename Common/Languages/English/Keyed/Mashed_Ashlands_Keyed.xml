@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<!-- ==========[ash growing zone]==========-->
+	<Mashed_Ashlands_GrowingZoneAsh>ash growing zone</Mashed_Ashlands_GrowingZoneAsh>
+	<Mashed_Ashlands_GrowingZoneAshDesc>Create a zone where your colonists will try to grow a certain kind of plant. Can only be placed on ash.</Mashed_Ashlands_GrowingZoneAshDesc>
 	<!-- ==========[Cliff racer alert]==========-->
 	<Mashed_Ashlands_AlertCliffRacerTracker>Cliff racer extinction</Mashed_Ashlands_AlertCliffRacerTracker>
 	<Mashed_Ashlands_AlertCliffRacerTracker_Description>The Winged Menace, a seemingly endless swarm of cliff racers, a blight upon the ashlands. Anyone who helps further their extinction will be remembered as a Saint.\n\nKilling, or taming, wild cliff racers will push them further to extinction. However allowing wild eggs to hatch, or releasing cliff racers into the wild, will instead bolster their numbers even more.\n\nApproximate wild cliff racers remaining: {0}</Mashed_Ashlands_AlertCliffRacerTracker_Description>

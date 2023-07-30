@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GrowerHarvestAsh]==========-->
+	<WorkGiverDef>
+		<defName>Mashed_Ashlands_GrowerHarvestAsh</defName>
+		<label>harvest ash crops</label>
+		<giverClass>Mashed_Ashlands.WorkGiver_GrowerHarvestAsh</giverClass>
+		<workType>Growing</workType>
+		<priorityInType>101</priorityInType>
+		<verb>harvest ash</verb>
+		<gerund>harvesting ash</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	<!-- ==========[Mashed_Ashlands_GrowerSowAsh]==========-->
+	<WorkGiverDef>
+		<defName>Mashed_Ashlands_GrowerSowAsh</defName>
+		<label>sow ash crops</label>
+		<giverClass>Mashed_Ashlands.WorkGiver_GrowerSowAsh</giverClass>
+		<workType>Growing</workType>
+		<priorityInType>51</priorityInType>
+		<verb>sow ash</verb>
+		<gerund>sowing ash</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+</Defs>

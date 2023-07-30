@@ -9,9 +9,6 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandCavePlant>true</ashlandCavePlant>
 				<cavePlantCommonality>0.01</cavePlantCommonality>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>

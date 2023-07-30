@@ -14,13 +14,6 @@
 		<defName>Mashed_Ashlands_DuskCapMauve</defName>
 		<label>mauve dusk cap tree</label>
 		<description>A large fungal tree, solely found growing in regions with ash rich ground. While it offers nothing of practical use, most find it incredibly beautiful.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_DuskCapMauve</texPath>
 		</graphicData>
@@ -44,15 +37,12 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
 		<defName>Mashed_Ashlands_GiantSulphuricCoprinus</defName>
 		<label>sulphuric coprinus tree</label>
-		<description>A large fungal tree, solely found growing around sulphur lakes. While it offers nothing of practical use, most find it incredibly beautiful. Can only be grown on ground dense in sulphur.</description>
+		<description>A large fungal tree, solely found growing around sulphur lakes. While it offers nothing of practical use, most find it incredibly beautiful. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_SulphuricSand</li>
 				</allowedTerrainForWild>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowSulphur</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>

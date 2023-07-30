@@ -5,13 +5,6 @@
 		<defName>Mashed_Ashlands_Plant_Glowstalk</defName>
 		<label>glowstalk</label>
 		<description>An incredibly strange plant that can only be found growing in certain ashland regions. The bulb at the end of the stem emits a strong glow, quite useful during dark nights. Some choose to grow these plants as a form of natural lighting. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>
@@ -68,13 +61,6 @@
 		<defName>Mashed_Ashlands_Plant_Stinkcap</defName>
 		<label>stinkcap</label>
 		<description>A rather disgusting looking mushroom, often found growing in humid ashland regions. While the mushroom itself doesn't provide anything useful when harvested, it does release a rather foul cloud of gas once matured enough.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>-2</Beauty>
 			<BeautyOutdoors>-2</BeautyOutdoors>

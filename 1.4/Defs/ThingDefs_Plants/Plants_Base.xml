@@ -11,6 +11,8 @@
 			<harvestTag>Standard</harvestTag>
 			<sowTags>
 				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
 		</plant>
 	</ThingDef>
@@ -112,6 +114,11 @@
 	<ThingDef ParentName="TreeBase" Name="Mashed_Ashlands_TreeBase" Abstract="True">
 		<plant>
 			<mustBeWildToSow>False</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
 </Defs>

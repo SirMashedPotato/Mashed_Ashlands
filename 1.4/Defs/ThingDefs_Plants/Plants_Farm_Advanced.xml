@@ -5,13 +5,6 @@
 		<defName>Mashed_Ashlands_Plant_AshPomegranate</defName>
 		<label>ash pomegranate tree</label>
 		<description>An incredibly hardy tree that can be found growing in volcanically active ashland regions. Visually quite distinct compared to the common pomegranate tree. The branches of the ash pomegranate almost completely lack leaves, and are covered in large thorns. The fruits this tree produces are just as edible, though they do have a slightly odd ashy taste.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<blockWind>true</blockWind>
 		<statBases>
 			<Flammability>0.4</Flammability>
@@ -45,9 +38,6 @@
 		<description>A grass that can sometimes be found growing in calmer ashlands regions. Considered notoriously difficult to grow, raw meadow rye can be fermented into flin, a highly sought after alcoholic drink. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 				</allowedTerrainForWild>

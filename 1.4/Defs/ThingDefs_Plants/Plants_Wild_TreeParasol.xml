@@ -39,9 +39,6 @@
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
 				</disallowedTerrainForWild>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -67,13 +64,6 @@
 		<defName>Mashed_Ashlands_Plant_TreeMilkcap</defName>
 		<label>milkcap tree</label>
 		<description>A rather small fungal tree, very unimpressive, especially when compared to the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap</texPath>
 		</graphicData>
@@ -97,13 +87,6 @@
 		<defName>Mashed_Ashlands_Plant_TreeNetchShield</defName>
 		<label>netch shield tree</label>
 		<description>A large fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield</texPath>
 		</graphicData>
@@ -140,13 +123,6 @@
 		<defName>Mashed_Ashlands_Plant_TreeSpongecap</defName>
 		<label>spongecap tree</label>
 		<description>A large fungal tree, though not as impressive as the emperor parasol, and considered to be somewhat hideous by most. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap</texPath>
 		</graphicData>
@@ -177,9 +153,6 @@
 				<secondaryDropAmountRange>5~10</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -213,9 +186,6 @@
 				<secondaryDropAmountRange>15~25</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
-				<terrainAffordancesToSow>
-					<li>Mashed_Ashlands_GrowAsh</li>
-				</terrainAffordancesToSow>
 			</li>
 		</modExtensions>
 		<graphicData>

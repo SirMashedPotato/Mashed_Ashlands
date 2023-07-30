@@ -17,6 +17,7 @@
 			<growDays>2.5</growDays>
 			<sowTags>
 				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
 			</sowTags>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>

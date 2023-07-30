@@ -4,7 +4,7 @@
 	<ResearchProjectDef>
 		<defName>Mashed_Ashlands_AshSowing_Beginner</defName>
 		<label>beginner ashland farming</label>
-		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.</description>
+		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.\n\nThese plants can be grown at the ash growing zone.</description>
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>

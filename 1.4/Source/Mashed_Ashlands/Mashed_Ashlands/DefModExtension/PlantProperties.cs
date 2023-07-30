@@ -16,8 +16,6 @@ namespace Mashed_Ashlands
 
         public List<TerrainDef> allowedTerrainForWild = new List<TerrainDef>();
         public List<TerrainDef> disallowedTerrainForWild = new List<TerrainDef>();
-        public List<TerrainAffordanceDef> terrainAffordancesToSow = new List<TerrainAffordanceDef>();
-
 
         public bool requireWaterForWild = false;
         public int minTilesToWaterForWild = 3;
