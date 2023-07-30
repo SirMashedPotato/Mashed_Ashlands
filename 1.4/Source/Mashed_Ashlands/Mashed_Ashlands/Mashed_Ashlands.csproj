@@ -103,7 +103,6 @@
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
-    <Compile Include="Harmony\MapGen.cs" />
     <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />

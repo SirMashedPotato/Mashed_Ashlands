@@ -21,14 +21,6 @@
 						<originalTerrain>Sand</originalTerrain>
 						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
 					</li>
-					<li>
-						<originalTerrain>WaterMovingShallow</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>WaterMovingChestDeep</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
-					</li>
 				</terrainReplacers>
 				<roadReplacers>
 					<li>

@@ -19,11 +19,18 @@ namespace Mashed_Ashlands
         public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
         public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
 
+        public static bool geologicalLandformsEnabled = false;
+
         static OnStartupUtility()
         {
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
             EditRockTerrain();
+
+            if (ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
+            {
+                geologicalLandformsEnabled = true;
+            }
         }
 
         public static void FillBiomeLists(List<BiomeDef> biomeDefs)

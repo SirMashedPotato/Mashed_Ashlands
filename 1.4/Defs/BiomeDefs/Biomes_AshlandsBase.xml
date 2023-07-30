@@ -2,13 +2,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
-		<modExtensions>
-			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
-			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
-				<allowLandforms>true</allowLandforms>
-				<allowBiomeTransitions>true</allowBiomeTransitions>
-			</li>
-		</modExtensions>
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<forageability>0.75</forageability>
@@ -97,13 +90,41 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+	<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+			</li>
+		</modExtensions>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+			</li>
+		</modExtensions>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+			<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSandBlighted</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravelBlighted</gravelTerrain>
+			</li>
+		</modExtensions>
 		<allowFarmingCamps>false</allowFarmingCamps>
+		<allowRivers>false</allowRivers>
 		<canAutoChoose>false</canAutoChoose>
 		<movementDifficulty>2</movementDifficulty>
 		<settlementSelectionWeight>0.1</settlementSelectionWeight>
@@ -131,6 +152,15 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+			<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSandVolcanic</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
+			</li>
+		</modExtensions>
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<allowRivers>false</allowRivers>
 		<movementDifficulty>3</movementDifficulty>

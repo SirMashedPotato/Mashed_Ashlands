@@ -15,14 +15,18 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_TerrainFrom_Patch(Map map, ref TerrainDef __result)
         {
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
-            if (props != null && !props.terrainReplacers.NullOrEmpty())
+            ///TODO patch only if not enabled possibly
+            if (!OnStartupUtility.geologicalLandformsEnabled)
             {
-                foreach (TerrainReplacer replacer in props.terrainReplacers)
+                BiomeProperties props = BiomeProperties.Get(map.Biome);
+                if (props != null && !props.terrainReplacers.NullOrEmpty())
                 {
-                    if (replacer.originalTerrain == __result)
+                    foreach (TerrainReplacer replacer in props.terrainReplacers)
                     {
-                        __result = replacer.replacedTerrain;
+                        if (replacer.originalTerrain == __result)
+                        {
+                            __result = replacer.replacedTerrain;
+                        }
                     }
                 }
             }
@@ -155,6 +159,27 @@ namespace Mashed_Ashlands
                 if (__result == TerrainDefOf.Sand)
                 {
                     __result = null;
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Increases the number of geysers for specific biomes.
+    /// </summary>
+    [HarmonyPatch(typeof(GenStep_Scatterer))]
+    [HarmonyPatch("CalculateFinalCount")]
+    public static class GenStep_Scatterer_CalculateFinalCount_Patch
+    {
+        [HarmonyPostfix]
+        public static void Mashed_Ashlands_SteamGeyserNumber_Patch(Map map, ref GenStepDef ___def, ref int __result)
+        {
+            if (Mashed_Ashlands_ModSettings.EnableExtraGeysers && ___def == GenStepDefOf.SteamGeysers)
+            {
+                BiomeProperties props = BiomeProperties.Get(map.Biome);
+                if (props != null && props.steamGeyserMultiplier != 1f)
+                {
+                    __result = (int)(__result * props.steamGeyserMultiplier);
                 }
             }
         }

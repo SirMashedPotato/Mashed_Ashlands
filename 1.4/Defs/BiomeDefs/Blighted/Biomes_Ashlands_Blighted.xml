@@ -22,14 +22,6 @@
 						<originalTerrain>Sand</originalTerrain>
 						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
 					</li>
-					<li>
-						<originalTerrain>WaterMovingShallow</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>WaterMovingChestDeep</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_CrackedAshSoilBlighted</replacedTerrain>
-					</li>
 				</terrainReplacers>
 				<roadReplacers>
 					<li>
@@ -85,14 +77,9 @@
 				<perlinFrequency>0.015</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
-						<min>0.68</min>
-						<max>0.76</max>
-					</li>
-					<li>
 						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
-						<min>0.76</min>
-						<max>99</max>
+						<min>0.46</min>
+						<max>0.86</max>
 					</li>
 				</thresholds>
 			</li>
