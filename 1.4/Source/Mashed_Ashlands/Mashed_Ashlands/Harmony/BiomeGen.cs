@@ -8,34 +8,6 @@ namespace Mashed_Ashlands
     /// <summary>
     /// Replaces terrain with different terrain.
     /// </summary>
-    [HarmonyPatch(typeof(GenStep_Terrain))]
-    [HarmonyPatch("TerrainFrom")]
-    public static class GenStep_Terrain_TerrainFrom_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_TerrainFrom_Patch(Map map, ref TerrainDef __result)
-        {
-            ///TODO patch only if not enabled possibly
-            if (!OnStartupUtility.geologicalLandformsEnabled)
-            {
-                BiomeProperties props = BiomeProperties.Get(map.Biome);
-                if (props != null && !props.terrainReplacers.NullOrEmpty())
-                {
-                    foreach (TerrainReplacer replacer in props.terrainReplacers)
-                    {
-                        if (replacer.originalTerrain == __result)
-                        {
-                            __result = replacer.replacedTerrain;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /// <summary>
-    /// Replaces terrain with different terrain.
-    /// </summary>
     [HarmonyPatch(typeof(CompTerrainPumpDry))]
     [HarmonyPatch("GetTerrainToDryTo")]
     public static class GetTerrainToDryTo_Patch

@@ -27,10 +27,10 @@ namespace Mashed_Ashlands
                 harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
             }
 
-            ///Patching in support for Smart Farming
-            if (ModsConfig.IsActive("owlchemist.smartfarming"))
+            ///If geological landforms is not enabled, patch, otherwise geological landfroms sand/gravel replacement is used
+            if (!ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
             {
-
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
             }
 
             ///If biome transitions is enabled, swap to version with more overhead, but with better compatability
@@ -44,9 +44,27 @@ namespace Mashed_Ashlands
             }
         }
     }
-    
+
     public static class ConditionalHarmonyPatches
     {
+        /// <summary>
+        /// Only used if Geological Landforms is not enabled, as that mod includes it's own sand/gravel replacement that works with biome transitions
+        /// </summary>
+        public static void GenStep_Terrain_TerrainFrom_Patch(Map map, ref TerrainDef __result)
+        {
+            BiomeProperties props = BiomeProperties.Get(map.Biome);
+            if (props != null && !props.terrainReplacers.NullOrEmpty())
+            {
+                foreach (TerrainReplacer replacer in props.terrainReplacers)
+                {
+                    if (replacer.originalTerrain == __result)
+                    {
+                        __result = replacer.replacedTerrain;
+                    }
+                }
+            }
+        }
+        
         /// <summary>
         /// Forces wild plants to only spawn on certain terrain, or near water.
         /// Doesn't play nice on a map with a biome transition.
