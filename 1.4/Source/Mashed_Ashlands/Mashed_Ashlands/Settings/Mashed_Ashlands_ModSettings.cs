@@ -23,6 +23,7 @@ namespace Mashed_Ashlands
         public static bool EnableExtinctVolcano => _instance.Mashed_Ashlands_EnableExtinctVolcano;
         public static int NumberOfExtinctVolcano => _instance.Mashed_Ashlands_NumberOfExtinctVolcano;
 
+        public static bool EnableCoastalVolcano => _instance.Mashed_Ashlands_EnableCoastalVolcano;
         public static int VolcanoMinDistance => _instance.Mashed_Ashlands_VolcanoMinDistance;
         public static int BiomesMaxDistance => _instance.Mashed_Ashlands_BiomesMaxDistance;
         public static bool VolcanoScaleWithWorldSize => _instance.Mashed_Ashlands_VolcanoScaleWithWorldSize;
@@ -122,6 +123,7 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_EnableExtinctVolcano = Mashed_Ashlands_EnableExtinctVolcano_def;
         public int Mashed_Ashlands_NumberOfExtinctVolcano = Mashed_Ashlands_NumberOfExtinctVolcano_def;
 
+        public bool Mashed_Ashlands_EnableCoastalVolcano = Mashed_Ashlands_EnableCoastalVolcano_def;
         public int Mashed_Ashlands_VolcanoMinDistance = Mashed_Ashlands_VolcanoMinDistance_def;
         public int Mashed_Ashlands_BiomesMaxDistance = Mashed_Ashlands_BiomesMaxDistance_def;
         public bool Mashed_Ashlands_VolcanoScaleWithWorldSize = Mashed_Ashlands_VolcanoScaleWithWorldSize_def;
@@ -219,6 +221,7 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_EnableExtinctVolcano_def = true;
         private static readonly int Mashed_Ashlands_NumberOfExtinctVolcano_def = 3;
 
+        private static readonly bool Mashed_Ashlands_EnableCoastalVolcano_def = false;
         private static readonly int Mashed_Ashlands_VolcanoMinDistance_def = 25;
         private static readonly int Mashed_Ashlands_BiomesMaxDistance_def = 25;
         private static readonly bool Mashed_Ashlands_VolcanoScaleWithWorldSize_def = true;
@@ -323,6 +326,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExtinctVolcano, "Mashed_Ashlands_EnableExtinctVolcano", Mashed_Ashlands_EnableExtinctVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_NumberOfExtinctVolcano, "Mashed_Ashlands_NumberOfExtinctVolcano", Mashed_Ashlands_NumberOfExtinctVolcano_def);
 
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano", Mashed_Ashlands_EnableCoastalVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoMinDistance, "Mashed_Ashlands_VolcanoMinDistance", Mashed_Ashlands_VolcanoMinDistance_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BiomesMaxDistance, "Mashed_Ashlands_BiomesMaxDistance", Mashed_Ashlands_BiomesMaxDistance_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoScaleWithWorldSize, "Mashed_Ashlands_VolcanoScaleWithWorldSize", Mashed_Ashlands_VolcanoScaleWithWorldSize_def);
@@ -435,6 +439,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableExtinctVolcano = Mashed_Ashlands_EnableExtinctVolcano_def;
             _instance.Mashed_Ashlands_NumberOfExtinctVolcano = Mashed_Ashlands_NumberOfExtinctVolcano_def;
 
+            _instance.Mashed_Ashlands_EnableCoastalVolcano = Mashed_Ashlands_EnableCoastalVolcano_def;
             _instance.Mashed_Ashlands_VolcanoMinDistance = Mashed_Ashlands_VolcanoMinDistance_def;
             _instance.Mashed_Ashlands_BiomesMaxDistance = Mashed_Ashlands_BiomesMaxDistance_def;
             _instance.Mashed_Ashlands_VolcanoScaleWithWorldSize = Mashed_Ashlands_VolcanoScaleWithWorldSize_def;

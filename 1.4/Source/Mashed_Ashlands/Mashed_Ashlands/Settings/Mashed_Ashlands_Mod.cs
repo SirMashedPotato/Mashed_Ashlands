@@ -228,6 +228,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExclusiveRocks".Translate(), ref settings.Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks_Tooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_VolcanoScaleWithWorldSize, "Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
             listing_Standard.Gap();
 

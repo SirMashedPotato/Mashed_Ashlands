@@ -130,8 +130,8 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<Beauty>4</Beauty>
-			<BeautyOutdoors>4</BeautyOutdoors>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
