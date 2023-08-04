@@ -21,13 +21,19 @@ namespace Mashed_Ashlands
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("WorldGenStep_ResetHillinessForISettlement"), "GenerateFresh"), prefix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.ResetHillinessForISettlement_Fix)));
             }
 
+            ///Prventing beehives producing honey during ash storms
+            if (ModsConfig.IsActive("sarg.rimbees"))
+            {
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("Building_Beehouse"), "CheckRainLevels"), prefix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.RimBees_Beehouse_AshStormPatch)));
+            }
+
             ///Patching in support for SeedsPlease Lite, otherwise seeds are required to select plants, but never used when sowing them
-            if(ModsConfig.IsActive("owlchemist.seedspleaselite"))
+            if (ModsConfig.IsActive("owlchemist.seedspleaselite"))
             {
                 harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
             }
 
-            ///If geological landforms is not enabled, patch, otherwise geological landfroms sand/gravel replacement is used
+            ///If geological landforms is not enabled, patch, otherwise geological landforms sand/gravel replacement is used
             if (!ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
             {
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
@@ -47,6 +53,20 @@ namespace Mashed_Ashlands
 
     public static class ConditionalHarmonyPatches
     {
+        /// <summary>
+        /// Patch for RimBees, prevents beehives producing honey during ash storms 
+        /// </summary>
+        public static bool RimBees_Beehouse_AshStormPatch(ref Building __instance, ref bool __result, ref bool ___flagRain)
+        {
+            if (Utility.MapHasAshStorm(__instance))
+            {
+                __result = false;
+                ___flagRain = false;
+                return false;
+            }
+            return true;
+        }
+
         /// <summary>
         /// Only used if Geological Landforms is not enabled, as that mod includes it's own sand/gravel replacement that works with biome transitions
         /// </summary>

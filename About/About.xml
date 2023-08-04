@@ -3,7 +3,7 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>0.1.20</modVersion>
+	<modVersion>0.1.21</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -23,7 +23,7 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Biotech</li>
-		<!-- loadfolders -->
+		<!-- loadfolders & harmony patches -->
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>vanillaexpanded.achievements</li>
 		<li>VanillaExpanded.VCEF</li>
@@ -32,6 +32,7 @@
 		<li>odeum.wmbp</li>
 		<li>owlchemist.seedspleaselite</li>
 		<li>m00nl1ght.geologicallandform</li>
+		<li>sarg.rimbees</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim</li>
