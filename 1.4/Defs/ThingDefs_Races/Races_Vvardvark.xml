@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_VvardvarkThingBase">
 		<defName>Mashed_Ashlands_Vvardvark</defName>
 		<label>vvardvark</label>
 		<description>A peculiar creature, that many consider to be the failed result of an experiment. Regardless of their origin, wild vvardarvk can often be found in ashland regions. They primarily use their long tongue to search for tasty insect morsels, though they will also happily consume plant matter.\n\nVvardvark are often kept as pets, and have been selectively bred to come in a wide range of colours. Most never own more than one vvardvark at a time, as vvardvark tend to emit a rather unpleasant odour.</description>

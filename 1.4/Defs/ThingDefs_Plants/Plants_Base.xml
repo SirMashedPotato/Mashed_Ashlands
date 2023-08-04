@@ -64,52 +64,6 @@
 			<wildOrder>3</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_GrassBase]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_GrassBase" Abstract="True">
-		<selectable>false</selectable>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.45</Nutrition>
-			<Flammability>1.0</Flammability>
-			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
-			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.4~0.6</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
-			<wildClusterRadius>5</wildClusterRadius>
-			<wildClusterWeight>80</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-		</plant>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_SmallMushroomBase]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_SmallMushroomBase" Abstract="True">
-		<selectable>false</selectable>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.35</Nutrition>
-			<Flammability>0.6</Flammability>
-		</statBases>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<plant>
-			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>0.6</fertilityMin>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<topWindExposure>0.05</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_TreeBase]==========-->
 	<ThingDef ParentName="TreeBase" Name="Mashed_Ashlands_TreeBase" Abstract="True">
 		<plant>
@@ -119,6 +73,18 @@
 				<li>Mashed_Ashlands_Ash</li>
 				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GroundcoverBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_GroundcoverBase" Abstract="True">
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<harvestWork>40</harvestWork>
+			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
 </Defs>

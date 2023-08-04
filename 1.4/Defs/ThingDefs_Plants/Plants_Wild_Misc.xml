@@ -49,6 +49,8 @@
 		</graphicData>
 		<uiIconScale>0.85</uiIconScale>
 		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.09</fertilityMin>
 			<growDays>3</growDays>
 			<pollution>Any</pollution>
 			<visualSizeRange>0.8~1.2</visualSizeRange>

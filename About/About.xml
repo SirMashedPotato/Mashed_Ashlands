@@ -3,7 +3,7 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>0.1.19</modVersion>
+	<modVersion>0.1.20</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -31,6 +31,7 @@
 		<li>regrowth.botr.core</li>
 		<li>odeum.wmbp</li>
 		<li>owlchemist.seedspleaselite</li>
+		<li>m00nl1ght.geologicallandform</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim</li>

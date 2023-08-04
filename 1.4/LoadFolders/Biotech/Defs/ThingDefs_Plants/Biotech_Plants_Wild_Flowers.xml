@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_SporangiumFlowerBase">
 		<defName>Mashed_Ashlands_Plant_SporangiumFlower</defName>
 		<label>sporangium flower</label>
 		<description>A rather odd looking flower, that somewhat resembles the sporangium of certain species of slime mold. It can only be found growing in highly polluted ashland regions.</description>

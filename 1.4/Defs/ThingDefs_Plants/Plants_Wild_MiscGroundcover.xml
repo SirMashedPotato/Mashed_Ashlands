@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_Ashreed]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_AshreedBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Ashreed</defName>
+		<label>ashreed</label>
+		<description>A species of wild grass adapted for life in the ashlands. Often found growing near sources of water.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>3</minTilesToWaterForWild>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Flammability>1.0</Flammability>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.6</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
+		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_DraggleTails]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_DraggleTailsBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_DraggleTails</defName>
+		<label>draggle-tails</label>
+		<description>A primitive flowering plant, only found growing in humid ashland regions. They emit a faint glow, often used by explorers to aide in navigating the treacherous marshes at night.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>1.0</Flammability>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_DraggleTails</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.6</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>7</growDays>
+			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.8~1.4</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(53,94,84,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

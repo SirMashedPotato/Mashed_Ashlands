@@ -47,7 +47,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GlowingEntoloma]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_GlowingEntolomaBase">
 		<defName>Mashed_Ashlands_GlowingEntoloma</defName>
 		<label>glowing entoloma</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions. Many enjoy the sight of its vibrant green colouration. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
@@ -77,7 +77,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingRussula]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_GlowingRussulaBase">
 		<defName>Mashed_Ashlands_Plant_GlowingRussula</defName>
 		<label>glowing russula</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
@@ -113,7 +113,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingCoprinus]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_GlowingCoprinusBase">
 		<defName>Mashed_Ashlands_Plant_GlowingCoprinus</defName>
 		<label>glowing coprinus</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>

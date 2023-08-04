@@ -67,6 +67,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
+			<li>AnimalCommon</li>
 			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
