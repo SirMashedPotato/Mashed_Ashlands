@@ -58,7 +58,7 @@ namespace Mashed_Ashlands
         /// </summary>
         public static bool RimBees_Beehouse_AshStormPatch(ref Building __instance, ref bool __result, ref bool ___flagRain)
         {
-            if (Utility.MapHasAshStorm(__instance))
+            if (Utility.MapHasUnsafeCondition(__instance))
             {
                 __result = false;
                 ___flagRain = false;

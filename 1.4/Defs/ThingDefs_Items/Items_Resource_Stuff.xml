@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>Mashed_Ashlands_ParasolWoodLog</defName>
 		<label>parasol wood</label>
-		<description>Wood from a parasol mushroom tree. Useful for building structures and weapons. Softer than regular wood, though comparatively more fire resistant.</description>
+		<description>Wood from a parasol mushroom tree. Useful for building structures and weapons, but completely ineffective as fuel. Softer than regular wood, though significantly more fire resistant.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Mashed_Ashlands_ParasolWoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -16,7 +16,7 @@
 			<MarketValue>1.2</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>0.4</Mass>
-			<Flammability>0.6</Flammability>
+			<Flammability>0.4</Flammability>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
@@ -44,7 +44,7 @@
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>1</Beauty>
-				<Flammability>0.6</Flammability>
+				<Flammability>0.4</Flammability>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
 				<DoorOpenSpeed>1.2</DoorOpenSpeed>
