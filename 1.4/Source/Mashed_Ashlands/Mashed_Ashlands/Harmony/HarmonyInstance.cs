@@ -16,11 +16,6 @@ namespace Mashed_Ashlands
             Harmony harmony = new Harmony("com.Mashed_Ashlands");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
-            if (ModsConfig.IsActive("oskarpotocki.vfe.insectoid"))
-            {
-                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("WorldGenStep_ResetHillinessForISettlement"), "GenerateFresh"), prefix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.ResetHillinessForISettlement_Fix)));
-            }
-
             ///Prventing beehives producing honey during ash storms
             if (ModsConfig.IsActive("sarg.rimbees"))
             {
@@ -148,24 +143,6 @@ namespace Mashed_Ashlands
                     __result = PlantPropsUtility.WildPlantSpawnChecker(props, map, c);
                 }
             }
-        }
-
-        /// <summary>
-        /// Fix for VE's own code
-        /// Literally the only change is adding 'worldObject.Faction != null'
-        /// The rest is exactly the same
-        /// </summary>
-        public static bool ResetHillinessForISettlement_Fix()
-        {
-            foreach (WorldObject worldObject in Find.World.worldObjects.AllWorldObjects)
-            {
-                bool flag = worldObject.Faction != null && worldObject.Faction.def.defName == "VFEI_Insect" && Find.WorldGrid[worldObject.Tile].hilliness != Hilliness.Mountainous;
-                if (flag)
-                {
-                    Find.WorldGrid[worldObject.Tile].hilliness = Hilliness.Mountainous;
-                }
-            }
-            return false;
         }
     }
 }
