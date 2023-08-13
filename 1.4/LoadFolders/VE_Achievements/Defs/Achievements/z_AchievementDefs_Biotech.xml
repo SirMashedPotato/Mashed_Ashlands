@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_AchievementAshlands_GlowingAnimalCollector]========== -->
+	<!-- ==========[Mashed_AchievementAshlands_GlowingAnimalTamer]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Mashed_AchievementAshlands_GlowingAnimalTamer</defName>
-		<label>Is This Safe To Be Around?</label>
+		<label>Glowing Animal Tamer</label>
 		<description>Tame your first glowing ashland animal</description>
 		<tracker Class="AchievementsExpanded.KindDefTracker">
 			<requireAll>false</requireAll>
@@ -44,7 +44,7 @@
 	<!-- ==========[Mashed_AchievementAshlands_GlowingAnimalCollector]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Mashed_AchievementAshlands_GlowingAnimalCollector</defName>
-		<label>I Just Like The Way They Glow</label>
+		<label>Glowing Animal Collector</label>
 		<description>Have at least one of each glowing ashland animal at the same time</description>
 		<tracker Class="AchievementsExpanded.KindDefTracker">
 			<requireAll>true</requireAll>
