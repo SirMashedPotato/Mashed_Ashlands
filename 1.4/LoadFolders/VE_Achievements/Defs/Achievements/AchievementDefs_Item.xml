@@ -10,7 +10,7 @@
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectFlin</texPath>
-		<points>25</points>
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectGreef]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
@@ -22,7 +22,7 @@
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectGreef</texPath>
-		<points>25</points>
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectMazte]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
@@ -34,7 +34,7 @@
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectMazte</texPath>
-		<points>25</points>
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectShein]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
@@ -46,7 +46,7 @@
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectShein</texPath>
-		<points>25</points>
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectSujamma]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
@@ -58,6 +58,6 @@
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectSujamma</texPath>
-		<points>25</points>
+		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 </Defs>
