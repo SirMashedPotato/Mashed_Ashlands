@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Vvardvark]==========-->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_VvardvarkThingBase">
 		<defName>Mashed_Ashlands_Vvardvark</defName>
 		<label>vvardvark</label>
@@ -38,7 +39,7 @@
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
 				<customThingToDig>Meat_Megaspider</customThingToDig>
-				<customAmountToDig>5</customAmountToDig>
+				<customAmountToDig>3</customAmountToDig>
 				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
 				<spawnForbidden>true</spawnForbidden>
 			</li>
@@ -186,6 +187,102 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Dessicated_Vvardvark</texPath>
 					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_VvardvarkMossy]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_VvardvarkThingBase">
+		<defName>Mashed_Ashlands_VvardvarkMossy</defName>
+		<label>mossy vvardvark</label>
+		<description>A slightly smaller subspecies of the common vvardvark. Typically found in thriving ashland regions, the moss coating that grows on these vvardvark helps them blend into dense foliage. In return the moss is able to easily spread its spores throughout the ashlands.\n\nNot particularly beloved as pets, due to the near constant spreading of moss spores. Those with a fascination for moss however, are often quite eager to obtain one.</description>
+		<race>
+			<baseBodySize>0.35</baseBodySize>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_VvardvarkMossy</defName>
+		<label>mossy vvardvark</label>
+		<race>Mashed_Ashlands_VvardvarkMossy</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<color>(167,167,144)</color>
+				<colorTwo>(105,103,89)</colorTwo>
+			</li>
+			<li>
+				<color>(116,110,98)</color>
+				<colorTwo>(65,64,61)</colorTwo>
+			</li>
+			<li>
+				<color>(60,59,57)</color>
+				<colorTwo>(92,90,83)</colorTwo>
+			</li>
+			<li>
+				<color>(153,160,170)</color>
+				<colorTwo>(100,106,125)</colorTwo>
+			</li>
+			<li>
+				<color>(95,104,108)</color>
+				<colorTwo>(54,58,60)</colorTwo>
+			</li>
+			<li>
+				<color>(90,92,101)</color>
+				<colorTwo>(56,57,59)</colorTwo>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<label>mossy vvardvark cub</label>
+				<labelPlural>mossy vvardvark cubs</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Vvardvark</texPath>
+					<drawSize>0.88</drawSize>
+					<color>(167,167,144)</color>
+					<shaderType>CutoutComplex</shaderType>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Dessicated_Vvardvark</texPath>
+					<drawSize>0.88</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_VvardvarkMossy</texPath>
+					<drawSize>1.15</drawSize>
+					<color>(167,167,144)</color>
+					<shaderType>CutoutComplex</shaderType>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Dessicated_Vvardvark</texPath>
+					<drawSize>1.15</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+					<thing>Mashed_Ashlands_RawEmperorParasolMoss</thing>
+				</butcherBodyPart>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_VvardvarkMossy</texPath>
+					<drawSize>1.3</drawSize>
+					<color>(167,167,144)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.20, 0.3, 0.20)</volume>
+						<offset>(0,0,-0.08)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Dessicated_Vvardvark</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+					<thing>Mashed_Ashlands_RawEmperorParasolMoss</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

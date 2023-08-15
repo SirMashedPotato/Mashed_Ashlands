@@ -18,6 +18,7 @@
 						<li>Mashed_Ashlands_KwamaForager</li>
 						<li>Mashed_Ashlands_KwamaScrib</li>
 						<li>Mashed_Ashlands_Vvardvark</li>
+						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_Netch</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
@@ -45,6 +46,7 @@
 					<xpath>Defs/RecipeDef[defName = "InstallNoseAnimalSimple" or "InstallBionicAnimalStomach" or "InstallBionicAnimalKidney" or "InstallBionicAnimalLiver" or "InstallBionicAnimalLung" or "InstallBionicAnimalHeart" or "InstallSpineAnimalSimple" or "InstallJawAnimalSimple" or "InstallBionicEyeAnimal" or "InstallEarAnimalSimple" or "InstallSimpleProstheticLegAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>Mashed_Ashlands_Vvardvark</li>
+						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
 						<li>Mashed_Ashlands_Alit</li>
@@ -64,6 +66,7 @@
 					<xpath>Defs/RecipeDef[defName = "InstallAnimalBrainStimulator" or "InstallSpineAnimalBionic" or "InstallJawAnimalBionic" or "InstallEarAnimalBionic" or "InstallPowerClawAnimal" or "InstallBionicLegAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>Mashed_Ashlands_Vvardvark</li>
+						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
 						<li>Mashed_Ashlands_Alit</li>
@@ -83,6 +86,7 @@
 					<xpath>Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>Mashed_Ashlands_Vvardvark</li>
+						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>

@@ -6,7 +6,7 @@
 	<Groups />
 	<Nodes>
 		<Node name="Custom Landform" ID="0" type="landformManifest" pos="-950,-517">
-			<string name="Id">Ashlands_AshDeposit</string>
+			<string name="Id">Mashed_Ashlands_AshDeposit</string>
 			<boolean name="IsCustom">false</boolean>
 			<boolean name="IsExperimental">false</boolean>
 			<int name="RevisionVersion">6</int>

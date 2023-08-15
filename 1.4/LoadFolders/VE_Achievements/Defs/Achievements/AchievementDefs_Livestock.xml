@@ -92,6 +92,10 @@
 					<key>Mashed_Ashlands_Vvardvark</key>
 					<value>1</value>
 				</li>
+				<li>
+					<key>Mashed_Ashlands_VvardvarkMossy</key>
+					<value>1</value>
+				</li>
 			</kindDefs>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_AshlandAnimalTamer</texPath>
@@ -187,6 +191,10 @@
 				</li>
 				<li>
 					<key>Mashed_Ashlands_Vvardvark</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_VvardvarkMossy</key>
 					<value>1</value>
 				</li>
 			</kindDefs>

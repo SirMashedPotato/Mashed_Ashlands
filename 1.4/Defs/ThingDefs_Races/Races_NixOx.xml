@@ -10,6 +10,7 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<FilthRate>10</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -28,7 +29,7 @@
 			<herdAnimal>true</herdAnimal>
 			<body>Mashed_Ashlands_InsectTickLike</body>
 			<leatherDef>Mashed_Ashlands_NixOxChitin</leatherDef>
-			<baseBodySize>1.5</baseBodySize>
+			<baseBodySize>1.4</baseBodySize>
 			<baseHealthScale>1.45</baseHealthScale>
 			<baseHungerRate>0.435</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>

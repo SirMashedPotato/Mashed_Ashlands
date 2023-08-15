@@ -97,7 +97,7 @@
 				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
 				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
 				<disallowedLandforms>
-					<li>Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
 					<li>Mashed_Ashlands_RichAshDeposit</li>
 				</disallowedLandforms>
 			</li>
@@ -113,7 +113,7 @@
 				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
 				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
 				<disallowedLandforms>
-					<li>Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
 					<li>Mashed_Ashlands_RichAshDeposit</li>
 				</disallowedLandforms>
 			</li>
@@ -132,6 +132,8 @@
 					<li>Lake</li>
 					<li>DryLake</li>
 					<li>LakeWithIsland</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
 					<li>Mashed_Ashlands_BlightedAshDeposit</li>
 				</disallowedLandforms>
 			</li>
@@ -176,6 +178,8 @@
 					<li>Lake</li>
 					<li>DryLake</li>
 					<li>LakeWithIsland</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
 					<li>Mashed_Ashlands_VolcanicAshDeposit</li>
 				</disallowedLandforms>
 			</li>
