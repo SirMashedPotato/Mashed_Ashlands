@@ -147,7 +147,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>Mashed_Ashlands_NixLeather</defName>
 		<label>nix leather</label>
-		<description>Tanned, dried, scraped nix-hound or nix-steed skin. Tough and light, but a poor insulator.</description>
+		<description>Tanned, dried, scraped nix-hound 'skin'. Tough and light, but a poor insulator.</description>
 		<graphicData>
 			<color>(129,132,75)</color>
 		</graphicData>

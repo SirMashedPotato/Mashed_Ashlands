@@ -258,25 +258,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
-		<defName>Mashed_Ashlands_Egg_NixSteedFertilized</defName>
-		<label>nix-steed egg (fert.)</label>
-		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
-		<graphicData>
-			<color>(108,79,94)</color>
-			<drawSize>1.4</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>19</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
-				<hatcherPawn>Mashed_Ashlands_NixSteed</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_SandcrabBlueFertilized</defName>
