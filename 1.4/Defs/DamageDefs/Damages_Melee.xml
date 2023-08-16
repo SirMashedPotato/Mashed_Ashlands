@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_BurnBite]==========-->
 	<DamageDef ParentName="Bite">
 		<defName>Mashed_Ashlands_BurnBite</defName>
-		<label>fire bite</label>
+		<label>burn bite</label>
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>

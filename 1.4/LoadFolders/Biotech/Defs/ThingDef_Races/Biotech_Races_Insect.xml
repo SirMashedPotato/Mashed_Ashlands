@@ -9,6 +9,10 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
+			</li>
 		</modExtensions>
 		<statBases>
 			<MarketValue>130</MarketValue>
@@ -80,6 +84,10 @@
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
 			</li>
 		</modExtensions>
 		<comps>
@@ -347,6 +355,10 @@
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
 			</li>
 		</modExtensions>
 		<comps>

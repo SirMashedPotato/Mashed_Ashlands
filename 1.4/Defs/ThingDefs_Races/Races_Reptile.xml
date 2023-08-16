@@ -379,7 +379,7 @@
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
 				<customThingToDig>Meat_Megaspider</customThingToDig>
-				<customAmountToDig>5</customAmountToDig>
+				<customAmountToDig>3</customAmountToDig>
 				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
 				<spawnForbidden>true</spawnForbidden>
 			</li>
