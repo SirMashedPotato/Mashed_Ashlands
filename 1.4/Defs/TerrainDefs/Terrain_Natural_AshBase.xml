@@ -71,6 +71,9 @@
 		<tags>
 			<li>Road</li>
 		</tags>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshMudBase]==========-->
 	<TerrainDef Name="Mashed_Ashlands_AshMudBase" ParentName="NaturalTerrainBase" Abstract="True">

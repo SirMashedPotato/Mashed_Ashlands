@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MakeVEFlour]==========-->
+	<RecipeDef Name="Mashed_Ashlands_MakeVEFlourBase">
+		<defName>Mashed_Ashlands_MakeVEFlour</defName>
+		<label>grind ashland grains into flour</label>
+		<description>Grind 10 ashland grains into 15 flour.</description>
+		<jobString>Making flour.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawMeadowRye</li>
+				<li>Mashed_Ashlands_RawSaltrice</li>
+				<li>Mashed_Ashlands_RawWickwheat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Flour>15</VCE_Flour>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeVEFlourBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeVEFlourBase">
+		<defName>Mashed_Ashlands_MakeVEFlourBulk</defName>
+		<label>grind ashland grains into flour x4</label>
+		<description>Grind 40 ashland grains into 60 flour.</description>
+		<workAmount>400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<VCE_Flour>60</VCE_Flour>
+		</products>
+	</RecipeDef>
+</Defs>

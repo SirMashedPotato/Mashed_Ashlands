@@ -12,6 +12,8 @@
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_AshSowing_Intermediate]==========-->
@@ -54,6 +56,8 @@
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_AshSurvival_Intermediate]==========-->

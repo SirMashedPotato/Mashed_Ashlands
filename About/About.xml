@@ -3,7 +3,7 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>0.1.26</modVersion>
+	<modVersion>0.1.27</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -26,6 +26,7 @@
 		<!-- loadfolders & harmony patches -->
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>vanillaexpanded.achievements</li>
+		<li>vanillaexpanded.vcooke</li>
 		<li>VanillaExpanded.VCEF</li>
 		<li>syrchalis.processor.framework</li>
 		<li>regrowth.botr.core</li>
