@@ -99,7 +99,8 @@
 		</terrainPatchMakers>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Plant_Grass>20</Plant_Grass>
+			<Plant_TallGrass>8</Plant_TallGrass>
+			<Plant_Grass>12</Plant_Grass>
 			<Mashed_Ashlands_Plant_AshlandGrass>15</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandDuneGrass>2</Mashed_Ashlands_Plant_AshlandDuneGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>2</Mashed_Ashlands_Plant_AshlandFungus>

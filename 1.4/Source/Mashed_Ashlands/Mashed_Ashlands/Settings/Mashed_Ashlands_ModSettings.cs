@@ -4,6 +4,8 @@ namespace Mashed_Ashlands
 {
     public class Mashed_Ashlands_ModSettings : ModSettings
     {
+        public static Mashed_Ashlands_ModSettings Instance => _instance;
+
         private static Mashed_Ashlands_ModSettings _instance;
 
         /* ==========[GETTERS]========== */
@@ -14,6 +16,7 @@ namespace Mashed_Ashlands
         public static bool FlowerFeeding => _instance.Mashed_Ashlands_FlowerFeeding;
 
         //world gen
+        public static bool EnableSettingBeforeWorldGen => _instance.Mashed_Ashlands_EnableSettingBeforeWorldGen;
         public static bool EnableDormantVolcano => _instance.Mashed_Ashlands_EnableDormantVolcano;
         public static int NumberOfDormantVolcano => _instance.Mashed_Ashlands_NumberOfDormantVolcano;
         public static bool EnableActiveVolcano => _instance.Mashed_Ashlands_EnableActiveVolcano;
@@ -114,6 +117,7 @@ namespace Mashed_Ashlands
 
         //world gen
 
+        public bool Mashed_Ashlands_EnableSettingBeforeWorldGen = Mashed_Ashlands_EnableSettingBeforeWorldGen_def;
         public bool Mashed_Ashlands_EnableDormantVolcano = Mashed_Ashlands_EnableDormantVolcano_def;
         public int Mashed_Ashlands_NumberOfDormantVolcano = Mashed_Ashlands_NumberOfDormantVolcano_def;
         public bool Mashed_Ashlands_EnableActiveVolcano = Mashed_Ashlands_EnableActiveVolcano_def;
@@ -212,6 +216,7 @@ namespace Mashed_Ashlands
 
         //world gen
 
+        private static readonly bool Mashed_Ashlands_EnableSettingBeforeWorldGen_def = true;
         private static readonly bool Mashed_Ashlands_EnableDormantVolcano_def = true;
         private static readonly int Mashed_Ashlands_NumberOfDormantVolcano_def = 3;
         private static readonly bool Mashed_Ashlands_EnableActiveVolcano_def = true;
@@ -317,6 +322,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_FlowerFeeding, "Mashed_Ashlands_FlowerFeeding", Mashed_Ashlands_FlowerFeeding_def);
 
             //world gen
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableSettingBeforeWorldGen, "Mashed_Ashlands_EnableSettingBeforeWorldGen", Mashed_Ashlands_EnableSettingBeforeWorldGen_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano", Mashed_Ashlands_EnableDormantVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_NumberOfDormantVolcano, "Mashed_Ashlands_NumberOfDormantVolcano", Mashed_Ashlands_NumberOfDormantVolcano_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableActiveVolcano, "Mashed_Ashlands_EnableActiveVolcano", Mashed_Ashlands_EnableActiveVolcano_def);
@@ -430,6 +436,7 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_WorldGen()
         {
+            _instance.Mashed_Ashlands_EnableSettingBeforeWorldGen = Mashed_Ashlands_EnableSettingBeforeWorldGen_def;
             _instance.Mashed_Ashlands_EnableDormantVolcano = Mashed_Ashlands_EnableDormantVolcano_def;
             _instance.Mashed_Ashlands_NumberOfDormantVolcano = Mashed_Ashlands_NumberOfDormantVolcano_def;
             _instance.Mashed_Ashlands_EnableActiveVolcano = Mashed_Ashlands_EnableActiveVolcano_def;

@@ -7,6 +7,7 @@ namespace Mashed_Ashlands
     public class Mashed_Ashlands_Mod : Mod
     {
         Mashed_Ashlands_ModSettings settings;
+
         public Mashed_Ashlands_Mod(ModContentPack contentPack) : base(contentPack)
         {
             settings = GetSettings<Mashed_Ashlands_ModSettings>();
@@ -35,21 +36,21 @@ namespace Mashed_Ashlands
             switch (page)
             {
                 case 1:
-                    listing_Standard = SettingsPage_WorldGen(listing_Standard);
+                    listing_Standard = SettingsPage_WorldGen(listing_Standard, settings);
                     break;
                 case 2:
-                    listing_Standard = SettingsPage_Biome(listing_Standard);
+                    listing_Standard = SettingsPage_Biome(listing_Standard, settings);
                     break;
                 case 3:
-                    listing_Standard = SettingsPage_AshStorm(listing_Standard);
+                    listing_Standard = SettingsPage_AshStorm(listing_Standard, settings);
                     break;
                 case 4:
-                    listing_Standard = SettingsPage_Incidents(listing_Standard);
+                    listing_Standard = SettingsPage_Incidents(listing_Standard, settings);
                     break;
                
 
                 default:
-                    listing_Standard = SettingsPage_General(listing_Standard);
+                    listing_Standard = SettingsPage_General(listing_Standard, settings);
                     break;
             }
 
@@ -189,7 +190,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_General(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_General(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
         {
             listing_Standard.Label("Mashed_Ashlands_PageGeneral".Translate());
             listing_Standard.GapLine();
@@ -219,9 +220,16 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_WorldGen(Listing_Standard listing_Standard)
+        public static Listing_Standard SettingsPage_WorldGen(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings,  bool header = true)
         {
-            listing_Standard.Label("Mashed_Ashlands_PageWorldGen".Translate());
+            if (header)
+            {
+                listing_Standard.Label("Mashed_Ashlands_PageWorldGen".Translate());
+                listing_Standard.GapLine();
+                listing_Standard.Gap();
+            }
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSettingBeforeWorldGen".Translate(), ref settings.Mashed_Ashlands_EnableSettingBeforeWorldGen);
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
@@ -337,7 +345,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_Incidents(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_Incidents(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
         {
             listing_Standard.Label("Mashed_Ashlands_PageIncident".Translate());
             listing_Standard.GapLine();
@@ -412,7 +420,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_AshStorm(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_AshStorm(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
         {
             listing_Standard.Label("Mashed_Ashlands_PageAshStorm".Translate());
             listing_Standard.GapLine();
@@ -502,7 +510,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsPage_Biome(Listing_Standard listing_Standard)
+        private Listing_Standard SettingsPage_Biome(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
         {
             listing_Standard.Label("Mashed_Ashlands_PageBiome".Translate());
             listing_Standard.GapLine();

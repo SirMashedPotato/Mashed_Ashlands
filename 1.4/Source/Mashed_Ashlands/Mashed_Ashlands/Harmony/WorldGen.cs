@@ -2,6 +2,9 @@
 using Verse;
 using System.Collections.Generic;
 using RimWorld.Planet;
+using RimWorld;
+using UnityEngine;
+using Verse.Sound;
 
 namespace Mashed_Ashlands
 {
@@ -35,6 +38,24 @@ namespace Mashed_Ashlands
                 }
             }
             __result = newList;
+        }
+    }
+
+    /// <summary>
+    /// Used Zombieland as a starting point, thanks Andreas Pardeike!
+    /// Adds a new page during scenario setup, specifically for ashland world gen settings
+    /// </summary>
+    [HarmonyPatch(typeof(PageUtility))]
+    [HarmonyPatch("StitchedPages")]
+    public static class CreateWorldParams_DoWindowContents_Patch
+    {
+        [HarmonyPrefix]
+        public static void Patch(List<Page> pages)
+        {
+            if (Mashed_Ashlands_ModSettings.EnableSettingBeforeWorldGen)
+            {
+                pages.Insert(pages.FindIndex(x => x is Page_CreateWorldParams), new Page_AshlandWorldGenSettings());
+            }
         }
     }
 }
