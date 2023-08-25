@@ -88,6 +88,7 @@
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefModExtension\RockProperties.cs" />
+    <Compile Include="DefOf\EffecterDefOf.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
@@ -102,6 +103,8 @@
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
+    <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
     <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />

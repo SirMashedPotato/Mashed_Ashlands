@@ -106,6 +106,7 @@ namespace Mashed_Ashlands
 
         //biome
         public static bool EnableExtraGeysers => _instance.Mashed_Ashlands_EnableExtraGeysers;
+        public static bool EnableFetcherflyHives => _instance.Mashed_Ashlands_EnableFetcherflyHives;
         public static bool EnableCavePlants => _instance.Mashed_Ashlands_EnableCavePlants;
 
         /* ==========[VARIABLES]========== */
@@ -205,6 +206,7 @@ namespace Mashed_Ashlands
 
         //biome
         public bool Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
+        public bool Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
         public bool Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
 
         /* ==========[DEFAULTS]========== */
@@ -305,6 +307,7 @@ namespace Mashed_Ashlands
 
         //biome
         private static readonly bool Mashed_Ashlands_EnableExtraGeysers_def = true;
+        private static readonly bool Mashed_Ashlands_EnableFetcherflyHives_def = true;
         private static readonly bool Mashed_Ashlands_EnableCavePlants_def = true;
 
         public Mashed_Ashlands_ModSettings()
@@ -411,6 +414,7 @@ namespace Mashed_Ashlands
 
             //biome
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExtraGeysers, "Mashed_Ashlands_EnableExtraGeysers", Mashed_Ashlands_EnableExtraGeysers_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableFetcherflyHives, "Mashed_Ashlands_EnableFetcherflyHives", Mashed_Ashlands_EnableFetcherflyHives_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableCavePlants, "Mashed_Ashlands_EnableCavePlants", Mashed_Ashlands_EnableCavePlants_def);
 
             base.ExposeData();
@@ -524,6 +528,7 @@ namespace Mashed_Ashlands
         public static void ResetSettings_Biome()
         {
             _instance.Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
+            _instance.Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
             _instance.Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
         }
     }

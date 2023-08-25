@@ -1,15 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHive]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_FetcherflyHive</defName>
+		<label>fetcherfly hive</label>
+		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turned enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
+		<thingClass>Mineable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
+		<mineable>true</mineable>
+		<pathCost>42</pathCost>
+		<killedLeavings>
+			<Mashed_Ashlands_ChunkBasaltScorched>1</Mashed_Ashlands_ChunkBasaltScorched>
+			<!--
+			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
+			-->
+		</killedLeavings>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(251,89,11,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>Mashed_Ashlands_FetcherflyEffecter</effecterDef>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+				<!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>30</heatPerSecond>
+				<heatPushMaxTemperature>60</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Mashed_Ashlands_FetcherflySwarm</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>16000~25000</spawnIntervalRange>
+				<saveKeysPrefix>fetcherflySwarm</saveKeysPrefix>
+			</li>
+			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
+				<fleckDef>Owl_SmokeHeavy</fleckDef>
+				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_VolcanicDebris</defName>
-		<thingClass>Mineable</thingClass>
 		<label>volcanic debris</label>
 		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingClass>Mineable</thingClass>
 		<altitudeLayer>Item</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<rotatable>false</rotatable>
@@ -70,7 +131,7 @@
 					</li>
 					<li>
 						<thingDef>Mashed_Ashlands_Egg_SiltStriderFertilized</thingDef>
-						<amountRange>1~1</amountRange>
+						<amountRange>1</amountRange>
 						<weight>0.01</weight>
 					</li>
 					<li>
@@ -78,6 +139,13 @@
 						<amountRange>3~9</amountRange>
 						<weight>0.01</weight>
 					</li>
+					<!--
+					<li>
+						<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.01</weight>
+					</li>
+					-->
 					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
 						<thingDef>MorrowRim_HeartStone</thingDef>
 						<amountRange>1~3</amountRange>

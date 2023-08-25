@@ -7,13 +7,7 @@ namespace Mashed_Ashlands
 {
     public class JobDriver_FeedFromAshlandFlower : JobDriver
     {
-        protected Thing Plant
-        {
-            get
-            {
-                return job.targetA.Thing;
-            }
-        }
+        protected Thing Plant => job.targetA.Thing;
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
