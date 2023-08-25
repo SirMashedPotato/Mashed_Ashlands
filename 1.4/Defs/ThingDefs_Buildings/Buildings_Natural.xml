@@ -19,9 +19,7 @@
 		<pathCost>42</pathCost>
 		<killedLeavings>
 			<Mashed_Ashlands_ChunkBasaltScorched>1</Mashed_Ashlands_ChunkBasaltScorched>
-			<!--
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
-			-->
 		</killedLeavings>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
@@ -139,13 +137,11 @@
 						<amountRange>3~9</amountRange>
 						<weight>0.01</weight>
 					</li>
-					<!--
 					<li>
 						<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>
 						<amountRange>1</amountRange>
 						<weight>0.01</weight>
 					</li>
-					-->
 					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
 						<thingDef>MorrowRim_HeartStone</thingDef>
 						<amountRange>1~3</amountRange>

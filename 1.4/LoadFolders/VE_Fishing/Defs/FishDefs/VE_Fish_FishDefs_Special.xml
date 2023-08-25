@@ -221,7 +221,6 @@
 		<baseFishingYield>1</baseFishingYield>		
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_FetcherflyHiveCore]==========-->
-	<!--
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_FetcherflyHiveCore</defName>
 		<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>    
@@ -238,5 +237,4 @@
 		<commonality>0.01</commonality>			
 		<baseFishingYield>1</baseFishingYield>		
 	</VCE_Fishing.FishDef>
-	-->
 </Defs>

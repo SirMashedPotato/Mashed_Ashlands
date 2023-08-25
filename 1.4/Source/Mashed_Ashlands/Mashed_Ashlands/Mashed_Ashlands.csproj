@@ -79,6 +79,8 @@
     <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_SaltplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="Biome\GenStep\GenStep_ScatterBiomeSpecific.cs" />
+    <Compile Include="Biome\ScattererValidator\ScattererValidator_NoChunks.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />

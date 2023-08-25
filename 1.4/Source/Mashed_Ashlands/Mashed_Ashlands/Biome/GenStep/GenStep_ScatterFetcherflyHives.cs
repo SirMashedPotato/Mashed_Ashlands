@@ -1,20 +1,15 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class GenStep_ScatterFetcherflyHives : GenStep_ScatterThings
+    public class GenStep_ScatterFetcherflyHives : GenStep_ScatterBiomeSpecific
     {
-        protected override bool ShouldSkipMap(Map map)
+        public override void Generate(Map map, GenStepParams parms)
         {
-            if (Mashed_Ashlands_ModSettings.EnableFetcherflyHives && allowedBiomes.Contains(map.Biome))
+            if (Mashed_Ashlands_ModSettings.EnableFetcherflyHives)
             {
-                return base.ShouldSkipMap(map);
+                base.Generate(map, parms);
             }
-            return true;
         }
-
-        public List<BiomeDef> allowedBiomes;
     }
 }

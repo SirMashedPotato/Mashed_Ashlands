@@ -36,6 +36,7 @@
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>3</radius>
 				</li>
+				<li Class="Mashed_Ashlands.ScattererValidator_NoChunks"/>
 			</validators>
 		</genStep>
 	</GenStepDef>

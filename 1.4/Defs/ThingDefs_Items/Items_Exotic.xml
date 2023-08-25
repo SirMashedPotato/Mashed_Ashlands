@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHiveCore]========== -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_FetcherflyHiveCore</defName>
+		<label>fetcherfly hive core</label>
+		<description>The heart of a fletcherfly hive, containing a single fetcherfly queen. Can be used to build a fetcherfly hive.\n\nBe warned that fetcherfly have no concept of ownership. While the hive may be yours, the fetcherfly living inside are certainly not.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Ashlands_FetcherflyHiveCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.70</drawSize>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel><tradeTags>
+			<li>TelvanniRare</li>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
