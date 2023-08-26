@@ -65,6 +65,7 @@
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
 		</comps>
 		<race>
+			<deathActionWorkerClass>Mashed_Ashlands.DeathActionWorker_Destroy</deathActionWorkerClass>
 			<body>BeetleLike</body>
 			<baseBodySize>0.1</baseBodySize>
 			<baseHungerRate>0</baseHungerRate>
