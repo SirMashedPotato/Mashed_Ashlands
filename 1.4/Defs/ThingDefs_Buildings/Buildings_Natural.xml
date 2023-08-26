@@ -7,9 +7,14 @@
 		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turned enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
 		<thingClass>Mineable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.6</drawSize>
+			<drawOffset>0,0,0.5</drawOffset>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
@@ -18,7 +23,6 @@
 		<mineable>true</mineable>
 		<pathCost>42</pathCost>
 		<killedLeavings>
-			<Mashed_Ashlands_ChunkBasaltScorched>1</Mashed_Ashlands_ChunkBasaltScorched>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
 		</killedLeavings>
 		<statBases>
