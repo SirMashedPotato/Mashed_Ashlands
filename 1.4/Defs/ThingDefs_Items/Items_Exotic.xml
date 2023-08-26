@@ -23,9 +23,9 @@
 		<thingCategories>
 			<li>Items</li>
 		</thingCategories>
-		<techLevel>Medieval</techLevel><tradeTags>
-			<li>TelvanniRare</li>
-			<li>AshlandRare</li>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRare</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>

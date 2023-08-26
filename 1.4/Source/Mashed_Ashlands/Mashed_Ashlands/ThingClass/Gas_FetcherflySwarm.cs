@@ -22,7 +22,7 @@ namespace Mashed_Ashlands
                     {
                         foreach (Thing thing in hashSet)
                         {
-                            if (thing != null && thing is Pawn p)
+                            if (thing != null && thing is Pawn p && p.def != ThingDefOf.Mashed_Ashlands_FetcherflySwarmAnimal)
                             {
                                 DamageInfo damageInfo = new DamageInfo() 
                                 { 

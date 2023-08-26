@@ -137,10 +137,12 @@
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />

@@ -53,6 +53,10 @@
 				<spawnIntervalRange>16000~25000</spawnIntervalRange>
 				<saveKeysPrefix>fetcherflySwarm</saveKeysPrefix>
 			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SpawnerOnDamage">
+				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
+				<spawnChance>0.3</spawnChance>
+			</li>
 			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
 				<fleckDef>Owl_SmokeHeavy</fleckDef>
 				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
