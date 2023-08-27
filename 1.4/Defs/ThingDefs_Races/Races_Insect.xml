@@ -39,7 +39,10 @@
 			<MoveSpeed>3</MoveSpeed>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 			<Flammability>0</Flammability>
-			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+			<IncomingDamageFactor>0.05</IncomingDamageFactor>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
 		</statBases>
 		<selectable>false</selectable>
 		<uiIconPath>Things/Pawn/Animal/Mashed_Ashlands_FetcherflySwarm/Mashed_Ashlands_FetcherflySwarmIcon</uiIconPath>

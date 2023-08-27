@@ -16,6 +16,7 @@
 			</shadowData>
 			<drawSize>2</drawSize>
 		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
@@ -25,9 +26,17 @@
 		<killedLeavings>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
 		</killedLeavings>
+		<costList>
+			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
+		</costList>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Fetcherfly</li>
+		</researchPrerequisites>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Flammability>0</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Beauty>-10</Beauty>
 		</statBases>
 		<building>
 			<isInert>true</isInert>
@@ -35,6 +44,9 @@
 			<destroyShakeAmount>0</destroyShakeAmount>
 			<claimable>false</claimable>
 		</building>
+		<designationCategory>Misc</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
@@ -51,6 +63,12 @@
 				<heatPerSecond>30</heatPerSecond>
 				<heatPushMaxTemperature>60</heatPushMaxTemperature>
 			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Mashed_Ashlands_Filth_Ash</filthDef>
+				<spawnCountOnSpawn>3</spawnCountOnSpawn>
+				<spawnMtbHours>12</spawnMtbHours>
+				<spawnRadius>3</spawnRadius>
+			</li>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Mashed_Ashlands_FetcherflySwarm</thingToSpawn>
 				<spawnCount>1</spawnCount>
@@ -60,6 +78,10 @@
 			<li Class="Mashed_Ashlands.CompProperties_SpawnerOnDamage">
 				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
 				<spawnChance>0.3</spawnChance>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SpawnerOnDestroy">
+				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
+				<numberToSpawn>3</numberToSpawn>
 			</li>
 			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
 				<fleckDef>Owl_SmokeHeavy</fleckDef>

@@ -1,6 +1,5 @@
 ﻿using Verse;
 
-
 namespace Mashed_Ashlands
 {
     public class CompProperties_SpawnerOnDamage : CompProperties

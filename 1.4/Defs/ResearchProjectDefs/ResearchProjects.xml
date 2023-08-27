@@ -88,4 +88,18 @@
 			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Fetcherfly]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSurvival_Fetcherfly</defName>
+		<label>advanced fetcherfly studies</label>
+		<description>Learn how to build your own fetcherfly hives, using a fetcherfly hive core.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>
