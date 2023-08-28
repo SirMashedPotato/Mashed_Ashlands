@@ -18,7 +18,7 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<rotatable>false</rotatable>
