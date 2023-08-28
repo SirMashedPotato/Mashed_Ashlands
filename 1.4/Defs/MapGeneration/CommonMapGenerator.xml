@@ -35,4 +35,34 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_StriderShells]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_StriderShells</defName>
+		<order>510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterBiomeSpecific">
+			<thingDef>Mashed_Ashlands_StriderShell</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>25</minSpacing>
+			<extraNoBuildEdgeDist>5</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>0.5~1</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>5</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<allowedBiomes>
+				<li>Mashed_Ashlands_BlightedAshlands</li>
+				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			</allowedBiomes>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>5</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 </Defs>

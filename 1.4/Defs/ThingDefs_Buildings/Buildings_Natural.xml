@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
 	<!-- ==========[Mashed_Ashlands_FetcherflyHive]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_FetcherflyHive</defName>
@@ -88,6 +89,37 @@
 				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_StriderShell]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_StriderShell</defName>
+		<label>ancient strider shell</label>
+		<description>An ancient silt strider shell, likely all that remains of the beast. Can be mined for silt strider chitin.</description>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_StriderShell/Mashed_Ashlands_StriderShell</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 4)</drawSize>
+		</graphicData>
+		<thingClass>Mineable</thingClass>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Impassable</passability>
+		<rotatable>true</rotatable><mineable>true</mineable>
+		<size>(2,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<blockPlants>true</blockPlants>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<killedLeavings>
+			<Mashed_Ashlands_StriderChitin>100</Mashed_Ashlands_StriderChitin>
+		</killedLeavings>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
@@ -195,4 +227,5 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
 </Defs>
