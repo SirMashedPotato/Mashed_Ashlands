@@ -26,7 +26,7 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Brewing</li>
-				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+				<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Cooking>5</Cooking>

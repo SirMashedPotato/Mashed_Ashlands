@@ -204,6 +204,11 @@
 						<amountRange>1</amountRange>
 						<weight>0.01</weight>
 					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_AlcoholDagothBrandy</thingDef>
+						<amountRange>6</amountRange>
+						<weight>0.01</weight>
+					</li>
 					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
 						<thingDef>MorrowRim_HeartStone</thingDef>
 						<amountRange>1~3</amountRange>
