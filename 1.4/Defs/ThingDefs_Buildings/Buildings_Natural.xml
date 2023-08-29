@@ -9,7 +9,7 @@
 		<thingClass>Mineable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 			<drawOffset>0,0,0.5</drawOffset>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
@@ -128,7 +128,7 @@
 		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<thingClass>Mineable</thingClass>
 		<altitudeLayer>Item</altitudeLayer>
