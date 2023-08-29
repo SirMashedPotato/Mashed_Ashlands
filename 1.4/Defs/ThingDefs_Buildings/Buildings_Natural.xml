@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<!-- ==========[Mashed_Ashlands_FetcherflyHive]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_FetcherflyHive</defName>
@@ -48,6 +47,9 @@
 		<designationCategory>Misc</designationCategory>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
@@ -103,7 +105,8 @@
 		<thingClass>Mineable</thingClass>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Impassable</passability>
-		<rotatable>true</rotatable><mineable>true</mineable>
+		<rotatable>true</rotatable>
+		<mineable>true</mineable>
 		<size>(2,3)</size>
 		<fillPercent>0.5</fillPercent>
 		<blockPlants>true</blockPlants>
@@ -232,5 +235,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 </Defs>

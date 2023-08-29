@@ -16,6 +16,22 @@
 			</li>
 		</children>
 	</EffecterDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflyLampEffecter]========== -->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_FetcherflyLampEffecter</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<scale>0.3~0.5</scale>
+				<chancePerTick>1</chancePerTick>
+				<positionRadius>1</positionRadius>
+				<fleckDef>Mashed_Ashlands_FetcherflyFleck</fleckDef>
+				<speed>0.08~0.18</speed>
+				<rotation>0~360</rotation>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			</li>
+		</children>
+	</EffecterDef>
 	<!-- ==========[Mashed_Ashlands_FetcherflyFleck]========== -->
 	<FleckDef ParentName="FleckBase_Thrown">
 		<defName>Mashed_Ashlands_FetcherflyFleck</defName>
