@@ -15,6 +15,16 @@
 		<commonality>0.2</commonality>
 		<baseFishingYield>1</baseFishingYield>
 	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholDagothBrandy]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholDagothBrandy</defName>
+		<thingDef>Mashed_Ashlands_AlcoholDagothBrandy</thingDef>
+		<allowedBiomes Inherit="False">
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+		</allowedBiomes>
+		<commonality>0.1</commonality>
+	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_AlcoholFlin]==========-->
 	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
 		<defName>Mashed_Ashlands_AlcoholFlin</defName>

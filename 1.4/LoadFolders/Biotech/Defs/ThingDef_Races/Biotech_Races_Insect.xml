@@ -28,7 +28,6 @@
 		</comps>
 		<race>
 			<baseBodySize>0.5</baseBodySize>
-			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
 	</ThingDef>
@@ -178,7 +177,6 @@
 			<maxPreyBodySize>2.8</maxPreyBodySize>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
 	</ThingDef>
@@ -260,7 +258,6 @@
 		</comps>
 		<race>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
-			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
 	</ThingDef>
@@ -389,7 +386,6 @@
 		</tools>
 		<race>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
 	</ThingDef>

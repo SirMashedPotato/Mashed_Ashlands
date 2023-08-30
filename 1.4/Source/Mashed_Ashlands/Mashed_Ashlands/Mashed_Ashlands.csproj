@@ -79,8 +79,11 @@
     <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_SaltplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="Biome\GenStep\GenStep_ScatterBiomeSpecific.cs" />
+    <Compile Include="Biome\ScattererValidator\ScattererValidator_NoChunks.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_Destroy.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
@@ -88,6 +91,7 @@
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefModExtension\RockProperties.cs" />
+    <Compile Include="DefOf\EffecterDefOf.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
@@ -102,6 +106,8 @@
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
+    <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
     <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
@@ -132,10 +138,14 @@
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
+    <Compile Include="ThingComp\Comp_SpawnerOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Utility\BiomeWorkerUtility.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />

@@ -24,4 +24,16 @@
 		<texPath>Achievements/Mashed_AchievementAshlands_BuildAshcanoMany</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_BuildFetcherflyHive]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_BuildFetcherflyHive</defName>
+		<label>Appeasing The Locals</label>
+		<description>Build a fetcherfly hive for the first time</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Mashed_Ashlands_FetcherflyHive</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_BuildFetcherflyHive</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
 </Defs>

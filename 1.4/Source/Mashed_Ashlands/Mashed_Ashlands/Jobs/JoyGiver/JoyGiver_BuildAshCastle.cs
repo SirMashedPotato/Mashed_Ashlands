@@ -28,12 +28,11 @@ namespace Mashed_Ashlands
 
 		private static IntVec3 TryFindAshCastleBuildCell(Pawn pawn)
 		{
-			Region rootReg;
-			if (!CellFinder.TryFindClosestRegionWith(pawn.GetRegion(RegionType.Set_Passable), TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), (Region r) => r.Room.PsychologicallyOutdoors, 100, out rootReg, RegionType.Set_Passable))
-			{
-				return IntVec3.Invalid;
-			}
-			IntVec3 result = IntVec3.Invalid;
+            if (!CellFinder.TryFindClosestRegionWith(pawn.GetRegion(RegionType.Set_Passable), TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), (Region r) => r.Room.PsychologicallyOutdoors, 100, out Region rootReg, RegionType.Set_Passable))
+            {
+                return IntVec3.Invalid;
+            }
+            IntVec3 result = IntVec3.Invalid;
 			RegionTraverser.BreadthFirstTraverse(rootReg, (Region from, Region r) => r.District == rootReg.District, delegate (Region r)
 			{
 				for (int i = 0; i < 5; i++)

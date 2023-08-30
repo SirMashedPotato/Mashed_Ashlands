@@ -117,6 +117,7 @@
 	<!-- ==========[Biome]==========-->
 	<Mashed_Ashlands_PageBiome>Biome &amp; Map Gen. Settings</Mashed_Ashlands_PageBiome>
 	<!-- misc -->
-	<Mashed_Ashlands_EnableExtraGeysers>Enable additional steam geysers generating in certain biomes.</Mashed_Ashlands_EnableExtraGeysers>
+	<Mashed_Ashlands_EnableExtraGeysers>Enable additional steam geysers generating in certain ashland biomes.</Mashed_Ashlands_EnableExtraGeysers>
+	<Mashed_Ashlands_EnableFetcherflyHives>Enable fetcherfly hives generating in certain ashland biomes.</Mashed_Ashlands_EnableFetcherflyHives>
 	<Mashed_Ashlands_EnableCavePlants>Enable custom cave plants for ashland biomes.</Mashed_Ashlands_EnableCavePlants>
 </LanguageData>

@@ -103,7 +103,7 @@
 		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+				<li>Mashed_Ashlands_AshSurvival_Beginner</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Cooking>3</Cooking>
@@ -129,7 +129,7 @@
 		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+				<li>Mashed_Ashlands_AshSurvival_Beginner</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Cooking>3</Cooking>
