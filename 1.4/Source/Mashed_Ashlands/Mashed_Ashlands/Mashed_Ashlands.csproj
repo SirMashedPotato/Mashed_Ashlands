@@ -106,6 +106,7 @@
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
+    <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_VolcanoCategoryChange.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomesEarly.cs" />

@@ -11,5 +11,6 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(GameConditionDefOf));
         }
         public static GameConditionDef Mashed_Ashlands_AshStorm;
+        public static GameConditionDef Mashed_Ashlands_VolcanicMiasma;
     }
 }

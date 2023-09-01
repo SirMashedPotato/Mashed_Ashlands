@@ -8,12 +8,12 @@ namespace Mashed_Ashlands
 
         public static bool MapHasUnsafeCondition(Thing thing)
         {
-            return MapHasAshStorm(thing.MapHeld);
+            return MapHasUnsafeCondition(thing.MapHeld);
         }
 
         public static bool MapHasUnsafeCondition(Map map)
         {
-            return MapHasAshStorm(map);
+            return MapHasAshStorm(map) || MapHasOtherUnsafeCondition(map);
         }
 
         public static bool MapHasAshStorm(Thing thing)
@@ -26,6 +26,11 @@ namespace Mashed_Ashlands
         public static bool MapHasAshStorm(Map map)
         {
             return map.gameConditionManager.ActiveConditions.Any((GameCondition x) => x.def.conditionClass == typeof(GameCondition_AshStorm));
+        }
+
+        public static bool MapHasOtherUnsafeCondition(Map map)
+        {
+            return map.gameConditionManager.ConditionIsActive(GameConditionDefOf.Mashed_Ashlands_VolcanicMiasma);
         }
     }
 }

@@ -7,6 +7,23 @@
 		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
 		<endMessage>The air begins to cool.</endMessage>
 	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
+	<!--
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_PsychicEruption</defName>
+		<conditionClass>GameCondition_PsychicEmanation</conditionClass>
+		<label>psychic eruption</label>
+		<description>Recent volcanic activity has awoken something ancient, once slumbering deep within the bowels of the volcano. Its screams can be heard echoing in the minds of those nearby. Anyone caught within will slowly be driven to insanity.</description>
+		<descriptionFuture>I don't think this actually gets used</descriptionFuture>
+		<endMessage>The infernal machine begins to slumber once more. The psychic eruption is ending.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<exclusiveConditions>
+			<li>PsychicSoothe</li>
+		</exclusiveConditions>
+		<natural>false</natural>
+	</GameConditionDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_VolcanicDebrisRain]==========-->
 	<GameConditionDef>
 		<defName>Mashed_Ashlands_VolcanicDebrisRain</defName>
@@ -17,5 +34,21 @@
 		<endMessage>The volcanic debris stops falling.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicMiasma]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicMiasma</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_VolcanicMiasma</conditionClass>
+		<label>volcanic miasma</label>
+		<description>Recent volcanic activity has opened up several caverns deep underground, releasing the miasma previously contained within. While outdoor plants will be fine, any animals caught outside will be forced to breathe in the toxic gases.</description>
+		<descriptionFuture>dense volcanic miasma will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor animal life</descriptionFuture>
+		<endMessage>The miasma begins to dissipate. The air is breathable again.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
+		<exclusiveConditions>
+			<li>ToxicFallout</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">NoxiousHaze</li>
+		</exclusiveConditions>
 	</GameConditionDef>
 </Defs>

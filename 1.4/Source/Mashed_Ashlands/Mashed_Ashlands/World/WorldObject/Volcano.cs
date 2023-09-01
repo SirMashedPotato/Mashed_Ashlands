@@ -118,16 +118,29 @@ namespace Mashed_Ashlands
                 WorldObjectComp_RandomConditionCauser compDetailsConditons = GetComponent<WorldObjectComp_RandomConditionCauser>();
                 if (compDetailsConditons != null && !compDetailsConditons.Props.potentialConditions.NullOrEmpty())
                 {
-                    foreach(PotentialConditions condition in compDetailsConditons.Props.potentialConditions) 
+                    if (totalIncidentWeight == -1)
+                    {
+                        SetTotalIncidentWeight(compDetailsConditons.Props);
+                    }
+                    foreach (PotentialConditions condition in compDetailsConditons.Props.potentialConditions) 
                     {
                         if (condition.conditionDef != null)
                         {
                             yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label, 
-                                "Mashed_Ashlands_VolcanoConditionWeight".Translate(condition.weight.ToString()), 
+                                "Mashed_Ashlands_VolcanoConditionWeight".Translate((condition.weight / totalIncidentWeight).ToString("n2")), 
                                 condition.conditionDef.description, 1, null, null, false);
                         }
                     }
                 }
+            }
+        }
+
+        private void SetTotalIncidentWeight(WorldObjectCompProperties_RandomConditionCauser props)
+        { 
+            totalIncidentWeight = 0;
+            foreach (PotentialConditions condition in props.potentialConditions)
+            {
+                totalIncidentWeight += condition.weight;
             }
         }
 
@@ -152,5 +165,6 @@ namespace Mashed_Ashlands
         private int volcanoCategory = 1;
         private string lastIncident = "Mashed_Ashlands_Unknown".Translate();
         private int totalIncidents = 0;
+        private float totalIncidentWeight = -1;
     }
 }

@@ -15,6 +15,7 @@
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm_Blighted</li>
 			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>
 	<!-- ==========[Mashed_Ashlands_AshStorm_Blighted]==========-->
@@ -28,9 +29,11 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<weatherDef>Mashed_Ashlands_VolcanicWindBlight</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
 			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>
 	<!-- ==========[Mashed_Ashlands_AshStorm_Metallic]==========-->
@@ -48,6 +51,7 @@
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
 			<li>Mashed_Ashlands_AshStorm_Blighted</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>
 </Defs>

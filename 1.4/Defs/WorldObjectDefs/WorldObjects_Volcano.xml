@@ -83,6 +83,16 @@
 						<randomCategory>true</randomCategory>
 					</li>
 					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
+						<duration>5000~30000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<weight>1</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<duration>10000~50000</duration>
 						<gracePeriodAfter>10000~50000</gracePeriodAfter>
@@ -182,6 +192,16 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
+						<duration>10000~90000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<weight>3</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
 						<duration>10000~90000</duration>
 						<gracePeriodAfter>30000~80000</gracePeriodAfter>
 						<weight>3</weight>
@@ -303,6 +323,16 @@
 						<duration>5000~40000</duration>
 						<gracePeriodAfter>50000~100000</gracePeriodAfter>
 						<weight>4</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+						<randomCategory>true</randomCategory>
+					</li>
+					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
+						<duration>10000~90000</duration>
+						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<weight>2</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
