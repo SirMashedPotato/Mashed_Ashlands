@@ -11,7 +11,7 @@ namespace Mashed_Ashlands
 			if (Utility.MapHasAshStorm(parent.Map)) num *= 3;
 			if (num > 0)
 			{
-				parent.TakeDamage(new DamageInfo(DamageDefOf.Rotting, num, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true));
+				parent.TakeDamage(new DamageInfo(DamageDefOf.Rotting, num, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, false));
 			}
 		}
 	}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Perspective: Trees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Fixing other tall plants -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_PseudoTreeBase" or defName="Mashed_Ashlands_Plant_ParasolBushBase"]/altitudeLayer</xpath>
+					<value>
+						<altitudeLayer>Pawn</altitudeLayer>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

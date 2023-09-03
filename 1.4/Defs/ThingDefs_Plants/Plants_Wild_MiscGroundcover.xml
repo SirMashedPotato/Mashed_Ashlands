@@ -82,7 +82,7 @@
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>1</glowRadius>
+				<glowRadius>2</glowRadius>
 				<glowColor>(53,94,84,0)</glowColor>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
