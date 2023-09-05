@@ -8,7 +8,7 @@
 			<operations>
 				<!-- Fixing other tall plants -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_PseudoTreeBase" or defName="Mashed_Ashlands_Plant_ParasolBushBase"]/altitudeLayer</xpath>
+					<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_PseudoTreeBase" or defName="Mashed_Ashlands_Plant_ParasolBush"]/altitudeLayer</xpath>
 					<value>
 						<altitudeLayer>Pawn</altitudeLayer>
 					</value>
