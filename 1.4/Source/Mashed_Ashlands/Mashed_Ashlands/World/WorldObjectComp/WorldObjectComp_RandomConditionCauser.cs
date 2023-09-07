@@ -202,6 +202,10 @@ namespace Mashed_Ashlands
 
         public override string CompInspectStringExtra()
         {
+            if (DebugSettings.ShowDevGizmos)
+            {
+                return "Condition ticks left: " + conditionTicksLeft + "(~" + conditionTicksLeft.TicksToDays().ToString("0.0") + " days)" + "\nGrace ticks left: " + graceTicksLeft + "(~" + graceTicksLeft.TicksToDays().ToString("0.0") + " days)";
+            }
             if (currentConditionDef != null)
             {
                 return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(category, currentConditionDef.label);
@@ -254,6 +258,16 @@ namespace Mashed_Ashlands
 
                 yield return new Command_Action
                 {
+                    defaultLabel = "DEV: Randomise initial grace ticks",
+                    defaultDesc = "Set the current grace ticks to a random value between " + initialGraceTicks.min + " and " + initialGraceTicks.max,
+                    action = delegate ()
+                    {
+                        graceTicksLeft = initialGraceTicks.RandomInRange;
+                    },
+                };
+
+                yield return new Command_Action
+                {
                     defaultLabel = "DEV: Force new condition",
                     action = delegate ()
                     {
@@ -277,7 +291,7 @@ namespace Mashed_Ashlands
 
         private int conditionTicksLeft = 0;
         private int graceTicksLeft = 0;
-        private IntRange initialGraceTicks = new IntRange(1500000, 300000);
+        private IntRange initialGraceTicks = new IntRange(300000, 1500000);
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
         private static List<Map> tmpDeadConditionMaps = new List<Map>();
