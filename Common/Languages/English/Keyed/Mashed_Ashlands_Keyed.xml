@@ -33,6 +33,8 @@
 	<!-- ==========[Stat parts]==========-->
 	<Mashed_Ashlands_WearingHeadGear>Wearing apparel, {0}</Mashed_Ashlands_WearingHeadGear>
 	<Mashed_Ashlands_WearingHeadGearSettingEnabled>Covers the full head layer</Mashed_Ashlands_WearingHeadGearSettingEnabled>
+	<!-- ==========[Genes]==========-->
+	<Mashed_Ashlands_StatsReport_InAshStorm>in ash storm</Mashed_Ashlands_StatsReport_InAshStorm>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 </LanguageData>

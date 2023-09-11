@@ -39,6 +39,26 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</defName>
+		<label>glowing mudcrab egg (fert.)</label>
+		<description>A fertilised glowing mudcrab egg. If all goes well, it should hatch into a baby mudcrab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,141,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_MudcrabGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NetchGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_NetchGlowingFertilized</defName>

@@ -56,6 +56,7 @@
 					<li>9</li>
 				</customAmountToDig>
 				<ticksToDig>60000</ticksToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 		</comps>
 		<race>

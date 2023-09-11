@@ -17,7 +17,7 @@
 			<texPath>Things/Building/RockTypes/Mashed_Ashlands_Mashed_Ashlands_ColumnarBasalt</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>None</linkType>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(2.6,2.6)</drawSize>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>900</MaxHitPoints>

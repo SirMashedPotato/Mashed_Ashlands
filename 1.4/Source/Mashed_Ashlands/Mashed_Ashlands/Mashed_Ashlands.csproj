@@ -107,6 +107,7 @@
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
+    <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />

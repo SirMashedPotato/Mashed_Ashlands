@@ -37,9 +37,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshPomegranate</texPath>
 		</graphicData>
-		<thingCategories>
-			<li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
-		</thingCategories>
+		
 		<statBases>
 			<MarketValue>1.4</MarketValue>
 			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>

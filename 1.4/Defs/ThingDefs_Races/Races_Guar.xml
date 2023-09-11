@@ -126,6 +126,7 @@
 					<li>5</li>
 				</customAmountToDig>
 				<ticksToDig>90000</ticksToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_GuarFertilized</eggFertilizedDef>

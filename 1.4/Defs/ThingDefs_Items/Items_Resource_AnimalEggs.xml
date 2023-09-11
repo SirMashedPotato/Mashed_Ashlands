@@ -140,6 +140,25 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_FirebugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_FirebugFertilized</defName>
+		<label>ashland firebug egg (fert.)</label>
+		<description>A fertilised firebug egg. If all goes well, it should hatch into a baby firebug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Firebug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_GuarFertilized</defName>
@@ -388,7 +407,7 @@
 		<label>ashland thunderbug egg (fert.)</label>
 		<description>A fertilised thunderbug egg. If all goes well, it should hatch into a baby thunderbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
 		<graphicData>
-			<color>(109,109,111)</color>
+			<color>(109,109,141)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>

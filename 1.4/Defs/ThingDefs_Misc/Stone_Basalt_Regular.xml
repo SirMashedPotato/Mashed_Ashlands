@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Basalt]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+	<ThingDef ParentName="Mashed_Ashlands_BasaltBase" Name="Mashed_Ashlands_StandardBasaltBase">
 		<defName>Mashed_Ashlands_Basalt</defName>
 		<label>columnar basalt</label>
 		<description>Large columns of basalt, typically found in regions experiencing high volcanic activity.</description>
@@ -10,17 +10,23 @@
 		</graphicData>
 		<building>
 			<mineableThing>Mashed_Ashlands_ChunkBasalt</mineableThing>
-			<!--<smoothedThing>Mashed_Ashlands_SmoothedBasalt</smoothedThing>-->
+			<smoothedThing>Mashed_Ashlands_SmoothedBasalt</smoothedThing>
 		</building>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SmoothedBasalt]==========-->
-	<!--
-	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+	<ThingDef ParentName="Mashed_Ashlands_StandardBasaltBase">
 		<defName>Mashed_Ashlands_SmoothedBasalt</defName>
 		<label>smoothed basalt</label>
-		<description>A very hard igneous rock. The shining surface is filled with a mosaic of black, white, and pink speckles.</description>
+		<description>Formerly columns of basalt, now smoothed into a perfectly flat surface.</description>
+		<modExtensions Inherit="False"/>
 		<graphicData>
 			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			</linkFlags>
 		</graphicData>
 		<statBases>
 			<Beauty>1</Beauty>
@@ -36,7 +42,6 @@
 		<saveCompressible>false</saveCompressible>
 		<repairEffect>Repair</repairEffect>
 	</ThingDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_ChunkBasalt]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_ChunkBasaltBase">
 		<defName>Mashed_Ashlands_ChunkBasalt</defName>
