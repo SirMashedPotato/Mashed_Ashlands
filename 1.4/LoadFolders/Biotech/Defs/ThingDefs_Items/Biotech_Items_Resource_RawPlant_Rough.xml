@@ -10,7 +10,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>0.5</MarketValue>
-			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+			<FoodPoisonChanceFixedHuman>0.12</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -18,9 +18,6 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>Foods</li>
-		</thingCategories>
 		<ingestible>
 			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
 		</ingestible>

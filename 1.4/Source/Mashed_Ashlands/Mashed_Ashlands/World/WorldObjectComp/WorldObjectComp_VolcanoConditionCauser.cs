@@ -7,6 +7,7 @@ namespace Mashed_Ashlands
 {
     public abstract class WorldObjectComp_VolcanoConditionCauser : WorldObjectComp
     {
+        public Volcano ParentVolcano => parent as Volcano;
 
         public bool InAoE(int tile, int category, Volcano parentVolcano)
         {
@@ -64,6 +65,35 @@ namespace Mashed_Ashlands
             {
                 SetupCondition(keyValuePair.Value, keyValuePair.Key);
             }
+        }
+
+        public bool AnyPlayerInRadius()
+        {
+            return AnyMapInRadius() || AnyCaravanInRadius();
+        }
+
+        public bool AnyMapInRadius()
+        {
+            foreach (Map map in Find.Maps)
+            {
+                if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool AnyCaravanInRadius()
+        {
+            foreach (Caravan caravan in Find.World.worldObjects.Caravans)
+            {
+                if (InAoE(caravan.Tile, ParentVolcano.Category, ParentVolcano))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

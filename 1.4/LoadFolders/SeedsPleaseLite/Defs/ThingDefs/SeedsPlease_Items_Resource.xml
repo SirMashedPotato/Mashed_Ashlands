@@ -11,9 +11,6 @@
 		<statBases>
 			<MarketValue>1</MarketValue>
 		</statBases>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
@@ -31,9 +28,6 @@
 		<statBases>
 			<MarketValue>2.5</MarketValue>
 		</statBases>
-		<thingCategories>
-			<li>PlantMatter</li>
-		</thingCategories>
 		<ingestible>
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>

@@ -153,14 +153,14 @@
 			<Mashed_Ashlands_Vvardvark>0.1</Mashed_Ashlands_Vvardvark>
 			<Mashed_Ashlands_AshHopper>0.3</Mashed_Ashlands_AshHopper>
 			<!-- herd animals -->
+			<Mashed_Ashlands_Firebug>0.2</Mashed_Ashlands_Firebug>
 			<Mashed_Ashlands_Shalk>0.1</Mashed_Ashlands_Shalk>
 			<Mashed_Ashlands_Netch>0.4</Mashed_Ashlands_Netch>
 			<Mashed_Ashlands_Guar>0.4</Mashed_Ashlands_Guar>
 			<!-- predators -->
-			<Mashed_Ashlands_NixHound>0.3</Mashed_Ashlands_NixHound>
 			<Mashed_Ashlands_Kagouti>0.2</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
-			<Mashed_Ashlands_CliffRacer>0.1</Mashed_Ashlands_CliffRacer>
+			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 			<!-- ESCP Trolls -->
 			<ESCP_TrollBarren MayRequire="sirmashedpotato.escp.trolls">0.05</ESCP_TrollBarren>
 			<ESCP_TrollHill MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollHill>

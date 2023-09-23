@@ -7,7 +7,7 @@
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<MarketValue>100</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>40</LeatherAmount>
 			<FilthRate>1</FilthRate>
 		</statBases>
 		<tools>
@@ -26,6 +26,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<body>BeetleLike</body>
+			<leatherDef>Mashed_Ashlands_ShalkChitin</leatherDef>
 			<baseBodySize>0.35</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
@@ -222,6 +223,97 @@
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
 					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>Mouth</bodyPartGroup>
+					<thing>Chemfuel</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_Firebug]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
+		<defName>Mashed_Ashlands_Firebug</defName>
+		<label>ashland firebug</label>
+		<description>A subspecies of the shalk, often found in highly volcanically active ashland regions. The accelerant produced by the firebug is considerably more potent than that of its cousins, and is even capable of igniting aggressors.</description>
+		<statBases>
+			<MarketValue>180</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_FirebugFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+		</race>
+		<butcherProducts>
+			<Chemfuel>1</Chemfuel>
+		</butcherProducts>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Mashed_Ashlands_BurnBite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>3</amount>
+						<chance>0.3</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Firebug</defName>
+		<label>ashland firebug</label>
+		<race>Mashed_Ashlands_Firebug</race>
+		<combatPower>65</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Firebug</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Firebug</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Firebug</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>Mouth</bodyPartGroup>

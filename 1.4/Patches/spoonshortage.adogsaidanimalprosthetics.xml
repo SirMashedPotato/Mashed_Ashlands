@@ -31,10 +31,12 @@
 						<li>Mashed_Ashlands_Scuttler</li>
 						<li>Mashed_Ashlands_Shalk</li>
 						<li>Mashed_Ashlands_ShalkFungal</li>
+						<li>Mashed_Ashlands_Firebug</li>
 						<li>Mashed_Ashlands_Thunderbug</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NetchGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_CoralcrabGlowing</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_MudcrabGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshHopperGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>

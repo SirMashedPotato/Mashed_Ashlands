@@ -194,6 +194,7 @@
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>
+			<Mashed_Ashlands_MudcrabGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_MudcrabGlowing>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_ShalkGlowing>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixOxGlowing>

@@ -3,6 +3,7 @@ using Verse;
 using System.Collections.Generic;
 using RimWorld.Planet;
 using RimWorld;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -34,6 +35,10 @@ namespace Mashed_Ashlands
                 {
                     newList.Add(rockDef);
                 }
+            }
+            if (newList.NullOrEmpty())
+            {
+                newList.Add(DefDatabase<ThingDef>.AllDefs.Where(x => x.IsNonResourceNaturalRock && x.modContentPack.IsCoreMod).RandomElement());
             }
             __result = newList;
         }

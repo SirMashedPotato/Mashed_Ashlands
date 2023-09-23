@@ -14,8 +14,6 @@ namespace Mashed_Ashlands
 			}
 		}
 
-        public Volcano ParentVolcano => parent as Volcano;
-
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
 
         public override void CompTick()

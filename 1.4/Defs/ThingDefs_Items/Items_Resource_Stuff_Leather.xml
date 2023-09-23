@@ -189,4 +189,25 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ShalkChitin]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
+		<defName>Mashed_Ashlands_ShalkChitin</defName>
+		<label>shalk chitin</label>
+		<description>Chitin plates harvested from a shalk. Good at dispersing heat, but otherwise not very protective.</description>
+		<graphicData>
+			<color>(71,64,75)</color>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_ChitinPlate</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<Flammability>0.4</Flammability>
+			<StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(71,64,75)</color>
+		</stuffProps>
+	</ThingDef>
 </Defs>

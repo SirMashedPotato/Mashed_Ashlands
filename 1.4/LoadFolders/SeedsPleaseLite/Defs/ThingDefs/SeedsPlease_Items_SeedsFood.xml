@@ -117,7 +117,7 @@
 		<defName>Mashed_Ashlands_SeedMeadowRye</defName>
 		<label>meadow rye seeds</label>
 		<graphicData>
-			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedMarshmerrow</texPath>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedMeadowRye</texPath>
 		</graphicData>
 		<descriptionHyperlinks>
 			<ThingDef>Mashed_Ashlands_Plant_MeadowRye</ThingDef>
