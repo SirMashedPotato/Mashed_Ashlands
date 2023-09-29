@@ -65,4 +65,10 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_ColumnarBasalt]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_ColumnarBasalt</defName>
+		<order>1510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ColumnarBasalt"/>
+	</GenStepDef>
 </Defs>

@@ -67,8 +67,6 @@
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
 	<Mashed_Ashlands_EnableCoastalVolcano_Tooltip>If this is enabled, islands can generate in the ocean near the coast, with a volcano at the centre.</Mashed_Ashlands_EnableCoastalVolcano_Tooltip>
-	<Mashed_Ashlands_EnableExclusiveRocks>Enable ashland biomes generating with custom rock types.</Mashed_Ashlands_EnableExclusiveRocks>
-	<Mashed_Ashlands_EnableExclusiveRocks_Tooltip>If this is disabled then ashland biomes will use standard rock types, and custom rock types from this mod will not generate naturally.\n\nDo note that this doesn't remove the new rock types from the game.</Mashed_Ashlands_EnableExclusiveRocks_Tooltip>
 	<!-- ==========[Incidents]==========-->
 	<Mashed_Ashlands_PageIncident>Incident &amp; Event Settings</Mashed_Ashlands_PageIncident>
 	<!-- Volcano related -->
@@ -120,4 +118,6 @@
 	<Mashed_Ashlands_EnableExtraGeysers>Enable additional steam geysers generating in certain ashland biomes.</Mashed_Ashlands_EnableExtraGeysers>
 	<Mashed_Ashlands_EnableFetcherflyHives>Enable fetcherfly hives generating in certain ashland biomes.</Mashed_Ashlands_EnableFetcherflyHives>
 	<Mashed_Ashlands_EnableCavePlants>Enable custom cave plants for ashland biomes.</Mashed_Ashlands_EnableCavePlants>
+	<Mashed_Ashlands_EnableColumnarBasalt>Enable columnar basalt around the exterior of natural basalt walls.</Mashed_Ashlands_EnableColumnarBasalt>
+	<Mashed_Ashlands_EnableColumnarBasalt_Tooltip>Enabling this will cause columnar basalt to generate around natural basalt walls.</Mashed_Ashlands_EnableColumnarBasalt_Tooltip>
 </LanguageData>

@@ -53,8 +53,6 @@ namespace Mashed_Ashlands
         public static bool EnableMarshAshlands => _instance.Mashed_Ashlands_EnableMarshAshlands;
         public static bool EnableVolcanicThermalValleyAshlands => _instance.Mashed_Ashlands_EnableVolcanicThermalValleyAshlands;
         public static bool EnableVolcanicBadlandsAshlands => _instance.Mashed_Ashlands_EnableVolcanicBadlandsAshlands;
-
-        public static bool EnableExclusiveRocks => _instance.Mashed_Ashlands_EnableExclusiveRocks;
    
         //volcano
         public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize;
@@ -108,6 +106,7 @@ namespace Mashed_Ashlands
         public static bool EnableExtraGeysers => _instance.Mashed_Ashlands_EnableExtraGeysers;
         public static bool EnableFetcherflyHives => _instance.Mashed_Ashlands_EnableFetcherflyHives;
         public static bool EnableCavePlants => _instance.Mashed_Ashlands_EnableCavePlants;
+        public static bool EnableColumnarBasalt => _instance.Mashed_Ashlands_EnableColumnarBasalt;
 
         /* ==========[VARIABLES]========== */
         //general
@@ -154,8 +153,6 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_EnableMarshAshlands = Mashed_Ashlands_EnableMarshAshlands_def;
         public bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands = Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def;
         public bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands = Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def;
-
-        public bool Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
 
         //volcano
         public bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
@@ -208,6 +205,7 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
         public bool Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
         public bool Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
+        public bool Mashed_Ashlands_EnableColumnarBasalt = Mashed_Ashlands_EnableColumnarBasalt_def;
 
         /* ==========[DEFAULTS]========== */
         //general
@@ -254,8 +252,6 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_EnableMarshAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def = true;
-
-        private static readonly bool Mashed_Ashlands_EnableExclusiveRocks_def = true;
 
         //volcano
         private static readonly bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
@@ -309,6 +305,7 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_EnableExtraGeysers_def = true;
         private static readonly bool Mashed_Ashlands_EnableFetcherflyHives_def = true;
         private static readonly bool Mashed_Ashlands_EnableCavePlants_def = true;
+        private static readonly bool Mashed_Ashlands_EnableColumnarBasalt_def = true;
 
         public Mashed_Ashlands_ModSettings()
         {
@@ -362,8 +359,6 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicThermalValleyAshlands, "Mashed_Ashlands_EnableVolcanicThermalValleyAshlands", Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicBadlandsAshlands, "Mashed_Ashlands_EnableVolcanicBadlandsAshlands", Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def);
 
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks", Mashed_Ashlands_EnableExclusiveRocks_def);
-
             //volcano
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoMaxAffectedArea, "Mashed_Ashlands_VolcanoMaxAffectedArea", Mashed_Ashlands_VolcanoMaxAffectedArea_def);
@@ -416,6 +411,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExtraGeysers, "Mashed_Ashlands_EnableExtraGeysers", Mashed_Ashlands_EnableExtraGeysers_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableFetcherflyHives, "Mashed_Ashlands_EnableFetcherflyHives", Mashed_Ashlands_EnableFetcherflyHives_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableCavePlants, "Mashed_Ashlands_EnableCavePlants", Mashed_Ashlands_EnableCavePlants_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableColumnarBasalt, "Mashed_Ashlands_EnableColumnarBasalt", Mashed_Ashlands_EnableColumnarBasalt_def);
 
             base.ExposeData();
         }
@@ -472,8 +468,6 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableSwampIslandAshlands = Mashed_Ashlands_EnableSwampIslandAshlands_def;
             _instance.Mashed_Ashlands_EnableBlightedBogAshlands = Mashed_Ashlands_EnableBlightedBogAshlands_def;
             _instance.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands = Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def;
-
-            _instance.Mashed_Ashlands_EnableExclusiveRocks = Mashed_Ashlands_EnableExclusiveRocks_def;
         }
 
         public static void ResetSettings_Incident()
@@ -530,6 +524,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
             _instance.Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
             _instance.Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
+            _instance.Mashed_Ashlands_EnableColumnarBasalt = Mashed_Ashlands_EnableColumnarBasalt_def;
         }
     }
 }

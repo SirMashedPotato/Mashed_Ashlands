@@ -4,7 +4,7 @@
 	<TerrainDef ParentName="TileStoneBase">
 		<defName>Mashed_Ashlands_TileBasalt</defName>
 		<label>basalt tile</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
 		</costList>
@@ -13,27 +13,9 @@
 	<TerrainDef ParentName="FlagstoneBase">
 		<defName>Mashed_Ashlands_FlagstoneBasalt</defName>
 		<label>basalt flagstone</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_TileBasaltScorched]==========-->
-	<TerrainDef ParentName="TileStoneBase">
-		<defName>Mashed_Ashlands_TileBasaltScorched</defName>
-		<label>scorched basalt tile</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>4</Mashed_Ashlands_BlocksBasaltScorched>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_FlagstoneBasaltScorched]==========-->
-	<TerrainDef ParentName="FlagstoneBase">
-		<defName>Mashed_Ashlands_FlagstoneBasaltScorched</defName>
-		<label>scorched basalt flagstone</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>4</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

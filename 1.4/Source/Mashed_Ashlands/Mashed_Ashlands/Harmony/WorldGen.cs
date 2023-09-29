@@ -8,7 +8,7 @@ using System.Linq;
 namespace Mashed_Ashlands
 {
     /// <summary>
-    /// Forces biomes to have a specific rock type.
+    /// Restricts basalt to Ashland biomes.
     /// </summary>
     [HarmonyPatch(typeof(World))]
     [HarmonyPatch("NaturalRockTypesIn")]
@@ -17,30 +17,27 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
         {
-            if (Mashed_Ashlands_ModSettings.EnableExclusiveRocks)
+            if (__result.Contains(ThingDefOf.Mashed_Ashlands_Basalt))
             {
-                BiomeProperties props = BiomeProperties.Get(__instance.grid[tile].biome);
-                if (props != null && props.forcedRockType != null)
+                BiomeProperties biomeProps = BiomeProperties.Get(__instance.grid[tile].biome);
+                if (biomeProps == null || !biomeProps.canHaveBasalt)
                 {
-                    __result = new List<ThingDef> { props.forcedRockType };
-                    return;
+                    List<ThingDef> newList = new List<ThingDef>();
+                    foreach (ThingDef rockDef in __result)
+                    {
+                        if (rockDef != ThingDefOf.Mashed_Ashlands_Basalt)
+                        {
+                            newList.Add(rockDef);
+                        }
+                    }
+                    if (newList.NullOrEmpty())
+                    {
+                        ///May cause issues based on how many things call World.NaturalRockTypesIn
+                        newList.Add(DefDatabase<ThingDef>.AllDefs.Where(x => x.IsNonResourceNaturalRock && x.modContentPack.IsCoreMod).RandomElement());
+                    }
+                    __result = newList;
                 }
             }
-
-            List<ThingDef> newList = new List<ThingDef>();
-            foreach (ThingDef rockDef in __result)
-            {
-                RockProperties rockProps = RockProperties.Get(rockDef);
-                if (rockProps == null || !rockProps.onlyAllowIfForced)
-                {
-                    newList.Add(rockDef);
-                }
-            }
-            if (newList.NullOrEmpty())
-            {
-                newList.Add(DefDatabase<ThingDef>.AllDefs.Where(x => x.IsNonResourceNaturalRock && x.modContentPack.IsCoreMod).RandomElement());
-            }
-            __result = newList;
         }
     }
 

@@ -3,13 +3,17 @@ bantam guar
 cephalopod
 cliff strider
 coralcrab
+firebug
+fungal shalk
 guar
 hoom
 kwama
-moelcrab
+molecrab
+mossy vvardvark
 mudcrab
 netch
 nix-ox
+nix-steed
 ornada
 plain strider
 pony guar

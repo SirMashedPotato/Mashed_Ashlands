@@ -13,7 +13,13 @@
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
 			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Industrial</li>
 			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Industrial</li>
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_AshSowing_Intermediate]==========-->
@@ -57,7 +63,13 @@
 		<tags>
 			<li>Mashed_Ashlands_AshlandBasic</li>
 			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Industrial</li>
 			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Industrial</li>
 		</tags>
 	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_AshSurvival_Intermediate]==========-->

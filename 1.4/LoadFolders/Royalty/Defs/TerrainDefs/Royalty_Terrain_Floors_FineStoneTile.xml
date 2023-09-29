@@ -4,18 +4,9 @@
 	<TerrainDef ParentName="FineTileStoneBase">
 		<defName>Mashed_Ashlands_FineTileBasalt</defName>
 		<label>fine basalt tile</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_FineTileBasaltScorched]==========-->
-	<TerrainDef ParentName="FineTileStoneBase">
-		<defName>Mashed_Ashlands_FineTileBasaltScorched</defName>
-		<label>fine scorched basalt tile</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

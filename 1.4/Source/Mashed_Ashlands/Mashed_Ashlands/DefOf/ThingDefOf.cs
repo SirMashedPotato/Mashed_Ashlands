@@ -18,6 +18,8 @@ namespace Mashed_Ashlands
         public static ThingDef Mashed_Ashlands_CliffRacer;
         public static ThingDef Mashed_Ashlands_Egg_CliffRacerFertilized;
         public static ThingDef Mashed_Ashlands_FetcherflySwarmAnimal;
+        public static ThingDef Mashed_Ashlands_Basalt;
+        public static ThingDef Mashed_Ashlands_ColumnarBasalt;
 
         public static ThingDef Mashed_Ashlands_Plant_AshYam;
         [MayRequireBiotech]

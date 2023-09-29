@@ -23,7 +23,6 @@ namespace Mashed_Ashlands
         {
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
-            EditRockTerrain();
         }
 
         public static void FillBiomeLists(List<BiomeDef> biomeDefs)
@@ -75,34 +74,6 @@ namespace Mashed_Ashlands
                     if (props.ashlandFlowerPlant)
                     {
                         ashlandFlowerPlants.Add(thingDef);
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Edits specific details about implied terrain defs
-        /// </summary>
-        public static void EditRockTerrain()
-        {
-            foreach (ThingDef thingDef in from def in DefDatabase<ThingDef>.AllDefs
-                                          where RockProperties.Get(def) != null
-                                          select def)
-            {
-                RockProperties props = RockProperties.Get(thingDef);
-                if (!props.requireIdeoForTex || ModsConfig.IdeologyActive)
-                {
-                    if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
-                    {
-                        EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
-                    }
-                    if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
-                    {
-                        EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
-                    }
-                    if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
-                    {
-                        EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
                     }
                 }
             }

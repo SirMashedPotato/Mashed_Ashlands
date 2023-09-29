@@ -155,12 +155,12 @@
 					<li>
 						<thingDef>Mashed_Ashlands_ChunkBasalt</thingDef>
 						<amountRange>1</amountRange>
-						<weight>1</weight>
+						<weight>1.5</weight>
 					</li>
 					<li>
-						<thingDef>Mashed_Ashlands_ChunkBasaltScorched</thingDef>
+						<thingDef>ChunkGranite</thingDef>
 						<amountRange>1</amountRange>
-						<weight>1</weight>
+						<weight>0.5</weight>
 					</li>
 					<li>
 						<thingDef>Mashed_Ashlands_PurpleCrystalShard</thingDef>

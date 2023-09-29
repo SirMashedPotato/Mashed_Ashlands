@@ -4,7 +4,7 @@
 	<TerrainDef ParentName="MorbidStoneTile">
 		<defName>Mashed_Ashlands_Tile_MorbidBasalt</defName>
 		<label>morbid basalt tile</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
@@ -13,7 +13,7 @@
 	<TerrainDef ParentName="SpikecoreStoneTile">
 		<defName>Mashed_Ashlands_Tile_SpikecoreBasalt</defName>
 		<label>basalt spikecore tile</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
 		</costList>
@@ -22,36 +22,9 @@
 	<TerrainDef ParentName="TotemicStoneTile">
 		<defName>Mashed_Ashlands_Tile_TotemicBasalt</defName>
 		<label>totemic basalt tile</label>
-		<color>(102,96,98)</color>
+		<color>(106,104,105)</color>
 		<costList>
 			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_Tile_MorbidBasaltScorched]==========-->
-	<TerrainDef ParentName="MorbidStoneTile">
-		<defName>Mashed_Ashlands_Tile_MorbidBasaltScorched</defName>
-		<label>morbid scorched basalt tile</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_Tile_SpikecoreBasaltScorched]==========-->
-	<TerrainDef ParentName="SpikecoreStoneTile">
-		<defName>Mashed_Ashlands_Tile_SpikecoreBasaltScorched</defName>
-		<label>scorched basalt spikecore tile</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
-		</costList>
-	</TerrainDef>
-	<!-- ==========[Mashed_Ashlands_Tile_TotemicBasaltScorched]==========-->
-	<TerrainDef ParentName="TotemicStoneTile">
-		<defName>Mashed_Ashlands_Tile_TotemicBasaltScorched</defName>
-		<label>totemic scorched basalt tile</label>
-		<color>(73,70,71)</color>
-		<costList>
-			<Mashed_Ashlands_BlocksBasaltScorched>20</Mashed_Ashlands_BlocksBasaltScorched>
 		</costList>
 	</TerrainDef>
 </Defs>

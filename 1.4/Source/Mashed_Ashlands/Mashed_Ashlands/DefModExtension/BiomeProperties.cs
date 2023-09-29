@@ -9,6 +9,7 @@ namespace Mashed_Ashlands
         public bool earlyLoader = false;
         public bool lateLoader = false;
         public bool baseBiome = false;
+        public bool canHaveBasalt = true;
 
         /* for biome gen */
         public bool disableBeaches = false;
@@ -17,7 +18,6 @@ namespace Mashed_Ashlands
         
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
-        public ThingDef forcedRockType;
         public float steamGeyserMultiplier = 1f;
         public bool restrictPlantsToTerrain = false;
         public bool increasePollutedFertility = false;

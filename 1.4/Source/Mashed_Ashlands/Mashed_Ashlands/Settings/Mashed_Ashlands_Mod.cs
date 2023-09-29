@@ -233,9 +233,6 @@ namespace Mashed_Ashlands
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExclusiveRocks".Translate(), ref settings.Mashed_Ashlands_EnableExclusiveRocks, "Mashed_Ashlands_EnableExclusiveRocks_Tooltip".Translate());
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -514,6 +511,9 @@ namespace Mashed_Ashlands
         {
             listing_Standard.Label("Mashed_Ashlands_PageBiome".Translate());
             listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableColumnarBasalt".Translate(), ref settings.Mashed_Ashlands_EnableColumnarBasalt, "Mashed_Ashlands_EnableColumnarBasalt_Tooltip".Translate());
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCavePlants".Translate(), ref settings.Mashed_Ashlands_EnableCavePlants);

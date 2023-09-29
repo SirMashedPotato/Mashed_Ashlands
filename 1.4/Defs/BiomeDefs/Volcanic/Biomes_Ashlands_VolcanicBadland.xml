@@ -11,7 +11,6 @@
 				<lateLoader>true</lateLoader>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<forcedRockType>Mashed_Ashlands_BasaltScorched</forcedRockType>
 				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
 				<terrainReplacers>
 					<li>
