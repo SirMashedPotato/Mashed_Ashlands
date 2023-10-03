@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_RawCorkbulbRoot]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawCorkbulbRoot</defName>
+		<label>corkbulb root</label>
+		<description>Raw corkbulb root. While it can be processed into wood logs, it also makes for a decent animal feed when necessary. Especially loved by guar and kagouti.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawInkCap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawInkCap</defName>
@@ -15,7 +31,6 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawKreshweed]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
@@ -32,6 +47,5 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 </Defs>

@@ -72,35 +72,6 @@
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_NixOxMilk]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase">
-		<defName>Mashed_Ashlands_NixOxMilk</defName>
-		<label>nix-ox mucous</label>
-		<description>A viscous liquid secreted by a nix-ox. Rather unpleasant when consumed raw, though surprisingly tasty when cooked. Some have even figured out how to refine it into chemfuel.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NixOxMilk</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1</MarketValue>
-			<Mass>0.045</Mass>
-			<MaxHitPoints>60</MaxHitPoints>
-			<Flammability>0.2</Flammability>
-			<Nutrition>0.05</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>16</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<preferability>RawBad</preferability>
-			<foodType>AnimalProduct, Fluid</foodType>
-			<specialThoughtDirect>Mashed_Ashlands_AteNixOxMilk</specialThoughtDirect>
-		</ingestible>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_ScribJelly]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_JelliedInsectBase">
 		<defName>Mashed_Ashlands_ScribJelly</defName>

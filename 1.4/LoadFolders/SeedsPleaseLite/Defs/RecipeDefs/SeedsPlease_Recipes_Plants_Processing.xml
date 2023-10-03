@@ -104,4 +104,58 @@
 			<Dye>16</Dye>
 		</products>
 	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeWoodFromCorkbulb]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineBase" Name="Mashed_Ashlands_MakeWoodFromCorkbulbBase">
+		<defName>Mashed_Ashlands_MakeWoodFromCorkbulb</defName>
+		<label>process corkbulb root</label>
+		<description>Process 20 corkbulb root into 5 wood.</description>
+		<recipeUsers Inherit="False">
+			<li>CraftingSpot</li>
+			<li>SeedExtractionSpot</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WoodLog>5</WoodLog>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeWoodFromCorkbulbBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeWoodFromCorkbulbBase">
+		<defName>Mashed_Ashlands_MakeWoodFromCorkbulbBulk</defName>
+		<label>process corkbulb root x4</label>
+		<description>Process 80 corkbulb root into 20 wood.</description>
+		<workAmount>1000</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products Inherit="False">
+			<WoodLog>20</WoodLog>
+		</products>
+	</RecipeDef>
 </Defs>

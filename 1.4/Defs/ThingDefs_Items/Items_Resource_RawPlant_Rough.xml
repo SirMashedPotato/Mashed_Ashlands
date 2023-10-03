@@ -10,6 +10,7 @@
 		<thingCategories>
 			<li>PlantMatter</li>
 		</thingCategories>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawChillshroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
@@ -22,56 +23,6 @@
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>40</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<preferability>DesperateOnly</preferability>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-		</ingestible>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawCorkbulbRoot]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
-		<defName>Mashed_Ashlands_RawCorkbulbRoot</defName>
-		<label>corkbulb root</label>
-		<description>Raw corkbulb root. Sometimes used as a replacement for wood when wood is not an option. Also makes for a decent animal feed, especially loved by guar and kagouti.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot</texPath>
-		</graphicData>
-		<stuffProps>
-			<stuffAdjective>corkwood</stuffAdjective>
-			<categories>
-				<li>Woody</li>
-			</categories>
-			<commonality>0</commonality>
-			<color>(184,150,104)</color>
-			<constructEffect>ConstructWood</constructEffect>
-			<appearance>Planks</appearance>
-			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
-			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-			<statFactors>
-				<MaxHitPoints>0.65</MaxHitPoints>
-				<Beauty>1</Beauty>
-				<Flammability>1</Flammability>
-				<WorkToMake>0.7</WorkToMake>
-				<WorkToBuild>0.7</WorkToBuild>
-				<DoorOpenSpeed>1.2</DoorOpenSpeed>
-			</statFactors>
-		</stuffProps>
-		<statBases>
-			<MarketValue>1</MarketValue>
-			<StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.23</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-			<BluntDamageMultiplier>0.4</BluntDamageMultiplier>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

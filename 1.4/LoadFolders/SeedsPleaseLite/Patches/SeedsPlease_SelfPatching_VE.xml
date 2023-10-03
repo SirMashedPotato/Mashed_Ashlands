@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Alit"]/comps/li[@Class="AnimalBehaviours.CompProperties_DigWhenHungry"]/customThingToDig</xpath>
+					<value>
+						<customThingToDig>Mashed_Ashlands_Plant_Corkbulb</customThingToDig>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Guar"]/comps/li[@Class="AnimalBehaviours.CompProperties_DigPeriodically"]/customThingToDig</xpath>
+					<value>
+						<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+						<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+						<li>Mashed_Ashlands_RawCorkbulbRoot</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Guar"]/comps/li[@Class="AnimalBehaviours.CompProperties_DigPeriodically"]/customAmountToDig</xpath>
+					<value>
+						<li>1</li>
+						<li>3</li>
+						<li>5</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

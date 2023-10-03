@@ -58,7 +58,7 @@
 		</tools>
 		<comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Mashed_Ashlands_RawCorkbulbRoot</customThingToDig>
+				<customThingToDig>Mashed_Ashlands_RawAshYams</customThingToDig>
 				<customAmountToDig>10</customAmountToDig>
 				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
 				<spawnForbidden>true</spawnForbidden>

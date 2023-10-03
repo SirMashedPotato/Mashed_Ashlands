@@ -106,8 +106,8 @@
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>Mashed_Ashlands_RawCorkbulbRoot</harvestedThingDef>
-			<harvestYield>20</harvestYield>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>5</harvestYield>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>

@@ -59,9 +59,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<butcherProducts>
-			<Mashed_Ashlands_ShalkResin>2</Mashed_Ashlands_ShalkResin>
-		</butcherProducts>
 		<tradeTags>
 			<li>AnimalFarm</li>
 			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
@@ -72,7 +69,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_Shalk</defName>
 		<label>shalk</label>
-		<description>A large beetle usually found in drier ashland regions. Sometimes farmed for their meat and carapace, though most are interested in the resin extracted from their shell, which is often used in crafting chitin and bonemold armour.\n\nWhile many would think shalk pose little threat due to their size, the mandibles of shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<description>A large beetle usually found in drier ashland regions. Sometimes farmed for their meat and carapace, though most are interested in the resin extracted from their shell, which is rather volatile when properly prepared.\n\nWhile many would think shalk pose little threat due to their size, the mandibles of shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_ShalkFertilized</eggFertilizedDef>

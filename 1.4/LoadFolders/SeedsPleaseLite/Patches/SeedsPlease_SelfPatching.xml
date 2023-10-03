@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- Corkbulb patch -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_Corkbulb"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Mashed_Ashlands_RawCorkbulbRoot</harvestedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_Corkbulb"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>20</harvestYield>
+		</value>
+	</Operation>
 	<!-- Kreshweed patch -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_Kreshweed"]/plant/harvestedThingDef</xpath>

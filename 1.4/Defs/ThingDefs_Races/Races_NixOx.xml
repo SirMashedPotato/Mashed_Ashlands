@@ -86,7 +86,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NixOxThingBase">
 		<defName>Mashed_Ashlands_NixOx</defName>
 		<label>nix-ox</label>
-		<description>A large grazing insect native to the ashland regions. Surprising to many, they are closely related to the nix-hound. However unlike their relatives, the nix-ox is a gentle herbivore, that primarily feeds on the mushrooms that grow in ashland regions.\n\nWhile they are often farmed for their chitin, meat, or 'milk', most greatly dislike the taste and consistency of the latter two, and also find the chitin rather difficult to work with. As such, domesticated nix-ox are usually used as pack animals.</description>
+		<description>A large grazing insect native to the ashland regions. Surprising to many, they are closely related to the nix-hound. However unlike their relatives, the nix-ox is a gentle herbivore, that primarily feeds on the mushrooms that grow in ashland regions.\n\nWhile they are often farmed for their chitin or meat, most greatly dislike the taste and consistency of the latter, and also find the former rather difficult to work with. As such, domesticated nix-ox are usually used as pack animals.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixOxFertilized</eggFertilizedDef>
@@ -95,11 +95,10 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Mashed_Ashlands_NixOxMilk</milkDef>
-				<milkIntervalDays>5</milkIntervalDays>
-				<milkAmount>24</milkAmount>
-				<milkFemaleOnly>false</milkFemaleOnly>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Mashed_Ashlands_NixOxChitin</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>120</woolAmount>
 			</li>
 		</comps>
 	</ThingDef>

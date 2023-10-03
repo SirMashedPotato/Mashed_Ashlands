@@ -6,19 +6,6 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!-- ==========[Crafting wood logs]==========-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "Mashed_Ashlands_MakeWoodLog"]/products/WoodLog</xpath>
-					<value>
-						<DankPyon_RawWood>10</DankPyon_RawWood>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "Mashed_Ashlands_MakeWoodLogBulk"]/products/WoodLog</xpath>
-					<value>
-						<DankPyon_RawWood>40</DankPyon_RawWood>
-					</value>
-				</li>
 				<!-- ==========[Crafting flour]==========-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RecipeDef[defName = "DankPyon_CraftFlour" or defName="DankPyon_CraftFlourBulk"]/fixedIngredientFilter/thingDefs</xpath>

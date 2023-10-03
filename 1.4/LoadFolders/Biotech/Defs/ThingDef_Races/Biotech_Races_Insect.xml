@@ -249,11 +249,10 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Mashed_Ashlands_NixOxMilk</milkDef>
-				<milkIntervalDays>5</milkIntervalDays>
-				<milkAmount>20</milkAmount>
-				<milkFemaleOnly>false</milkFemaleOnly>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Mashed_Ashlands_NixOxChitin</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>80</woolAmount>
 			</li>
 		</comps>
 		<race>
