@@ -29,7 +29,7 @@
 	<Mashed_Ashlands_BlightdPlants_Description>Several plants have become blighted due to the blight storm. The blight may spread if not dealt with quickly.\n\nThe following plants have become blighted:\n\n</Mashed_Ashlands_BlightdPlants_Description>
 	<!-- ==========[Ash buildup]==========-->
 	<Mashed_Ashlands_AlertAshBuildup>Ash buildup</Mashed_Ashlands_AlertAshBuildup>
-	<Mashed_Ashlands_AlertAshBuildupDesc>These colonists have serious ash buildup:\n\n{0}\n\nAsh buildup is usually caused by being outside, or in a caravan, during an ash storm. Buildup will reduce while under a roof, or once the storm has ended. Caravans will be protected against ash buildup while resting, allowing members to recover from buildup.</Mashed_Ashlands_AlertAshBuildupDesc>
+	<Mashed_Ashlands_AlertAshBuildupDesc>These colonists have serious ash buildup:{0}\n\nAsh buildup is usually caused by being outside, or in a caravan, during an ash storm. Buildup will reduce while under a roof, or once the storm has ended. Caravans will be protected against the ash storm while resting, allowing members to recover from buildup.</Mashed_Ashlands_AlertAshBuildupDesc>
 	<!-- ==========[Stat parts]==========-->
 	<Mashed_Ashlands_WearingHeadGear>Wearing apparel, {0}</Mashed_Ashlands_WearingHeadGear>
 	<Mashed_Ashlands_WearingHeadGearSettingEnabled>Covers the full head layer</Mashed_Ashlands_WearingHeadGearSettingEnabled>

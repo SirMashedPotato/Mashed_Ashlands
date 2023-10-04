@@ -41,17 +41,10 @@ namespace Mashed_Ashlands
         public static bool EnableForestAshlands => _instance.Mashed_Ashlands_EnableForestAshlands;
         public static bool EnableSwampAshlands => _instance.Mashed_Ashlands_EnableSwampAshlands;
         public static bool EnableGrazelandAshlands => _instance.Mashed_Ashlands_EnableGrazelandAshlands;
-        public static bool EnableHighlandAshlands => _instance.Mashed_Ashlands_EnableHighlandAshlands;
-        public static bool EnableSaltplainAshlands => _instance.Mashed_Ashlands_EnableSaltplainAshlands;
-        public static bool EnableCragIslandAshlands => _instance.Mashed_Ashlands_EnableCragIslandAshlands;
-        public static bool EnableBlightedCragIslandAshlands => _instance.Mashed_Ashlands_EnableBlightedCragIslandAshlands;
-        public static bool EnableVolcanicCragIslandAshlands => _instance.Mashed_Ashlands_EnableVolcanicCragIslandAshlands;
-        public static bool EnableSwampIslandAshlands => _instance.Mashed_Ashlands_EnableSwampIslandAshlands;
         public static bool EnableBlightedBogAshlands => _instance.Mashed_Ashlands_EnableBlightedBogAshlands;
         public static bool EnableVolcanicSulphurPitsAshlands => _instance.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands;
         public static bool EnableMeadowAshlands => _instance.Mashed_Ashlands_EnableMeadowAshlands;
         public static bool EnableMarshAshlands => _instance.Mashed_Ashlands_EnableMarshAshlands;
-        public static bool EnableVolcanicThermalValleyAshlands => _instance.Mashed_Ashlands_EnableVolcanicThermalValleyAshlands;
         public static bool EnableVolcanicBadlandsAshlands => _instance.Mashed_Ashlands_EnableVolcanicBadlandsAshlands;
    
         //volcano
@@ -141,17 +134,10 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_EnableForestAshlands = Mashed_Ashlands_EnableForestAshlands_def;
         public bool Mashed_Ashlands_EnableSwampAshlands = Mashed_Ashlands_EnableSwampAshlands_def;
         public bool Mashed_Ashlands_EnableGrazelandAshlands = Mashed_Ashlands_EnableGrazelandAshlands_def;
-        public bool Mashed_Ashlands_EnableHighlandAshlands = Mashed_Ashlands_EnableHighlandAshlands_def;
-        public bool Mashed_Ashlands_EnableSaltplainAshlands = Mashed_Ashlands_EnableSaltplainAshlands_def;
-        public bool Mashed_Ashlands_EnableCragIslandAshlands = Mashed_Ashlands_EnableCragIslandAshlands_def;
-        public bool Mashed_Ashlands_EnableBlightedCragIslandAshlands = Mashed_Ashlands_EnableBlightedCragIslandAshlands_def;
-        public bool Mashed_Ashlands_EnableVolcanicCragIslandAshlands = Mashed_Ashlands_EnableVolcanicCragIslandAshlands_def;
-        public bool Mashed_Ashlands_EnableSwampIslandAshlands = Mashed_Ashlands_EnableSwampIslandAshlands_def;
         public bool Mashed_Ashlands_EnableBlightedBogAshlands = Mashed_Ashlands_EnableBlightedBogAshlands_def;
         public bool Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands = Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def;
         public bool Mashed_Ashlands_EnableMeadowAshlands = Mashed_Ashlands_EnableMeadowAshlands_def;
         public bool Mashed_Ashlands_EnableMarshAshlands = Mashed_Ashlands_EnableMarshAshlands_def;
-        public bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands = Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def;
         public bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands = Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def;
 
         //volcano
@@ -240,17 +226,10 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_EnableForestAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableSwampAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableGrazelandAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableHighlandAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableSaltplainAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableCragIslandAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableBlightedCragIslandAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableVolcanicCragIslandAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableSwampIslandAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableBlightedBogAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableMeadowAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableMarshAshlands_def = true;
-        private static readonly bool Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def = true;
         private static readonly bool Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def = true;
 
         //volcano
@@ -346,17 +325,10 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EnableForestAshlands, "Mashed_Ashlands_EnableForestAshlands", Mashed_Ashlands_EnableForestAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableSwampAshlands, "Mashed_Ashlands_EnableSwampAshlands", Mashed_Ashlands_EnableSwampAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableGrazelandAshlands, "Mashed_Ashlands_EnableGrazelandAshlands", Mashed_Ashlands_EnableGrazelandAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableHighlandAshlands, "Mashed_Ashlands_EnableHighlandAshlands", Mashed_Ashlands_EnableHighlandAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableSaltplainAshlands, "Mashed_Ashlands_EnableSaltplainAshlands", Mashed_Ashlands_EnableSaltplainAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableCragIslandAshlands, "Mashed_Ashlands_EnableCragIslandAshlands", Mashed_Ashlands_EnableCragIslandAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableBlightedCragIslandAshlands, "Mashed_Ashlands_EnableBlightedCragIslandAshlands", Mashed_Ashlands_EnableBlightedCragIslandAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicCragIslandAshlands, "Mashed_Ashlands_EnableVolcanicCragIslandAshlands", Mashed_Ashlands_EnableVolcanicCragIslandAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableSwampIslandAshlands, "Mashed_Ashlands_EnableSwampIslandAshlands", Mashed_Ashlands_EnableSwampIslandAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableBlightedBogAshlands, "Mashed_Ashlands_EnableBlightedBogAshlands", Mashed_Ashlands_EnableBlightedBogAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands, "Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands", Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableMeadowAshlands, "Mashed_Ashlands_EnableMeadowAshlands", Mashed_Ashlands_EnableMeadowAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableMarshAshlands, "Mashed_Ashlands_EnableMarshAshlands", Mashed_Ashlands_EnableMarshAshlands_def);
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicThermalValleyAshlands, "Mashed_Ashlands_EnableVolcanicThermalValleyAshlands", Mashed_Ashlands_EnableVolcanicThermalValleyAshlands_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableVolcanicBadlandsAshlands, "Mashed_Ashlands_EnableVolcanicBadlandsAshlands", Mashed_Ashlands_EnableVolcanicBadlandsAshlands_def);
 
             //volcano
@@ -460,12 +432,6 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_EnableForestAshlands = Mashed_Ashlands_EnableForestAshlands_def;
             _instance.Mashed_Ashlands_EnableSwampAshlands = Mashed_Ashlands_EnableSwampAshlands_def;
             _instance.Mashed_Ashlands_EnableGrazelandAshlands = Mashed_Ashlands_EnableGrazelandAshlands_def;
-            _instance.Mashed_Ashlands_EnableHighlandAshlands = Mashed_Ashlands_EnableHighlandAshlands_def;
-            _instance.Mashed_Ashlands_EnableSaltplainAshlands = Mashed_Ashlands_EnableSaltplainAshlands_def;
-            _instance.Mashed_Ashlands_EnableCragIslandAshlands = Mashed_Ashlands_EnableCragIslandAshlands_def;
-            _instance.Mashed_Ashlands_EnableBlightedCragIslandAshlands = Mashed_Ashlands_EnableBlightedCragIslandAshlands_def;
-            _instance.Mashed_Ashlands_EnableVolcanicCragIslandAshlands = Mashed_Ashlands_EnableVolcanicCragIslandAshlands_def;
-            _instance.Mashed_Ashlands_EnableSwampIslandAshlands = Mashed_Ashlands_EnableSwampIslandAshlands_def;
             _instance.Mashed_Ashlands_EnableBlightedBogAshlands = Mashed_Ashlands_EnableBlightedBogAshlands_def;
             _instance.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands = Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands_def;
         }

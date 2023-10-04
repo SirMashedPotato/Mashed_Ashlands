@@ -9,6 +9,7 @@ namespace Mashed_Ashlands
         public bool extinct = false;
         public RulePackDef nameNamer;
         public List<CategoryWeights> categoryWeights;
+        public bool categoryCanChange = true;
             
         public WorldObjectCompProperties_VolcanoDetails()
         {

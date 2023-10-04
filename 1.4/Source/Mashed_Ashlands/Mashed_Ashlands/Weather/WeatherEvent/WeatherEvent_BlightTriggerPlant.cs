@@ -25,9 +25,9 @@ namespace Mashed_Ashlands
                 {
                     int numberBlighted = (int)Rand.Gaussian(Mashed_Ashlands_ModSettings.BlightStormBlightPlantsNumber);
                     List<Plant> actualTargets = new List<Plant>();
-                    if (numberBlighted > potentialTargets.Count())
+                    if (numberBlighted > potentialTargets.Count)
                     {
-                        numberBlighted = potentialTargets.Count();
+                        numberBlighted = potentialTargets.Count;
                     }
                     for (int i = 0; i < numberBlighted; i++)
                     {

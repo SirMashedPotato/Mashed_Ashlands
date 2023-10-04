@@ -67,7 +67,7 @@ namespace Mashed_Ashlands
 
         public bool CategoryCanBeChanged()
         {
-            return !IsRedMountain && (CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne());
+            return !IsRedMountain && Props.categoryCanChange && (CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne());
         }
 
         public bool CategoryCanBeIncreasedByOne()

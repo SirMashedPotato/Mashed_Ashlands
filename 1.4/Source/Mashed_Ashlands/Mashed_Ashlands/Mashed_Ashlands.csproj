@@ -75,8 +75,6 @@
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_HighlandAshlands.cs" />
-    <Compile Include="Biome\BiomeWorker\Unused\BiomeWorker_SaltplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
@@ -149,7 +147,6 @@
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
-    <Compile Include="Utility\BiomeWorkerUtility.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedAshlands.cs" />
     <Compile Include="DefOf\BiomeDefOf.cs" />

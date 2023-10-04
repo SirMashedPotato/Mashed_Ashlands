@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -47,9 +46,9 @@ namespace Mashed_Ashlands
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			Scribe_Defs.Look<ThingDef>(ref plantDefToGrow, "plantDefToGrow");
-			Scribe_Values.Look<bool>(ref allowSow, "allowSow", true, false);
-			Scribe_Values.Look<bool>(ref allowCut, "allowCut", true, false);
+			Scribe_Defs.Look(ref plantDefToGrow, "plantDefToGrow");
+			Scribe_Values.Look(ref allowSow, "allowSow", true, false);
+			Scribe_Values.Look(ref allowCut, "allowCut", true, false);
 		}
 
 		/// <summary>
@@ -99,7 +98,7 @@ namespace Mashed_Ashlands
 					stringBuilder.AppendLine(string.Format("{0}: {1} ({2})", "AveragePlantAge".Translate().CapitalizeFirst(), arg, "PercentGrowth".Translate(f.ToStringPercent())));
 					stringBuilder.AppendLine(string.Format("{0}: {1} ({2})", "OldestPlantAge".Translate().CapitalizeFirst(), arg2, "PercentGrowth".Translate(f2.ToStringPercent())));
 				}
-				IntVec3 c = Cells.First<IntVec3>();
+				IntVec3 c = Cells[0];
 				if (c.UsesOutdoorTemperature(Map))
 				{
 					stringBuilder.AppendLine("OutdoorGrowingPeriod".Translate() + ": " + Zone_Growing.GrowingQuadrumsDescription(Map.Tile));

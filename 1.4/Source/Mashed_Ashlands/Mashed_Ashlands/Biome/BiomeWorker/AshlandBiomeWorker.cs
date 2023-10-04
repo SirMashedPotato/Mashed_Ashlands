@@ -33,7 +33,7 @@ namespace Mashed_Ashlands
                 }
             }
 
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestWorldObject(tileID, requiredVolcanoDef);
             if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
@@ -83,7 +83,7 @@ namespace Mashed_Ashlands
                 }
             }
 
-            float distanceToClosestVolcano = BiomeWorkerUtility.DistanceToClosestVolcano(tileID, requiredVolcanoDef);
+            float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestWorldObject(tileID, requiredVolcanoDef);
             if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
@@ -185,5 +185,16 @@ namespace Mashed_Ashlands
             return 13 + (tile.swampiness * 15);
         }
 
+        /// <summary>
+        /// Used for all Mountain type biomes
+        /// </summary>
+        public float MountainBiomeWorker(Tile tile)
+        {
+            if (tile.hilliness == Hilliness.Flat)
+            {
+                return 0f;
+            }
+            return 15 + (tile.elevation / 100);
+        }
     }
 }

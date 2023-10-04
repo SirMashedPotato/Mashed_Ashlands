@@ -363,6 +363,7 @@
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_VolcanoDetails">
 				<extinct>true</extinct>
 				<nameNamer>Mashed_Ashlands_NamerVolcanoExtinct</nameNamer>
+				<categoryCanChange>false</categoryCanChange>
 				<categoryWeights>
 					<li>
 						<category>1</category>

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using RimWorld;
 
@@ -32,8 +31,11 @@ namespace Mashed_Ashlands
 
         public override TaggedString GetExplanation()
         {
-            string value = (from p in AshBuildupColonists
-                            select p.NameShortColored.Resolve()).ToLineList(" - ", false);
+            string value = "";
+            foreach (Pawn p in ashBuildupColonists)
+            {
+                value += "\n - " + p.NameShortColored.Resolve();
+            }
             return "Mashed_Ashlands_AlertAshBuildupDesc".Translate(value);
         }
 
