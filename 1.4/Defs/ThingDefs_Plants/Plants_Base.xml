@@ -12,6 +12,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshPlanter</li>
 				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
 		</plant>
@@ -62,6 +63,11 @@
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>24</wildClusterWeight>
 			<wildOrder>3</wildOrder>
+			<sowTags Inherit="False">
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_TreeBase]==========-->

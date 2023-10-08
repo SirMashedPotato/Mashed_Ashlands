@@ -18,6 +18,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshPlanter</li>
 			</sowTags>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
