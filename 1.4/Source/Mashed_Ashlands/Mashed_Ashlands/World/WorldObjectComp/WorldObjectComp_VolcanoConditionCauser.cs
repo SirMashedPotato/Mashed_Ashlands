@@ -9,11 +9,24 @@ namespace Mashed_Ashlands
     {
         public Volcano ParentVolcano => parent as Volcano;
 
+        public WorldGrid Grid
+        {
+            get
+            {
+                if (worldGrid == null)
+                {
+                    worldGrid = Find.WorldGrid;
+                }
+                return worldGrid;
+            }
+        }
+
+        private WorldGrid worldGrid = null;
+
         public bool InAoE(int tile, int category, Volcano parentVolcano)
         {
             int worldRange = parentVolcano.EffectRadiusFor(category);
-            WorldGrid worldGrid = Find.WorldGrid;
-            return worldGrid.ApproxDistanceInTiles(parentVolcano.Tile, tile) <= worldRange;
+            return Grid.ApproxDistanceInTiles(parentVolcano.Tile, tile) <= worldRange;
         }
 
         public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)

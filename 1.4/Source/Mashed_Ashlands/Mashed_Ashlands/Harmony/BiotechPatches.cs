@@ -39,10 +39,10 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_StimulatedByPollution_Patch(Pawn pawn, ref bool __result)
         {
-            PollutionProperties props = PollutionProperties.Get(pawn.def);
-            if (props != null)
+            if (OnStartupUtility.hasPollutionPropsAnimals.Contains(pawn.def))
             {
-                __result = (__result && props.AllowPollutionStimulis);
+                PollutionProperties props = PollutionProperties.Get(pawn.def);
+                __result = __result && props.AllowPollutionStimulis;
             }
         }
     }
@@ -61,9 +61,10 @@ namespace Mashed_Ashlands
             {
                 return;
             }
-            PollutionProperties props = PollutionProperties.Get(pawn.def);
-            if (props != null && props.alternativePollutionStimulis != null)
+            
+            if (OnStartupUtility.alternateStimulisAnimals.Contains(pawn.def))
             {
+                PollutionProperties props = PollutionProperties.Get(pawn.def);
                 if (pawn.IsHashIntervalTick(60) && pawn.Position.IsPolluted(pawn.Map) && !pawn.health.hediffSet.HasHediff(props.alternativePollutionStimulis, false))
                 {
                     pawn.health.AddHediff(props.alternativePollutionStimulis, null, null, null);

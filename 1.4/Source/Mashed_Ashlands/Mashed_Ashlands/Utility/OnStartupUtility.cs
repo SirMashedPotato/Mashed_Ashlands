@@ -19,10 +19,33 @@ namespace Mashed_Ashlands
         public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
         public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
 
+        public static List<ThingDef> hasPollutionPropsAnimals = new List<ThingDef> { };
+        public static List<ThingDef> alternateStimulisAnimals = new List<ThingDef> { };
+
         static OnStartupUtility()
         {
+            FillAnimalsLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null).ToList());
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
+        }
+
+        public static void FillAnimalsLists(List<ThingDef> pawnDefs)
+        {
+            foreach (ThingDef pawnDef in pawnDefs)
+            {
+                if (ModsConfig.BiotechActive)
+                {
+                    PollutionProperties props = PollutionProperties.Get(pawnDef);
+                    if (props != null)
+                    {
+                        hasPollutionPropsAnimals.Add(pawnDef);
+                        if (props.alternativePollutionStimulis != null)
+                        {
+                            alternateStimulisAnimals.Add(pawnDef);
+                        }
+                    }
+                }
+            }
         }
 
         public static void FillBiomeLists(List<BiomeDef> biomeDefs)
