@@ -18,8 +18,8 @@ namespace Mashed_Ashlands
     public class PotentialConditions 
     {
         public GameConditionDef conditionDef = null;
-        public IntRange duration;
-        public IntRange gracePeriodAfter;
+        public FloatRange durationDays;
+        public FloatRange graceDaysAfter;
         public float weight = 1f;
         public bool sendLetter = false;
         public bool sendEndMessage = false;

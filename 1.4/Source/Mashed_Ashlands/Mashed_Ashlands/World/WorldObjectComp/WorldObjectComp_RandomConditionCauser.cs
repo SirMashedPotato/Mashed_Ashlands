@@ -40,8 +40,8 @@ namespace Mashed_Ashlands
                     "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
                     currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
-                conditionTicksLeft = duration;
-                graceTicksLeft = gracePeriodAfter;
+                conditionTicksLeft = (int)(durationDays * 60000f);
+                graceTicksLeft = (int)(graceDaysAfter * 60000f);
                 endMessage = condition.sendEndMessage;
             }
         }
@@ -59,8 +59,8 @@ namespace Mashed_Ashlands
             {
                 currentConditionDef = null;
             }
-            duration = condition.duration.RandomInRange;
-            gracePeriodAfter = condition.gracePeriodAfter.RandomInRange;
+            durationDays = condition.durationDays.RandomInRange;
+            graceDaysAfter = condition.graceDaysAfter.RandomInRange;
             category = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
@@ -256,8 +256,8 @@ namespace Mashed_Ashlands
         }
 
         private GameConditionDef currentConditionDef;
-        private int duration = 0;
-        private int gracePeriodAfter = 0;
+        private float durationDays = 0;
+        private float graceDaysAfter = 0;
         private int category = 1;
         private bool endMessage = false;
 

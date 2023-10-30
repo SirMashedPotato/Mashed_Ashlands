@@ -80,9 +80,9 @@ namespace Mashed_Ashlands
             if (category > 0)
             {
                 int maxDistance = Mashed_Ashlands_ModSettings.VolcanoMaxAffectedArea;
-                if (Mashed_Ashlands_ModSettings.VolcanoAffectedAreaScaleWithWorldSize)
+                if (Mashed_Ashlands_ModSettings.VolcanoAffectedAreaScaleWithWorldSize && planetCoverage != 0.3)
                 {
-                    maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
+                    maxDistance = (int)(maxDistance * ((planetCoverage * 3) + 0.1f));
                     if (maxDistance < 1)
                     {
                         maxDistance = 1;
@@ -95,6 +95,7 @@ namespace Mashed_Ashlands
 
         public override void SpawnSetup()
         {
+            planetCoverage = Find.World.PlanetCoverage;
             base.SpawnSetup();
         }
 
@@ -156,11 +157,13 @@ namespace Mashed_Ashlands
             {
                 Scribe_Values.Look(ref nameInt, "name", null);
             }
+            Scribe_Values.Look(ref planetCoverage, "planetCoverage", 0.3f);
             Scribe_Values.Look(ref volcanoCategory, "category", 1);
             Scribe_Values.Look(ref lastIncident, "lastIncident", "Unknown");
             Scribe_Values.Look(ref totalIncidents, "totalIncidents", 0);
         }
 
+        private float planetCoverage = 0.3f;
         private string nameInt = null;
         private int volcanoCategory = 1;
         private string lastIncident = "Mashed_Ashlands_Unknown".Translate();

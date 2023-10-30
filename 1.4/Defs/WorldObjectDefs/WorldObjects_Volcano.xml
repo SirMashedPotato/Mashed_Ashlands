@@ -68,14 +68,14 @@
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
-						<duration>0</duration>
-						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<durationDays>0</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>20</weight>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<duration>10000~60000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>0.5~5</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>5</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -84,8 +84,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<duration>5000~30000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>1~5</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -94,8 +94,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
-						<duration>10000~50000</duration>
-						<gracePeriodAfter>10000~50000</gracePeriodAfter>
+						<durationDays>3~10</durationDays>
+						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -104,8 +104,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<duration>6000~9000</duration>
-						<gracePeriodAfter>10000~80000</gracePeriodAfter>
+						<durationDays>0.1~0.3</durationDays>
+						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>1</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -176,14 +176,14 @@
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
-						<duration>0</duration>
-						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<durationDays>0</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>15</weight>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<duration>10000~90000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>1~10</durationDays>
+						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>5</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -192,8 +192,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
-						<duration>10000~90000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>1~5</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -202,8 +202,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<duration>10000~90000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>2~10</durationDays>
+						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -212,8 +212,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
-						<duration>20000~100000</duration>
-						<gracePeriodAfter>10000~50000</gracePeriodAfter>
+						<durationDays>5~15</durationDays>
+						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>5</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -222,8 +222,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
-						<duration>10000~100000</duration>
-						<gracePeriodAfter>60000~200000</gracePeriodAfter>
+						<durationDays>3~15</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -232,8 +232,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<duration>1000~2500</duration>
-						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<durationDays>0.1~0.3</durationDays>
+						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -304,14 +304,14 @@
 				<potentialConditions>
 					<li>
 						<!-- null condition -->
-						<duration>0</duration>
-						<gracePeriodAfter>80000~100000</gracePeriodAfter>
+						<durationDays>0</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>15</weight>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<duration>10000~60000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>1~5</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>4</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -320,8 +320,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Blighted</conditionDef>
-						<duration>5000~40000</duration>
-						<gracePeriodAfter>50000~100000</gracePeriodAfter>
+						<durationDays>1~5</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>4</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -330,8 +330,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<duration>10000~90000</duration>
-						<gracePeriodAfter>30000~80000</gracePeriodAfter>
+						<durationDays>2~10</durationDays>
+						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>2</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
@@ -340,8 +340,8 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<duration>1000~2500</duration>
-						<gracePeriodAfter>100000~150000</gracePeriodAfter>
+						<durationDays>0.1~0.3</durationDays>
+						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>2</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
