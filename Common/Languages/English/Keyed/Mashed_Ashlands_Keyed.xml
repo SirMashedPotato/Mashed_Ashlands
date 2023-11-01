@@ -20,6 +20,7 @@
 	<Mashed_Ashlands_VolcanoRadiusCategoryRadius>{0} tiles</Mashed_Ashlands_VolcanoRadiusCategoryRadius>
 	<Mashed_Ashlands_VolcanoRadiusCategoryDescription>The radius around the volcano affected by a category {0} incident.</Mashed_Ashlands_VolcanoRadiusCategoryDescription>
 	<Mashed_Ashlands_VolcanoConditionWeight>{0} weight</Mashed_Ashlands_VolcanoConditionWeight>
+	<Mashed_Ashlands_VolcanoConditionDuration>\n\nThis incident will last {0} day/s.\nThe grace period after this incident ends will last {1} day/s.</Mashed_Ashlands_VolcanoConditionDuration>
 	<Mashed_Ashlands_VolcanoPermanentCondition>Causes permanent {0} in radius.</Mashed_Ashlands_VolcanoPermanentCondition>
 	<Mashed_Ashlands_VolcanoTriggeredCondition>Currently causing a category {0} {1}</Mashed_Ashlands_VolcanoTriggeredCondition>
 	<Mashed_Ashlands_VolcanoConditionLetter_Label>{0} (Category {1} {2})</Mashed_Ashlands_VolcanoConditionLetter_Label>

@@ -23,7 +23,7 @@ namespace Mashed_Ashlands
 
             listing_Standard.Begin(innerRect);
 
-            listing_Standard = Mashed_Ashlands_Mod.SettingsPage_WorldGen(listing_Standard, Mashed_Ashlands_ModSettings.Instance, false);
+            listing_Standard = Mashed_Ashlands_Mod.SettingsPage_WorldGen(listing_Standard, Mashed_Ashlands_ModSettings.Instance, true);
 
             listing_Standard.End();
             Widgets.EndScrollView();

@@ -13,6 +13,8 @@
 	<Mashed_Ashlands_FlowerFeeding>Enable certain animals feeding from ashland flowers.</Mashed_Ashlands_FlowerFeeding>
 	<!-- ==========[World Gen]==========-->
 	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>
+	<Mashed_Ashlands_PagePreWorldGen1>Changes made here will not be saved unless the regular mod settings menu is opened and closed afterwards.</Mashed_Ashlands_PagePreWorldGen1>
+	<Mashed_Ashlands_PagePreWorldGen2>This window can be disabled in the full mod settings menu, on the 'World Gen. Settings' page.</Mashed_Ashlands_PagePreWorldGen2>
 	<Mashed_Ashlands_EnableSettingBeforeWorldGen>Display the Ashland World Gen. settings page before world generation.</Mashed_Ashlands_EnableSettingBeforeWorldGen>
 	<!-- dormant volcano -->
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>

@@ -220,18 +220,25 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        public static Listing_Standard SettingsPage_WorldGen(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings,  bool header = true)
+        public static Listing_Standard SettingsPage_WorldGen(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings,  bool alternateHeader = false)
         {
-            if (header)
+            if (alternateHeader)
+            {
+                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen1".Translate());
+                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen2".Translate());
+                listing_Standard.GapLine();
+                listing_Standard.Gap();
+            }
+            else
             {
                 listing_Standard.Label("Mashed_Ashlands_PageWorldGen".Translate());
                 listing_Standard.GapLine();
                 listing_Standard.Gap();
-            }
 
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSettingBeforeWorldGen".Translate(), ref settings.Mashed_Ashlands_EnableSettingBeforeWorldGen);
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
+                listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSettingBeforeWorldGen".Translate(), ref settings.Mashed_Ashlands_EnableSettingBeforeWorldGen);
+                listing_Standard.GapLine();
+                listing_Standard.Gap();
+            }
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
             listing_Standard.Gap();
