@@ -16,7 +16,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawChillshroom</defName>
 		<label>chillshroom</label>
-		<description>Raw chillshroom. Often brewed into a cooling tea, not very enjoyable to eat raw.</description>
+		<description>Raw chillshroom. Often brewed into a cooling tea, though it can be used as animal feed when necessary.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawChillshroom</texPath>
 		</graphicData>
@@ -78,10 +78,10 @@
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawScathecraw]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawScathecraw</defName>
 		<label>scathecraw leaves</label>
-		<description>Raw scathecraw leaves. Tough and chewy, not particularly pleasant to eat, though animals don't seem to mind.</description>
+		<description>Raw scathecraw leaves. Tough and chewy, not particularly pleasant to eat. Better suited for animals, though when times are tough it's better than nothing.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawScathecraw</texPath>
 		</graphicData>
@@ -94,8 +94,16 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawRoughPlant</li>
+		</tradeTags>
 		<ingestible>
 			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
@@ -103,7 +111,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawTramaRoot</defName>
 		<label>trama root</label>
-		<description>Raw trama root. Often brewed into a calming tea, not very enjoyable to eat raw.</description>
+		<description>Raw trama root. Often brewed into a calming tea, though it can be used as animal feed when necessary.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_TramaRoot</texPath>
 		</graphicData>
