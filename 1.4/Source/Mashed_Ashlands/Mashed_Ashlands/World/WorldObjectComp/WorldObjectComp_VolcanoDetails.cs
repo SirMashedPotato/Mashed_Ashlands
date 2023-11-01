@@ -65,6 +65,27 @@ namespace Mashed_Ashlands
             }
         }
 
+        public void TryChangeCategory(bool radiusFlag)
+        {
+            if (CategoryCanBeChanged())
+            {
+                int originalCategory = ParentVolcano.Category;
+                if (Rand.Bool)
+                {
+                    DecreaseByOne();
+                }
+                else
+                {
+                    IncreaseByOne();
+                }
+                if (radiusFlag)
+                {
+                    Find.LetterStack.ReceiveLetter("Mashed_Ashlands_CategoryChange_Label".Translate(ParentVolcano.Name).CapitalizeFirst(),
+                        "Mashed_Ashlands_CategoryChange_Description".Translate(ParentVolcano.Name, originalCategory, ParentVolcano.Category), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, ParentVolcano, null, null);
+                }
+            }
+        }
+
         public bool CategoryCanBeChanged()
         {
             return !IsRedMountain && Props.categoryCanChange && (CategoryCanBeIncreasedByOne() || CategoryCanBeDecreasedByOne());
@@ -76,10 +97,36 @@ namespace Mashed_Ashlands
             return categoryIndex < Props.categoryWeights.Count - 1; 
         }
 
+        private void IncreaseByOne()
+        {
+            if (!CategoryCanBeIncreasedByOne())
+            {
+                if (Rand.Bool)
+                {
+                    DecreaseByOne();
+                }
+                return;
+            }
+            ParentVolcano.Category++;
+        }
+
         public bool CategoryCanBeDecreasedByOne()
         {
             int categoryIndex = Props.categoryWeights.FindIndex(x => x.category == ParentVolcano.Category);
             return categoryIndex > 1;
+        }
+
+        private void DecreaseByOne()
+        {
+            if (!CategoryCanBeDecreasedByOne())
+            {
+                if (Rand.Bool)
+                {
+                    IncreaseByOne();
+                }
+                return;
+            }
+            ParentVolcano.Category--;
         }
 
         public override IEnumerable<Gizmo> GetGizmos()

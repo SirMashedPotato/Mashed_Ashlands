@@ -162,7 +162,6 @@
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
-    <Compile Include="IncidentWorker\IncidentWorker_VolcanoCategoryChange.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />

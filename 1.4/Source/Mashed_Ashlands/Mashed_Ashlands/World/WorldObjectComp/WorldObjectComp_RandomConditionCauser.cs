@@ -18,7 +18,6 @@ namespace Mashed_Ashlands
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
         public bool CanCauseCondition => graceTicksLeft == 0;
 
-
         /// <summary>
         /// 
         /// </summary>
@@ -29,17 +28,29 @@ namespace Mashed_Ashlands
             {
                 EndConditions();
                 SetCondition(condition, ParentVolcano);
-                if (condition.countAsIncident)
-                {
-                    ParentVolcano.IncidentTriggered();
-                }
-                if (condition.sendLetter && (!Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius()))
+
+                bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
+
+                if (condition.sendLetter && radiusFlag)
                 {
                     Find.LetterStack.ReceiveLetter(
                     "Mashed_Ashlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, category, currentConditionDef.label).CapitalizeFirst(),
                     "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
                     currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
+
+                if (condition.countAsIncident)
+                {
+                    ParentVolcano.IncidentTriggered();
+
+                    if (Mashed_Ashlands_ModSettings.VolcanoEnableCategoryChange && ++incidentsCount >= Mashed_Ashlands_ModSettings.IncidentsForCategoryChange)
+                    {
+                        incidentsCount = 0;
+                        WorldObjectComp_VolcanoDetails compDetails = parent.GetComponent<WorldObjectComp_VolcanoDetails>();
+                        compDetails.TryChangeCategory(radiusFlag);
+                    }
+                }
+
                 conditionTicksLeft = (int)(durationDays * 60000f);
                 graceTicksLeft = (int)(graceDaysAfter * 60000f);
                 endMessage = condition.sendEndMessage;
@@ -170,6 +181,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref category, "category", 1);
             Scribe_Values.Look(ref conditionTicksLeft, "conditionTicksLeft", 0);
             Scribe_Values.Look(ref graceTicksLeft, "graceTicksLeft", 0);
+            Scribe_Values.Look(ref incidentsCount, "incidentsCount", 0);
         }
 
         public override string CompInspectStringExtra()
@@ -255,6 +267,7 @@ namespace Mashed_Ashlands
             base.PostDestroy();
         }
 
+        public int incidentsCount = 0;
         private GameConditionDef currentConditionDef;
         private float durationDays = 0;
         private float graceDaysAfter = 0;

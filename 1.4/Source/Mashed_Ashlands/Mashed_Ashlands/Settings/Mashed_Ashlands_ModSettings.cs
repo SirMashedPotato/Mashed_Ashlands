@@ -56,6 +56,7 @@ namespace Mashed_Ashlands
         public static bool VolcanoOnlyLetterIfInRadius => _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius;
 
         public static bool VolcanoEnableCategoryChange => _instance.Mashed_Ashlands_VolcanoEnableCategoryChange;
+        public static int IncidentsForCategoryChange => _instance.Mashed_Ashlands_IncidentsForCategoryChange;
 
         //cliff racer
         public static bool CliffRacerEnableExtinction => _instance.Mashed_Ashlands_CliffRacerEnableExtinction;
@@ -148,6 +149,7 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
         public bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
         public bool Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
+        public int Mashed_Ashlands_IncidentsForCategoryChange = Mashed_Ashlands_IncidentsForCategoryChange_def;
 
         //cliff racer
         public bool Mashed_Ashlands_CliffRacerEnableExtinction = Mashed_Ashlands_CliffRacerEnableExtinction_def;
@@ -241,6 +243,7 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def = true;
 
         private static readonly bool Mashed_Ashlands_VolcanoEnableCategoryChange_def = true;
+        private static readonly int Mashed_Ashlands_IncidentsForCategoryChange_def = 10;
 
         //cliff racer
         private static readonly bool Mashed_Ashlands_CliffRacerEnableExtinction_def = true;
@@ -340,6 +343,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoOnlyLetterIfInRadius, "Mashed_Ashlands_VolcanoOnlyLetterIfInRadius", Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def);
 
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableCategoryChange, "Mashed_Ashlands_VolcanoEnableCategoryChange", Mashed_Ashlands_VolcanoEnableCategoryChange_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_IncidentsForCategoryChange, "Mashed_Ashlands_IncidentsForCategoryChange", Mashed_Ashlands_IncidentsForCategoryChange_def);
 
             //cliff racer
             Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerEnableExtinction, "Mashed_Ashlands_CliffRacerEnableExtinction", Mashed_Ashlands_CliffRacerEnableExtinction_def);
@@ -444,6 +448,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
             _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
             _instance.Mashed_Ashlands_VolcanoEnableCategoryChange = Mashed_Ashlands_VolcanoEnableCategoryChange_def;
+            _instance.Mashed_Ashlands_IncidentsForCategoryChange = Mashed_Ashlands_IncidentsForCategoryChange_def;
 
             _instance.Mashed_Ashlands_CliffRacerEnableExtinction = Mashed_Ashlands_CliffRacerEnableExtinction_def;
             _instance.Mashed_Ashlands_CliffRacerEnableTracker = Mashed_Ashlands_CliffRacerEnableTracker_def;

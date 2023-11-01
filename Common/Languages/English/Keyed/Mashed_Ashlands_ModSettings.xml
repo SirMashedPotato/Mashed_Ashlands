@@ -70,7 +70,8 @@
 	<Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>
 	<Mashed_Ashlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</Mashed_Ashlands_VolcanoEnablePermanentConditions>
 	<Mashed_Ashlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</Mashed_Ashlands_VolcanoEnableRandomConditions>
-	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the volcano category change incident.</Mashed_Ashlands_VolcanoEnableCategoryChange>
+	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the category of a volcano changing by 1 every {0} incidents it causes.</Mashed_Ashlands_VolcanoEnableCategoryChange>
+	<Mashed_Ashlands_VolcanoEnableCategoryChange_Description>Note that the category is not guaranteed to change every {0} incidents.</Mashed_Ashlands_VolcanoEnableCategoryChange_Description>
 	<Mashed_Ashlands_VolcanoOnlyLetterIfInRadius>Only send a letter for random volcano conditions if either an active map, or a caravan, is within the maximum radius of the volcano.</Mashed_Ashlands_VolcanoOnlyLetterIfInRadius>
 	<!-- Cliff racer related -->
 	<Mashed_Ashlands_CliffRacerEnableExtinction>Enable wild cliff racer extinction.</Mashed_Ashlands_CliffRacerEnableExtinction>
