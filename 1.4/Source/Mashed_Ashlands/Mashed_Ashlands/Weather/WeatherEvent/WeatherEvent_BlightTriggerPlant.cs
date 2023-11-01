@@ -19,7 +19,7 @@ namespace Mashed_Ashlands
             if (Mashed_Ashlands_ModSettings.BlightStormBlightPlants)
             {
                 List<Thing> potentialTargets = (from x in map.listerThings.ThingsInGroup(ThingRequestGroup.Plant)
-                               where !PlantImmuneToBlight(x as Plant)
+                               where PlantCanBeBlighted(x as Plant)
                                select x).ToList();
                 if (!potentialTargets.NullOrEmpty())
                 {
@@ -48,11 +48,11 @@ namespace Mashed_Ashlands
         /// Meant for use as a hook for potential Harmony patches
         /// Final check doesn't use p.BlightableNow, as that checks if the plant is a possible wild plant for the biome
         /// </summary>
-        public bool PlantImmuneToBlight(Plant p)
+        public bool PlantCanBeBlighted(Plant p)
         {
             if (!p.sown && !Mashed_Ashlands_ModSettings.BlightStormBlightWildPlants)
             {
-                return true;
+                return false;
             }
             return !p.Blighted && p.def.plant.Blightable && p.LifeStage != PlantLifeStage.Sowing;
         }
