@@ -29,6 +29,21 @@ namespace Mashed_Ashlands
                 EndConditions();
                 SetCondition(condition, ParentVolcano);
 
+                bool categoryChangeFlag = false;
+                int originalCategory = ParentVolcano.Category;
+
+                if (condition.countAsIncident)
+                {
+                    ParentVolcano.IncidentTriggered();
+
+                    if (Mashed_Ashlands_ModSettings.VolcanoEnableCategoryChange && ++incidentsCount >= Mashed_Ashlands_ModSettings.IncidentsForCategoryChange)
+                    {
+                        incidentsCount = 0;
+                        WorldObjectComp_VolcanoDetails compDetails = parent.GetComponent<WorldObjectComp_VolcanoDetails>();
+                        categoryChangeFlag = compDetails.TryChangeCategory();
+                    }
+                }
+
                 bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
 
                 if (condition.sendLetter && radiusFlag)
@@ -39,16 +54,10 @@ namespace Mashed_Ashlands
                     currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
 
-                if (condition.countAsIncident)
+                if (categoryChangeFlag && radiusFlag)
                 {
-                    ParentVolcano.IncidentTriggered();
-
-                    if (Mashed_Ashlands_ModSettings.VolcanoEnableCategoryChange && ++incidentsCount >= Mashed_Ashlands_ModSettings.IncidentsForCategoryChange)
-                    {
-                        incidentsCount = 0;
-                        WorldObjectComp_VolcanoDetails compDetails = parent.GetComponent<WorldObjectComp_VolcanoDetails>();
-                        compDetails.TryChangeCategory(radiusFlag);
-                    }
+                    Find.LetterStack.ReceiveLetter("Mashed_Ashlands_CategoryChange_Label".Translate(ParentVolcano.Name).CapitalizeFirst(),
+                        "Mashed_Ashlands_CategoryChange_Description".Translate(ParentVolcano.Name, originalCategory, ParentVolcano.Category), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, ParentVolcano, null, null);
                 }
 
                 conditionTicksLeft = (int)(durationDays * 60000f);

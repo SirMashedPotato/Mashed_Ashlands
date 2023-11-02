@@ -65,25 +65,21 @@ namespace Mashed_Ashlands
             }
         }
 
-        public void TryChangeCategory(bool radiusFlag)
+        public bool TryChangeCategory()
         {
+            bool categoryChanged = false;
             if (CategoryCanBeChanged())
             {
-                int originalCategory = ParentVolcano.Category;
                 if (Rand.Bool)
                 {
-                    DecreaseByOne();
+                    categoryChanged = DecreaseByOne();
                 }
                 else
                 {
-                    IncreaseByOne();
-                }
-                if (radiusFlag)
-                {
-                    Find.LetterStack.ReceiveLetter("Mashed_Ashlands_CategoryChange_Label".Translate(ParentVolcano.Name).CapitalizeFirst(),
-                        "Mashed_Ashlands_CategoryChange_Description".Translate(ParentVolcano.Name, originalCategory, ParentVolcano.Category), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, ParentVolcano, null, null);
+                    categoryChanged = IncreaseByOne();
                 }
             }
+            return categoryChanged;
         }
 
         public bool CategoryCanBeChanged()
@@ -97,17 +93,18 @@ namespace Mashed_Ashlands
             return categoryIndex < Props.categoryWeights.Count - 1; 
         }
 
-        private void IncreaseByOne()
+        private bool IncreaseByOne()
         {
             if (!CategoryCanBeIncreasedByOne())
             {
                 if (Rand.Bool)
                 {
-                    DecreaseByOne();
+                    return DecreaseByOne();
                 }
-                return;
+                return false;
             }
             ParentVolcano.Category++;
+            return true;
         }
 
         public bool CategoryCanBeDecreasedByOne()
@@ -116,17 +113,18 @@ namespace Mashed_Ashlands
             return categoryIndex > 1;
         }
 
-        private void DecreaseByOne()
+        private bool DecreaseByOne()
         {
             if (!CategoryCanBeDecreasedByOne())
             {
                 if (Rand.Bool)
                 {
-                    IncreaseByOne();
+                    return IncreaseByOne();
                 }
-                return;
+                return false;
             }
             ParentVolcano.Category--;
+            return true;
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
