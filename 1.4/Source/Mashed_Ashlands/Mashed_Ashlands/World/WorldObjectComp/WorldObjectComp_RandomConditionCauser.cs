@@ -106,64 +106,69 @@ namespace Mashed_Ashlands
         public override void CompTick()
         {
             base.CompTick();
-            if (Mashed_Ashlands_ModSettings.VolcanoEnableRandomConditions)
+            ///uses IsHashIntervalTick to avoid tanking performance from checking InAoE
+            if (parent.IsHashIntervalTick(60))
             {
-                if (conditionTicksLeft > 0)
+                bool caravanFlag = parent.IsHashIntervalTick(3600);
+                if (Mashed_Ashlands_ModSettings.VolcanoEnableRandomConditions)
                 {
-                    if (currentConditionDef != null)
+                    if (conditionTicksLeft > 0)
                     {
-                        foreach (Map map in Find.Maps)
+                        if (currentConditionDef != null)
                         {
-                            if (InAoE(map.Tile, category, ParentVolcano))
+                            foreach (Map map in Find.Maps)
                             {
-                                EnforceConditionOn(ref causedConditions, map, currentConditionDef, Props.preventConditionStacking);
-                            }
-                        }
-                        ///Causes ash buildup to pawns in caravans during an ash storm
-                        if (Find.TickManager.TicksGame % CheckInterval == 0)
-                        {
-                            if (Mashed_Ashlands_ModSettings.AshStormAffectsCaravan && currentConditionDef.conditionClass == typeof(GameCondition_AshStorm))
-                            {
-                                foreach (Caravan caravan in Find.World.worldObjects.Caravans)
+                                if (InAoE(map.Tile, category, ParentVolcano))
                                 {
-                                    if (InAoE(caravan.Tile, category, ParentVolcano) && caravan.pather.MovingNow)
+                                    EnforceConditionOn(ref causedConditions, map, currentConditionDef, Props.preventConditionStacking);
+                                }
+                            }
+                            ///Causes ash buildup to pawns in caravans during an ash storm
+                            if (caravanFlag)
+                            {
+                                if (Mashed_Ashlands_ModSettings.AshStormAffectsCaravan && currentConditionDef.conditionClass == typeof(GameCondition_AshStorm))
+                                {
+                                    foreach (Caravan caravan in Find.World.worldObjects.Caravans)
                                     {
-                                        foreach (Pawn p in caravan.PawnsListForReading)
+                                        if (InAoE(caravan.Tile, category, ParentVolcano) && caravan.pather.MovingNow)
                                         {
-                                            GameCondition_AshStorm.DoPawnAshDamage(p, false);
+                                            foreach (Pawn p in caravan.PawnsListForReading)
+                                            {
+                                                GameCondition_AshStorm.DoPawnAshDamage(p, false);
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                    conditionTicksLeft--;
-                }
-                else
-                {
-                    if (graceTicksLeft > 0)
-                    {
-                        graceTicksLeft--;
+                        conditionTicksLeft--;
                     }
                     else
                     {
-                        TriggerCondition();
+                        if (graceTicksLeft > 0)
+                        {
+                            graceTicksLeft--;
+                        }
+                        else
+                        {
+                            TriggerCondition();
+                        }
                     }
                 }
-            }
-            ///for cleaning out conditions
-            tmpDeadConditionMaps.Clear();
-            foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
-            {
-                if (!InAoE(keyValuePair.Key.Tile, category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                ///for cleaning out conditions
+                tmpDeadConditionMaps.Clear();
+                foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
                 {
-                    keyValuePair.Value.End();
-                    tmpDeadConditionMaps.Add(keyValuePair.Key);
+                    if (!InAoE(keyValuePair.Key.Tile, category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                    {
+                        keyValuePair.Value.End();
+                        tmpDeadConditionMaps.Add(keyValuePair.Key);
+                    }
                 }
-            }
-            foreach (Map key in tmpDeadConditionMaps)
-            {
-                causedConditions.Remove(key);
+                foreach (Map key in tmpDeadConditionMaps)
+                {
+                    causedConditions.Remove(key);
+                }
             }
         }
 
@@ -187,7 +192,7 @@ namespace Mashed_Ashlands
             }
 
             Scribe_Defs.Look(ref currentConditionDef, "conditionDef");
-            Scribe_Values.Look(ref category, "category", 1);
+            Scribe_Values.Look(ref category, "incidentCategory", 1);
             Scribe_Values.Look(ref conditionTicksLeft, "conditionTicksLeft", 0);
             Scribe_Values.Look(ref graceTicksLeft, "graceTicksLeft", 0);
             Scribe_Values.Look(ref incidentsCount, "incidentsCount", 0);
@@ -289,6 +294,5 @@ namespace Mashed_Ashlands
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
         private static List<Map> tmpDeadConditionMaps = new List<Map>();
-        public const int CheckInterval = 3451;
     }
 }

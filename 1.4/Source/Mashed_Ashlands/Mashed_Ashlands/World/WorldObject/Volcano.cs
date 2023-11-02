@@ -158,7 +158,7 @@ namespace Mashed_Ashlands
                 Scribe_Values.Look(ref nameInt, "name", null);
             }
             Scribe_Values.Look(ref planetCoverage, "planetCoverage", 0.3f);
-            Scribe_Values.Look(ref volcanoCategory, "category", 1);
+            Scribe_Values.Look(ref volcanoCategory, "volcanoCategory", 1);
             Scribe_Values.Look(ref lastIncident, "lastIncident", "Unknown");
             Scribe_Values.Look(ref totalIncidents, "totalIncidents", 0);
         }

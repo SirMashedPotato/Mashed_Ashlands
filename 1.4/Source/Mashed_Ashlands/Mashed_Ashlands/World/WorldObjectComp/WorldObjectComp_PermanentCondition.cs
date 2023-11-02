@@ -19,29 +19,33 @@ namespace Mashed_Ashlands
         public override void CompTick()
         {
             base.CompTick();
-            if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
+            ///uses IsHashIntervalTick to avoid tanking performance from checking InAoE
+            if (parent.IsHashIntervalTick(60))
             {
-                foreach (Map map in Find.Maps)
+                if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
                 {
-                    if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                    foreach (Map map in Find.Maps)
                     {
-                        EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
+                        if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                        {
+                            EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
+                        }
                     }
                 }
-            }
-            ///for cleaning out conditions
-            tmpDeadConditionMaps.Clear();
-            foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
-            {
-                if (!InAoE(keyValuePair.Key.Tile, ParentVolcano.Category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                ///for cleaning out conditions
+                tmpDeadConditionMaps.Clear();
+                foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
                 {
-                    keyValuePair.Value.End();
-                    tmpDeadConditionMaps.Add(keyValuePair.Key);
+                    if (!InAoE(keyValuePair.Key.Tile, ParentVolcano.Category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                    {
+                        keyValuePair.Value.End();
+                        tmpDeadConditionMaps.Add(keyValuePair.Key);
+                    }
                 }
-            }
-            foreach (Map key in tmpDeadConditionMaps)
-            {
-                causedConditions.Remove(key);
+                foreach (Map key in tmpDeadConditionMaps)
+                {
+                    causedConditions.Remove(key);
+                }
             }
         }
 
