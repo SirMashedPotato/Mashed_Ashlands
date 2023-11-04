@@ -31,7 +31,9 @@
 		<!-- SeedsPleaseLite -->
 		<li IfModActive="owlchemist.seedspleaselite">LoadFolders/SeedsPleaseLiteTextures</li>
 		<li IfModActive="owlchemist.seedspleaselite">1.4/LoadFolders/SeedsPleaseLite</li>
-		<!-- sirmashedpotato.morrowrim.soundpatch -->
-		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">LoadFolders/MorrowRim_SoundPatch</li>
+		<!-- MorrowRim Sound Patch -->
+		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.4/LoadFolders/MorrowRim_SoundPatch</li>
+		<!-- Exploration Mode -->
+		<li IfModActive="rw_exploration_mode.thelastbulletbender">1.4/LoadFolders/ExplorationMode</li>
 	</v1.4>
 </loadFolders>

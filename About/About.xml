@@ -35,6 +35,7 @@
 		<li>m00nl1ght.geologicallandform</li>
 		<li>sarg.rimbees</li>
 		<li>sirmashedpotato.morrowrim.soundpatch</li>
+		<li>rw_exploration_mode.thelastbulletbender</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim</li>
