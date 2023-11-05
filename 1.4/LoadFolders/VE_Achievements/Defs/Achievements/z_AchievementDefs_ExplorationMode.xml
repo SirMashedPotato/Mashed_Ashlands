@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_HaveAVolcanoMap]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="rw_exploration_mode.thelastbulletbender">
+		<defName>Mashed_AchievementAshlands_HaveAVolcanoMap</defName>
+		<label>You Cannot Hide</label>
+		<description>Obtain a volcano map</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_VolcanoMap</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_HaveAVolcanoMap</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>
