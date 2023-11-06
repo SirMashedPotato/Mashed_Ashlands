@@ -64,6 +64,7 @@
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.95</wildness>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
@@ -170,6 +171,7 @@
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.2</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
