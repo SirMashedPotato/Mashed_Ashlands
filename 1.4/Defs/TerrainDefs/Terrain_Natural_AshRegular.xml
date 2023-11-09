@@ -23,7 +23,7 @@
 	<!-- ==========[Mashed_Ashlands_GrazelandSoil]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
 		<defName>Mashed_Ashlands_GrazelandSoil</defName>
-		<label>grazeland soil</label>
+		<label>depleted ash soil</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_GrazelandSoil</texturePath>
 		<fertility>1</fertility>
 	</TerrainDef>
