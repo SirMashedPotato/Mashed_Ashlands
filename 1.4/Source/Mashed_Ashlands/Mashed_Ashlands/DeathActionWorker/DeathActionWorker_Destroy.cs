@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
     {
         public override void PawnDied(Corpse corpse)
         {
-            corpse.Destroy();
+            corpse.InnerPawn.Destroy();
         }
     }
 }
