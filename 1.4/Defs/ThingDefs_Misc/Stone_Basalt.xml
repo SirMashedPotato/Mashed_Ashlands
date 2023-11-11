@@ -5,6 +5,11 @@
 		<defName>Mashed_Ashlands_ColumnarBasalt</defName>
 		<label>columnar basalt</label>
 		<description>Large columns of basalt, typically found in regions experiencing high volcanic activity.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/RockTypes/Mashed_Ashlands_Mashed_Ashlands_ColumnarBasalt</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

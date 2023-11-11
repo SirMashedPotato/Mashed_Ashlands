@@ -86,6 +86,7 @@
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
+    <Compile Include="DefModExtension\BuildingProperties.cs" />
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
+    <Compile Include="Harmony\Misc.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />

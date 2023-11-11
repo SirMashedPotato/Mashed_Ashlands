@@ -6,6 +6,11 @@
 		<label>fetcherfly hive</label>
 		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turned enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
 		<thingClass>Mineable</thingClass>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -97,6 +102,11 @@
 		<defName>Mashed_Ashlands_StriderShell</defName>
 		<label>ancient strider shell</label>
 		<description>An ancient silt strider shell, likely all that remains of the beast. Can be mined for silt strider chitin.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_StriderShell/Mashed_Ashlands_StriderShell</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -129,6 +139,11 @@
 		<defName>Mashed_Ashlands_VolcanicDebris</defName>
 		<label>volcanic debris</label>
 		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
