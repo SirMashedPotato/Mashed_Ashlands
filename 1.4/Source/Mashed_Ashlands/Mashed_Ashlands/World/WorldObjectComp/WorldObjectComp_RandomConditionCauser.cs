@@ -107,7 +107,7 @@ namespace Mashed_Ashlands
         {
             base.CompTick();
             ///uses IsHashIntervalTick to avoid tanking performance from checking InAoE
-            if (parent.IsHashIntervalTick(60))
+            if (parent.IsHashIntervalTick(tickInterval))
             {
                 bool caravanFlag = parent.IsHashIntervalTick(3600);
                 if (Mashed_Ashlands_ModSettings.VolcanoEnableRandomConditions)
@@ -141,13 +141,13 @@ namespace Mashed_Ashlands
                                 }
                             }
                         }
-                        conditionTicksLeft--;
+                        conditionTicksLeft -= tickInterval;
                     }
                     else
                     {
                         if (graceTicksLeft > 0)
                         {
-                            graceTicksLeft--;
+                            graceTicksLeft -= tickInterval;
                         }
                         else
                         {
@@ -288,6 +288,7 @@ namespace Mashed_Ashlands
         private int category = 1;
         private bool endMessage = false;
 
+        private const int tickInterval = 60;
         private int conditionTicksLeft = 0;
         private int graceTicksLeft = 0;
         private IntRange initialGraceTicks = new IntRange(300000, 1500000);
