@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_FetcherflyHive</defName>
 		<label>fetcherfly hive</label>
-		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turned enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
+		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turn enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
 		<thingClass>Mineable</thingClass>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BuildingProperties">
