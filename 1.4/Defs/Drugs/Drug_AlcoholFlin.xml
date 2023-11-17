@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase">
 		<defName>Mashed_Ashlands_AlcoholFlin</defName>
 		<label>flin</label>
-		<description>A whiskey made from fermenting meadow rye. Provides the illusion of enhanced consciousness and manipulation, without the immediate side effects of other alcoholic drinks. As flin is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+		<description>A whiskey made from fermenting meadow rye. Provides the illusion of enhanced consciousness and manipulation, without the immediate side effects of other ashland alcoholic drinks. As flin is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Ashlands_FlinHigh</HediffDef>
 		</descriptionHyperlinks>
