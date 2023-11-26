@@ -12,6 +12,14 @@
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="AsimovAutomatonBase"]</xpath>
+					<value>
+						<li Class="Mashed_Ashlands.AshResistanceProperties">
+							<treatAsMechanical>true</treatAsMechanical>
+						</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
