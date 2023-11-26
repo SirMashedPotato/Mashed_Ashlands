@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GiantGlowingCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
+		<defName>Mashed_Ashlands_GiantGlowingCoprinus</defName>
+		<label>glowing coprinus tree</label>
+		<description>A mutated glowing coprinus, grows larger than normal. While it offers nothing of practical use, most find it quite beautiful, and it does emit a faint gloomy glow.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GiantGlowingCoprinus</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>15</Beauty>
+			<BeautyOutdoors>15</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<growDays>20</growDays>
+			<visualSizeRange>1.3~2.4</visualSizeRange>
+			<harvestWork>600</harvestWork>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<purpose>Beauty</purpose>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(3,69,47,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
