@@ -153,9 +153,10 @@
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
 			<!-- Polluted aesthetic plants -->
-			<Mashed_Ashlands_Plant_SporangiumFlower MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_Plant_SporangiumFlower>
+			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<Mashed_Ashlands_Plant_GlowingGlowstalk MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingGlowstalk>
 			<!-- Polluted trees -->
+			<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.1</Plant_Witchwood>
 		</wildPlants>

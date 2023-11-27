@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_SporangiumFlowerBase">
-		<defName>Mashed_Ashlands_Plant_SporangiumFlower</defName>
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerGreen</defName>
 		<label>sporangium flower</label>
 		<description>A rather odd looking flower, that somewhat resembles the sporangium of certain species of slime mold. It can only be found growing in highly polluted ashland regions.</description>
 		<modExtensions>
@@ -19,7 +19,7 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_Plant_SporangiumFlower</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -32,5 +32,19 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerBlue]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerBlue</defName>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerWhite]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerWhite</defName>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>
