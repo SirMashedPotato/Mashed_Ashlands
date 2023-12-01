@@ -170,8 +170,8 @@
 	<!-- ==========[Mashed_Ashlands_RawJuvenileBlueSandcrab]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawJuvenileBlueSandcrab</defName>
-		<label>juvenile blue sandcrab</label>
-		<description>Raw juvenile blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
+		<label>blue sandcrab</label>
+		<description>Raw blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab</texPath>
 		</graphicData>

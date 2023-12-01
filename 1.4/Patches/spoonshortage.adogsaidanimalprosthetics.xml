@@ -13,8 +13,6 @@
 						<li>Mashed_Ashlands_AshHopper</li>
 						<li>Mashed_Ashlands_SwampJelly</li>
 						<li>Mashed_Ashlands_Mudcrab</li>
-						<li>Mashed_Ashlands_Coralcrab</li>
-						<li>Mashed_Ashlands_SandcrabBlue</li>
 						<li>Mashed_Ashlands_KwamaForager</li>
 						<li>Mashed_Ashlands_KwamaScrib</li>
 						<li>Mashed_Ashlands_Vvardvark</li>
@@ -35,7 +33,6 @@
 						<li>Mashed_Ashlands_Thunderbug</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NetchGlowing</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_CoralcrabGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_MudcrabGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshHopperGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>

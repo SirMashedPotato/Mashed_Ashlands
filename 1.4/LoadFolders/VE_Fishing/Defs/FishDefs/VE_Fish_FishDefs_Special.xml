@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_CoralcrabEgg]==========-->
-	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_CoralcrabEgg</defName>
-		<thingDef>Mashed_Ashlands_Egg_CoralcrabFertilized</thingDef>    
-		<fishSizeCategory>Special</fishSizeCategory>
-		<canBeFreshwater>false</canBeFreshwater>
-		<canBeSaltwater>true</canBeSaltwater>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_RegularAshland</li>
-			<li>Mashed_Ashlands_VolcanicAshland</li>
-		</allowedBiomes>  	
-		<commonality>0.3</commonality>		
-		<baseFishingYield>2</baseFishingYield>		
-	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_KreshCloth]==========-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_KreshCloth</defName>
@@ -107,20 +93,6 @@
 		</allowedBiomes>  	
 		<commonality>1</commonality>	
 		<baseFishingYield>10</baseFishingYield>		
-	</VCE_Fishing.FishDef>
-	<!-- ==========[Mashed_Ashlands_SandcrabBlueEgg]==========-->
-	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_SandcrabBlueEgg</defName>
-		<thingDef>Mashed_Ashlands_Egg_SandcrabBlueFertilized</thingDef>    
-		<fishSizeCategory>Special</fishSizeCategory>
-		<canBeFreshwater>false</canBeFreshwater>
-		<canBeSaltwater>true</canBeSaltwater>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_RegularAshland</li>
-			<li>Mashed_Ashlands_VolcanicAshland</li>
-		</allowedBiomes>  	
-		<commonality>0.3</commonality>		
-		<baseFishingYield>3</baseFishingYield>		
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
 	<VCE_Fishing.FishDef>

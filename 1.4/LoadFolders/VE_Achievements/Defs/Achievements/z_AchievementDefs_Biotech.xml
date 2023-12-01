@@ -13,10 +13,6 @@
 					<value>1</value>
 				</li>
 				<li>
-					<key>Mashed_Ashlands_CoralcrabGlowing</key>
-					<value>1</value>
-				</li>
-				<li>
 					<key>Mashed_Ashlands_MudcrabGlowing</key>
 					<value>1</value>
 				</li>
@@ -51,10 +47,6 @@
 			<kindDefs>
 				<li>
 					<key>Mashed_Ashlands_NetchGlowing</key>
-					<value>1</value>
-				</li>
-				<li>
-					<key>Mashed_Ashlands_CoralcrabGlowing</key>
 					<value>1</value>
 				</li>
 				<li>

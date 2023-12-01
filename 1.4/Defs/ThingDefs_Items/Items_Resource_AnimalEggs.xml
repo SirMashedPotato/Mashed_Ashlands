@@ -100,26 +100,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
-		<defName>Mashed_Ashlands_Egg_CoralcrabFertilized</defName>
-		<label>ashland coralcrab egg (fert.)</label>
-		<description>A fertilised coralcrab egg. If all goes well, it should hatch into a baby coralcrab. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(111,109,111)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>11</MarketValue>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>Mashed_Ashlands_Coralcrab</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_DurzogFertilized</defName>
@@ -274,27 +254,6 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_NixOx</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
-		<defName>Mashed_Ashlands_Egg_SandcrabBlueFertilized</defName>
-		<label>blue sandcrab egg (fert.)</label>
-		<description>A fertilised blue sandcrab egg. If all goes well, it should hatch into a baby blue sandcrab. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(109,109,121)</color>
-			<drawSize>0.85</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>8</MarketValue>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>1</hatcherDaystoHatch>
-				<hatcherPawn>Mashed_Ashlands_SandcrabBlue</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

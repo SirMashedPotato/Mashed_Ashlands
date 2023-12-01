@@ -19,26 +19,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_CoralcrabGlowingFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
-		<defName>Mashed_Ashlands_Egg_CoralcrabGlowingFertilized</defName>
-		<label>glowing coralcrab egg (fert.)</label>
-		<description>A fertilised glowing coralcrab egg. If all goes well, it should hatch into a baby coralcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(111,130,111)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>11</MarketValue>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>Mashed_Ashlands_CoralcrabGlowing</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</defName>
