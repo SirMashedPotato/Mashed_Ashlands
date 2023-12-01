@@ -3,12 +3,11 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>0.1.35</modVersion>
+	<modVersion>0.2.0</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>A completely remade version of my oldest mod, made to a much higher standard, and with significantly more experience under my belt. There is a wealth of new content added, and several features from some of my other MorrowRim mods have been incorporated.\n\nExtra compatibility with:\n - Royalty\n - Ideology\n - Biotech\n - Regrowth Core\n - SeedsPleaseLite\n - SYR Processor Framework\n - Vanilla Expanded Achievements (but not yet)\n - Vanilla Expanded Fishing\n - Vanilla Expanded Framework\n - World Map Beautification Project\n\nContains patches for:\n - ESCP Spriggans\n - ESCP Dunmer\n - ESCP Maormer\n - ESCP Necromantic Thralls\n - ESCP Trolls\n - MorrowRim Bloodmoon\n - MorrowRim Bonewalkers\n - MorrowRim Telvanni Spiders\n - MorrowRim Telvanni Technology\n - MorrowRim The Sixth House\n - Outland Core\n - Heruan\n - Zombieland\n - Android Tiers Reforged\n - Mechanical Humanlikes\n - Alien vs Predator\n - Dragons Descent\n - Alpha Animals\n - Alpha Bees\n - A Dog Said Animal Prosthetics\n - Vanilla Expanded Outposts\n - Medieval Overhaul\n - Simple FX Smoke\n - Vanilla Expanded Plants\n - Rim of Madness Bones\n\nOther mods that have patches for this:\n - Mashed Lynians\n - Mashed Spiribirds\n - Mashed Spiribugs\n\n - Very much inspired by the Elder Scrolls series by Bethesda Sutios, with a heavy focus on the nation of Morrowind.\n - Seed bag texture by CitizenKanye\n - Big thanks to Ranger Rick for being a generally great person.
-	</description>
+	<description>A completely remade version of the original MorrowRim mod, made to a much higher standard, and with significantly more experience under my belt. There is a wealth of new content added, and several features from some of my other MorrowRim mods have been incorporated. The mod itself is entirely focused on the ashland biomes, with all content included being tied to them in some way.\n\n- Very much inspired by the Elder Scrolls series by Bethesda Studios, with a heavy focus on Morrowind\n- Slightly inspired by the Monster Hunter series by Capcom\n- Seed bag texture used for SeedsPlease Lite support by CitizenKanye\n- Thanks to Aludis and Star~Verse for providing feedback\n- And to Ranger Rick for being neat</description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
