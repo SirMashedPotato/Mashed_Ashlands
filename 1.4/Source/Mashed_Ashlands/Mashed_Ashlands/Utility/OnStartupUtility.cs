@@ -101,24 +101,5 @@ namespace Mashed_Ashlands
                 }
             }
         }
-
-        /// <summary>
-        /// Need to reset graphic, and call postLoad, to update the terrain texture
-        /// </summary>
-        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, bool applyToPolluted, string scatterType = null)
-        {
-            def.texturePath = newTexPath;
-            if (scatterType != null)
-            {
-                def.scatterType = scatterType;
-            }
-            if (ModsConfig.BiotechActive && applyToPolluted)
-            {
-                def.pollutedTexturePath = newTexPath;
-                def.graphicPolluted = BaseContent.BadGraphic;
-            }
-            def.graphic = BaseContent.BadGraphic;
-            def.PostLoad();
-        }
     }
 }
