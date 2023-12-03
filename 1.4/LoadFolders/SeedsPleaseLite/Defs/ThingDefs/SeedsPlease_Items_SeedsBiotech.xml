@@ -73,7 +73,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedEmperorToxisol]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedEmperorToxisol</defName>
 		<label>emperor toxisol spores</label>
 		<graphicData>
@@ -86,6 +86,24 @@
 			<li Class="SeedsPleaseLite.Seed">
 				<sources>
 					<li>Mashed_Ashlands_Plant_TreeEmperorToxisol</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedWeepingMouldcap]==========-->
+	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedWeepingMouldcap</defName>
+		<label>weeping mouldcap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedWeepingMouldcap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeWeepingMouldcap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeWeepingMouldcap</li>
 				</sources>
 			</li>
 		</modExtensions>
