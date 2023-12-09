@@ -59,7 +59,7 @@
 		</modExtensions>
 		<forageability>0.25</forageability>
 		<animalDensity>0.4</animalDensity>
-		<plantDensity>0.1</plantDensity>
+		<plantDensity>0.08</plantDensity>
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSandVolcanic</terrain>
@@ -92,7 +92,7 @@
 		<wildPlants>
 			<!-- Ground covers -->
 			<Mashed_Ashlands_Plant_CharredAshlandGrass>5</Mashed_Ashlands_Plant_CharredAshlandGrass>
-			<Mashed_Ashlands_Plant_AshlandFungus>0.5</Mashed_Ashlands_Plant_AshlandFungus>
+			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.05</Mashed_Ashlands_Plant_AshYam>
 			<Mashed_Ashlands_Plant_Scathecraw>0.1</Mashed_Ashlands_Plant_Scathecraw>
@@ -102,7 +102,8 @@
 			<Mashed_Ashlands_Plant_TramaShrub>0.3</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<Mashed_Ashlands_Plant_ScorchedBush>0.5</Mashed_Ashlands_Plant_ScorchedBush>
-			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
+			<Mashed_Ashlands_Plant_FoyadaFungus>0.05</Mashed_Ashlands_Plant_FoyadaFungus>
+			<Mashed_Ashlands_Plant_LavaCactus>0.3</Mashed_Ashlands_Plant_LavaCactus>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.05</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.01</Mashed_Ashlands_Plant_TreeEmperorParasol>

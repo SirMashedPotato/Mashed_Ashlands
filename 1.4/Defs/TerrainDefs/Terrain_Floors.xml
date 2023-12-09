@@ -14,7 +14,7 @@
 		<isPaintable>true</isPaintable>
 		<statBases>
 			<WorkToBuild>85</WorkToBuild>
-			<Flammability>0.22</Flammability>
+			<Flammability>0.1</Flammability>
 		</statBases>
 		<costList>
 			<Mashed_Ashlands_ParasolWoodLog>3</Mashed_Ashlands_ParasolWoodLog>

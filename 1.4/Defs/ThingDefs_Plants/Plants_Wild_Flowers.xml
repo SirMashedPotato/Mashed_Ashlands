@@ -187,6 +187,35 @@
 			<wildClusterWeight>200</wildClusterWeight>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_LavaCactus</defName>
+		<label>lava cactus</label>
+		<description>A hardy species of cactus, often found growing in arid ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaCactus</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_NirthflyflowerBase">
 		<defName>Mashed_Ashlands_Plant_Nirthflyflower</defName>

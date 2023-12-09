@@ -120,7 +120,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_NetchLeather</defName>
 		<label>netch leather</label>
-		<description>Tanned, dried, scraped netch skin. Tough and flexible, but a poor insulator. Provides a slight increase to toxic resistance.</description>
+		<description>Tanned, dried, scraped netch skin. Tough and flexible, but a poor insulator.</description>
 		<graphicData>
 			<color>(133,111,94)</color>
 		</graphicData>
@@ -138,9 +138,6 @@
 			<statFactors>
 				<MaxHitPoints>1.5</MaxHitPoints>
 			</statFactors>
-			<statOffsets>
-				<ToxicResistance>0.02</ToxicResistance>
-			</statOffsets>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_NixLeather]==========-->

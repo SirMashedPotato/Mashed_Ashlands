@@ -34,7 +34,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
 		<defName>Mashed_Ashlands_Plant_TreeWeepingMouldcap</defName>
 		<label>weeping mouldcap tree</label>
-		<description>A highly mutated subspecies of the weeping leathercap tree, solely found growing in regions with ash rich ground, and high levels of pollution. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nOnce it has matured enough, the leathery material of the cap will also be harvested, and can be used to make toxic-resistant clothes.</description>
+		<description>A highly mutated subspecies of the weeping leathercap tree, solely found growing in regions with ash rich ground, and high levels of pollution. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nOnce it has matured enough, the leathery material of the cap will also be harvested, and can be used to make heat resistant clothes.</description>
 		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">

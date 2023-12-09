@@ -12,7 +12,7 @@
 		<defName>Mashed_Ashlands_AshResistance_Partial</defName>
 		<label>partial antiash lungs</label>
 		<labelShortAdj>ash-resistant</labelShortAdj>
-		<description>Carriers of this gene have special mucous lining the respiratory system, proving some resistance to ash buildup during an ash storm.</description>
+		<description>Carriers of this gene have special mucous lining the respiratory system, providing some resistance to ash buildup during an ash storm.</description>
 		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_PartialAshResistance</iconPath>
 		<displayOrderInCategory>31</displayOrderInCategory>
 		<statOffsets>
