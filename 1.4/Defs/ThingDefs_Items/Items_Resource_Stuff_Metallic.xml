@@ -69,7 +69,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_MetallicBase">
 		<defName>Mashed_Ashlands_VolcanicGlass</defName>
 		<label>volcanic glass</label>
-		<description>A rare light-green volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather fragile in its raw form, volcanic glass is both exceptionally light, and flexible. It can be used to make powerful blunt weapons, and highly sharp resistant armour.</description>
+		<description>A rare light-green volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather fragile in its raw form, volcanic glass is both exceptionally light, and flexible. It can be used to make powerful sharp weapons, and highly blunt resistant armour.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Mashed_Ashlands_VolcanicGlass</texPath>
 		</graphicData>
