@@ -12,7 +12,7 @@ namespace Mashed_Ashlands
             WorldGrid grid = Find.WorldGrid;
             for (int i = 0; i < grid.TilesCount; i++)
             {
-                if (grid[i].biome != RimWorld.BiomeDefOf.SeaIce && grid[i].biome != RimWorld.BiomeDefOf.IceSheet)
+                if (PreventAshlandOverride.Get(grid[i].biome) == null)
                 {
                     grid[i].biome = AshlandBiomeFrom(grid[i], i, OnStartupUtility.earlyAshlandBiomeDefs);
                 }
