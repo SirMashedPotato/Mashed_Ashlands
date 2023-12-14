@@ -35,5 +35,7 @@
 		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.4/LoadFolders/MorrowRim_SoundPatch</li>
 		<!-- Exploration Mode -->
 		<li IfModActive="rw_exploration_mode.thelastbulletbender">1.4/LoadFolders/ExplorationMode</li>
+		<!-- Dunmer lamp pack -->
+		<li IfModActive="sirmashedpotato.morrowrim.dunmerlamppack">1.4/LoadFolders/MorrowRim_DunmerLampPack</li>
 	</v1.4>
 </loadFolders>

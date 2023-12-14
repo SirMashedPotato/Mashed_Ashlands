@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- ==========[ash growing zone]==========-->
-	<Mashed_Ashlands_GrowingZoneAsh>ash growing zone</Mashed_Ashlands_GrowingZoneAsh>
+	<Mashed_Ashlands_GrowingZoneAsh>Ash growing zone</Mashed_Ashlands_GrowingZoneAsh>
 	<Mashed_Ashlands_GrowingZoneAshDesc>Create a zone where your colonists will try to grow a certain kind of plant. Can only be placed on ash.</Mashed_Ashlands_GrowingZoneAshDesc>
 	<!-- ==========[Cliff racer alert]==========-->
 	<Mashed_Ashlands_AlertCliffRacerTracker>Cliff racer extinction</Mashed_Ashlands_AlertCliffRacerTracker>

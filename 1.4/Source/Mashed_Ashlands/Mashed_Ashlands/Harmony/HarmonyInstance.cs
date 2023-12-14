@@ -128,6 +128,11 @@ namespace Mashed_Ashlands
                             return;
                         }
 
+                        if (map.zoneManager.ZoneAt(c) is Zone_Growing && (!Mashed_Ashlands_ModSettings.OnlySowOnAsh || !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive")))
+                        {
+                            return;
+                        }
+
                         List<Thing> list = map.thingGrid.ThingsListAt(c);
                         for (int i = 0; i < list.Count; i++)
                         {

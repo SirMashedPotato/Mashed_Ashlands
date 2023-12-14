@@ -185,6 +185,9 @@
 			<visualSizeRange>0.7~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
@@ -214,6 +217,9 @@
 			<visualSizeRange>0.7~0.8</visualSizeRange>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->

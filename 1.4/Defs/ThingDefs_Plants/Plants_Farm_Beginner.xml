@@ -24,7 +24,7 @@
 		<plant>
 			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshYamPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<fertilityMin>1</fertilityMin>
+			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>Mashed_Ashlands_RawAshYams</harvestedThingDef>
 			<harvestYield>8</harvestYield>
