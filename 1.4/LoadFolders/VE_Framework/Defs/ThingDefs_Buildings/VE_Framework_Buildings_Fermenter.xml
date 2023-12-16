@@ -7,7 +7,6 @@
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
-				<buildingOnGraphic>Things/Building/Production/FermentingBarrel</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>Mashed_Ashlands_InsertAshlandBarrelDesc</InsertFirstItemDesc>
