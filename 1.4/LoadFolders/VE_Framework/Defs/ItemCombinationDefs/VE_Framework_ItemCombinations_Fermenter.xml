@@ -10,7 +10,7 @@
 		<amount>
 			<li>25</li>
 		</amount>
-		<result>Mashed_Ashlands_Shein</result>	
+		<result>Mashed_Ashlands_AlcoholShein</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>14</singleTimeIfNotQualityIncreasing>
@@ -25,7 +25,7 @@
 		<amount>
 			<li>25</li>
 		</amount>
-		<result>Mashed_Ashlands_Flin</result>	
+		<result>Mashed_Ashlands_AlcoholFlin</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>4</singleTimeIfNotQualityIncreasing>
@@ -40,7 +40,7 @@
 		<amount>
 			<li>25</li>
 		</amount>
-		<result>Mashed_Ashlands_Mazte</result>	
+		<result>Mashed_Ashlands_AlcoholMazte</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>4</singleTimeIfNotQualityIncreasing>
@@ -55,7 +55,7 @@
 		<amount>
 			<li>25</li>
 		</amount>
-		<result>Mashed_Ashlands_Sujamma</result>	
+		<result>Mashed_Ashlands_AlcoholSujamma</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>10</singleTimeIfNotQualityIncreasing>
