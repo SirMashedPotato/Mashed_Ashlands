@@ -56,6 +56,9 @@
 		<label>antiash skin</label>
 		<labelShortAdj>ash-chafing</labelShortAdj>
 		<description>Carriers of this gene have special sweat glands across their body, preventing ash from building up in unpleasant places during an ash storm.</description>
+		<exclusionTags>
+			<li>Mashed_Ashlands_AshThoughtResistance</li>
+		</exclusionTags>
 		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_AshMoodResistance</iconPath>
 		<displayCategory>ResistanceAndWeakness</displayCategory>
 		<displayOrderInCategory>33</displayOrderInCategory>
@@ -65,6 +68,32 @@
 				<li>
 					<symbol>ash</symbol>
 					<weight>1</weight>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<!-- ==========[Mashed_Ashlands_AshResistance_Perfect]==========-->
+	<GeneDef ParentName="Mashed_Ashlands_GeneAshBase">
+		<defName>Mashed_Ashlands_AshResistance_Perfect</defName>
+		<label>perfect ash resistance</label>
+		<labelShortAdj>ash-immune</labelShortAdj>
+		<description>Carriers of this gene have both special mucous lining the respiratory system, and special sweat glands across their body, ensuring they are completely safe from ash storms.</description>
+		<exclusionTags>
+			<li>Mashed_Ashlands_AshThoughtResistance</li>
+		</exclusionTags>
+		<displayOrderInCategory>34</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_PerfectAshResistance</iconPath>
+		<displayCategory>Archite</displayCategory>
+		<statOffsets>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statOffsets>
+		<biostatCpx>2</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>ash</symbol>
+					<weight>4</weight>
 				</li>
 			</prefixSymbols>
 		</symbolPack>

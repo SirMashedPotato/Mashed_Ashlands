@@ -80,7 +80,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
@@ -90,7 +89,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
@@ -100,7 +98,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
@@ -110,7 +107,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 				</potentialConditions>
 			</li>
@@ -188,7 +184,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
@@ -198,7 +193,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
@@ -208,7 +202,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
@@ -218,7 +211,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
@@ -228,7 +220,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
@@ -238,7 +229,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 				</potentialConditions>
 			</li>
@@ -316,7 +306,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Blighted</conditionDef>
@@ -326,7 +315,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
@@ -336,7 +324,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
@@ -346,7 +333,6 @@
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
-						<randomCategory>true</randomCategory>
 					</li>
 				</potentialConditions>
 			</li>

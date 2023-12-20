@@ -9,7 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/XenotypeDef[defName="VRE_Strigoi" or defName="VRE_Ekkimian" or defName="VRE_Bruxa"]/genes</xpath>
 					<value>
-						<li>Mashed_Ashlands_AshResistance_Total</li>
+						<li>Mashed_Ashlands_AshResistance_Perfect</li>
 					</value>
 				</li>
 				<li Class="PatchOperationFindMod">
@@ -19,7 +19,7 @@
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/XenotypeDef[defName="AG_Malachai"]/genes</xpath>
 						<value>
-							<li>Mashed_Ashlands_AshResistance_Total</li>
+							<li>Mashed_Ashlands_AshResistance_Perfect</li>
 						</value>
 					</match>
 				</li>

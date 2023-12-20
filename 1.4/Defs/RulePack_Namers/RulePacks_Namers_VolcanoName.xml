@@ -21,12 +21,15 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
-				<li>descriptor(p=5)->smouldering</li>
-				<li>descriptor(p=5)->infernal</li>
-				<li>descriptor(p=5)->charred</li>
-				<li>descriptor(p=5)->charred</li>
-				<li>descriptor(p=5)->searing</li>
-				<li>descriptor(p=5)->scorching</li>
+				<li>descriptor->smouldering</li>
+				<li>descriptor->infernal</li>
+				<li>descriptor->charred</li>
+				<li>descriptor->searing</li>
+				<li>descriptor->scorching</li>
+				<li>descriptor->blazing</li>
+				<li>descriptor->boiling</li>
+				<li>descriptor->seething</li>
+				<li>descriptor->stygian</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -39,11 +42,15 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
-				<li>descriptor(p=10)->blighted</li>
-				<li>descriptor(p=5)->tainted</li>
-				<li>descriptor(p=5)->corrupted</li>
-				<li>descriptor(p=5)->defiled</li>
-				<li>descriptor(p=5)->desolate</li>
+				<li>descriptor->blighted</li>
+				<li>descriptor->tainted</li>
+				<li>descriptor->corrupted</li>
+				<li>descriptor->defiled</li>
+				<li>descriptor->desolate</li>
+				<li>descriptor->ruined</li>
+				<li>descriptor->damned</li>
+				<li>descriptor->wretched</li>
+				<li>descriptor->accursed</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -68,9 +75,9 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
-				<li>descriptor(p=10)->overgrown</li>
-				<li>descriptor(p=5)->ancient</li>
-				<li>descriptor(p=5)->verdant</li>
+				<li>descriptor(p=2)->overgrown</li>
+				<li>descriptor(p=1)->ancient</li>
+				<li>descriptor(p=1)->verdant</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

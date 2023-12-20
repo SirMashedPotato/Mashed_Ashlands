@@ -2,6 +2,7 @@
 using RimWorld;
 using System.Collections.Generic;
 using RimWorld.Planet;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -23,7 +24,7 @@ namespace Mashed_Ashlands
         /// </summary>
         public void TriggerCondition()
         {
-            PotentialConditions condition = Props.potentialConditions.RandomElementByWeight(x => x.weight);
+            PotentialConditions condition = Props.potentialConditions.Where(x => x.minVolcanoCategory >= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
                 EndConditions();
@@ -81,7 +82,7 @@ namespace Mashed_Ashlands
             }
             durationDays = condition.durationDays.RandomInRange;
             graceDaysAfter = condition.graceDaysAfter.RandomInRange;
-            category = Rand.RangeInclusive(1, parentVolcano.Category);
+            category = condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
         /// <summary>

@@ -111,7 +111,7 @@ namespace Mashed_Ashlands
                     {
                         int category = compDetailsRadius.Props.categoryWeights[i].category;
                         yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoIncidentRadius, "Mashed_Ashlands_VolcanoRadiusCategoryLabel".Translate(category),
-                            "Mashed_Ashlands_VolcanoRadiusCategoryRadius".Translate(EffectRadiusFor(category)), 
+                            "Mashed_Ashlands_VolcanoRadiusCategoryRadius".Translate(EffectRadiusFor(category)),
                             "Mashed_Ashlands_VolcanoRadiusCategoryDescription".Translate(category), 1, null, null, false);
                     }
                 }
@@ -123,13 +123,13 @@ namespace Mashed_Ashlands
                     {
                         SetTotalIncidentWeight(compDetailsConditons.Props);
                     }
-                    foreach (PotentialConditions condition in compDetailsConditons.Props.potentialConditions) 
+                    foreach (PotentialConditions condition in compDetailsConditons.Props.potentialConditions)
                     {
                         if (condition.conditionDef != null)
                         {
-                            yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label, 
-                                "Mashed_Ashlands_VolcanoConditionWeight".Translate((condition.weight / totalIncidentWeight).ToString("n2")), 
-                                condition.conditionDef.description + "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.durationDays, condition.graceDaysAfter), 1, null, null, false);
+                            yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label,
+                                "Mashed_Ashlands_VolcanoConditionWeight".Translate((condition.weight / totalIncidentWeight).ToString("n2")),
+                                condition.conditionDef.description + "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.durationDays, condition.graceDaysAfter, condition.minVolcanoCategory), 1, null, null, false);
                         }
                     }
                 }
@@ -137,7 +137,7 @@ namespace Mashed_Ashlands
         }
 
         private void SetTotalIncidentWeight(WorldObjectCompProperties_RandomConditionCauser props)
-        { 
+        {
             totalIncidentWeight = 0;
             foreach (PotentialConditions condition in props.potentialConditions)
             {

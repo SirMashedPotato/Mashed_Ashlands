@@ -24,6 +24,7 @@ namespace Mashed_Ashlands
         public bool sendLetter = false;
         public bool sendEndMessage = false;
         public bool countAsIncident = false;
-        public bool randomCategory = false;
+        public int minVolcanoCategory = 1;
+        public int forcedCategory = 0;
     }
 }
