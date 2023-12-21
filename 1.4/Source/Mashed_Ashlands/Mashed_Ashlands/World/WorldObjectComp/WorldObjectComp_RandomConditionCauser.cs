@@ -24,7 +24,7 @@ namespace Mashed_Ashlands
         /// </summary>
         public void TriggerCondition()
         {
-            PotentialConditions condition = Props.potentialConditions.Where(x => x.minVolcanoCategory >= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
+            PotentialConditions condition = Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
                 EndConditions();
