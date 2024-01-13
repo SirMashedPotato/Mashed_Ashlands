@@ -19,6 +19,7 @@
 			<categories>
 				<li>Metallic</li>
 				<li>Mashed_Ashlands_Crystalline</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
 			</categories>
 			<commonality>0.01</commonality>
 			<constructEffect>ConstructMetal</constructEffect>

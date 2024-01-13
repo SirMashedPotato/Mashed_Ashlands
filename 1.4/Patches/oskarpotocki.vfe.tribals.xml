@@ -13,7 +13,15 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor"]</xpath>
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_AshYam"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Agriculture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor" or defName="Mashed_Ashlands_ParasolWoodBridge"]</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>VFET_Construction</li>
@@ -24,4 +32,3 @@
 		</match>
 	</Operation>
 </Patch>
-

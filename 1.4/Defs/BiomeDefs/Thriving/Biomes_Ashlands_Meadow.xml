@@ -55,7 +55,7 @@
 			</li>
 		</modExtensions>
 		<animalDensity>3.5</animalDensity>
-		<plantDensity>0.8</plantDensity>
+		<plantDensity>1</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMeadowRye</foragedFood>
 		<terrainsByFertility>
 			<li>

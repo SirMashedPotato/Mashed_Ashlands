@@ -23,7 +23,7 @@
 	<!-- active volcano -->
 	<Mashed_Ashlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</Mashed_Ashlands_EnableActiveVolcano>
 	<Mashed_Ashlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</Mashed_Ashlands_EnableActiveVolcano_Tooltip>
-	<Mashed_Ashlands_NumberOfActiveVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfActiveVolcano>
+	<Mashed_Ashlands_NumberOfActiveVolcano>The number of active volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfActiveVolcano>
 	<!-- blighted volcano -->
 	<Mashed_Ashlands_EnableBlightedVolcano>Enable the generation of blighted volcanos on the world map</Mashed_Ashlands_EnableBlightedVolcano>
 	<Mashed_Ashlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</Mashed_Ashlands_EnableBlightedVolcano_Tooltip>

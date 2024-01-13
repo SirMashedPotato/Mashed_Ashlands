@@ -150,7 +150,7 @@
 			<Mashed_Ashlands_Plant_MuckSponge>0.1</Mashed_Ashlands_Plant_MuckSponge>
 			<Mashed_Ashlands_Plant_InkCap>0.05</Mashed_Ashlands_Plant_InkCap>
 			<!-- Aesthetic plants -->
-			<RG_Plant_SwampPod MayRequire="regrowth.botr.swampexpansion">0.05</RG_Plant_SwampPod>
+			<Mashed_Ashlands_Plant_AshlandPitcher>0.05</Mashed_Ashlands_Plant_AshlandPitcher>
 			<Mashed_Ashlands_Plant_SloughFern>0.05</Mashed_Ashlands_Plant_SloughFern>
 			<Mashed_Ashlands_Plant_SomnaliusFern>0.05</Mashed_Ashlands_Plant_SomnaliusFern>
 			<Mashed_Ashlands_Plant_AshenFern>0.01</Mashed_Ashlands_Plant_AshenFern>

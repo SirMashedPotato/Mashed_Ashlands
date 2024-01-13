@@ -23,6 +23,7 @@
 		<stuffProps>
 			<categories>
 				<li>Mashed_Ashlands_Crystalline</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
 			</categories>
 			<commonality>0</commonality>
 			<appearance>Bricks</appearance>
@@ -54,7 +55,7 @@
 		</graphicData>
 		<stuffProps>
 			<color>(186,151,248)</color>
-			<stuffAdjective>crystalline</stuffAdjective>
+			<stuffAdjective>p. crystalline</stuffAdjective>
 			<statFactors>
 				<Beauty>1.5</Beauty>
 			</statFactors>

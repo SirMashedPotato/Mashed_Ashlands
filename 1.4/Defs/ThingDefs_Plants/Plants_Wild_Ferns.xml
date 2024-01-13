@@ -58,6 +58,13 @@
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernPlant</texPath>
 		</graphicData>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandFernGreen]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandFernBase">
+		<defName>Mashed_Ashlands_Plant_AshlandFernGreen</defName>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernGreenPlant</texPath>
+		</graphicData>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_SloughFern</defName>

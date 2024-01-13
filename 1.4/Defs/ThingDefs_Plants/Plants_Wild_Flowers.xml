@@ -30,6 +30,34 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandPitcher]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshlandPitcherBase">
+		<defName>Mashed_Ashlands_Plant_AshlandPitcher</defName>
+		<label>ashland pitcher</label>
+		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_AshSand</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshlandPitcher</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_BlackAntherflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_BlackAntherflowerBase">
 		<defName>Mashed_Ashlands_Plant_BlackAntherflower</defName>

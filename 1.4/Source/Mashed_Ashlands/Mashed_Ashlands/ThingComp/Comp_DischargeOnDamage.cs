@@ -1,4 +1,5 @@
 ﻿using Verse;
+using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
@@ -21,7 +22,16 @@ namespace Mashed_Ashlands
             {
                 if(cooldownTicksLeft <= 0)
                 {
-                    GenExplosion.DoExplosion(p.Position, p.Map, Props.radius, Props.damageDef, p, Props.damageAmount, -1);
+                    GenExplosion.DoExplosion(
+                        center: p.Position,
+                        map: p.Map,
+                        radius: Props.radius,
+                        damType: Props.damageDef,
+                        damAmount: Props.damageAmount,
+                        instigator: p,
+                        ignoredThings: new List<Thing> { p },
+                        damageFalloff: true
+                        );
                     cooldownTicksLeft = Props.cooldownTicks;
                 }
             }
