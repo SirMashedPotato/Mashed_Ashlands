@@ -42,48 +42,6 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_Buttercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
-		<defName>Mashed_Ashlands_Plant_Buttercake</defName>
-		<label>buttercake mushroom</label>
-		<description>A rather strange mushroom, that somewhat resembles a stack of pancakes. The flesh is surprisingly tasty, and completely safe to eat. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.25</Nutrition>
-			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ButtercakePlant</texPath>
-		</graphicData>
-		<pathCost>14</pathCost>
-		<plant>
-			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
-			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<fertilityMin>1</fertilityMin>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>Mashed_Ashlands_RawAshFungus</harvestedThingDef>
-			<harvestYield>12</harvestYield>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
-			</sowResearchPrerequisites>
-			<topWindExposure>0.05</topWindExposure>
-			<growDays>7</growDays>
-			<visualSizeRange>0.8~1.1</visualSizeRange>
-			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-			<wildOrder>2</wildOrder>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Corkbulb]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
 		<defName>Mashed_Ashlands_Plant_Corkbulb</defName>

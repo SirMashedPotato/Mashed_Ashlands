@@ -212,6 +212,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_FlowerFeeding".Translate(), ref settings.Mashed_Ashlands_FlowerFeeding);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_AshcanoJoy".Translate(), ref settings.Mashed_Ashlands_AshcanoJoy);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

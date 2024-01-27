@@ -10,6 +10,7 @@
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
+				<preventRivers>true</preventRivers>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>

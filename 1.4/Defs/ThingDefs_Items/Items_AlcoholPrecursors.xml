@@ -30,7 +30,7 @@
 			<workSkill>Cooking</workSkill>
 			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 			<soundWorking>Recipe_Brewing</soundWorking>
-			<bulkRecipeCount>4</bulkRecipeCount>
+			<bulkRecipeCount>5</bulkRecipeCount>
 			<productCount>5</productCount>
 			<workAmount>1000</workAmount>
 		</recipeMaker>

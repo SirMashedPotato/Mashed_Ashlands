@@ -10,6 +10,10 @@ namespace Mashed_Ashlands
 
 		public override Job TryGiveJob(Pawn pawn)
 		{
+			if (!Mashed_Ashlands_ModSettings.AshcanoJoy)
+			{
+				return null;
+			}
 			if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Construction))
 			{
 				return null;

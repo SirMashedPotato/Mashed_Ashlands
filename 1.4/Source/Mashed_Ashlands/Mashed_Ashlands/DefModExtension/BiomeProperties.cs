@@ -10,6 +10,7 @@ namespace Mashed_Ashlands
         public bool lateLoader = false;
         public bool baseBiome = false;
         public bool canHaveBasalt = true;
+        public bool preventRivers = false;
 
         /* for biome gen */
         public bool disableBeaches = false;

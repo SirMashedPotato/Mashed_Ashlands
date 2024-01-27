@@ -62,7 +62,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>Mashed_Ashlands_RawMeadowRye</harvestedThingDef>
-			<harvestYield>22</harvestYield>
+			<harvestYield>18</harvestYield>
 			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>

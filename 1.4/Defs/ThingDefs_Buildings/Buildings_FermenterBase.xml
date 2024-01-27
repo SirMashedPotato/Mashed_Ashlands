@@ -13,6 +13,7 @@
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

@@ -131,7 +131,7 @@
 				<label>silt strider nymph</label>
 				<labelPlural>silt strider nymph</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SiltStrider</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SiltStriderNymph</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>

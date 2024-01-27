@@ -9,6 +9,7 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
+				<preventRivers>true</preventRivers>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>

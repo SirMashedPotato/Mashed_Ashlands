@@ -85,6 +85,7 @@
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
 			<li>Mashed_Ashlands_NixOx</li>
+			<!--<li>Mashed_Ashlands_NixSteed</li>-->
 		</allowedPackAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
@@ -141,7 +142,7 @@
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<allowRivers>false</allowRivers>
 		<canAutoChoose>false</canAutoChoose>
-		<movementDifficulty>2</movementDifficulty>
+		<movementDifficulty>1.5</movementDifficulty>
 		<settlementSelectionWeight>0.1</settlementSelectionWeight>
 		<forageability>0.1</forageability>
 		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
@@ -186,7 +187,7 @@
 		</modExtensions>
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<allowRivers>false</allowRivers>
-		<movementDifficulty>3</movementDifficulty>
+		<movementDifficulty>2</movementDifficulty>
 		<settlementSelectionWeight>0.3</settlementSelectionWeight>
 		<forageability>0.5</forageability>
 		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>

@@ -11,6 +11,7 @@
 	<Mashed_Ashlands_BaseAshResistance>Enable a base ash resistance value for all apparel that covers the full head.</Mashed_Ashlands_BaseAshResistance>
 	<Mashed_Ashlands_BaseAshResistanceValue>The base ash resistance for all apparel that covers the full head: ({0}%)</Mashed_Ashlands_BaseAshResistanceValue>
 	<Mashed_Ashlands_FlowerFeeding>Enable certain animals feeding from ashland flowers.</Mashed_Ashlands_FlowerFeeding>
+	<Mashed_Ashlands_AshcanoJoy>Enable colonists building ashcanos as a source of joy.</Mashed_Ashlands_AshcanoJoy>
 	<!-- ==========[World Gen]==========-->
 	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>
 	<Mashed_Ashlands_PagePreWorldGen1>Changes made here will not be saved unless the regular mod settings menu is opened and closed afterwards.</Mashed_Ashlands_PagePreWorldGen1>

@@ -4,7 +4,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_KillMudcrab</defName>
 		<label>Horrible Things</label>
-		<description>Kill 333 mudcrab</description>
+		<description>Kill 333 mudcrabs</description>
 		<tracker Class="AchievementsExpanded.KillTracker">
 			<kindDef>Mashed_Ashlands_Mudcrab</kindDef>
 			<count>333</count>

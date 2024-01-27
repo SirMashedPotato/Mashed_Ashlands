@@ -6,7 +6,7 @@
 		<label>glowing ash fungus</label>
 		<description>Raw flesh from a glowing ashland fungus. Ignoring the strange metallic taste, glowing ash fungus is perfectly safe to eat... when cooked at least.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshFungus</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawGlowingAshFungus</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>0.7</MarketValue>

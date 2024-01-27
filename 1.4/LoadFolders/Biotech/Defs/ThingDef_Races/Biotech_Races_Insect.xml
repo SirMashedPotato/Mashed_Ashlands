@@ -79,7 +79,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NixHoundThingBase">
 		<defName>Mashed_Ashlands_NixHoundGlowing</defName>
 		<label>glowing nix-hound</label>
-		<description>A subspecies of nix-hound that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow far larger than the common nix-hound. Heavy chitin plates along their back, and their increased size, easily make them an apex predator.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-hound can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<description>A subspecies of nix-hound that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow far larger than the common nix-hound. Heavy chitin plates along their back, and their increased size, easily make them an apex predator.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a glowing nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-hound can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>

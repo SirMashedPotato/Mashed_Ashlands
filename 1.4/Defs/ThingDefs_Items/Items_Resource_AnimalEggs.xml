@@ -257,6 +257,27 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedFertilized</defName>
+		<label>nix-steed egg (fert.)</label>
+		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,79,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixSteed</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_ScuttlerFertilized</defName>
@@ -319,7 +340,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_SiltStriderFertilized</defName>
 		<label>silt strider egg (fert.)</label>
-		<description>A fertilised silt strider egg. If all goes well, it should hatch into a silt strider nymph. While it could be cooked, it is far more valuable in its current form.</description>
+		<description>A fertilised silt strider egg. If all goes well, it should hatch into a silt strider nymph. While it could be cooked, it is far more valuable in its current form.\n\nThose with a high enough animals skill will be able to imprint on wild silt strider eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_StriderEgg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -333,6 +354,13 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>20</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_SiltStrider</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>imprint on {0_label}</useLabel>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
+				<minAnimals>12</minAnimals>
 			</li>
 		</comps>
 		<thingSetMakerTags>

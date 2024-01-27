@@ -54,7 +54,7 @@ namespace Mashed_Ashlands
             {
                 return false;
             }
-            return !p.Blighted && p.def.plant.Blightable && p.LifeStage != PlantLifeStage.Sowing;
+            return !p.Position.Roofed(p.Map) && !p.Blighted && p.def.plant.Blightable && p.LifeStage != PlantLifeStage.Sowing;
         }
 
         public void SendLetter(List<Plant> plants)

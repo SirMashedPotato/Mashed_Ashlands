@@ -38,6 +38,12 @@
 	<Mashed_Ashlands_WearingHeadGearSettingEnabled>Covers the full head layer</Mashed_Ashlands_WearingHeadGearSettingEnabled>
 	<!-- ==========[Genes]==========-->
 	<Mashed_Ashlands_StatsReport_InAshStorm>in ash storm</Mashed_Ashlands_StatsReport_InAshStorm>
+	<!-- ==========[Egg imprinting]==========-->
+	<Mashed_Ashlands_EggImprinted>{0} has been imprinted on. When it hatches, the {1} will be part of the player faction.</Mashed_Ashlands_EggImprinted>
+	<Mashed_Ashlands_EggAlreadyImprinted>{0} has already been imprinted on</Mashed_Ashlands_EggAlreadyImprinted>
+	<Mashed_Ashlands_NotPlayerFaction>{1_label} is not part of the player faction</Mashed_Ashlands_NotPlayerFaction>
+	<Mashed_Ashlands_AnimalsIncapable>{1_label} is incapable of animals</Mashed_Ashlands_AnimalsIncapable>
+	<Mashed_Ashlands_AnimalsTooLow>Imprinting a {0} requires an animals skill of {1} or higher</Mashed_Ashlands_AnimalsTooLow>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>
