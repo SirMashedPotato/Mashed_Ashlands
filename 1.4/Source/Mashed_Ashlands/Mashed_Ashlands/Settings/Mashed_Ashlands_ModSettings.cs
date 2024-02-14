@@ -14,6 +14,7 @@ namespace Mashed_Ashlands
         public static bool BaseAshResistance => _instance.Mashed_Ashlands_BaseAshResistance;
         public static float BaseAshResistanceValue => _instance.Mashed_Ashlands_BaseAshResistanceValue;
         public static bool FlowerFeeding => _instance.Mashed_Ashlands_FlowerFeeding;
+        public static bool ScampInsulting => _instance.Mashed_Ashlands_ScampInsulting;
         public static bool AshcanoJoy => _instance.Mashed_Ashlands_AshcanoJoy;
 
         //world gen
@@ -109,6 +110,7 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_BaseAshResistance = Mashed_Ashlands_BaseAshResistance_def;
         public float Mashed_Ashlands_BaseAshResistanceValue = Mashed_Ashlands_BaseAshResistanceValue_def;
         public bool Mashed_Ashlands_FlowerFeeding = Mashed_Ashlands_FlowerFeeding_def;
+        public bool Mashed_Ashlands_ScampInsulting = Mashed_Ashlands_ScampInsulting_def;
         public bool Mashed_Ashlands_AshcanoJoy = Mashed_Ashlands_AshcanoJoy_def;
 
         //world gen
@@ -203,6 +205,7 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_BaseAshResistance_def = true;
         private static readonly float Mashed_Ashlands_BaseAshResistanceValue_def = 0.5f;
         private static readonly bool Mashed_Ashlands_FlowerFeeding_def = true;
+        private static readonly bool Mashed_Ashlands_ScampInsulting_def = true;
         private static readonly bool Mashed_Ashlands_AshcanoJoy_def = true;
 
         //world gen
@@ -305,6 +308,7 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_BaseAshResistance, "Mashed_Ashlands_BaseAshResistance", Mashed_Ashlands_BaseAshResistance_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BaseAshResistanceValue, "Mashed_Ashlands_BaseAshResistanceValue", Mashed_Ashlands_BaseAshResistanceValue_def);
             Scribe_Values.Look(ref Mashed_Ashlands_FlowerFeeding, "Mashed_Ashlands_FlowerFeeding", Mashed_Ashlands_FlowerFeeding_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_ScampInsulting, "Mashed_Ashlands_ScampInsulting", Mashed_Ashlands_ScampInsulting_def);
             Scribe_Values.Look(ref Mashed_Ashlands_AshcanoJoy, "Mashed_Ashlands_AshcanoJoy", Mashed_Ashlands_AshcanoJoy_def);
 
             //world gen
@@ -412,6 +416,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_BaseAshResistance = Mashed_Ashlands_BaseAshResistance_def;
             _instance.Mashed_Ashlands_BaseAshResistanceValue = Mashed_Ashlands_BaseAshResistanceValue_def;
             _instance.Mashed_Ashlands_FlowerFeeding = Mashed_Ashlands_FlowerFeeding_def;
+            _instance.Mashed_Ashlands_ScampInsulting = Mashed_Ashlands_ScampInsulting_def;
             _instance.Mashed_Ashlands_AshcanoJoy = Mashed_Ashlands_AshcanoJoy_def;
         }
 

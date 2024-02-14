@@ -11,22 +11,22 @@
 		<label>durzog leather</label>
 		<description>Tanned, dried, scraped durzog skin. While a decent leather, it neither protects nor insulates particularly well.</description>
 		<graphicData>
-		  <color>(111,118,71)</color>
+			<color>(111,118,71)</color>
 		</graphicData>
 		<statBases>
-		  <MarketValue>1.9</MarketValue>
-		  <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
-		  <StuffPower_Armor_Blunt>0.21</StuffPower_Armor_Blunt>
-		  <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
-		  <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+			<MarketValue>1.9</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.21</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-		  <color>(111,118,71)</color>
-		  <commonality>0.05</commonality>
+			<color>(111,118,71)</color>
+			<commonality>0.05</commonality>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_CliffRacerLeather]==========-->
-	<ThingDef ParentName="LeatherBase">
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_CliffRacerLeather</defName>
 		<label>cliff racer leather</label>
 		<description>Tanned, dried, scraped cliff racer skin. Light and flimsy, but offers good protection against the heat. Most people who frequent the ashlands despise the sight of it.</description>
@@ -54,7 +54,7 @@
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_FungalLeather]==========-->
-	<ThingDef ParentName="LeatherBase">
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_FungalLeather</defName>
 		<label>fungal leather</label>
 		<description>A leathery material harvested from a fungal tree. It is somewhat difficult to pierce and insulates rather well against the heat.</description>
@@ -64,7 +64,7 @@
 		<statBases>
 			<MarketValue>2.2</MarketValue>
 			<StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>1.8</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
@@ -73,7 +73,7 @@
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GuarLeather]==========-->
-	<ThingDef ParentName="LeatherBase">
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_GuarLeather</defName>
 		<label>guar leather</label>
 		<description>Tough scaled hide harvested from a guar. It is difficult to pierce and insulates rather well against the heat.</description>
@@ -94,7 +94,7 @@
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_HeavyScaledLeather]==========-->
-	<ThingDef ParentName="LeatherBase">
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_HeavyScaledLeather</defName>
 		<label>heavy scaled leather</label>
 		<description>Thick scaly leather, harvested from a large reptile. This thick skin insulates relatively well and protects very well.</description>
@@ -141,7 +141,7 @@
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_NixLeather]==========-->
-	<ThingDef ParentName="LeatherBase">
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_NixLeather</defName>
 		<label>nix leather</label>
 		<description>Tanned, dried, scraped nix-hound 'skin'. Tough and light, but a poor insulator.</description>
@@ -184,6 +184,35 @@
 			<statFactors>
 				<MaxHitPoints>1.5</MaxHitPoints>
 			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RachnoidSilk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
+		<defName>Mashed_Ashlands_RachnoidSilk</defName>
+		<label>rachnoid silk</label>
+		<description>Fine silk from a rachnoid. Quite luxurious and insulates rather well against the heat.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<color>(231,222,190)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.0</MarketValue>
+			<Flammability>0.4</Flammability>
+			<StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(231,222,190)</color>
+			<commonality>0.075</commonality>
+			 <statFactors>
+				<MaxHitPoints>1.0</MaxHitPoints>
+				<Beauty>2.0</Beauty>
+			</statFactors>
+			<categories Inherit="False">
+				<li>Fabric</li>
+			</categories>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_ShalkChitin]==========-->

@@ -81,7 +81,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
@@ -502,6 +501,193 @@
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Dessicated_Scuttler</texPath>
 					<drawSize>1.37</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_Wormmouth]========== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Mashed_Ashlands_Wormmouth</defName>
+		<label>wormmouth</label>
+		<description>A large bipedal reptile typically found in arid ashland regions, closely related to the alit and kagouti. While not the most dangerous beast, its body is covered in heavy armour plating, and its mouth is filled with acidic saliva. Luckily the wormmouth prefers to scavenge for food, and will eat just about anything it can find.</description>
+		<statBases>
+			<ToxicResistance>0.6</ToxicResistance>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+			<MoveSpeed>3.8</MoveSpeed>
+			<MarketValue>700</MarketValue>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>5</FilthRate>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+				<li>
+					<def>Burn</def>
+					<amount>5</amount>
+					<chance>0.8</chance>
+				</li>
+			</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_WormmouthFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<body>Mashed_Ashlands_BipedalWithNoArms</body>
+			<baseHungerRate>0.45</baseHungerRate>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
+			<wildness>0.80</wildness>
+			<lifeExpectancy>33</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>Mashed_Ashlands_AshlandAnimalUncommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_Wormmouth" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Wormmouth</defName>
+		<label>wormmouth</label>
+		<race>Mashed_Ashlands_Wormmouth</race>
+		<combatPower>220</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<color>(118,118,102)</color>
+				<colorTwo>(111,119,119)</colorTwo>
+			</li>
+			<li>
+				<color>(119,112,95)</color>
+				<colorTwo>(90,93,95)</colorTwo>
+			</li>
+			<li>
+				<color>(149,138,121)</color>
+				<colorTwo>(135,135,136)</colorTwo>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<label>wormmouth whelp</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Wormmouth</texPath>
+					<drawSize>0.8</drawSize>
+					<color>(118,118,102)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Dessicated_Wormmouth</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Wormmouth</texPath>
+					<drawSize>1.3</drawSize>
+					<color>(118,118,102)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Dessicated_Wormmouth</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Wormmouth</texPath>
+					<drawSize>2</drawSize>
+					<color>(118,118,102)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Dessicated_Wormmouth</texPath>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

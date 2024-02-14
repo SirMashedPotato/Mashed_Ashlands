@@ -278,6 +278,26 @@
 		</comps>
 	</ThingDef>
 	-->
+	<!-- ==========[Mashed_Ashlands_Egg_PyrantulaFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_PyrantulaFertilized</defName>
+		<label>pyrantula egg (fert.)</label>
+		<description>A fertilised pyrantula egg. If all goes well, it should hatch into a baby pyrantula. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Pyrantula</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_ScuttlerFertilized</defName>
@@ -369,7 +389,7 @@
 		<stackLimit>1</stackLimit>
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_SwampJellyFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_SwampJellyFertilized</defName>
 		<label>swamp jelly egg (fert.)</label>
@@ -404,6 +424,26 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_Thunderbug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_WormmouthFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>Mashed_Ashlands_Egg_WormmouthFertilized</defName>
+		<label>wormmouth egg (fert.)</label>
+		<description>A fertilised wormmouth egg. If all goes well, it should hatch into a wormmouth whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(114,138,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Wormmouth</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

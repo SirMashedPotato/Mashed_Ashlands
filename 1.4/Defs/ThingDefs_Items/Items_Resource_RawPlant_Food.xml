@@ -75,8 +75,8 @@
 	<!-- ==========[Mashed_Ashlands_RawComberry]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawComberry</defName>
-		<label>comberry berries</label>
-		<description>Raw comberry berries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
+		<label>comberries</label>
+		<description>Raw comberries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawComberry</texPath>
 		</graphicData>

@@ -394,7 +394,7 @@
 	<!-- ==========[Mashed_Ashlands_InsectFleaLike]==========-->
 	<BodyDef>
 		<defName>Mashed_Ashlands_InsectFleaLike</defName>
-		<label>flea like</label>
+		<label>flea like insect</label>
 		<corePart>
 			<def>Shell</def>
 			<height>Middle</height>
