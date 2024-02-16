@@ -58,7 +58,7 @@
 	<!-- Volcanic biomes -->
 	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands base biome.</Mashed_Ashlands_EnableVolcanicAshlands>
 	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
-	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic sulphur pits sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
+	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic scathes sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
 	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
