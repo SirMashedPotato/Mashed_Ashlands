@@ -98,6 +98,14 @@ namespace Mashed_Ashlands
         public static bool BlightStormBlightWildPlants => _instance.Mashed_Ashlands_BlightStormBlightWildPlants;
         public static int BlightStormBlightPlantsNumber => _instance.Mashed_Ashlands_BlightStormBlightPlantsNumber;
 
+        //earthquake
+        public static bool EarthquakeShake => _instance.Mashed_Ashlands_EarthquakeShake;
+        public static bool EarthquakeCollapseMountains => _instance.Mashed_Ashlands_EarthquakeCollapseMountains;
+        public static bool EarthquakeDamageBuildings => _instance.Mashed_Ashlands_EarthquakeDamageBuildings;
+        public static bool EarthquakeDamageBuildingsNonPlayer => _instance.Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer;
+        public static float EarthquakeDamageBuildingsChance => _instance.Mashed_Ashlands_EarthquakeDamageBuildingsChance;
+        public static int EarthquakeDamageBuildingsDamage => _instance.Mashed_Ashlands_EarthquakeDamageBuildingsDamage;
+
         //biome
         public static bool EnableExtraGeysers => _instance.Mashed_Ashlands_EnableExtraGeysers;
         public static bool EnableFetcherflyHives => _instance.Mashed_Ashlands_EnableFetcherflyHives;
@@ -192,6 +200,14 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_BlightStormBlightPlants = Mashed_Ashlands_BlightStormBlightPlants_def;
         public bool Mashed_Ashlands_BlightStormBlightWildPlants = Mashed_Ashlands_BlightStormBlightWildPlants_def;
         public int Mashed_Ashlands_BlightStormBlightPlantsNumber = Mashed_Ashlands_BlightStormBlightPlantsNumber_def;
+
+        //earthquake
+        public bool Mashed_Ashlands_EarthquakeShake = Mashed_Ashlands_EarthquakeShake_def;
+        public bool Mashed_Ashlands_EarthquakeCollapseMountains = Mashed_Ashlands_EarthquakeCollapseMountains_def;
+        public bool Mashed_Ashlands_EarthquakeDamageBuildings = Mashed_Ashlands_EarthquakeDamageBuildings_def;
+        public bool Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer = Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer_def;
+        public float Mashed_Ashlands_EarthquakeDamageBuildingsChance = Mashed_Ashlands_EarthquakeDamageBuildingsChance_def;
+        public int Mashed_Ashlands_EarthquakeDamageBuildingsDamage = Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def;
 
         //biome
         public bool Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
@@ -288,6 +304,14 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_BlightStormBlightPlants_def = true;
         private static readonly bool Mashed_Ashlands_BlightStormBlightWildPlants_def = false;
         private static readonly int Mashed_Ashlands_BlightStormBlightPlantsNumber_def = 3;
+
+        //earthquake
+        private static readonly bool Mashed_Ashlands_EarthquakeShake_def = true;
+        private static readonly bool Mashed_Ashlands_EarthquakeCollapseMountains_def = true;
+        private static readonly bool Mashed_Ashlands_EarthquakeDamageBuildings_def = true;
+        private static readonly bool Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer_def = false;
+        private static readonly float Mashed_Ashlands_EarthquakeDamageBuildingsChance_def = 0.2f;
+        private static readonly int Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def = 10;
 
         //biome
         private static readonly bool Mashed_Ashlands_EnableExtraGeysers_def = true;
@@ -390,6 +414,14 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightPlants, "Mashed_Ashlands_BlightStormBlightPlants", Mashed_Ashlands_BlightStormBlightPlants_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightWildPlants, "Mashed_Ashlands_BlightStormBlightWildPlants", Mashed_Ashlands_BlightStormBlightWildPlants_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightPlantsNumber, "Mashed_Ashlands_BlightStormBlightPlantsNumber", Mashed_Ashlands_BlightStormBlightPlantsNumber_def);
+
+            //earthquake
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeShake, "Mashed_Ashlands_EarthquakeShake", Mashed_Ashlands_EarthquakeShake_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeCollapseMountains, "Mashed_Ashlands_EarthquakeCollapseMountains", Mashed_Ashlands_EarthquakeCollapseMountains_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildings, "Mashed_Ashlands_EarthquakeDamageBuildings", Mashed_Ashlands_EarthquakeDamageBuildings_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer, "Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer", Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildingsChance, "Mashed_Ashlands_EarthquakeDamageBuildingsChance", Mashed_Ashlands_EarthquakeDamageBuildingsChance_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildingsDamage, "Mashed_Ashlands_EarthquakeDamageBuildingsDamage", Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def);
 
             //biome
             Scribe_Values.Look(ref Mashed_Ashlands_EnableExtraGeysers, "Mashed_Ashlands_EnableExtraGeysers", Mashed_Ashlands_EnableExtraGeysers_def);
@@ -502,7 +534,12 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_OtherConditions()
         {
-            
+            _instance.Mashed_Ashlands_EarthquakeShake = Mashed_Ashlands_EarthquakeShake_def;
+            _instance.Mashed_Ashlands_EarthquakeCollapseMountains = Mashed_Ashlands_EarthquakeCollapseMountains_def;
+            _instance.Mashed_Ashlands_EarthquakeDamageBuildings = Mashed_Ashlands_EarthquakeDamageBuildings_def;
+            _instance.Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer = Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer_def;
+            _instance.Mashed_Ashlands_EarthquakeDamageBuildingsChance = Mashed_Ashlands_EarthquakeDamageBuildingsChance_def;
+            _instance.Mashed_Ashlands_EarthquakeDamageBuildingsDamage = Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def;
         }
 
         public static void ResetSettings_Biome()

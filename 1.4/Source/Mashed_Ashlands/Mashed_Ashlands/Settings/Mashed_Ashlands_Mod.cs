@@ -551,16 +551,7 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeShake".Translate(), ref settings.Mashed_Ashlands_EarthquakeShake);
             listing_Standard.Gap();
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeCollapseMountains".Translate(), ref settings.Mashed_Ashlands_EarthquakeCollapseMountains);
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_EarthquakeCollapseMountainsChance".Translate(settings.Mashed_Ashlands_EarthquakeCollapseMountainsChance * 100), -1);
-            settings.Mashed_Ashlands_EarthquakeCollapseMountainsChance = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_EarthquakeCollapseMountainsChance, 0.05f, 1f) * 20) / 20;
-
-            listing_Standard.GapLine();
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeDamageBuildings".Translate(), ref settings.Mashed_Ashlands_EarthquakeDamageBuildings, "Mashed_Ashlands_EarthquakeDamageBuildings_Tooltip".Translate());

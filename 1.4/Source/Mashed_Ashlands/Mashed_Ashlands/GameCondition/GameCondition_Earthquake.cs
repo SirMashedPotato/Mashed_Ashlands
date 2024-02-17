@@ -23,7 +23,7 @@ namespace Mashed_Ashlands
         public override void GameConditionTick()
         {
             List<Map> affectedMaps = AffectedMaps;
-            if (Find.TickManager.TicksGame % CheckInterval == 0 && Mashed_Ashlands_ModSettings.EarthquakeShake)
+            if (Find.TickManager.TicksGame % shakeInterval == 0 && Mashed_Ashlands_ModSettings.EarthquakeShake)
             {
                 for (int i = 0; i < affectedMaps.Count; i++)
                 {
@@ -45,16 +45,23 @@ namespace Mashed_Ashlands
                 {
                     if (c.GetRoof(map) == RoofDefOf.RoofRockThick)
                     {
-                        if (Rand.Chance(Mashed_Ashlands_ModSettings.EarthquakeCollapseMountainsChance)) //original value 0.01f
+                        if (Rand.Value < 0.015f)
                         {
                             RoofCollapserImmediate.DropRoofInCells(c, map);
+                        }
+                        else
+                        {
+                            if (Rand.Chance(0.05f))
+                            {
+                                FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 1f, Color.grey);
+                            }
                         }
                     }
                 }
             }
             else
             {
-                if (Mashed_Ashlands_ModSettings.EarthquakeDamageBuildings)  //TODO setting
+                if (Mashed_Ashlands_ModSettings.EarthquakeDamageBuildings)
                 {
                     for (int i = 0; i < thingList.Count; i++)
                     {
@@ -63,15 +70,15 @@ namespace Mashed_Ashlands
                         {
                             if (IsValidBuilding(b))
                             {
-                                if (Rand.Chance(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsChance)) // original value 0.1f
+                                if (Rand.Chance(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsChance))
                                 {
                                     DamageInfo info = new DamageInfo
                                     {
                                         Def = DamageDefOf.Blunt
                                     };
-                                    info.SetAmount(Rand.Gaussian(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsDamage)); //original value 10
+                                    info.SetAmount(Rand.Gaussian(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsDamage));
                                     thing.TakeDamage(info);
-                                    FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 1f, Color.grey);
+                                    FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 2f, Color.grey);
                                 }
                                 break;
                             }
@@ -106,6 +113,6 @@ namespace Mashed_Ashlands
             base.End();
         }
 
-        public const int CheckInterval = 41;
+        public const int shakeInterval = 11;
     }
 }

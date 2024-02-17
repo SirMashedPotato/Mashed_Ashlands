@@ -11,5 +11,8 @@ namespace Mashed_Ashlands
                 base.Generate(map, parms);
             }
         }
+
+        public TerrainDef spawnTerrain;
+        public int spawnTerrainRadius = 3;
     }
 }

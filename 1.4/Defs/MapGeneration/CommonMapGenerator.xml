@@ -23,6 +23,7 @@
 				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 				<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 			</allowedBiomes>
+			<spawnTerrain>Mashed_Ashlands_ScorchedAshSoilVolcanic</spawnTerrain>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>3</radius>

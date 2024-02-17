@@ -92,7 +92,7 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.2~0.4</durationDays>
+						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
 						<sendLetter>true</sendLetter>
@@ -214,7 +214,7 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.2~0.6</durationDays>
+						<durationDays>0.2~0.4</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
@@ -345,7 +345,7 @@
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.2~0.4</durationDays>
+						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
 						<sendLetter>true</sendLetter>
