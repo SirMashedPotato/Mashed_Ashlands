@@ -9,7 +9,7 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<LeatherAmount>40</LeatherAmount>
 		</statBases>
-		<uiIconScale>1.35</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<tools Inherit="False">
 			<li>
 				<label>head</label>

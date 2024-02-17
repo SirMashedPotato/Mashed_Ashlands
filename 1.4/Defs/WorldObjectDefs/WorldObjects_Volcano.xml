@@ -91,6 +91,15 @@
 						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
+						<durationDays>0.2~0.4</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
+						<weight>1</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+					</li>
+					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<durationDays>3~10</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
@@ -197,6 +206,15 @@
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
 						<durationDays>2~10</durationDays>
+						<graceDaysAfter>3~15</graceDaysAfter>
+						<weight>3</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+					</li>
+					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
+						<durationDays>0.2~0.6</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>3</weight>
 						<sendLetter>true</sendLetter>
@@ -321,6 +339,15 @@
 						<durationDays>2~10</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>2</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+					</li>
+					<li>
+						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
+						<durationDays>0.2~0.4</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
+						<weight>1</weight>
 						<sendLetter>true</sendLetter>
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>

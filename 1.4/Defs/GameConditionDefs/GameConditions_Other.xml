@@ -51,4 +51,15 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">NoxiousHaze</li>
 		</exclusiveConditions>
 	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEarthquake]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicEarthquake</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_Earthquake</conditionClass>
+		<label>volcanic earthquake</label>
+		<description>Recent volcanic activity has caused powerful tremors to occur. While it will likely be short lived, structures that support roofs may take damage, and thick mountain roofs may collapse.</description>
+		<descriptionFuture>powerful volcanic tremors will be felt at [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
+		<endMessage>The ground stops shaking.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
 </Defs>
