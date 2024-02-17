@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[World Gen]==========-->
+	<Mashed_Ashlands_PageWorldGen>World Gen. Settings</Mashed_Ashlands_PageWorldGen>
+	<Mashed_Ashlands_PagePreWorldGen1>Changes made here will not be saved unless the regular mod settings menu is opened and closed afterwards.</Mashed_Ashlands_PagePreWorldGen1>
+	<Mashed_Ashlands_PagePreWorldGen2>This window can be disabled in the full mod settings menu, on the 'World Gen. Settings' page.</Mashed_Ashlands_PagePreWorldGen2>
+	<Mashed_Ashlands_EnableSettingBeforeWorldGen>Display the Ashland World Gen. settings page before world generation.</Mashed_Ashlands_EnableSettingBeforeWorldGen>
+	<!-- dormant volcano -->
+	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
+	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>Many of the ashland biomes will only generate near dormant volcanos. As such, disabling this will also prevent those from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfDormantVolcano>The number of dormant volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfDormantVolcano>
+	<!-- active volcano -->
+	<Mashed_Ashlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</Mashed_Ashlands_EnableActiveVolcano>
+	<Mashed_Ashlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</Mashed_Ashlands_EnableActiveVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfActiveVolcano>The number of active volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfActiveVolcano>
+	<!-- blighted volcano -->
+	<Mashed_Ashlands_EnableBlightedVolcano>Enable the generation of blighted volcanos on the world map</Mashed_Ashlands_EnableBlightedVolcano>
+	<Mashed_Ashlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</Mashed_Ashlands_EnableBlightedVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfBlightedVolcano>
+	<!-- extinct volcano -->
+	<Mashed_Ashlands_EnableExtinctVolcano>Enable the generation of extinct volcanos on the world map</Mashed_Ashlands_EnableExtinctVolcano>
+	<Mashed_Ashlands_EnableExtinctVolcano_Tooltip>The ashland forest biome will only generate near extinct volcanos. As such, disabling this will also prevent ashland forest from generating.</Mashed_Ashlands_EnableExtinctVolcano_Tooltip>
+	<Mashed_Ashlands_NumberOfExtinctVolcano>The number of extinct volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfExtinctVolcano>
+	<!-- distances -->
+	<Mashed_Ashlands_VolcanoMinDistance>The minimum distance between volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMinDistance>
+	<Mashed_Ashlands_BiomesMaxDistance>The maximum distance ashland biomes can generate from a volcano: ({0} tile/s)</Mashed_Ashlands_BiomesMaxDistance>
+	<Mashed_Ashlands_VolcanoScaleWithWorldSize>Scale the number of volcanos that are spawned based on world coverage.</Mashed_Ashlands_VolcanoScaleWithWorldSize>
+	<Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>The number of volcanos set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_BiomeScaleWithWorldSize>Scale the distance that biomes can generate from volcanos based on world coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize>
+	<Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_BiomeScaleWithWorldSize_Tooltip>
+	<!-- General biomes -->
+	<Mashed_Ashlands_BaseBiome_Tooltip>Required for any of the below biomes to generate.</Mashed_Ashlands_BaseBiome_Tooltip>
+	<!-- Regular biomes -->
+	<Mashed_Ashlands_EnableStandardAshlands>Enable the generation of the standard ashlands base biome.</Mashed_Ashlands_EnableStandardAshlands>
+	<Mashed_Ashlands_EnableCoralCoastAshlands>Enable the generation of the ashland coral coast sub-biome.</Mashed_Ashlands_EnableCoralCoastAshlands>
+	<Mashed_Ashlands_EnableSwampAshlands>Enable the generation of the ashland swamp sub-biome.</Mashed_Ashlands_EnableSwampAshlands>
+	<Mashed_Ashlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands sub-biome.</Mashed_Ashlands_EnableGrazelandAshlands>
+	<!-- Thriving biomes -->
+	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest base biome.</Mashed_Ashlands_EnableForestAshlands>
+	<Mashed_Ashlands_EnableMeadowAshlands>Enable the generation of the ashland meadows sub-biome.</Mashed_Ashlands_EnableMeadowAshlands>
+	<Mashed_Ashlands_EnableMarshAshlands>Enable the generation of the ashland marsh sub-biome.</Mashed_Ashlands_EnableMarshAshlands>
+	<!-- Blighted biomes -->
+	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands base biome.</Mashed_Ashlands_EnableBlightedAshlands>
+	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog sub-biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
+	<!-- Volcanic biomes -->
+	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands base biome.</Mashed_Ashlands_EnableVolcanicAshlands>
+	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
+	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic scathes sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
+	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
+	<!-- Other features -->
+	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
+	<Mashed_Ashlands_EnableCoastalVolcano_Tooltip>If this is enabled, islands can generate in the ocean near the coast, with a volcano at the centre.</Mashed_Ashlands_EnableCoastalVolcano_Tooltip>
+</LanguageData>

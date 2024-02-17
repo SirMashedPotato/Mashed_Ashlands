@@ -471,7 +471,7 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_CliffRacerMutantChance = Mashed_Ashlands_CliffRacerMutantChance_def;
     }
 
-    public static void ResetSettings_AshStorm()
+        public static void ResetSettings_AshStorm()
         {
             _instance.Mashed_Ashlands_AshStormCauseBuildup = Mashed_Ashlands_AshStormCauseBuildup_def;
             _instance.Mashed_Ashlands_AshStormAffectsCaravan = Mashed_Ashlands_AshStormAffectsCaravan_def;
@@ -498,7 +498,12 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_BlightStormBlightPlants = Mashed_Ashlands_BlightStormBlightPlants_def;
             _instance.Mashed_Ashlands_BlightStormBlightWildPlants = Mashed_Ashlands_BlightStormBlightWildPlants_def;
             _instance.Mashed_Ashlands_BlightStormBlightPlantsNumber = Mashed_Ashlands_BlightStormBlightPlantsNumber_def;
-    }
+        }
+
+        public static void ResetSettings_OtherConditions()
+        {
+            
+        }
 
         public static void ResetSettings_Biome()
         {
