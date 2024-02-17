@@ -2,7 +2,7 @@
 <Defs>
 	<CherryPicker.DefList>
 		<defName>Mashed_Ashlands_Rachnoids</defName>
-		<label>Remove Rachnoids</label>
+		<label>Remove Rachnoids (includes pyrantula)</label>
 		<defs>
 			<li>ThingDef/Mashed_Ashlands_RachnoidSilk</li>
 			<li>ThingDef/Mashed_Ashlands_Egg_PyrantulaFertilized</li>

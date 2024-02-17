@@ -48,7 +48,6 @@ namespace Mashed_Ashlands
                         if (Rand.Chance(0.01f)) //TODO setting
                         {
                             RoofCollapserImmediate.DropRoofInCells(c, map);
-                            Messages.Message("collapsed: " + c, MessageTypeDefOf.NeutralEvent, false);
                         }
                     }
                 }
@@ -72,7 +71,6 @@ namespace Mashed_Ashlands
                                     };
                                     info.SetAmount(Rand.Gaussian(5)); //TODO setting
                                     thing.TakeDamage(info);
-                                    Messages.Message("damaged: " + b, b, MessageTypeDefOf.NeutralEvent, false);
                                     FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 1f, Color.grey);
                                 }
                                 break;
