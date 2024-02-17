@@ -38,49 +38,52 @@ namespace Mashed_Ashlands
 
         public override void DoCellSteadyEffects(IntVec3 c, Map map)
         {
-            List<Thing> thingList = c.GetThingList(map);
-            if (thingList.NullOrEmpty() || c.GetRoofHolderOrImpassable(map) == null)
+            if (500 <= TicksPassed)
             {
-                if (Mashed_Ashlands_ModSettings.EarthquakeCollapseMountains)
+                List<Thing> thingList = c.GetThingList(map);
+                if (thingList.NullOrEmpty() || c.GetRoofHolderOrImpassable(map) == null)
                 {
-                    if (c.GetRoof(map) == RoofDefOf.RoofRockThick)
+                    if (Mashed_Ashlands_ModSettings.EarthquakeCollapseMountains)
                     {
-                        if (Rand.Value < 0.015f)
+                        if (c.GetRoof(map) == RoofDefOf.RoofRockThick)
                         {
-                            RoofCollapserImmediate.DropRoofInCells(c, map);
-                        }
-                        else
-                        {
-                            if (Rand.Chance(0.05f))
+                            if (Rand.Value < 0.01f)
                             {
-                                FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 1f, Color.grey);
+                                RoofCollapserImmediate.DropRoofInCells(c, map);
+                            }
+                            else
+                            {
+                                if (Rand.Chance(0.05f))
+                                {
+                                    FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 1f, Color.grey);
+                                }
                             }
                         }
                     }
                 }
-            }
-            else
-            {
-                if (Mashed_Ashlands_ModSettings.EarthquakeDamageBuildings)
+                else
                 {
-                    for (int i = 0; i < thingList.Count; i++)
+                    if (Mashed_Ashlands_ModSettings.EarthquakeDamageBuildings)
                     {
-                        Thing thing = thingList[i];
-                        if (thing is Building b)
+                        for (int i = 0; i < thingList.Count; i++)
                         {
-                            if (IsValidBuilding(b))
+                            Thing thing = thingList[i];
+                            if (thing is Building b)
                             {
-                                if (Rand.Chance(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsChance))
+                                if (IsValidBuilding(b))
                                 {
-                                    DamageInfo info = new DamageInfo
+                                    if (Rand.Chance(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsChance))
                                     {
-                                        Def = DamageDefOf.Blunt
-                                    };
-                                    info.SetAmount(Rand.Gaussian(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsDamage));
-                                    thing.TakeDamage(info);
-                                    FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 2f, Color.grey);
+                                        DamageInfo info = new DamageInfo
+                                        {
+                                            Def = DamageDefOf.Blunt
+                                        };
+                                        info.SetAmount(Rand.Gaussian(Mashed_Ashlands_ModSettings.EarthquakeDamageBuildingsDamage));
+                                        thing.TakeDamage(info);
+                                        FleckMaker.ThrowDustPuffThick(c.ToVector3(), map, 2f, Color.grey);
+                                    }
+                                    break;
                                 }
-                                break;
                             }
                         }
                     }

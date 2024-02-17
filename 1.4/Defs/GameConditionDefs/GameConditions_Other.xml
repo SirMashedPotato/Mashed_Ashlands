@@ -56,7 +56,7 @@
 		<defName>Mashed_Ashlands_VolcanicEarthquake</defName>
 		<conditionClass>Mashed_Ashlands.GameCondition_Earthquake</conditionClass>
 		<label>volcanic earthquake</label>
-		<description>Recent volcanic activity has caused powerful tremors to occur. While it will likely be short lived, structures that can support roofs may take damage, and overhead mountain roofs may collapse.</description>
+		<description>Recent volcanic activity has caused powerful tremors to occur. While it will likely be short lived, structures that can support roofs may take damage, and overhead mountain roofs may collapse. Caves should be avoided until the earthquake ends.</description>
 		<descriptionFuture>powerful volcanic tremors will be felt at [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
 		<endMessage>The ground stops shaking.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
