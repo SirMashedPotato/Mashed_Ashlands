@@ -144,6 +144,11 @@
 				<color>(187,159,158)</color>
 				<colorTwo>(68,60,83)</colorTwo>
 			</li>
+			<!-- Tortie -->
+			<li>
+				<weight>0.06</weight>
+				<texPath>Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_VvardvarkTortie</texPath>
+			</li>
 		</alternateGraphics>
 		<lifeStages>
 			<li>

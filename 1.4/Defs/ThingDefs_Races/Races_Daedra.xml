@@ -11,8 +11,8 @@
 			<FilthRate>5</FilthRate>
 		</statBases>
 		<race>
-			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>Mashed_Ashlands_InfernalScaledLeather</leatherDef>
 			<wildness>0.90</wildness>
 			<lifeExpectancy>60</lifeExpectancy>
 			<trainability>Advanced</trainability>

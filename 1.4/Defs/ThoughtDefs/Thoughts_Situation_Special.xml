@@ -17,6 +17,22 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
 	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
+	<!--
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_PsychicEruption</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>Mashed_Ashlands.ThoughtWorker_PsychicEruption</workerClass>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<stages>
+			<li>
+				<label>psychic eruption</label>
+				<description>This infernal noise! When will it end?</description>
+				<baseMoodEffect>-36</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_OutsideInSulphurRain]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_OutsideInSulphurRain</defName>

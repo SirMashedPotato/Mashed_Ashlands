@@ -97,7 +97,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_HeavyScaledLeather</defName>
 		<label>heavy scaled leather</label>
-		<description>Thick scaly leather, harvested from a large reptile. This thick skin insulates relatively well and protects very well.</description>
+		<description>Thick scaly leather, harvested from a large reptile. This thick skin insulates relatively well, and protects very well.</description>
 		<graphicData>
 			<color>(121,113,83)</color>
 		</graphicData>
@@ -113,6 +113,30 @@
 			<statFactors>
 				<MaxHitPoints>1.5</MaxHitPoints>
 				<Beauty>1.85</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_InfernalScaledLeather]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
+		<defName>Mashed_Ashlands_InfernalScaledLeather</defName>
+		<label>infernal scaled leather</label>
+		<description>Thick scaly leather, harvested from strange reptile-like beasts. This thick skin insulates quite well, and protects very well.</description>
+		<graphicData>
+			<color>(87,95,61)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.8</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(87,95,61)</color>
+			<commonality>0.005</commonality>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>3</Beauty>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>

@@ -11,7 +11,7 @@
 	<!--
 	<GameConditionDef>
 		<defName>Mashed_Ashlands_PsychicEruption</defName>
-		<conditionClass>GameCondition_PsychicEmanation</conditionClass>
+		<conditionClass>Mashed_Ashlands.GameCondition_PsychicEruption</conditionClass>
 		<label>psychic eruption</label>
 		<description>Recent volcanic activity has awoken something ancient, once slumbering deep within the bowels of the volcano. Its screams can be heard echoing in the minds of those nearby. Anyone caught within will slowly be driven to insanity.</description>
 		<descriptionFuture>I don't think this actually gets used</descriptionFuture>
