@@ -22,19 +22,11 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Biotech</li>
-		<!-- loadfolders & harmony patches -->
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<!-- loadfolders -->
 		<li>vanillaexpanded.achievements</li>
-		<li>vanillaexpanded.vcooke</li>
 		<li>VanillaExpanded.VCEF</li>
-		<li>syrchalis.processor.framework</li>
-		<li>regrowth.botr.core</li>
-		<li>odeum.wmbp</li>
 		<li>owlchemist.seedspleaselite</li>
 		<li>evyatar108.seedspleaseliteredux</li>
-		<li>m00nl1ght.geologicallandform</li>
-		<li>sarg.rimbees</li>
-		<li>rw_exploration_mode.thelastbulletbender</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim</li>
