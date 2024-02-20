@@ -8,7 +8,7 @@
 			<MarketValue>750</MarketValue>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
 		</statBases>

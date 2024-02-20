@@ -50,6 +50,14 @@
 		<scatterType>Rocky</scatterType>
 		<fertility>1.1</fertility>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshDust]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshDust</defName>
+		<label>dusty ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshDust</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.6</fertility>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
 		<defName>Mashed_Ashlands_AshSand</defName>

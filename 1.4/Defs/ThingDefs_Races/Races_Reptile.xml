@@ -12,7 +12,7 @@
 			<MarketValue>700</MarketValue>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
 		</statBases>
@@ -517,7 +517,7 @@
 			<MarketValue>700</MarketValue>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
 		</statBases>

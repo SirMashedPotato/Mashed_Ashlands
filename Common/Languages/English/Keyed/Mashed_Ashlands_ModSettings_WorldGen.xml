@@ -35,6 +35,7 @@
 	<Mashed_Ashlands_EnableCoralCoastAshlands>Enable the generation of the ashland coral coast sub-biome.</Mashed_Ashlands_EnableCoralCoastAshlands>
 	<Mashed_Ashlands_EnableSwampAshlands>Enable the generation of the ashland swamp sub-biome.</Mashed_Ashlands_EnableSwampAshlands>
 	<Mashed_Ashlands_EnableGrazelandAshlands>Enable the generation of the ashland grazelands sub-biome.</Mashed_Ashlands_EnableGrazelandAshlands>
+	<Mashed_Ashlands_EnableDustplainAshlands>Enable the generation of the ashland dustplains sub-biome.</Mashed_Ashlands_EnableDustplainAshlands>
 	<!-- Thriving biomes -->
 	<Mashed_Ashlands_EnableForestAshlands>Enable the generation of the ashland forest base biome.</Mashed_Ashlands_EnableForestAshlands>
 	<Mashed_Ashlands_EnableMeadowAshlands>Enable the generation of the ashland meadows sub-biome.</Mashed_Ashlands_EnableMeadowAshlands>
