@@ -93,7 +93,24 @@
 			<saturation>0.9</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
-	<!-- ==========[Mashed_Ashlands_DustStorm]==========-->
+	<!-- ==========[Mashed_Ashlands_DustThunderstorm]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_DustStormBase">
+		<defName>Mashed_Ashlands_DustThunderstorm</defName>
+		<label>dust thunderstorm</label>
+		<description>Intense winds have picked up copious amounts of loose dust. The accuracy of ranged weapons is reduced, and people are slowed down. Friction between dust particles causes occasional lightning strikes.</description>
+		<isBad>false</isBad>
+		<favorability>VeryBad</favorability>
+		<eventMakers>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+		</eventMakers>
+	</WeatherDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricRain]==========-->
 	<WeatherDef Name="Mashed_Ashlands_SulphuricRainBase">
 		<defName>Mashed_Ashlands_SulphuricRain</defName>
@@ -147,7 +164,7 @@
 		</skyColorsNightMid>
 	</WeatherDef>
 	<!-- ==========[Mashed_Ashlands_FoggySulphuricRain]==========-->
-	<WeatherDef ParentName="Mashed_Ashlands_AshfallBase">
+	<WeatherDef ParentName="Mashed_Ashlands_SulphuricRainBase">
 		<defName>Mashed_Ashlands_FoggySulphuricRain</defName>
 		<label>foggy sulphuric rain</label>
 		<windSpeedFactor>0.5</windSpeedFactor>

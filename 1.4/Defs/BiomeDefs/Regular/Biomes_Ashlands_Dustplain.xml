@@ -66,6 +66,7 @@
 		<baseWeatherCommonalities>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_DustStorm>6</Mashed_Ashlands_DustStorm>
+			<Mashed_Ashlands_DustThunderstorm>1</Mashed_Ashlands_DustThunderstorm>
 		</baseWeatherCommonalities>
 		<terrainsByFertility>
 			<li>

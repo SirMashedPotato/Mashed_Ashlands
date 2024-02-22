@@ -3,6 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_AshStormWeatherBase]==========-->
 	<WeatherDef Name="Mashed_Ashlands_AshStormWeatherBase" Abstract="True">
 		<repeatable>true</repeatable>
+		<isBad>false</isBad>
 		<perceivePriority>0</perceivePriority>
 		<windSpeedFactor>2</windSpeedFactor>
 		<accuracyMultiplier>0.5</accuracyMultiplier>
