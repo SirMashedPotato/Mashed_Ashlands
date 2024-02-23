@@ -340,6 +340,116 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_NixSteedGlowing]========== -->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
+		<label>glowing nix-steed</label>
+		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nGlowing bix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-steed can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NixSteedGlowing" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
+		<label>glowing nix-steed</label>
+		<labelMale>glowing nix-steed stallion</labelMale>
+		<labelFemale>glowing nix-steed mare</labelFemale>
+		<race>Mashed_Ashlands_NixSteedGlowing</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.8</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>glowing nix-steed foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingFoal</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_ShalkGlowing]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_ShalkGlowing</defName>

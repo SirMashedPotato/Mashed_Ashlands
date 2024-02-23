@@ -209,4 +209,21 @@
 		<commonality>0.01</commonality>			
 		<baseFishingYield>1</baseFishingYield>		
 	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_BugMusk]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_BugMusk</defName>
+		<thingDef>Mashed_Ashlands_BugMusk</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+		</allowedBiomes>
+		<commonality>0.2</commonality>
+		<baseFishingYield>1</baseFishingYield>
+	</VCE_Fishing.FishDef>
 </Defs>

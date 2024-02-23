@@ -28,6 +28,16 @@
 		<nameMaker>Mashed_Ashlands_NamerCoralCoastAshlands</nameMaker>
 	</FeatureDef>
 	-->
+	<!-- ==========[Mashed_Ashlands_DustplainAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_DustplainAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerDustplainAshlands</nameMaker>
+	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_GrazelandAshlands]==========-->
 	<FeatureDef>
 		<defName>Mashed_Ashlands_GrazelandAshlands</defName>

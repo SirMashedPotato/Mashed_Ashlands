@@ -8,7 +8,7 @@
 			<MarketValue>750</MarketValue>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
 		</statBases>
@@ -71,7 +71,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Advanced</trainability>

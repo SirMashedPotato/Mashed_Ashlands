@@ -24,10 +24,13 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
 						<li>Mashed_Ashlands_Kagouti</li>
 						<li>Mashed_Ashlands_Scuttler</li>
+						<li>Mashed_Ashlands_Wormmouth</li>
+						<li>Mashed_Ashlands_Pyrantula</li>
 						<li>Mashed_Ashlands_Shalk</li>
 						<li>Mashed_Ashlands_ShalkFungal</li>
 						<li>Mashed_Ashlands_Firebug</li>
@@ -54,10 +57,12 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
 						<li>Mashed_Ashlands_Kagouti</li>
 						<li>Mashed_Ashlands_Scuttler</li>
+						<li>Mashed_Ashlands_Wormmouth</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
@@ -76,10 +81,12 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
 						<li>Mashed_Ashlands_Kagouti</li>
 						<li>Mashed_Ashlands_Scuttler</li>
+						<li>Mashed_Ashlands_Wormmouth</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
@@ -95,16 +102,19 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
 						<li>Mashed_Ashlands_Kagouti</li>
 						<li>Mashed_Ashlands_Scuttler</li>
+						<li>Mashed_Ashlands_Wormmouth</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into surgery recipes == for prosthetic arms (if the animal has that bodypart only!)" -->
 					<xpath>Defs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/recipeUsers</xpath>
 					<value>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 					</value>
 				</li>
@@ -112,6 +122,7 @@
 					<!-- "Inserting animal defNames into surgery recipes == for bionic arms (if the animal has that bodypart only!)" -->
 					<xpath>Defs/RecipeDef[defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
 					<value>
+						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 					</value>
 				</li>

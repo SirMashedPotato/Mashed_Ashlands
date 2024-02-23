@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[Incidents]==========-->
+	<Mashed_Ashlands_PageIncident>Incident &amp; Event Settings</Mashed_Ashlands_PageIncident>
+	<!-- Volcano related -->
+	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>
+	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
+	<Mashed_Ashlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMaxAffectedArea>
+	<Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>The maximum distance is increased by 20% with each category level increase. The displayed value is used for a category 5 volcano.</Mashed_Ashlands_VolcanoMaxAffectedArea_Tooltip>
+	<Mashed_Ashlands_VolcanoEnablePermanentConditions>Enable volcanos causing permanent conditions to all tiles in their radius.</Mashed_Ashlands_VolcanoEnablePermanentConditions>
+	<Mashed_Ashlands_VolcanoEnableRandomConditions>Enable volcanos causing random conditions to tiles within a certain radius.</Mashed_Ashlands_VolcanoEnableRandomConditions>
+	<Mashed_Ashlands_VolcanoEnableCategoryChange>Enable the category of a volcano changing by 1 every {0} incidents it causes.</Mashed_Ashlands_VolcanoEnableCategoryChange>
+	<Mashed_Ashlands_VolcanoEnableCategoryChange_Description>Note that the category is not guaranteed to change every {0} incidents.</Mashed_Ashlands_VolcanoEnableCategoryChange_Description>
+	<Mashed_Ashlands_VolcanoOnlyLetterIfInRadius>Only send a letter for random volcano conditions if either an active map, or a caravan, is within the maximum radius of the volcano.</Mashed_Ashlands_VolcanoOnlyLetterIfInRadius>
+	<!-- Cliff racer related -->
+	<Mashed_Ashlands_CliffRacerEnableExtinction>Enable wild cliff racer extinction.</Mashed_Ashlands_CliffRacerEnableExtinction>
+	<Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>Wild cliff racers will become extinct once a certain number of them have been either killed, or tamed.</Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableTracker>Enable the cliff racer tracker alert.</Mashed_Ashlands_CliffRacerEnableTracker>
+	<Mashed_Ashlands_CliffRacerWildPopulation>The initial number of wild cliff racers: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerWildPopulation>
+	<Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>Changes to this will not take effect mid-save.</Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturn>Enable wild cliff racer return.</Mashed_Ashlands_CliffRacerEnableReturn>
+	<Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>Wild cliff racers will return from extinction once a certain number of them have been released into the wild.</Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturnThreshold>The minimum number of wild cliff racers before they return: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerEnableReturnThreshold>
+	<Mashed_Ashlands_CliffRacerEnableSwarm>Enable the cliff racer swarm incident.</Mashed_Ashlands_CliffRacerEnableSwarm>
+	<Mashed_Ashlands_CliffRacerSwarmMinSize>The minimum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMinSize>
+	<Mashed_Ashlands_CliffRacerSwarmMaxSize>The maximum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMaxSize>
+	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer gains the asexual reproduction mutation upon reaching maturity: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
+</LanguageData>

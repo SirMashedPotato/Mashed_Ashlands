@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[Other conditions]==========-->
+	<Mashed_Ashlands_PageOtherConditions>Other Condition Settings</Mashed_Ashlands_PageOtherConditions>
+	<!-- ==========[Earthquake]==========-->
+	<Mashed_Ashlands_EarthquakeShake>Enable earthquakes causing the camera to shake.</Mashed_Ashlands_EarthquakeShake>
+	<Mashed_Ashlands_EarthquakeCollapseMountains>Enable earthquakes randomly causing overhead mountain tiles to collapse.</Mashed_Ashlands_EarthquakeCollapseMountains>
+	<Mashed_Ashlands_EarthquakeDamageBuildings>Enable earthquakes randomly damaging buildings that support roofs.</Mashed_Ashlands_EarthquakeDamageBuildings>
+	<Mashed_Ashlands_EarthquakeDamageBuildings_Tooltip>Buildings such as walls, doors and columns can be damaged. Natural rock walls will not receive any damage.</Mashed_Ashlands_EarthquakeDamageBuildings_Tooltip>
+	<Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer>Earthquakes can also damage non-player buildings.</Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer>
+	<Mashed_Ashlands_EarthquakeDamageBuildingsChance>The chance a building receives damage: ({0}%)</Mashed_Ashlands_EarthquakeDamageBuildingsChance>
+	<Mashed_Ashlands_EarthquakeDamageBuildingsDamage>The average amount of damage a building receives: ({0} points)</Mashed_Ashlands_EarthquakeDamageBuildingsDamage>
+</LanguageData>

@@ -31,11 +31,18 @@
 		<!-- SeedsPleaseLite -->
 		<li IfModActive="owlchemist.seedspleaselite">LoadFolders/SeedsPleaseLiteTextures</li>
 		<li IfModActive="owlchemist.seedspleaselite">1.4/LoadFolders/SeedsPleaseLite</li>
+		<!-- SeedsPleaseLite Redux -->
+		<li IfModActive="evyatar108.seedspleaseliteredux">LoadFolders/SeedsPleaseLiteTextures</li>
+		<li IfModActive="evyatar108.seedspleaseliteredux">1.4/LoadFolders/SeedsPleaseLite</li>
 		<!-- MorrowRim Sound Patch -->
 		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.4/LoadFolders/MorrowRim_SoundPatch</li>
 		<!-- Exploration Mode -->
 		<li IfModActive="rw_exploration_mode.thelastbulletbender">1.4/LoadFolders/ExplorationMode</li>
 		<!-- Dunmer lamp pack -->
 		<li IfModActive="sirmashedpotato.morrowrim.dunmerlamppack">1.4/LoadFolders/MorrowRim_DunmerLampPack</li>
+		<!-- VE Recycling -->
+		<li IfModActive="vanillaexpanded.recycling">1.4/LoadFolders/VE_Recycling</li>
+		<!-- Cherry Picker -->
+		<li IfModActive="owlchemist.cherrypicker">1.4/LoadFolders/CherryPicker</li>
 	</v1.4>
 </loadFolders>

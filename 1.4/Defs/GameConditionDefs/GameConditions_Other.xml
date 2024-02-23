@@ -11,7 +11,7 @@
 	<!--
 	<GameConditionDef>
 		<defName>Mashed_Ashlands_PsychicEruption</defName>
-		<conditionClass>GameCondition_PsychicEmanation</conditionClass>
+		<conditionClass>Mashed_Ashlands.GameCondition_PsychicEruption</conditionClass>
 		<label>psychic eruption</label>
 		<description>Recent volcanic activity has awoken something ancient, once slumbering deep within the bowels of the volcano. Its screams can be heard echoing in the minds of those nearby. Anyone caught within will slowly be driven to insanity.</description>
 		<descriptionFuture>I don't think this actually gets used</descriptionFuture>
@@ -50,5 +50,16 @@
 			<li>ToxicFallout</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">NoxiousHaze</li>
 		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEarthquake]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicEarthquake</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_Earthquake</conditionClass>
+		<label>volcanic earthquake</label>
+		<description>Recent volcanic activity has caused powerful tremors to occur. While it will likely be short lived, structures that can support roofs may take damage, and overhead mountain roofs may collapse. Caves should be avoided until the earthquake ends.</description>
+		<descriptionFuture>powerful volcanic tremors will be felt at [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
+		<endMessage>The ground stops shaking.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
 </Defs>

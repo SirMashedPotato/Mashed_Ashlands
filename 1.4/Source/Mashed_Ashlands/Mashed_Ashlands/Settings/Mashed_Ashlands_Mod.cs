@@ -46,6 +46,9 @@ namespace Mashed_Ashlands
                     listing_Standard = SettingsPage_AshStorm(listing_Standard, settings);
                     break;
                 case 4:
+                    listing_Standard = SettingsPage_OtherConditions(listing_Standard, settings);
+                    break;
+                case 5:
                     listing_Standard = SettingsPage_Incidents(listing_Standard, settings);
                     break;
                
@@ -107,11 +110,19 @@ namespace Mashed_Ashlands
             }
             listing_Standard.Gap();
 
+            Rect rectPageOtherConditions = listing_Standard.GetRect(30f);
+            TooltipHandler.TipRegion(rectPageOtherConditions, "Mashed_Ashlands_PageOtherConditions".Translate());
+            if (Widgets.ButtonText(rectPageOtherConditions, "Mashed_Ashlands_PageOtherConditions".Translate(), true, true, true))
+            {
+                page = 4;
+            }
+            listing_Standard.Gap();
+
             Rect rectPageIncident = listing_Standard.GetRect(30f);
             TooltipHandler.TipRegion(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate());
             if (Widgets.ButtonText(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate(), true, true, true))
             {
-                page = 4;
+                page = 5;
             }
             listing_Standard.Gap();
 
@@ -176,6 +187,15 @@ namespace Mashed_Ashlands
 
                 case 4:
                     listing_Standard.Gap();
+                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageOtherConditions".Translate()));
+                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageOtherConditions".Translate()), true, true, true))
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_OtherConditions();
+                    }
+                    break;
+
+                case 5:
+                    listing_Standard.Gap();
                     TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()));
                     if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()), true, true, true))
                     {
@@ -210,6 +230,9 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_FlowerFeeding".Translate(), ref settings.Mashed_Ashlands_FlowerFeeding);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_ScampInsulting".Translate(), ref settings.Mashed_Ashlands_ScampInsulting);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_AshcanoJoy".Translate(), ref settings.Mashed_Ashlands_AshcanoJoy);
@@ -273,6 +296,9 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableStandardAshlands".Translate(), ref settings.Mashed_Ashlands_EnableStandardAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableDustplainAshlands".Translate(), ref settings.Mashed_Ashlands_EnableDustplainAshlands);
             listing_Standard.Gap();
             /*
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableCoralCoastAshlands);
@@ -509,6 +535,39 @@ namespace Mashed_Ashlands
 
             listing_Standard.Label("Mashed_Ashlands_BlightStormBlightPlantsNumber".Translate(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber), -1);
             settings.Mashed_Ashlands_BlightStormBlightPlantsNumber = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber, 1, 50));
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            return listing_Standard;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private Listing_Standard SettingsPage_OtherConditions(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
+            listing_Standard.Label("Mashed_Ashlands_PageOtherConditions".Translate());
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeShake".Translate(), ref settings.Mashed_Ashlands_EarthquakeShake);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeCollapseMountains".Translate(), ref settings.Mashed_Ashlands_EarthquakeCollapseMountains);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeDamageBuildings".Translate(), ref settings.Mashed_Ashlands_EarthquakeDamageBuildings, "Mashed_Ashlands_EarthquakeDamageBuildings_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer".Translate(), ref settings.Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_EarthquakeDamageBuildingsChance".Translate(settings.Mashed_Ashlands_EarthquakeDamageBuildingsChance * 100), -1);
+            settings.Mashed_Ashlands_EarthquakeDamageBuildingsChance = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_EarthquakeDamageBuildingsChance, 0.05f, 1f) * 20) / 20;
+
+            listing_Standard.Label("Mashed_Ashlands_EarthquakeDamageBuildingsDamage".Translate(settings.Mashed_Ashlands_EarthquakeDamageBuildingsDamage), -1);
+            settings.Mashed_Ashlands_EarthquakeDamageBuildingsDamage = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_EarthquakeDamageBuildingsDamage, 1, 50));
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

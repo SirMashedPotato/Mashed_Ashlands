@@ -76,6 +76,7 @@
 			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
 			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
 			<!-- Special -->
+			<Mashed_Ashlands_Scamp>0.06</Mashed_Ashlands_Scamp>
 			<JE_JagothGrr MayRequire="sarg.jorisexperience">0.06</JE_JagothGrr>
 		</wildAnimals>
 		<pollutionWildAnimals>
@@ -133,6 +134,7 @@
 					<li>Lake</li>
 					<li>DryLake</li>
 					<li>LakeWithIsland</li>
+					<li>SwampHill</li>
 					<li>Mashed_Ashlands_AshDeposit</li>
 					<li>Mashed_Ashlands_RichAshDeposit</li>
 					<li>Mashed_Ashlands_BlightedAshDeposit</li>
@@ -179,6 +181,7 @@
 					<li>Lake</li>
 					<li>DryLake</li>
 					<li>LakeWithIsland</li>
+					<li>SwampHill</li>
 					<li>Mashed_Ashlands_AshDeposit</li>
 					<li>Mashed_Ashlands_RichAshDeposit</li>
 					<li>Mashed_Ashlands_VolcanicAshDeposit</li>

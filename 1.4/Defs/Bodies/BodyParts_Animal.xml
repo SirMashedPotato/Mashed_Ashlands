@@ -43,4 +43,20 @@
 			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Abdomen]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Cephalothorax]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Cephalothorax</defName>
+		<label>cephalothorax</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+	</BodyPartDef>
 </Defs>

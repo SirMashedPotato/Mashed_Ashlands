@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_AchievementAshlands_CollectBugMusk]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectBugMusk</defName>
+		<label>Bug Musk Collector</label>
+		<description>Collect 333 bottles of Bug Musk</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_BugMusk</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectBugMusk</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectDagothBrandy]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_CollectDagothBrandy</defName>

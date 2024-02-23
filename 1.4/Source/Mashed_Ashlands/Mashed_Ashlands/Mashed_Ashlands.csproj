@@ -68,6 +68,7 @@
     <Compile Include="Alert\Alert_AshBuildup.cs" />
     <Compile Include="Alert\Alert_CliffRacerTracker.cs" />
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_DustplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MeadowAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MarshAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
@@ -104,11 +105,15 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
+    <Compile Include="GameCondition\GameCondition_Earthquake.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicHeat.cs" />
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Misc.cs" />
+    <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
+    <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
+    <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />

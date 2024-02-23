@@ -24,6 +24,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerDustplainAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerDustplainAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->dustplains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerGrazelandAshlands]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerGrazelandAshlands</defName>
@@ -32,8 +44,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>terrain_word(p=6)->grazelands</li>
-				<li>terrain_word(p=4)->plains</li>
+				<li>terrain_word(p=10)->grazelands</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

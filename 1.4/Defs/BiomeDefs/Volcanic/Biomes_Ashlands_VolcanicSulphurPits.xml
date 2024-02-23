@@ -2,7 +2,7 @@
 <Defs>
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsVolcanicBase">
 		<defName>Mashed_Ashlands_VolcanicSulphurPitsAshlands</defName>
-		<label>volcanic sulphur pools</label>
+		<label>volcanic scathes</label>
 		<description>An area of volcanic ashlands dominated by large pools of thermally-heated water. These pools are rich in dissolved sulphur, giving them a noticeable green tint, and a very distinctive smell. While not exactly safe to drink, many find bathing in the pools incredibly relaxing.\n\nSome cultures consider these regions to be gateways to the underworld, while others believe that regularly bathing in the sulphuric waters is a means to achieving immortality.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicSulphurPitsAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_VolcanicSulphurPitsAshlands</texture>
@@ -124,7 +124,7 @@
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.05</Mashed_Ashlands_Plant_AshYam>
 			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
-			<Mashed_Ashlands_Plant_AshPomegranate>0.1</Mashed_Ashlands_Plant_AshPomegranate>
+			<Mashed_Ashlands_Plant_AshPomegranate>0.07</Mashed_Ashlands_Plant_AshPomegranate>
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_Chillshroom>0.1</Mashed_Ashlands_Plant_Chillshroom>
 			<Mashed_Ashlands_Plant_ParasolBush>0.02</Mashed_Ashlands_Plant_ParasolBush>
@@ -165,8 +165,10 @@
 			<Mashed_Ashlands_Firebug>0.2</Mashed_Ashlands_Firebug>
 			<Mashed_Ashlands_Shalk>0.1</Mashed_Ashlands_Shalk>
 			<Mashed_Ashlands_Netch>0.4</Mashed_Ashlands_Netch>
-			<Mashed_Ashlands_Guar>0.4</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_Guar>0.2</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_Wormmouth>0.3</Mashed_Ashlands_Wormmouth>
 			<!-- predators -->
+			<Mashed_Ashlands_Pyrantula>0.2</Mashed_Ashlands_Pyrantula>
 			<Mashed_Ashlands_Kagouti>0.2</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
