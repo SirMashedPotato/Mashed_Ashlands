@@ -45,6 +45,10 @@
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
+		</nullifyingGenes>
 	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_OutsideInSulphurRain]==========-->
 	<ThoughtDef>
