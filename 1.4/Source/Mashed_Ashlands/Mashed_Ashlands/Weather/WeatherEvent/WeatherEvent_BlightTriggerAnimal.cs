@@ -40,7 +40,7 @@ namespace Mashed_Ashlands
 		/// </summary>
 		public bool PawnImmuneToBlight(Pawn p)
         {
-            if (p.Faction != null)
+            if (p.kindDef.canArriveManhunter && p.Faction != null)
             {
                 if (p.Faction == Faction.OfPlayerSilentFail && !Mashed_Ashlands_ModSettings.BlightStormBlightPlayerAnimals)
                 {

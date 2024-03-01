@@ -105,7 +105,6 @@
 		<label>ashland mudcrab</label>
 		<race>Mashed_Ashlands_Mudcrab</race>
 		<combatPower>50</combatPower>
-		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>

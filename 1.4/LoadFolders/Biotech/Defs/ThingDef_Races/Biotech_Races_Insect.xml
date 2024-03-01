@@ -36,7 +36,6 @@
 		<label>glowing ash hopper</label>
 		<race>Mashed_Ashlands_AshHopperGlowing</race>
 		<combatPower>55</combatPower>
-		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.2</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -503,7 +502,6 @@
 		<label>glowing shalk</label>
 		<race>Mashed_Ashlands_ShalkGlowing</race>
 		<combatPower>50</combatPower>
-		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

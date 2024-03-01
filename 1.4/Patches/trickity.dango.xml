@@ -7,7 +7,6 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RecipeDef[defName = "CookDango"]/ingredients/li/filter/thingDefs[li="RawRice"]</xpath>
 					<value>

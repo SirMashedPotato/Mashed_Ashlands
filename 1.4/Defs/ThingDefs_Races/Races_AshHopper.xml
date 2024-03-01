@@ -91,7 +91,6 @@
 		<label>ash hopper</label>
 		<race>Mashed_Ashlands_AshHopper</race>
 		<combatPower>50</combatPower>
-		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<lifeStages>
 			<li>

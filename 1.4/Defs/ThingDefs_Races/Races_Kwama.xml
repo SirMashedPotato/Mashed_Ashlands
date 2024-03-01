@@ -95,7 +95,6 @@
 		<label>kwama forager</label>
 		<race>Mashed_Ashlands_KwamaForager</race>
 		<combatPower>20</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -209,7 +208,6 @@
 		<label>kwama scrib</label>
 		<race>Mashed_Ashlands_KwamaScrib</race>
 		<combatPower>10</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
 		<lifeStages>
 			<li>

@@ -9,6 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/WorldObjectDef[defName="Outpost_Farming"]/modExtensions/li/DisallowedBiomes</xpath>
 					<value>
+						<li>Mashed_Ashlands_DustplainAshlands</li>
 						<li>Mashed_Ashlands_BlightedAshlands</li>
 						<li>Mashed_Ashlands_BlightedBogAshlands</li>
 						<li>Mashed_Ashlands_VolcanicAshlands</li>
@@ -19,11 +20,19 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li/DisallowedBiomes</xpath>
 					<value>
+						<li>Mashed_Ashlands_DustplainAshlands</li>
 						<li>Mashed_Ashlands_BlightedAshlands</li>
 						<li>Mashed_Ashlands_BlightedBogAshlands</li>
 						<li>Mashed_Ashlands_VolcanicAshlands</li>
 						<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 						<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li/AllowedBiomes</xpath>
+					<value>
+						<li>Mashed_Ashlands_DustplainAshlands</li>
+						<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 					</value>
 				</li>
 			</operations>
