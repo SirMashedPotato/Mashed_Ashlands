@@ -52,7 +52,7 @@
 		</statBases>
 		<stuffProps>
 			<color>(55,44,55)</color>
-			<stuffAdjective>ebony</stuffAdjective>
+			<stuffAdjective>V. ebony</stuffAdjective>
 			<statOffsets>
 				<Beauty>10</Beauty>
 			</statOffsets>
@@ -69,8 +69,8 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicGlass]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_MetallicBase">
 		<defName>Mashed_Ashlands_VolcanicGlass</defName>
-		<label>volcanic glass</label>
-		<description>A rare light-green volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather fragile in its raw form, volcanic glass is both exceptionally light, and flexible. It can be used to make powerful sharp weapons, and highly blunt resistant armour.</description>
+		<label>volcanic malachite</label>
+		<description>A rare light-green volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather fragile in its raw form, volcanic malachite is both exceptionally light, and flexible. It can be used to make powerful sharp weapons, and highly blunt resistant armour.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Mashed_Ashlands_VolcanicGlass</texPath>
 		</graphicData>
@@ -88,7 +88,7 @@
 		</statBases>
 		<stuffProps>
 			<color>(153,243,134)</color>
-			<stuffAdjective>glass</stuffAdjective>
+			<stuffAdjective>V. malachite</stuffAdjective>
 			<statOffsets>
 				<Beauty>10</Beauty>
 			</statOffsets>

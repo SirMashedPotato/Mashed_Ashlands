@@ -8,7 +8,7 @@
 			<operations>
 				<!-- ==========[Crafting wood logs]==========-->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "Mashed_Ashlands_MakeWoodFromCorkbulbBase"]/products/WoodLog</xpath>
+					<xpath>Defs/RecipeDef[defName = "Mashed_Ashlands_MakeWoodFromCorkbulb"]/products/WoodLog</xpath>
 					<value>
 						<DankPyon_RawWood>5</DankPyon_RawWood>
 					</value>

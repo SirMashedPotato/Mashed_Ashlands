@@ -48,7 +48,7 @@
 		<defName>Mashed_Ashlands_VolcanicEbonyTile</defName>
 		<label>volcanic ebony tile</label>
 		<renderPrecedence>242</renderPrecedence>
-		<description>Tiles made out of pure volcanic ebony. While very extravagant, most will question why you wasted volcanic glass on flooring.</description>
+		<description>Tiles made out of pure volcanic ebony. While very extravagant, most will question why you wasted volcanic ebony on flooring.</description>
 		<color>(55,44,55)</color>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -66,9 +66,9 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicGlassTile]==========-->
 	<TerrainDef ParentName="TileMetalBase">
 		<defName>Mashed_Ashlands_VolcanicGlassTile</defName>
-		<label>volcanic glass tile</label>
+		<label>volcanic malachite tile</label>
 		<renderPrecedence>242</renderPrecedence>
-		<description>Tiles made out of pure volcanic glass. While very extravagant, most will question why you wasted volcanic glass on flooring.</description>
+		<description>Tiles made out of pure volcanic malachite. While very extravagant, most will question why you wasted volcanic malachite on flooring.</description>
 		<color>(153,243,134)</color>
 		<statBases>
 			<Beauty>10</Beauty>
