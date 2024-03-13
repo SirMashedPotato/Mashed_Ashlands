@@ -16,7 +16,7 @@ namespace Mashed_Ashlands
         {
             if (Mashed_Ashlands_ModSettings.BlightStormBlightAnimals)
             {
-                List<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
+                IReadOnlyList<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
                 List<Pawn> validTargets = new List<Pawn>();
                 foreach(Pawn potentialTarget in allPawnsSpawned)
                 {

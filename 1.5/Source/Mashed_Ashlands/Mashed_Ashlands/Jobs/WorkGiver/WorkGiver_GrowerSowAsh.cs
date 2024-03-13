@@ -91,7 +91,7 @@ namespace Mashed_Ashlands
 					JobFailReason.Is(CantSowCavePlantBecauseUnroofedTrans, null);
 					return null;
 				}
-				if (map.glowGrid.GameGlowAt(c, true) > 0f)
+				if (map.glowGrid.GroundGlowAt(c, true) > 0f)
 				{
 					JobFailReason.Is(CantSowCavePlantBecauseOfLightTrans, null);
 					return null;

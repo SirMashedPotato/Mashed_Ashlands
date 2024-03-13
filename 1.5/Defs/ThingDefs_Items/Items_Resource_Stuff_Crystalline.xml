@@ -27,9 +27,10 @@
 			</categories>
 			<commonality>0</commonality>
 			<appearance>Bricks</appearance>
-			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
 			<stuffAdjective>crystalline</stuffAdjective>
 			<statFactors>
 				<WorkToBuild>6</WorkToBuild>

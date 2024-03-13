@@ -145,7 +145,7 @@ namespace Mashed_Ashlands
                     {
                         ParentVolcano.Category -= 1;
                     },
-                    disabled = categoryIndex <= 0
+                    Disabled = categoryIndex <= 0
                 };
 
                 yield return new Command_Action
@@ -155,7 +155,7 @@ namespace Mashed_Ashlands
                     {
                         ParentVolcano.Category += 1;
                     },
-                    disabled = categoryIndex >= Props.categoryWeights.Count - 1
+                    Disabled = categoryIndex >= Props.categoryWeights.Count - 1
                 };
 
                  yield return new Command_Action

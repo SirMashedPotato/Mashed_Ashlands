@@ -46,7 +46,7 @@ namespace Mashed_Ashlands
 
 		private void DoPawnsToxicDamage(Map map)
 		{
-			List<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
+            IReadOnlyList<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
 				///Just use the vanilla version, no need for a separate one

@@ -44,7 +44,7 @@ namespace Mashed_Ashlands
 
 		private void DoPawnsAshDamage(Map map)
 		{
-			List<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
+			IReadOnlyList<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
 				AshResistanceProperties props = AshResistanceProperties.Get(allPawnsSpawned[i].def);

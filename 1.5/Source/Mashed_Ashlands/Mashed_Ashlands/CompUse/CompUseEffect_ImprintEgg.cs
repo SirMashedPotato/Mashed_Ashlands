@@ -17,35 +17,30 @@ namespace Mashed_Ashlands
             }
         }
 
-        public override bool CanBeUsedBy(Pawn p, out string failReason)
+        public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
             CompHatcher compHatcher = parent.TryGetComp<CompHatcher>();
             if (compHatcher == null)
             {
-                failReason = "Missing compHatcher";
-                return false;
+                return "Missing compHatcher";
             }
             if (compHatcher.hatcheeFaction == Faction.OfPlayer)
             {
-                failReason = "Mashed_Ashlands_EggAlreadyImprinted".Translate(parent.Label);
-                return false;
+                return "Mashed_Ashlands_EggAlreadyImprinted".Translate(parent.Label);
             }
             if (p.Faction == null || p.Faction != Faction.OfPlayer)
             {
-                failReason = "Mashed_Ashlands_NotPlayerFaction".Translate(p);
-                return false;
+                return "Mashed_Ashlands_NotPlayerFaction".Translate(p);
             }
             if (p.skills.GetSkill(SkillDefOf.Animals).TotallyDisabled)
-            {
-                failReason = "Mashed_Ashlands_AnimalsIncapable".Translate(p);
-                return false;
+            {   
+                return "Mashed_Ashlands_AnimalsIncapable".Translate(p);
             }
             if (p.skills.GetSkill(SkillDefOf.Animals).Level < Props.minAnimals)
             {
-                failReason = "Mashed_Ashlands_AnimalsTooLow".Translate(parent.Label, Props.minAnimals);
-                return false;
+                return "Mashed_Ashlands_AnimalsTooLow".Translate(parent.Label, Props.minAnimals);
             }
-            return base.CanBeUsedBy(p, out failReason);
+            return true;
         }
     }
 }

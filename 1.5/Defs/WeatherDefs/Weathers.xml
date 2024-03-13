@@ -59,7 +59,7 @@
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>Mashed_Ashlands_OutsideInDustStorm</exposedThought>
+		<weatherThought>Mashed_Ashlands_OutsideInDustStorm</weatherThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Storm</li>
@@ -121,7 +121,7 @@
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>Mashed_Ashlands_OutsideInSulphurRain</exposedThought>
+		<weatherThought>Mashed_Ashlands_OutsideInSulphurRain</weatherThought>
 		<rainRate>1</rainRate>
 		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
 		<ambientSounds>

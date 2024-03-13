@@ -239,7 +239,9 @@
 			</li>
 		</comps>
 		<race>
-			<deathActionWorkerClass>Mashed_Ashlands.DeathActionWorker_CliffRacer</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>Mashed_Ashlands.DeathActionWorker_CliffRacer</workerClass>
+			</deathAction>
 			<body>Mashed_Ashlands_FlyingHellSpawn</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -559,12 +561,12 @@
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
 				<extraMeleeDamages>
-				<li>
-					<def>Burn</def>
-					<amount>5</amount>
-					<chance>0.8</chance>
-				</li>
-			</extraMeleeDamages>
+					<li>
+						<def>Burn</def>
+						<amount>5</amount>
+						<chance>0.8</chance>
+					</li>
+				</extraMeleeDamages>
 			</li>
 		</tools>
 		<comps>

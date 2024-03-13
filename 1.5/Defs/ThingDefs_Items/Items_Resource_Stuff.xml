@@ -38,9 +38,10 @@
 			<color>(146,137,89)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
-			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>1</Beauty>
@@ -161,9 +162,10 @@
 			<commonality>0</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(139,119,85)</color>
-			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>1.2</MaxHitPoints>
 				<Beauty>2</Beauty>

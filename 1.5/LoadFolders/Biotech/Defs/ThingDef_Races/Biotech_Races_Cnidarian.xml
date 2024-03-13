@@ -19,7 +19,9 @@
 			</li>
 		</comps>
 		<race>
-			<deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>DeathActionWorker_ToxCloud</workerClass>
+			</deathAction>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>

@@ -96,7 +96,7 @@ namespace Mashed_Ashlands
             if (!__result)
             {
                 Pawn pawn = __instance.parent as Pawn;
-                if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer && !pawn.Sterile(false) && pawn.GetComp<Comp_CliffRacerMutation>().hasAsexualMutation)
+                if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer && !pawn.Sterile() && pawn.GetComp<Comp_CliffRacerMutation>().hasAsexualMutation)
                 {
                     __result = true;
                 }

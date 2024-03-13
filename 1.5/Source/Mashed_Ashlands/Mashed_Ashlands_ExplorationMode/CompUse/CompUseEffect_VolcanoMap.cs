@@ -52,19 +52,17 @@ namespace Mashed_Ashlands_ExplorationMode
             return new List<WorldObject>(worldObjectsHolder.AllWorldObjects.Where(x => x is Volcano && !VisibilityManager.IsFounded(x)));
         }
 
-        public override bool CanBeUsedBy(Pawn p, out string failReason)
+        public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
             if (!p.health.capacities.CapableOf(PawnCapacityDefOf.Sight) || p.health.capacities.GetLevel(PawnCapacityDefOf.Sight) <= 0)
             {
-                failReason = "Mashed_Ashlands_PawnIsBlind".Translate(p.Name);
-                return false;
+                return "Mashed_Ashlands_PawnIsBlind".Translate(p.Name);
             }
             if (UndiscoveredVolcanos().NullOrEmpty())
             {
-                failReason = "Mashed_Ashlands_NoUndiscoveredVolcano".Translate();
-                return false;
+                return "Mashed_Ashlands_NoUndiscoveredVolcano".Translate();
             }
-            return base.CanBeUsedBy(p, out failReason);
+            return true;
         }
     }
 }
