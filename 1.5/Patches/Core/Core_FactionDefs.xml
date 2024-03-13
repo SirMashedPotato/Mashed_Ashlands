@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+		<value>
+			<Mashed_Ashlands_Guar>6</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_NixOx>4</Mashed_Ashlands_NixOx>
+		</value>
+	</Operation>
+</Patch>

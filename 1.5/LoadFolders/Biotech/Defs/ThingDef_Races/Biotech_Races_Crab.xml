@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MudcrabGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_MudcrabGlowing</defName>
+		<label>glowing mudcrab</label>
+		<description>A subspecies of the common ashland mudcrab that has adapted to life in polluted regions. They have developed a symbiotic bond with a species of glowing fungus. The mudcrab protects the mushrooms from being eaten, whilst the mushrooms help the mudcrab absorb nutrients from environmental pollution. Taming a glowing mudcrab will allow one to regularly harvest these mushrooms.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing mudcrab can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_SwampFever</HediffDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Mashed_Ashlands_RawGlowingAshFungus</woolDef>
+				<shearIntervalDays>3</shearIntervalDays>
+				<woolAmount>10</woolAmount>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>pincers</label>
+				<capacities>
+					<li>Bite</li>
+					<li>Mashed_Ashlands_SwampBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_MudcrabGlowing</defName>
+		<label>glowing mudcrab</label>
+		<race>Mashed_Ashlands_MudcrabGlowing</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_MudcrabGlowing</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_MudcrabGlowing</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
+					<drawSize>1.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_MudcrabGlowing</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

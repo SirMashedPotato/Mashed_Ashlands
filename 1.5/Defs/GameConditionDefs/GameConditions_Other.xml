@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_IntenseVolcanicHeat]==========-->
+	<GameConditionDef ParentName="Mashed_Ashlands_VolcanicHeatBase">
+		<defName>Mashed_Ashlands_VolcanicHeatIntense</defName>
+		<label>intense volcanic heat</label>
+		<description>Intense volcanic activity from a nearby volcano further increases the local temperature.</description>
+		<endMessage>The air begins to cool.</endMessage>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
+	<!--
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_PsychicEruption</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_PsychicEruption</conditionClass>
+		<label>psychic eruption</label>
+		<description>Recent volcanic activity has awoken something ancient, once slumbering deep within the bowels of the volcano. Its screams can be heard echoing in the minds of those nearby. Anyone caught within will slowly be driven to insanity.</description>
+		<descriptionFuture>I don't think this actually gets used</descriptionFuture>
+		<endMessage>The infernal machine begins to slumber once more. The psychic eruption is ending.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<exclusiveConditions>
+			<li>PsychicSoothe</li>
+		</exclusiveConditions>
+		<natural>false</natural>
+	</GameConditionDef>
+	-->
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisRain]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicDebrisRain</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_DebrisRain</conditionClass>
+		<label>volcanic debris rain</label>
+		<description>Recent volcanic activity has launched large pieces of rock into the air. While the debris will rapidly cool, it will likely ignite anything nearby on impact. The debris can be mined for useful, and possibly quite rare, items.</description>
+		<descriptionFuture>volcanic debris will begin falling in the area around [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
+		<endMessage>The volcanic debris stops falling.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicMiasma]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicMiasma</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_VolcanicMiasma</conditionClass>
+		<label>volcanic miasma</label>
+		<description>Recent volcanic activity has opened up several caverns deep underground, releasing the miasma previously contained within. While outdoor plants will be fine, any animals caught outside will be forced to breathe in the toxic gases.</description>
+		<descriptionFuture>dense volcanic miasma will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor animal life</descriptionFuture>
+		<endMessage>The miasma begins to dissipate. The air is breathable again.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
+		<exclusiveConditions>
+			<li>ToxicFallout</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">NoxiousHaze</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEarthquake]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_VolcanicEarthquake</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_Earthquake</conditionClass>
+		<label>volcanic earthquake</label>
+		<description>Recent volcanic activity has caused powerful tremors to occur. While it will likely be short lived, structures that can support roofs may take damage, and overhead mountain roofs may collapse. Caves should be avoided until the earthquake ends.</description>
+		<descriptionFuture>powerful volcanic tremors will be felt at [map_definite] for [gameConditionDuration_duration]</descriptionFuture>
+		<endMessage>The ground stops shaking.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+</Defs>

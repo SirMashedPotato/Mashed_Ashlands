@@ -1,0 +1,146 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedAshlandTree]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedAshlandTree</defName>
+		<label>ashland tree seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshlandTree</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeAshland</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeAshland</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedParasolBush]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedParasolBush</defName>
+		<label>parasol bush spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedParasolBush</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_ParasolBush</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_ParasolBush</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedEmperorParasol]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedEmperorParasol</defName>
+		<label>emperor parasol spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedEmperorParasol</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeEmperorParasol</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeEmperorParasol</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedMilkcap]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedMilkcap</defName>
+		<label>milkcap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedMilkcap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeMilkcap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeMilkcap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedNetchShield]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedNetchShield</defName>
+		<label>netch shield spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedNetchShield</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeNetchShield</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeNetchShield</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedNetchShieldVibrant]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedNetchShieldVibrant</defName>
+		<label>vibrant netch shield spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedNetchShieldVibrant</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeNetchShieldVibrant</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeNetchShieldVibrant</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedSpongeCap]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedSpongeCap</defName>
+		<label>spongecap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedSpongeCap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeSpongecap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeSpongecap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedWeepingLeathercap]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedWeepingLeathercap</defName>
+		<label>weeping leathercap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedWeepingLeathercap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeWeepingLeathercap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeWeepingLeathercap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
+		<defName>Mashed_Ashlands_BlightedAshlands</defName>
+		<label>blighted ashlands</label>
+		<description>Once a thriving ashlands, the landscape has been devastated by a nearby blighted volcano, leaving an inhospitable wasteland behind. The sky is almost permanently covered in a thick cloud of ash. Few animals and plants are capable of living here, with the waters being almost completely devoid of life. Unless you enjoy eating scathecraw, food will be difficult to obtain.</description>
+		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedAshlands</workerClass>
+		<texture>World/Biomes/Mashed_Ashlands_BlightedAshlands</texture>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<earlyLoader>true</earlyLoader>
+				<baseBiome>true</baseBiome>
+				<preventRivers>true</preventRivers>
+				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
+				<increasePollutedFertility>false</increasePollutedFertility>
+				<terrainReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Sand</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
+					</li>
+				</terrainReplacers>
+				<roadReplacers>
+					<li>
+						<originalTerrain>PackedDirt</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_PackedAshBlighted</replacedTerrain>
+					</li>
+				</roadReplacers>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>WaterShallow</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>WaterOceanShallow</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
+					</li>
+				</dryToReplacers>
+				<useAshlandCavePlants>true</useAshlandCavePlants>
+				<useCustomCaveTerrain>true</useCustomCaveTerrain>
+				<otherTerrainDef>Mashed_Ashlands_AshGravel</otherTerrainDef>
+				<waterTerrainDef>WaterShallow</waterTerrainDef>
+				<otherTerrainThreshold>0.25</otherTerrainThreshold>
+				<waterThreshold>0.9</waterThreshold>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls" MayRequire="odeum.wmbp">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestDenseAbove>500</forestDenseAbove>
+				<forestSparseBelow>300</forestSparseBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
+		</modExtensions>
+		<animalDensity>0.4</animalDensity>
+		<plantDensity>0.03</plantDensity>
+		<terrainsByFertility>
+			<li>
+				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>
+				<min>-999</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.015</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
+						<min>0.46</min>
+						<max>0.86</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<wildPlants>
+			<!-- Ground covers -->
+			<Mashed_Ashlands_Plant_AshlandGrass>0.2</Mashed_Ashlands_Plant_AshlandGrass>
+			<!-- Nutrition plants -->
+			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<!-- Resource plants -->
+			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
+			<!-- Aesthetic plants -->
+			<!-- Trees -->
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.05</Mashed_Ashlands_BurnedStumpPermanent>
+			<!-- ==========[Pollution]========== -->
+			<!-- Polluted ground covers -->
+			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_GlowingEntoloma>
+			<!-- Polluted nutrition plants -->
+			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
+			<!-- Polluted resource plants -->
+			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_Plant_TramaMass>
+			<!-- Polluted trees -->
+		</wildPlants>
+		<wildAnimals>
+			<!-- prey animals -->
+			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
+			<Mashed_Ashlands_AshHopper>0.3</Mashed_Ashlands_AshHopper>
+			<!-- herd animals -->
+			<Mashed_Ashlands_Shalk>0.3</Mashed_Ashlands_Shalk>
+			<Mashed_Ashlands_Netch>0.1</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Guar>0.2</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_Wormmouth>0.2</Mashed_Ashlands_Wormmouth>
+			<!-- predators -->
+			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
+			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+			<!-- ESCP Spriggan-->
+			<ESCP_Spriggan_Burnt MayRequire="pphhyy.escp.spriggan">0.02</ESCP_Spriggan_Burnt>
+			<!-- special -->
+		</wildAnimals>
+		<pollutionWildAnimals>
+			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_AshHopperGlowing>
+			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NetchGlowing>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+		</pollutionWildAnimals>
+	</BiomeDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_VanillaFishableTerrainsAshlandFresh]==========-->
+	<VCE_Fishing.FishableTerrainDef>
+		<defName>Mashed_Ashlands_VanillaFishableTerrainsAshlandFresh</defName>
+		<isOcean>false</isOcean>
+		<allowedTerrains>
+			<li>Mashed_Ashlands_BlightedSludge</li>
+			<li>Mashed_Ashlands_ShallowSulphuricWater</li>
+			<li>Mashed_Ashlands_DeepSulphuricWater</li>
+		</allowedTerrains>
+	</VCE_Fishing.FishableTerrainDef>
+	<!-- ==========[Mashed_Ashlands_VanillaFishableTerrainsAshlandOcean]==========-->
+	<VCE_Fishing.FishableTerrainDef>
+		<defName>Mashed_Ashlands_VanillaFishableTerrainsAshlandOcean</defName>
+		<isOcean>true</isOcean>
+		<allowedTerrains>         
+	
+		</allowedTerrains>
+	</VCE_Fishing.FishableTerrainDef>
+</Defs>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandsMapIncident]==========-->
+	<IncidentDef Name="Mashed_Ashlands_AshlandsMapIncident" Abstract="True">
+		<defName>Mashed_Ashlands_AshlandsMapIncident</defName>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</allowedBiomes>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_SiltStriderPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_SiltStriderPasses</defName>
+		<label>silt strider pass</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_SiltStriderPasses</workerClass>
+		<letterLabel>Silt strider passes</letterLabel>
+		<letterText>An enormous silt strider has wandered into the area. Often used to carry a large quantity of resources across vast distances, taming it would prove highly beneficial. Of course you could also hunt it instead, for its sturdy chitin plates. Regardless of what you choose, it will not stay here for long.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_CliffRacerSwarm]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_CliffRacerSwarm</defName>
+		<label>cliff racer swarm</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_CliffRacerSwarm</workerClass>
+		<letterLabel>Cliff racer swarm</letterLabel>
+		<letterText>A large swarm of {0} cliff racers has entered the area, and doesn't seem to be going anywhere anytime soon. It may be best to deal with them quickly, as they could affect the balance of the ecosystem... or of your colony.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+</Defs>

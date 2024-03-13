@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Overwritten in the ReGrowth Core loadfolder -->
+	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
+		<label>shallow sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>30</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
+		<tags>
+			<li>PF_TerrainTag_WaterShallow</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_DeepSulphuricWater</defName>
+		<label>deep sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRampPolluted</pollutedTexturePath>
+		<renderPrecedence>397</renderPrecedence>
+		<tags>
+			<li>PF_TerrainTag_WaterDeep</li>
+		</tags>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BathingBlightedSludge]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_BathingBlightedSludge</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>bathed in blighted sludge</label>
+				<description>I took a bath in blighted sludge. It wasn't that bad... as long as you ignore the foul stench... and the bones... and whatever that was that touched my leg...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_BathingSulphurPool]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_BathingSulphurPool</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>bathed in sulphuric water</label>
+				<description>I took a relaxing bath in a sulphur pool. I don't smell great, but I do feel rejuvenated!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

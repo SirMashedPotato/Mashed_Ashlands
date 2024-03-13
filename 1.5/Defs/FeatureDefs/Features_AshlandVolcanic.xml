@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_VolcanicAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_VolcanicAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>451</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</acceptableBiomes>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicBadlandAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_VolcanicBadlandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicBadlandAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicSulphurPitsAshlandss]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_VolcanicSulphurPitsAshlandss</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

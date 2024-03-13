@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshVolcanicBase]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBase" Name="Mashed_Ashlands_AshVolcanicBase" Abstract="True">
+		<affordances>
+			<li>Mashed_Ashlands_PackableAshVolcanic</li>
+		</affordances>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_AshSoilVolcanic</defName>
+		<label>volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshSoilVolcanic</texturePath>
+		<fertility>1.3</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_CrackedAshSoilVolcanic]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_CrackedAshSoilVolcanic</defName>
+		<label>cracked volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_CrackedAshSoilVolcanic</texturePath>
+		<fertility>0.4</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ScorchedAshSoilVolcanic]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_ScorchedAshSoilVolcanic</defName>
+		<label>scorched volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_ScorchedAshSoilVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.05</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_RichAshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_RichAshSoilVolcanic</defName>
+		<label>rich volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_RichAshSoilVolcanic</texturePath>
+		<fertility>1.6</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshGravel]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_AshGravelVolcanic</defName>
+		<label>volcanic stony ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshGravelVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.9</fertility>
+		<tags>
+			<li>PF_TerrainTag_Gravel</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_RichAshGravel]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_RichAshGravelVolcanic</defName>
+		<label>rich volcanic stony ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_RichAshGravelVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>1.2</fertility>
+		<tags>
+			<li>PF_TerrainTag_Gravel</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_AshSandVolcanic</defName>
+		<label>volcanic sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshSandVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.5</fertility>
+		<tags>
+			<li>PF_TerrainTag_Sand</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_RichAshSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshVolcanicBase">
+		<defName>Mashed_Ashlands_RichAshSandVolcanic</defName>
+		<label>rich volcanic sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_RichAshSandVolcanic</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.8</fertility>
+		<tags>
+			<li>PF_TerrainTag_Sand</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_PackedAsh]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_PackedAshBase">
+		<defName>Mashed_Ashlands_PackedAshVolcanic</defName>
+		<label>packed volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_PackedAshVolcanic</texturePath>
+		<description>Packed volcanic ash, making it comparatively less arduous to trek across.</description>
+		<terrainAffordanceNeeded>Mashed_Ashlands_PackableAshVolcanic</terrainAffordanceNeeded>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+</Defs>

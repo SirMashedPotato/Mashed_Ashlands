@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MH: Android Tiers Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Humanlike -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ATR_BaseMechanicalPawn"]/statBases</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
+				<!-- 'Animals' -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="ATR_MechanicalAnimalThingBase"]/statBases</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="ATR_MechanicalAnimalThingBase"]</xpath>
+					<value>
+						<li Class="Mashed_Ashlands.AshResistanceProperties">
+							<treatAsMechanical>true</treatAsMechanical>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

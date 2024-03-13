@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingAshreed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshreedBase">
+		<defName>Mashed_Ashlands_Plant_GlowingAshreed</defName>
+		<label>glowing ashreed</label>
+		<description>A mutated species of wild grass adapted for life in polluted ashland regions. Often found growing near sources of polluted water.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingAshreed</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingDraggleTails]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_DraggleTailsBase">
+		<defName>Mashed_Ashlands_Plant_GlowingDraggleTails</defName>
+		<label>glowing draggle-tails</label>
+		<description>A mutated species of the common draggle-tails, adapted for life in highly polluted ashland regions. They produce an ominous glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingDraggleTails</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GlowingEntoloma]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_GlowingEntolomaBase">
+		<defName>Mashed_Ashlands_GlowingEntoloma</defName>
+		<label>glowing entoloma</label>
+		<description>A species of small mushroom, often found growing in highly polluted ashland regions. Many enjoy the sight of its vibrant green colouration. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<statBases>
+			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingEntoloma</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingRussula]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_GlowingRussulaBase">
+		<defName>Mashed_Ashlands_Plant_GlowingRussula</defName>
+		<label>glowing russula</label>
+		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.2</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingRussula</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>4.6</growDays>
+			<visualSizeRange>0.15~0.35</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(3,69,47,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_GlowingCoprinusBase">
+		<defName>Mashed_Ashlands_Plant_GlowingCoprinus</defName>
+		<label>glowing coprinus</label>
+		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.2</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingCoprinus</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>3.8</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

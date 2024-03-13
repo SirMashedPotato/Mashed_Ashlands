@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<settlementSelectionWeight>0.6</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<forageability>0.75</forageability>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<diseaseMtbDays>60</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<baseWeatherCommonalities>
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
+			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
+			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
+		</baseWeatherCommonalities>
+		<wildAnimals>
+			<!-- prey animals -->
+			<Boomrat>0.05</Boomrat>
+			<Rat>0.6</Rat>
+			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
+			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
+			<!-- Special -->
+			<Mashed_Ashlands_Scamp>0.06</Mashed_Ashlands_Scamp>
+			<JE_JagothGrr MayRequire="sarg.jorisexperience">0.06</JE_JagothGrr>
+		</wildAnimals>
+		<pollutionWildAnimals>
+			<Rat>0.6</Rat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+			<li>Mashed_Ashlands_Guar</li>
+			<li>Mashed_Ashlands_NixOx</li>
+			<!--<li>Mashed_Ashlands_NixSteed</li>-->
+		</allowedPackAnimals>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+				<disallowedLandforms>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
+				</disallowedLandforms>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSand</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+				<disallowedLandforms>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
+				</disallowedLandforms>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSandBlighted</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravelBlighted</gravelTerrain>
+				<disallowedLandforms>
+					<li>Lake</li>
+					<li>DryLake</li>
+					<li>LakeWithIsland</li>
+					<li>SwampHill</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
+					<li>Mashed_Ashlands_BlightedAshDeposit</li>
+				</disallowedLandforms>
+			</li>
+		</modExtensions>
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<allowRivers>false</allowRivers>
+		<canAutoChoose>false</canAutoChoose>
+		<movementDifficulty>1.5</movementDifficulty>
+		<settlementSelectionWeight>0.1</settlementSelectionWeight>
+		<forageability>0.1</forageability>
+		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<diseaseMtbDays>40</diseaseMtbDays>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<baseWeatherCommonalities Inherit="False">
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>0.1</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">0.3</RG_Drizzle>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+		</baseWeatherCommonalities>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<beachTerrain>Mashed_Ashlands_AshSandVolcanic</beachTerrain>
+				<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
+				<disallowedLandforms>
+					<li>Lake</li>
+					<li>DryLake</li>
+					<li>LakeWithIsland</li>
+					<li>SwampHill</li>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
+					<li>Mashed_Ashlands_VolcanicAshDeposit</li>
+				</disallowedLandforms>
+			</li>
+		</modExtensions>
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<allowRivers>false</allowRivers>
+		<movementDifficulty>2</movementDifficulty>
+		<settlementSelectionWeight>0.3</settlementSelectionWeight>
+		<forageability>0.5</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<baseWeatherCommonalities Inherit="False">
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>0.5</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>0.5</RainyThunderstorm>
+			<FoggyRain>0.5</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_SulphuricRain>0.5</Mashed_Ashlands_SulphuricRain>
+			<Mashed_Ashlands_FoggySulphuricRain>0.5</Mashed_Ashlands_FoggySulphuricRain>
+			<!-- Regrowth weather -->
+			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">1</RG_Drizzle>
+			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
+			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
+			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
+			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
+			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.1</RG_Monsoon>
+		</baseWeatherCommonalities>
+	</BiomeDef>
+</Defs>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHive]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_FetcherflyHive</defName>
+		<label>fetcherfly hive</label>
+		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turn enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
+		<thingClass>Mineable</thingClass>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawOffset>0,0,0.5</drawOffset>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
+		<mineable>true</mineable>
+		<pathCost>42</pathCost>
+		<killedLeavings>
+			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
+		</killedLeavings>
+		<costList>
+			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
+		</costList>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Fetcherfly</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<designationCategory>Misc</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(251,89,11,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>Mashed_Ashlands_FetcherflyEffecter</effecterDef>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+				<!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>30</heatPerSecond>
+				<heatPushMaxTemperature>60</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Mashed_Ashlands_Filth_Ash</filthDef>
+				<spawnCountOnSpawn>3</spawnCountOnSpawn>
+				<spawnMtbHours>12</spawnMtbHours>
+				<spawnRadius>3</spawnRadius>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Mashed_Ashlands_FetcherflySwarm</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>16000~25000</spawnIntervalRange>
+				<saveKeysPrefix>fetcherflySwarm</saveKeysPrefix>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SpawnerOnDamage">
+				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
+				<spawnChance>0.3</spawnChance>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SpawnerOnDestroy">
+				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
+				<numberToSpawn>3</numberToSpawn>
+			</li>
+			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
+				<fleckDef>Owl_SmokeHeavy</fleckDef>
+				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_StriderShell]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_StriderShell</defName>
+		<label>ancient strider shell</label>
+		<description>An ancient silt strider shell, likely all that remains of the beast. Can be mined for silt strider chitin.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_StriderShell/Mashed_Ashlands_StriderShell</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 4)</drawSize>
+		</graphicData>
+		<thingClass>Mineable</thingClass>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Impassable</passability>
+		<rotatable>true</rotatable>
+		<mineable>true</mineable>
+		<size>(2,3)</size>
+		<fillPercent>0.5</fillPercent>
+		<blockPlants>true</blockPlants>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<killedLeavings>
+			<Mashed_Ashlands_StriderChitin>100</Mashed_Ashlands_StriderChitin>
+		</killedLeavings>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebris]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_VolcanicDebris</defName>
+		<label>volcanic debris</label>
+		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingClass>Mineable</thingClass>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
+		<mineable>true</mineable>
+		<pathCost>42</pathCost>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
+				<potentialDrops>
+					<li>
+						<thingDef>Mashed_Ashlands_ChunkBasalt</thingDef>
+						<amountRange>1</amountRange>
+						<weight>1.5</weight>
+					</li>
+					<li>
+						<thingDef>ChunkGranite</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.5</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_PurpleCrystalShard</thingDef>
+						<amountRange>15~25</amountRange>
+						<weight>0.5</weight>
+					</li>
+					<li>
+						<thingDef>Gold</thingDef>
+						<amountRange>5~15</amountRange>
+						<weight>0.5</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_RawAshFungus</thingDef>
+						<amountRange>15~25</amountRange>
+						<weight>0.3</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_VolcanicEbony</thingDef>
+						<amountRange>10~25</amountRange>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_VolcanicGlass</thingDef>
+						<amountRange>10~25</amountRange>
+						<weight>0.2</weight>
+					</li>
+					<li>
+						<thingDef>Chemfuel</thingDef>
+						<amountRange>10~25</amountRange>
+						<weight>0.1</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_Egg_SiltStriderFertilized</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.01</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_Egg_CliffRacerFertilized</thingDef>
+						<amountRange>3~9</amountRange>
+						<weight>0.01</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.01</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_AlcoholDagothBrandy</thingDef>
+						<amountRange>6</amountRange>
+						<weight>0.01</weight>
+					</li>
+					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
+						<thingDef>MorrowRim_HeartStone</thingDef>
+						<amountRange>1~3</amountRange>
+						<weight>0.1</weight>
+					</li>
+					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
+						<thingDef>MorrowRim_FireSalts</thingDef>
+						<amountRange>15~25</amountRange>
+						<weight>0.05</weight>
+					</li>
+					<li MayRequire="sirmashedpotato.morrowrim.telvannitechnology">
+						<thingDef>MorrowRim_FerrousSalts</thingDef>
+						<amountRange>15~25</amountRange>
+						<weight>0.05</weight>
+					</li>
+				</potentialDrops>
+			</li>
+			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
+				<fleckDef>Owl_SmokeHeavy</fleckDef>
+				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

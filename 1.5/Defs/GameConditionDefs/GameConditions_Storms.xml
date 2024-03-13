@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshStorm]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_AshStorm</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_AshStorm</conditionClass>
+		<label>ash storm</label>
+		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region.</description>
+		<descriptionFuture>an intense ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
+		<endMessage>The winds begin to calm. The ash storm has ended.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
+		<weatherDef>Mashed_Ashlands_VolcanicWind</weatherDef>
+		<exclusiveConditions>
+			<li>Mashed_Ashlands_AshStorm_Blighted</li>
+			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_AshStorm_Blighted]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_AshStorm_Blighted</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_AshStorm</conditionClass>
+		<label>blighted ash storm</label>
+		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm carries blight. Wild animals may be driven mad, and crops may become blighted.</description>
+		<descriptionFuture>an intense blighted ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
+		<endMessage>The winds begin to calm. The blighted ash storm has ended.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
+		<weatherDef>Mashed_Ashlands_VolcanicWindBlight</weatherDef>
+		<exclusiveConditions>
+			<li>Mashed_Ashlands_AshStorm</li>
+			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_AshStorm_Metallic]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_AshStorm_Metallic</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_AshStorm</conditionClass>
+		<label>metallic ash storm</label>
+		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm is full of metallic particles. Friction between them will cause frequent lightning strikes.</description>
+		<descriptionFuture>an intense metallic ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
+		<endMessage>The winds begin to calm. The metallic ash storm has ended.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<preventRain>true</preventRain>
+		<weatherDef>Mashed_Ashlands_VolcanicWindThunder</weatherDef>
+		<exclusiveConditions>
+			<li>Mashed_Ashlands_AshStorm</li>
+			<li>Mashed_Ashlands_AshStorm_Blighted</li>
+			<li>Mashed_Ashlands_VolcanicMiasma</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+</Defs>

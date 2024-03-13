@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_BlightedSludge</defName>
+		<label>blighted sludge</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_BlightedSludgeRamp</texturePath>
+		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>40</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension" MayRequire="regrowth.botr.core">
+				<thoughtAfterBathing>Mashed_Ashlands_BathingBlightedSludge</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
+		<tags>
+			<li>PF_TerrainTag_Mud</li>
+		</tags>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshBlightedBase]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBase" Name="Mashed_Ashlands_AshBlightedBase" Abstract="True">
+		<affordances>
+			<li>Mashed_Ashlands_PackableAshBlighted</li>
+		</affordances>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
+		<defName>Mashed_Ashlands_AshSoilBlighted</defName>
+		<label>blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshSoilBlighted</texturePath>
+		<fertility>0.5</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
+		<defName>Mashed_Ashlands_CrackedAshSoilBlighted</defName>
+		<label>cracked blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_CrackedAshSoilBlighted</texturePath>
+		<fertility>0.1</fertility>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshGravel]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
+		<defName>Mashed_Ashlands_AshGravelBlighted</defName>
+		<label>blighted stony ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshGravelBlighted</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.3</fertility>
+		<tags>
+			<li>PF_TerrainTag_Gravel</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
+		<defName>Mashed_Ashlands_AshSandBlighted</defName>
+		<label>blighted sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshSandBlighted</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.1</fertility>
+		<tags>
+			<li>PF_TerrainTag_Sand</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_PackedAsh]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_PackedAshBase">
+		<defName>Mashed_Ashlands_PackedAshBlighted</defName>
+		<label>packed blighted ash</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_PackedAshBlighted</texturePath>
+		<description>Packed blighted ash, making it comparatively less arduous to trek across.</description>
+		<terrainAffordanceNeeded>Mashed_Ashlands_PackableAshBlighted</terrainAffordanceNeeded>
+		<tags>
+			<li>PF_TerrainTag_Ground</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshMudBlighted]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
+		<defName>Mashed_Ashlands_AshMudBlighted</defName>
+		<label>blighted mud</label>
+		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshMudBlighted</texturePath>
+		<driesTo>Mashed_Ashlands_AshGravel</driesTo>
+		<tags>
+			<li>PF_TerrainTag_Mud</li>
+		</tags>
+	</TerrainDef>
+</Defs>

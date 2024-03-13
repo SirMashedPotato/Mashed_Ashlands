@@ -1,0 +1,172 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedAshPomegranate]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedAshPomegranate</defName>
+		<label>ash pomegranate seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshPomegranate</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_AshPomegranate</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_AshPomegranate</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedAshYam]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedAshYam</defName>
+		<label>ash yam seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshYam</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_AshYam</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_AshYam</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedButtercake]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedButtercake</defName>
+		<label>buttercake spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedButtercake</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Buttercake</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Buttercake</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedComberry]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedComberry</defName>
+		<label>comberry seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedComberry</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Comberry</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Comberry</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedHackleLo]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedHackleLo</defName>
+		<label>hackle-lo seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedHackleLo</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_HackleLo</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_HackleLo</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedMarshmerrow]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedMarshmerrow</defName>
+		<label>marshmerrow seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedMarshmerrow</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Marshmerrow</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Marshmerrow</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedMeadowRye]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedMeadowRye</defName>
+		<label>meadow rye seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedMeadowRye</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_MeadowRye</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_MeadowRye</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedSaltrice]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedSaltrice</defName>
+		<label>saltrice seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedSaltrice</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Saltrice</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Saltrice</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedWickwheat]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedWickwheat</defName>
+		<label>wickwheat seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedWickwheat</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Wickwheat</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Wickwheat</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

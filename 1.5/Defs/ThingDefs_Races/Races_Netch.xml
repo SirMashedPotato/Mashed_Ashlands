@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NetchThingBase]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CnidarianThingBase" Name="Mashed_Ashlands_NetchThingBase" Abstract="True">
+		<statBases>
+			<MoveSpeed>3.0</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<LeatherAmount>40</LeatherAmount>
+		</statBases>
+		<uiIconScale>1</uiIconScale>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>ScratchToxic</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<body>Mashed_Ashlands_CnidarianShellBody</body>
+			<leatherDef>Mashed_Ashlands_NetchLeather</leatherDef>
+			<specificMeatDef>Mashed_Ashlands_NetchJelly</specificMeatDef>
+			<baseBodySize>2.4</baseBodySize>
+			<baseHealthScale>1.75</baseHealthScale>
+			<baseHungerRate>0.35</baseHungerRate>
+			<gestationPeriodDays>7</gestationPeriodDays>
+			<!-- made by Yoann from yoann.babiesanimals -->
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.001,100)</li>
+					<li>(13.5,100)</li>
+					<li>(15,30)</li>
+					<li>(17.5,18)</li>
+					<li>(20,10)</li>
+					<li>(22.5,3)</li>
+					<li>(25,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<wildness>0.60</wildness>
+			<lifeExpectancy>20</lifeExpectancy>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.42</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Netch]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NetchThingBase">
+		<defName>Mashed_Ashlands_Netch</defName>
+		<label>netch</label>
+		<description>Large cnidarians that have adapted to life on land, commonly found in ashland regions. Netch, like their sea dwelling cousins, lack lungs, and instead breathe through the skin of their underbelly. A hard shell and toxic tentacles make then a dangerous foe when enraged. Special 'levitation' sacs, filled with lighter-than-air gas, allow them to float through the air.\n\nGenerally peaceful, netch are often farmed for their leather and jelly. However one must be careful around netch during their breeding season, as betty netch are known to become highly aggressive.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Mashed_Ashlands_NetchJelly</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_Netch" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Netch</defName>
+		<label>netch</label>
+		<labelMale>netch bull</labelMale>
+		<labelFemale>netch betty</labelFemale>
+		<race>Mashed_Ashlands_Netch</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>2~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>netch calf</label>
+				<labelPlural>netch calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchCalf</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchCalf</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBull</texPath>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBetty</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBull</texPath>
+					<drawSize>1.9</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBetty</texPath>
+					<drawSize>1.6</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBull</texPath>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBetty</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBull</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBetty</texPath>
+					<drawSize>2.2</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

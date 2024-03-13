@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Mashed_Ashlands_Scamp]========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/race/lifeStageAges/li/soundWounded</xpath>
+		<value>
+			<soundWounded>MorrowRim_Scamp_Wounded</soundWounded>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/race/lifeStageAges/li/soundDeath</xpath>
+		<value>
+			<soundDeath>MorrowRim_Scamp_Death</soundDeath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/race/lifeStageAges/li/soundCall</xpath>
+		<value>
+			<soundCall>MorrowRim_Scamp_Call</soundCall>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/race/lifeStageAges/li/soundAngry</xpath>
+		<value>
+			<soundAngry>MorrowRim_Scamp_Angry</soundAngry>
+		</value>
+	</Operation>
+</Patch>

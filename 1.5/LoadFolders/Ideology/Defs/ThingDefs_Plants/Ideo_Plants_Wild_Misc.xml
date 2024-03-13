@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeGlowstalk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowstalkBase">
+		<defName>Mashed_Ashlands_Plant_DarkshadeGlowstalk</defName>
+		<label>darkshade glowstalk</label>
+		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While they can very rarely be found growing in caves in ashland regions, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.01</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>12</sowMinSkill>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_DarklightTorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

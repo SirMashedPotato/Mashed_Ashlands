@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Ashfall]==========-->
+	<WeatherDef Name="Mashed_Ashlands_AshfallBase">
+		<defName>Mashed_Ashlands_Ashfall</defName>
+		<label>ash fall</label>
+		<description>A light cloud of ash, either disturbed by wind or volcanic activity, is descending over the area. Ash will harmlessly fall from the sky.</description>
+		<ambientSounds>
+			<li>Ambient_Wind_Clear</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_SnowGentle</li>
+		</overlayClasses>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_FoggyAshfall]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshfallBase">
+		<defName>Mashed_Ashlands_FoggyAshfall</defName>
+		<label>foggy ash fall</label>
+		<windSpeedFactor>0.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<ambientSounds Inherit="False">
+			<li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_DustStorm]==========-->
+	<WeatherDef Name="Mashed_Ashlands_DustStormBase">
+		<defName>Mashed_Ashlands_DustStorm</defName>
+		<label>dust storm</label>
+		<description>Intense winds have picked up copious amounts of loose dust. The accuracy of ranged weapons is reduced, and people are slowed down. But at least everyone can still breathe. </description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>Mashed_Ashlands_OutsideInDustStorm</exposedThought>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>Mashed_Ashlands.WeatherOverlay_AshStormSecondary</li>
+		</overlayClasses>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_DustThunderstorm]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_DustStormBase">
+		<defName>Mashed_Ashlands_DustThunderstorm</defName>
+		<label>dust thunderstorm</label>
+		<description>Intense winds have picked up copious amounts of loose dust. The accuracy of ranged weapons is reduced, and people are slowed down. Friction between dust particles causes occasional lightning strikes.</description>
+		<isBad>false</isBad>
+		<favorability>VeryBad</favorability>
+		<eventMakers>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+		</eventMakers>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricRain]==========-->
+	<WeatherDef Name="Mashed_Ashlands_SulphuricRainBase">
+		<defName>Mashed_Ashlands_SulphuricRain</defName>
+		<label>sulphuric rain</label>
+		<description>Rain rich in sulphur dioxide reduces the accuracy of ranged weapons, extinguishes fire, slows people down, and is generally unpleasant to be outside during.</description>
+		<temperatureRange>0~100</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<accuracyMultiplier>0.8</accuracyMultiplier>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>Mashed_Ashlands_OutsideInSulphurRain</exposedThought>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 3.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_FoggySulphuricRain]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_SulphuricRainBase">
+		<defName>Mashed_Ashlands_FoggySulphuricRain</defName>
+		<label>foggy sulphuric rain</label>
+		<windSpeedFactor>0.5</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+	</WeatherDef>
+</Defs>

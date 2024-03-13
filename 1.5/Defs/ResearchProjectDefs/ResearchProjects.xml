@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Beginner]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSowing_Beginner</defName>
+		<label>beginner ashland farming</label>
+		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.\n\nThese plants can be grown at the ash growing zone.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<tags>
+			<li>Mashed_Ashlands_AshlandBasic</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Industrial</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Industrial</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Intermediate]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSowing_Intermediate</defName>
+		<label>intermediate ashland farming</label>
+		<description>Learn how to sow even more of the plants native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Beginner</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Advanced]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSowing_Advanced</defName>
+		<label>advanced ashland farming</label>
+		<description>Learn how to sow the rest of the plants native to the ashlands.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Beginner]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSurvival_Beginner</defName>
+		<label>beginner ashland survival</label>
+		<description>Learn how to craft useful products from materials native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<tags>
+			<li>Mashed_Ashlands_AshlandBasic</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_AshlanderStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerAshlanderStart_Industrial</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Tribal</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Medieval</li>
+			<li MayRequire="SirMashedPotato.ESCP.Dunmer">ESCP_DunmerStart_Industrial</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Intermediate]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSurvival_Intermediate</defName>
+		<label>intermediate ashland survival</label>
+		<description>Learn how to refine useful products from materials native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Advanced]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSurvival_Advanced</defName>
+		<label>advanced ashland survival</label>
+		<description>Learn how to more efficiently refine useful products from materials native to the ashlands.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Fetcherfly]==========-->
+	<ResearchProjectDef>
+		<defName>Mashed_Ashlands_AshSurvival_Fetcherfly</defName>
+		<label>advanced fetcherfly studies</label>
+		<description>Learn how to build your own fetcherfly hives, using a fetcherfly hive core.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>

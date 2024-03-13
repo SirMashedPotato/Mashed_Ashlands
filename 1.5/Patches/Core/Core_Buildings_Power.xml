@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="WindTurbine"]</xpath>
+		<value>
+			<li Class="Mashed_Ashlands.AshResistanceProperties">
+				<buildingTakesDamage>true</buildingTakesDamage>
+				<avgDamageTaken>3</avgDamageTaken>
+				<chanceDamaged>0.5</chanceDamaged>
+			</li>
+		</value>
+	</Operation>
+</Patch>
