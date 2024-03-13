@@ -16,5 +16,8 @@
 				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
 			</li>
 		</modExtensions>
+		<tags>
+			<li>PF_TerrainTag_Mud</li>
+		</tags>
 	</TerrainDef>
 </Defs>

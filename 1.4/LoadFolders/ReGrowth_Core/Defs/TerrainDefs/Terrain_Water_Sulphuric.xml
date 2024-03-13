@@ -10,6 +10,9 @@
 		<pathCost>30</pathCost>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
+		<tags>
+			<li>PF_TerrainTag_WaterShallow</li>
+		</tags>
 		<!-- VE/ReGrowth nodes -->
 		<tickerType>Rare</tickerType>
 		<terrainComps>
@@ -40,6 +43,9 @@
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRamp</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRampPolluted</pollutedTexturePath>
 		<renderPrecedence>397</renderPrecedence>
+		<tags>
+			<li>PF_TerrainTag_WaterDeep</li>
+		</tags>
 		<!-- VE/ReGrowth nodes -->
 		<tickerType>Rare</tickerType>
 		<terrainComps>

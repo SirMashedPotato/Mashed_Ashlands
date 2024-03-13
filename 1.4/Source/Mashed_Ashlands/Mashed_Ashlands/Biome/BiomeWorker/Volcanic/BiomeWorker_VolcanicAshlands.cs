@@ -14,7 +14,7 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            return BaseBiomeWorker(tileID, WorldObjectDefOf.Mashed_Ashlands_VolcanoActive);
+            return BaseBiomeWorker(tileID, WorldObjectDefOf.Mashed_Ashlands_VolcanoActive, 347607712);
         }
     }
 }

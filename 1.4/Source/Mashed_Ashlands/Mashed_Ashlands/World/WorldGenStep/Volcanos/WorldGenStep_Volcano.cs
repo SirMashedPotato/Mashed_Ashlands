@@ -89,17 +89,14 @@ namespace Mashed_Ashlands
                                 {
                                     return;
                                 }
-                                if (dist < coastalVolcanoDistance)
+                                if (Rand.RangeInclusive(3, 6) - dist >= 1)
                                 {
-                                    if (Rand.RangeInclusive(3,6) - dist >= 1)
+                                    Tile neighbourTile = Find.WorldGrid.tiles[tile];
+                                    if (neighbourTile.biome == RimWorld.BiomeDefOf.Ocean)
                                     {
-                                        Tile neighbourTile = Find.WorldGrid.tiles[tile];
-                                        if (neighbourTile.biome == RimWorld.BiomeDefOf.Ocean)
-                                        {
-                                            grid[i].biome = RimWorld.BiomeDefOf.TemperateForest;
-                                            neighbourTile.elevation = grid[i].elevation - (dist * 10);
-                                            neighbourTile.hilliness = Rand.RangeInclusive(1, 3) - dist >= 0 ? Hilliness.Mountainous : Rand.RangeInclusive(3, 6) - dist >= 1 ? Hilliness.LargeHills : Rand.RangeInclusive(3, 9) - dist >= 1 ? Hilliness.SmallHills : Hilliness.Flat;
-                                        }
+                                        neighbourTile.biome = RimWorld.BiomeDefOf.TemperateForest;
+                                        neighbourTile.elevation = grid[i].elevation - (dist * 10);
+                                        neighbourTile.hilliness = Rand.RangeInclusive(1, 3) - dist >= 0 ? Hilliness.Mountainous : Rand.RangeInclusive(3, 6) - dist >= 1 ? Hilliness.LargeHills : Rand.RangeInclusive(3, 9) - dist >= 1 ? Hilliness.SmallHills : Hilliness.Flat;
                                     }
                                 }
                             });

@@ -17,7 +17,9 @@ nix-steed
 ornada
 plain strider
 pony guar
+rotumbo
 sandcrab
+scamp
 scuttler
 shalk
 silt strider
@@ -27,3 +29,4 @@ swamp strider
 thunderbug
 velk
 vvardvark
+wormmouth

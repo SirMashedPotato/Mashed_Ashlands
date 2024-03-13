@@ -21,7 +21,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Base type biomes
         /// </summary>
-        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef)
+        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef, int perlinSeed)
         {
             int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
             if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
@@ -33,12 +33,23 @@ namespace Mashed_Ashlands
                 }
             }
 
+            if (!Mashed_Ashlands_ModSettings.EnableLegacyRegions)
+            {
+                maxDistance = (int)(maxDistance * 1.5f);
+            }
+
             float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestWorldObject(tileID, requiredVolcanoDef);
             if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
             {
                 return 0;
             }
 
+            if (!Mashed_Ashlands_ModSettings.EnableLegacyRegions)
+            {
+                Perlin perlin = new Perlin(0.1, 2, 0.5, 6, perlinSeed.GetHashCode(), QualityMode.Medium);
+                float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+                return (Rand.Range(8, 10) + (perlinValue * 6)) * maxDistance / distanceToClosestVolcano;
+            }
             return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
         }
 

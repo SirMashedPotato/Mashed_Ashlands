@@ -270,6 +270,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableLegacyRegions".Translate(), ref settings.Mashed_Ashlands_EnableLegacyRegions, "Mashed_Ashlands_EnableLegacyRegions_Tooltip".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoScaleWithWorldSize".Translate(), ref settings.Mashed_Ashlands_VolcanoScaleWithWorldSize, "Mashed_Ashlands_VolcanoScaleWithWorldSize_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -281,7 +284,7 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.Label("Mashed_Ashlands_BiomesMaxDistance".Translate(settings.Mashed_Ashlands_BiomesMaxDistance));
-            settings.Mashed_Ashlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_BiomesMaxDistance, 1, 200);
+            settings.Mashed_Ashlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_BiomesMaxDistance, 10, 200);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
