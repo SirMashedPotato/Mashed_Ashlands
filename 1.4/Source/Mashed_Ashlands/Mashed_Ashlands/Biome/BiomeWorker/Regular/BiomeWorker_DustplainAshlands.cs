@@ -4,9 +4,9 @@ namespace Mashed_Ashlands
 {
     public class BiomeWorker_DustplainAshlands : AshlandBiomeWorker
     {
-        public override float GetScore_Main(Tile tile, int tileID)
+        public override float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject = null)
         {
-            if (!Mashed_Ashlands_ModSettings.EnableDustplainAshlands)    //TODO
+            if (!Mashed_Ashlands_ModSettings.EnableDustplainAshlands)
             {
                 return -100f;
             }

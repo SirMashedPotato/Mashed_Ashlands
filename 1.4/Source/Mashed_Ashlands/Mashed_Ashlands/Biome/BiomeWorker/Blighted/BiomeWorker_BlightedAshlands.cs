@@ -4,7 +4,7 @@ namespace Mashed_Ashlands
 {
     public class BiomeWorker_BlightedAshlands : AshlandBiomeWorker
     {
-        public override float GetScore_Main(Tile tile, int tileID)
+        public override float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject)
         {
             if (!Mashed_Ashlands_ModSettings.EnableBlightedAshlands)
             {
@@ -14,7 +14,11 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            return BaseBiomeWorker(tileID, WorldObjectDefOf.Mashed_Ashlands_VolcanoBlighted, 989173073);
+            if (sourceObject.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoBlighted)
+            {
+                return -100f;
+            }
+            return BaseBiomeWorker(tileID, sourceObject, BiomeDefOf.Mashed_Ashlands_BlightedAshlands);
         }
     }
 }

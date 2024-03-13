@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
 {
     public abstract class WorldGenStep_AshlandBiomes : WorldGenStep
     {
-        public BiomeDef AshlandBiomeFrom(Tile tile, int tileID, HashSet<BiomeDef> biomeDefs)
+        public BiomeDef AshlandBiomeFrom(Tile tile, int tileID, HashSet<BiomeDef> biomeDefs, WorldObject sourceObject = null)
         {
             BiomeDef biomeDef = null;
             float num = 0f;
@@ -16,7 +16,7 @@ namespace Mashed_Ashlands
                 if (biomeDef2.implemented && biomeDef2.Worker is AshlandBiomeWorker)
                 {
                     AshlandBiomeWorker biomeWorker = biomeDef2.Worker as AshlandBiomeWorker;
-                    float score = biomeWorker.GetScore_Main(tile, tileID);
+                    float score = biomeWorker.GetScore_Main(tile, tileID, sourceObject);
                     if (score > num || biomeDef == null)
                     {
                         biomeDef = biomeDef2;

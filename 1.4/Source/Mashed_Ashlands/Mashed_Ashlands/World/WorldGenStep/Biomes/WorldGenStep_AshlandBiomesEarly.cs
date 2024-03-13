@@ -1,5 +1,6 @@
 ﻿using Verse;
 using RimWorld.Planet;
+using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
@@ -10,12 +11,20 @@ namespace Mashed_Ashlands
         public override void GenerateFresh(string seed)
         {
             WorldGrid grid = Find.WorldGrid;
-            for (int i = 0; i < grid.TilesCount; i++)
+            List<WorldObject> worldVolcanos = WorldGenUtility.GetWorldVolcanos();
+            foreach (WorldObject volcano in worldVolcanos)
             {
-                if (PreventAshlandOverride.Get(grid[i].biome) == null)
+                Find.WorldFloodFiller.FloodFill(volcano.Tile, (int tile) => true, delegate (int index, int dist)
                 {
-                    grid[i].biome = AshlandBiomeFrom(grid[i], i, OnStartupUtility.earlyAshlandBiomeDefs);
+                    Tile tile = Find.WorldGrid.tiles[index];
+                    if (PreventAshlandOverride.Get(tile.biome) != null)
+                    {
+                        return;
+                    }
+                    tile.biome = AshlandBiomeFrom(tile, index, OnStartupUtility.earlyAshlandBiomeDefs, volcano);
                 }
+                , Find.WorldGrid.TilesNumWithinTraversalDistance(WorldGenUtility.BiomeMaxDistanceForWorld() + 1)
+                );
             }
         }
     }

@@ -16,41 +16,53 @@ namespace Mashed_Ashlands
             return -100;
         }
 
-        public abstract float GetScore_Main(Tile tile, int tileID);
+        public abstract float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject = null);
 
         /// <summary>
         /// Used for all Base type biomes
         /// </summary>
-        public float BaseBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef, int perlinSeed)
+        public float BaseBiomeWorker(int tileID, WorldObject sourceObject, BiomeDef biomeDef)
         {
-            int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
-            if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
-            {
-                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 2) + 0.4f));
-                if (maxDistance < 10)
-                {
-                    maxDistance = 10;
-                }
-            }
-
-            if (!Mashed_Ashlands_ModSettings.EnableLegacyRegions)
-            {
-                maxDistance = (int)(maxDistance * 1.5f);
-            }
-
-            float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestWorldObject(tileID, requiredVolcanoDef);
-            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
+            int maxDistance = WorldGenUtility.BiomeMaxDistanceForWorld();
+            float distanceToSourceObject = WorldGenUtility.DistanceToWorldObject(tileID, sourceObject.Tile);
+            if (distanceToSourceObject > maxDistance)
             {
                 return 0;
             }
 
             if (!Mashed_Ashlands_ModSettings.EnableLegacyRegions)
             {
-                Perlin perlin = new Perlin(0.1, 2, 0.5, 6, perlinSeed.GetHashCode(), QualityMode.Medium);
+                Perlin perlin = new Perlin(0.1, 2, 0.5, 6, 793900035, QualityMode.Medium);
                 float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
-                return (Rand.Range(8, 10) + (perlinValue * 6)) * maxDistance / distanceToClosestVolcano;
+                int extra = 0;
+
+                if (distanceToSourceObject > maxDistance / 2)
+                {
+                    List<int> neighbourTiles = new List<int>();
+                    Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
+                    foreach (int neighbourID in neighbourTiles)
+                    {
+                        Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
+                        if (neighbourTile != null && neighbourTile.biome == biomeDef)
+                        {
+                            extra++;
+                        }
+                    }
+                    if (distanceToSourceObject >= maxDistance - 1)
+                    {
+                        extra -= Rand.RangeInclusive(0, 3);
+                    }
+                }
+                else
+                {
+                    extra = 6;
+                }
+
+                return (extra - Rand.RangeInclusive(0, 3) + (perlinValue + 1) * 7) * maxDistance / distanceToSourceObject;
+
+                //return (Rand.Range(8, 10) + (perlinValue + 1) * 6) * maxDistance / distanceToSourceObject;
             }
-            return Rand.Range(8, 16) * maxDistance / distanceToClosestVolcano;
+            return Rand.Range(8, 16) * maxDistance / distanceToSourceObject;
         }
 
         /// <summary>
