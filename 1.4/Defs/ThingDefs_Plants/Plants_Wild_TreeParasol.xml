@@ -149,7 +149,7 @@
 		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<secondaryDrop>Mashed_Ashlands_MouldLeather</secondaryDrop>
+				<secondaryDrop>Mashed_Ashlands_FungalLeather</secondaryDrop>
 				<secondaryDropAmountRange>5~10</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
