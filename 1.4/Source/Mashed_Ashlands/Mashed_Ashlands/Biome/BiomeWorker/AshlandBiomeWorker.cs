@@ -48,9 +48,9 @@ namespace Mashed_Ashlands
                             extra++;
                         }
                     }
-                    if (distanceToSourceObject >= maxDistance - 1)
+                    if (distanceToSourceObject >= maxDistance - 2)
                     {
-                        extra -= Rand.RangeInclusive(0, 3);
+                        extra -= Rand.RangeInclusive(3, 6);
                     }
                 }
                 else
@@ -58,9 +58,7 @@ namespace Mashed_Ashlands
                     extra = 6;
                 }
 
-                return (extra - Rand.RangeInclusive(0, 3) + (perlinValue + 1) * 7) * maxDistance / distanceToSourceObject;
-
-                //return (Rand.Range(8, 10) + (perlinValue + 1) * 6) * maxDistance / distanceToSourceObject;
+                return (((extra - Rand.RangeInclusive(0, 3) + (perlinValue + 1) * 7) * maxDistance) + maxDistance) / distanceToSourceObject;
             }
             return Rand.Range(8, 16) * maxDistance / distanceToSourceObject;
         }
