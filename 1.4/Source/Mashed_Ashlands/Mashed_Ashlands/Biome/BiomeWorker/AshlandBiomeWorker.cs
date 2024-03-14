@@ -50,7 +50,6 @@ namespace Mashed_Ashlands
                     }
                     if (distanceToSourceObject >= maxDistance - 2)
                     {
-                        Log.Message("yo" + extra);
                         extra -= Rand.RangeInclusive(3, 6);
                     }
                 }
