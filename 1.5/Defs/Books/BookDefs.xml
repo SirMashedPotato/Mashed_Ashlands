@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>Mashed_Ashlands_AshlandJournal</defName>
+		<label>ashland journal</label>
+		<description>A weathered book that seems to detail someones research on the ashlands. It's seen better days, but reading it should be able to help unlock new technologies.</description>
+		<graphicData>
+			<texPath>Things/Item/Book/Schematic/Schematic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<thingSetMakerTags inherit="False"/>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Mashed_Ashlands_Namer_AshlandJournal</nameMaker>
+				<descriptionMaker>Mashed_Ashlands_Description_AshlandJournal</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="BookOutcomeProperties_GainResearch">
+						<tab>Mashed_ResearchTab_ElderScrolls</tab>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -66,6 +66,47 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_DeadExplorer]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_DeadExplorer</defName>
+		<order>510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterBiomeSpecific">
+			<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<allowFoggedPositions>false</allowFoggedPositions>
+			<allowRoofed>false</allowRoofed>
+			<count>1</count>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>3</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<allowedBiomes>
+				<li>Mashed_Ashlands_BlightedAshlands</li>
+				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+				<li>Mashed_Ashlands_Ashlands</li>
+				<li>Mashed_Ashlands_DustplainAshlands</li>
+				<li>Mashed_Ashlands_GrazelandAshlands</li>
+				<li>Mashed_Ashlands_SwampAshlands</li>
+				<li>Mashed_Ashlands_ForestAshlands</li>
+				<li>Mashed_Ashlands_MarshAshlands</li>
+				<li>Mashed_Ashlands_MeadowAshlands</li>
+				<li>Mashed_Ashlands_VolcanicAshlands</li>
+				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+				<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+			</allowedBiomes>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>3</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_ColumnarBasalt]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_ColumnarBasalt</defName>

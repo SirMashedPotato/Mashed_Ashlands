@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>Mashed_Ashlands_Description_AshlandJournal</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesFiles>
+				<li>AshlandAnimal ->Mashed_Ashlands_MiscStrings/Mashed_Ashlands_Animals</li>
+				<li>AshlandAnimalBadass ->Mashed_Ashlands_MiscStrings/Mashed_Ashlands_AnimalsBadass</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>subject->[subject_primary]</li>
+				<li>desc(p=3)->[maybe_intro][schematic_desc].</li>
+				<li>desc(p=3)->[maybe_intro][schematic_desc].\n\n</li>
+				<!-- maybes -->
+				<li>maybe_intro-></li>
+				<li>maybe_intro(p=3)->[subject_intro]. </li>
+				<!-- subject intro -->
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story]</li>
+				<li>subject_intro->the journal [shows_synonym_verb]s several [notes_synonym] about [subject_primary_story] and [subject_secondary_story]</li>
+				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] about [subject_primary_story]</li>
+				<li>subject_intro->in this journal, the [author] [shows_synonym_verb]s [ANYPAWN_possessive] [theory_synonym_adj] of how [subject_primary_story] relates to [subject_secondary_story]</li>
+				<!--schematic description-->
+				<!-- negative quality description first half -->
+				<li>schematic_desc->[schematic_desc_first][schematic_desc_second]</li>
+				<!-- description about what the schematic is lacking, singular -->
+				<!-- includes subject gerunds. -->
+				<li>schematic_desc_first->this journal is filled with more ash than paper</li>
+				<li>schematic_desc_first->the notes appear to be hastily written, and are barely legible</li>
+				<li>schematic_desc_first->this journal is missing several pages</li>
+				<li>schematic_desc_first->the author appeared to be on the brink of insanity, as the notes quickly devolve into incomprehensible rambling</li>
+				<li>schematic_desc_first->half the pages are filled with the author [tells_verb] their love of [AshlandAnimal]</li>
+				<li>schematic_desc_first->there's some good information, at least until the author begins [tells_verb] their encounter with a maddened [AshlandAnimalBadass]</li>
+				<li>schematic_desc_first->there's several well made notes and observations, but then the author begins [tells_verb] their intense hatred of [AshlandAnimal]</li>
+				<li>schematic_desc_first->most of the pages appear to be covered in dried blood</li>
+				<!-- quality-dependent qualifier to the first half -->
+				<li>schematic_desc_second(quality[less_than]2)->, making it valueless for most purposes</li>
+				<li>schematic_desc_second(quality[less_than]2)->. Misleading notes can be worse than having no notes at all</li>
+				<li>schematic_desc_second(quality[less_than]2)->, rendering it of questionable utility</li>
+				<li>schematic_desc_second(quality[less_than]2)->, making one question whether it's worthwhile learning any lessons from a journal you pried from the hands of a skeleton</li>
+				<!-- -->
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, but the basics are present</li>
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. However, this doesn't detract from its utility to even the most experienced on this subject</li>
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, though it still has some value to most</li>
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Beginners will still benefit from its teachings</li>
+				<li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. However, only experts will notice the flaws</li>
+				<!-- -->
+				<li>schematic_desc_second(quality[greater_than]4)->. Yet, the knowledge is exceptional given the condition of the journal</li>
+				<li>schematic_desc_second(quality[greater_than]4)->, but it is still full of wisdom for all learners</li>
+				<li>schematic_desc_second(quality[greater_than]4)->. Despite this, every explorer will benefit from reading it, no matter how experienced</li>
+				<li>schematic_desc_second(quality[greater_than]4)->, but the issues are minor compared to the wealth of knowledge it contains</li>
+				<!-- tells verbs -->
+				<li>tells_verb->rambling about</li>
+				<li>tells_verb->ranting about</li>
+				<li>tells_verb->detailing</li>
+				<li>tells_verb->writing about</li>
+				<li>tells_verb->recounting</li>
+				<!-- shows verbs -->
+				<li>shows_synonym_verb->contain</li>
+				<li>shows_synonym_verb->depict</li>
+				<li>shows_synonym_verb->portray</li>
+				<li>shows_synonym_verb->present</li>
+				<li>shows_synonym_verb->exhibit</li>
+				<li>shows_synonym_verb->display</li>
+				<li>shows_synonym_verb->show</li>
+				<li>shows_synonym_verb->outline</li>
+				<!-- Notes -->
+				<li>notes_synonym->notes</li>
+				<li>notes_synonym->details</li>
+				<li>notes_synonym->descriptions</li>
+				<li>notes_synonym->scribbles</li>
+				<li>notes_synonym->drawings</li>
+				<li>notes_synonym->diagrams</li>
+				<!-- Theory -->
+				<li>theory_synonym_adj->theory</li>
+				<li>theory_synonym_adj->concept</li>
+				<li>theory_synonym_adj->notion</li>
+				<li>theory_synonym_adj->hypothesis</li>
+				<li>theory_synonym_adj->idea</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
