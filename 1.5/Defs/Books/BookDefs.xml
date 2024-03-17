@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandJournal]==========-->
 	<ThingDef ParentName="BookBase">
 		<defName>Mashed_Ashlands_AshlandJournal</defName>
 		<label>ashland journal</label>

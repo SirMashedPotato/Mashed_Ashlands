@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Ashlands
 {
@@ -14,15 +15,31 @@ namespace Mashed_Ashlands
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
+            if (!Props.guaranteedDrops.NullOrEmpty())
+            {
+                foreach(PotentialDrops drop in Props.guaranteedDrops)
+                {
+                    DoDrop(drop, previousMap);
+                }
+            }
             if (!Props.potentialDrops.NullOrEmpty())
             {
                 PotentialDrops drop = Props.potentialDrops.RandomElementByWeight(x => x.weight);
-                Thing droppedThing = ThingMaker.MakeThing(drop.thingDef);
-                droppedThing.stackCount = drop.amountRange.RandomInRange;
-                GenPlace.TryPlaceThing(droppedThing, parent.Position, previousMap, ThingPlaceMode.Direct);
+                if (drop.thingDef != null)
+                {
+                    DoDrop(drop, previousMap);
+                }
             }
 
             base.PostDestroy(mode, previousMap);
+        }
+
+        private void DoDrop(PotentialDrops drop, Map previousMap)
+        {
+            Thing droppedThing = ThingMaker.MakeThing(drop.thingDef);
+            droppedThing.stackCount = drop.amountRange.RandomInRange;
+            droppedThing.TryGetComp<CompQuality>()?.SetQuality(QualityUtility.GenerateQualityRandomEqualChance(), ArtGenerationContext.Colony);
+            GenPlace.TryPlaceThing(droppedThing, parent.Position, previousMap, ThingPlaceMode.Near);
         }
     }
 }

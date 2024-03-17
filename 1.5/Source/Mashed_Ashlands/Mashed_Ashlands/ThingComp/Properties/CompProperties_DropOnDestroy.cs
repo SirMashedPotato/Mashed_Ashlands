@@ -9,14 +9,14 @@ namespace Mashed_Ashlands
 		{
 			compClass = typeof(Comp_DropOnDestroy);
 		}
-
-		public List<PotentialDrops> potentialDrops;
+        public List<PotentialDrops> guaranteedDrops;
+        public List<PotentialDrops> potentialDrops;
 	}
 
 	public class PotentialDrops
     {
 		public ThingDef thingDef;
 		public IntRange amountRange;
-		public float weight;
+		public float weight = 1;
 	}
 }

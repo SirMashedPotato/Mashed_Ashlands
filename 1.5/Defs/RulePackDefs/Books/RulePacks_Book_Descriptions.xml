@@ -35,6 +35,7 @@
 				<li>schematic_desc_first->there's some good information, at least until the author begins [tells_verb] their encounter with a maddened [AshlandAnimalBadass]</li>
 				<li>schematic_desc_first->there's several well made notes and observations, but then the author begins [tells_verb] their intense hatred of [AshlandAnimal]</li>
 				<li>schematic_desc_first->most of the pages appear to be covered in dried blood</li>
+				<li>schematic_desc_first->the journal reeks of sujamma, and several of the pages are covered in stains</li>
 				<!-- quality-dependent qualifier to the first half -->
 				<li>schematic_desc_second(quality[less_than]2)->, making it valueless for most purposes</li>
 				<li>schematic_desc_second(quality[less_than]2)->. Misleading notes can be worse than having no notes at all</li>
