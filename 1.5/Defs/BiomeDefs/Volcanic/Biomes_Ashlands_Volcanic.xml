@@ -32,12 +32,12 @@
 				</roadReplacers>
 				<dryToReplacers>
 					<li>
-						<originalTerrain>WaterShallow</originalTerrain>
+						<originalTerrain>Gravel</originalTerrain>
 						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
 					</li>
 					<li>
-						<originalTerrain>WaterOceanShallow</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
+						<originalTerrain>Soil</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSoilVolcanic</replacedTerrain>
 					</li>
 				</dryToReplacers>
 				<useAshlandCavePlants>true</useAshlandCavePlants>

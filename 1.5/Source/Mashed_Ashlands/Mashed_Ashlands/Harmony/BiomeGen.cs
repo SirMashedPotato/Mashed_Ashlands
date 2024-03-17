@@ -23,6 +23,7 @@ namespace Mashed_Ashlands
                     if (replacer.originalTerrain == terrainDef.driesTo)
                     {
                         __result = replacer.replacedTerrain;
+                        return;
                     }
                 }
             }
@@ -89,6 +90,7 @@ namespace Mashed_Ashlands
                     if (replacer.originalTerrain == position.GetTerrain(map))
                     {
                         map.terrainGrid.SetTerrain(position, replacer.replacedTerrain);
+                        return;
                     }
                 }
             }
