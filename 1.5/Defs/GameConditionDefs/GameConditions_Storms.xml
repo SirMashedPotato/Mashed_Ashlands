@@ -11,6 +11,8 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<weatherDef>Mashed_Ashlands_VolcanicWind</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm_Blighted</li>
@@ -29,6 +31,8 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<weatherDef>Mashed_Ashlands_VolcanicWindBlight</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
@@ -47,6 +51,8 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<allowUnderground>false</allowUnderground>
+		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<weatherDef>Mashed_Ashlands_VolcanicWindThunder</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>

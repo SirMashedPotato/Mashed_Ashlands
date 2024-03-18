@@ -9,6 +9,7 @@
 		<endMessage>The ash clouds disperse.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>false</canBePermanent>
+		<allowUnderground>false</allowUnderground>
 		<exclusiveConditions>
 			<li>VolcanicWinter</li>
 		</exclusiveConditions>

@@ -24,6 +24,7 @@
 			<li Class="CompProperties_Usable">
 				<useJob>UseArtifact</useJob>
 				<useLabel>Read {0}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
 			</li>
 			<li Class="Mashed_Ashlands_ExplorationMode.CompProperties_UseEffectVolcanoMap">
 				<size>7</size>

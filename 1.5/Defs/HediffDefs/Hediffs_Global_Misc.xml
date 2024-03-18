@@ -8,6 +8,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
 		<lethalSeverity>1</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<taleOnVisible>Mashed_Ashlands_AshBuildupRevealed</taleOnVisible>
@@ -15,6 +16,9 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<compClass>Mashed_Ashlands.HediffComp_ImmunizableAsh</compClass>
 				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+			</li>
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} is showing early signs of ash buildup. Keep {PAWN_objective} inside during ash storms.</surgicalDetectionDesc>
 			</li>
 		</comps>
 		<stages>
@@ -131,7 +135,7 @@
 		<maxSeverity>1</maxSeverity>
 		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
 		<comps>
-			 <li Class="HediffCompProperties_KillAfterDays">
+			<li Class="HediffCompProperties_KillAfterDays">
 				<days>30</days>
 			</li>
 			<li Class="HediffCompProperties_CauseMentalState">
@@ -145,14 +149,14 @@
 			<li>
 				<painFactor>0</painFactor>
 				<capMods>
-				  <li>
-					<capacity>Moving</capacity>
-					<offset>0.2</offset>
-				  </li>
-				  <li>
-					<capacity>Manipulation</capacity>
-					<offset>0.2</offset>
-				  </li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
 				</capMods>
 			</li>
 		</stages>

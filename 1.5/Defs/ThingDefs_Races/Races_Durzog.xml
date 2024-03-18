@@ -62,6 +62,7 @@
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<nuzzleMtbHours>100</nuzzleMtbHours>
 			<petness>0.2</petness>
+			<soundEating>PredatorLarge_Eat</soundEating>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

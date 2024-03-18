@@ -51,12 +51,13 @@
 		<defName>Mashed_Ashlands_SmoothedBasalt</defName>
 		<label>smoothed basalt</label>
 		<description>A very hard igneous rock formed from rapidly cooling lava. The smoothed surface is reminiscent of a calm lake under the night sky.</description>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
 		<graphicData>
 			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>1</Beauty>
-			<MarketValue>20</MarketValue>
+			<MarketValue>7</MarketValue>
 		</statBases>
 		<building>
 			<isNaturalRock>false</isNaturalRock>

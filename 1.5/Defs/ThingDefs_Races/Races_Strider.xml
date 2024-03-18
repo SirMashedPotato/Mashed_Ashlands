@@ -16,6 +16,7 @@
 		<tools>
 			<li>
 				<label>left scythed arm</label>
+				<labelNoLocation>scythed arm</labelNoLocation>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -26,6 +27,7 @@
 			</li>
 			<li>
 				<label>right scythed arm</label>
+				<labelNoLocation>scythed arm</labelNoLocation>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
@@ -36,6 +38,7 @@
 			</li>
 			<li>
 				<label>front left leg</label>
+				<labelNoLocation>leg</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 					<li>Stab</li>
@@ -46,6 +49,7 @@
 			</li>
 			<li>
 				<label>front right leg</label>
+				<labelNoLocation>leg</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 					<li>Stab</li>
@@ -95,6 +99,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
 		</race>
 		<tradeTags>
 			<li>AnimalExotic</li>

@@ -15,7 +15,6 @@
 		<rotatable>false</rotatable>
 		<size>(1,1)</size>
 		<fillPercent>0.5</fillPercent>
-		<blockPlants>true</blockPlants>
 		<filthLeaving>Mashed_Ashlands_Filth_Ash</filthLeaving>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -182,7 +181,7 @@
 		<mineable>true</mineable>
 		<size>(2,3)</size>
 		<fillPercent>0.5</fillPercent>
-		<blockPlants>true</blockPlants>
+		<wipesPlants>true</wipesPlants>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
 			<Flammability>0</Flammability>

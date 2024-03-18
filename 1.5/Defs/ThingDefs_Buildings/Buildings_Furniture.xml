@@ -40,6 +40,10 @@
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Refuelable">

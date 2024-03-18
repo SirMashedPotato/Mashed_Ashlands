@@ -14,6 +14,7 @@
 		<tools>
 			<li>
 				<label>left pedipalp</label>
+				<labelNoLocation>pedipalp</labelNoLocation>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -24,6 +25,7 @@
 			</li>
 			<li>
 				<label>right pedipalp</label>
+				<labelNoLocation>pedipalp</labelNoLocation>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -59,6 +61,7 @@
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<roamMtbDays>2</roamMtbDays>
+			<soundEating>PredatorSmall_Eat</soundEating>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

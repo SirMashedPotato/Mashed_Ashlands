@@ -12,6 +12,7 @@
 		<label>ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshSoil</texturePath>
 		<fertility>1.2</fertility>
+		<categoryType>Soil</categoryType>
 		<tags>
 			<li>PF_TerrainTag_Ground</li>
 		</tags>
@@ -22,6 +23,7 @@
 		<label>moss-covered ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_MossyAshSoil</texturePath>
 		<fertility>1.2</fertility>
+		<categoryType>Soil</categoryType>
 		<tags>
 			<li>PF_TerrainTag_Ground</li>
 		</tags>
@@ -32,6 +34,7 @@
 		<label>depleted ash soil</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_GrazelandSoil</texturePath>
 		<fertility>1</fertility>
+		<categoryType>Soil</categoryType>
 		<tags>
 			<li>PF_TerrainTag_Ground</li>
 		</tags>
@@ -42,6 +45,7 @@
 		<label>rich ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_RichAshSoil</texturePath>
 		<fertility>1.5</fertility>
+		<categoryType>Soil</categoryType>
 		<tags>
 			<li>PF_TerrainTag_Ground</li>
 		</tags>
@@ -74,6 +78,7 @@
 		<label>dusty ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshDust</texturePath>
 		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
 		<fertility>0.6</fertility>
 		<tags>
 			<li>PF_TerrainTag_Sand</li>
@@ -85,6 +90,7 @@
 		<label>sandy ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshSand</texturePath>
 		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
 		<fertility>0.4</fertility>
 		<tags>
 			<li>PF_TerrainTag_Sand</li>
@@ -96,6 +102,7 @@
 		<label>rich sandy ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_RichAshSand</texturePath>
 		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
 		<fertility>0.7</fertility>
 		<tags>
 			<li>PF_TerrainTag_Sand</li>

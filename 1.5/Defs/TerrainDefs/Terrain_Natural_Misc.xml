@@ -17,6 +17,7 @@
 			<Cleanliness>-2</Cleanliness>
 		</statBases>
 		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
 		<affordances>
 			<li>Light</li>
 			<li>Medium</li>

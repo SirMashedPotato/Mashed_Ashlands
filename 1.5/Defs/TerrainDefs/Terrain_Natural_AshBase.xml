@@ -45,6 +45,7 @@
 	<TerrainDef ParentName="TerrainRoadBase" Name="Mashed_Ashlands_PackedAshBase" Abstract="True">
 		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
 		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
 		<renderPrecedence>360</renderPrecedence>
 		<layerable>true</layerable>
 		<designationCategory>Floors</designationCategory>
@@ -81,6 +82,7 @@
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
 		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
 		<renderPrecedence>330</renderPrecedence>
 		<pathCost>14</pathCost>
 		<statBases>

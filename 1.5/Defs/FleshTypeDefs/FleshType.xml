@@ -4,6 +4,7 @@
 	<FleshTypeDef>
 		<defName>Mashed_Ashlands_FleshNetch</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<isOrganic>true</isOrganic>
 		<genericWounds>
 			<li>
 				<texture>Things/Pawn/Wounds/WoundA</texture>
@@ -34,6 +35,7 @@
 	<FleshTypeDef>
 		<defName>Mashed_Ashlands_FleshCrab</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<isOrganic>true</isOrganic>
 		<genericWounds>
 			<li>
 				<texture>Things/Pawn/Wounds/WoundA</texture>

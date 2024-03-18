@@ -4,6 +4,7 @@
 	<FleshTypeDef>
 		<defName>Mashed_Ashlands_FleshGlowing</defName>
 		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<isOrganic>true</isOrganic>
 		<genericWounds>
 			<li>
 				<texture>Things/Pawn/Wounds/WoundA</texture>

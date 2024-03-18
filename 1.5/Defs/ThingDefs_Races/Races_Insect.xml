@@ -78,6 +78,9 @@
 			<lifeExpectancy>1</lifeExpectancy>
 			<wildness>1</wildness>
 			<trainability>None</trainability>
+			<useMeatFrom IsNull="True"/>
+			<hasMeat>false</hasMeat>
+			<hasCorpse>false</hasCorpse>
 			<lifeStageAges>
 				<li>
 					<def>EusocialInsectAdult</def>

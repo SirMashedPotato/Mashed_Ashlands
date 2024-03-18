@@ -64,7 +64,7 @@
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 			<wildness>0.95</wildness>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
@@ -88,6 +88,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Insectoid_Eat</soundEating>
 		</race>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -197,6 +198,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Insectoid_Eat</soundEating>
 		</race>
 		<tradeTags>
 			<li>Mashed_Ashlands_AnimalKwama</li>

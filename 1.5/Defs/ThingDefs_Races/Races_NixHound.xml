@@ -15,6 +15,7 @@
 		<tools>
 			<li>
 				<label>left claws</label>
+				<labelNoLocation>claws</labelNoLocation>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -33,6 +34,7 @@
 			</li>
 			<li>
 				<label>right claws</label>
+				<labelNoLocation>claws</labelNoLocation>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -115,6 +117,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>PredatorSmall_Eat</soundEating>
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>

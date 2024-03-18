@@ -111,6 +111,7 @@
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>5</radius>
 				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>
 		</genStep>
 	</GenStepDef>

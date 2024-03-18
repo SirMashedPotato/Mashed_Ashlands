@@ -44,6 +44,10 @@
 				<diseaseInc>Disease_AnimalPlague</diseaseInc>
 				<commonality>100</commonality>
 			</li>
+			<li>
+				<diseaseInc>Disease_OrganDecay</diseaseInc>
+				<commonality>10</commonality>
+			</li>
 		</diseases>
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
@@ -58,6 +62,7 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>

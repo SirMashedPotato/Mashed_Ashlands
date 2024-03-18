@@ -378,6 +378,7 @@
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
 				<useLabel>imprint on {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
 				<minAnimals>12</minAnimals>

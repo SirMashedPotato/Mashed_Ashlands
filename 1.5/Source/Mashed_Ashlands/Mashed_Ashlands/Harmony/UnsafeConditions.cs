@@ -26,27 +26,6 @@ namespace Mashed_Ashlands
     }
 
     /// <summary>
-    /// Forces animals to wander inside during an ash storm
-    /// </summary>
-    [HarmonyPatch(typeof(JobGiver_WanderInRoofedCellsInPen))]
-    [HarmonyPatch("ShouldSeekRoofedCells")]
-    public static class JobGiver_WanderInRoofedCellsInPen_ShouldSeekRoofedCells_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_SafeEnvironmentalConditions_Patch(Pawn pawn, ref bool __result)
-        {
-            if (!__result)
-            {
-                float resistance = pawn.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance);
-                if (resistance < 1f)
-                {
-                    __result = Utility.MapHasUnsafeCondition(pawn);
-                }
-            }
-        }
-    }
-
-    /// <summary>
     /// Prevents the run wild mental break during an ash storm
     /// </summary>
     [HarmonyPatch(typeof(MentalBreakWorker_RunWild))]
