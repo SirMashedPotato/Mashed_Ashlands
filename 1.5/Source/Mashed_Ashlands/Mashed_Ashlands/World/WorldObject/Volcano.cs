@@ -129,7 +129,7 @@ namespace Mashed_Ashlands
                         {
                             yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label,
                                 "Mashed_Ashlands_VolcanoConditionWeight".Translate((condition.weight / totalIncidentWeight).ToString("n2")),
-                                condition.conditionDef.description + "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.durationDays, condition.graceDaysAfter, condition.minVolcanoCategory), 1, null, null, false);
+                                condition.conditionDef.description + "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.GetTrueConditionDuration, condition.graceDaysAfter, condition.minVolcanoCategory), 1, null, null, false);
                         }
                     }
                 }

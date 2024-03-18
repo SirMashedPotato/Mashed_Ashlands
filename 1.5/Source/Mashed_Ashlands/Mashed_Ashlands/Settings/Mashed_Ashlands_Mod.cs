@@ -409,6 +409,12 @@ namespace Mashed_Ashlands
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            listing_Standard.Label("Mashed_Ashlands_VolcanoConditionDurationMultiplier".Translate(settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier * 100), -1);
+            settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier, 0.5f, 10f) * 2) / 2;
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_VolcanoEnableCategoryChange".Translate(settings.Mashed_Ashlands_IncidentsForCategoryChange), ref settings.Mashed_Ashlands_VolcanoEnableCategoryChange, "Mashed_Ashlands_VolcanoEnableCategoryChange_Description".Translate(settings.Mashed_Ashlands_IncidentsForCategoryChange));
             listing_Standard.Gap();
             settings.Mashed_Ashlands_IncidentsForCategoryChange = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_IncidentsForCategoryChange, 1, 50));

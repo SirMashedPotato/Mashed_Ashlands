@@ -80,7 +80,7 @@ namespace Mashed_Ashlands
             {
                 currentConditionDef = null;
             }
-            durationDays = condition.durationDays.RandomInRange;
+            durationDays = condition.GetTrueConditionDuration.RandomInRange;
             graceDaysAfter = condition.graceDaysAfter.RandomInRange;
             category = condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
         }

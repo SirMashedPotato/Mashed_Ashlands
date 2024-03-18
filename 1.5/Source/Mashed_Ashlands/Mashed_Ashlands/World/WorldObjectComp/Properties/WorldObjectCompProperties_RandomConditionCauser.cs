@@ -26,5 +26,7 @@ namespace Mashed_Ashlands
         public bool countAsIncident = false;
         public int minVolcanoCategory = 1;
         public int forcedCategory = 0;
+
+        public FloatRange GetTrueConditionDuration => durationDays * Mashed_Ashlands_ModSettings.VolcanoConditionDurationMultiplier;
     }
 }

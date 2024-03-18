@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using Verse;
+﻿using Verse;
 
 namespace Mashed_Ashlands
 {
@@ -55,7 +54,7 @@ namespace Mashed_Ashlands
         //volcano
         public static bool VolcanoAffectedAreaScaleWithWorldSize => _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize;
         public static int VolcanoMaxAffectedArea => _instance.Mashed_Ashlands_VolcanoMaxAffectedArea;
-
+        public static float VolcanoConditionDurationMultiplier => _instance.Mashed_Ashlands_VolcanoConditionDurationMultiplier;
         public static bool VolcanoEnablePermanentConditions => _instance.Mashed_Ashlands_VolcanoEnablePermanentConditions;
         public static bool VolcanoEnableRandomConditions => _instance.Mashed_Ashlands_VolcanoEnableRandomConditions;
         public static bool VolcanoOnlyLetterIfInRadius => _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius;
@@ -161,7 +160,7 @@ namespace Mashed_Ashlands
         //volcano
         public bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
         public int Mashed_Ashlands_VolcanoMaxAffectedArea = Mashed_Ashlands_VolcanoMaxAffectedArea_def;
-
+        public float Mashed_Ashlands_VolcanoConditionDurationMultiplier = Mashed_Ashlands_VolcanoConditionDurationMultiplier_def;
         public bool Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
         public bool Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
         public bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
@@ -266,7 +265,7 @@ namespace Mashed_Ashlands
         //volcano
         private static readonly bool Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def = true;
         private static readonly int Mashed_Ashlands_VolcanoMaxAffectedArea_def = 10;
-
+        private static readonly float Mashed_Ashlands_VolcanoConditionDurationMultiplier_def = 1f;
         private static readonly bool Mashed_Ashlands_VolcanoEnablePermanentConditions_def = true;
         private static readonly bool Mashed_Ashlands_VolcanoEnableRandomConditions_def = true;
         private static readonly bool Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def = true;
@@ -378,7 +377,7 @@ namespace Mashed_Ashlands
             //volcano
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize, "Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize", Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoMaxAffectedArea, "Mashed_Ashlands_VolcanoMaxAffectedArea", Mashed_Ashlands_VolcanoMaxAffectedArea_def);
-
+            Scribe_Values.Look(ref Mashed_Ashlands_VolcanoConditionDurationMultiplier, "Mashed_Ashlands_VolcanoConditionDurationMultiplier", Mashed_Ashlands_VolcanoConditionDurationMultiplier_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnablePermanentConditions, "Mashed_Ashlands_VolcanoEnablePermanentConditions", Mashed_Ashlands_VolcanoEnablePermanentConditions_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoEnableRandomConditions, "Mashed_Ashlands_VolcanoEnableRandomConditions", Mashed_Ashlands_VolcanoEnableRandomConditions_def);
             Scribe_Values.Look(ref Mashed_Ashlands_VolcanoOnlyLetterIfInRadius, "Mashed_Ashlands_VolcanoOnlyLetterIfInRadius", Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def);
@@ -500,6 +499,7 @@ namespace Mashed_Ashlands
         {
             _instance.Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize = Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_def;
             _instance.Mashed_Ashlands_VolcanoMaxAffectedArea = Mashed_Ashlands_VolcanoMaxAffectedArea_def;
+            _instance.Mashed_Ashlands_VolcanoConditionDurationMultiplier = Mashed_Ashlands_VolcanoConditionDurationMultiplier_def;
             _instance.Mashed_Ashlands_VolcanoEnablePermanentConditions = Mashed_Ashlands_VolcanoEnablePermanentConditions_def;
             _instance.Mashed_Ashlands_VolcanoEnableRandomConditions = Mashed_Ashlands_VolcanoEnableRandomConditions_def;
             _instance.Mashed_Ashlands_VolcanoOnlyLetterIfInRadius = Mashed_Ashlands_VolcanoOnlyLetterIfInRadius_def;
