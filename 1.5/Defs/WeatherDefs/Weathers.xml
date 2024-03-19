@@ -65,7 +65,7 @@
 			<li>Ambient_Wind_Storm</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>Mashed_Ashlands.WeatherOverlay_AshStormSecondary</li>
+			<li>Mashed_Ashlands.WeatherOverlay_DustStorm</li>
 		</overlayClasses>
 		<!-- Colors are Overcast -->
 		<skyColorsDay>
