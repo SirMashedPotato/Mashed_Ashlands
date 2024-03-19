@@ -32,6 +32,10 @@
 						<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>
 						<amountRange>1</amountRange>
 					</li>
+					<li MayRequire="rw_exploration_mode.thelastbulletbender">
+						<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
+						<amountRange>1</amountRange>
+					</li>
 				</guaranteedDrops>
 				<potentialDrops>
 					<li>

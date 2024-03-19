@@ -25,7 +25,7 @@ namespace Mashed_Ashlands
 				return false;
 			}
 
-			float freeColonistsCount = map.mapPawns.FreeColonistsCount;
+			float freeColonistsCount = map.mapPawns.FreeColonistsCount + (map.mapPawns.SpawnedColonyMechs.Count / 3);
 			float randomInRange = CountPerColonistRange.RandomInRange;
 			int num = Mathf.Clamp(GenMath.RoundRandom(freeColonistsCount * randomInRange), Mashed_Ashlands_ModSettings.CliffRacerSwarmMinSize, Mashed_Ashlands_ModSettings.CliffRacerSwarmMaxSize);
 			List<Pawn> cliffRacers = new List<Pawn> { };

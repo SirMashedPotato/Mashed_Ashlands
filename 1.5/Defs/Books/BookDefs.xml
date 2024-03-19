@@ -6,11 +6,11 @@
 		<label>ashland journal</label>
 		<description>A weathered book that seems to detail someones research on the ashlands. It's seen better days, but reading it should be able to help unlock new technologies.</description>
 		<graphicData>
-			<texPath>Things/Item/Book/Schematic/Schematic</texPath>
+			<texPath>Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+		<uiIconPath>Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal</uiIconPath>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>
@@ -21,12 +21,12 @@
 				<descriptionMaker>Mashed_Ashlands_Description_AshlandJournal</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
-					<texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+					<texPath>Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Open</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>0.7</drawSize>
 				</openGraphic>
 				<verticalGraphic>
-					<texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+					<texPath>Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Vertical</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
