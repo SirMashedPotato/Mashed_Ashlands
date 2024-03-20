@@ -51,6 +51,7 @@
 			<bloodDef>Mashed_Ashlands_Filth_NetchBlood</bloodDef>
 			<body>Mashed_Ashlands_CnidarianBody</body>
 			<herdAnimal>true</herdAnimal>
+			<canBecomeShambler>false</canBecomeShambler>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<baseHungerRate>0.15</baseHungerRate>
