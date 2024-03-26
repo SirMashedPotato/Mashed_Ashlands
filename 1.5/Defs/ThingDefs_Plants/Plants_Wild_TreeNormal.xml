@@ -42,6 +42,7 @@
 				<li>Mashed_Ashlands_Ash</li>
 			</sowTags>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeAshland_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeAshland_Immature</immatureGraphicPath>
 			<visualSizeRange>1.4~2.8</visualSizeRange>
 		</plant>
 	</ThingDef>

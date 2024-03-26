@@ -57,6 +57,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeMilkcap]==========-->
@@ -80,6 +81,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
@@ -103,6 +105,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShieldVibrant]==========-->
@@ -117,6 +120,9 @@
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature</immatureGraphicPath>
+		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeSpongecap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
@@ -139,6 +145,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeWeepingLeathercap]==========-->
@@ -172,6 +179,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->
