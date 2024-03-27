@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_BugMusk]==========-->
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="MakeableDrugBase">
 		<defName>Mashed_Ashlands_BugMusk</defName>
 		<label>bug musk</label>
 		<description>A perfume made from the scent glands of shalk. It has a very distinctive, though quite subtle smell, that is simply irresistible to everyone.</description>
@@ -61,11 +61,6 @@
 				<li>DrugLab</li>
 				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_AlchemyBench</li>
 			</recipeUsers>
-			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-			<workSkill>Cooking</workSkill>
-			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
-			<soundWorking>Recipe_Brewing</soundWorking>
-			<bulkRecipeCount>4</bulkRecipeCount>
 			<productCount>1</productCount>
 			<workAmount>1000</workAmount>
 		</recipeMaker>
