@@ -32,6 +32,8 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -74,6 +76,7 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
 					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -86,6 +89,7 @@
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant</texPath>
 		</graphicData>
 		<plant>
+			<fertilityMin>0.1</fertilityMin>
 			<visualSizeRange>0.9~1.6</visualSizeRange>
 		</plant>
 		<comps>
@@ -99,6 +103,14 @@
 		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
 		<label>ashland somnalius fern</label>
 		<description>A small fern that can often be found growing in humid ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>

@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_GrayGrass"]/statBases</xpath>
-		<value>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_GrayGrass"]</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_Grass" or defName="Plant_TallGrass"]</xpath>
 		<value>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>

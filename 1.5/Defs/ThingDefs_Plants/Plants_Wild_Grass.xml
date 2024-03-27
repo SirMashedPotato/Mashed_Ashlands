@@ -29,6 +29,8 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>
 					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>

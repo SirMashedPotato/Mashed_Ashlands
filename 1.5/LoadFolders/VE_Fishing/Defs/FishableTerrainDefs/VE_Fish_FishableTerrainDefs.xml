@@ -8,9 +8,12 @@
 			<li>Mashed_Ashlands_BlightedSludge</li>
 			<li>Mashed_Ashlands_ShallowSulphuricWater</li>
 			<li>Mashed_Ashlands_DeepSulphuricWater</li>
+			<li>Mashed_Ashlands_ShallowMarsh</li>
+			<li>Mashed_Ashlands_DeepMarsh</li>
 		</allowedTerrains>
 	</VCE_Fishing.FishableTerrainDef>
 	<!-- ==========[Mashed_Ashlands_VanillaFishableTerrainsAshlandOcean]==========-->
+	<!--
 	<VCE_Fishing.FishableTerrainDef>
 		<defName>Mashed_Ashlands_VanillaFishableTerrainsAshlandOcean</defName>
 		<isOcean>true</isOcean>
@@ -18,4 +21,5 @@
 	
 		</allowedTerrains>
 	</VCE_Fishing.FishableTerrainDef>
+	-->
 </Defs>

@@ -49,7 +49,8 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<allowedTerrainForWild>
-					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
 				</allowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -85,6 +86,51 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(53,94,84,0)</glowColor>
 			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_LilyPad]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_LilyPad</defName>
+		<label>lily pad</label>
+		<description>A primitive flowering plant, only found growing in humid ashland regions. Characterised by it's large round leaves that grow above water.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<selectable>false</selectable>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>1.0</Flammability>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_LilyPad</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.6</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+			<harvestWork>40</harvestWork>
+			<visualSizeRange>0.7~1</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<sowTags Inherit="False"/>
+		</plant>
+		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
 				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
 			</li>

@@ -81,8 +81,13 @@
 						<max>0.65</max>
 					</li>
 					<li>
-						<terrain>Marsh</terrain>
+						<terrain>Mashed_Ashlands_ShallowMarsh</terrain>
 						<min>0.65</min>
+						<max>0.9</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_DeepMarsh</terrain>
+						<min>0.9</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -106,8 +111,13 @@
 						<max>0.7</max>
 					</li>
 					<li>
-						<terrain>Marsh</terrain>
+						<terrain>Mashed_Ashlands_ShallowMarsh</terrain>
 						<min>0.7</min>
+						<max>0.95</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_DeepMarsh</terrain>
+						<min>0.95</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -121,8 +131,13 @@
 						<max>0.48</max>
 					</li>
 					<li>
-						<terrain>Marsh</terrain>
+						<terrain>Mashed_Ashlands_ShallowMarsh</terrain>
 						<min>0.48</min>
+						<max>0.78</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_DeepMarsh</terrain>
+						<min>0.78</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -135,6 +150,7 @@
 			<Plant_Chokevine>0.8</Plant_Chokevine>
 			<Mashed_Ashlands_Plant_AshlandGrass>1</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
+			<Mashed_Ashlands_Plant_LilyPad>1</Mashed_Ashlands_Plant_LilyPad>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_Marshmerrow>0.05</Mashed_Ashlands_Plant_Marshmerrow>
 			<Mashed_Ashlands_Plant_Saltrice>0.05</Mashed_Ashlands_Plant_Saltrice>
@@ -148,7 +164,7 @@
 			<Mashed_Ashlands_Plant_AshenFern>0.01</Mashed_Ashlands_Plant_AshenFern>
 			<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 			<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-			<Mashed_Ashlands_Plant_DraggleTails>0.3</Mashed_Ashlands_Plant_DraggleTails>
+			<Mashed_Ashlands_Plant_DraggleTails>0.4</Mashed_Ashlands_Plant_DraggleTails>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_Stinkcap>0.1</Mashed_Ashlands_Plant_Stinkcap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.5</Mashed_Ashlands_Plant_TreeEmperorParasol>
