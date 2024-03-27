@@ -7,6 +7,9 @@
 				<hasBone>false</hasBone>
 				<hasFat>false</hasFat>
 			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>Mashed_PF_Movement_Floating</movementDef>
+			</li>
 		</modExtensions>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
@@ -43,9 +46,6 @@
 				<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
-		</comps>
 		<race>
 			<fleshType>Mashed_Ashlands_FleshNetch</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_NetchBlood</bloodDef>
