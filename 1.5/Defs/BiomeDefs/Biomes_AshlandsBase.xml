@@ -83,6 +83,12 @@
 			<!-- Special -->
 			<Mashed_Ashlands_Scamp>0.06</Mashed_Ashlands_Scamp>
 			<JE_JagothGrr MayRequire="sarg.jorisexperience">0.06</JE_JagothGrr>
+			<!-- botchjob.profaned -->
+			<BotchJob_UndeadColossus MayRequire="botchjob.profaned">0.01</BotchJob_UndeadColossus>
+			<BotchJob_Ghoul MayRequire="botchjob.profaned">0.03</BotchJob_Ghoul>
+			<BotchJob_Wraith MayRequire="botchjob.profaned">0.03</BotchJob_Wraith>
+			<BotchJob_Skeleton MayRequire="botchjob.profaned">0.03</BotchJob_Skeleton>
+			<BotchJob_UndeadWarg MayRequire="botchjob.profaned">0.03</BotchJob_UndeadWarg>
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
