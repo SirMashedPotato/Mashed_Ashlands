@@ -239,9 +239,7 @@
 			</li>
 		</comps>
 		<race>
-			<deathAction>
-				<workerClass>Mashed_Ashlands.DeathActionWorker_CliffRacer</workerClass>
-			</deathAction>
+			<deathActionWorkerClass>Mashed_Ashlands.DeathActionWorker_CliffRacer</deathActionWorkerClass>
 			<body>Mashed_Ashlands_FlyingHellSpawn</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
