@@ -47,7 +47,42 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_FetcherflyHive]==========-->
+	<!-- ==========[Mashed_Ashlands_DustAntHives]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_DustAntHives</defName>
+		<order>510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterBiomeSpecific">
+			<thingDef>Mashed_Ashlands_DustAntHive</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>25</minSpacing>
+			<extraNoBuildEdgeDist>3</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>0.35~0.85</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>3</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<allowedBiomes>
+				<li>Mashed_Ashlands_DustplainAshlands</li>
+			</allowedBiomes>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>3</radius>
+				</li>
+				<li Class="Mashed_Ashlands.ScattererValidator_SpecificTerrain">
+					<terrainDefs>
+						<li>Mashed_Ashlands_AshDust</li>
+					</terrainDefs>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHives]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_FetcherflyHives</defName>
 		<order>510</order>
@@ -67,7 +102,6 @@
 				<li>Mashed_Ashlands_BlightedAshlands</li>
 				<li>Mashed_Ashlands_BlightedBogAshlands</li>
 				<li>Mashed_Ashlands_Ashlands</li>
-				<li>Mashed_Ashlands_DustplainAshlands</li>
 				<li>Mashed_Ashlands_VolcanicAshlands</li>
 				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 				<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
@@ -115,6 +149,4 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
-	
-	
 </Defs>

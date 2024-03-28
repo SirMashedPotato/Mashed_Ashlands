@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_HarvestHiveBase]==========-->
+	<RecipeDef Name="Mashed_Ashlands_HarvestHiveBase" Abstract="True">
+		<workerClass>Mashed_Ashlands.RecipeWorker_HarvestHive</workerClass>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Animals</workSkill>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_HarvestDustAnts]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_HarvestHiveBase">
+		<defName>Mashed_Ashlands_HarvestDustAnts</defName>
+		<label>harvest dust ants</label>
+		<description>Harvest 6 insect meat worth of dust ants. The hive is damaged slightly each time dust ants are harvested. Over harvesting will destroy the hive before the ants are able to repair any damage.</description>
+		<jobString>Harvesting dust ants.</jobString>
+		<products>
+			<Meat_Megaspider>6</Meat_Megaspider>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+</Defs>

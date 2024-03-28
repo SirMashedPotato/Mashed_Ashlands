@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_DustplainAshlands</defName>
 		<label>ashland dustplains</label>
-		<description>Frequent ash storms combined with a dry climate have turned this region into an arid wasteland. Most of the terrain here has been eroded over time into a fine dust, which lacks the fertility necessary to support diverse plant life. Migratory herds of herbivores can sometimes be found here, though usually not for long. Occasional dust storms are unpleasant, though nowhere near as deadly as ash storms.</description>
+		<description>Frequent ash storms combined with a dry climate have turned this region into an arid wasteland. Most of the terrain here has been eroded over time into a fine dust, which lacks the fertility necessary to support diverse plant life. Migratory herds of herbivores can sometimes be found here, though usually not for long. Dust ant hives may provide an alternative, though somewhat unpleasant, food source. Occasional dust storms are unpleasant, though nowhere near as deadly as ash storms.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_DustplainAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_DustplainAshlands</texture>
 		<modExtensions>

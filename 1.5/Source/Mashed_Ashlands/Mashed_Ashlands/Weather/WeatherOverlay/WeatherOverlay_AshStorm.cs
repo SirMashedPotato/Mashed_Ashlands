@@ -14,7 +14,9 @@ namespace Mashed_Ashlands
 			worldOverlayPanSpeed2 = panSpeed2;
 			worldPanDir1 = new Vector2(worldPanDir, worldPanDir);
 			worldPanDir2 = new Vector2(worldPanDir, worldPanDir);
-		}
+            worldPanDir1.Normalize();
+            worldPanDir2.Normalize();
+        }
 
 		private static readonly Material AshStormWorld = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
 	}

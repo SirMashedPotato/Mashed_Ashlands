@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_RefineShalkChitin</defName>
 		<label>refine shalk chitin</label>
 		<description>Refines 3 chemfuel from 10 shalk chitin.</description>
-		<jobString>Refineing chemfuel.</jobString>
+		<jobString>Refining chemfuel.</jobString>
 		<ingredients>
 			<li>
 				<filter>

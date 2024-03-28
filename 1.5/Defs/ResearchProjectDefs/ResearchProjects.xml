@@ -149,6 +149,7 @@
 				<li>thing_subject->brew sujamma</li>
 				<li>thing_subject->process inkcap</li>
 				<li>thing_subject->process corkbulb</li>
+				<li>thing_subject->harvest dust ants</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>

@@ -30,4 +30,21 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
+	<!-- ==========[Mashed_Ashlands_DoBillsHarvestHive]==========-->
+	<WorkGiverDef>
+    <defName>Mashed_Ashlands_DoBillsHarvestHive</defName>
+    <label>harvest from hives</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Handling</workType>
+    <priorityInType>50</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Mashed_Ashlands_DustAntHive</li>
+    </fixedBillGiverDefs>
+    <verb>harvest</verb>
+    <gerund>harvesting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 </Defs>

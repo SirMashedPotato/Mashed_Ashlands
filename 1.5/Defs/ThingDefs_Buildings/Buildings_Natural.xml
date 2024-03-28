@@ -1,5 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_DustAntHive]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_DustAntHive</defName>
+		<label>dust ant hive</label>
+		<description>A dust ant hive. A species of relatively peaceful ant, that collects particles from dust storms to build and feed their hive.\n\nWith the right knowledge dust ants can be harvested as a source of nutrition. However over harvesting will risk destroying the hive.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_DustAntHive</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawOffset>0,0,0.5</drawOffset>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.53)</volume>
+				<offset>(0,0,-0.14)</offset>
+			</shadowData>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<rotatable>false</rotatable>
+		<pathCost>42</pathCost>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<recipes>
+			<li>Mashed_Ashlands_HarvestDustAnts</li>
+		</recipes>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<building>
+			<isInert>true</isInert>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+			<displayAttackToDestroyOnInspectPane>true</displayAttackToDestroyOnInspectPane>
+		</building>
+		<comps>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+				<!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>Mashed_Ashlands_DustAntEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_ExplorerSkeleton]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_ExplorerSkeleton</defName>
@@ -94,9 +146,6 @@
 		<rotatable>false</rotatable>
 		<mineable>true</mineable>
 		<pathCost>42</pathCost>
-		<killedLeavings>
-			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
-		</killedLeavings>
 		<costList>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
 		</costList>
@@ -116,7 +165,7 @@
 			<claimable>false</claimable>
 		</building>
 		<designationCategory>Misc</designationCategory>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
