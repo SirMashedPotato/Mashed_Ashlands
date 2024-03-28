@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<CherryPicker.DefList>
+		<defName>Mashed_Ashlands_Rachnoids</defName>
+		<label>Remove Rachnoids (includes pyrantula)</label>
+		<defs>
+			<li>ThingDef/Mashed_Ashlands_RachnoidSilk</li>
+			<li>ThingDef/Mashed_Ashlands_Egg_PyrantulaFertilized</li>
+			<li>ThingDef/Mashed_Ashlands_Pyrantula</li>
+			<li>PawnKindDef/Mashed_Ashlands_Pyrantula</li>
+		</defs>
+	</CherryPicker.DefList>
+</Defs>

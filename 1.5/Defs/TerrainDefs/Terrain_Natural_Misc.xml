@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SulphuricSand]==========-->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>Mashed_Ashlands_SulphuricSand</defName>
+		<label>sulphuric sand</label>
+		<texturePath>Terrain/Surfaces/Mashed_Ashlands_SulphuricSand</texturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/Mashed_Ashlands_PollutionAsh</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-4</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+			<li>Mashed_Ashlands_GrowSulphur</li>
+		</affordances>
+		<generatedFilth>Mashed_Ashlands_Filth_Sulphur</generatedFilth>
+		<fertility>0.1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Mashed_Ashlands_Sulphur</li>
+			<li>PF_TerrainTag_Sand</li>
+		</tags>
+	</TerrainDef>
+</Defs>

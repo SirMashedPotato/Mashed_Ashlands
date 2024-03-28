@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeParasolBase]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_TreeParasolBase" ParentName="Mashed_Ashlands_TreeBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
+			<wildClusterWeight>35</wildClusterWeight>
+			<burnedThingDef>Mashed_Ashlands_BurnedParasolStump</burnedThingDef>
+			<choppedThingDef>Mashed_Ashlands_ChoppedParasolStump</choppedThingDef>
+			<smashedThingDef>Mashed_Ashlands_SmashedParasolStump</smashedThingDef>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_TreeEmperorParasolBase" ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeEmperorParasol</defName>
+		<label>emperor parasol tree</label>
+		<description>An enormous fungal tree, solely found growing in regions with ash rich ground. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nA symbiotic moss grows from the underside of the emperor parasols cap. While not particularly tasty, it makes for a decent animal feed, and can be brewed into a tea.</description>
+		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<secondaryDrop>Mashed_Ashlands_RawEmperorParasolMoss</secondaryDrop>
+				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>40</growDays>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+			<harvestYield>50</harvestYield>
+			<harvestWork>1500</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeMilkcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeMilkcap</defName>
+		<label>milkcap tree</label>
+		<description>A rather small fungal tree, very unimpressive, especially when compared to the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>20</growDays>
+			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<harvestYield>25</harvestYield>
+			<harvestWork>600</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase" Name="Mashed_Ashlands_Plant_TreeNetchShieldBase">
+		<defName>Mashed_Ashlands_Plant_TreeNetchShield</defName>
+		<label>netch shield tree</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>30</growDays>
+			<visualSizeRange>1.3~2.8</visualSizeRange>
+			<harvestYield>35</harvestYield>
+			<harvestWork>1000</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShieldVibrant]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeNetchShieldBase">
+		<defName>Mashed_Ashlands_Plant_TreeNetchShieldVibrant</defName>
+		<label>vibrant netch shield tree</label>
+		<description>A large and quite colourful fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeSpongecap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeSpongecap</defName>
+		<label>spongecap tree</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol, and considered to be somewhat hideous by most. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>10</growDays>
+			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<harvestYield>15</harvestYield>
+			<harvestWork>800</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeWeepingLeathercap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeWeepingLeathercap</defName>
+		<label>weeping leathercap tree</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol. It can only be found growing in certain ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nOnce it has matured enough, the leathery material of the cap will also be harvested, and can be used to make heat-resistant clothes.</description>
+		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<secondaryDrop>Mashed_Ashlands_FungalLeather</secondaryDrop>
+				<secondaryDropAmountRange>5~10</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>0.3</Flammability>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>15</growDays>
+			<visualSizeRange>1.3~2.8</visualSizeRange>
+			<harvestYield>10</harvestYield>
+			<harvestWork>800</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeEmperorParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeWeepingParasol</defName>
+		<label>weeping parasol tree</label>
+		<description>An enormous fungal tree, solely found growing in humid ashland regions. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.\n\nA symbiotic moss grows from the underside of the emperor parasols cap. While not particularly tasty, it makes for a decent animal feed, and can be brewed into a tea.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<secondaryDrop>Mashed_Ashlands_RawEmperorParasolMoss</secondaryDrop>
+				<secondaryDropAmountRange>15~25</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeWeepingParasol</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>1.4~3</visualSizeRange>
+			<harvestYield>40</harvestYield>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingParasol_Leafless</leaflessGraphicPath>
+		</plant>
+	</ThingDef>
+	-->
+</Defs>

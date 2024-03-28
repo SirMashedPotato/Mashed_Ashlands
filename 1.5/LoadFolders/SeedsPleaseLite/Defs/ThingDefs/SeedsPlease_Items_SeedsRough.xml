@@ -1,0 +1,61 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedChillshroom]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedChillshroom</defName>
+		<label>chillshroom spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedChillshroom</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Chillshroom</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Chillshroom</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedScathecraw]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedScathecraw</defName>
+		<label>scathecraw seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedScathecraw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Scathecraw</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Scathecraw</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedTramaShrub]==========-->
+	<ThingDef ParentName="SeedBase">
+		<defName>Mashed_Ashlands_SeedTramaShrub</defName>
+		<label>trama seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedTramaShrub</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TramaShrub</ThingDef>
+			<ThingDef MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TramaShrub</li>
+					<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

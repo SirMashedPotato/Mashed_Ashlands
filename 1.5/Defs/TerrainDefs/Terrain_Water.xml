@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_BlightedSludge</defName>
+		<label>blighted sludge</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_BlightedSludgeRamp</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>40</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension" MayRequire="regrowth.botr.core">
+				<thoughtAfterBathing>Mashed_Ashlands_BathingBlightedSludge</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
+		<tags>
+			<li>PF_TerrainTag_Mud</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ShallowMarsh]==========-->
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_MarshBase">
+		<defName>Mashed_Ashlands_ShallowMarsh</defName>
+		<label>shallow marsh</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowMarshRamp</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>394</renderPrecedence>
+		<fertility>0.1</fertility>
+		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension" MayRequire="regrowth.botr.core">
+				<thoughtAfterBathing>RG_BathingMarsh</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
+		<tags>
+			<li>PF_TerrainTag_Mud</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepMarsh]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_MarshBase">
+		<defName>Mashed_Ashlands_DeepMarsh</defName>
+		<label>marsh</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepMarshRamp</texturePath>
+		<fertility>0.05</fertility>
+		<pathCost>42</pathCost>
+	</TerrainDef>
+</Defs>

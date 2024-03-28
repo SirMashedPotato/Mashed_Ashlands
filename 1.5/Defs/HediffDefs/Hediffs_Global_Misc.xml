@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshBuildup]==========-->
+	<HediffDef>
+		<defName>Mashed_Ashlands_AshBuildup</defName>
+		<label>ash buildup</label>
+		<description>Ash building up in the respiratory system. Primarily comes from being outside during ash-storms.\n\nAs buildup increases, breathing capabilities decrease. Higher levels of buildup can cause permanent breathing impairment. Extreme buildup will cause asphyxiation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<lethalSeverity>1</lethalSeverity>
+		<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<taleOnVisible>Mashed_Ashlands_AshBuildupRevealed</taleOnVisible>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<compClass>Mashed_Ashlands.HediffComp_ImmunizableAsh</compClass>
+				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+			</li>
+			<li Class="HediffCompProperties_SurgeryInspectable">
+				<surgicalDetectionDesc>{PAWN_nameDef} is showing early signs of ash buildup. Keep {PAWN_objective} inside during ash storms.</surgicalDetectionDesc>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>146</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>37</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.80</minSeverity>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.10</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>13</mtbDays>
+						<partsToAffect>
+							<li>Lung</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_AshCloggedServo]==========-->
+	<HediffDef>
+		<defName>Mashed_Ashlands_AshCloggedServo</defName>
+		<label>ash clogged servo</label>
+		<description>A servo that has been clogged with ash, reducing part efficiency. Will be cleared over time.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.02</healAmount>
+			</li>
+		</comps>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_AshBlight]==========-->
+	<HediffDef>
+		<defName>Mashed_Ashlands_AshBlight</defName>
+		<label>ash blight</label>
+		<description>One of the many forms of Blight caused by blighted ash. This particular one drives infected animals mad, causing them to attack anything nearby. While the disease can be cured, the lack of self preservation caused by it will likely result in the creatures death.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_KillAfterDays">
+				<days>30</days>
+			</li>
+			<li Class="HediffCompProperties_CauseMentalState">
+				<animalMentalState>Mashed_Ashlands_BlightedPermanent</animalMentalState>
+				<humanMentalState>Berserk</humanMentalState>
+				<letterDef>ThreatSmall</letterDef>
+				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_CureAshBlight]==========-->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>Mashed_Ashlands_CureAshBlight</defName>
+		<label>cure ash blight</label>
+		<description>This special medical operation cures ash blight.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing ash blight.</jobString>
+		<workAmount>4500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>Mashed_Ashlands_AshBlight</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s ash blight.</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<!-- TODO potentially requires a special thing to cure it -->
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

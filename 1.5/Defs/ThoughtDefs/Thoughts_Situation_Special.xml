@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshStorm]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_AshStorm</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>Mashed_Ashlands.ThoughtWorker_AshStorm</workerClass>
+		<stages>
+			<li>
+				<label>outside in ash storm</label>
+				<description>I'm breathing in more ash than air!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
+		</nullifyingGenes>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
+	<!--
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_PsychicEruption</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>Mashed_Ashlands.ThoughtWorker_PsychicEruption</workerClass>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<stages>
+			<li>
+				<label>psychic eruption</label>
+				<description>This infernal noise! When will it end?</description>
+				<baseMoodEffect>-36</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	-->
+	<!-- ==========[Mashed_Ashlands_OutsideInDustStorm]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_OutsideInDustStorm</defName>
+		<durationDays>0.4</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>outside in dust storm</label>
+				<description>There's ash getting everywhere!</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
+		</nullifyingGenes>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_OutsideInSulphurRain]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_OutsideInSulphurRain</defName>
+		<durationDays>0.4</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>outside in sulphuric rain</label>
+				<description>Ow! Why does the rain burn?</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

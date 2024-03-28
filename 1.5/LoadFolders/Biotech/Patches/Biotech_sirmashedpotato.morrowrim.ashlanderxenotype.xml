@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Ashlander Xenotype</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="MorrowRim_AshlanderXenotype"]/genes</xpath>
+					<value>
+						<li>Mashed_Ashlands_AshResistance_Perfect</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="MorrowRim_TribeRoughAshlander"]/modExtensions/li[@Class="VFECore.FactionDefExtension"]</xpath>
+					<value>
+						<li Class="VFECore.FactionDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+							<allowedBiomes>
+								<!-- Blighted -->
+								<li>Mashed_Ashlands_BlightedAshlands</li>
+								<li>Mashed_Ashlands_BlightedBogAshlands</li>
+								<!-- Regular -->
+								<li>Mashed_Ashlands_Ashlands</li>
+								<li>Mashed_Ashlands_GrazelandAshlands</li>
+								<li>Mashed_Ashlands_SwampAshlands</li>
+								<!-- Thriving -->
+								<li>Mashed_Ashlands_ForestAshlands</li>
+								<li>Mashed_Ashlands_MarshAshlands</li>
+								<li>Mashed_Ashlands_MeadowAshlands</li>
+								<!-- Volcanic -->
+								<li>Mashed_Ashlands_VolcanicAshlands</li>
+								<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+								<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+							</allowedBiomes>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

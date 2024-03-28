@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CookScuttle]==========-->
+	<RecipeDef Name="Mashed_Ashlands_CookMealBase" Abstract="True">
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>	
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_CookScuttle]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookScuttle</defName>
+		<label>cook scuttle</label>
+		<description>Cook a serving of scuttle from insect meat.</description>
+		<jobString>Making scuttle.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Megaspider</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Mashed_Ashlands_Scuttle>1</Mashed_Ashlands_Scuttle>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>3</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_CookScuttleBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookScuttleBulk</defName>
+		<label>cook scuttle x4</label>
+		<description>Cook 4 servings of scuttle from insect meat.</description>
+		<jobString>Making 4 scuttle.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Megaspider</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Mashed_Ashlands_Scuttle>4</Mashed_Ashlands_Scuttle>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>3</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

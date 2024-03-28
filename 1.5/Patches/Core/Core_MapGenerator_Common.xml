@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+			<li>Mashed_Ashlands_DustAntHives</li>
+			<li>Mashed_Ashlands_StriderShells</li>
+			<li>Mashed_Ashlands_DeadExplorer</li>
+			<li>Mashed_Ashlands_ColumnarBasalt</li>
+		</value>
+	</Operation>
+</Patch>

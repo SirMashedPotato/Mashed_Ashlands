@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholPrecursorBase]==========-->
+	<ThingDef ParentName="ResourceBase" Name="Mashed_Ashlands_AlcoholPrecursorBase" Abstract="True" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core, syrchalis.processor.framework">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>75</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<recipeMaker>
+			<recipeUsers>
+				<li>Brewery</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>Brewing</li>
+			</researchPrerequisites>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+			<soundWorking>Recipe_Brewing</soundWorking>
+			<bulkRecipeCount>5</bulkRecipeCount>
+			<productCount>5</productCount>
+			<workAmount>1000</workAmount>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ComberryPrecursor]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core, syrchalis.processor.framework">
+		<defName>Mashed_Ashlands_ComberryPrecursor</defName>
+		<label>comberry precursor</label>
+		<description>An alcohol precursor made from comberry. This substance needs to ferment in a fermenting barrel before it becomes drinkable shein.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_ComberryPrecursor</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawComberry>25</Mashed_Ashlands_RawComberry>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowRyePrecursor]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core, syrchalis.processor.framework">
+		<defName>Mashed_Ashlands_MeadowRyePrecursor</defName>
+		<label>meadow rye precursor</label>
+		<description>An alcohol precursor made from meadow rye. This substance needs to ferment in a fermenting barrel before it becomes drinkable flin.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_MeadowRyePrecursor</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawMeadowRye>25</Mashed_Ashlands_RawMeadowRye>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SaltricePrecursor]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core, syrchalis.processor.framework">
+		<defName>Mashed_Ashlands_SaltricePrecursor</defName>
+		<label>saltrice precursor</label>
+		<description>An alcohol precursor made from saltrice. This substance needs to ferment in a fermenting barrel before it becomes drinkable mazte.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_SaltricePrecursor</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawSaltrice>25</Mashed_Ashlands_RawSaltrice>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_WickwheatPrecursor]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core, syrchalis.processor.framework">
+		<defName>Mashed_Ashlands_WickwheatPrecursor</defName>
+		<label>wickwheat precursor</label>
+		<description>An alcohol precursor made from wickwheat. This substance needs to ferment in a fermenting barrel before it becomes drinkable sujamma.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_WickwheatPrecursor</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawWickwheat>25</Mashed_Ashlands_RawWickwheat>
+		</costList>
+	</ThingDef>
+</Defs>

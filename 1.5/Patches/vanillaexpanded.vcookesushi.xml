@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded - Sushi</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- ==========[Abstract defs]==========-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name = "VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name = "VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</value>
+				</li>
+				<!-- ==========[Specific defs]==========-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "VCE_CookChirashizushiSimple" or  defName="VCE_CookChirashizushiSimpleBulk"
+										or defName="VCE_CookNorimakiSimple" or defName="VCE_CookNorimakiSimpleBulk"
+										or defName="VCE_CookUramakiFine" or defName="VCE_CookUramakiFineBulk"
+										or defName="VCE_CookNigiriFine" or defName="VCE_CookNigiriFineBulk"
+										or defName="VCE_CookTemakiLavish" or defName="VCE_CookFutomakiLavishBulk"
+										or defName="VCE_CookFutomakiLavish" or defName="VCE_CookTemakiLavishBulk"
+										or defName="VCE_CookGunkanmakiGourmet" or defName="VCE_CookOshizushiiGourmet"]/ingredients/li/filter/thingDefs[li="RawRice"]</xpath>
+					<value>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

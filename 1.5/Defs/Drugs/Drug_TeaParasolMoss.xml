@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TeaParasolMoss]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
+		<defName>Mashed_Ashlands_TeaParasolMoss</defName>
+		<label>parasol moss tea</label>
+		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_TeaParasolMossHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_TeaParasolMoss</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_TeaParasolMossHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+				<Intellectual>3</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawEmperorParasolMoss>3</Mashed_Ashlands_RawEmperorParasolMoss>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_TeaParasolMossHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_TeaHighBase">
+		<defName>Mashed_Ashlands_TeaParasolMossHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>parasol moss tea</label>
+		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<Mashed_Ashlands_AshResistance>0.25</Mashed_Ashlands_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

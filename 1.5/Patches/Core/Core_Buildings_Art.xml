@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- add stuffCategories if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="SculptureBase"]</xpath>
+			<value>
+				<stuffCategories/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="SculptureBase"]/stuffCategories</xpath>
+		<value>
+			<li>Mashed_Ashlands_Crystalline</li>
+		</value>
+	</Operation>
+</Patch>

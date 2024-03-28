@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanicAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->scar</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicBadlandAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanicBadlandAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->badlands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->scathes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

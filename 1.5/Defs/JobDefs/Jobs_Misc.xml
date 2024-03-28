@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>Mashed_Ashlands_FeedFromAshlandFlower</defName>
+		<driverClass>Mashed_Ashlands.JobDriver_FeedFromAshlandFlower</driverClass>
+		<reportString>feeding from flower.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+</Defs>

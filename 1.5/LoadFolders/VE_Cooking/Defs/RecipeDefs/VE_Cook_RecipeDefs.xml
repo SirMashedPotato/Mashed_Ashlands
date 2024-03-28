@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MakeVEFlour]==========-->
+	<!-- 
+		~1 day per 2 flour from wheat plant
+		~1 day per 2 raw wickwheat from wickwheat plant
+		1 day per 2 raw saltrice from saltrice plant
+		~1 day per 2 raw meadow rye from meadow rye plant
+		
+		2 ashland grain = 2 flour
+		
+		Slight loss from processing time, but that's the cost
+	-->
+	<RecipeDef Name="Mashed_Ashlands_MakeVEFlourBase">
+		<defName>Mashed_Ashlands_MakeVEFlour</defName>
+		<label>grind ashland grains into flour</label>
+		<description>Grind 10 ashland grains into 10 flour.</description>
+		<jobString>Making flour.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawMeadowRye</li>
+				<li>Mashed_Ashlands_RawSaltrice</li>
+				<li>Mashed_Ashlands_RawWickwheat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_Flour>10</VCE_Flour>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeVEFlourBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeVEFlourBase">
+		<defName>Mashed_Ashlands_MakeVEFlourBulk</defName>
+		<label>grind ashland grains into flour x4</label>
+		<description>Grind 40 ashland grains into 40 flour.</description>
+		<workAmount>400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<VCE_Flour>40</VCE_Flour>
+		</products>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeVESugar]==========-->
+	<!--
+		6 days per 1 raw sugar from sugarcane plant
+		~1 day per 2 raw marshmerrow from marshmerrow plant
+		~6 days per 12 raw marshmerrow from marshmerrow plant
+		
+		12 marshmerrow = 1 sugar
+		
+		Slight loss from processing time, but that's the cost
+	-->
+	<RecipeDef Name="Mashed_Ashlands_MakeVESugarBase">
+		<defName>Mashed_Ashlands_MakeVESugar</defName>
+		<label>grind raw marshmerrow into sugar</label>
+		<description>Grind 12 raw marshmerrow into 1 sugar.</description>
+		<jobString>Making sugar.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>VCE_CondimentPrepTable</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMarshmerrow</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawMarshmerrow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCE_RawSugar>1</VCE_RawSugar>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MakeVESugarBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeVESugarBase">
+		<defName>Mashed_Ashlands_MakeVESugarBulk</defName>
+		<label>grind raw marshmerrow into sugar x4</label>
+		<description>Grind 48 raw marshmerrow into 4 sugar.</description>
+		<workAmount>400</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMarshmerrow</li>
+					</thingDefs>
+				</filter>
+				<count>48</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<VCE_RawSugar>4</VCE_RawSugar>
+		</products>
+	</RecipeDef>
+</Defs>

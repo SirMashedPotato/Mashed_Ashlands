@@ -11,7 +11,6 @@
 			<texPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol_Immature</immatureGraphicPath>
 			<pollution>PollutedOnly</pollution>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>

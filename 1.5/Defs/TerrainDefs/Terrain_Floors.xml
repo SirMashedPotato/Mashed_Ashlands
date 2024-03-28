@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ParasolWoodPlankFloor]==========-->
+	<TerrainDef ParentName="FloorBase">
+		<defName>Mashed_Ashlands_ParasolWoodPlankFloor</defName>
+		<label>parasol wood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(146,137,89)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_ParasolWoodLog>3</Mashed_Ashlands_ParasolWoodLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>2000</uiOrder>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_KreshCarpet]==========-->
+	<TerrainDef ParentName="FloorBase">
+		<defName>Mashed_Ashlands_KreshCarpet</defName>
+		<label>kresh carpet</label>
+		<description>Coarse carpet, made from kresh fiber.</description>
+		<color>(108,98,68)</color>
+		<texturePath>Terrain/Surfaces/Carpet</texturePath>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		<burnedDef>BurnedCarpet</burnedDef>
+		<costList>
+			<Mashed_Ashlands_KreshCloth>7</Mashed_Ashlands_KreshCloth>
+		</costList>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Flammability>0.22</Flammability>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+		<renderPrecedence>200</renderPrecedence>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEbonyTile]==========-->
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>Mashed_Ashlands_VolcanicEbonyTile</defName>
+		<label>volcanic ebony tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>Tiles made out of pure volcanic ebony. While very extravagant, most will question why you wasted volcanic ebony on flooring.</description>
+		<color>(55,44,55)</color>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_VolcanicEbony>7</Mashed_Ashlands_VolcanicEbony>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicGlassTile]==========-->
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>Mashed_Ashlands_VolcanicGlassTile</defName>
+		<label>volcanic malachite tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>Tiles made out of pure volcanic malachite. While very extravagant, most will question why you wasted volcanic malachite on flooring.</description>
+		<color>(153,243,134)</color>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_VolcanicGlass>7</Mashed_Ashlands_VolcanicGlass>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+</Defs>

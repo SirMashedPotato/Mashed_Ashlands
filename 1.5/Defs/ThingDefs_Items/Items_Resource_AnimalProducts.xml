@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_OrganicProductBase]==========-->
+	<ThingDef ParentName="OrganicProductBase" Name="Mashed_Ashlands_OrganicProductBase" Abstract="True">
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<possessionCount>10</possessionCount>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_AshHopperJelly]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_OrganicProductBase" Name="Mashed_Ashlands_JelliedInsectBase">
+		<defName>Mashed_Ashlands_AshHopperJelly</defName>
+		<label>ash hopper jelly</label>
+		<description>A dead ash hopper, crushed into a jelly-like substance. Has a noticeable sour taste, but is very nutritious. Often consumed raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_AshHopperJelly</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_NetchJelly]==========-->
+	<ThingDef Name="Mashed_Ashlands_NetchJellyBase" ParentName="Mashed_Ashlands_OrganicProductBase">
+		<defName>Mashed_Ashlands_NetchJelly</defName>
+		<label>netch jelly</label>
+		<description>A jelly like substance 'milked' from a netch. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NetchJelly</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>8</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ScribJelly]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_JelliedInsectBase">
+		<defName>Mashed_Ashlands_ScribJelly</defName>
+		<label>scrib jelly</label>
+		<description>A dead scrib, crushed into a jelly-like substance. Has a noticeable sour taste, but is very nutritious. Often consumed raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_ScribJelly</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SwampJellyEdible]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_NetchJellyBase">
+		<defName>Mashed_Ashlands_SwampJellyEdible</defName>
+		<label>swamp jelly</label>
+		<description>A jelly like substance harvested from a swamp jelly. While it can be eaten raw, it's not quite as safe as milk. Often used as baby food for people that settle the ashlands, as the nematocysts found in it help with teething pain.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_SwampJelly</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RawGlowingScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawGlowingScathecraw</defName>
+		<label>glowing scathecraw leaves</label>
+		<description>Raw glowing scathecraw leaves. Tough and chewy, not particularly pleasant to eat... and not exactly the safest.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawGlowingScathecraw</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<FoodPoisonChanceFixedHuman>0.12</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+	</ThingDef>
+</Defs>

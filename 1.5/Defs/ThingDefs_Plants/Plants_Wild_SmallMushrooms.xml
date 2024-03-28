@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SmallMushroomBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase" Name="Mashed_Ashlands_SmallMushroomBase" Abstract="True">
+		<statBases>
+			<Nutrition>0.35</Nutrition>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<fertilityMin>0.6</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_AshlandFungus</defName>
+		<label>ashland fungus</label>
+		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus</texPath>
+		</graphicData>
+		<plant>
+			<growDays>2.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>170</sowWork>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_BlueEntoloma]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_BlueEntolomaBase">
+		<defName>Mashed_Ashlands_Plant_BlueEntoloma</defName>
+		<label>blue entoloma</label>
+		<description>A small mushroom commonly found growing in densely forested ashland regions. Many enjoy the sight of its brilliant blue colouration.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_BlueEntoloma</texPath>
+		</graphicData>
+		<plant>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_FoyadaFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_FoyadaFungusBase">
+		<defName>Mashed_Ashlands_Plant_FoyadaFungus</defName>
+		<label>foyada fungus</label>
+		<description>A small mushroom commonly found growing in volcanically active ashland regions. Many enjoy the sight of its striking orange colouration.</description>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_FoyadaFungus</texPath>
+		</graphicData>
+		<plant>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_LuminousRussula]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_LuminousRussulaBase">
+		<defName>Mashed_Ashlands_Plant_LuminousRussula</defName>
+		<label>luminous russula</label>
+		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.2</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_LuminousRussula</texPath>
+		</graphicData>
+		<plant>
+			<growDays>4.6</growDays>
+			<visualSizeRange>0.15~0.35</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(3,47,69,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SulphurFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_SulphurFungusBase">
+		<defName>Mashed_Ashlands_Plant_SulphurFungus</defName>
+		<label>sulphur fungus</label>
+		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_SulphuricSand</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_VioletCoprinusBase">
+		<defName>Mashed_Ashlands_Plant_VioletCoprinus</defName>
+		<label>violet coprinus</label>
+		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandCavePlant>true</ashlandCavePlant>
+				<cavePlantCommonality>0.2</cavePlantCommonality>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_VioletCoprinus</texPath>
+		</graphicData>
+		<plant>
+			<growDays>3.8</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(33,94,84,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

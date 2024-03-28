@@ -3,6 +3,7 @@
 	<!-- ==========[Incidents]==========-->
 	<Mashed_Ashlands_PageIncident>Incident &amp; Event Settings</Mashed_Ashlands_PageIncident>
 	<!-- Volcano related -->
+	<Mashed_Ashlands_VolcanoConditionDurationMultiplier>The duration of volcanic conditions: ({0}%)</Mashed_Ashlands_VolcanoConditionDurationMultiplier>
 	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>Scale the distance affected by volcanos based on world coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize>
 	<Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>The distance set below will be used for a world generated at 30% coverage.</Mashed_Ashlands_VolcanoAffectedAreaScaleWithWorldSize_Tooltip>
 	<Mashed_Ashlands_VolcanoMaxAffectedArea>The maximum distance affected by volcanos: ({0} tile/s)</Mashed_Ashlands_VolcanoMaxAffectedArea>

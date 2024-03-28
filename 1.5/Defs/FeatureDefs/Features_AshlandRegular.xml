@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Ashlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_Ashlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>451</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_Ashlands</li>
+		</rootBiomes>
+		<acceptableBiomes>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+		</acceptableBiomes>
+		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_CoralCoastAshlands]==========-->
+	<!--
+	<FeatureDef>
+		<defName>Mashed_Ashlands_CoralCoastAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<minSize>10</minSize>
+		<rootBiomes>
+			<li>Mashed_Ashlands_CoralCoastAshlands</li>
+			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerCoralCoastAshlands</nameMaker>
+	</FeatureDef>
+	-->
+	<!-- ==========[Mashed_Ashlands_DustplainAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_DustplainAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerDustplainAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_GrazelandAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_GrazelandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerGrazelandAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_SwampAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_SwampAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerSwampAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

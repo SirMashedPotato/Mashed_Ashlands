@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Small]==========-->
+	<!-- ==========[Medium]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_JuvenileMudcrab</defName>
+		<thingDef>Mashed_Ashlands_RawJuvenileMudcrab</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_SwampAshland</li>
+		</allowedBiomes>
+		<baseFishingYield>4</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Large]==========-->
+</Defs>

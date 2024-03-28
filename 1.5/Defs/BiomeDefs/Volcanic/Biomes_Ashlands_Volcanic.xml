@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsVolcanicBase">
+		<defName>Mashed_Ashlands_VolcanicAshlands</defName>
+		<label>volcanic ashlands</label>
+		<description>An area of ashlands that is still experiencing extreme volcanic activity. Intense heat emanating from lava pools combined with frequent ash storms have limited the variety of life found here. Luckily these regions are largely untouched by blight. The terrain found here is a mix of fertile soil, cracked ground and scorched ash, with lava pools scattering the surface.</description>
+		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicAshlands</workerClass>
+		<texture>World/Biomes/Mashed_Ashlands_VolcanicAshlands</texture>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<earlyLoader>true</earlyLoader>
+				<baseBiome>true</baseBiome>
+				<preventRivers>true</preventRivers>
+				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
+				<terrainReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Sand</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSandVolcanic</replacedTerrain>
+					</li>
+				</terrainReplacers>
+				<roadReplacers>
+					<li>
+						<originalTerrain>PackedDirt</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_PackedAshVolcanic</replacedTerrain>
+					</li>
+				</roadReplacers>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Soil</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSoilVolcanic</replacedTerrain>
+					</li>
+				</dryToReplacers>
+				<useAshlandCavePlants>true</useAshlandCavePlants>
+				<useCustomCaveTerrain>true</useCustomCaveTerrain>
+				<otherTerrainDef>Mashed_Ashlands_RichAshGravelVolcanic</otherTerrainDef>
+				<waterTerrainDef>WaterShallow</waterTerrainDef>
+				<otherTerrainThreshold>0.25</otherTerrainThreshold>
+				<waterThreshold>0.9</waterThreshold>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls" MayRequire="odeum.wmbp">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestDenseAbove>1800</forestDenseAbove>
+				<forestSparseBelow>1100</forestSparseBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
+		</modExtensions>
+		<animalDensity>1</animalDensity>
+		<plantDensity>0.2</plantDensity>
+		<terrainsByFertility>
+			<li>
+				<terrain>Mashed_Ashlands_AshGravelVolcanic</terrain>
+				<min>-999</min>
+				<max>0.47</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshSoilVolcanic</terrain>
+				<min>0.47</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_RichAshSoilVolcanic</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.027</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>
+						<min>0</min>
+						<max>0.2</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_ScorchedAshSoilVolcanic</terrain>
+						<min>0.2</min>
+						<max>0.6</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_Lava</terrain>
+						<min>0.6</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>
+						<min>0.8</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<wildPlants>
+			<!-- Ground covers -->
+			<Mashed_Ashlands_Plant_CharredAshlandGrass>11</Mashed_Ashlands_Plant_CharredAshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
+			<!-- Nutrition plants -->
+			<Mashed_Ashlands_Plant_AshYam>0.1</Mashed_Ashlands_Plant_AshYam>
+			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_AshPomegranate>0.05</Mashed_Ashlands_Plant_AshPomegranate>
+			<!-- Resource plants -->
+			<Mashed_Ashlands_Plant_Chillshroom>0.1</Mashed_Ashlands_Plant_Chillshroom>
+			<Mashed_Ashlands_Plant_ParasolBush>0.2</Mashed_Ashlands_Plant_ParasolBush>
+			<Mashed_Ashlands_Plant_TramaShrub>0.2</Mashed_Ashlands_Plant_TramaShrub>
+			<!-- Aesthetic plants -->
+			<Mashed_Ashlands_Plant_ScorchedBush>2</Mashed_Ashlands_Plant_ScorchedBush>
+			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
+			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
+			<Mashed_Ashlands_LavaBloom>1</Mashed_Ashlands_LavaBloom>
+			<!-- Trees -->
+			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
+			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.1</Mashed_Ashlands_Plant_TreeEmperorParasol>
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.15</Mashed_Ashlands_BurnedStumpPermanent>
+			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
+			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
+			<!-- ==========[Pollution]========== -->
+			<!-- Polluted ground covers -->
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
+			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_GlowingEntoloma>
+			<!-- Polluted nutrition plants -->
+			<Mashed_Ashlands_Plant_ToxYam MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_ToxYam>
+			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_GlowingScathecraw>
+			<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingParasolBush>
+			<!-- Polluted resource plants -->
+			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_Plant_TramaMass>
+			<!-- Polluted trees -->
+			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TreeEmperorToxisol>
+		</wildPlants>
+		<wildAnimals>
+			<!-- prey animals -->
+			<Mashed_Ashlands_Scuttler>0.2</Mashed_Ashlands_Scuttler>
+			<Mashed_Ashlands_Vvardvark>0.1</Mashed_Ashlands_Vvardvark>
+			<Mashed_Ashlands_AshHopper>0.3</Mashed_Ashlands_AshHopper>
+			<!-- herd animals -->
+			<Mashed_Ashlands_Firebug>0.2</Mashed_Ashlands_Firebug>
+			<Mashed_Ashlands_Shalk>0.1</Mashed_Ashlands_Shalk>
+			<Mashed_Ashlands_Netch>0.2</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Guar>0.4</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_Wormmouth>0.3</Mashed_Ashlands_Wormmouth>
+			<!-- predators -->
+			<Mashed_Ashlands_Pyrantula>0.2</Mashed_Ashlands_Pyrantula>
+			<Mashed_Ashlands_Kagouti>0.2</Mashed_Ashlands_Kagouti>
+			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
+			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
+			<!-- ESCP Trolls -->
+			<ESCP_TrollBarren MayRequire="sirmashedpotato.escp.trolls">0.05</ESCP_TrollBarren>
+			<ESCP_TrollHill MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollHill>
+			<ESCP_TrollCave MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollCave>
+			<ESCP_TrollCoastal MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollCoastal>
+			<ESCP_TrollUdyrfrykte MayRequire="sirmashedpotato.escp.trolls">0.01</ESCP_TrollUdyrfrykte>
+			<!-- ESCP Spriggan-->
+			<ESCP_Spriggan_Burnt MayRequire="pphhyy.escp.spriggan">0.05</ESCP_Spriggan_Burnt>
+			<ESCP_Spriggan_Parasol MayRequire="pphhyy.escp.spriggan">0.01</ESCP_Spriggan_Parasol>
+			<ESCP_Spriggan_Matron MayRequire="pphhyy.escp.spriggan">0.01</ESCP_Spriggan_Matron>
+			<ESCP_Spriggan_EarthMother MayRequire="pphhyy.escp.spriggan">0.005</ESCP_Spriggan_EarthMother>
+			<!-- special -->
+		</wildAnimals>
+		<pollutionWildAnimals>
+			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_AshHopperGlowing>
+			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NetchGlowing>
+			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_NixOxGlowing>
+			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_NixHoundGlowing>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+		</pollutionWildAnimals>
+	</BiomeDef>
+</Defs>

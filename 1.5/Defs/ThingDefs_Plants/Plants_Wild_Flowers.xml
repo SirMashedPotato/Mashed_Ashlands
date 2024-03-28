@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FlowerBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_FlowerBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.2</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshPlanter</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandPitcher]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshlandPitcherBase">
+		<defName>Mashed_Ashlands_Plant_AshlandPitcher</defName>
+		<label>ashland pitcher</label>
+		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_ShallowMarsh</li>
+					<li>Mashed_Ashlands_DeepMarsh</li>
+					<li>Mashed_Ashlands_AshSand</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshlandPitcher</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_BlackAntherflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_BlackAntherflowerBase">
+		<defName>Mashed_Ashlands_Plant_BlackAntherflower</defName>
+		<label>black anther</label>
+		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_RichAshGravel</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>10</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_BlackAntherFlower</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GoldenSedgeflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_GoldenSedgeflowerBase">
+		<defName>Mashed_Ashlands_Plant_GoldenSedgeflower</defName>
+		<label>golden sedge</label>
+		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>15</Beauty>
+			<BeautyOutdoors>15</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_GoldenSedgeFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_HornLilyflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_HornLilyflowerBase">
+		<defName>Mashed_Ashlands_Plant_HornLilyflower</defName>
+		<label>horn lily</label>
+		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_HornLilyFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerBlue]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
+		<label>meadow flower</label>
+		<description>A colourful flower often found growing in large clusters. Most common in regions with ash rich soil, but without ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerRed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_LavaBloomBase">
+		<defName>Mashed_Ashlands_LavaBloom</defName>
+		<label>lava bloom</label>
+		<description>A vibrant red flower that can often be found growing in rich volcanic ash.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoilVolcanic</li>
+					<li>Mashed_Ashlands_RichAshSoilVolcanic</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaBloom</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_LavaCactus</defName>
+		<label>lava cactus</label>
+		<description>A hardy species of cactus, often found growing in arid ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaCactus</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_NirthflyflowerBase">
+		<defName>Mashed_Ashlands_Plant_Nirthflyflower</defName>
+		<label>nirthfly</label>
+		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NirthflyFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_NobleSedgeflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_NobleSedgeflowerBase">
+		<defName>Mashed_Ashlands_Plant_NobleSedgeflower</defName>
+		<label>noble sedge</label>
+		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>15</Beauty>
+			<BeautyOutdoors>15</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NobleSedgeFlower</texPath>
+		</graphicData>
+		<plant>
+			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Stoneflower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_StoneflowerBase">
+		<defName>Mashed_Ashlands_Plant_Stoneflower</defName>
+		<label>stoneflower</label>
+		<description>A blue flower that can often be found growing in stony ash. Though it looks fragile, it is surprisingly resistant to the effects of ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshGravel</li>
+					<li>Mashed_Ashlands_RichAshGravel</li>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_Stoneflower</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_WillowFlower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_WillowFlowerBase">
+		<defName>Mashed_Ashlands_Plant_WillowFlower</defName>
+		<label>willow flower</label>
+		<description>A pink flower that can often be found growing in regions with ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_WillowFlower</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+</Defs>

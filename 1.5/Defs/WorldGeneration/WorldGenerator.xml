@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_VolcanoDormant]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_VolcanoDormant</defName>
+		<order>111</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_VolcanoDormant"/>
+	</WorldGenStepDef>
+	<!-- ==========[Mashed_Ashlands_VolcanoActive]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_VolcanoActive</defName>
+		<order>112</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_VolcanoActive"/>
+	</WorldGenStepDef>
+	<!-- ==========[Mashed_Ashlands_VolcanoBlighted]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_VolcanoBlighted</defName>
+		<order>113</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_VolcanoBlighted"/>
+	</WorldGenStepDef>
+	<!-- ==========[Mashed_Ashlands_VolcanoExtinct]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_VolcanoExtinct</defName>
+		<order>114</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_VolcanoExtinct"/>
+	</WorldGenStepDef>
+	<!-- ==========[Mashed_Ashlands_AshlandBiomesEarly]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_AshlandBiomesEarly</defName>
+		<order>115</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_AshlandBiomesEarly"/>
+	</WorldGenStepDef>
+	<!-- World kwama nests as 116 -->
+	<!-- ==========[Mashed_Ashlands_AshlandBiomesLate]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_AshlandBiomesLate</defName>
+		<order>117</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_AshlandBiomesLate"/>
+	</WorldGenStepDef>
+</Defs>

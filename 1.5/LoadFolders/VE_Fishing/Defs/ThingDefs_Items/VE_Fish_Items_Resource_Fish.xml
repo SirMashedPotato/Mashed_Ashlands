@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RawFishBase]==========-->
+	<ThingDef Name="Mashed_Ashlands_RawFishBase" ParentName="VCEF_RawFishBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawFish</li>
+		</tradeTags>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawArmourhead]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawArmourhead</defName>
+		<label>armourhead</label>
+		<description>Raw armourhead. Often found in reefs near ashland regions, they have several large spines along their back, that can make handling them somewhat risky.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawArmourhead</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawAshBlindfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawAshBlindfish</defName>
+		<label>ash blindfish</label>
+		<description>Raw ash blindfish. As its name suggest, the ash blindfish completely lacks functioning eyes. Most people mistake these for diseased fish, and just throw them back in the water.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawAshBlindfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawCutthroatTrout]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawCutthroatTrout</defName>
+		<label>cutthroat trout</label>
+		<description>Raw cutthroat trout. A species of trout that is usually found in clear waters, which leads many to assume it was introduced to the waterways of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCutthroatTrout</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawCrabeater]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawCrabeater</defName>
+		<label>crabeater</label>
+		<description>Raw crabeater. A primitive and heavily armoured fish, the jaws of the crabeater are designed specifically for crushing shell. Quite common in the oceanic waters near ashlands, due  to the abundance of crabs that can be found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawFiremouthGuiyu]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawFiremouthGuiyu</defName>
+		<label>firemouth guiyu</label>
+		<description>Raw firemouth guiyu. An incredibly primitive fish, solely found in oceanic waters near ashland regions. Unlike most fish found in these waters, the firemouth guiyu will often travel to the tainted waters around blighted volcanos, where they are believed to spawn.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFiremouthGuiyu</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawFoyadaHopper]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawFoyadaHopper</defName>
+		<label>foyada hopper</label>
+		<description>Raw foyada hopper. A primitive lobe-finned fish, only found in volcanic rashland regions. While they are usually found in lakes and sukphur pools, they can sometimes be found hopping around on land.\n\nSome local tribes have tales of giant foyoda hoppers, that swim in pools of lava. Of course no one has actually caught a foyoda hopper of such grandiose size.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFoyadaHopper</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.35</Mass>
+			<Nutrition>0.15</Nutrition>
+			<MarketValue>3.3</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawGhostOctopus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawGhostOctopus</defName>
+		<label>ghost octopus</label>
+		<description>Raw ghost octopus. A tiny species of octopus usually only found in deep water. Ghost octopus are a fairly common sight in the large coral reefs found around ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.025</Nutrition>
+			<MarketValue>0.55</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawGourami]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawGourami</defName>
+		<label>gourami</label>
+		<description>Raw gourami. Small, and rather colourful, fish that are often kept as pets. This particular species has adapted to life in ashland regions, and has been able to thrive in the nutrient rich ponds found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.02</Mass>
+			<Nutrition>0.025</Nutrition>
+			<MarketValue>0.55</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawHoagaOto]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawHoagaOto</defName>
+		<label>hoaga oto</label>
+		<description>Raw hoaga oto. A species of Loricariidae that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawHoagaOto</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawHorseshoeCrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawHorseshoeCrab</defName>
+		<label>horseshoe crab</label>
+		<description>Raw horseshoe crab. An incredibly primitive creature, more closely related to spiders and scorpions, than to true crabs. They can often be found in large numbers along the coast of ashland regions, especially under a full moon.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawHorseshoeCrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawIde]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawIde</defName>
+		<label>ide</label>
+		<description>Raw ide. Often found in rivers and lakes in ashland regions. Develops a beautiful golden shine as it ages, though ide in ashland regions don't usually live long enough for that.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawIde</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawJuvenileBlueSandcrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawJuvenileBlueSandcrab</defName>
+		<label>blue sandcrab</label>
+		<description>Raw blue sandcrab. Considered quite a delicacy by some, who often eat the flesh straight out of the shell.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawJuvenileMudcrab]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawJuvenileMudcrab</defName>
+		<label>juvenile ashland mudcrab</label>
+		<description>Raw juvenile mudcrab. Adult mudcrab are most often found in swampy regions, though juveniles such as these may be found anywhere with fresh water and warm temperatures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileMudcrab</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.2</Nutrition>
+			<MarketValue>4</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMagmaSalmon]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMagmaSalmon</defName>
+		<label>magma salmon</label>
+		<description>Raw magma salmon. A species of salmon often found in ashland regions. Named after its vibrant red colouration, not because it lives in magma.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMagmaSalmon</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMonkfish</defName>
+		<label>monkfish</label>
+		<description>Raw monkfish. Monkfish can grow rather large, especially of the coast of ashland regions. While rather hideous, monkfish is considered to be quite a delicacy by many. Some locals have tales of enormous monkfish swallowing ill-prepared anglers whole.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMonkfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMouthbrooder]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMouthbrooder</defName>
+		<label>mouthbrooder</label>
+		<description>Raw mouthbrooder. A member of Osteoglossinae native to ashland regions. The mouthbrooder is named after how it carries its eggs and young in its mouth, a behaviour called mouthbrooding. This helps keep the vulnerable spawn safe from slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMustardEel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMustardEel</defName>
+		<label>mustard eel</label>
+		<description>Raw mustard eel. Often found along the coast in ashland regions, mustard eel tend to hide in muddy sediments, likely a to help them avoid slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMustardEel</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawNetchHookEel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawNetchHookEel</defName>
+		<label>netch-hook eel</label>
+		<description>Raw netch-hook eel. A species of freshwater eel native to ashland regions. Named after their long barbels, which are capable of releasing frightfully heart-stopping shocks. Some individuals are believed to be over 100 years old, and are certainly of a size that matches their age.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawNetchHookEel</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawOanna]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawOanna</defName>
+		<label>oanna</label>
+		<description>Raw oanna. A primate ray-like fish, only found in found in the tainted oceans around blighted ashland regions. Unlike most aquatic life in these waters, the oanna is actually rather peaceful.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawOanna</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<Nutrition>0.15</Nutrition>
+			<MarketValue>3</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawPilgrimGoby]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawPilgrimGoby</defName>
+		<label>pilgrim goby</label>
+		<description>Raw pilgrim goby. A species of goby common in ashland regions, named after being found basically anywhere there is water.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawPilgrimGoby</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSiltfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSiltfish</defName>
+		<label>siltfish</label>
+		<description>Raw siltfish. A lobe-finned fish that can often found in the shallow silty waters of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSiltfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.06</Nutrition>
+			<MarketValue>1.4</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawScumCarp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawScumCarp</defName>
+		<label>scum carp</label>
+		<description>Raw scum carp. A species of carp that can often be found in ashland regions experiencing extreme volcanic activity. It has quite an odd taste, and doesn't exactly smell great when cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawScumCarp</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSmallSlaughterfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSmallSlaughterfish</defName>
+		<label>small slaughterfish</label>
+		<description>Raw small slaughterfish. A comparatively smaller breed of slaughterfish, though just as dangerous in numbers. Usually found infesting waterways in ashland regions.\n\nSome choose to keep these fish as pets, due to their iridescent colouration. Those that do are often surprised when their fish tank is bright red, and full of little bits of bone.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSmallSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.02</Nutrition>
+			<MarketValue>0.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSlaughterfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSlaughterfish</defName>
+		<label>ashland slaughterfish</label>
+		<description>Raw slaughterfish. There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in ashland regions.\n\nAshland slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.12</Nutrition>
+			<MarketValue>2.8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawSleeperCoffinfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawSleeperCoffinfish</defName>
+		<label>sleeper coffinfish</label>
+		<description>Raw sleeper coffinfish. A rather rotund, and quite small, fish. The sleeper coffinfish is almost solely found in the tainted oceans around blighted ashland regions, making it one of the few aquatic species found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSleeperCoffinfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.015</Nutrition>
+			<MarketValue>0.7</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawRicefish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawRicefish</defName>
+		<label>ricefish</label>
+		<description>Raw ricefish. A small species of fish that can often be found hiding between saltrice stems.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawRicefish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawTelvannisCephalopod]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawTelvannisCephalopod</defName>
+		<label>Telvannis cephalopod</label>
+		<description>Raw Telvannis cephalopod. This particular species of cephalopod can often be found in the waters around Port Telvannis, although they have also been found further abroad in warmer waters.\n\nMembers of Great House Telvanni can often be found wearing the hollowed out shell of larger Telvannis cephalopod as a helmet. The process of preparing these shells is said to take years to master.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTelvannisCephalopod</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.06</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawTench]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawTench</defName>
+		<label>tench</label>
+		<description>Raw tench. A fairly common sight in stagnant pools of water in ashland regions, tench are able to grow quite large thanks to the abundance of prey found in these waters.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTench</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawThornyCatfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawThornyCatfish</defName>
+		<label>thorny catfish</label>
+		<description>Raw thorny catfish. A small species of catfish that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawThornyCatfish</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawToadstoolTilapia]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawToadstoolTilapia</defName>
+		<label>toadstool tilapia</label>
+		<description>Raw toadstool tilapia. A species of tilapia native to the freshwater of ashland regions. Named after its striking red colouration, which many associate with that of a toadstool.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawToadstoolTilapia</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawTrevally]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawTrevally</defName>
+		<label>trevally</label>
+		<description>Raw trevally. Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large Telvannis cephalopod populations.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawWeepingPygmyShark]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawWeepingPygmyShark</defName>
+		<label>weeping pygmy shark</label>
+		<description>Raw weeping pygmy shark. One of the smallest species of shark. This particular species is almost solely found in the nutrient rich waters near ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawWeepingPygmyShark</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

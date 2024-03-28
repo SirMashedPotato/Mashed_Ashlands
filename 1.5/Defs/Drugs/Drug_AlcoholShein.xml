@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholShein]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase">
+		<defName>Mashed_Ashlands_AlcoholShein</defName>
+		<label>shein</label>
+		<description>A wine made from fermenting comberry. Consumption provides reduces tiredness, whilst also draining consciousness. As shein is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_SheinHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_AlcoholShein</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_SheinHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SheinHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_AlcoholHighBase">
+		<defName>Mashed_Ashlands_SheinHigh</defName>
+		<label>shein consumption</label>
+		<description>Shein in the bloodstream. Decreases tiredness, but drains consciousness.</description>
+		<stages>
+			<li>
+				<label>empowered</label>
+				<restFallFactor>0.9</restFallFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TorchbugLamp_Base]==========-->
+	<ThingDef ParentName="BuildingBase" Name="Mashed_Ashlands_TorchbugLamp_Base" Abstract="True">
+		<category>Building</category>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<Mass>2</Mass>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<Mashed_Ashlands_ParasolWoodLog>10</Mashed_Ashlands_ParasolWoodLog>
+		</costList>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1</fuelConsumptionRate>
+				<fuelCapacity>10</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawEmperorParasolMoss</li>
+						<li>Mashed_Ashlands_RawAshFungus</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_RawGlowingAshFungus</li>
+						<li>RawFungus</li>
+						<li>Meat_Megaspider</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
+		<designationCategory>Furniture</designationCategory>
+		<designatorDropdown>Mashed_Ashlands_Building_TorchbugLamp</designatorDropdown>
+		<uiOrder>2800</uiOrder>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_TorchbugLamp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
+		<defName>Mashed_Ashlands_TorchbugLamp</defName>
+		<label>torchbug lamp</label>
+		<description>A small lamp made of parasol wood, and containing torchbugs. Provides a reasonable amount of light, though not as much as a regular torch lamp. The torchbugs will need to be fed either insect meat, raw ash fungus, or parasol moss, every now and then.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_TorchbugLamp</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+				<tickInterval>750</tickInterval>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflyLamp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
+		<defName>Mashed_Ashlands_FetcherflyLamp</defName>
+		<label>fetcherfly lamp</label>
+		<description>A small lamp made of parasol wood, and containing a few fetcherfly. Provides a reasonable amount of light, and small amount of heat, though not as much light as a regular torch lamp. The fetcherfly will need to be fed either insect meat, raw ash fungus, or parasol moss, every now and then.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_FetcherflyLamp</texPath>
+		</graphicData>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(251,89,11,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_FetcherflyLampEffecter</effecterDef>
+				<tickInterval>750</tickInterval>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Fetcherfly</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

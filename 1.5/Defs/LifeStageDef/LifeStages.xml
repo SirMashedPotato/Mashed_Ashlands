@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LifeStageDef>
+		<defName>Mashed_Ashlands_AnimalAdultCliffRacer</defName>
+		<label>adult</label>
+		<workerClass>Mashed_Ashlands.LifeStageWorker_AnimalAdultCliffRacer</workerClass>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+		<caravanRideable>true</caravanRideable>
+	</LifeStageDef>
+</Defs>
