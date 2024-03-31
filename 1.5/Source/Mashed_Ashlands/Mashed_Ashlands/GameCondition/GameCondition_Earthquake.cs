@@ -47,7 +47,7 @@ namespace Mashed_Ashlands
                     {
                         if (c.GetRoof(map) == RoofDefOf.RoofRockThick)
                         {
-                            if (Rand.Value < 0.01f)
+                            if (Rand.Value < 0.01f && IsValidCell(c, map))
                             {
                                 RoofCollapserImmediate.DropRoofInCells(c, map);
                             }
@@ -89,6 +89,18 @@ namespace Mashed_Ashlands
                     }
                 }
             }
+        }
+
+        // <summary>
+        /// Meant for use as a hook for potential Harmony patches
+        /// </summary>
+        public bool IsValidCell(IntVec3 c, Map map)
+        {
+            if (c.GetFirstPawn(map) == null && c.GetFirstItem(map) == null && c.GetFirstBuilding(map) == null)
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
