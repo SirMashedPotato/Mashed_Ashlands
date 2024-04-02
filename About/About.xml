@@ -3,13 +3,13 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>1.1.7</modVersion>
+	<modVersion>1.1.8</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/Mashed_Ashlands_ModIcon</modIconPath>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
 	<description>A completely remade version of the original MorrowRim mod, made to a much higher standard, and with significantly more experience under my belt. There is a wealth of new content added, and several features from some of my other MorrowRim mods have been incorporated. The mod itself is entirely focused on the ashland biomes, with all content included being tied to them in some way.\n\n- Very much inspired by the Elder Scrolls series by Bethesda Studios, with a heavy focus on Morrowind\n- Slightly inspired by the Monster Hunter series by Capcom\n- Seed bag texture used for SeedsPlease Lite support by CitizenKanye\n- Thanks to Aludis and Star~Verse for providing feedback\n- And to Ranger Rick for being neat</description>
-	<modIconPath IgnoreIfNoMatchingField="True">UI/Mashed_Ashlands_ModIcon</modIconPath>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
