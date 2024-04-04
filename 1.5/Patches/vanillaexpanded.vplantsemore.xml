@@ -16,6 +16,13 @@
 						<li>Mashed_Ashlands_AshSandBlighted</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef[defName="VCE_AquaticGrowZoneTerrains"]/allowedTerrains</xpath>
+					<value>
+						<li>Mashed_Ashlands_ShallowMarsh</li>
+						<li>Mashed_Ashlands_DeepMarsh</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

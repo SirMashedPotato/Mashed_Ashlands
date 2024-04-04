@@ -30,6 +30,9 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsMineral</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicEbony]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_MetallicBase">

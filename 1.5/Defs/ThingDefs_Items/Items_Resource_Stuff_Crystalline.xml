@@ -45,6 +45,9 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsCrystal</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_PurpleCrystalShard]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_CrystalShardBase">

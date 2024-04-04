@@ -90,6 +90,9 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawAlcoholPlant</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawHackleLo]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
@@ -152,6 +155,9 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawAlcoholPlant</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
@@ -172,6 +178,9 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawAlcoholPlant</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawWickwheat]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
@@ -190,5 +199,8 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawAlcoholPlant</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

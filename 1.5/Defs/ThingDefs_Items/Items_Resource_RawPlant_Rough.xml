@@ -30,6 +30,9 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawEmperorParasolMoss]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
@@ -51,6 +54,9 @@
 		<ingestible>
 			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMuck]==========-->
@@ -122,5 +128,8 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

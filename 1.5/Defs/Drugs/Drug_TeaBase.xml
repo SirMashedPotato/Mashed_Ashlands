@@ -46,6 +46,9 @@
 			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 			<bulkRecipeCount>4</bulkRecipeCount>
 		</recipeMaker>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsTea</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_TeaHighBase]==========-->
 	<HediffDef Name="Mashed_Ashlands_TeaHighBase" Abstract="True">

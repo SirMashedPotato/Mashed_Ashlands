@@ -65,6 +65,9 @@
 				<listOrder>10</listOrder>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAlcohol</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_AlcoholHighBase]==========-->
 	<HediffDef Name="Mashed_Ashlands_AlcoholHighBase" Abstract="True">

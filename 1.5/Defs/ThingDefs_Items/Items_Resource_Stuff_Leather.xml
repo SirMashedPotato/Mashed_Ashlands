@@ -210,6 +210,9 @@
 			<statFactors>
 				<MaxHitPoints>1.5</MaxHitPoints>
 			</statFactors>
+			<categories>
+				<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			</categories>
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RachnoidSilk]==========-->
@@ -260,6 +263,9 @@
 		</statBases>
 		<stuffProps>
 			<color>(71,64,75)</color>
+			<categories>
+				<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			</categories>
 		</stuffProps>
 	</ThingDef>
 </Defs>
