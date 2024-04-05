@@ -64,6 +64,8 @@
 		<defName>Mashed_Ashlands_VolcanicWindBlight</defName>
 		<label>volcanic wind blight storm</label>
 		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.\n\nAsh particles carry blight, wild animals are driven mad, and crops become blighted.</description>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>Mashed_Ashlands_OutsideInBlightStorm</weatherThought>
 		<eventMakers>
 			<li>
 				<averageInterval>8000</averageInterval>

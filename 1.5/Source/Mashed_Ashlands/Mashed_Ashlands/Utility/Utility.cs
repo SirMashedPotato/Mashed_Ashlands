@@ -32,5 +32,16 @@ namespace Mashed_Ashlands
         {
             return map.gameConditionManager.ConditionIsActive(GameConditionDefOf.Mashed_Ashlands_VolcanicMiasma);
         }
+
+        public static bool MapHasDustStorm(Thing thing)
+        {
+            return MapHasDustStorm(thing.MapHeld);
+        }
+
+        public static bool MapHasDustStorm(Map map)
+        {
+            WeatherDef curWeather = map.weatherManager.curWeather;
+            return curWeather == WeatherDefOf.Mashed_Ashlands_DustStorm || curWeather == WeatherDefOf.Mashed_Ashlands_DustThunderstorm;
+        }
     }
 }

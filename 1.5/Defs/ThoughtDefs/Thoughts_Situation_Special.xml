@@ -12,10 +12,39 @@
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
+		<nullifyingTraits>
+			<li>Mashed_Ashlands_AshStormLover</li>
+		</nullifyingTraits>
 		<nullifyingGenes>
 			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_AshStormLover]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_AshStormLover</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>Mashed_Ashlands.ThoughtWorker_AshStormLover</workerClass>
+		<stages>
+			<li>
+				<label>outside in ash storm and really loving it!</label>
+				<description>My lungs are being filled with ash! My skin is being worn down! This is the greatest feeling ever!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>outside in ash storm and loving it!</label>
+				<description>I can breathe perfectly fine, but at least I feel the ash wearing away at my skin!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>outside in dust storm and loving it!</label>
+				<description>I can breathe perfectly fine, but at least I feel the ash slowly wearing away at my skin!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+		<requiredTraits>
+			<li>Mashed_Ashlands_AshStormLover</li>
+		</requiredTraits>
 	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
 	<!--
@@ -33,6 +62,19 @@
 		</stages>
 	</ThoughtDef>
 	-->
+	<!-- ==========[Mashed_Ashlands_OutsideInBlightStorm]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_OutsideInBlightStorm</defName>
+		<durationDays>0.6</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>outside in blight storm</label>
+				<description>The sky... The wind... The... voices? This is all wrong!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_OutsideInDustStorm]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_OutsideInDustStorm</defName>
@@ -45,6 +87,9 @@
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
+		<nullifyingTraits>
+			<li>Mashed_Ashlands_AshStormLover</li>
+		</nullifyingTraits>
 		<nullifyingGenes>
 			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>

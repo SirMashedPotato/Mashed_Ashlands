@@ -12,8 +12,14 @@
 		</thingCategories>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_PlantAlcoholRawBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase" Name="Mashed_Ashlands_PlantTeaRawBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawChillshroom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantTeaRawBase">
 		<defName>Mashed_Ashlands_RawChillshroom</defName>
 		<label>chillshroom</label>
 		<description>Raw chillshroom. Often brewed into a cooling tea, though it can be used as animal feed when necessary.</description>
@@ -30,12 +36,9 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-		<tradeTags>
-			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
-		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawEmperorParasolMoss]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantTeaRawBase">
 		<defName>Mashed_Ashlands_RawEmperorParasolMoss</defName>
 		<label>emperor parasol moss</label>
 		<description>Moss from an emperor parasol. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create an elixir that boosts resistance to ash buildup during ash storms.</description>
@@ -54,9 +57,6 @@
 		<ingestible>
 			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
 		</ingestible>
-		<tradeTags>
-			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
-		</tradeTags>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMuck]==========-->
@@ -114,7 +114,7 @@
 		<allowedArchonexusCount>75</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawTramaRoot]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantTeaRawBase">
 		<defName>Mashed_Ashlands_RawTramaRoot</defName>
 		<label>trama root</label>
 		<description>Raw trama root. Often brewed into a calming tea, though it can be used as animal feed when necessary.</description>
@@ -128,8 +128,5 @@
 			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-		<tradeTags>
-			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
-		</tradeTags>
 	</ThingDef>
 </Defs>

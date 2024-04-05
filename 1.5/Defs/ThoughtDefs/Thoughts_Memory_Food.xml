@@ -16,26 +16,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	<!-- ==========[Mashed_Ashlands_AteNixOxMilk]==========-->
-	<ThoughtDef>
-		<defName>Mashed_Ashlands_AteNixOxMilk</defName>
-		<durationDays>1</durationDays>
-		<stackLimit>1</stackLimit>
-		<nullifyingGenes>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
-		</nullifyingGenes>
-		<nullifyingPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
-			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
-		</nullifyingPrecepts>
-		<stages>
-			<li>
-				<label>consumed raw nix ox mucus</label>
-				<description>Bleh, tastes like old socks!</description>
-				<baseMoodEffect>-3</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_AteInsectEggDirect]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_AteInsectEggDirect</defName>

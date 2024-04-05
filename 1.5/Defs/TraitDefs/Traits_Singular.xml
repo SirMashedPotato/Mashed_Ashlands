@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshStormLover]==========-->
+	<TraitDef>
+		<defName>Mashed_Ashlands_AshStormLover</defName>
+		<commonality>0.6</commonality>
+		<degreeDatas>
+		  <li>
+			<label>ash storm lover</label>
+			<description>[PAWN_nameDef] has always loved ash storms. The feeling of ash slowly wearing down skin, burning the sinuses and filling unexpected holes. [PAWN_pronoun] gets unreasonably happy whenever [PAWN_pronoun] is outside in one.</description>
+		  </li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>
