@@ -258,7 +258,7 @@ namespace Mashed_Ashlands
             {
 				foreach (Map map in AffectedMaps)
 				{
-					map.weatherManager.TransitionTo(WeatherDefOf.Clear);
+					map.weatherManager.TransitionTo(RimWorld.WeatherDefOf.Clear);
 				}
 			}
             base.End();

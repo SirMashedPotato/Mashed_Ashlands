@@ -20,7 +20,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</defName>
 		<label>glowing mudcrab egg (fert.)</label>
 		<description>A fertilised glowing mudcrab egg. If all goes well, it should hatch into a baby glowing mudcrab. It can be eaten raw, but it's much better cooked.</description>
@@ -40,7 +40,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NetchGlowingFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_NetchGlowingFertilized</defName>
 		<label>glowing netch egg (fert.)</label>
 		<description>A fertilised glowing netch egg. If all goes well, it should hatch into a glowing netch calf. It can be eaten raw, but it's much better cooked. As glowing netch are rather protective of their eggs, glowing netch eggs somewhat valuable.</description>
@@ -59,7 +59,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixHoundGlowingFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixHoundGlowingFertilized</defName>
 		<label>glowing nix-hound egg (fert.)</label>
 		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a glowing nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>

@@ -65,7 +65,7 @@
 		<li IfModActive="vanillaexpanded.vcef">LoadFolders/VE_FishingTextures</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/LoadFolders/VE_Fishing</li>
 		<!-- SYR_ProcessorFramework -->
-		<li IfModActive="syrchalis.processor.framework">1.5/LoadFolders/SYR_ProcessorFramework</li>
+		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.5/LoadFolders/SYR_ProcessorFramework</li>
 		<!-- ReGrowth_Core -->
 		<li IfModActive="regrowth.botr.core">1.5/LoadFolders/ReGrowth_Core</li>
 		<!-- WorldMapBeautificationProject -->
@@ -77,8 +77,6 @@
 		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.5/LoadFolders/MorrowRim_SoundPatch</li>
 		<!-- Exploration Mode -->
 		<li IfModActive="rw_exploration_mode.thelastbulletbender">1.5/LoadFolders/ExplorationMode</li>
-		<!-- Dunmer lamp pack -->
-		<li IfModActive="sirmashedpotato.morrowrim.dunmerlamppack">1.5/LoadFolders/MorrowRim_DunmerLampPack</li>
 		<!-- VE Recycling -->
 		<li IfModActive="vanillaexpanded.recycling">1.5/LoadFolders/VE_Recycling</li>
 		<!-- Cherry Picker -->

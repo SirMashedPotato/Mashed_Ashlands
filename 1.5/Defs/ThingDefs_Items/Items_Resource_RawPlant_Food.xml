@@ -11,6 +11,12 @@
 			<li>Mashed_Ashlands_AshlandsRawFoodPlant</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_PlantAlcoholRawBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase" Name="Mashed_Ashlands_PlantAlcoholRawBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawAlcoholPlant</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawAshFungus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawAshFungus</defName>
@@ -73,7 +79,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawComberry]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantAlcoholRawBase">
 		<defName>Mashed_Ashlands_RawComberry</defName>
 		<label>comberries</label>
 		<description>Raw comberries. While usually fermented into shein, it can also be used in cooking, and even eaten raw.</description>
@@ -134,7 +140,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMeadowRye]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantAlcoholRawBase">
 		<defName>Mashed_Ashlands_RawMeadowRye</defName>
 		<label>meadow rye</label>
 		<description>Raw meadow rye. While usually fermented into flin, it can also be used in cooking.</description>
@@ -154,7 +160,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawSaltrice]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantAlcoholRawBase">
 		<defName>Mashed_Ashlands_RawSaltrice</defName>
 		<label>saltrice</label>
 		<description>Raw saltrice. While usually fermented into mazte, it can also be used in cooking.</description>
@@ -174,7 +180,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawWickwheat]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantAlcoholRawBase">
 		<defName>Mashed_Ashlands_RawWickwheat</defName>
 		<label>wickwheat</label>
 		<description>Raw wickwheat. While often fermented into sujamma, it can also be used in cooking.</description>

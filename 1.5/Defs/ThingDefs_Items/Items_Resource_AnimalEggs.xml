@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
-	<ThingDef ParentName="EggFertBase" Name="Mashed_Ashlands_InsectEggFertBase" Abstract="True">
+	<ThingDef ParentName="EggFertBase" Name="Mashed_Ashlands_EggFertBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsFertEgg</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase" Name="Mashed_Ashlands_InsectEggFertBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_InsectEgg</texPath>
 		</graphicData>
@@ -11,7 +17,7 @@
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_AlitFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_AlitFertilized</defName>
 		<label>alit egg (fert.)</label>
 		<description>A fertilised alit egg. If all goes well, it should hatch into a alit whelp. It can be eaten raw, but it's much better cooked.</description>
@@ -60,9 +66,12 @@
 		<statBases>
 			<MarketValue>7.0</MarketValue>
 		</statBases>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_BantamGuarFertilized</defName>
 		<label>bantam guar egg (fert.)</label>
 		<description>A fertilised bantam guar egg. If all goes well, it should hatch into a bantam guar whelp. It can be eaten raw, but it's much better cooked.</description>
@@ -80,7 +89,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_CliffRacerFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_CliffRacerFertilized</defName>
 		<label>cliff racer egg (fert.)</label>
 		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
@@ -101,7 +110,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_DurzogFertilized</defName>
 		<label>durzog egg (fert.)</label>
 		<description>A fertilised durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
@@ -140,7 +149,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_GuarFertilized</defName>
 		<label>guar egg (fert.)</label>
 		<description>A fertilised guar egg. If all goes well, it should hatch into a guar calf. It can be eaten raw, but it's much better cooked.</description>
@@ -160,7 +169,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_KagoutiFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_KagoutiFertilized</defName>
 		<label>kagouti egg (fert.)</label>
 		<description>A fertilised kagouti egg. If all goes well, it should hatch into a kagouti calf. It can be eaten raw, but it's much better cooked.</description>
@@ -180,7 +189,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_MudcrabFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_MudcrabFertilized</defName>
 		<label>ashland mudcrab egg (fert.)</label>
 		<description>A fertilised mudcrab egg. If all goes well, it should hatch into a baby mudcrab. It can be eaten raw, but it's much better cooked.</description>
@@ -200,7 +209,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_NetchFertilized</defName>
 		<label>netch egg (fert.)</label>
 		<description>A fertilised netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As netch are rather protective of their eggs, netch eggs somewhat valuable.</description>
@@ -387,11 +396,13 @@
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
 		<stackLimit>1</stackLimit>
-		<tradeability>Sellable</tradeability>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_SwampJellyFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_SwampJellyFertilized</defName>
 		<label>swamp jelly egg (fert.)</label>
 		<description>A fertilised swamp jelly egg. If all goes well, it should hatch into a swamp jelly calf. It can be eaten raw, but it's much better cooked. As swamp jelly are rather protective of their eggs, swamp jelly eggs somewhat valuable.</description>
@@ -429,7 +440,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_WormmouthFertilized]==========-->
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_WormmouthFertilized</defName>
 		<label>wormmouth egg (fert.)</label>
 		<description>A fertilised wormmouth egg. If all goes well, it should hatch into a wormmouth whelp. It can be eaten raw, but it's much better cooked.</description>

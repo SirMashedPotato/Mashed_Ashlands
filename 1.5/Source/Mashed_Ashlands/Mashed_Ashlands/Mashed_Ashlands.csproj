@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.2.3.1.1\lib\net472\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.3.3\lib\net472\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -103,6 +103,7 @@
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="DefOf\WeatherDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_Earthquake.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="DefOf\WorldObjectDefOf.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\PlantPropsUtility.cs" />

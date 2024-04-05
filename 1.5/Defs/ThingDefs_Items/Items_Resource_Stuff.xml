@@ -158,6 +158,7 @@
 				<li>Stony</li>
 				<li>Woody</li>
 				<li>Metallic</li>
+				<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 			</categories>
 			<commonality>0</commonality>
 			<constructEffect>ConstructMetal</constructEffect>

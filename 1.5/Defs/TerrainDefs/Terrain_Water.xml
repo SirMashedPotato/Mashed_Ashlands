@@ -35,6 +35,11 @@
 				<thoughtAfterBathing>RG_BathingMarsh</thoughtAfterBathing>
 				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl" MayRequire="biomesteam.biomescore">
+				<terrainTags>
+					<li>Mashed_Ashlands_Marsh</li>
+				</terrainTags>
+			</li>
 		</modExtensions>
 		<tags>
 			<li>PF_TerrainTag_Mud</li>
