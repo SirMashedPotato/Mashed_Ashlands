@@ -59,7 +59,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixHoundGlowingFertilized]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixHoundGlowingFertilized</defName>
 		<label>glowing nix-hound egg (fert.)</label>
 		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a glowing nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
