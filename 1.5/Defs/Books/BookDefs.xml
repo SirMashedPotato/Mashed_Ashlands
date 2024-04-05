@@ -32,7 +32,10 @@
 				</verticalGraphic>
 				<doers>
 					<li Class="BookOutcomeProperties_GainResearch">
-						<tab>Mashed_ResearchTab_ElderScrolls</tab>
+						<tabs>
+							<Mashed_ResearchTab_ElderScrolls/>
+						</tabs>
+						<exclude/>
 					</li>
 				</doers>
 			</li>
