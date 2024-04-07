@@ -1,6 +1,13 @@
 <Defs>
+	<!-- ==========[Mashed_Ashlands_SeedRoughBase]==========-->
+	<ThingDef ParentName="SeedBase" Name="Mashed_Ashlands_SeedRoughBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsSeed</li>
+			<li>Mashed_Ashlands_AshlandsSeedRoughPlant</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedChillshroom]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
 		<defName>Mashed_Ashlands_SeedChillshroom</defName>
 		<label>chillshroom spores</label>
 		<graphicData>
@@ -19,7 +26,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedScathecraw]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
 		<defName>Mashed_Ashlands_SeedScathecraw</defName>
 		<label>scathecraw seeds</label>
 		<graphicData>
@@ -38,7 +45,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedTramaShrub]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
 		<defName>Mashed_Ashlands_SeedTramaShrub</defName>
 		<label>trama seeds</label>
 		<graphicData>

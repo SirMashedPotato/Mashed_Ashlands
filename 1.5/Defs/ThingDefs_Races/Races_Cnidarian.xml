@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_CnidarianThingBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_CnidarianThingBase" Abstract="True">
 		<modExtensions>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>false</hasFat>
 			</li>

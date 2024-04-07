@@ -6,7 +6,7 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<AllowPollutionStimulis>false</AllowPollutionStimulis>
 			</li>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>true</hasFat>
 			</li>

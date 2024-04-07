@@ -1,6 +1,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_SeedToxYam]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedToxYam</defName>
 		<label>tox yam seeds</label>
 		<graphicData>
@@ -18,7 +18,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedGlowingParasolBush]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedGlowingParasolBush</defName>
 		<label>glowing parasol bush spores</label>
 		<graphicData>
@@ -36,7 +36,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedGlowingScathecraw]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedGlowingScathecraw</defName>
 		<label>glowing scathecraw seeds</label>
 		<graphicData>
@@ -55,7 +55,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedWasteSponge]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedWasteSponge</defName>
 		<label>waste sponge spores</label>
 		<graphicData>
@@ -73,7 +73,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedEmperorToxisol]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedEmperorToxisol</defName>
 		<label>emperor toxisol spores</label>
 		<graphicData>
@@ -91,7 +91,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedWeepingMouldcap]==========-->
-	<ThingDef ParentName="SeedBase" MayRequire="ludeon.rimworld.biotech">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase" MayRequire="ludeon.rimworld.biotech">
 		<defName>Mashed_Ashlands_SeedWeepingMouldcap</defName>
 		<label>weeping mouldcap spores</label>
 		<graphicData>

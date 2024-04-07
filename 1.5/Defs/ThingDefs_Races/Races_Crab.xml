@@ -2,6 +2,12 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_CrabThingBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_CrabThingBase" Abstract="True">
+		<modExtensions>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>false</hasFat>
+			</li>
+		</modExtensions>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>

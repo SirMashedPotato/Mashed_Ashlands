@@ -33,5 +33,8 @@
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 		</comps>
 		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>

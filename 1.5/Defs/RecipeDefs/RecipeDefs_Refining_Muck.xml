@@ -29,6 +29,26 @@
 		</products>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
 	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_RefineMuckBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
+		<defName>Mashed_Ashlands_RefineMuckBulk</defName>
+		<label>refine muck x4</label>
+		<description>Refines 40 buckets of muck into 20 herbal medicine.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMuck</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<MedicineHerbal>40</MedicineHerbal>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+	</RecipeDef>
 	<!-- ==========[Mashed_Ashlands_RefineMuckWithNetchJelly]==========-->
 	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
 		<defName>Mashed_Ashlands_RefineMuckWithNetchJelly</defName>
@@ -51,6 +71,39 @@
 		</fixedIngredientFilter>
 		<products>
 			<MedicineHerbal>10</MedicineHerbal>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_RefineMuckWithNetchJellyBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_RefineMuckBase">
+		<defName>Mashed_Ashlands_RefineMuckWithNetchJellyBulk</defName>
+		<label>refine muck with netch jelly x4</label>
+		<description>Refines 40 buckets of muck and 20 netch jelly into 40 herbal medicine.</description>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMuck</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_NetchJelly</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_NetchJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineHerbal>40</MedicineHerbal>
 		</products>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
 	</RecipeDef>

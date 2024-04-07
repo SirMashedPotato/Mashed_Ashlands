@@ -88,6 +88,10 @@
 						<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
 						<amountRange>1</amountRange>
 					</li>
+					<li MayRequireAnyOf="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">
+						<thingDef>Mashed_Ashlands_SeedAshYam</thingDef>
+						<amountRange>10</amountRange>
+					</li>
 				</guaranteedDrops>
 				<potentialDrops>
 					<li>

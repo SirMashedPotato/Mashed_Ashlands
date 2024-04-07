@@ -1,6 +1,13 @@
 <Defs>
+	<!-- ==========[Mashed_Ashlands_SeedProductionBase]==========-->
+	<ThingDef ParentName="SeedBase" Name="Mashed_Ashlands_SeedProductionBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsSeed</li>
+			<li>Mashed_Ashlands_AshlandsSeedProductionPlant</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedInkCap]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase">
 		<defName>Mashed_Ashlands_SeedCorkbulb</defName>
 		<label>corkbulb seeds</label>
 		<graphicData>
@@ -21,7 +28,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedInkCap]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase">
 		<defName>Mashed_Ashlands_SeedInkCap</defName>
 		<label>ink-cap spores</label>
 		<graphicData>
@@ -42,7 +49,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedKreshweed]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase">
 		<defName>Mashed_Ashlands_SeedKreshweed</defName>
 		<label>kreshweed seeds</label>
 		<graphicData>
@@ -64,7 +71,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedMucksponge]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase">
 		<defName>Mashed_Ashlands_SeedMucksponge</defName>
 		<label>mucksponge spores</label>
 		<graphicData>

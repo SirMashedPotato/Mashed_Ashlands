@@ -1,6 +1,13 @@
 <Defs>
+	<!-- ==========[Mashed_Ashlands_SeedTreeBase]==========-->
+	<ThingDef ParentName="SeedBase" Name="Mashed_Ashlands_SeedTreeBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsSeed</li>
+			<li>Mashed_Ashlands_AshlandsSeedTree</li>
+		</tradeTags>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedAshlandTree]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedAshlandTree</defName>
 		<label>ashland tree seeds</label>
 		<graphicData>
@@ -18,7 +25,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedParasolBush]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedParasolBush</defName>
 		<label>parasol bush spores</label>
 		<graphicData>
@@ -36,7 +43,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedEmperorParasol]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedEmperorParasol</defName>
 		<label>emperor parasol spores</label>
 		<graphicData>
@@ -54,7 +61,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedMilkcap]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedMilkcap</defName>
 		<label>milkcap spores</label>
 		<graphicData>
@@ -72,7 +79,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedNetchShield]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedNetchShield</defName>
 		<label>netch shield spores</label>
 		<graphicData>
@@ -90,7 +97,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedNetchShieldVibrant]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedNetchShieldVibrant</defName>
 		<label>vibrant netch shield spores</label>
 		<graphicData>
@@ -108,7 +115,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedSpongeCap]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedSpongeCap</defName>
 		<label>spongecap spores</label>
 		<graphicData>
@@ -126,7 +133,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedWeepingLeathercap]==========-->
-	<ThingDef ParentName="SeedBase">
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedWeepingLeathercap</defName>
 		<label>weeping leathercap spores</label>
 		<graphicData>

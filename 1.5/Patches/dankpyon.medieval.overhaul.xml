@@ -6,9 +6,16 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+				<!-- ==========[Hide blacklist]==========-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MedievalOverhaul.SeperateHideList[defName="WhiteList"]/blackListLeathers</xpath>
+					<value>
+						<li>Mashed_Ashlands_NetchLeather</li>
+					</value>
+				</li>
 				<!-- ==========[Crafting flour]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName = "DankPyon_CraftFlour" or defName="DankPyon_CraftFlourBulk"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>Defs/RecipeDef[defName="DankPyon_CraftFlour" or defName="DankPyon_CraftFlourBulk"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawMeadowRye</li>
 						<li>Mashed_Ashlands_RawWickwheat</li>
@@ -23,20 +30,20 @@
 				</li>
 				<!-- ==========[Crafting sugar]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName = "DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>Defs/RecipeDef[defName="DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawMarshmerrow</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName = "DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/ingredients/li/filter/thingDefs[li="DankPyon_Sugarcane"]</xpath>
+					<xpath>Defs/RecipeDef[defName="DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/ingredients/li/filter/thingDefs[li="DankPyon_Sugarcane"]</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawMarshmerrow</li>
 					</value>
 				</li>
 				<!-- ==========[Ash Resistance]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="DankPyon_SchratBase"]/statBases</xpath>
+					<xpath>Defs/ThingDef[@Name="DankPyon_BaseGolem" or @Name="DankPyon_SchratBase" or defName="DankPyon_Ghoul_Stage_One" or defName="DankPyon_Ghoul_Stage_Two" or defName="DankPyon_Ghoul_Stage_Three"]/statBases</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
@@ -45,4 +52,3 @@
 		</match>
 	</Operation>
 </Patch>
-

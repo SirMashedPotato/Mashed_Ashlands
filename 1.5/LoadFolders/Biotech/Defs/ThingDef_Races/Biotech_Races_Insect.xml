@@ -9,7 +9,7 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>true</hasFat>
 			</li>
@@ -83,7 +83,7 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>true</hasFat>
 			</li>
@@ -239,6 +239,10 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
+			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
@@ -348,6 +352,10 @@
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -461,7 +469,7 @@
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="DankPyon.ButcherProperties">
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>true</hasFat>
 			</li>
