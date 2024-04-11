@@ -2,6 +2,7 @@
 using RimWorld;
 using RimWorld.Planet;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -92,7 +93,7 @@ namespace Mashed_Ashlands
 
         public bool AnyMapInRadius()
         {
-            foreach (Map map in Find.Maps)
+            foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap))
             {
                 if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
                 {

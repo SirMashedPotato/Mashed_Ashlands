@@ -41,7 +41,7 @@ namespace Mashed_Ashlands
         [HarmonyPrefix]
         public static bool Mashed_Ashlands_CaveTerrain_Patch(Map map)
         {
-            if (Find.World.HasCaves(map.Tile))
+            if (!map.IsPocketMap && Find.World.HasCaves(map.Tile))
             {
                 BiomeProperties props = BiomeProperties.Get(map.Biome);
                 if (props != null && props.useCustomCaveTerrain)

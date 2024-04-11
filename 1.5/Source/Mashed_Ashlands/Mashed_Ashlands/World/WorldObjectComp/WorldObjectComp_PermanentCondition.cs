@@ -1,6 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -24,7 +25,7 @@ namespace Mashed_Ashlands
             {
                 if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
                 {
-                    foreach (Map map in Find.Maps)
+                    foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap))
                     {
                         if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
                         {

@@ -117,7 +117,7 @@ namespace Mashed_Ashlands
                     {
                         if (currentConditionDef != null)
                         {
-                            foreach (Map map in Find.Maps)
+                            foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap))
                             {
                                 if (InAoE(map.Tile, category, ParentVolcano))
                                 {
