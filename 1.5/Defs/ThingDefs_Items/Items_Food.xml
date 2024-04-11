@@ -27,5 +27,8 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsMeal</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
