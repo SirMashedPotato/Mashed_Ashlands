@@ -76,7 +76,7 @@
 		<!-- MorrowRim Sound Patch -->
 		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.5/LoadFolders/MorrowRim_SoundPatch</li>
 		<!-- Exploration Mode -->
-		<li IfModActive="rw_exploration_mode.thelastbulletbender">1.5/LoadFolders/ExplorationMode</li>
+		<li IfModActive="thelastbulletbender.rwexploration">1.5/LoadFolders/ExplorationMode</li>
 		<!-- VE Recycling -->
 		<li IfModActive="vanillaexpanded.recycling">1.5/LoadFolders/VE_Recycling</li>
 		<!-- Cherry Picker -->

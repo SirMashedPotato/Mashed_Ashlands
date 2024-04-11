@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Lib.Harmony.2.3.3\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -43,7 +44,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RimworldExplorationMode">
-      <HintPath>I:\SteamLibrary\steamapps\workshop\content\294100\2941608795\1.4\Assemblies\RimworldExplorationMode.dll</HintPath>
+      <HintPath>I:\SteamLibrary\steamapps\workshop\content\294100\2941608795\1.5\Assemblies\RimworldExplorationMode.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
