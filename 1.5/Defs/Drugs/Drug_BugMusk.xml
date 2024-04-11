@@ -11,7 +11,7 @@
 		<possessionCount>3</possessionCount>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.85</drawSize>
+			<drawSize>1</drawSize>
 			<texPath>Things/Item/Drug/Mashed_Ashlands_BugMusk</texPath>
 		</graphicData>
 		<statBases>
@@ -67,6 +67,9 @@
 		<costList>
 			<Mashed_Ashlands_ShalkChitin>6</Mashed_Ashlands_ShalkChitin>
 		</costList>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsMusk</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_BugMuskHigh]==========-->
 	<HediffDef>

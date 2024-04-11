@@ -108,6 +108,9 @@
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>30</daysToRotStart>
@@ -132,6 +135,9 @@
 			<tasteThought/>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawTeaPlant</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>15</daysToRotStart>

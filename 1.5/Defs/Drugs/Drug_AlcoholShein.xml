@@ -32,13 +32,15 @@
 		<stages>
 			<li>
 				<label>empowered</label>
-				<restFallFactor>0.9</restFallFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<postFactor>0.9</postFactor>
 					</li>
 				</capMods>
+				<statFactors>
+					<RestFallRateFactor>0.9</RestFallRateFactor>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

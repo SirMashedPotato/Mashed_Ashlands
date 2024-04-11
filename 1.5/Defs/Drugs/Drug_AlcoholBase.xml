@@ -13,7 +13,7 @@
 		<possessionCount>6</possessionCount>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.85</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>

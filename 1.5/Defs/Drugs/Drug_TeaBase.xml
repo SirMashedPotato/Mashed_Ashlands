@@ -5,7 +5,7 @@
 		<possessionCount>6</possessionCount>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.85</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<WorkToMake>200</WorkToMake>

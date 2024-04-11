@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
 		<defName>Mashed_Ashlands_TeaChillshroom</defName>
 		<label>chillshroom tea</label>
-		<description>A tea brewed from chillshroom. While it has a rather peculiar taste, it does increase resistance to the heat.</description>
+		<description>A tea brewed using chillshroom. While it has a rather peculiar taste, it does increase resistance to the heat.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Ashlands_TeaChillshroomHigh</HediffDef>
 		</descriptionHyperlinks>
@@ -34,7 +34,7 @@
 		<defName>Mashed_Ashlands_TeaChillshroomHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>chillshroom tea</label>
-		<description>A tea brewed from chillshroom. While it has a rather peculiar taste, it does increase resistance to the heat.</description>
+		<description>A tea brewed using chillshroom. While it has a rather peculiar taste, it does increase resistance to the heat.</description>
 		<stages>
 			<li>
 				<statOffsets>

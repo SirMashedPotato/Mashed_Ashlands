@@ -136,6 +136,7 @@
 				<li>thing_subject->pack ash</li>
 				<li>thing_subject->cook scuttle</li>
 				<li>thing_subject->catch torchbugs</li>
+				<li>thing_subject->brew hackle-lo</li>
 				<li>thing_subject->brew trama root</li>
 				<li>thing_subject->brew mazte</li>
 				<li>thing_subject->brew sujamma</li>
@@ -166,6 +167,7 @@
 				<!-- things -->
 				<li>thing_subject->refine shalk chitin</li>
 				<li>thing_subject->brew chillshroom</li>
+				<li>thing_subject->brew marshmerrow</li>
 				<li>thing_subject->distil greef</li>
 				<li>thing_subject->refine muck</li>
 				<li>thing_subject->brew shein</li>

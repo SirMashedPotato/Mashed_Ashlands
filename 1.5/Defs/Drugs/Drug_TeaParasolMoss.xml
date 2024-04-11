@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
 		<defName>Mashed_Ashlands_TeaParasolMoss</defName>
 		<label>parasol moss tea</label>
-		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<description>A tea brewed using parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Ashlands_TeaParasolMossHigh</HediffDef>
 		</descriptionHyperlinks>
@@ -35,7 +35,7 @@
 		<defName>Mashed_Ashlands_TeaParasolMossHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>parasol moss tea</label>
-		<description>A tea brewed from parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
+		<description>A tea brewed using parasol moss. While it has a rather peculiar taste, it helps to protect the body from ash buildup.</description>
 		<stages>
 			<li>
 				<statOffsets>

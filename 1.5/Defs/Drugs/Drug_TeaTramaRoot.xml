@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
 		<defName>Mashed_Ashlands_TeaTramaRoot</defName>
 		<label>trama root tea</label>
-		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>
+		<description>A calming tea brewed using trama root. While it has an odd ashy taste, it does ease the mind.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Mashed_Ashlands_TeaTramaRootHigh</HediffDef>
 		</descriptionHyperlinks>
@@ -34,7 +34,7 @@
 		<defName>Mashed_Ashlands_TeaTramaRootHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>trama root tea</label>
-		<description>A calming tea brewed from trama root. While it has an odd ashy taste, it does ease the mind.</description>
+		<description>A calming tea brewed using trama root. While it has an odd ashy taste, it does ease the mind.</description>
 		<stages>
 			<li>
 				<statOffsets>
