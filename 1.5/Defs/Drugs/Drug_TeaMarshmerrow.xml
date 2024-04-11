@@ -34,7 +34,7 @@
 		<defName>Mashed_Ashlands_TeaMarshmerrowHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
 		<label>marshmerrow tea</label>
-		<description>A tea brewed using marshmerrow pulp. While it has a rather sweat taste, it does help to heal injuries.</description>
+		<description>A tea brewed using marshmerrow pulp. While it has a rather sweet taste, it does help to heal injuries.</description>
 		<stages>
 			<li>
 				<statOffsets>
