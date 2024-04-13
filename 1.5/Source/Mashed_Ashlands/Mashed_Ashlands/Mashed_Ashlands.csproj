@@ -81,6 +81,8 @@
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterBiomeSpecific.cs" />
     <Compile Include="Biome\ScattererValidator\ScattererValidator_SpecificTerrain.cs" />
+    <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectSmashEgg.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_Destroy.cs" />

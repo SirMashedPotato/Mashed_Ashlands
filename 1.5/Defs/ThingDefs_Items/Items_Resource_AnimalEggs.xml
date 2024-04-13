@@ -92,7 +92,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_CliffRacerFertilized</defName>
 		<label>cliff racer egg (fert.)</label>
-		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.\n\nAlternatively you could just smash the eggs. Just be careful adoing so with wild cliff racers nearby.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
 			<color>(109,111,109)</color>
@@ -106,6 +106,16 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_CliffRacer</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Smash {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectSmashEgg">
+				<soundDef>Hive_Spawn</soundDef>
+				<baseManhunterRadius>3</baseManhunterRadius>
+				<manhunterKind>Mashed_Ashlands_CliffRacer</manhunterKind>
 			</li>
 		</comps>
 	</ThingDef>
@@ -386,7 +396,7 @@
 			</li>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>imprint on {0_label}</useLabel>
+				<useLabel>Imprint on {0_label}</useLabel>
 				<showUseGizmo>true</showUseGizmo>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">

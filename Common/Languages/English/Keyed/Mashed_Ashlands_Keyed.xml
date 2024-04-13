@@ -44,6 +44,11 @@
 	<Mashed_Ashlands_NotPlayerFaction>{1_label} is not part of the player faction</Mashed_Ashlands_NotPlayerFaction>
 	<Mashed_Ashlands_AnimalsIncapable>{1_label} is incapable of animals</Mashed_Ashlands_AnimalsIncapable>
 	<Mashed_Ashlands_AnimalsTooLow>Imprinting a {0} requires an animals skill of {1} or higher</Mashed_Ashlands_AnimalsTooLow>
+	<!-- ==========[Egg smashing]==========-->
+	<Mashed_Ashlands_EggNotWild>only wild {0} can be smashed</Mashed_Ashlands_EggNotWild>
+	<Mashed_Ashlands_PawnRefusesSmashEgg>{0_label} refuses to smash the egg</Mashed_Ashlands_PawnRefusesSmashEgg>
+	<Mashed_Ashlands_EggSmashRevenge_Label>{0} revenge (egg smashing)</Mashed_Ashlands_EggSmashRevenge_Label>
+	<Mashed_Ashlands_EggSmashRevenge_Description>Nearby {0} have noticed some of their eggs have been destroyed, and have turned manhunter.\n\nThe {0} will hunt down any humanoid they can reach, at least until they lose interest.\n\nCaused by: {1_label} smashing {2}</Mashed_Ashlands_EggSmashRevenge_Description>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>
