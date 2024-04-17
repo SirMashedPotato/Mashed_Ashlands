@@ -17,7 +17,7 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
         {
-            if (__result.Contains(ThingDefOf.Mashed_Ashlands_Basalt))
+            if (tile > -1 && __result.Contains(ThingDefOf.Mashed_Ashlands_Basalt))
             {
                 BiomeProperties biomeProps = BiomeProperties.Get(__instance.grid[tile].biome);
                 if (biomeProps == null || !biomeProps.canHaveBasalt)

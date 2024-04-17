@@ -60,6 +60,24 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedGoldenReed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
+		<defName>Mashed_Ashlands_SeedGoldenReed</defName>
+		<label>golden reed seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedGoldenReed</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_GoldenReed</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_GoldenReed</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedMilkcap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedMilkcap</defName>

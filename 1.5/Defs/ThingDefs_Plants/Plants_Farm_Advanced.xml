@@ -31,6 +31,48 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_GoldenReed</defName>
+		<label>golden reed plant</label>
+		<description>A very distinctively coloured reed, rarely found growing in certain ashland regions near water. Sometimes used as a supplement for wood. A form of martial arts was named after this plant. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>6</minTilesToWaterForWild>
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GoldenReedPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7</growDays>
+			<visualSizeRange>1~2.4</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<wildClusterRadius>6</wildClusterRadius>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_MeadowRye</defName>
