@@ -3,7 +3,6 @@
 	<!-- ==========[Mashed_Ashlands_AshStorm]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_AshStorm</defName>
-		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>Mashed_Ashlands.ThoughtWorker_AshStorm</workerClass>
 		<stages>
 			<li>
@@ -23,7 +22,6 @@
 	<!-- ==========[Mashed_Ashlands_AshStormLover]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_AshStormLover</defName>
-		<validWhileDespawned>true</validWhileDespawned>
 		<workerClass>Mashed_Ashlands.ThoughtWorker_AshStormLover</workerClass>
 		<stages>
 			<li>

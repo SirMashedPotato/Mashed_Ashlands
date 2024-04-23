@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            if (p.MapHeld != null && !p.PositionHeld.Roofed(p.MapHeld))
+            if (p.SpawnedOrAnyParentSpawned && !p.PositionHeld.Roofed(p.MapHeld))
             {
                 if (Utility.MapHasAshStorm(p))
                 {
