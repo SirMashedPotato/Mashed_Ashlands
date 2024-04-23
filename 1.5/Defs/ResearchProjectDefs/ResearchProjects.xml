@@ -39,7 +39,7 @@
 		<label>beginner ashland farming</label>
 		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.\n\nThese plants can be grown at the ash growing zone.</description>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->beginner ashland [action_grow]</li>
@@ -65,7 +65,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSowing_Beginner</li>
@@ -99,7 +99,7 @@
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewY>1.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
@@ -124,7 +124,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>2.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<generalRules>
 			<rulesStrings>
@@ -154,7 +154,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>1.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>2.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
@@ -182,7 +182,7 @@
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewY>2.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
@@ -208,7 +208,7 @@
 		<baseCost>250</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>3.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewY>3.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Advanced</li>

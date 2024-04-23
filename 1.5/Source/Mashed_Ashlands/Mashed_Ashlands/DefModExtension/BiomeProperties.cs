@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -24,7 +25,9 @@ namespace Mashed_Ashlands
         public bool increasePollutedFertility = false;
 
         /* for cave gen */
-        public bool useAshlandCavePlants = false;
+        public List<BiomePlantRecord> cavePlants;
+        public bool forceCustomCavePlants = false;
+        public bool increaseCavePlantWeight = true;
         public bool useCustomCaveTerrain = false;
         public TerrainDef otherTerrainDef;
         public TerrainDef waterTerrainDef;

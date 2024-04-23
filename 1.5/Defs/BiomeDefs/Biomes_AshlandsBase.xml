@@ -170,6 +170,7 @@
 			<Fog>1</Fog>
 			<Rain>0.1</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
@@ -218,6 +219,7 @@
 			<FoggyRain>0.5</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>

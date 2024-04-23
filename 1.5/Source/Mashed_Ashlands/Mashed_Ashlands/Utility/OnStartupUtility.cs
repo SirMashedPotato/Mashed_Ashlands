@@ -13,10 +13,8 @@ namespace Mashed_Ashlands
         public static HashSet<BiomeDef> baseAshlandBiomeDefs = new HashSet<BiomeDef> { };
 
         public static HashSet<BiomeDef> restrictedTerrainPlantsBiomes = new HashSet<BiomeDef> { };
-        public static HashSet<BiomeDef> ashlandCavePlantsBiomes = new HashSet<BiomeDef> { };
         public static HashSet<BiomeDef> modifiedPollutionFertilityBiomes = new HashSet<BiomeDef> { };
 
-        public static List<ThingDef> ashlandCavePlants = new List<ThingDef> { };
         public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
 
         public static List<ThingDef> hasPollutionPropsAnimals = new List<ThingDef> { };
@@ -71,10 +69,6 @@ namespace Mashed_Ashlands
                     {
                         restrictedTerrainPlantsBiomes.Add(biomeDef);
                     }
-                    if (props.useAshlandCavePlants)
-                    {
-                        ashlandCavePlantsBiomes.Add(biomeDef);
-                    }
                     if (props.increasePollutedFertility)
                     {
                         modifiedPollutionFertilityBiomes.Add(biomeDef);
@@ -90,10 +84,6 @@ namespace Mashed_Ashlands
                 PlantProperties props = PlantProperties.Get(thingDef);
                 if (props != null)
                 {
-                    if (props.ashlandCavePlant)
-                    {
-                        ashlandCavePlants.Add(thingDef);
-                    }
                     if (props.ashlandFlowerPlant)
                     {
                         ashlandFlowerPlants.Add(thingDef);

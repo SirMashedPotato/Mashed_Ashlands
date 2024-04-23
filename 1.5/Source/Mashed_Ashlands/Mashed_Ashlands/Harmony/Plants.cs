@@ -18,17 +18,21 @@ namespace Mashed_Ashlands
         [HarmonyPrefix]
         public static bool Mashed_Ashlands_CustomCavePlants_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (cavePlants && Mashed_Ashlands_ModSettings.EnableCavePlants && OnStartupUtility.ashlandCavePlantsBiomes.Contains(___map.Biome))
+            if (cavePlants)
             {
-                outPlants.Clear();
-                for (int i = 0; i < OnStartupUtility.ashlandCavePlants.Count; i++)
+                BiomeProperties props = BiomeProperties.Get(___map.Biome);
+                if (props != null && !props.cavePlants.NullOrEmpty() && (Mashed_Ashlands_ModSettings.EnableCavePlants || props.forceCustomCavePlants))
                 {
-                    if (OnStartupUtility.ashlandCavePlants[i].CanEverPlantAt(c, ___map, false))
+                    outPlants.Clear();
+                    foreach (BiomePlantRecord record in props.cavePlants)
                     {
-                        outPlants.Add(OnStartupUtility.ashlandCavePlants[i]);
+                        if (record.plant.CanEverPlantAt(c, ___map))
+                        {
+                            outPlants.Add(record.plant);
+                        }
                     }
+                    return false;
                 }
-                return false;
             }
             return true;
         }
@@ -44,18 +48,17 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_PlantChoiceWeight_Patch(ThingDef plantDef, IntVec3 c, ref float __result, Map ___map)
         {
-            BiomeProperties biomeProps = BiomeProperties.Get(___map.Biome);
-            if (biomeProps != null && biomeProps.useAshlandCavePlants)
+            BiomeProperties props = BiomeProperties.Get(___map.Biome);
+            if (props != null && props.increaseCavePlantWeight && !props.cavePlants.NullOrEmpty())
             {
                 RoofDef roof = c.GetRoof(___map);
                 if (roof != null && roof.isNatural)
                 {
+                    BiomePlantRecord plantRecord = props.cavePlants.Find(x => x.plant == plantDef);
+                    if (plantRecord != null)
                     {
-                        PlantProperties plantProps = PlantProperties.Get(plantDef);
-                        if (plantProps != null && plantProps.ashlandCavePlant)
-                        {
-                            __result = plantProps.cavePlantCommonality;
-                        }
+                        __result = plantRecord.commonality;
+
                     }
                 }
             }

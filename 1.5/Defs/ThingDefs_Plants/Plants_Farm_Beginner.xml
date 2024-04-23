@@ -135,6 +135,8 @@
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -213,6 +215,8 @@
 		</graphicData>
 		<uiIconScale>0.85</uiIconScale>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<growDays>6</growDays>
 			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<harvestYield>2</harvestYield>
@@ -221,8 +225,6 @@
 			</sowResearchPrerequisites>
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<fertilityMin>1</fertilityMin>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
 			<topWindExposure>0.2</topWindExposure>
 		</plant>
 	</ThingDef>

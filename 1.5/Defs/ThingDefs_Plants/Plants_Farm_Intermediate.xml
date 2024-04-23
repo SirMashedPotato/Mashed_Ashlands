@@ -61,7 +61,7 @@
 		<pathCost>14</pathCost>
 		<plant>
 			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -207,8 +207,6 @@
 		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandCavePlant>true</ashlandCavePlant>
-				<cavePlantCommonality>0.05</cavePlantCommonality>
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>3</minTilesToWaterForWild>
 			</li>
@@ -224,7 +222,7 @@
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>Mashed_Ashlands_RawMuck</harvestedThingDef>
 			<harvestYield>8</harvestYield>

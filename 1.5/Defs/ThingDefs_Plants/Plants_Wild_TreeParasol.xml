@@ -15,7 +15,7 @@
 		</statBases>
 		<plant>
 			<fertilityMin>1</fertilityMin>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<wildClusterWeight>35</wildClusterWeight>

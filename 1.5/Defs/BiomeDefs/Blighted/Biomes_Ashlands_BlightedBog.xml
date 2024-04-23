@@ -12,6 +12,14 @@
 				<preventRivers>true</preventRivers>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>false</increasePollutedFertility>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.05</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+				</cavePlants>
 				<terrainReplacers>
 					<li>
 						<originalTerrain>Gravel</originalTerrain>
@@ -38,7 +46,6 @@
 						<replacedTerrain>Mashed_Ashlands_AshSoilBlighted</replacedTerrain>
 					</li>
 				</dryToReplacers>
-				<useAshlandCavePlants>true</useAshlandCavePlants>
 				<useCustomCaveTerrain>true</useCustomCaveTerrain>
 				<otherTerrainDef>Mashed_Ashlands_AshGravel</otherTerrainDef>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>

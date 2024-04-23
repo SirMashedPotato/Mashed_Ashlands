@@ -14,6 +14,8 @@
 			<texPath>Things/Plant/Mashed_Ashlands_Glowstalk</texPath>
 		</graphicData>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<sowResearchPrerequisites>
@@ -72,6 +74,8 @@
 			<texPath>Things/Plant/Mashed_Ashlands_Stinkcap</texPath>
 		</graphicData>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<sowResearchPrerequisites>

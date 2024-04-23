@@ -4,6 +4,8 @@
 	<ThingDef Name="Mashed_Ashlands_Plant_TreeDecorativeBase" ParentName="Mashed_Ashlands_PseudoTreeBase" Abstract="True">
 		<blockWind>true</blockWind>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>

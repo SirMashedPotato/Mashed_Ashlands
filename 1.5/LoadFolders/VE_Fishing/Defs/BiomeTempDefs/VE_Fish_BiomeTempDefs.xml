@@ -49,4 +49,10 @@
 			<li>Mashed_Ashlands_MarshAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandCave]==========-->
+	<VCE_Fishing.BiomeTempDef>
+		<defName>Mashed_Ashlands_BiomeTempAshlandCave</defName>
+		<biomeTempLabel>Mashed_Ashlands_CaveAshland</biomeTempLabel>
+		<biomes/>
+	</VCE_Fishing.BiomeTempDef>
 </Defs>

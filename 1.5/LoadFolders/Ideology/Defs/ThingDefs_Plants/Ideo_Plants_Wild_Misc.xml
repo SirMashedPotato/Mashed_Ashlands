@@ -5,16 +5,12 @@
 		<defName>Mashed_Ashlands_Plant_DarkshadeGlowstalk</defName>
 		<label>darkshade glowstalk</label>
 		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While they can very rarely be found growing in caves in ashland regions, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
-		<modExtensions Inherit="False">
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandCavePlant>true</ashlandCavePlant>
-				<cavePlantCommonality>0.01</cavePlantCommonality>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
 		</graphicData>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>

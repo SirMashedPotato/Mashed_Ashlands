@@ -8,7 +8,7 @@
 		</statBases>
 		<plant>
 			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>0.6</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
 			<topWindExposure>0.05</topWindExposure>
@@ -101,12 +101,6 @@
 		<defName>Mashed_Ashlands_Plant_LuminousRussula</defName>
 		<label>luminous russula</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandCavePlant>true</ashlandCavePlant>
-				<cavePlantCommonality>0.2</cavePlantCommonality>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
@@ -166,12 +160,6 @@
 		<defName>Mashed_Ashlands_Plant_VioletCoprinus</defName>
 		<label>violet coprinus</label>
 		<description>A species of small mushroom, often found growing in caves in ashland regions, or in ashland regions with high levels of humidity. Its brilliant colouration and glow is quite beautiful. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandCavePlant>true</ashlandCavePlant>
-				<cavePlantCommonality>0.2</cavePlantCommonality>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>
