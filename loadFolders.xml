@@ -70,8 +70,7 @@
 		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.5/LoadFolders/SYR_ProcessorFramework</li>
 		<!-- ReGrowth_Core -->
 		<li IfModActive="regrowth.botr.core">1.5/LoadFolders/ReGrowth_Core</li>
-		<!-- WorldMapBeautificationProject -->
-		<li IfModActive="odeum.wmbp">LoadFolders/WorldMapBeautificationProject</li>
+		<li IfModActive="regrowth.botr.core">LoadFolders/WorldMapBeautificationProject</li>
 		<!-- SeedsPleaseLite -->
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">LoadFolders/SeedsPleaseLiteTextures</li>
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.5/LoadFolders/SeedsPleaseLite</li>
