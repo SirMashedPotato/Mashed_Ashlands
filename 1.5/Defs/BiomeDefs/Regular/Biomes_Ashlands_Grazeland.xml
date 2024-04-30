@@ -55,8 +55,6 @@
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.9</waterThreshold>
             </li>
-			<li Class="BiomesKit.BiomesKitControls" MayRequire="odeum.wmbp">
-				
 		</modExtensions>
 		<animalDensity>3</animalDensity>
 		<plantDensity>0.4</plantDensity>

@@ -21,7 +21,7 @@
 			<li>PF_TerrainTag_Lava</li>
 		</tags>
 		<affordances>
-			<li MayRequire="biomesteam.biomescore">Lava</li>
+			<li MayRequire="biomesteam.biomescore">BMT_TerrainAffordance_Lava</li>
 		</affordances>
 		<!-- VE/ReGrowth nodes -->
 		<tickerType>Rare</tickerType>
