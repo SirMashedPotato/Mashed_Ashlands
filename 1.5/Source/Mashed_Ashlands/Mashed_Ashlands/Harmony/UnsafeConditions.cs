@@ -45,25 +45,4 @@ namespace Mashed_Ashlands
             }
         }
     }
-
-    /// <summary>
-    /// Prevents pawns arriving during an ash storm
-    /// caravans and such
-    /// </summary>
-    [HarmonyPatch(typeof(IncidentWorker_PawnsArrive))]
-    [HarmonyPatch("CanFireNowSub")]
-    public static class IncidentWorker_PawnsArrive_CanFireNowSub_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_MentalBreakWorker_RunWild_Patch(IncidentParms parms, ref bool __result)
-        {
-            if (__result)
-            {
-                if (parms.target is Map map)
-                {
-                    __result = !Utility.MapHasUnsafeCondition(map);
-                }
-            }
-        }
-    }
 }

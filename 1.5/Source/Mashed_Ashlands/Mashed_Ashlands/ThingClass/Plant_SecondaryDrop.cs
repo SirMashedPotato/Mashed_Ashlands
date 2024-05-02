@@ -1,29 +1,29 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
 {
     public class Plant_SecondaryDrop : Plant
     {
-        public override void PlantCollected(Pawn by, PlantDestructionMode plantDestructionMode)
+        public override IEnumerable<ThingDefCountClass> GetAdditionalLeavings(DestroyMode mode)
         {
-            if (HarvestableNow)
+            foreach (ThingDefCountClass additionalLeaving in base.GetAdditionalLeavings(mode))
             {
-                PlantProperties props = PlantProperties.Get(def);
-                if (props != null && props.secondaryDrop != null)
+                yield return additionalLeaving;
+            }
+            PlantProperties props = PlantProperties.Get(def);
+            if (props != null && props.secondaryDrop != null)
+            {
+                if (!props.secondaryNotWhenLeafless || !LeaflessNow)
                 {
-                    if (!props.secondaryNotWhenLeafless || !LeaflessNow)
+                    if (Rand.Chance(props.secondaryDropChance))
                     {
-                        if (Rand.Chance(props.secondaryDropChance))
-                        {
-                            Thing droppedThing = ThingMaker.MakeThing(props.secondaryDrop);
-                            droppedThing.stackCount = props.secondaryDropAmountRange.RandomInRange;
-                            GenPlace.TryPlaceThing(droppedThing, Position, Map, ThingPlaceMode.Near);
-                        }
+                        ThingDefCountClass extraDrop = new ThingDefCountClass(props.secondaryDrop, props.secondaryDropAmountRange.RandomInRange);
+                        yield return extraDrop;
                     }
                 }
             }
-            base.PlantCollected(by, plantDestructionMode);
         }
     }
 }

@@ -35,6 +35,7 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<allowUnderground>false</allowUnderground>
+		<preventNeutralVisitors>true</preventNeutralVisitors>
 	</GameConditionDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicMiasma]==========-->
 	<GameConditionDef>
@@ -47,6 +48,7 @@
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
+		<preventNeutralVisitors>true</preventNeutralVisitors>
 		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<exclusiveConditions>
 			<li>ToxicFallout</li>
