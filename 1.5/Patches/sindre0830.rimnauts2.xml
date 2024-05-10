@@ -2,12 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Biomes! Caverns</li>
+			<li>RimNauts 2</li>
 		</mods>
 		<match Class="PatchOperationAddModExtension">
-			<xpath>Defs/BiomeDef[defName="BMT_CrystalCaverns" or defName="BMT_EarthenDepths" or defName="BMT_FungalForest"]</xpath>
+			<xpath>Defs/BiomeDef[@Name="RimNauts2_Biome"]</xpath>
 			<value>
-				<li Class="Mashed_Ashlands.PreventAshlandOverride"/>
+				<li Class="Mashed_Ashlands.PreventVolcanicConditions"/>
 			</value>
 		</match>
 	</Operation>

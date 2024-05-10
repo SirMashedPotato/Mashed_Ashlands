@@ -93,6 +93,7 @@
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\PreventAshlandOverride.cs" />
+    <Compile Include="DefModExtension\PreventVolcanicConditions.cs" />
     <Compile Include="DefModExtension\RaceProperties.cs" />
     <Compile Include="DefOf\EffecterDefOf.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />

@@ -25,7 +25,7 @@ namespace Mashed_Ashlands
             {
                 if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
                 {
-                    foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap))
+                    foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap && PreventVolcanicConditions.Get(x.Biome) == null))
                     {
                         if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
                         {
