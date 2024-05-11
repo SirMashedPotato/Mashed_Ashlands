@@ -36,7 +36,6 @@
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<workSkill>Cooking</workSkill>
-			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 			<soundWorking>Recipe_Brewing</soundWorking>
 			<bulkRecipeCount>4</bulkRecipeCount>
 			<productCount>8</productCount>

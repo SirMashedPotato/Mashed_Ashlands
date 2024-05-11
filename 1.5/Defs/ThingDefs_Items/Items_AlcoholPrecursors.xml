@@ -28,7 +28,6 @@
 			</researchPrerequisites>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<workSkill>Cooking</workSkill>
-			<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 			<soundWorking>Recipe_Brewing</soundWorking>
 			<bulkRecipeCount>5</bulkRecipeCount>
 			<productCount>5</productCount>
@@ -114,7 +113,7 @@
 		</costList>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_WickwheatPrecursor]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,vr.processor.framework">
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,syrchalis.processor.framework,vr.processor.framework">
 		<defName>Mashed_Ashlands_WickwheatPrecursor</defName>
 		<label>wickwheat precursor</label>
 		<description>An alcohol precursor made from wickwheat. This substance needs to ferment in a fermenting barrel before it becomes drinkable sujamma.</description>
