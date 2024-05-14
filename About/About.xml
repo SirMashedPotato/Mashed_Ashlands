@@ -3,7 +3,7 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>1.1.25</modVersion>
+	<modVersion>1.1.26</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
@@ -25,7 +25,6 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
 		<!-- loadfolders -->
-		<li>vanillaexpanded.achievements</li>
 		<li>VanillaExpanded.VCEF</li>
 		<li>owlchemist.seedspleaselite</li>
 		<li>evyatar108.seedspleaseliteredux</li>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_BuildAshcano]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_BuildAshcano</defName>
+		<label>Smol-cano</label>
+		<description>Have a colonist build an ashcano for the first time</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Mashed_Ashlands_AshCastle</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_BuildAshcano</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_BuildAshcano]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_BuildAshcanoMany</defName>
+		<label>The Ring Of Tiny Flames</label>
+		<description>Have a colonist build an ashcano for the 33rd time</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Mashed_Ashlands_AshCastle</def>
+			<count>33</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_BuildAshcanoMany</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_BuildFetcherflyHive]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_BuildFetcherflyHive</defName>
+		<label>Appeasing The Locals</label>
+		<description>Build a fetcherfly hive for the first time</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Mashed_Ashlands_FetcherflyHive</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_BuildFetcherflyHive</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

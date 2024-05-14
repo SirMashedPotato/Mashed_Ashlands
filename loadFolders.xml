@@ -61,6 +61,9 @@
 		<!-- VE_Framework -->
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">LoadFolders/VE_FrameworkTextures</li>
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.5/LoadFolders/VE_Framework</li>
+		<!-- VE_Achievements -->
+		<li IfModActive="vanillaexpanded.achievements">LoadFolders/VE_AchievementsTextures</li>
+		<li IfModActive="vanillaexpanded.achievements">1.5/LoadFolders/VE_Achievements</li>
 		<!-- VE_Cooking -->
 		<li IfModActive="vanillaexpanded.vcooke">1.5/LoadFolders/VE_Cooking</li>
 		<!-- VE_Fishing -->
