@@ -172,18 +172,18 @@
 			<Mashed_Ashlands_Alit>0.2</Mashed_Ashlands_Alit>
 			<Mashed_Ashlands_CliffRacer>0.1</Mashed_Ashlands_CliffRacer>
 			<!-- ESCP Trolls -->
-			<ESCP_TrollForest MayRequire="sirmashedpotato.escp.trolls">0.05</ESCP_TrollForest>
-			<ESCP_TrollFungal MayRequire="sirmashedpotato.escp.trolls">0.05</ESCP_TrollFungal>
-			<ESCP_TrollHill MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollHill>
-			<ESCP_TrollRiver MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollRiver>
-			<ESCP_TrollCave MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollCave>
-			<ESCP_TrollCoastal MayRequire="sirmashedpotato.escp.trolls">0.025</ESCP_TrollCoastal>
-			<ESCP_TrollUdyrfrykte MayRequire="sirmashedpotato.escp.trolls">0.01</ESCP_TrollUdyrfrykte>
+			<ESCP_TrollForest MayRequire="escp.trolls">0.05</ESCP_TrollForest>
+			<ESCP_TrollFungal MayRequire="escp.trolls">0.05</ESCP_TrollFungal>
+			<ESCP_TrollHill MayRequire="escp.trolls">0.025</ESCP_TrollHill>
+			<ESCP_TrollRiver MayRequire="escp.trolls">0.025</ESCP_TrollRiver>
+			<ESCP_TrollCave MayRequire="escp.trolls">0.025</ESCP_TrollCave>
+			<ESCP_TrollCoastal MayRequire="escp.trolls">0.025</ESCP_TrollCoastal>
+			<ESCP_TrollUdyrfrykte MayRequire="escp.trolls">0.01</ESCP_TrollUdyrfrykte>
 			<!-- ESCP Spriggan-->
-			<ESCP_Spriggan MayRequire="pphhyy.escp.spriggan">0.05</ESCP_Spriggan>
-			<ESCP_Spriggan_Parasol MayRequire="pphhyy.escp.spriggan">0.025</ESCP_Spriggan_Parasol>
-			<ESCP_Spriggan_Matron MayRequire="pphhyy.escp.spriggan">0.01</ESCP_Spriggan_Matron>
-			<ESCP_Spriggan_EarthMother MayRequire="pphhyy.escp.spriggan">0.005</ESCP_Spriggan_EarthMother>
+			<ESCP_Spriggan MayRequire="escp.spriggan">0.05</ESCP_Spriggan>
+			<ESCP_Spriggan_Parasol MayRequire="escp.spriggan">0.025</ESCP_Spriggan_Parasol>
+			<ESCP_Spriggan_Matron MayRequire="escp.spriggan">0.01</ESCP_Spriggan_Matron>
+			<ESCP_Spriggan_EarthMother MayRequire="escp.spriggan">0.005</ESCP_Spriggan_EarthMother>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>

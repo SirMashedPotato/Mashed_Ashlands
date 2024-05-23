@@ -138,8 +138,11 @@
 			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
 			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+			<!-- ESCP Trolls -->
+			<ESCP_TrollBarren MayRequire="escp.trolls">0.04</ESCP_TrollBarren>
+			<ESCP_TrollUdyrfrykte MayRequire="escp.trolls">0.005</ESCP_TrollUdyrfrykte>
 			<!-- ESCP Spriggan-->
-			<ESCP_Spriggan_Burnt MayRequire="pphhyy.escp.spriggan">0.02</ESCP_Spriggan_Burnt>
+			<ESCP_Spriggan_Burnt MayRequire="escp.spriggan">0.02</ESCP_Spriggan_Burnt>
 			<!-- special -->
 		</wildAnimals>
 		<pollutionWildAnimals>

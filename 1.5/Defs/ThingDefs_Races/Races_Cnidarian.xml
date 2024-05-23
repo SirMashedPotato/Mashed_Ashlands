@@ -22,7 +22,7 @@
 			<FilthRate>0</FilthRate>
 			<MeatAmount>120</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
-			<BoneAmount MayRequire="sihv.rombones">0</BoneAmount>
+			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>

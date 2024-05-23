@@ -19,7 +19,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="ESCP_TrollFungal"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="ESCP_TrollFungal" or defName="ESCP_TrollBarren" or defName="ESCP_TrollUdyrfrykte"]/statBases</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 					</value>
@@ -28,4 +28,3 @@
 		</match>
 	</Operation>
 </Patch>
-

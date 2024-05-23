@@ -17,7 +17,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<BoneAmount MayRequire="sihv.rombones">0</BoneAmount>
+			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
 		</statBases>
 		<race>
 			<fleshType>Insectoid</fleshType>
