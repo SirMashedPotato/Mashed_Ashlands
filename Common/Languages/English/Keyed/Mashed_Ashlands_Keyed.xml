@@ -49,9 +49,11 @@
 	<Mashed_Ashlands_PawnRefusesSmashEgg>{0_label} refuses to smash the egg</Mashed_Ashlands_PawnRefusesSmashEgg>
 	<Mashed_Ashlands_EggSmashRevenge_Label>{0} revenge (egg smashing)</Mashed_Ashlands_EggSmashRevenge_Label>
 	<Mashed_Ashlands_EggSmashRevenge_Description>Nearby {0} have noticed some of their eggs have been destroyed, and have turned manhunter.\n\nThe {0} will hunt down any humanoid they can reach, at least until they lose interest.\n\nCaused by: {1_label} smashing {2}</Mashed_Ashlands_EggSmashRevenge_Description>
+	<!-- ==========[Resource deposits]==========-->
+	<Mashed_Ashlands_DepositChargesLeft>{0} {1} charge/s left</Mashed_Ashlands_DepositChargesLeft>
+	<Mashed_Ashlands_DepositExhausted>a {0_label} has been exhausted</Mashed_Ashlands_DepositExhausted>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>
 	<Mashed_Ashlands_NoUndiscoveredVolcano>you have discovered all volcanos</Mashed_Ashlands_NoUndiscoveredVolcano>
-	<Mashed_Ashlands_NodeChargesLeft>{0} {1} charge/s left</Mashed_Ashlands_NodeChargesLeft>
 </LanguageData>

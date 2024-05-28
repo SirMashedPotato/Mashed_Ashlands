@@ -3,18 +3,18 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class RecipeWorker_ConsumeCharge : RecipeWorker
+    public class RecipeWorker_ConsumeDepositCharge : RecipeWorker
     {
-        public Comp_NodeCharges GetNodeChargeComp(Building b)
+        public Comp_DepositCharges GetNodeChargeComp(Building b)
         {
             if (nodeChargeComp == null)
             {
-                nodeChargeComp = b.GetComp<Comp_NodeCharges>();
+                nodeChargeComp = b.GetComp<Comp_DepositCharges>();
             }
             return nodeChargeComp;
         }
 
-        private Comp_NodeCharges nodeChargeComp;
+        private Comp_DepositCharges nodeChargeComp;
 
         public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
         {

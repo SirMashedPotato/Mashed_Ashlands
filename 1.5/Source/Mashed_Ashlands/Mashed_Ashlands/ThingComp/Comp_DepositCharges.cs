@@ -1,14 +1,15 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class Comp_NodeCharges : ThingComp
+    public class Comp_DepositCharges : ThingComp
     {
-        private CompProperties_NodeCharges Props
+        private CompProperties_DepositCharges Props
         {
             get
             {
-                return (CompProperties_NodeCharges)props;
+                return (CompProperties_DepositCharges)props;
             }
         }
 
@@ -25,13 +26,14 @@ namespace Mashed_Ashlands
             chargesLeft--;
             if (chargesLeft <= 0)
             {
-                parent.Destroy();
+                Messages.Message("Mashed_Ashlands_DepositExhausted".Translate(parent), MessageTypeDefOf.NeutralEvent);
+                parent.Kill();
             }
         }
 
         public override string CompInspectStringExtra()
         {
-            return "Mashed_Ashlands_NodeChargesLeft".Translate(chargesLeft, Props.resourceName);
+            return "Mashed_Ashlands_DepositChargesLeft".Translate(chargesLeft, Props.resourceName);
         }
 
         public override void PostExposeData()
