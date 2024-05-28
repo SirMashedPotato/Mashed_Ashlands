@@ -53,4 +53,5 @@
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>
 	<Mashed_Ashlands_NoUndiscoveredVolcano>you have discovered all volcanos</Mashed_Ashlands_NoUndiscoveredVolcano>
+	<Mashed_Ashlands_NodeChargesLeft>{0} {1} charge/s left</Mashed_Ashlands_NodeChargesLeft>
 </LanguageData>
