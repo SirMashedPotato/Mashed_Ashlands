@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_AchievementAshlands_HaveAVolcanoMap]========== -->
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="rw_exploration_mode.thelastbulletbender">
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="thelastbulletbender.rwexploration">
 		<defName>Mashed_AchievementAshlands_HaveAVolcanoMap</defName>
 		<label>You Cannot Hide</label>
 		<description>Obtain a volcano map</description>
