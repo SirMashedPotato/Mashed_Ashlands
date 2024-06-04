@@ -24,20 +24,29 @@
 		<defName>Mashed_Ashlands_AshStormLover</defName>
 		<workerClass>Mashed_Ashlands.ThoughtWorker_AshStormLover</workerClass>
 		<stages>
+			<!-- dust storm -->
 			<li>
-				<label>outside in ash storm and really loving it!</label>
-				<description>My lungs are being filled with ash! My skin is being worn down! This is the greatest feeling ever!</description>
-				<baseMoodEffect>12</baseMoodEffect>
+				<label>in dust storm and loving it!</label>
+				<description>I can breathe perfectly fine, but at least I feel the ash slowly wearing away at my skin!</description>
+				<baseMoodEffect>3</baseMoodEffect>
 			</li>
+			<!-- ash resistance == 100% -->
 			<li>
-				<label>outside in ash storm and loving it!</label>
+				<label>in ash storm and loving it!</label>
 				<description>I can breathe perfectly fine, but at least I feel the ash wearing away at my skin!</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
+			<!-- ash resistance >= 300% -->
 			<li>
-				<label>outside in dust storm and loving it!</label>
-				<description>I can breathe perfectly fine, but at least I feel the ash slowly wearing away at my skin!</description>
-				<baseMoodEffect>3</baseMoodEffect>
+				<label>in ash storm and suffocating!</label>
+				<description>I'm breathing in more ash than air!</description>
+				<baseMoodEffect>36</baseMoodEffect>
+			</li>
+			<!-- ash storm -->
+			<li>
+				<label>in ash storm and really loving it!</label>
+				<description>My lungs are being filled with ash! My skin is being worn down! This is the greatest feeling ever!</description>
+				<baseMoodEffect>12</baseMoodEffect>
 			</li>
 		</stages>
 		<requiredTraits>

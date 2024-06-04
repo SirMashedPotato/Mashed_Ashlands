@@ -9,20 +9,22 @@ namespace Mashed_Ashlands
         {
             if (p.SpawnedOrAnyParentSpawned && !p.PositionHeld.Roofed(p.MapHeld))
             {
+                if (Utility.MapHasDustStorm(p))
+                {
+                    return ThoughtState.ActiveAtStage(0);
+                }
                 if (Utility.MapHasAshStorm(p))
                 {
-                    if (p.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance) == 1f)
+                    float ashResistance = p.GetStatValue(StatDefOf.Mashed_Ashlands_AshResistance);
+                    if (ashResistance == 1f)
                     {
                         return ThoughtState.ActiveAtStage(1);
                     }
-                    else
+                    if (ashResistance <= -3f)
                     {
-                        return ThoughtState.ActiveAtStage(0);
+                        return ThoughtState.ActiveAtStage(2);
                     }
-                }
-                if (Utility.MapHasDustStorm(p))
-                {
-                    return ThoughtState.ActiveAtStage(2);
+                    return ThoughtState.ActiveAtStage(3);
                 }
             }
             return ThoughtState.Inactive;
