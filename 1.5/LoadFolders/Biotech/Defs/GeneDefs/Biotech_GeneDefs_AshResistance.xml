@@ -105,7 +105,7 @@
 			<li>Mashed_Ashlands_AshThoughtResistance</li>
 		</exclusionTags>
 		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_AshMoodResistance</iconPath>
-		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<displayCategory>Mashed_Ashlands_AshResistanceAndWeakness</displayCategory>
 		<displayOrderInCategory>6</displayOrderInCategory>
 		<biostatMet>-1</biostatMet>
 		<symbolPack>
