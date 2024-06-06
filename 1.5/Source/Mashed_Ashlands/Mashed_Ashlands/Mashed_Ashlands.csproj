@@ -79,6 +79,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
+    <Compile Include="Biome\GenStep\GenStep_ScatterAshlandsSpecific.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterBiomeSpecific.cs" />
     <Compile Include="Biome\ScattererValidator\ScattererValidator_SpecificTerrain.cs" />
     <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />

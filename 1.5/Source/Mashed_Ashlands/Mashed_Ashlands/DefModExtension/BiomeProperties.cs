@@ -17,7 +17,8 @@ namespace Mashed_Ashlands
         public bool disableBeaches = false;
         public bool nullifyBeachTerrain = false;
         public bool forceHilliness = false;
-        
+        public bool useAshlandsGenSteps = false;
+
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
         public float steamGeyserMultiplier = 1f;
