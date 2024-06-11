@@ -2,8 +2,9 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_KwamaThingBase]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_KwamaThingBase" Abstract="True">
-	<statBases>
+		<statBases>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<tradeTags>
 			<li>Mashed_Ashlands_AnimalKwama</li>
