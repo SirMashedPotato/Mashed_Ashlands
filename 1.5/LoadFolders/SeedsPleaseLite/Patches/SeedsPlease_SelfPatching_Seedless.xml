@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_AshlandHayGrass"]</xpath>
+		<value>
+			<li Class="SeedsPleaseLite.Seedless"/>
+		</value>
+	</Operation>
+</Patch> 
