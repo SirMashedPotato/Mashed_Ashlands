@@ -321,6 +321,7 @@
 				<allowedTerrainForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_RichAshGravel</li>
+					<li>Mashed_Ashlands_AshScree</li>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
 				</allowedTerrainForWild>
 			</li>

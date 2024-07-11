@@ -211,11 +211,11 @@ namespace Mashed_Ashlands
         /// </summary>
         public float MountainBiomeWorker(Tile tile)
         {
-            if (tile.hilliness == Hilliness.Flat)
+            if (tile.hilliness == Hilliness.Flat || tile.hilliness == Hilliness.SmallHills)
             {
                 return 0f;
             }
-            return 15 + (tile.elevation / 100);
+            return 13 + (tile.elevation / 300);
         }
     }
 }

@@ -9,7 +9,9 @@
 			<li>Mashed_Ashlands_Ashlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
 		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
@@ -47,6 +49,16 @@
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerGrazelandAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_HighlandAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_HighlandAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerHighlandAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_SwampAshlands]==========-->
 	<FeatureDef>
