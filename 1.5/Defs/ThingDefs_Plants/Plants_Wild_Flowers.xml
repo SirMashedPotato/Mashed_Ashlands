@@ -30,6 +30,36 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshenHeatherFlower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshenHeatherFlowerBase">
+		<defName>Mashed_Ashlands_Plant_AshenHeatherFlower</defName>
+		<label>ashen heather</label>
+		<description>A particularly resilient strain of heather that can be found growing in certain ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshenHeatherFlower</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandPitcher]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshlandPitcherBase">
 		<defName>Mashed_Ashlands_Plant_AshlandPitcher</defName>

@@ -111,11 +111,11 @@
 		</terrainPatchMakers>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Plant_Grass>6</Plant_Grass>
-			<Mashed_Ashlands_Plant_AshlandGrass>10</Mashed_Ashlands_Plant_AshlandGrass>
+			<Plant_Grass>3</Plant_Grass>
+			<Mashed_Ashlands_Plant_AshlandGrass>6</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandDuneGrass>2</Mashed_Ashlands_Plant_AshlandDuneGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>1</Mashed_Ashlands_Plant_AshlandFungus>
-			<Plant_Moss>0.4</Plant_Moss>
+			<Plant_Moss>0.6</Plant_Moss>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.2</Mashed_Ashlands_Plant_AshYam>
 			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
@@ -125,12 +125,13 @@
 			<Mashed_Ashlands_Plant_ParasolBush>0.3</Mashed_Ashlands_Plant_ParasolBush>
 			<Mashed_Ashlands_Plant_TramaShrub>0.3</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
+			<Mashed_Ashlands_Plant_AshenHeatherFlower>0.4</Mashed_Ashlands_Plant_AshenHeatherFlower>
 			<Mashed_Ashlands_Plant_Stoneflower>0.2</Mashed_Ashlands_Plant_Stoneflower>
 			<Mashed_Ashlands_Plant_AshlandFern>0.2</Mashed_Ashlands_Plant_AshlandFern>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.2</Mashed_Ashlands_Plant_TreeEmperorParasol>
-			<Mashed_Ashlands_Plant_TreeNetchShieldHighland>0.4</Mashed_Ashlands_Plant_TreeNetchShieldHighland>
-			<Plant_TreePine>0.1</Plant_TreePine>
+			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.3</Mashed_Ashlands_Plant_TreeEmperorParasol>
+			<Mashed_Ashlands_Plant_TreeNetchShieldHighland>0.5</Mashed_Ashlands_Plant_TreeNetchShieldHighland>
+			<Plant_TreePine>0.2</Plant_TreePine>
 			<RB_Plant_Hive_Arctic MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Arctic>
 			<RB_Plant_Hive_Icy MayRequire="sarg.rimbees">0.01</RB_Plant_Hive_Icy>
 			<!-- ==========[Pollution]========== -->
