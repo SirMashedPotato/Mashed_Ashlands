@@ -41,6 +41,7 @@
 				<disallowedTerrainForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_SulphuricSand</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -57,6 +58,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 		</plant>
