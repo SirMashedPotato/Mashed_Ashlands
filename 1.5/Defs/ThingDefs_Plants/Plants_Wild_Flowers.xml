@@ -47,13 +47,14 @@
 		<statBases>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshenHeatherFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<maxMeshCount>25</maxMeshCount>
 			<wildClusterRadius>4</wildClusterRadius>
