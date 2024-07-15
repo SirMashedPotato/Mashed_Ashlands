@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
             Listing_Standard listing_Standard = new Listing_Standard();
 
             Rect outerRect = new Rect(mainRect.x, mainRect.y, mainRect.width, mainRect.height);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 3);
             Widgets.BeginScrollView(outerRect, ref scrollPosition, innerRect, true);
 
             listing_Standard.Begin(innerRect);

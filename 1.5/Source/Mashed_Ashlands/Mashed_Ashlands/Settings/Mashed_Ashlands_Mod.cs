@@ -310,6 +310,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableGrazelandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableGrazelandAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableHighlandAshlands".Translate(), ref settings.Mashed_Ashlands_EnableHighlandAshlands);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSwampAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSwampAshlands);
             listing_Standard.Gap();
 

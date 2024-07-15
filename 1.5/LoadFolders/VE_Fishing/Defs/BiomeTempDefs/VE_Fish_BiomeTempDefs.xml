@@ -6,11 +6,11 @@
 		<biomeTempLabel>Mashed_Ashlands_RegularAshland</biomeTempLabel>
 		<biomes>
 			<li>Mashed_Ashlands_Ashlands</li>
-			<li>Mashed_Ashlands_CoralCoastAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandBlighted]==========-->
@@ -28,7 +28,6 @@
 		<biomeTempLabel>Mashed_Ashlands_VolcanicAshland</biomeTempLabel>
 		<biomes>
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
-			<li>Mashed_Ashlands_VolcanicCoralCoastAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</biomes>
