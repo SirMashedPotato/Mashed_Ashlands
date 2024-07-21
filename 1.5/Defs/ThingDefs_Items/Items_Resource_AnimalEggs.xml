@@ -277,7 +277,6 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
-	<!--
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixSteedFertilized</defName>
 		<label>nix-steed egg (fert.)</label>
@@ -296,7 +295,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_Egg_PyrantulaFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_PyrantulaFertilized</defName>

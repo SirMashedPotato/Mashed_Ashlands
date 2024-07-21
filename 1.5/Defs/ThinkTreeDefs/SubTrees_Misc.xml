@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_FeedFromSAshlandFlower]========== -->
-	<!--
 	<ThinkTreeDef>
 		<defName>Mashed_Ashlands_FeedFromAshlandFlower</defName>
 		<insertTag>Animal_PreMain</insertTag>
@@ -28,7 +27,6 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_MentalStateCritical]========== -->
 	<ThinkTreeDef>
 		<defName>Mashed_Ashlands_MentalStateCritical</defName>
