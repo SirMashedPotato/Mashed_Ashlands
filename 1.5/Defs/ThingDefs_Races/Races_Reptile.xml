@@ -340,6 +340,162 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_Rotumbo]========== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Mashed_Ashlands_Rotumbo</defName>
+		<label>rotumbo</label>
+		<description>Sometimes referred to as the proto-guar, the rotumbo is a large reptile that can often be found in high altitude ashland regions. Unlike its distant cousin the guar, rotumbo still retain functioning forelimbs, which prove highly beneficial when scaling the rugged ashland landscapes they call home.\n\nMuch like the guar, the rotumbo is sometimes farmed for their meat and leather. Though due to being comparatively more difficult to tame, most use them as pack animals. Veru much unlike the guar, the rotumbo does not lay eggs, and secretes a milk like substance to nourish their young.</description>
+		<statBases>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+			<MoveSpeed>4.5</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>-16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+			  <label>head</label>
+			  <capacities>
+				<li>Blunt</li>
+			  </capacities>
+			  <power>15</power>
+			  <cooldownTime>2.6</cooldownTime>
+			  <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+			  <capacities>
+				<li>Bite</li>
+			  </capacities>
+			  <power>6</power>
+			  <cooldownTime>2</cooldownTime>
+			  <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			  <chanceFactor>0.5</chanceFactor>
+			</li>
+		  </tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>14</milkAmount>
+			  </li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>2.2</baseBodySize>
+			<baseHealthScale>1.75</baseHealthScale>
+			<baseHungerRate>0.535</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Mashed_Ashlands_GuarLeather</leatherDef>
+			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<wildness>0.6</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>22</lifeExpectancy>
+			<nuzzleMtbHours>80</nuzzleMtbHours>
+			<roamMtbDays>2.5</roamMtbDays>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+			<!-- made by Yoann from yoann.babiesanimals -->
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.001,100)</li>
+					<li>(14.85,100)</li>
+					<li>(16.5,30)</li>
+					<li>(19.25,18)</li>
+					<li>(22,10)</li>
+					<li>(24.75,3)</li>
+					<li>(27.5,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.333</minAge>
+					<soundWounded>Pawn_Bison_Wounded</soundWounded>
+					<soundDeath>Pawn_Bison_Death</soundDeath>
+					<soundCall>Pawn_Bison_Call</soundCall>
+					<soundAngry>Pawn_Bison_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_Rotumbo" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Rotumbo</defName>
+		<label>rotumbo</label>
+		<race>Mashed_Ashlands_Rotumbo</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>rotumbo calf</label>
+				<labelPlural>rotumbo calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(255,254,0)</color>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(139,139,139)</color>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(255,254,0)</color>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(139,139,139)</color>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(255,254,0)</color>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<color>(139,139,139)</color>
+					<drawSize>2.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_Scuttler]========== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Scuttler</defName>

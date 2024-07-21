@@ -4,7 +4,7 @@
 		<xpath>Defs/FactionDef/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
 		<value>
 			<Mashed_Ashlands_Guar>6</Mashed_Ashlands_Guar>
-			<!--<Mashed_Ashlands_Rotumbo>3</Mashed_Ashlands_Rotumbo>-->
+			<Mashed_Ashlands_Rotumbo>3</Mashed_Ashlands_Rotumbo>
 			<Mashed_Ashlands_NixOx>4</Mashed_Ashlands_NixOx>
 			<Mashed_Ashlands_NixSteed>2</Mashed_Ashlands_NixSteed>
 		</value>

@@ -372,7 +372,6 @@
 		<race>
 			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
-			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
 	</ThingDef>
