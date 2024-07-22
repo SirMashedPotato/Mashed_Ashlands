@@ -92,11 +92,11 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ComberryPlant</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_AshenJazbayPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_ComberryPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshenJazbayPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
 			<fertilityMin>0.4</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -108,9 +108,9 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
-			<topWindExposure>0.05</topWindExposure>
+			<topWindExposure>0.01</topWindExposure>
 			<growDays>14</growDays>
-			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<visualSizeRange>0.9~1.5</visualSizeRange>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<wildClusterRadius>4</wildClusterRadius>
