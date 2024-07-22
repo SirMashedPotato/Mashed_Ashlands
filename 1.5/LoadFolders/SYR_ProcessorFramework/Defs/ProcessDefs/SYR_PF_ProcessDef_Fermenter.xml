@@ -12,6 +12,18 @@
 		<processDays>20</processDays>
 		<color>(255, 255, 255)</color>
 	</ProcessorFramework.ProcessDef>
+	<!-- ==========[Mashed_Ashlands_FermentingJazbayWine]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingJazbayWine</defName>
+		<thingDef>Mashed_Ashlands_AlcoholJazbayWine</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_AshenJazbayPrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>20</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
 	<!-- ==========[Mashed_Ashlands_FermentingMazte]==========-->
 	<ProcessorFramework.ProcessDef>
 		<defName>Mashed_Ashlands_FermentingMazte</defName>

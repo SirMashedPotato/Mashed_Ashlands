@@ -59,7 +59,7 @@
 		</modExtensions>
 		<animalDensity>2</animalDensity>
 		<plantDensity>0.4</plantDensity>
-		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
+		<foragedFood>Mashed_Ashlands_RawAshenJazbay</foragedFood>
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshScree</terrain>
@@ -117,10 +117,12 @@
 			<Mashed_Ashlands_Plant_AshlandFungus>1</Mashed_Ashlands_Plant_AshlandFungus>
 			<Plant_Moss>0.6</Plant_Moss>
 			<!-- Nutrition plants -->
-			<Mashed_Ashlands_Plant_AshYam>0.2</Mashed_Ashlands_Plant_AshYam>
+			<Mashed_Ashlands_Plant_AshenJazbay>0.3</Mashed_Ashlands_Plant_AshenJazbay>
+			<Mashed_Ashlands_Plant_AshYam>0.1</Mashed_Ashlands_Plant_AshYam>
 			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
 			<Mashed_Ashlands_Plant_Marshmerrow>0.05</Mashed_Ashlands_Plant_Marshmerrow>
 			<!-- Resource plants -->
+			<Mashed_Ashlands_Plant_Kreshweed>0.05</Mashed_Ashlands_Plant_Kreshweed>
 			<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
 			<Mashed_Ashlands_Plant_ParasolBush>0.3</Mashed_Ashlands_Plant_ParasolBush>
 			<Mashed_Ashlands_Plant_TramaShrub>0.3</Mashed_Ashlands_Plant_TramaShrub>

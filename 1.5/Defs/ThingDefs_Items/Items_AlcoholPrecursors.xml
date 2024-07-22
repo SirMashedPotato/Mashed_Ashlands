@@ -5,6 +5,12 @@
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<rotatable>false</rotatable>
 		<stackLimit>75</stackLimit>
@@ -42,12 +48,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_ComberryPrecursor</texPath>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>10</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
@@ -60,6 +60,26 @@
 			<Mashed_Ashlands_RawComberry>25</Mashed_Ashlands_RawComberry>
 		</costList>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_AshenJazbayPrecursor]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,syrchalis.processor.framework,vr.processor.framework">
+		<defName>Mashed_Ashlands_AshenJazbayPrecursor</defName>
+		<label>jazbay precursor</label>
+		<description>An alcohol precursor made from ashen jazbay grapes. This substance needs to ferment in a fermenting barrel before it becomes drinkable emberbrand wine.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_AshenJazbayPrecursor</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawAshenJazbay>25</Mashed_Ashlands_RawAshenJazbay>
+		</costList>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_MeadowRyePrecursor]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_AlcoholPrecursorBase" MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,syrchalis.processor.framework,vr.processor.framework">
 		<defName>Mashed_Ashlands_MeadowRyePrecursor</defName>
@@ -68,12 +88,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_MeadowRyePrecursor</texPath>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>10</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
@@ -94,12 +108,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_SaltricePrecursor</texPath>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>10</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Ashlands_AshSurvival_Beginner</li>
@@ -120,12 +128,6 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_WickwheatPrecursor</texPath>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>10</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Mashed_Ashlands_AshSurvival_Beginner</li>

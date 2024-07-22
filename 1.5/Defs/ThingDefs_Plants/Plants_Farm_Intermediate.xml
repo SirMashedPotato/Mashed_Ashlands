@@ -113,7 +113,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Comberry</defName>
 		<label>comberry bush</label>
-		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberry berries are a popular export, and can also be fermented into shein. Can only grow on ash rich ground.</description>
+		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberries are a popular export, and can also be fermented into shein. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>

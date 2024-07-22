@@ -357,31 +357,31 @@
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
 			<li>
-			  <label>head</label>
-			  <capacities>
-				<li>Blunt</li>
-			  </capacities>
-			  <power>15</power>
-			  <cooldownTime>2.6</cooldownTime>
-			  <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 			<li>
-			  <capacities>
-				<li>Bite</li>
-			  </capacities>
-			  <power>6</power>
-			  <cooldownTime>2</cooldownTime>
-			  <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			  <chanceFactor>0.5</chanceFactor>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
 			</li>
-		  </tools>
+		</tools>
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
 				<milkIntervalDays>1</milkIntervalDays>
 				<milkAmount>14</milkAmount>
-			  </li>
+			</li>
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
