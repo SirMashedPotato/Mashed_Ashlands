@@ -114,6 +114,24 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedNetchShieldHighland]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
+		<defName>Mashed_Ashlands_SeedNetchShieldHighland</defName>
+		<label>highland netch shield spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedNetchShieldHighland</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeNetchShieldHighland</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeNetchShieldHighland</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedNetchShieldVibrant]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedNetchShieldVibrant</defName>

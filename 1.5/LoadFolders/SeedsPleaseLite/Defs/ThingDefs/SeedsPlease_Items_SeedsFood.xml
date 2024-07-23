@@ -100,6 +100,25 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedAshenJazbay]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase">
+		<defName>Mashed_Ashlands_SeedAshenJazbay</defName>
+		<label>ashen jazbay seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshenJazbay</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_AshenJazbay</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_AshenJazbay</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedMarshmerrow]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase">
 		<defName>Mashed_Ashlands_SeedMarshmerrow</defName>
