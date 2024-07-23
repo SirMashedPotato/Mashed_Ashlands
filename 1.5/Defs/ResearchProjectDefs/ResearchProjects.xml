@@ -112,6 +112,7 @@
 				<!-- things -->
 				<li>thing_plant->ash pomegranate</li>
 				<li>thing_plant->ashen jazbay</li>
+				<li>thing_plant->golden reed</li>
 				<li>thing_plant->meadow rye</li>
 				<li>thing_plant->emperor parasol</li>
 			</rulesStrings>
