@@ -9,6 +9,7 @@
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<baseFishingYield>16</baseFishingYield>
 	</VCE_Fishing.FishDef>
