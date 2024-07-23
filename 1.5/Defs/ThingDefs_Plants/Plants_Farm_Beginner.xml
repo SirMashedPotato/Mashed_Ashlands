@@ -237,6 +237,7 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>
@@ -285,6 +286,7 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 				</disallowedTerrainForWild>
 			</li>

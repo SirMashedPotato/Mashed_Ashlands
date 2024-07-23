@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_HighlandAshlands</defName>
 		<label>ashland highlands</label>
-		<description>...</description>
+		<description>A land of treacherous rocky slopes, dotted with pockets of dense vegetation, and small pools of thermally-heated water. Herds of rotumbo are a common sight here, as is the rare ashen jazbay, which thrives on the rocky soil.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_HighlandAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_HighlandAshlands</texture>
 		<modExtensions>
@@ -130,17 +130,18 @@
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshenJazbay>0.6</Mashed_Ashlands_Plant_AshenJazbay>
 			<Mashed_Ashlands_Plant_AshYam>0.1</Mashed_Ashlands_Plant_AshYam>
-			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_Scathecraw>0.1</Mashed_Ashlands_Plant_Scathecraw>
 			<Mashed_Ashlands_Plant_Marshmerrow>0.05</Mashed_Ashlands_Plant_Marshmerrow>
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_Kreshweed>0.05</Mashed_Ashlands_Plant_Kreshweed>
 			<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
 			<Mashed_Ashlands_Plant_ParasolBush>0.3</Mashed_Ashlands_Plant_ParasolBush>
-			<Mashed_Ashlands_Plant_TramaShrub>0.3</Mashed_Ashlands_Plant_TramaShrub>
+			<Mashed_Ashlands_Plant_TramaShrub>0.2</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			<Mashed_Ashlands_Plant_AshenHeatherFlower>0.6</Mashed_Ashlands_Plant_AshenHeatherFlower>
 			<Mashed_Ashlands_Plant_Stoneflower>0.2</Mashed_Ashlands_Plant_Stoneflower>
 			<Mashed_Ashlands_Plant_AshlandFern>0.2</Mashed_Ashlands_Plant_AshlandFern>
+			<Mashed_Ashlands_Plant_BlueEntoloma>0.1</Mashed_Ashlands_Plant_BlueEntoloma>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.3</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_Plant_TreeNetchShieldHighland>0.5</Mashed_Ashlands_Plant_TreeNetchShieldHighland>
@@ -175,7 +176,7 @@
 			<!-- predators -->
 			<Mashed_Ashlands_NixHound>0.1</Mashed_Ashlands_NixHound>
 			<Mashed_Ashlands_Kagouti>0.2</Mashed_Ashlands_Kagouti>
-			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
+			<Mashed_Ashlands_CliffRacer>0.3</Mashed_Ashlands_CliffRacer>
 			<!-- ESCP Trolls -->
 			<ESCP_TrollFungal MayRequire="escp.trolls">0.05</ESCP_TrollFungal>
 			<ESCP_TrollHill MayRequire="escp.trolls">0.025</ESCP_TrollHill>
@@ -193,7 +194,7 @@
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NixOxGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
-			<Mashed_Ashlands_CliffRacer>0.5</Mashed_Ashlands_CliffRacer>
+			<Mashed_Ashlands_CliffRacer>0.6</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>
