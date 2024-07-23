@@ -111,6 +111,7 @@
 				<li>subject_gerund->[action_grow] [thing_plant]</li>
 				<!-- things -->
 				<li>thing_plant->ash pomegranate</li>
+				<li>thing_plant->ashen jazbay</li>
 				<li>thing_plant->meadow rye</li>
 				<li>thing_plant->emperor parasol</li>
 			</rulesStrings>
@@ -197,6 +198,7 @@
 				<li>thing_subject->brew parasol moss</li>
 				<li>thing_subject->distil dagoth brandy</li>
 				<li>thing_subject->brew flin</li>
+				<li>thing_subject->brew jazbay wine</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
