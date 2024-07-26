@@ -386,7 +386,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>2.2</baseBodySize>
+			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
@@ -443,55 +443,82 @@
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
+		<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<color>(176,154,146)</color>
+				<colorTwo>(118,103,87)</colorTwo>
+			</li>
+			<li>
+				<color>(187,172,176)</color>
+				<colorTwo>(118,103,87)</colorTwo>
+			</li>
+			<li>
+				<color>(249,231,202)</color>
+				<colorTwo>(135,117,100)</colorTwo>
+			</li>
+			<li>
+				<color>(223,201,137)</color>
+				<colorTwo>(135,117,100)</colorTwo>
+			</li>
+			<li>
+				<color>(171,147,105)</color>
+				<colorTwo>(88,74,60)</colorTwo>
+			</li>
+			<li>
+				<color>(163,120,84)</color>
+				<colorTwo>(88,74,60)</colorTwo>
+			</li>
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<label>rotumbo calf</label>
 				<labelPlural>rotumbo calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(255,254,0)</color>
-					<drawSize>1.8</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
+					<color>(244,212,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>1.8</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Dessicated_Rotumbo</texPath>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(255,254,0)</color>
-					<drawSize>2.2</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
+					<color>(244,212,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2.4</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>2.2</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Dessicated_Rotumbo</texPath>
+					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(255,254,0)</color>
-					<drawSize>2.6</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
+					<color>(244,212,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>2.6</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Dessicated_Rotumbo</texPath>
+					<drawSize>2.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
