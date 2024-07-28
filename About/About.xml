@@ -30,6 +30,7 @@
 		<li>evyatar108.seedspleaseliteredux</li>
 	</loadAfter>
 	<incompatibleWith>
+		<!-- Old MorrowRim -->
 		<li>SirMashedPotato.MorrowRim</li>
 		<li>SirMashedPotato.MorrowRim.AshSwamp</li>
 		<li>SirMashedPotato.MorrowRim.VolcanicAshlands</li>
