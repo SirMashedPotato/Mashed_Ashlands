@@ -6,6 +6,9 @@
 		<label>glowing ash hopper</label>
 		<description>A subspecies of ash hopper that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow noticeably larger than their cousins. Even with their increased size, glowing ash hopper are relatively docile, though they can move just as fast when needed.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing ash hopper can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -80,6 +83,9 @@
 		<label>glowing nix-hound</label>
 		<description>A subspecies of nix-hound that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, allowing them to grow far larger than the common nix-hound. Heavy chitin plates along their back, and their increased size, easily make them an apex predator.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a glowing nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-hound can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -236,6 +242,9 @@
 		<label>glowing nix-ox</label>
 		<description>A subspecies of nix-ox that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, helping them survive on limited vegetation. Rather aggressive when compared to the common nix-ox, this subspecies will defend members of their herd even against the most dangerous of foes.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-ox can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -349,6 +358,9 @@
 		<label>glowing nix-steed</label>
 		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nGlowing bix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-steed can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -473,6 +485,9 @@
 			<MarketValue>150</MarketValue>
 		</statBases>
 		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>

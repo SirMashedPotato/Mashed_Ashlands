@@ -9,6 +9,9 @@
 			<HediffDef>Mashed_Ashlands_SwampFever</HediffDef>
 		</descriptionHyperlinks>
 		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>

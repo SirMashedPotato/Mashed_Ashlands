@@ -120,6 +120,8 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
+    <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
+    <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />

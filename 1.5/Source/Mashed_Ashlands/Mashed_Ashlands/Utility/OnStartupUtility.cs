@@ -19,6 +19,7 @@ namespace Mashed_Ashlands
 
         public static List<ThingDef> hasPollutionPropsAnimals = new List<ThingDef> { };
         public static List<ThingDef> alternateStimulisAnimals = new List<ThingDef> { };
+        public static List<ThingDef> glowOverlayAnimals = new List<ThingDef> { };
 
         static OnStartupUtility()
         {
@@ -31,13 +32,21 @@ namespace Mashed_Ashlands
         {
             foreach (ThingDef pawnDef in pawnDefs)
             {
+                AnimalProperties animalProps = AnimalProperties.Get(pawnDef);
+                if (animalProps != null)
+                {
+                    if (animalProps.glowOverlay)
+                    {
+                        glowOverlayAnimals.Add(pawnDef);
+                    }
+                }
                 if (ModsConfig.BiotechActive)
                 {
-                    PollutionProperties props = PollutionProperties.Get(pawnDef);
-                    if (props != null)
+                    PollutionProperties pollutionProps = PollutionProperties.Get(pawnDef);
+                    if (pollutionProps != null)
                     {
                         hasPollutionPropsAnimals.Add(pawnDef);
-                        if (props.alternativePollutionStimulis != null)
+                        if (pollutionProps.alternativePollutionStimulis != null)
                         {
                             alternateStimulisAnimals.Add(pawnDef);
                         }
