@@ -54,7 +54,6 @@
 		</requiredTraits>
 	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
-	<!--
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_PsychicEruption</defName>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -68,7 +67,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_OutsideInBlightStorm]==========-->
 	<ThoughtDef>
 		<defName>Mashed_Ashlands_OutsideInBlightStorm</defName>

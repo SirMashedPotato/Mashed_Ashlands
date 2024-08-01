@@ -18,6 +18,7 @@ namespace Mashed_Ashlands
 
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
         public bool CanCauseCondition => graceTicksLeft == 0;
+        public GameConditionDef CurrentConditionDef => currentConditionDef;
 
         /// <summary>
         /// 
