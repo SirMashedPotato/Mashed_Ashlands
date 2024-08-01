@@ -44,6 +44,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_ShalkGlowing</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_Toxbug</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
