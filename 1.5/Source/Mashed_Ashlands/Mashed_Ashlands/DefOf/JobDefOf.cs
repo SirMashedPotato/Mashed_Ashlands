@@ -8,7 +8,7 @@ namespace Mashed_Ashlands
     {
         static JobDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(JobDefOf));
         }
         public static JobDef Mashed_Ashlands_FeedFromAshlandFlower;
     }
