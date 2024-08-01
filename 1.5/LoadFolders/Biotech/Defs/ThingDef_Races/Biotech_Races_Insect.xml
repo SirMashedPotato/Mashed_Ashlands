@@ -33,6 +33,9 @@
 			<baseBodySize>0.5</baseBodySize>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_AshHopperGlowing</defName>
@@ -184,6 +187,9 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NixHoundGlowing" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_NixHoundGlowing</defName>
@@ -271,6 +277,9 @@
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NixOxGlowing" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_NixOxGlowing</defName>
@@ -386,6 +395,9 @@
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NixSteedGlowing" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
@@ -526,6 +538,9 @@
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_ShalkGlowing</defName>

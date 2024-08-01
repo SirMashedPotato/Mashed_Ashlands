@@ -83,6 +83,12 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Netch]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_NetchThingBase">
@@ -97,12 +103,6 @@
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalFarm</li>
-			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
-			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_Netch" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Netch</defName>

@@ -31,10 +31,7 @@
 			<specificMeatDef>Mashed_Ashlands_GlowingNetchJelly</specificMeatDef>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalFarm</li>
-			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
-			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NetchGlowing" ParentName="AnimalKindBase">
