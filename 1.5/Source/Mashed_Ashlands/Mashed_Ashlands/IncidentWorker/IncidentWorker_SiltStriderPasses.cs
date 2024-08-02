@@ -36,7 +36,5 @@ namespace Mashed_Ashlands
 			SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, pawn);
 			return true;
 		}
-
-		
     }
 }

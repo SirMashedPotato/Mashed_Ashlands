@@ -24,6 +24,7 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Ogrim</li>
 						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
@@ -59,6 +60,7 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Ogrim</li>
 						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
@@ -84,6 +86,7 @@
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
+						<li>Mashed_Ashlands_Ogrim</li>
 						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_Durzog</li>
 						<li>Mashed_Ashlands_Guar</li>
@@ -119,6 +122,7 @@
 					<!-- "Inserting animal defNames into surgery recipes == for prosthetic arms (if the animal has that bodypart only!)" -->
 					<xpath>Defs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/recipeUsers</xpath>
 					<value>
+						<li>Mashed_Ashlands_Ogrim</li>
 						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 					</value>
@@ -127,6 +131,7 @@
 					<!-- "Inserting animal defNames into surgery recipes == for bionic arms (if the animal has that bodypart only!)" -->
 					<xpath>Defs/RecipeDef[defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
 					<value>
+						<li>Mashed_Ashlands_Ogrim</li>
 						<li>Mashed_Ashlands_Scamp</li>
 						<li>Mashed_Ashlands_SiltStrider</li>
 					</value>

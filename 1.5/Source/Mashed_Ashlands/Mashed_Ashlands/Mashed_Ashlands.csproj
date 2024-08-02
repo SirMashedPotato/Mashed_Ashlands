@@ -120,6 +120,7 @@
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Misc.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />

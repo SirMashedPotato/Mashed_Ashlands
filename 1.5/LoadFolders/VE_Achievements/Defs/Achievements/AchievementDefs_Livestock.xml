@@ -266,6 +266,22 @@
 		<texPath>Achievements/Mashed_AchievementAshlands_TameSiltStrider</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_TameOgrim]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameOgrim</defName>
+		<label>Say Hello to my Little Friend</label>
+		<description>Tame an ogrim</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_Ogrim</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameOgrim</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_BondNetch]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_BondNetch</defName>

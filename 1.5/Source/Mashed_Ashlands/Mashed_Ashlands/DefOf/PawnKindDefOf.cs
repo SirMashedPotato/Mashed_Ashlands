@@ -11,6 +11,7 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(PawnKindDefOf));
         }
         public static PawnKindDef Mashed_Ashlands_SiltStrider;
+        public static PawnKindDef Mashed_Ashlands_Ogrim;
         public static PawnKindDef Mashed_Ashlands_CliffRacer;
     }
 }

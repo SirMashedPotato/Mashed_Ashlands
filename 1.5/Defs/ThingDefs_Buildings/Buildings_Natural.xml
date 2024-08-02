@@ -332,6 +332,11 @@
 						<weight>0.01</weight>
 					</li>
 					<li>
+						<thingDef>Mashed_Ashlands_Egg_OgrimFertilized</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.01</weight>
+					</li>
+					<li>
 						<thingDef>Mashed_Ashlands_Egg_CliffRacerFertilized</thingDef>
 						<amountRange>3~9</amountRange>
 						<weight>0.01</weight>

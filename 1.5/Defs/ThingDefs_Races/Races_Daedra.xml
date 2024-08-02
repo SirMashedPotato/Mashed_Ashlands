@@ -4,10 +4,11 @@
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_DaedraReptileThingBase" Abstract="True">
 		<statBases>
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ArmorRating_Heat>1.5</ArmorRating_Heat>
 			<Flammability>0.4</Flammability>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</ToxicEnvironmentResistance>
 			<FilthRate>5</FilthRate>
 		</statBases>
 		<race>
@@ -29,6 +30,157 @@
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Ogrim]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
+		<defName>Mashed_Ashlands_Ogrim</defName>
+		<label>ogrim</label>
+		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe ogrim are the result of some eccentric scientists attempt at making a living weapon. While others believe that ogrim are actually an otherworldly being from another realm.</description>
+		<statBases>
+			<MoveSpeed>2.0</MoveSpeed>
+			<MarketValue>750</MarketValue>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_OgrimFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>35</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<predator>true</predator>
+			<maxPreyBodySize>2.6</maxPreyBodySize>
+			<body>Monkey</body> <!-- probably need a new one without a tail-->
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>6</baseHealthScale>
+			<baseHungerRate>0.85</baseHungerRate>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.65</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1</minAge>
+					<soundWounded>Pawn_Bison_Wounded</soundWounded>
+					<soundDeath>Pawn_Bison_Death</soundDeath>
+					<soundCall>Pawn_Bison_Call</soundCall>
+					<soundAngry>Pawn_Bison_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Gold>1</Gold>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Ogrim</defName>
+		<label>ogrim</label>
+		<race>Mashed_Ashlands_Ogrim</race>
+		<combatPower>500</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<label>ogrim spawn</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>2.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>2.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_Scamp]========== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Scamp</defName>
@@ -95,7 +247,7 @@
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<wildness>0.5</wildness>
-			<trainability>Advanced</trainability> 
+			<trainability>Advanced</trainability>
 			<petness>0.15</petness>
 			<lifeExpectancy>36</lifeExpectancy>
 			<leatherDef>Leather_Light</leatherDef>
@@ -103,21 +255,21 @@
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.266</minAge>
-          <soundWounded>Pawn_Monkey_Wounded</soundWounded>
-          <soundDeath>Pawn_Monkey_Death</soundDeath>
-          <soundCall>Pawn_Monkey_Call</soundCall>
-          <soundAngry>Pawn_Monkey_Angry</soundAngry>
-        </li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.266</minAge>
+					<soundWounded>Pawn_Monkey_Wounded</soundWounded>
+					<soundDeath>Pawn_Monkey_Death</soundDeath>
+					<soundCall>Pawn_Monkey_Call</soundCall>
+					<soundAngry>Pawn_Monkey_Angry</soundAngry>
+				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
