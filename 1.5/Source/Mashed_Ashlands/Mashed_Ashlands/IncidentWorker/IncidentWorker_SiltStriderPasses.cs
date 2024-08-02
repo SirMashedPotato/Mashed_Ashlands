@@ -3,14 +3,11 @@ using RimWorld;
 
 namespace Mashed_Ashlands
 {
-    public class IncidentWorker_SiltStriderPasses : IncidentWorker
+    public class IncidentWorker_SiltStriderPasses : IncidentWorker_AshlandsSpecific
     {
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			Map map = (Map)parms.target;
-            return !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.ToxicFallout)
-                && (!ModsConfig.BiotechActive || !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.NoxiousHaze))
-                && map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.Mashed_Ashlands_SiltStrider) && TryFindEntryCell(map, out _);
+            return base.CanFireNowSub(parms) && CanWanderIn(parms, ThingDefOf.Mashed_Ashlands_SiltStrider);
         }
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
@@ -40,9 +37,6 @@ namespace Mashed_Ashlands
 			return true;
 		}
 
-		private bool TryFindEntryCell(Map map, out IntVec3 cell)
-        {
-            return RCellFinder.TryFindRandomPawnEntryCell(out cell, map, CellFinder.EdgeRoadChance_Animal + 0.2f, false, null);
-        }
+		
     }
 }

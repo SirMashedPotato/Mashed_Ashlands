@@ -37,6 +37,7 @@ namespace Mashed_Ashlands
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;
+        public bool allowAshlandsIncidents = false;
 
         public static BiomeProperties Get(Def def)
         {

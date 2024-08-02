@@ -6,20 +6,6 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_BlightedAshlands</li>
-			<li>Mashed_Ashlands_BlightedBogAshlands</li>
-			<li>Mashed_Ashlands_Ashlands</li>
-			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<li>Mashed_Ashlands_SwampAshlands</li>
-			<li>Mashed_Ashlands_ForestAshlands</li>
-			<li>Mashed_Ashlands_MarshAshlands</li>
-			<li>Mashed_Ashlands_MeadowAshlands</li>
-			<li>Mashed_Ashlands_VolcanicAshlands</li>
-			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
-			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
-		</allowedBiomes>
 	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_SiltStriderPasses]==========-->
 	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
