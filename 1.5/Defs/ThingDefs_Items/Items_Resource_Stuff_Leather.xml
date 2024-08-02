@@ -117,7 +117,6 @@
 		</stuffProps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_InfernalScaledLeather]==========-->
-	<!-- Removed until there's something that actually uses it
 	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_InfernalScaledLeather</defName>
 		<label>infernal scaled leather</label>
@@ -141,7 +140,6 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_NetchLeather]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_NetchLeather</defName>

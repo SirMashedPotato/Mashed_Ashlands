@@ -28,6 +28,7 @@
 			<li>Mashed_Ashlands_AshlandAnimalDaedra</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Ogrim]========== -->
 	<!-- ==========[Mashed_Ashlands_Scamp]========== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Scamp</defName>
