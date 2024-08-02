@@ -20,4 +20,26 @@
 		</products>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
 	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_HarvestRawFungus]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_HarvestHiveBase">
+		<defName>Mashed_Ashlands_HarvestRawFungus</defName>
+		<label>harvest raw fungus</label>
+		<description>Harvest 6 raw fungus. The hive is damaged slightly each time raw fungus is harvested. Over harvesting will destroy the hive before the ants are able to repair any damage.</description>
+		<jobString>Harvesting raw fungus.</jobString>
+		<products>
+			<RawFungus>6</RawFungus>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_HarvestAshFungus]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_HarvestHiveBase">
+		<defName>Mashed_Ashlands_HarvestAshFungus</defName>
+		<label>harvest raw ash fungus</label>
+		<description>Harvest 6 raw ash fungus. The hive is damaged slightly each time raw ash fungus is harvested. Over harvesting will destroy the hive before the ants are able to repair any damage.</description>
+		<jobString>Harvesting raw ash fungus.</jobString>
+		<products>
+			<Mashed_Ashlands_RawAshFungus>6</Mashed_Ashlands_RawAshFungus>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+	</RecipeDef>
 </Defs>

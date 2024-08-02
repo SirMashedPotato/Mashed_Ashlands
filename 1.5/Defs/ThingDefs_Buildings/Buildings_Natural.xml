@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_DustAntHive</defName>
 		<label>dust ant hive</label>
-		<description>A dust ant hive. A species of relatively peaceful ant, that collects particles from dust storms to build and feed their hive.\n\nWith the right knowledge dust ants can be harvested as a source of nutrition. However over harvesting will risk destroying the hive.</description>
+		<description>A dust ant hive. A species of relatively peaceful ant, that collects particles from dust storms to build their hive, and nourish their fungus gardens.\n\nWith the right knowledge dust ants, or their cultivated fungus, can be harvested as a source of nutrition. However over harvesting will risk destroying the hive.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_DustAntHive</texPath>
@@ -32,6 +32,8 @@
 		</inspectorTabs>
 		<recipes>
 			<li>Mashed_Ashlands_HarvestDustAnts</li>
+			<li>Mashed_Ashlands_HarvestRawFungus</li>
+			<li>Mashed_Ashlands_HarvestAshFungus</li>
 		</recipes>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
