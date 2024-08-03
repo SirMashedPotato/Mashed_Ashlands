@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_OgrimBellyDrum]==========-->
+	<AbilityDef ParentName="Mashed_Ashlands_SelfBuffBase">
+		<defName>Mashed_Ashlands_OgrimBellyDrum</defName>
+		<label>belly drum</label>
+		<description>Make the ogrim give its belly a few good slaps, disturbing whatever is in its stomach, and boosting its metabolism. Greatly increases injury healing factor for a short time.</description>
+		<iconPath>UI/Abilities/Mashed_Ashlands_OgrimBellyDrum</iconPath>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<!--<warmupStartSound>Mashed_Ashlands_PurrserkerAbilityCall</warmupStartSound>-->
+		<hostile>false</hostile>
+    	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>50</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Ashlands_OgrimBellyDrumHediff</hediffDef>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Ashlands_AbilityBuffBase">
+		<defName>Mashed_Ashlands_OgrimBellyDrumHediff</defName>
+		<label>belly drum</label>
+		<description>An ogrims metabolism kicked into overdrive by a few good slaps on its belly. Greatly enhances the rate injuries are healed.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>6</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

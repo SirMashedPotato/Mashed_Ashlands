@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SelfBuffBase]==========-->
+	<AbilityDef Name="Mashed_Ashlands_SelfBuffBase" Abstract="True">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<showPsycastEffects>false</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<statBases>
+		  <Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>0</range>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<!-- ==========[Mashed_Ashlands_AbilityBuffBase]==========-->
+	<HediffDef Name="Mashed_Ashlands_AbilityBuffBase" Abstract="True">
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+</Defs>

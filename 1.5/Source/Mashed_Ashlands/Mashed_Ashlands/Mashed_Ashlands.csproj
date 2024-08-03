@@ -155,6 +155,7 @@
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
     <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="CompUse\CompUseEffect_ImprintEgg.cs" />
+    <Compile Include="ThingComp\Comp_AnimalAbilities.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
     <Compile Include="ThingComp\Comp_CliffRacerMutation.cs" />
     <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />

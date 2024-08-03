@@ -95,9 +95,13 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li>
+				<compClass>Mashed_Ashlands.Comp_AnimalAbilities</compClass>
+			</li>
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
 			<predator>true</predator>
 			<maxPreyBodySize>2.6</maxPreyBodySize>
 			<body>Monkey</body> <!-- probably need a new one without a tail-->
@@ -134,6 +138,9 @@
 		<combatPower>500</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<abilities>
+			<li>Mashed_Ashlands_OgrimBellyDrum</li>
+		</abilities>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
