@@ -109,6 +109,7 @@
 		<label>ashland swamp jelly</label>
 		<race>Mashed_Ashlands_SwampJelly</race>
 		<combatPower>60</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<alternateGraphicChance>1</alternateGraphicChance>

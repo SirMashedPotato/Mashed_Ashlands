@@ -41,6 +41,7 @@
 		<labelFemale>glowing netch betty</labelFemale>
 		<race>Mashed_Ashlands_NetchGlowing</race>
 		<combatPower>120</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<ecoSystemWeight>0.7</ecoSystemWeight>
 		<wildGroupSize>2~5</wildGroupSize>
 		<lifeStages>

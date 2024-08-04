@@ -292,6 +292,7 @@
 	<PawnKindDef Name="Mashed_Ashlands_CliffRacer" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<combatPower>60</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<label>cliff racer</label>
 		<labelPlural>cliff racer swarm</labelPlural>

@@ -100,6 +100,7 @@
 		<label>fetcherfly swarm</label>
 		<race>Mashed_Ashlands_FetcherflySwarmAnimal</race>
 		<combatPower>40</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>

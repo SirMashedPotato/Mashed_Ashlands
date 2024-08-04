@@ -111,6 +111,7 @@
 		<labelFemale>netch betty</labelFemale>
 		<race>Mashed_Ashlands_Netch</race>
 		<combatPower>100</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>2~5</wildGroupSize>
 		<lifeStages>
