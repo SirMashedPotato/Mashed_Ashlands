@@ -12,6 +12,10 @@ namespace Mashed_Ashlands
             {
                 SoundDefOf.AnimaTreeScream.PlayOneShotOnCamera();
             }
+            else
+            {
+                RimWorld.SoundDefOf.PsychicPulseGlobal.PlayOneShotOnCamera();
+            }
             base.PostMake();
         }
     }
