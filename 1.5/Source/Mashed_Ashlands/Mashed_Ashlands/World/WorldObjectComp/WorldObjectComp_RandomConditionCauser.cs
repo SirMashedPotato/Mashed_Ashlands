@@ -3,6 +3,7 @@ using RimWorld;
 using System.Collections.Generic;
 using RimWorld.Planet;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace Mashed_Ashlands
 {
@@ -20,12 +21,58 @@ namespace Mashed_Ashlands
         public bool CanCauseCondition => graceTicksLeft == 0;
         public GameConditionDef CurrentConditionDef => currentConditionDef;
 
+        private List<FloatMenuOption> debugConditionOptions;
+
+        /// <summary>
+        /// Creates a list of conditions for debug a debug action
+        /// </summary>
+        public List<FloatMenuOption> DebugConditionOptions
+        {
+            get
+            {
+                if (debugConditionOptions.NullOrEmpty())
+                {
+                    debugConditionOptions = new List<FloatMenuOption>();
+
+                    ///Random condiiton
+                    FloatMenuOption item = new FloatMenuOption("Random condition", delegate
+                    {
+                        TriggerCondition();
+                    });
+                    debugConditionOptions.Add(item);
+
+                    ///Conditions
+                    foreach (PotentialConditions potentialCondition in Props.potentialConditions)
+                    {
+                        if (potentialCondition.conditionDef != null)
+                        {
+                            item = new FloatMenuOption(potentialCondition.conditionDef.LabelCap, delegate
+                            {
+                                TriggerCondition(potentialCondition);
+                            });
+                            debugConditionOptions.Add(item);
+                        }
+                        else
+                        {
+                            ///Null condiiton
+                            item = new FloatMenuOption("No condition", delegate
+                            {
+                                TriggerCondition(potentialCondition);
+                            });
+                            debugConditionOptions.Add(item);
+                        }
+                    }
+                }
+                return debugConditionOptions;
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>
-        public void TriggerCondition()
+        public void TriggerCondition(PotentialConditions forcedCondition = null)
         {
-            PotentialConditions condition = Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
+            PotentialConditions condition = forcedCondition ?? Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
                 EndConditions();
@@ -271,7 +318,8 @@ namespace Mashed_Ashlands
                     defaultLabel = "DEV: Force new condition",
                     action = delegate ()
                     {
-                        TriggerCondition();
+                        FloatMenu floatMenu = new FloatMenu(DebugConditionOptions);
+                        Find.WindowStack.Add(floatMenu);
                     },
                 };
             }
