@@ -24,7 +24,7 @@ namespace Mashed_Ashlands
         private List<FloatMenuOption> debugConditionOptions;
 
         /// <summary>
-        /// Creates a list of conditions for debug a debug action
+        /// Creates a list of conditions for the Force new condition dev gizmo
         /// </summary>
         public List<FloatMenuOption> DebugConditionOptions
         {
@@ -34,7 +34,7 @@ namespace Mashed_Ashlands
                 {
                     debugConditionOptions = new List<FloatMenuOption>();
 
-                    ///Random condiiton
+                    ///Random condition
                     FloatMenuOption item = new FloatMenuOption("Random condition", delegate
                     {
                         TriggerCondition();
@@ -54,7 +54,7 @@ namespace Mashed_Ashlands
                         }
                         else
                         {
-                            ///Null condiiton
+                            ///Null condition
                             item = new FloatMenuOption("No condition", delegate
                             {
                                 TriggerCondition(potentialCondition);
