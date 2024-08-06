@@ -446,29 +446,31 @@
 		<wildGroupSize>3~5</wildGroupSize>
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
+			<!-- pale clay -->
 			<li>
 				<color>(176,154,146)</color>
 				<colorTwo>(118,103,87)</colorTwo>
 			</li>
+			<!-- orange clay -->
 			<li>
-				<color>(187,172,176)</color>
+				<color>(167,138,113)</color>
 				<colorTwo>(118,103,87)</colorTwo>
 			</li>
+			<!-- pale yellow clay -->
 			<li>
-				<color>(249,231,202)</color>
-				<colorTwo>(135,117,100)</colorTwo>
-			</li>
-			<li>
-				<color>(223,201,137)</color>
-				<colorTwo>(135,117,100)</colorTwo>
-			</li>
-			<li>
-				<color>(171,147,105)</color>
+				<color>(181,160,137)</color>
 				<colorTwo>(88,74,60)</colorTwo>
 			</li>
+			<!-- dark clay -->
 			<li>
-				<color>(163,120,84)</color>
+				<color>(154,131,127)</color>
 				<colorTwo>(88,74,60)</colorTwo>
+			</li>
+			<!-- pale mauve -->
+			<li>
+				<color>(187,172,176)</color>
+				<colorTwo>(65,57,41)</colorTwo>
+				<weight>0.01</weight>
 			</li>
 		</alternateGraphics>
 		<lifeStages>
