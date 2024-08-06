@@ -33,7 +33,10 @@
 	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
 		<defName>Mashed_Ashlands_Ogrim</defName>
 		<label>ogrim</label>
-		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe ogrim are the result of some eccentric scientists attempt at making a living weapon. While others believe that ogrim are actually an otherworldly being from another realm.</description>
+		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe ogrim are the result of some eccentric scientists attempt at making a living weapon. While others believe that ogrim are actually an otherworldly being from another realm.\n\n&lt;color=#E5E54C&gt;Belly Drum&lt;/color&gt;\nOgrim are able to slap their belly, kicking their metabolism into overdrive, and causing wounds to rapidly heal. This ability can be manually activated.</description>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Ashlands_OgrimBellyDrum</AbilityDef>
+		</descriptionHyperlinks>
 		<statBases>
 			<MoveSpeed>2.0</MoveSpeed>
 			<MarketValue>750</MarketValue>

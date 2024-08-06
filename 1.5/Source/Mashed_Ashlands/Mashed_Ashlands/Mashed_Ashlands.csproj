@@ -119,6 +119,8 @@
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Misc.cs" />
+    <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />

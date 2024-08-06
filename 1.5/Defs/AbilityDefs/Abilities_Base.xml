@@ -14,7 +14,7 @@
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>0.5</warmupTime>
+			<warmupTime>1.5</warmupTime>
 			<range>0</range>
 			<drawAimPie>false</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_OgrimBellyDrumWarmup]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_OgrimBellyDrumWarmup</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<spawnLocType>OnTarget</spawnLocType>
+				<scale>1</scale>
+				<ticksBetweenMotes>40</ticksBetweenMotes>
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+				<soundDef>Pawn_Melee_BigBash_HitPawn</soundDef>
+				<intermittentSoundInterval>40</intermittentSoundInterval>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>
