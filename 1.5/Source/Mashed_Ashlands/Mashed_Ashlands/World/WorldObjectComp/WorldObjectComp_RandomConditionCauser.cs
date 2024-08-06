@@ -109,6 +109,8 @@ namespace Mashed_Ashlands
                 bool categoryChangeFlag = false;
                 int originalCategory = ParentVolcano.Category;
 
+                bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
+
                 if (condition.countAsIncident)
                 {
                     ParentVolcano.IncidentTriggered();
@@ -121,8 +123,6 @@ namespace Mashed_Ashlands
                     }
                 }
 
-                bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
-
                 if (condition.sendLetter && radiusFlag)
                 {
                     Find.LetterStack.ReceiveLetter(
@@ -130,8 +130,8 @@ namespace Mashed_Ashlands
                     "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
                     currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
-
-                if (categoryChangeFlag && radiusFlag)
+                ///need to check radius again for the new radius
+                if (categoryChangeFlag && (radiusFlag || (!Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius())))
                 {
                     Find.LetterStack.ReceiveLetter("Mashed_Ashlands_CategoryChange_Label".Translate(ParentVolcano.Name).CapitalizeFirst(),
                         "Mashed_Ashlands_CategoryChange_Description".Translate(ParentVolcano.Name, originalCategory, ParentVolcano.Category), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, ParentVolcano, null, null);
