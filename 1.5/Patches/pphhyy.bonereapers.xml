@@ -7,13 +7,13 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="BotchJob_UndeadAnimalBase"]/statBases</xpath>
+					<xpath>Defs/ThingDef[@Name="BoneReapers_BoneAnimalBase"]/statBases</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/GeneDef[defName="BotchJob_UndeadPsysiology"]/statOffsets</xpath>
+					<xpath>Defs/GeneDef[defName="pphhyy_BoneReaperPhysiology"]/statOffsets</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>

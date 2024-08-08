@@ -89,6 +89,16 @@
 			<BotchJob_Wraith MayRequire="botchjob.profaned">0.03</BotchJob_Wraith>
 			<BotchJob_Skeleton MayRequire="botchjob.profaned">0.03</BotchJob_Skeleton>
 			<BotchJob_UndeadWarg MayRequire="botchjob.profaned">0.03</BotchJob_UndeadWarg>
+			<BotchJob_UndeadHorse MayRequire="botchjob.profaned">0.03</BotchJob_UndeadHorse>
+			<BotchJob_UndeadCat MayRequire="botchjob.profaned">0.03</BotchJob_UndeadCat>
+			<BotchJob_UndeadDragon MayRequire="botchjob.profaned">0.01</BotchJob_UndeadDragon>
+			<!-- pphhyy.bonereapers -->
+			<pphhyy_Scarab MayRequire="pphhyy.bonereapers">0.06</pphhyy_Scarab>
+			<pphhyy_Mongrel MayRequire="pphhyy.bonereapers">0.03</pphhyy_Mongrel>
+			<pphhyy_Ghora MayRequire="pphhyy.bonereapers">0.03</pphhyy_Ghora>
+			<pphhyy_Daraigana MayRequire="pphhyy.bonereapers">0.01</pphhyy_Daraigana>
+			<pphhyy_OsseousGheist MayRequire="pphhyy.bonereapers">0.03</pphhyy_OsseousGheist>
+			<pphhyy_OsseousHorror MayRequire="pphhyy.bonereapers">0.03</pphhyy_OsseousHorror>
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
