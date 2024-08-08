@@ -6,7 +6,6 @@ using Verse.AI;
 
 namespace Mashed_Ashlands
 {
-    
     /// <summary>
     /// Allows for custom cave plants for specific biomes.
     /// </summary>
