@@ -107,7 +107,7 @@
 			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
 			<predator>true</predator>
 			<maxPreyBodySize>2.6</maxPreyBodySize>
-			<body>Monkey</body> <!-- probably need a new one without a tail-->
+			<body>Mashed_Ashlands_BipedalDaedra</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>6</baseHealthScale>
 			<baseHungerRate>0.85</baseHungerRate>
