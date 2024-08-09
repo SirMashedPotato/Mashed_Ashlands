@@ -131,6 +131,11 @@
 		<defName>Mashed_Ashlands_NixHound</defName>
 		<label>nix-hound</label>
 		<description>A rather strange insect the size of a large dog, native to ashland regions. Nix-hounds lack functioning jaws, and instead drain prey dry using their proboscis. Large packs of nix-hound can quickly take down even the greatest of warriors, leaving them nothing more than a dry husk.\n\nWhile their unconventional appearance may turn away many, nix-hounds are highly intelligent, and make for loyal companions.\n\n&lt;color=#E5E54C&gt;Draining Bite&lt;/color&gt;\nStabs from a nix-hounds proboscis do little damage, but will cause additional blood loss, nourishing the nix-hound in the process.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixHoundFertilized</eggFertilizedDef>

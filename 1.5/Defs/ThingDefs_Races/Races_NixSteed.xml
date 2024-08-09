@@ -108,6 +108,11 @@
 		<defName>Mashed_Ashlands_NixSteed</defName>
 		<label>nix-steed</label>
 		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedFertilized</eggFertilizedDef>
