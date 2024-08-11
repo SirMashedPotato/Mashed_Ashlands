@@ -436,6 +436,12 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			<soundEating>Herbivore_Eat</soundEating>
 		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalUncommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_Rotumbo" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Rotumbo</defName>

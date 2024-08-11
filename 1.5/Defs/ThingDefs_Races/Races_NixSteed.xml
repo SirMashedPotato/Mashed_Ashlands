@@ -97,10 +97,8 @@
 			<soundEating>Herbivore_Eat</soundEating>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalFarm</li>
-			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
-			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+			<li>AnimalRare</li>
+			<li>Mashed_Ashlands_AshlandAnimalRare</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_NixSteed]========== -->

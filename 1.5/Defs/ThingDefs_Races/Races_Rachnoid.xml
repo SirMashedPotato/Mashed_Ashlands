@@ -85,7 +85,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalRare</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Pyrantula]========== -->

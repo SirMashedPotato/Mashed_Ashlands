@@ -103,6 +103,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalStrider</li>
 		</tradeTags>
 	</ThingDef>
