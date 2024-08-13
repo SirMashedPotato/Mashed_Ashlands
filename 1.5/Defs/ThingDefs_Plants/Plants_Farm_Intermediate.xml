@@ -201,7 +201,7 @@
 	<ThingDef Name="Mashed_Ashlands_Plant_MuckSpongeBase" ParentName="Mashed_Ashlands_PseudoTreeBase">
 		<defName>Mashed_Ashlands_Plant_MuckSponge</defName>
 		<label>mucksponge</label>
-		<description>A large sponge-like fungus, usually found growing near lakes, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into an assortment of useful items. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
+		<description>A large sponge-like fungus, usually found growing near lakes, rivers, or in damp caves. Slowly fills with muck, a byproduct of the mushroom digesting nutrients from the ash rich ground it grows on. The muck can be scooped out periodically, and is usually refined into herbal medicine. While structurally quite sturdy, muck sponge will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<requireWaterForWild>true</requireWaterForWild>

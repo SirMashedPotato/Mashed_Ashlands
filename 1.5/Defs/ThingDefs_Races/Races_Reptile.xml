@@ -345,7 +345,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Rotumbo</defName>
 		<label>rotumbo</label>
-		<description>Sometimes referred to as the proto-guar, the rotumbo is a large reptile that can often be found in high altitude ashland regions. Unlike its distant cousin the guar, rotumbo still retain functioning forelimbs, which prove highly beneficial when scaling the rugged ashland landscapes they call home.\n\nMuch like the guar, the rotumbo is sometimes farmed for their meat and leather. Though due to being comparatively more difficult to tame, most use them as pack animals. Veru much unlike the guar, the rotumbo does not lay eggs, and secretes a milk like substance to nourish their young.</description>
+		<description>Sometimes referred to as the proto-guar, the rotumbo is a large reptile that can often be found in high altitude ashland regions. Unlike its distant cousin the guar, rotumbo still retain functioning forelimbs, which prove highly beneficial when scaling the rugged ashland landscapes they call home.\n\nMuch like the guar, the rotumbo is sometimes farmed for their meat and leather. Though due to being comparatively more difficult to tame, most use them as pack animals. Very much unlike the guar, the rotumbo does not lay eggs, and secretes a milk like substance to nourish their young.</description>
 		<statBases>
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>4.5</MoveSpeed>
