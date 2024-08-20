@@ -485,7 +485,7 @@
 				<labelPlural>rotumbo calves</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
-					<color>(244,212,147)</color>
+					<color>(176,154,146)</color>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>2</drawSize>
 					<shadowData>
@@ -501,7 +501,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
-					<color>(244,212,147)</color>
+					<color>(176,154,146)</color>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>2.4</drawSize>
 					<shadowData>
@@ -517,7 +517,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_Rotumbo</texPath>
-					<color>(244,212,147)</color>
+					<color>(176,154,146)</color>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>2.8</drawSize>
 					<shadowData>
