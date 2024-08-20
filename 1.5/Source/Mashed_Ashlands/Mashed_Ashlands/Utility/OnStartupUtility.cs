@@ -19,7 +19,7 @@ namespace Mashed_Ashlands
 
         public static List<ThingDef> hasPollutionPropsAnimals = new List<ThingDef> { };
         public static List<ThingDef> alternateStimulisAnimals = new List<ThingDef> { };
-        public static List<ThingDef> glowOverlayAnimals = new List<ThingDef> { };
+        public static HashSet<ThingDef> glowOverlayAnimals = new HashSet<ThingDef> { };
 
         static OnStartupUtility()
         {
