@@ -87,7 +87,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
 		<defName>Mashed_Ashlands_RawFoyadaHopper</defName>
 		<label>foyada hopper</label>
-		<description>Raw foyada hopper. A primitive lobe-finned fish, only found in volcanic rashland regions. While they are usually found in lakes and sukphur pools, they can sometimes be found hopping around on land.\n\nSome local tribes have tales of giant foyoda hoppers, that swim in pools of lava. Of course no one has actually caught a foyoda hopper of such grandiose size.</description>
+		<description>Raw foyada hopper. A primitive lobe-finned fish, only found in volcanic rashland regions. While they are usually found in lakes and sulphur pools, they can sometimes be found hopping around on land.\n\nSome local tribes have tales of giant foyoda hoppers, that swim in pools of lava. Of course no one has actually caught a foyoda hopper of such grandiose size.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFoyadaHopper</texPath>
 		</graphicData>
@@ -207,6 +207,20 @@
 			<Mass>0.05</Mass>
 			<Nutrition>0.05</Nutrition>
 			<MarketValue>1.1</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawMarshAngler]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_RawFishBase">
+		<defName>Mashed_Ashlands_RawMarshAngler</defName>
+		<label>marsh angler</label>
+		<description>Raw marsh angler. A large, mostly-aquatic, angler fish, usually found lurking in the murky waters of ashland regions. Care needs to be taken when handling marsh angler, as they have rows of retractable spines along their back, and a large maw filled with razor sharp teeth.\n\nThere are legends of enormous marsh angler big enough to swallow a kagouti whole. And a few even claim to have encountered marsh angler deep at sea large enough to predate whales.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMarshAngler</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.7</Mass>
+			<Nutrition>0.3</Nutrition>
+			<MarketValue>6.6</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMonkfish]==========-->
