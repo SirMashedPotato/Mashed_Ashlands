@@ -130,7 +130,12 @@
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="Settings\ResetSettingsDropdown.cs" />
-    <Compile Include="Settings\SettingsPage_General.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_AshStorm.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_Biome.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_General.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_Incidents.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_OtherConditions.cs" />
+    <Compile Include="Settings\Pages\SettingsPage_WorldGen.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />

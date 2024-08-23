@@ -456,6 +456,7 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_General()
         {
+            _instance.Mashed_Ashlands_EnableSettingBeforeWorldGen = Mashed_Ashlands_EnableSettingBeforeWorldGen_def;
             _instance.Mashed_Ashlands_OnlySowOnAsh = Mashed_Ashlands_OnlySowOnAsh_def;
             _instance.Mashed_Ashlands_BaseAshResistance = Mashed_Ashlands_BaseAshResistance_def;
             _instance.Mashed_Ashlands_BaseAshResistanceValue = Mashed_Ashlands_BaseAshResistanceValue_def;
@@ -466,7 +467,6 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_WorldGen()
         {
-            _instance.Mashed_Ashlands_EnableSettingBeforeWorldGen = Mashed_Ashlands_EnableSettingBeforeWorldGen_def;
             _instance.Mashed_Ashlands_EnableDormantVolcano = Mashed_Ashlands_EnableDormantVolcano_def;
             _instance.Mashed_Ashlands_NumberOfDormantVolcano = Mashed_Ashlands_NumberOfDormantVolcano_def;
             _instance.Mashed_Ashlands_EnableActiveVolcano = Mashed_Ashlands_EnableActiveVolcano_def;

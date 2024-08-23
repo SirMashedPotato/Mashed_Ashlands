@@ -6,8 +6,11 @@ namespace Mashed_Ashlands
 {
     internal static class SettingsPage_General
     {
-        public static void DoSettingsPage(Rect mainRect, ref Vector2 scrollPosition, Mashed_Ashlands_ModSettings settings)
+        private static Vector2 scrollPosition = Vector2.zero;
+
+        public static void DoSettingsPage(Rect mainRect, Mashed_Ashlands_ModSettings settings)
         {
+            ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
             Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height - 10);
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
@@ -16,7 +19,13 @@ namespace Mashed_Ashlands
 
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(innerRect);
-            
+
+            ///Settings
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSettingBeforeWorldGen".Translate(), ref settings.Mashed_Ashlands_EnableSettingBeforeWorldGen);
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BaseAshResistance".Translate(), ref settings.Mashed_Ashlands_BaseAshResistance);
             listing_Standard.Gap();
 
@@ -37,10 +46,8 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_AshcanoJoy".Translate(), ref settings.Mashed_Ashlands_AshcanoJoy);
             listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
+            
+            ///Ending
             listing_Standard.End();
             Widgets.EndScrollView();
         }
