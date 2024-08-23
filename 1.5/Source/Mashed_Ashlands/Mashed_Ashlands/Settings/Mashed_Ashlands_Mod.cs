@@ -30,35 +30,41 @@ namespace Mashed_Ashlands
             tabs.Add(new TabRecord("Mashed_Ashlands_PageGeneral".Translate(), delegate
             {
                 curTab = SettingsTab.General;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.General));
             
             tabs.Add(new TabRecord("Mashed_Ashlands_PageWorldGen".Translate(), delegate
             {
                 curTab = SettingsTab.WorldGen;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.WorldGen));
             
             tabs.Add(new TabRecord("Mashed_Ashlands_PageBiome".Translate(), delegate
             {
                 curTab = SettingsTab.MapGen;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.MapGen));
             
             tabs.Add(new TabRecord("Mashed_Ashlands_PageAshStorm".Translate(), delegate
             {
                 curTab = SettingsTab.AshStorm;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.AshStorm));
             
             tabs.Add(new TabRecord("Mashed_Ashlands_PageOtherConditions".Translate(), delegate
             {
                 curTab = SettingsTab.Conditions;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.Conditions));
             
             tabs.Add(new TabRecord("Mashed_Ashlands_PageIncident".Translate(), delegate
             {
                 curTab = SettingsTab.Incidents;
+                scrollPosition = Vector2.zero;
             }, () => curTab == SettingsTab.Incidents));
         }
 
-        private List<TabRecord> tabs = new List<TabRecord>();
+        private readonly List<TabRecord> tabs = new List<TabRecord>();
 
         public override string SettingsCategory() => "Mashed_Ashlands_ModName".Translate();
         private static SettingsTab curTab = SettingsTab.General;
@@ -112,75 +118,15 @@ namespace Mashed_Ashlands
             }
             listing_Standard.End();
             Widgets.EndScrollView();
+
+            if (Widgets.ButtonText(new Rect(inRect.x + inRect.width - Window.CloseButSize.x, inRect.y + inRect.height + 2f, Window.CloseButSize.x, Window.CloseButSize.y), "ResetAll".Translate()))
+            {
+                FloatMenu floatMenu = new FloatMenu(ResetSettingsDropdown.ResetSettingsOptions);
+                Find.WindowStack.Add(floatMenu);
+            }
+
             base.DoSettingsWindowContents(inRect);
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /*private void ResetButtonForPage(Listing_Standard listing_Standard)
-        {
-            Rect rectDefault = listing_Standard.GetRect(30f);
-            switch (page)
-            {
-                case 0:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageGeneral".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_General();
-                    }
-                    break;
-
-                case 1:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageWorldGen".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_WorldGen();
-                    }
-                    break;
-
-                case 2:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageBiome".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_Biome();
-                    }
-                    break;
-
-                case 3:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshStorm".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_AshStorm();
-                    }
-                    break;
-
-                case 4:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageOtherConditions".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageOtherConditions".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_OtherConditions();
-                    }
-                    break;
-
-                case 5:
-                    listing_Standard.Gap();
-                    TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()));
-                    if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()), true, true, true))
-                    {
-                        Mashed_Ashlands_ModSettings.ResetSettings_Incident();
-                    }
-                    break;
-
-                default:
-                    break;
-            }
-        }*/
 
         /// <summary>
         /// 
