@@ -12,7 +12,7 @@ namespace Mashed_Ashlands
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 1.7f);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 1.8f);
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
 
             innerRect = innerRect.ContractedBy(20f);

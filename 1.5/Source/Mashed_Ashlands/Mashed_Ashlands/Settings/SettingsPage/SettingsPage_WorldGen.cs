@@ -7,7 +7,20 @@ namespace Mashed_Ashlands
     {
         private static Vector2 scrollPosition = Vector2.zero;
 
-        public static void DoSettingsPage(Rect mainRect, Mashed_Ashlands_ModSettings settings)
+        public static Vector2 ScrollPosition
+        {
+            get
+            { 
+                return scrollPosition; 
+            }
+            set 
+            { 
+                scrollPosition = value; 
+            }
+        }
+
+
+        public static void DoSettingsPage(Rect mainRect, Mashed_Ashlands_ModSettings settings, bool preWorldGenBanner = false)
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
@@ -18,6 +31,14 @@ namespace Mashed_Ashlands
 
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(innerRect);
+
+            if (preWorldGenBanner)
+            {
+                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen1".Translate());
+                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen2".Translate());
+                listing_Standard.GapLine();
+                listing_Standard.Gap();
+            }
 
             ///Settings
 

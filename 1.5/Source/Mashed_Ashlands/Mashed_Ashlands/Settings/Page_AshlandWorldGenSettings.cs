@@ -8,28 +8,30 @@ namespace Mashed_Ashlands
     {
         public override string PageTitle => "Mashed_Ashlands_ModName".Translate() + " " + "Mashed_Ashlands_PageWorldGen".Translate();
 
-        private static Vector2 scrollPosition = Vector2.zero;
+        private Vector2 initialScrollPos = Vector2.zero;
 
         public override void DoWindowContents(Rect inRect)
         {
             DrawPageTitle(inRect);
             Rect mainRect = GetMainRect(inRect, 0f, false);
 
-            Listing_Standard listing_Standard = new Listing_Standard();
-
-            Rect outerRect = new Rect(mainRect.x, mainRect.y, mainRect.width, mainRect.height);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 3);
-            Widgets.BeginScrollView(outerRect, ref scrollPosition, innerRect, true);
-
-            listing_Standard.Begin(innerRect);
-
-            ///listing_Standard = Mashed_Ashlands_Mod.SettingsPage_WorldGen(listing_Standard, Mashed_Ashlands_ModSettings.Instance, true); TODO
-
-            listing_Standard.End();
-            Widgets.EndScrollView();
+            SettingsPage_WorldGen.DoSettingsPage(mainRect, Mashed_Ashlands_ModSettings.Instance, true);
 
             DoBottomButtons(inRect, null, null, null, true, true);
             DoResetButton(inRect);
+        }
+
+        public override void PreOpen()
+        {
+            initialScrollPos = SettingsPage_WorldGen.ScrollPosition;
+            SettingsPage_WorldGen.ScrollPosition = Vector2.zero;
+            base.PreOpen();
+        }
+
+        public override void PreClose()
+        {
+            SettingsPage_WorldGen.ScrollPosition = initialScrollPos;
+            base.PreClose();
         }
 
         public void DoResetButton(Rect inRect)
