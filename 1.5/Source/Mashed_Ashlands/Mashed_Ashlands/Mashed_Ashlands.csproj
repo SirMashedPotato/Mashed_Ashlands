@@ -130,6 +130,7 @@
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="Settings\ResetSettingsDropdown.cs" />
+    <Compile Include="Settings\SettingsPage_General.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />

@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
 {
     public class Mashed_Ashlands_Mod : Mod
     {
-        Mashed_Ashlands_ModSettings settings;
+        readonly Mashed_Ashlands_ModSettings settings;
 
         public Mashed_Ashlands_Mod(ModContentPack contentPack) : base(contentPack)
         {
@@ -85,21 +85,12 @@ namespace Mashed_Ashlands
             Widgets.DrawMenuSection(mainRect);
             TabDrawer.DrawTabs(mainRect, tabs);
 
-            ///actual settings stuff
-            Rect scrollRect = mainRect.ContractedBy(5f);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2);
-            Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
-
-            innerRect = innerRect.ContractedBy(20f);
-
-            Listing_Standard listing_Standard = new Listing_Standard();
-            listing_Standard.Begin(innerRect);
-
             switch (curTab)
             {
                 case SettingsTab.General:
-                    listing_Standard = SettingsPage_General(listing_Standard, settings);
+                    SettingsPage_General.DoSettingsPage(mainRect, ref scrollPosition, settings);
                     break;
+                    /*
                 case SettingsTab.WorldGen:
                     listing_Standard = SettingsPage_WorldGen(listing_Standard, settings);
                     break;
@@ -115,9 +106,8 @@ namespace Mashed_Ashlands
                 case SettingsTab.Incidents:
                     listing_Standard = SettingsPage_Incidents(listing_Standard, settings);
                     break;
+                    */
             }
-            listing_Standard.End();
-            Widgets.EndScrollView();
 
             if (Widgets.ButtonText(new Rect(inRect.x + inRect.width - Window.CloseButSize.x, inRect.y + inRect.height + 2f, Window.CloseButSize.x, Window.CloseButSize.y), "ResetAll".Translate()))
             {
@@ -126,42 +116,6 @@ namespace Mashed_Ashlands
             }
 
             base.DoSettingsWindowContents(inRect);
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        private Listing_Standard SettingsPage_General(Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
-        {
-            listing_Standard.Label("Mashed_Ashlands_PageGeneral".Translate());
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BaseAshResistance".Translate(), ref settings.Mashed_Ashlands_BaseAshResistance);
-            listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_BaseAshResistanceValue".Translate(settings.Mashed_Ashlands_BaseAshResistanceValue * 100), -1);
-            settings.Mashed_Ashlands_BaseAshResistanceValue = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_BaseAshResistanceValue, 0.05f, 1f) * 20) / 20;
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_OnlySowOnAsh".Translate(), ref settings.Mashed_Ashlands_OnlySowOnAsh);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_FlowerFeeding".Translate(), ref settings.Mashed_Ashlands_FlowerFeeding);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_ScampInsulting".Translate(), ref settings.Mashed_Ashlands_ScampInsulting);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_AshcanoJoy".Translate(), ref settings.Mashed_Ashlands_AshcanoJoy);
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            return listing_Standard;
         }
 
         /// <summary>
