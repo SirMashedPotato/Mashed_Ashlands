@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -14,8 +15,53 @@ namespace Mashed_Ashlands
             Log.Message("[Mashed's Ashlands] version " + Content.ModMetaData.ModVersion);
         }
 
+        private enum SettingsTab : byte
+        {
+            General,
+            WorldGen,
+            MapGen,
+            AshStorm,
+            Conditions,
+            Incidents
+        }
+
+        private void ReadySettingsTabs()
+        {
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageGeneral".Translate(), delegate
+            {
+                curTab = SettingsTab.General;
+            }, () => curTab == SettingsTab.General));
+            
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageWorldGen".Translate(), delegate
+            {
+                curTab = SettingsTab.WorldGen;
+            }, () => curTab == SettingsTab.WorldGen));
+            
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageBiome".Translate(), delegate
+            {
+                curTab = SettingsTab.MapGen;
+            }, () => curTab == SettingsTab.MapGen));
+            
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageAshStorm".Translate(), delegate
+            {
+                curTab = SettingsTab.AshStorm;
+            }, () => curTab == SettingsTab.AshStorm));
+            
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageOtherConditions".Translate(), delegate
+            {
+                curTab = SettingsTab.Conditions;
+            }, () => curTab == SettingsTab.Conditions));
+            
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageIncident".Translate(), delegate
+            {
+                curTab = SettingsTab.Incidents;
+            }, () => curTab == SettingsTab.Incidents));
+        }
+
+        private List<TabRecord> tabs = new List<TabRecord>();
+
         public override string SettingsCategory() => "Mashed_Ashlands_ModName".Translate();
-        private int page = 0;
+        private static SettingsTab curTab = SettingsTab.General;
         private static Vector2 scrollPosition = Vector2.zero;
 
         /// <summary>
@@ -23,128 +69,56 @@ namespace Mashed_Ashlands
         /// </summary>
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            float firstColumnWidth = (inRect.width - Listing.ColumnSpacing) * 3.5f / 5f;
-            float secondColumnWidth = inRect.width - Listing.ColumnSpacing - firstColumnWidth;
+            if (tabs.NullOrEmpty())
+            {
+                ReadySettingsTabs();
+            }
 
-            Rect outerRect = new Rect(inRect.x, inRect.y, firstColumnWidth, inRect.height);
-            Rect innerRect = new Rect(0f, 0f, firstColumnWidth - 24f, inRect.height * 2.5f);
-            Widgets.BeginScrollView(outerRect, ref scrollPosition, innerRect, true);
+            Rect mainRect = inRect;
+            mainRect.yMin += 45f;
+            Widgets.DrawMenuSection(mainRect);
+            TabDrawer.DrawTabs(mainRect, tabs);
+
+            ///actual settings stuff
+            Rect scrollRect = mainRect.ContractedBy(5f);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2);
+            Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
+
+            innerRect = innerRect.ContractedBy(20f);
 
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(innerRect);
 
-            //get page
-            switch (page)
+            switch (curTab)
             {
-                case 1:
-                    listing_Standard = SettingsPage_WorldGen(listing_Standard, settings);
-                    break;
-                case 2:
-                    listing_Standard = SettingsPage_Biome(listing_Standard, settings);
-                    break;
-                case 3:
-                    listing_Standard = SettingsPage_AshStorm(listing_Standard, settings);
-                    break;
-                case 4:
-                    listing_Standard = SettingsPage_OtherConditions(listing_Standard, settings);
-                    break;
-                case 5:
-                    listing_Standard = SettingsPage_Incidents(listing_Standard, settings);
-                    break;
-               
-
-                default:
+                case SettingsTab.General:
                     listing_Standard = SettingsPage_General(listing_Standard, settings);
                     break;
+                case SettingsTab.WorldGen:
+                    listing_Standard = SettingsPage_WorldGen(listing_Standard, settings);
+                    break;
+                case SettingsTab.MapGen:
+                    listing_Standard = SettingsPage_Biome(listing_Standard, settings);
+                    break;
+                case SettingsTab.AshStorm:
+                    listing_Standard = SettingsPage_AshStorm(listing_Standard, settings);
+                    break;
+                case SettingsTab.Conditions:
+                    listing_Standard = SettingsPage_OtherConditions(listing_Standard, settings);
+                    break;
+                case SettingsTab.Incidents:
+                    listing_Standard = SettingsPage_Incidents(listing_Standard, settings);
+                    break;
             }
-
             listing_Standard.End();
             Widgets.EndScrollView();
             base.DoSettingsWindowContents(inRect);
-
-            outerRect.x += firstColumnWidth + Listing.ColumnSpacing;
-            outerRect.width = secondColumnWidth;
-
-            listing_Standard = new Listing_Standard();
-            listing_Standard.Begin(outerRect);
-            SettingsButtons(listing_Standard);
-            listing_Standard.End();
         }
 
         /// <summary>
         /// 
         /// </summary>
-        private Listing_Standard SettingsButtons(Listing_Standard listing_Standard)
-        {
-            listing_Standard.Gap();
-
-            Rect rectPageGeneral = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageGeneral, "Mashed_Ashlands_PageGeneral".Translate());
-            if (Widgets.ButtonText(rectPageGeneral, "Mashed_Ashlands_PageGeneral".Translate(), true, true, true))
-            {
-                page = 0;
-            }
-            listing_Standard.Gap();
-
-            Rect rectPageWorldGen = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageWorldGen, "Mashed_Ashlands_PageWorldGen".Translate());
-            if (Widgets.ButtonText(rectPageWorldGen, "Mashed_Ashlands_PageWorldGen".Translate(), true, true, true))
-            {
-                page = 1;
-            }
-            listing_Standard.Gap();
-
-            Rect rectPageBiome = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate());
-            if (Widgets.ButtonText(rectPageBiome, "Mashed_Ashlands_PageBiome".Translate(), true, true, true))
-            {
-                page = 2;
-            }
-            listing_Standard.Gap();
-
-            Rect rectPageAshStorm = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageAshStorm, "Mashed_Ashlands_PageAshStorm".Translate());
-            if (Widgets.ButtonText(rectPageAshStorm, "Mashed_Ashlands_PageAshStorm".Translate(), true, true, true))
-            {
-                page = 3;
-            }
-            listing_Standard.Gap();
-
-            Rect rectPageOtherConditions = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageOtherConditions, "Mashed_Ashlands_PageOtherConditions".Translate());
-            if (Widgets.ButtonText(rectPageOtherConditions, "Mashed_Ashlands_PageOtherConditions".Translate(), true, true, true))
-            {
-                page = 4;
-            }
-            listing_Standard.Gap();
-
-            Rect rectPageIncident = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate());
-            if (Widgets.ButtonText(rectPageIncident, "Mashed_Ashlands_PageIncident".Translate(), true, true, true))
-            {
-                page = 5;
-            }
-            listing_Standard.Gap();
-
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            Rect rectDefault = listing_Standard.GetRect(30f);
-            TooltipHandler.TipRegion(rectDefault, "Mashed_Ashlands_Reset".Translate());
-            if (Widgets.ButtonText(rectDefault, "Mashed_Ashlands_Reset".Translate(), true, true, true))
-            {
-                Mashed_Ashlands_ModSettings.ResetSettings();
-            }
-            listing_Standard.Gap();
-            ResetButtonForPage(listing_Standard);
-
-            return listing_Standard;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        private void ResetButtonForPage(Listing_Standard listing_Standard)
+        /*private void ResetButtonForPage(Listing_Standard listing_Standard)
         {
             Rect rectDefault = listing_Standard.GetRect(30f);
             switch (page)
@@ -206,7 +180,7 @@ namespace Mashed_Ashlands
                 default:
                     break;
             }
-        }
+        }*/
 
         /// <summary>
         /// 

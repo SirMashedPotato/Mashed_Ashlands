@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- ==========[Biome]==========-->
-	<Mashed_Ashlands_PageBiome>Biome &amp; Map Gen. Settings</Mashed_Ashlands_PageBiome>
+	<Mashed_Ashlands_PageBiome>Map Gen.</Mashed_Ashlands_PageBiome>
 	<!-- misc -->
 	<Mashed_Ashlands_EnableExtraGeysers>Enable additional steam geysers generating in certain ashland biomes.</Mashed_Ashlands_EnableExtraGeysers>
 	<Mashed_Ashlands_EnableFetcherflyHives>Enable fetcherfly hives generating in certain ashland biomes.</Mashed_Ashlands_EnableFetcherflyHives>
