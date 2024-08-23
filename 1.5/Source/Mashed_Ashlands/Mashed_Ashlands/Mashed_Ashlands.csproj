@@ -125,6 +125,11 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
+    <Compile Include="Pages\Tabs\SettingsTab_WorldGenActive.cs" />
+    <Compile Include="Pages\Tabs\SettingsTab_WorldGenBlighted.cs" />
+    <Compile Include="Pages\Tabs\SettingsTab_WorldGenDormant.cs" />
+    <Compile Include="Pages\Tabs\SettingsTab_WorldGenExtinct.cs" />
+    <Compile Include="Pages\Tabs\SettingsTab_WorldGenGeneral.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
@@ -159,7 +164,7 @@
     <Compile Include="LifeStageWorker\LifeStageWorker_AnimalAdultCliffRacer.cs" />
     <Compile Include="Settings\Mashed_Ashlands_Mod.cs" />
     <Compile Include="Settings\Mashed_Ashlands_ModSettings.cs" />
-    <Compile Include="Settings\Page_AshlandWorldGenSettings.cs" />
+    <Compile Include="Pages\Page_AshlandWorldGenSettings.cs" />
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
     <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="CompUse\CompUseEffect_ImprintEgg.cs" />

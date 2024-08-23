@@ -7,20 +7,7 @@ namespace Mashed_Ashlands
     {
         private static Vector2 scrollPosition = Vector2.zero;
 
-        public static Vector2 ScrollPosition
-        {
-            get
-            { 
-                return scrollPosition; 
-            }
-            set 
-            { 
-                scrollPosition = value; 
-            }
-        }
-
-
-        public static void DoSettingsPage(Rect mainRect, Mashed_Ashlands_ModSettings settings, bool preWorldGenBanner = false)
+        public static void DoSettingsPage(Rect mainRect, Mashed_Ashlands_ModSettings settings)
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
@@ -32,16 +19,36 @@ namespace Mashed_Ashlands
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(innerRect);
 
-            if (preWorldGenBanner)
-            {
-                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen1".Translate());
-                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGen2".Translate());
-                listing_Standard.GapLine();
-                listing_Standard.Gap();
-            }
+            ///General
+            DoSettingsGeneral(ref listing_Standard, settings);
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
 
-            ///Settings
+            //Dormant and biomes
+            DoSettingsDormant(ref listing_Standard, settings);
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
 
+            //Extinct and biomes
+            DoSettingsExtinct(ref listing_Standard, settings);
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //Active and biomes
+            DoSettingsActive(ref listing_Standard, settings);
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //Blighted and biomes
+            DoSettingsBlighted(ref listing_Standard, settings);
+
+            ///Ending
+            listing_Standard.End();
+            Widgets.EndScrollView();
+        }
+
+        public static void DoSettingsGeneral(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -61,11 +68,10 @@ namespace Mashed_Ashlands
             listing_Standard.Label("Mashed_Ashlands_BiomesMaxDistance".Translate(settings.Mashed_Ashlands_BiomesMaxDistance));
             settings.Mashed_Ashlands_BiomesMaxDistance = (int)listing_Standard.Slider(settings.Mashed_Ashlands_BiomesMaxDistance, 10, 200);
             listing_Standard.Gap();
+        }
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            //Dormant and biomes
+        public static void DoSettingsDormant(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableDormantVolcano".Translate(), ref settings.Mashed_Ashlands_EnableDormantVolcano, "Mashed_Ashlands_EnableDormantVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -90,11 +96,10 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableSwampAshlands".Translate(), ref settings.Mashed_Ashlands_EnableSwampAshlands);
             listing_Standard.Gap();
+        }
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            //Extinct and biomes
+        public static void DoSettingsExtinct(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableExtinctVolcano".Translate(), ref settings.Mashed_Ashlands_EnableExtinctVolcano, "Mashed_Ashlands_EnableExtinctVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -110,11 +115,10 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableMeadowAshlands".Translate(), ref settings.Mashed_Ashlands_EnableMeadowAshlands);
             listing_Standard.Gap();
+        }
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            //Active and biomes
+        public static void DoSettingsActive(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableActiveVolcano".Translate(), ref settings.Mashed_Ashlands_EnableActiveVolcano, "Mashed_Ashlands_EnableActiveVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -133,11 +137,10 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBadlandsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBadlandsAshlands);
             listing_Standard.Gap();
+        }
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            //Blighted and biomes
+        public static void DoSettingsBlighted(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
+        {
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedVolcano".Translate(), ref settings.Mashed_Ashlands_EnableBlightedVolcano, "Mashed_Ashlands_EnableBlightedVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 
@@ -150,10 +153,6 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);
             listing_Standard.Gap();
-
-            ///Ending
-            listing_Standard.End();
-            Widgets.EndScrollView();
         }
     }
 }
