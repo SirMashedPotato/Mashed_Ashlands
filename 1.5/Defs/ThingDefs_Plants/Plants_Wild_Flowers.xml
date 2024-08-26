@@ -31,7 +31,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenHeatherFlower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshenHeatherFlowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_AshenHeatherFlower</defName>
 		<label>ashen heather</label>
 		<description>A particularly resilient strain of heather that can be found growing in certain ashland regions.</description>
@@ -64,7 +64,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandPitcher]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_AshlandPitcherBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_AshlandPitcher</defName>
 		<label>ashland pitcher</label>
 		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
@@ -94,7 +94,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_BlackAntherflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_BlackAntherflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_BlackAntherflower</defName>
 		<label>black anther</label>
 		<description>A unique looking flower that can often be found growing in coastal regions with ash rich ground.</description>
@@ -121,7 +121,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GoldenSedgeflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_GoldenSedgeflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_GoldenSedgeflower</defName>
 		<label>golden sedge</label>
 		<description>A beautiful golden flower, often associated with wealth. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
@@ -150,7 +150,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_HornLilyflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_HornLilyflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_HornLilyflower</defName>
 		<label>horn lily</label>
 		<description>An exquisite purple flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
@@ -218,7 +218,7 @@
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_LavaBloomBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_LavaBloom</defName>
 		<label>lava bloom</label>
 		<description>A vibrant red flower that can often be found growing in rich volcanic ash.</description>
@@ -286,7 +286,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_NirthflyflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_Nirthflyflower</defName>
 		<label>nirthfly</label>
 		<description>An exquisite golden flower. While it can be found growing in calmer ashland regions, it's most often found in the gardens of nobles.</description>
@@ -315,7 +315,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_NobleSedgeflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_NobleSedgeflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_NobleSedgeflower</defName>
 		<label>noble sedge</label>
 		<description>A beautiful purple flower, often associated with royalty. While it can be found growing in calmer ashland regions, it's most often found in painstakingly cared for gardens.</description>
@@ -344,7 +344,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Stoneflower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_StoneflowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_Stoneflower</defName>
 		<label>stoneflower</label>
 		<description>A blue flower that can often be found growing in stony ash. Though it looks fragile, it is surprisingly resistant to the effects of ash storms.</description>
@@ -374,7 +374,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_WillowFlower]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_WillowFlowerBase">
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_WillowFlower</defName>
 		<label>willow flower</label>
 		<description>A pink flower that can often be found growing in regions with ash rich ground.</description>
