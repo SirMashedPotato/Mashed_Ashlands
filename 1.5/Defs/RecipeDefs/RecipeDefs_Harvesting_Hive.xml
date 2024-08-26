@@ -8,6 +8,7 @@
 		<workAmount>500</workAmount>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Animals</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 	</RecipeDef>
 	<!-- ==========[Mashed_Ashlands_HarvestDustAnts]==========-->
 	<RecipeDef ParentName="Mashed_Ashlands_HarvestHiveBase">
