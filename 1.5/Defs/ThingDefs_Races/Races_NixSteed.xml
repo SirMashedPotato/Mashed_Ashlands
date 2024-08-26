@@ -105,7 +105,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
 		<defName>Mashed_Ashlands_NixSteed</defName>
 		<label>nix-steed</label>
-		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.</description>
+		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Incomprehensible Form&lt;/color&gt;\nFor some reason the human mind just can not comprehend the form of the nix-steed, and any attempt to do so will eventually lead to complete insanity.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
 				<AllowPollutionStimulis>false</AllowPollutionStimulis>
