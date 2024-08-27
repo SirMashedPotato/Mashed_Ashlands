@@ -26,6 +26,7 @@ namespace Mashed_Ashlands
             FillAnimalsLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null).ToList());
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
+            ModifyFlowerFeederLinks();
         }
 
         public static void FillAnimalsLists(List<ThingDef> pawnDefs)
@@ -51,6 +52,22 @@ namespace Mashed_Ashlands
                             alternateStimulisAnimals.Add(pawnDef);
                         }
                     }
+                }
+            }
+        }
+
+        public static void ModifyFlowerFeederLinks()
+        {
+            ThinkNode_ConditionalAshlandFlowerFeeding thinkNode = ThinkTreeDefOf.Mashed_Ashlands_FeedFromAshlandFlower.thinkRoot as ThinkNode_ConditionalAshlandFlowerFeeding;
+            foreach (ThingDef animalDef in thinkNode.animalDefs)
+            {
+                if (animalDef.descriptionHyperlinks.NullOrEmpty())
+                {
+                    animalDef.descriptionHyperlinks = new List<DefHyperlink> { };
+                }
+                foreach (ThingDef flower in ashlandFlowerPlants)
+                {
+                    animalDef.descriptionHyperlinks.Add(flower);
                 }
             }
         }

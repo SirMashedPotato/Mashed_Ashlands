@@ -108,6 +108,7 @@
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="DefOf\ThinkTreeDefOf.cs" />
     <Compile Include="DefOf\WeatherDefOf.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
