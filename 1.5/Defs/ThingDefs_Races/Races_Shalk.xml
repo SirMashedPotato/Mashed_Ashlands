@@ -71,6 +71,11 @@
 		<defName>Mashed_Ashlands_Shalk</defName>
 		<label>shalk</label>
 		<description>A large beetle usually found in drier ashland regions. Sometimes farmed for their meat and carapace, though most are interested in the resin extracted from their shell, which is rather volatile when properly prepared.\n\nWhile many would think shalk pose little threat due to their size, the mandibles of shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_ShalkFertilized</eggFertilizedDef>
@@ -147,6 +152,11 @@
 		<defName>Mashed_Ashlands_ShalkFungal</defName>
 		<label>fungal shalk</label>
 		<description>A subspecies of the shalk that has evolved a symbiotic bond with a species of ashland fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk blend into the surroundings. Taming a fungal shalk will allow one to regularly harvest these mushrooms.\n\nWhile many would think fungal shalk pose little threat due to their size, the mandibles of fungal shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>
@@ -234,6 +244,11 @@
 		<defName>Mashed_Ashlands_Firebug</defName>
 		<label>ashland firebug</label>
 		<description>A subspecies of the shalk, often found in highly volcanically active ashland regions. The accelerant produced by the firebug is considerably more potent than that of its cousins, and is even capable of igniting aggressors.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
@@ -325,6 +340,11 @@
 		<defName>Mashed_Ashlands_Thunderbug</defName>
 		<label>ashland thunderbug</label>
 		<description>A subspecies of the shalk, often found in humid ashland regions. A special organ allows the thunderbug to emit electrical pulses when threatened. Though not particularly strong, the shock is usually enough to deter would-be predators. Those determined enough will quickly find out that the thunderbug is also capable of producing painful shocks with its mandibles, which are strong enough to sear flesh.\n\n&lt;color=#E5E54C&gt;Electrical Discharge&lt;/color&gt;\nThunderbugs are able to periodically release electrical explosions when damaged.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>

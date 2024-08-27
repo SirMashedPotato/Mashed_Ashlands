@@ -12,12 +12,13 @@
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<useAshlandsGenSteps>true</useAshlandsGenSteps>
+				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
 					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.1</Mashed_Ashlands_Plant_PurpleCrystal>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
 					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.01</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
@@ -56,6 +57,15 @@
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.9</waterThreshold>
             </li>
+			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
 		</modExtensions>
 		<animalDensity>3.5</animalDensity>
 		<plantDensity>1</plantDensity>
@@ -119,6 +129,7 @@
 			<!-- Aesthetic plants -->
 			<Mashed_Ashlands_MeadowFlowerBlue>1.5</Mashed_Ashlands_MeadowFlowerBlue>
 			<Mashed_Ashlands_MeadowFlowerRed>1.5</Mashed_Ashlands_MeadowFlowerRed>
+			<Mashed_Ashlands_Plant_AshenHeatherFlower>0.1</Mashed_Ashlands_Plant_AshenHeatherFlower>
 			<Mashed_Ashlands_Plant_WillowFlower>0.1</Mashed_Ashlands_Plant_WillowFlower>
 			<Mashed_Ashlands_Plant_Stoneflower>0.1</Mashed_Ashlands_Plant_Stoneflower>
 			<Mashed_Ashlands_Plant_Glowstalk>0.1</Mashed_Ashlands_Plant_Glowstalk>
@@ -158,7 +169,7 @@
 			<Mashed_Ashlands_ShalkFungal>0.1</Mashed_Ashlands_ShalkFungal>
 			<Mashed_Ashlands_Guar>0.3</Mashed_Ashlands_Guar>
 			<Mashed_Ashlands_NixOx>0.3</Mashed_Ashlands_NixOx>
-			<!--<Mashed_Ashlands_NixSteed>0.6</Mashed_Ashlands_NixSteed>-->
+			<!-- <Mashed_Ashlands_NixSteed>0.6</Mashed_Ashlands_NixSteed> -->
 			<!-- predators -->
 			<Mashed_Ashlands_NixHound>0.1</Mashed_Ashlands_NixHound>
 			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
@@ -182,9 +193,10 @@
 		<pollutionWildAnimals>
 			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_AshHopperGlowing>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_ShalkGlowing>
+			<Mashed_Ashlands_Toxbug MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Toxbug>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_NixOxGlowing>
-			<!--<Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_NixSteedGlowing>-->
+			<!-- <Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_NixSteedGlowing> -->
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>

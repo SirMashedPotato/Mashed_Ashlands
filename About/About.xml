@@ -3,7 +3,7 @@
 	<name>Mashed's Ashlands</name>
 	<packageId>SirMashedPotato.Ashlands</packageId>
 	<author>SirMashedPotato</author>
-	<modVersion>1.1.32</modVersion>
+	<modVersion>1.2.0</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
@@ -30,6 +30,7 @@
 		<li>evyatar108.seedspleaseliteredux</li>
 	</loadAfter>
 	<incompatibleWith>
+		<!-- Old MorrowRim -->
 		<li>SirMashedPotato.MorrowRim</li>
 		<li>SirMashedPotato.MorrowRim.AshSwamp</li>
 		<li>SirMashedPotato.MorrowRim.VolcanicAshlands</li>

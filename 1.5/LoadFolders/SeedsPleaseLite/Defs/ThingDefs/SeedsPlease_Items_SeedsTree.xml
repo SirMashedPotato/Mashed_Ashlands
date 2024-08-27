@@ -78,6 +78,24 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedKwamacap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
+		<defName>Mashed_Ashlands_SeedKwamacap</defName>
+		<label>kwamacap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedKwamacap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeKwamacap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeKwamacap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedMilkcap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
 		<defName>Mashed_Ashlands_SeedMilkcap</defName>
@@ -110,6 +128,24 @@
 			<li Class="SeedsPleaseLite.Seed">
 				<sources>
 					<li>Mashed_Ashlands_Plant_TreeNetchShield</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedNetchShieldHighland]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase">
+		<defName>Mashed_Ashlands_SeedNetchShieldHighland</defName>
+		<label>highland netch shield spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedNetchShieldHighland</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeNetchShieldHighland</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeNetchShieldHighland</li>
 				</sources>
 			</li>
 		</modExtensions>

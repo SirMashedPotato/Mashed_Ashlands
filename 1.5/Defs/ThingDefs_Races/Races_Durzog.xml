@@ -93,7 +93,7 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
-			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalUncommon</li>
 			<li>Mashed_Ashlands_AshlandAnimalFighter</li>
 		</tradeTags>
 	</ThingDef>

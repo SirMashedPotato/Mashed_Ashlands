@@ -15,6 +15,11 @@
 		<defName>Mashed_Ashlands_KwamaForager</defName>
 		<label>kwama forager</label>
 		<description>One of the specialised forms of kwama. Foragers will often leave the nest in search of food, or new cave systems to expand to. Surprisingly aggressive, they can prove a dangerous foe for the untrained, as their bite inflicts a potent venom.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MoveSpeed>1.5</MoveSpeed>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -130,6 +135,11 @@
 		<defName>Mashed_Ashlands_KwamaScrib</defName>
 		<label>kwama scrib</label>
 		<description>The fragile larval form of the kwama. While one would expect scrib to remain in the nest until maturity, they can often be found aimlessly wandering across ashland regions.\n\nUsually very peaceful, scrib are sometimes kept as pets, and some have even managed to teach them various tricks. The bite of a scrib can be surprisingly deadly, as they are able to produce a powerful paralytic venom. However the scrib itself is incredibly fragile, and should prove little threat for a trained warrior.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>25</MarketValue>

@@ -89,6 +89,9 @@
 			<BotchJob_Wraith MayRequire="botchjob.profaned">0.03</BotchJob_Wraith>
 			<BotchJob_Skeleton MayRequire="botchjob.profaned">0.03</BotchJob_Skeleton>
 			<BotchJob_UndeadWarg MayRequire="botchjob.profaned">0.03</BotchJob_UndeadWarg>
+			<BotchJob_UndeadHorse MayRequire="botchjob.profaned">0.03</BotchJob_UndeadHorse>
+			<BotchJob_UndeadCat MayRequire="botchjob.profaned">0.03</BotchJob_UndeadCat>
+			<BotchJob_UndeadDragon MayRequire="botchjob.profaned">0.01</BotchJob_UndeadDragon>
 		</wildAnimals>
 		<pollutionWildAnimals>
 			<Rat>0.6</Rat>
@@ -96,8 +99,9 @@
 		</pollutionWildAnimals>
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
+			<li>Mashed_Ashlands_Rotumbo</li>
 			<li>Mashed_Ashlands_NixOx</li>
-			<!--<li>Mashed_Ashlands_NixSteed</li>-->
+			<!-- <li>Mashed_Ashlands_NixSteed</li> -->
 		</allowedPackAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->

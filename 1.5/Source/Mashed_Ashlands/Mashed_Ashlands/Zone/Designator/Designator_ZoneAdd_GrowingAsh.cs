@@ -15,7 +15,7 @@ namespace Mashed_Ashlands
 			defaultDesc = "Mashed_Ashlands_GrowingZoneAshDesc".Translate();
 			icon = ContentFinder<Texture2D>.Get("UI/Designators/Mashed_Ashlands_ZoneCreate_GrowingAsh", true);
 			tutorTag = "ZoneAdd_Growing";
-			soundSucceeded = SoundDefOf.Designate_ZoneAdd_Growing;
+			soundSucceeded = RimWorld.SoundDefOf.Designate_ZoneAdd_Growing;
 		}
 
 		public override AcceptanceReport CanDesignateCell(IntVec3 c)

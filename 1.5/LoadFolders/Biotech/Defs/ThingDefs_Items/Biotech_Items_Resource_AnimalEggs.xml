@@ -98,8 +98,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixSteedGlowingFertilized]==========-->
-	<!--
-	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+	<!-- <ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixSteedGlowingFertilized</defName>
 		<label>glowing nix-steed egg (fert.)</label>
 		<description>A fertilised glowing nix-steed egg. If all goes well, it should hatch into a glowing nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
@@ -116,8 +115,7 @@
 				<hatcherPawn>Mashed_Ashlands_NixSteedGlowing</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	-->
+	</ThingDef> -->
 	<!-- ==========[Mashed_Ashlands_Egg_ShalkGlowingFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_ShalkGlowingFertilized</defName>
@@ -134,6 +132,25 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_ShalkGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ToxbugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ToxbugFertilized</defName>
+		<label>ashland toxbug egg (fert.)</label>
+		<description>A fertilised toxbug egg. If all goes well, it should hatch into a baby toxbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,181,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Toxbug</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

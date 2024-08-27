@@ -6,19 +6,6 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<allowedBiomes>
-			<li>Mashed_Ashlands_BlightedAshlands</li>
-			<li>Mashed_Ashlands_BlightedBogAshlands</li>
-			<li>Mashed_Ashlands_Ashlands</li>
-			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_SwampAshlands</li>
-			<li>Mashed_Ashlands_ForestAshlands</li>
-			<li>Mashed_Ashlands_MarshAshlands</li>
-			<li>Mashed_Ashlands_MeadowAshlands</li>
-			<li>Mashed_Ashlands_VolcanicAshlands</li>
-			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
-			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
-		</allowedBiomes>
 	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_SiltStriderPasses]==========-->
 	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
@@ -29,7 +16,19 @@
 		<letterLabel>Silt strider passes</letterLabel>
 		<letterText>An enormous silt strider has wandered into the area. Often used to carry a large quantity of resources across vast distances, taming it would prove highly beneficial. Of course you could also hunt it instead, for its sturdy chitin plates. Regardless of what you choose, it will not stay here for long.</letterText>
 		<letterDef>PositiveEvent</letterDef>
-		<baseChance>0.7</baseChance>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_OgrimPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_OgrimPasses</defName>
+		<label>wandering ogrim</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_OgrimPasses</workerClass>
+		<letterLabel>wandering ogrim</letterLabel>
+		<letterText>A large ogrim has wandered into the area. A terrifying beast of untold strength, a tame ogrim would be a valuable pet. Of course you could also hunt it instead, for its resistant hide. Of course the ogrim may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.6</baseChance>
 		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_CliffRacerSwarm]==========-->

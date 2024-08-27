@@ -13,6 +13,7 @@
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<nullifyBeachTerrain>true</nullifyBeachTerrain>
 				<useAshlandsGenSteps>true</useAshlandsGenSteps>
+				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
@@ -57,6 +58,15 @@
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.4</waterThreshold>
 			</li>	
+			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
 		</modExtensions>
 		<animalDensity>2.6</animalDensity>
 		<plantDensity>0.6</plantDensity>
@@ -224,6 +234,7 @@
 		<pollutionWildAnimals>
 			<Mashed_Ashlands_MudcrabGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_MudcrabGlowing>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_ShalkGlowing>
+			<Mashed_Ashlands_Toxbug MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Toxbug>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>

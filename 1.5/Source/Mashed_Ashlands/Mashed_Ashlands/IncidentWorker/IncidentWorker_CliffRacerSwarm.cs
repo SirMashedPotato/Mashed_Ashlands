@@ -5,16 +5,12 @@ using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
-    public class IncidentWorker_CliffRacerSwarm : IncidentWorker
+    public class IncidentWorker_CliffRacerSwarm : IncidentWorker_AshlandsSpecific
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            Map map = (Map)parms.target;
-			return Mashed_Ashlands_ModSettings.CliffRacerEnableSwarm 
-				&& (!Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction || !CliffRacerTrackerUtility.ExtinctionReached())
-				&& !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.ToxicFallout)
-                && (!ModsConfig.BiotechActive || !map.gameConditionManager.ConditionIsActive(RimWorld.GameConditionDefOf.NoxiousHaze))
-				&& map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.Mashed_Ashlands_CliffRacer) && TryFindEntryCell(map, out _);
+			return base.CanFireNowSub(parms) && CanWanderIn(parms, ThingDefOf.Mashed_Ashlands_CliffRacer) && Mashed_Ashlands_ModSettings.CliffRacerEnableSwarm
+				&& (!Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction || !CliffRacerTrackerUtility.ExtinctionReached());
         }
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
@@ -40,11 +36,6 @@ namespace Mashed_Ashlands
 
 			SendStandardLetter(def.letterLabel, def.letterText.Formatted(cliffRacers.Count), def.letterDef, parms, cliffRacers);
 			return true;
-		}
-
-		private bool TryFindEntryCell(Map map, out IntVec3 cell)
-		{
-			return RCellFinder.TryFindRandomPawnEntryCell(out cell, map, CellFinder.EdgeRoadChance_Animal + 0.2f, false, null);
 		}
 
 		private static readonly FloatRange CountPerColonistRange = new FloatRange(1f, 3f);

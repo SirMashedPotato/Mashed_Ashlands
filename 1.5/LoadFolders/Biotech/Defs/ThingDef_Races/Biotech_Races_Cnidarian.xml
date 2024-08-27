@@ -6,6 +6,9 @@
 		<label>glowing netch</label>
 		<description>A subspecies of the common netch that has adapted to life in polluted regions. They appear to have adapted to feed off of environmental pollution, though this alone is not enough to sustain them. The gas they produce to float through the air is now filled with a startling amount of pollutants, which are released upon death, forming a large cloud of toxic gas. Luckily their jelly appears to be just as edible as that of the regular netch.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing netch can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -28,10 +31,7 @@
 			<specificMeatDef>Mashed_Ashlands_GlowingNetchJelly</specificMeatDef>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalFarm</li>
-			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
-			<li>Mashed_Ashlands_AshlandAnimalFarm</li>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NetchGlowing" ParentName="AnimalKindBase">
@@ -41,6 +41,7 @@
 		<labelFemale>glowing netch betty</labelFemale>
 		<race>Mashed_Ashlands_NetchGlowing</race>
 		<combatPower>120</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<ecoSystemWeight>0.7</ecoSystemWeight>
 		<wildGroupSize>2~5</wildGroupSize>
 		<lifeStages>

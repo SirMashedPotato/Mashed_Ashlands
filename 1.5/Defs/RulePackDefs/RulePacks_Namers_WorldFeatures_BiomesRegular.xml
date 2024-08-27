@@ -48,6 +48,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerHighlandAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerHighlandAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->highlands</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerSwampAshlands]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerSwampAshlands</defName>

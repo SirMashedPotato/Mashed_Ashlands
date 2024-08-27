@@ -24,7 +24,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenFern]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase" Name="Mashed_Ashlands_Plant_AshenFernBase">
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_AshenFern</defName>
 		<label>ashen fern</label>
 		<description>A rare fern that can sometimes be found growing in humid ashland regions. Certain local tribes use the flowers of this fern to mask their scent whilst hunting.</description>
@@ -99,7 +99,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase" Name="Mashed_Ashlands_Plant_SomnaliusFernBase">
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
 		<label>ashland somnalius fern</label>
 		<description>A small fern that can often be found growing in humid ashland regions.</description>
@@ -121,7 +121,7 @@
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_FireFern]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase" Name="Mashed_Ashlands_Plant_FireFernBase">
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_FireFern</defName>
 		<label>fire fern</label>
 		<description>A small fern that can often be found growing regions experiencing extreme volcanic activity. It's ability to withstand extreme heat has allowed it to grow where no other ferns dare.</description>

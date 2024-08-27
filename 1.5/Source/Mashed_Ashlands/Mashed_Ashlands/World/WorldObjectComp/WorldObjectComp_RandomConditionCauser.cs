@@ -18,20 +18,97 @@ namespace Mashed_Ashlands
 
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
         public bool CanCauseCondition => graceTicksLeft == 0;
+        public GameConditionDef CurrentConditionDef => currentConditionDef;
+
+        private List<FloatMenuOption> debugConditionOptions;
+
+        /// <summary>
+        /// Creates a list of conditions for the Force new condition dev gizmo
+        /// </summary>
+        private List<FloatMenuOption> DebugConditionOptions
+        {
+            get
+            {
+                if (debugConditionOptions.NullOrEmpty())
+                {
+                    debugConditionOptions = new List<FloatMenuOption>();
+
+                    ///Random condition
+                    FloatMenuOption item = new FloatMenuOption("Random condition", delegate
+                    {
+                        FloatMenu floatMenu = new FloatMenu(DebugConditionCategoryOptions());
+                        Find.WindowStack.Add(floatMenu);
+                    });
+                    debugConditionOptions.Add(item);
+
+                    ///Conditions
+                    foreach (PotentialConditions potentialCondition in Props.potentialConditions)
+                    {
+                        if (potentialCondition.conditionDef != null)
+                        {
+                            item = new FloatMenuOption(potentialCondition.conditionDef.LabelCap, delegate
+                            {
+                                FloatMenu floatMenu = new FloatMenu(DebugConditionCategoryOptions(potentialCondition));
+                                Find.WindowStack.Add(floatMenu);
+                            });
+                            debugConditionOptions.Add(item);
+                        }
+                        else
+                        {
+                            ///Null condition
+                            item = new FloatMenuOption("No condition", delegate
+                            {
+                                TriggerCondition(potentialCondition);
+                            });
+                            debugConditionOptions.Add(item);
+                        }
+                    }
+                }
+                return debugConditionOptions;
+            }
+        }
+
+        /// <summary>
+        /// Creates a list of categories for the Force new condition dev gizmo
+        /// </summary>
+        private List<FloatMenuOption> DebugConditionCategoryOptions(PotentialConditions potentialCondition = null)
+        {
+            List<FloatMenuOption> floatMenuOptions = new List<FloatMenuOption>();
+
+            ///Random category
+            FloatMenuOption item = new FloatMenuOption("Random category", delegate
+            {
+                TriggerCondition(potentialCondition);
+            });
+            floatMenuOptions.Add(item);
+
+            ///categories
+            foreach (CategoryWeights categoryWeight in ParentVolcano.GetComponent<WorldObjectComp_VolcanoDetails>().Props.categoryWeights)
+            {
+                item = new FloatMenuOption("Category " + categoryWeight.category, delegate
+                {
+                    TriggerCondition(potentialCondition, categoryWeight.category);
+                });
+                floatMenuOptions.Add(item);
+            }
+            return floatMenuOptions;
+        }
 
         /// <summary>
         /// 
         /// </summary>
-        public void TriggerCondition()
+        public void TriggerCondition(PotentialConditions forcedCondition = null, int forcedCategory = -1)
         {
-            PotentialConditions condition = Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
+            PotentialConditions condition = forcedCondition ?? Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
                 EndConditions();
-                SetCondition(condition, ParentVolcano);
+                SetCondition(condition, ParentVolcano, forcedCategory);
 
                 bool categoryChangeFlag = false;
                 int originalCategory = ParentVolcano.Category;
+
+                bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
 
                 if (condition.countAsIncident)
                 {
@@ -45,8 +122,6 @@ namespace Mashed_Ashlands
                     }
                 }
 
-                bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
-
                 if (condition.sendLetter && radiusFlag)
                 {
                     Find.LetterStack.ReceiveLetter(
@@ -54,8 +129,8 @@ namespace Mashed_Ashlands
                     "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
                     currentConditionDef.letterDef, ParentVolcano, null, null);
                 }
-
-                if (categoryChangeFlag && radiusFlag)
+                ///need to check radius again for the new radius
+                if (categoryChangeFlag && (radiusFlag || (!Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius())))
                 {
                     Find.LetterStack.ReceiveLetter("Mashed_Ashlands_CategoryChange_Label".Translate(ParentVolcano.Name).CapitalizeFirst(),
                         "Mashed_Ashlands_CategoryChange_Description".Translate(ParentVolcano.Name, originalCategory, ParentVolcano.Category), LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, ParentVolcano, null, null);
@@ -70,7 +145,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// 
         /// </summary>
-        public void SetCondition(PotentialConditions condition, Volcano parentVolcano)
+        public void SetCondition(PotentialConditions condition, Volcano parentVolcano, int forcedCategory = -1)
         {
             if (condition.conditionDef != null)
             {
@@ -82,7 +157,7 @@ namespace Mashed_Ashlands
             }
             durationDays = condition.GetTrueConditionDuration.RandomInRange;
             graceDaysAfter = condition.graceDaysAfter.RandomInRange;
-            category = condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
+            category = forcedCategory > 0 ? forcedCategory : condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
         /// <summary>
@@ -270,7 +345,8 @@ namespace Mashed_Ashlands
                     defaultLabel = "DEV: Force new condition",
                     action = delegate ()
                     {
-                        TriggerCondition();
+                        FloatMenu floatMenu = new FloatMenu(DebugConditionOptions);
+                        Find.WindowStack.Add(floatMenu);
                     },
                 };
             }

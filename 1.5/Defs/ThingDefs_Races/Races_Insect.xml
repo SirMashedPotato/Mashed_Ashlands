@@ -3,9 +3,6 @@
 	<!-- ==========[Mashed_Ashlands_InsectBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_InsectThingBase" Abstract="True">
 		<modExtensions>
-			<li Class="Mashed_Ashlands.PollutionProperties">
-				<AllowPollutionStimulis>false</AllowPollutionStimulis>
-			</li>
 			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
 				<hasBone>false</hasBone>
 				<hasFat>true</hasFat>
@@ -35,6 +32,11 @@
 		<defName>Mashed_Ashlands_FetcherflySwarmAnimal</defName>
 		<label>fetcherfly swarm</label>
 		<description>An aggressive swarm of fetcherfly. Almost impossible to hit, it's best to just wait for it to disperse.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
@@ -100,6 +102,7 @@
 		<label>fetcherfly swarm</label>
 		<race>Mashed_Ashlands_FetcherflySwarmAnimal</race>
 		<combatPower>40</combatPower>
+		<immuneToTraps>true</immuneToTraps>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>

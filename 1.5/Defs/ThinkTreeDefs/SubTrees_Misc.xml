@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_FeedFromSAshlandFlower]========== -->
-	<!--
 	<ThinkTreeDef>
 		<defName>Mashed_Ashlands_FeedFromAshlandFlower</defName>
 		<insertTag>Animal_PreMain</insertTag>
 		<insertPriority>1</insertPriority>
 		<thinkRoot Class="Mashed_Ashlands.ThinkNode_ConditionalAshlandFlowerFeeding">
 			<animalDefs>
-				<li>Mashed_Ashlands_NixSteed</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
+				<!-- <li>Mashed_Ashlands_NixSteed</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li> -->
 			</animalDefs>
 			<subNodes>
 				<li Class="ThinkNode_ChancePerHour_Constant">
@@ -28,7 +27,6 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
-	-->
 	<!-- ==========[Mashed_Ashlands_MentalStateCritical]========== -->
 	<ThinkTreeDef>
 		<defName>Mashed_Ashlands_MentalStateCritical</defName>

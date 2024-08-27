@@ -12,6 +12,12 @@
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="BotchJob_UndeadPsysiology"]/statOffsets</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

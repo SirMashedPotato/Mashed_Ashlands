@@ -77,6 +77,11 @@
 		<defName>Mashed_Ashlands_AshHopper</defName>
 		<label>ash hopper</label>
 		<description>A large insect often found throughout ashland regions. Some farm ash hoppers for the nourishing jelly produced by crushing their corpses, others raise them as pets.\n\nOften mistaken for a kwama scrib. Ash hopper are significantly faster, with powerful hind legs than can rapidly propel themselves forwards. And while they don't produce paralytic venom, their bite is somewhat painful.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_AshHopperFertilized</eggFertilizedDef>

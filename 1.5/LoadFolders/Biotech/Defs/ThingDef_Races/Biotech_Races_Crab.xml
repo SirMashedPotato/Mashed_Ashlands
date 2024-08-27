@@ -9,6 +9,9 @@
 			<HediffDef>Mashed_Ashlands_SwampFever</HediffDef>
 		</descriptionHyperlinks>
 		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
 			</li>
@@ -39,6 +42,9 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_MudcrabGlowing</defName>

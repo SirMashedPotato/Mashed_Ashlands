@@ -3,6 +3,7 @@
 	<AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
 		<defName>Mashed_Ashlands_AnimalsUnaffectedBySelfTameDef</defName>
 		<unaffectedBySelfTamePawns>
+			<li>Mashed_Ashlands_Ogrim</li>
 			<li>Mashed_Ashlands_SiltStrider</li>
 			<li>Mashed_Ashlands_FetcherflySwarmAnimal</li>
 		</unaffectedBySelfTamePawns>

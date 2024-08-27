@@ -61,6 +61,17 @@
 			<li>PF_TerrainTag_Gravel</li>
 		</tags>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshScree]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshScree</defName>
+		<label>rocky ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshScree</texturePath>
+		<scatterType>Rocky</scatterType>
+		<fertility>0.4</fertility>
+		<tags>
+			<li>PF_TerrainTag_Gravel</li>
+		</tags>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshGravel]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
 		<defName>Mashed_Ashlands_RichAshGravel</defName>

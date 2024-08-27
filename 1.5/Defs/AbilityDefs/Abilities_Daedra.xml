@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_OgrimBellyDrum]==========-->
+	<AbilityDef ParentName="Mashed_Ashlands_SelfBuffBase">
+		<defName>Mashed_Ashlands_OgrimBellyDrum</defName>
+		<label>belly drum</label>
+		<description>Make the ogrim give its belly a few good slaps, disturbing whatever is in its stomach, and boosting its metabolism. Causes injuries to rapidly heal for a short time.</description>
+		<iconPath>UI/Abilities/Mashed_Ashlands_OgrimBellyDrum</iconPath>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<warmupStartSound>Pawn_Melee_BigBash_HitPawn</warmupStartSound>
+		<warmupEffecter>Mashed_Ashlands_OgrimBellyDrumWarmup</warmupEffecter>
+		<hostile>false</hostile>
+    	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>130</Ability_Duration>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Mashed_Ashlands_OgrimBellyDrumHediff</hediffDef>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<HediffDef ParentName="Mashed_Ashlands_AbilityBuffBase">
+		<defName>Mashed_Ashlands_OgrimBellyDrumHediff</defName>
+		<label>belly drum</label>
+		<description>An ogrims metabolism kicked into overdrive by a few good slaps on its belly. Causes injuries to rapidly heal.</description>
+		<comps>
+			  <li Class="Mashed_Ashlands.HediffCompProperties_Regeneration">
+				<ticks>100</ticks>
+				<baseNumber>3</baseNumber>
+				<severity>0.5</severity>
+			  </li>
+		</comps>
+		<stages>
+				<li>
+					<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
+				</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -13,6 +13,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>1</commonality>
 		<baseFishingYield>10</baseFishingYield>
@@ -29,6 +30,7 @@
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>1</commonality>
 		<baseFishingYield>10</baseFishingYield>
@@ -74,6 +76,7 @@
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>0.2</commonality>
 		<baseFishingYield>1</baseFishingYield>
@@ -91,6 +94,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 			<li>Mashed_Ashlands_CaveAshland</li>
 		</allowedBiomes>
 		<commonality>1</commonality>
@@ -108,6 +112,7 @@
 			<li>Mashed_Ashlands_VolcanicAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>1</commonality>
 		<baseFishingYield>6</baseFishingYield>
@@ -139,6 +144,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 			<li>Mashed_Ashlands_CaveAshland</li>
 		</allowedBiomes>
 		<commonality>0.1</commonality>
@@ -157,6 +163,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 			<li>Mashed_Ashlands_CaveAshland</li>
 		</allowedBiomes>
 		<commonality>0.1</commonality>
@@ -175,6 +182,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 			<li>Mashed_Ashlands_CaveAshland</li>
 		</allowedBiomes>
 		<commonality>0.01</commonality>
@@ -193,6 +201,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>0.01</commonality>
 		<baseFishingYield>1</baseFishingYield>
@@ -210,6 +219,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>0.01</commonality>
 		<baseFishingYield>1</baseFishingYield>
@@ -227,6 +237,7 @@
 			<li>Mashed_Ashlands_BlightedAshland</li>
 			<li>Mashed_Ashlands_SwampAshland</li>
 			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
 		</allowedBiomes>
 		<commonality>0.2</commonality>
 		<baseFishingYield>1</baseFishingYield>

@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsRegularBase">
 		<defName>Mashed_Ashlands_DustplainAshlands</defName>
 		<label>ashland dustplains</label>
-		<description>Frequent ash storms combined with a dry climate have turned this region into an arid wasteland. Most of the terrain here has been eroded over time into a fine dust, which lacks the fertility necessary to support diverse plant life. Migratory herds of herbivores can sometimes be found here, though usually not for long. Dust ant hives may provide an alternative, though somewhat unpleasant, food source. Occasional dust storms are unpleasant, though nowhere near as deadly as ash storms.</description>
+		<description>Frequent ash storms combined with a dry climate have turned this region into an arid wasteland. Most of the terrain here has been eroded over time into a fine dust, which lacks the fertility necessary to support diverse plant life. Migratory herds of herbivores can sometimes be found here, though usually not for long. Dust ant hives may provide an alternative food source. Occasional dust storms are unpleasant, though nowhere near as deadly as ash storms.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_DustplainAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_DustplainAshlands</texture>
 		<modExtensions>
@@ -12,6 +12,7 @@
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<useAshlandsGenSteps>true</useAshlandsGenSteps>
+				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
@@ -56,6 +57,17 @@
 				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterThreshold>0.9</waterThreshold>
             </li>
+			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestDenseAbove>500</forestDenseAbove>
+				<forestSparseBelow>300</forestSparseBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
 		</modExtensions>
 		<forageability>0.25</forageability>
 		<animalDensity>0.5</animalDensity>
@@ -142,6 +154,7 @@
 			<!-- herd animals -->
 			<Mashed_Ashlands_Shalk>0.2</Mashed_Ashlands_Shalk>
 			<Mashed_Ashlands_Guar>0.2</Mashed_Ashlands_Guar>
+			<Mashed_Ashlands_Rotumbo>0.1</Mashed_Ashlands_Rotumbo>
 			<Mashed_Ashlands_NixOx>0.2</Mashed_Ashlands_NixOx>
 			<Mashed_Ashlands_Wormmouth>0.5</Mashed_Ashlands_Wormmouth>
 			<!-- predators -->
@@ -165,6 +178,7 @@
 		<pollutionWildAnimals>
 			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_AshHopperGlowing>
 			<Mashed_Ashlands_ShalkGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_ShalkGlowing>
+			<Mashed_Ashlands_Toxbug MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Toxbug>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixOxGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>

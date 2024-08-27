@@ -361,7 +361,6 @@
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
 					</li>
-					<!--
 					<li>
 						<conditionDef>Mashed_Ashlands_PsychicEruption</conditionDef>
 						<durationDays>3~6</durationDays>
@@ -372,7 +371,6 @@
 						<sendEndMessage>true</sendEndMessage>
 						<countAsIncident>true</countAsIncident>
 					</li>
-					-->
 				</potentialConditions>
 			</li>
 		</comps>

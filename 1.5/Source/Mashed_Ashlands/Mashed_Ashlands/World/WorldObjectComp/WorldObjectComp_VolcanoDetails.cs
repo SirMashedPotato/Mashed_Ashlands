@@ -157,15 +157,6 @@ namespace Mashed_Ashlands
                     },
                     Disabled = categoryIndex >= Props.categoryWeights.Count - 1
                 };
-
-                 yield return new Command_Action
-                 {
-                     defaultLabel = "DEV: Simulate incident",
-                     action = delegate ()
-                     {
-                         ParentVolcano.IncidentTriggered();
-                     },
-                 };
             }
         }
     }

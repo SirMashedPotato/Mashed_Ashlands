@@ -118,6 +118,25 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawAshenJazbay]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantAlcoholRawBase">
+		<defName>Mashed_Ashlands_RawAshenJazbay</defName>
+		<label>ashen jazbay grapes</label>
+		<description>Raw ashen jazbay grapes. While usually fermented into jazbay wine, it can also be used in cooking, and even eaten raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshenJazbay</texPath>
+		</graphicData>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>12</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawMarshmerrow]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawMarshmerrow</defName>

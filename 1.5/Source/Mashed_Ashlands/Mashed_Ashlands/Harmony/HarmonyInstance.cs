@@ -15,7 +15,15 @@ namespace Mashed_Ashlands
             Harmony harmony = new Harmony("com.Mashed_Ashlands");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
-            ///Prventing beehives producing honey during ash storms
+            ///Biotech patches
+            if (ModsConfig.BiotechActive)
+            {
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("FertilityGrid"), "CalculateFertilityAt"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.FertilityGrid_CalculateFertilityAt_Patch)));
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("PollutionUtility"), "StimulatedByPollution"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.PollutionUtility_StimulatedByPollution_Patch)));
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("PollutionUtility"), "PawnPollutionTick"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.PollutionUtility_PawnPollutionTick_Patch)));
+            }
+
+            ///Preventing beehives producing honey during ash storms
             if (ModsConfig.IsActive("sarg.rimbees"))
             {
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("Building_Beehouse"), "CheckRainLevels"), prefix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.RimBees_Beehouse_AshStormPatch)));

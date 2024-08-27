@@ -12,5 +12,6 @@ namespace Mashed_Ashlands
         }
         public static GameConditionDef Mashed_Ashlands_AshStorm;
         public static GameConditionDef Mashed_Ashlands_VolcanicMiasma;
+        public static GameConditionDef Mashed_Ashlands_PsychicEruption;
     }
 }
