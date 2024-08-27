@@ -159,7 +159,7 @@
 			<Mashed_Ashlands_ShalkFungal>0.1</Mashed_Ashlands_ShalkFungal>
 			<Mashed_Ashlands_Netch>0.6</Mashed_Ashlands_Netch>
 			<Mashed_Ashlands_NixOx>0.1</Mashed_Ashlands_NixOx>
-			<Mashed_Ashlands_NixSteed>0.3</Mashed_Ashlands_NixSteed>
+			<!-- <Mashed_Ashlands_NixSteed>0.3</Mashed_Ashlands_NixSteed> -->
 			<Mashed_Ashlands_Guar>0.2</Mashed_Ashlands_Guar>
 			<!-- predators -->
 			<Mashed_Ashlands_NixHound>0.3</Mashed_Ashlands_NixHound>
@@ -188,7 +188,7 @@
 			<Mashed_Ashlands_Toxbug MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Toxbug>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NixOxGlowing>
-			<Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixSteedGlowing>
+			<!-- <Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixSteedGlowing> -->
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 			<Mashed_Ashlands_Durzog>0.5</Mashed_Ashlands_Durzog>

@@ -20,7 +20,7 @@
 						<li>Mashed_Ashlands_Netch</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
-						<li>Mashed_Ashlands_NixSteed</li>
+						<!-- <li>Mashed_Ashlands_NixSteed</li> -->
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
@@ -43,7 +43,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshHopperGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
+						<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li> -->
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_ShalkGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_Toxbug</li>
 					</value>
@@ -56,7 +56,7 @@
 						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
-						<li>Mashed_Ashlands_NixSteed</li>
+						<!-- <li>Mashed_Ashlands_NixSteed</li> -->
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
@@ -71,7 +71,7 @@
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
+						<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li> -->
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -82,7 +82,7 @@
 						<li>Mashed_Ashlands_VvardvarkMossy</li>
 						<li>Mashed_Ashlands_NixHound</li>
 						<li>Mashed_Ashlands_NixOx</li>
-						<li>Mashed_Ashlands_NixSteed</li>
+						<!-- <li>Mashed_Ashlands_NixSteed</li> -->
 						<li>Mashed_Ashlands_Alit</li>
 						<li>Mashed_Ashlands_BantamGuar</li>
 						<li>Mashed_Ashlands_CliffRacer</li>
@@ -97,7 +97,7 @@
 						<li>Mashed_Ashlands_SiltStrider</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixHoundGlowing</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixOxGlowing</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
+						<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li> -->
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">

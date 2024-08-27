@@ -101,7 +101,7 @@
 			<li>Mashed_Ashlands_Guar</li>
 			<li>Mashed_Ashlands_Rotumbo</li>
 			<li>Mashed_Ashlands_NixOx</li>
-			<li>Mashed_Ashlands_NixSteed</li>
+			<!-- <li>Mashed_Ashlands_NixSteed</li> -->
 		</allowedPackAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->

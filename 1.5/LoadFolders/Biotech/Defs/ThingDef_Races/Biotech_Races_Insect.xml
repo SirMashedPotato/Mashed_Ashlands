@@ -350,10 +350,10 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_NixSteedGlowing]========== -->
-	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+	<!-- <ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
 		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
 		<label>glowing nix-steed</label>
-		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nGlowing bix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-steed can absorb nutrients from environmental pollution, decreasing their hunger fall rate.\n\n&lt;color=#E5E54C&gt;Incomprehensible Form&lt;/color&gt;\nFor some reason the human mind just can not comprehend the form of the glowing nix-steed, and any attempt to do so will eventually lead to complete insanity.</description>
+		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nGlowing bix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-steed can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.AnimalProperties">
 				<glowOverlay>true</glowOverlay>
@@ -471,7 +471,7 @@
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>
+	</PawnKindDef> -->
 	<!-- ==========[Mashed_Ashlands_ShalkGlowing]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_ShalkGlowing</defName>
