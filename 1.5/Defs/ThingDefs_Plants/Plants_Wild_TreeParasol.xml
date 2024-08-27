@@ -60,6 +60,41 @@
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeKwamacap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeKwamacap</defName>
+		<label>kwamacap tree</label>
+		<description>A large fungal tree, though not as impressive as the emperor parasol, solely found growing in caves, but with enough care can be grown almost anywhere. Named after its resemblance to a kwama egg when immature, protecting it from predation. While not as durable as normal wood, it is comparatively more fire resistant.\n\nFlesh from the cap can also be harvested once the kwamacap is mature, which can be used as a tasty food source.</description>
+		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<secondaryDrop>Mashed_Ashlands_RawAshFungus</secondaryDrop>
+				<secondaryDropAmountRange>5~10</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<interferesWithRoof>false</interferesWithRoof>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<growDays>10</growDays>
+			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<harvestYield>10</harvestYield>
+			<harvestWork>800</harvestWork>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Leafless</leaflessGraphicPath>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeMilkcap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeParasolBase">
 		<defName>Mashed_Ashlands_Plant_TreeMilkcap</defName>
