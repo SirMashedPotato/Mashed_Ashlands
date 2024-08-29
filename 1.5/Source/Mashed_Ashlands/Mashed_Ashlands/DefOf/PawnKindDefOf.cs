@@ -12,6 +12,7 @@ namespace Mashed_Ashlands
         }
         public static PawnKindDef Mashed_Ashlands_SiltStrider;
         public static PawnKindDef Mashed_Ashlands_Ogrim;
+        public static PawnKindDef Mashed_Ashlands_Daedroth;
         public static PawnKindDef Mashed_Ashlands_CliffRacer;
     }
 }

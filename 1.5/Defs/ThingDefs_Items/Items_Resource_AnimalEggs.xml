@@ -55,6 +55,41 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>Mashed_Ashlands_Egg_DaedrothFertilized</defName>
+		<label>daedroth egg (fert.)</label>
+		<description>A fertilized daedroth egg. If all goes well, it should hatch into a baby daedroth. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild daedroth eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>16</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Daedroth</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Imprint on {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
+				<minAnimals>12</minAnimals>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+		<stackLimit>6</stackLimit>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>

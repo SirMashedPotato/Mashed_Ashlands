@@ -266,6 +266,22 @@
 		<texPath>Achievements/Mashed_AchievementAshlands_TameSiltStrider</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_TameDaedroth]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameDaedroth</defName>
+		<label>Make Sure You Don't Smile at it</label>
+		<description>Tame a daedroth</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_Daedroth</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameDaedroth</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_TameOgrim]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_TameOgrim</defName>

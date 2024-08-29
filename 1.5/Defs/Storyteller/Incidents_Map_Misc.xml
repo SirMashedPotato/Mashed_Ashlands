@@ -19,6 +19,18 @@
 		<baseChance>0.6</baseChance>
 		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_DaedrothPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_DaedrothPasses</defName>
+		<label>wandering daedroth</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_DaedrothPasses</workerClass>
+		<letterLabel>wandering daedroth</letterLabel>
+		<letterText>A daedroth has wandered into the area. A terrifying beast with a strange connection to psychic energy, a tame daedroth would be a valuable pet. Of course you could also hunt it instead, for its resistant hide. Of course the daedroth may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_OgrimPasses]==========-->
 	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
 		<defName>Mashed_Ashlands_OgrimPasses</defName>

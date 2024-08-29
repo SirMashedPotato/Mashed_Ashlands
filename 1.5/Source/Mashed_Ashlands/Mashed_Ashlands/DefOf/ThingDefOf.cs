@@ -16,6 +16,7 @@ namespace Mashed_Ashlands
         public static ThingDef Mashed_Ashlands_AshCastle;
         public static ThingDef Mashed_Ashlands_SiltStrider;
         public static ThingDef Mashed_Ashlands_Ogrim;
+        public static ThingDef Mashed_Ashlands_Daedroth;
         public static ThingDef Mashed_Ashlands_CliffRacer;
         public static ThingDef Mashed_Ashlands_Egg_CliffRacerFertilized;
         public static ThingDef Mashed_Ashlands_FetcherflySwarmAnimal;

@@ -12,6 +12,7 @@
 			<FilthRate>5</FilthRate>
 		</statBases>
 		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_InfernalScaledLeather</leatherDef>
 			<wildness>0.90</wildness>
@@ -29,6 +30,170 @@
 			<li>Mashed_Ashlands_AshlandAnimalDaedra</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Daedroth]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
+		<defName>Mashed_Ashlands_Daedroth</defName>
+		<label>daedroth</label>
+		<description>A large reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Their beastial appearance hides a surprising level of intelligence, and they are seemingly even capable of manipuating psychic energy, albeit in a relatively simple manner.\n\nSome cultures believe daedroth are the result of some eccentric scientists attempt at making a living weapon. While others believe that daedroth are actually an otherworldly being from another realm.\n\n&lt;color=#E5E54C&gt;Psychicbloom&lt;/color&gt;\nDaedroth are able to form, and throw, explosive psychic projectiles. Each individual daedroth has an affinity towards a single element, and will form its psychicbloom into that element. This ability can be manually activated.</description>
+		<statBases>
+			<MoveSpeed>3.3</MoveSpeed>
+			<MarketValue>600</MarketValue>
+			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_DaedrothFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>27</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li>
+				<compClass>Mashed_Ashlands.Comp_AnimalAbilities</compClass>
+			</li>
+		</comps>
+		<race>
+			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<body>Mashed_Ashlands_BipedalDaedra</body>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<baseHungerRate>0.8</baseHungerRate>
+			<lifeExpectancy>43</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.55</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.9</minAge>
+					<soundWounded>Pawn_Bison_Wounded</soundWounded>
+					<soundDeath>Pawn_Bison_Death</soundDeath>
+					<soundCall>Pawn_Bison_Call</soundCall>
+					<soundAngry>Pawn_Bison_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Daedroth</defName>
+		<label>daedroth</label>
+		<race>Mashed_Ashlands_Daedroth</race>
+		<combatPower>300</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>daedroth spawn</label>
+				<labelPlural>daedroth spawn</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Dessicated_Daedroth</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Dessicated_Daedroth</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth</texPath>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Dessicated_Daedroth</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_Ogrim]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
 		<defName>Mashed_Ashlands_Ogrim</defName>
@@ -103,7 +268,6 @@
 			</li>
 		</comps>
 		<race>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
 			<predator>true</predator>
 			<maxPreyBodySize>2.6</maxPreyBodySize>
