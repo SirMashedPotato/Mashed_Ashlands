@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_LobBase]==========-->
+	<AbilityDef Name="Mashed_Ashlands_LobBase" Abstract="True">
+		<charges>3</charges>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<showPsycastEffects>false</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<hostile>true</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>6.9</range>
+			<forcedMissRadius>1.9</forcedMissRadius>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>ThrowMolotovCocktail</soundCast>			<!-- todo -->
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<!-- ==========[Mashed_Ashlands_LobThrownBase]==========-->
+	<ThingDef ParentName="BaseGrenadeProjectile" Name="Mashed_Ashlands_LobThrownBase" Abstract="True">
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+		</projectile>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SelfBuffBase]==========-->
 	<AbilityDef Name="Mashed_Ashlands_SelfBuffBase" Abstract="True">
 		<jobDef>CastAbilityOnThing</jobDef>
@@ -10,7 +41,7 @@
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<statBases>
-		  <Ability_EffectRadius>0</Ability_EffectRadius>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>

@@ -15,6 +15,7 @@ namespace Mashed_Ashlands
         public List<BiomeDef> ignoreRequirementsInBiomes;
         */
         public bool glowOverlay = false;
+        public List<AbilityDef> randomAbility;
 
         public static AnimalProperties Get(Def def)
         {

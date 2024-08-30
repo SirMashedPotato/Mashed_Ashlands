@@ -35,6 +35,20 @@
 		<defName>Mashed_Ashlands_Daedroth</defName>
 		<label>daedroth</label>
 		<description>A large reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Their beastial appearance hides a surprising level of intelligence, and they are seemingly even capable of manipuating psychic energy, albeit in a relatively simple manner.\n\nSome cultures believe daedroth are the result of some eccentric scientists attempt at making a living weapon. While others believe that daedroth are actually an otherworldly being from another realm.\n\n&lt;color=#E5E54C&gt;Psychicbloom&lt;/color&gt;\nDaedroth are able to form, and throw, explosive psychic projectiles. Each individual daedroth has an affinity towards a single element, and will form its psychicbloom into that element. This ability can be manually activated.</description>
+		<descriptionHyperlinks>
+			<AbilityDef>Mashed_Ashlands_DaedrothFirebloom</AbilityDef>
+			<AbilityDef>Mashed_Ashlands_DaedrothShockbloom</AbilityDef>
+			<AbilityDef MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_DaedrothToxbloom</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<randomAbility>
+					<li>Mashed_Ashlands_DaedrothFirebloom</li>
+					<li>Mashed_Ashlands_DaedrothShockbloom</li>
+					<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_DaedrothToxbloom</li>
+				</randomAbility>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MoveSpeed>3.3</MoveSpeed>
 			<MarketValue>600</MarketValue>
