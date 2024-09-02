@@ -22,6 +22,7 @@
 		<projectile>
 			<damageDef>Flame</damageDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
 		</projectile>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_DaedrothShockbloom]==========-->
