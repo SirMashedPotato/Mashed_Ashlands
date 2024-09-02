@@ -24,35 +24,16 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingBryolux]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase">
+	<ThingDef ParentName="Mashed_Ashlands_Plant_BryoluxBase">
 		<defName>Mashed_Ashlands_Plant_GlowingBryolux</defName>
 		<label>glowing bryolux</label>
 		<description>A green moss that thrives in highly polluted caves. It emits a sickly green glow, and is covered in sticky tangled fibers, which slows anyone walking over it.</description>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Beauty>1</Beauty>
-			<Nutrition>0.3</Nutrition>
-		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_GlowingBryolux</texPath>
 		</graphicData>
-		<selectable>true</selectable>
-		<pathCost>30</pathCost>
-		<ingestible />
 		<plant>
-			<growMinGlow>-0.01</growMinGlow>
-			<growOptimalGlow>0.5</growOptimalGlow>
 			<pollution>PollutedOnly</pollution>
-			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
-			<growDays>60</growDays>
-			<dieIfLeafless>true</dieIfLeafless>
-			<maxMeshCount>4</maxMeshCount>
-			<neverBlightable>true</neverBlightable>
-			<visualSizeRange>0.82~0.95</visualSizeRange>
-			<topWindExposure>0</topWindExposure>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>5</wildClusterWeight>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">

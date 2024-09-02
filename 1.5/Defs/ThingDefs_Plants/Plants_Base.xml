@@ -93,4 +93,30 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_BryoluxBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase" Name="Mashed_Ashlands_Plant_BryoluxBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>60</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.82~0.95</visualSizeRange>
+			<sowWork>170</sowWork>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+		</plant>
+	</ThingDef>
 </Defs>
