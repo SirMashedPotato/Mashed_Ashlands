@@ -10,10 +10,13 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<hostile>true</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<statBases>
+			<Ability_EffectRadius>1.9</Ability_EffectRadius>
+		  </statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>6.9</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
 			<warmupTime>0.5</warmupTime>
 			<soundCast>PsychicInsanityLanceCast</soundCast>	
 			<targetParams>

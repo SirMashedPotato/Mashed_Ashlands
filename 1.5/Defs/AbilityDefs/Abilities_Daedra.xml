@@ -16,8 +16,7 @@
 		<defName>Mashed_Ashlands_DaedrothFirebloom_Thrown</defName>
 		<label>firebloom</label>
 		<graphicData>
-			<!-- <texPath>Things/Projectile/MorrowRim_FireBomb_Thrown</texPath> -->
-			<texPath>UI/Abilities/Mashed_Ashlands_DaedrothFirebloom</texPath>
+			<texPath>Things/Projectile/Mashed_Ashlands_DaedrothFirebloom_Thrown</texPath>
 		</graphicData>
 		<projectile>
 			<damageDef>Flame</damageDef>
@@ -41,7 +40,7 @@
 		<defName>Mashed_Ashlands_DaedrothShockbloom_Thrown</defName>
 		<label>shockbloom</label>
 		<graphicData>
-			<texPath>UI/Abilities/Mashed_Ashlands_DaedrothShockbloom</texPath>
+			<texPath>Things/Projectile/Mashed_Ashlands_DaedrothShockbloom_Thrown</texPath>
 		</graphicData>
 		<projectile>
 			<damageDef>EMP</damageDef>

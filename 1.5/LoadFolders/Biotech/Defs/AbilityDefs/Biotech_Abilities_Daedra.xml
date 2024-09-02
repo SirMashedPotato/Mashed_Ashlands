@@ -6,6 +6,9 @@
 		<label>toxbloom</label>
 		<description>Make the daedroth form a toxbloom in its hand out of psychic energy, and then lob it at a target. The toxbloom explodes on impact, leaving behind a cloud of toxgas.</description>
 		<iconPath>UI/Abilities/Mashed_Ashlands_DaedrothToxbloom</iconPath>
+		<statBases>
+			<Ability_EffectRadius>4.9</Ability_EffectRadius>
+		  </statBases>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">
 				<projectileDef>Mashed_Ashlands_DaedrothToxbloom_Thrown</projectileDef>
@@ -16,7 +19,7 @@
 		<defName>Mashed_Ashlands_DaedrothToxbloom_Thrown</defName>
 		<label>toxbloom</label>
 		<graphicData>
-			<texPath>UI/Abilities/Mashed_Ashlands_DaedrothToxbloom</texPath>
+			<texPath>Things/Projectile/Mashed_Ashlands_DaedrothToxbloom_Thrown</texPath>
 		</graphicData>
 		<projectile>
 			<damageDef>ToxGas</damageDef>
