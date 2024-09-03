@@ -11,6 +11,11 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</ToxicEnvironmentResistance>
 			<FilthRate>5</FilthRate>
 		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Draftable" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<foodType>CarnivoreAnimal</foodType>

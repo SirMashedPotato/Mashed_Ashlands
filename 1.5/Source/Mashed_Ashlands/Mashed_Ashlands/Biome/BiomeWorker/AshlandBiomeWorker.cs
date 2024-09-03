@@ -217,5 +217,25 @@ namespace Mashed_Ashlands
             }
             return 13 + (tile.elevation / 300);
         }
+
+        /// <summary>
+        /// Used for all Jungle type biomes
+        /// </summary>
+        public float JungleBiomeWorker(Tile tile)
+        {
+            if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
+            {
+                return 0f;
+            }
+            if (tile.temperature < 15f)
+            {
+                return 0f;
+            }
+            if (tile.rainfall < 2000f)
+            {
+                return 0f;
+            }
+            return 13 + (tile.rainfall / 300);
+        }
     }
 }

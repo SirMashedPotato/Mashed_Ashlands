@@ -8,19 +8,22 @@ namespace Mashed_Ashlands
     {
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            foreach(Gizmo gizmo in base.CompGetGizmosExtra())
+            if (!ModsConfig.IsActive("oskarpotocki.vanillafactionsexpanded.core"))
             {
-                yield return gizmo;
-            }
-
-            Pawn pawn = parent as Pawn;
-            if (pawn.Faction != null && pawn.Faction == Faction.OfPlayer)
-            {
-                foreach (Ability ability in pawn.abilities.abilities)
+                foreach (Gizmo gizmo in base.CompGetGizmosExtra())
                 {
-                    foreach (Gizmo gizmo in ability.GetGizmos())
+                    yield return gizmo;
+                }
+
+                Pawn pawn = parent as Pawn;
+                if (pawn.Faction != null && pawn.Faction == Faction.OfPlayer)
+                {
+                    foreach (Ability ability in pawn.abilities.abilities)
                     {
-                        yield return gizmo;
+                        foreach (Gizmo gizmo in ability.GetGizmos())
+                        {
+                            yield return gizmo;
+                        }
                     }
                 }
             }
