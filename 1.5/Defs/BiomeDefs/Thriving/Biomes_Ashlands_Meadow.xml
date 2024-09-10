@@ -145,7 +145,7 @@
 			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_GlowingEntoloma>
 			<Mashed_Ashlands_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingAshreed>
 			<!-- Polluted nutrition plants -->
-			<Mashed_Ashlands_Plant_ToxYam MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_ToxYam>
+			<Mashed_Ashlands_Plant_Blightcap MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_Blightcap>
 			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
 			<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingParasolBush>
 			<!-- Polluted resource plants -->

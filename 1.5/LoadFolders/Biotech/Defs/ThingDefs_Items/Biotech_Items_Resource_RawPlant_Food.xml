@@ -1,5 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_RawBlightcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawBlightcap</defName>
+		<label>blightcap fungus</label>
+		<description>Raw blightcap fungus. Disgusting, and not very pleasant to eat.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawBlightcap</texPath>
+		</graphicData>
+		<ingestible>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawGlowingAshFungus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawGlowingAshFungus</defName>

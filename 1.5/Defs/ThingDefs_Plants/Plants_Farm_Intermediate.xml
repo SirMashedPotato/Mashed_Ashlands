@@ -69,7 +69,8 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.05</topWindExposure>
 			<growDays>7</growDays>
-			<visualSizeRange>0.8~1.1</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<wildClusterRadius>4</wildClusterRadius>
@@ -103,7 +104,8 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>8</growDays>
-			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<wildClusterRadius>2</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
 			<wildOrder>2</wildOrder>

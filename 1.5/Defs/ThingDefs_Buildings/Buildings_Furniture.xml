@@ -54,6 +54,7 @@
 						<li>Mashed_Ashlands_RawEmperorParasolMoss</li>
 						<li>Mashed_Ashlands_RawAshFungus</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_RawGlowingAshFungus</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_RawBlightcap</li>
 						<li>RawFungus</li>
 						<li>Meat_Megaspider</li>
 					</thingDefs>

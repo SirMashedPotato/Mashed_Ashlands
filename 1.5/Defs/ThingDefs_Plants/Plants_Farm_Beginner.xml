@@ -148,7 +148,8 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>3</growDays>
-			<visualSizeRange>0.6~1.2</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<wildClusterRadius>2</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
 			<wildOrder>2</wildOrder>

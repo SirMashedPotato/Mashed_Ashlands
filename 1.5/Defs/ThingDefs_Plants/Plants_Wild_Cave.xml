@@ -25,9 +25,6 @@
 		<defName>Mashed_Ashlands_Plant_PurpleCrystal</defName>
 		<label>large purple crystal</label>
 		<description>A large purple crystal, often found growing in caves in ashland regions. It hums with a strange energy, and emits a strong purple glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
-		<modExtensions>
-			<li MayRequire="owlchemist.seedspleaselite" Class="SeedsPleaseLite.Seedless"/>
-		</modExtensions>
 		<statBases>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>

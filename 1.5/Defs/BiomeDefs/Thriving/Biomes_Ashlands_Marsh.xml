@@ -137,6 +137,7 @@
 			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Ripthorn>
 			<Mashed_Ashlands_Plant_GlowingAshreed MayRequire="Ludeon.RimWorld.Biotech">20</Mashed_Ashlands_Plant_GlowingAshreed>
 			<!-- Polluted nutrition plants -->
+			<Mashed_Ashlands_Plant_Blightcap MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_Blightcap>
 			<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_GlowingParasolBush>
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
