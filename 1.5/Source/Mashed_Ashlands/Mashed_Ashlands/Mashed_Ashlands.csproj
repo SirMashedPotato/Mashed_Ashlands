@@ -74,6 +74,7 @@
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MeadowAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MarshAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBasaltHillsAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\GenStepDefOf.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\HistoryEventDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\LetterDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />

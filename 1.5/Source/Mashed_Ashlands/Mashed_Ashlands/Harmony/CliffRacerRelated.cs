@@ -11,14 +11,15 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Increases the wild population if a factionless cliff racer egg hatches
         /// </summary>
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         public static void Mashed_Ashlands_Hatch_Patch(ref CompHatcher __instance, ref Faction ___hatcheeFaction)
         {
             if (Mashed_Ashlands_ModSettings.CliffRacerEnableExtinction)
             {
                 if (___hatcheeFaction == null && __instance.parent.def == ThingDefOf.Mashed_Ashlands_Egg_CliffRacerFertilized)
                 {
-                    CliffRacerTrackerUtility.ModifyProgress(1);
+                    Log.Message("bleh " + __instance.parent.stackCount);
+                    CliffRacerTrackerUtility.ModifyProgress(__instance.parent.stackCount);
                 }
             }
         }
@@ -105,7 +106,7 @@ namespace Mashed_Ashlands
     }
 
     /// <summary>
-    /// Allows cliff racers to lay unfertilised eggs, if they have the asexual mutation
+    /// Allows cliff racers to lay fertilised eggs, if they have the asexual mutation
     /// </summary>
     [HarmonyPatch(typeof(CompEggLayer))]
     [HarmonyPatch("ProgressStoppedBecauseUnfertilized", MethodType.Getter)]

@@ -11,6 +11,7 @@ namespace Mashed_Ashlands
         public bool lateLoader = false;
         public bool baseBiome = false;
         public bool canHaveBasalt = true;
+        public bool forceBasalt = false;
         public bool preventRivers = false;
 
         /* for biome gen */

@@ -17,27 +17,37 @@ namespace Mashed_Ashlands
         [HarmonyPostfix]
         public static void Mashed_Ashlands_NaturalRockTypesIn_Patch(int tile, ref IEnumerable<ThingDef> __result, World __instance)
         {
-            if (tile > -1 && __result.Contains(ThingDefOf.Mashed_Ashlands_Basalt))
+            if (tile > -1)
             {
                 BiomeProperties biomeProps = BiomeProperties.Get(__instance.grid[tile].biome);
-                if (biomeProps == null || !biomeProps.canHaveBasalt)
+                if (biomeProps != null && biomeProps.forceBasalt)
                 {
-                    List<ThingDef> newList = new List<ThingDef>();
-                    foreach (ThingDef rockDef in __result)
+                    __result = new List<ThingDef>() { ThingDefOf.Mashed_Ashlands_Basalt };
+                    return;
+                }
+                if (__result.Contains(ThingDefOf.Mashed_Ashlands_Basalt))
+                {
+                    
+                    if (biomeProps == null || !biomeProps.canHaveBasalt)
                     {
-                        if (rockDef != ThingDefOf.Mashed_Ashlands_Basalt)
+                        List<ThingDef> newList = new List<ThingDef>();
+                        foreach (ThingDef rockDef in __result)
                         {
-                            newList.Add(rockDef);
+                            if (rockDef != ThingDefOf.Mashed_Ashlands_Basalt)
+                            {
+                                newList.Add(rockDef);
+                            }
                         }
+                        if (newList.NullOrEmpty())
+                        {
+                            ///May cause issues based on how many things call World.NaturalRockTypesIn
+                            newList.Add(DefDatabase<ThingDef>.AllDefs.Where(x => x.IsNonResourceNaturalRock && x.modContentPack.IsCoreMod).RandomElement());
+                        }
+                        __result = newList;
                     }
-                    if (newList.NullOrEmpty())
-                    {
-                        ///May cause issues based on how many things call World.NaturalRockTypesIn
-                        newList.Add(DefDatabase<ThingDef>.AllDefs.Where(x => x.IsNonResourceNaturalRock && x.modContentPack.IsCoreMod).RandomElement());
-                    }
-                    __result = newList;
                 }
             }
+           
         }
     }
 
