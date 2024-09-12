@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
     {
         public override float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject = null)
         {
-            if (!Mashed_Ashlands_ModSettings.EnableBlightedAshlands) //TODO
+            if (!Mashed_Ashlands_ModSettings.EnableBlightedPetrifiedForestAshlands)
             {
                 return -100f;
             }

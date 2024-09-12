@@ -11,7 +11,7 @@ namespace Mashed_Ashlands
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2.3f);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2.4f);
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
 
             innerRect = innerRect.ContractedBy(20f);
@@ -152,6 +152,9 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands);
             listing_Standard.Gap();
         }
     }

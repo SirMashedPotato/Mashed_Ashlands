@@ -2,7 +2,7 @@
 <Defs>
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
-		<label>petrified forest</label>
+		<label>blighted petrified forest</label>
 		<description>Once home to a beautiful and diverse forest, the land here is now a wasteland of semi-petrified trees, that somehow still manage to cling to life.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>

@@ -83,9 +83,6 @@
 			<pollution>Any</pollution>
 			<fertilityMin>0.3</fertilityMin>
 			<harvestWork>2000</harvestWork>
-			<sowWork IsNull="True"/>
-			<sowMinSkill IsNull="True"/>
-			<sowResearchPrerequisites Inherit="False"/>
 			<harvestYield>10</harvestYield>
 			<leaflessGraphicPath IsNull="True"/>
 			<immatureGraphicPath IsNull="True"/>

@@ -44,6 +44,7 @@
 	<!-- Blighted biomes -->
 	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands base biome.</Mashed_Ashlands_EnableBlightedAshlands>
 	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog sub-biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
+	<Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands>Enable the generation of the blighted petrified forest sub-biome.</Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands>
 	<!-- Volcanic biomes -->
 	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands base biome.</Mashed_Ashlands_EnableVolcanicAshlands>
 	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
