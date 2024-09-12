@@ -3,7 +3,9 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
 		<label>blighted petrified forest</label>
-		<description>Once home to a beautiful and diverse forest, the land here is now a wasteland of semi-petrified trees, that somehow still manage to cling to life.</description>
+		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified trees, that somehow still manage to cling to life.
+			
+			Once home to a beautiful and diverse forest, the land here is now a wasteland of semi-petrified trees, that somehow still manage to cling to life.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
 		<modExtensions>
@@ -71,18 +73,23 @@
 		<plantDensity>0.3</plantDensity>
 		<terrainsByFertility>
 			<li>
-				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
+				<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
 				<min>-999</min>
-				<max>0.45</max>
+				<max>0.2</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
+				<min>0.2</min>
+				<max>0.6</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>
-				<min>0.45</min>
-				<max>0.70</max>
+				<min>0.6</min>
+				<max>0.80</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
-				<min>0.70</min>
+				<min>0.80</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -91,7 +98,7 @@
 				<perlinFrequency>0.027</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
+						<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
 						<min>0.4</min>
 						<max>0.6</max>
 					</li>
@@ -111,12 +118,13 @@
 		<wildPlants>
 			<!-- Ground covers -->
 			<Mashed_Ashlands_Plant_AshlandGrass>0.1</Mashed_Ashlands_Plant_AshlandGrass>
+			<Mashed_Ashlands_Plant_PetrifiedFungus>5</Mashed_Ashlands_Plant_PetrifiedFungus>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
-			 <Mashed_Ashlands_Plant_PetrifiedFern>0.5</Mashed_Ashlands_Plant_PetrifiedFern>
+			 <Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>10</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
