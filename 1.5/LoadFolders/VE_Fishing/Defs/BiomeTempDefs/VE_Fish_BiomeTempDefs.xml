@@ -19,6 +19,7 @@
 		<biomes>
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandVolcanic]==========-->

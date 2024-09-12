@@ -87,6 +87,7 @@
 			<allowedBiomes>
 				<li>Mashed_Ashlands_BlightedAshlands</li>
 				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+				<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 				<li>Mashed_Ashlands_Ashlands</li>
 				<li>Mashed_Ashlands_VolcanicAshlands</li>
 				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
@@ -122,6 +123,7 @@
 			<allowedBiomes>
 				<li>Mashed_Ashlands_BlightedAshlands</li>
 				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+				<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 			</allowedBiomes>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
