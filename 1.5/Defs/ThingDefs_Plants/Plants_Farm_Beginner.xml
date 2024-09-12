@@ -240,6 +240,7 @@
 				<disallowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
@@ -289,6 +290,7 @@
 				<disallowedTerrainForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
 				</disallowedTerrainForWild>
 			</li>
 		</modExtensions>
