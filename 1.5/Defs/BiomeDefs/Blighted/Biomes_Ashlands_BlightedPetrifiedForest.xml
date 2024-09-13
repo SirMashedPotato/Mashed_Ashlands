@@ -3,9 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
 		<label>blighted petrified forest</label>
-		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified trees, that somehow still manage to cling to life.
-			
-			Once home to a beautiful and diverse forest, the land here is now a wasteland of semi-petrified trees, that somehow still manage to cling to life.</description>
+		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified trees, that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
 		<modExtensions>
@@ -117,18 +115,19 @@
 		</terrainPatchMakers>
 		<wildPlants>
 			<!-- Ground covers -->
-			<Mashed_Ashlands_Plant_AshlandGrass>0.1</Mashed_Ashlands_Plant_AshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandGrass>0.01</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_PetrifiedFungus>5</Mashed_Ashlands_Plant_PetrifiedFungus>
 			<!-- Nutrition plants -->
-			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_Scathecraw>0.02</Mashed_Ashlands_Plant_Scathecraw>
 			<!-- Resource plants -->
-			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
+			<Mashed_Ashlands_Plant_TramaShrub>0.02</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			 <Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
+			 <Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.3</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>10</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
-			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
-			<Mashed_Ashlands_BurnedStumpPermanent>0.05</Mashed_Ashlands_BurnedStumpPermanent>
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.01</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.01</Mashed_Ashlands_BurnedStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->
 			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_GlowingEntoloma>
