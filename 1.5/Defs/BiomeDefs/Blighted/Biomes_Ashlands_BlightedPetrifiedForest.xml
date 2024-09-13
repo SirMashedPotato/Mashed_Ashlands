@@ -73,21 +73,21 @@
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
 				<min>-999</min>
-				<max>0.2</max>
-			</li>
-			<li>
-				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
-				<min>0.2</min>
-				<max>0.6</max>
+				<max>0.3</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>
-				<min>0.6</min>
-				<max>0.80</max>
+				<min>0.3</min>
+				<max>0.4</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
+				<min>0.4</min>
+				<max>0.7</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
-				<min>0.80</min>
+				<min>0.7</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -118,12 +118,13 @@
 			<Mashed_Ashlands_Plant_AshlandGrass>0.01</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_PetrifiedFungus>5</Mashed_Ashlands_Plant_PetrifiedFungus>
 			<!-- Nutrition plants -->
-			<Mashed_Ashlands_Plant_Scathecraw>0.02</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_Scathecraw>0.01</Mashed_Ashlands_Plant_Scathecraw>
+			<Mashed_Ashlands_Plant_PetrifiedButtercake>3</Mashed_Ashlands_Plant_PetrifiedButtercake>
 			<!-- Resource plants -->
-			<Mashed_Ashlands_Plant_TramaShrub>0.02</Mashed_Ashlands_Plant_TramaShrub>
+			<Mashed_Ashlands_Plant_TramaShrub>0.01</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
 			 <Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
-			 <Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.3</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
+			 <Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.2</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>10</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.01</Mashed_Ashlands_BurnedParasolStumpPermanent>

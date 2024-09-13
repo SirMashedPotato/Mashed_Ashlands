@@ -153,7 +153,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>170</sowWork>
-			<topWindExposure>0.05</topWindExposure>
+			<topWindExposure>0.01</topWindExposure>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SulphurFungus]==========-->

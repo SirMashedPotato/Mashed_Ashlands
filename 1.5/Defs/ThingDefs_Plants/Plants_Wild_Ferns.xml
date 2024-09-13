@@ -91,7 +91,7 @@
 		<plant>
 			<pollution>Any</pollution>
 			<leaflessGraphicPath IsNull="True"/>
-			<topWindExposure>0.05</topWindExposure>
+			<topWindExposure>0.01</topWindExposure>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
