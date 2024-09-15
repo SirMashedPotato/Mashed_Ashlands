@@ -86,7 +86,7 @@
 			<harvestWork>2000</harvestWork>
 			<harvestYield>10</harvestYield>
 			<leaflessGraphicPath IsNull="True"/>
-			<immatureGraphicPath IsNull="True"/>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeEmperorParasolPetrified_Immature</immatureGraphicPath>
 			<topWindExposure>0.05</topWindExposure>
 		</plant>
 	</ThingDef>
