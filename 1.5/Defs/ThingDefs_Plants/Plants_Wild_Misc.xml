@@ -53,6 +53,7 @@
 			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
 		</graphicData>
 		<statBases>
+			<Nutrition>0.15</Nutrition>
 			<Flammability>0.1</Flammability>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>

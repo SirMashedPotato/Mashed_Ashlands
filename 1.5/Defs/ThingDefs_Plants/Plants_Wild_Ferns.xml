@@ -80,8 +80,9 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
 			<Flammability>0.1</Flammability>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
@@ -90,6 +91,7 @@
 		</graphicData>
 		<plant>
 			<pollution>Any</pollution>
+			<harvestWork>80</harvestWork>
 			<leaflessGraphicPath IsNull="True"/>
 			<topWindExposure>0.01</topWindExposure>
 		</plant>

@@ -78,6 +78,7 @@
 		</graphicData>
 		<statBases>
 			<Flammability>0.1</Flammability>
+			<Nutrition>1</Nutrition>
 		</statBases>
 		<plant>
 			<pollution>Any</pollution>
