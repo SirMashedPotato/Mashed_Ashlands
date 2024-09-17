@@ -91,6 +91,7 @@
 				<li>Mashed_Ashlands_Ashlands</li>
 				<li>Mashed_Ashlands_VolcanicAshlands</li>
 				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+				<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
 				<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 			</allowedBiomes>
 			<validators>

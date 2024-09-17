@@ -50,6 +50,7 @@
 	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
 	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic scathes sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
 	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
+	<Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>Enable the generation of the volcanic basalt hills sub-biome.</Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
 	<Mashed_Ashlands_EnableCoastalVolcano_Tooltip>If this is enabled, islands can generate in the ocean near the coast, with a volcano at the centre.</Mashed_Ashlands_EnableCoastalVolcano_Tooltip>
