@@ -31,7 +31,6 @@
 		<tags>
 			<li>Floor</li>
 		</tags>
-		<designationHotKey>Misc4</designationHotKey>
 		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
 		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
 		<destroyEffect>Bridge_Collapse</destroyEffect>
