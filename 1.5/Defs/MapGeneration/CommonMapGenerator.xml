@@ -138,4 +138,27 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_BasaltFormationsSmall]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_BasaltFormationsSmall</defName>
+		<order>510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterBiomeSpecific">
+			<thingDef>Mashed_Ashlands_ColumnarBasalt</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>0</minSpacing>
+			<extraNoBuildEdgeDist>5</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+			<allowedBiomes>
+				<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			</allowedBiomes>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>2</radius>
+					<affordance>SmoothableStone</affordance>
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
 </Defs>
