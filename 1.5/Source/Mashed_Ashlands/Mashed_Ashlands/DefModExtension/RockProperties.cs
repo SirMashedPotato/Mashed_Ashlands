@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Ashlands
 {
@@ -9,6 +10,8 @@ namespace Mashed_Ashlands
         public string smoothTexPathReplacer;
         public string scatterTypeReplacer = null;
         public bool applyToPolluted = false;
+        public bool overrideFilthAcceptance = false;
+        public FilthSourceFlags filthAcceptanceOverride = FilthSourceFlags.Any;
 
         public static RockProperties Get(Def def)
         {

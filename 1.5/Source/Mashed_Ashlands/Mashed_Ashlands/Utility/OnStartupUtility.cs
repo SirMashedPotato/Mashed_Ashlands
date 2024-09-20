@@ -129,15 +129,15 @@ namespace Mashed_Ashlands
                 RockProperties props = RockProperties.Get(thingDef);
                 if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props);
                 }
                 if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props);
                 }
                 if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
                 {
-                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props.applyToPolluted, props.scatterTypeReplacer);
+                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props);
                 }
             }
         }
@@ -145,14 +145,18 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Need to reset graphic, and call postLoad, to update the terrain texture
         /// </summary>
-        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, bool applyToPolluted, string scatterType = null)
+        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, RockProperties props)
         {
             def.texturePath = newTexPath;
-            if (scatterType != null)
+            if (props.scatterTypeReplacer != null)
             {
-                def.scatterType = scatterType;
+                def.scatterType = props.scatterTypeReplacer;
             }
-            if (ModsConfig.BiotechActive && applyToPolluted)
+            if (props.overrideFilthAcceptance)
+            {
+                def.filthAcceptanceMask = (FilthSourceFlags)props.filthAcceptanceOverride;
+            }
+            if (ModsConfig.BiotechActive && props.applyToPolluted)
             {
                 def.pollutedTexturePath = newTexPath;
                 def.graphicPolluted = BaseContent.BadGraphic;

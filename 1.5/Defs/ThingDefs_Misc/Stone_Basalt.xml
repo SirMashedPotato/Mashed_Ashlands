@@ -26,6 +26,10 @@
 				<smoothTexPathReplacer>Terrain/Surfaces/Rock/Mashed_Ashlands_BasaltSmooth</smoothTexPathReplacer>
 				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
 				<applyToPolluted>true</applyToPolluted>
+				<overrideFilthAcceptance>true</overrideFilthAcceptance>
+				<filthAcceptanceOverride>
+					<li>Unnatural</li>
+				</filthAcceptanceOverride>
 			</li>
 		</modExtensions>
 	</ThingDef>
