@@ -26,6 +26,13 @@ namespace Mashed_Ashlands
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
+            if (ModsConfig.IsActive("oblitus.mylittleplanet"))
+            {
+                listing_Standard.Label("Mashed_Ashlands_PagePreWorldGenLittlePlanet".Translate().Colorize(Color.yellow));
+                listing_Standard.GapLine();
+                listing_Standard.Gap();
+            }
+
             SettingsPage_WorldGen.DoSettingsGeneral(ref listing_Standard, settings);
 
             listing_Standard.GapLine();
