@@ -61,8 +61,8 @@
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
-				<forestDenseAbove>500</forestDenseAbove>
-				<forestSparseBelow>300</forestSparseBelow>
+				<forestDenseAbove>1800</forestDenseAbove>
+				<forestSparseBelow>1100</forestSparseBelow>
 				<materialRandomRotation>false</materialRandomRotation>
 				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
 				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
