@@ -35,20 +35,20 @@ namespace Mashed_Ashlands
                 harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
             }
 
-            ///If geological landforms is not enabled, patch, otherwise geological landforms sand/gravel replacement is used
             if (!ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
             {
-                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
             }
 
-            ///If biome transitions is enabled, swap to version with more overhead, but with better compatability
-            if (ModsConfig.IsActive("m00nl1ght.geologicallandforms.biometransitions"))
+            ///If geological landforms is enabled, swap to version with more overhead, but with better compatability
+            if (ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
             {
                 harmony.Patch(AccessTools.Method(typeof(PlantUtility), nameof(PlantUtility.CanEverPlantAt), new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) }), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.PlantUtility_CanEverPlantAt_Patch)));
             }
             else
             {
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("WildPlantSpawner"), "CalculatePlantsWhichCanGrowAt"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch)));
+                ///also patch terrain, otherwise geological landforms sand/gravel replacement is used
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
             }
         }
     }
