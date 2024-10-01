@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
-	<GameConditionDef>
+	<GameConditionDef Name="Mashed_Ashlands_DenseAshCloudsBase">
 		<defName>Mashed_Ashlands_DenseAshClouds</defName>
 		<conditionClass>Mashed_Ashlands.GameCondition_DenseAshClouds</conditionClass>
 		<label>dense ash clouds</label>
