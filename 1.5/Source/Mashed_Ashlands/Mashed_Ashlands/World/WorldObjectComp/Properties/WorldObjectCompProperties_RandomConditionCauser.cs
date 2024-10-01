@@ -28,5 +28,7 @@ namespace Mashed_Ashlands
         public int forcedCategory = 0;
 
         public FloatRange GetTrueConditionDuration => durationDays * Mashed_Ashlands_ModSettings.VolcanoConditionDurationMultiplier;
+
+        public FloatRange GetTrueGraceDuration => graceDaysAfter * Mashed_Ashlands_ModSettings.VolcanoConditionGraceMultiplier;
     }
 }

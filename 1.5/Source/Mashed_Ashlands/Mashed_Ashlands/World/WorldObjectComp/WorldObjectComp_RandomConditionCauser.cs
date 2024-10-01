@@ -156,7 +156,7 @@ namespace Mashed_Ashlands
                 currentConditionDef = null;
             }
             durationDays = condition.GetTrueConditionDuration.RandomInRange;
-            graceDaysAfter = condition.graceDaysAfter.RandomInRange;
+            graceDaysAfter = condition.GetTrueGraceDuration.RandomInRange;
             category = forcedCategory > 0 ? forcedCategory : condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
