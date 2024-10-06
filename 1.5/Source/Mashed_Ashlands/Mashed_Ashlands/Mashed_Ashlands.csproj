@@ -197,6 +197,7 @@
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectImprintEgg.cs" />
+    <Compile Include="ThingSetMaker\ThingSetMaker_RandomOptionWithNull.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_PsychicEruption.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />

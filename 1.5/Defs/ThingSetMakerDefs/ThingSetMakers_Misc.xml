@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ExplorerSkeletonExtraDrop]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Ashlands_ExplorerSkeletonExtraDrop</defName>
+		<debugParams>
+			<!-- debug only! -->
+			<totalMarketValueRange>100~500</totalMarketValueRange>
+		</debugParams>
+		<root Class="Mashed_Ashlands.ThingSetMaker_RandomOptionWithNull">
+			<nullChance>0.3</nullChance>
+			<options>
+				<!-- raw plant food -->
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<tradeTagsToAllow>
+									<li>Mashed_Ashlands_AshlandsRawFoodPlant</li>
+								</tradeTagsToAllow>
+							</filter>
+							<countRange>5~10</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- herbal medicine -->
+				<li>
+					<weight>0.6</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>MedicineHerbal</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~6</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- alcohol and drugs -->
+				<li>
+					<weight>0.3</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<tradeTagsToAllow>
+									<li>Mashed_Ashlands_AshlandsAlcohol</li>
+									<li>Mashed_Ashlands_AshlandsMusk</li>
+									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma</li>
+								</tradeTagsToAllow>
+							</filter>
+							<countRange>1~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisDrop]==========-->
+	<ThingSetMakerDef>
+		<defName>Mashed_Ashlands_VolcanicDebrisDrop</defName>
+		<debugParams>
+			<!-- debug only! -->
+			<totalMarketValueRange>100~500</totalMarketValueRange>
+		</debugParams>
+		<root Class="ThingSetMaker_RandomOption">
+			<options>
+				<!-- basalt chunk -->
+				<li>
+					<weight>1.5</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_ChunkBasalt</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- granite chunk -->
+				<li>
+					<weight>0.6</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>ChunkGranite</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- misc -->
+				<li>
+					<weight>0.6</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Gold</li>
+									<li>Chemfuel</li>
+									<li>Mashed_Ashlands_RawAshFungus</li>
+									<li>Mashed_Ashlands_PurpleCrystalShard</li>
+								</thingDefs>
+							</filter>
+							<countRange>10~25</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- volcanic minerals -->
+				<li>
+					<weight>0.3</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_VolcanicEbony</li>
+									<li>Mashed_Ashlands_VolcanicGlass</li>
+								</thingDefs>
+							</filter>
+							<countRange>10~25</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- rare single items -->
+				<li>
+					<weight>0.06</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_FetcherflyHiveCore</li>
+									<li>Mashed_Ashlands_Egg_SiltStriderFertilized</li>
+									<li>Mashed_Ashlands_Egg_DaedrothFertilized</li>
+									<li>Mashed_Ashlands_Egg_OgrimFertilized</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- rare cliff racer eggs -->
+				<li>
+					<weight>0.03</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_Egg_CliffRacerFertilized</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~12</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- rare dagoth brandy -->
+				<li>
+					<weight>0.03</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_AlcoholDagothBrandy</li>
+								</thingDefs>
+							</filter>
+							<countRange>6</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+</Defs>
