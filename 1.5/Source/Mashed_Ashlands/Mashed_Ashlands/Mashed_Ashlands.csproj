@@ -139,6 +139,7 @@
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenDormant.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenExtinct.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenGeneral.cs" />
+    <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalBlighted.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
