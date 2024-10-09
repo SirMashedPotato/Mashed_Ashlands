@@ -91,7 +91,7 @@
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_Destroy.cs" />
-    <Compile Include="Debug\DebugTools.cs" />
+    <Compile Include="DebugActions\DebugTools.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
