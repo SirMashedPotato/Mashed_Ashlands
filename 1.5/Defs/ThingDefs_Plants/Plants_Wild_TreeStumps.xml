@@ -35,6 +35,17 @@
 			<visualSizeRange>1.5~3.2</visualSizeRange>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ChoppedPetrifiedStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_ChoppedParasolStumpBase">
+		<defName>Mashed_Ashlands_ChoppedPetrifiedStump</defName>
+		<label>chopped petrified stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedChopped</texPath>
+		</graphicData>
+		<plant>
+			<harvestYield>1</harvestYield>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SmashedParasolStump]==========-->
 	<ThingDef ParentName="StumpSmashedBase" Name="Mashed_Ashlands_SmashedParasolStumpBase">
 		<defName>Mashed_Ashlands_SmashedParasolStump</defName>
@@ -45,6 +56,17 @@
 		<plant>
 			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
 			<visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SmashedPetrifiedStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmashedParasolStumpBase">
+		<defName>Mashed_Ashlands_SmashedPetrifiedStump</defName>
+		<label>smashed petrified stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedSmashed</texPath>
+		</graphicData>
+		<plant>
+			<harvestYield>1</harvestYield>
 		</plant>
 	</ThingDef>
 </Defs>

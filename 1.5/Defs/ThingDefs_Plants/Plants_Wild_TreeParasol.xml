@@ -77,7 +77,7 @@
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasolPetrified</texPath>
 		</graphicData>
 		<statBases>
-			<Flammability>0.1</Flammability>
+			<Flammability>0</Flammability>
 			<Nutrition>1</Nutrition>
 		</statBases>
 		<plant>
@@ -88,6 +88,8 @@
 			<leaflessGraphicPath IsNull="True"/>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeEmperorParasolPetrified_Immature</immatureGraphicPath>
 			<topWindExposure>0.05</topWindExposure>
+			<choppedThingDef>Mashed_Ashlands_ChoppedPetrifiedStump</choppedThingDef>
+			<smashedThingDef>Mashed_Ashlands_SmashedPetrifiedStump</smashedThingDef>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeKwamacap]==========-->
