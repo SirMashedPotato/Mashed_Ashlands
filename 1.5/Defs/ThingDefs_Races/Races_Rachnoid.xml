@@ -207,7 +207,7 @@
 			<li Class="CompProperties_Shearable">
 				<woolDef>Mashed_Ashlands_RachnoidSilk</woolDef>
 				<shearIntervalDays>5</shearIntervalDays>
-				<woolAmount>10</woolAmount>
+				<woolAmount>16</woolAmount>
 			</li>
 		</comps>
 		<tools>
