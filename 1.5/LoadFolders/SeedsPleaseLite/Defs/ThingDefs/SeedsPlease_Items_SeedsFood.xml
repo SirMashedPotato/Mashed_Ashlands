@@ -57,6 +57,7 @@
 			<li Class="SeedsPleaseLite.Seed">
 				<sources>
 					<li>Mashed_Ashlands_Plant_Buttercake</li>
+					<li>Mashed_Ashlands_Plant_PetrifiedButtercake</li>
 				</sources>
 				<priority>20</priority>
 			</li>

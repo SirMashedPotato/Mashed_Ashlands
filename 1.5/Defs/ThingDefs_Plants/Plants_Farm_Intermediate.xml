@@ -36,7 +36,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Buttercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_Plant_ButtercakeBase">
 		<defName>Mashed_Ashlands_Plant_Buttercake</defName>
 		<label>buttercake mushroom</label>
 		<description>A rather strange mushroom, that somewhat resembles a stack of pancakes. The flesh is surprisingly tasty, and completely safe to eat. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
@@ -76,6 +76,34 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedButtercake]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ButtercakeBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedButtercake</defName>
+		<label>petrified buttercake mushroom</label>
+		<description>Semi-petrified buttercake mushroom, gradually turned to stone by extreme blight storms. Somehow it still grows, though there is almost no edible flesh left.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<fertilityMin>0.3</fertilityMin>
+			<harvestYield>1</harvestYield>
+			<topWindExposure>0.01</topWindExposure>
+			<growDays>10</growDays>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Chillshroom]==========-->

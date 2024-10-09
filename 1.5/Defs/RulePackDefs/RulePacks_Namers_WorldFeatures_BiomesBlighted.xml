@@ -24,4 +24,16 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->petrified wastes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

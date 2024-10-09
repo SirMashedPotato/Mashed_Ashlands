@@ -67,6 +67,35 @@
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernGreenPlant</texPath>
 		</graphicData>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedFern</defName>
+		<label>petrified fern</label>
+		<description>A small semi-petrified fern. It looks like it should crumble to dust at the slightest touch, yet somehow still it endures.</description>
+		<modExtensions Inherit="False">
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<Flammability>0.1</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_PetrifiedFernPlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<harvestWork>80</harvestWork>
+			<leaflessGraphicPath IsNull="True"/>
+			<topWindExposure>0.01</topWindExposure>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_SloughFern</defName>

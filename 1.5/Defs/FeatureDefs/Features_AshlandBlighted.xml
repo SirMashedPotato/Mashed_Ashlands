@@ -8,6 +8,7 @@
 		<rootBiomes>
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 		</rootBiomes>
 		<acceptableBiomes>
 		</acceptableBiomes>
@@ -23,5 +24,16 @@
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerBlightedBogAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_BlightedPetrifiedForestAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<minSize>10</minSize>
+		<rootBiomes>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands</nameMaker>
 	</FeatureDef>
 </Defs>

@@ -95,32 +95,7 @@
 						<amountRange>10</amountRange>
 					</li>
 				</guaranteedDrops>
-				<potentialDrops>
-					<li>
-						<!-- Null drop -->
-						<weight>1</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_RawAshYams</thingDef>
-						<amountRange>5~10</amountRange>
-						<weight>1</weight>
-					</li>
-					<li>
-						<thingDef>MedicineHerbal</thingDef>
-						<amountRange>1~3</amountRange>
-						<weight>1</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_AlcoholSujamma</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.1</weight>
-					</li>
-					<li MayRequire="sirmashedpotato.morrowrim.moonsugarandskooma">
-						<thingDef>MorrowRim_Skooma</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.1</weight>
-					</li>
-				</potentialDrops>
+				<thingSetMakerDef>Mashed_Ashlands_ExplorerSkeletonExtraDrop</thingSetMakerDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -288,78 +263,7 @@
 		</building>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
-				<potentialDrops>
-					<li>
-						<thingDef>Mashed_Ashlands_ChunkBasalt</thingDef>
-						<amountRange>1</amountRange>
-						<weight>1.5</weight>
-					</li>
-					<li>
-						<thingDef>ChunkGranite</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.5</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_PurpleCrystalShard</thingDef>
-						<amountRange>15~25</amountRange>
-						<weight>0.5</weight>
-					</li>
-					<li>
-						<thingDef>Gold</thingDef>
-						<amountRange>5~15</amountRange>
-						<weight>0.5</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_RawAshFungus</thingDef>
-						<amountRange>15~25</amountRange>
-						<weight>0.3</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_VolcanicEbony</thingDef>
-						<amountRange>10~25</amountRange>
-						<weight>0.2</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_VolcanicGlass</thingDef>
-						<amountRange>10~25</amountRange>
-						<weight>0.2</weight>
-					</li>
-					<li>
-						<thingDef>Chemfuel</thingDef>
-						<amountRange>10~25</amountRange>
-						<weight>0.1</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_Egg_SiltStriderFertilized</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.01</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_Egg_DaedrothFertilized</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.01</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_Egg_OgrimFertilized</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.01</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_Egg_CliffRacerFertilized</thingDef>
-						<amountRange>3~9</amountRange>
-						<weight>0.01</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>
-						<amountRange>1</amountRange>
-						<weight>0.01</weight>
-					</li>
-					<li>
-						<thingDef>Mashed_Ashlands_AlcoholDagothBrandy</thingDef>
-						<amountRange>6</amountRange>
-						<weight>0.01</weight>
-					</li>
-				</potentialDrops>
+				<thingSetMakerDef>Mashed_Ashlands_VolcanicDebrisDrop</thingSetMakerDef>
 			</li>
 			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
 				<fleckDef>Owl_SmokeHeavy</fleckDef>

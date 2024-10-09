@@ -8,6 +8,12 @@ namespace Mashed_Ashlands
     {
         public override int SeedPart => 48151623;
 
+        public static void DebugGenerate(string seed)
+        {
+            WorldGenStep_AshlandBiomesEarly instance = new WorldGenStep_AshlandBiomesEarly();
+            instance.GenerateFresh(seed);
+        }
+
         public override void GenerateFresh(string seed)
         {
             WorldGrid grid = Find.WorldGrid;

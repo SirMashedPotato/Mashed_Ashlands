@@ -87,9 +87,11 @@
 			<allowedBiomes>
 				<li>Mashed_Ashlands_BlightedAshlands</li>
 				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+				<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 				<li>Mashed_Ashlands_Ashlands</li>
 				<li>Mashed_Ashlands_VolcanicAshlands</li>
 				<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+				<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
 				<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 			</allowedBiomes>
 			<validators>
@@ -122,6 +124,7 @@
 			<allowedBiomes>
 				<li>Mashed_Ashlands_BlightedAshlands</li>
 				<li>Mashed_Ashlands_BlightedBogAshlands</li>
+				<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 			</allowedBiomes>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
@@ -130,6 +133,29 @@
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>5</radius>
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_BasaltFormationsSmall]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_BasaltFormationsSmall</defName>
+		<order>510</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterBiomeSpecific">
+			<thingDef>Mashed_Ashlands_ColumnarBasalt</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>0</minSpacing>
+			<extraNoBuildEdgeDist>5</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+			<allowedBiomes>
+				<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			</allowedBiomes>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>2</radius>
+					<affordance>SmoothableStone</affordance>
 				</li>
 				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>

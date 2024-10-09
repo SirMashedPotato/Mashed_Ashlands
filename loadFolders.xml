@@ -84,7 +84,7 @@
 		<!-- VE Recycling -->
 		<li IfModActive="vanillaexpanded.recycling">1.5/LoadFolders/VE_Recycling</li>
 		<!-- Cherry Picker -->
-		<li IfModActive="owlchemist.cherrypicker">1.5/LoadFolders/CherryPicker</li>
+		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.5/LoadFolders/CherryPicker</li>
 		<!-- Pathfinding Framework -->
 		<li IfModActive="pathfinding.framework">1.5/LoadFolders/PathfindingFramework</li>
 	</v1.5>

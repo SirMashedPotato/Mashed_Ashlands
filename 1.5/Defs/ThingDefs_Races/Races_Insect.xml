@@ -15,6 +15,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
+			<Outland_BoneAmount MayRequireAnyOf="neronix17.outland.core">0</Outland_BoneAmount>
 		</statBases>
 		<race>
 			<fleshType>Insectoid</fleshType>

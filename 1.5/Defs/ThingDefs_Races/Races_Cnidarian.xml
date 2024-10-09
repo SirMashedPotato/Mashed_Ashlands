@@ -23,6 +23,7 @@
 			<MeatAmount>120</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
 			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
+			<Outland_BoneAmount MayRequireAnyOf="neronix17.outland.core">0</Outland_BoneAmount>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>

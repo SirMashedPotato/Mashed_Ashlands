@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ColumnarBasalt]==========-->
+	<ThingDef ParentName="RockBase" Name="Mashed_Ashlands_ColumnarBasaltBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BuildingProperties">
+				<canBeMeteorite>false</canBeMeteorite>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<linkType>None</linkType>
+			<drawSize>(2.6,2.6)</drawSize>
+			<color>(106,104,105)</color>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<supportsWallAttachments>false</supportsWallAttachments>
+			<mineableYieldWasteable>false</mineableYieldWasteable>
+			<mineableThing>Mashed_Ashlands_ChunkBasalt</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+		</building>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ColumnarBasalt]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_ColumnarBasaltBase">
+		<defName>Mashed_Ashlands_ColumnarBasalt</defName>
+		<label>columnar basalt</label>
+		<description>Large columns of basalt, typically found in regions experiencing high volcanic activity.</description>
+		<graphicData>
+			<texPath>Things/Building/RockTypes/Mashed_Ashlands_Mashed_Ashlands_ColumnarBasalt</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+</Defs>

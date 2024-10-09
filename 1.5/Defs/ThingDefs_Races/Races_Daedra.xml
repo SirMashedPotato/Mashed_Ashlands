@@ -132,6 +132,7 @@
 		</comps>
 		<race>
 			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+			<packAnimal>true</packAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
 			<body>Mashed_Ashlands_BipedalDaedra</body>
@@ -288,6 +289,7 @@
 		</comps>
 		<race>
 			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+			<packAnimal>true</packAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>2.6</maxPreyBodySize>
 			<body>Mashed_Ashlands_BipedalDaedra</body>

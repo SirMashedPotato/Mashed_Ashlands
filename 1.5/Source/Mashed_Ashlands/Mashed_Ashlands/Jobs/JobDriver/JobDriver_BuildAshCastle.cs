@@ -28,7 +28,7 @@ namespace Mashed_Ashlands
 				if (workLeft <= 0f)
 				{
 					Thing thing = ThingMaker.MakeThing(ThingDefOf.Mashed_Ashlands_AshCastle, null);
-					thing.SetFaction(pawn.Faction, null);
+					thing.SetFaction(Faction.OfPlayer, null);
 					GenSpawn.Spawn(thing, TargetLocA, Map, WipeMode.Vanish);
 					ReadyForNextToil();
 					return;
