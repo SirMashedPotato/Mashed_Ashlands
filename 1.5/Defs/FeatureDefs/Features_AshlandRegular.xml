@@ -8,12 +8,6 @@
 		<rootBiomes>
 			<li>Mashed_Ashlands_Ashlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-			<li>Mashed_Ashlands_DustplainAshlands</li>
-			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<li>Mashed_Ashlands_SwampAshlands</li>
-		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_CoralCoastAshlands]==========-->

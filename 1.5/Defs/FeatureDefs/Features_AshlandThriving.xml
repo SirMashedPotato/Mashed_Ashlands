@@ -8,10 +8,6 @@
 		<rootBiomes>
 			<li>Mashed_Ashlands_ForestAshlands</li>
 		</rootBiomes>
-		<acceptableBiomes>
-			<li>Mashed_Ashlands_MeadowAshlands</li>
-			<li>Mashed_Ashlands_MarshAshlands</li>
-		</acceptableBiomes>
 		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
 	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_MeadowAshlands]==========-->
