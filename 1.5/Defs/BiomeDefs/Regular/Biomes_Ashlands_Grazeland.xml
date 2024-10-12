@@ -68,6 +68,9 @@
 				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
 			</li>
+			<li Class="FirefliesTwoO.NightlySpawningExtension" MayRequire="scurvyez.firefliestwo">
+				<biomeEmissionRate>0.6</biomeEmissionRate>
+			</li>
 		</modExtensions>
 		<animalDensity>3</animalDensity>
 		<plantDensity>0.4</plantDensity>
