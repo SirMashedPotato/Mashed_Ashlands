@@ -167,6 +167,7 @@
 				<li>subject_story->[start_craft] [middle_craft] [thing_subject]</li>
 				<li>subject_gerund->[thing_subject]</li>
 				<!-- things -->
+				<li>thing_subject->weave rachnoid silk</li>
 				<li>thing_subject->refine shalk chitin</li>
 				<li>thing_subject->brew chillshroom</li>
 				<li>thing_subject->brew marshmerrow</li>

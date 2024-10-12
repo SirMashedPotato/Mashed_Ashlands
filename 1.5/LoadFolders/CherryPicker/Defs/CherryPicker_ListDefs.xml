@@ -4,6 +4,8 @@
 		<defName>Mashed_Ashlands_Rachnoids</defName>
 		<label>Remove Rachnoids (includes pyrantula)</label>
 		<defs>
+			<li>RecipeDef/Mashed_Ashlands_RachnoidSilkToCloth</li>
+			<li>RecipeDef/Mashed_Ashlands_RachnoidSilkToClothBulk</li>
 			<li>ThingDef/Mashed_Ashlands_RachnoidSilk</li>
 			<li>ThingDef/Mashed_Ashlands_Egg_PyrantulaFertilized</li>
 			<li>ThingDef/Mashed_Ashlands_Egg_RachnoidFertilized</li>

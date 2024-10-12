@@ -14,4 +14,18 @@
 		</recipeUsers>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_WeaveBase]==========-->
+	<RecipeDef Name="Mashed_Ashlands_WeaveBase" Abstract="True">
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>900</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_SpinningWheel</li>
+		</recipeUsers>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
 </Defs>
