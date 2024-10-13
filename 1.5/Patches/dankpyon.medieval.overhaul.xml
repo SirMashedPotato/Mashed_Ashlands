@@ -43,7 +43,18 @@
 				</li>
 				<!-- ==========[Ash Resistance]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="DankPyon_BaseGolem" or @Name="DankPyon_SchratBase" or defName="DankPyon_Ghoul_Stage_One" or defName="DankPyon_Ghoul_Stage_Two" or defName="DankPyon_Ghoul_Stage_Three"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="DankPyon_Alp"
+						or defName="DankPyon_Ghoul_Stage_One" 
+						or defName="DankPyon_Ghoul_Stage_Two" 
+						or defName="DankPyon_Ghoul_Stage_Three" 
+						or @Name="DankPyon_BaseGolem" 
+						or defName="DankPyon_RusticMimic"
+						or defName="DankPyon_RoyalMimic"
+						or @Name="DankPyon_SchratBase" 
+						or @Name="DankPyon_SchratSaplingBase" 
+						or defName="DankPyon_AncientTroll"
+						or defName="DankPyon_Unhold"
+						]/statBases</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>
