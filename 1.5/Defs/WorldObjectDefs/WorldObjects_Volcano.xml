@@ -353,6 +353,15 @@
 						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
+						<conditionDef>Mashed_Ashlands_DenseAshCloudsImpenetrable</conditionDef>
+						<durationDays>3~15</durationDays>
+						<graceDaysAfter>2~10</graceDaysAfter>
+						<weight>3</weight>
+						<sendLetter>true</sendLetter>
+						<sendEndMessage>true</sendEndMessage>
+						<countAsIncident>true</countAsIncident>
+					</li>
+					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>

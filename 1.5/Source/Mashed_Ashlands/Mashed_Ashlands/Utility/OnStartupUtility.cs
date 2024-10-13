@@ -27,6 +27,7 @@ namespace Mashed_Ashlands
             FillBiomeLists(DefDatabase<BiomeDef>.AllDefsListForReading);
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
             ModifyFlowerFeederLinks();
+            ModifyRockTerrainDefs();
         }
 
         public static void FillAnimalsLists(List<ThingDef> pawnDefs)
@@ -116,6 +117,52 @@ namespace Mashed_Ashlands
                     }
                 }
             }
+        }
+
+
+        public static void ModifyRockTerrainDefs()
+        {
+            foreach (ThingDef thingDef in from def in DefDatabase<ThingDef>.AllDefs
+                                          where RockProperties.Get(def) != null
+                                          select def)
+            {
+                RockProperties props = RockProperties.Get(thingDef);
+                if (props.roughTexPathReplacer != null && thingDef.building.naturalTerrain != null)
+                {
+                    EditImpliedTerrain(thingDef.building.naturalTerrain, props.roughTexPathReplacer, props);
+                }
+                if (props.roughHewnTexPathReplacer != null && thingDef.building.leaveTerrain != null)
+                {
+                    EditImpliedTerrain(thingDef.building.leaveTerrain, props.roughHewnTexPathReplacer, props);
+                }
+                if (props.smoothTexPathReplacer != null && thingDef.building.naturalTerrain.smoothedTerrain != null)
+                {
+                    EditImpliedTerrain(thingDef.building.naturalTerrain.smoothedTerrain, props.smoothTexPathReplacer, props);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Need to reset graphic, and call postLoad, to update the terrain texture
+        /// </summary>
+        public static void EditImpliedTerrain(TerrainDef def, string newTexPath, RockProperties props)
+        {
+            def.texturePath = newTexPath;
+            if (props.scatterTypeReplacer != null)
+            {
+                def.scatterType = props.scatterTypeReplacer;
+            }
+            if (props.overrideFilthAcceptance)
+            {
+                def.filthAcceptanceMask = (FilthSourceFlags)props.filthAcceptanceOverride;
+            }
+            if (ModsConfig.BiotechActive && props.applyToPolluted)
+            {
+                def.pollutedTexturePath = newTexPath;
+                def.graphicPolluted = BaseContent.BadGraphic;
+            }
+            def.graphic = BaseContent.BadGraphic;
+            def.PostLoad();
         }
     }
 }

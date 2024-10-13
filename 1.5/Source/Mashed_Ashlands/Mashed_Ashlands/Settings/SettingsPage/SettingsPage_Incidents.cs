@@ -12,7 +12,7 @@ namespace Mashed_Ashlands
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 1.7f);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 1.8f);
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
 
             innerRect = innerRect.ContractedBy(20f);
@@ -45,6 +45,9 @@ namespace Mashed_Ashlands
 
             listing_Standard.Label("Mashed_Ashlands_VolcanoConditionDurationMultiplier".Translate(settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier * 100), -1);
             settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_VolcanoConditionDurationMultiplier, 0.5f, 10f) * 2) / 2;
+
+            listing_Standard.Label("Mashed_Ashlands_VolcanoConditionGraceMultiplier".Translate(settings.Mashed_Ashlands_VolcanoConditionGraceMultiplier * 100), -1);
+            settings.Mashed_Ashlands_VolcanoConditionGraceMultiplier = (float)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_VolcanoConditionGraceMultiplier, 0f, 10f) * 2) / 2;
 
             listing_Standard.GapLine();
             listing_Standard.Gap();

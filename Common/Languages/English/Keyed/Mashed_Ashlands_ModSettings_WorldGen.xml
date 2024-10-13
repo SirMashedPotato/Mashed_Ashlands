@@ -4,6 +4,7 @@
 	<Mashed_Ashlands_PageWorldGen>World Gen.</Mashed_Ashlands_PageWorldGen>
 	<Mashed_Ashlands_PagePreWorldGen1>Changes made here will not be saved unless the regular mod settings menu is opened and closed afterwards.</Mashed_Ashlands_PagePreWorldGen1>
 	<Mashed_Ashlands_PagePreWorldGen2>This window can be disabled in the full mod settings menu.</Mashed_Ashlands_PagePreWorldGen2>
+	<Mashed_Ashlands_PagePreWorldGenLittlePlanet>My Little Planet has been detected. If you use a smaller world size you will want to disable all Ashlands settings that scale based on world coverage, and manually tweak the settings here to your preference.</Mashed_Ashlands_PagePreWorldGenLittlePlanet>
 	<Mashed_Ashlands_EnableSettingBeforeWorldGen>Display the Ashland World Gen. settings page before world generation.</Mashed_Ashlands_EnableSettingBeforeWorldGen>
 	<!-- dormant volcano -->
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
@@ -44,11 +45,13 @@
 	<!-- Blighted biomes -->
 	<Mashed_Ashlands_EnableBlightedAshlands>Enable the generation of the blighted ashlands base biome.</Mashed_Ashlands_EnableBlightedAshlands>
 	<Mashed_Ashlands_EnableBlightedBogAshlands>Enable the generation of the blighted bog sub-biome.</Mashed_Ashlands_EnableBlightedBogAshlands>
+	<Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands>Enable the generation of the blighted petrified forest sub-biome.</Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands>
 	<!-- Volcanic biomes -->
 	<Mashed_Ashlands_EnableVolcanicAshlands>Enable the generation of the volcanic ashlands base biome.</Mashed_Ashlands_EnableVolcanicAshlands>
 	<Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>Enable the generation of the volcanic coral coast sub-biome.</Mashed_Ashlands_EnableVolcanicCoralCoastAshlands>
 	<Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>Enable the generation of the volcanic scathes sub-biome.</Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands>
 	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
+	<Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>Enable the generation of the volcanic basalt hills sub-biome.</Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
 	<Mashed_Ashlands_EnableCoastalVolcano_Tooltip>If this is enabled, islands can generate in the ocean near the coast, with a volcano at the centre.</Mashed_Ashlands_EnableCoastalVolcano_Tooltip>

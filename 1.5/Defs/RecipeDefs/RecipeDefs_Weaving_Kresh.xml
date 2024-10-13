@@ -1,21 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_MakeClothFromKresh]==========-->
-	<RecipeDef Name="Mashed_Ashlands_MakeClothFromKreshBase">
+	<RecipeDef ParentName="Mashed_Ashlands_WeaveBase" Name="Mashed_Ashlands_MakeClothFromKreshBase">
 		<defName>Mashed_Ashlands_KreshToCloth</defName>
 		<label>weave kresh cloth into cloth</label>
 		<description>Weave 20 kresh cloth into 10 cloth.</description>
 		<jobString>Weaving kresh.</jobString>
-		<effectWorking>Tailor</effectWorking>
-		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>900</workAmount>
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-			<li>ElectricTailoringBench</li>
-			<li>HandTailoringBench</li>
-			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_SpinningWheel</li>
-		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -34,7 +24,6 @@
 		<products>
 			<Cloth>10</Cloth>
 		</products>
-		<workSkill>Crafting</workSkill>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
 	</RecipeDef>
 	<!-- ==========[Mashed_Ashlands_KreshToClothBulk]==========-->

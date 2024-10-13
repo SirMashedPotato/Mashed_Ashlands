@@ -68,6 +68,7 @@
     <Compile Include="Alert\Alert_AshBuildup.cs" />
     <Compile Include="Alert\Alert_CliffRacerTracker.cs" />
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
+    <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedPetrifiedForestAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_DustplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_FloodedForestAshlands.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_CliffRacer.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_Destroy.cs" />
+    <Compile Include="DebugActions\DebugTools.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\PreventAshlandOverride.cs" />
     <Compile Include="DefModExtension\PreventVolcanicConditions.cs" />
+    <Compile Include="DefModExtension\RockProperties.cs" />
     <Compile Include="DefOf\EffecterDefOf.cs" />
     <Compile Include="DefOf\GameConditionDefOf.cs" />
     <Compile Include="DefOf\GenStepDefOf.cs" />
@@ -136,6 +139,7 @@
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenDormant.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenExtinct.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenGeneral.cs" />
+    <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalBlighted.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
@@ -194,6 +198,7 @@
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectImprintEgg.cs" />
+    <Compile Include="ThingSetMaker\ThingSetMaker_RandomOptionWithNull.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_PsychicEruption.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStorm.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_Ashlands.cs" />
@@ -210,7 +215,8 @@
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
-    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_DustStorm.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />

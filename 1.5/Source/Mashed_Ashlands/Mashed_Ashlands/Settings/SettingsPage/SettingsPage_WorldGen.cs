@@ -11,7 +11,7 @@ namespace Mashed_Ashlands
         {
             ///Readying listing standard
             Rect scrollRect = mainRect.ContractedBy(5f);
-            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2.3f);
+            Rect innerRect = new Rect(0f, 0f, mainRect.width - 30, mainRect.height * 2.5f);
             Widgets.BeginScrollView(scrollRect, ref scrollPosition, innerRect, true);
 
             innerRect = innerRect.ContractedBy(20f);
@@ -128,14 +128,18 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
             listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBadlandsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBadlandsAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands);
+            listing_Standard.Gap();
+
             /*
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicCoralCoastAshlands);
             listing_Standard.Gap();
             */
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicSulphurPitsAshlands);
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBadlandsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBadlandsAshlands);
             listing_Standard.Gap();
         }
 
@@ -152,6 +156,9 @@ namespace Mashed_Ashlands
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedBogAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedBogAshlands);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands);
             listing_Standard.Gap();
         }
     }

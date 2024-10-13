@@ -68,6 +68,9 @@
 				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
 			</li>
+			<li Class="FirefliesTwoO.NightlySpawningExtension" MayRequire="scurvyez.firefliestwo">
+				<biomeEmissionRate>0.5</biomeEmissionRate>
+			</li>
 		</modExtensions>
 		<animalDensity>2</animalDensity>
 		<plantDensity>0.4</plantDensity>
@@ -175,6 +178,7 @@
 			<Mashed_Ashlands_Guar>0.1</Mashed_Ashlands_Guar>
 			<Mashed_Ashlands_Rotumbo>0.5</Mashed_Ashlands_Rotumbo>
 			<!-- predators -->
+			<Mashed_Ashlands_Rachnoid>0.1</Mashed_Ashlands_Rachnoid>
 			<Mashed_Ashlands_NixHound>0.1</Mashed_Ashlands_NixHound>
 			<Mashed_Ashlands_Kagouti>0.2</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_CliffRacer>0.3</Mashed_Ashlands_CliffRacer>

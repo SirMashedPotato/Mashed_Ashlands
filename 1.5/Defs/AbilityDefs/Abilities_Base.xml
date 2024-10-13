@@ -26,7 +26,6 @@
 	</AbilityDef>
 	<!-- ==========[Mashed_Ashlands_LobThrownBase]==========-->
 	<ThingDef ParentName="BaseGrenadeProjectile" Name="Mashed_Ashlands_LobThrownBase" Abstract="True">
-		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>

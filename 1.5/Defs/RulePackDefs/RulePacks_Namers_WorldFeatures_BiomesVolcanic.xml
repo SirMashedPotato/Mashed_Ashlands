@@ -24,6 +24,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->basalt spires</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</defName>

@@ -145,6 +145,15 @@
 				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
 			</li>
 		</comps>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>blighted overlay</debugLabel>
+				<nodeClass>Mashed_Ashlands.PawnRenderNode_AnimalBlighted</nodeClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>1</baseLayer> <!-- 1 above body -->
+				<pawnType>NonHumanlikeOnly</pawnType>
+			</li>
+		</renderNodeProperties>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
