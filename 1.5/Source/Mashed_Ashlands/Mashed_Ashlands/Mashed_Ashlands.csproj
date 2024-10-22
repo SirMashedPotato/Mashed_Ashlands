@@ -215,8 +215,7 @@
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
-    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormPrimary.cs" />
-    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormSecondary.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_DustStorm.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />

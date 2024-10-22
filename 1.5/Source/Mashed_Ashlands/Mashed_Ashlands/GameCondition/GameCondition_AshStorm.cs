@@ -269,8 +269,7 @@ namespace Mashed_Ashlands
 		private SkyColorSet AshStormColours = new SkyColorSet(new ColorInt(204, 204, 204).ToColor, new ColorInt(234, 234, 234).ToColor, new Color(1f, 1f, 1f), SkyGlow);
 		private readonly List<SkyOverlay> overlays = new List<SkyOverlay>
         {
-			new WeatherOverlay_AshStormPrimary(),
-			new WeatherOverlay_AshStormSecondary()
+			new WeatherOverlay_AshStorm(),
         };
 		public const int CheckInterval = 3451;
 	}

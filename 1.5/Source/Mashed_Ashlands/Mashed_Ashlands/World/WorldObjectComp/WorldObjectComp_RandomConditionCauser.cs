@@ -102,7 +102,10 @@ namespace Mashed_Ashlands
             PotentialConditions condition = forcedCondition ?? Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
-                EndConditions();
+                if (!causedConditions.NullOrEmpty())
+                {
+                    EndConditions();
+                }
                 SetCondition(condition, ParentVolcano, forcedCategory);
 
                 bool categoryChangeFlag = false;
@@ -221,6 +224,10 @@ namespace Mashed_Ashlands
                     }
                     else
                     {
+                        if (!causedConditions.NullOrEmpty())
+                        {
+                            EndConditions();
+                        }
                         if (graceTicksLeft > 0)
                         {
                             graceTicksLeft -= tickInterval;
