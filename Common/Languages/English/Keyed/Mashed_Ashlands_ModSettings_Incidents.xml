@@ -27,4 +27,6 @@
 	<Mashed_Ashlands_CliffRacerSwarmMinSize>The minimum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMinSize>
 	<Mashed_Ashlands_CliffRacerSwarmMaxSize>The maximum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMaxSize>
 	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer gains the asexual reproduction mutation upon reaching maturity: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
+	<!-- other -->
+	<Mashed_Ashlands_EnableAshRaids>Enable the emerge from ash raid strategy for certain factions.</Mashed_Ashlands_EnableAshRaids>
 </LanguageData>

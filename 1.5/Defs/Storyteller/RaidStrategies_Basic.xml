@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_EmergeFromAsh]==========-->
+	<RaidStrategyDef>
+		<defName>Mashed_Ashlands_EmergeFromAsh</defName>
+		<workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>Mechanoid</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(500, 0)</li>
+						<li>(1000, 0.25)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.8</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>Mashed_Ashlands_EmergeFromAsh</li>
+		</arriveModes>
+		<letterLabelEnemy>Raid</letterLabelEnemy>
+		<arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Friendlies</letterLabelFriendly>
+		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+</Defs>

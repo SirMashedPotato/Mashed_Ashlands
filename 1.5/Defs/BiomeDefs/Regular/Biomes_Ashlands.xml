@@ -12,8 +12,6 @@
 				<baseBiome>true</baseBiome>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<useAshlandsGenSteps>true</useAshlandsGenSteps>
-				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>

@@ -12,8 +12,6 @@
 				<preventRivers>true</preventRivers>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<useAshlandsGenSteps>true</useAshlandsGenSteps>
-				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>

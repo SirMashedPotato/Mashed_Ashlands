@@ -142,6 +142,7 @@
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalBlighted.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
+    <Compile Include="PawnsArrivalModeWorker\PawnsArrivalModeWorker_EmergeFromAsh.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="Settings\ResetSettingsDropdown.cs" />

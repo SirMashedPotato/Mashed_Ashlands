@@ -12,8 +12,6 @@
 				<preventRivers>true</preventRivers>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<useAshlandsGenSteps>true</useAshlandsGenSteps>
-				<allowAshlandsIncidents>true</allowAshlandsIncidents>
 				<forceBasalt>true</forceBasalt>
 				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
 				<cavePlants>

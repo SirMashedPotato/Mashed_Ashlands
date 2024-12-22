@@ -77,6 +77,9 @@ namespace Mashed_Ashlands
         public static int CliffRacerSwarmMaxSize => _instance.Mashed_Ashlands_CliffRacerSwarmMaxSize;
         public static float CliffRacerMutantChance => _instance.Mashed_Ashlands_CliffRacerMutantChance;
 
+        //other
+        public static bool EnableAshRaids => _instance.Mashed_Ashlands_EnableAshRaids;
+
         //ash storm
         public static bool AshStormCauseBuildup => _instance.Mashed_Ashlands_AshStormCauseBuildup;
         public static bool AshStormAffectsCaravan => _instance.Mashed_Ashlands_AshStormAffectsCaravan;
@@ -185,6 +188,9 @@ namespace Mashed_Ashlands
         public int Mashed_Ashlands_CliffRacerSwarmMinSize = Mashed_Ashlands_CliffRacerSwarmMinSize_def;
         public int Mashed_Ashlands_CliffRacerSwarmMaxSize = Mashed_Ashlands_CliffRacerSwarmMaxSize_def;
         public float Mashed_Ashlands_CliffRacerMutantChance = Mashed_Ashlands_CliffRacerMutantChance_def;
+
+        //other
+        public bool Mashed_Ashlands_EnableAshRaids = Mashed_Ashlands_EnableAshRaids_def;
 
         //ash storm
         public bool Mashed_Ashlands_AshStormCauseBuildup = Mashed_Ashlands_AshStormCauseBuildup_def;
@@ -295,6 +301,9 @@ namespace Mashed_Ashlands
         private static readonly int Mashed_Ashlands_CliffRacerSwarmMinSize_def = 3;
         private static readonly int Mashed_Ashlands_CliffRacerSwarmMaxSize_def = 30;
         private static readonly float Mashed_Ashlands_CliffRacerMutantChance_def = 0.05f;
+
+        //other
+        private static readonly bool Mashed_Ashlands_EnableAshRaids_def = true;
 
         //ash storm
         private static readonly bool Mashed_Ashlands_AshStormCauseBuildup_def = true;
@@ -411,6 +420,9 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerSwarmMinSize, "Mashed_Ashlands_CliffRacerSwarmMinSize", Mashed_Ashlands_CliffRacerSwarmMinSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerSwarmMaxSize, "Mashed_Ashlands_CliffRacerSwarmMaxSize", Mashed_Ashlands_CliffRacerSwarmMaxSize_def);
             Scribe_Values.Look(ref Mashed_Ashlands_CliffRacerMutantChance, "Mashed_Ashlands_CliffRacerMutantChance", Mashed_Ashlands_CliffRacerMutantChance_def);
+
+            //other
+            Scribe_Values.Look(ref Mashed_Ashlands_EnableAshRaids, "Mashed_Ashlands_EnableAshRaids", Mashed_Ashlands_EnableAshRaids_def);
 
             //ash storm
             Scribe_Values.Look(ref Mashed_Ashlands_AshStormCauseBuildup, "Mashed_Ashlands_AshStormCauseBuildup", Mashed_Ashlands_AshStormCauseBuildup_def);
@@ -535,6 +547,8 @@ namespace Mashed_Ashlands
             _instance.Mashed_Ashlands_CliffRacerSwarmMinSize = Mashed_Ashlands_CliffRacerSwarmMinSize_def;
             _instance.Mashed_Ashlands_CliffRacerSwarmMaxSize = Mashed_Ashlands_CliffRacerSwarmMaxSize_def;
             _instance.Mashed_Ashlands_CliffRacerMutantChance = Mashed_Ashlands_CliffRacerMutantChance_def;
+
+            _instance.Mashed_Ashlands_EnableAshRaids = Mashed_Ashlands_EnableAshRaids_def;
     }
 
         public static void ResetSettings_AshStorm()

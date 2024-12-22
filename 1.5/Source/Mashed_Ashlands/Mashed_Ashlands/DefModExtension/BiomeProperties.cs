@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
         public bool disableBeaches = false;
         public bool nullifyBeachTerrain = false;
         public bool forceHilliness = false;
-        public bool useAshlandsGenSteps = false;
+        public bool useAshlandsGenSteps = true;
 
         public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
@@ -38,7 +38,8 @@ namespace Mashed_Ashlands
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;
-        public bool allowAshlandsIncidents = false;
+        public bool allowAshlandsIncidents = true;
+        public bool allowAshRaids = true;
 
         public static BiomeProperties Get(Def def)
         {
