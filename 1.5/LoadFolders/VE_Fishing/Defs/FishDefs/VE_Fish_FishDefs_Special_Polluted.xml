@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RawGlowingAshFungus]==========-->
+	<VCE_Fishing.FishDef MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_RawGlowingAshFungus</defName>
+		<thingDef>Mashed_Ashlands_RawGlowingAshFungus</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
+		</allowedBiomes>
+		<commonality>1</commonality>
+		<baseFishingYield>10</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_RawGlowingScathecraw]==========-->
+	<VCE_Fishing.FishDef MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_RawGlowingScathecraw</defName>
+		<thingDef>Mashed_Ashlands_RawGlowingScathecraw</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
+		</allowedBiomes>
+		<commonality>1</commonality>
+		<baseFishingYield>10</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_MudcrabGlowingEgg]==========-->
+	<VCE_Fishing.FishDef MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_MudcrabGlowingEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+		</allowedBiomes>
+		<commonality>0.3</commonality>
+		<baseFishingYield>2</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_NetchGlowingEgg]==========-->
+	<VCE_Fishing.FishDef MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_NetchGlowingEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_NetchGlowingFertilized</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
+		</allowedBiomes>
+		<commonality>0.2</commonality>
+		<baseFishingYield>1</baseFishingYield>
+	</VCE_Fishing.FishDef>
+</Defs>

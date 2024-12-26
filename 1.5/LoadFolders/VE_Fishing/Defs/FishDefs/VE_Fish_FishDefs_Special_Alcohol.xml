@@ -5,6 +5,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>

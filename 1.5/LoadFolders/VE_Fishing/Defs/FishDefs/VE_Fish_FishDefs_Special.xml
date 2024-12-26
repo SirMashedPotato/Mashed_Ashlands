@@ -60,6 +60,7 @@
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
 		</allowedBiomes>
 		<commonality>0.3</commonality>
 		<baseFishingYield>2</baseFishingYield>
@@ -88,6 +89,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
@@ -138,6 +140,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
@@ -157,6 +160,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
@@ -176,6 +180,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
@@ -213,6 +218,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>
@@ -231,6 +237,7 @@
 		<fishSizeCategory>Special</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_RegularAshland</li>
 			<li>Mashed_Ashlands_VolcanicAshland</li>

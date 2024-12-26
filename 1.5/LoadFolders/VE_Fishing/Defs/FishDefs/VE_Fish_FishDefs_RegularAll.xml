@@ -24,6 +24,7 @@
 		<defName>Mashed_Ashlands_SmallSlaughterfish</defName>
 		<thingDef>Mashed_Ashlands_RawSmallSlaughterfish</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
+		<allowPolluted>true</allowPolluted>
 		<baseFishingYield>20</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<!-- ==========[Medium]==========-->
@@ -31,6 +32,7 @@
 		<defName>Mashed_Ashlands_MediumSlaughterfish</defName>
 		<thingDef>Mashed_Ashlands_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Medium</fishSizeCategory>
+		<allowPolluted>true</allowPolluted>
 		<baseFishingYield>6</baseFishingYield>
 	</VCE_Fishing.FishDef>
 	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_RegularAllFishBase">
@@ -44,6 +46,7 @@
 		<defName>Mashed_Ashlands_LargeSlaughterfish</defName>
 		<thingDef>Mashed_Ashlands_RawSlaughterfish</thingDef>
 		<fishSizeCategory>Large</fishSizeCategory>
+		<allowPolluted>true</allowPolluted>
 		<baseFishingYield>10</baseFishingYield>
 	</VCE_Fishing.FishDef>
 </Defs>

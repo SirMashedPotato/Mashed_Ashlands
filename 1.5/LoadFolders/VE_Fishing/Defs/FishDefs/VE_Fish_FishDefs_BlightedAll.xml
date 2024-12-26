@@ -2,11 +2,12 @@
 <Defs>
 	<!-- ==========[Small]==========-->
 	<VCE_Fishing.FishDef>
-		<defName>Mashed_Ashlands_FishBlighted_SmallSlaughterfishBlighted</defName>
+		<defName>Mashed_Ashlands_SmallSlaughterfishBlighted</defName>
 		<thingDef>Mashed_Ashlands_RawSmallSlaughterfish</thingDef>
 		<fishSizeCategory>Small</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
@@ -19,6 +20,7 @@
 		<fishSizeCategory>Medium</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
@@ -31,6 +33,7 @@
 		<fishSizeCategory>Large</fishSizeCategory>
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
 		<allowedBiomes>
 			<li>Mashed_Ashlands_BlightedAshland</li>
 		</allowedBiomes>
