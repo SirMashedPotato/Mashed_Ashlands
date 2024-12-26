@@ -8,7 +8,7 @@ namespace Mashed_Ashlands
     {
         protected override bool Satisfied(Pawn pawn)
         {
-            return Mashed_Ashlands_ModSettings.FlowerFeeding && animalDefs.Contains(pawn.def);
+            return Mashed_Ashlands_ModSettings.FlowerFeeding && animalDefs.Contains(pawn.def) && pawn.needs.food.CurLevelPercentage <= 0.7f;
         }
 
         public List<ThingDef> animalDefs;

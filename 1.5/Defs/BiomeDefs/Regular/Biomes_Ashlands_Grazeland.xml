@@ -162,6 +162,8 @@
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_TramaMass>
 			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
+			<!-- Polluted aesthetic plants -->
+			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<!-- Polluted trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
@@ -203,6 +205,7 @@
 			<Mashed_Ashlands_Toxbug MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Toxbug>
 			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_NetchGlowing>
 			<Mashed_Ashlands_NixOxGlowing MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_NixOxGlowing>
+			<Mashed_Ashlands_NixSteedGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NixSteedGlowing>
 			<Mashed_Ashlands_NixHoundGlowing MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_NixHoundGlowing>
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 		</pollutionWildAnimals>

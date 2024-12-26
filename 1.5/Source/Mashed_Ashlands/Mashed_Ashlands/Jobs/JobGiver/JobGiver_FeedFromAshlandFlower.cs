@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using Verse;
 using Verse.AI;
 
@@ -19,9 +20,10 @@ namespace Mashed_Ashlands
 
 		public bool AshlandFlower(Thing plant)
         {
-			return OnStartupUtility.ashlandFlowerPlants.Contains(plant.def);
+			return OnStartupUtility.ashlandFlowerPlants.Contains(plant.def) && plant is Plant p && p.Growth >= minGrowth;
         }
 
 		public float radius = 20f;
+		public float minGrowth = 0.7f;
 	}
 }

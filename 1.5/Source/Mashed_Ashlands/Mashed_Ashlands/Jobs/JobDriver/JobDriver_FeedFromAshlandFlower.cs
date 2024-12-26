@@ -11,15 +11,16 @@ namespace Mashed_Ashlands
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return true;
+            return pawn.Reserve(Plant, job);
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
+            float durationMult = 1f / pawn.GetStatValue(RimWorld.StatDefOf.EatingSpeed);
+            float durationTicks = Plant.def.ingestible.baseIngestTicks * durationMult;
             this.FailOnDespawnedOrNull(TargetIndex.A);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-            Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-            Toils_General.WaitWith(TargetIndex.A, DurationTicks, false, true);
+            yield return Toils_General.WaitWith(TargetIndex.A, (int)durationTicks, true, true);
             yield return Toils_General.Do(delegate
             {
                 pawn.needs.TryGetNeed(NeedDefOf.Food).CurLevel = pawn.needs.TryGetNeed(NeedDefOf.Food).MaxLevel;
@@ -27,7 +28,5 @@ namespace Mashed_Ashlands
             });
             yield break;
         }
-
-        private const int DurationTicks = 100;
     }
 }

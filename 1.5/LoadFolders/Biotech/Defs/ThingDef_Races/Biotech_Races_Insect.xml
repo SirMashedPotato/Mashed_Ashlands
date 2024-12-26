@@ -350,7 +350,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_NixSteedGlowing]========== -->
-	<!-- <ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
 		<defName>Mashed_Ashlands_NixSteedGlowing</defName>
 		<label>glowing nix-steed</label>
 		<description>A subspecies of nix-steed that has adapted to life in polluted regions. They have retained the ability to feed on nectar, though are not often sighted doing so, as flowering plants are a very rare sight in the polluted regions they call home. Instead they rely on absorbing nutrients directly from environmental pollution, which they do through modified ossicles. Even more aggressive than the common nix-steed, very few are brave enough to tame them.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nGlowing bix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-steed can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
@@ -396,82 +396,73 @@
 			<li>
 				<label>glowing nix-steed foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(129,255,0)</color>
-					<drawSize>1</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
 					<color>(139,139,139)</color>
-					<drawSize>1</drawSize>
+					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(129,255,0)</color>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingMale</texPath>
+					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(129,255,0)</color>
-					<drawSize>1.4</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>1.4</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.7</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(129,255,0)</color>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingMale</texPath>
+					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(129,255,0)</color>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing</texPath>
+					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_MissingTex/Mashed_Ashlands_MissingTex</texPath>
-					<color>(139,139,139)</color>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>2.1</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef> -->
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_ShalkGlowing]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_ShalkGlowing</defName>
