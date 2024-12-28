@@ -234,7 +234,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NixOxThingBase">
 		<defName>Mashed_Ashlands_NixOxGlowing</defName>
 		<label>glowing nix-ox</label>
-		<description>A subspecies of nix-ox that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, helping them survive on limited vegetation. Rather aggressive when compared to the common nix-ox, this subspecies will defend members of their herd even against the most dangerous of foes.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-ox can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<description>A subspecies of nix-ox that has adapted to life in polluted regions. They are able to absorb nutrients from environmental pollution through modified ossicles, helping them survive on limited vegetation. Rather aggressive when compared to the common nix-ox, this subspecies will defend members of their herd even against the most dangerous of foes.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing nix-ox can absorb nutrients from environmental pollution, decreasing their hunger fall rate.\n\n&lt;color=#4ce5e5&gt;Art done by pphhyy&lt;/color&gt;</description>
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PollutionProperties">
 				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
