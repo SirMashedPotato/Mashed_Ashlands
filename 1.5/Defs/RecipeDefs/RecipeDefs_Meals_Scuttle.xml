@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_CookScuttle]==========-->
-	<RecipeDef Name="Mashed_Ashlands_CookMealBase" Abstract="True">
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>	
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>ElectricStove</li>
-			<li>FueledStove</li>
-		</recipeUsers>
-		<workSkill>Cooking</workSkill>
-	</RecipeDef>
-	<!-- ==========[Mashed_Ashlands_CookScuttle]==========-->
 	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
 		<defName>Mashed_Ashlands_CookScuttle</defName>
 		<label>cook scuttle</label>
@@ -34,6 +22,7 @@
 				<li>Meat_Megaspider</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False"/>
 		<products>
 			<Mashed_Ashlands_Scuttle>1</Mashed_Ashlands_Scuttle>
 		</products>
@@ -64,6 +53,7 @@
 				<li>Meat_Megaspider</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False"/>
 		<products>
 			<Mashed_Ashlands_Scuttle>4</Mashed_Ashlands_Scuttle>
 		</products>

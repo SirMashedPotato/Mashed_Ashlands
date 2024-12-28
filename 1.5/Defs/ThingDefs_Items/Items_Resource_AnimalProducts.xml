@@ -39,7 +39,7 @@
 		</comps>
 		<ingestible>
 			<preferability>RawTasty</preferability>
-			<foodType>AnimalProduct, Fluid</foodType>
+			<foodType>AnimalProduct, Fluid, Meat</foodType>
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 	</ThingDef>
