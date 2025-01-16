@@ -26,7 +26,7 @@
 		<category>Misc</category>
 		<workerClass>Mashed_Ashlands.IncidentWorker_DaedrothPasses</workerClass>
 		<letterLabel>wandering daedroth</letterLabel>
-		<letterText>A daedroth has wandered into the area. A terrifying beast with a strange connection to psychic energy, a tame daedroth would be a valuable pet. Of course you could also hunt it instead, for its resistant hide. Of course the daedroth may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterText>A daedroth has wandered into the area. A terrifying beast with a strange connection to psychic energy, a tame daedroth would be a valuable pet... or its resistant hide may prove more useful. Of course the daedroth may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
 		<letterDef>NeutralEvent</letterDef>
 		<baseChance>0.6</baseChance>
 		<minRefireDays>15</minRefireDays>
@@ -38,7 +38,7 @@
 		<category>Misc</category>
 		<workerClass>Mashed_Ashlands.IncidentWorker_OgrimPasses</workerClass>
 		<letterLabel>wandering ogrim</letterLabel>
-		<letterText>A large ogrim has wandered into the area. A terrifying beast of untold strength, a tame ogrim would be a valuable pet. Of course you could also hunt it instead, for its resistant hide. Of course the ogrim may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterText>A large ogrim has wandered into the area. A terrifying beast of untold strength, a tame ogrim would be a valuable pet... or its resistant hide may prove more useful. Of course the ogrim may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
 		<letterDef>NeutralEvent</letterDef>
 		<baseChance>0.6</baseChance>
 		<minRefireDays>15</minRefireDays>
