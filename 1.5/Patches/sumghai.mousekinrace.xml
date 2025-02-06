@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mousekin Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Mousekin_Beehive"]/modExtensions/li[@Class="MousekinRace.BeehiveValidFlowersExtension"]/validFlowerPlantDefs</xpath>
+					<value>
+						<li>Mashed_Ashlands_Plant_AshenHeatherFlower</li>
+						<li>Mashed_Ashlands_Plant_AshlandPitcher</li>
+						<li>Mashed_Ashlands_Plant_BlackAntherflower</li>
+						<li>Mashed_Ashlands_Plant_GoldenSedgeflower</li>
+						<li>Mashed_Ashlands_Plant_HornLilyflower</li>
+						<li>Mashed_Ashlands_MeadowFlowerBlue</li>
+						<li>Mashed_Ashlands_MeadowFlowerRed</li>
+						<li>Mashed_Ashlands_LavaBloom</li>
+						<li>Mashed_Ashlands_Plant_LavaCactus</li>
+						<li>Mashed_Ashlands_Plant_Nirthflyflower</li>
+						<li>Mashed_Ashlands_Plant_NobleSedgeflower</li>
+						<li>Mashed_Ashlands_Plant_Stoneflower</li>
+						<li>Mashed_Ashlands_Plant_WillowFlower</li>
+						<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_SporangiumFlowerGreen</li>
+						<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_SporangiumFlowerBlue</li>
+						<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_SporangiumFlowerOrange</li>
+						<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_SporangiumFlowerWhite</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
