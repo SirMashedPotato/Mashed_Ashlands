@@ -27,8 +27,8 @@
 		<tickerType>Rare</tickerType>
 		<terrainComps>
 			<li Class="VFECore.TerrainCompProperties_HeatPush">
-				<pushAmount>20</pushAmount>
-				<targetTemp>120</targetTemp>
+				<pushAmount>999</pushAmount>
+				<targetTemp>999</targetTemp>
 			</li>
 			<li Class="VFECore.TerrainCompProperties_Glower">
 				<glowRadius>4</glowRadius>
