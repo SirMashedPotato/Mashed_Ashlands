@@ -45,7 +45,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<MedicineHerbal>40</MedicineHerbal>
+			<MedicineHerbal>20</MedicineHerbal>
 		</products>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
 	</RecipeDef>
