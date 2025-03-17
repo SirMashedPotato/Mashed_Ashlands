@@ -13,21 +13,6 @@
 						<li>Mashed_Ashlands_NetchLeather</li>
 					</value>
 				</li>
-				<!-- ==========[Crafting flour]==========-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="DankPyon_CraftFlour" or defName="DankPyon_CraftFlourBulk"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Mashed_Ashlands_RawMeadowRye</li>
-						<li>Mashed_Ashlands_RawWickwheat</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName = "DankPyon_CraftFlour" or defName="DankPyon_CraftFlourBulk"]/ingredients/li/filter/thingDefs[li="DankPyon_RawWheat"]</xpath>
-					<value>
-						<li>Mashed_Ashlands_RawMeadowRye</li>
-						<li>Mashed_Ashlands_RawWickwheat</li>
-					</value>
-				</li>
 				<!-- ==========[Crafting sugar]==========-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RecipeDef[defName="DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/fixedIngredientFilter/thingDefs</xpath>

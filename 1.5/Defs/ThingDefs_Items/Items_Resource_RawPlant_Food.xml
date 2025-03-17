@@ -177,6 +177,9 @@
 		<ingestible>
 			<foodType>Seed</foodType>
 		</ingestible>
+		<thingCategories>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Cereal</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>30</daysToRotStart>
@@ -215,6 +218,9 @@
 		<ingestible>
 			<foodType>Seed</foodType>
 		</ingestible>
+		<thingCategories>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Cereal</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>30</daysToRotStart>
