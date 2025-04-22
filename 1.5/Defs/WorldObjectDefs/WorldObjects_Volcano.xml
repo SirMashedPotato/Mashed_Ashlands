@@ -71,51 +71,39 @@
 						<durationDays>0</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>20</weight>
+						<sendLetter>false</sendLetter>
+						<sendEndMessage>false</sendEndMessage>
+						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<durationDays>0.5~5</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>5</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
 						<durationDays>1~5</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<durationDays>3~10</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>1</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 				</potentialConditions>
 			</li>
@@ -184,69 +172,51 @@
 						<durationDays>0</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>15</weight>
+						<sendLetter>false</sendLetter>
+						<sendEndMessage>false</sendEndMessage>
+						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<durationDays>1~10</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>5</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
 						<durationDays>1~5</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
 						<durationDays>2~10</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
 						<durationDays>0.2~0.4</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
 						<durationDays>5~15</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>5</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
 						<durationDays>3~15</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 				</potentialConditions>
 			</li>
@@ -315,60 +285,45 @@
 						<durationDays>0</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>15</weight>
+						<sendLetter>false</sendLetter>
+						<sendEndMessage>false</sendEndMessage>
+						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
 						<durationDays>1~5</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>4</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_AshStorm_Blighted</conditionDef>
 						<durationDays>1~5</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>4</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
 						<durationDays>2~10</durationDays>
 						<graceDaysAfter>3~15</graceDaysAfter>
 						<weight>2</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>1</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_DenseAshCloudsImpenetrable</conditionDef>
 						<durationDays>3~15</durationDays>
 						<graceDaysAfter>2~10</graceDaysAfter>
 						<weight>3</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
 						<durationDays>0.1~0.3</durationDays>
 						<graceDaysAfter>1~5</graceDaysAfter>
 						<weight>2</weight>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 					<li>
 						<conditionDef>Mashed_Ashlands_PsychicEruption</conditionDef>
@@ -376,9 +331,6 @@
 						<graceDaysAfter>5~15</graceDaysAfter>
 						<weight>1</weight>
 						<minVolcanoCategory>6</minVolcanoCategory>
-						<sendLetter>true</sendLetter>
-						<sendEndMessage>true</sendEndMessage>
-						<countAsIncident>true</countAsIncident>
 					</li>
 				</potentialConditions>
 			</li>

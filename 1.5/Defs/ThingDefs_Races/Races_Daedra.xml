@@ -38,8 +38,8 @@
 	<!-- ==========[Mashed_Ashlands_Daedroth]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
 		<defName>Mashed_Ashlands_Daedroth</defName>
-		<label>daedroth</label>
-		<description>A large reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Their beastial appearance hides a surprising level of intelligence, and they are seemingly even capable of manipuating psychic energy, albeit in a relatively simple manner.\n\nSome cultures believe daedroth are the result of some eccentric scientists attempt at making a living weapon. While others believe that daedroth are actually an otherworldly being from another realm.\n\n&lt;color=#E5E54C&gt;Psychicbloom&lt;/color&gt;\nDaedroth are able to form, and throw, explosive psychic projectiles. Each individual daedroth has an affinity towards a single element, and will form its psychicbloom into that element. This ability can be manually activated.</description>
+		<label>vagrant daedroth</label>
+		<description>A large reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Their beastial appearance hides a surprising level of intelligence, and they are seemingly even capable of manipuating psychic energy, albeit in a relatively simple manner.\n\nSome cultures believe vagrant daedroth are the remnants of an eccentric scientists attempt at making a living weapon. While others believe they are the descendants of otherworldly beings from another realm.\n\n&lt;color=#E5E54C&gt;Psychicbloom&lt;/color&gt;\nVagrant daedroth are able to form, and throw, explosive psychic projectiles. Each individual daedroth has an affinity towards a single element, and will form its psychicbloom into that element. This ability can be manually activated.</description>
 		<descriptionHyperlinks>
 			<AbilityDef>Mashed_Ashlands_DaedrothFirebloom</AbilityDef>
 			<AbilityDef>Mashed_Ashlands_DaedrothShockbloom</AbilityDef>
@@ -162,14 +162,14 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Daedroth</defName>
-		<label>daedroth</label>
+		<label>vagrant daedroth</label>
 		<race>Mashed_Ashlands_Daedroth</race>
 		<combatPower>300</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>daedroth spawn</label>
+				<label>vagrant daedroth spawn</label>
 				<labelPlural>daedroth spawn</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth</texPath>
@@ -217,8 +217,8 @@
 	<!-- ==========[Mashed_Ashlands_Ogrim]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
 		<defName>Mashed_Ashlands_Ogrim</defName>
-		<label>ogrim</label>
-		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe ogrim are the result of some eccentric scientists attempt at making a living weapon. While others believe that ogrim are actually an otherworldly being from another realm.\n\n&lt;color=#E5E54C&gt;Belly Drum&lt;/color&gt;\nOgrim are able to slap their belly, kicking their metabolism into overdrive, and causing wounds to rapidly heal. This ability can be manually activated.</description>
+		<label>vagrant ogrim</label>
+		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an vagrant ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe vagrant ogrim are the remnants of an eccentric scientists attempt at making a living weapon. While others believe they are the descendants of otherworldly beings from another realm.\n\n&lt;color=#E5E54C&gt;Belly Drum&lt;/color&gt;\nVagrant ogrim are able to slap their belly, kicking their metabolism into overdrive, and causing wounds to rapidly heal. This ability can be manually activated.</description>
 		<descriptionHyperlinks>
 			<AbilityDef>Mashed_Ashlands_OgrimBellyDrum</AbilityDef>
 		</descriptionHyperlinks>
@@ -321,7 +321,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Ogrim</defName>
-		<label>ogrim</label>
+		<label>vagrant ogrim</label>
 		<race>Mashed_Ashlands_Ogrim</race>
 		<combatPower>500</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
@@ -332,7 +332,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
-				<label>ogrim spawn</label>
+				<label>vagrant ogrim spawn</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
 					<drawSize>1.6</drawSize>
@@ -379,8 +379,8 @@
 	<!-- ==========[Mashed_Ashlands_Scamp]========== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Scamp</defName>
-		<label>scamp</label>
-		<description>A small monkey-like creature, that can rarely be found in ashland regions. Considered quite intelligent, some scamp have even been known to mimic speech, though it's debatable whether they actually understand what they're saying.\n\nWhile too small to actually haul a large amount of items, a scamp taught how to haul may decide to clean nearby groups of filth. Of course the act of training a scamp may also inadvertently teach it how to insult others.\n\nSome cultures believe scamp are the result of some eccentric scientists experiments. While others believe that scamp are actually an otherworldly being from another realm.</description>
+		<label>vagrant scamp</label>
+		<description>A small monkey-like creature, that can rarely be found in ashland regions. Considered quite intelligent, some vagrant scamp have even been known to mimic speech, though it's debatable whether they actually understand what they're saying.\n\nWhile too small to actually haul a large amount of items, a vagrant scamp taught how to haul may decide to clean nearby groups of filth. Of course the act of training a scamp may also inadvertently teach it how to insult others.\n\nSome cultures believe vagrant scamp are the remnants of an eccentric scientists experiments. While others believe they are the descendants of otherworldly beings from another realm.</description>
 		<statBases>
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 			<CleaningSpeed>0.8</CleaningSpeed>
@@ -478,14 +478,14 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Scamp</defName>
-		<label>scamp</label>
+		<label>vagrant scamp</label>
 		<race>Mashed_Ashlands_Scamp</race>
 		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>scampling</label>
+				<label>vagrant scampling</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Scamp/Mashed_Ashlands_Scamp</texPath>
 					<drawSize>0.95</drawSize>

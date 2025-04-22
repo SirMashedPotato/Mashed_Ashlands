@@ -1,28 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Lava]==========-->
-	<VFECore.ActiveTerrainDef ParentName="NaturalTerrainBase" Name="Mashed_Ashlands_LavaBase">
+	<VFECore.ActiveTerrainDef ParentName="Mashed_Ashlands_LavaBase">
 		<defName>Mashed_Ashlands_Lava</defName>
-		<label>lava</label>
-		<texturePath>Terrain/Surfaces/Mashed_Ashlands_Lava</texturePath>
-		<!--<pollutedTexturePath>Terrain/Surfaces/WaterShallowRampPolluted</pollutedTexturePath>-->
-		<fertility>0</fertility>
-		<passability>Impassable</passability>
-		<pathCost>300</pathCost>
-		<changeable>false</changeable>
-		<avoidWander>true</avoidWander>
-		<holdSnow>false</holdSnow>
-		<extraDeteriorationFactor>3</extraDeteriorationFactor>
-		<filthAcceptanceMask>
-			<li>None</li>
-		</filthAcceptanceMask>
-		<tags>
-			<li>Mashed_Ashlands_Lava</li>
-			<li>PF_TerrainTag_Lava</li>
-		</tags>
-		<affordances>
-			<li MayRequire="biomesteam.biomescore">BMT_TerrainAffordance_Lava</li>
-		</affordances>
 		<!-- VE/ReGrowth nodes -->
 		<tickerType>Rare</tickerType>
 		<terrainComps>

@@ -116,6 +116,7 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
     <Compile Include="DefOf\WeatherDefOf.cs" />
+    <Compile Include="Def\VolcanicConditionDef.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
     <Compile Include="GameCondition\GameCondition_DebrisRain.cs" />
     <Compile Include="GameCondition\GameCondition_Earthquake.cs" />
@@ -214,6 +215,8 @@
     <Compile Include="Utility\PlantPropsUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
+    <Compile Include="VolcanicEventWorker\Caravan\VEW_AshStorm.cs" />
+    <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />

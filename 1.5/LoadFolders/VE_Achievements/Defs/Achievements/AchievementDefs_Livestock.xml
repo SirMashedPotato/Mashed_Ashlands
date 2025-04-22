@@ -274,7 +274,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_TameDaedroth</defName>
 		<label>Make Sure You Don't Smile at it</label>
-		<description>Tame a daedroth</description>
+		<description>Tame a vagrant daedroth</description>
 		<tracker Class="AchievementsExpanded.KindDefTracker">
 			<kindDefs>
 				<li>
@@ -290,7 +290,7 @@
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_TameOgrim</defName>
 		<label>Say Hello to my Little Friend</label>
-		<description>Tame an ogrim</description>
+		<description>Tame a vagrant ogrim</description>
 		<tracker Class="AchievementsExpanded.KindDefTracker">
 			<kindDefs>
 				<li>

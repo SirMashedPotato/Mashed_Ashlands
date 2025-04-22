@@ -58,8 +58,8 @@
 	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_DaedrothFertilized</defName>
-		<label>daedroth egg (fert.)</label>
-		<description>A fertilized daedroth egg. If all goes well, it should hatch into a baby daedroth. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild daedroth eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<label>vagrant daedroth egg (fert.)</label>
+		<description>A fertilized vagrant daedroth egg. If all goes well, it should hatch into a baby vagrant daedroth. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild daedroth eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(158,148,138)</color>
@@ -333,8 +333,8 @@
 	<!-- ==========[Mashed_Ashlands_Egg_OgrimFertilized]==========-->
 	<ThingDef ParentName="EggFertBase">
 		<defName>Mashed_Ashlands_Egg_OgrimFertilized</defName>
-		<label>ogrim egg (fert.)</label>
-		<description>A fertilized ogrim egg. If all goes well, it should hatch into a baby ogrim. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild ogrim eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<label>vagrant ogrim egg (fert.)</label>
+		<description>A fertilized vagrant ogrim egg. If all goes well, it should hatch into a baby vagrant ogrim. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild ogrim eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(158,148,138)</color>
