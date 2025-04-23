@@ -177,6 +177,7 @@
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_KreshweedPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
