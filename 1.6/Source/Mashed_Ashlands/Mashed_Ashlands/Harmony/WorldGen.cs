@@ -10,6 +10,7 @@ namespace Mashed_Ashlands
     /// <summary>
     /// Restricts basalt to Ashland biomes.
     /// </summary>
+   /*
     [HarmonyPatch(typeof(World))]
     [HarmonyPatch("NaturalRockTypesIn")]
     public static class World_NaturalRockTypesIn_Patch
@@ -50,11 +51,12 @@ namespace Mashed_Ashlands
            
         }
     }
-
+   */
     /// <summary>
     /// Actually prevents rivers from generating on certain ashland biomes on the world map.
     /// Unlike the vanilla field that just prevents them on the player map.
     /// </summary>
+    /*
     [HarmonyPatch(typeof(WorldGenStep_Rivers))]
     [HarmonyPatch("ExtendRiver")]
     public static class WorldGenStep_Rivers_ExtendRiver_Patch
@@ -71,12 +73,13 @@ namespace Mashed_Ashlands
             return true;
         }
     }
-
+    */
     /// <summary>
     /// Used Zombieland as a starting point, thanks Andreas Pardeike!
     /// Adds a new page during scenario setup, specifically for ashland world gen settings
     /// </summary>
-    [HarmonyPatch(typeof(PageUtility))]
+    /*
+    [HarmonyPatch(typeof(PageUtility))] TODO figure out how vanilla do now
     [HarmonyPatch("StitchedPages")]
     public static class CreateWorldParams_DoWindowContents_Patch
     {
@@ -89,4 +92,5 @@ namespace Mashed_Ashlands
             }
         }
     }
+    */
 }

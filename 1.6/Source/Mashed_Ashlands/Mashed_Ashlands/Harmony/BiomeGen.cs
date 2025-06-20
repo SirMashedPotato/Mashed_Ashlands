@@ -8,6 +8,7 @@ namespace Mashed_Ashlands
     /// <summary>
     /// Replaces terrain with different terrain.
     /// </summary>
+    /*
     [HarmonyPatch(typeof(CompTerrainPumpDry))]
     [HarmonyPatch("GetTerrainToDryTo")]
     public static class GetTerrainToDryTo_Patch
@@ -29,11 +30,13 @@ namespace Mashed_Ashlands
             }
         }
     }
+    */
 
     /// <summary>
     /// Allows for custom terrain gen
     /// Largely copy pasta of GenStep_CavesTerrain.Generate
     /// </summary>
+    /*
     [HarmonyPatch(typeof(GenStep_CavesTerrain))]
     [HarmonyPatch("Generate")]
     public static class GenStep_CavesTerrain_Generate_Patch
@@ -71,10 +74,12 @@ namespace Mashed_Ashlands
             return true;
         }
     }
+    */
 
     /// <summary>
     /// Replaces road terrain with different terrain.
     /// </summary>
+    /*
     [HarmonyPatch(typeof(RoadDefGenStep_Place))]
     [HarmonyPatch("Place")]
     public static class RoadDefGenStep_Place_Place_Patch
@@ -96,11 +101,12 @@ namespace Mashed_Ashlands
             }
         }
     }
-
+    */
 
     /// <summary>
     /// Disables the generation of beaches for specific biomes
     /// </summary>
+    /*
     [HarmonyPatch(typeof(BeachMaker))]
     [HarmonyPatch("Init")]
     public static class BeachMaker_Init_Patch
@@ -116,10 +122,12 @@ namespace Mashed_Ashlands
             return true;
         }
     }
+    */
 
     /// <summary>
     /// Prevents BeachMaker placing sand for specific biomes
     /// </summary>
+   /*
     [HarmonyPatch(typeof(BeachMaker))]
     [HarmonyPatch("BeachTerrainAt")]
     public static class BeachMaker_BeachTerrainAt_Patch
@@ -137,10 +145,12 @@ namespace Mashed_Ashlands
             }
         }
     }
+   */
 
     /// <summary>
     /// Increases the number of geysers for specific biomes.
     /// </summary>
+    /*
     [HarmonyPatch(typeof(GenStep_Scatterer))]
     [HarmonyPatch("CalculateFinalCount")]
     public static class GenStep_Scatterer_CalculateFinalCount_Patch
@@ -158,4 +168,5 @@ namespace Mashed_Ashlands
             }
         }
     }
+    */
 }

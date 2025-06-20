@@ -8,39 +8,39 @@ namespace Mashed_Ashlands
 {
     public static class WorldGenUtility
     {
-        public static List<WorldObject> GetWorldVolcanos()
+        public static List<WorldObject> GetWorldVolcanosForLayer(PlanetLayer planetLayer)
         {
             WorldObjectsHolder worldObjectsHolder = Find.WorldObjects;
-            return worldObjectsHolder.AllWorldObjects.Where(x => x is Volcano).ToList();
+            return worldObjectsHolder.AllWorldObjectsOnLayer(planetLayer).Where(x => x is Volcano).ToList();
         }
         
-        public static float DistanceToClosestVolcano(int tileID)
+        public static float DistanceToClosestVolcano(PlanetTile tile)
         {
-            List<WorldObject> volcanos = GetWorldVolcanos();
+            List<WorldObject> volcanos = GetWorldVolcanosForLayer(tile.Layer);
             if (!volcanos.NullOrEmpty())
             {
-                return DistanceToClosestWorldObjects(tileID, volcanos);
+                return DistanceToClosestWorldObjects(tile, volcanos);
             }
             return 999f;
         }
 
-        public static float DistanceToClosestWorldObject(int tileID, WorldObjectDef worldObject)
+        public static float DistanceToClosestWorldObject(PlanetTile tile, WorldObjectDef worldObject)
         {
             WorldObjectsHolder worldObjectsHolder = Find.WorldObjects;
             List<WorldObject> volcanos = new List<WorldObject>(worldObjectsHolder.AllWorldObjects.Where(x => x.def == worldObject));
             if (!volcanos.NullOrEmpty())
             {
-                return DistanceToClosestWorldObjects(tileID, volcanos);
+                return DistanceToClosestWorldObjects(tile, volcanos);
             }
             return -1f;
         }
 
-        public static float DistanceToClosestWorldObjects(int tileID, List<WorldObject> worldObjects)
+        public static float DistanceToClosestWorldObjects(PlanetTile tile, List<WorldObject> worldObjects)
         {
             float distance = -1f;
             for (int i = 0; i != worldObjects.Count; i++)
             {
-                float distance2 = DistanceToWorldObject(tileID, worldObjects[i].Tile);
+                float distance2 = DistanceToWorldObject(tile, worldObjects[i].Tile);
                 if (distance == -1 || distance > distance2)
                 {
                     distance = distance2;
@@ -49,15 +49,15 @@ namespace Mashed_Ashlands
             return distance;
         }
 
-        public static float DistanceToWorldObject(int tileID, int objectTile)
+        public static float DistanceToWorldObject(PlanetTile tile, PlanetTile objectTile)
         {
-            WorldGrid worldGrid = Find.WorldGrid;
-            return worldGrid.ApproxDistanceInTiles(tileID, objectTile);
+            PlanetLayer planetLayer = tile.Layer;
+            return planetLayer.ApproxDistanceInTiles(tile, objectTile);
         }
 
-        public static WorldObject ClosestVolcano(int tileID)
+        public static WorldObject ClosestVolcano(PlanetTile tile)
         {
-            List<WorldObject> volcanos = GetWorldVolcanos();
+            List<WorldObject> volcanos = GetWorldVolcanosForLayer(tile.Layer);
             if (!volcanos.NullOrEmpty())
             {
                 WorldGrid worldGrid = Find.WorldGrid;
@@ -65,7 +65,7 @@ namespace Mashed_Ashlands
                 WorldObject closestVolcano = null;
                 foreach(WorldObject volcano in volcanos)
                 {
-                    float distance2 = worldGrid.ApproxDistanceInTiles(tileID, volcano.Tile);
+                    float distance2 = worldGrid.ApproxDistanceInTiles(tile, volcano.Tile);
                     if (distance2 < closestDistance)
                     {
                         closestDistance = distance2;

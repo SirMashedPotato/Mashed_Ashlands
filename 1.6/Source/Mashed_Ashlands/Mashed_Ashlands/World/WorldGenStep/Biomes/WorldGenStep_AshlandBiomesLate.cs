@@ -7,20 +7,19 @@ namespace Mashed_Ashlands
     {
         public override int SeedPart => 48151623;
 
-        public static void DebugGenerate(string seed)
+        public static void DebugGenerate(string seed, PlanetLayer layer)
         {
             WorldGenStep_AshlandBiomesLate instance = new WorldGenStep_AshlandBiomesLate();
-            instance.GenerateFresh(seed);
+            instance.GenerateFresh(seed, layer);
         }
 
-        public override void GenerateFresh(string seed)
+        public override void GenerateFresh(string seed, PlanetLayer layer)
         {
-            WorldGrid grid = Find.WorldGrid;
-            for (int i = 0; i < grid.TilesCount; i++)
+            for (int i = 0; i < layer.TilesCount; i++)
             {
-                if (!grid[i].WaterCovered && OnStartupUtility.baseAshlandBiomeDefs.Contains(grid[i].biome))
+                if (!layer[i].WaterCovered && OnStartupUtility.baseAshlandBiomeDefs.Contains(layer[i].PrimaryBiome))
                 {
-                    grid[i].biome = AshlandBiomeFrom(grid[i], i, OnStartupUtility.lateAshlandBiomeDefs);
+                    layer[i].PrimaryBiome = AshlandBiomeFrom(layer[i], i, layer, OnStartupUtility.lateAshlandBiomeDefs);
                 }
             }
         }

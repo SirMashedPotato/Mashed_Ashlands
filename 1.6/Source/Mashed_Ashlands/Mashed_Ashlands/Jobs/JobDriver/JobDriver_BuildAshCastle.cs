@@ -22,7 +22,7 @@ namespace Mashed_Ashlands
                     workLeft = BaseWorkAmount;
                 }
             };
-            doWork.tickAction = delegate ()
+            doWork.tickIntervalAction = delegate (int delta)
 			{
 				workLeft -= doWork.actor.GetStatValue(RimWorld.StatDefOf.ConstructionSpeed, true) * 1.7f;
 				if (workLeft <= 0f)
@@ -33,14 +33,13 @@ namespace Mashed_Ashlands
 					ReadyForNextToil();
 					return;
 				}
-				JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.EndJob, 1f, null);
+				JoyUtility.JoyTickCheckEnd(pawn, delta);
 			};
 			doWork.defaultCompleteMode = ToilCompleteMode.Never;
 			doWork.FailOn(() => !JoyUtility.EnjoyableOutsideNow(pawn, null));
 			doWork.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
 			doWork.activeSkill = () => SkillDefOf.Construction;
 			yield return doWork;
-			yield break;
 		}
 
 		public override void ExposeData()
@@ -50,7 +49,6 @@ namespace Mashed_Ashlands
 		}
 
 		private float workLeft = -1000f;
-
 		protected const int BaseWorkAmount = 2300;
 	}
 }

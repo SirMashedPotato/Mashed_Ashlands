@@ -8,18 +8,21 @@ namespace Mashed_Ashlands
 {
     public class ThoughtWorker_PsychicEruption : ThoughtWorker
     {
-        public List<WorldObject> ValidVolcanos
+        public List<WorldObject> ValidVolcanos(PlanetLayer planetLayer)
         {
-            get
+            if (cachedLayer == null || planetLayer != cachedLayer)
             {
-                if (validVolcanos.NullOrEmpty())
-                {
-                    validVolcanos = WorldGenUtility.GetWorldVolcanos().Where(x => x.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct && x.GetComponent<WorldObjectComp_RandomConditionCauser>().Props.potentialConditions.Where(y => y.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption).Any()).ToList();
-                }
-                return validVolcanos;
+                validVolcanos.Clear();
+                cachedLayer = planetLayer;
             }
+            if (validVolcanos.NullOrEmpty())
+            {
+                validVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(planetLayer).Where(x => x.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct && x.GetComponent<WorldObjectComp_RandomConditionCauser>().Props.potentialConditions.Where(y => y.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption).Any()).ToList();
+            }
+            return validVolcanos;
         }
 
+        private PlanetLayer cachedLayer = null;
         private List<WorldObject> validVolcanos;
 
 
@@ -36,7 +39,7 @@ namespace Mashed_Ashlands
             {
                 if (p.IsCaravanMember())
                 {
-                    foreach (Volcano volcano in ValidVolcanos.Cast<Volcano>())
+                    foreach (Volcano volcano in ValidVolcanos(p.Map.Tile.Layer).Cast<Volcano>())
                     {
                         WorldObjectComp_RandomConditionCauser conditionComp = volcano.GetComponent<WorldObjectComp_RandomConditionCauser>();
                         if (conditionComp.CurrentConditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption)

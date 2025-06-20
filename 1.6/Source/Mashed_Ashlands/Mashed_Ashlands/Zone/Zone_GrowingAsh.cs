@@ -103,7 +103,7 @@ namespace Mashed_Ashlands
 				{
 					stringBuilder.AppendLine("OutdoorGrowingPeriod".Translate() + ": " + Zone_Growing.GrowingQuadrumsDescription(Map.Tile));
 				}
-				if (PlantUtility.GrowthSeasonNow(c, Map, true))
+				if (PlantUtility.GrowthSeasonNow(c, Map, PlantDefToGrow))
 				{
 					stringBuilder.Append("GrowSeasonHereNow".Translate());
 				}

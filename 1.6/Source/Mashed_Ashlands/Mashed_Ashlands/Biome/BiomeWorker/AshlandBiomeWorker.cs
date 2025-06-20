@@ -11,20 +11,25 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Ensure biomes only spawn my way, not the vanilla way 
         /// </summary>
-        public override float GetScore(Tile tile, int tileID)
+        public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
             return -100;
         }
 
-        public abstract float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject = null);
+        public override bool CanPlaceOnLayer(BiomeDef biome, PlanetLayer layer)
+        {
+            return layer.Def == PlanetLayerDefOf.Surface;
+        }
+
+        public abstract float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null);
 
         /// <summary>
         /// Used for all Base type biomes
         /// </summary>
-        public float BaseBiomeWorker(int tileID, WorldObject sourceObject, BiomeDef biomeDef)
+        public float BaseBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject)
         {
             int maxDistance = WorldGenUtility.BiomeMaxDistanceForWorld();
-            float distanceToSourceObject = WorldGenUtility.DistanceToWorldObject(tileID, sourceObject.Tile);
+            float distanceToSourceObject = WorldGenUtility.DistanceToWorldObject(planetTile, sourceObject.Tile);
             if (distanceToSourceObject > maxDistance)
             {
                 return 0;
@@ -33,17 +38,17 @@ namespace Mashed_Ashlands
             if (!Mashed_Ashlands_ModSettings.EnableLegacyRegions)
             {
                 Perlin perlin = new Perlin(0.1, 2, 0.5, 6, 793900035, QualityMode.Medium);
-                float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+                float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(planetTile));
                 int extra = 0;
 
                 if (distanceToSourceObject > maxDistance / 2)
                 {
-                    List<int> neighbourTiles = new List<int>();
-                    Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
-                    foreach (int neighbourID in neighbourTiles)
+                    List<PlanetTile> neighbourTiles = new List<PlanetTile>();
+                    Find.WorldGrid.GetTileNeighbors(planetTile, neighbourTiles);
+                    foreach (PlanetTile neighbourID in neighbourTiles)
                     {
-                        Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
-                        if (neighbourTile != null && neighbourTile.biome == biomeDef)
+                        Tile neighbourTile = planetTile.Layer.Tiles[neighbourID];
+                        if (neighbourTile != null && neighbourTile.PrimaryBiome == biome)
                         {
                             extra++;
                         }
@@ -64,71 +69,9 @@ namespace Mashed_Ashlands
         }
 
         /// <summary>
-        /// Used for all Coast type biomes
+        /// Used for all Extra type biomes, these use perlin to generate
         /// </summary>
-        public float CoastBiomeWorker(int tileID, BiomeDef extraBiomeDef)
-        {
-            int numberCoastalTiles = 0;
-            List<int> neighbourTiles = new List<int>();
-            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
-            foreach (int neighbourID in neighbourTiles)
-            {
-                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
-                if (neighbourTile != null)
-                {
-                    if (neighbourTile.WaterCovered || neighbourTile.biome == extraBiomeDef)
-                    {
-                        numberCoastalTiles++;
-                    }
-                }
-            }
-            if (numberCoastalTiles < 2)
-            {
-                return 0;
-            }
-            return Rand.Range(12, 18) + numberCoastalTiles;
-        }
-
-        /// <summary>
-        /// Used for all Island type biomes
-        /// </summary>
-        public float IslandBiomeWorker(int tileID, WorldObjectDef requiredVolcanoDef, BiomeDef biomeDef)
-        {
-            int maxDistance = Mashed_Ashlands_ModSettings.BiomesMaxDistance;
-            if (Mashed_Ashlands_ModSettings.BiomeScaleWithWorldSize)
-            {
-                maxDistance = (int)(maxDistance * ((Find.World.PlanetCoverage * 3) + 0.1f));
-                if (maxDistance < 10)
-                {
-                    maxDistance = 10;
-                }
-            }
-
-            float distanceToClosestVolcano = WorldGenUtility.DistanceToClosestWorldObject(tileID, requiredVolcanoDef);
-            if (distanceToClosestVolcano > maxDistance || distanceToClosestVolcano == -1)
-            {
-                return 0;
-            }
-            List<int> neighbourTiles = new List<int>();
-            Find.WorldGrid.GetTileNeighbors(tileID, neighbourTiles);
-            foreach (int neighbourID in neighbourTiles)
-            {
-                Tile neighbourTile = Find.WorldGrid.tiles[neighbourID];
-                if (neighbourTile != null)
-                {
-                    if (!neighbourTile.WaterCovered && neighbourTile.biome != biomeDef)
-                    {
-                        return 0;
-                    }
-                }
-            }
-            return Rand.Range(2, 8) * maxDistance / distanceToClosestVolcano;
-        }
-
-        /// <summary>
-        /// Used for all Extra type biomes
-        /// </summary>
-        public float ExtraBiomeWorker(Tile tile, int tileID, int perlinSeed = 35, float perlinCulling = 0.75f)
+        public float ExtraBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile, int perlinSeed = 35, float perlinCulling = 0.75f)
         {
             if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
@@ -136,7 +79,7 @@ namespace Mashed_Ashlands
             }
 
             Perlin perlin = new Perlin(0.1, 10, 0.6, 12, perlinSeed, QualityMode.Low);
-            float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+            float perlinValue = perlin.GetValue(Find.WorldGrid.GetTileCenter(planetTile));
 
             if (perlinValue <= perlinCulling)
             {
@@ -149,7 +92,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Arid type biomes
         /// </summary>
-        public float AridBiomeWorker(Tile tile)
+        public float AridBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
             if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
@@ -165,7 +108,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Grassland type biomes
         /// </summary>
-        public float GrasslandBiomeWorker(Tile tile)
+        public float GrasslandBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
             if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
@@ -189,7 +132,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Swamp type biomes
         /// </summary>
-        public float SwampBiomeWorker(Tile tile)
+        public float SwampBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
             if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
@@ -209,7 +152,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Mountain type biomes
         /// </summary>
-        public float MountainBiomeWorker(Tile tile)
+        public float MountainBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTilee)
         {
             if (tile.hilliness == Hilliness.Flat || tile.hilliness == Hilliness.SmallHills)
             {
@@ -221,7 +164,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Used for all Jungle type biomes
         /// </summary>
-        public float JungleBiomeWorker(Tile tile)
+        public float JungleBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
             if (tile.hilliness == Hilliness.Mountainous || tile.hilliness == Hilliness.Impassable)
             {
@@ -236,6 +179,32 @@ namespace Mashed_Ashlands
                 return 0f;
             }
             return 13 + (tile.rainfall / 300);
+        }
+
+        /// <summary>
+        /// Used for all Coast type biomes
+        /// </summary>
+        public float CoastBiomeWorker(BiomeDef biome, Tile tile, PlanetTile planetTile, BiomeDef extraBiomeDef)
+        {
+            int numberCoastalTiles = 0;
+            List<PlanetTile> neighbourTiles = new List<PlanetTile>();
+            Find.WorldGrid.GetTileNeighbors(planetTile, neighbourTiles);
+            foreach (PlanetTile neighbourID in neighbourTiles)
+            {
+                Tile neighbourTile = planetTile.Layer.Tiles[neighbourID];
+                if (neighbourTile != null)
+                {
+                    if (neighbourTile.WaterCovered || neighbourTile.PrimaryBiome == extraBiomeDef)
+                    {
+                        numberCoastalTiles++;
+                    }
+                }
+            }
+            if (numberCoastalTiles < 2)
+            {
+                return 0;
+            }
+            return Rand.Range(12, 18) + numberCoastalTiles;
         }
     }
 }

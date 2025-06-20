@@ -38,7 +38,7 @@ namespace Mashed_Ashlands
 		private bool TryFindCell(out IntVec3 cell, Map map)
 		{
 			int maxMineables = ThingSetMaker_Meteorite.MineablesCountRange.max;
-			return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.Mashed_Ashlands_VolcanicDebrisIncoming, map, out cell, 10, default, -1, true, false, false, false, true, true);
+			return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.Mashed_Ashlands_VolcanicDebrisIncoming, map, RimWorld.TerrainAffordanceDefOf.Walkable, out cell, alwaysAvoidColonists: true);
 		}
 
 		public int checkInterval;

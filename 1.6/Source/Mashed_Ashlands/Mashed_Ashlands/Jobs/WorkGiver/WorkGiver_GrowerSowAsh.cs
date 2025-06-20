@@ -49,10 +49,6 @@ namespace Mashed_Ashlands
 			{
 				return null;
 			}
-			if (!PlantUtility.GrowthSeasonNow(c, map, true))
-			{
-				return null;
-			}
 			if (wantedPlantDef == null)
 			{
 				wantedPlantDef = CalculateWantedPlantDef(c, map);
@@ -61,7 +57,12 @@ namespace Mashed_Ashlands
 					return null;
 				}
 			}
-			List<Thing> thingList = c.GetThingList(map);
+            if (!PlantUtility.GrowthSeasonNow(map, wantedPlantDef))
+            {
+                return null;
+            }
+
+            List<Thing> thingList = c.GetThingList(map);
 			Zone_GrowingAsh zone_Growing = c.GetZone(map) as Zone_GrowingAsh;
 			bool flag = false;
 			for (int i = 0; i < thingList.Count; i++)
@@ -196,7 +197,7 @@ namespace Mashed_Ashlands
 						j++;
 					}
 				}
-				if (!wantedPlantDef.CanNowPlantAt(c, map, false) || !PlantUtility.GrowthSeasonNow(c, map, true) || !pawn.CanReserve(c, 1, -1, null, forced))
+				if (!wantedPlantDef.CanNowPlantAt(c, map, false) || !PlantUtility.GrowthSeasonNow(c, map, wantedPlantDef) || !pawn.CanReserve(c, 1, -1, null, forced))
 				{
 					return null;
 				}

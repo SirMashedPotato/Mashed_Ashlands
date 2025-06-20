@@ -1,10 +1,11 @@
-﻿using RimWorld.Planet;
+﻿using RimWorld;
+using RimWorld.Planet;
 
 namespace Mashed_Ashlands
 {
     public class BiomeWorker_Ashlands : AshlandBiomeWorker
     {
-        public override float GetScore_Main(Tile tile, int tileID, WorldObject sourceObject)
+        public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null)
         {
             if (!Mashed_Ashlands_ModSettings.EnableStandardAshlands)
             {
@@ -18,7 +19,7 @@ namespace Mashed_Ashlands
             {
                 return -100f;
             }
-            return BaseBiomeWorker(tileID, sourceObject, BiomeDefOf.Mashed_Ashlands_Ashlands);
+            return BaseBiomeWorker(biome, tile, planetTile, sourceObject);
         }
     }
 }
