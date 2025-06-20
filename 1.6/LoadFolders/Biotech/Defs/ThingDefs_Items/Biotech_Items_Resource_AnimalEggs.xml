@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperGlowingFertilized</defName>
+		<label>glowing ash hopper egg (fert.)</label>
+		<description>A fertilised glowing ash hopper egg. If all goes well, it should hatch into a glowing ash hopper nymph. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,121,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_AshHopperGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabGlowingFertilized</defName>
+		<label>glowing mudcrab egg (fert.)</label>
+		<description>A fertilised glowing mudcrab egg. If all goes well, it should hatch into a baby glowing mudcrab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,141,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_MudcrabGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_NetchGlowingFertilized</defName>
+		<label>glowing netch egg (fert.)</label>
+		<description>A fertilised glowing netch egg. If all goes well, it should hatch into a glowing netch calf. It can be eaten raw, but it's much better cooked. As glowing netch are rather protective of their eggs, glowing netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(125,173,102)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NetchGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixHoundGlowingFertilized</defName>
+		<label>glowing nix-hound egg (fert.)</label>
+		<description>A fertilised glowing nix-hound egg. If all goes well, it should hatch into a glowing nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,94)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixHoundGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxGlowingFertilized</defName>
+		<label>glowing nix-ox egg (fert.)</label>
+		<description>A fertilised glowing nix-ox egg. If all goes well, it should hatch into a glowing nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixOxGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedGlowingFertilized</defName>
+		<label>glowing nix-steed egg (fert.)</label>
+		<description>A fertilised glowing nix-steed egg. If all goes well, it should hatch into a glowing nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(79,108,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixSteedGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkGlowingFertilized</defName>
+		<label>glowing shalk egg (fert.)</label>
+		<description>A fertilised glowing shalk egg. If all goes well, it should hatch into a baby glowing shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,161,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_ShalkGlowing</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ToxbugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ToxbugFertilized</defName>
+		<label>ashland toxbug egg (fert.)</label>
+		<description>A fertilised toxbug egg. If all goes well, it should hatch into a baby toxbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,181,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Toxbug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

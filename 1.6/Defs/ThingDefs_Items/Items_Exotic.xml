@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHiveCore]========== -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_FetcherflyHiveCore</defName>
+		<label>fetcherfly hive core</label>
+		<description>The heart of a fletcherfly hive, containing a single fetcherfly queen. Can be used to build a fetcherfly hive.\n\nBe warned that fetcherfly have no concept of ownership. While the hive may be yours, the fetcherfly living inside are certainly not.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Ashlands_FetcherflyHiveCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>558948233</analysisID>
+				<requiresMechanitor>false</requiresMechanitor>
+				<!-- Analyzable -->
+				<analysisDurationHours>0.5</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Fetcherfly hive core studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the fetcherfly hive core, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to 'safely' interact with fetcherfly.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<!-- Interactable -->
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateLabelString>Study...</activateLabelString>
+				<activateDescString>Study the fetcherfly hive core.</activateDescString>
+				<jobString>Study fetcherfly hive core</jobString>
+				<guiLabelString>Choose who should study this</guiLabelString>
+				<inspectString>Can be studied by a colonist.</inspectString>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

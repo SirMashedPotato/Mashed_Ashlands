@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ForestAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_ForestAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerForestAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_MeadowAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_MeadowAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerMeadowAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_MarshAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_MarshAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerMarshAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

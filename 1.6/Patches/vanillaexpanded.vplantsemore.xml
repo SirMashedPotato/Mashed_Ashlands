@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - More Plants</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef[defName="VCE_SandyGrowZoneTerrains"]/allowedTerrains</xpath>
+					<value>
+						<li>Mashed_Ashlands_AshSand</li>
+						<li>Mashed_Ashlands_RichAshSand</li>
+						<li>Mashed_Ashlands_AshSandVolcanic</li>
+						<li>Mashed_Ashlands_RichAshSandVolcanic</li>
+						<li>Mashed_Ashlands_AshSandBlighted</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef[defName="VCE_AquaticGrowZoneTerrains"]/allowedTerrains</xpath>
+					<value>
+						<li>Mashed_Ashlands_ShallowMarsh</li>
+						<li>Mashed_Ashlands_DeepMarsh</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

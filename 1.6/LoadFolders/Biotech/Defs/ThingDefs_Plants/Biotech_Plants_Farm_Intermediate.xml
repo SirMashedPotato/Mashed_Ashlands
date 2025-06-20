@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingParasolBush]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ParasolBushBase">
+		<defName>Mashed_Ashlands_Plant_GlowingParasolBush</defName>
+		<label>glowing parasol bush</label>
+		<description>A mutated breed of the parasol mushroom bush, adapted to grow in highly polluted environments. It has a much softer stem than its cousin, which can no longer be harvested for wood. The flesh however is perfectly edible, though the eerie green glow prevents many from even trying to eat it. Can only grow on ash rich ground that has been sufficiently polluted.</description>
+		<statBases>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingParasolBush</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>8</growDays>
+			<harvestYield>6</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawGlowingAshFungus</harvestedThingDef>
+			<harvestTag>Standard</harvestTag>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TramaMass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TramaShrubBase">
+		<defName>Mashed_Ashlands_Plant_TramaMass</defName>
+		<label>trama mass</label>
+		<description>A large mass of mutated trama roots, their growth greatly enhanced by high levels of pollution. The mass is so dense that you can't even walk through it, not that many would dare risk trying. Can only grow on ash rich ground that has been sufficiently polluted.</description>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+			<MaxHitPoints>140</MaxHitPoints>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>0.1</fillPercent>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_TramaMass</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>24</growDays>
+			<harvestedThingDef>Mashed_Ashlands_RawTramaRoot</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.6~2.4</visualSizeRange>
+			<harvestWork>300</harvestWork>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Scathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ScathecrawBase">
+		<defName>Mashed_Ashlands_Plant_GlowingScathecraw</defName>
+		<label>glowing scathecraw plant</label>
+		<description>A highly mutated scathecraw, typically found growing in polluted ashland regions. Its ability to thrive on polluted ash has allowed it to grow larger than the regular scathecraw, while at the same time barely affecting the flesh of the leaves. Can only grow on ash rich ground that has been sufficiently polluted.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GlowingScathecrawPlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<harvestYield>18</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawGlowingScathecraw</harvestedThingDef>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>1.1~1.9</visualSizeRange>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

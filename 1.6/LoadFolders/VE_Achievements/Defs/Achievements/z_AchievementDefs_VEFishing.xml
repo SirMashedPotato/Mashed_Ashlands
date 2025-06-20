@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_CollectSlaughterfish]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="vanillaexpanded.vcef">
+		<defName>Mashed_AchievementAshlands_CollectSlaughterfish</defName>
+		<label>Slaughterfish Slaughterer</label>
+		<description>Collect 333 ashland slaughterfish</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_RawSlaughterfish</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectSlaughterfish</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_HaveAClockworkFish]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="vanillaexpanded.vcef">
+		<defName>Mashed_AchievementAshlands_HaveAClockworkFish</defName>
+		<label>This Doesn't Look Edible</label>
+		<description>Obtain a strange fish</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_ClockworkFish</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_HaveAClockworkFish</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

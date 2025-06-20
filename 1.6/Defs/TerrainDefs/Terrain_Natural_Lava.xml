@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Lava]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_LavaBase">
+		<defName>Mashed_Ashlands_Lava</defName>
+		<modExtensions>
+			<li Class="BiomesCore.Locations.LavaTerrainDefExtension" MayRequire="biomesteam.biomescore">
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>120</heatPushMaxTemperature>
+				<overlightRadius>1</overlightRadius>
+				<glowRadius>3</glowRadius>
+				<glowColor>(132,43,0,0)</glowColor>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+</Defs>

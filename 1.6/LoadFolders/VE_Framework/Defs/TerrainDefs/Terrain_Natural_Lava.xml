@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Lava]==========-->
+	<VFECore.ActiveTerrainDef ParentName="Mashed_Ashlands_LavaBase">
+		<defName>Mashed_Ashlands_Lava</defName>
+		<!-- VE/ReGrowth nodes -->
+		<tickerType>Rare</tickerType>
+		<terrainComps>
+			<li Class="VFECore.TerrainCompProperties_HeatPush">
+				<pushAmount>999</pushAmount>
+				<targetTemp>999</targetTemp>
+			</li>
+			<li Class="VFECore.TerrainCompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(132,43,0,0)</glowColor>
+			</li>
+		</terrainComps>
+	</VFECore.ActiveTerrainDef>
+</Defs>

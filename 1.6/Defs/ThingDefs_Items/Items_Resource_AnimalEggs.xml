@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
+	<ThingDef ParentName="EggFertBase" Name="Mashed_Ashlands_EggFertBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsFertEgg</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase" Name="Mashed_Ashlands_InsectEggFertBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_InsectEgg</texPath>
+		</graphicData>
+		<ingestible>
+			<specialThoughtDirect>Mashed_Ashlands_AteInsectEggDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient>Mashed_Ashlands_AteInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_AlitFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_AlitFertilized</defName>
+		<label>alit egg (fert.)</label>
+		<description>A fertilised alit egg. If all goes well, it should hatch into a alit whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(124,138,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Alit</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperFertilized</defName>
+		<label>ash hopper egg (fert.)</label>
+		<description>A fertilised ash hopper egg. If all goes well, it should hatch into an ash hopper nymph. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(121,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_AshHopper</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>Mashed_Ashlands_Egg_DaedrothFertilized</defName>
+		<label>vagrant daedroth egg (fert.)</label>
+		<description>A fertilized vagrant daedroth egg. If all goes well, it should hatch into a baby vagrant daedroth. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild daedroth eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>16</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Daedroth</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Imprint on {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
+				<minAnimals>12</minAnimals>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+		<stackLimit>6</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
+		<label>bantam guar egg (unfert.)</label>
+		<description>An unfertilised bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(228,185,135)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_BantamGuarFertilized</defName>
+		<label>bantam guar egg (fert.)</label>
+		<description>A fertilised bantam guar egg. If all goes well, it should hatch into a bantam guar whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_BantamGuar</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_CliffRacerFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_CliffRacerFertilized</defName>
+		<label>cliff racer egg (fert.)</label>
+		<description>A fertilised cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.\n\nAlternatively you could just smash the eggs. Just be careful adoing so with wild cliff racers nearby.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_CliffRacer</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Smash {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectSmashEgg">
+				<soundDef>Hive_Spawn</soundDef>
+				<baseManhunterRadius>3</baseManhunterRadius>
+				<manhunterKind>Mashed_Ashlands_CliffRacer</manhunterKind>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_DurzogFertilized</defName>
+		<label>durzog egg (fert.)</label>
+		<description>A fertilised durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Durzog</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_FirebugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_FirebugFertilized</defName>
+		<label>ashland firebug egg (fert.)</label>
+		<description>A fertilised firebug egg. If all goes well, it should hatch into a baby firebug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Firebug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_GuarFertilized</defName>
+		<label>guar egg (fert.)</label>
+		<description>A fertilised guar egg. If all goes well, it should hatch into a guar calf. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>4</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Guar</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_KagoutiFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_KagoutiFertilized</defName>
+		<label>kagouti egg (fert.)</label>
+		<description>A fertilised kagouti egg. If all goes well, it should hatch into a kagouti calf. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Kagouti</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabFertilized</defName>
+		<label>ashland mudcrab egg (fert.)</label>
+		<description>A fertilised mudcrab egg. If all goes well, it should hatch into a baby mudcrab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,111,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Mudcrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_NetchFertilized</defName>
+		<label>netch egg (fert.)</label>
+		<description>A fertilised netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked. As netch are rather protective of their eggs, netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(172,110,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Netch</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixHoundFertilized</defName>
+		<label>nix-hound egg (fert.)</label>
+		<description>A fertilised nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,94,94)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixHound</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxFertilized</defName>
+		<label>nix-ox egg (fert.)</label>
+		<description>A fertilised nix-ox egg. If all goes well, it should hatch into a nix-ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,94,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixOx</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedFertilized</defName>
+		<label>nix-steed egg (fert.)</label>
+		<description>A fertilised nix-steed egg. If all goes well, it should hatch into a nix-steed foal. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,79,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NixSteed</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_OgrimFertilized]==========-->
+	<ThingDef ParentName="EggFertBase">
+		<defName>Mashed_Ashlands_Egg_OgrimFertilized</defName>
+		<label>vagrant ogrim egg (fert.)</label>
+		<description>A fertilized vagrant ogrim egg. If all goes well, it should hatch into a baby vagrant ogrim. It can be eaten raw, but it's much better cooked.\n\nThose with a high enough animals skill will be able to imprint on wild ogrim eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>18</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Ogrim</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Imprint on {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
+				<minAnimals>12</minAnimals>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+		<stackLimit>6</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_PyrantulaFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_PyrantulaFertilized</defName>
+		<label>pyrantula egg (fert.)</label>
+		<description>A fertilised pyrantula egg. If all goes well, it should hatch into a baby pyrantula. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Pyrantula</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_RachnoidFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_RachnoidFertilized</defName>
+		<label>rachnoid egg (fert.)</label>
+		<description>A fertilised rachnoid egg. If all goes well, it should hatch into a baby rachnoid. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(141,141,141)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Rachnoid</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ScuttlerFertilized</defName>
+		<label>scuttler egg (fert.)</label>
+		<description>A fertilised scuttler egg. If all goes well, it should hatch into a scuttler whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Scuttler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkFertilized</defName>
+		<label>shalk egg (fert.)</label>
+		<description>A fertilised shalk egg. If all goes well, it should hatch into a baby shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,111,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Shalk</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkFungalFertilized</defName>
+		<label>fungal shalk egg (fert.)</label>
+		<description>A fertilised fungal shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,111,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_ShalkFungal</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_SiltStriderFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_SiltStriderFertilized</defName>
+		<label>silt strider egg (fert.)</label>
+		<description>A fertilised silt strider egg. If all goes well, it should hatch into a silt strider nymph. While it could be cooked, it is far more valuable in its current form.\n\nThose with a high enough animals skill will be able to imprint on wild silt strider eggs. This includes any eggs obtained as a quest reward, or from volcanic debris.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_StriderEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(90,80,80)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_SiltStrider</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Imprint on {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectImprintEgg">
+				<minAnimals>12</minAnimals>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+		<stackLimit>1</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_SwampJellyFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_SwampJellyFertilized</defName>
+		<label>swamp jelly egg (fert.)</label>
+		<description>A fertilised swamp jelly egg. If all goes well, it should hatch into a swamp jelly calf. It can be eaten raw, but it's much better cooked. As swamp jelly are rather protective of their eggs, swamp jelly eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(110,172,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_SwampJelly</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ThunderbugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
+		<defName>Mashed_Ashlands_Egg_ThunderbugFertilized</defName>
+		<label>ashland thunderbug egg (fert.)</label>
+		<description>A fertilised thunderbug egg. If all goes well, it should hatch into a baby thunderbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,109,141)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>14</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Thunderbug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_WormmouthFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_WormmouthFertilized</defName>
+		<label>wormmouth egg (fert.)</label>
+		<description>A fertilised wormmouth egg. If all goes well, it should hatch into a wormmouth whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(114,138,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_Wormmouth</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

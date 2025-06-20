@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Overwritten in the ReGrowth Core loadfolder -->
+	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ShallowSulphuricWaterBase">
+		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepSulphuricWater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_DeepSulphuricWaterBase">
+		<defName>Mashed_Ashlands_DeepSulphuricWater</defName>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
+	<GameConditionDef Name="Mashed_Ashlands_DenseAshCloudsBase">
+		<defName>Mashed_Ashlands_DenseAshClouds</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_DenseAshClouds</conditionClass>
+		<label>dense ash clouds</label>
+		<description>Dense ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
+		<endMessage>The ash clouds disperse.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>false</canBePermanent>
+		<allowUnderground>false</allowUnderground>
+		<exclusiveConditions>
+			<li>VolcanicWinter</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicHeat]==========-->
+	<GameConditionDef Name="Mashed_Ashlands_VolcanicHeatBase">
+		<defName>Mashed_Ashlands_VolcanicHeat</defName>
+		<conditionClass>Mashed_Ashlands.GameCondition_VolcanicHeat</conditionClass>
+		<label>volcanic heat</label>
+		<description>Intense volcanic activity from a nearby volcano increases the local temperature.</description>
+		<endMessage>The air begins to cool.</endMessage>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<canBePermanent>false</canBePermanent>
+		<exclusiveConditions>
+			<li>HeatWave</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+</Defs>

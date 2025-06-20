@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
+	<VFECore.ActiveTerrainDef ParentName="Mashed_Ashlands_ShallowSulphuricWaterBase">
+		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
+		<!-- VE/ReGrowth nodes -->
+		<tickerType>Rare</tickerType>
+		<terrainComps>
+			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
+				<moteDef>RG_Mote_WaterFog</moteDef>
+				<tickInterval>60~500</tickInterval>
+				<size>2~8</size>
+				<rotationRate>0</rotationRate>
+				<velocityAngle>0~360</velocityAngle>
+				<velocitySpeed>0.05~0.1</velocitySpeed>
+				<instanceColor>(0.75,0.75,0.75)</instanceColor>
+				<reqTempRangeToSpawn>-200~200</reqTempRangeToSpawn>
+				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
+				<spawnChance>0.04</spawnChance>
+			</li>
+		</terrainComps>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension">
+				<thoughtAfterBathing>Mashed_Ashlands_BathingSulphurPool</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
+	</VFECore.ActiveTerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepSulphuricWater]==========-->
+	<VFECore.ActiveTerrainDef ParentName="Mashed_Ashlands_DeepSulphuricWaterBase">
+		<defName>Mashed_Ashlands_DeepSulphuricWater</defName>
+		<!-- VE/ReGrowth nodes -->
+		<tickerType>Rare</tickerType>
+		<terrainComps>
+			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
+				<moteDef>RG_Mote_WaterFog</moteDef>
+				<tickInterval>60~500</tickInterval>
+				<size>6~30</size>
+				<rotationRate>0</rotationRate>
+				<velocityAngle>0~360</velocityAngle>
+				<velocitySpeed>0.05~0.1</velocitySpeed>
+				<instanceColor>(0.75,0.75,0.75)</instanceColor>
+				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
+				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
+				<spawnChance>0.10</spawnChance>
+			</li>
+		</terrainComps>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension">
+				<thoughtAfterBathing>Mashed_Ashlands_BathingSulphurPool</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
+	</VFECore.ActiveTerrainDef>
+</Defs>

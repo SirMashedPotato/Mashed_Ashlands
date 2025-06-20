@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_Blightcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Blightcap</defName>
+		<label>blightcap mushroom</label>
+		<description>A reddish-brown fungus, often found growing in highly polluted ashland regions. It has adapted to feed off pollution, giving its flesh a rather disgusting texture, and metallic taste. The flesh of blightcap is technically edible, though most don't enjoy it.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_BlightcapPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<neverBlightable>true</neverBlightable>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<harvestedThingDef>Mashed_Ashlands_RawBlightcap</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>6</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_ToxYam]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshYamBase">
+		<defName>Mashed_Ashlands_Plant_ToxYam</defName>
+		<label>tox yam plant</label>
+		<description>A variety of the ash yam, adapted to grow in highly toxic environments. Provides a comparatively smaller yield than the regular ash yam, as much of the outer flesh is completely inedible. They are only able to grow in ash rich ground that has been sufficiently polluted.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ToxYamPlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_ToxYamPlant_Immature</immatureGraphicPath>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<harvestedThingDef>Mashed_Ashlands_RawToxYams</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<growDays>4.9</growDays>
+		</plant>
+	</ThingDef>
+</Defs>

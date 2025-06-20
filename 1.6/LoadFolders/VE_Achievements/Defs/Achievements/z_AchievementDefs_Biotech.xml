@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_GlowingAnimalTamer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Mashed_AchievementAshlands_GlowingAnimalTamer</defName>
+		<label>Glowing Animal Tamer</label>
+		<description>Tame your first glowing ashland animal</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>false</requireAll>
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_NetchGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_MudcrabGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_AshHopperGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixHoundGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixOxGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixSteedGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_ShalkGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_Toxbug</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_GlowingAnimalTamer</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_GlowingAnimalCollector]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Mashed_AchievementAshlands_GlowingAnimalCollector</defName>
+		<label>Glowing Animal Collector</label>
+		<description>Have at least one of each glowing ashland animal at the same time</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>true</requireAll>
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_NetchGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_MudcrabGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_AshHopperGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixHoundGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixOxGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixSteedGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_ShalkGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_Toxbug</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_GlowingAnimalCollector</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

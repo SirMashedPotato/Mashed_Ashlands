@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_InsectBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_InsectThingBase" Abstract="True">
+		<modExtensions>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>true</hasFat>
+			</li>
+		</modExtensions>
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
+			<Outland_BoneAmount MayRequireAnyOf="neronix17.outland.core">0</Outland_BoneAmount>
+		</statBases>
+		<race>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflySwarmAnimal]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase">
+		<defName>Mashed_Ashlands_FetcherflySwarmAnimal</defName>
+		<label>fetcherfly swarm</label>
+		<description>An aggressive swarm of fetcherfly. Almost impossible to hit, it's best to just wait for it to disperse.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+			<IncomingDamageFactor>0.05</IncomingDamageFactor>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<selectable>false</selectable>
+		<uiIconPath>Things/Pawn/Animal/Mashed_Ashlands_FetcherflySwarm/Mashed_Ashlands_FetcherflySwarmIcon</uiIconPath>
+		<tools>
+			<li>
+				<label>swarm</label>
+				<capacities>
+					<li>Mashed_Ashlands_BurnBite</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>0.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>Mashed_Ashlands_FetcherflySwarmEffecter</effecterDef>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>1500</lifespanTicks>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
+		</comps>
+		<race>
+			<deathAction>
+				<workerClass>Mashed_Ashlands.DeathActionWorker_Destroy</workerClass>
+			</deathAction>
+			<body>BeetleLike</body>
+			<baseBodySize>0.1</baseBodySize>
+			<baseHungerRate>0</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<lifeExpectancy>1</lifeExpectancy>
+			<wildness>1</wildness>
+			<trainability>None</trainability>
+			<useMeatFrom IsNull="True"/>
+			<hasMeat>false</hasMeat>
+			<hasCorpse>false</hasCorpse>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_FetcherflySwarmAnimal</defName>
+		<label>fetcherfly swarm</label>
+		<race>Mashed_Ashlands_FetcherflySwarmAnimal</race>
+		<combatPower>40</combatPower>
+		<immuneToTraps>true</immuneToTraps>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
+					<drawSize>0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
+					<drawSize>0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MetallicBase]==========-->
+	<ThingDef ParentName="ResourceBase" Name="Mashed_Ashlands_MetallicBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<possessionCount>5</possessionCount>
+		<minRewardCount>10</minRewardCount>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+				<li>Mashed_Ashlands_Crystalline</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
+			</categories>
+			<commonality>0.01</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsMineral</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEbony]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MetallicBase">
+		<defName>Mashed_Ashlands_VolcanicEbony</defName>
+		<label>volcanic ebony</label>
+		<description>A rare dark-purple volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather unremarkable in its raw form, volcanic ebony is both exceptionally durable, and absorbent. It can be used to make powerful blunt weapons, and highly sharp resistant armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_VolcanicEbony</texPath>
+		</graphicData>
+		<statBases>
+			<RoyalFavorValue>0.01</RoyalFavorValue>
+			<MarketValue>10</MarketValue>
+			<Mass>0.45</Mass>
+			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(55,44,55)</color>
+			<stuffAdjective>V. ebony</stuffAdjective>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>3.5</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>2.2</WorkToMake>
+				<WorkToBuild>2.2</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicGlass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MetallicBase">
+		<defName>Mashed_Ashlands_VolcanicGlass</defName>
+		<label>volcanic malachite</label>
+		<description>A rare light-green volcanic glass, formed by magma rapidly cooling. While usually found deep within a volcano, it can sometimes be found within volcanic debris.\n\nWhile it appears rather fragile in its raw form, volcanic malachite is both exceptionally light, and flexible. It can be used to make powerful sharp weapons, and highly blunt resistant armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_VolcanicGlass</texPath>
+		</graphicData>
+		<statBases>
+			<RoyalFavorValue>0.01</RoyalFavorValue>
+			<MarketValue>10</MarketValue>
+			<Mass>0.15</Mass>
+			<StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(153,243,134)</color>
+			<stuffAdjective>V. malachite</stuffAdjective>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>2.2</WorkToMake>
+				<WorkToBuild>2.2</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+</Defs>

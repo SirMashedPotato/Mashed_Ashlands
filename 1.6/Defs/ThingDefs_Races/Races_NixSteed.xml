@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NixSteedThingBase]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_NixSteedThingBase" Abstract="True">
+		<statBases>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>550</MarketValue>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>Mashed_Ashlands_InsectDogLike</body>
+			<leatherDef>Mashed_Ashlands_NixLeather</leatherDef>
+			<baseBodySize>1.9</baseBodySize>
+			<baseHealthScale>1.25</baseHealthScale>
+			<baseHungerRate>0.425</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.8</wildness>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>20</lifeExpectancy>
+			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<roamMtbDays>2</roamMtbDays>
+			<!-- made by Yoann from yoann.babiesanimals -->
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.001,100)</li>
+					<li>(13.5,100)</li>
+					<li>(15,30)</li>
+					<li>(17.5,18)</li>
+					<li>(20,10)</li>
+					<li>(22.5,3)</li>
+					<li>(25,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.333</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
+		</race>
+		<tradeTags>
+			<li>AnimalRare</li>
+			<li>Mashed_Ashlands_AshlandAnimalRare</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_NixSteed]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NixSteedThingBase">
+		<defName>Mashed_Ashlands_NixSteed</defName>
+		<label>nix-steed</label>
+		<description>A large grazing horse-like insect native to calmer ashland regions. Closely related to the nix-hound, the nix-steed has a highly adapted proboscis which it uses to feed on nectar. Nix-steed tend to be quite temperamental, though some are brave enough to tame them for use as mounts.\n\n&lt;color=#E5E54C&gt;Nectarivore&lt;/color&gt;\nNix-steeds will consume nectar from ashland flowers when hungry. If none are available nearby, then they will consume plant matter instead.\n\n&lt;color=#4ce5e5&gt;Art done by pphhyy&lt;/color&gt;</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
+				<AllowPollutionStimulis>false</AllowPollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NixSteed" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixSteed</defName>
+		<label>nix-steed</label>
+		<labelMale>nix-steed stallion</labelMale>
+		<labelFemale>nix-steed mare</labelFemale>
+		<race>Mashed_Ashlands_NixSteed</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>nix-steed foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>1.7</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteed</texPath>
+					<drawSize>2.1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_Dessicated_NixSteed</texPath>
+					<drawSize>2.1</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

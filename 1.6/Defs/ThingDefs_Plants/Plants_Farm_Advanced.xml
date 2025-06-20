@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_AshPomegranate]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_AshPomegranate</defName>
+		<label>ash pomegranate tree</label>
+		<description>An incredibly hardy tree that can be found growing in volcanically active ashland regions. Visually quite distinct compared to the common pomegranate tree. The branches of the ash pomegranate almost completely lack leaves, and are covered in large thorns. The fruits this tree produces are just as edible, though they do have a slightly odd ashy taste.</description>
+		<blockWind>true</blockWind>
+		<statBases>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<harvestedThingDef>Mashed_Ashlands_RawAshPomegranate</harvestedThingDef>
+			<harvestYield>40</harvestYield>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>25</growDays>
+			<visualSizeRange>1.8~2.6</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_GoldenReed</defName>
+		<label>golden reed plant</label>
+		<description>A very distinctively coloured reed, rarely found growing in certain ashland regions near water. Sometimes used as a supplement for wood. A form of martial arts was named after this plant. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>6</minTilesToWaterForWild>
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GoldenReedPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7</growDays>
+			<visualSizeRange>1~2.4</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<wildClusterRadius>6</wildClusterRadius>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshenJazbay]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_AshenJazbay</defName>
+		<label>ashen jazbay vine</label>
+		<description>A hardy vine that can be found growing along rocky ground in the ashlands. Its low profile helps to protect against the strong winds of ash storms, allowing it to grow where other plants can't. Often farmed by those that settle the more rugged regions of the ashlands, as ashen jazbay grapes are a popular export, and can also be fermented into jazbay wine. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_AshenJazbayPlant</texPath>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshenJazbayPlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawAshenJazbay</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.01</topWindExposure>
+			<growDays>14</growDays>
+			<visualSizeRange>0.9~1.5</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_MeadowRye</defName>
+		<label>meadow rye plant</label>
+		<description>A grass that can sometimes be found growing in calmer ashlands regions. Considered notoriously difficult to grow, raw meadow rye can be fermented into flin, a highly sought after alcoholic drink. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.2</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_MeadowRyePlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_MeadowRyePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<growDays>14</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>Mashed_Ashlands_RawMeadowRye</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.6~1</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>

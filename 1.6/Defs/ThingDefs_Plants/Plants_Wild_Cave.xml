@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_Bloatspore]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_BloatsporeBase">
+		<defName>Mashed_Ashlands_Plant_Bloatspore</defName>
+		<label>bloatspore</label>
+		<description>A small brown mushroom that somewhat resembles a toilet, in more than one way. Only found growing in damp caves in ashland regions. Slowly fills up with bloat, a byproduct of the mushroom digesting nutrients from the ground.</description>
+		<statBases>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_Bloatspore</texPath>
+		</graphicData>
+		<plant>
+			<growOptimalGlow>0</growOptimalGlow>
+			<topWindExposure>0</topWindExposure>
+			<growDays>7.8</growDays>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags Inherit="False"/>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PurpleCrystal]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_PurpleCrystal</defName>
+		<label>large purple crystal</label>
+		<description>A large purple crystal, often found growing in caves in ashland regions. It hums with a strange energy, and emits a strong purple glow. Some choose to harvest these for crystal shards, which can be sold, or used to craft sculptures.</description>
+		<statBases>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<neverBlightable>true</neverBlightable>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0</fertilityMin>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_PurpleCrystalShard</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<growDays>15</growDays>
+			<sowTags Inherit="False"/>
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>1.2~2.6</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollutedGraphicPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(186,151,248,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

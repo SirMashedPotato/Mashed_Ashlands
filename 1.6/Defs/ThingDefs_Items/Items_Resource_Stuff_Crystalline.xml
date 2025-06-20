@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CrystalShardBase]==========-->
+	<ThingDef ParentName="ResourceBase" Name="Mashed_Ashlands_CrystalShardBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.5</Mass>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+		</statBases>
+		<burnableByRecipe>false</burnableByRecipe>
+		<possessionCount>5</possessionCount>
+		<minRewardCount>10</minRewardCount>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<categories>
+				<li>Mashed_Ashlands_Crystalline</li>
+				<li MayRequire="kikohi.jewelry">Gemstones</li>
+			</categories>
+			<commonality>0</commonality>
+			<appearance>Bricks</appearance>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<stuffAdjective>crystalline</stuffAdjective>
+			<statFactors>
+				<WorkToBuild>6</WorkToBuild>
+				<WorkToMake>1.2</WorkToMake>
+				<MaxHitPoints>0.6</MaxHitPoints>
+				<Flammability>0.4</Flammability>
+			</statFactors>
+			<statOffsets>
+				<WorkToBuild>140</WorkToBuild>
+				<Beauty>2</Beauty>
+			</statOffsets>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>75</allowedArchonexusCount>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsCrystal</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_PurpleCrystalShard]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_CrystalShardBase">
+		<defName>Mashed_Ashlands_PurpleCrystalShard</defName>
+		<label>purple crystal shards</label>
+		<description>Shards from a purple crystal. Not exactly durable, but can be used to make exquisite looking sculptures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_PurpleCrystalShard</texPath>
+		</graphicData>
+		<stuffProps>
+			<color>(186,151,248)</color>
+			<stuffAdjective>p. crystalline</stuffAdjective>
+			<statFactors>
+				<Beauty>1.5</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+</Defs>

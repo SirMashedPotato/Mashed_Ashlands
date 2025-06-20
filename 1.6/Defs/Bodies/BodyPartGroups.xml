@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TentacleAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>Mashed_Ashlands_TentacleAttackTool</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	<!-- ==========[Mashed_Ashlands_TailAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>Mashed_Ashlands_TailAttackTool</defName>
+		<label>tail stinger</label>
+	</BodyPartGroupDef>
+	<!-- ==========[Mashed_Ashlands_LeftPedipalpAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>Mashed_Ashlands_LeftPedipalpAttackTool</defName>
+		<label>left pedipalp</label>
+	</BodyPartGroupDef>
+	<!-- ==========[Mashed_Ashlands_RightPedipalpAttackTool]==========-->
+	<BodyPartGroupDef>
+		<defName>Mashed_Ashlands_RightPedipalpAttackTool</defName>
+		<label>right pedipalp</label>
+	</BodyPartGroupDef>
+</Defs>

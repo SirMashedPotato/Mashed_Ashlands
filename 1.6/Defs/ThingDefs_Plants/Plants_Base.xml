@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_PlantBase]==========-->
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_PlantBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<harvestTag>Standard</harvestTag>
+			<sowTags>
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshPlanter</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_BushBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_BushBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<pathCost>30</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<harvestWork>250</harvestWork>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestTag>Wood</harvestTag>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_PseudoTreeBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_PseudoTreeBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>195</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<sowWork>4000</sowWork>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>24</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<sowTags Inherit="False">
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_TreeBase]==========-->
+	<ThingDef ParentName="TreeBase" Name="Mashed_Ashlands_TreeBase" Abstract="True">
+		<plant>
+			<mustBeWildToSow>False</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GroundcoverBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_GroundcoverBase" Abstract="True">
+		<selectable>false</selectable>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<harvestWork>40</harvestWork>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_BryoluxBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase" Name="Mashed_Ashlands_Plant_BryoluxBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>60</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.82~0.95</visualSizeRange>
+			<sowWork>170</sowWork>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+		</plant>
+	</ThingDef>
+</Defs>

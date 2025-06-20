@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GasBase]========== -->
+	<ThingDef Name="Mashed_Ashlands_GasBase" Abstract="True">
+		<category>Gas</category>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<gas>
+			<rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflySwarm]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_GasBase">
+		<defName>Mashed_Ashlands_FetcherflySwarm</defName>
+		<thingClass>Mashed_Ashlands.Gas_FetcherflySwarm</thingClass>
+		<label>fetcherfly swarm</label>
+		<graphicData>
+			<drawSize>0</drawSize>
+		</graphicData>
+		<gas>
+			<expireSeconds>16~64</expireSeconds>
+		</gas>
+	</ThingDef>
+</Defs>

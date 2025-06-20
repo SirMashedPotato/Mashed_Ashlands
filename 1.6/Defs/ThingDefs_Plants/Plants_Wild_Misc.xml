@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_Glowstalk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase" Name="Mashed_Ashlands_Plant_GlowstalkBase">
+		<defName>Mashed_Ashlands_Plant_Glowstalk</defName>
+		<label>glowstalk</label>
+		<description>An incredibly strange plant that can only be found growing in certain ashland regions. The bulb at the end of the stem emits a strong glow, quite useful during dark nights. Some choose to grow these plants as a form of natural lighting. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_Glowstalk</texPath>
+		</graphicData>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>13</growDays>
+			<visualSizeRange>1.0~2.4</visualSizeRange>
+			<wildClusterWeight>0</wildClusterWeight>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedGlowstalk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowstalkBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedGlowstalk</defName>
+		<label>petrified glowstalk</label>
+		<description>A semi-petrified glowstalk, its bulb almost completely turned to stone. It still manages to emit a faint light, even in this state. It doesn't even attract torchbugs at night anymore, not that there's likely to be many left in this petrified wasteland.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.15</Nutrition>
+			<Flammability>0.1</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<pollution>Any</pollution>
+			<fertilityMin>0.3</fertilityMin>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(173,155,142,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_ScorchedBush]==========-->
+	<ThingDef ParentName="BushBase">
+		<defName>Mashed_Ashlands_Plant_ScorchedBush</defName>
+		<label>scorched bush</label>
+		<description>A scorched bush, covered in numerous thorns and pointy ends. Provides nothing of practical use.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ScorchedBush</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<fertilityMin>0.09</fertilityMin>
+			<growDays>3</growDays>
+			<pollution>Any</pollution>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildClusterWeight>20</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Stinkcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_Stinkcap</defName>
+		<label>stinkcap</label>
+		<description>A rather disgusting looking mushroom, often found growing in humid ashland regions. While the mushroom itself doesn't provide anything useful when harvested, a mature stinkcap does release a rather foul cloud of gas when destroyed.</description>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_Stinkcap</texPath>
+		</graphicData>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>9</growDays>
+			<visualSizeRange>1~2</visualSizeRange>
+			<wildClusterWeight>0</wildClusterWeight>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_GasOnDestroy">
+				<gasType>RotStink</gasType>
+				<radius>1</radius>
+				<onlyIfHarvestable>false</onlyIfHarvestable>
+				<minGrowth>0.7</minGrowth>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

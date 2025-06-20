@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FeedFromSAshlandFlower]========== -->
+	<ThinkTreeDef>
+		<defName>Mashed_Ashlands_FeedFromAshlandFlower</defName>
+		<insertTag>Animal_PreMain</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="Mashed_Ashlands.ThinkNode_ConditionalAshlandFlowerFeeding">
+			<animalDefs>
+				<li>Mashed_Ashlands_NixSteed</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_NixSteedGlowing</li>
+			</animalDefs>
+			<subNodes>
+				<li Class="ThinkNode_ChancePerHour_Constant">
+					<mtbHours>4</mtbHours>
+					<subNodes>
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>SatisfyingNeeds</tagToGive>
+							<subNodes>
+								<li Class="Mashed_Ashlands.JobGiver_FeedFromAshlandFlower">
+									<radius>25</radius>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	<!-- ==========[Mashed_Ashlands_MentalStateCritical]========== -->
+	<ThinkTreeDef>
+		<defName>Mashed_Ashlands_MentalStateCritical</defName>
+		<thinkRoot Class="ThinkNode_Tagger">
+			<tagToGive>InMentalState</tagToGive>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>Mashed_Ashlands_BlightedPermanent</state>
+					<subNodes>
+						<li Class="ThinkNode_Priority">
+							<subNodes>
+								<li Class="JobGiver_Berserk"/>
+								<li Class="JobGiver_WanderAnywhere">
+									<maxDanger>Deadly</maxDanger>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	<!-- ==========[Mashed_Ashlands_ScampThinkTreeExtension]========== -->
+	<ThinkTreeDef>
+		<defName>Mashed_Ashlands_ScampThinkTreeExtension</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalPawnKind">
+			<pawnKind>Mashed_Ashlands_Scamp</pawnKind>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalHasFaction">
+					<subNodes>
+						<!-- Trained behaviour: Clean -->
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>1.5</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_ConditionalRequireCapacities">
+									<requiredCapacities>
+										<li>Manipulation</li>
+									</requiredCapacities>
+									<subNodes>
+										<li Class="ThinkNode_ConditionalTrainableCompleted">
+											<trainable>Haul</trainable>
+											<subNodes>
+												<li Class="ThinkNode_Tagger">
+													<tagToGive>TrainedAnimalBehavior</tagToGive>
+													<subNodes>
+														<li Class="Mashed_ashlands.JobGiver_Clean"/>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<!-- Trained behaviour: Insulting -->
+						<li Class="Mashed_ashlands.ThinkNode_ConditionalScampInsulting">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbDays>6</mtbDays>
+									<subNodes>
+										<li Class="ThinkNode_ConditionalTrainableCompleted">
+											<trainable>Haul</trainable>
+											<subNodes>
+												<li Class="ThinkNode_Tagger">
+													<tagToGive>TrainedAnimalBehavior</tagToGive>
+													<subNodes>
+														<li Class="Mashed_ashlands.JobGiver_Insult"/>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

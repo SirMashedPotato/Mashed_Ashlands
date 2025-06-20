@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GlowingTorchbugEffecter]========== -->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_GlowingTorchbugEffecter</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<scale>0.3~0.5</scale>
+				<chancePerTick>1</chancePerTick>
+				<positionRadius>1</positionRadius>
+				<fleckDef>Mashed_Ashlands_GlowingTorchbugFleck</fleckDef>
+				<speed>0.08~0.18</speed>
+				<rotation>0~360</rotation>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			</li>
+		</children>
+	</EffecterDef>
+	<!-- ==========[Mashed_Ashlands_GlowingTorchbugFleck]========== -->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Mashed_Ashlands_GlowingTorchbugFleck</defName>
+		<graphicData>
+			<texPath>Things/Mote/Mashed_Ashlands_GlowingTorchbugFleck</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.5</fadeInTime>
+		<solidTime>1.5</solidTime>
+		<fadeOutTime>2</fadeOutTime>
+	</FleckDef>
+</Defs>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CnidarianThingBase]========== -->
+	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_CnidarianThingBase" Abstract="True">
+		<modExtensions>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="MedievalOverhaul.ButcherProperties">
+				<hasBone>false</hasBone>
+				<hasFat>false</hasFat>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>Mashed_PF_Movement_Floating</movementDef>
+			</li>
+		</modExtensions>
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+			<MoveSpeed>2.2</MoveSpeed>
+			<MarketValue>60</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>120</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequireAnyOf="sihv.rombones,sihv.rombonesport">0</BoneAmount>
+			<Outland_BoneAmount MayRequireAnyOf="neronix17.outland.core">0</Outland_BoneAmount>
+		</statBases>
+		<uiIconScale>1</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>tentacle</label>
+				<capacities>
+					<li>ScratchToxic</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<fleshType>Mashed_Ashlands_FleshNetch</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_NetchBlood</bloodDef>
+			<body>Mashed_Ashlands_CnidarianBody</body>
+			<herdAnimal>true</herdAnimal>
+			<canBecomeShambler>false</canBecomeShambler>
+			<baseBodySize>0.4</baseBodySize>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseHungerRate>0.15</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<trainability>None</trainability>
+			<gestationPeriodDays>2</gestationPeriodDays>
+			<roamMtbDays>5</roamMtbDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 0.4)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<wildness>0.60</wildness>
+			<lifeExpectancy>10</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
+		</race>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SwampJelly]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CnidarianThingBase">
+		<defName>Mashed_Ashlands_SwampJelly</defName>
+		<label>ashland swamp jelly</label>
+		<description>Smaller cousins of the netch, usually found in humid ashland regions.  Swamp jelly come in a wide variety of colours, which has inspired some to collect them as pets. While they lack the protective shell of the netch, their tentacles are still covered in nematocysts</description>
+		<race>
+			<specificMeatDef>Mashed_Ashlands_SwampJellyEdible</specificMeatDef>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>Mashed_Ashlands_AshlandAnimalRare</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_SwampJelly" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_SwampJelly</defName>
+		<label>ashland swamp jelly</label>
+		<race>Mashed_Ashlands_SwampJelly</race>
+		<combatPower>60</combatPower>
+		<immuneToTraps>true</immuneToTraps>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<color>(61,71,174)</color>
+				<colorTwo>(127,180,219)</colorTwo>
+			</li>
+			<li>
+				<color>(61,174,89)</color>
+				<colorTwo>(149,219,127)</colorTwo>
+			</li>
+			<li>
+				<color>(174,61,109)</color>
+				<colorTwo>(127,180,219)</colorTwo>
+			</li>
+			<li>
+				<color>(174,61,109)</color>
+				<colorTwo>(149,219,127)</colorTwo>
+			</li>
+			<li>
+				<color>(219,202,149)</color>
+				<colorTwo>(202,225,228)</colorTwo>
+			</li>
+			<li>
+				<color>(72,130,134)</color>
+				<colorTwo>(214,228,192)</colorTwo>
+			</li>
+			<li>
+				<color>(117,72,134)</color>
+				<colorTwo>(192,226,228)</colorTwo>
+			</li>
+			<li>
+				<color>(153,90,199)</color>
+				<colorTwo>(149,189,219)</colorTwo>
+			</li>
+			<li>
+				<color>(90,199,189)</color>
+				<colorTwo>(166,219,149)</colorTwo>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
+					<drawSize>0.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(127,180,219)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
+					<drawSize>0.9</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(127,180,219)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly</texPath>
+					<drawSize>1.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(127,180,219)</color>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_Dessicated_SwampJelly</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

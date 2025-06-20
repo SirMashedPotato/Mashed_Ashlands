@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_VolcanoMap</defName>
+		<label>volcano map</label>
+		<description>A map of a volcano, and the area surrounding it.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Ashlands_VolcanoMap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>1</stackLimit>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1</DeteriorationRate>
+			<MarketValue>250</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Read {0}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Mashed_Ashlands_ExplorationMode.CompProperties_UseEffectVolcanoMap">
+				<size>7</size>
+				<locations>1</locations>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

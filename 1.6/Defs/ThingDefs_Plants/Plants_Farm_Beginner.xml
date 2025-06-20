@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_AshYam]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_AshYamBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_AshYam</defName>
+		<label>ash yam plant</label>
+		<description>A highly nutritious tuber. Clusters of wild ash yams are a common sight in ashland regions, and thanks to their innate resistance to ash storms are very often farmed by those that settle there. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_AshYamPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshYamPlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawAshYams</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<purpose>Food</purpose>
+			<maxMeshCount>4</maxMeshCount>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Corkbulb]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_Corkbulb</defName>
+		<label>corkbulb tree</label>
+		<description>A small tree that can often be found growing in regions with ash rich ground. Farmed for its tough roots, which make for a reasonable wood replacement. The roots are also often consumed by wild animals, such as guar and kagouti. While structurally quite sturdy, corkbulb will slowly be worn down by ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_CorkbulbPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>5</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>13</growDays>
+			<visualSizeRange>1.0~2.4</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_HackleLo]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_HackleLo</defName>
+		<label>hackle-lo plant</label>
+		<description>A large and leafy succulent, often found growing in grasslands with ash rich soil. The leaves are rather tasty, and can easily be harvested from the plant without killing it. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<allowedTerrainForWild>
+					<li>Mashed_Ashlands_GrazelandSoil</li>
+				</allowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_HackleLoPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawHackleLo</harvestedThingDef>
+			<harvestYield>24</harvestYield>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>12</growDays>
+			<visualSizeRange>1.0~1.8</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_InkCap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_InkCap</defName>
+		<label>ink-cap mushroom</label>
+		<description>A colourful small mushroom often found growing in the shade of larger fungal trees. The cap secretes a liquid that many use to make dye. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>MarshyTerrain</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_InkCapPlant</texPath>
+		</graphicData>
+		<pathCost>10</pathCost>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Dye</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<wildClusterRadius>2</wildClusterRadius>
+			<wildClusterWeight>100</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Kreshweed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Kreshweed</defName>
+		<label>kreshweed plant</label>
+		<description>A coarse grass often found growing near water in ashland regions. Often farmed for its fiber, which can be woven into a durable cloth. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>5</minTilesToWaterForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_KreshweedPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_KreshweedPlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_KreshCloth</harvestedThingDef>
+			<harvestYield>14</harvestYield>
+			<sowMinSkill>4</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>12</growDays>
+			<visualSizeRange>0.95~1.6</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_ParasolBush]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_ParasolBushBase" ParentName="Mashed_Ashlands_BushBase">
+		<defName>Mashed_Ashlands_Plant_ParasolBush</defName>
+		<label>parasol bush</label>
+		<description>A significantly smaller cousin of the emperor parasol. While reasonably sturdy, the stem provides little usable material, and the flesh is completely inedible. Can only grow on ash rich ground.</description>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<Flammability>0.5</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ParasolBush</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<growDays>6</growDays>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>0.95~2.0</visualSizeRange>
+			<fertilityMin>1</fertilityMin>
+			<topWindExposure>0.2</topWindExposure>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TramaShrub]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_TramaShrubBase" ParentName="Mashed_Ashlands_BushBase">
+		<defName>Mashed_Ashlands_Plant_TramaShrub</defName>
+		<label>trama shrub</label>
+		<description>An incredibly hardy shrub, typically found growing in the less-hospitable regions of the ashlands. The roots are often brewed into a calming tea, though can also be fed to livestock when times are hard. Trama shrub are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_TramaShrub</texPath>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<growDays>10</growDays>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<neverBlightable>true</neverBlightable>
+			<harvestedThingDef>Mashed_Ashlands_RawTramaRoot</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+			<visualSizeRange>0.95~2.0</visualSizeRange>
+			<harvestWork>150</harvestWork>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterWeight>100</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_Scathecraw]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_ScathecrawBase" ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_Scathecraw</defName>
+		<label>scathecraw plant</label>
+		<description>An incredibly hardy grass, typically found growing in the less-hospitable regions of the ashlands. While the soft flesh inside of the grass is tempting to some, those that try it will quickly learn why scathecraw isn't considered a delicacy. Scathecraw are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Flammability>0.8</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ScathecrawPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<neverBlightable>true</neverBlightable>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawScathecraw</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>5.8</growDays>
+			<visualSizeRange>0.95~1.6</visualSizeRange>
+			<purpose>Food</purpose>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>

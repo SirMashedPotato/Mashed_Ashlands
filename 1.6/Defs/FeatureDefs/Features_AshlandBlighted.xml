@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_BlightedAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>451</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerBlightedAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_BlightedBogAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_BlightedBogAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<minSize>10</minSize>
+		<rootBiomes>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerBlightedBogAshlands</nameMaker>
+	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_BlightedPetrifiedForestAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<minSize>10</minSize>
+		<rootBiomes>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands</nameMaker>
+	</FeatureDef>
+</Defs>

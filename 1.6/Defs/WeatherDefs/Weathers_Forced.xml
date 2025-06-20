@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshStormWeatherBase]==========-->
+	<WeatherDef Name="Mashed_Ashlands_AshStormWeatherBase" Abstract="True">
+		<repeatable>true</repeatable>
+		<isBad>false</isBad>
+		<perceivePriority>0</perceivePriority>
+		<windSpeedFactor>2</windSpeedFactor>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<!-- Same as clear -->
+		<skyColorsDay>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.718,0.745,0.757)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.858,0.650,0.423)</sky>
+			<shadow>(0.955,0.886,0.914)</shadow>
+			<overlay>(0.8,0.8,0.8)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.482,0.603,0.682)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.482,0.603,0.682)</sky>
+			<shadow>(0.85, 0.85, 0.85)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicWind]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWind</defName>
+		<label>volcanic wind</label>
+		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.</description>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicWindThunder]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWindThunder</defName>
+		<label>volcanic wind thunderstorm</label>
+		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.\n\nFriction between metallic particles causes frequent lightning strikes.</description>
+		<eventMakers>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>300</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+		</eventMakers>
+	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicWindBlight]==========-->
+	<WeatherDef ParentName="Mashed_Ashlands_AshStormWeatherBase">
+		<defName>Mashed_Ashlands_VolcanicWindBlight</defName>
+		<label>volcanic wind blight storm</label>
+		<description>Intense volcanic winds, slows movement and reduces ranged weapon accuracy.\n\nAsh particles carry blight, wild animals are driven mad, and crops become blighted.</description>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>Mashed_Ashlands_OutsideInBlightStorm</weatherThought>
+		<eventMakers>
+			<li>
+				<averageInterval>8000</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerAnimal</eventClass>
+			</li>
+			<li>
+				<averageInterval>10000</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerPlant</eventClass>
+			</li>
+		</eventMakers>
+		<!-- Same as clear, but with a red tint -->
+		<skyColorsDay>
+			<sky>(1,0.5,0.5)</sky>
+			<shadow>(0.718,0.745,0.757)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.858,0.150,0.023)</sky>
+			<shadow>(0.955,0.886,0.914)</shadow>
+			<overlay>(0.8,0.8,0.8)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.482,0.103,0.182)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.482,0.103,0.182)</sky>
+			<shadow>(0.85, 0.85, 0.85)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>

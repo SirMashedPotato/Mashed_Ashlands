@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BurnedParasolStump]==========-->
+	<ThingDef ParentName="StumpBase" Name="Mashed_Ashlands_BurnedParasolStumpBase">
+		<defName>Mashed_Ashlands_BurnedParasolStump</defName>
+		<label>burned parasol stump</label>
+		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolBurned</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ChoppedParasolStump]==========-->
+	<ThingDef ParentName="StumpChoppedBase" Name="Mashed_Ashlands_ChoppedParasolStumpBase">
+		<defName>Mashed_Ashlands_ChoppedParasolStump</defName>
+		<label>chopped parasol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolChopped</texPath>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ChoppedPetrifiedStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_ChoppedParasolStumpBase">
+		<defName>Mashed_Ashlands_ChoppedPetrifiedStump</defName>
+		<label>chopped petrified stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedChopped</texPath>
+		</graphicData>
+		<plant>
+			<harvestYield>1</harvestYield>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SmashedParasolStump]==========-->
+	<ThingDef ParentName="StumpSmashedBase" Name="Mashed_Ashlands_SmashedParasolStumpBase">
+		<defName>Mashed_Ashlands_SmashedParasolStump</defName>
+		<label>smashed parasol stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolSmashed</texPath>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
+			<visualSizeRange>1.5~3.2</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SmashedPetrifiedStump]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmashedParasolStumpBase">
+		<defName>Mashed_Ashlands_SmashedPetrifiedStump</defName>
+		<label>smashed petrified stump</label>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedSmashed</texPath>
+		</graphicData>
+		<plant>
+			<harvestYield>1</harvestYield>
+		</plant>
+	</ThingDef>
+</Defs>

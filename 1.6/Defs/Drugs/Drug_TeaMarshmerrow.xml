@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TeaMarshmerrow]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
+		<defName>Mashed_Ashlands_TeaMarshmerrow</defName>
+		<label>marshmerrow tea</label>
+		<description>A healing tea brewed using marshmerrow pulp. While it has a rather sweet taste, it does help to heal injuries.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_TeaMarshmerrowHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_TeaMarshmerrow</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_TeaMarshmerrowHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawMarshmerrow>3</Mashed_Ashlands_RawMarshmerrow>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_TeaMarshmerrowHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_TeaHighBase">
+		<defName>Mashed_Ashlands_TeaMarshmerrowHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>marshmerrow tea</label>
+		<description>A tea brewed using marshmerrow pulp. While it has a rather sweet taste, it does help to heal injuries.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>0.1</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

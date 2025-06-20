@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CookScuttleSoup]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookScuttleSoup</defName>
+		<label>cook scuttle soup</label>
+		<description>Cook a serving of scuttle soup using scuttle, and some vegetables.</description>
+		<jobString>Cooking scuttle soup.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_Scuttle</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_Scuttle</li>
+			</thingDefs>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_Scuttle</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Mashed_Ashlands_ScuttleSoup>1</Mashed_Ashlands_ScuttleSoup>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>3</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_CookScuttleSoupBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookScuttleSoupBulk</defName>
+		<label>cook scuttle soup x4</label>
+		<description>Cook 4 servings of scuttle soup using scuttle, and some vegetables.</description>
+		<jobString>Cooking 4 scuttle soup.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_Scuttle</li>
+					</thingDefs>
+				</filter>
+				<count>2.4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_Scuttle</li>
+			</thingDefs>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_Scuttle</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Mashed_Ashlands_ScuttleSoup>4</Mashed_Ashlands_ScuttleSoup>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>3</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MakeClothFromSilk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_WeaveBase" Name="Mashed_Ashlands_MakeClothFromRachnoidSilkBase">
+		<defName>Mashed_Ashlands_RachnoidSilkToCloth</defName>
+		<label>weave rachnoid silk into cloth</label>
+		<description>Weave 10 rachnoid silk into 20 cloth.</description>
+		<jobString>Weaving kresh.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RachnoidSilk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RachnoidSilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>20</Cloth>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_SilkToClothBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeClothFromRachnoidSilkBase">
+		<defName>Mashed_Ashlands_RachnoidSilkToClothBulk</defName>
+		<label>weave rachnoid silk into cloth x4</label>
+		<description>Weave 40 rachnoid silk into 80 cloth.</description>
+		<workAmount>1800</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RachnoidSilk</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<Cloth>80</Cloth>
+		</products>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlower]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerGreen</defName>
+		<label>green sporangium flower</label>
+		<description>A rather odd looking flower, that somewhat resembles the sporangium of certain species of slime mold. It can only be found growing in highly polluted ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshGravel</li>
+					<li>Mashed_Ashlands_RichAshGravel</li>
+				</disallowedTerrainForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.5~0.6</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerBlue]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerBlue</defName>
+		<label>blue sporangium flower</label>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerOrange]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerOrange</defName>
+		<label>orange sporangium flower</label>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerOrange</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerWhite]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
+		<defName>Mashed_Ashlands_Plant_SporangiumFlowerWhite</defName>
+		<label>white sporangium flower</label>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

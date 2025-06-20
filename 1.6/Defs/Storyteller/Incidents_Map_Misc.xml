@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandsMapIncident]==========-->
+	<IncidentDef Name="Mashed_Ashlands_AshlandsMapIncident" Abstract="True">
+		<defName>Mashed_Ashlands_AshlandsMapIncident</defName>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_SiltStriderPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_SiltStriderPasses</defName>
+		<label>silt strider pass</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_SiltStriderPasses</workerClass>
+		<letterLabel>Silt strider passes</letterLabel>
+		<letterText>An enormous silt strider has wandered into the area. Often used to carry a large quantity of resources across vast distances, taming it would prove highly beneficial. Of course you could also hunt it instead, for its sturdy chitin plates. Regardless of what you choose, it will not stay here for long.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_DaedrothPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_DaedrothPasses</defName>
+		<label>vagrant daedroth</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_DaedrothPasses</workerClass>
+		<letterLabel>wandering vagrant daedroth</letterLabel>
+		<letterText>A daedroth has wandered into the area. A terrifying beast with a strange connection to psychic energy, a tame vagrant daedroth would be a valuable pet... or its resistant hide may prove more useful. Of course the vagrant daedroth may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_OgrimPasses]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_OgrimPasses</defName>
+		<label>vagrant ogrim</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_OgrimPasses</workerClass>
+		<letterLabel>wandering ogrim</letterLabel>
+		<letterText>A large vagrant ogrim has wandered into the area. A terrifying beast of untold strength, a tame vagrant ogrim would be a valuable pet... or its resistant hide may prove more useful. Of course the vagrant ogrim may have other plans, and will likely want to fill its belly, before it wanders off once more.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_CliffRacerSwarm]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_CliffRacerSwarm</defName>
+		<label>cliff racer swarm</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands.IncidentWorker_CliffRacerSwarm</workerClass>
+		<letterLabel>Cliff racer swarm</letterLabel>
+		<letterText>A large swarm of {0} cliff racers has entered the area, and doesn't seem to be going anywhere anytime soon. It may be best to deal with them quickly, as they could affect the balance of the ecosystem... or of your colony.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>15</minRefireDays>
+	</IncidentDef>
+</Defs>

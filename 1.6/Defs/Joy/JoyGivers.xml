@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JoyGiverDef>
+		<defName>Mashed_Ashlands_BuildAshCastle</defName>
+		<giverClass>Mashed_Ashlands.JoyGiver_BuildAshCastle</giverClass>
+		<baseChance>0.75</baseChance>
+		<jobDef>Mashed_Ashlands_BuildAshCastle</jobDef>
+		<joyKind>Meditative</joyKind>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<requiresEnjoyOutdoors>true</requiresEnjoyOutdoors>
+	</JoyGiverDef>
+</Defs>

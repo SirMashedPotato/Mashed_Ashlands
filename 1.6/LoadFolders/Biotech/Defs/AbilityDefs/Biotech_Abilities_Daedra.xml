@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DaedrothToxbloom]==========-->
+	<AbilityDef ParentName="Mashed_Ashlands_LobBase">
+		<defName>Mashed_Ashlands_DaedrothToxbloom</defName>
+		<label>toxbloom</label>
+		<description>Make the daedroth form a toxbloom in its hand out of psychic energy, and then lob it at a target. The toxbloom explodes on impact, leaving behind a cloud of toxgas.</description>
+		<iconPath>UI/Abilities/Mashed_Ashlands_DaedrothToxbloom</iconPath>
+		<statBases>
+			<Ability_EffectRadius>4.9</Ability_EffectRadius>
+		  </statBases>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Mashed_Ashlands_DaedrothToxbloom_Thrown</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef ParentName="Mashed_Ashlands_LobThrownBase">
+		<defName>Mashed_Ashlands_DaedrothToxbloom_Thrown</defName>
+		<label>toxbloom</label>
+		<graphicData>
+			<texPath>Things/Projectile/Mashed_Ashlands_DaedrothToxbloom_Thrown</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>ToxGas</damageDef>
+			<!-- Use default damage from explosion def -->
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+		</projectile>
+	</ThingDef>
+</Defs>

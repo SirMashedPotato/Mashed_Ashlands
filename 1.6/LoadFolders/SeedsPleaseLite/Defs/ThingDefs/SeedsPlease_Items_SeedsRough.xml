@@ -1,0 +1,68 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedRoughBase]==========-->
+	<ThingDef ParentName="SeedBase" Name="Mashed_Ashlands_SeedRoughBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsSeed</li>
+			<li>Mashed_Ashlands_AshlandsSeedRoughPlant</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedChillshroom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedChillshroom</defName>
+		<label>chillshroom spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedChillshroom</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Chillshroom</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Chillshroom</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedScathecraw</defName>
+		<label>scathecraw seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedScathecraw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Scathecraw</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Scathecraw</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedTramaShrub]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedTramaShrub</defName>
+		<label>trama seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedTramaShrub</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TramaShrub</ThingDef>
+			<ThingDef MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TramaShrub</li>
+					<li MayRequire="ludeon.rimworld.biotech">Mashed_Ashlands_Plant_TramaMass</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

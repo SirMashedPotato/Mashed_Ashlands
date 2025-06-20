@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FermentingFlin]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingFlin</defName>
+		<thingDef>Mashed_Ashlands_AlcoholFlin</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_MeadowRyePrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>20</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
+	<!-- ==========[Mashed_Ashlands_FermentingJazbayWine]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingJazbayWine</defName>
+		<thingDef>Mashed_Ashlands_AlcoholJazbayWine</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_AshenJazbayPrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>20</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
+	<!-- ==========[Mashed_Ashlands_FermentingMazte]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingMazte</defName>
+		<thingDef>Mashed_Ashlands_AlcoholMazte</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_SaltricePrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>4</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
+	<!-- ==========[Mashed_Ashlands_FermentingShein]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingShein</defName>
+		<thingDef>Mashed_Ashlands_AlcoholShein</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_ComberryPrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>14</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
+	<!-- ==========[Mashed_Ashlands_FermentingSujamma]==========-->
+	<ProcessorFramework.ProcessDef>
+		<defName>Mashed_Ashlands_FermentingSujamma</defName>
+		<thingDef>Mashed_Ashlands_AlcoholSujamma</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_WickwheatPrecursor</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>10</processDays>
+		<color>(255, 255, 255)</color>
+	</ProcessorFramework.ProcessDef>
+</Defs>

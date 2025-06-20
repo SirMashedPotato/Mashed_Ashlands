@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Mashed_Ashlands_CrabThingBase]========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_CrabThingBase"]/race/lifeStageAges/li/soundWounded</xpath>
+		<value>
+			<soundWounded>MorrowRim_Swamp_Mudcrab_Wounded</soundWounded>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_CrabThingBase"]/race/lifeStageAges/li/soundDeath</xpath>
+		<value>
+			<soundDeath>MorrowRim_Swamp_Mudcrab_Death</soundDeath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_CrabThingBase"]/race/lifeStageAges/li/soundCall</xpath>
+		<value>
+			<soundCall>MorrowRim_Swamp_Mudcrab_Call</soundCall>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_CrabThingBase"]/race/lifeStageAges/li/soundAngry</xpath>
+		<value>
+			<soundAngry>MorrowRim_Swamp_Mudcrab_Angry</soundAngry>
+		</value>
+	</Operation>
+</Patch>

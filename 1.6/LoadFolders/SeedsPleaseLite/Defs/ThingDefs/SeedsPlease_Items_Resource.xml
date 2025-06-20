@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RawCorkbulbRoot]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawCorkbulbRoot</defName>
+		<label>corkbulb root</label>
+		<description>Raw corkbulb root. While it can be processed into wood logs, it also makes for a decent animal feed when necessary. Especially loved by guar and kagouti.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawInkCap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawInkCap</defName>
+		<label>raw ink-cap</label>
+		<description>Raw ink-cap. While usually processed into dye, it can be used as animal feed when necessary.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawInkCap</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawKreshweed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawKreshweed</defName>
+		<label>raw kreshweed</label>
+		<description>Raw kreshweed. Usually woven into kresh cloth, though it can also be used as animal feed when necessary.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawKreshweed</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
+</Defs>

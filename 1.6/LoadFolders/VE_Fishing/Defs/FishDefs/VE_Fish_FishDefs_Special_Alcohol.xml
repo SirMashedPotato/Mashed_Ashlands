@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholFishBase]==========-->
+	<VCE_Fishing.FishDef Name="Mashed_Ashlands_AlcoholFishBase" Abstract="True">
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_RegularAshland</li>
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+			<li>Mashed_Ashlands_SwampAshland</li>
+			<li>Mashed_Ashlands_MarshAshland</li>
+			<li>Mashed_Ashlands_SulphurHighlandAshland</li>
+			<li>Mashed_Ashlands_CaveAshland</li>
+		</allowedBiomes>
+		<commonality>0.2</commonality>
+		<baseFishingYield>1</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholDagothBrandy]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholDagothBrandy</defName>
+		<thingDef>Mashed_Ashlands_AlcoholDagothBrandy</thingDef>
+		<allowedBiomes Inherit="False">
+			<li>Mashed_Ashlands_VolcanicAshland</li>
+			<li>Mashed_Ashlands_BlightedAshland</li>
+		</allowedBiomes>
+		<commonality>0.1</commonality>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholFlin]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholFlin</defName>
+		<thingDef>Mashed_Ashlands_AlcoholFlin</thingDef>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholGreef]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholGreef</defName>
+		<thingDef>Mashed_Ashlands_AlcoholGreef</thingDef>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholMazte]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholMazte</defName>
+		<thingDef>Mashed_Ashlands_AlcoholMazte</thingDef>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholShein]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholShein</defName>
+		<thingDef>Mashed_Ashlands_AlcoholShein</thingDef>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholSujamma]==========-->
+	<VCE_Fishing.FishDef ParentName="Mashed_Ashlands_AlcoholFishBase">
+		<defName>Mashed_Ashlands_AlcoholSujamma</defName>
+		<thingDef>Mashed_Ashlands_AlcoholSujamma</thingDef>
+	</VCE_Fishing.FishDef>
+</Defs>

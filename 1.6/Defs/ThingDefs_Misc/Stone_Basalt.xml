@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BasaltBase]==========-->
+	<ThingDef ParentName="UglyRockBase" Name="Mashed_Ashlands_BasaltBase" Abstract="True">
+		<graphicData>
+			<color>(106,104,105)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>Mashed_Ashlands_ChunkBasalt</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<smoothedThing>Mashed_Ashlands_SmoothedBasalt</smoothedThing>
+		</building>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Basalt]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+		<defName>Mashed_Ashlands_Basalt</defName>
+		<label>basalt</label>
+		<description>A very hard igneous rock, commonly found in regions that have experienced, or still are experiencing, volcanic activity.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.RockProperties">
+				<roughTexPathReplacer>Terrain/Surfaces/Rock/Mashed_Ashlands_BasaltRough</roughTexPathReplacer>
+				<roughHewnTexPathReplacer>Terrain/Surfaces/Rock/Mashed_Ashlands_BasaltRoughHewn</roughHewnTexPathReplacer>
+				<smoothTexPathReplacer>Terrain/Surfaces/Rock/Mashed_Ashlands_BasaltSmooth</smoothTexPathReplacer>
+				<scatterTypeReplacer>SoftGray</scatterTypeReplacer>
+				<applyToPolluted>true</applyToPolluted>
+				<overrideFilthAcceptance>true</overrideFilthAcceptance>
+				<filthAcceptanceOverride>
+					<li>Unnatural</li>
+				</filthAcceptanceOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SmoothedBasalt]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_BasaltBase">
+		<defName>Mashed_Ashlands_SmoothedBasalt</defName>
+		<label>smoothed basalt</label>
+		<description>A very hard igneous rock formed from rapidly cooling lava. The smoothed surface is reminiscent of a calm lake under the night sky.</description>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<MarketValue>7</MarketValue>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<smoothedThing/>
+			<paintable>true</paintable>
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ChunkBasalt]==========-->
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>Mashed_Ashlands_ChunkBasalt</defName>
+		<label>basalt chunk</label>
+		<graphicData>
+			<color>(106,104,105)</color>
+		</graphicData>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</butcherProducts>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_BlocksBasalt]==========-->
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>Mashed_Ashlands_BlocksBasalt</defName>
+		<label>basalt blocks</label>
+		<description>Blocks of solid basalt. Basalt is a very hard stone.</description>
+		<graphicData>
+			<color>(106,104,105)</color>
+		</graphicData>
+		<statBases>
+			<Mass>1.25</Mass>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(106,104,105)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<stuffAdjective>basalt</stuffAdjective>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Make_StoneBlocksBasalt]==========-->
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>Mashed_Ashlands_Make_StoneBlocksBasalt</defName>
+		<label>make basalt blocks</label>
+		<description>Cuts basalt chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_ChunkBasalt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_ChunkBasalt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</products>
+	</RecipeDef>
+</Defs>

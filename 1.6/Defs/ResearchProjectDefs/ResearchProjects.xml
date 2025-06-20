@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ResearchBase]==========-->
+	<ResearchProjectDef Name="Mashed_Ashlands_ResearchBase" Abstract="True">
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<generalRules>
+			<rulesStrings>
+				<!-- actions -->
+				<li>action_grow->harvesting</li>
+				<li>action_grow->sowing</li>
+				<li>action_grow->growing</li>
+				<li>action_grow->farming</li>
+				<!-- start -->
+				<li>start_craft->making use of the ashlands, with a focus on</li>
+				<li>start_craft->making living in the ashlands bearable, for example</li>
+				<li>start_craft->surviving the ashlands, such as</li>
+				<!-- middle -->
+				<li>middle_grow->several different types of ashland natives, such as</li>
+				<li>middle_grow->ashland native plants, with a focus on</li>
+				<li>middle_grow-></li>
+				<li>middle_craft->how to properly</li>
+				<li>middle_craft->how to efficiently</li>
+				<li>middle_craft->mistakes to avoid when you</li>
+				<li>middle_craft->what not to do when you</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_StarterResearchBase]==========-->
+	<ResearchProjectDef Name="Mashed_Ashlands_StarterResearchBase" ParentName="Mashed_Ashlands_ResearchBase" Abstract="True">
+		<tags>
+			<li>Mashed_Ashlands_AshlandBasic</li>
+		</tags>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Beginner]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_StarterResearchBase">
+		<defName>Mashed_Ashlands_AshSowing_Beginner</defName>
+		<label>beginner ashland farming</label>
+		<description>Learn how to sow some of the plants native to the ashlands, an important first step for anyone that wishes to settle there.\n\nThese plants can be grown at the ash growing zone.</description>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->beginner ashland [action_grow]</li>
+				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_gerund->[action_grow] [thing_plant]</li>
+				<!-- things -->
+				<li>thing_plant->ash yam</li>
+				<li>thing_plant->corkbulb</li>
+				<li>thing_plant->hackle-lo</li>
+				<li>thing_plant->ink-cap</li>
+				<li>thing_plant->kreshweed</li>
+				<li>thing_plant->parasol bush</li>
+				<li>thing_plant->trama shrub</li>
+				<li>thing_plant->scathecraw</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Intermediate]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSowing_Intermediate</defName>
+		<label>intermediate ashland farming</label>
+		<description>Learn how to sow even more of the plants native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Beginner</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->intermediate ashland [action_grow]</li>
+				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_gerund->[action_grow] [thing_plant]</li>
+				<!-- things -->
+				<li>thing_plant->ashland haygrass</li>
+				<li>thing_plant->buttercake</li>
+				<li>thing_plant->chillshroom</li>
+				<li>thing_plant->comberry</li>
+				<li>thing_plant->marshmerrow</li>
+				<li>thing_plant->mucksponge</li>
+				<li>thing_plant->saltrice</li>
+				<li>thing_plant->wickwheat</li>
+				<li>thing_plant->milkcap</li>
+				<li>thing_plant->netch shield</li>
+				<li>thing_plant->spongecap</li>
+				<li>thing_plant->weeping leathercap</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Advanced]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSowing_Advanced</defName>
+		<label>advanced ashland farming</label>
+		<description>Learn how to sow the rest of the plants native to the ashlands.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->advanced ashland [action_grow]</li>
+				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_gerund->[action_grow] [thing_plant]</li>
+				<!-- things -->
+				<li>thing_plant->ash pomegranate</li>
+				<li>thing_plant->ashen jazbay</li>
+				<li>thing_plant->golden reed</li>
+				<li>thing_plant->meadow rye</li>
+				<li>thing_plant->emperor parasol</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Beginner]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_StarterResearchBase">
+		<defName>Mashed_Ashlands_AshSurvival_Beginner</defName>
+		<label>beginner ashland survival</label>
+		<description>Learn how to craft useful products from materials native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->beginner ashland survival</li>
+				<li>subject_story->[start_craft] [middle_craft] [thing_subject]</li>
+				<li>subject_gerund->[thing_subject]</li>
+				<!-- things -->
+				<li>thing_subject->weave kresh fiber</li>
+				<li>thing_subject->pack ash</li>
+				<li>thing_subject->cook scuttle</li>
+				<li>thing_subject->catch torchbugs</li>
+				<li>thing_subject->brew hackle-lo</li>
+				<li>thing_subject->brew trama root</li>
+				<li>thing_subject->brew mazte</li>
+				<li>thing_subject->brew sujamma</li>
+				<li>thing_subject->process inkcap</li>
+				<li>thing_subject->process corkbulb</li>
+				<li>thing_subject->harvest dust ants</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Intermediate]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSurvival_Intermediate</defName>
+		<label>intermediate ashland survival</label>
+		<description>Learn how to refine useful products from materials native to the ashlands.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->intermediate ashland survival</li>
+				<li>subject_story->[start_craft] [middle_craft] [thing_subject]</li>
+				<li>subject_gerund->[thing_subject]</li>
+				<!-- things -->
+				<li>thing_subject->cook scuttle soup</li>
+				<li>thing_subject->weave rachnoid silk</li>
+				<li>thing_subject->refine shalk chitin</li>
+				<li>thing_subject->brew chillshroom</li>
+				<li>thing_subject->brew marshmerrow</li>
+				<li>thing_subject->distil greef</li>
+				<li>thing_subject->refine muck</li>
+				<li>thing_subject->brew shein</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Advanced]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSurvival_Advanced</defName>
+		<label>advanced ashland survival</label>
+		<description>Learn how to more efficiently refine useful products from materials native to the ashlands.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->advanced ashland survival</li>
+				<li>subject_story->[start_craft] [middle_craft] [thing_subject]</li>
+				<li>subject_gerund->[thing_subject]</li>
+				<!-- things -->
+				<li>thing_subject->cook scrib jelly pie</li>
+				<li>thing_subject->extract shalk scent glands</li>
+				<li>thing_subject->brew parasol moss</li>
+				<li>thing_subject->distil dagoth brandy</li>
+				<li>thing_subject->brew flin</li>
+				<li>thing_subject->brew jazbay wine</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSurvival_Fetcherfly]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSurvival_Fetcherfly</defName>
+		<label>advanced fetcherfly studies</label>
+		<description>Learn how to build your own fetcherfly hives, using a fetcherfly hive core.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</prerequisites>
+		<requiredAnalyzed>
+			<li>Mashed_Ashlands_FetcherflyHiveCore</li>
+		</requiredAnalyzed>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->fetcherflies</li>
+				<li>subject->fetcherfly hives</li>
+				<li>subject->fetcherfly hive cores</li>
+				<li>subject_story->what happens when you poke a fetcherfly hive</li>
+				<li>subject_story->how to properly treat fetcherfly burns</li>
+				<li>subject_story->how to catch fetcherfly</li>
+				<li>subject_story->how heat a room with a fetcherfly lamp</li>
+				<li>subject_gerund->caring for fetcherflies</li>
+				<li>subject_gerund->handling fetcherflies</li>
+				<li>subject_gerund->trapping fetcherflies</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

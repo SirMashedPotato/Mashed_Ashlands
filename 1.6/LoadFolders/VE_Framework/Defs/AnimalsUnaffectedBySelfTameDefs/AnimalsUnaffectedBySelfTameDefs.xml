@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+		<defName>Mashed_Ashlands_AnimalsUnaffectedBySelfTameDef</defName>
+		<unaffectedBySelfTamePawns>
+			<li>Mashed_Ashlands_Daedroth</li>
+			<li>Mashed_Ashlands_Ogrim</li>
+			<li>Mashed_Ashlands_SiltStrider</li>
+			<li>Mashed_Ashlands_FetcherflySwarmAnimal</li>
+		</unaffectedBySelfTamePawns>
+	</AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+</Defs>

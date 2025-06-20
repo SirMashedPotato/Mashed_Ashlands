@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnRenderTreeDef[defName="Animal"]/root/children/li[tagDef="Body"]/children</xpath>
+		<value>
+			<li>
+				<debugLabel>Mashed_Ashlands_AnimalGlow</debugLabel>
+				<nodeClass>Mashed_Ashlands.PawnRenderNode_AnimalGlow</nodeClass>
+				<workerClass>Mashed_Ashlands.PawnRenderNodeWorker_AnimalGlow</workerClass>
+				<overlayLayer>Body</overlayLayer>
+				<rotDrawMode>Fresh</rotDrawMode>
+				<baseLayer>2</baseLayer>
+			</li>
+		</value>
+	</Operation>
+</Patch>
