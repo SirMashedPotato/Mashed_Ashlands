@@ -87,7 +87,7 @@
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 		</statBases>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<harvestWork>40</harvestWork>
 			<wildOrder>1</wildOrder>

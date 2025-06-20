@@ -8,7 +8,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<pathCost>3</pathCost>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.2</fertilityMin>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
