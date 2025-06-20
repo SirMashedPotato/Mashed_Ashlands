@@ -78,8 +78,7 @@ namespace Mashed_Ashlands
     /// Used Zombieland as a starting point, thanks Andreas Pardeike!
     /// Adds a new page during scenario setup, specifically for ashland world gen settings
     /// </summary>
-    /*
-    [HarmonyPatch(typeof(PageUtility))] TODO figure out how vanilla do now
+    [HarmonyPatch(typeof(PageUtility))]
     [HarmonyPatch("StitchedPages")]
     public static class CreateWorldParams_DoWindowContents_Patch
     {
@@ -92,5 +91,4 @@ namespace Mashed_Ashlands
             }
         }
     }
-    */
 }
