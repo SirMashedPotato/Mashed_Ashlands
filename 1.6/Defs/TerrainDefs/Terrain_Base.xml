@@ -13,7 +13,7 @@
 		<pathCost>300</pathCost>
 		<changeable>false</changeable>
 		<avoidWander>true</avoidWander>
-		<holdSnow>false</holdSnow>
+		<holdSnowOrSand>false</holdSnowOrSand>
 		<extraDeteriorationFactor>3</extraDeteriorationFactor>
 		<filthAcceptanceMask>
 			<li>None</li>
