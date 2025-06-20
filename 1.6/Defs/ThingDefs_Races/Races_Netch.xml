@@ -8,6 +8,7 @@
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<LeatherAmount>40</LeatherAmount>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools Inherit="False">
@@ -62,7 +63,6 @@
 			</ageGenerationCurve>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.60</wildness>
 			<lifeExpectancy>20</lifeExpectancy>
 			<lifeStageAges Inherit="False">
 				<li>

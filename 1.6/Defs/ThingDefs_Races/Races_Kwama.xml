@@ -26,6 +26,7 @@
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -71,7 +72,6 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
-			<wildness>0.95</wildness>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
@@ -144,6 +144,7 @@
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>25</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>
@@ -183,7 +184,6 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.6</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>

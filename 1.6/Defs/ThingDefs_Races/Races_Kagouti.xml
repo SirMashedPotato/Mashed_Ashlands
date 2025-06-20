@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -71,7 +72,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>

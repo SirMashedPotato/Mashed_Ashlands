@@ -12,6 +12,7 @@
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<FilthRate>8</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -70,7 +71,6 @@
 			<leatherDef>Mashed_Ashlands_StriderChitin</leatherDef>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<wildness>0.985</wildness>
 			<lifeExpectancy>333</lifeExpectancy>
 			<willNeverEat>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>

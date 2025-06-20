@@ -11,6 +11,7 @@
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<FilthRate>10</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -33,7 +34,6 @@
 			<baseHealthScale>1.45</baseHealthScale>
 			<baseHungerRate>0.435</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.6</wildness>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>15</lifeExpectancy>

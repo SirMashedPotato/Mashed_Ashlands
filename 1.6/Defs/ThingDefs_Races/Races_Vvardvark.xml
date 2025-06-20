@@ -12,6 +12,7 @@
 			<MarketValue>150</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.2</Wildness>
 		</statBases>
 		<uiIconScale>1.2</uiIconScale>
 		<tools>
@@ -54,7 +55,6 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
-			<wildness>0.2</wildness>
 			<nuzzleMtbHours>16</nuzzleMtbHours>
 			<gestationPeriodDays>11</gestationPeriodDays>
 			<lifeExpectancy>12</lifeExpectancy>

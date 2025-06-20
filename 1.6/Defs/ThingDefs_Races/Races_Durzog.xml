@@ -16,6 +16,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -59,7 +60,6 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.55</wildness>
 			<trainability>Advanced</trainability>
 			<leatherDef>Mashed_Ashlands_DurzogLeather</leatherDef>
 			<lifeExpectancy>19</lifeExpectancy>

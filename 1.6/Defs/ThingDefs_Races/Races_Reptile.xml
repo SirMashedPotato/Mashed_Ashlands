@@ -15,6 +15,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -82,7 +83,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
@@ -188,6 +188,7 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -259,7 +260,7 @@
 			<leatherDef>Mashed_Ashlands_CliffRacerLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
-			<wildness>0.95</wildness>
+			
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeExpectancy>8</lifeExpectancy>
@@ -355,6 +356,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -394,7 +396,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_GuarLeather</leatherDef>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
-			<wildness>0.6</wildness>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>22</lifeExpectancy>
@@ -544,6 +545,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -598,7 +600,6 @@
 			<baseHealthScale>0.5</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
-			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
 			<nuzzleMtbHours>48</nuzzleMtbHours>
@@ -723,6 +724,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -788,7 +790,6 @@
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>

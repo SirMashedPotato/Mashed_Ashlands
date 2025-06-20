@@ -8,6 +8,7 @@
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0.3</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -47,7 +48,6 @@
 			<baseHealthScale>0.6</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
-			<wildness>0.3</wildness>
 			<roamMtbDays>7</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>9</lifeExpectancy>
