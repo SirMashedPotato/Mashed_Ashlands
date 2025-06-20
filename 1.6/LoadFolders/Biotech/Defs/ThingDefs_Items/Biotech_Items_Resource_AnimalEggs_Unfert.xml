@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperGlowingUnfertilized</defName>
+		<label>glowing ash hopper egg (unfert.)</label>
+		<description>A fertilised glowing ash hopper egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,121,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabGlowingUnfertilized</defName>
+		<label>glowing mudcrab egg (unfert.)</label>
+		<description>A fertilised glowing mudcrab egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,141,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NetchGlowingUnfertilized</defName>
+		<label>glowing netch egg (unfert.)</label>
+		<description>A fertilised glowing netch egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(125,173,102)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>28</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixHoundGlowingUnfertilized</defName>
+		<label>glowing nix-hound egg (unfert.)</label>
+		<description>A fertilised glowing nix-hound egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,94)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxGlowingUnfertilized</defName>
+		<label>glowing nix-ox egg (unfert.)</label>
+		<description>A fertilised glowing nix-ox egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(94,108,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedGlowingUnfertilized</defName>
+		<label>glowing nix-steed egg (unfert.)</label>
+		<description>A fertilised glowing nix-steed egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(79,108,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkGlowingUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkGlowingUnfertilized</defName>
+		<label>glowing shalk egg (unfert.)</label>
+		<description>A fertilised glowing shalk egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,161,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ToxbugUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ToxbugUnfertilized</defName>
+		<label>ashland toxbug egg (unfert.)</label>
+		<description>A fertilised toxbug egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,181,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

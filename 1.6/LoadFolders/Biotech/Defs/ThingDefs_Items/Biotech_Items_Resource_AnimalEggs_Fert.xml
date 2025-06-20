@@ -30,7 +30,6 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>11</MarketValue>
-			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -69,7 +68,6 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>16</MarketValue>
-			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">

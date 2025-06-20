@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_InsectEggFertBase]==========-->
+	<!-- ==========[Mashed_Ashlands_EggFertBase]==========-->
 	<ThingDef ParentName="EggFertBase" Name="Mashed_Ashlands_EggFertBase" Abstract="True">
 		<tradeTags>
 			<li>Mashed_Ashlands_AshlandsFertEgg</li>
@@ -90,21 +90,6 @@
 		</tradeTags>
 		<stackLimit>6</stackLimit>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
-		<label>bantam guar egg (unfert.)</label>
-		<description>An unfertilised bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<color>(228,185,135)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
-		<tradeTags>
-			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
-		</tradeTags>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
 		<defName>Mashed_Ashlands_Egg_BantamGuarFertilized</defName>
@@ -114,7 +99,7 @@
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>7.0</MarketValue>
+			<MarketValue>7</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -131,7 +116,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
 			<color>(109,111,109)</color>
-			<drawSize>1.0</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>15</MarketValue>
@@ -165,7 +150,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>19.0</MarketValue>
+			<MarketValue>19</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -244,7 +229,6 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>11</MarketValue>
-			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -283,7 +267,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>16</MarketValue>
-			<Nutrition>0.15</Nutrition>
+
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
