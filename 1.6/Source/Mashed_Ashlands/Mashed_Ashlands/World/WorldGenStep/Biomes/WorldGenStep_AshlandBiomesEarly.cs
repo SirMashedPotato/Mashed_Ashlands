@@ -19,15 +19,14 @@ namespace Mashed_Ashlands
             List<WorldObject> worldVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(layer);
             foreach (WorldObject volcano in worldVolcanos)
             {
-                layer.Filler.FloodFill(volcano.Tile, (PlanetTile tile) => true, delegate (PlanetTile index, int dist)
+                layer.Filler.FloodFill(volcano.Tile, (PlanetTile planetTile) => true, delegate (PlanetTile planetTile, int dist)
                 {
-                    Tile tile = layer.Tiles[index];
-                    if (PreventAshlandOverride.Get(tile.PrimaryBiome) == null)
+                    Tile tile = layer.Tiles[planetTile];
+                    if (PreventAshlandOverride.Get(tile.PrimaryBiome) != null)
                     {
-                        return false;
+                        return;
                     }
-                    tile.PrimaryBiome = AshlandBiomeFrom(tile, index, layer, OnStartupUtility.earlyAshlandBiomeDefs, volcano);
-                    return true;
+                    tile.PrimaryBiome = AshlandBiomeFrom(tile, planetTile, layer, OnStartupUtility.earlyAshlandBiomeDefs, volcano);
                 }
                 , Find.WorldGrid.TilesNumWithinTraversalDistance(WorldGenUtility.BiomeMaxDistanceForWorld() + 1)
                 );

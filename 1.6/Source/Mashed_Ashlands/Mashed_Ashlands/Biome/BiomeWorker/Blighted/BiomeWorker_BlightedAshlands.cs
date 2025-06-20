@@ -1,11 +1,12 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
+using Verse;
 
 namespace Mashed_Ashlands
 {
     public class BiomeWorker_BlightedAshlands : AshlandBiomeWorker
     {
-        public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null)
+        public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject)
         {
             if (!Mashed_Ashlands_ModSettings.EnableBlightedAshlands)
             {

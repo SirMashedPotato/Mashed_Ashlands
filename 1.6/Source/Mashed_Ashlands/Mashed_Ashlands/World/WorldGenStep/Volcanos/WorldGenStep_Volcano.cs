@@ -82,7 +82,7 @@ namespace Mashed_Ashlands
                             layer[i].hilliness = Hilliness.Impassable;
                             layer[i].elevation = Rand.Range(100, 300);
 
-                            layer.Filler.FloodFill(i, (PlanetTile tile) => true, delegate (PlanetTile tile, int dist)
+                            layer.Filler.FloodFill(i, (PlanetTile tile) => true, delegate (PlanetTile planetTile, int dist)
                             {
                                 if (dist >= coastalVolcanoDistance)
                                 {
@@ -90,7 +90,7 @@ namespace Mashed_Ashlands
                                 }
                                 if (Rand.RangeInclusive(3, 6) - dist >= 1)
                                 {
-                                    Tile neighbourTile = layer[tile];
+                                    Tile neighbourTile = layer[planetTile];
                                     if (neighbourTile.PrimaryBiome == RimWorld.BiomeDefOf.Ocean)
                                     {
                                         neighbourTile.PrimaryBiome = RimWorld.BiomeDefOf.TemperateForest;

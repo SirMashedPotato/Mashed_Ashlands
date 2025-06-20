@@ -16,7 +16,7 @@ namespace Mashed_Ashlands
                 if (biomeDef2.implemented && biomeDef2.Worker is AshlandBiomeWorker)
                 {
                     AshlandBiomeWorker biomeWorker = biomeDef2.Worker as AshlandBiomeWorker;
-                    float score = biomeWorker.GetScore_Main(biomeDef2, tile, tileID);
+                    float score = biomeWorker.GetScore_Main(biomeDef2, tile, tileID, sourceObject);
                     if (score > num || biomeDef == null)
                     {
                         biomeDef = biomeDef2;
@@ -26,7 +26,8 @@ namespace Mashed_Ashlands
             }
             if (num < 15)
             {
-                biomeDef = tile.PrimaryBiome;
+                ///returning the original biome because nothing else is a good fit
+                return tile.PrimaryBiome;
             }
 
             BiomeProperties props = BiomeProperties.Get(biomeDef);
@@ -39,7 +40,6 @@ namespace Mashed_Ashlands
                     tile.hilliness = Rand.Chance(0.75f) ? Hilliness.SmallHills : Rand.Chance(0.75f) ? Hilliness.Flat : Hilliness.LargeHills;
                 }
             }
-
             return biomeDef;
         }
     }

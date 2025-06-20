@@ -81,7 +81,7 @@ namespace Mashed_Ashlands
     [HarmonyPatch(typeof(PageUtility))]
     [HarmonyPatch("StitchedPages")]
     public static class CreateWorldParams_DoWindowContents_Patch
-    {
+    {//todo tutorial check?
         [HarmonyPrefix]
         public static void Patch(List<Page> pages)
         {
