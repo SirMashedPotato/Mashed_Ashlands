@@ -132,7 +132,6 @@
 			</li>
 		</comps>
 		<race>
-			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
 			<packAnimal>true</packAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
@@ -290,7 +289,6 @@
 			</li>
 		</comps>
 		<race>
-			<overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
 			<packAnimal>true</packAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>2.6</maxPreyBodySize>
