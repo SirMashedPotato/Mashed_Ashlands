@@ -317,7 +317,7 @@
 			<color>(110,172,193)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>20</MarketValue> <!-- todo -->
+			<MarketValue>14</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_ThunderbugFertilized]==========-->
