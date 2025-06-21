@@ -70,6 +70,9 @@
 		<forageability>0.25</forageability>
 		<animalDensity>0.4</animalDensity>
 		<plantDensity>0.08</plantDensity>
+		<!-- Terrain overrides -->
+		<riverbankTerrain>Mashed_Ashlands_RichAshSandVolcanic</riverbankTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSandVolcanic</terrain>

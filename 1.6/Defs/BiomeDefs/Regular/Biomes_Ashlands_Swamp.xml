@@ -73,6 +73,12 @@
 		<plantDensity>0.6</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshMud</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshMud</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshMud</riverbankTerrain>
+		<riverbankSizeRange>6~12</riverbankSizeRange>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>

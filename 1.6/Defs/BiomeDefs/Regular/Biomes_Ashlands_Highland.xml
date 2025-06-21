@@ -73,6 +73,12 @@
 		<animalDensity>2</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawAshenJazbay</foragedFood>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshGravel</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshGravel</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshGravel</riverbankTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshScree</gravelTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshScree</terrain>

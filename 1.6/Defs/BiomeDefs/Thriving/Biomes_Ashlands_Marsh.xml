@@ -73,6 +73,11 @@
 		<plantDensity>0.65</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawSaltrice</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshMud</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshMud</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshMud</riverbankTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>WaterShallow</terrain>

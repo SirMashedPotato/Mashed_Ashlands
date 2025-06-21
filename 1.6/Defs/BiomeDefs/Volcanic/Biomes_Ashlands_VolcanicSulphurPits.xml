@@ -67,6 +67,12 @@
 		</modExtensions>
 		<animalDensity>1.2</animalDensity>
 		<plantDensity>0.4</plantDensity>
+		<!-- Terrain overrides -->
+		<lakeBeachTerrain>Mashed_Ashlands_SulphuricSand</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_SulphuricSand</riverbankTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowSulphuricWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepSulphuricWater</waterDeepTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>

@@ -67,6 +67,10 @@
 		</modExtensions>
 		<animalDensity>0.4</animalDensity>
 		<plantDensity>0.05</plantDensity>
+		<!-- Terrain overrides -->
+		<lakeBeachTerrain>Mashed_Ashlands_AshMudBlighted</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshMudBlighted</riverbankTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>

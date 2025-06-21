@@ -79,6 +79,9 @@
 			<Mashed_Ashlands_DustStorm>6</Mashed_Ashlands_DustStorm>
 			<Mashed_Ashlands_DustThunderstorm>1</Mashed_Ashlands_DustThunderstorm>
 		</baseWeatherCommonalities>
+		<!-- Terrain overrides -->
+		<riverbankTerrain>Mashed_Ashlands_AshGravel</riverbankTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshDust</terrain>

@@ -71,6 +71,16 @@
 		<forageability>0.25</forageability>
 		<animalDensity>0.6</animalDensity>
 		<plantDensity>0.2</plantDensity>
+		<!-- World generation -->
+		<forceRockTypes>
+			<li>Mashed_Ashlands_Basalt</li>
+		</forceRockTypes>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_Basalt_Rough</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_Basalt_Rough</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_Basalt_Rough</riverbankTerrain>
+		<gravelTerrain>Mashed_Ashlands_Basalt_RoughHewn</gravelTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_Lava</terrain>
