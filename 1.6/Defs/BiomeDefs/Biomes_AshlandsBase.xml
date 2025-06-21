@@ -3,10 +3,13 @@
 	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
+		<geyserCountFactor>1.2</geyserCountFactor>
 		<movementDifficulty>1</movementDifficulty>
-		<forageability>0.75</forageability>
-		<wildPlantRegrowDays>20</wildPlantRegrowDays>
 		<diseaseMtbDays>60</diseaseMtbDays>
+		<!-- this should make basalt only appear in ashlands biomes -->
+		<extraRockTypes>
+			<li>Mashed_Ashlands_Basalt</li>
+		</extraRockTypes>
 		<diseases>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
@@ -63,13 +66,13 @@
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
 			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
 			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
 			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
 			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
@@ -97,6 +100,10 @@
 			<Rat>0.6</Rat>
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+		</coastalWildAnimals>
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
 			<li>Mashed_Ashlands_Rotumbo</li>
@@ -106,6 +113,27 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.75</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
+		<maxFishPopulation>480</maxFishPopulation>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSand</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSand</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbank</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Map generation -->
+		<!-- TODO move ashland gen steps to these lists? -->
+		<!--
+		 <extraGenSteps>
+		 </extraGenSteps>
+		 <preventGenSteps>
+
+		 </preventGenSteps>
+		 -->
 		<modExtensions>
 			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -122,6 +150,18 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<!-- Foraging/fishing/plants -->
+		<forageability>1</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshFungus</foragedFood>
+		<maxFishPopulation>540</maxFishPopulation>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSand</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSand</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbank</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
 		<modExtensions>
 			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -138,6 +178,24 @@
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<!-- Disables -->
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<canAutoChoose>false</canAutoChoose>
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.1</forageability>
+		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
+		<maxFishPopulation>60</maxFishPopulation>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSandBlighted</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshGravelBlighted</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbankBlighted</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMudBlighted</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravelBlighted</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Misc -->
+		<movementDifficulty>1.5</movementDifficulty>
+		<diseaseMtbDays>40</diseaseMtbDays>
 		<modExtensions>
 			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -156,15 +214,6 @@
 				</disallowedLandforms>
 			</li>
 		</modExtensions>
-		<allowFarmingCamps>false</allowFarmingCamps>
-		<allowRivers>false</allowRivers>
-		<canAutoChoose>false</canAutoChoose>
-		<movementDifficulty>1.5</movementDifficulty>
-		<settlementSelectionWeight>0.1</settlementSelectionWeight>
-		<forageability>0.1</forageability>
-		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
-		<wildPlantRegrowDays>30</wildPlantRegrowDays>
-		<diseaseMtbDays>40</diseaseMtbDays>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
@@ -175,17 +224,37 @@
 			<Rain>0.1</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">0.3</RG_Drizzle>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
 			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
 		</baseWeatherCommonalities>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<!-- Disables -->
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.5</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
+		<maxFishPopulation>240</maxFishPopulation>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSandVolcanic</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSandVolcanic</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbankVolcanic</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain> <!-- todo -->
+		<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Map generation -->
+		<geyserCountFactor>2</geyserCountFactor>
+		<!-- Misc -->
+		<settlementSelectionWeight>0.3</settlementSelectionWeight>
+		<movementDifficulty>2</movementDifficulty>
+		<diseaseMtbDays>40</diseaseMtbDays>
 		<modExtensions>
 			<!-- The non-standard biome workers I use cause it to default to, and get locked to, disabled otherwise -->
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -204,12 +273,6 @@
 				</disallowedLandforms>
 			</li>
 		</modExtensions>
-		<allowFarmingCamps>false</allowFarmingCamps>
-		<allowRivers>false</allowRivers>
-		<movementDifficulty>2</movementDifficulty>
-		<settlementSelectionWeight>0.3</settlementSelectionWeight>
-		<forageability>0.5</forageability>
-		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
@@ -224,6 +287,7 @@
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
@@ -232,7 +296,6 @@
 			<!-- Regrowth weather -->
 			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">1</RG_Drizzle>
 			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Overcast MayRequire="ReGrowth.BOTR.Core">6</RG_Overcast>
 			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
 			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
 			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.1</RG_Monsoon>

@@ -9,7 +9,7 @@ namespace Mashed_Ashlands
     /// <summary>
     /// Allows for custom cave plants for specific biomes.
     /// </summary>
-    [HarmonyPatch(typeof(WildPlantSpawner))]
+    /*[HarmonyPatch(typeof(WildPlantSpawner))]
     [HarmonyPatch("CalculatePlantsWhichCanGrowAt")]
     public static class WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch
     {
@@ -35,12 +35,12 @@ namespace Mashed_Ashlands
             }
             return true;
         }
-    }
+    }*/
 
     /// <summary>
     /// Increases the weight of ashland cave plants in ashland biomes, specifically for cave tiles
     /// </summary>
-    [HarmonyPatch(typeof(WildPlantSpawner))]
+    /*[HarmonyPatch(typeof(WildPlantSpawner))]
     [HarmonyPatch("PlantChoiceWeight")]
     public static class WildPlantSpawner_PlantChoiceWeight_Patch
     {
@@ -62,7 +62,7 @@ namespace Mashed_Ashlands
                 }
             }
         }
-    }
+    }*/
 
     /// <summary>
     /// Ensures only ashland plants show up in the ashland growing zone
