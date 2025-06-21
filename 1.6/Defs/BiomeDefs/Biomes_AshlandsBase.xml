@@ -2,14 +2,16 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
-		<settlementSelectionWeight>0.6</settlementSelectionWeight>
-		<geyserCountFactor>1.2</geyserCountFactor>
-		<movementDifficulty>1</movementDifficulty>
-		<diseaseMtbDays>60</diseaseMtbDays>
-		<!-- this should make basalt only appear in ashlands biomes -->
+		<!-- World generation -->
 		<extraRockTypes>
 			<li>Mashed_Ashlands_Basalt</li>
 		</extraRockTypes>
+		<!-- Map generation -->
+		<geyserCountFactor>1.2</geyserCountFactor>
+		 <!-- Misc -->
+		<settlementSelectionWeight>0.6</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<diseaseMtbDays>60</diseaseMtbDays>
 		<diseases>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
@@ -55,6 +57,7 @@
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
+		<!-- Weather -->
 		<baseWeatherCommonalities>
 			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
@@ -77,6 +80,7 @@
 			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
 			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
 		</baseWeatherCommonalities>
+		<!-- Animals -->
 		<wildAnimals>
 			<!-- prey animals -->
 			<Boomrat>0.05</Boomrat>

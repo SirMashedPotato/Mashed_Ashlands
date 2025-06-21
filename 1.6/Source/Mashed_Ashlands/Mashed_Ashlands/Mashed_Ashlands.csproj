@@ -95,7 +95,6 @@
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
-    <Compile Include="DefModExtension\BuildingProperties.cs" />
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
     <Compile Include="DefModExtension\PreventAshlandOverride.cs" />
@@ -125,7 +124,6 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
-    <Compile Include="Harmony\Misc.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
@@ -160,7 +158,6 @@
     <Compile Include="Harmony\UnsafeConditions.cs" />
     <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\BiotechPatches.cs" />
-    <Compile Include="Harmony\WildAnimalSpawner.cs" />
     <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
