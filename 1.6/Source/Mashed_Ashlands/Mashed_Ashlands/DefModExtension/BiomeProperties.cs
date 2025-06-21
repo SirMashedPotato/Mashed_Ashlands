@@ -1,5 +1,6 @@
-﻿using RimWorld;
+﻿using System;
 using System.Collections.Generic;
+using System.Xml;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -10,36 +11,32 @@ namespace Mashed_Ashlands
         public bool earlyLoader = false;
         public bool lateLoader = false;
         public bool baseBiome = false;
-        public bool canHaveBasalt = true;
-        public bool forceBasalt = false;
-        public bool preventRivers = false;
+        public bool preventRivers = false; //TODO still needed?
 
         /* for biome gen */
-        public bool disableBeaches = false;
-        public bool nullifyBeachTerrain = false;
+        //public bool disableBeaches = false;
+        //public bool nullifyBeachTerrain = false;
         public bool forceHilliness = false;
         public bool useAshlandsGenSteps = true;
-
-        public List<TerrainReplacer> terrainReplacers;
         public List<TerrainReplacer> roadReplacers;
-        public float steamGeyserMultiplier = 1f;
-        public bool restrictPlantsToTerrain = false;
         public bool increasePollutedFertility = false;
-
-        /* for cave gen */
-        public List<BiomePlantRecord> cavePlants;
-        public bool forceCustomCavePlants = false;
-        public bool increaseCavePlantWeight = true;
-        public bool useCustomCaveTerrain = false;
-        public TerrainDef otherTerrainDef;
-        public TerrainDef waterTerrainDef;
-        public float otherTerrainThreshold = 0.55f;
-        public float waterThreshold = 0.93f;
+        [Obsolete]
+        public bool restrictPlantsToTerrain = false; //TODO remove
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;
         public bool allowAshlandsIncidents = true;
         public bool allowAshRaids = true;
+
+        /* for cave gen */
+        //public List<BiomePlantRecord> cavePlants;
+        //public bool forceCustomCavePlants = false;
+        //public bool increaseCavePlantWeight = true;
+        //public bool useCustomCaveTerrain = false;
+        //public TerrainDef otherTerrainDef;
+        //public TerrainDef waterTerrainDef;
+        //public float otherTerrainThreshold = 0.55f;
+        //public float waterThreshold = 0.93f;
 
         public static BiomeProperties Get(Def def)
         {
@@ -51,5 +48,11 @@ namespace Mashed_Ashlands
     {
         public TerrainDef originalTerrain;
         public TerrainDef replacedTerrain;
+
+        public void LoadDataFromXmlCustom(XmlNode xmlRoot)
+        {
+            DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(this, "originalTerrain", xmlRoot);
+            DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(this, "replacedTerrain", xmlRoot.InnerText);
+        }
     }
 }

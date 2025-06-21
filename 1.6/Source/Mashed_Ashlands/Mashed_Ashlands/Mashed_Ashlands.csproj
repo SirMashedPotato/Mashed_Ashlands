@@ -124,7 +124,10 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
+    <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
+    <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
+    <Compile Include="Harmony\Patch_RoadDefGenStep_Place.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />

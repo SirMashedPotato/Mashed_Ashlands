@@ -11,49 +11,13 @@
                 <lateLoader>true</lateLoader>
 				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
-					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.01</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
-					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
-				</cavePlants>
-				<terrainReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSand</replacedTerrain>
-					</li>
-				</terrainReplacers>
-				<roadReplacers>
-					<li>
-						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_PackedAsh</replacedTerrain>
-					</li>
-				</roadReplacers>
 				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
-					</li>
+					<Gravel>Mashed_Ashlands_AshGravel</Gravel>
+					<Soil>Mashed_Ashlands_AshSoil</Soil>
 				</dryToReplacers>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.9</waterThreshold>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAsh</PackedDirt>
+				</roadReplacers>
             </li>
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>

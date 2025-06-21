@@ -5,32 +5,7 @@ using Verse.Noise;
 
 namespace Mashed_Ashlands
 {
-    /// <summary>
-    /// Replaces terrain with different terrain.
-    /// </summary>
-    /*
-    [HarmonyPatch(typeof(CompTerrainPumpDry))]
-    [HarmonyPatch("GetTerrainToDryTo")]
-    public static class GetTerrainToDryTo_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_GetTerrainToDryTo_Patch(Map map, TerrainDef terrainDef, ref TerrainDef __result)
-        {
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
-            if (props != null && !props.dryToReplacers.NullOrEmpty())
-            {
-                foreach (TerrainReplacer replacer in props.dryToReplacers)
-                {
-                    if (replacer.originalTerrain == terrainDef.driesTo)
-                    {
-                        __result = replacer.replacedTerrain;
-                        return;
-                    }
-                }
-            }
-        }
-    }
-    */
+    
 
     /// <summary>
     /// Allows for custom terrain gen
@@ -72,100 +47,6 @@ namespace Mashed_Ashlands
                 }
             }
             return true;
-        }
-    }
-    */
-
-    /// <summary>
-    /// Replaces road terrain with different terrain.
-    /// </summary>
-    /*
-    [HarmonyPatch(typeof(RoadDefGenStep_Place))]
-    [HarmonyPatch("Place")]
-    public static class RoadDefGenStep_Place_Place_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_RoadDefGenStep_Place_Patch(Map map, IntVec3 position)
-        {
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
-            if (props != null && !props.roadReplacers.NullOrEmpty())
-            {
-                foreach (TerrainReplacer replacer in props.roadReplacers)
-                {
-                    if (replacer.originalTerrain == position.GetTerrain(map))
-                    {
-                        map.terrainGrid.SetTerrain(position, replacer.replacedTerrain);
-                        return;
-                    }
-                }
-            }
-        }
-    }
-    */
-
-    /// <summary>
-    /// Disables the generation of beaches for specific biomes
-    /// </summary>
-    /*
-    [HarmonyPatch(typeof(BeachMaker))]
-    [HarmonyPatch("Init")]
-    public static class BeachMaker_Init_Patch
-    {
-        [HarmonyPrefix]
-        public static bool Mashed_Ashlands_BeachMaker_Init_Patch(Map map)
-        {
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
-            if (props != null && props.disableBeaches)
-            {
-                return false;
-            }
-            return true;
-        }
-    }
-    */
-
-    /// <summary>
-    /// Prevents BeachMaker placing sand for specific biomes
-    /// </summary>
-   /*
-    [HarmonyPatch(typeof(BeachMaker))]
-    [HarmonyPatch("BeachTerrainAt")]
-    public static class BeachMaker_BeachTerrainAt_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_BeachMaker_BeachTerrainAt_Patch(BiomeDef biome, ref TerrainDef __result)
-        {
-            BiomeProperties props = BiomeProperties.Get(biome);
-            if (props != null && props.nullifyBeachTerrain)
-            {
-                if (__result == TerrainDefOf.Sand)
-                {
-                    __result = null;
-                }
-            }
-        }
-    }
-   */
-
-    /// <summary>
-    /// Increases the number of geysers for specific biomes.
-    /// </summary>
-    /*
-    [HarmonyPatch(typeof(GenStep_Scatterer))]
-    [HarmonyPatch("CalculateFinalCount")]
-    public static class GenStep_Scatterer_CalculateFinalCount_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_SteamGeyserNumber_Patch(Map map, ref GenStepDef ___def, ref int __result)
-        {
-            if (Mashed_Ashlands_ModSettings.EnableExtraGeysers && ___def == GenStepDefOf.SteamGeysers)
-            {
-                BiomeProperties props = BiomeProperties.Get(map.Biome);
-                if (props != null && props.steamGeyserMultiplier != 1f)
-                {
-                    __result = (int)(__result * props.steamGeyserMultiplier);
-                }
-            }
         }
     }
     */

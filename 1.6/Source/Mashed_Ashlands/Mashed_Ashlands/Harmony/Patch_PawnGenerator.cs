@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
             {
                 if (!props.randomAbility.NullOrEmpty())
                 {
-                    pawn.abilities.GainAbility(props.randomAbility.RandomElement());
+                    pawn.abilities.GainAbility(props.randomAbility.RandomElement()); //TODO Something may be breaking here for daedroth
                 }
             }
         }
