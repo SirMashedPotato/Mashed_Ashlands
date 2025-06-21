@@ -73,12 +73,6 @@
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">2</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.5</RG_Monsoon>
 		</baseWeatherCommonalities>
 		<!-- Animals -->
 		<wildAnimals>
@@ -232,9 +226,6 @@
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">0.3</RG_Drizzle>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
 		</baseWeatherCommonalities>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
@@ -297,12 +288,6 @@
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
 			<Mashed_Ashlands_SulphuricRain>0.5</Mashed_Ashlands_SulphuricRain>
 			<Mashed_Ashlands_FoggySulphuricRain>0.5</Mashed_Ashlands_FoggySulphuricRain>
-			<!-- Regrowth weather -->
-			<RG_Drizzle MayRequire="ReGrowth.BOTR.Core">1</RG_Drizzle>
-			<RG_FoggySnow MayRequire="ReGrowth.BOTR.Core">2</RG_FoggySnow>
-			<RG_Windy MayRequire="ReGrowth.BOTR.Core">8</RG_Windy>
-			<RG_Blizzard MayRequire="ReGrowth.BOTR.Core">0.5</RG_Blizzard>
-			<RG_Monsoon MayRequire="ReGrowth.BOTR.Core">0.1</RG_Monsoon>
 		</baseWeatherCommonalities>
 	</BiomeDef>
 </Defs>
