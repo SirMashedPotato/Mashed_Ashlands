@@ -11,8 +11,7 @@ namespace Mashed_Ashlands
     [HarmonyPatch("GetTerrainToDryTo")]
     public static class GetTerrainToDryTo_Patch
     {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_GetTerrainToDryTo_Patch(Map map, TerrainDef terrainDef, ref TerrainDef __result)
+        public static void Postfix(Map map, TerrainDef terrainDef, ref TerrainDef __result)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.dryToReplacers.NullOrEmpty())

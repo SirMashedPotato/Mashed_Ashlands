@@ -13,8 +13,7 @@ namespace Mashed_Ashlands
     public static class CreateWorldParams_DoWindowContents_Patch
     {
         //todo tutorial check?
-        [HarmonyPrefix]
-        public static void Patch(List<Page> pages)
+        public static void Prefix(List<Page> pages)
         {
             if (Mashed_Ashlands_ModSettings.EnableSettingBeforeWorldGen)
             {

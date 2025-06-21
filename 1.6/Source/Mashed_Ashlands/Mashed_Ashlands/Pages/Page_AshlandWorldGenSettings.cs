@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Runtime;
 using UnityEngine;
 using Verse;
 
@@ -63,8 +62,6 @@ namespace Mashed_Ashlands
             mainRect.yMin += 45f;
             Widgets.DrawMenuSection(mainRect);
             TabDrawer.DrawTabs(mainRect, tabs);
-
-            //SettingsPage_WorldGen.DoSettingsPage(mainRect, Mashed_Ashlands_ModSettings.Instance, true);
 
             switch (curTab)
             {

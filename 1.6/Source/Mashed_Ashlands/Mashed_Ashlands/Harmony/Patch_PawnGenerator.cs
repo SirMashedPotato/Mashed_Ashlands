@@ -10,8 +10,7 @@ namespace Mashed_Ashlands
     [HarmonyPatch("GenerateInitialHediffs")]
     public static class PawnGenerator_GenerateInitialHediffs_Patch
     {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_GenerateInitialHediffs_Patch(Pawn pawn)
+        public static void Postfix(Pawn pawn)
         {
             AnimalProperties props = AnimalProperties.Get(pawn.def);
             if (props != null)

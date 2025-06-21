@@ -11,8 +11,7 @@ namespace Mashed_Ashlands
     [HarmonyPatch("Place")]
     public static class RoadDefGenStep_Place_Place_Patch
     {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_RoadDefGenStep_Place_Patch(Map map, IntVec3 position)
+        public static void Postfix(Map map, IntVec3 position)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.roadReplacers.NullOrEmpty())
