@@ -68,6 +68,7 @@
 				<li>Mashed_Ashlands_Ash</li>
 				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
+			<destroyedByFlooding>false</destroyedByFlooding>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_TreeBase]==========-->

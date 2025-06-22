@@ -42,9 +42,9 @@
 		<description>A large fungal tree, solely found growing around sulphur lakes. While it offers nothing of practical use, most find it incredibly beautiful. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_SulphuricSand</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -56,13 +56,13 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
-			<fertilityMin>0.1</fertilityMin>
 			<growDays>20</growDays>
 			<visualSizeRange>1.3~2.4</visualSizeRange>
 			<harvestWork>600</harvestWork>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<purpose>Beauty</purpose>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 		</plant>

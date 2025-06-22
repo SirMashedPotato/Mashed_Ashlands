@@ -9,8 +9,6 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
 				<dryToReplacers>
 					<Gravel>Mashed_Ashlands_AshGravel</Gravel>
 					<Soil>Mashed_Ashlands_AshSoil</Soil>

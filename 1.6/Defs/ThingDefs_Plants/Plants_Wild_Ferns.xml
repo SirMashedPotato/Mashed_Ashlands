@@ -30,11 +30,11 @@
 		<description>A rare fern that can sometimes be found growing in humid ashland regions. Certain local tribes use the flowers of this fern to mask their scent whilst hunting.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
 					<li>Mashed_Ashlands_ShallowMarsh</li>
 					<li>Mashed_Ashlands_DeepMarsh</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -74,9 +74,9 @@
 		<description>A small semi-petrified fern. It looks like it should crumble to dust at the slightest touch, yet somehow still it endures.</description>
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -101,14 +101,6 @@
 		<defName>Mashed_Ashlands_Plant_SloughFern</defName>
 		<label>slough fern</label>
 		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>
@@ -120,6 +112,10 @@
 		<plant>
 			<fertilityMin>0.1</fertilityMin>
 			<visualSizeRange>0.9~1.6</visualSizeRange>
+			<wildTerrainTags>
+				<li>WaterMarshy</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
@@ -132,14 +128,6 @@
 		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
 		<label>ashland somnalius fern</label>
 		<description>A small fern that can often be found growing in humid ashland regions.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>

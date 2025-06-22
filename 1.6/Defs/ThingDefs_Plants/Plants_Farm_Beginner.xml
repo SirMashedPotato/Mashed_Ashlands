@@ -7,10 +7,11 @@
 		<description>A highly nutritious tuber. Clusters of wild ash yams are a common sight in ashland regions, and thanks to their innate resistance to ash storms are very often farmed by those that settle there. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -50,9 +51,10 @@
 		<description>A small tree that can often be found growing in regions with ash rich ground. Farmed for its tough roots, which make for a reasonable wood replacement. The roots are also often consumed by wild animals, such as guar and kagouti. While structurally quite sturdy, corkbulb will slowly be worn down by ash storms.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -83,9 +85,9 @@
 		<description>A large and leafy succulent, often found growing in grasslands with ash rich soil. The leaves are rather tasty, and can easily be harvested from the plant without killing it. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -119,10 +121,11 @@
 		<description>A colourful small mushroom often found growing in the shade of larger fungal trees. The cap secretes a liquid that many use to make dye. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -238,11 +241,12 @@
 		<description>An incredibly hardy shrub, typically found growing in the less-hospitable regions of the ashlands. The roots are often brewed into a calming tea, though can also be fed to livestock when times are hard. Trama shrub are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshRiverbank</li>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -288,11 +292,12 @@
 		<description>An incredibly hardy grass, typically found growing in the less-hospitable regions of the ashlands. While the soft flesh inside of the grass is tempting to some, those that try it will quickly learn why scathecraw isn't considered a delicacy. Scathecraw are only able to grow in ash rich ground, though few wish to grow it outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshRiverbank</li>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

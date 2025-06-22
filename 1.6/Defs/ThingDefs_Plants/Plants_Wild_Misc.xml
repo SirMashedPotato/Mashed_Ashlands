@@ -44,9 +44,9 @@
 		<description>A semi-petrified glowstalk, its bulb almost completely turned to stone. It still manages to emit a faint light, even in this state. It doesn't even attract torchbugs at night anymore, not that there's likely to be many left in this petrified wasteland.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>

@@ -19,9 +19,8 @@ namespace Mashed_Ashlands
         public bool forceHilliness = false;
         public bool useAshlandsGenSteps = true;
         public List<TerrainReplacer> roadReplacers;
-        public bool increasePollutedFertility = false;
-        [Obsolete]
-        public bool restrictPlantsToTerrain = false; //TODO remove
+        public bool increasePollutedFertility = true; //TODO still needed?
+        public bool restrictPlantsToTerrain = true; //TODO still needed?
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;

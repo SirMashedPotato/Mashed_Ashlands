@@ -11,8 +11,6 @@
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
 				<preventRivers>true</preventRivers>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
 				<dryToReplacers>
 					<Gravel>Mashed_Ashlands_AshGravelVolcanic</Gravel>
 					<Soil>Mashed_Ashlands_AshSoilVolcanic</Soil>

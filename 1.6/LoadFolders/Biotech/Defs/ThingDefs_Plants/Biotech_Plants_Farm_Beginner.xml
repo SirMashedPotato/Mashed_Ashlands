@@ -7,10 +7,10 @@
 		<description>A reddish-brown fungus, often found growing in highly polluted ashland regions. It has adapted to feed off pollution, giving its flesh a rather disgusting texture, and metallic taste. The flesh of blightcap is technically edible, though most don't enjoy it.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

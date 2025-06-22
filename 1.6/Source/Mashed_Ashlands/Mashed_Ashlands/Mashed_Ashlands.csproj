@@ -128,6 +128,7 @@
     <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
     <Compile Include="Harmony\Patch_RoadDefGenStep_Place.cs" />
+    <Compile Include="Harmony\Patch_WildPlantSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
@@ -212,7 +213,6 @@
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
-    <Compile Include="Utility\PlantPropsUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\VEW_AshStorm.cs" />

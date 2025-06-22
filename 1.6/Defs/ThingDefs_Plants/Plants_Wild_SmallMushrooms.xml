@@ -23,9 +23,9 @@
 		<description>A species of wild mushroom adapted for life in the ashlands. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -51,9 +51,9 @@
 		<description>A small mushroom commonly found growing in densely forested ashland regions. Many enjoy the sight of its brilliant blue colouration.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -131,9 +131,9 @@
 		<description>Ashland fungus, that has become partially petrified. Against all odds, it still manages to grow.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -165,9 +165,9 @@
 		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_SulphuricSand</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -179,13 +179,13 @@
 			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
 		</graphicData>
 		<plant>
-			<fertilityMin>0.1</fertilityMin>
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>

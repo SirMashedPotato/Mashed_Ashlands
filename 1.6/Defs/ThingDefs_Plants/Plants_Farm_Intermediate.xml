@@ -5,6 +5,14 @@
 		<defName>Mashed_Ashlands_Plant_AshlandHayGrass</defName>
 		<label>ashland haygrass</label>
 		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -42,9 +50,10 @@
 		<description>A rather strange mushroom, that somewhat resembles a stack of pancakes. The flesh is surprisingly tasty, and completely safe to eat. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -85,9 +94,9 @@
 		<description>Semi-petrified buttercake mushroom, gradually turned to stone by extreme blight storms. Somehow it still grows, though there is almost no edible flesh left.</description>
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -146,9 +155,10 @@
 		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberries are a popular export, and can also be fermented into shein. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -222,6 +232,7 @@
 			<purpose>Food</purpose>
 			<maxMeshCount>4</maxMeshCount>
 			<humanFoodPlant>true</humanFoodPlant>
+			<destroyedByFlooding>false</destroyedByFlooding>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
@@ -317,10 +328,11 @@
 		<description>A grass often found growing in grasslands with ash rich soil. Farmed in great quantities by those that settle the ashlands, as raw wickwheat is a popular export, and can also be fermented into sujamma. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

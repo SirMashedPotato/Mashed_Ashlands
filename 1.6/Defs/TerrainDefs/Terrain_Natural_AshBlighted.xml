@@ -13,6 +13,9 @@
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshSoilBlighted</texturePath>
 		<fertility>0.5</fertility>
 		<categoryType>Soil</categoryType>
+		<tags>
+			<li>Mashed_Ashlands_AshSoil</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_MossyAshSoilBlighted]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
@@ -21,6 +24,9 @@
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_MossyAshSoilBlighted</texturePath>
 		<fertility>0.5</fertility>
 		<categoryType>Soil</categoryType>
+		<tags>
+			<li>Mashed_Ashlands_MossyAshSoil</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshRiverbankBlighted]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
@@ -29,6 +35,9 @@
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshRiverbankBlighted</texturePath>
 		<fertility>0.6</fertility>
 		<categoryType>Soil</categoryType>
+		<tags>
+			<li>Mashed_Ashlands_AshRiverbank</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshSoil]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
@@ -36,6 +45,9 @@
 		<label>cracked blighted ash</label>
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_CrackedAshSoilBlighted</texturePath>
 		<fertility>0.1</fertility>
+		<tags>
+			<li>Mashed_Ashlands_AshCracked</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshGravel]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
@@ -44,6 +56,9 @@
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_AshGravelBlighted</texturePath>
 		<scatterType>Rocky</scatterType>
 		<fertility>0.3</fertility>
+		<tags>
+			<li>Mashed_Ashlands_AshGravel</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshBlightedBase">
@@ -53,6 +68,9 @@
 		<scatterType>Rocky</scatterType>
 		<categoryType>Sand</categoryType>
 		<fertility>0.1</fertility>
+		<tags>
+			<li>Mashed_Ashlands_AshSand</li>
+		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_PackedAsh]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_PackedAshBase">

@@ -8,10 +8,8 @@
 		<texture>World/Biomes/Mashed_Ashlands_ForestAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
-                <earlyLoader>true</earlyLoader>
+				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
 				<dryToReplacers>
 					<Gravel>Mashed_Ashlands_AshGravel</Gravel>
 					<Soil>Mashed_Ashlands_AshSoil</Soil>
@@ -30,7 +28,7 @@
 				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
 				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
-			</li>	
+			</li>
 			<li Class="FirefliesTwoO.NightlySpawningExtension" MayRequire="scurvyez.firefliestwo">
 				<biomeEmissionRate>0.6</biomeEmissionRate>
 			</li>

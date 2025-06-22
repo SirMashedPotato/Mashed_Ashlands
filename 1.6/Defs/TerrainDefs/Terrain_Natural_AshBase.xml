@@ -92,6 +92,7 @@
 		</statBases>
 		<affordances>
 			<li>Bridgeable</li>
+			<li>WaterproofConduitable</li>
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
@@ -107,5 +108,8 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+		<tags>
+			<li>Mud</li>
+		</tags>
 	</TerrainDef>
 </Defs>

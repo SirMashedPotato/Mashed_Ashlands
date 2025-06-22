@@ -5,13 +5,14 @@
 		<defName>Mashed_Ashlands_BurnedParasolStumpPermanent</defName>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
 					<li>Mashed_Ashlands_CrackedAshSoilBlighted</li>
 					<li>Mashed_Ashlands_AshSandBlighted</li>
 					<li>Mashed_Ashlands_AshGravelBlighted</li>
 					<li>Mashed_Ashlands_AshSandVolcanic</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSandVolcanic</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases Inherit="False">
@@ -30,13 +31,14 @@
 		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
 					<li>Mashed_Ashlands_CrackedAshSoilBlighted</li>
 					<li>Mashed_Ashlands_AshSandBlighted</li>
 					<li>Mashed_Ashlands_AshGravelBlighted</li>
 					<li>Mashed_Ashlands_AshSandVolcanic</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshSandVolcanic</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases Inherit="False">

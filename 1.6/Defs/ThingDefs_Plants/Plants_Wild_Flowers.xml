@@ -38,11 +38,11 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_SulphuricSand</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -70,13 +70,10 @@
 		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<disallowedTerrainForWild>
-					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>	
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSand</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -101,10 +98,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshGravel</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -128,10 +125,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -157,10 +154,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -186,11 +183,11 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -225,10 +222,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoilVolcanic</li>
 					<li>Mashed_Ashlands_RichAshSoilVolcanic</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -293,10 +290,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -322,10 +319,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -351,12 +348,12 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_RichAshGravel</li>
 					<li>Mashed_Ashlands_AshScree</li>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -381,9 +378,9 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

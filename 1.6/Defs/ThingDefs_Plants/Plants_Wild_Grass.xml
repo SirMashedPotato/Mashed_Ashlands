@@ -27,12 +27,11 @@
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -61,19 +60,14 @@
 		<defName>Mashed_Ashlands_Plant_AshlandDuneGrass</defName>
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_AshSand</li>
-					<li>Mashed_Ashlands_AshSandVolcanic</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowTags Inherit="False"/>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_AshSand</li>
+			</wildTerrainTags>
 		</plant>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">

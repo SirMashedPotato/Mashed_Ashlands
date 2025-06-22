@@ -36,9 +36,9 @@
 				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -68,9 +68,9 @@
 		<thingClass>Plant</thingClass>
 		<modExtensions Inherit="False">
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>

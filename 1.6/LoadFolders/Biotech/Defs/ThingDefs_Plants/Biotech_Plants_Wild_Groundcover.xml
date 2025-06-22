@@ -100,14 +100,6 @@
 		<defName>Mashed_Ashlands_Plant_GlowingRussula</defName>
 		<label>glowing russula</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
@@ -138,14 +130,6 @@
 		<defName>Mashed_Ashlands_Plant_GlowingCoprinus</defName>
 		<label>glowing coprinus</label>
 		<description>A species of small mushroom, often found growing in highly polluted ashland regions, usually in caves or swamps. Its gloomy colouration and glow is quite unsettling. Capable of growing in complete darkness, but needs ash rich ground to grow in.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
-				</disallowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Beauty>6</Beauty>
 			<BeautyOutdoors>6</BeautyOutdoors>

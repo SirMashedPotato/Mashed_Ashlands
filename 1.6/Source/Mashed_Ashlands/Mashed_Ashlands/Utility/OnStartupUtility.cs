@@ -13,8 +13,7 @@ namespace Mashed_Ashlands
         public static HashSet<BiomeDef> lateAshlandBiomeDefs = new HashSet<BiomeDef> { };
         public static HashSet<BiomeDef> baseAshlandBiomeDefs = new HashSet<BiomeDef> { };
 
-        [Obsolete]
-        public static HashSet<BiomeDef> restrictedTerrainPlantsBiomes = new HashSet<BiomeDef> { }; //TODO remove
+        public static HashSet<BiomeDef> restrictedTerrainPlantsBiomes = new HashSet<BiomeDef> { };
         public static HashSet<BiomeDef> modifiedPollutionFertilityBiomes = new HashSet<BiomeDef> { };
 
         public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
