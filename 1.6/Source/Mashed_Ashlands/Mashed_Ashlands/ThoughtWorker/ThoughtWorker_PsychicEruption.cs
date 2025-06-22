@@ -23,7 +23,7 @@ namespace Mashed_Ashlands
         }
 
         private PlanetLayer cachedLayer = null;
-        private List<WorldObject> validVolcanos;
+        private List<WorldObject> validVolcanos = new List<WorldObject>();
 
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
@@ -39,7 +39,7 @@ namespace Mashed_Ashlands
             {
                 if (p.IsCaravanMember())
                 {
-                    foreach (Volcano volcano in ValidVolcanos(p.Map.Tile.Layer).Cast<Volcano>())
+                    foreach (Volcano volcano in ValidVolcanos(p.GetCaravan().Tile.Layer).Cast<Volcano>())
                     {
                         WorldObjectComp_RandomConditionCauser conditionComp = volcano.GetComponent<WorldObjectComp_RandomConditionCauser>();
                         if (conditionComp.CurrentConditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption)
