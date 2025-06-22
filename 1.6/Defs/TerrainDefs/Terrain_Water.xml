@@ -1,7 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- 
+	<canFreeze>true</canFreeze>
+    <waterBodyType>Freshwater</waterBodyType>
+	<waterBodyType>Saltwater</waterBodyType>
+    <floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">ShallowFloodwater</floodTerrain>
+	<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain>
+	<affordances>
+		<li>WaterproofConduitable</li>
+		<li>Walkable</li>
+    </affordances>
+
+	used for plant spawning
+	<tags>
+		<li>Ocean</li>
+		<li>WaterFreshShallow</li>
+		<li>WaterFreshShallowStill</li>
+		<li>WaterMarshy</li>
+    </tags>
+	-->
 	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
-	<TerrainDef ParentName="WaterShallowBase">
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_BlightedSludgeBase">
 		<defName>Mashed_Ashlands_BlightedSludge</defName>
 		<label>blighted sludge</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_BlightedSludgeRamp</texturePath>
@@ -10,14 +29,12 @@
 		<pathCost>40</pathCost>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
-		<modExtensions>
-			<li Class="ReGrowthCore.BatheExtension" MayRequire="regrowth.botr.core">
-				<thoughtAfterBathing>Mashed_Ashlands_BathingBlightedSludge</thoughtAfterBathing>
-				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
-			</li>
-		</modExtensions>
+		<traversedThought>Mashed_Ashlands_WadedThroughSludge</traversedThought>
+		<waterBodyType>Other</waterBodyType>
+		<canFreeze>false</canFreeze>
+		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
 		<tags>
-			<li>PF_TerrainTag_Mud</li>
+			<li>Mashed_Ashlands_WaterBlightedSludge</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_ShallowMarsh]==========-->
@@ -28,21 +45,11 @@
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>394</renderPrecedence>
-		<fertility>0.1</fertility>
 		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
-		<modExtensions>
-			<li Class="ReGrowthCore.BatheExtension" MayRequire="regrowth.botr.core">
-				<thoughtAfterBathing>RG_BathingMarsh</thoughtAfterBathing>
-				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
-			</li>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl" MayRequire="biomesteam.biomescore">
-				<terrainTags>
-					<li>Mashed_Ashlands_Marsh</li>
-				</terrainTags>
-			</li>
-		</modExtensions>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain> <!-- todo -->
 		<tags>
-			<li>PF_TerrainTag_Mud</li>
+			<li>Mashed_Ashlands_WaterMarsh</li>
+			<li>WaterMarshy</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_DeepMarsh]==========-->
@@ -50,7 +57,55 @@
 		<defName>Mashed_Ashlands_DeepMarsh</defName>
 		<label>marsh</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepMarshRamp</texturePath>
-		<fertility>0.05</fertility>
 		<pathCost>42</pathCost>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
+		<label>shallow sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pathCost>30</pathCost>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain> <!-- todo -->
+		<meltSnowRadius>3</meltSnowRadius>
+		<heatPerTick>0.003</heatPerTick>
+		<throwFleckChance>0.3</throwFleckChance>
+		<fleckData>
+			<fleck>Mashed_Ashlands_SteamPuffFleck</fleck>
+			<velocitySpeedRange>0.2~0.4</velocitySpeedRange>
+			<velocityAngleRange>0~360</velocityAngleRange>
+			<rotationSpeedRange>0</rotationSpeedRange>
+			<solidTicksRange>4~8</solidTicksRange>
+			<scaleRange>4~8</scaleRange>
+		</fleckData>
+		<tags>
+			<li>Mashed_Ashlands_WaterSulphuricShallow</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepSulphuricWater]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_DeepSulphuricWater</defName>
+		<label>deep sulphuric water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepSulphuricWaterRampPolluted</pollutedTexturePath>
+		<renderPrecedence>397</renderPrecedence>
+		<gravshipReplacementTerrain>Mashed_Ashlands_ShallowSulphuricWater</gravshipReplacementTerrain>
+		<meltSnowRadius>3</meltSnowRadius>
+		<heatPerTick>0.003</heatPerTick>
+		<throwFleckChance>0.3</throwFleckChance>
+		<fleckData>
+			<fleck>Mashed_Ashlands_SteamPuffFleck</fleck>
+			<velocitySpeedRange>0.3~0.6</velocitySpeedRange>
+			<velocityAngleRange>0~360</velocityAngleRange>
+			<rotationSpeedRange>0</rotationSpeedRange>
+			<solidTicksRange>5~10</solidTicksRange>
+			<scaleRange>6~12</scaleRange>
+		</fleckData>
+		<tags>
+			<li>Mashed_Ashlands_WaterSulphuricDeep</li>
+		</tags>
 	</TerrainDef>
 </Defs>
