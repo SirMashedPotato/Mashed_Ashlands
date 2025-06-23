@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase" Name="Mashed_Ashlands_GrassBase" Abstract="True">
 		<statBases>
 			<Nutrition>0.45</Nutrition>
-			<Flammability>1.0</Flammability>
+			<Flammability>1</Flammability>
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
@@ -44,17 +44,6 @@
 			<sowWork>170</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_CharredAshlandGrass]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandGrassBase">
-		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
-		<label>charred ashland grass</label>
-		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
-		</graphicData>
-		<plant>
-			<maxMeshCount>4</maxMeshCount>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrass]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
 		<defName>Mashed_Ashlands_Plant_AshlandDuneGrass</defName>
@@ -63,6 +52,10 @@
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.4</Nutrition>
+			<Flammability>0.3</Flammability>
+		</statBases>
 		<plant>
 			<sowTags Inherit="False"/>
 			<wildTerrainTags>

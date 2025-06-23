@@ -26,7 +26,7 @@
 			<li>Mashed_Ashlands_GrowSulphur</li>
 		</affordances>
 		<generatedFilth>Mashed_Ashlands_Filth_Sulphur</generatedFilth>
-		<fertility>0.1</fertility>
+		<fertility>0</fertility>
 		<takeFootprints>True</takeFootprints>
 		<tools>
 			<li>

@@ -32,7 +32,6 @@
 		<plantDensity>0.4</plantDensity>
 		<!-- Terrain overrides -->
 		<lakeBeachTerrain>Mashed_Ashlands_SulphuricSand</lakeBeachTerrain>
-		<riverbankTerrain>Mashed_Ashlands_SulphuricSand</riverbankTerrain>
 		<waterShallowTerrain>Mashed_Ashlands_ShallowSulphuricWater</waterShallowTerrain>
 		<waterDeepTerrain>Mashed_Ashlands_DeepSulphuricWater</waterDeepTerrain>
 		<!-- Terrain -->
@@ -108,12 +107,13 @@
 			<Mashed_Ashlands_Plant_ParasolBush>0.02</Mashed_Ashlands_Plant_ParasolBush>
 			<Mashed_Ashlands_Plant_TramaShrub>0.6</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
-			<Mashed_Ashlands_Plant_ScorchedBush>2</Mashed_Ashlands_Plant_ScorchedBush>
+			<Mashed_Ashlands_Plant_ScorchedBush>1.5</Mashed_Ashlands_Plant_ScorchedBush>
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
-			<Mashed_Ashlands_Plant_SulphurFungus>1</Mashed_Ashlands_Plant_SulphurFungus>
 			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
+			<!-- Sulphur plants -->
+			<Mashed_Ashlands_Plant_SulphurFungus>0.8</Mashed_Ashlands_Plant_SulphurFungus>
+			<Mashed_Ashlands_GiantSulphuricCoprinus>0.3</Mashed_Ashlands_GiantSulphuricCoprinus>
 			<!-- Trees -->
-			<Mashed_Ashlands_GiantSulphuricCoprinus>0.2</Mashed_Ashlands_GiantSulphuricCoprinus>
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.05</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>

@@ -1,8 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_CharredAshlandGrass]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandGrassBase">
+		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
+		<label>charred ashland grass</label>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.3</Nutrition>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<plant>
+			<sowResearchPrerequisites Inherit="false"/>
+			<sowWork IsNull="true"/>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_Sulphur</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<maxMeshCount>4</maxMeshCount>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_ScorchedBush]==========-->
+	<ThingDef ParentName="BushBase">
+		<defName>Mashed_Ashlands_Plant_ScorchedBush</defName>
+		<label>scorched bush</label>
+		<description>A scorched bush, covered in numerous thorns and pointy ends. Provides nothing of practical use.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_ScorchedBush</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growDays>3</growDays>
+			<pollution>Any</pollution>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_Sulphur</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<topWindExposure>0.1</topWindExposure>
+			<wildClusterWeight>20</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_BurnedParasolStumpPermanent]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_BurnedParasolStumpBase">
 		<defName>Mashed_Ashlands_BurnedParasolStumpPermanent</defName>
+		<thingClass>Plant</thingClass>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainDefsForWild>
@@ -21,6 +70,11 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<plant>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_Sulphur</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
@@ -29,6 +83,7 @@
 		<defName>Mashed_Ashlands_BurnedStumpPermanent</defName>
 		<label>burned stump</label>
 		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
+		<thingClass>Plant</thingClass>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<disallowedTerrainDefsForWild>
@@ -56,6 +111,11 @@
 			</shadowData>
 		</graphicData>
 		<plant>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Ash</li>
+				<li>Mashed_Ashlands_Sulphur</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>

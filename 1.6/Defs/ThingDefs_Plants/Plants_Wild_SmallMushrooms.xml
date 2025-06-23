@@ -158,37 +158,6 @@
 			<topWindExposure>0.01</topWindExposure>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_SulphurFungus]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
-		<defName>Mashed_Ashlands_Plant_SulphurFungus</defName>
-		<label>sulphur entoloma</label>
-		<description>A small mushroom only found growing in near sulphur pools. Many enjoy the sight of its striking yellow colouration. While in the wild it can only grow on ground dense in sulphur, with enough care one can grow it on ash instead.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainDefsForWild>
-					<li>Mashed_Ashlands_SulphuricSand</li>
-				</allowedTerrainDefsForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>6</Beauty>
-			<BeautyOutdoors>6</BeautyOutdoors>
-			<Flammability>0.2</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
-		</graphicData>
-		<plant>
-			<growDays>3</growDays>
-			<visualSizeRange>0.2~0.4</visualSizeRange>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
-			</sowResearchPrerequisites>
-			<sowWork>200</sowWork>
-			<completelyIgnoreFertility>true</completelyIgnoreFertility>
-			<purpose>Beauty</purpose>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
 		<defName>Mashed_Ashlands_Plant_VioletCoprinus</defName>
