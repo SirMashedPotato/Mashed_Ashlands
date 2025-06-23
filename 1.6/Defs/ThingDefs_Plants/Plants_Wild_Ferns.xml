@@ -96,33 +96,6 @@
 			<topWindExposure>0.01</topWindExposure>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase">
-		<defName>Mashed_Ashlands_Plant_SloughFern</defName>
-		<label>slough fern</label>
-		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
-		<statBases>
-			<Beauty>3</Beauty>
-			<BeautyOutdoors>3</BeautyOutdoors>
-			<Flammability>0.8</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant</texPath>
-		</graphicData>
-		<plant>
-			<fertilityMin>0.1</fertilityMin>
-			<visualSizeRange>0.9~1.6</visualSizeRange>
-			<wildTerrainTags>
-				<li>WaterMarshy</li>
-			</wildTerrainTags>
-			<completelyIgnoreFertility>true</completelyIgnoreFertility>
-		</plant>
-		<comps>
-			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
-				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
-			</li>
-		</comps>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>

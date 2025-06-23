@@ -19,8 +19,6 @@
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>7</growDays>
 			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
 			<harvestWork>40</harvestWork>
@@ -65,8 +63,6 @@
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>5</growDays>
 			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
 			<harvestWork>40</harvestWork>
@@ -78,6 +74,32 @@
 			<sowTags Inherit="False"/>
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_WaterMarsh</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+		</plant>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SloughFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_SloughFern</defName>
+		<label>slough fern</label>
+		<description>A large fern that can often be found growing in pools of stagnant water in humid ashland regions.</description>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>0.9~1.6</visualSizeRange>
+			<wildTerrainTags>
+				<li>WaterMarshy</li>
 			</wildTerrainTags>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
