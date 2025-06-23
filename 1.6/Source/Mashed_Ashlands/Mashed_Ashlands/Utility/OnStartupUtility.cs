@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using RimWorld;
 using System.Linq;
-using System;
 
 namespace Mashed_Ashlands
 {
@@ -16,10 +15,10 @@ namespace Mashed_Ashlands
         public static HashSet<BiomeDef> restrictedTerrainPlantsBiomes = new HashSet<BiomeDef> { };
         public static HashSet<BiomeDef> modifiedPollutionFertilityBiomes = new HashSet<BiomeDef> { };
 
-        public static List<ThingDef> ashlandFlowerPlants = new List<ThingDef> { };
+        public static HashSet<ThingDef> ashlandFlowerPlants = new HashSet<ThingDef> { };
 
-        public static List<ThingDef> hasPollutionPropsAnimals = new List<ThingDef> { };
-        public static List<ThingDef> alternateStimulisAnimals = new List<ThingDef> { };
+        public static HashSet<ThingDef> hasPollutionPropsAnimals = new HashSet<ThingDef> { };
+        public static HashSet<ThingDef> alternateStimulisAnimals = new HashSet<ThingDef> { };
         public static HashSet<ThingDef> glowOverlayAnimals = new HashSet<ThingDef> { };
 
         static OnStartupUtility()
