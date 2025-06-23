@@ -6,24 +6,18 @@ namespace Mashed_Ashlands
 {
     public class Comp_EffecterExtendedAtNight : ThingComp
     {
-        public CompProperties_EffecterAtNight Props
-        {
-            get
-            {
-                return (CompProperties_EffecterAtNight)props;
-            }
-        }
+        public CompProperties_EffecterAtNight Props => (CompProperties_EffecterAtNight)props;
 
-        public override void CompTick()
+        public override void CompTickInterval(int delta)
         {
-            if (parent.IsHashIntervalTick(Props.tickInterval))
+            if (parent.IsHashIntervalTick(Props.tickInterval, delta))
             {
                 if (GenLocalDate.DayPercent(parent) < 0.25f || GenLocalDate.DayPercent(parent) > 0.8f)
                 {
                     TickEffecter();
                 }
             }
-            base.CompTick();
+            base.CompTickInterval(delta);
         }
 
         //used by plants
@@ -44,10 +38,7 @@ namespace Mashed_Ashlands
             if (!parent.Spawned)
             {
                 Effecter temp = effecter;
-                if (temp != null)
-                {
-                    temp.Cleanup();
-                }
+                temp?.Cleanup();
                 effecter = null;
                 return;
             }
