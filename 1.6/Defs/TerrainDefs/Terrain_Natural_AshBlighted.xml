@@ -22,10 +22,11 @@
 		<defName>Mashed_Ashlands_MossyAshSoilBlighted</defName>
 		<label>petrified moss-covered blighted ash</label>
 		<texturePath>Terrain/Surfaces/AshBlighted/Mashed_Ashlands_MossyAshSoilBlighted</texturePath>
-		<fertility>0.5</fertility>
+		<fertility>0.6</fertility>
 		<categoryType>Soil</categoryType>
 		<tags>
 			<li>Mashed_Ashlands_MossyAshSoil</li>
+			<li>Mashed_Ashlands_Petrified</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshRiverbankBlighted]==========-->

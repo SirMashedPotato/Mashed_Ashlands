@@ -124,40 +124,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedFungus]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
-		<defName>Mashed_Ashlands_Plant_PetrifiedFungus</defName>
-		<label>petrified fungus</label>
-		<description>Ashland fungus, that has become partially petrified. Against all odds, it still manages to grow.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainDefsForWild>
-					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainDefsForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Nutrition>0.2</Nutrition>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_PetrifiedFungus</texPath>
-		</graphicData>
-		<plant>
-			<pollution>Any</pollution>
-			<harvestWork>50</harvestWork>
-			<fertilityMin>0.3</fertilityMin>
-			<growDays>5</growDays>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.3~0.5</visualSizeRange>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
-			</sowResearchPrerequisites>
-			<sowWork>170</sowWork>
-			<topWindExposure>0.01</topWindExposure>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_VioletCoprinus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
 		<defName>Mashed_Ashlands_Plant_VioletCoprinus</defName>

@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
 		<label>blighted petrified forest</label>
-		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified trees, that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
+		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified plants that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
 		<modExtensions>
@@ -32,7 +32,9 @@
 			</li>
 		</modExtensions>
 		<animalDensity>0.4</animalDensity>
-		<plantDensity>0.3</plantDensity>
+		<plantDensity>0.5</plantDensity>
+		<!-- Terrain overrides -->
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
@@ -47,11 +49,11 @@
 			<li>
 				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
 				<min>0.4</min>
-				<max>0.7</max>
+				<max>0.6</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
-				<min>0.7</min>
+				<min>0.6</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -62,16 +64,16 @@
 					<li>
 						<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
 						<min>0.4</min>
-						<max>0.6</max>
+						<max>0.5</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_AshMudBlighted</terrain>
-						<min>0.6</min>
-						<max>0.8</max>
+						<min>0.5</min>
+						<max>0.7</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_BlightedSludge</terrain>
-						<min>0.8</min>
+						<min>0.7</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -90,8 +92,7 @@
 			<Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
 			<Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.2</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>10</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
-			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.01</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>2</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
 			<Mashed_Ashlands_BurnedStumpPermanent>0.01</Mashed_Ashlands_BurnedStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->

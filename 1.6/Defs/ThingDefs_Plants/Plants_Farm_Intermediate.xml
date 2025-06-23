@@ -87,34 +87,6 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedButtercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_ButtercakeBase">
-		<defName>Mashed_Ashlands_Plant_PetrifiedButtercake</defName>
-		<label>petrified buttercake mushroom</label>
-		<description>Semi-petrified buttercake mushroom, gradually turned to stone by extreme blight storms. Somehow it still grows, though there is almost no edible flesh left.</description>
-		<modExtensions Inherit="False">
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainDefsForWild>
-					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainDefsForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Nutrition>0.25</Nutrition>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
-		</graphicData>
-		<plant>
-			<pollution>Any</pollution>
-			<fertilityMin>0.3</fertilityMin>
-			<harvestYield>1</harvestYield>
-			<topWindExposure>0.01</topWindExposure>
-			<growDays>10</growDays>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Chillshroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Chillshroom</defName>
