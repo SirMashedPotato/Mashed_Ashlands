@@ -13,7 +13,7 @@
 		</statBases>
 		<plant>
 			<sowResearchPrerequisites Inherit="false"/>
-			<sowWork IsNull="true"/>
+			<sowTags Inherit="false"/>
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_Ash</li>
 				<li>Mashed_Ashlands_Sulphur</li>
