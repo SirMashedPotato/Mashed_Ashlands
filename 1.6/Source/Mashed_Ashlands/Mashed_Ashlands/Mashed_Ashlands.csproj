@@ -127,6 +127,7 @@
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
     <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
+    <Compile Include="Harmony\Patch_PlantUtility.cs" />
     <Compile Include="Harmony\Patch_RoadDefGenStep_Place.cs" />
     <Compile Include="Harmony\Patch_WildPlantSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />

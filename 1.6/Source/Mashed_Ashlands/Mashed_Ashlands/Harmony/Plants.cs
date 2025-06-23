@@ -64,49 +64,5 @@ namespace Mashed_Ashlands
         }
     }*/
 
-    /// <summary>
-    /// Ensures only ashland plants show up in the ashland growing zone
-    /// And that exclusive ashland plants do not show up in the regular growing zone
-    /// </summary>
-    [HarmonyPatch(typeof(PlantUtility))]
-    [HarmonyPatch("CanSowOnGrower")]
-    public static class PlantUtility_CanSowOnGrower_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_CanSowOnGrower_Patch(ThingDef plantDef, object obj, ref bool __result)
-        {
-            if (__result)
-            {
-                if (obj is Zone_GrowingAsh)
-                {
-                    __result = plantDef.plant.sowTags.Contains("Mashed_Ashlands_Ash");
-                }
-                if (obj is Zone_Growing && Mashed_Ashlands_ModSettings.OnlySowOnAsh)
-                {
-                    __result = !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive");
-                }
-            }
-        }
-    }
-
-    /// <summary>
-    /// Ensures only ashland plants show up in the ashland growing zone
-    /// And that exclusive ashland plants do not show up in the regular growing zone
-    /// </summary>
-    [HarmonyPatch(typeof(HaulAIUtility))]
-    [HarmonyPatch("HaulablePlaceValidator")]
-    public static class HaulAIUtility_HaulablePlaceValidator_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_HaulablePlaceValidator_Patch(Thing haulable, Pawn worker, IntVec3 c, ref bool __result)
-        {
-            if (__result)
-            {
-                if (haulable != null && haulable.def.BlocksPlanting(false) && worker.Map.zoneManager.ZoneAt(c) is Zone_GrowingAsh)
-                {
-                    __result = false;
-                }
-            }
-        }
-    }
+    
 }
