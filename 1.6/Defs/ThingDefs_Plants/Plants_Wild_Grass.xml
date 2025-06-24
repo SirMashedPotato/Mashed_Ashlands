@@ -45,7 +45,7 @@
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrass]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
+	<ThingDef ParentName="Mashed_Ashlands_GrassBase" Name="Mashed_Ashlands_Plant_AshlandDuneGrassBase">
 		<defName>Mashed_Ashlands_Plant_AshlandDuneGrass</defName>
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
@@ -67,5 +67,12 @@
 				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrassDark]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandDuneGrassBase">
+		<defName>Mashed_Ashlands_Plant_AshlandDuneGrassDark</defName>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrassDark</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>
