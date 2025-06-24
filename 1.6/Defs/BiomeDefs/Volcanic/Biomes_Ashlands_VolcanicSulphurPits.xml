@@ -55,6 +55,7 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
@@ -75,6 +76,7 @@
 			</li>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
