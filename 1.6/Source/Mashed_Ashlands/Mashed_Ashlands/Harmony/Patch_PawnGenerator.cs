@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -17,7 +18,11 @@ namespace Mashed_Ashlands
             {
                 if (!props.randomAbility.NullOrEmpty())
                 {
-                    pawn.abilities.GainAbility(props.randomAbility.RandomElement()); //TODO Something may be breaking here for daedroth
+                    if (pawn.abilities == null)
+                    {
+                        pawn.abilities = new Pawn_AbilityTracker(pawn);
+                    }
+                    pawn.abilities.GainAbility(props.randomAbility.RandomElement());
                 }
             }
         }

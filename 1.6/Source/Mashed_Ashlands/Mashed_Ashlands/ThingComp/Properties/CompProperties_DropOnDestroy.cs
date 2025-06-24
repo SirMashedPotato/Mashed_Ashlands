@@ -13,7 +13,8 @@ namespace Mashed_Ashlands
         public List<PotentialDrops> guaranteedDrops;
         public List<PotentialDrops> potentialDrops;
 		public ThingSetMakerDef thingSetMakerDef;
-	}
+        public int setMakerDrops = 1;
+    }
 
 	public class PotentialDrops
     {
