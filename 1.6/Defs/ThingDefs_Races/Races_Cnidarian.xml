@@ -7,9 +7,6 @@
 				<hasBone>false</hasBone>
 				<hasFat>false</hasFat>
 			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>Mashed_PF_Movement_Floating</movementDef>
-			</li>
 		</modExtensions>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>

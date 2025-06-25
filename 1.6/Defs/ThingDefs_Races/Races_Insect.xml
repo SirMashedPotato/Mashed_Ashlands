@@ -69,7 +69,6 @@
 			<li Class="CompProperties_Lifespan">
 				<lifespanTicks>1500</lifespanTicks>
 			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
 		</comps>
 		<race>
 			<deathAction>

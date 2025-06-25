@@ -50,22 +50,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
-				<customThingToDig>
-					<li>Mashed_Ashlands_RawAshFungus</li>
-					<li>Mashed_Ashlands_RawAshFungus</li>
-					<li>Mashed_Ashlands_RawAshFungus</li>
-				</customThingToDig>
-				<customAmountToDig>
-					<li>3</li>
-					<li>6</li>
-					<li>9</li>
-				</customAmountToDig>
-				<ticksToDig>60000</ticksToDig>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
-		</comps>
 		<race>
 			<body>Mashed_Ashlands_InsectLeechLike</body>
 			<baseBodySize>0.2</baseBodySize>
@@ -76,6 +60,9 @@
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<trainability>None</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+			</specialTrainables>
 			<roamMtbDays>2</roamMtbDays>
 			<lifeStageAges>
 				<li>

@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_GeneBase]==========-->
 	<GeneDef Name="Mashed_Ashlands_GeneBase" Abstract="True">
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VEF.Genes.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Mashed_Ashlands_GeneBackground_Endogenes</backgroundPathEndogenes>
 				<backgroundPathXenogenes>UI/Icons/Genes/Mashed_Ashlands_GeneBackground_Xenogenes</backgroundPathXenogenes>
 			</li>

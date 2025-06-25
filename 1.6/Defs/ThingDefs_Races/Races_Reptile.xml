@@ -58,12 +58,6 @@
 			</li>
 		</tools>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Mashed_Ashlands_RawAshYams</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_AlitFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>Mashed_Ashlands_Egg_AlitUnfertilized</eggUnfertilizedDef>
@@ -85,6 +79,10 @@
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
@@ -260,7 +258,9 @@
 			<leatherDef>Mashed_Ashlands_CliffRacerLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
-			
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeExpectancy>8</lifeExpectancy>
@@ -579,12 +579,6 @@
 			</li>
 		</tools>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Meat_Megaspider</customThingToDig>
-				<customAmountToDig>3</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_ScuttlerFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>Mashed_Ashlands_Egg_ScuttlerUnfertilized</eggUnfertilizedDef>
@@ -601,6 +595,9 @@
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 			<trainability>None</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
 			<petness>0.15</petness>
 			<nuzzleMtbHours>48</nuzzleMtbHours>
 			<lifeExpectancy>12</lifeExpectancy>
@@ -792,6 +789,9 @@
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>

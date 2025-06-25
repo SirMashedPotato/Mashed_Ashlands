@@ -60,6 +60,9 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_GuarLeather</leatherDef>
 			<trainability>None</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+			</specialTrainables>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>22</lifeExpectancy>
 			<nuzzleMtbHours>80</nuzzleMtbHours>
@@ -115,20 +118,6 @@
 		<label>guar</label>
 		<description>A large bipedal reptile native to ashland regions, closely related to the alit and kagouti. Unlike its cousins, the guar still retains its arms, though they are rather underdeveloped. Very much like its cousins, the guar will eagerly devour anything it comes across, and can often be found digging in the ground for ash yams and corkbulb roots.\n\nOften farmed for its leather and meat, guar also make for both excellent pack animals, and mounts for long distance trips. Some wrongfully believe that guar can be milked. Which is a very strange thing to believe, as guar are reptiles.</description>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
-				<customThingToDig>
-					<li>Mashed_Ashlands_RawAshYams</li>
-					<li>Mashed_Ashlands_RawAshYams</li>
-					<li>Mashed_Ashlands_RawAshYams</li>
-				</customThingToDig>
-				<customAmountToDig>
-					<li>1</li>
-					<li>3</li>
-					<li>5</li>
-				</customAmountToDig>
-				<ticksToDig>90000</ticksToDig>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_GuarFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>Mashed_Ashlands_Egg_GuarUnfertilized</eggUnfertilizedDef>

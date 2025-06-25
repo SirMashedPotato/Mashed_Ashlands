@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+	<VEF.AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 		<defName>Mashed_Ashlands_DisabledQuestAnimals</defName>
 		<disabledFromQuestsPawns>
 			<li>Mashed_Ashlands_SiltStrider</li>
 			<li>Mashed_Ashlands_FetcherflySwarmAnimal</li>
 		</disabledFromQuestsPawns>
-	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+	</VEF.AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 </Defs>

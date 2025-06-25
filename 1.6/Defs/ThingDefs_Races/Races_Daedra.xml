@@ -13,7 +13,7 @@
 			<Wildness>0.9</Wildness>
 		</statBases>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Draftable" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.AnimalBehaviours.CompProperties_Draftable" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<makeNonFleeingToo>true</makeNonFleeingToo>
 			</li>
 		</comps>

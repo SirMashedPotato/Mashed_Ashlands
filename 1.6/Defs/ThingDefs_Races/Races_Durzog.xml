@@ -2,11 +2,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_DurzogThingBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_DurzogThingBase" Abstract="True">
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 		<statBases>
 			<ToxicResistance>0.8</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
@@ -61,6 +56,9 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<leatherDef>Mashed_Ashlands_DurzogLeather</leatherDef>
 			<lifeExpectancy>19</lifeExpectancy>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>

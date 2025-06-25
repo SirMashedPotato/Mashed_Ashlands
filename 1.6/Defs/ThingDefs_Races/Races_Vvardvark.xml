@@ -37,14 +37,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Meat_Megaspider</customThingToDig>
-				<customAmountToDig>3</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
-		</comps>
 		<race>
 			<body>Mashed_Ashlands_BipedalWithNoArms</body>
 			<petness>0.8</petness>
@@ -55,6 +47,9 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
 			<nuzzleMtbHours>16</nuzzleMtbHours>
 			<gestationPeriodDays>11</gestationPeriodDays>
 			<lifeExpectancy>12</lifeExpectancy>
