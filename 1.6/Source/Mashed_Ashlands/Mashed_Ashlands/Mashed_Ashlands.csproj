@@ -152,6 +152,7 @@
     <Compile Include="Settings\SettingsPage\SettingsPage_AshBlight.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_AshStorm.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_Biome.cs" />
+    <Compile Include="Settings\SettingsPage\SettingsPage_CliffRacer.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_General.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_Incidents.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_OtherConditions.cs" />

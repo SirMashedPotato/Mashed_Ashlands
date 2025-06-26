@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[Cliff racer]==========-->
+	<Mashed_Ashlands_PageCliffRacer>Cliff Racers</Mashed_Ashlands_PageCliffRacer>
+	<!-- Mutation -->
+	<Mashed_Ashlands_CliffRacerMutantChance>The chance that a cliff racer gains the asexual reproduction mutation upon reaching maturity: ({0}% chance)</Mashed_Ashlands_CliffRacerMutantChance>
+	<!-- Swarm -->
+	<Mashed_Ashlands_CliffRacerEnableSwarm>Enable the cliff racer swarm incident.</Mashed_Ashlands_CliffRacerEnableSwarm>
+	<Mashed_Ashlands_CliffRacerSwarmMinSize>The minimum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMinSize>
+	<Mashed_Ashlands_CliffRacerSwarmMaxSize>The maximum number of cliff racers in the swarm: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerSwarmMaxSize>
+	<!-- Extinction -->
+	<Mashed_Ashlands_CliffRacerEnableExtinction>Enable wild cliff racer extinction.</Mashed_Ashlands_CliffRacerEnableExtinction>
+	<Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>Wild cliff racers will become extinct once a certain number of them have been either killed, or tamed.</Mashed_Ashlands_CliffRacerEnableExtinction_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableTracker>Enable the cliff racer tracker alert.</Mashed_Ashlands_CliffRacerEnableTracker>
+	<Mashed_Ashlands_CliffRacerWildPopulation>The initial number of wild cliff racers: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerWildPopulation>
+	<Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>Changes to this will not take effect mid-save.</Mashed_Ashlands_CliffRacerWildPopulation_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturn>Enable wild cliff racer return.</Mashed_Ashlands_CliffRacerEnableReturn>
+	<Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>Wild cliff racers will return from extinction once a certain number of them have been released into the wild.</Mashed_Ashlands_CliffRacerEnableReturn_Tooltip>
+	<Mashed_Ashlands_CliffRacerEnableReturnThreshold>The minimum number of wild cliff racers before they return: ({0} cliff racer/s)</Mashed_Ashlands_CliffRacerEnableReturnThreshold>
+</LanguageData>

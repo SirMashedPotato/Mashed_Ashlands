@@ -22,7 +22,8 @@ namespace Mashed_Ashlands
             AshStorm,
             AshBlight,
             Conditions,
-            Incidents
+            Incidents,
+            CliffRacer
         }
 
         private void ReadySettingsTabs()
@@ -61,6 +62,11 @@ namespace Mashed_Ashlands
             {
                 curTab = SettingsTab.Incidents;
             }, () => curTab == SettingsTab.Incidents));
+
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageCliffRacer".Translate(), delegate
+            {
+                curTab = SettingsTab.CliffRacer;
+            }, () => curTab == SettingsTab.CliffRacer));
         }
 
         private readonly List<TabRecord> tabs = new List<TabRecord>();
@@ -105,6 +111,9 @@ namespace Mashed_Ashlands
                     break;
                 case SettingsTab.Incidents:
                     SettingsPage_Incidents.DoSettingsPage(mainRect, settings);
+                    break;
+                case SettingsTab.CliffRacer:
+                    SettingsPage_CliffRacer.DoSettingsPage(mainRect, settings);
                     break;
             }
 

@@ -71,6 +71,13 @@ namespace Mashed_Ashlands
                     });
                     resetSettingsOptions.Add(item);
 
+                    ///Reset incidents
+                    item = new FloatMenuOption("Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageCliffRacer".Translate()), delegate
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_CliffRacer();
+                    });
+                    resetSettingsOptions.Add(item);
+
                 }
                 return resetSettingsOptions;
             }
