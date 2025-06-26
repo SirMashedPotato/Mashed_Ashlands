@@ -20,7 +20,12 @@ namespace Mashed_Ashlands
             float durationTicks = Plant.def.ingestible.baseIngestTicks * durationMult;
             this.FailOnDespawnedOrNull(TargetIndex.A);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-            yield return Toils_General.WaitWith(TargetIndex.A, (int)durationTicks, true, true);
+            Toil toilWait = Toils_General.WaitWith(TargetIndex.A, (int)durationTicks, false, true);
+            if (pawn.Faction != null && pawn.Faction == Faction.OfPlayerSilentFail)
+            {
+                toilWait.WithProgressBarToilDelay(TargetIndex.A);
+            }
+            yield return toilWait;
             yield return Toils_General.Do(delegate
             {
                 pawn.needs.TryGetNeed(NeedDefOf.Food).CurLevel = pawn.needs.TryGetNeed(NeedDefOf.Food).MaxLevel;
