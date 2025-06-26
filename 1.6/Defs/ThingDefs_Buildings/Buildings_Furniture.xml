@@ -41,6 +41,7 @@
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
@@ -61,6 +62,7 @@
 				</fuelFilter>
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<functionsInVacuum>false</functionsInVacuum>
 			</li>
 		</comps>
 		<designationCategory>Furniture</designationCategory>
