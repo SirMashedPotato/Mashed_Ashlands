@@ -14,11 +14,4 @@
 	<Mashed_Ashlands_AshStormDamageBuildings>Enable ash storms randomly damaging certain buildings.</Mashed_Ashlands_AshStormDamageBuildings>
 	<Mashed_Ashlands_AshStormBreakdownBuildings>Enable ash storms randomly causing certain buildings to breakdown.</Mashed_Ashlands_AshStormBreakdownBuildings>
 	<Mashed_Ashlands_AshStormBreakdownBuildingsChance>The chance a building has a breakdown: ({0}%)</Mashed_Ashlands_AshStormBreakdownBuildingsChance>
-	<!-- ==========[Blight storm]==========-->
-	<Mashed_Ashlands_BlightStormBlightAnimals>Enable blighted ash storms randomly blighting wild animals.</Mashed_Ashlands_BlightStormBlightAnimals>
-	<Mashed_Ashlands_BlightStormBlightPlayerAnimals>Blighted ash storms can also blight player faction animals.</Mashed_Ashlands_BlightStormBlightPlayerAnimals>
-	<Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>Blighted ash storms can also blight non-player faction animals.</Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>
-	<Mashed_Ashlands_BlightStormBlightPlants>Enable blighted ash storms randomly blighting crops.</Mashed_Ashlands_BlightStormBlightPlants>
-	<Mashed_Ashlands_BlightStormBlightWildPlants>Blighted ash storms can also blight wild plants.</Mashed_Ashlands_BlightStormBlightWildPlants>
-	<Mashed_Ashlands_BlightStormBlightPlantsNumber>The average number of randomly selected plants blighted at once: ({0} plants)</Mashed_Ashlands_BlightStormBlightPlantsNumber>
 </LanguageData>

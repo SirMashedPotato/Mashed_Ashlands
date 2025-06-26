@@ -20,6 +20,7 @@ namespace Mashed_Ashlands
             WorldGen,
             MapGen,
             AshStorm,
+            AshBlight,
             Conditions,
             Incidents
         }
@@ -45,7 +46,12 @@ namespace Mashed_Ashlands
             {
                 curTab = SettingsTab.AshStorm;
             }, () => curTab == SettingsTab.AshStorm));
-            
+
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageAshBlight".Translate(), delegate
+            {
+                curTab = SettingsTab.AshBlight;
+            }, () => curTab == SettingsTab.AshBlight));
+
             tabs.Add(new TabRecord("Mashed_Ashlands_PageOtherConditions".Translate(), delegate
             {
                 curTab = SettingsTab.Conditions;
@@ -90,6 +96,9 @@ namespace Mashed_Ashlands
                     break;
                 case SettingsTab.AshStorm:
                     SettingsPage_AshStorm.DoSettingsPage(mainRect, settings);
+                    break;
+                case SettingsTab.AshBlight:
+                    SettingsPage_AshBlight.DoSettingsPage(mainRect, settings);
                     break;
                 case SettingsTab.Conditions:
                     SettingsPage_OtherConditions.DoSettingsPage(mainRect, settings);

@@ -99,6 +99,13 @@ namespace Mashed_Ashlands
         public static bool AshStormBreakdownBuildings => _instance.Mashed_Ashlands_AshStormBreakdownBuildings;
         public static float AshStormBreakdownBuildingsChance => _instance.Mashed_Ashlands_AshStormBreakdownBuildingsChance;
 
+
+        //ash blight
+        public static bool AshBlightCanSpread => _instance.Mashed_Ashlands_AshBlightCanSpread;
+        public static bool AshBlightCanSpreadToPlants => _instance.Mashed_Ashlands_AshBlightCanSpreadToPlants;
+        public static bool AshBlightWandersIn => _instance.Mashed_Ashlands_AshBlightWandersIn;
+
+        public static bool BlightStormCaravanAmbush => _instance.Mashed_Ashlands_BlightStormCaravanAmbush;
         public static bool BlightStormBlightAnimals => _instance.Mashed_Ashlands_BlightStormBlightAnimals;
         public static bool BlightStormBlightPlayerAnimals => _instance.Mashed_Ashlands_BlightStormBlightPlayerAnimals;
         public static bool BlightStormBlightNonPlayerAnimals => _instance.Mashed_Ashlands_BlightStormBlightNonPlayerAnimals;
@@ -116,7 +123,6 @@ namespace Mashed_Ashlands
         public static int EarthquakeDamageBuildingsDamage => _instance.Mashed_Ashlands_EarthquakeDamageBuildingsDamage;
 
         //biome
-        public static bool EnableExtraGeysers => _instance.Mashed_Ashlands_EnableExtraGeysers;
         public static bool EnableFetcherflyHives => _instance.Mashed_Ashlands_EnableFetcherflyHives;
         public static bool EnableCavePlants => _instance.Mashed_Ashlands_EnableCavePlants;
         public static bool EnableColumnarBasalt => _instance.Mashed_Ashlands_EnableColumnarBasalt;
@@ -211,6 +217,12 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_AshStormBreakdownBuildings = Mashed_Ashlands_AshStormBreakdownBuildings_def;
         public float Mashed_Ashlands_AshStormBreakdownBuildingsChance = Mashed_Ashlands_AshStormBreakdownBuildingsChance_def;
 
+        //ash blight
+        public bool Mashed_Ashlands_AshBlightCanSpread = Mashed_Ashlands_AshBlightCanSpread_def;
+        public bool Mashed_Ashlands_AshBlightCanSpreadToPlants = Mashed_Ashlands_AshBlightCanSpreadToPlants_def;
+        public bool Mashed_Ashlands_AshBlightWandersIn = Mashed_Ashlands_AshBlightWandersIn_def;
+
+        public bool Mashed_Ashlands_BlightStormCaravanAmbush = Mashed_Ashlands_BlightStormCaravanAmbush_def;
         public bool Mashed_Ashlands_BlightStormBlightAnimals = Mashed_Ashlands_BlightStormBlightAnimals_def;
         public bool Mashed_Ashlands_BlightStormBlightPlayerAnimals = Mashed_Ashlands_BlightStormBlightPlayerAnimals_def;
         public bool Mashed_Ashlands_BlightStormBlightNonPlayerAnimals = Mashed_Ashlands_BlightStormBlightNonPlayerAnimals_def;
@@ -228,7 +240,6 @@ namespace Mashed_Ashlands
         public int Mashed_Ashlands_EarthquakeDamageBuildingsDamage = Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def;
 
         //biome
-        public bool Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
         public bool Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
         public bool Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
         public bool Mashed_Ashlands_EnableColumnarBasalt = Mashed_Ashlands_EnableColumnarBasalt_def;
@@ -324,6 +335,12 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_AshStormBreakdownBuildings_def = false;
         private static readonly float Mashed_Ashlands_AshStormBreakdownBuildingsChance_def = 0.05f;
 
+        //ash blight
+        private static readonly bool Mashed_Ashlands_AshBlightCanSpread_def = true;
+        private static readonly bool Mashed_Ashlands_AshBlightCanSpreadToPlants_def = true;
+        private static readonly bool Mashed_Ashlands_AshBlightWandersIn_def = true;
+
+        private static readonly bool Mashed_Ashlands_BlightStormCaravanAmbush_def = true;
         private static readonly bool Mashed_Ashlands_BlightStormBlightAnimals_def = true;
         private static readonly bool Mashed_Ashlands_BlightStormBlightPlayerAnimals_def = false;
         private static readonly bool Mashed_Ashlands_BlightStormBlightNonPlayerAnimals_def = false;
@@ -341,7 +358,6 @@ namespace Mashed_Ashlands
         private static readonly int Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def = 10;
 
         //biome
-        private static readonly bool Mashed_Ashlands_EnableExtraGeysers_def = true;
         private static readonly bool Mashed_Ashlands_EnableFetcherflyHives_def = true;
         private static readonly bool Mashed_Ashlands_EnableCavePlants_def = true;
         private static readonly bool Mashed_Ashlands_EnableColumnarBasalt_def = true;
@@ -443,6 +459,12 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_AshStormBreakdownBuildings, "Mashed_Ashlands_AshStormBreakdownBuildings", Mashed_Ashlands_AshStormBreakdownBuildings_def);
             Scribe_Values.Look(ref Mashed_Ashlands_AshStormBreakdownBuildingsChance, "Mashed_Ashlands_AshStormBreakdownBuildingsChance", Mashed_Ashlands_AshStormBreakdownBuildingsChance_def);
 
+            //ash blight
+            Scribe_Values.Look(ref Mashed_Ashlands_AshBlightCanSpread, "Mashed_Ashlands_AshBlightCanSpread", Mashed_Ashlands_AshBlightCanSpread_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_AshBlightCanSpreadToPlants, "Mashed_Ashlands_AshBlightCanSpreadToPlants", Mashed_Ashlands_AshBlightCanSpreadToPlants_def);
+            Scribe_Values.Look(ref Mashed_Ashlands_AshBlightWandersIn, "Mashed_Ashlands_AshBlightWandersIn", Mashed_Ashlands_AshBlightWandersIn_def);
+
+            Scribe_Values.Look(ref Mashed_Ashlands_BlightStormCaravanAmbush, "Mashed_Ashlands_BlightStormCaravanAmbush", Mashed_Ashlands_BlightStormCaravanAmbush_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightAnimals, "Mashed_Ashlands_BlightStormBlightAnimals", Mashed_Ashlands_BlightStormBlightAnimals_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightPlayerAnimals, "Mashed_Ashlands_BlightStormBlightPlayerAnimals", Mashed_Ashlands_BlightStormBlightPlayerAnimals_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightNonPlayerAnimals, "Mashed_Ashlands_BlightStormBlightNonPlayerAnimals", Mashed_Ashlands_BlightStormBlightNonPlayerAnimals_def);
@@ -460,7 +482,6 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildingsDamage, "Mashed_Ashlands_EarthquakeDamageBuildingsDamage", Mashed_Ashlands_EarthquakeDamageBuildingsDamage_def);
 
             //biome
-            Scribe_Values.Look(ref Mashed_Ashlands_EnableExtraGeysers, "Mashed_Ashlands_EnableExtraGeysers", Mashed_Ashlands_EnableExtraGeysers_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableFetcherflyHives, "Mashed_Ashlands_EnableFetcherflyHives", Mashed_Ashlands_EnableFetcherflyHives_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableCavePlants, "Mashed_Ashlands_EnableCavePlants", Mashed_Ashlands_EnableCavePlants_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EnableColumnarBasalt, "Mashed_Ashlands_EnableColumnarBasalt", Mashed_Ashlands_EnableColumnarBasalt_def);
@@ -475,6 +496,7 @@ namespace Mashed_Ashlands
             ResetSettings_WorldGen();
             ResetSettings_Incident();
             ResetSettings_AshStorm();
+            ResetSettings_AshBlight();
             ResetSettings_Biome();
         }
 
@@ -570,7 +592,15 @@ namespace Mashed_Ashlands
 
             _instance.Mashed_Ashlands_AshStormBreakdownBuildings = Mashed_Ashlands_AshStormBreakdownBuildings_def;
             _instance.Mashed_Ashlands_AshStormBreakdownBuildingsChance = Mashed_Ashlands_AshStormBreakdownBuildingsChance_def;
+        }
 
+        public static void ResetSettings_AshBlight()
+        {
+            _instance.Mashed_Ashlands_AshBlightCanSpread = Mashed_Ashlands_AshBlightCanSpread_def;
+            _instance.Mashed_Ashlands_AshBlightCanSpreadToPlants = Mashed_Ashlands_AshBlightCanSpreadToPlants_def;
+            _instance.Mashed_Ashlands_AshBlightWandersIn = Mashed_Ashlands_AshBlightWandersIn_def;
+
+            _instance.Mashed_Ashlands_BlightStormCaravanAmbush = Mashed_Ashlands_BlightStormCaravanAmbush_def;
             _instance.Mashed_Ashlands_BlightStormBlightAnimals = Mashed_Ashlands_BlightStormBlightAnimals_def;
             _instance.Mashed_Ashlands_BlightStormBlightPlayerAnimals = Mashed_Ashlands_BlightStormBlightPlayerAnimals_def;
             _instance.Mashed_Ashlands_BlightStormBlightNonPlayerAnimals = Mashed_Ashlands_BlightStormBlightNonPlayerAnimals_def;
@@ -592,7 +622,6 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_Biome()
         {
-            _instance.Mashed_Ashlands_EnableExtraGeysers = Mashed_Ashlands_EnableExtraGeysers_def;
             _instance.Mashed_Ashlands_EnableFetcherflyHives = Mashed_Ashlands_EnableFetcherflyHives_def;
             _instance.Mashed_Ashlands_EnableCavePlants = Mashed_Ashlands_EnableCavePlants_def;
             _instance.Mashed_Ashlands_EnableColumnarBasalt = Mashed_Ashlands_EnableColumnarBasalt_def;
