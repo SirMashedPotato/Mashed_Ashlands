@@ -30,7 +30,6 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_AshBlightWandersIn".Translate(), ref settings.Mashed_Ashlands_AshBlightWandersIn);
             listing_Standard.Gap();
 
-
             listing_Standard.GapLine();
             listing_Standard.Gap();
 
@@ -40,23 +39,23 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightAnimals".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightAnimals);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightPlants".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightPlants);
+            listing_Standard.Gap();
+
+            listing_Standard.Label("Mashed_Ashlands_BlightStormBlightPlantsNumber".Translate(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber), -1);
+            settings.Mashed_Ashlands_BlightStormBlightPlantsNumber = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber, 1, 50));
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightPlayerAnimals".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightPlayerAnimals);
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightNonPlayerAnimals".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightNonPlayerAnimals);
             listing_Standard.Gap();
 
-            listing_Standard.GapLine();
-            listing_Standard.Gap();
-
-            listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightPlants".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightPlants);
-            listing_Standard.Gap();
-
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_BlightStormBlightWildPlants".Translate(), ref settings.Mashed_Ashlands_BlightStormBlightWildPlants);
             listing_Standard.Gap();
-
-            listing_Standard.Label("Mashed_Ashlands_BlightStormBlightPlantsNumber".Translate(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber), -1);
-            settings.Mashed_Ashlands_BlightStormBlightPlantsNumber = (int)Math.Round(listing_Standard.Slider(settings.Mashed_Ashlands_BlightStormBlightPlantsNumber, 1, 50));
 
             ///Ending
             listing_Standard.End();

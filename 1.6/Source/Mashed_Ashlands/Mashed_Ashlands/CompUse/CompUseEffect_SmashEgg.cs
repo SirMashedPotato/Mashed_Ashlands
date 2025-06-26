@@ -61,7 +61,7 @@ namespace Mashed_Ashlands
             List<Pawn> manhunteredPawns = new List<Pawn>();
             foreach (Pawn pawn in nearbyPawns.Cast<Pawn>())
             {
-                if(pawn.mindState.mentalStateHandler.TryStartMentalState(stateDef: MentalStateDefOf.Manhunter, forced: true, forceWake: true))
+                if(pawn.mindState.mentalStateHandler.TryStartMentalState(stateDef: RimWorld.MentalStateDefOf.Manhunter, forced: true, forceWake: true))
                 {
                     manhunteredPawns.Add(pawn);
                 }

@@ -26,7 +26,7 @@ namespace Mashed_Ashlands
         {
             Pawn pawn = PawnGenerator.GeneratePawn(Props.pawnKindDef, null);
             GenSpawn.Spawn(pawn, parent.Position, map, Rot4.Random, WipeMode.Vanish, false);
-            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
+            pawn.mindState.mentalStateHandler.TryStartMentalState(RimWorld.MentalStateDefOf.ManhunterPermanent);
         }
     }
 }

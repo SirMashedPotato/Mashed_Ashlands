@@ -107,6 +107,7 @@
     <Compile Include="DefOf\HistoryEventDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\LetterDefOf.cs" />
+    <Compile Include="DefOf\MentalStateDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\SoundDefOf.cs" />
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Harmony\Patch_WildPlantSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
+    <Compile Include="Hediff\Hediff_AshBlight.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
@@ -143,13 +145,13 @@
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenDormant.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenExtinct.cs" />
     <Compile Include="Pages\Tabs\SettingsTab_WorldGenGeneral.cs" />
-    <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalBlighted.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="PawnsArrivalModeWorker\PawnsArrivalModeWorker_EmergeFromAsh.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="Settings\ResetSettingsDropdown.cs" />
+    <Compile Include="Settings\SettingsPage\SettingsPage_AshBlight.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_AshStorm.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_Biome.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_General.cs" />
@@ -250,5 +252,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

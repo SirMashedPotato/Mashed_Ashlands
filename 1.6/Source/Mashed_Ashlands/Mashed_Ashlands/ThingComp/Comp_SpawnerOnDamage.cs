@@ -34,7 +34,7 @@ namespace Mashed_Ashlands
         {
             Pawn pawn = PawnGenerator.GeneratePawn(Props.pawnKindDef, null);
             GenSpawn.Spawn(pawn, parent.Position, parent.Map, Rot4.Random, WipeMode.Vanish, false);
-            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
+            pawn.mindState.mentalStateHandler.TryStartMentalState(RimWorld.MentalStateDefOf.ManhunterPermanent);
         }
 
         public override void CompTick()
