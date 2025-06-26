@@ -83,9 +83,6 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
-    <Compile Include="Biome\GenStep\GenStep_ScatterAshlandsSpecific.cs" />
-    <Compile Include="Biome\GenStep\GenStep_ScatterBiomeSpecific.cs" />
-    <Compile Include="Biome\ScattererValidator\ScattererValidator_SpecificTerrain.cs" />
     <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectSmashEgg.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
@@ -187,10 +184,10 @@
     <Compile Include="CompUse\CompUseEffect_ImprintEgg.cs" />
     <Compile Include="ThingComp\Comp_AnimalAbilities.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
-    <Compile Include="ThingComp\Comp_CliffRacerMutation.cs" />
     <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
+    <Compile Include="ThingComp\Comp_EggLayerMutant.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_DepositCharges.cs" />
     <Compile Include="ThingComp\Comp_PlantSpreader.cs" />
@@ -221,7 +218,7 @@
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
-    <Compile Include="VolcanicEventWorker\Caravan\VEW_AshStorm.cs" />
+    <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_AshStorm.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />

@@ -232,15 +232,13 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<compClass>Mashed_Ashlands.Comp_EggLayerMutant</compClass>
 				<eggFertilizedDef>Mashed_Ashlands_Egg_CliffRacerFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>Mashed_Ashlands_Egg_CliffRacerUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~5</eggCountRange>
-			</li>
-			<li>
-				<compClass>Mashed_Ashlands.Comp_CliffRacerMutation</compClass>
 			</li>
 		</comps>
 		<race>

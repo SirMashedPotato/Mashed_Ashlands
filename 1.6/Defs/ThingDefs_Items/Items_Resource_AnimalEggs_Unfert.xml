@@ -43,21 +43,6 @@
 			<MarketValue>8</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>Mashed_Ashlands_Egg_DaedrothUnfertilized</defName>
-		<label>vagrant daedroth egg (unfert.)</label>
-		<description>An unfertilised vagrant daedroth egg. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-			<color>(158,148,138)</color>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>42</MarketValue>
-		</statBases>
-		<stackLimit>6</stackLimit>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
@@ -87,6 +72,21 @@
 			<MarketValue>10</MarketValue>
 			<DeteriorationRate>0.5</DeteriorationRate>
 		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_DaedrothUnfertilized</defName>
+		<label>vagrant daedroth egg (unfert.)</label>
+		<description>An unfertilised vagrant daedroth egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>42</MarketValue>
+		</statBases>
+		<stackLimit>6</stackLimit>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">

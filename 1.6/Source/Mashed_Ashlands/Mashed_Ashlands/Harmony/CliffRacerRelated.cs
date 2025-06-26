@@ -18,7 +18,6 @@ namespace Mashed_Ashlands
             {
                 if (___hatcheeFaction == null && __instance.parent.def == ThingDefOf.Mashed_Ashlands_Egg_CliffRacerFertilized)
                 {
-                    Log.Message("bleh " + __instance.parent.stackCount);
                     CliffRacerTrackerUtility.ModifyProgress(__instance.parent.stackCount);
                 }
             }
@@ -97,30 +96,14 @@ namespace Mashed_Ashlands
             if (!__result)
             {
                 Pawn pawn = __instance.parent as Pawn;
-                if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer && !pawn.Sterile() && pawn.GetComp<Comp_CliffRacerMutation>().hasAsexualMutation)
+                Comp_EggLayerMutant eggLayerComp = pawn.GetComp<Comp_EggLayerMutant>();
+                if (eggLayerComp == null || !eggLayerComp.AsexualMutation)
+                {
+                    return;
+                }
+                if (!pawn.Sterile())
                 {
                     __result = true;
-                }
-            }
-        }
-    }
-
-    /// <summary>
-    /// Allows cliff racers to lay fertilised eggs, if they have the asexual mutation
-    /// </summary>
-    [HarmonyPatch(typeof(CompEggLayer))]
-    [HarmonyPatch("ProgressStoppedBecauseUnfertilized", MethodType.Getter)]
-    public static class CompEggLayer_ProgressStoppedBecauseUnfertilized_Patch
-    {
-        [HarmonyPostfix]
-        public static void Mashed_Ashlands_CliffRacerCanLayEggs_Patch(CompEggLayer __instance, ref bool __result)
-        {
-            if (__result)
-            {
-                Pawn pawn = __instance.parent as Pawn;
-                if (pawn.def == ThingDefOf.Mashed_Ashlands_CliffRacer && pawn.GetComp<Comp_CliffRacerMutation>().hasAsexualMutation)
-                {
-                    __result = false;
                 }
             }
         }

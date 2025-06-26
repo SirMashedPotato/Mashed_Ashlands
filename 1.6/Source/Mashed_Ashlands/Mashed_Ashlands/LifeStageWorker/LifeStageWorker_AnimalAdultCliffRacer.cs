@@ -10,7 +10,7 @@ namespace Mashed_Ashlands
             base.Notify_LifeStageStarted(pawn, previousLifeStage);
             if (Rand.Chance(Mashed_Ashlands_ModSettings.CliffRacerMutantChance))
             {
-                pawn.GetComp<Comp_CliffRacerMutation>().hasAsexualMutation = true;
+                pawn.GetComp<Comp_EggLayerMutant>().AsexualMutation = true;
             }
         }
     }
