@@ -36,6 +36,11 @@
 		<animalDensity>2.8</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+		</extraGenSteps>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshGravel</terrain>

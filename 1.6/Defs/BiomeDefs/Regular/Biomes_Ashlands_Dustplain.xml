@@ -41,6 +41,11 @@
 			<Mashed_Ashlands_DustStorm>6</Mashed_Ashlands_DustStorm>
 			<Mashed_Ashlands_DustThunderstorm>1</Mashed_Ashlands_DustThunderstorm>
 		</baseWeatherCommonalities>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+			<li>Mashed_Ashlands_DustAntHives</li>
+		</extraGenSteps>
 		<!-- Terrain overrides -->
 		<riverbankTerrain>Mashed_Ashlands_AshGravel</riverbankTerrain>
 		<!-- Terrain -->

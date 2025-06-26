@@ -37,6 +37,10 @@
 		<forceRockTypes>
 			<li>Mashed_Ashlands_Basalt</li>
 		</forceRockTypes>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_BasaltFormationsSmall</li>
+		</extraGenSteps>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_Basalt_Rough</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_Basalt_Rough</lakeBeachTerrain>

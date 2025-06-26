@@ -8,7 +8,11 @@
 		</extraRockTypes>
 		<!-- Map generation -->
 		<geyserCountFactor>1.2</geyserCountFactor>
-		 <!-- Misc -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_ColumnarBasalt</li>
+			<li>Mashed_Ashlands_DeadExplorer</li>
+		</extraGenSteps>
+		<!-- Misc -->
 		<settlementSelectionWeight>0.6</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<diseaseMtbDays>60</diseaseMtbDays>
@@ -158,6 +162,11 @@
 		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
 		<maxFishPopulation>60</maxFishPopulation>
 		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+			<li>Mashed_Ashlands_StriderShells</li>
+		</extraGenSteps>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_AshSandBlighted</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_AshGravelBlighted</lakeBeachTerrain>
@@ -193,11 +202,15 @@
 		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
 		<maxFishPopulation>240</maxFishPopulation>
 		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+		</extraGenSteps>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_AshSandVolcanic</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_AshSandVolcanic</lakeBeachTerrain>
 		<riverbankTerrain>Mashed_Ashlands_AshRiverbankVolcanic</riverbankTerrain>
-		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain> <!-- todo -->
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>		<!-- todo -->
 		<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
 		<!-- Map generation -->
