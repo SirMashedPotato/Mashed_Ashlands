@@ -191,6 +191,7 @@
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
     <Compile Include="ThingComp\Comp_DepositCharges.cs" />
     <Compile Include="ThingComp\Comp_PlantSpreader.cs" />
+    <Compile Include="ThingComp\Comp_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DischargeOnDamage.cs" />
@@ -199,6 +200,7 @@
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_DepositCharges.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_PlantSpreader.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectImprintEgg.cs" />

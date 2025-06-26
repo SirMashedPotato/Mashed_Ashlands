@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandFermentingBarrel_Base]==========-->
+	<ThingDef ParentName="BuildingBase" Name="Mashed_Ashlands_AshlandFermentingBarrel_Base" Abstract="True">
+		<description>A barrel for fermenting ashland alcoholic beverages.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/Mashed_Ashlands_AshlandFermentingBarrel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<Mashed_Ashlands_ParasolWoodLog>30</Mashed_Ashlands_ParasolWoodLog>
+		</costList>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>Brewing</li>
+		</researchPrerequisites>
+		<designatorDropdown>Mashed_Ashlands_AshlandFermentingBarrel</designatorDropdown>
+		<hasInteractionCell>false</hasInteractionCell>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MazteFermentingBarrel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_MazteFermentingBarrel</defName>
+		<label>mazte fermenting barrel</label>
+		<description>A barrel for fermenting mazte from saltrice precursor. This will take 4 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<graphicData>
+			<colorTwo>(191,172,140)</colorTwo>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Saltrice precursor</fuelLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_SaltricePrecursor</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SimpleItemProcessor">
+				<processDays>4</processDays>
+				<yieldThingDef>Mashed_Ashlands_AlcoholMazte</yieldThingDef>
+				<yieldAmount>25</yieldAmount>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SujammaFermentingBarrel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_SujammaFermentingBarrel</defName>
+		<label>sujamma fermenting barrel</label>
+		<description>A barrel for fermenting sujamma from wickwheat precursor. This will take 10 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<graphicData>
+			<colorTwo>(204,199,184)</colorTwo>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Wickwheat precursor</fuelLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_WickwheatPrecursor</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SimpleItemProcessor">
+				<processDays>10</processDays>
+				<yieldThingDef>Mashed_Ashlands_AlcoholSujamma</yieldThingDef>
+				<yieldAmount>25</yieldAmount>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SheinFermentingBarrel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_SheinFermentingBarrel</defName>
+		<label>shein fermenting barrel</label>
+		<description>A barrel for fermenting shein from comberry precursor. This will take 14 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<graphicData>
+			<colorTwo>(226,141,139)</colorTwo>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Comberry precursor</fuelLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_ComberryPrecursor</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SimpleItemProcessor">
+				<processDays>14</processDays>
+				<yieldThingDef>Mashed_Ashlands_AlcoholShein</yieldThingDef>
+				<yieldAmount>25</yieldAmount>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FlinFermentingBarrel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_FlinFermentingBarrel</defName>
+		<label>flin fermenting barrel</label>
+		<description>A barrel for fermenting flin from meadow rye precursor. This will take 20 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<graphicData>
+			<colorTwo>(189,213,201)</colorTwo>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Meadow rye precursor</fuelLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_MeadowRyePrecursor</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SimpleItemProcessor">
+				<processDays>20</processDays>
+				<yieldThingDef>Mashed_Ashlands_AlcoholFlin</yieldThingDef>
+				<yieldAmount>25</yieldAmount>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_JazbayFermentingBarrel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AshlandFermentingBarrel_Base">
+		<defName>Mashed_Ashlands_JazbayFermentingBarrel</defName>
+		<label>jazbay wine fermenting barrel</label>
+		<description>A barrel for fermenting jazbay wine from ashen jazbay precursor. This will take 20 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<graphicData>
+			<colorTwo>(186,150,214)</colorTwo>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Ashen jazbay precursor</fuelLabel>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
+				<fuelCapacity>25</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Mashed_Ashlands_AshenJazbayPrecursor</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_SimpleItemProcessor">
+				<processDays>20</processDays>
+				<yieldThingDef>Mashed_Ashlands_AlcoholJazbayWine</yieldThingDef>
+				<yieldAmount>25</yieldAmount>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>5</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

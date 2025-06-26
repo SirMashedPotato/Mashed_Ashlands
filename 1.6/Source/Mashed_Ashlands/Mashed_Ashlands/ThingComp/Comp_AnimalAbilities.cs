@@ -8,7 +8,7 @@ namespace Mashed_Ashlands
     {
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (!ModsConfig.IsActive("oskarpotocki.vanillafactionsexpanded.core"))
+            if (!ModsConfig.IsActive("oskarpotocki.vanillafactionsexpanded.core")) //TODO ???
             {
                 foreach (Gizmo gizmo in base.CompGetGizmosExtra())
                 {
