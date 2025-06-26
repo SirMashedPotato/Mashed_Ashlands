@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedAnimalEnters]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_BlightedAnimalEnters</defName>
+		<label>blighted animal wanders in</label>
+		<workerClass>Mashed_Ashlands.IncidentWorker_BlightedAnimalEnters</workerClass>
+		<letterLabel>blighted {0_label}</letterLabel>
+		<letterText>A blighted {0_label} has wandered into the area. Ash blight has driven it mad, and it will attack anything it sees. It should be dealt with quickly, before the blight begins to spread.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<category>ThreatBig</category>
+		<baseChance>0.6</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>15</minRefireDays>
+		<letterHyperlinkHediffDefs>
+			<li>Mashed_Ashlands_AshBlight</li>
+		</letterHyperlinkHediffDefs>
+	</IncidentDef>
+</Defs>

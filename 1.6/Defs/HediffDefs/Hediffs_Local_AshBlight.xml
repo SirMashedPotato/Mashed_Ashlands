@@ -25,6 +25,9 @@
 						<offset>0.2</offset>
 					</li>
 				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

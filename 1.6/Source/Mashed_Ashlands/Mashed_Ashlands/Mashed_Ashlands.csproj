@@ -135,6 +135,7 @@
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
     <Compile Include="Hediff\Hediff_AshBlight.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_BlightedAnimalEnters.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
