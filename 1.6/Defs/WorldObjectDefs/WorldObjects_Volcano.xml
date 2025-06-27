@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_VolcanoBase]==========-->
-	<WorldObjectDef Name="Mashed_Ashlands_VolcanoBase" Abstract="True">
+	<WorldObjectDef Name="Mashed_Ashlands_VolcanoBase" ParentName="StaticWorldObjectBase" Abstract="True">
 		<worldObjectClass>Mashed_Ashlands.Volcano</worldObjectClass>
 		<canHaveFaction>false</canHaveFaction>
-		<inspectorTabs/>
+		<canHaveMap>false</canHaveMap>
 		<useDynamicDrawer>false</useDynamicDrawer>
 		<expandingIcon>true</expandingIcon>
 		<expandingIconTexture>World/WorldObjects/Expanding/Mashed_Ashlands_Volcano</expandingIconTexture>
