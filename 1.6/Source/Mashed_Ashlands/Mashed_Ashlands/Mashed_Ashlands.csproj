@@ -138,11 +138,11 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
-    <Compile Include="Pages\Tabs\SettingsTab_WorldGenActive.cs" />
-    <Compile Include="Pages\Tabs\SettingsTab_WorldGenBlighted.cs" />
-    <Compile Include="Pages\Tabs\SettingsTab_WorldGenDormant.cs" />
-    <Compile Include="Pages\Tabs\SettingsTab_WorldGenExtinct.cs" />
-    <Compile Include="Pages\Tabs\SettingsTab_WorldGenGeneral.cs" />
+    <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenActive.cs" />
+    <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenBlighted.cs" />
+    <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenDormant.cs" />
+    <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenExtinct.cs" />
+    <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenGeneral.cs" />
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="PawnsArrivalModeWorker\PawnsArrivalModeWorker_EmergeFromAsh.cs" />
