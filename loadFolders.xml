@@ -101,17 +101,17 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/LoadFolders/Biotech</li>
 		<!-- Anomaly -->
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/LoadFolders/Anomaly</li>
+		<!-- Odyssey -->
+		<li IfModActive="Ludeon.RimWorld.Odyssey">LoadFolders/FishTextures</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/LoadFolders/OdysseyTextures</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/LoadFolders/Odyssey</li>
 		<!-- VE_Framework -->
-		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">LoadFolders/VE_FrameworkTextures</li>
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/LoadFolders/VE_Framework</li>
 		<!-- VE_Achievements -->
 		<li IfModActive="vanillaexpanded.achievements">LoadFolders/VE_AchievementsTextures</li>
 		<li IfModActive="vanillaexpanded.achievements">1.6/LoadFolders/VE_Achievements</li>
 		<!-- VE_Cooking -->
 		<li IfModActive="vanillaexpanded.vcooke">1.6/LoadFolders/VE_Cooking</li>
-		<!-- VE_Fishing -->
-		<li IfModActive="vanillaexpanded.vcef">LoadFolders/FishTextures</li>
-		<li IfModActive="vanillaexpanded.vcef">1.6/LoadFolders/VE_Fishing</li>
 		<!-- SYR_ProcessorFramework -->
 		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.6/LoadFolders/SYR_ProcessorFramework</li>
 		<!-- ReGrowth_Core -->
@@ -127,7 +127,5 @@
 		<li IfModActive="vanillaexpanded.recycling">1.6/LoadFolders/VE_Recycling</li>
 		<!-- Cherry Picker -->
 		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
-		<!-- Pathfinding Framework -->
-		<li IfModActive="pathfinding.framework">1.6/LoadFolders/PathfindingFramework</li>
 	</v1.6>
 </loadFolders>
