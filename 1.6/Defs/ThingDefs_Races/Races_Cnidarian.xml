@@ -56,7 +56,6 @@
 			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
-			<gestationPeriodDays>2</gestationPeriodDays>
 			<roamMtbDays>5</roamMtbDays>
 			<litterSizeCurve>
 				<points>
@@ -94,6 +93,16 @@
 		<defName>Mashed_Ashlands_SwampJelly</defName>
 		<label>ashland swamp jelly</label>
 		<description>Smaller cousins of the netch, usually found in humid ashland regions.  Swamp jelly come in a wide variety of colours, which has inspired some to collect them as pets. While they lack the protective shell of the netch, their tentacles are still covered in nematocysts</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_SwampJellyFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_SwampJellyUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
 		<race>
 			<specificMeatDef>Mashed_Ashlands_SwampJellyEdible</specificMeatDef>
 		</race>

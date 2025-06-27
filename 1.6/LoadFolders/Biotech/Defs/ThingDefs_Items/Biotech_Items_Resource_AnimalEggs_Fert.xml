@@ -48,11 +48,11 @@
 			<color>(125,173,102)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>40</MarketValue>
+			<MarketValue>19</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_NetchGlowing</hatcherPawn>
 			</li>
 		</comps>

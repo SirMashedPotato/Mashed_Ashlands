@@ -166,7 +166,7 @@
 			<color>(172,110,193)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>28</MarketValue>
+			<MarketValue>13</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixHoundFertilized]==========-->
@@ -317,7 +317,7 @@
 			<color>(110,172,193)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>14</MarketValue>
+			<MarketValue>8</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_ThunderbugFertilized]==========-->

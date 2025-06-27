@@ -247,11 +247,11 @@
 			<color>(172,110,193)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>40</MarketValue>
+			<MarketValue>19</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_Netch</hatcherPawn>
 			</li>
 		</comps>
@@ -493,11 +493,11 @@
 			<color>(110,172,193)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>20</MarketValue>
+			<MarketValue>11</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherDaystoHatch>2.5</hatcherDaystoHatch>
 				<hatcherPawn>Mashed_Ashlands_SwampJelly</hatcherPawn>
 			</li>
 		</comps>

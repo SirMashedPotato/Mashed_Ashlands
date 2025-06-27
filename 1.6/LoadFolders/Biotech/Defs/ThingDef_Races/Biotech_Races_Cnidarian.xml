@@ -14,6 +14,14 @@
 			</li>
 		</modExtensions>
 		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NetchGlowingFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_NetchGlowingUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Mashed_Ashlands_GlowingNetchJelly</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
