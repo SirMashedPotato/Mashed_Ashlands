@@ -6,4 +6,10 @@
 			<Mashed_Ashlands_AshResistance>0.25</Mashed_Ashlands_AshResistance>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_ClothMask"]/equippedStatOffsets</xpath>
+		<value>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+		</value>
+	</Operation>
 </Patch>
