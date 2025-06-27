@@ -9,10 +9,15 @@ namespace Mashed_Ashlands
     {
         private readonly int tickInterval = 60;
 
+        protected override void Tick()
+        {
+            base.Tick();
+            TickEffecter();
+        }
+
         protected override void TickInterval(int delta)
         {
             base.TickInterval(delta);
-            TickEffecter();
             try
             {
                 if (this.IsHashIntervalTick(tickInterval, delta))
