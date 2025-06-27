@@ -21,6 +21,7 @@
 		<defName>Mashed_Ashlands_FetcherflySwarm</defName>
 		<thingClass>Mashed_Ashlands.Gas_FetcherflySwarm</thingClass>
 		<label>fetcherfly swarm</label>
+		<pathfinderDangerous>true</pathfinderDangerous>
 		<graphicData>
 			<drawSize>0</drawSize>
 		</graphicData>

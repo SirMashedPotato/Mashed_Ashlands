@@ -121,6 +121,7 @@
 		<passability>PassThroughOnly</passability>
 		<rotatable>false</rotatable>
 		<mineable>true</mineable>
+		<pathfinderDangerous>true</pathfinderDangerous>
 		<pathCost>42</pathCost>
 		<costList>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
