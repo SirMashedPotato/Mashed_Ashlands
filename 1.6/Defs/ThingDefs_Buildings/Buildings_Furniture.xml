@@ -91,6 +91,28 @@
 			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
 		</researchPrerequisites>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_DarklightTorchbugLamp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
+		<defName>Mashed_Ashlands_DarklightTorchbugLamp</defName>
+		<label>darkshade torchbug lamp</label>
+		<description>A small lamp made of parasol wood, and containing darkshade torchbugs. Provides a reasonable amount of darklight, though not as much as a regular darktorch. The torchbugs will need to be fed either insect meat, raw ash fungus, or parasol moss, every now and then</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_DarklightTorchbugLamp</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_DarklightTorchbugEffecter</effecterDef>
+				<tickInterval>750</tickInterval>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+		</researchPrerequisites>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_FetcherflyLamp]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
 		<defName>Mashed_Ashlands_FetcherflyLamp</defName>
