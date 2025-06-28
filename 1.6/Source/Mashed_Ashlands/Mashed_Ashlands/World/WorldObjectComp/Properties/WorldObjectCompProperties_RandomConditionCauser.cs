@@ -6,10 +6,7 @@ namespace Mashed_Ashlands
 {
     public class WorldObjectCompProperties_RandomConditionCauser : WorldObjectCompProperties
     {
-        public WorldObjectCompProperties_RandomConditionCauser()
-        {
-            compClass = typeof(WorldObjectComp_RandomConditionCauser);
-        }
+        public WorldObjectCompProperties_RandomConditionCauser() => compClass = typeof(WorldObjectComp_RandomConditionCauser);
 
         public bool preventConditionStacking = true;
         public List<PotentialConditions> potentialConditions;
@@ -17,18 +14,17 @@ namespace Mashed_Ashlands
 
     public class PotentialConditions 
     {
-        public GameConditionDef conditionDef = null;
-        public FloatRange durationDays;
-        public FloatRange graceDaysAfter;
+        public VolcanicConditionDef volcanicConditionDef;
         public float weight = 1f;
-        public bool sendLetter = true;
-        public bool sendEndMessage = true;
-        public bool countAsIncident = true;
-        public int minVolcanoCategory = 1;
-        public int forcedCategory = 0;
+        public float durationDaysFactor = 1f;
+        public float graceDaysFactor = 1f;
 
-        public FloatRange GetTrueConditionDuration => durationDays * Mashed_Ashlands_ModSettings.VolcanoConditionDurationMultiplier;
+        public FloatRange GetTrueConditionDuration => volcanicConditionDef.GetTrueConditionDuration(durationDaysFactor);
 
-        public FloatRange GetTrueGraceDuration => graceDaysAfter * Mashed_Ashlands_ModSettings.VolcanoConditionGraceMultiplier;
+        public float GetRandomDurationDays => GetTrueConditionDuration.RandomInRange;
+
+        public FloatRange GetTrueGraceDuration => volcanicConditionDef.GetTrueGraceDuration(graceDaysFactor);
+       
+        public float GetRandomGraceDays => GetTrueGraceDuration.RandomInRange;
     }
 }

@@ -67,42 +67,27 @@
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
-						<!-- null condition -->
-						<durationDays>0</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_NullCondition</volcanicConditionDef>
 						<weight>20</weight>
-						<sendLetter>false</sendLetter>
-						<sendEndMessage>false</sendEndMessage>
-						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<durationDays>0.5~5</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_AshStorm</volcanicConditionDef>
 						<weight>5</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<durationDays>1~5</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicMiasma</volcanicConditionDef>
+						<weight>2</weight>
+					</li>
+					<li>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicEarthquake</volcanicConditionDef>
 						<weight>1</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.1~0.3</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
-						<weight>1</weight>
-					</li>
-					<li>
-						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
-						<durationDays>3~10</durationDays>
-						<graceDaysAfter>1~5</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_DenseAshClouds</volcanicConditionDef>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<durationDays>0.1~0.3</durationDays>
-						<graceDaysAfter>1~5</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicDebrisRain</volcanicConditionDef>
 						<weight>1</weight>
 					</li>
 				</potentialConditions>
@@ -163,59 +148,47 @@
 				</categoryWeights>
 			</li>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>Mashed_Ashlands_VolcanicHeat</conditionDef>
+				<volcanicConditionDef>Mashed_Ashlands_VolcanicHeat</volcanicConditionDef>
 			</li>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
-						<!-- null condition -->
-						<durationDays>0</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_NullCondition</volcanicConditionDef>
 						<weight>15</weight>
-						<sendLetter>false</sendLetter>
-						<sendEndMessage>false</sendEndMessage>
-						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<durationDays>1~10</durationDays>
-						<graceDaysAfter>3~15</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_AshStorm</volcanicConditionDef>
+						<durationDaysFactor>2</durationDaysFactor>
+						<graceDaysFactor>1.5</graceDaysFactor>
 						<weight>5</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_AshStorm_Metallic</conditionDef>
-						<durationDays>1~5</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_AshStormMetallic</volcanicConditionDef>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<durationDays>2~10</durationDays>
-						<graceDaysAfter>3~15</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicMiasma</volcanicConditionDef>
+						<durationDaysFactor>2</durationDaysFactor>
+						<graceDaysFactor>1.5</graceDaysFactor>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.2~0.4</durationDays>
-						<graceDaysAfter>3~15</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicEarthquake</volcanicConditionDef>
+						<durationDaysFactor>1.5</durationDaysFactor>
+						<graceDaysFactor>1.5</graceDaysFactor>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
-						<durationDays>5~15</durationDays>
-						<graceDaysAfter>1~5</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_DenseAshClouds</volcanicConditionDef>
+						<durationDaysFactor>1.5</durationDaysFactor>
 						<weight>5</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
-						<durationDays>3~15</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicHeatIntense</volcanicConditionDef>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<durationDays>0.1~0.3</durationDays>
-						<graceDaysAfter>1~5</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicDebrisRain</volcanicConditionDef>
 						<weight>3</weight>
 					</li>
 				</potentialConditions>
@@ -276,61 +249,43 @@
 				</categoryWeights>
 			</li>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_PermanentCondition">
-				<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
+				<volcanicConditionDef>Mashed_Ashlands_DenseAshClouds</volcanicConditionDef>
 			</li>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_RandomConditionCauser">
 				<potentialConditions>
 					<li>
-						<!-- null condition -->
-						<durationDays>0</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_NullCondition</volcanicConditionDef>
 						<weight>15</weight>
-						<sendLetter>false</sendLetter>
-						<sendEndMessage>false</sendEndMessage>
-						<countAsIncident>false</countAsIncident>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
-						<durationDays>1~5</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_AshStorm</volcanicConditionDef>
 						<weight>4</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_AshStorm_Blighted</conditionDef>
-						<durationDays>1~5</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_AshStormBlighted</volcanicConditionDef>
 						<weight>4</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
-						<durationDays>2~10</durationDays>
-						<graceDaysAfter>3~15</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicMiasma</volcanicConditionDef>
+						<durationDaysFactor>2</durationDaysFactor>
+						<graceDaysFactor>1.5</graceDaysFactor>
 						<weight>2</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
-						<durationDays>0.1~0.3</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicEarthquake</volcanicConditionDef>
 						<weight>1</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_DenseAshCloudsImpenetrable</conditionDef>
-						<durationDays>3~15</durationDays>
-						<graceDaysAfter>2~10</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_DenseAshCloudsImpenetrable</volcanicConditionDef>
 						<weight>3</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
-						<durationDays>0.1~0.3</durationDays>
-						<graceDaysAfter>1~5</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicDebrisRain</volcanicConditionDef>
 						<weight>2</weight>
 					</li>
 					<li>
-						<conditionDef>Mashed_Ashlands_PsychicEruption</conditionDef>
-						<durationDays>3~6</durationDays>
-						<graceDaysAfter>5~15</graceDaysAfter>
+						<volcanicConditionDef>Mashed_Ashlands_PsychicEruption</volcanicConditionDef>
 						<weight>1</weight>
-						<minVolcanoCategory>6</minVolcanoCategory>
 					</li>
 				</potentialConditions>
 			</li>

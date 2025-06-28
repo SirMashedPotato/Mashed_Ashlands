@@ -29,8 +29,12 @@ namespace Mashed_Ashlands
         /// return Grid.ApproxDistanceInTiles(parentVolcano.Tile, tile) <= worldRange;
         /// slight issue with that though, tiles outside of the visible radius may be effected if they are along a line instead of a corner
         /// </summary>
-        public bool InAoE(int tile, int category, Volcano parentVolcano)
+        public bool InAoE(PlanetTile tile, int category, Volcano parentVolcano)
         {
+            if (tile.Layer != parentVolcano.Tile.Layer)
+            {
+                return false;
+            }
             int worldRange = parentVolcano.EffectRadiusFor(category);
             return Grid.TraversalDistanceBetween(parentVolcano.Tile, tile, true, worldRange + 1) <= worldRange;
         }

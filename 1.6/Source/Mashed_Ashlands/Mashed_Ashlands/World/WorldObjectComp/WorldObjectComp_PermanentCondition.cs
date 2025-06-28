@@ -7,13 +7,7 @@ namespace Mashed_Ashlands
 {
     public class WorldObjectComp_PermanentCondition : WorldObjectComp_VolcanoConditionCauser
     {
-		public WorldObjectCompProperties_PermanentCondition Props
-		{
-			get
-			{
-				return (WorldObjectCompProperties_PermanentCondition)props;
-			}
-		}
+		public WorldObjectCompProperties_PermanentCondition Props => (WorldObjectCompProperties_PermanentCondition)props;
 
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
 
@@ -29,7 +23,7 @@ namespace Mashed_Ashlands
                     {
                         if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
                         {
-                            EnforceConditionOn(ref causedConditions, map, Props.conditionDef, Props.preventConditionStacking);
+                            EnforceConditionOn(ref causedConditions, map, Props.volcanicConditionDef.conditionDef, Props.preventConditionStacking);
                         }
                     }
                 }
@@ -68,14 +62,14 @@ namespace Mashed_Ashlands
         {
             if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
             {
-                return "Mashed_Ashlands_VolcanoPermanentCondition".Translate(Props.conditionDef.label);
+                return "Mashed_Ashlands_VolcanoPermanentCondition".Translate(Props.volcanicConditionDef.label);
             }
             return base.CompInspectStringExtra();
         }
 
         public override string GetDescriptionPart()
         {
-            return Props.conditionDef.label.CapitalizeFirst() + "\n" + Props.conditionDef.description;
+            return Props.volcanicConditionDef.label.CapitalizeFirst() + "\n" + Props.volcanicConditionDef.conditionDef.description;
         }
 
         public override void PostDestroy()
@@ -89,6 +83,6 @@ namespace Mashed_Ashlands
         }
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
-        private static List<Map> tmpDeadConditionMaps = new List<Map>();
+        private static readonly List<Map> tmpDeadConditionMaps = new List<Map>();
     }
 }

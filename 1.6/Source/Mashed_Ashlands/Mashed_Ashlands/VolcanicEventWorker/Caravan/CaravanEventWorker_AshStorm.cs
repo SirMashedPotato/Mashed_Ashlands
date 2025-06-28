@@ -4,12 +4,9 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    /// <summary>
-    /// TODO switch to using this in 1.6
-    /// </summary>
-    public class VEW_AshStorm : CaravanVolcanicEventWorker
+    public class CaravanEventWorker_AshStorm : CaravanVolcanicEventWorker
     {
-        public override void CaravanEventWorker(Volcano parentVolcano, int category, List<Caravan> targets)
+        public override void CaravanEventWorker(Volcano parentVolcano, List<Caravan> targets)
         {
             if (!Mashed_Ashlands_ModSettings.AshStormCauseBuildup || !Mashed_Ashlands_ModSettings.AshStormAffectsCaravan)
             {

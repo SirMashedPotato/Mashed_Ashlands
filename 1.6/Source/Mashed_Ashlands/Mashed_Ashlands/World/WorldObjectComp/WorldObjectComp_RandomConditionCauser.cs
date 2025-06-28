@@ -18,7 +18,8 @@ namespace Mashed_Ashlands
 
         public IEnumerable<GameCondition> CausedConditions => causedConditions.Values;
         public bool CanCauseCondition => graceTicksLeft == 0;
-        public GameConditionDef CurrentConditionDef => currentConditionDef;
+        public VolcanicConditionDef CurrentConditionDef => currentConditionDef;
+        public int ConditionCategory => conditionCategory;
 
         private List<FloatMenuOption> debugConditionOptions;
 
@@ -44,24 +45,12 @@ namespace Mashed_Ashlands
                     ///Conditions
                     foreach (PotentialConditions potentialCondition in Props.potentialConditions)
                     {
-                        if (potentialCondition.conditionDef != null)
+                        item = new FloatMenuOption(potentialCondition.volcanicConditionDef.LabelCap, delegate
                         {
-                            item = new FloatMenuOption(potentialCondition.conditionDef.LabelCap, delegate
-                            {
-                                FloatMenu floatMenu = new FloatMenu(DebugConditionCategoryOptions(potentialCondition));
-                                Find.WindowStack.Add(floatMenu);
-                            });
-                            debugConditionOptions.Add(item);
-                        }
-                        else
-                        {
-                            ///Null condition
-                            item = new FloatMenuOption("No condition", delegate
-                            {
-                                TriggerCondition(potentialCondition);
-                            });
-                            debugConditionOptions.Add(item);
-                        }
+                            FloatMenu floatMenu = new FloatMenu(DebugConditionCategoryOptions(potentialCondition));
+                            Find.WindowStack.Add(floatMenu);
+                        });
+                        debugConditionOptions.Add(item);
                     }
                 }
                 return debugConditionOptions;
@@ -99,7 +88,7 @@ namespace Mashed_Ashlands
         /// </summary>
         public void TriggerCondition(PotentialConditions forcedCondition = null, int forcedCategory = -1)
         {
-            PotentialConditions condition = forcedCondition ?? Props.potentialConditions.Where(x => x.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
+            PotentialConditions condition = forcedCondition ?? Props.potentialConditions.Where(x => x.volcanicConditionDef.minVolcanoCategory <= ParentVolcano.Category).RandomElementByWeight(y => y.weight);
             if (condition != null)
             {
                 if (!causedConditions.NullOrEmpty())
@@ -113,7 +102,7 @@ namespace Mashed_Ashlands
 
                 bool radiusFlag = !Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius();
 
-                if (condition.countAsIncident)
+                if (condition.volcanicConditionDef.countAsIncident)
                 {
                     ParentVolcano.IncidentTriggered();
 
@@ -125,12 +114,12 @@ namespace Mashed_Ashlands
                     }
                 }
 
-                if (condition.sendLetter && radiusFlag)
+                if (condition.volcanicConditionDef.sendLetter && radiusFlag)
                 {
                     Find.LetterStack.ReceiveLetter(
-                    "Mashed_Ashlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, category, currentConditionDef.label).CapitalizeFirst(),
-                    "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, category, currentConditionDef.label, currentConditionDef.description),
-                    currentConditionDef.letterDef, ParentVolcano, null, null);
+                    "Mashed_Ashlands_VolcanoConditionLetter_Label".Translate(ParentVolcano.Name, conditionCategory, currentConditionDef.label).CapitalizeFirst(),
+                    "Mashed_Ashlands_VolcanoConditionLetter_Description".Translate(ParentVolcano.Name, conditionCategory, currentConditionDef.label, currentConditionDef.conditionDef.description),
+                    currentConditionDef.conditionDef.letterDef, ParentVolcano, null, null);
                 }
                 ///need to check radius again for the new radius
                 if (categoryChangeFlag && (radiusFlag || (!Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius())))
@@ -141,7 +130,7 @@ namespace Mashed_Ashlands
 
                 conditionTicksLeft = (int)(durationDays * 60000f);
                 graceTicksLeft = (int)(graceDaysAfter * 60000f);
-                endMessage = condition.sendEndMessage;
+                endMessage = condition.volcanicConditionDef.sendEndMessage;
             }
         }
 
@@ -150,17 +139,17 @@ namespace Mashed_Ashlands
         /// </summary>
         public void SetCondition(PotentialConditions condition, Volcano parentVolcano, int forcedCategory = -1)
         {
-            if (condition.conditionDef != null)
+            if (condition.volcanicConditionDef != null)
             {
-                currentConditionDef = condition.conditionDef;
+                currentConditionDef = condition.volcanicConditionDef;
             }
             else
             {
                 currentConditionDef = null;
             }
-            durationDays = condition.GetTrueConditionDuration.RandomInRange;
-            graceDaysAfter = condition.GetTrueGraceDuration.RandomInRange;
-            category = forcedCategory > 0 ? forcedCategory : condition.forcedCategory > 0 ? condition.forcedCategory : category = Rand.RangeInclusive(1, parentVolcano.Category);
+            durationDays = condition.GetRandomDurationDays;
+            graceDaysAfter = condition.GetRandomGraceDays;
+            conditionCategory = forcedCategory > 0 ? forcedCategory : condition.volcanicConditionDef.forcedCategory > 0 ? condition.volcanicConditionDef.forcedCategory : conditionCategory = Rand.RangeInclusive(1, parentVolcano.Category);
         }
 
         /// <summary>
@@ -170,7 +159,7 @@ namespace Mashed_Ashlands
         {
             if (endMessage && (!Mashed_Ashlands_ModSettings.VolcanoOnlyLetterIfInRadius || AnyPlayerInRadius()))
             {
-                Messages.Message(currentConditionDef.endMessage, ParentVolcano, MessageTypeDefOf.NeutralEvent, false);
+                Messages.Message(currentConditionDef.conditionDef.endMessage, ParentVolcano, MessageTypeDefOf.NeutralEvent, false);
             }
             foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
             {
@@ -193,29 +182,30 @@ namespace Mashed_Ashlands
                 {
                     if (conditionTicksLeft > 0)
                     {
-                        if (currentConditionDef != null)
+                        if (currentConditionDef != null && !currentConditionDef.isNullCondition)
                         {
                             foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap && PreventVolcanicConditions.Get(x.Biome) == null))
                             {
-                                if (InAoE(map.Tile, category, ParentVolcano))
+                                if (InAoE(map.Tile, conditionCategory, ParentVolcano))
                                 {
-                                    EnforceConditionOn(ref causedConditions, map, currentConditionDef, Props.preventConditionStacking);
+                                    EnforceConditionOn(ref causedConditions, map, currentConditionDef.conditionDef, Props.preventConditionStacking);
                                 }
                             }
-                            ///Causes ash buildup to pawns in caravans during an ash storm
                             if (caravanFlag)
                             {
-                                if (Mashed_Ashlands_ModSettings.AshStormAffectsCaravan && currentConditionDef.conditionClass == typeof(GameCondition_AshStorm))
+                                if (!currentConditionDef.caravanVolcanicEventWorkers.NullOrEmpty())
                                 {
+                                    List<Caravan> caravans = new List<Caravan>();
                                     foreach (Caravan caravan in Find.World.worldObjects.Caravans)
                                     {
-                                        if (InAoE(caravan.Tile, category, ParentVolcano) && caravan.pather.MovingNow)
+                                        if (InAoE(caravan.Tile, conditionCategory, ParentVolcano))
                                         {
-                                            foreach (Pawn p in caravan.PawnsListForReading)
-                                            {
-                                                GameCondition_AshStorm.DoPawnAshDamage(p, false);
-                                            }
+                                            caravans.Add(caravan);
                                         }
+                                    }
+                                    if (!caravans.NullOrEmpty())
+                                    {
+                                        currentConditionDef.TriggerCaravanEvents(ParentVolcano, caravans);
                                     }
                                 }
                             }
@@ -242,7 +232,7 @@ namespace Mashed_Ashlands
                 tmpDeadConditionMaps.Clear();
                 foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
                 {
-                    if (!InAoE(keyValuePair.Key.Tile, category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                    if (!InAoE(keyValuePair.Key.Tile, conditionCategory, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
                     {
                         keyValuePair.Value.End();
                         tmpDeadConditionMaps.Add(keyValuePair.Key);
@@ -275,7 +265,7 @@ namespace Mashed_Ashlands
             }
 
             Scribe_Defs.Look(ref currentConditionDef, "conditionDef");
-            Scribe_Values.Look(ref category, "incidentCategory", 1);
+            Scribe_Values.Look(ref conditionCategory, "incidentCategory", 1);
             Scribe_Values.Look(ref conditionTicksLeft, "conditionTicksLeft", 0);
             Scribe_Values.Look(ref graceTicksLeft, "graceTicksLeft", 0);
             Scribe_Values.Look(ref incidentsCount, "incidentsCount", 0);
@@ -289,7 +279,7 @@ namespace Mashed_Ashlands
             }
             if (currentConditionDef != null)
             {
-                return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(category, currentConditionDef.label);
+                return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(conditionCategory, currentConditionDef.label);
             }
             return base.CompInspectStringExtra();
         }
@@ -298,9 +288,9 @@ namespace Mashed_Ashlands
         {
             if(currentConditionDef != null)
             {
-                if (category != ParentVolcano.Category)
+                if (conditionCategory != ParentVolcano.Category)
                 {
-                    int radius = ParentVolcano.EffectRadiusFor(category);
+                    int radius = ParentVolcano.EffectRadiusFor(conditionCategory);
                     if (radius != -1)
                     {
                         GenDraw.DrawWorldRadiusRing(parent.Tile, radius);
@@ -366,10 +356,10 @@ namespace Mashed_Ashlands
         }
 
         public int incidentsCount = 0;
-        private GameConditionDef currentConditionDef;
+        private VolcanicConditionDef currentConditionDef;
         private float durationDays = 0;
         private float graceDaysAfter = 0;
-        private int category = 1;
+        private int conditionCategory = 1;
         private bool endMessage = false;
 
         private const int tickInterval = 60;
@@ -378,6 +368,6 @@ namespace Mashed_Ashlands
         private IntRange initialGraceTicks = new IntRange(300000, 1500000);
 
         private Dictionary<Map, GameCondition> causedConditions = new Dictionary<Map, GameCondition>();
-        private static List<Map> tmpDeadConditionMaps = new List<Map>();
+        private static readonly List<Map> tmpDeadConditionMaps = new List<Map>();
     }
 }

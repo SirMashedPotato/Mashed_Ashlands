@@ -16,14 +16,14 @@
 		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
 		<weatherDef>Mashed_Ashlands_VolcanicWind</weatherDef>
 		<exclusiveConditions>
-			<li>Mashed_Ashlands_AshStorm_Blighted</li>
-			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_AshStormBlighted</li>
+			<li>Mashed_Ashlands_AshStormMetallic</li>
 			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>
-	<!-- ==========[Mashed_Ashlands_AshStorm_Blighted]==========-->
+	<!-- ==========[Mashed_Ashlands_AshStormBlighted]==========-->
 	<GameConditionDef>
-		<defName>Mashed_Ashlands_AshStorm_Blighted</defName>
+		<defName>Mashed_Ashlands_AshStormBlighted</defName>
 		<conditionClass>Mashed_Ashlands.GameCondition_AshStorm</conditionClass>
 		<label>blighted ash storm</label>
 		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm carries blight. Wild animals may be driven mad, and crops may become blighted.</description>
@@ -38,13 +38,13 @@
 		<weatherDef>Mashed_Ashlands_VolcanicWindBlight</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
-			<li>Mashed_Ashlands_AshStorm_Metallic</li>
+			<li>Mashed_Ashlands_AshStormMetallic</li>
 			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>
-	<!-- ==========[Mashed_Ashlands_AshStorm_Metallic]==========-->
+	<!-- ==========[Mashed_Ashlands_AshStormMetallic]==========-->
 	<GameConditionDef>
-		<defName>Mashed_Ashlands_AshStorm_Metallic</defName>
+		<defName>Mashed_Ashlands_AshStormMetallic</defName>
 		<conditionClass>Mashed_Ashlands.GameCondition_AshStorm</conditionClass>
 		<label>metallic ash storm</label>
 		<description>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm is full of metallic particles. Friction between them will cause frequent lightning strikes.</description>
@@ -59,7 +59,7 @@
 		<weatherDef>Mashed_Ashlands_VolcanicWindThunder</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
-			<li>Mashed_Ashlands_AshStorm_Blighted</li>
+			<li>Mashed_Ashlands_AshStormBlighted</li>
 			<li>Mashed_Ashlands_VolcanicMiasma</li>
 		</exclusiveConditions>
 	</GameConditionDef>

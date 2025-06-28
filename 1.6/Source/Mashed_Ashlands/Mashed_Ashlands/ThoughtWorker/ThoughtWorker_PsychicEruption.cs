@@ -17,7 +17,8 @@ namespace Mashed_Ashlands
             }
             if (validVolcanos.NullOrEmpty())
             {
-                validVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(planetLayer).Where(x => x.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct && x.GetComponent<WorldObjectComp_RandomConditionCauser>().Props.potentialConditions.Where(y => y.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption).Any()).ToList();
+                validVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(planetLayer).Where(x => x.def != WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct 
+                && x.GetComponent<WorldObjectComp_RandomConditionCauser>().Props.potentialConditions.Where(y => y.volcanicConditionDef.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption).Any()).ToList();
             }
             return validVolcanos;
         }
@@ -42,9 +43,9 @@ namespace Mashed_Ashlands
                     foreach (Volcano volcano in ValidVolcanos(p.GetCaravan().Tile.Layer).Cast<Volcano>())
                     {
                         WorldObjectComp_RandomConditionCauser conditionComp = volcano.GetComponent<WorldObjectComp_RandomConditionCauser>();
-                        if (conditionComp.CurrentConditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption)
+                        if (conditionComp.CurrentConditionDef?.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption)
                         {
-                            if (conditionComp.InAoE(p.GetCaravan().Tile, volcano.Category, volcano))
+                            if (conditionComp.InAoE(p.GetCaravan().Tile, conditionComp.ConditionCategory, volcano))
                             {
                                 return ThoughtState.ActiveDefault;
                             }

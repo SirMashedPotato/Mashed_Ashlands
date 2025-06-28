@@ -2,6 +2,7 @@
 using RimWorld.Planet;
 using System.Collections.Generic;
 using RimWorld;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -125,12 +126,11 @@ namespace Mashed_Ashlands
                     }
                     foreach (PotentialConditions condition in compDetailsConditons.Props.potentialConditions)
                     {
-                        if (condition.conditionDef != null)
-                        {
-                            yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.conditionDef.label,
-                                "Mashed_Ashlands_VolcanoConditionChance".Translate((condition.weight / totalIncidentWeight).ToStringPercent()),
-                                condition.conditionDef.description + "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.GetTrueConditionDuration, condition.GetTrueGraceDuration, condition.minVolcanoCategory), 1, null, null, false);
-                        }
+                        yield return new StatDrawEntry(StatCategoryDefOf.Mashed_Ashlands_VolcanoPotentialIncidents, condition.volcanicConditionDef.label,
+                            "Mashed_Ashlands_VolcanoConditionChance".Translate((condition.weight / totalIncidentWeight).ToStringPercent()),
+                            (condition.volcanicConditionDef.description ?? condition.volcanicConditionDef.conditionDef.description) + 
+                            "Mashed_Ashlands_VolcanoConditionDuration".Translate(condition.GetTrueConditionDuration, condition.GetTrueGraceDuration, condition.volcanicConditionDef.minVolcanoCategory), 
+                            (int)(condition.weight * 10));
                     }
                 }
             }
