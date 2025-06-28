@@ -20,6 +20,7 @@
 			</wildTerrainTags>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<maxMeshCount>4</maxMeshCount>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_ScorchedBush]==========-->
@@ -46,6 +47,7 @@
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<topWindExposure>0.1</topWindExposure>
 			<wildClusterWeight>20</wildClusterWeight>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_BurnedParasolStumpPermanent]==========-->
@@ -76,6 +78,7 @@
 			</wildTerrainTags>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<pollution>Any</pollution>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_BurnedStumpPermanent]==========-->
@@ -117,6 +120,7 @@
 			</wildTerrainTags>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<pollution>Any</pollution>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 </Defs>
