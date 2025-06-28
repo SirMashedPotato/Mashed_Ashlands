@@ -95,5 +95,8 @@
 		<graphicData>
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_FireFernPlant</texPath>
 		</graphicData>
+		<plant>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
+		</plant>
 	</ThingDef>
 </Defs>

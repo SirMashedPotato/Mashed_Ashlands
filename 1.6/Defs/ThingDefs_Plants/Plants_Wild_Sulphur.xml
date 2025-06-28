@@ -21,6 +21,7 @@
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GiantSulphuricCoprinus]==========-->
@@ -46,6 +47,7 @@
 			<harvestWork>600</harvestWork>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 </Defs>

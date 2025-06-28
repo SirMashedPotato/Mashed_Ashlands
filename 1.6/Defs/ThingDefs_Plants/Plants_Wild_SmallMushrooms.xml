@@ -42,6 +42,7 @@
 				<li>Mashed_Ashlands_AshSowing_Beginner</li>
 			</sowResearchPrerequisites>
 			<sowWork>170</sowWork>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_BlueEntoloma]==========-->
@@ -94,6 +95,7 @@
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 			<purpose>Beauty</purpose>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LuminousRussula]==========-->

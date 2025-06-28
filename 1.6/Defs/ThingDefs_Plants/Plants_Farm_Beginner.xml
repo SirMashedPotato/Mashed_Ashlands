@@ -42,6 +42,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Corkbulb]==========-->
@@ -232,6 +233,7 @@
 			<visualSizeRange>0.95~2.0</visualSizeRange>
 			<fertilityMin>1</fertilityMin>
 			<topWindExposure>0.2</topWindExposure>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TramaShrub]==========-->
@@ -283,6 +285,7 @@
 			<harvestWork>150</harvestWork>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterWeight>100</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Scathecraw]==========-->
@@ -327,6 +330,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 </Defs>

@@ -29,6 +29,7 @@
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->

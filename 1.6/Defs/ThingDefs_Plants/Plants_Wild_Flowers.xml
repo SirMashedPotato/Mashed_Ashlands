@@ -175,6 +175,76 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
+		<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_LavaBloom</defName>
+		<label>lava bloom</label>
+		<description>A vibrant red flower that can often be found growing in rich volcanic ash.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_AshSoilVolcanic</li>
+					<li>Mashed_Ashlands_RichAshSoilVolcanic</li>
+				</allowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaBloom</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_LavaCactus</defName>
+		<label>lava cactus</label>
+		<description>A hardy species of cactus, often found growing in arid ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0.2</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaCactus</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<sowTags>
+				<li>Mashed_Ashlands_AshExclusive</li>
+			</sowTags>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_MeadowFlowerBlue]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_MeadowFlowerBase">
 		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
@@ -213,74 +283,6 @@
 		<graphicData>
 			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
 		</graphicData>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
-		<defName>Mashed_Ashlands_LavaBloom</defName>
-		<label>lava bloom</label>
-		<description>A vibrant red flower that can often be found growing in rich volcanic ash.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainDefsForWild>
-					<li>Mashed_Ashlands_AshSoilVolcanic</li>
-					<li>Mashed_Ashlands_RichAshSoilVolcanic</li>
-				</allowedTerrainDefsForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>3</Beauty>
-			<BeautyOutdoors>3</BeautyOutdoors>
-			<Flammability>0.2</Flammability>
-			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaBloom</texPath>
-		</graphicData>
-		<plant>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
-			</sowResearchPrerequisites>
-			<maxMeshCount>25</maxMeshCount>
-			<visualSizeRange>0.7~0.8</visualSizeRange>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-			<sowTags>
-				<li>Mashed_Ashlands_AshExclusive</li>
-			</sowTags>
-		</plant>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
-		<defName>Mashed_Ashlands_Plant_LavaCactus</defName>
-		<label>lava cactus</label>
-		<description>A hardy species of cactus, often found growing in arid ashland regions.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-			<Flammability>0.2</Flammability>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaCactus</texPath>
-		</graphicData>
-		<plant>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
-			</sowResearchPrerequisites>
-			<maxMeshCount>25</maxMeshCount>
-			<visualSizeRange>0.7~0.8</visualSizeRange>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-			<sowTags>
-				<li>Mashed_Ashlands_AshExclusive</li>
-			</sowTags>
-		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">

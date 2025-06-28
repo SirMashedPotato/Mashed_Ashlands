@@ -18,6 +18,7 @@
 			<topWindExposure>0.4</topWindExposure>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>80</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandGrass]==========-->

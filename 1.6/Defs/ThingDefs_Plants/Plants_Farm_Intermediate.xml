@@ -118,6 +118,7 @@
 			<wildClusterRadius>2</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Comberry]==========-->

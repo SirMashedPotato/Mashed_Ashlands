@@ -173,13 +173,8 @@
 		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<label>cliff racer</label>
 		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.\n\nUnder unknown circumstances cliff racers will rarely mutate upon reaching maturity, gaining the ability to produce fertile eggs asexually. This can affect both female and male cliff racers, and happens seemingly at random.</description>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-		</modExtensions>
 		<statBases>
-			<MoveSpeed>6.0</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>

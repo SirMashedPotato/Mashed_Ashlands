@@ -58,6 +58,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeKwamacap]==========-->
@@ -227,6 +228,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->
