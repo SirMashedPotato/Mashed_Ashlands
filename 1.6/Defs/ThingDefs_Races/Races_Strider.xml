@@ -71,6 +71,7 @@
 			<leatherDef>Mashed_Ashlands_StriderChitin</leatherDef>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<waterCellCost>10</waterCellCost>
 			<lifeExpectancy>333</lifeExpectancy>
 			<willNeverEat>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
@@ -157,11 +158,16 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
 					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStriderNymph</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SiltStrider</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -169,8 +175,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStrider</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -185,6 +196,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStrider</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.8</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
