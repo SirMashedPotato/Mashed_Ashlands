@@ -65,6 +65,7 @@
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<nuzzleMtbHours>100</nuzzleMtbHours>
 			<petness>0.2</petness>
+			<waterCellCost>1</waterCellCost>
 			<soundEating>PredatorLarge_Eat</soundEating>
 			<lifeStageAges>
 				<li>
@@ -133,6 +134,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -146,6 +152,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -160,6 +171,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
