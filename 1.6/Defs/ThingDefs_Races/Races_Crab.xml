@@ -49,6 +49,7 @@
 			<lifeExpectancy>10</lifeExpectancy>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<waterCellCost>5</waterCellCost>
 			<roamMtbDays>6</roamMtbDays>
 			<lifeStageAges>
 				<li>
@@ -125,6 +126,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.2</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -135,6 +141,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.45</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -149,6 +160,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.7</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
