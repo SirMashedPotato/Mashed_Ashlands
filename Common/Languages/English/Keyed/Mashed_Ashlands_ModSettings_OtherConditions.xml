@@ -2,6 +2,8 @@
 <LanguageData>
 	<!-- ==========[Other conditions]==========-->
 	<Mashed_Ashlands_PageOtherConditions>Other Conditions</Mashed_Ashlands_PageOtherConditions>
+	<!-- ==========[Miasma]==========-->
+	<Mashed_Ashlands_MiasmaAffectsCaravan>Volcanic miasma also causes toxic buildup to pawns in moving caravans.</Mashed_Ashlands_MiasmaAffectsCaravan>
 	<!-- ==========[Earthquake]==========-->
 	<Mashed_Ashlands_EarthquakeShake>Enable earthquakes causing the camera to shake.</Mashed_Ashlands_EarthquakeShake>
 	<Mashed_Ashlands_EarthquakeCollapseMountains>Enable earthquakes randomly causing overhead mountain tiles to collapse.</Mashed_Ashlands_EarthquakeCollapseMountains>

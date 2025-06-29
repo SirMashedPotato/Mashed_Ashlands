@@ -114,7 +114,9 @@ namespace Mashed_Ashlands
         public static bool BlightStormBlightWildPlants => _instance.Mashed_Ashlands_BlightStormBlightWildPlants;
         public static int BlightStormBlightPlantsNumber => _instance.Mashed_Ashlands_BlightStormBlightPlantsNumber;
 
-        //earthquake
+        //other conditions
+        public static bool MiasmaAffectsCaravan => _instance.Mashed_Ashlands_MiasmaAffectsCaravan;
+
         public static bool EarthquakeShake => _instance.Mashed_Ashlands_EarthquakeShake;
         public static bool EarthquakeCollapseMountains => _instance.Mashed_Ashlands_EarthquakeCollapseMountains;
         public static bool EarthquakeDamageBuildings => _instance.Mashed_Ashlands_EarthquakeDamageBuildings;
@@ -231,7 +233,9 @@ namespace Mashed_Ashlands
         public bool Mashed_Ashlands_BlightStormBlightWildPlants = Mashed_Ashlands_BlightStormBlightWildPlants_def;
         public int Mashed_Ashlands_BlightStormBlightPlantsNumber = Mashed_Ashlands_BlightStormBlightPlantsNumber_def;
 
-        //earthquake
+        //other conditions
+        public bool Mashed_Ashlands_MiasmaAffectsCaravan = Mashed_Ashlands_MiasmaAffectsCaravan_def;
+
         public bool Mashed_Ashlands_EarthquakeShake = Mashed_Ashlands_EarthquakeShake_def;
         public bool Mashed_Ashlands_EarthquakeCollapseMountains = Mashed_Ashlands_EarthquakeCollapseMountains_def;
         public bool Mashed_Ashlands_EarthquakeDamageBuildings = Mashed_Ashlands_EarthquakeDamageBuildings_def;
@@ -349,7 +353,9 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_BlightStormBlightWildPlants_def = false;
         private static readonly int Mashed_Ashlands_BlightStormBlightPlantsNumber_def = 3;
 
-        //earthquake
+        //other conditions
+        private static readonly bool Mashed_Ashlands_MiasmaAffectsCaravan_def = true;
+
         private static readonly bool Mashed_Ashlands_EarthquakeShake_def = true;
         private static readonly bool Mashed_Ashlands_EarthquakeCollapseMountains_def = true;
         private static readonly bool Mashed_Ashlands_EarthquakeDamageBuildings_def = true;
@@ -473,7 +479,9 @@ namespace Mashed_Ashlands
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightWildPlants, "Mashed_Ashlands_BlightStormBlightWildPlants", Mashed_Ashlands_BlightStormBlightWildPlants_def);
             Scribe_Values.Look(ref Mashed_Ashlands_BlightStormBlightPlantsNumber, "Mashed_Ashlands_BlightStormBlightPlantsNumber", Mashed_Ashlands_BlightStormBlightPlantsNumber_def);
 
-            //earthquake
+            //other conditions
+            Scribe_Values.Look(ref Mashed_Ashlands_MiasmaAffectsCaravan, "Mashed_Ashlands_MiasmaAffectsCaravan", Mashed_Ashlands_MiasmaAffectsCaravan_def);
+
             Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeShake, "Mashed_Ashlands_EarthquakeShake", Mashed_Ashlands_EarthquakeShake_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeCollapseMountains, "Mashed_Ashlands_EarthquakeCollapseMountains", Mashed_Ashlands_EarthquakeCollapseMountains_def);
             Scribe_Values.Look(ref Mashed_Ashlands_EarthquakeDamageBuildings, "Mashed_Ashlands_EarthquakeDamageBuildings", Mashed_Ashlands_EarthquakeDamageBuildings_def);
@@ -614,6 +622,8 @@ namespace Mashed_Ashlands
 
         public static void ResetSettings_OtherConditions()
         {
+            _instance.Mashed_Ashlands_MiasmaAffectsCaravan = Mashed_Ashlands_MiasmaAffectsCaravan_def;
+
             _instance.Mashed_Ashlands_EarthquakeShake = Mashed_Ashlands_EarthquakeShake_def;
             _instance.Mashed_Ashlands_EarthquakeCollapseMountains = Mashed_Ashlands_EarthquakeCollapseMountains_def;
             _instance.Mashed_Ashlands_EarthquakeDamageBuildings = Mashed_Ashlands_EarthquakeDamageBuildings_def;

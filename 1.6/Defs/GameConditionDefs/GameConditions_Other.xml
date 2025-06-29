@@ -46,7 +46,7 @@
 		<defName>Mashed_Ashlands_VolcanicMiasma</defName>
 		<conditionClass>Mashed_Ashlands.GameCondition_VolcanicMiasma</conditionClass>
 		<label>volcanic miasma</label>
-		<description>Recent volcanic activity has opened up several caverns deep underground, releasing the miasma previously contained within. While outdoor plants will be fine, any animals caught outside will be forced to breathe in the toxic gases.</description>
+		<description>Recent volcanic activity has opened up several caverns deep underground, releasing the miasma previously contained within. While outdoor plants will be fine, any animals or colonists caught outside, or in a caravan, will be forced to breathe in the toxic gases.\n\nCaravans will be protected against the miasma while resting, allowing members to recover from buildup.</description>
 		<descriptionFuture>dense volcanic miasma will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor animal life</descriptionFuture>
 		<endMessage>The miasma begins to dissipate. The air is breathable again.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>

@@ -111,7 +111,7 @@
 		<baseDurationDays>1~5</baseDurationDays>
 		<baseGraceDays>2~10</baseGraceDays>
 		<caravanVolcanicEventWorkers>
-			<!--<li Class="Mashed_Ashlands.CaravanEventWorker_ToxicMiasma"/> todo-->
+			<li Class="Mashed_Ashlands.CaravanEventWorker_VolcanicMiasma"/>
 		</caravanVolcanicEventWorkers>
 	</Mashed_Ashlands.VolcanicConditionDef>
 </Defs>

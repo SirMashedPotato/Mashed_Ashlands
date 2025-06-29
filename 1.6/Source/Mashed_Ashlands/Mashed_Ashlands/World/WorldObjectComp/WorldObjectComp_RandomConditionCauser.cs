@@ -277,7 +277,7 @@ namespace Mashed_Ashlands
             {
                 return "Condition ticks left: " + conditionTicksLeft + "(~" + conditionTicksLeft.TicksToDays().ToString("0.0") + " days)" + "\nGrace ticks left: " + graceTicksLeft + "(~" + graceTicksLeft.TicksToDays().ToString("0.0") + " days)";
             }
-            if (currentConditionDef != null)
+            if (!currentConditionDef.isNullCondition)
             {
                 return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(conditionCategory, currentConditionDef.label);
             }

@@ -23,7 +23,7 @@
 	<Mashed_Ashlands_VolcanoConditionWeight>{0} weight</Mashed_Ashlands_VolcanoConditionWeight>
 	<Mashed_Ashlands_VolcanoConditionDuration>\n\nThis incident will last {0} day/s.\nThe grace period after this incident ends will last {1} day/s.\nThe volcano must be category {2} or higher.</Mashed_Ashlands_VolcanoConditionDuration>
 	<Mashed_Ashlands_VolcanoPermanentCondition>Causes permanent {0} in radius.</Mashed_Ashlands_VolcanoPermanentCondition>
-	<Mashed_Ashlands_VolcanoTriggeredCondition>Currently causing a category {0} {1}</Mashed_Ashlands_VolcanoTriggeredCondition>
+	<Mashed_Ashlands_VolcanoTriggeredCondition>Currently causing category {0} {1}</Mashed_Ashlands_VolcanoTriggeredCondition>
 	<Mashed_Ashlands_VolcanoConditionLetter_Label>{0} (Category {1} {2})</Mashed_Ashlands_VolcanoConditionLetter_Label>
 	<Mashed_Ashlands_VolcanoConditionLetter_Description>Recent volcanic activity from {0} has caused a category {1} {2}.\n\n{3}</Mashed_Ashlands_VolcanoConditionLetter_Description>
 	<!-- Incidents -->

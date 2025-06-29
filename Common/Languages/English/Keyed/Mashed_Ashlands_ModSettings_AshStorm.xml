@@ -3,7 +3,7 @@
 	<!-- ==========[Ash storm]==========-->
 	<Mashed_Ashlands_PageAshStorm>Ash storms</Mashed_Ashlands_PageAshStorm>
 	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>
-	<Mashed_Ashlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in caravans.</Mashed_Ashlands_AshStormAffectsCaravan>
+	<Mashed_Ashlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in moving caravans.</Mashed_Ashlands_AshStormAffectsCaravan>
 	<Mashed_Ashlands_AshStormBuildupMult>Multiplier for the amount of ash buildup pawns receive: ({0}%)</Mashed_Ashlands_AshStormBuildupMult>
 	<Mashed_Ashlands_AshStormCauseBlinded>Enable ash storms randomly blinding unprotected pawns.</Mashed_Ashlands_AshStormCauseBlinded>
 	<Mashed_Ashlands_AshStormBlindedChance>The chance a pawn is blinded: ({0}%)</Mashed_Ashlands_AshStormBlindedChance>

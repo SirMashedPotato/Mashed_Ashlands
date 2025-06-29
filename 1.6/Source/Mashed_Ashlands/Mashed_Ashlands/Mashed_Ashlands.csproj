@@ -220,6 +220,7 @@
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_AshStorm.cs" />
+    <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_VolcanicMiasma.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
