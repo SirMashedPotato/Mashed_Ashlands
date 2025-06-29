@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>Mashed_Ashlands_MudcrabMerchant</defName>
+		<label>mudcrab merchant</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>10000</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Mashed_Ashlands_AshlandsAlcohol</tradeTag>
+				<thingDefCountRange>3~6</thingDefCountRange>
+				<totalPriceRange>300~600</totalPriceRange>
+			</li>
+			<!-- Books -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>
+				<countRange>1</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="Mashed_Ashlands.StockGenerator_BuyExpensive"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

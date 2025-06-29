@@ -83,6 +83,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
+    <Compile Include="Classes\TradeEncounter.cs" />
     <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectSmashEgg.cs" />
     <Compile Include="DamageWorker\DamageWorker_DrainingStab.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
+    <Compile Include="DefOf\TraderKindDefOf.cs" />
     <Compile Include="DefOf\WeatherDefOf.cs" />
     <Compile Include="Def\VolcanicConditionDef.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_BlightedAnimalEnters.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_MudcrabMerchantMeeting.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
@@ -158,6 +161,7 @@
     <Compile Include="Settings\SettingsPage\SettingsPage_Incidents.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_OtherConditions.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_WorldGen.cs" />
+    <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
