@@ -45,7 +45,7 @@ namespace Mashed_Ashlands
                         WorldObjectComp_RandomConditionCauser conditionComp = volcano.GetComponent<WorldObjectComp_RandomConditionCauser>();
                         if (conditionComp.CurrentConditionDef?.conditionDef == GameConditionDefOf.Mashed_Ashlands_PsychicEruption)
                         {
-                            if (conditionComp.InAoE(p.GetCaravan().Tile, conditionComp.ConditionCategory, volcano))
+                            if (volcano.InAoE(p.GetCaravan().Tile, conditionComp.ConditionCategory))
                             {
                                 return ThoughtState.ActiveDefault;
                             }

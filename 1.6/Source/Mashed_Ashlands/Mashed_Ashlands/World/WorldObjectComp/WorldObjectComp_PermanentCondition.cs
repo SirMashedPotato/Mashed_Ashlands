@@ -21,7 +21,7 @@ namespace Mashed_Ashlands
                 {
                     foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap && PreventVolcanicConditions.Get(x.Biome) == null))
                     {
-                        if (InAoE(map.Tile, ParentVolcano.Category, ParentVolcano))
+                        if (ParentVolcano.InAoE(map.Tile, ParentVolcano.Category))
                         {
                             EnforceConditionOn(ref causedConditions, map, Props.volcanicConditionDef.conditionDef, Props.preventConditionStacking);
                         }
@@ -31,7 +31,7 @@ namespace Mashed_Ashlands
                 tmpDeadConditionMaps.Clear();
                 foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
                 {
-                    if (!InAoE(keyValuePair.Key.Tile, ParentVolcano.Category, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                    if (!ParentVolcano.InAoE(keyValuePair.Key.Tile, ParentVolcano.Category) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
                     {
                         keyValuePair.Value.End();
                         tmpDeadConditionMaps.Add(keyValuePair.Key);

@@ -70,6 +70,20 @@ namespace Mashed_Ashlands
             }
         }
 
+        public WorldGrid Grid
+        {
+            get
+            {
+                if (worldGrid == null)
+                {
+                    worldGrid = Find.WorldGrid;
+                }
+                return worldGrid;
+            }
+        }
+
+        private WorldGrid worldGrid = null;
+
         public void IncidentTriggered()
         {
             totalIncidents++;
@@ -92,6 +106,21 @@ namespace Mashed_Ashlands
                 return (int)(category * 0.2f * maxDistance);
             }
             return -1;
+        }
+
+        /// <summary>
+        /// If performance is terrible switch to the below
+        /// return Grid.ApproxDistanceInTiles(parentVolcano.Tile, tile) <= worldRange;
+        /// slight issue with that though, tiles outside of the visible radius may be effected if they are along a line instead of a corner
+        /// </summary>
+        public bool InAoE(PlanetTile tile, int category)
+        {
+            if (tile.Layer != Tile.Layer)
+            {
+                return false;
+            }
+            int worldRange = EffectRadiusFor(category);
+            return Grid.TraversalDistanceBetween(Tile, tile, true, worldRange + 1) <= worldRange;
         }
 
         public override void SpawnSetup()

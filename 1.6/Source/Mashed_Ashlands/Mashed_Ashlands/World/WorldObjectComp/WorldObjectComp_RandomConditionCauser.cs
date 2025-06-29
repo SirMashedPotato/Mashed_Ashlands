@@ -186,7 +186,7 @@ namespace Mashed_Ashlands
                         {
                             foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap && PreventVolcanicConditions.Get(x.Biome) == null))
                             {
-                                if (InAoE(map.Tile, conditionCategory, ParentVolcano))
+                                if (ParentVolcano.InAoE(map.Tile, conditionCategory))
                                 {
                                     EnforceConditionOn(ref causedConditions, map, currentConditionDef.conditionDef, Props.preventConditionStacking);
                                 }
@@ -198,7 +198,7 @@ namespace Mashed_Ashlands
                                     List<Caravan> caravans = new List<Caravan>();
                                     foreach (Caravan caravan in Find.World.worldObjects.Caravans)
                                     {
-                                        if (InAoE(caravan.Tile, conditionCategory, ParentVolcano))
+                                        if (ParentVolcano.InAoE(caravan.Tile, conditionCategory))
                                         {
                                             caravans.Add(caravan);
                                         }
@@ -232,7 +232,7 @@ namespace Mashed_Ashlands
                 tmpDeadConditionMaps.Clear();
                 foreach (KeyValuePair<Map, GameCondition> keyValuePair in causedConditions)
                 {
-                    if (!InAoE(keyValuePair.Key.Tile, conditionCategory, ParentVolcano) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
+                    if (!ParentVolcano.InAoE(keyValuePair.Key.Tile, conditionCategory) || keyValuePair.Value.Expired || !keyValuePair.Key.GameConditionManager.ConditionIsActive(keyValuePair.Value.def))
                     {
                         keyValuePair.Value.End();
                         tmpDeadConditionMaps.Add(keyValuePair.Key);
@@ -277,7 +277,7 @@ namespace Mashed_Ashlands
             {
                 return "Condition ticks left: " + conditionTicksLeft + "(~" + conditionTicksLeft.TicksToDays().ToString("0.0") + " days)" + "\nGrace ticks left: " + graceTicksLeft + "(~" + graceTicksLeft.TicksToDays().ToString("0.0") + " days)";
             }
-            if (!currentConditionDef.isNullCondition)
+            if (currentConditionDef != null && !currentConditionDef.isNullCondition)
             {
                 return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(conditionCategory, currentConditionDef.label);
             }
