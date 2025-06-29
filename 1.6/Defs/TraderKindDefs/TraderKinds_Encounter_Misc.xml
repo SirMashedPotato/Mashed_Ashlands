@@ -15,9 +15,13 @@
 				<thingDefCountRange>3~6</thingDefCountRange>
 				<totalPriceRange>300~600</totalPriceRange>
 			</li>
-			<!-- Books -->
+			<!-- Misc -->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>
+				<countRange>1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef" MayRequire="thelastbulletbender.rwexploration">
+				<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
 				<countRange>1</countRange>
 			</li>
 			<!-- Buying -->

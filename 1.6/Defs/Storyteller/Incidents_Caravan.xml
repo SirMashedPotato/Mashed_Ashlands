@@ -22,7 +22,7 @@
 		<defName>Mashed_Ashlands_MudcrabMerchantMeeting</defName>
 		<label>mudcrab merchant meeting</label>
 		<workerClass>Mashed_Ashlands.IncidentWorker_MudcrabMerchantMeeting</workerClass>
-		<minRefireDays>3.33</minRefireDays>
+		<minRefireDays>33.3</minRefireDays>
 		<targetTags>
 			<li>Caravan</li>
 			<li>Map_TempIncident</li>
