@@ -133,6 +133,7 @@
     <Compile Include="Hediff\Hediff_AshBlight.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_AshlandsSpecific.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_BlightedAnimalEnters.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
@@ -220,6 +221,7 @@
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Utility\WorldGenUtility.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_AshStorm.cs" />
+    <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_VolcanicMiasma.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />

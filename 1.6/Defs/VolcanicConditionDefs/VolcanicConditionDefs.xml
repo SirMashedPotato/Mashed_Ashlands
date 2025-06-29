@@ -32,7 +32,9 @@
 		<baseGraceDays>2~10</baseGraceDays>
 		<caravanVolcanicEventWorkers>
 			<li Class="Mashed_Ashlands.CaravanEventWorker_AshStorm"/>
-			<!-- todo blighted animal ambush -->
+			<li Class="Mashed_Ashlands.CaravanEventWorker_BlightedCaravanAmbush">
+				<incidentDef>Mashed_Ashlands_BlightedCaravanAmbush</incidentDef>
+			</li>
 		</caravanVolcanicEventWorkers>
 	</Mashed_Ashlands.VolcanicConditionDef>
 	<!-- ==========[Mashed_Ashlands_AshStorm_Metallic]==========-->

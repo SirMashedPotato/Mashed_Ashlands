@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedCaravanAmbush]==========-->
+	<IncidentDef>
+		<defName>Mashed_Ashlands_BlightedCaravanAmbush</defName>
+		<label>blighted animal ambush</label>
+		<workerClass>Mashed_Ashlands.IncidentWorker_BlightedCaravanAmbush</workerClass>
+		<targetTags>
+			<li>Caravan</li>
+			<li>Map_TempIncident</li>
+		</targetTags>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<category>ThreatBig</category>
+		<letterLabel>Caravan ambushed (blighted {0})</letterLabel>
+		<letterText>{0} has been ambushed by a blighted {1}!</letterText>
+		<letterHyperlinkHediffDefs>
+			<li>Mashed_Ashlands_AshBlight</li>
+		</letterHyperlinkHediffDefs>
+	</IncidentDef>
+</Defs>

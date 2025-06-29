@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -20,9 +19,8 @@ namespace Mashed_Ashlands
             }
             Pawn pawn = null;
 
-            List<PawnKindDef> kinds = new List<PawnKindDef> {PawnKindDefOf.Mashed_Ashlands_Alit, PawnKindDefOf.Mashed_Ashlands_Kagouti, PawnKindDefOf.Mashed_Ashlands_Netch};
             IntVec3 loc = CellFinder.RandomClosewalkCellNear(intVec, map, 10, null);
-            pawn = PawnGenerator.GeneratePawn(kinds.RandomElement(), null);
+            pawn = PawnGenerator.GeneratePawn(Utility.BlightedKindDefs().RandomElement(), null);
             pawn.gender = Gender.Male;
             pawn.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AdultMinAgeTicks;
             pawn.health.AddHediff(HediffDefOf.Mashed_Ashlands_AshBlight);
