@@ -8,6 +8,7 @@ namespace Mashed_Ashlands
         private CompProperties_DischargeOnDamage Props => (CompProperties_DischargeOnDamage)props;
 
         private int cooldownTicksLeft = 0;
+        private const int cooldownTicks = 300;
 
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
@@ -34,9 +35,12 @@ namespace Mashed_Ashlands
 
         public override void CompTickInterval(int delta)
         {
-            if (cooldownTicksLeft > 0)
+            if (parent.IsHashIntervalTick(cooldownTicks, delta))
             {
-                cooldownTicksLeft -= delta;
+                if (cooldownTicksLeft > 0)
+                {
+                    cooldownTicksLeft -= delta + cooldownTicks;
+                }
             }
             base.CompTickInterval(delta);
         }
