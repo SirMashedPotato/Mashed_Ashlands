@@ -10,7 +10,6 @@
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
-				<preventRivers>true</preventRivers>
 				<increasePollutedFertility>false</increasePollutedFertility>
 				<dryToReplacers>
 					<Gravel>Mashed_Ashlands_AshGravelBlighted</Gravel>

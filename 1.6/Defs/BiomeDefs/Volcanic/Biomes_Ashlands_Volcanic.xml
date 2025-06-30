@@ -10,7 +10,6 @@
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
 				<baseBiome>true</baseBiome>
-				<preventRivers>true</preventRivers>
 				<dryToReplacers>
 					<Gravel>Mashed_Ashlands_AshGravelVolcanic</Gravel>
 					<Soil>Mashed_Ashlands_AshSoilVolcanic</Soil>
