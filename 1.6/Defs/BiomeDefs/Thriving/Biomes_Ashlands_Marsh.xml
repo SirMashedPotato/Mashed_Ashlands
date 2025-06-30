@@ -41,31 +41,65 @@
 		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
-				<terrain>WaterShallow</terrain>
+				<terrain>Mashed_Ashlands_AshMud</terrain>
 				<min>-999</min>
-				<max>0.3</max>
+				<max>0.27</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>
-				<min>0.3</min>
-				<max>0.6</max>
-			</li>
-			<li>
-				<terrain>WaterShallow</terrain>
-				<min>0.6</min>
-				<max>0.8</max>
-			</li>
-			<li>
-				<terrain>Mashed_Ashlands_AshMud</terrain>
-				<min>0.8</min>
-				<max>0.9</max>
+				<min>0.27</min>
+				<max>0.97</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_RichAshSoil</terrain>
-				<min>0.9</min>
+				<min>0.97</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.027</perlinFrequency>
+				<isPond>true</isPond>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
+						<min>-0.12</min>
+						<max>0.12</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_AshMud</terrain>
+						<min>0.12</min>
+						<max>0.3</max>
+					</li>
+					<li>
+						<terrain>WaterShallow</terrain>
+						<min>0.3</min>
+						<max>0.9</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
+						<min>0.9</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<isPond>true</isPond>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_AshSoil</terrain>
+						<min>0.24</min>
+						<max>0.48</max>
+					</li>
+					<li>
+						<terrain>WaterShallow</terrain>
+						<min>0.48</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_TallGrass>8</Plant_TallGrass>
