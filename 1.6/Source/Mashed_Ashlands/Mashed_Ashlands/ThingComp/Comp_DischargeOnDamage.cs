@@ -32,13 +32,13 @@ namespace Mashed_Ashlands
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
         }
 
-        public override void CompTick()
+        public override void CompTickInterval(int delta)
         {
             if (cooldownTicksLeft > 0)
             {
-                cooldownTicksLeft--;
+                cooldownTicksLeft -= delta;
             }
-            base.CompTick();
+            base.CompTickInterval(delta);
         }
 
         public override void PostExposeData()
