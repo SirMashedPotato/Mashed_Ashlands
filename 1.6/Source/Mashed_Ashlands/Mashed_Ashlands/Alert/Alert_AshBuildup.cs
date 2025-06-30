@@ -45,6 +45,6 @@ namespace Mashed_Ashlands
         }
 
         private const float ashBuildupSeverityThreshold = 0.6f;
-        private List<Pawn> ashBuildupColonists = new List<Pawn>();
+        private readonly List<Pawn> ashBuildupColonists = new List<Pawn>();
     }
 }

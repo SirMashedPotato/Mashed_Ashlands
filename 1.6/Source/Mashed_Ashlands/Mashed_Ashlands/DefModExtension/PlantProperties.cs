@@ -8,7 +8,7 @@ namespace Mashed_Ashlands
     {
         public bool ashlandFlowerPlant = false;
         [Obsolete]
-        public float cavePlantCommonality = 0.5f;
+        public float cavePlantCommonality = 0.5f; //todo???
 
         public ThingDef secondaryDrop = null;
         public IntRange secondaryDropAmountRange;
@@ -16,19 +16,16 @@ namespace Mashed_Ashlands
         public bool secondaryNotWhenLeafless = false;
 
         [NoTranslate]
-        public List<TerrainDef> allowedTerrainDefsForWild = new List<TerrainDef>(); //todo, check closer to release to see if this is still required
+        public List<TerrainDef> allowedTerrainDefsForWild = new List<TerrainDef>();
         [NoTranslate]
-        public List<TerrainDef> disallowedTerrainDefsForWild = new List<TerrainDef>(); //todo, check closer to release to see if this is still required
+        public List<TerrainDef> disallowedTerrainDefsForWild = new List<TerrainDef>();
         public bool requireWaterForWild = false;
         public int minTilesToWaterForWild = 3;
 
         private readonly HashSet<TerrainDef> allowedTerrainDefsForWildSet = new HashSet<TerrainDef>();
         private readonly HashSet<TerrainDef> disallowedTerrainDefsForWildSet = new HashSet<TerrainDef>();
 
-        public static PlantProperties Get(Def planetDef)
-        {
-            return planetDef.GetModExtension<PlantProperties>();
-        }
+        public static PlantProperties Get(Def planetDef) => planetDef.GetModExtension<PlantProperties>();
 
         private HashSet<TerrainDef> AllowedTerrainDefsForWildSet
         {

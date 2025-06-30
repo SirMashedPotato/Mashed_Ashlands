@@ -10,11 +10,8 @@ namespace Mashed_Ashlands
         public bool earlyLoader = false;
         public bool lateLoader = false;
         public bool baseBiome = false;
-        public bool preventRivers = false; //TODO still needed?
 
         /* for biome gen */
-        //public bool disableBeaches = false;
-        //public bool nullifyBeachTerrain = false;
         public bool forceHilliness = false;
         public bool useAshlandsGenSteps = true;
         public List<TerrainReplacer> roadReplacers;
@@ -36,10 +33,7 @@ namespace Mashed_Ashlands
         //public float otherTerrainThreshold = 0.55f;
         //public float waterThreshold = 0.93f;
 
-        public static BiomeProperties Get(Def def)
-        {
-            return def.GetModExtension<BiomeProperties>();
-        }
+        public static BiomeProperties Get(Def def) => def.GetModExtension<BiomeProperties>();
     }
 
     public class TerrainReplacer

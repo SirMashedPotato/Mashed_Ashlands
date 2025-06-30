@@ -33,6 +33,19 @@ namespace Mashed_Ashlands
             incidentDef.Worker.TryExecute(incidentParms);
         }
 
+        public override IEnumerable<string> ConfigErrors()
+        {
+            foreach (string item in base.ConfigErrors())
+            {
+                yield return item;
+            }
+
+            if (incidentDef == null)
+            {
+                yield return "incidentDef is null";
+            }
+        }
+
         public IncidentDef incidentDef;
         public float chance = 0.3f;
     }

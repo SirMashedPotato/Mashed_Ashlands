@@ -5,13 +5,7 @@ namespace Mashed_Ashlands
 {
     public class Comp_DischargeOnDamage : ThingComp
     {
-        private CompProperties_DischargeOnDamage Props
-        {
-            get
-            {
-                return (CompProperties_DischargeOnDamage)props;
-            }
-        }
+        private CompProperties_DischargeOnDamage Props => (CompProperties_DischargeOnDamage)props;
 
         private int cooldownTicksLeft = 0;
 

@@ -7,18 +7,7 @@ namespace Mashed_Ashlands
 {
     public class GameCondition_Earthquake : GameCondition
     {
-        public override int TransitionTicks
-        {
-            get
-            {
-                return 5000;
-            }
-        }
-
-        public override void Init()
-        {
-            base.Init();
-        }
+        public override int TransitionTicks => 5000;
 
         public override void GameConditionTick()
         {

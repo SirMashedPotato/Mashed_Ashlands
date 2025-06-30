@@ -11,9 +11,6 @@ namespace Mashed_Ashlands
         public float avgDamageTaken = 5;
         public float chanceDamaged = 0.5f;
 
-        public static AshResistanceProperties Get(Def def)
-        {
-            return def.GetModExtension<AshResistanceProperties>();
-        }
+        public static AshResistanceProperties Get(Def def) => def.GetModExtension<AshResistanceProperties>();
     }
 }

@@ -150,7 +150,6 @@
     <Compile Include="PawnRenderTree\NodeClass\PawnRenderNode_AnimalGlow.cs" />
     <Compile Include="PawnRenderTree\WorkerClass\PawnRenderNodeWorker_AnimalGlow.cs" />
     <Compile Include="PawnsArrivalModeWorker\PawnsArrivalModeWorker_EmergeFromAsh.cs" />
-    <Compile Include="RecipeWorker\RecipeWorker_ConsumeDepositCharge.cs" />
     <Compile Include="RecipeWorker\RecipeWorker_HarvestHive.cs" />
     <Compile Include="Settings\ResetSettingsDropdown.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_AshBlight.cs" />
@@ -165,11 +164,8 @@
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\CliffRacerRelated.cs" />
-    <Compile Include="Harmony\Plants.cs" />
     <Compile Include="Harmony\UnsafeConditions.cs" />
-    <Compile Include="Harmony\BiomeGen.cs" />
     <Compile Include="Harmony\BiotechPatches.cs" />
-    <Compile Include="Harmony\WorldGen.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
@@ -195,8 +191,6 @@
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Comp_EggLayerMutant.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
-    <Compile Include="ThingComp\Comp_DepositCharges.cs" />
-    <Compile Include="ThingComp\Comp_PlantSpreader.cs" />
     <Compile Include="ThingComp\Comp_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDestroy.cs" />
@@ -204,8 +198,6 @@
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
-    <Compile Include="ThingComp\Properties\CompProperties_DepositCharges.cs" />
-    <Compile Include="ThingComp\Properties\CompProperties_PlantSpreader.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />

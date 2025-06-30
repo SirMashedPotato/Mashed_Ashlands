@@ -6,13 +6,7 @@ namespace Mashed_Ashlands
 {
     public class Comp_SpawnerOnDamage : ThingComp
     {
-        private CompProperties_SpawnerOnDamage Props
-        {
-            get
-            {
-                return (CompProperties_SpawnerOnDamage)props;
-            }
-        }
+        private CompProperties_SpawnerOnDamage Props => (CompProperties_SpawnerOnDamage)props;
 
         private int cooldownTicksLeft = 0;
 

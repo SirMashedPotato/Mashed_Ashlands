@@ -6,10 +6,8 @@ namespace Mashed_Ashlands
 {
     public class CompProperties_DropOnDestroy : CompProperties
 	{
-		public CompProperties_DropOnDestroy()
-		{
-			compClass = typeof(Comp_DropOnDestroy);
-		}
+		public CompProperties_DropOnDestroy() => compClass = typeof(Comp_DropOnDestroy);
+
         public List<PotentialDrops> guaranteedDrops;
         public List<PotentialDrops> potentialDrops;
 		public ThingSetMakerDef thingSetMakerDef;

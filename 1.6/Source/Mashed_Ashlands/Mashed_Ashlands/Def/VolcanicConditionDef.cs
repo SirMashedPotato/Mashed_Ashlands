@@ -50,6 +50,14 @@ namespace Mashed_Ashlands
             {
                 yield return "isNullCondition is false but conditionDef is null";
             }
+
+            foreach(CaravanVolcanicEventWorker eventWorker in caravanVolcanicEventWorkers)
+            {
+                foreach (string item in eventWorker.ConfigErrors())
+                {
+                    yield return item;
+                }
+            }
         }
     }
 }

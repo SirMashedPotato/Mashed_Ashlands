@@ -1,17 +1,10 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace Mashed_Ashlands
 {
     public class Comp_SpawnerOnDestroy : ThingComp
     {
-        private CompProperties_SpawnerOnDestroy Props
-        {
-            get
-            {
-                return (CompProperties_SpawnerOnDestroy)props;
-            }
-        }
+        private CompProperties_SpawnerOnDestroy Props => (CompProperties_SpawnerOnDestroy)props;
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {

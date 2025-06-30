@@ -5,13 +5,7 @@ namespace Mashed_Ashlands
 {
     public class Comp_GasOnDestroy : ThingComp
     {
-        private CompProperties_GasOnDestroy Props
-        {
-            get
-            {
-                return (CompProperties_GasOnDestroy)props;
-            }
-        }
+        private CompProperties_GasOnDestroy Props => (CompProperties_GasOnDestroy)props;
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {

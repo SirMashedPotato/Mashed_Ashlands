@@ -10,13 +10,7 @@ namespace Mashed_Ashlands
 	/// </summary>
 	public class GameCondition_VolcanicMiasma : GameCondition
 	{
-		public override int TransitionTicks
-		{
-			get
-			{
-				return 5000;
-			}
-		}
+		public override int TransitionTicks =>  5000;
 
 		public override void Init()
 		{
