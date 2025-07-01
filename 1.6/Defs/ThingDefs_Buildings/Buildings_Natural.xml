@@ -184,10 +184,6 @@
 				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
 				<numberToSpawn>3</numberToSpawn>
 			</li>
-			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
-				<fleckDef>Owl_SmokeHeavy</fleckDef>
-				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
-			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_StriderShell]==========-->
