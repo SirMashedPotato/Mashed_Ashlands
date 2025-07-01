@@ -10,13 +10,7 @@ namespace Mashed_Ashlands
 	/// </summary>
 	public class GameCondition_VolcanicMiasma : GameCondition
 	{
-		public override int TransitionTicks
-		{
-			get
-			{
-				return 5000;
-			}
-		}
+		public override int TransitionTicks =>  5000;
 
 		public override void Init()
 		{
@@ -27,7 +21,7 @@ namespace Mashed_Ashlands
 
 		public override void GameConditionTick()
 		{
-			List<Map> affectedMaps = base.AffectedMaps;
+			List<Map> affectedMaps = AffectedMaps;
 			if (Find.TickManager.TicksGame % 3451 == 0)
 			{
 				for (int i = 0; i < affectedMaps.Count; i++)
@@ -39,7 +33,7 @@ namespace Mashed_Ashlands
 			{
 				for (int k = 0; k < affectedMaps.Count; k++)
 				{
-					overlays[j].TickOverlay(affectedMaps[k]);
+					overlays[j].TickOverlay(affectedMaps[k], MaxSkyLerpFactor);
 				}
 			}
 		}
@@ -49,9 +43,11 @@ namespace Mashed_Ashlands
             IReadOnlyList<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
-				///Just use the vanilla version, no need for a separate one
-				GameCondition_ToxicFallout.DoPawnToxicDamage(allPawnsSpawned[i], true, 0.8f);
-			}
+                if (!allPawnsSpawned[i].kindDef.immuneToGameConditionEffects)
+                {
+                    ToxicUtility.DoAirbornePawnToxicDamage(allPawnsSpawned[i]);
+                }
+            }
 		}
 
 		public override void GameConditionDraw(Map map)

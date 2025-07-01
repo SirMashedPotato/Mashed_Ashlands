@@ -8,7 +8,7 @@ namespace Mashed_Ashlands
     {
         private const int coastalVolcanoDistance = 6;
 
-        public void GenerateVolcanos(WorldObjectDef volcanoDef, float initialMaxNum)
+        public void GenerateVolcanos(PlanetLayer layer, WorldObjectDef volcanoDef, float initialMaxNum)
         {
             int numGenerated = 0;
             int maxNumber = (int)initialMaxNum;
@@ -20,8 +20,7 @@ namespace Mashed_Ashlands
                     maxNumber = 1;
                 }
             }
-            WorldGrid grid = Find.WorldGrid;
-            for (int i = 0; i < grid.TilesCount; i++)
+            for (int i = 0; i < layer.TilesCount; i++)
             {
                 if (numGenerated >= maxNumber)
                 {
@@ -30,9 +29,9 @@ namespace Mashed_Ashlands
 
                 bool validTile = false;
 
-                if (grid[i].hilliness == Hilliness.Impassable && !Find.WorldObjects.AnyWorldObjectAt(i))
+                if (layer[i].hilliness == Hilliness.Impassable && !Find.WorldObjects.AnyWorldObjectAt(i))
                 {
-                    if (grid[i].biome != RimWorld.BiomeDefOf.IceSheet && grid[i].biome != RimWorld.BiomeDefOf.SeaIce)
+                    if (layer[i].PrimaryBiome != RimWorld.BiomeDefOf.IceSheet && layer[i].PrimaryBiome != RimWorld.BiomeDefOf.SeaIce)
                     {
                         validTile = true;
                     }
@@ -42,13 +41,13 @@ namespace Mashed_Ashlands
                 {
                     if (Mashed_Ashlands_ModSettings.EnableCoastalVolcano)
                     {
-                        if (grid[i].biome == RimWorld.BiomeDefOf.Ocean)
+                        if (layer[i].PrimaryBiome == RimWorld.BiomeDefOf.Ocean)
                         {
-                            Find.WorldFloodFiller.FloodFill(i, (int tile) => true, delegate (int tile, int dist)
+                            layer.Filler.FloodFill(i, (PlanetTile tile) => true, delegate (PlanetTile tile, int dist)
                             {
                                 if (dist < coastalVolcanoDistance)
                                 {
-                                    if (!grid[tile].WaterCovered)
+                                    if (!layer[tile].WaterCovered)
                                     {
                                         validTile = false;
                                         return;
@@ -56,7 +55,7 @@ namespace Mashed_Ashlands
                                 }
                                 if (dist == coastalVolcanoDistance + 1)
                                 {
-                                    if (!grid[tile].WaterCovered)
+                                    if (!layer[tile].WaterCovered)
                                     {
                                         validTile = true;
                                     }
@@ -77,13 +76,13 @@ namespace Mashed_Ashlands
                         numGenerated++;
 
                         ///For coastal volcano gen
-                        if (grid[i].biome == RimWorld.BiomeDefOf.Ocean)
+                        if (layer[i].PrimaryBiome == RimWorld.BiomeDefOf.Ocean)
                         {
-                            grid[i].biome = RimWorld.BiomeDefOf.TemperateForest;
-                            grid[i].hilliness = Hilliness.Impassable;
-                            grid[i].elevation = Rand.Range(100, 300);
+                            layer[i].PrimaryBiome = RimWorld.BiomeDefOf.TemperateForest;
+                            layer[i].hilliness = Hilliness.Impassable;
+                            layer[i].elevation = Rand.Range(100, 300);
 
-                            Find.WorldFloodFiller.FloodFill(i, (int tile) => true, delegate (int tile, int dist)
+                            layer.Filler.FloodFill(i, (PlanetTile tile) => true, delegate (PlanetTile planetTile, int dist)
                             {
                                 if (dist >= coastalVolcanoDistance)
                                 {
@@ -91,11 +90,11 @@ namespace Mashed_Ashlands
                                 }
                                 if (Rand.RangeInclusive(3, 6) - dist >= 1)
                                 {
-                                    Tile neighbourTile = Find.WorldGrid.tiles[tile];
-                                    if (neighbourTile.biome == RimWorld.BiomeDefOf.Ocean)
+                                    Tile neighbourTile = layer[planetTile];
+                                    if (neighbourTile.PrimaryBiome == RimWorld.BiomeDefOf.Ocean)
                                     {
-                                        neighbourTile.biome = RimWorld.BiomeDefOf.TemperateForest;
-                                        neighbourTile.elevation = grid[i].elevation - (dist * 10);
+                                        neighbourTile.PrimaryBiome = RimWorld.BiomeDefOf.TemperateForest;
+                                        neighbourTile.elevation = layer[i].elevation - (dist * 10);
                                         neighbourTile.hilliness = Rand.RangeInclusive(1, 3) - dist >= 0 ? Hilliness.Mountainous : Rand.RangeInclusive(3, 6) - dist >= 1 ? Hilliness.LargeHills : Rand.RangeInclusive(3, 9) - dist >= 1 ? Hilliness.SmallHills : Hilliness.Flat;
                                     }
                                 }

@@ -18,6 +18,9 @@
 			<canFilthAttach>true</canFilthAttach>
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
 		</filth>
+		<statBases>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Filth_Sulphur]==========-->
 	<ThingDef ParentName="BaseFilth">
@@ -37,6 +40,9 @@
 			<canFilthAttach>true</canFilthAttach>
 			<cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
 		</filth>
+		<statBases>
+			<BeautyOutdoors>-2</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Filth_NetchBlood]==========-->
 	<ThingDef ParentName="BaseFilth">

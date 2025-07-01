@@ -3,7 +3,7 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class GenStep_ScatterFetcherflyHives : GenStep_ScatterBiomeSpecific
+    public class GenStep_ScatterFetcherflyHives : GenStep_ScatterThings
     {
         public override void Generate(Map map, GenStepParams parms)
         {

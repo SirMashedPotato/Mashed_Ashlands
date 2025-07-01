@@ -1,17 +1,10 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace Mashed_Ashlands
 {
     public class Comp_SpawnerOnDestroy : ThingComp
     {
-        private CompProperties_SpawnerOnDestroy Props
-        {
-            get
-            {
-                return (CompProperties_SpawnerOnDestroy)props;
-            }
-        }
+        private CompProperties_SpawnerOnDestroy Props => (CompProperties_SpawnerOnDestroy)props;
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
@@ -26,7 +19,7 @@ namespace Mashed_Ashlands
         {
             Pawn pawn = PawnGenerator.GeneratePawn(Props.pawnKindDef, null);
             GenSpawn.Spawn(pawn, parent.Position, map, Rot4.Random, WipeMode.Vanish, false);
-            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
+            pawn.mindState.mentalStateHandler.TryStartMentalState(RimWorld.MentalStateDefOf.ManhunterPermanent);
         }
     }
 }

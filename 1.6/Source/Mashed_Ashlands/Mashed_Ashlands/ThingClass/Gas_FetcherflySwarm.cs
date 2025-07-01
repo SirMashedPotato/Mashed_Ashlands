@@ -9,13 +9,18 @@ namespace Mashed_Ashlands
     {
         private readonly int tickInterval = 60;
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             TickEffecter();
+        }
+
+        protected override void TickInterval(int delta)
+        {
+            base.TickInterval(delta);
             try
             {
-                if (this.IsHashIntervalTick(tickInterval))
+                if (this.IsHashIntervalTick(tickInterval, delta))
                 {
                     HashSet<Thing> hashSet = new HashSet<Thing>(Position.GetThingList(Map));
                     if (hashSet != null)
@@ -24,8 +29,8 @@ namespace Mashed_Ashlands
                         {
                             if (thing != null && thing is Pawn p && p.def != ThingDefOf.Mashed_Ashlands_FetcherflySwarmAnimal)
                             {
-                                DamageInfo damageInfo = new DamageInfo() 
-                                { 
+                                DamageInfo damageInfo = new DamageInfo()
+                                {
                                     Def = DamageDefOf.Burn
                                 };
                                 damageInfo.SetAmount(Rand.RangeInclusive(1, 5));
@@ -46,10 +51,7 @@ namespace Mashed_Ashlands
             if (!Spawned)
             {
                 Effecter temp = effecter;
-                if (temp != null)
-                {
-                    temp.Cleanup();
-                }
+                temp?.Cleanup();
                 effecter = null;
                 return;
             }

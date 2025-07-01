@@ -8,6 +8,7 @@
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -39,7 +40,6 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.8</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
@@ -85,6 +85,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_AshHopperFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_AshHopperUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>2.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

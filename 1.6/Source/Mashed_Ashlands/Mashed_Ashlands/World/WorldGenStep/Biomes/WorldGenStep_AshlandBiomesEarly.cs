@@ -8,26 +8,25 @@ namespace Mashed_Ashlands
     {
         public override int SeedPart => 48151623;
 
-        public static void DebugGenerate(string seed)
+        public static void DebugGenerate(string seed, PlanetLayer layer)
         {
             WorldGenStep_AshlandBiomesEarly instance = new WorldGenStep_AshlandBiomesEarly();
-            instance.GenerateFresh(seed);
+            instance.GenerateFresh(seed, layer);
         }
 
-        public override void GenerateFresh(string seed)
+        public override void GenerateFresh(string seed, PlanetLayer layer)
         {
-            WorldGrid grid = Find.WorldGrid;
-            List<WorldObject> worldVolcanos = WorldGenUtility.GetWorldVolcanos();
+            List<WorldObject> worldVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(layer);
             foreach (WorldObject volcano in worldVolcanos)
             {
-                Find.WorldFloodFiller.FloodFill(volcano.Tile, (int tile) => true, delegate (int index, int dist)
+                layer.Filler.FloodFill(volcano.Tile, (PlanetTile planetTile) => true, delegate (PlanetTile planetTile, int dist)
                 {
-                    Tile tile = Find.WorldGrid.tiles[index];
-                    if (PreventAshlandOverride.Get(tile.biome) != null)
+                    Tile tile = layer.Tiles[planetTile];
+                    if (PreventAshlandOverride.Get(tile.PrimaryBiome) != null)
                     {
                         return;
                     }
-                    tile.biome = AshlandBiomeFrom(tile, index, OnStartupUtility.earlyAshlandBiomeDefs, volcano);
+                    tile.PrimaryBiome = AshlandBiomeFrom(tile, planetTile, layer, OnStartupUtility.earlyAshlandBiomeDefs, volcano);
                 }
                 , Find.WorldGrid.TilesNumWithinTraversalDistance(WorldGenUtility.BiomeMaxDistanceForWorld() + 1)
                 );

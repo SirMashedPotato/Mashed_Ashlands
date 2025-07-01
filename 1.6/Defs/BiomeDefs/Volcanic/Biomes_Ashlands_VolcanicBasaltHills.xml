@@ -9,52 +9,13 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
-				<preventRivers>true</preventRivers>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
-				<forceBasalt>true</forceBasalt>
-				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.2</Mashed_Ashlands_Plant_PurpleCrystal>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingCoprinus>
-				</cavePlants>
-				<terrainReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_Basalt_Rough</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSandVolcanic</replacedTerrain>
-					</li>
-				</terrainReplacers>
-				<roadReplacers>
-					<li>
-						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_PackedAshVolcanic</replacedTerrain>
-					</li>
-				</roadReplacers>
 				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoilVolcanic</replacedTerrain>
-					</li>
+					<Gravel>Mashed_Ashlands_AshGravelVolcanic</Gravel>
+					<Soil>Mashed_Ashlands_AshSoilVolcanic</Soil>
 				</dryToReplacers>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravelVolcanic</otherTerrainDef>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.9</waterThreshold>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAshVolcanic</PackedDirt>
+				</roadReplacers>
 			</li>
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
@@ -71,6 +32,20 @@
 		<forageability>0.25</forageability>
 		<animalDensity>0.6</animalDensity>
 		<plantDensity>0.2</plantDensity>
+		<!-- World generation -->
+		<forceRockTypes>
+			<li>Mashed_Ashlands_Basalt</li>
+		</forceRockTypes>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_BasaltFormationsSmall</li>
+		</extraGenSteps>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_Basalt_Rough</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_Basalt_Rough</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_Basalt_Rough</riverbankTerrain>
+		<gravelTerrain>Mashed_Ashlands_Basalt_RoughHewn</gravelTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_Lava</terrain>
@@ -155,6 +130,7 @@
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_Plant_TramaMass>
 			<!-- Polluted trees -->
+			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantAshlandFungus>
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>

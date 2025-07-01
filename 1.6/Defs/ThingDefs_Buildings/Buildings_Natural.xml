@@ -105,11 +105,6 @@
 		<label>fetcherfly hive</label>
 		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turn enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
 		<thingClass>Mineable</thingClass>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.BuildingProperties">
-				<canBeMeteorite>false</canBeMeteorite>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -126,6 +121,7 @@
 		<passability>PassThroughOnly</passability>
 		<rotatable>false</rotatable>
 		<mineable>true</mineable>
+		<pathfinderDangerous>true</pathfinderDangerous>
 		<pathCost>42</pathCost>
 		<costList>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
@@ -140,6 +136,7 @@
 			<Beauty>-10</Beauty>
 		</statBases>
 		<building>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<isInert>true</isInert>
 			<deconstructible>false</deconstructible>
 			<destroyShakeAmount>0</destroyShakeAmount>
@@ -187,10 +184,6 @@
 				<pawnKindDef>Mashed_Ashlands_FetcherflySwarmAnimal</pawnKindDef>
 				<numberToSpawn>3</numberToSpawn>
 			</li>
-			<li Class="Flecker.CompProperties_Smoker" MayRequire="owlchemist.simplefx.smoke2">
-				<fleckDef>Owl_SmokeHeavy</fleckDef>
-				<indoorAlt>Owl_SmokeHeavyIndoors</indoorAlt>
-			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_StriderShell]==========-->
@@ -198,11 +191,6 @@
 		<defName>Mashed_Ashlands_StriderShell</defName>
 		<label>ancient strider shell</label>
 		<description>An ancient silt strider shell, likely all that remains of the beast. Can be mined for silt strider chitin.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.BuildingProperties">
-				<canBeMeteorite>false</canBeMeteorite>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_StriderShell/Mashed_Ashlands_StriderShell</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -221,6 +209,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<building>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<isInert>true</isInert>
 			<deconstructible>false</deconstructible>
 			<destroyShakeAmount>0</destroyShakeAmount>
@@ -235,11 +224,6 @@
 		<defName>Mashed_Ashlands_VolcanicDebris</defName>
 		<label>volcanic debris</label>
 		<description>A mass of rock originally found inside a volcano. May contain something useful.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.BuildingProperties">
-				<canBeMeteorite>false</canBeMeteorite>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_VolcanicDebris</texPath>
 			<drawSize>(1.3, 1.3)</drawSize>
@@ -256,6 +240,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<building>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<isInert>true</isInert>
 			<deconstructible>false</deconstructible>
 			<destroyShakeAmount>0</destroyShakeAmount>

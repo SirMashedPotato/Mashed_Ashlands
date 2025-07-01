@@ -10,7 +10,7 @@
 			</thingDefs>
 		</ingredientFilter>
 		<processDays>20</processDays>
-		<color>(255, 255, 255)</color>
+		<color>(189,213,201)</color>
 	</ProcessorFramework.ProcessDef>
 	<!-- ==========[Mashed_Ashlands_FermentingJazbayWine]==========-->
 	<ProcessorFramework.ProcessDef>
@@ -22,7 +22,7 @@
 			</thingDefs>
 		</ingredientFilter>
 		<processDays>20</processDays>
-		<color>(255, 255, 255)</color>
+		<color>(186,150,214)</color>
 	</ProcessorFramework.ProcessDef>
 	<!-- ==========[Mashed_Ashlands_FermentingMazte]==========-->
 	<ProcessorFramework.ProcessDef>
@@ -34,7 +34,7 @@
 			</thingDefs>
 		</ingredientFilter>
 		<processDays>4</processDays>
-		<color>(255, 255, 255)</color>
+		<color>(191,172,140)</color>
 	</ProcessorFramework.ProcessDef>
 	<!-- ==========[Mashed_Ashlands_FermentingShein]==========-->
 	<ProcessorFramework.ProcessDef>
@@ -46,7 +46,7 @@
 			</thingDefs>
 		</ingredientFilter>
 		<processDays>14</processDays>
-		<color>(255, 255, 255)</color>
+		<color>(226,141,139)</color>
 	</ProcessorFramework.ProcessDef>
 	<!-- ==========[Mashed_Ashlands_FermentingSujamma]==========-->
 	<ProcessorFramework.ProcessDef>
@@ -58,6 +58,6 @@
 			</thingDefs>
 		</ingredientFilter>
 		<processDays>10</processDays>
-		<color>(255, 255, 255)</color>
+		<color>(204,199,184)</color>
 	</ProcessorFramework.ProcessDef>
 </Defs>

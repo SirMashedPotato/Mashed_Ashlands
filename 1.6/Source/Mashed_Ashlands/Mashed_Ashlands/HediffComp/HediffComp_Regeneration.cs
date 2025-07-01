@@ -9,11 +9,11 @@ namespace Mashed_Ashlands
 
         public HediffCompProperties_Regeneration Props => (HediffCompProperties_Regeneration)props;
 
-        public override void CompPostTick(ref float severityAdjustment)
+        public override void CompPostTickInterval(ref float severityAdjustment, int delta)
         {
-            base.CompPostTick(ref severityAdjustment);
+            base.CompPostTickInterval(ref severityAdjustment, delta);
             Pawn pawn = Pawn;
-            if (pawn.IsHashIntervalTick(Props.ticks))
+            if (pawn.IsHashIntervalTick(Props.ticks, delta))
             {
                 if ((pawn.IsBurning() && Props.fireDisables) || pawn.Dead || !pawn.Spawned)
                 {

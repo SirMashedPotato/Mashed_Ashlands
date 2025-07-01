@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_EggUnfertBase]==========-->
+	<ThingDef ParentName="EggUnfertBase" Name="Mashed_Ashlands_EggUnfertBase" Abstract="True">
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsUnfertEgg</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_InsectEggUnfertBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase" Name="Mashed_Ashlands_InsectEggUnfertBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_InsectEgg</texPath>
+		</graphicData>
+		<ingestible>
+			<specialThoughtDirect>Mashed_Ashlands_AteInsectEggDirect</specialThoughtDirect>
+			<specialThoughtAsIngredient>Mashed_Ashlands_AteInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_AlitFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_AlitUnfertilized</defName>
+		<label>alit egg (unfert.)</label>
+		<description>An unfertilised alit egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(124,138,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_AshHopperFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_AshHopperUnfertilized</defName>
+		<label>ash hopper egg (unfert.)</label>
+		<description>An unfertilised ash hopper egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(121,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_BantamGuarUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_BantamGuarUnfertilized</defName>
+		<label>bantam guar egg (unfert.)</label>
+		<description>An unfertilised bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(228,185,135)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_CliffRacerFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_CliffRacerUnfertilized</defName>
+		<label>cliff racer egg (unfert.)</label>
+		<description>An unfertilised cliff racer egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DaedrothFertilized]==========-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_DaedrothUnfertilized</defName>
+		<label>vagrant daedroth egg (unfert.)</label>
+		<description>An unfertilised vagrant daedroth egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>42</MarketValue>
+		</statBases>
+		<stackLimit>6</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_DurzogFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_DurzogUnfertilized</defName>
+		<label>durzog egg (unfert.)</label>
+		<description>An unfertilised durzog egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_FirebugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_FirebugUnfertilized</defName>
+		<label>ashland firebug egg (unfert.)</label>
+		<description>An unfertilised firebug egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_GuarUnfertilized</defName>
+		<label>guar egg (unfert.)</label>
+		<description>An unfertilised guar egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_KagoutiFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_KagoutiUnfertilized</defName>
+		<label>kagouti egg (unfert.)</label>
+		<description>An unfertilised kagouti egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(138,124,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabUnfertilized</defName>
+		<label>ashland mudcrab egg (unfert.)</label>
+		<description>An unfertilised mudcrab egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,111,109)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NetchUnfertilized</defName>
+		<label>netch egg (unfert.)</label>
+		<description>An unfertilised netch egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(172,110,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixHoundFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixHoundUnfertilized</defName>
+		<label>nix-hound egg (unfert.)</label>
+		<description>An unfertilised nix-hound egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,94,94)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixOxFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixOxUnfertilized</defName>
+		<label>nix-ox egg (unfert.)</label>
+		<description>An unfertilised nix-ox egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,94,79)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NixSteedFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_NixSteedUnfertilized</defName>
+		<label>nix-steed egg (unfert.)</label>
+		<description>An unfertilised nix-steed egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(108,79,94)</color>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_OgrimFertilized]==========-->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_OgrimUnfertilized</defName>
+		<label>vagrant ogrim egg (unfert.)</label>
+		<description>An unfertilised vagrant ogrim egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(158,148,138)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>42</MarketValue>
+		</statBases>
+		<stackLimit>6</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_PyrantulaFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_PyrantulaUnfertilized</defName>
+		<label>pyrantula egg (unfert.)</label>
+		<description>An unfertilised pyrantula egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(141,109,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_RachnoidFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_RachnoidUnfertilized</defName>
+		<label>rachnoid egg (unfert.)</label>
+		<description>An unfertilised rachnoid egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(141,141,141)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ScuttlerUnfertilized</defName>
+		<label>scuttler egg (unfert.)</label>
+		<description>An unfertilised scuttler egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(109,111,109)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkUnfertilized</defName>
+		<label>shalk egg (unfert.)</label>
+		<description>An unfertilised shalk egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,111,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ShalkFungalUnfertilized</defName>
+		<label>fungal shalk egg (unfert.)</label>
+		<description>An unfertilised fungal shalk egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,111,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_SiltStriderFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_SiltStriderUnfertilized</defName>
+		<label>silt strider egg (unfert.)</label>
+		<description>An unfertilised silt strider egg. While it may be considered quite a delicacy, it is rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_StriderEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(90,80,80)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<stackLimit>1</stackLimit>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_SwampJellyFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_SwampJellyUnfertilized</defName>
+		<label>swamp jelly egg (unfert.)</label>
+		<description>An unfertilised swamp jelly egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(110,172,193)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_ThunderbugFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_ThunderbugUnfertilized</defName>
+		<label>ashland thunderbug egg (unfert.)</label>
+		<description>An unfertilised thunderbug egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<color>(109,109,141)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_WormmouthFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_WormmouthUnfertilized</defName>
+		<label>wormmouth egg (unfert.)</label>
+		<description>An unfertilised wormmouth egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(114,138,109)</color>
+			<drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

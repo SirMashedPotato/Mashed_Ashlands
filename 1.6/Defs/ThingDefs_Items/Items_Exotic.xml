@@ -13,7 +13,6 @@
 		<soundDrop>Metal_Drop</soundDrop>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
-		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>60</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>

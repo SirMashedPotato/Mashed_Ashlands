@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -71,9 +72,12 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
@@ -112,14 +116,9 @@
 		<label>kagouti</label>
 		<description>A large bipedal reptile native to ashland regions, closely related to the alit and guar. While they are omnivorous, kagouti can be extremely territorial, especially during the breeding season. While their tusks are incredibly dangerous, and can easily gore humans, they are also often used to dig up ash yams.\n\nWhile the prospect of taming a kagouti may seem terrifying to most, and rightfully so, a well trained kagouti can become an invaluable war beast.</description>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Mashed_Ashlands_RawAshYams</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_KagoutiFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_KagoutiUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

@@ -9,51 +9,13 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
-				<preventRivers>true</preventRivers>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
-				<steamGeyserMultiplier>1.5</steamGeyserMultiplier>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.2</Mashed_Ashlands_Plant_PurpleCrystal>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingCoprinus>
-				</cavePlants>
-				<terrainReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSandVolcanic</replacedTerrain>
-					</li>
-				</terrainReplacers>
-				<roadReplacers>
-					<li>
-						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_PackedAshVolcanic</replacedTerrain>
-					</li>
-				</roadReplacers>
 				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelVolcanic</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoilVolcanic</replacedTerrain>
-					</li>
+					<Gravel>Mashed_Ashlands_AshGravelVolcanic</Gravel>
+					<Soil>Mashed_Ashlands_AshSoilVolcanic</Soil>
 				</dryToReplacers>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravelVolcanic</otherTerrainDef>
-				<waterTerrainDef>Mashed_Ashlands_ShallowSulphuricWater</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.9</waterThreshold>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAshVolcanic</PackedDirt>
+				</roadReplacers>
 			</li>
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
@@ -67,6 +29,11 @@
 		</modExtensions>
 		<animalDensity>1.2</animalDensity>
 		<plantDensity>0.4</plantDensity>
+		<!-- Terrain overrides -->
+		<lakeBeachTerrain>Mashed_Ashlands_SulphuricSand</lakeBeachTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowSulphuricWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepSulphuricWater</waterDeepTerrain>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilVolcanic</terrain>
@@ -87,6 +54,7 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
@@ -107,6 +75,7 @@
 			</li>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
@@ -129,6 +98,7 @@
 		<wildPlants>
 			<!-- Ground covers -->
 			<Mashed_Ashlands_Plant_CharredAshlandGrass>11</Mashed_Ashlands_Plant_CharredAshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandDuneGrassDark>2</Mashed_Ashlands_Plant_AshlandDuneGrassDark>
 			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.05</Mashed_Ashlands_Plant_AshYam>
@@ -139,12 +109,13 @@
 			<Mashed_Ashlands_Plant_ParasolBush>0.02</Mashed_Ashlands_Plant_ParasolBush>
 			<Mashed_Ashlands_Plant_TramaShrub>0.6</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
-			<Mashed_Ashlands_Plant_ScorchedBush>2</Mashed_Ashlands_Plant_ScorchedBush>
+			<Mashed_Ashlands_Plant_ScorchedBush>1.5</Mashed_Ashlands_Plant_ScorchedBush>
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
-			<Mashed_Ashlands_Plant_SulphurFungus>1</Mashed_Ashlands_Plant_SulphurFungus>
 			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
+			<!-- Sulphur plants -->
+			<Mashed_Ashlands_Plant_SulphurFungus>0.8</Mashed_Ashlands_Plant_SulphurFungus>
+			<Mashed_Ashlands_GiantSulphuricCoprinus>0.3</Mashed_Ashlands_GiantSulphuricCoprinus>
 			<!-- Trees -->
-			<Mashed_Ashlands_GiantSulphuricCoprinus>0.2</Mashed_Ashlands_GiantSulphuricCoprinus>
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.05</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>

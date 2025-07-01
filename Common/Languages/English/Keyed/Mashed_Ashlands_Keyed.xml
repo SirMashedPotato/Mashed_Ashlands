@@ -53,6 +53,9 @@
 	<!-- ==========[Resource deposits]==========-->
 	<Mashed_Ashlands_DepositChargesLeft>{0} {1} charge/s left</Mashed_Ashlands_DepositChargesLeft>
 	<Mashed_Ashlands_DepositExhausted>a {0_label} has been exhausted</Mashed_Ashlands_DepositExhausted>
+	<!-- ==========[Simple item processor]==========-->
+	<Mashed_Ashlands_SimpleItemProcessorDesc>{0} until {1_label} is ready</Mashed_Ashlands_SimpleItemProcessorDesc>
+	<Mashed_Ashlands_SimpleItemProcessorEmpty>Progress halted until {0_label} is full</Mashed_Ashlands_SimpleItemProcessorEmpty>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>

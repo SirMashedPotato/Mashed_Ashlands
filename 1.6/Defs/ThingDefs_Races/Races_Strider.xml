@@ -12,6 +12,7 @@
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
 			<FilthRate>8</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -70,13 +71,14 @@
 			<leatherDef>Mashed_Ashlands_StriderChitin</leatherDef>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<wildness>0.985</wildness>
+			<waterCellCost>10</waterCellCost>
 			<lifeExpectancy>333</lifeExpectancy>
 			<willNeverEat>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
 			</willNeverEat>
 			<lifeStageAges>
 				<li>
@@ -120,6 +122,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_SiltStriderFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_SiltStriderUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -155,11 +158,16 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
 					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStriderNymph</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SiltStrider</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -167,8 +175,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStrider</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -183,6 +196,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStrider</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4.8</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

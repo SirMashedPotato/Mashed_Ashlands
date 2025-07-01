@@ -50,6 +50,13 @@ namespace Mashed_Ashlands
                     });
                     resetSettingsOptions.Add(item);
 
+                    ///Reset ash blight
+                    item = new FloatMenuOption("Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageAshBlight".Translate()), delegate
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_AshBlight();
+                    });
+                    resetSettingsOptions.Add(item);
+
                     ///Reset conditions
                     item = new FloatMenuOption("Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageOtherConditions".Translate()), delegate
                     {
@@ -61,6 +68,13 @@ namespace Mashed_Ashlands
                     item = new FloatMenuOption("Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageIncident".Translate()), delegate
                     {
                         Mashed_Ashlands_ModSettings.ResetSettings_Incident();
+                    });
+                    resetSettingsOptions.Add(item);
+
+                    ///Reset incidents
+                    item = new FloatMenuOption("Mashed_Ashlands_ResetPage".Translate("Mashed_Ashlands_PageCliffRacer".Translate()), delegate
+                    {
+                        Mashed_Ashlands_ModSettings.ResetSettings_CliffRacer();
                     });
                     resetSettingsOptions.Add(item);
 

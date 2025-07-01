@@ -9,52 +9,13 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
-				<increasePollutedFertility>true</increasePollutedFertility>
-				<nullifyBeachTerrain>true</nullifyBeachTerrain>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_MuckSponge>0.1</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.05</Mashed_Ashlands_Plant_PurpleCrystal>
-					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.01</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
-					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
-				</cavePlants>
-				<terrainReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSand</replacedTerrain>
-					</li>
-				</terrainReplacers>
-				<roadReplacers>
-					<li>
-						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_PackedAsh</replacedTerrain>
-					</li>
-				</roadReplacers>
 				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
-					</li>
+					<Gravel>Mashed_Ashlands_AshGravel</Gravel>
+					<Soil>Mashed_Ashlands_AshSoil</Soil>
 				</dryToReplacers>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
-				<waterTerrainDef>Mashed_Ashlands_ShallowMarsh</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.4</waterThreshold>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAsh</PackedDirt>
+				</roadReplacers>
 			</li>	
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
@@ -73,6 +34,12 @@
 		<plantDensity>0.6</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshMud</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshMud</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshMud</riverbankTerrain>
+		<riverbankSizeRange>6~12</riverbankSizeRange>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>
@@ -88,6 +55,7 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>MarshyTerrain</terrain>
@@ -108,6 +76,7 @@
 			</li>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
@@ -138,6 +107,7 @@
 			</li>
 			<li>
 				<perlinFrequency>0.035</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>MarshyTerrain</terrain>
@@ -164,7 +134,6 @@
 			<Plant_Chokevine>0.8</Plant_Chokevine>
 			<Mashed_Ashlands_Plant_AshlandGrass>1</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
-			<Mashed_Ashlands_Plant_LilyPad>1</Mashed_Ashlands_Plant_LilyPad>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_Marshmerrow>0.05</Mashed_Ashlands_Plant_Marshmerrow>
 			<Mashed_Ashlands_Plant_Saltrice>0.05</Mashed_Ashlands_Plant_Saltrice>
@@ -173,12 +142,14 @@
 			<Mashed_Ashlands_Plant_InkCap>0.05</Mashed_Ashlands_Plant_InkCap>
 			<!-- Aesthetic plants -->
 			<Mashed_Ashlands_Plant_AshlandPitcher>0.05</Mashed_Ashlands_Plant_AshlandPitcher>
-			<Mashed_Ashlands_Plant_SloughFern>0.05</Mashed_Ashlands_Plant_SloughFern>
 			<Mashed_Ashlands_Plant_SomnaliusFern>0.05</Mashed_Ashlands_Plant_SomnaliusFern>
 			<Mashed_Ashlands_Plant_AshenFern>0.01</Mashed_Ashlands_Plant_AshenFern>
 			<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 			<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-			<Mashed_Ashlands_Plant_DraggleTails>0.4</Mashed_Ashlands_Plant_DraggleTails>
+			<!-- Aquatic plants -->
+			<Mashed_Ashlands_Plant_SloughFern>0.01</Mashed_Ashlands_Plant_SloughFern>
+			<Mashed_Ashlands_Plant_DraggleTails>0.05</Mashed_Ashlands_Plant_DraggleTails>
+			<Mashed_Ashlands_Plant_LilyPad>0.1</Mashed_Ashlands_Plant_LilyPad>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_Stinkcap>0.1</Mashed_Ashlands_Plant_Stinkcap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.5</Mashed_Ashlands_Plant_TreeEmperorParasol>
@@ -199,6 +170,7 @@
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
 			<!-- Polluted trees -->
+			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_GiantAshlandFungus>
 			<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_GiantGlowingCoprinus>
 			<Mashed_Ashlands_Plant_TreeWeepingMouldcap MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_TreeWeepingMouldcap>
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_Plant_TreeEmperorToxisol>

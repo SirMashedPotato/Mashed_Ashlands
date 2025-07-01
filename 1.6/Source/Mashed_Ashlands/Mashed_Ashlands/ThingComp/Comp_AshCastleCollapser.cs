@@ -14,5 +14,5 @@ namespace Mashed_Ashlands
 				parent.TakeDamage(new DamageInfo(DamageDefOf.Rotting, num, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, false));
 			}
 		}
-	}
+    }
 }

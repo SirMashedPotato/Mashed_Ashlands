@@ -38,19 +38,22 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Allows adding an alternative pollution stimulus hediff
         /// </summary>
-        public static void PollutionUtility_PawnPollutionTick_Patch(Pawn pawn)
+        public static void PollutionUtility_PawnPollutionTickInterval_Patch(Pawn pawn, int delta)
         {
             if (!pawn.Spawned || pawn.Map == null)
             {
                 return;
             }
 
-            if (OnStartupUtility.alternateStimulisAnimals.Contains(pawn.def))
+            if (pawn.IsHashIntervalTick(60, delta))
             {
-                PollutionProperties props = PollutionProperties.Get(pawn.def);
-                if (pawn.IsHashIntervalTick(60) && pawn.Position.IsPolluted(pawn.Map) && !pawn.health.hediffSet.HasHediff(props.alternativePollutionStimulis, false))
+                if (OnStartupUtility.alternateStimulisAnimals.Contains(pawn.def))
                 {
-                    pawn.health.AddHediff(props.alternativePollutionStimulis);
+                    PollutionProperties props = PollutionProperties.Get(pawn.def);
+                    if (pawn.IsHashIntervalTick(60) && pawn.Position.IsPolluted(pawn.Map) && !pawn.health.hediffSet.HasHediff(props.alternativePollutionStimulis))
+                    {
+                        pawn.health.AddHediff(props.alternativePollutionStimulis);
+                    }
                 }
             }
         }

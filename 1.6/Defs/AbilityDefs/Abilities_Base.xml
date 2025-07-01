@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_BloomAbility]==========-->
+	 <AbilityGroupDef>
+		<defName>Mashed_Ashlands_BloomAbility</defName>
+		<cooldownTicks>180000</cooldownTicks>
+	</AbilityGroupDef>
 	<!-- ==========[Mashed_Ashlands_LobBase]==========-->
 	<AbilityDef Name="Mashed_Ashlands_LobBase" Abstract="True">
-		<charges>3</charges>
-		<cooldownTicksRange>180000</cooldownTicksRange>
+		<!--<charges>3</charges>-->
+		<groupDef>Mashed_Ashlands_BloomAbility</groupDef>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		<showPsycastEffects>false</showPsycastEffects>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>

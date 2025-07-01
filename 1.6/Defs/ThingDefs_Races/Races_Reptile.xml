@@ -15,6 +15,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -57,14 +58,9 @@
 			</li>
 		</tools>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Mashed_Ashlands_RawAshYams</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_AlitFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_AlitUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -81,9 +77,12 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
@@ -174,19 +173,15 @@
 		<defName>Mashed_Ashlands_CliffRacer</defName>
 		<label>cliff racer</label>
 		<description>A highly aggressive flying reptile commonly found throughout ashland regions. Often called "The Winged Menace" by locals, immense swarms of cliff racers are rumoured to have driven considerably larger dragon-like creatures from the ashlands.\n\nWhile rather fragile, cliff racers have an almost unnaturally fast reproductive cycle, and can quickly form large swarms. A large enough swarm can result in the complete collapse of the ecosystem. As such, cliff racers are best dealt with quickly.\n\nUnder unknown circumstances cliff racers will rarely mutate upon reaching maturity, gaining the ability to produce fertile eggs asexually. This can affect both female and male cliff racers, and happens seemingly at random.</description>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-		</modExtensions>
 		<statBases>
-			<MoveSpeed>6.0</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -232,15 +227,13 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<compClass>Mashed_Ashlands.Comp_EggLayerMutant</compClass>
 				<eggFertilizedDef>Mashed_Ashlands_Egg_CliffRacerFertilized</eggFertilizedDef>
-				<eggUnfertilizedDef>Mashed_Ashlands_Egg_CliffRacerFertilized</eggUnfertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_CliffRacerUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~5</eggCountRange>
-			</li>
-			<li>
-				<compClass>Mashed_Ashlands.Comp_CliffRacerMutation</compClass>
 			</li>
 		</comps>
 		<race>
@@ -258,7 +251,9 @@
 			<leatherDef>Mashed_Ashlands_CliffRacerLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
-			<wildness>0.95</wildness>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeExpectancy>8</lifeExpectancy>
@@ -354,6 +349,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -393,7 +389,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_GuarLeather</leatherDef>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
-			<wildness>0.6</wildness>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>22</lifeExpectancy>
@@ -543,6 +538,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -576,14 +572,9 @@
 			</li>
 		</tools>
 		<comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>Meat_Megaspider</customThingToDig>
-				<customAmountToDig>3</customAmountToDig>
-				<digAnywayEveryXTicks>false</digAnywayEveryXTicks>
-				<spawnForbidden>true</spawnForbidden>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_ScuttlerFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_ScuttlerUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -596,8 +587,10 @@
 			<baseHealthScale>0.5</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
-			<wildness>0.5</wildness>
 			<trainability>None</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
 			<petness>0.15</petness>
 			<nuzzleMtbHours>48</nuzzleMtbHours>
 			<lifeExpectancy>12</lifeExpectancy>
@@ -721,6 +714,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>5</FilthRate>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -771,6 +765,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_WormmouthFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_WormmouthUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -785,9 +780,11 @@
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_HeavyScaledLeather</leatherDef>
-			<wildness>0.80</wildness>
 			<lifeExpectancy>33</lifeExpectancy>
 			<trainability>Intermediate</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>

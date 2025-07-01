@@ -1,10 +1,22 @@
 ﻿using Verse;
 using RimWorld;
+using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
     public static class Utility
     {
+        public static List<PawnKindDef> BlightedKindDefs()
+        {
+            return new List<PawnKindDef> 
+            { 
+                PawnKindDefOf.Mashed_Ashlands_Alit, 
+                PawnKindDefOf.Mashed_Ashlands_Kagouti, 
+                PawnKindDefOf.Mashed_Ashlands_Netch,
+                PawnKindDefOf.Mashed_Ashlands_NixHound, 
+                PawnKindDefOf.Mashed_Ashlands_Shalk
+            };
+        }
 
         public static bool MapHasUnsafeCondition(Thing thing)
         {

@@ -4,9 +4,11 @@ using Verse;
 namespace Mashed_Ashlands
 {
     [StaticConstructorOnStartup]
-    public class WeatherOverlay_VolcanicMiasma : SkyOverlay
+    public class WeatherOverlay_VolcanicMiasma : WeatherOverlayDualPanner
 	{
-		public WeatherOverlay_VolcanicMiasma()
+        private static readonly Material MiasmaOverlayWorld = MatLoader.LoadMat("Weather/FogOverlayWorld", -1);
+
+        public WeatherOverlay_VolcanicMiasma()
 		{
 			worldOverlayMat = MiasmaOverlayWorld;
 			worldOverlayPanSpeed1 = 0.001f;
@@ -16,7 +18,5 @@ namespace Mashed_Ashlands
             worldPanDir1.Normalize();
             worldPanDir2.Normalize();
         }
-
-		private static readonly Material MiasmaOverlayWorld = MatLoader.LoadMat("Weather/FogOverlayWorld", -1);
 	}
 }

@@ -10,7 +10,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0</fertilitySensitivity>
@@ -38,11 +38,11 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_SulphuricSand</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -70,13 +70,10 @@
 		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<disallowedTerrainForWild>
-					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>	
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSand</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -101,10 +98,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshGravel</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -128,10 +125,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -157,10 +154,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -178,46 +175,7 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_MeadowFlowerBlue]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_MeadowFlowerBase">
-		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
-		<label>meadow flower</label>
-		<description>A colourful flower often found growing in large clusters. Most common in regions with ash rich soil, but without ash storms.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_AshSoil</li>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-					<li>Mashed_Ashlands_MossyAshSoil</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>6</Beauty>
-			<BeautyOutdoors>6</BeautyOutdoors>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
-		</graphicData>
-		<plant>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
-			</sowResearchPrerequisites>
-			<maxMeshCount>25</maxMeshCount>
-			<visualSizeRange>0.7~0.8</visualSizeRange>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-		</plant>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_MeadowFlowerRed]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_MeadowFlowerBase">
-		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
-		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
-		</graphicData>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
+		<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_LavaBloom</defName>
 		<label>lava bloom</label>
@@ -225,10 +183,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoilVolcanic</li>
 					<li>Mashed_Ashlands_RichAshSoilVolcanic</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -251,6 +209,7 @@
 			<sowTags>
 				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LavaCactus]==========-->
@@ -283,7 +242,47 @@
 			<sowTags>
 				<li>Mashed_Ashlands_AshExclusive</li>
 			</sowTags>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerBlue]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerBlue</defName>
+		<label>meadow flower</label>
+		<description>A colourful flower often found growing in large clusters. Most common in regions with ash rich soil, but without ash storms.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<allowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_AshSoil</li>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_MossyAshSoil</li>
+				</allowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
+		</graphicData>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+			</sowResearchPrerequisites>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.7~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MeadowFlowerRed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_MeadowFlowerBase">
+		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
+		<graphicData>
+			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
+		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
@@ -293,10 +292,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -322,10 +321,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -351,12 +350,12 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_RichAshGravel</li>
 					<li>Mashed_Ashlands_AshScree</li>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -381,9 +380,9 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

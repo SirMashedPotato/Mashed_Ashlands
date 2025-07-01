@@ -6,4 +6,7 @@
 	<DesignatorDropdownGroupDef>
 		<defName>Mashed_Ashlands_Building_TorchbugLamp</defName>
 	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Mashed_Ashlands_AshlandFermentingBarrel</defName>
+	</DesignatorDropdownGroupDef>
 </Defs>

@@ -7,9 +7,6 @@ namespace Mashed_Ashlands
         public bool AllowPollutionStimulis = false;
         public HediffDef alternativePollutionStimulis = null;
 
-        public static PollutionProperties Get(Def def)
-        {
-            return def.GetModExtension<PollutionProperties>();
-        }
+        public static PollutionProperties Get(Def def) => def.GetModExtension<PollutionProperties>();
     }
 }

@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_NixHoundThingBase]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_InsectThingBase" Name="Mashed_Ashlands_NixHoundThingBase" Abstract="True">
 		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="NocturnalAnimals.ExtendedRaceProperties">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.ExtendedRaceProperties">
 				<bodyClock>Nocturnal</bodyClock>
 			</li>
 		</modExtensions>
@@ -11,6 +11,7 @@
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -93,7 +94,9 @@
 			<leatherDef>Mashed_Ashlands_NixLeather</leatherDef>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<wildness>0.85</wildness>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<lifeStageAges>
@@ -139,6 +142,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixHoundFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_NixHoundUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

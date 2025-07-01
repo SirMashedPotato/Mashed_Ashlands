@@ -14,7 +14,7 @@
 		<fertility>1.2</fertility>
 		<categoryType>Soil</categoryType>
 		<tags>
-			<li>PF_TerrainTag_Ground</li>
+			<li>Mashed_Ashlands_AshSoil</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_MossyAshSoil]==========-->
@@ -25,7 +25,7 @@
 		<fertility>1.2</fertility>
 		<categoryType>Soil</categoryType>
 		<tags>
-			<li>PF_TerrainTag_Ground</li>
+			<li>Mashed_Ashlands_MossyAshSoil</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_GrazelandSoil]==========-->
@@ -36,7 +36,7 @@
 		<fertility>1</fertility>
 		<categoryType>Soil</categoryType>
 		<tags>
-			<li>PF_TerrainTag_Ground</li>
+			<li>Mashed_Ashlands_GrazelandSoil</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshSoil]==========-->
@@ -47,7 +47,18 @@
 		<fertility>1.5</fertility>
 		<categoryType>Soil</categoryType>
 		<tags>
-			<li>PF_TerrainTag_Ground</li>
+			<li>Mashed_Ashlands_RichAshSoil</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshRiverbank]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_AshRiverbank</defName>
+		<label>riverbank ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshRiverbank</texturePath>
+		<fertility>1.5</fertility>
+		<categoryType>Soil</categoryType>
+		<tags>
+			<li>Mashed_Ashlands_AshRiverbank</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshGravel]==========-->
@@ -58,7 +69,7 @@
 		<scatterType>Rocky</scatterType>
 		<fertility>0.8</fertility>
 		<tags>
-			<li>PF_TerrainTag_Gravel</li>
+			<li>Mashed_Ashlands_AshGravel</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshScree]==========-->
@@ -69,7 +80,7 @@
 		<scatterType>Rocky</scatterType>
 		<fertility>0.4</fertility>
 		<tags>
-			<li>PF_TerrainTag_Gravel</li>
+			<li>Mashed_Ashlands_AshScree</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshGravel]==========-->
@@ -80,7 +91,7 @@
 		<scatterType>Rocky</scatterType>
 		<fertility>1.1</fertility>
 		<tags>
-			<li>PF_TerrainTag_Gravel</li>
+			<li>Mashed_Ashlands_RichAshGravel</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshDust]==========-->
@@ -92,7 +103,7 @@
 		<categoryType>Sand</categoryType>
 		<fertility>0.6</fertility>
 		<tags>
-			<li>PF_TerrainTag_Sand</li>
+			<li>Mashed_Ashlands_AshDust</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshSand]==========-->
@@ -104,7 +115,7 @@
 		<categoryType>Sand</categoryType>
 		<fertility>0.4</fertility>
 		<tags>
-			<li>PF_TerrainTag_Sand</li>
+			<li>Mashed_Ashlands_AshSand</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshSand]==========-->
@@ -116,7 +127,7 @@
 		<categoryType>Sand</categoryType>
 		<fertility>0.7</fertility>
 		<tags>
-			<li>PF_TerrainTag_Sand</li>
+			<li>Mashed_Ashlands_RichAshSand</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_PackedAsh]==========-->
@@ -126,9 +137,6 @@
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_PackedAsh</texturePath>
 		<description>Packed ash, making it comparatively less arduous to trek across.</description>
 		<terrainAffordanceNeeded>Mashed_Ashlands_PackableAsh</terrainAffordanceNeeded>
-		<tags>
-			<li>PF_TerrainTag_Ground</li>
-		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_AshMud]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
@@ -136,8 +144,5 @@
 		<label>waterlogged ash</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshMud</texturePath>
 		<driesTo>Mashed_Ashlands_RichAshSoil</driesTo>
-		<tags>
-			<li>PF_TerrainTag_Mud</li>
-		</tags>
 	</TerrainDef>
 </Defs>

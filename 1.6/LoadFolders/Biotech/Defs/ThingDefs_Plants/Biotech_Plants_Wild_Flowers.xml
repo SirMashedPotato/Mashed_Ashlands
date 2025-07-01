@@ -8,10 +8,10 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<ashlandFlowerPlant>true</ashlandFlowerPlant>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshGravel</li>
 					<li>Mashed_Ashlands_RichAshGravel</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

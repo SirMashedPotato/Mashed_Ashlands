@@ -42,7 +42,7 @@ namespace Mashed_Ashlands
             )]
         private static void GeneratePrimaryBiomes()
         {
-            WorldGenStep_AshlandBiomesEarly.DebugGenerate(Find.World.info.seedString);
+            WorldGenStep_AshlandBiomesEarly.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
             Find.World.renderer.RegenerateAllLayersNow();
         }
 
@@ -54,7 +54,7 @@ namespace Mashed_Ashlands
             )]
         private static void GenerateSecondaryBiomes()
         {
-            WorldGenStep_AshlandBiomesLate.DebugGenerate(Find.World.info.seedString);
+            WorldGenStep_AshlandBiomesLate.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
             Find.World.renderer.RegenerateAllLayersNow();
         }
     }

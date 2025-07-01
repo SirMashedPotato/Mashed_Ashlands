@@ -17,7 +17,7 @@ namespace Mashed_Ashlands
             get
             {
                 ashBuildupColonists.Clear();
-                foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoSuspended)
+                foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravellingTransporters_AliveSpawned_FreeColonistsAndPrisoners_NoCryptosleep)
                 {
                     Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Mashed_Ashlands_AshBuildup, false);
                     if (firstHediffOfDef != null && firstHediffOfDef.Severity >= ashBuildupSeverityThreshold)
@@ -45,6 +45,6 @@ namespace Mashed_Ashlands
         }
 
         private const float ashBuildupSeverityThreshold = 0.6f;
-        private List<Pawn> ashBuildupColonists = new List<Pawn>();
+        private readonly List<Pawn> ashBuildupColonists = new List<Pawn>();
     }
 }

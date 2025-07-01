@@ -13,9 +13,6 @@ namespace Mashed_Ashlands
         public bool overrideFilthAcceptance = false;
         public FilthSourceFlags filthAcceptanceOverride = FilthSourceFlags.Any;
 
-        public static RockProperties Get(Def def)
-        {
-            return def.GetModExtension<RockProperties>();
-        }
+        public static RockProperties Get(Def def) => def.GetModExtension<RockProperties>();
     }
 }

@@ -5,6 +5,14 @@
 		<defName>Mashed_Ashlands_Plant_AshlandHayGrass</defName>
 		<label>ashland haygrass</label>
 		<description>A resilient strain of haygrass, specifically bred to survive ash-storms. The increase in durability allows the grass to survive ash storms, but also makes it more time consuming to harvest.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<disallowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -42,9 +50,10 @@
 		<description>A rather strange mushroom, that somewhat resembles a stack of pancakes. The flesh is surprisingly tasty, and completely safe to eat. They are only able to grow in ash rich ground, and as such are not often farmed outside of the ashlands.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -78,34 +87,6 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedButtercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_ButtercakeBase">
-		<defName>Mashed_Ashlands_Plant_PetrifiedButtercake</defName>
-		<label>petrified buttercake mushroom</label>
-		<description>Semi-petrified buttercake mushroom, gradually turned to stone by extreme blight storms. Somehow it still grows, though there is almost no edible flesh left.</description>
-		<modExtensions Inherit="False">
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Nutrition>0.25</Nutrition>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
-		</graphicData>
-		<plant>
-			<pollution>Any</pollution>
-			<fertilityMin>0.3</fertilityMin>
-			<harvestYield>1</harvestYield>
-			<topWindExposure>0.01</topWindExposure>
-			<growDays>10</growDays>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Chillshroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_Chillshroom</defName>
@@ -137,6 +118,7 @@
 			<wildClusterRadius>2</wildClusterRadius>
 			<wildClusterWeight>100</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Comberry]==========-->
@@ -146,9 +128,10 @@
 		<description>A hardy berry bush often found growing in calmer ashland regions. Farmed in great quantities by those that settle the ashlands, as comberries are a popular export, and can also be fermented into shein. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -222,6 +205,7 @@
 			<purpose>Food</purpose>
 			<maxMeshCount>4</maxMeshCount>
 			<humanFoodPlant>true</humanFoodPlant>
+			<destroyedByFlooding>false</destroyedByFlooding>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
@@ -317,10 +301,11 @@
 		<description>A grass often found growing in grasslands with ash rich soil. Farmed in great quantities by those that settle the ashlands, as raw wickwheat is a popular export, and can also be fermented into sujamma. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_GrazelandSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

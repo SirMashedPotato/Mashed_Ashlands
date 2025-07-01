@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedFungus</defName>
+		<label>petrified fungus</label>
+		<description>Ashland fungus, that has become partially petrified. Against all odds, it still manages to grow.</description>
+		<statBases>
+			<Nutrition>0.2</Nutrition>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_PetrifiedFungus</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Petrified</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<sowTags Inherit="false"/>
+			<harvestWork>50</harvestWork>
+			<growDays>5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<topWindExposure>0.01</topWindExposure>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedFern</defName>
+		<label>petrified fern</label>
+		<description>A small semi-petrified fern. It looks like it should crumble to dust at the slightest touch, yet somehow still it endures.</description>
+		<modExtensions Inherit="False"/>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+			<Flammability>0.1</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_PetrifiedFernPlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Petrified</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<harvestWork>80</harvestWork>
+			<leaflessGraphicPath IsNull="True"/>
+			<topWindExposure>0.01</topWindExposure>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedGlowstalk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowstalkBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedGlowstalk</defName>
+		<label>petrified glowstalk</label>
+		<description>A semi-petrified glowstalk, its bulb almost completely turned to stone. It still manages to emit a faint light, even in this state. It doesn't even attract torchbugs at night anymore, not that there's likely to be many left in this petrified wasteland.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.15</Nutrition>
+			<Flammability>0.1</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<pollution>Any</pollution>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Petrified</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<sowResearchPrerequisites Inherit="False"/>
+			<sowTags Inherit="false"/>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(173,155,142,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedButtercake]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ButtercakeBase">
+		<defName>Mashed_Ashlands_Plant_PetrifiedButtercake</defName>
+		<label>petrified buttercake mushroom</label>
+		<description>Semi-petrified buttercake mushroom, gradually turned to stone by extreme blight storms. Somehow it still grows, though there is almost no edible flesh left.</description>
+		<modExtensions Inherit="False"/>
+		<statBases>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
+		</graphicData>
+		<plant>
+			<pollution>Any</pollution>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Petrified</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<sowResearchPrerequisites Inherit="False"/>
+			<sowTags Inherit="false"/>
+			<harvestYield>1</harvestYield>
+			<topWindExposure>0.01</topWindExposure>
+			<growDays>10</growDays>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasolPetrified]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeEmperorParasolBase">
+		<defName>Mashed_Ashlands_Plant_TreeEmperorParasolPetrified</defName>
+		<label>petrified emperor parasol tree</label>
+		<description>A highly malformed emperor parasol, still attempting to grow in spite of its semi-petrified state. A mere shadow of its former glory, harvesting it will yield little usable parasol wood.</description>
+		<thingClass>Plant</thingClass>
+		<modExtensions Inherit="False"/>
+		<graphicData>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasolPetrified</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<plant>
+			<pollution>Any</pollution>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_Petrified</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<sowResearchPrerequisites Inherit="False"/>
+			<sowTags Inherit="false"/>
+			<harvestWork>2000</harvestWork>
+			<harvestYield>10</harvestYield>
+			<leaflessGraphicPath IsNull="True"/>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeEmperorParasolPetrified_Immature</immatureGraphicPath>
+			<topWindExposure>0.05</topWindExposure>
+			<choppedThingDef>Mashed_Ashlands_ChoppedPetrifiedStump</choppedThingDef>
+			<smashedThingDef>Mashed_Ashlands_SmashedPetrifiedStump</smashedThingDef>
+		</plant>
+	</ThingDef>
+</Defs>

@@ -3,7 +3,7 @@
 	<!-- ==========[Ash storm]==========-->
 	<Mashed_Ashlands_PageAshStorm>Ash storms</Mashed_Ashlands_PageAshStorm>
 	<Mashed_Ashlands_AshStormCauseBuildup>Enable ash storms causing ash buildup to unprotected pawns.</Mashed_Ashlands_AshStormCauseBuildup>
-	<Mashed_Ashlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in caravans.</Mashed_Ashlands_AshStormAffectsCaravan>
+	<Mashed_Ashlands_AshStormAffectsCaravan>Ash storms also cause ash buildup to pawns in moving caravans.</Mashed_Ashlands_AshStormAffectsCaravan>
 	<Mashed_Ashlands_AshStormBuildupMult>Multiplier for the amount of ash buildup pawns receive: ({0}%)</Mashed_Ashlands_AshStormBuildupMult>
 	<Mashed_Ashlands_AshStormCauseBlinded>Enable ash storms randomly blinding unprotected pawns.</Mashed_Ashlands_AshStormCauseBlinded>
 	<Mashed_Ashlands_AshStormBlindedChance>The chance a pawn is blinded: ({0}%)</Mashed_Ashlands_AshStormBlindedChance>
@@ -14,11 +14,4 @@
 	<Mashed_Ashlands_AshStormDamageBuildings>Enable ash storms randomly damaging certain buildings.</Mashed_Ashlands_AshStormDamageBuildings>
 	<Mashed_Ashlands_AshStormBreakdownBuildings>Enable ash storms randomly causing certain buildings to breakdown.</Mashed_Ashlands_AshStormBreakdownBuildings>
 	<Mashed_Ashlands_AshStormBreakdownBuildingsChance>The chance a building has a breakdown: ({0}%)</Mashed_Ashlands_AshStormBreakdownBuildingsChance>
-	<!-- ==========[Blight storm]==========-->
-	<Mashed_Ashlands_BlightStormBlightAnimals>Enable blighted ash storms randomly blighting wild animals.</Mashed_Ashlands_BlightStormBlightAnimals>
-	<Mashed_Ashlands_BlightStormBlightPlayerAnimals>Blighted ash storms can also blight player faction animals.</Mashed_Ashlands_BlightStormBlightPlayerAnimals>
-	<Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>Blighted ash storms can also blight non-player faction animals.</Mashed_Ashlands_BlightStormBlightNonPlayerAnimals>
-	<Mashed_Ashlands_BlightStormBlightPlants>Enable blighted ash storms randomly blighting crops.</Mashed_Ashlands_BlightStormBlightPlants>
-	<Mashed_Ashlands_BlightStormBlightWildPlants>Blighted ash storms can also blight wild plants.</Mashed_Ashlands_BlightStormBlightWildPlants>
-	<Mashed_Ashlands_BlightStormBlightPlantsNumber>The average number of randomly selected plants blighted at once: ({0} plants)</Mashed_Ashlands_BlightStormBlightPlantsNumber>
 </LanguageData>

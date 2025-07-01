@@ -1,16 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Lava]==========-->
-	<TerrainDef ParentName="Mashed_Ashlands_LavaBase">
+	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>Mashed_Ashlands_Lava</defName>
-		<modExtensions>
-			<li Class="BiomesCore.Locations.LavaTerrainDefExtension" MayRequire="biomesteam.biomescore">
-				<heatPerSecond>3</heatPerSecond>
-				<heatPushMaxTemperature>120</heatPushMaxTemperature>
-				<overlightRadius>1</overlightRadius>
-				<glowRadius>3</glowRadius>
-				<glowColor>(132,43,0,0)</glowColor>
-			</li>
-		</modExtensions>
+		<label>lava</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_LavaRamp</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<pollutionOverlayTexturePath IsNull="True"/>
+		<edgeType>Water</edgeType>
+		<renderPrecedence>300</renderPrecedence>
+		<fertility>0</fertility>
+		<passability>Impassable</passability>
+		<pathCost>300</pathCost>
+		<changeable>false</changeable>
+		<avoidWander>true</avoidWander>
+		<holdSnowOrSand>false</holdSnowOrSand>
+		<canBePolluted>false</canBePolluted>
+		<extraDeteriorationFactor>3</extraDeteriorationFactor>
+		<meltSnowRadius>5</meltSnowRadius>
+		<heatPerTick>0.1</heatPerTick>
+		<igniteRadius>3</igniteRadius>
+		<ignitePawnsIntervalTicks>600</ignitePawnsIntervalTicks>
+		<burnDamage>6</burnDamage>
+		<burnIntervalTicks>120</burnIntervalTicks>
+		<dangerous>true</dangerous>
+		<glowRadius>3</glowRadius>
+		<glowColor>(132,43,0,0)</glowColor>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<tags>
+			<li>Mashed_Ashlands_Lava</li>
+		</tags>
 	</TerrainDef>
 </Defs>

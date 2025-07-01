@@ -9,6 +9,7 @@
 			<MaxHitPoints>800</MaxHitPoints>
 		</statBases>
 		<building>
+			<biomeSpecific>true</biomeSpecific>
 			<mineableThing>Mashed_Ashlands_ChunkBasalt</mineableThing>
 			<mineableDropChance>0.25</mineableDropChance>
 			<smoothedThing>Mashed_Ashlands_SmoothedBasalt</smoothedThing>

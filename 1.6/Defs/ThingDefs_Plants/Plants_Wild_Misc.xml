@@ -37,63 +37,31 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_PetrifiedGlowstalk]==========-->
+	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeGlowstalk]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowstalkBase">
-		<defName>Mashed_Ashlands_Plant_PetrifiedGlowstalk</defName>
-		<label>petrified glowstalk</label>
-		<description>A semi-petrified glowstalk, its bulb almost completely turned to stone. It still manages to emit a faint light, even in this state. It doesn't even attract torchbugs at night anymore, not that there's likely to be many left in this petrified wasteland.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
+		<defName>Mashed_Ashlands_Plant_DarkshadeGlowstalk</defName>
+		<label>darkshade glowstalk</label>
+		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While they can very rarely be found growing in caves in ashland regions, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
+			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
 		</graphicData>
-		<statBases>
-			<Nutrition>0.15</Nutrition>
-			<Flammability>0.1</Flammability>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-		</statBases>
 		<plant>
-			<pollution>Any</pollution>
-			<fertilityMin>0.3</fertilityMin>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
-			<topWindExposure>0.05</topWindExposure>
+			<sowMinSkill>12</sowMinSkill>
 		</plant>
 		<comps Inherit="False">
 			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(173,155,142,0)</glowColor>
+				<glowRadius>4</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_DarklightTorchbugEffecter</effecterDef>
 			</li>
 		</comps>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_ScorchedBush]==========-->
-	<ThingDef ParentName="BushBase">
-		<defName>Mashed_Ashlands_Plant_ScorchedBush</defName>
-		<label>scorched bush</label>
-		<description>A scorched bush, covered in numerous thorns and pointy ends. Provides nothing of practical use.</description>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ScorchedBush</texPath>
-			<drawSize>1.15</drawSize>
-			<shadowData>
-				<volume>(0.55, 0.2, 0.2)</volume>
-			</shadowData>
-		</graphicData>
-		<uiIconScale>0.85</uiIconScale>
-		<plant>
-			<fertilitySensitivity>0</fertilitySensitivity>
-			<fertilityMin>0.09</fertilityMin>
-			<growDays>3</growDays>
-			<pollution>Any</pollution>
-			<visualSizeRange>0.8~1.2</visualSizeRange>
-			<topWindExposure>0.1</topWindExposure>
-			<wildClusterWeight>20</wildClusterWeight>
-		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Stinkcap]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">

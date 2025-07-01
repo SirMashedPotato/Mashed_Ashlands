@@ -36,9 +36,9 @@
 				<secondaryDropAmountRange>10~15</secondaryDropAmountRange>
 				<secondaryDropChance>1</secondaryDropChance>
 				<secondaryNotWhenLeafless>true</secondaryNotWhenLeafless>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -58,38 +58,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
-		</plant>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasolPetrified]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeEmperorParasolBase">
-		<defName>Mashed_Ashlands_Plant_TreeEmperorParasolPetrified</defName>
-		<label>petrified emperor parasol tree</label>
-		<description>A highly malformed emperor parasol, still attempting to grow in spite of its semi-petrified state. A mere shadow of its former glory, harvesting it will yield little usable parasol wood.</description>
-		<thingClass>Plant</thingClass>
-		<modExtensions Inherit="False">
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_MossyAshSoilBlighted</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
-		<graphicData>
-			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasolPetrified</texPath>
-		</graphicData>
-		<statBases>
-			<Flammability>0</Flammability>
-			<Nutrition>1</Nutrition>
-		</statBases>
-		<plant>
-			<pollution>Any</pollution>
-			<fertilityMin>0.3</fertilityMin>
-			<harvestWork>2000</harvestWork>
-			<harvestYield>10</harvestYield>
-			<leaflessGraphicPath IsNull="True"/>
-			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_Plant_TreeEmperorParasolPetrified_Immature</immatureGraphicPath>
-			<topWindExposure>0.05</topWindExposure>
-			<choppedThingDef>Mashed_Ashlands_ChoppedPetrifiedStump</choppedThingDef>
-			<smashedThingDef>Mashed_Ashlands_SmashedPetrifiedStump</smashedThingDef>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeKwamacap]==========-->
@@ -259,6 +228,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->

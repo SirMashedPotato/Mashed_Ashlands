@@ -20,6 +20,7 @@
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<FilthRate>6</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools>
@@ -44,11 +45,11 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<wildness>0.95</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>10</lifeExpectancy>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+			<waterCellCost>5</waterCellCost>
 			<roamMtbDays>6</roamMtbDays>
 			<lifeStageAges>
 				<li>
@@ -88,6 +89,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_MudcrabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_MudcrabUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -124,6 +126,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.2</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -134,6 +141,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.45</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -148,6 +160,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_Dessicated_Mudcrab</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.7</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

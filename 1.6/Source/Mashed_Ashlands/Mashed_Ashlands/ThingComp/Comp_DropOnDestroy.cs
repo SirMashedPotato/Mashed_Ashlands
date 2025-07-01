@@ -6,27 +6,24 @@ namespace Mashed_Ashlands
 {
     public class Comp_DropOnDestroy : ThingComp
     {
-		public CompProperties_DropOnDestroy Props
-		{
-			get
-			{
-				return (CompProperties_DropOnDestroy)props;
-			}
-		}
+        public CompProperties_DropOnDestroy Props => (CompProperties_DropOnDestroy)props;
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             if (Props.thingSetMakerDef != null)
             {
-                List<Thing> setDropList = Props.thingSetMakerDef.root.Generate();
-                foreach (Thing thing in setDropList)
+                for (int i = 0; i < Props.setMakerDrops; i++)
                 {
-                    DropThing(thing, previousMap);
+                    List<Thing> setDropList = Props.thingSetMakerDef.root.Generate();
+                    foreach (Thing thing in setDropList)
+                    {
+                        DropThing(thing, previousMap);
+                    }
                 }
             }
             if (!Props.guaranteedDrops.NullOrEmpty())
             {
-                foreach(PotentialDrops drop in Props.guaranteedDrops)
+                foreach (PotentialDrops drop in Props.guaranteedDrops)
                 {
                     DoDrop(drop, previousMap);
                 }
@@ -45,9 +42,14 @@ namespace Mashed_Ashlands
 
         private void DoDrop(PotentialDrops drop, Map previousMap)
         {
-            Thing droppedThing = ThingMaker.MakeThing(drop.thingDef);
+            ThingDef stuff = null;
+            if (!drop.thingDef.stuffCategories.NullOrEmpty())
+            {
+                stuff = GenStuff.RandomStuffByCommonalityFor(drop.thingDef);
+            }
+            Thing droppedThing = ThingMaker.MakeThing(drop.thingDef, stuff);
             droppedThing.stackCount = drop.amountRange.RandomInRange;
-            droppedThing.TryGetComp<CompQuality>()?.SetQuality(QualityUtility.GenerateQualityRandomEqualChance(), ArtGenerationContext.Colony);
+            droppedThing.TryGetComp<CompQuality>()?.SetQuality(QualityUtility.GenerateQualityRandomEqualChance(), ArtGenerationContext.Outsider);
             GenPlace.TryPlaceThing(droppedThing, parent.Position, previousMap, ThingPlaceMode.Near);
         }
 

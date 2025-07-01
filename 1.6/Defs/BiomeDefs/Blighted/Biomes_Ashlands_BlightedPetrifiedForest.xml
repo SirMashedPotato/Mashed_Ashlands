@@ -3,55 +3,20 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedPetrifiedForestAshlands</defName>
 		<label>blighted petrified forest</label>
-		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified trees, that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
+		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified plants that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
-				<preventRivers>true</preventRivers>
-				<restrictPlantsToTerrain>true</restrictPlantsToTerrain>
 				<increasePollutedFertility>false</increasePollutedFertility>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.05</Mashed_Ashlands_Plant_PurpleCrystal>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingCoprinus>
-				</cavePlants>
-				<terrainReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Sand</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSandBlighted</replacedTerrain>
-					</li>
-				</terrainReplacers>
-				<roadReplacers>
-					<li>
-						<originalTerrain>PackedDirt</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_PackedAshBlighted</replacedTerrain>
-					</li>
-				</roadReplacers>
 				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshGravelBlighted</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoilBlighted</replacedTerrain>
-					</li>
+					<Gravel>Mashed_Ashlands_AshGravelBlighted</Gravel>
+					<Soil>Mashed_Ashlands_AshSoilBlighted</Soil>
 				</dryToReplacers>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_AshGravel</otherTerrainDef>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.9</waterThreshold>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAshBlighted</PackedDirt>
+				</roadReplacers>
 			</li>
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
@@ -66,7 +31,9 @@
 			</li>
 		</modExtensions>
 		<animalDensity>0.4</animalDensity>
-		<plantDensity>0.3</plantDensity>
+		<plantDensity>0.5</plantDensity>
+		<!-- Terrain overrides -->
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
@@ -81,31 +48,32 @@
 			<li>
 				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
 				<min>0.4</min>
-				<max>0.7</max>
+				<max>0.6</max>
 			</li>
 			<li>
 				<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
-				<min>0.7</min>
+				<min>0.6</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
+				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_MossyAshSoilBlighted</terrain>
 						<min>0.4</min>
-						<max>0.6</max>
+						<max>0.5</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_AshMudBlighted</terrain>
-						<min>0.6</min>
-						<max>0.8</max>
+						<min>0.5</min>
+						<max>0.7</max>
 					</li>
 					<li>
 						<terrain>Mashed_Ashlands_BlightedSludge</terrain>
-						<min>0.8</min>
+						<min>0.7</min>
 						<max>99</max>
 					</li>
 				</thresholds>
@@ -121,11 +89,10 @@
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_TramaShrub>0.01</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
-			 <Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
-			 <Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.2</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
+			<Mashed_Ashlands_Plant_PetrifiedFern>1</Mashed_Ashlands_Plant_PetrifiedFern>
+			<Mashed_Ashlands_Plant_PetrifiedGlowstalk>0.2</Mashed_Ashlands_Plant_PetrifiedGlowstalk>
 			<!-- Trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>10</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
-			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.01</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>2</Mashed_Ashlands_Plant_TreeEmperorParasolPetrified>
 			<Mashed_Ashlands_BurnedStumpPermanent>0.01</Mashed_Ashlands_BurnedStumpPermanent>
 			<!-- ==========[Pollution]========== -->
 			<!-- Polluted ground covers -->

@@ -22,6 +22,7 @@
 				<li MayRequire="kikohi.jewelry">Gemstones</li>
 			</categories>
 			<commonality>0.01</commonality>
+			<isAirtight>true</isAirtight>
 			<constructEffect>ConstructMetal</constructEffect>
 			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>

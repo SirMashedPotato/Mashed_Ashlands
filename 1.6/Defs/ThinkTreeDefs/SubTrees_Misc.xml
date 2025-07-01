@@ -38,6 +38,13 @@
 					<subNodes>
 						<li Class="ThinkNode_Priority">
 							<subNodes>
+								<li Class="ThinkNode_PrioritySorter">
+									<subNodes>
+										<li Class="JobGiver_GetFood">
+											<minCategory>Starving</minCategory>
+										</li>
+									</subNodes>
+								</li>
 								<li Class="JobGiver_Berserk"/>
 								<li Class="JobGiver_WanderAnywhere">
 									<maxDanger>Deadly</maxDanger>

@@ -2,11 +2,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_ColumnarBasalt]==========-->
 	<ThingDef ParentName="RockBase" Name="Mashed_Ashlands_ColumnarBasaltBase" Abstract="True">
-		<modExtensions>
-			<li Class="Mashed_Ashlands.BuildingProperties">
-				<canBeMeteorite>false</canBeMeteorite>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<linkType>None</linkType>
@@ -17,6 +12,7 @@
 			<Beauty>2</Beauty>
 		</statBases>
 		<building>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
 			<supportsWallAttachments>false</supportsWallAttachments>

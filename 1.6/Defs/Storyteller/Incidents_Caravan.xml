@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedCaravanAmbush]==========-->
+	<IncidentDef>
+		<defName>Mashed_Ashlands_BlightedCaravanAmbush</defName>
+		<label>blighted animal ambush</label>
+		<workerClass>Mashed_Ashlands.IncidentWorker_BlightedCaravanAmbush</workerClass>
+		<targetTags>
+			<li>Caravan</li>
+			<li>Map_TempIncident</li>
+		</targetTags>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<category>ThreatBig</category>
+		<letterLabel>Caravan ambushed (blighted {0})</letterLabel>
+		<letterText>{0} has been ambushed by a blighted {1}!</letterText>
+		<letterHyperlinkHediffDefs>
+			<li>Mashed_Ashlands_AshBlight</li>
+		</letterHyperlinkHediffDefs>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_MudcrabMerchantMeeting]==========-->
+	<IncidentDef>
+		<defName>Mashed_Ashlands_MudcrabMerchantMeeting</defName>
+		<label>mudcrab merchant meeting</label>
+		<workerClass>Mashed_Ashlands.IncidentWorker_MudcrabMerchantMeeting</workerClass>
+		<minRefireDays>33.3</minRefireDays>
+		<targetTags>
+			<li>Caravan</li>
+			<li>Map_TempIncident</li>
+		</targetTags>
+		<category>Misc</category>
+		<letterLabel>Mudcrab merchant meeting</letterLabel>
+		<letterText>{0} has stumbled upon a peculiar mudcrab surrounded by several empty bottles of sujamma. The mudcrab walks over to a collection of crates, several of which are filled with silver, the rest with more alcohol. It seems the mudcrab wishes to trade with you.</letterText>
+	</IncidentDef>
+</Defs>

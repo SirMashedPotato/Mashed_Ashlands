@@ -20,7 +20,7 @@ namespace Mashed_Ashlands
             {
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("FertilityGrid"), "CalculateFertilityAt"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.FertilityGrid_CalculateFertilityAt_Patch)));
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("PollutionUtility"), "StimulatedByPollution"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.PollutionUtility_StimulatedByPollution_Patch)));
-                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("PollutionUtility"), "PawnPollutionTick"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.PollutionUtility_PawnPollutionTick_Patch)));
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("PollutionUtility"), "PawnPollutionTickInterval"), postfix: new HarmonyMethod(typeof(BiotechHarmonyPatches), nameof(BiotechHarmonyPatches.PollutionUtility_PawnPollutionTickInterval_Patch)));
             }
 
             ///Preventing beehives producing honey during ash storms
@@ -30,26 +30,28 @@ namespace Mashed_Ashlands
             }
 
             ///Patching in support for SeedsPlease Lite, otherwise seeds are required to select plants, but never used when sowing them
-            if (ModsConfig.IsActive("owlchemist.seedspleaselite") || ModsConfig.IsActive("evyatar108.seedspleaseliteredux"))
-            {
-                harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
-            }
+            ///TODO may not be necessary anymore
+            //if (ModsConfig.IsActive("owlchemist.seedspleaselite") || ModsConfig.IsActive("evyatar108.seedspleaseliteredux"))
+            //{
+            //    harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
+            //}
 
             if (!ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
             {
             }
 
             ///If geological landforms is enabled, swap to version with more overhead, but with better compatability
-            if (ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
-            {
-                harmony.Patch(AccessTools.Method(typeof(PlantUtility), nameof(PlantUtility.CanEverPlantAt), new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) }), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.PlantUtility_CanEverPlantAt_Patch)));
-            }
-            else
-            {
-                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("WildPlantSpawner"), "CalculatePlantsWhichCanGrowAt"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch)));
-                ///also patch terrain, otherwise geological landforms sand/gravel replacement is used
-                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
-            }
+            ///TODO, see if necessary if geological landforms updates
+            //if (ModsConfig.IsActive("m00nl1ght.geologicallandforms"))
+            //{
+            //    harmony.Patch(AccessTools.Method(typeof(PlantUtility), nameof(PlantUtility.CanEverPlantAt), new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(bool) }), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.PlantUtility_CanEverPlantAt_Patch)));
+            //}
+            //else
+            //{
+            //    harmony.Patch(AccessTools.Method(AccessTools.TypeByName("WildPlantSpawner"), "CalculatePlantsWhichCanGrowAt"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch)));
+            //    ///also patch terrain, otherwise geological landforms sand/gravel replacement is used
+            //    harmony.Patch(AccessTools.Method(AccessTools.TypeByName("GenStep_Terrain"), "TerrainFrom"), postfix: new HarmonyMethod(typeof(ConditionalHarmonyPatches), nameof(ConditionalHarmonyPatches.GenStep_Terrain_TerrainFrom_Patch)));
+            //}
         }
     }
 
@@ -72,7 +74,7 @@ namespace Mashed_Ashlands
         /// <summary>
         /// Only used if Geological Landforms is not enabled, as that mod includes it's own sand/gravel replacement that works with biome transitions
         /// </summary>
-        public static void GenStep_Terrain_TerrainFrom_Patch(Map map, ref TerrainDef __result)
+        /*public static void GenStep_Terrain_TerrainFrom_Patch(Map map, ref TerrainDef __result)
         {
             BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props != null && !props.terrainReplacers.NullOrEmpty())
@@ -85,13 +87,13 @@ namespace Mashed_Ashlands
                     }
                 }
             }
-        }
+        }*/
         
         /// <summary>
         /// Forces wild plants to only spawn on certain terrain, or near water.
         /// Doesn't play nice on a map with a biome transition.
         /// </summary>
-        public static void WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
+        /*public static void WildPlantSpawner_CalculatePlantsWhichCanGrowAt_Patch(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
             if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.Biome))
             {
@@ -113,14 +115,14 @@ namespace Mashed_Ashlands
                 }
                 PlantsToRemove.Clear();
             }
-        }
+        }*/
 
         /// <summary>
         /// Forces wild plants to only spawn on certain terrain, or near water.
         /// Patching PlantUtility.CanEverPlantAt allows this to work with Biome Transitions.
         /// More overhead, so only used if Biome Transitions is enabled.
         /// </summary>
-        public static void PlantUtility_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
+        /*public static void PlantUtility_CanEverPlantAt_Patch(ThingDef plantDef, IntVec3 c, Map map, ref bool __result)
         {
             if (__result)
             {
@@ -155,6 +157,6 @@ namespace Mashed_Ashlands
                     __result = PlantPropsUtility.WildPlantSpawnChecker(props, map, c);
                 }
             }
-        }
+        }*/
     }
 }

@@ -6,15 +6,10 @@ namespace Mashed_Ashlands
 {
     public class Comp_SpawnerOnDamage : ThingComp
     {
-        private CompProperties_SpawnerOnDamage Props
-        {
-            get
-            {
-                return (CompProperties_SpawnerOnDamage)props;
-            }
-        }
+        private CompProperties_SpawnerOnDamage Props => (CompProperties_SpawnerOnDamage)props;
 
         private int cooldownTicksLeft = 0;
+        private const int cooldownTicks = 300;
 
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
@@ -34,16 +29,20 @@ namespace Mashed_Ashlands
         {
             Pawn pawn = PawnGenerator.GeneratePawn(Props.pawnKindDef, null);
             GenSpawn.Spawn(pawn, parent.Position, parent.Map, Rot4.Random, WipeMode.Vanish, false);
-            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
+            pawn.mindState.mentalStateHandler.TryStartMentalState(RimWorld.MentalStateDefOf.ManhunterPermanent);
         }
 
-        public override void CompTick()
+
+        public override void CompTickInterval(int delta)
         {
-            if (cooldownTicksLeft > 0)
+            if (parent.IsHashIntervalTick(cooldownTicks, delta))
             {
-                cooldownTicksLeft--;
+                if (cooldownTicksLeft > 0)
+                {
+                    cooldownTicksLeft -= delta + cooldownTicks;
+                }
             }
-            base.CompTick();
+            base.CompTickInterval(delta);
         }
 
         public override void PostExposeData()

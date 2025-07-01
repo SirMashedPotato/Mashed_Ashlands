@@ -34,7 +34,7 @@ namespace Mashed_Ashlands
 			yield return Color.Lerp(new Color(1f, 1f, 0.7f), Color.grey, 0.5f);
 			yield break;
 		}
-		private static List<Color> growingZoneAshColors = new List<Color>();
+		private static readonly List<Color> growingZoneAshColors = new List<Color>();
 		private static int nextGrowingZoneAshColorIndex = 0;
 	}
 }

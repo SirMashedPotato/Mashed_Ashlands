@@ -14,7 +14,7 @@
 				<showProductIcon>true</showProductIcon>
 				<barOffset>(0.0, 0.25)</barOffset>
 				<barScale>(1.0, 1.0)</barScale>
-				<colorCoded>false</colorCoded>
+				<colorCoded>true</colorCoded>
 				<processes>
 					<li>Mashed_Ashlands_FermentingFlin</li>
 					<li>Mashed_Ashlands_FermentingJazbayWine</li>
@@ -23,7 +23,9 @@
 					<li>Mashed_Ashlands_FermentingSujamma</li>
 				</processes>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
 		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
 	</ThingDef>
 </Defs>

@@ -22,6 +22,12 @@ namespace Mashed_Ashlands
 
             ///Settings
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_MiasmaAffectsCaravan".Translate(), ref settings.Mashed_Ashlands_MiasmaAffectsCaravan);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EarthquakeShake".Translate(), ref settings.Mashed_Ashlands_EarthquakeShake);
             listing_Standard.Gap();
 

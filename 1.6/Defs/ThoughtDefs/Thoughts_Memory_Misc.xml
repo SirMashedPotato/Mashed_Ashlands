@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_WadedThroughSludge]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_WadedThroughSludge</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>waded through sludge</label>
+				<description>I just waded through blighted sludge. I smell terrible, my boots are ruined, and I'm pretty sure there were bones in there.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

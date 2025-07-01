@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshBlight]==========-->
+	<HediffDef>
+		<defName>Mashed_Ashlands_AshBlight</defName>
+		<label>ash blight</label>
+		<description>An infectious disease caused by blighted ash. Blighted animals are driven mad, causing them to attack anything nearby. Blight is highly contagious, and will spread to attacked animals and nearby plants. While the disease can be cured, the lack of self preservation caused by it will likely result in the creatures death.</description>
+		<hediffClass>Mashed_Ashlands.Hediff_AshBlight</hediffClass>
+		<maxSeverity>1</maxSeverity>
+		<skinColorTint>(0.3, 0.1, 0.1)</skinColorTint>
+		<skinColorTintStrength>0.3</skinColorTintStrength>
+		<forceRenderTreeRecache>true</forceRenderTreeRecache>
+		<inspectString>Blighted.</inspectString>
+		<defaultLabelColor>(1.0, 0.7, 0.4)</defaultLabelColor>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_CureAshBlight]==========-->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>Mashed_Ashlands_CureAshBlight</defName>
+		<label>cure ash blight</label>
+		<description>This special medical operation cures ash blight.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<jobString>Curing ash blight.</jobString>
+		<workAmount>4500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<removesHediff>Mashed_Ashlands_AshBlight</removesHediff>
+		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s ash blight.</successfullyRemovedHediffMessage>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<!-- TODO potentially requires a special thing to cure it -->
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

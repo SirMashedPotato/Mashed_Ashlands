@@ -8,6 +8,7 @@
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<LeatherAmount>40</LeatherAmount>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1</uiIconScale>
 		<tools Inherit="False">
@@ -46,7 +47,6 @@
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
 			<baseHungerRate>0.35</baseHungerRate>
-			<gestationPeriodDays>7</gestationPeriodDays>
 			<!-- made by Yoann from yoann.babiesanimals -->
 			<ageGenerationCurve>
 				<points>
@@ -62,7 +62,6 @@
 			</ageGenerationCurve>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.60</wildness>
 			<lifeExpectancy>20</lifeExpectancy>
 			<lifeStageAges Inherit="False">
 				<li>
@@ -96,6 +95,14 @@
 		<label>netch</label>
 		<description>Large cnidarians that have adapted to life on land, commonly found in ashland regions. Netch, like their sea dwelling cousins, lack lungs, and instead breathe through the skin of their underbelly. A hard shell and toxic tentacles make then a dangerous foe when enraged. Special 'levitation' sacs, filled with lighter-than-air gas, allow them to float through the air.\n\nGenerally peaceful, netch are often farmed for their leather and jelly. However one must be careful around netch during their breeding season, as betty netch are known to become highly aggressive.</description>
 		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NetchFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_NetchUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Mashed_Ashlands_NetchJelly</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>

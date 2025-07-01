@@ -46,6 +46,7 @@
 			<IncomingDamageFactor>0.05</IncomingDamageFactor>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
+			<Wildness>1</Wildness>
 		</statBases>
 		<selectable>false</selectable>
 		<uiIconPath>Things/Pawn/Animal/Mashed_Ashlands_FetcherflySwarm/Mashed_Ashlands_FetcherflySwarmIcon</uiIconPath>
@@ -68,7 +69,6 @@
 			<li Class="CompProperties_Lifespan">
 				<lifespanTicks>1500</lifespanTicks>
 			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_Floating"/>
 		</comps>
 		<race>
 			<deathAction>
@@ -79,7 +79,6 @@
 			<baseHungerRate>0</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<lifeExpectancy>1</lifeExpectancy>
-			<wildness>1</wildness>
 			<trainability>None</trainability>
 			<useMeatFrom IsNull="True"/>
 			<hasMeat>false</hasMeat>

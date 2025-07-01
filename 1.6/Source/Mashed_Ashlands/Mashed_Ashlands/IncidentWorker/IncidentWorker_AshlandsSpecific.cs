@@ -1,5 +1,6 @@
 ﻿using Verse;
 using RimWorld;
+using RimWorld.Planet;
 
 namespace Mashed_Ashlands
 {
@@ -7,8 +8,15 @@ namespace Mashed_Ashlands
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            Map map = (Map)parms.target;
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
+            BiomeProperties props = null;
+            if (parms.target is Map map)
+            {
+                props = BiomeProperties.Get(map.Biome);
+            }
+            else if (parms.target is Caravan caravan)
+            {
+                props = BiomeProperties.Get(caravan.Tile.Tile.PrimaryBiome);
+            }
             return props != null && props.allowAshlandsIncidents && base.CanFireNowSub(parms);
         }
 

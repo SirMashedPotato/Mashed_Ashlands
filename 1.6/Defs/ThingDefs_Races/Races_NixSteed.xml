@@ -11,6 +11,7 @@
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>
@@ -53,7 +54,6 @@
 			<baseHealthScale>1.25</baseHealthScale>
 			<baseHungerRate>0.425</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.8</wildness>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>20</lifeExpectancy>
@@ -114,6 +114,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixSteedFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_NixSteedUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3.3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

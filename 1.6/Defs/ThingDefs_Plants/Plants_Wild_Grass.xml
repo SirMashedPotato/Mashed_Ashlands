@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase" Name="Mashed_Ashlands_GrassBase" Abstract="True">
 		<statBases>
 			<Nutrition>0.45</Nutrition>
-			<Flammability>1.0</Flammability>
+			<Flammability>1</Flammability>
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
@@ -18,6 +18,7 @@
 			<topWindExposure>0.4</topWindExposure>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>80</wildClusterWeight>
+			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandGrass]==========-->
@@ -27,12 +28,11 @@
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>MarshyTerrain</li>
-					<li>Mashed_Ashlands_ShallowMarsh</li>
-					<li>Mashed_Ashlands_DeepMarsh</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+					<li>Mashed_Ashlands_AshRiverbank</li>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -45,40 +45,35 @@
 			<sowWork>170</sowWork>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_CharredAshlandGrass]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandGrassBase">
-		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
-		<label>charred ashland grass</label>
-		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
-		</graphicData>
-		<plant>
-			<maxMeshCount>4</maxMeshCount>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrass]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_GrassBase">
+	<ThingDef ParentName="Mashed_Ashlands_GrassBase" Name="Mashed_Ashlands_Plant_AshlandDuneGrassBase">
 		<defName>Mashed_Ashlands_Plant_AshlandDuneGrass</defName>
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
-					<li>Mashed_Ashlands_AshSand</li>
-					<li>Mashed_Ashlands_AshSandVolcanic</li>
-				</allowedTerrainForWild>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.4</Nutrition>
+			<Flammability>0.3</Flammability>
+		</statBases>
 		<plant>
 			<sowTags Inherit="False"/>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_AshSand</li>
+			</wildTerrainTags>
 		</plant>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
 				<effecterDef>Mashed_Ashlands_TorchbugEffecter</effecterDef>
 			</li>
 		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshlandDuneGrassDark]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandDuneGrassBase">
+		<defName>Mashed_Ashlands_Plant_AshlandDuneGrassDark</defName>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrassDark</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>

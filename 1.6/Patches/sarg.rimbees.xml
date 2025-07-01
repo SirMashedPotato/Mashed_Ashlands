@@ -10,12 +10,12 @@
 					<xpath>Defs/ThingDef[@Name="RB_TreeHiveBase"]</xpath>
 					<value>
 						<li Class="Mashed_Ashlands.PlantProperties">
-							<disallowedTerrainForWild>
+							<disallowedTerrainDefsForWild>
 								<li>Mashed_Ashlands_AshSand</li>
 								<li>Mashed_Ashlands_RichAshSand</li>
-								<li>Mashed_Ashlands_ShallowMarsh</li>
-								<li>Mashed_Ashlands_DeepMarsh</li>
-							</disallowedTerrainForWild>
+								<li>Mashed_Ashlands_AshSandVolcanic</li>
+								<li>Mashed_Ashlands_RichAshSandVolcanic</li>
+							</disallowedTerrainDefsForWild>
 						</li>
 					</value>
 				</li>
@@ -23,4 +23,3 @@
 		</match>
 	</Operation>
 </Patch>
-

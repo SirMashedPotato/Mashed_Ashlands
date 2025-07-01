@@ -32,4 +32,29 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GiantAshlandFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
+		<defName>Mashed_Ashlands_GiantAshlandFungus</defName>
+		<label>ashland fungus tree</label>
+		<description>Highyl mutated ashland fungus, causing it to grow significantly larger than usual. Even at this size, the stem is still too soft to be used as a building material.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GiantAshlandFungus</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<growDays>10</growDays>
+			<visualSizeRange>1.3~2.4</visualSizeRange>
+			<harvestWork>600</harvestWork>
+			<pollution>PollutedOnly</pollution>
+			<fertilityMin>0.05</fertilityMin>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
 </Defs>

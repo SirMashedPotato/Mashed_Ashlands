@@ -2,11 +2,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_DurzogThingBase]========== -->
 	<ThingDef ParentName="AnimalThingBase" Name="Mashed_Ashlands_DurzogThingBase" Abstract="True">
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 		<statBases>
 			<ToxicResistance>0.8</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
@@ -16,6 +11,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -59,14 +55,17 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.55</wildness>
 			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<leatherDef>Mashed_Ashlands_DurzogLeather</leatherDef>
 			<lifeExpectancy>19</lifeExpectancy>
 			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<nuzzleMtbHours>100</nuzzleMtbHours>
 			<petness>0.2</petness>
+			<waterCellCost>1</waterCellCost>
 			<soundEating>PredatorLarge_Eat</soundEating>
 			<lifeStageAges>
 				<li>
@@ -105,6 +104,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_DurzogFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_DurzogUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -134,6 +134,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -147,6 +152,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -161,6 +171,11 @@
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

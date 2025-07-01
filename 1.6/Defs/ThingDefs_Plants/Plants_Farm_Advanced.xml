@@ -29,6 +29,7 @@
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->
@@ -40,9 +41,9 @@
 			<li Class="Mashed_Ashlands.PlantProperties">
 				<requireWaterForWild>true</requireWaterForWild>
 				<minTilesToWaterForWild>6</minTilesToWaterForWild>
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -80,10 +81,10 @@
 		<description>A hardy vine that can be found growing along rocky ground in the ashlands. Its low profile helps to protect against the strong winds of ash storms, allowing it to grow where other plants can't. Often farmed by those that settle the more rugged regions of the ashlands, as ashen jazbay grapes are a popular export, and can also be fermented into jazbay wine. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<disallowedTerrainForWild>
+				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
 					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainForWild>
+				</disallowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -125,9 +126,9 @@
 		<description>A grass that can sometimes be found growing in calmer ashlands regions. Considered notoriously difficult to grow, raw meadow rye can be fermented into flin, a highly sought after alcoholic drink. Can only grow on ash rich ground.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<allowedTerrainForWild>
+				<allowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSoil</li>
-				</allowedTerrainForWild>
+				</allowedTerrainDefsForWild>
 			</li>
 		</modExtensions>
 		<statBases>

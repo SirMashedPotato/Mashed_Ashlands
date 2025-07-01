@@ -9,6 +9,7 @@
 			<LeatherAmount>40</LeatherAmount>
 			<FilthRate>1</FilthRate>
 			<Flammability>0</Flammability>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1.2</uiIconScale>
 		<tools>
@@ -55,7 +56,6 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.6</wildness>
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>10</lifeExpectancy>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
@@ -104,6 +104,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_PyrantulaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_PyrantulaUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -199,6 +200,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_RachnoidFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_RachnoidUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
