@@ -1,5 +1,6 @@
 ﻿using Verse;
 using RimWorld;
+using UnityEngine;
 
 namespace Mashed_Ashlands
 {
@@ -23,7 +24,7 @@ namespace Mashed_Ashlands
         {
             if (ActiveFor(req.Thing, out _))
             {
-                val += Mashed_Ashlands_ModSettings.BaseAshResistanceValue;
+                val = Mathf.Clamp(val + Mashed_Ashlands_ModSettings.BaseAshResistanceValue, 0f, parentStat.maxValue);
             }
         }
 
