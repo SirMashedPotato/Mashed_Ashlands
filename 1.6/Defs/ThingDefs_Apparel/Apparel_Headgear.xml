@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CephalopodHelmet]==========-->
+	<ThingDef ParentName="HatBase">
+		<defName>Mashed_Ashlands_CephalopodHelmet</defName>
+		<label>cephalopod helmet</label>
+		<description>The hollowed out shell of a large Telvannis cephalopod, made into a rather peculiar helmet. While somewhat claustrophobic, it helps increase the rate at which neural heat is dissipated. The inbuilt filtration system helps to protect the wearer from toxic environments and ash storms.\n\nTypically worn by members of Great House Telvanni, as no one else would dare be caught wearing the hollowed shell of a cephalopod on their head.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Mashed_Ashlands_CephalopodHelmet/Mashed_Ashlands_CephalopodHelmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<smeltable>false</smeltable>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>1.2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+			<PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.09</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Mashed_Ashlands_CephalopodHelmet/Mashed_Ashlands_CephalopodHelmet</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRare</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

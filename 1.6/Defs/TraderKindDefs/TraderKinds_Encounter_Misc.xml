@@ -24,6 +24,14 @@
 				<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
 				<countRange>1</countRange>
 			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_CephalopodHelmet</thingDef>
+				<countRange>1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef>
+				<countRange>1</countRange>
+			</li>
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 			<li Class="Mashed_Ashlands.StockGenerator_BuyExpensive"/>
