@@ -128,7 +128,8 @@
 			<!-- Polluted aesthetic plants -->
 			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<!-- Polluted trees -->
-			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_TreeEmperorToxisol>
+			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_GiantAshlandFungus>
+			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
 			<!-- prey animals -->

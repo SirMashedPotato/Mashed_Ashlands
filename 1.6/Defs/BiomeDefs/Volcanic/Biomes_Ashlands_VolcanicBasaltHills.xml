@@ -130,6 +130,7 @@
 			<!-- Polluted resource plants -->
 			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_Plant_TramaMass>
 			<!-- Polluted trees -->
+			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantAshlandFungus>
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
 		<wildAnimals>
