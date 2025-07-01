@@ -1,24 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- 
-	<canFreeze>true</canFreeze>
-    <waterBodyType>Freshwater</waterBodyType>
-	<waterBodyType>Saltwater</waterBodyType>
-    <floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">ShallowFloodwater</floodTerrain>
-	<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain>
-	<affordances>
-		<li>WaterproofConduitable</li>
-		<li>Walkable</li>
-    </affordances>
-
-	used for plant spawning
-	<tags>
-		<li>Ocean</li>
-		<li>WaterFreshShallow</li>
-		<li>WaterFreshShallowStill</li>
-		<li>WaterMarshy</li>
-    </tags>
-	-->
 	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
 	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_BlightedSludgeBase">
 		<defName>Mashed_Ashlands_BlightedSludge</defName>
