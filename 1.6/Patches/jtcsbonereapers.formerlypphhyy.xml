@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>pphhyy BoneReapers</li>
+			<li>BoneReapers ReMarrowed</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>

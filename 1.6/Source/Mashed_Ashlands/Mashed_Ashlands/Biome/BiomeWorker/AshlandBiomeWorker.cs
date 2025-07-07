@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
 
         public override bool CanPlaceOnLayer(BiomeDef biome, PlanetLayer layer)
         {
-            return layer.Def == PlanetLayerDefOf.Surface;
+            return layer.Def == RimWorld.PlanetLayerDefOf.Surface; //todo maybe?
         }
 
         public abstract float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null);

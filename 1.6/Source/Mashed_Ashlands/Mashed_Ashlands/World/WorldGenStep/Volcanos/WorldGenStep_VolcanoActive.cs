@@ -7,6 +7,12 @@ namespace Mashed_Ashlands
     {
         public override int SeedPart => 238931215;
 
+        public static void DebugGenerate(string seed, PlanetLayer layer)
+        {
+            WorldGenStep_VolcanoActive instance = new WorldGenStep_VolcanoActive();
+            instance.GenerateFresh(seed, layer);
+        }
+
         public override void GenerateFresh(string seed, PlanetLayer layer)
         {
             if (Mashed_Ashlands_ModSettings.EnableActiveVolcano)

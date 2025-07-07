@@ -36,6 +36,20 @@ namespace Mashed_Ashlands
 
         [DebugAction(
             category = Category,
+            name = "Generate volcanos naturally",
+            allowedGameStates = AllowedGameStates.PlayingOnWorld,
+            actionType = DebugActionType.Action
+            )]
+        private static void GenerateVolcanos()
+        {
+            WorldGenStep_VolcanoActive.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
+            WorldGenStep_VolcanoBlighted.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
+            WorldGenStep_VolcanoDormant.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
+            WorldGenStep_VolcanoExtinct.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
+        }
+
+        [DebugAction(
+            category = Category,
             name = "Generate primary Ashland biomes",
             allowedGameStates = AllowedGameStates.PlayingOnWorld,
             actionType = DebugActionType.Action
