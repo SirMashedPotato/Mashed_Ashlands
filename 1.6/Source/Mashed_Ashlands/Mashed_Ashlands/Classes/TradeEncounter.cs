@@ -3,7 +3,7 @@ using RimWorld.Planet;
 using System.Collections.Generic;
 using Verse;
 
-namespace Mashed_Ashlands.Classes
+namespace Mashed_Ashlands
 {
     internal class TradeEncounter : ITrader, IThingHolder
     {
