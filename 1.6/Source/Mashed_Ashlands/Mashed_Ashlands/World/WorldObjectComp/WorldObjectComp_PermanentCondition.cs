@@ -1,7 +1,6 @@
 ﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -19,8 +18,12 @@ namespace Mashed_Ashlands
             {
                 if (Mashed_Ashlands_ModSettings.VolcanoEnablePermanentConditions)
                 {
-                    foreach (Map map in Find.Maps.Where(x => !x.IsPocketMap && PreventVolcanicConditions.Get(x.Biome) == null))
+                    foreach (Map map in Find.Maps)
                     {
+                        if (map.IsPocketMap || PreventVolcanicConditions.Get(map.Biome) != null)
+                        {
+                            continue;
+                        }
                         if (ParentVolcano.InAoE(map.Tile, ParentVolcano.Category))
                         {
                             EnforceConditionOn(ref causedConditions, map, Props.volcanicConditionDef.conditionDef, Props.preventConditionStacking);
