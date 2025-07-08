@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueUnfertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_SandcrabBlueUnfertilized</defName>
+		<label>blue sandcrab egg (unfert.)</label>
+		<description>An unfertilised blue sandcrab egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(109,109,121)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

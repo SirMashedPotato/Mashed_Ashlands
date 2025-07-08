@@ -251,7 +251,7 @@
 			<MarketValue>10</MarketValue>
 		</statBases>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
+	<!-- ==========[Mashed_Ashlands_Egg_ScuttlerUnfertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_ScuttlerUnfertilized</defName>
 		<label>scuttler egg (unfert.)</label>

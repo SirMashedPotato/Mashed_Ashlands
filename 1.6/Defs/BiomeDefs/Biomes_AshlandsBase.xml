@@ -103,6 +103,7 @@
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 		</pollutionWildAnimals>
 		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabBlue MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mashed_Ashlands_SandcrabBlue>
 			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
 			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
 		</coastalWildAnimals>
