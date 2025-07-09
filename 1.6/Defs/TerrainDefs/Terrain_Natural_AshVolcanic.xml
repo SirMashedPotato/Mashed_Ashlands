@@ -114,4 +114,11 @@
 		<description>Packed volcanic ash, making it comparatively less arduous to trek across.</description>
 		<terrainAffordanceNeeded>Mashed_Ashlands_PackableAshVolcanic</terrainAffordanceNeeded>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_AshMudVolcanic]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
+		<defName>Mashed_Ashlands_AshMudVolcanic</defName>
+		<label>waterlogged volcanic ash</label>
+		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshMudVolcanic</texturePath>
+		<driesTo>Mashed_Ashlands_RichAshSoilVolcanic</driesTo>
+	</TerrainDef>
 </Defs>
