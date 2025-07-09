@@ -175,6 +175,7 @@
 				<li>thing_subject->distil greef</li>
 				<li>thing_subject->refine muck</li>
 				<li>thing_subject->brew shein</li>
+				<li>thing_subject->create blight curative</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>

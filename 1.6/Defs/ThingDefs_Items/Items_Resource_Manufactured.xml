@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightCure]==========-->
+	<ThingDef ParentName="MedicineBase">
+		<defName>Mashed_Ashlands_BlightCure</defName>
+		<label>blight curative</label>
+		<description>A mixture made from scrib jelly and raw muck, capable of curing ash blight. While the curative is relatively simple to make, administering it to blighted beasts can be quite an ordeal</description>
+		<descriptionHyperlinks>
+			<hediffDef>Mashed_Ashlands_AshBlight</hediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>3</possessionCount>
+		<uiIconForStackCount IsNull="true"/>
+		<graphicData>
+			<texPath>Things/Item/Resource/Medicine/Mashed_Ashlands_BlightCure</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<Mass>0.5</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>600</WorkToMake>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_ScribJelly>3</Mashed_Ashlands_ScribJelly>
+			<Mashed_Ashlands_RawMuck>6</Mashed_Ashlands_RawMuck>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_AlchemyBench</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_AlchemicalWorkbench</li>
+				<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_AlchemicalWorkbench_Electric</li>
+			</recipeUsers>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+</Defs>

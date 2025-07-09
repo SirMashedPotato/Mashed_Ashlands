@@ -4,7 +4,10 @@
 	<HediffDef>
 		<defName>Mashed_Ashlands_AshBlight</defName>
 		<label>ash blight</label>
-		<description>An infectious disease caused by blighted ash. Blighted animals are driven mad, causing them to attack anything nearby. Blight is highly contagious, and will spread to attacked animals and nearby plants. While the disease can be cured, the lack of self preservation caused by it will likely result in the creatures death.</description>
+		<description>An infectious disease caused by blighted ash. Blighted animals are driven mad, causing them to attack anything nearby. Blight is highly contagious, and will spread to attacked animals and nearby plants. While the disease can be cured by administering a special curative, the lack of self preservation caused by it will likely result in the creatures death.</description>
+		<descriptionHyperlinks>
+			<thingDef>Mashed_Ashlands_BlightCure</thingDef>
+		</descriptionHyperlinks>
 		<hediffClass>Mashed_Ashlands.Hediff_AshBlight</hediffClass>
 		<maxSeverity>1</maxSeverity>
 		<skinColorTint>(0.3, 0.1, 0.1)</skinColorTint>
@@ -44,23 +47,19 @@
 		<targetsBodyPart>false</targetsBodyPart>
 		<removesHediff>Mashed_Ashlands_AshBlight</removesHediff>
 		<successfullyRemovedHediffMessage>{0} has successfully cured {1}'s ash blight.</successfullyRemovedHediffMessage>
-		<skillRequirements>
-			<Medicine>8</Medicine>
-		</skillRequirements>
-		<!-- TODO potentially requires a special thing to cure it -->
 		<ingredients>
 			<li>
 				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
+					<thingDefs>
+						<li>Mashed_Ashlands_BlightCure</li>
+					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
-				<li>Medicine</li>
+				<li>Mashed_Ashlands_BlightCure</li>
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
