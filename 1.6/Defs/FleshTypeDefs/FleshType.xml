@@ -62,4 +62,35 @@
 			</li>
 		</bandagedWounds>
 	</FleshTypeDef>
+	<!-- ==========[Mashed_Ashlands_FleshCrabBlue]==========-->
+	<FleshTypeDef>
+		<defName>Mashed_Ashlands_FleshCrabBlue</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<isOrganic>true</isOrganic>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundA</texture>
+				<color>0.5,0.5,0.63</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundB</texture>
+				<color>0.5,0.5,0.63</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundC</texture>
+				<color>0.5,0.5,0.63</color>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+	</FleshTypeDef>
 </Defs>

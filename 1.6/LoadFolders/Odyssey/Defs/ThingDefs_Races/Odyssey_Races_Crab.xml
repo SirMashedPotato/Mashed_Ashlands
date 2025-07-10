@@ -79,4 +79,81 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+		<!-- ==========[Mashed_Ashlands_Shieldcrab]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_CrabThingBase">
+		<defName>Mashed_Ashlands_Shieldcrab</defName>
+		<label>shieldcrab</label>
+		<description>Members of an ancient lineage of chelicerates, closely related to the relatively more common horseshoe crab, shieldcrabs are only found along the coasts of ashlands regions. Named after the hard shield-like shell covering their body, some local tribes have been known to create shields in their semblance.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_ShieldcrabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_ShieldcrabUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<fleshType>Mashed_Ashlands_FleshCrabBlue</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_CrabBloodBlue</bloodDef>
+			<herdAnimal>true</herdAnimal>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Shieldcrab</defName>
+		<label>shieldcrab</label>
+		<race>Mashed_Ashlands_Shieldcrab</race>
+		<combatPower>20</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Shieldcrab</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Shieldcrab</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Shieldcrab</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>
