@@ -100,7 +100,7 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/LoadFolders/Anomaly</li>
 		<!-- Odyssey -->
 		<li IfModActive="Ludeon.RimWorld.Odyssey">LoadFolders/FishTextures</li>
-		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/LoadFolders/OdysseyTextures</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">LoadFolders/OdysseyTextures</li>
 		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/LoadFolders/Odyssey</li>
 		<!-- VE_Framework -->
 		<li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/LoadFolders/VE_Framework</li>
