@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[BaseLakeMut]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Pond]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Wetland]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[HotSprings]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Plateau]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Plateau"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Cliffs]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Cliffs"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Basin]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[TerraformingScar]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="TerraformingScar"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[BaseCoastMut]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseCoastMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[CoastalAtoll]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="CoastalAtoll"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[BaseLavaLakeMut]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseLavaLakeMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[LavaFlow]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="LavaFlow"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Marshy]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Marshy"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[MixedBiome]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="MixedBiome"]/biomeWhitelist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>

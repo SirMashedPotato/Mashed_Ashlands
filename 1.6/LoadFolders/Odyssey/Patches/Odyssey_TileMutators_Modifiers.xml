@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[PlantLife_Increased]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="PlantLife_Increased"]/biomeBlacklist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[PlantGrove]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[WildPlants]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[FoggyMutator]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="FoggyMutator"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[SunnyMutator]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="SunnyMutator"]/biomeBlacklist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[WetClimate]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WetClimate"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[WindyMutator]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WindyMutator"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[Fish_Increased]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Fish_Increased"]/biomeBlacklist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[DryGround]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="DryGround"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[ObsidianDeposits]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="ObsidianDeposits"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>

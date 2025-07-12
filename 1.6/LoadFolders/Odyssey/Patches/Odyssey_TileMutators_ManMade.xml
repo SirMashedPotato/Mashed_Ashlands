@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[BaseAncientVentMut]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseAncientVentMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[AncientHeatVent]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="AncientHeatVent"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>
