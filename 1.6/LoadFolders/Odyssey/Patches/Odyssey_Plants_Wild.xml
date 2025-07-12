@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="AlphaThrumbo" or defName="LavaSnail"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_MagmaCactus"]/statBases</xpath>
 		<value>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</value>
