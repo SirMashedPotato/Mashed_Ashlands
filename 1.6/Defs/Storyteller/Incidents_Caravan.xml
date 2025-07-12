@@ -29,6 +29,6 @@
 		</targetTags>
 		<category>Misc</category>
 		<letterLabel>Mudcrab merchant meeting</letterLabel>
-		<letterText>{0} has stumbled upon a peculiar mudcrab surrounded by several empty bottles of sujamma. The mudcrab walks over to a collection of crates, several of which are filled with silver, the rest with more alcohol. It seems the mudcrab wishes to trade with you.</letterText>
+		<letterText>{0} has stumbled upon a peculiar mudcrab surrounded by several empty bottles of sujamma. The mudcrab scuttles over to a collection of crates, several of which are filled with silver, the rest with more alcohol. It seems the mudcrab wishes to trade with you.</letterText>
 	</IncidentDef>
 </Defs>
