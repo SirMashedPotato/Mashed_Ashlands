@@ -79,6 +79,7 @@
 			<Mashed_Ashlands_Plant_ScorchedBush>0.5</Mashed_Ashlands_Plant_ScorchedBush>
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.05</Mashed_Ashlands_Plant_FoyadaFungus>
 			<Mashed_Ashlands_Plant_LavaCactus>0.3</Mashed_Ashlands_Plant_LavaCactus>
+			<Plant_MagmaCactus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_MagmaCactus>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.05</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.01</Mashed_Ashlands_Plant_TreeEmperorParasol>
