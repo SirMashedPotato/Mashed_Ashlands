@@ -35,6 +35,10 @@
 		<animalDensity>3</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawHackleLo</foragedFood>
+		<baseWeatherCommonalities>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">4</Windy>
+		</baseWeatherCommonalities>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>

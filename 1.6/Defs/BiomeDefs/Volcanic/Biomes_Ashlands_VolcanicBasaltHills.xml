@@ -32,6 +32,9 @@
 		<forageability>0.25</forageability>
 		<animalDensity>0.6</animalDensity>
 		<plantDensity>0.2</plantDensity>
+		<baseWeatherCommonalities>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">2</Windy>
+		</baseWeatherCommonalities>
 		<!-- World generation -->
 		<forceRockTypes>
 			<li>Mashed_Ashlands_Basalt</li>

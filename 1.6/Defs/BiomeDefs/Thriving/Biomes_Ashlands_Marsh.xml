@@ -34,6 +34,10 @@
 		<plantDensity>0.65</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawSaltrice</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<baseWeatherCommonalities>
+			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_AshMud</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_AshMud</lakeBeachTerrain>
