@@ -24,4 +24,28 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_NotAshlandMutatorBase]==========-->
+	<TileMutatorDef Name="Mashed_Ashlands_NotAshlandMutatorBase" Abstract="True">
+		<biomeBlacklist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeBlacklist>
+	</TileMutatorDef>
 </Defs>
