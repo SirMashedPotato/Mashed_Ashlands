@@ -51,6 +51,7 @@
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
 		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain> <!-- todo -->
+		<traversedThought>Mashed_Ashlands_SulphuricWater</traversedThought>
 		<meltSnowRadius>3</meltSnowRadius>
 		<heatPerTick>0.003</heatPerTick>
 		<throwFleckChance>0.3</throwFleckChance>
