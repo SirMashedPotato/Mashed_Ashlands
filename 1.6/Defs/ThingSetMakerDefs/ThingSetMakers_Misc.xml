@@ -68,7 +68,7 @@
 			<options>
 				<!-- basalt chunk -->
 				<li>
-					<weight>1.5</weight>
+					<weight>1</weight>
 					<thingSetMaker Class="ThingSetMaker_StackCount">
 						<fixedParams>
 							<filter>
@@ -120,6 +120,7 @@
 								<thingDefs>
 									<li>Mashed_Ashlands_VolcanicEbony</li>
 									<li>Mashed_Ashlands_VolcanicGlass</li>
+									<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
 								</thingDefs>
 							</filter>
 							<countRange>10~25</countRange>
