@@ -10,8 +10,6 @@
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
 		<comps Inherit="False">
 			<li Class="CompProperties_Glower">

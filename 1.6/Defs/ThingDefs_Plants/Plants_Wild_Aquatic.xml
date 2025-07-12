@@ -32,6 +32,7 @@
 			<wildTerrainTags>
 				<li>WaterMarshy</li>
 			</wildTerrainTags>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
 		<comps>
@@ -75,6 +76,7 @@
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_WaterMarsh</li>
 			</wildTerrainTags>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
 		<comps>
@@ -101,6 +103,7 @@
 			<wildTerrainTags>
 				<li>WaterMarshy</li>
 			</wildTerrainTags>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 		</plant>
 		<comps>
