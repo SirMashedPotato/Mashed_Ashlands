@@ -59,7 +59,6 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
@@ -85,7 +84,6 @@
 			</li>
 			<li>
 				<perlinFrequency>0.035</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_AshSoil</terrain>

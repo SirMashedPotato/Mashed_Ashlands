@@ -29,10 +29,6 @@
 		</modExtensions>
 		<animalDensity>1.2</animalDensity>
 		<plantDensity>0.4</plantDensity>
-		<!-- Terrain overrides -->
-		<lakeBeachTerrain>Mashed_Ashlands_SulphuricSand</lakeBeachTerrain>
-		<waterShallowTerrain>Mashed_Ashlands_ShallowSulphuricWater</waterShallowTerrain>
-		<waterDeepTerrain>Mashed_Ashlands_DeepSulphuricWater</waterDeepTerrain>
 		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
@@ -54,7 +50,6 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
@@ -75,7 +70,6 @@
 			</li>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
