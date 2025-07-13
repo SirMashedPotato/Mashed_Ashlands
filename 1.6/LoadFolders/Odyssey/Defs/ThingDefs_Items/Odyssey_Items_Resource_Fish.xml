@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FishBase]==========-->
+	<ThingDef ParentName="FishBase" Name="Mashed_Ashlands_FishBase" Abstract="true">
+		<!-- Not actually purchasable from traders, would need to override <tradeability> -->
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsRawFish</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_SmallSlaughterfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_SmallSlaughterfish</defName>
+		<label>small slaughterfish</label>
+		<description>A comparatively smaller breed of slaughterfish, though just as dangerous in numbers. Usually found infesting waterways in ashland regions.\n\nSome choose to keep these fish as pets, due to their iridescent colouration. Those that do are often surprised when their fish tank is bright red, and full of little bits of bone.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSmallSlaughterfish</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Slaughterfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Slaughterfish</defName>
+		<label>ashland slaughterfish</label>
+		<description>There are many known breeds of slaughterfish, this particular one can often be found infesting waterways in ashland regions.\n\nAshland slaughterfish are voracious predators, and are often called the cliff racers of the water. An infestation will often result in the total collapse of the aquatic ecosystem.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>
