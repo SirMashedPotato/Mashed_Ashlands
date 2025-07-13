@@ -26,6 +26,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFoyadaHopper</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_Gourami]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -75,6 +80,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMarshAngler</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_Mouthbrooder]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -84,6 +94,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_NetchHookEel]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -111,6 +126,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawOldManGar</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_RainbowZander]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -121,7 +141,7 @@
 			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawRainbowZander</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>25</MarketValue>
+			<MarketValue>20</MarketValue>
 		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_Ricefish]==========-->
@@ -141,6 +161,9 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawShalkBrotherCrayfish</texPath>
 		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_Siltfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">

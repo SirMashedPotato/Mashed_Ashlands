@@ -22,7 +22,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
 		<defName>Mashed_Ashlands_Fish_Crabeater</defName>
 		<label>crabeater</label>
-		<description>A primitive and heavily armoured fish, the jaws of the crabeater are designed specifically for crushing shell. Quite common in the oceanic waters near ashlands, due  to the abundance of crabs that can be found there.</description>
+		<description>A primitive and heavily armoured fish, the jaws of the crabeater are designed specifically for crushing shell. Quite common in the oceanic waters near ashlands, due to the abundance of crabs that can be found there.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater</texPath>
 		</graphicData>
@@ -57,6 +57,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMonkfish</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_MustardEel]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -97,6 +102,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawResdaynianSailfin</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_SleeperCoffinfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -128,6 +138,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_WeepingPygmyShark]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
