@@ -134,7 +134,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
 		<defName>Mashed_Ashlands_Fish_Trevally</defName>
 		<label>trevally</label>
-		<description>Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large Telvannis cephalopod populations.</description>
+		<description>Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large cephalopod populations.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally</texPath>
 		</graphicData>
