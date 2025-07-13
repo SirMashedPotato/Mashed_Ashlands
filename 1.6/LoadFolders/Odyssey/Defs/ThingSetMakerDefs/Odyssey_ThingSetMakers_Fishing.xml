@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RareFishingCatches_Ashland]==========-->
+	<ThingSetMakerDef ParentName="RareFishingCatchesBase" Name="Mashed_Ashlands_RareFishingCatches_AshlandBase">
+		<defName>Mashed_Ashlands_RareFishingCatches_Ashland</defName>
+		<root Class="ThingSetMaker_RandomOption">
+			<options>
+				<!-- Animal corpses -->
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_Pawn">
+						<pawnKind>Mashed_Ashlands_KwamaForager</pawnKind>
+						<alive>false</alive>
+						<corpseAgeRangeDays>5~10</corpseAgeRangeDays>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_Pawn">
+						<pawnKind>Mashed_Ashlands_KwamaScrib</pawnKind>
+						<alive>false</alive>
+						<corpseAgeRangeDays>5~10</corpseAgeRangeDays>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_Pawn">
+						<pawnKind>Mashed_Ashlands_Shalk</pawnKind>
+						<alive>false</alive>
+						<corpseAgeRangeDays>5~10</corpseAgeRangeDays>
+					</thingSetMaker>
+				</li>
+				<!-- Apparel -->
+				<li>
+					<weight>6</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<qualityGenerator>Reward</qualityGenerator>
+							<filter>
+								<thingDefs>
+									<li>Apparel_BasicShirt</li>
+									<li>Apparel_Pants</li>
+								</thingDefs>
+							</filter>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- Drugs -->
+				<li>
+					<weight>6</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_AlcoholDagothBrandy</li>
+									<li>Mashed_Ashlands_AlcoholFlin</li>
+									<li>Mashed_Ashlands_AlcoholGreef</li>
+									<li>Mashed_Ashlands_AlcoholJazbayWine</li>
+									<li>Mashed_Ashlands_AlcoholMazte</li>
+									<li>Mashed_Ashlands_AlcoholShein</li>
+									<li>Mashed_Ashlands_AlcoholSujamma</li>
+									<li>Mashed_Ashlands_BugMusk</li>
+									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma</li>
+									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma_DoubleDistilled</li>
+									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma_Spoiled</li>
+									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skoomax</li>
+								</thingDefs>
+							</filter>
+							<countRange>5~15</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- Eggs -->
+				<li>
+					<weight>5</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_Egg_CliffRacerFertilized</li>
+									<li>Mashed_Ashlands_Egg_MudcrabFertilized</li>
+									<li>Mashed_Ashlands_Egg_NetchFertilized</li>
+									<li>Mashed_Ashlands_Egg_SandcrabBlueFertilized</li>
+									<li>Mashed_Ashlands_Egg_ShieldcrabFertilized</li>
+								</thingDefs>
+							</filter>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- Misc rare -->
+				<li>
+					<weight>1</weight>
+					<thingSetMaker Class="ThingSetMaker_Count">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_CephalopodHelmet</li>
+									<li>Mashed_Ashlands_ClockworkFish</li>
+								</thingDefs>
+							</filter>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

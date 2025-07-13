@@ -33,6 +33,19 @@
 		<animalDensity>3.5</animalDensity>
 		<plantDensity>1</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMeadowRye</foragedFood>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_Ide MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Ide>
+				<Mashed_Ashlands_Fish_MagmaSalmon MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_MagmaSalmon>
+				<Mashed_Ashlands_Fish_NetchHookEel MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_NetchHookEel>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_OldManGar MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_OldManGar>
+				<Mashed_Ashlands_Fish_ToadstoolTilapia MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ToadstoolTilapia>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshGravel</terrain>

@@ -61,6 +61,18 @@
 		<soundsAmbient>
 			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Slaughterfish>
+			</freshwater_Common>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Slaughterfish>
+			</saltwater_Common>
+			<rareCatchesSetMaker MayRequire="ludeon.rimworld.odyssey">Mashed_Ashlands_RareFishingCatches_Ashland</rareCatchesSetMaker>
+		</fishTypes>
 		<!-- Weather -->
 		<baseWeatherCommonalities>
 			<!-- Vanilla Weather -->
@@ -129,6 +141,17 @@
 		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
 		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_Crabeater MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Crabeater>
+				<Mashed_Ashlands_Fish_WeepingPygmyShark MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_WeepingPygmyShark>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_GhostOctopus MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_GhostOctopus>
+				<Mashed_Ashlands_Fish_ResdaynianSailfin MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ResdaynianSailfin>
+			</saltwater_Uncommon>
+		</fishTypes>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
@@ -144,6 +167,17 @@
 		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
 		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_MustardEel MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_MustardEel>
+				<Mashed_Ashlands_Fish_TelvannisCephalopod MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_TelvannisCephalopod>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_Monkfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Monkfish>
+				<Mashed_Ashlands_Fish_Pikeblenny MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Pikeblenny>
+			</saltwater_Uncommon>
+		</fishTypes>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
@@ -174,6 +208,18 @@
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_Siltfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Siltfish>
+			</freshwater_Uncommon>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_FiremouthGuiyu MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_FiremouthGuiyu>
+				<Mashed_Ashlands_Fish_Oanna MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Oanna>
+				<Mashed_Ashlands_Fish_SleeperCoffinfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SleeperCoffinfish>
+			</saltwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
 		<baseWeatherCommonalities Inherit="False">
 			<!-- Vanilla Weather -->
 			<Clear>18</Clear>
@@ -207,6 +253,17 @@
 		<mudTerrain>Mashed_Ashlands_AshMudVolcanic</mudTerrain>
 		<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_AkaviriWrasse MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AkaviriWrasse>
+				<Mashed_Ashlands_Fish_Armourhead MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Armourhead>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_FiremouthGuiyu MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_FiremouthGuiyu>
+				<Mashed_Ashlands_Fish_Trevally MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Trevally>
+			</saltwater_Uncommon>
+		</fishTypes>
 		<!-- Map generation -->
 		<geyserCountFactor>2</geyserCountFactor>
 		<!-- Misc -->
@@ -216,6 +273,7 @@
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
+		<!-- Weather -->
 		<baseWeatherCommonalities Inherit="False">
 			<!-- Vanilla Weather -->
 			<Clear>18</Clear>

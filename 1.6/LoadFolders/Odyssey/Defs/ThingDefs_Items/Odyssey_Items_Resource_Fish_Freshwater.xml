@@ -71,6 +71,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMagmaSalmon</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_MarshAngler]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -122,7 +127,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
 		<defName>Mashed_Ashlands_Fish_OldManGar</defName>
 		<label>old man gar</label>
-		<description>A rare species of gar, rarely found in fresh waters in ashland regions.</description>
+		<description>A rare species of gar, rarely found in fresh waters in ashland regions. Named after the fact that every aged fisherman has a tale involving a giant gar.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawOldManGar</texPath>
 		</graphicData>
@@ -182,6 +187,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawScumCarp</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>20</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_Tench]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -191,6 +201,11 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTench</texPath>
 		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Fish_ThornyCatfish]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FishBase">
@@ -209,5 +224,8 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawToadstoolTilapia</texPath>
 		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

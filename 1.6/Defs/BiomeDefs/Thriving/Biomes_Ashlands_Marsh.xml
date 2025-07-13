@@ -34,6 +34,18 @@
 		<plantDensity>0.65</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawSaltrice</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+				<Mashed_Ashlands_Fish_Ricefish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Ricefish>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_ShalkBrotherCrayfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ShalkBrotherCrayfish>
+				<Mashed_Ashlands_Fish_Tench MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Tench>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
 		<baseWeatherCommonalities>
 			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
 			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>

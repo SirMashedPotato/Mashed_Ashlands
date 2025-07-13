@@ -35,6 +35,18 @@
 		<animalDensity>3</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawHackleLo</foragedFood>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_Ide MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Ide>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_ToadstoolTilapia MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ToadstoolTilapia>
+				<Mashed_Ashlands_Fish_RainbowZander MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_RainbowZander>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
 		<baseWeatherCommonalities>
 			<Windy MayRequire="Ludeon.RimWorld.Odyssey">4</Windy>
 		</baseWeatherCommonalities>

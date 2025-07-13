@@ -32,6 +32,15 @@
 		<forageability>0.25</forageability>
 		<animalDensity>0.4</animalDensity>
 		<plantDensity>0.08</plantDensity>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_AshBlindfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AshBlindfish>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_Siltfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Siltfish>
+			</freshwater_Uncommon>
+		</fishTypes>
 		<!-- Terrain overrides -->
 		<riverbankTerrain>Mashed_Ashlands_RichAshSandVolcanic</riverbankTerrain>
 		<!-- Terrain -->

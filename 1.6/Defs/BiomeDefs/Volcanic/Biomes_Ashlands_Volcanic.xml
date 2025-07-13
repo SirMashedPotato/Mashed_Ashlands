@@ -32,6 +32,18 @@
 		</modExtensions>
 		<animalDensity>1</animalDensity>
 		<plantDensity>0.2</plantDensity>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_AshBlindfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AshBlindfish>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_ScumCarp MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ScumCarp>
+				<Mashed_Ashlands_Fish_FoyadaHopper MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_FoyadaHopper>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshGravelVolcanic</terrain>

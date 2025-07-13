@@ -38,6 +38,19 @@
 		<settlementSelectionWeight>1</settlementSelectionWeight>
 		<forageability>1</forageability>
 		<foragedFood>Mashed_Ashlands_RawAshFungus</foragedFood>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_CutthroatTrout MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_CutthroatTrout>
+				<Mashed_Ashlands_Fish_NetchHookEel MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_NetchHookEel>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_Gourami MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Gourami>
+				<Mashed_Ashlands_Fish_Mouthbrooder MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Mouthbrooder>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoil</terrain>
