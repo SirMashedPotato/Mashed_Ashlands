@@ -186,6 +186,52 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MineableEbony]==========-->
+	<ThingDef ParentName="RockBase">
+		<defName>Mashed_Ashlands_MineableEbony</defName>
+		<label>volcanic ebony</label>
+		<description>A deposit of volcanic ebony. It can be mined for ebony glass.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(56,43,41)</color>
+			<colorTwo>(90,72,92)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Mashed_Ashlands_VolcanicEbony</mineableThing>
+			<mineableYield>30</mineableYield>
+			<veinMineable>true</veinMineable>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
+		</building>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MineableGlass]==========-->
+	<ThingDef ParentName="RockBase">
+		<defName>Mashed_Ashlands_MineableGlass</defName>
+		<label>volcanic malachite</label>
+		<description>A deposit of volcanic malachite. It can be mined for malachite glass.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(56,43,41)</color>
+			<colorTwo>(127,206,105)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>Mashed_Ashlands_VolcanicGlass</mineableThing>
+			<mineableYield>30</mineableYield>
+			<veinMineable>true</veinMineable>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
+		</building>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_StriderShell]==========-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_StriderShell</defName>

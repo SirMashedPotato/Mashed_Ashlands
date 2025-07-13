@@ -26,6 +26,14 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
 	</Operation>
+	<!-- ==========[MineralRich]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="MineralRich"]/resourceBlacklist</xpath>
+		<value>
+			<li>Mashed_Ashlands_MineableEbony</li>
+			<li>Mashed_Ashlands_MineableGlass</li>
+		</value>
+	</Operation>
 	<!-- ==========[FoggyMutator]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="FoggyMutator"]/biomeWhitelist</xpath>
