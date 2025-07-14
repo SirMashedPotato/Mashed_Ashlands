@@ -82,7 +82,7 @@
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
-	<!-- ==========[Mashed_Ashlands_SulphuricAtmosphere]==========-->
+	<!-- ==========[Mashed_Ashlands_SulphuricAtmosphereMutator]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_SulphuricAtmosphereMutator</defName>
 		<label>sulphuric atmosphere</label>
@@ -108,7 +108,7 @@
 		<defName>Mashed_Ashlands_EbonyDeposits</defName>
 		<label>volcanic ebony deposits</label>
 		<description>This area has deposits of volcanic ebony, which can be mined for ebony glass.</description>
-		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_EbonyDeposits</workerClass>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_GlassDeposits]==========-->
@@ -116,7 +116,7 @@
 		<defName>Mashed_Ashlands_GlassDeposits</defName>
 		<label>volcanic malachite deposits</label>
 		<description>This area has deposits of volcanic malachite, which can be mined for malachite glass.</description>
-		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_GlassDeposits</workerClass>
 	</TileMutatorDef>
 </Defs>

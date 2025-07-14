@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NamerLandmarkSulphuricSprings]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmarkSulphuricSprings</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s scathes</li>
+				<li>terrain_word(p=2)->sulphuric spring</li>
+				<li>terrain_word(p=2)->sulphuric springs</li>
+				<li>terrain_word->scathe</li>
+				<li>terrain_word->scathes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

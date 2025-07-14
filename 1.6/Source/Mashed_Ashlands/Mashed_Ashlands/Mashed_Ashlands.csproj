@@ -111,6 +111,7 @@
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="DefOf\TerrainDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
     <Compile Include="DefOf\TraderKindDefOf.cs" />
@@ -212,6 +213,10 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricSprings.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_EbonyDeposits.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_GlassDeposits.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricCaves.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
@@ -252,8 +257,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TileMutatorWorker\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

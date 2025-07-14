@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Caves]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="Valley"
+			or defName="Chasm"
+			or defName="Plateau"
+			or defName="Cliffs"
+			or defName="Hollow"
+			or defName="Basin"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
+		</value>
+	</Operation>
+	<!-- ==========[Lava]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[@Name="BaseLavaLake" 
+			or defName="LavaFlow"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_EbonyDeposits>0.1</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.1</Mashed_Ashlands_GlassDeposits>
+		</value>
+	</Operation>
+</Patch>
