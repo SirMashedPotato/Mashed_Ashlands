@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Dusttide]==========-->
+	 <LandmarkDef>
+		<defName>Mashed_Ashlands_Dusttide</defName>
+		<label>dusttide</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_Dusttide</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmarkDusttide</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_DustAntHives_Increased Required="True"/>
+			<Mashed_Ashlands_DusttideMutator Required="True"/>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<MineralRich>0.05</MineralRich>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_StriderGraveyard</defName>
+		<label>strider graveyard</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_StriderGraveyard</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.15</commonality>
+		<drawAboveRoads>true</drawAboveRoads>
+		<nameMaker>Mashed_Ashlands_NamerLandmarkStriderGraveyard</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_StriderShells_Increased Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<DryGround>0.05</DryGround>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.05</Pollution_Increased>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_SulphuricSprings</defName>

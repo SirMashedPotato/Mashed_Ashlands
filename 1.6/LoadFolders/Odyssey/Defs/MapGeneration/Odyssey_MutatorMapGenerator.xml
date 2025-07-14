@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
+	<GenStepDef ParentName="Mashed_Ashlands_DustAntHivesBase">
+		<defName>Mashed_Ashlands_DustAntHives_Increased</defName>
+		<genStep Class="GenStep_ScatterThings">
+			<minSpacing>15</minSpacing>
+			<countPer10kCellsRange>0.6~3</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHives_Increased]==========-->
+	<GenStepDef ParentName="Mashed_Ashlands_FetcherflyHivesBase">
+		<defName>Mashed_Ashlands_FetcherflyHives_Increased</defName>
+		<genStep Class="GenStep_ScatterThings">
+			<minSpacing>15</minSpacing>
+			<countPer10kCellsRange>0.25~0.75</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_StriderShells_Increased]==========-->
+	<GenStepDef ParentName="Mashed_Ashlands_StriderShellsBase">
+		<defName>Mashed_Ashlands_StriderShells_Increased</defName>
+		<genStep Class="GenStep_ScatterThings">
+			<minSpacing>9</minSpacing>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+</Defs>

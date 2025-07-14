@@ -46,6 +46,58 @@
 		</weathersToAffect>
 		<weatherFrequencyOffset>10</weatherFrequencyOffset>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_DustAntHives_Increased</defName>
+		<label>increased dust ants</label>
+		<description>This area has more dust ant hives than normal.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_DustAntHives_Increased</li>
+		</extraGenSteps>
+		<biomeWhitelist>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_FetcherflyHives_Increased]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_FetcherflyHives_Increased</defName>
+		<label>increased fetcherfly</label>
+		<description>This area has more fetcherfly hives than normal.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives_Increased</li>
+		</extraGenSteps>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_StriderShells_Increased]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_StriderShells_Increased</defName>
+		<label>strider graveyard</label>
+		<description>This area is a silt strider graveyard. There are many dessicated silt strider shells.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_StriderShells_Increased</li>
+		</extraGenSteps>
+		<biomeWhitelist>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DustyMutator]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_DustyMutator</defName>
@@ -66,7 +118,7 @@
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DusttideMutator]==========-->
 	<TileMutatorDef>
-		<defName>Mashed_Ashlands_Dusttide</defName>
+		<defName>Mashed_Ashlands_DusttideMutator</defName>
 		<label>dusttide</label>
 		<description>Copious amounts of dust and metallic particulate ensure even the slightest breeze results in an electrified dust storm. Dust thunderstorms are much more common here.</description>
 		<categories>
