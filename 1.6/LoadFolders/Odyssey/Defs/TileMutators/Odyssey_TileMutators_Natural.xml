@@ -1,5 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_CoralCoast]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_StandardMutatorBase" Name="Mashed_Ashlands_CoralCoastBase">
+		<defName>Mashed_Ashlands_CoralCoast</defName>
+		<label>coral coast a</label>
+		<workerClass>TileMutatorWorker_Patches</workerClass>
+		<description>This region is home to large land coral.</description>
+		<categories>
+			<li>Mashed_Ashlands_CoralCoast</li>
+		</categories>
+		<priority>1</priority>
+		<chanceOnNonLandmarkTile>0.1</chanceOnNonLandmarkTile>
+		<coastSidesRange>1~6</coastSidesRange>
+		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSand</overrideCoastalBeachTerrain>
+		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSand</overrideLakeBeachTerrain>
+		<additionalWildPlants>
+			<Mashed_Ashlands_Plant_LandCoralTree>3</Mashed_Ashlands_Plant_LandCoralTree>
+		</additionalWildPlants>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_CoralCoastPatches]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_CoralCoastBase">
+		<defName>Mashed_Ashlands_CoralCoastPatches</defName>
+		<label>coral coast b</label>
+		<genOrder>-150</genOrder>
+		<biomeWhitelist Inherit="False">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_CoralSand</terrain>
+						<min>0.5</min>
+						<max>0.8</max>
+					</li>
+					<li>
+						<terrain>WaterOceanShallow</terrain>
+						<min>0.8</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<preventsPondGeneration>true</preventsPondGeneration>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_SulphuricSprings</defName>

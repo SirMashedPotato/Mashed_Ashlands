@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- ==========[Archean tree]==========-->
+	 <!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[mutatorChances/ArcheanTrees]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_AshcheanTrees>0.1</Mashed_Ashlands_AshcheanTrees>
+		</value>
+	</Operation>
+	-->
 	<!-- ==========[Caves]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/LandmarkDef[defName="Valley"
@@ -10,6 +19,19 @@
 			or defName="Basin"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
+		</value>
+	</Operation>
+	<!-- ==========[Coasts]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="Archipelago"
+			or defName="CoastalIsland"
+			or defName="Peninsula"
+			or @Name="BaseBay"
+			or defName="Fjord"
+			or defName="CoastalAtoll"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_CoralCoast>0.1</Mashed_Ashlands_CoralCoast>
+			<Mashed_Ashlands_CoralCoastPatches>0.1</Mashed_Ashlands_CoralCoastPatches>
 		</value>
 	</Operation>
 	<!-- ==========[Lava]==========-->

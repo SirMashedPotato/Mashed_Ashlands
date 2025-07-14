@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AshcheanTrees]==========-->
-	<!--<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
-		<defName>Mashed_Ashlands_AshcheanTrees</defName>
-		<label>ashchean trees</label>
-		<description>This area contains ancient ashchean trees. These trees host a special microbial community in their roots which converts nearby terrain into rich ash. Their delicate root system makes it impossible to replant them.</description>
-		<workerClass>TileMutatorWorker_ArcheanTrees</workerClass>
-		<pollutionRange>0~0.25</pollutionRange>
-	</TileMutatorDef>-->
 	<!-- ==========[Mashed_Ashlands_AshPlantGrove]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_NotBlightedMutatorBase">
 		<defName>Mashed_Ashlands_AshPlantGrove</defName>

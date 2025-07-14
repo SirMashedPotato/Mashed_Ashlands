@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_LandCoralTree]==========-->
+	<ThingDef Name="Mashed_Ashlands_Plant_LandCoralTreeBase" ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_LandCoralTree</defName>
+		<label>ashland land coral</label>
+		<description>Large land coral, sometimes found growing in coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.</description>
+		<graphicData>
+			<texPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree</texPath>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>9</Beauty>
+			<BeautyOutdoors>9</BeautyOutdoors>
+			<Flammability>0.3</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<leaflessGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Immature</immatureGraphicPath>
+			<sowTags Inherit="False"/>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_CoralSand</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<growDays>30</growDays>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<harvestWork>1500</harvestWork>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<visualSizeRange>1.3~2.8</visualSizeRange>
+			<harvestedThingDef>BlocksMarble</harvestedThingDef>
+			<harvestYield>24</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+		</plant>
+	</ThingDef>
+</Defs>

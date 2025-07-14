@@ -68,6 +68,21 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_StandardMutatorBase]==========-->
+	<TileMutatorDef Name="Mashed_Ashlands_StandardMutatorBase" Abstract="True">
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_PondsMutatorBase]==========-->
 	 <!-- Excludes biomes that have large bodies of 'water' that do not have isPond-->
 	<TileMutatorDef Name="Mashed_Ashlands_PondsMutatorBase" Abstract="True">

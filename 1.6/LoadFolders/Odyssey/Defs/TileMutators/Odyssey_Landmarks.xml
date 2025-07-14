@@ -19,6 +19,7 @@
 			<MineralRich>0.05</MineralRich>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_CoralCoast]==========-->
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_StriderGraveyard</defName>
