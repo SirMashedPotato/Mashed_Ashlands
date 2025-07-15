@@ -39,7 +39,6 @@
 				<li>Campfire</li>
 				<li>ElectricStove</li>
 				<li>FueledStove</li>
-				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_RusticCookingTable</li>
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<workSkill>Cooking</workSkill>
