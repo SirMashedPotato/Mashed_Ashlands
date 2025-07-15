@@ -16,6 +16,7 @@
 		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSand</overrideLakeBeachTerrain>
 		<additionalWildPlants>
 			<Mashed_Ashlands_Plant_LandCoralTree>3</Mashed_Ashlands_Plant_LandCoralTree>
+			<Mashed_Ashlands_Plant_GlowingLandCoralTree MayRequire="Ludeon.RimWorld.Biotech">3</Mashed_Ashlands_Plant_GlowingLandCoralTree>
 		</additionalWildPlants>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_CoralCoastPatches]==========-->
