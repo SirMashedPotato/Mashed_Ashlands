@@ -38,25 +38,4 @@
 			<wildClusterWeight>35</wildClusterWeight>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_GlowingLandCoralTree]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_LandCoralTreeBase" MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>Mashed_Ashlands_Plant_GlowingLandCoralTree</defName>
-		<label>glowing land coral</label>
-		<description>Mutated land coral found in ashland regions with high levels of pollution. It has adapted to collect nutrients directly from polluted air, reducing its reliance on ash storms, and allowing it to grow faster. However the skeleton it forms is comparatively more porous, and less sturdy, and thus yields less usable material when harvested.</description>
-		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_GlowingLandCoralTree</texPath>
-		</graphicData>
-		<plant>
-			<pollution>PollutedOnly</pollution>
-			<immatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_GlowingLandCoralTree_Immature</immatureGraphicPath>
-			<growDays>20</growDays>
-			<harvestYield>14</harvestYield>
-		</plant>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(84,94,33,0)</glowColor>
-			</li>
-		</comps>
-	</ThingDef>
 </Defs>

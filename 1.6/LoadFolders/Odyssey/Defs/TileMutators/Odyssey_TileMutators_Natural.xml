@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_CoralCoast]==========-->
-	<TileMutatorDef ParentName="Mashed_Ashlands_StandardMutatorBase" Name="Mashed_Ashlands_CoralCoastBase">
-		<defName>Mashed_Ashlands_CoralCoast</defName>
-		<label>coral coast a</label>
+	<!-- ==========[Mashed_Ashlands_LandCoral]==========-->
+	<TileMutatorDef Name="Mashed_Ashlands_LandCoralBase" ParentName="Mashed_Ashlands_StandardMutatorBase">
+		<defName>Mashed_Ashlands_LandCoral</defName>
+		<label>land coral</label>
 		<workerClass>TileMutatorWorker_Patches</workerClass>
-		<description>This region is home to large land coral.</description>
+		<description>Land coral can be found growing along the coast of this region.</description>
 		<categories>
-			<li>Mashed_Ashlands_CoralCoast</li>
+			<li>Mashed_Ashlands_LandCoral</li>
 		</categories>
 		<priority>1</priority>
 		<chanceOnNonLandmarkTile>0.1</chanceOnNonLandmarkTile>
@@ -19,39 +19,17 @@
 			<Mashed_Ashlands_Plant_GlowingLandCoralTree MayRequire="Ludeon.RimWorld.Biotech">3</Mashed_Ashlands_Plant_GlowingLandCoralTree>
 		</additionalWildPlants>
 	</TileMutatorDef>
-	<!-- ==========[Mashed_Ashlands_CoralCoastPatches]==========-->
-	<TileMutatorDef ParentName="Mashed_Ashlands_CoralCoastBase">
-		<defName>Mashed_Ashlands_CoralCoastPatches</defName>
-		<label>coral coast b</label>
-		<genOrder>-150</genOrder>
+	<!-- ==========[Mashed_Ashlands_LandCoralVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralBase">
+		<defName>Mashed_Ashlands_LandCoralVolcanic</defName>
+		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSandVolcanic</overrideCoastalBeachTerrain>
+		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSandVolcanic</overrideLakeBeachTerrain>
 		<biomeWhitelist Inherit="False">
-			<!-- Regular -->
-			<li>Mashed_Ashlands_Ashlands</li>
-			<li>Mashed_Ashlands_DustplainAshlands</li>
-			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<!-- Thriving -->
-			<li>Mashed_Ashlands_ForestAshlands</li>
-			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
-		<terrainPatchMakers>
-			<li>
-				<perlinFrequency>0.035</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>Mashed_Ashlands_CoralSand</terrain>
-						<min>0.5</min>
-						<max>0.8</max>
-					</li>
-					<li>
-						<terrain>WaterOceanShallow</terrain>
-						<min>0.8</min>
-						<max>99</max>
-					</li>
-				</thresholds>
-			</li>
-		</terrainPatchMakers>
-		<preventsPondGeneration>true</preventsPondGeneration>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
 	<TileMutatorDef>
