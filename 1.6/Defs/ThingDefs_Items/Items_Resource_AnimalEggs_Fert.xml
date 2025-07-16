@@ -389,33 +389,45 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueUnfertilized]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
-		<defName>Mashed_Ashlands_Egg_SandcrabBlueUnfertilized</defName>
-		<label>blue sandcrab egg (unfert.)</label>
-		<description>An unfertilised blue sandcrab egg. It can be eaten raw, but it's much better cooked.</description>
+	<!-- ==========[Mashed_Ashlands_Egg_SandcrabBlueFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_SandcrabBlueFertilized</defName>
+		<label>blue sandcrab egg (fert.)</label>
+		<description>A fertilised blue sandcrab egg. If all goes well, it should hatch into a baby blue sandcrab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(109,109,121)</color>
 			<drawSize>0.85</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>7</MarketValue>
+			<MarketValue>10</MarketValue>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_SandcrabBlue</hatcherPawn>
+			</li>
+		</comps>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Egg_SandcrabOrangeUnfertilized]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
-		<defName>Mashed_Ashlands_Egg_SandcrabOrangeUnfertilized</defName>
-		<label>orange sandcrab egg (unfert.)</label>
-		<description>An unfertilised orange sandcrab egg. It can be eaten raw, but it's much better cooked.</description>
+	<!-- ==========[Mashed_Ashlands_Egg_SandcrabOrangeFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_SandcrabOrangeFertilized</defName>
+		<label>orange sandcrab egg (fert.)</label>
+		<description>A fertilised orange sandcrab egg. If all goes well, it should hatch into a baby orange sandcrab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(121,115,109)</color>
 			<drawSize>0.85</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>7</MarketValue>
+			<MarketValue>10</MarketValue>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_SandcrabOrange</hatcherPawn>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_ShalkFungalFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
