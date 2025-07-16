@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_NamerLandmarkAncientLavaFlow]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_AncientLavaFlow</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s stone river</li>
+				<li>r_name(p=0.2)->[NamePerson]'s stone foyada</li>
+				<li>terrain_word->ancient volcanic flow</li>
+				<li>terrain_word->ancient lava flow</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerLandmarkDusttide</defName>
+		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -16,7 +31,7 @@
 	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkStriderGraveyard]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerLandmarkStriderGraveyard</defName>
+		<defName>Mashed_Ashlands_NamerLandmark_StriderGraveyard</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
@@ -30,7 +45,7 @@
 	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkSulphuricSprings]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerLandmarkSulphuricSprings</defName>
+		<defName>Mashed_Ashlands_NamerLandmark_SulphuricSprings</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
