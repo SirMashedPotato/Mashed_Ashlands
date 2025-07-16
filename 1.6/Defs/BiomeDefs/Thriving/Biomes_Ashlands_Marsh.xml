@@ -210,5 +210,8 @@
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 			<Mashed_Ashlands_Durzog>0.5</Mashed_Ashlands_Durzog>
 		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Mashed_Ashlands_Mudcrab>0.1</Mashed_Ashlands_Mudcrab>
+		</coastalWildAnimals>
 	</BiomeDef>
 </Defs>

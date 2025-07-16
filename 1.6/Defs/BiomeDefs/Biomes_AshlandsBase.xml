@@ -115,10 +115,7 @@
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
 		</pollutionWildAnimals>
 		<coastalWildAnimals>
-			<Mashed_Ashlands_SandcrabBlue MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mashed_Ashlands_SandcrabBlue>
-			<Mashed_Ashlands_Shieldcrab MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mashed_Ashlands_Shieldcrab>
-			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
-			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+			<Mashed_Ashlands_Shieldcrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</Mashed_Ashlands_Shieldcrab>
 		</coastalWildAnimals>
 		<allowedPackAnimals>
 			<li>Mashed_Ashlands_Guar</li>
@@ -152,6 +149,10 @@
 				<Mashed_Ashlands_Fish_ResdaynianSailfin MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ResdaynianSailfin>
 			</saltwater_Uncommon>
 		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabBlue>0.1</Mashed_Ashlands_SandcrabBlue>
+		</coastalWildAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
@@ -178,6 +179,10 @@
 				<Mashed_Ashlands_Fish_Pikeblenny MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Pikeblenny>
 			</saltwater_Uncommon>
 		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabBlue>0.1</Mashed_Ashlands_SandcrabBlue>
+		</coastalWildAnimals>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
 	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
@@ -264,6 +269,10 @@
 				<Mashed_Ashlands_Fish_Trevally MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Trevally>
 			</saltwater_Uncommon>
 		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabOrange>0.1</Mashed_Ashlands_SandcrabOrange>
+		</coastalWildAnimals>
 		<!-- Map generation -->
 		<geyserCountFactor>2</geyserCountFactor>
 		<!-- Misc -->
