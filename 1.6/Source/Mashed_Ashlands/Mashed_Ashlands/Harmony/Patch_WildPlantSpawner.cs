@@ -15,7 +15,7 @@ namespace Mashed_Ashlands
     {
         public static void Postfix(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.Biome))
+            if (!cavePlants && !outPlants.NullOrEmpty() && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.BiomeAt(c)))
             {
                 List<ThingDef> PlantsToRemove = new List<ThingDef>();
                 foreach (ThingDef plant in outPlants)
