@@ -24,6 +24,22 @@
 		</biomeWhitelist>
 		<coastSidesRange>0~0</coastSidesRange>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_BasaltCoast]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_BasaltCoast</defName>
+		<label>basalt coast</label>
+		<workerClass>TileMutatorWorker_Patches</workerClass>
+		<description>The coast here is a large basalt platform.</description>
+		<categories>
+			<li>Mashed_Ashlands_Coast</li>
+		</categories>
+		<priority>1</priority>
+		<genOrder>1000</genOrder>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<coastSidesRange>1~4</coastSidesRange>
+		<overrideCoastalBeachTerrain>Mashed_Ashlands_Basalt_Rough</overrideCoastalBeachTerrain>
+		<overrideLakeBeachTerrain>Mashed_Ashlands_Basalt_Rough</overrideLakeBeachTerrain>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LandCoral]==========-->
 	<TileMutatorDef Name="Mashed_Ashlands_LandCoralBase">
 		<defName>Mashed_Ashlands_LandCoral</defName>
@@ -31,10 +47,10 @@
 		<workerClass>TileMutatorWorker_Patches</workerClass>
 		<description>Land coral can be found growing along the coast of this region.</description>
 		<categories>
-			<li>Mashed_Ashlands_LandCoral</li>
+			<li>Mashed_Ashlands_Coast</li>
 		</categories>
 		<priority>1</priority>
-		<chanceOnNonLandmarkTile>0.1</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
 		<coastSidesRange>1~6</coastSidesRange>
 		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSand</overrideCoastalBeachTerrain>
 		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSand</overrideLakeBeachTerrain>
