@@ -8,6 +8,9 @@
 				<hasFat>false</hasFat>
 			</li>
 		</modExtensions>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
+		</comps>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
