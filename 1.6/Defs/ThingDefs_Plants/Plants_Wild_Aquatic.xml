@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_AshreedWater]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshreedBase">
+		<defName>Mashed_Ashlands_Plant_AshreedWater</defName>
+		<modExtensions Inherit="false"/>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed</texPath>
+		</graphicData>
+		<plant>
+			<wildTerrainTags>
+				<li>WaterFreshShallow</li>
+			</wildTerrainTags>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<visualSizeRange>0.7~1.1</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_DraggleTails]==========-->
 	<ThingDef Name="Mashed_Ashlands_Plant_DraggleTailsBase" ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_DraggleTails</defName>

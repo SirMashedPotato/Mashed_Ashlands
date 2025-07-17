@@ -118,6 +118,8 @@
 			<Mashed_Ashlands_Plant_AshlandFernGreen>0.2</Mashed_Ashlands_Plant_AshlandFernGreen>
 			<Mashed_Ashlands_Plant_BlueEntoloma>0.2</Mashed_Ashlands_Plant_BlueEntoloma>
 			<Mashed_Ashlands_Plant_Glowstalk>0.05</Mashed_Ashlands_Plant_Glowstalk>
+			<!-- Aquatic plants -->
+			<Mashed_Ashlands_Plant_AshreedWater>0.2</Mashed_Ashlands_Plant_AshreedWater>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.7</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_Plant_TreeNetchShieldVibrant>0.6</Mashed_Ashlands_Plant_TreeNetchShieldVibrant>
@@ -140,6 +142,8 @@
 			<Mashed_Ashlands_Plant_SporangiumFlowerBlue MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_SporangiumFlowerBlue>
 			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<Mashed_Ashlands_Plant_GlowingGlowstalk MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingGlowstalk>
+			<!-- Polluted aquatic plants -->
+			<Mashed_Ashlands_Plant_GlowingAshreedWater MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingAshreedWater>
 			<!-- Polluted trees -->
 			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.8</Mashed_Ashlands_GiantAshlandFungus>
 			<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.8</Mashed_Ashlands_GiantGlowingCoprinus>

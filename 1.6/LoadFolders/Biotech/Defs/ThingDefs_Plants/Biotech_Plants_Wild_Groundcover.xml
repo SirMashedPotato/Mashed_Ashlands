@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingAshreed]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_Plant_AshreedBase">
+	<ThingDef ParentName="Mashed_Ashlands_Plant_AshreedBase" Name="Mashed_Ashlands_Plant_GlowingAshreedBase">
 		<defName>Mashed_Ashlands_Plant_GlowingAshreed</defName>
 		<label>glowing ashreed</label>
 		<description>A mutated species of wild grass adapted for life in polluted ashland regions. Often found growing near sources of polluted water.</description>

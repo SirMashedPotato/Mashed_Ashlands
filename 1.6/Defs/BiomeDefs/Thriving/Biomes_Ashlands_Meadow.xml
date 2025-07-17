@@ -110,6 +110,8 @@
 			<Mashed_Ashlands_Plant_WillowFlower>0.1</Mashed_Ashlands_Plant_WillowFlower>
 			<Mashed_Ashlands_Plant_Stoneflower>0.1</Mashed_Ashlands_Plant_Stoneflower>
 			<Mashed_Ashlands_Plant_Glowstalk>0.1</Mashed_Ashlands_Plant_Glowstalk>
+			<!-- Aquatic plants -->
+			<Mashed_Ashlands_Plant_AshreedWater>0.2</Mashed_Ashlands_Plant_AshreedWater>
 			<!-- Trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.1</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_Plant_TreeNetchShieldVibrant>0.1</Mashed_Ashlands_Plant_TreeNetchShieldVibrant>
@@ -134,6 +136,8 @@
 			<Mashed_Ashlands_Plant_SporangiumFlowerOrange MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_SporangiumFlowerOrange>
 			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<Mashed_Ashlands_Plant_GlowingGlowstalk MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingGlowstalk>
+			<!-- Polluted aquatic plants -->
+			<Mashed_Ashlands_Plant_GlowingAshreedWater MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingAshreedWater>
 			<!-- Polluted trees -->
 			<Mashed_Ashlands_Plant_TreeEmperorToxisol MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_TreeEmperorToxisol>
 		</wildPlants>
