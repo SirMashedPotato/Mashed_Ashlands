@@ -1,6 +1,4 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using System.Xml;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -26,23 +24,5 @@ namespace Mashed_Ashlands
         public bool allowAshRaids = true;
 
         public static BiomeProperties Get(Def def) => def.GetModExtension<BiomeProperties>();
-    }
-
-    public class TerrainReplacer
-    {
-        public TerrainDef originalTerrain;
-        public TerrainDef replacedTerrain;
-
-        public void LoadDataFromXmlCustom(XmlNode xmlRoot)
-        {
-            DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(this, "originalTerrain", xmlRoot);
-            DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(this, "replacedTerrain", xmlRoot.InnerText);
-        }
-    }
-
-    public class BiomeCaveProperties
-    {
-        public List<BiomePlantRecord> cavePlants;
-        public TerrainReplacer caveGravelReplacer;
     }
 }

@@ -85,6 +85,7 @@
 		<plant>
 			<interferesWithRoof>false</interferesWithRoof>
 			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilityMin>0.7</fertilityMin>
 			<growDays>10</growDays>
 			<visualSizeRange>1.1~2.4</visualSizeRange>
 			<harvestYield>10</harvestYield>

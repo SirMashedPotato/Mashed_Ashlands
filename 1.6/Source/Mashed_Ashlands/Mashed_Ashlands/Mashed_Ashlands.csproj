@@ -83,6 +83,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
+    <Compile Include="Classes\TerrainReplacer.cs" />
     <Compile Include="Classes\TradeEncounter.cs" />
     <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectSmashEgg.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="DebugActions\DebugTools.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
+    <Compile Include="DefModExtension\BiomeCaveProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
