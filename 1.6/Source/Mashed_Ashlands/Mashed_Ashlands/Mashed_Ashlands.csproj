@@ -125,6 +125,7 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
+    <Compile Include="Harmony\Compat_AlphaBees.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
     <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
