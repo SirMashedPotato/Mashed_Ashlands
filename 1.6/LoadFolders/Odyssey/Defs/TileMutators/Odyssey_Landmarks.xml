@@ -70,6 +70,22 @@
 			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.05</Pollution_Increased>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
+	<LandmarkDef ParentName="BaseLake">
+		<defName>Mashed_Ashlands_SulphuricPond</defName>
+		<label>sulphuric pond</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricPond</iconTexturePath>
+		<commonality>0.25</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_SulphuricPond</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_SulphuricPond Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.1</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_SulphuricSprings</defName>
@@ -104,5 +120,18 @@
 			<Chasm>0.1</Chasm>
 			<TerraformingScar>0.1</TerraformingScar>
 		</comboLandmarkMutators>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
+	<LandmarkDef ParentName="BaseLake">
+		<defName>Mashed_Ashlands_ThermalPond</defName>
+		<label>thermal pond</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_ThermalPond</iconTexturePath>
+		<commonality>0.25</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalPond</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_ThermalPond Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
+		</mutatorChances>
 	</LandmarkDef>
 </Defs>

@@ -43,6 +43,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_SulphuricPond]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_SulphuricPond</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s sulphuric pond</li>
+				<li>terrain_word(p=2)->sulphuric pond</li>
+				<li>terrain_word->green pond</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkSulphuricSprings]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_SulphuricSprings</defName>
@@ -56,6 +70,20 @@
 				<li>terrain_word(p=2)->sulphuric springs</li>
 				<li>terrain_word->scathe</li>
 				<li>terrain_word->scathes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_ThermalPond]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_ThermalPond</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s thermal pond</li>
+				<li>terrain_word(p=2)->thermal pond</li>
+				<li>terrain_word->blue pond</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

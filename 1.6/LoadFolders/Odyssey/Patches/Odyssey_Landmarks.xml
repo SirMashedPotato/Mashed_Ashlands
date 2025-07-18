@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!-- ==========[Archean tree]==========-->
-	 <!--
+	<!--
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/LandmarkDef[mutatorChances/ArcheanTrees]/mutatorChances</xpath>
 		<value>
@@ -19,6 +19,25 @@
 			or defName="Basin"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="Valley"
+			or defName="Cavern"
+			or defName="Chasm"
+			or defName="Cliffs"
+			or defName="Hollow"]/comboLandmarkMutators</xpath>
+		<value>
+			<Mashed_Ashlands_SulphuricPond>0.02</Mashed_Ashlands_SulphuricPond>
+			<Mashed_Ashlands_ThermalPond>0.02</Mashed_Ashlands_ThermalPond>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="Plateau"
+			or defName="TerraformingScar"]/comboLandmarkMutators</xpath>
+		<value>
+			<Mashed_Ashlands_SulphuricPond>0.05</Mashed_Ashlands_SulphuricPond>
+			<Mashed_Ashlands_ThermalPond>0.05</Mashed_Ashlands_ThermalPond>
 		</value>
 	</Operation>
 	<!-- ==========[Coasts]==========-->
@@ -43,6 +62,24 @@
 			<Mashed_Ashlands_EbonyDeposits>0.1</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.1</Mashed_Ashlands_GlassDeposits>
 			<Mashed_Ashlands_FetcherflyHives_Increased>0.1</Mashed_Ashlands_FetcherflyHives_Increased>
+		</value>
+	</Operation>
+	<!-- ==========[Man made]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[@Name="BaseRuins"
+			or @Name="AbandonedColonyLandmarkBase"]/comboLandmarkMutators</xpath>
+		<value>
+			<Mashed_Ashlands_DusttideMutator>0.02</Mashed_Ashlands_DusttideMutator>
+			<Mashed_Ashlands_SulphuricPond>0.02</Mashed_Ashlands_SulphuricPond>
+			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
+			<Mashed_Ashlands_ThermalPond>0.02</Mashed_Ashlands_ThermalPond>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="AncientQuarry"
+			or @Name="AncientStructureBase"]/comboLandmarkMutators</xpath>
+		<value>
+			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
 		</value>
 	</Operation>
 </Patch>
