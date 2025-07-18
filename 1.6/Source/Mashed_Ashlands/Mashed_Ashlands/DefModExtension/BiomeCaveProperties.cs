@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
 {
     public class BiomeCaveProperties : DefModExtension
     {
-        public TerrainDef caveGravelReplacer; //todo
+        public TerrainDef caveGravelReplacer;
         public List<BiomePlantRecord> cavePlants;
 
         public static BiomeCaveProperties Get(Def def) => def.GetModExtension<BiomeCaveProperties>();
