@@ -129,6 +129,7 @@
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
+    <Compile Include="Harmony\Patch_MentalBreakWorker_RunWild.cs" />
     <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
     <Compile Include="Harmony\Patch_PlantUtility.cs" />
@@ -168,9 +169,9 @@
     <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
-    <Compile Include="Harmony\CliffRacerRelated.cs" />
-    <Compile Include="Harmony\UnsafeConditions.cs" />
-    <Compile Include="Harmony\BiotechPatches.cs" />
+    <Compile Include="Harmony\Patches_CliffRacer.cs" />
+    <Compile Include="Harmony\Patch_MeditationUtility.cs" />
+    <Compile Include="Harmony\Compat_Biotech.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
