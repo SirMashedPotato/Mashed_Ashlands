@@ -128,6 +128,7 @@
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
+    <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
     <Compile Include="Harmony\Patch_MentalBreakWorker_RunWild.cs" />
     <Compile Include="Harmony\Patch_PageUtility.cs" />

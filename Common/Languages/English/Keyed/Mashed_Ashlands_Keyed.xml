@@ -26,6 +26,8 @@
 	<Mashed_Ashlands_VolcanoTriggeredCondition>Currently causing a category {0} {1}</Mashed_Ashlands_VolcanoTriggeredCondition>
 	<Mashed_Ashlands_VolcanoConditionLetter_Label>{0} (Category {1} {2})</Mashed_Ashlands_VolcanoConditionLetter_Label>
 	<Mashed_Ashlands_VolcanoConditionLetter_Description>Recent volcanic activity from {0} has caused a category {1} {2}.\n\n{3}</Mashed_Ashlands_VolcanoConditionLetter_Description>
+	<Mashed_Ashlands_VolcanoSettleWarning>This tile is within the active radius of {0}, a category {1} {2_label}. It may be subject to intense and unpredictable volcanic activity.</Mashed_Ashlands_VolcanoSettleWarning>
+	<Mashed_Ashlands_VolcanoSettleWarning_ParmaCondition> Additionally, this volcano will cause permanent {0_label} to all tiles within its active radius.</Mashed_Ashlands_VolcanoSettleWarning_ParmaCondition>
 	<!-- Incidents -->
 	<Mashed_Ashlands_BlightedPlants_Label>plant blight</Mashed_Ashlands_BlightedPlants_Label>
 	<Mashed_Ashlands_BlightdPlants_Description>Several plants have become blighted due to the blight storm. The blight may spread if not dealt with quickly.\n\nThe following plants have become blighted:\n\n</Mashed_Ashlands_BlightdPlants_Description>

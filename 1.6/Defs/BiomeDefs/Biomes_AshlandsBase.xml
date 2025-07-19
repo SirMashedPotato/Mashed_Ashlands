@@ -239,6 +239,7 @@
 				</cavePlants>
 			</li>
 		</modExtensions>
+		<settleWarning>The land here has been ravaged by blight storms. There is little arable land, and other sources of food are scarce.</settleWarning>
 		<!-- Disables -->
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<canAutoChoose>false</canAutoChoose>
