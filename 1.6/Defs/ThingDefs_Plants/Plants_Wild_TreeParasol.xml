@@ -58,6 +58,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_LeaflessImmature</leaflessImmatureGraphicPath>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
@@ -94,6 +95,7 @@
 			</sowResearchPrerequisites>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Leafless</leaflessGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_LeaflessImmature</leaflessImmatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeMilkcap]==========-->
@@ -118,6 +120,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_LeaflessImmature</leaflessImmatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShield]==========-->
@@ -142,6 +145,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_LeaflessImmature</leaflessImmatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeNetchShieldHighland]==========-->
@@ -194,6 +198,7 @@
 			</sowResearchPrerequisites>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_LeaflessImmature</leaflessImmatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeWeepingLeathercap]==========-->
@@ -229,6 +234,7 @@
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
 			<maxGrowthTemperature>90</maxGrowthTemperature>
+			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_LeaflessImmature</leaflessImmatureGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TreeEmperorParasol]==========-->

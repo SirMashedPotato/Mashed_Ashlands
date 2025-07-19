@@ -21,6 +21,7 @@
 		<plant>
 			<leaflessGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_LeaflessImmature</leaflessImmatureGraphicPath>
 			<sowTags Inherit="False"/>
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_CoralSand</li>
