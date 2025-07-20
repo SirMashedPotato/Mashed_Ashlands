@@ -23,10 +23,10 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableColumnarBasalt".Translate(), ref settings.Mashed_Ashlands_EnableColumnarBasalt, "Mashed_Ashlands_EnableColumnarBasalt_Tooltip".Translate());
             listing_Standard.Gap();
-            /*
+            
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCavePlants".Translate(), ref settings.Mashed_Ashlands_EnableCavePlants);
             listing_Standard.Gap();
-            */
+            
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableFetcherflyHives".Translate(), ref settings.Mashed_Ashlands_EnableFetcherflyHives);
             listing_Standard.Gap();
 

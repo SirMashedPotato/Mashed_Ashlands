@@ -15,26 +15,38 @@ namespace Mashed_Ashlands
     {
         public static bool Prefix(IntVec3 c, bool cavePlants, List<ThingDef> outPlants, Map ___map)
         {
-            if (cavePlants && OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.BiomeAt(c)))
+            if (!cavePlants)
             {
-                BiomeCaveProperties props = BiomeCaveProperties.GetProps(___map, c);
-                if (props != null && !props.cavePlants.NullOrEmpty())
-                {
-                    outPlants.Clear();
-                    foreach (BiomePlantRecord record in props.cavePlants)
-                    {
-                        if (record.plant.CanEverPlantAt(c, ___map))
-                        {
-                            outPlants.Add(record.plant);
-                        }
-                    }
+                return true;
+            }
 
-                    foreach(ThingDef plant in outPlants)
+            if (!Mashed_Ashlands_ModSettings.EnableCavePlants)
+            {
+                return true;
+            }
+
+            if (!OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.BiomeAt(c)))
+            {
+                return true;
+            }
+
+            BiomeCaveProperties props = BiomeCaveProperties.GetProps(___map, c);
+            if (props != null && !props.cavePlants.NullOrEmpty())
+            {
+                outPlants.Clear();
+                foreach (BiomePlantRecord record in props.cavePlants)
+                {
+                    if (record.plant.CanEverPlantAt(c, ___map))
                     {
-                        Log.Message(plant);
+                        outPlants.Add(record.plant);
                     }
-                    return false;
                 }
+
+                foreach (ThingDef plant in outPlants)
+                {
+                    Log.Message(plant);
+                }
+                return false;
             }
 
             return true;
@@ -74,6 +86,11 @@ namespace Mashed_Ashlands
     {
         public static void Postfix(ThingDef plantDef, IntVec3 c, ref float __result, Map ___map)
         {
+            if (!Mashed_Ashlands_ModSettings.EnableCavePlants)
+            {
+                return;
+            }
+
             RoofDef roof = c.GetRoof(___map);
             if (roof != null && roof.isNatural)
             {
