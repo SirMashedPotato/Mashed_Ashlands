@@ -152,6 +152,7 @@
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_ThermalPond</defName>
+		<label>thermal pond</label>
 		<description>A small body of naturally heated water.</description>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalPond</workerClass>
 		<label>thermal pond</label>
