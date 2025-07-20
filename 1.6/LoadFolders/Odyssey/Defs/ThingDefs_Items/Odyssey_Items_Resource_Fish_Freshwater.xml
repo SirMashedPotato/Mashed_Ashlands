@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Fish_AshBlindfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_AshBlindfish</defName>
+		<label>ash blindfish</label>
+		<description>As its name suggest, the ash blindfish completely lacks functioning eyes. Most people mistake these for diseased fish, and just throw them back in the water.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawAshBlindfish</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_CutthroatTrout]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_CutthroatTrout</defName>
+		<label>cutthroat trout</label>
+		<description>A species of trout that is usually found in clear waters, which leads many to assume it was introduced to the waterways of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCutthroatTrout</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_FoyadaHopper]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_FoyadaHopper</defName>
+		<label>foyada hopper</label>
+		<description>A primitive lobe-finned fish, only found in volcanic rashland regions. While they are usually found in lakes and sulphur pools, they can sometimes be found hopping around on land.\n\nSome local tribes have tales of giant foyoda hoppers, that swim in pools of lava. Of course no one has actually caught a foyoda hopper of such grandiose size.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFoyadaHopper</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Gourami]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Gourami</defName>
+		<label>gourami</label>
+		<description>Small, and rather colourful, fish that are often kept as pets. This particular species has adapted to life in ashland regions, and has been able to thrive in the nutrient rich ponds found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_HoagaOto]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_HoagaOto</defName>
+		<label>hoaga oto</label>
+		<description>A species of Loricariidae that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawHoagaOto</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Ide]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Ide</defName>
+		<label>ide</label>
+		<description>Often found in rivers and lakes in ashland regions. Develops a beautiful golden shine as it ages, though ide in ashland regions don't usually live long enough for that.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawIde</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_MagmaSalmon]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_MagmaSalmon</defName>
+		<label>magma salmon</label>
+		<description>A species of salmon often found in ashland regions. Named after its vibrant red colouration, not because it lives in magma.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMagmaSalmon</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_MarshAngler]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_MarshAngler</defName>
+		<label>marsh angler</label>
+		<description>A large, mostly-aquatic, angler fish, usually found lurking in the murky waters of ashland regions. Care needs to be taken when handling marsh angler, as they have rows of retractable spines along their back, and a large maw filled with razor sharp teeth.\n\nThere are legends of enormous marsh angler big enough to swallow a kagouti whole. And a few even claim to have encountered marsh angler deep at sea large enough to predate whales.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMarshAngler</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Mouthbrooder]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Mouthbrooder</defName>
+		<label>mouthbrooder</label>
+		<description>A member of Osteoglossinae native to ashland regions. The mouthbrooder is named after how it carries its eggs and young in its mouth, a behaviour called mouthbrooding. This helps keep the vulnerable spawn safe from slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_NetchHookEel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_NetchHookEel</defName>
+		<label>netch-hook eel</label>
+		<description>A species of freshwater eel native to ashland regions. Named after their long barbels, which are capable of releasing frightfully heart-stopping shocks. Some individuals are believed to be over 100 years old, and are certainly of a size that matches their age.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawNetchHookEel</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_PilgrimGoby]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_PilgrimGoby</defName>
+		<label>pilgrim goby</label>
+		<description>A species of goby common in ashland regions, named after being found almost anywhere there is water.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawPilgrimGoby</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_OldManGar]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_OldManGar</defName>
+		<label>old man gar</label>
+		<description>A rare species of gar, rarely found in fresh waters in ashland regions. Named after the fact that every aged fisherman has a tale involving a giant gar.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawOldManGar</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_RainbowZander]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_RainbowZander</defName>
+		<label>rainbow zander</label>
+		<description>A small species of fish, rarely found in the fresh waters in ashland regions. While its multi-coloured scales are rather beautiful, they make the rainbow zander a prime target for slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawRainbowZander</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Ricefish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Ricefish</defName>
+		<label>ricefish</label>
+		<description>A small species of fish that can often be found hiding between saltrice stems.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawRicefish</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_ShalkBrotherCrayfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_ShalkBrotherCrayfish</defName>
+		<label>shalk-brother crayfish</label>
+		<description>A brilliant blue species of crayfish, often found in the fresh waters of ashland regions. A rather rare sight due to slaughterfish infestations.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawShalkBrotherCrayfish</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Siltfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Siltfish</defName>
+		<label>siltfish</label>
+		<description>A lobe-finned fish that can often found in the shallow silty waters of ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSiltfish</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_ScumCarp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_ScumCarp</defName>
+		<label>scum carp</label>
+		<description>A species of carp that can often be found in ashland regions experiencing extreme volcanic activity. It has quite an odd taste, and doesn't exactly smell great when cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawScumCarp</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>20</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Tench]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Tench</defName>
+		<label>tench</label>
+		<description>A fairly common sight in stagnant pools of water in ashland regions, tench are able to grow quite large thanks to the abundance of prey found in these waters.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTench</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_ThornyCatfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_ThornyCatfish</defName>
+		<label>thorny catfish</label>
+		<description>A small species of catfish that can often be found in stagnant ponds in ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawThornyCatfish</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_ToadstoolTilapia]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_ToadstoolTilapia</defName>
+		<label>toadstool tilapia</label>
+		<description>A species of tilapia native to the fresh waters of ashland regions. Named after its striking red colouration, which many associate with that of a toadstool.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawToadstoolTilapia</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

@@ -33,6 +33,10 @@
 		</modExtensions>
 		<animalDensity>0.4</animalDensity>
 		<plantDensity>0.03</plantDensity>
+		<baseWeatherCommonalities>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">2</Windy>
+		</baseWeatherCommonalities>
+		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
 				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>

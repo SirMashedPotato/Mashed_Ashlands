@@ -29,10 +29,16 @@
 		</modExtensions>
 		<animalDensity>1.2</animalDensity>
 		<plantDensity>0.4</plantDensity>
-		<!-- Terrain overrides -->
-		<lakeBeachTerrain>Mashed_Ashlands_SulphuricSand</lakeBeachTerrain>
-		<waterShallowTerrain>Mashed_Ashlands_ShallowSulphuricWater</waterShallowTerrain>
-		<waterDeepTerrain>Mashed_Ashlands_DeepSulphuricWater</waterDeepTerrain>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_AshBlindfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AshBlindfish>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_ScumCarp MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ScumCarp>
+			</freshwater_Uncommon>
+		</fishTypes>
 		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
@@ -54,7 +60,6 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.027</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>
@@ -75,7 +80,6 @@
 			</li>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_SulphuricSand</terrain>

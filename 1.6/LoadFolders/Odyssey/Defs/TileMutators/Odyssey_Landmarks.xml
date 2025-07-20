@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AncientLavaFlow]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_AncientLavaFlow</defName>
+		<label>ancient lava flow</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_AncientLavaFlow</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_AncientLavaFlow</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_AncientLavaFlow Required="True"/>
+			<SteamGeysers_Increased> 0.25</SteamGeysers_Increased>
+			<Stockpile>0.05</Stockpile>
+			<AnimalHabitat>0.05</AnimalHabitat>
+			<AnimalLife_Increased>0.05</AnimalLife_Increased>
+			<PlantLife_Increased>0.05</PlantLife_Increased>
+			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
+			<Mashed_Ashlands_AshyMutator>0.1</Mashed_Ashlands_AshyMutator>
+			<SunnyMutator>0.1</SunnyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<AncientUplink>0.02</AncientUplink>
+			<MineralRich>0.05</MineralRich>
+			<ObsidianDeposits>0.1</ObsidianDeposits>
+			<Mashed_Ashlands_EbonyDeposits>0.15</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.15</Mashed_Ashlands_GlassDeposits>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_Dusttide]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_Dusttide</defName>
+		<label>dusttide</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_Dusttide</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_Dusttide</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_DustAntHives_Increased Required="True"/>
+			<Mashed_Ashlands_DusttideMutator Required="True"/>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<MineralRich>0.05</MineralRich>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_StriderGraveyard</defName>
+		<label>strider graveyard</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_StriderGraveyard</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.15</commonality>
+		<drawAboveRoads>true</drawAboveRoads>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_StriderGraveyard</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_StriderShells_Increased Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<DryGround>0.05</DryGround>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.05</Pollution_Increased>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
+	<LandmarkDef ParentName="BaseLake">
+		<defName>Mashed_Ashlands_SulphuricPond</defName>
+		<label>sulphuric pond</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricPond</iconTexturePath>
+		<commonality>0.25</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_SulphuricPond</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_SulphuricPond Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.1</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_SulphuricSprings</defName>
+		<label>sulphuric springs</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricSprings</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.25</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_SulphuricSprings</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_SulphuricSprings Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<Stockpile>0.05</Stockpile>
+			<MineralRich>0.03</MineralRich>
+			<FoggyMutator>0.05</FoggyMutator>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.05</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<MixedBiome>0.5</MixedBiome>
+			<AncientUplink>0.02</AncientUplink>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<AnimalHabitat>0.15</AnimalHabitat>
+			<ArcheanTrees>0.01</ArcheanTrees>
+			<Mashed_Ashlands_EbonyDeposits>0.01</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.01</Mashed_Ashlands_GlassDeposits>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Valley>0.1</Valley>
+			<Cavern>0.1</Cavern>
+			<Chasm>0.1</Chasm>
+			<TerraformingScar>0.1</TerraformingScar>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
+	<LandmarkDef ParentName="BaseLake">
+		<defName>Mashed_Ashlands_ThermalPond</defName>
+		<label>thermal pond</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_ThermalPond</iconTexturePath>
+		<commonality>0.25</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalPond</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_ThermalPond Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
+		</mutatorChances>
+	</LandmarkDef>
+</Defs>

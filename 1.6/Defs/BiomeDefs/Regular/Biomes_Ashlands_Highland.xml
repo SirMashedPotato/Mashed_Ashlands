@@ -35,6 +35,21 @@
 		<animalDensity>2</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawAshenJazbay</foragedFood>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_CutthroatTrout MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_CutthroatTrout>
+				<Mashed_Ashlands_Fish_PilgrimGoby MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_PilgrimGoby>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_MagmaSalmon MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_MagmaSalmon>
+				<Mashed_Ashlands_Fish_ScumCarp MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ScumCarp>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
+		<baseWeatherCommonalities>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">2</Windy>
+		</baseWeatherCommonalities>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_AshGravel</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_AshGravel</lakeBeachTerrain>

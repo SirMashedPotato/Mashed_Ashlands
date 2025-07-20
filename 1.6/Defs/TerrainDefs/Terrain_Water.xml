@@ -10,6 +10,7 @@
 		<pathCost>40</pathCost>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
 		<traversedThought>Mashed_Ashlands_WadedThroughSludge</traversedThought>
 		<waterBodyType>Other</waterBodyType>
 		<canFreeze>false</canFreeze>
@@ -27,7 +28,7 @@
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
-		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain> <!-- todo -->
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_MarshFloodwater</floodTerrain>
 		<tags>
 			<li>Mashed_Ashlands_WaterMarsh</li>
 			<li>WaterMarshy</li>
@@ -41,7 +42,7 @@
 		<pathCost>42</pathCost>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_ShallowSulphuricWater]==========-->
-	<TerrainDef ParentName="WaterShallowBase">
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_SulphuricWaterBase">
 		<defName>Mashed_Ashlands_ShallowSulphuricWater</defName>
 		<label>shallow sulphuric water</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowSulphuricWaterRamp</texturePath>
@@ -50,7 +51,8 @@
 		<pathCost>30</pathCost>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>Mashed_Ashlands_SulphuricSand</driesTo>
-		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">MarshFlood</floodTerrain> <!-- todo -->
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_SulphuricFloodwater</floodTerrain>
+		<traversedThought>Mashed_Ashlands_SulphuricWater</traversedThought>
 		<meltSnowRadius>3</meltSnowRadius>
 		<heatPerTick>0.003</heatPerTick>
 		<throwFleckChance>0.3</throwFleckChance>

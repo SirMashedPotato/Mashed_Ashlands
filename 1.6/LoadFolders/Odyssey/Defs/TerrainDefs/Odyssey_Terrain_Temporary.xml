@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_BlightedSludgeBase">
+		<defName>Mashed_Ashlands_BlightedSludgeFloodwater</defName>
+		<label>sludge floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_MarshBase">
+		<defName>Mashed_Ashlands_MarshFloodwater</defName>
+		<label>marsh floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_MarshFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_SulphuricWaterBase">
+		<defName>Mashed_Ashlands_SulphuricFloodwater</defName>
+		<label>sulphuric floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_SulphuricFloodwater</floodTerrain>
+	</TerrainDef>
+</Defs>

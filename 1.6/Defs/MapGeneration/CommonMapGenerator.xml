@@ -37,7 +37,7 @@
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives]==========-->
-	<GenStepDef>
+	<GenStepDef Name="Mashed_Ashlands_DustAntHivesBase">
 		<defName>Mashed_Ashlands_DustAntHives</defName>
 		<order>960</order>
 		<genStep Class="GenStep_ScatterThings">
@@ -68,7 +68,7 @@
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_FetcherflyHives]==========-->
-	<GenStepDef>
+	<GenStepDef Name="Mashed_Ashlands_FetcherflyHivesBase">
 		<defName>Mashed_Ashlands_FetcherflyHives</defName>
 		<order>960</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterFetcherflyHives">
@@ -95,7 +95,7 @@
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_StriderShells]==========-->
-	<GenStepDef>
+	<GenStepDef Name="Mashed_Ashlands_StriderShellsBase">
 		<defName>Mashed_Ashlands_StriderShells</defName>
 		<order>960</order>
 		<genStep Class="GenStep_ScatterThings">

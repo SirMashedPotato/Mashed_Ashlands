@@ -83,6 +83,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
+    <Compile Include="Classes\TerrainReplacer.cs" />
     <Compile Include="Classes\TradeEncounter.cs" />
     <Compile Include="CompUse\CompUseEffect_SmashEgg.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectSmashEgg.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="DebugActions\DebugTools.cs" />
     <Compile Include="DefModExtension\AnimalProperties.cs" />
     <Compile Include="DefModExtension\AshResistanceProperties.cs" />
+    <Compile Include="DefModExtension\BiomeCaveProperties.cs" />
     <Compile Include="DefModExtension\BiomeProperties.cs" />
     <Compile Include="DefModExtension\PlantProperties.cs" />
     <Compile Include="DefModExtension\PollutionProperties.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="DefOf\StatCategoryDefOf.cs" />
     <Compile Include="DefOf\StatDefOf.cs" />
     <Compile Include="DefOf\TerrainAffordanceDefOf.cs" />
+    <Compile Include="DefOf\TerrainDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
     <Compile Include="DefOf\TraderKindDefOf.cs" />
@@ -124,11 +127,15 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
+    <Compile Include="Harmony\Compat_AlphaBees.cs" />
+    <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
+    <Compile Include="Harmony\Patch_MentalBreakWorker_RunWild.cs" />
     <Compile Include="Harmony\Patch_PageUtility.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator.cs" />
     <Compile Include="Harmony\Patch_PlantUtility.cs" />
     <Compile Include="Harmony\Patch_RoadDefGenStep_Place.cs" />
+    <Compile Include="Harmony\Patch_TileMutatorWorker_Caves.cs" />
     <Compile Include="Harmony\Patch_WildPlantSpawner.cs" />
     <Compile Include="HediffComp\HediffComp_Regeneration.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_Regeneration.cs" />
@@ -163,9 +170,9 @@
     <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="Biome\GenStep\GenStep_ScatterFetcherflyHives.cs" />
-    <Compile Include="Harmony\CliffRacerRelated.cs" />
-    <Compile Include="Harmony\UnsafeConditions.cs" />
-    <Compile Include="Harmony\BiotechPatches.cs" />
+    <Compile Include="Harmony\Patches_CliffRacer.cs" />
+    <Compile Include="Harmony\Patch_MeditationUtility.cs" />
+    <Compile Include="Harmony\Compat_Biotech.cs" />
     <Compile Include="HediffComp\HediffComp_ImmunizableAsh.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_CliffRacerSwarm.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderPasses.cs" />
@@ -212,6 +219,13 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_AncientLavaFlow.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricPond.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricSprings.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_EbonyDeposits.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_GlassDeposits.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricCaves.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_ThermalPond.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />
@@ -252,8 +266,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TileMutatorWorker\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

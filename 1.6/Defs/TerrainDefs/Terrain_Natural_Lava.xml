@@ -17,15 +17,16 @@
 		<holdSnowOrSand>false</holdSnowOrSand>
 		<canBePolluted>false</canBePolluted>
 		<extraDeteriorationFactor>3</extraDeteriorationFactor>
-		<meltSnowRadius>5</meltSnowRadius>
-		<heatPerTick>0.1</heatPerTick>
-		<igniteRadius>3</igniteRadius>
-		<ignitePawnsIntervalTicks>600</ignitePawnsIntervalTicks>
-		<burnDamage>6</burnDamage>
+		<meltSnowRadius>4</meltSnowRadius>
+		<heatPerTick>0.25</heatPerTick>
+		<igniteRadius>1.9</igniteRadius>
+		<ignitePawnsIntervalTicks>240</ignitePawnsIntervalTicks>
+		<burnDamage>3</burnDamage>
 		<burnIntervalTicks>120</burnIntervalTicks>
 		<dangerous>true</dangerous>
 		<glowRadius>3</glowRadius>
 		<glowColor>(132,43,0,0)</glowColor>
+		<supportsRock>false</supportsRock>
 		<filthAcceptanceMask>
 			<li>None</li>
 		</filthAcceptanceMask>

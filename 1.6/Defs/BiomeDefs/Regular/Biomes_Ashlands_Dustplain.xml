@@ -36,6 +36,16 @@
 		<soundsAmbient Inherit="False">
 			<li>Ambient_Wind_Desolate</li>
 		</soundsAmbient>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_AshBlindfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AshBlindfish>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_Siltfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Siltfish>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
 		<baseWeatherCommonalities>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_DustStorm>6</Mashed_Ashlands_DustStorm>

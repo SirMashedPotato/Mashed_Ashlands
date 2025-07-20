@@ -27,5 +27,8 @@ namespace Mashed_Ashlands
         public static ThingDef Mashed_Ashlands_Plant_AshYam;
         [MayRequireBiotech]
         public static ThingDef Mashed_Ashlands_Plant_ToxYam;
+
+        public static ThingDef Mashed_Ashlands_MineableEbony;
+        public static ThingDef Mashed_Ashlands_MineableGlass;
     }
 }

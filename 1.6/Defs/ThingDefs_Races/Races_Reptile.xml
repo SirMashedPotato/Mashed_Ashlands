@@ -235,6 +235,7 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~5</eggCountRange>
 			</li>
+			<li Class="VEF.AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
 		</comps>
 		<race>
 			<deathAction>

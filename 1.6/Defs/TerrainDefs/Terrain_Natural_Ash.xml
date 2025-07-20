@@ -118,6 +118,19 @@
 			<li>Mashed_Ashlands_AshSand</li>
 		</tags>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_CoralSand]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_CoralSand</defName>
+		<label>sandy ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_CoralSand</texturePath>
+		<scatterType>Rocky</scatterType>
+		<categoryType>Sand</categoryType>
+		<fertility>0.4</fertility>
+		<tags>
+			<li>Mashed_Ashlands_AshSand</li>
+			<li>Mashed_Ashlands_CoralSand</li>
+		</tags>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_RichAshSand]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
 		<defName>Mashed_Ashlands_RichAshSand</defName>

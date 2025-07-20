@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingAshreedWater]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowingAshreedBase">
+		<defName>Mashed_Ashlands_Plant_GlowingAshreedWater</defName>
+		<plant>
+			<wildTerrainTags>
+				<li>WaterFreshShallow</li>
+			</wildTerrainTags>
+			<wildPlantUseDistanceToShore>true</wildPlantUseDistanceToShore>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<visualSizeRange>0.7~1.1</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingDraggleTails]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_DraggleTailsBase">
 		<defName>Mashed_Ashlands_Plant_GlowingDraggleTails</defName>
@@ -10,8 +25,6 @@
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
 		<comps Inherit="False">
 			<li Class="CompProperties_Glower">

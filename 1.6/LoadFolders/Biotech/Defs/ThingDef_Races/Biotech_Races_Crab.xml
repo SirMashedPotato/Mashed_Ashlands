@@ -106,4 +106,73 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_SandcrabGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_SandcrabThingBase">
+		<defName>Mashed_Ashlands_SandcrabGlowing</defName>
+		<label>glowing sandcrab</label>
+		<description>A subspecies of sandcrab, adapted for life in polluted ashland regions. Their gills have been modified to filter nutrients from environmental pollution, even still their meat is considered quite tasty.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing sandcrab can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_SandcrabGlowingFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_SandcrabGlowingUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_SandcrabGlowing</defName>
+		<label>glowing sandcrab</label>
+		<race>Mashed_Ashlands_SandcrabGlowing</race>
+		<combatPower>20</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabGlowing</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabGlowing</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabGlowing</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Sandcrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>

@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace Mashed_Ashlands
 {
@@ -15,7 +16,7 @@ namespace Mashed_Ashlands
             {
                 if (loc.IsPolluted(___map))
                 {
-                    if (OnStartupUtility.modifiedPollutionFertilityBiomes.Contains(___map.Biome))
+                    if (OnStartupUtility.modifiedPollutionFertilityBiomes.Contains(___map.BiomeAt(loc)))
                     {
                         __result = loc.GetTerrain(___map).fertility * 0.8f;
                     }

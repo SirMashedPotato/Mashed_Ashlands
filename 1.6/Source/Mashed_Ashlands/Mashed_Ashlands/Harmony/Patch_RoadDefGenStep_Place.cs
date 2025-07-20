@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
     {
         public static void Postfix(Map map, IntVec3 position)
         {
-            BiomeProperties props = BiomeProperties.Get(map.Biome);
+            BiomeProperties props = BiomeProperties.Get(map.BiomeAt(position));
             if (props != null && !props.roadReplacers.NullOrEmpty())
             {
                 foreach (TerrainReplacer replacer in props.roadReplacers)

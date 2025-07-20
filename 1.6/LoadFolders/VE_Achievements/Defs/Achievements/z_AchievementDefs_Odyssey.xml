@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_AchievementAshlands_CollectSlaughterfish]========== -->
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="vanillaexpanded.vcef">
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="ludeon.rimworld.odyssey">
 		<defName>Mashed_AchievementAshlands_CollectSlaughterfish</defName>
 		<label>Slaughterfish Slaughterer</label>
 		<description>Collect 333 ashland slaughterfish</description>
 		<tracker Class="AchievementsExpanded.ItemTracker">
-			<def>Mashed_Ashlands_RawSlaughterfish</def>
+			<def>Mashed_Ashlands_Fish_Slaughterfish</def>
 			<count>333</count>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectSlaughterfish</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_HaveAClockworkFish]========== -->
-	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="vanillaexpanded.vcef">
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base" MayRequire="ludeon.rimworld.odyssey">
 		<defName>Mashed_AchievementAshlands_HaveAClockworkFish</defName>
 		<label>This Doesn't Look Edible</label>
 		<description>Obtain a strange fish</description>

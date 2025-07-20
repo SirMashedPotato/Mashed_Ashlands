@@ -14,4 +14,18 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricWater]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_SulphuricWater</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>sulphuric water</label>
+				<description>I don't smell great, but I do feel rejuvenated!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

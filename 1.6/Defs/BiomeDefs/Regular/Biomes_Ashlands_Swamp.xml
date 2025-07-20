@@ -16,7 +16,7 @@
 				<roadReplacers>
 					<PackedDirt>Mashed_Ashlands_PackedAsh</PackedDirt>
 				</roadReplacers>
-			</li>	
+			</li>
 			<li Class="RegrowthCore.BiomesKitControl" MayRequire="regrowth.botr.core">
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
@@ -34,6 +34,22 @@
 		<plantDensity>0.6</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMarshmerrow</foragedFood>
 		<movementDifficulty>4</movementDifficulty>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_HoagaOto MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_HoagaOto>
+				<Mashed_Ashlands_Fish_ThornyCatfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ThornyCatfish>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_MarshAngler MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_MarshAngler>
+				<Mashed_Ashlands_Fish_OldManGar MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_OldManGar>
+			</freshwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
+		<baseWeatherCommonalities>
+			<BlindFog MayRequire="Ludeon.RimWorld.Odyssey">1</BlindFog>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
 		<!-- Terrain overrides -->
 		<coastalBeachTerrain>Mashed_Ashlands_AshMud</coastalBeachTerrain>
 		<lakeBeachTerrain>Mashed_Ashlands_AshMud</lakeBeachTerrain>
@@ -59,7 +75,7 @@
 				<thresholds>
 					<li>
 						<terrain>MarshyTerrain</terrain>
-						<min>0.35</min>
+						<min>0.3</min>
 						<max>0.65</max>
 					</li>
 					<li>
@@ -71,6 +87,19 @@
 						<terrain>Mashed_Ashlands_DeepMarsh</terrain>
 						<min>0.9</min>
 						<max>99</max>
+						<min>0.32</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<!-- Used for tile mutators that disable ponds, so the map is still vaguely swampy -->
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MarshyTerrain</terrain>
+						<min>0.32</min>
+						<max>999</max>
 					</li>
 				</thresholds>
 			</li>
@@ -214,5 +243,8 @@
 			<Mashed_Ashlands_CliffRacer>0.2</Mashed_Ashlands_CliffRacer>
 			<Mashed_Ashlands_Durzog>0.5</Mashed_Ashlands_Durzog>
 		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Mashed_Ashlands_Mudcrab>0.1</Mashed_Ashlands_Mudcrab>
+		</coastalWildAnimals>
 	</BiomeDef>
 </Defs>
