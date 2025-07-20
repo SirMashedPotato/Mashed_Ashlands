@@ -25,11 +25,10 @@ namespace Mashed_Ashlands
             }
 
             ///Patching in support for SeedsPlease Lite, otherwise seeds are required to select plants, but never used when sowing them
-            ///TODO may not be necessary anymore
-            //if (ModsConfig.IsActive("owlchemist.seedspleaselite") || ModsConfig.IsActive("evyatar108.seedspleaseliteredux"))
-            //{
-            //    harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
-            //}
+            if (ModsConfig.IsActive("owlchemist.seedspleaselite") || ModsConfig.IsActive("evyatar108.seedspleaseliteredux"))
+            {
+                harmony.Patch(AccessTools.Method(typeof(WorkGiver_GrowerSowAsh), nameof(WorkGiver_GrowerSowAsh.JobOnCell)), postfix: new HarmonyMethod(AccessTools.Method(AccessTools.TypeByName("Patch_WorkGiver_GrowerSow_JobOnCell"), "Postfix")));
+            }
         }
     }
 }
