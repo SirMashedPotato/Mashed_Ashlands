@@ -28,7 +28,7 @@ namespace Mashed_Ashlands
                     }
 
                     BiomeProperties props = BiomeProperties.Get(caravan.Tile.Tile.PrimaryBiome);
-                    if (props == null && !props.allowAshlandsIncidents)
+                    if (props == null || !props.allowAshlandsIncidents)
                     {
                         return;
                     }
