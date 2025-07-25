@@ -3,6 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_CrystalBase]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase" Name="Mashed_Ashlands_Plant_CrystalBase" Abstract="True">
 		<statBases>
+			<Flammability>0</Flammability>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<ingestible>
