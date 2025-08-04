@@ -6,16 +6,14 @@
 		<label>emperor toxisol tree</label>
 		<description>A highly mutated subspecies of the emperor parasol, solely found growing in regions with ash rich ground, and high levels of pollution. Its stem hardens into an almost wood-like material as it matures. Several large pustules can be found growing on the underside of the cap. These pustules will often burst when the tree is felled, releasing clouds of toxic gas into the air.</description>
 		<thingClass>Plant</thingClass>
-		<modExtensions Inherit="False">
-			<li Class="Mashed_Ashlands.PlantProperties"/>
-		</modExtensions>
+		<modExtensions Inherit="False"/>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol</texPath>
 		</graphicData>
 		<plant>
 			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol_Immature</immatureGraphicPath>
 			<pollution>PollutedOnly</pollution>
-			<fertilityMin>0.05</fertilityMin>
+			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<harvestYield>40</harvestYield>
 		</plant>
@@ -49,7 +47,7 @@
 		</statBases>
 		<plant>
 			<pollution>PollutedOnly</pollution>
-			<fertilityMin>0.05</fertilityMin>
+			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>15</growDays>
 			<visualSizeRange>1.3~2.8</visualSizeRange>
