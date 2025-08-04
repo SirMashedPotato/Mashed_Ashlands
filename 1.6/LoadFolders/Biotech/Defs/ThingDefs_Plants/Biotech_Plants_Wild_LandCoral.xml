@@ -1,5 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_GlowingTubeCoral]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TubeCoralTreeBase">
+		<defName>Mashed_Ashlands_Plant_GlowingTubeCoral</defName>
+		<label>glowing tube coral</label>
+		<description>Tube coral mutated by exposure to high levels of pollution. It has adapted to collect nutrients from airborne pollution.</description>
+		<graphicData>
+			<texPath>Things/Plant/Coral/Mashed_Ashlands_GlowingTubeCoral</texPath>
+		</graphicData>
+		<plant>
+			<pollution>PollutedOnly</pollution>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_GlowingLandCoralTree]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_LandCoralTreeBase">
 		<defName>Mashed_Ashlands_Plant_GlowingLandCoralTree</defName>

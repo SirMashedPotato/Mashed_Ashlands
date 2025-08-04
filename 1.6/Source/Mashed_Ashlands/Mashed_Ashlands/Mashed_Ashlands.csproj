@@ -69,13 +69,16 @@
     <Compile Include="Alert\Alert_CliffRacerTracker.cs" />
     <Compile Include="Biome\BiomeWorker\AshlandBiomeWorker.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedPetrifiedForestAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_DustplainAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_FloodedForestAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MeadowAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_MarshAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ThrivingCoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicBasaltHillsAshlands.cs" />
+    <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />

@@ -1,5 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_TubeCoralPink]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase" Name="Mashed_Ashlands_Plant_TubeCoralTreeBase">
+		<defName>Mashed_Ashlands_Plant_TubeCoralPink</defName>
+		<label>tube coral</label>
+		<description>A small form of land coral that grows a sturdy tube. The polyps collect nutrients from airborne ash, as well as eggs from the larger land coral.</description>
+		<graphicData>
+			<texPath>Things/Plant/Coral/Mashed_Ashlands_TubeCoralPink</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.3</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<plant>
+			<topWindExposure>0</topWindExposure>
+			<growDays>7.8</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags Inherit="False"/>
+			<wildTerrainTags>
+				<li>Mashed_Ashlands_CoralSand</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_TubeCoralTeal]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_TubeCoralTreeBase">
+		<defName>Mashed_Ashlands_Plant_TubeCoralTeal</defName>
+		<graphicData>
+			<texPath>Things/Plant/Coral/Mashed_Ashlands_TubeCoralTeal</texPath>
+		</graphicData>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LandCoralTree]==========-->
 	<ThingDef Name="Mashed_Ashlands_Plant_LandCoralTreeBase" ParentName="Mashed_Ashlands_PseudoTreeBase">
 		<defName>Mashed_Ashlands_Plant_LandCoralTree</defName>
