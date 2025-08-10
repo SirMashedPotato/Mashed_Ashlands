@@ -111,8 +111,8 @@
 		<li IfModActive="vanillaexpanded.vcooke">1.6/LoadFolders/VE_Cooking</li>
 		<!-- SYR_ProcessorFramework -->
 		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.6/LoadFolders/SYR_ProcessorFramework</li>
-		<!-- ReGrowth_Core -->
-		<li IfModActive="regrowth.botr.core">LoadFolders/WorldMapBeautificationProject</li>
+		<!-- WMBP Textures -->
+		<!--<li IfModActive="regrowth.botr.core">LoadFolders/WorldMapBeautificationProject</li>-->
 		<!-- SeedsPleaseLite -->
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">LoadFolders/SeedsPleaseLiteTextures</li>
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.6/LoadFolders/SeedsPleaseLite</li>
