@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Bad]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="Ambush" 
+			or defName="ManhunterAmbush" 
+			or defName="CaravanDemand"]/mtbDaysByBiome</xpath>
+		<value>
+			<!-- Blighted -->
+			<Mashed_Ashlands_BlightedAshlands>60</Mashed_Ashlands_BlightedAshlands>
+			<Mashed_Ashlands_BlightedBogAshlands>60</Mashed_Ashlands_BlightedBogAshlands>
+			<Mashed_Ashlands_BlightedPetrifiedForestAshlands>60</Mashed_Ashlands_BlightedPetrifiedForestAshlands>
+			<!-- Regular -->
+			<Mashed_Ashlands_Ashlands>20</Mashed_Ashlands_Ashlands>
+			<Mashed_Ashlands_DustplainAshlands>30</Mashed_Ashlands_DustplainAshlands>
+			<Mashed_Ashlands_GrazelandAshlands>20</Mashed_Ashlands_GrazelandAshlands>
+			<Mashed_Ashlands_HighlandAshlands>30</Mashed_Ashlands_HighlandAshlands>
+			<Mashed_Ashlands_SwampAshlands>30</Mashed_Ashlands_SwampAshlands>
+			<!-- Thriving -->
+			<Mashed_Ashlands_ForestAshlands>20</Mashed_Ashlands_ForestAshlands>
+			<Mashed_Ashlands_MarshAshlands>20</Mashed_Ashlands_MarshAshlands>
+			<Mashed_Ashlands_MeadowAshlands>20</Mashed_Ashlands_MeadowAshlands>
+			<!-- Volcanic -->
+			<Mashed_Ashlands_VolcanicAshlands>40</Mashed_Ashlands_VolcanicAshlands>
+			<Mashed_Ashlands_VolcanicBadlandAshlands>40</Mashed_Ashlands_VolcanicBadlandAshlands>
+			<Mashed_Ashlands_VolcanicBasaltHillsAshlands>40</Mashed_Ashlands_VolcanicBasaltHillsAshlands>
+			<Mashed_Ashlands_VolcanicSulphurPitsAshlands>40</Mashed_Ashlands_VolcanicSulphurPitsAshlands>
+		</value>
+	</Operation>
+	<!-- ==========[Good]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="CaravanMeeting"]/mtbDaysByBiome</xpath>
+		<value>
+			<!-- Blighted -->
+			<Mashed_Ashlands_BlightedAshlands>80</Mashed_Ashlands_BlightedAshlands>
+			<Mashed_Ashlands_BlightedBogAshlands>80</Mashed_Ashlands_BlightedBogAshlands>
+			<Mashed_Ashlands_BlightedPetrifiedForestAshlands>80</Mashed_Ashlands_BlightedPetrifiedForestAshlands>
+			<!-- Regular -->
+			<Mashed_Ashlands_Ashlands>10</Mashed_Ashlands_Ashlands>
+			<Mashed_Ashlands_DustplainAshlands>20</Mashed_Ashlands_DustplainAshlands>
+			<Mashed_Ashlands_GrazelandAshlands>10</Mashed_Ashlands_GrazelandAshlands>
+			<Mashed_Ashlands_HighlandAshlands>20</Mashed_Ashlands_HighlandAshlands>
+			<Mashed_Ashlands_SwampAshlands>20</Mashed_Ashlands_SwampAshlands>
+			<!-- Thriving -->
+			<Mashed_Ashlands_ForestAshlands>10</Mashed_Ashlands_ForestAshlands>
+			<Mashed_Ashlands_MarshAshlands>10</Mashed_Ashlands_MarshAshlands>
+			<Mashed_Ashlands_MeadowAshlands>10</Mashed_Ashlands_MeadowAshlands>
+			<!-- Volcanic -->
+			<Mashed_Ashlands_VolcanicAshlands>60</Mashed_Ashlands_VolcanicAshlands>
+			<Mashed_Ashlands_VolcanicBadlandAshlands>60</Mashed_Ashlands_VolcanicBadlandAshlands>
+			<Mashed_Ashlands_VolcanicBasaltHillsAshlands>60</Mashed_Ashlands_VolcanicBasaltHillsAshlands>
+			<Mashed_Ashlands_VolcanicSulphurPitsAshlands>60</Mashed_Ashlands_VolcanicSulphurPitsAshlands>
+		</value>
+	</Operation>
+</Patch>

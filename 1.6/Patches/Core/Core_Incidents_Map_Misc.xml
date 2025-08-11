@@ -11,8 +11,10 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName="HerdMigration"]/allowedBiomes</xpath>
 		<value>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>

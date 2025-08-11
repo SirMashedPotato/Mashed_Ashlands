@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Perspective: Trees</li>
-			<li>ReGrowth: Core</li>
+			<li>ReGrowth 2: Core</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -24,4 +24,3 @@
 		</match>
 	</Operation>
 </Patch>
-
