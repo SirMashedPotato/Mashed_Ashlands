@@ -5,7 +5,7 @@
 		<label>ashland meadows</label>
 		<description>A thriving region of ashlands, with sparse tree coverage. A seemingly never-ending sea of grass and wild flowers attract large herds, which in turn attracts many predators.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_MeadowAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_MeadowAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_MeadowAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

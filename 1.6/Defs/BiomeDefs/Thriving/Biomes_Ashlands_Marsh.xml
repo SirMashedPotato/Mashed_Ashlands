@@ -5,7 +5,7 @@
 		<label>ashland marsh</label>
 		<description>A thriving region of ashlands, large fields of grass are broken up by sizeable pools of water. While trees aren't commonly found growing here, wild saltrice is a common sight.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_MarshAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_MarshAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_MarshAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

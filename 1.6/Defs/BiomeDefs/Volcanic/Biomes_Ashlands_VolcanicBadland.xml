@@ -5,7 +5,7 @@
 		<label>volcanic badlands</label>
 		<description>An arid volcanic wasteland, rather reminiscent of the blighted ashlands. Little plant life is found here due to the lack of rainfall, leaving only the hardiest of plants remaining. While herds of grazing animals may be found here, smaller critters and desperate predators are a comparatively more common sight.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicBadlandAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_VolcanicBadlandAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicBadlandAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

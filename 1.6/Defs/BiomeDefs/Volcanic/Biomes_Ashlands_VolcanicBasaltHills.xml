@@ -5,7 +5,7 @@
 		<label>volcanic basalt hills</label>
 		<description>A mountainous region with large fields of columnar basalt, broken up by patches of fertile ash, and pools of lava. Proximity to an active volcano ensures there is little plant life found here.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicBasaltHillsAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_VolcanicBasaltHillsAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicBasaltHillsAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

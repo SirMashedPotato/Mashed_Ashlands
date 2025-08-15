@@ -5,7 +5,7 @@
 		<label>ashland swamp</label>
 		<description>An ashland region that has become a swampy wilderness over time. Much of the land is covered by pools of stagnant water, making the landscape difficult to traverse, and especially difficult to build upon. Draggletails, violet coprinus and luminious russula can help navigating the marshes at night.\n\nFew apex predators can be found here, with nix-hounds and durzogs being the most dangerous predators one is likely to face. Of course those that frequent these swamps must also be careful around suspiciously shaped rocks, and especially careful around netch during the breeding season.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_SwampAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_SwampAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_SwampAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

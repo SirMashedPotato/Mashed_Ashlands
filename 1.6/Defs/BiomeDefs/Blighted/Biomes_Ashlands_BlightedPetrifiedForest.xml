@@ -5,7 +5,7 @@
 		<label>blighted petrified forest</label>
 		<description>Intense blight storms have transformed this once thriving forest, into a wasteland of semi-petrified plants that somehow still manage to cling to life. The soil is barren, the water has turned to sludge, and while there are trees here, they yield little parasol wood. Not a pleasant place to live.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedPetrifiedForestAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_BlightedPetrifiedForestAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

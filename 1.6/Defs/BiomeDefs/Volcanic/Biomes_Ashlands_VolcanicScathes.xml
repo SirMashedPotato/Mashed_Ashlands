@@ -5,7 +5,7 @@
 		<label>volcanic scathes</label>
 		<description>An area of volcanic ashlands dominated by large pools of thermally-heated water. These pools are rich in dissolved sulphur, giving them a noticeable green tint, and a very distinctive smell. While not exactly safe to drink, many find bathing in the pools incredibly relaxing.\n\nSome cultures consider these regions to be gateways to the underworld, while others believe that regularly bathing in the sulphuric waters is a means to achieving immortality.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicSulphurPitsAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_VolcanicSulphurPitsAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicSulphurPitsAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

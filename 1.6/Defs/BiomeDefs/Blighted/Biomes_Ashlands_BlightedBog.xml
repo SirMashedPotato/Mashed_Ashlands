@@ -5,7 +5,7 @@
 		<label>blighted bog</label>
 		<description>While somewhat reminiscent of the blighted ashlands, pools of what can only be described as sludge are a common sight here. Draining the sludge may reveal fertile ground, but otherwise most of the land is barren. Plant life is sparse, and only the most desperate animals can be found here.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedBogAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_BlightedBogAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_BlightedBogAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

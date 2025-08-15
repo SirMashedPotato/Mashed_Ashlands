@@ -5,7 +5,7 @@
 		<label>volcanic ashlands</label>
 		<description>An area of ashlands that is still experiencing extreme volcanic activity. Intense heat emanating from lava pools combined with frequent ash storms have limited the variety of life found here. Luckily these regions are largely untouched by blight. The terrain found here is a mix of fertile soil, cracked ground and scorched ash, with lava pools scattering the surface.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_VolcanicAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>

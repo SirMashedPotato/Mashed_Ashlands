@@ -5,7 +5,7 @@
 		<label>ashland forest</label>
 		<description>A thriving region of ashlands, home to a dense forest of colourful mushrooms, and a variety of wild flowers. Plant life here has been able to thrive thanks to the lack of ash storms from the nearby extinct volcano. In turn, both large herds of grazing animals, and packs of predators, can be found here.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_ForestAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_ForestAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_ForestAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>
