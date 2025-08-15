@@ -23,26 +23,6 @@
 			<leaflessGraphicPath>Things/Plant/Ferns/Mashed_Ashlands_LeaflessFern</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_AshlandBrackenGreen]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase">
-		<defName>Mashed_Ashlands_Plant_AshlandBrackenGreen</defName>
-		<label>ashland bracken</label>
-		<description>A small low lying fern, that can often be found growing in large swathes in certain ashland biomes.</description>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-			<Nutrition>0.4</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandBrackenGreen</texPath>
-		</graphicData>
-		<plant>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.6~1</visualSizeRange>
-			<wildClusterRadius>5</wildClusterRadius>
-			<wildClusterWeight>80</wildClusterWeight>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_AshenFern</defName>
