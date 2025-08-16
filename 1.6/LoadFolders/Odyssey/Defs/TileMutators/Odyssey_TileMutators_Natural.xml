@@ -50,7 +50,7 @@
 			<li>Mashed_Ashlands_Coast</li>
 		</categories>
 		<priority>1</priority>
-		<chanceOnNonLandmarkTile>0.05</chanceOnNonLandmarkTile>
+		<chanceOnNonLandmarkTile>0.1</chanceOnNonLandmarkTile>
 		<coastSidesRange>1~6</coastSidesRange>
 		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSand</overrideCoastalBeachTerrain>
 		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSand</overrideLakeBeachTerrain>

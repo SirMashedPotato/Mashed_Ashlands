@@ -50,8 +50,8 @@
 			or defName="CoastalAtoll"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_BasaltCoast>0.1</Mashed_Ashlands_BasaltCoast>
-			<Mashed_Ashlands_LandCoral>0.1</Mashed_Ashlands_LandCoral>
-			<Mashed_Ashlands_LandCoralVolcanic>0.1</Mashed_Ashlands_LandCoralVolcanic>
+			<Mashed_Ashlands_LandCoral>0.2</Mashed_Ashlands_LandCoral>
+			<Mashed_Ashlands_LandCoralVolcanic>0.2</Mashed_Ashlands_LandCoralVolcanic>
 		</value>
 	</Operation>
 	<!-- ==========[Lava]==========-->
