@@ -5,7 +5,7 @@
 		<label>ashlands</label>
 		<description>Highly fertile soil allows for a thriving, if unusual, ecosystem. Frequent ash storms slowly kill all life-forms that are not adapted to the area, making this a difficult place to settle.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_Ashlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_Ashlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_Ashlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<earlyLoader>true</earlyLoader>

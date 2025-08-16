@@ -1,0 +1,1 @@
+assetbundlebuilder "E:\Program Files (x86)\2022.3.35f1\Editor\Unity.exe" "J:\Modding\Github\Mashed_Ashlands\Resources" "sirmashedpotato.ashlands" "J:\Modding\Github\Mashed_Ashlands\Common\AssetBundles"

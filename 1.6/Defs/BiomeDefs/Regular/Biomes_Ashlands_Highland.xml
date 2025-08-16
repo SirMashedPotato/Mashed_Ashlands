@@ -5,7 +5,7 @@
 		<label>ashland highlands</label>
 		<description>A land of treacherous rocky slopes, dotted with pockets of dense vegetation, and small pools of thermally-heated water. Herds of rotumbo are a common sight here, as is ashen jazbay, which thrives on the rocky soil.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_HighlandAshlands</workerClass>
-		<texture>World/Biomes/Mashed_Ashlands_HighlandAshlands</texture>
+		<texture>Terrain/Biomes/Mashed_Ashlands_HighlandAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>
