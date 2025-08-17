@@ -38,6 +38,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
+			<sowResearchPrerequisites Inherit="False"/>
 			<sowTags Inherit="False"/>
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_Sulphur</li>
