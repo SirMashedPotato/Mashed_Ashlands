@@ -112,7 +112,7 @@
 		</statBases>
 		<plant>
 			<growDays>20</growDays>
-			<visualSizeRange>1.1~2.4</visualSizeRange>
+			<visualSizeRange>1.5~2.8</visualSizeRange>
 			<harvestYield>25</harvestYield>
 			<harvestWork>600</harvestWork>
 			<sowResearchPrerequisites>
