@@ -7,6 +7,7 @@
 		<stackLimit>1</stackLimit>
 		<nullifyingGenes>
 			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
 		</nullifyingGenes>
 		<stages>
 			<li>
@@ -25,6 +26,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
 			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
 		</nullifyingPrecepts>
+		<nullifyingGenes>
+			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
+		</nullifyingGenes>
 		<stages>
 			<li>
 				<label>ate insect egg</label>
@@ -42,6 +46,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
 			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
 		</nullifyingPrecepts>
+		<nullifyingGenes>
+			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
+		</nullifyingGenes>
 		<stages>
 			<li>
 				<label>ate cooked insect egg</label>
@@ -59,6 +66,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
 			<li MayRequire="vanillaexpanded.vmemese">VME_InsectMeatEating_DontCare</li>
 		</nullifyingPrecepts>
+		<nullifyingGenes>
+			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
+		</nullifyingGenes>
 		<stages>
 			<li>
 				<label>ate scuttle</label>

@@ -27,6 +27,7 @@
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
 			</li>
 		</modExtensions>
+		<settleWarning>The stench of sulphur hangs thick in the air here. Anyone outside will recieve a mood debuff.</settleWarning>
 		<animalDensity>1.2</animalDensity>
 		<plantDensity>0.4</plantDensity>
 		<!-- Fishing -->

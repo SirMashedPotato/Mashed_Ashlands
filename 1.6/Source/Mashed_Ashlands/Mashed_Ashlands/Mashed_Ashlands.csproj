@@ -194,7 +194,6 @@
     <Compile Include="StatPart\StatPart_WearingHeadgear.cs" />
     <Compile Include="ThingClass\Plant_SecondaryDrop.cs" />
     <Compile Include="CompUse\CompUseEffect_ImprintEgg.cs" />
-    <Compile Include="ThingComp\Comp_AnimalAbilities.cs" />
     <Compile Include="ThingComp\Comp_AshCastleCollapser.cs" />
     <Compile Include="ThingComp\Comp_DischargeOnDamage.cs" />
     <Compile Include="ThingComp\Comp_DropOnDestroy.cs" />
@@ -222,6 +221,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
+    <Compile Include="ThoughtWorker\ThoughtWorker_Scathes.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_AncientLavaFlow.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricPond.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricSprings.cs" />

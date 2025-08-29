@@ -15,6 +15,7 @@
 			<li>Mashed_Ashlands_AshStormLover</li>
 		</nullifyingTraits>
 		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
@@ -36,7 +37,7 @@
 				<description>I can breathe perfectly fine, but at least I feel the ash wearing away at my skin!</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
-			<!-- ash resistance >= 300% -->
+			<!-- ash resistance <= -300% -->
 			<li>
 				<label>in ash storm and suffocating!</label>
 				<description>I'm breathing in more ash than air!</description>
@@ -96,6 +97,7 @@
 			<li>Mashed_Ashlands_AshStormLover</li>
 		</nullifyingTraits>
 		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
@@ -112,5 +114,27 @@
 				<baseMoodEffect>-4</baseMoodEffect>
 			</li>
 		</stages>
+		<nullifyingGenes>
+			<li MayRequire="elsov.beliar">BX_BasaltSkin</li>
+		</nullifyingGenes>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_OutsideInScathes]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_OutsideInScathes</defName>
+		<workerClass>Mashed_Ashlands.ThoughtWorker_Scathes</workerClass>
+		<stages>
+			<li>
+				<label>sulphuric stench</label>
+				<description>It absolutely reeks here! I feel like I can barely breathe!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+		</nullifyingPrecepts>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
+			<li MayRequire="elsov.beliar">BX_BasaltSkin</li>
+		</nullifyingGenes>
 	</ThoughtDef>
 </Defs>

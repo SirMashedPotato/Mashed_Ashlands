@@ -2,12 +2,18 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>The Profaned</li>
+			<li>Rimbound - Novakin Xenotype</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="BotchJob_UndeadAnimalBase"]/statBases</xpath>
+					<xpath>Defs/GeneDef[defName="RB_Plasma_Innards"]/statOffsets</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Snugget"]/statBases</xpath>
 					<value>
 						<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 					</value>

@@ -29,6 +29,7 @@
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
 			</li>
 		</modExtensions>
+		<settleWarning>Most of the ground here is basalt, leaving only pockets of arable soil.</settleWarning>
 		<forageability>0.25</forageability>
 		<animalDensity>0.6</animalDensity>
 		<plantDensity>0.2</plantDensity>

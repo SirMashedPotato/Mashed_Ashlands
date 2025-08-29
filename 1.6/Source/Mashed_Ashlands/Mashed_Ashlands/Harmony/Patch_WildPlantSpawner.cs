@@ -42,10 +42,6 @@ namespace Mashed_Ashlands
                     }
                 }
 
-                foreach (ThingDef plant in outPlants)
-                {
-                    Log.Message(plant);
-                }
                 return false;
             }
 

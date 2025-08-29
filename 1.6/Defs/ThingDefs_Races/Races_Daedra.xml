@@ -127,9 +127,6 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li>
-				<compClass>Mashed_Ashlands.Comp_AnimalAbilities</compClass>
-			</li>
 		</comps>
 		<race>
 			<packAnimal>true</packAnimal>
@@ -283,9 +280,6 @@
 				<eggLayIntervalDays>35</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
-			</li>
-			<li>
-				<compClass>Mashed_Ashlands.Comp_AnimalAbilities</compClass>
 			</li>
 		</comps>
 		<race>

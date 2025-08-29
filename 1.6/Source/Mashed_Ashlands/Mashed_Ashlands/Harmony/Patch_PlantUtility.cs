@@ -22,7 +22,6 @@ namespace Mashed_Ashlands
                 }
                 else if (Mashed_Ashlands_ModSettings.OnlySowOnAsh)
                 {
-                    Log.Message(obj);
                     __result = !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive");
                 }
             }

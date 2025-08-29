@@ -7,7 +7,6 @@
 	</AbilityGroupDef>
 	<!-- ==========[Mashed_Ashlands_LobBase]==========-->
 	<AbilityDef Name="Mashed_Ashlands_LobBase" Abstract="True">
-		<!--<charges>3</charges>-->
 		<groupDef>Mashed_Ashlands_BloomAbility</groupDef>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		<showPsycastEffects>false</showPsycastEffects>

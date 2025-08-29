@@ -37,8 +37,6 @@ namespace Mashed_Ashlands
                 }
             }
 
-            Log.Message(volcanoWarnings.Count);
-
             if (!volcanoWarnings.NullOrEmpty())
             {
                 List<TaggedString> result = new List<TaggedString>();
@@ -53,7 +51,6 @@ namespace Mashed_Ashlands
                     result.Add(str);
                 }
 
-                Log.Message(result.Count);
                 __result = result;
             }
         }

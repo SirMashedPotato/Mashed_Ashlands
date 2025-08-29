@@ -13,5 +13,6 @@ namespace Mashed_Ashlands
         public static BiomeDef Mashed_Ashlands_ForestAshlands;
         public static BiomeDef Mashed_Ashlands_BlightedAshlands;
         public static BiomeDef Mashed_Ashlands_VolcanicAshlands;
+        public static BiomeDef Mashed_Ashlands_VolcanicSulphurPitsAshlands;
     }
 }
