@@ -7,7 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Mousekin_Beehive"]/modExtensions/li[@Class="MousekinRace.BeehiveValidFlowersExtension"]/validFlowerPlantDefs</xpath>
+					<xpath>Defs/MousekinRace.FlowerListDef[defName="Mousekin_ValidFlowers"]/flowerPlants</xpath>
 					<value>
 						<li>Mashed_Ashlands_Plant_AshenHeatherFlower</li>
 						<li>Mashed_Ashlands_Plant_AshlandPitcher</li>
