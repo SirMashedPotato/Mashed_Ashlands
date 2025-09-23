@@ -18,7 +18,7 @@
 					<PackedDirt>Mashed_Ashlands_PackedAsh</PackedDirt>
 				</roadReplacers>
 			</li>
-			<li Class="BiomesKit.BiomesKitControls" MayRequire="zal.wmbp">
+			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
 				<forestSparseBelow>1100</forestSparseBelow>
