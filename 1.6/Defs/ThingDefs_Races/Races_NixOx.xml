@@ -88,11 +88,6 @@
 		<defName>Mashed_Ashlands_NixOx</defName>
 		<label>nix-ox</label>
 		<description>A large grazing insect native to the ashland regions. Surprising to many, they are closely related to the nix-hound. However unlike their relatives, the nix-ox is a gentle herbivore, that primarily feeds on the mushrooms that grow in ashland regions.\n\nWhile they are often farmed for their chitin or meat, most greatly dislike the taste and consistency of the latter, and also find the former rather difficult to work with. As such, domesticated nix-ox are usually used as pack animals.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
-				<AllowPollutionStimulis>false</AllowPollutionStimulis>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixOxFertilized</eggFertilizedDef>

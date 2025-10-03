@@ -114,11 +114,6 @@
 		<defName>Mashed_Ashlands_SiltStrider</defName>
 		<label>silt strider</label>
 		<description>A gigantic flea like insect native to the ashlands. Rarely encountered in the wild, although their calls can often be heard in the distance. Often used as a means of long-distance transport. Rather resistant to damage, and surprisingly capable in combat.\n\nSilt strider chitin is a rather valuable building material, though somewhat difficult to acquire. It can either be harvested from a dead silt strider, or one can wait for a living silt strider to shed the outer layer of its shell.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
-				<AllowPollutionStimulis>false</AllowPollutionStimulis>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_SiltStriderFertilized</eggFertilizedDef>

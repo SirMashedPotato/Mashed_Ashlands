@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_FleshInsect]==========-->
+	<FleshTypeDef>
+		<defName>Mashed_Ashlands_FleshInsect</defName>
+		<corpseCategory>CorpsesInsect</corpseCategory>
+		<damageEffecter>Damage_HitInsect</damageEffecter>
+		<isOrganic>true</isOrganic>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundA</texture>
+				<color>0.23,0.20,0.17</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundB</texture>
+				<color>0.23,0.20,0.17</color>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundC</texture>
+				<color>0.23,0.20,0.17</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
 	<!-- ==========[Mashed_Ashlands_FleshNetch]==========-->
 	<FleshTypeDef>
 		<defName>Mashed_Ashlands_FleshNetch</defName>

@@ -93,11 +93,6 @@
 		<defName>Mashed_Ashlands_Pyrantula</defName>
 		<label>pyrantula</label>
 		<description>A relatively large species of spider, often found in highly volcanically active ashland regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body. The vibrant silk cocoon that covers most of their body also contains highly flammable gas, that the pyrantula can release and ignite when threatened.\n\n&lt;color=#E5E54C&gt;Flame Discharge&lt;/color&gt;\nPyrantulas are able to periodically release flame explosions when damaged.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
-				<AllowPollutionStimulis>false</AllowPollutionStimulis>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
@@ -189,11 +184,6 @@
 		<defName>Mashed_Ashlands_Rachnoid</defName>
 		<label>rachnoid</label>
 		<description>A relatively large species of spider, often found in arid and volcanically active ashland regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body, which protects them from the heat. Taming a rachnoid will allow one to regularly shear excess silk from its cocoon.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PollutionProperties" MayRequire="ludeon.rimworld.biotech">
-				<AllowPollutionStimulis>false</AllowPollutionStimulis>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
