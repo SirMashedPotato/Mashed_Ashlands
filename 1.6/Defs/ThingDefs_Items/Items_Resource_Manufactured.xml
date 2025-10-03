@@ -22,6 +22,9 @@
 			<DeteriorationRate>2</DeteriorationRate>
 			<WorkToMake>600</WorkToMake>
 		</statBases>
+		<thingCategories Inherit="false">
+			<li>Manufactured</li>
+		</thingCategories>
 		<costList>
 			<Mashed_Ashlands_ScribJelly>3</Mashed_Ashlands_ScribJelly>
 			<Mashed_Ashlands_RawMuck>6</Mashed_Ashlands_RawMuck>
