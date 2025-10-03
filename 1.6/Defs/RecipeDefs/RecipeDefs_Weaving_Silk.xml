@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_RachnoidSilkToCloth</defName>
 		<label>weave rachnoid silk into cloth</label>
 		<description>Weave 10 rachnoid silk into 20 cloth.</description>
-		<jobString>Weaving kresh.</jobString>
+		<jobString>Weaving rachnoid silk.</jobString>
 		<ingredients>
 			<li>
 				<filter>
