@@ -36,7 +36,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
 		<defName>Mashed_Ashlands_GiantAshlandFungus</defName>
 		<label>ashland fungus tree</label>
-		<description>Highyl mutated ashland fungus, causing it to grow significantly larger than usual. Even at this size, the stem is still too soft to be used as a building material.</description>
+		<description>Highly mutated ashland fungus, causing it to grow significantly larger than usual. Even at this size, the stem is still too soft to be used as a building material.</description>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_GiantAshlandFungus</texPath>
 		</graphicData>
