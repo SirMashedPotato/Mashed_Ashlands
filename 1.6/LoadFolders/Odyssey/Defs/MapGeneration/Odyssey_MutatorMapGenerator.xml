@@ -24,4 +24,28 @@
 			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisField]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_VolcanicDebrisField</defName>
+		<order>960</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_VolcanicDebris</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>13</minSpacing>
+			<extraNoBuildEdgeDist>3</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>3</terrainValidationRadius>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>3</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 </Defs>

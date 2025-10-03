@@ -182,4 +182,21 @@
 		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_GlassDeposits</workerClass>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisField]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_VolcanicDebrisField</defName>
+		<label>volcanic debris field</label>
+		<description>There is volcanic debris in this area, which can be mined for rare, or possibly not-so-rare, resources.</description>
+		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_VolcanicDebrisField</li>
+		</extraGenSteps>
+		<biomeWhitelist>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 </Defs>
