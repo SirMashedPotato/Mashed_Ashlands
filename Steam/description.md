@@ -35,21 +35,16 @@ While regular plants may theoretically flourish in the nutrient rich ground foun
 Ashland biomes are not as heavily impacted by pollution, thanks to the fertile volcanic soil. This has allowed native fauna and flora to adapt to pollution, and in some cases even flourish. Polluted soil in these biomes will have its fertility reduced by 50%, and as such plant density is not as heavily reduced.
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_Biotech.png[/img]
 [hr][/hr]
+[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Discord_Bits/main/Mashed_GenericBanner_Odyssey.png[/img]
+There are also several ashland specific tile mutators and landmarks added if Odyssey is enabled, as well as new fish for every ashland biome.
+[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_Odyssey.png[/img]
+[hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_ExtraSupportFor.png[/img]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2941608795]Exploration Mode[/url] adding in the volcano map item
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2054759330]MorrowRim Sound Patch[/url] doing what you think it would do
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2586052937]SeedsPlease Lite[/url] adding in seeds
 [*]And more that you can look through the GitHub for
 [/list]
-[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_Fish.png[/img]
-[hr][/hr]
-[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_RecommendedMods.png[/img]
-[list]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569]ReGrowth Mods[/url] to improve vanilla biomes
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2814391846]Biome Transitions[/url] because it's just really neat
-[/list]
-[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_BiomeTransitions.png[/img]
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Questions.png[/img]
 Q: CE?
