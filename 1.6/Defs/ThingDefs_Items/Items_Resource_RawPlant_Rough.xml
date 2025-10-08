@@ -41,7 +41,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantTeaRawBase">
 		<defName>Mashed_Ashlands_RawEmperorParasolMoss</defName>
 		<label>emperor parasol moss</label>
-		<description>Moss from an emperor parasol. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create an elixir that boosts resistance to ash buildup during ash storms.</description>
+		<description>Moss harvested from an emperor parasol tree. Not particularly tasty, but many animals seem to enjoy it. It can also be used to create a tea that boosts resistance to ash buildup.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_EmperorParasolMoss</texPath>
 		</graphicData>
@@ -63,7 +63,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
 		<defName>Mashed_Ashlands_RawMuck</defName>
 		<label>muck</label>
-		<description>Raw muck harvested from a mucksponge. While the herbal medicine it can be refined into is perfectly safe, raw muck by itself is rather toxic.</description>
+		<description>Raw muck harvested from a mucksponge, typically found growing in caves, or near water sources. While the herbal medicine it can be refined into is perfectly safe, raw muck by itself is rather toxic.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_Muck</texPath>
 		</graphicData>
