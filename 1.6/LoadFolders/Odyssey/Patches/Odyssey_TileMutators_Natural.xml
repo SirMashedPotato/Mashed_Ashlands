@@ -22,6 +22,14 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
 	</Operation>
+	<!-- ==========[ToxicLake]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="ToxicLake"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</value>
+	</Operation>
 	<!-- ==========[Wetland]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
