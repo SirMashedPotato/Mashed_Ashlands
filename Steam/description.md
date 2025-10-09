@@ -37,14 +37,16 @@ Ashland biomes are not as heavily impacted by pollution, thanks to the fertile v
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Discord_Bits/main/Mashed_GenericBanner_Odyssey.png[/img]
 There are also several ashland specific tile mutators and landmarks added if Odyssey is enabled, as well as new fish for every ashland biome.
+Tile mutators range from increased fetcherfly hives, to volcanic ebony deposits, and ash plant groves.
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_Odyssey.png[/img]
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_ExtraSupportFor.png[/img]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2941608795]Exploration Mode[/url] adding in the volcano map item
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2054759330]MorrowRim Sound Patch[/url] doing what you think it would do
-[*]And more that you can look through the GitHub for
+[*]And more that I can't list here due to the character limit
 [/list]
+
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Questions.png[/img]
 Q: CE?
