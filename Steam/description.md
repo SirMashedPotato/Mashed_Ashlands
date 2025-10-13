@@ -7,14 +7,16 @@ A completely remade version of the original MorrowRim mod, made to a much higher
 For those with no knowledge of the original mod, this adds several biomes based on the region of Vvardenfell from The Elder Scrolls III: Morrowind, including animals, plants, weather, and assorted extras directly from The Elder Scrolls III: Morrowind.
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Volcano.png[/img]
-The biggest change in this mod, when compared to the original, is the addition of volcanos. Volcanos are a new type of world object that is created on impassable mountain tiles during world generation. Volcanos form the centre of ashland regions, and are the source of ash storms, as well as other volcanic conditions. 
+Volcanos are a new type of world object that generate on impassable mountain tiles during world generation. Volcanos form the centre of ashland regions, and are the source of ash storms, as well as other volcanic conditions. 
 
 Each volcano is randomly assigned a category during world generation, which affects the maximum radius of any volcanic conditions it causes. This category can change over time, meaning your once safe settlement may not be safe forever. There are four types of volcano, each with their own associated biomes, and conditions.
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_Volcano.png[/img]
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_AshStorms.png[/img]
-Ash storms of course return, and have received a fairly major rework. Ash resistance is no longer a binary thing, and is now a fully-fledged stat. The higher a pawns ash resistance stat is, they less ash buildup they will receive. For plants the ash resistance stat dictates how much damage they randomly take during an ash storm. Many ashland native pawns and plants no longer have complete ash resistance.
-[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Showcase_AshStorm.png[/img]
+Ash storms are the most common condition caused by volcanos. Pawns outside during an ash storm will receive ash buildup, which can be mitigated by increasing the pawns ash resistance stat. This can be done by wearing protective headgear, drinking parasol moss tea, ash filter implants, or ash resistance genes.
+
+Unroofed plants will take damage, so you may need to rely on either greenhouses, or ashland native plants. 
+Some buildings such as wind turbines will also take damage during ash storms.
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Biomes.png[/img]
 The fertile terrain of these biomes, has allowed for the formation of rather strange ecosystems. Large insects, odd-looking reptiles, and of course enormous mushroom trees are all common sights in the ashlands. Of course some ashland biomes are far more hospitable than others.
