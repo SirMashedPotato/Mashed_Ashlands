@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshDeposit]==========-->
+	<TileMutatorDef ParentName="GL_LandformBase">
+		<defName>Mashed_Ashlands_AshDeposit</defName>
+		<categories>
+			<li>Mashed_Ashlands_AshDeposit</li>
+		</categories>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_BlightedAshDeposit]==========-->
+	<TileMutatorDef ParentName="GL_LandformBase">
+		<defName>Mashed_Ashlands_BlightedAshDeposit</defName>
+		<categories>
+			<li>Mashed_Ashlands_AshDeposit</li>
+		</categories>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_RichAshDeposit]==========-->
+	<TileMutatorDef ParentName="GL_LandformBase">
+		<defName>Mashed_Ashlands_RichAshDeposit</defName>
+		<categories>
+			<li>Mashed_Ashlands_AshDeposit</li>
+		</categories>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicAshDeposit]==========-->
+	<TileMutatorDef ParentName="GL_LandformBase">
+		<defName>Mashed_Ashlands_VolcanicAshDeposit</defName>
+		<categories>
+			<li>Mashed_Ashlands_AshDeposit</li>
+		</categories>
+	</TileMutatorDef>
+</Defs>
