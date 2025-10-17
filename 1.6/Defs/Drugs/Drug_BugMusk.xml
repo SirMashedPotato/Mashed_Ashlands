@@ -37,6 +37,7 @@
 			<ingestReportString>Applying {0}.</ingestReportString>
 			<chairSearchRadius>25</chairSearchRadius>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<tableDesired>false</tableDesired>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
