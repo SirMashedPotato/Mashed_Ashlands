@@ -149,6 +149,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_MudcrabMerchantMeeting.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
+    <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveThoughtSeasonal.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />

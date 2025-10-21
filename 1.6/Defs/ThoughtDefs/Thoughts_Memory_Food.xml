@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AteRawMuck]==========-->
+	<!-- ==========[Mashed_Ashlands_AteFestiveMeal]==========-->
 	<ThoughtDef>
-		<defName>Mashed_Ashlands_AteRawMuck</defName>
+		<defName>Mashed_Ashlands_AteFestiveMeal</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
-		<nullifyingGenes>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
-			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
-		</nullifyingGenes>
 		<stages>
 			<li>
-				<label>consumed muck</label>
-				<description>Good thing I have a bucket right here.</description>
-				<baseMoodEffect>-15</baseMoodEffect>
+				<label>ate festive meal</label>
+				<description>That meal was even better than usual. It really does just taste better when eaten at the right time.</description>
+				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 		</stages>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
 	</ThoughtDef>
 	<!-- ==========[Mashed_Ashlands_AteInsectEggDirect]==========-->
 	<ThoughtDef>
@@ -54,6 +53,23 @@
 				<label>ate cooked insect egg</label>
 				<description>I ate a meal cooked with slimy insect eggs. The seasoning partly covered the taste, but there were fluid pockets in there that I can't identify.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_AteRawMuck]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_AteRawMuck</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RobustDigestion</li>
+			<li MayRequire="airo.rimboundnovakinxenotype">RB_Fusion_Metabolism</li>
+		</nullifyingGenes>
+		<stages>
+			<li>
+				<label>consumed muck</label>
+				<description>Good thing I have a bucket right here.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

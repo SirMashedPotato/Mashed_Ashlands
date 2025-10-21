@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MealLavishBase">
 		<defName>Mashed_Ashlands_LavaFootSoup</defName>
 		<label>lava foot soup</label>
-		<description>A lavishly made soup, typically made to celebrate holidays, and relatively quick to make in bulk. Quite filling, and slightly energising.</description>
+		<description>A lavishly made soup, typically made to the dawn of a new year, and relatively quick to make in bulk. Grants a bigger mood buff when consumed in the final days of the year.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/Mashed_Ashlands_LavaFootSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -12,12 +12,10 @@
 		<uiIconForStackCount>-1</uiIconForStackCount>
 		<rotatable>false</rotatable>
 		<ingestible>
-			<joy>0.05</joy>
-			<joyKind>Gluttonous</joyKind>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_OffsetNeed">
-					<need>Rest</need>
-					<offset>0.05</offset>
+				<li Class="Mashed_Ashlands.IngestionOutcomeDoer_GiveThoughtSeasonal">
+					<thoughtDef>Mashed_Ashlands_AteFestiveMeal</thoughtDef>
+					<quadrum>Decembary</quadrum>
 				</li>
 			</outcomeDoers>
 		</ingestible>
