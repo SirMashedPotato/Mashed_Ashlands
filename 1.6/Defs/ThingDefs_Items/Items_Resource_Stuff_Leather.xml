@@ -219,8 +219,7 @@
 		<label>rachnoid silk</label>
 		<description>Fine silk from a rachnoid. Quite luxurious and insulates rather well against the heat.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Cloth</texPath>
-			<color>(231,222,190)</color>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_RachnoidSilk</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>4.0</MarketValue>
