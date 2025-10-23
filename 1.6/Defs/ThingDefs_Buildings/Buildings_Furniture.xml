@@ -149,7 +149,7 @@
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
+				<glowRadius>8</glowRadius>
 				<glowColor>(78,226,229,0)</glowColor>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
@@ -172,7 +172,7 @@
 		<uiIconPath>Things/Building/Misc/Mashed_Ashlands_DarklightTorchbugWallLamp/Mashed_Ashlands_DarklightTorchbugWallLamp_MenuIcon</uiIconPath>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
+				<glowRadius>6</glowRadius>
 				<glowColor>(78,226,229,0)</glowColor>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
@@ -202,7 +202,7 @@
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>6</glowRadius>
+				<glowRadius>7</glowRadius>
 				<glowColor>(251,89,11,0)</glowColor>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
@@ -230,7 +230,7 @@
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>4</glowRadius>
+				<glowRadius>5</glowRadius>
 				<glowColor>(214,148,94,0)</glowColor>
 			</li>
 			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
