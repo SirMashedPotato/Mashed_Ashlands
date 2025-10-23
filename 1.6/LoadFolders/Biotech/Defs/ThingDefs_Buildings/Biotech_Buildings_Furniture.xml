@@ -22,4 +22,27 @@
 			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
 		</researchPrerequisites>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_GlowingTorchbugWallLamp]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TorchbugWallLamp_Base">
+		<defName>Mashed_Ashlands_GlowingTorchbugWallLamp</defName>
+		<label>glowing torchbug wall lamp</label>
+		<description>A small wall-mounted lamp made of parasol wood, and containing torchbugs. Provides a reasonable amount of light, though not as much as a regular glowing torchbug lamp. The torchbugs will need to be fed either insect meat, raw ash fungus, or parasol moss, every now and then.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_GlowingTorchbugWallLamp/Mashed_Ashlands_GlowingTorchbugWallLamp</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/Misc/Mashed_Ashlands_GlowingTorchbugWallLamp/Mashed_Ashlands_GlowingTorchbugWallLamp_MenuIcon</uiIconPath>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(84,94,33,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_GlowingTorchbugEffecter</effecterDef>
+				<tickInterval>750</tickInterval>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+		</researchPrerequisites>
+	</ThingDef>
 </Defs>
