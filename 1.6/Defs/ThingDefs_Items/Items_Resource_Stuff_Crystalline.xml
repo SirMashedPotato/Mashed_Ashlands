@@ -9,12 +9,13 @@
 		<soundDrop>Metal_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>1.5</MarketValue>
+			<MarketValue>3</MarketValue>
 			<Mass>0.5</Mass>
 			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
 		</statBases>
 		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
 		<possessionCount>5</possessionCount>
 		<minRewardCount>10</minRewardCount>
 		<thingCategories>
@@ -22,25 +23,23 @@
 		</thingCategories>
 		<stuffProps>
 			<categories>
-				<li>Mashed_Ashlands_Crystalline</li>
+				<li>Stony</li>
 				<li MayRequire="kikohi.jewelry">Gemstones</li>
 			</categories>
 			<commonality>0</commonality>
-			<appearance>Bricks</appearance>
 			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
 			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
-			<stuffAdjective>crystalline</stuffAdjective>
 			<statFactors>
 				<WorkToBuild>6</WorkToBuild>
 				<WorkToMake>1.2</WorkToMake>
 				<MaxHitPoints>0.6</MaxHitPoints>
-				<Flammability>0.4</Flammability>
+				<Flammability>0.3</Flammability>
 			</statFactors>
 			<statOffsets>
 				<WorkToBuild>140</WorkToBuild>
-				<Beauty>2</Beauty>
+				<Beauty>6</Beauty>
 			</statOffsets>
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -59,9 +58,9 @@
 		</graphicData>
 		<stuffProps>
 			<color>(186,151,248)</color>
-			<stuffAdjective>p. crystalline</stuffAdjective>
+			<stuffAdjective>p. crystal</stuffAdjective>
 			<statFactors>
-				<Beauty>1.5</Beauty>
+				<Beauty>1.3</Beauty>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
