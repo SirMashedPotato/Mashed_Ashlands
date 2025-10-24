@@ -1,79 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_Plant_AshPomegranate]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
-		<defName>Mashed_Ashlands_Plant_AshPomegranate</defName>
-		<label>ash pomegranate tree</label>
-		<description>An incredibly hardy tree that can be found growing in volcanically active ashland regions. Visually quite distinct compared to the common pomegranate tree. The branches of the ash pomegranate almost completely lack leaves, and are covered in large thorns. The fruits this tree produces are just as edible, though they do have a slightly odd ashy taste.</description>
-		<blockWind>true</blockWind>
-		<statBases>
-			<Flammability>0.4</Flammability>
-			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant</texPath>
-		</graphicData>
-		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant_Immature</immatureGraphicPath>
-			<fertilitySensitivity>1</fertilitySensitivity>
-			<fertilityMin>0.8</fertilityMin>
-			<harvestedThingDef>Mashed_Ashlands_RawAshPomegranate</harvestedThingDef>
-			<harvestYield>40</harvestYield>
-			<harvestAfterGrowth>0.20</harvestAfterGrowth>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
-			</sowResearchPrerequisites>
-			<sowMinSkill>8</sowMinSkill>
-			<growDays>25</growDays>
-			<visualSizeRange>1.8~2.6</visualSizeRange>
-			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<maxGrowthTemperature>90</maxGrowthTemperature>
-		</plant>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
-		<defName>Mashed_Ashlands_Plant_GoldenReed</defName>
-		<label>golden reed plant</label>
-		<description>A very distinctively coloured reed, rarely found growing in certain ashland regions near water. Sometimes used as a supplement for wood. A form of martial arts was named after this plant. Can only grow on ash rich ground.</description>
-		<modExtensions>
-			<li Class="Mashed_Ashlands.PlantProperties">
-				<requireWaterForWild>true</requireWaterForWild>
-				<minTilesToWaterForWild>6</minTilesToWaterForWild>
-				<disallowedTerrainDefsForWild>
-					<li>Mashed_Ashlands_RichAshSoil</li>
-				</disallowedTerrainDefsForWild>
-			</li>
-		</modExtensions>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-			<MaxHitPoints>45</MaxHitPoints>
-			<Nutrition>0.25</Nutrition>
-			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GoldenReedPlant</texPath>
-		</graphicData>
-		<plant>
-			<fertilitySensitivity>1</fertilitySensitivity>
-			<fertilityMin>0.8</fertilityMin>
-			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
-			<harvestYield>3</harvestYield>
-			<sowMinSkill>8</sowMinSkill>
-			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
-			</sowResearchPrerequisites>
-			<topWindExposure>0.1</topWindExposure>
-			<growDays>7</growDays>
-			<visualSizeRange>1~2.4</visualSizeRange>
-			<maxMeshCount>4</maxMeshCount>
-			<blockAdjacentSow>false</blockAdjacentSow>
-			<wildClusterRadius>6</wildClusterRadius>
-		</plant>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenJazbay]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_AshenJazbay</defName>
@@ -117,6 +43,113 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshPomegranate]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_AshPomegranate</defName>
+		<label>ash pomegranate tree</label>
+		<description>An incredibly hardy tree that can be found growing in volcanically active ashland regions. Visually quite distinct compared to the common pomegranate tree. The branches of the ash pomegranate almost completely lack leaves, and are covered in large thorns. The fruits this tree produces are just as edible, though they do have a slightly odd ashy taste.</description>
+		<blockWind>true</blockWind>
+		<statBases>
+			<Flammability>0.4</Flammability>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshPomegranatePlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<harvestedThingDef>Mashed_Ashlands_RawAshPomegranate</harvestedThingDef>
+			<harvestYield>40</harvestYield>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<growDays>25</growDays>
+			<visualSizeRange>1.8~2.6</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<maxGrowthTemperature>90</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GiantXylaria]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_GiantXylaria</defName>
+		<label>giant xylaria spire</label>
+		<description>A large fungal spire, solely found growing in some of the most inhospitable ashland regions. Once mature, the spore sacks that erupt from it can be harvested. These spores can be processed into a hallucinogenic powder, which enhances the ingestors dreams.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GiantXylariaPlant</texPath>
+		</graphicData>
+		<plant>
+			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_GiantXylariaPlant_Immature</immatureGraphicPath>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>Mashed_Ashlands_RawXylariaSpores</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>14</growDays>
+			<visualSizeRange>1.6~3</visualSizeRange>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<wildClusterRadius>6</wildClusterRadius>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GoldenReed]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
+		<defName>Mashed_Ashlands_Plant_GoldenReed</defName>
+		<label>golden reed plant</label>
+		<description>A very distinctively coloured reed, rarely found growing in certain ashland regions near water. Sometimes used as a supplement for wood. A form of martial arts was named after this plant. Can only grow on ash rich ground.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<requireWaterForWild>true</requireWaterForWild>
+				<minTilesToWaterForWild>6</minTilesToWaterForWild>
+				<disallowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_RichAshSoil</li>
+				</disallowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_GoldenReedPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.8</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>7</growDays>
+			<visualSizeRange>1~2.4</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<wildClusterRadius>6</wildClusterRadius>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_MeadowRye]==========-->

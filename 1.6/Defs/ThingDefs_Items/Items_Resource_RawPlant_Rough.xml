@@ -129,4 +129,20 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawXylariaSpores]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantRoughBase">
+		<defName>Mashed_Ashlands_RawXylariaSpores</defName>
+		<label>xylaria spores</label>
+		<description>Raw xylaria spores. With the right preparation these can be processed into a hallucinogenic powder.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_XylariaSpores</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+	</ThingDef>
 </Defs>
