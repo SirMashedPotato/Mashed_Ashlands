@@ -25,6 +25,25 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedGiantXylaria]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedGiantXylaria</defName>
+		<label>giant xylaria spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedGiantXylaria</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_GiantXylaria</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_GiantXylaria</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedScathecraw]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
 		<defName>Mashed_Ashlands_SeedScathecraw</defName>

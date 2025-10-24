@@ -119,6 +119,7 @@
     <Compile Include="DefOf\TerrainDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="DefOf\TraderKindDefOf.cs" />
     <Compile Include="DefOf\WeatherDefOf.cs" />
     <Compile Include="Def\VolcanicConditionDef.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
+    <Compile Include="Harmony\Patch_ApplyBedThoughts.cs" />
     <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
     <Compile Include="Harmony\Patch_MentalBreakWorker_RunWild.cs" />
