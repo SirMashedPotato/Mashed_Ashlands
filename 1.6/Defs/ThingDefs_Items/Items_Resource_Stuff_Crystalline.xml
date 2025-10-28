@@ -26,7 +26,7 @@
 				<li>Stony</li>
 				<li MayRequire="kikohi.jewelry">Gemstones</li>
 			</categories>
-			<commonality>0</commonality>
+			<commonality>0.03</commonality>
 			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -41,6 +41,7 @@
 				<WorkToBuild>140</WorkToBuild>
 				<Beauty>6</Beauty>
 			</statOffsets>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<allowedArchonexusCount>75</allowedArchonexusCount>
