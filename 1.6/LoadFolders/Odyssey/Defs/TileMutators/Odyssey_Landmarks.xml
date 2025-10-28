@@ -70,6 +70,21 @@
 			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.05</Pollution_Increased>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
+	<LandmarkDef ParentName="BaseLake">
+		<defName>Mashed_Ashlands_SludgePond</defName>
+		<label>sludge pond</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SludgePond</iconTexturePath>
+		<commonality>0.15</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_SludgePond</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_SludgePond Required="True"/>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Fish_Decreased>0.5</Fish_Decreased>
+			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
 	<LandmarkDef ParentName="BaseLake">
 		<defName>Mashed_Ashlands_SulphuricPond</defName>

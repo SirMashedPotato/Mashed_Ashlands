@@ -43,6 +43,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_SludgePond]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_SludgePond</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s sludge pond</li>
+				<li>terrain_word(p=2)->sludge pond</li>
+				<li>terrain_word->blighted pond</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmark_SulphuricPond]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_SulphuricPond</defName>

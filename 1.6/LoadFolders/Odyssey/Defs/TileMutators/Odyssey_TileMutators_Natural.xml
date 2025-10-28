@@ -86,6 +86,23 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_SludgePond</defName>
+		<label>sludge pond</label>
+		<description>A small body of blighted sludge.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SludgePond</workerClass>
+		<categories>
+			<li>Groundwater</li>
+		</categories>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SulphuricPond</defName>

@@ -226,6 +226,7 @@
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Scathes.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_AncientLavaFlow.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_SludgePond.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricPond.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricSprings.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_EbonyDeposits.cs" />

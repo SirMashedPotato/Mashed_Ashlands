@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3360817448
+CRC: 4236509333
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9e3e4c76b49ce53b5ca403122a9bdd59
+    Hash: c6a090d8c12aab01183924d4a2bd2c88
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 9e3e4c76b49ce53b5ca403122a9bdd59
+    Hash: c6a090d8c12aab01183924d4a2bd2c88
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -154,6 +154,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Achievements/Mashed_AchievementAshlands_KillCliffRacerD.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_AshlandGrass/Mashed_Ashlands_AshlandGrass_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStriderNymph_north.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_SludgePond.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_BlueEntoloma/Mashed_Ashlands_BlueEntoloma_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_TubeCoralPink/Mashed_Ashlands_TubeCoralPink_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Stumps/Mashed_Ashlands_ParasolChopped/Mashed_Ashlands_ParasolChopped_b.png
