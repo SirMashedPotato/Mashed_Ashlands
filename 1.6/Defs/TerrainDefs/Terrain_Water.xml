@@ -12,7 +12,6 @@
 		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
 		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
 		<traversedThought>Mashed_Ashlands_WadedThroughSludge</traversedThought>
-		<waterBodyType>Other</waterBodyType>
 		<canFreeze>false</canFreeze>
 		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
 		<tags>
