@@ -169,6 +169,29 @@
 			<li>CaveHives</li>
 		</preventGenSteps>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_ThermalMudPools</defName>
+		<label>thermal mud pools</label>
+		<description>Bodies of thermally heated mud are present in this area.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalMudPools</workerClass>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_ThermalPond</defName>

@@ -16,5 +16,6 @@ namespace Mashed_Ashlands
         public static TerrainDef Mashed_Ashlands_DeepSulphuricWater;
         public static TerrainDef Mashed_Ashlands_AshMudBlighted;
         public static TerrainDef Mashed_Ashlands_BlightedSludge;
+        public static TerrainDef Mashed_Ashlands_ThermalMud;
     }
 }

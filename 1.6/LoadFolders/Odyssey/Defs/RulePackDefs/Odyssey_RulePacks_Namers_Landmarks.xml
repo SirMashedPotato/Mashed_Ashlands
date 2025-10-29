@@ -87,6 +87,21 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmarkThermalMudPools]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_ThermalMudPools</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s mud pools</li>
+				<li>terrain_word(p=2)->thermal mudpots</li>
+				<li>terrain_word(p=2)->thermal mud pools</li>
+				<li>terrain_word->mud baths</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmark_ThermalPond]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_ThermalPond</defName>

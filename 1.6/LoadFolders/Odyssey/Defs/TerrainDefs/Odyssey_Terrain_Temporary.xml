@@ -13,6 +13,18 @@
 		<floodTerrain>Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ThermalMudBase">
+		<defName>Mashed_Ashlands_ThermalMudFloodwater</defName>
+		<label>mud floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_ThermalMudFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_MarshBase">
 		<defName>Mashed_Ashlands_MarshFloodwater</defName>
 		<label>marsh floodwater</label>

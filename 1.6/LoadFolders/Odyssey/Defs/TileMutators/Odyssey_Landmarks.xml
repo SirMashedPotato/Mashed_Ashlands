@@ -101,23 +101,17 @@
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
-	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
-	<LandmarkDef>
-		<defName>Mashed_Ashlands_SulphuricSprings</defName>
-		<label>sulphuric springs</label>
+	<!-- ==========[Mashed_Ashlands_SpringsBase]==========-->
+	<LandmarkDef Name="Mashed_Ashlands_SpringsBase" Abstract="true">
 		<drawScale>0.8</drawScale>
-		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricSprings</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
 		<commonality>0.25</commonality>
-		<nameMaker>Mashed_Ashlands_NamerLandmark_SulphuricSprings</nameMaker>
 		<mutatorChances>
-			<Mashed_Ashlands_SulphuricSprings Required="True"/>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Stockpile>0.05</Stockpile>
 			<MineralRich>0.03</MineralRich>
 			<FoggyMutator>0.05</FoggyMutator>
-			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.05</Mashed_Ashlands_SulphuricAtmosphereMutator>
 			<WindyMutator>0.05</WindyMutator>
 			<InsectMegahive>0.01</InsectMegahive>
 			<MixedBiome>0.5</MixedBiome>
@@ -127,7 +121,6 @@
 			<ArcheanTrees>0.01</ArcheanTrees>
 			<Mashed_Ashlands_EbonyDeposits>0.01</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.01</Mashed_Ashlands_GlassDeposits>
-			<PlantLife_Decreased>0.03</PlantLife_Decreased>
 		</mutatorChances>
 		<comboLandmarkMutators>
 			<Valley>0.1</Valley>
@@ -135,6 +128,28 @@
 			<Chasm>0.1</Chasm>
 			<TerraformingScar>0.1</TerraformingScar>
 		</comboLandmarkMutators>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase"> 
+		<defName>Mashed_Ashlands_SulphuricSprings</defName>
+		<label>sulphuric springs</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricSprings</iconTexturePath>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_SulphuricSprings</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_SulphuricSprings Required="True"/>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.05</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
+		<defName>Mashed_Ashlands_ThermalMudPools</defName>
+		<label>thermal mud pools</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_ThermalMudPools</iconTexturePath>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalMudPools</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_ThermalMudPools Required="True"/>
+		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
 	<LandmarkDef ParentName="BaseLake">

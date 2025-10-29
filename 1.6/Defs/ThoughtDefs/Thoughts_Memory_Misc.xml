@@ -28,4 +28,18 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMud]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_ThermalMud</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>thermal mud</label>
+				<description>I sure am dirty, but I do feel rejuvenated!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

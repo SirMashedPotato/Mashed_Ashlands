@@ -72,6 +72,7 @@
 			<Mashed_Ashlands_DusttideMutator>0.02</Mashed_Ashlands_DusttideMutator>
 			<Mashed_Ashlands_SulphuricPond>0.02</Mashed_Ashlands_SulphuricPond>
 			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
+			<Mashed_Ashlands_ThermalMudPools>0.02</Mashed_Ashlands_ThermalMudPools>
 			<Mashed_Ashlands_ThermalPond>0.02</Mashed_Ashlands_ThermalPond>
 		</value>
 	</Operation>
@@ -80,6 +81,7 @@
 			or @Name="AncientStructureBase"]/comboLandmarkMutators</xpath>
 		<value>
 			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
+			<Mashed_Ashlands_ThermalMudPools>0.02</Mashed_Ashlands_ThermalMudPools>
 		</value>
 	</Operation>
 </Patch>

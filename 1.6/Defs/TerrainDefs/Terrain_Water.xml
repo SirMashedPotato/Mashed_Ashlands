@@ -1,22 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
-	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_BlightedSludgeBase">
-		<defName>Mashed_Ashlands_BlightedSludge</defName>
-		<label>blighted sludge</label>
-		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_BlightedSludgeRamp</texturePath>
+	<!-- ==========[Mashed_Ashlands_LiquidMudBase]==========-->
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_LiquidMudBase" Abstract="true">
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<pathCost>40</pathCost>
 		<renderPrecedence>394</renderPrecedence>
-		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
-		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
-		<traversedThought>Mashed_Ashlands_WadedThroughSludge</traversedThought>
 		<waterBodyType>Other</waterBodyType>
 		<canFreeze>false</canFreeze>
 		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_BlightedSludge]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_LiquidMudBase" Name="Mashed_Ashlands_BlightedSludgeBase">
+		<defName>Mashed_Ashlands_BlightedSludge</defName>
+		<label>blighted sludge</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_BlightedSludgeRamp</texturePath>
+		<driesTo>Mashed_Ashlands_AshSoil</driesTo>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_BlightedSludgeFloodwater</floodTerrain>
+		<traversedThought>Mashed_Ashlands_WadedThroughSludge</traversedThought>
 		<tags>
 			<li>Mashed_Ashlands_WaterBlightedSludge</li>
+		</tags>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMud]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_LiquidMudBase" Name="Mashed_Ashlands_ThermalMudBase">
+		<defName>Mashed_Ashlands_ThermalMud</defName>
+		<label>thermal mud</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ThermalMudRamp</texturePath>
+		<driesTo>Mashed_Ashlands_RichAshSoil</driesTo>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_ThermalMudFloodwater</floodTerrain>
+		<traversedThought>Mashed_Ashlands_ThermalMud</traversedThought>
+		<meltSnowRadius>3</meltSnowRadius>
+		<heatPerTick>0.003</heatPerTick>
+		<throwFleckChance>0.3</throwFleckChance>
+		<fleckData>
+			<fleck>Mashed_Ashlands_SteamPuffFleck</fleck>
+			<velocitySpeedRange>0.2~0.4</velocitySpeedRange>
+			<velocityAngleRange>0~360</velocityAngleRange>
+			<rotationSpeedRange>0</rotationSpeedRange>
+			<solidTicksRange>4~8</solidTicksRange>
+			<scaleRange>4~8</scaleRange>
+		</fleckData>
+		<tags>
+			<li>Mashed_Ashlands_WaterThermalMud</li>
 		</tags>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_ShallowMarsh]==========-->
