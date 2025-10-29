@@ -23,7 +23,7 @@ namespace Mashed_Ashlands
                 }
                 else if (value > EdgeThreshold)
                 {
-                    map.terrainGrid.SetTerrain(allCell, map.BiomeAt(allCell).mudTerrain);
+                    map.terrainGrid.SetTerrain(allCell, TerrainDefOf.Mashed_Ashlands_AshMud);
                 }
             }
         }
