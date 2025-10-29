@@ -154,7 +154,7 @@
 	<!-- ==========[Mashed_Ashlands_AshMud]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
 		<defName>Mashed_Ashlands_AshMud</defName>
-		<label>waterlogged ash</label>
+		<label>mud</label>
 		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_AshMud</texturePath>
 		<driesTo>Mashed_Ashlands_RichAshSoil</driesTo>
 	</TerrainDef>

@@ -130,7 +130,7 @@
 	<!-- ==========[Mashed_Ashlands_AshMudVolcanic]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshMudBase">
 		<defName>Mashed_Ashlands_AshMudVolcanic</defName>
-		<label>waterlogged volcanic ash</label>
+		<label>volcanic mud</label>
 		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_AshMudVolcanic</texturePath>
 		<driesTo>Mashed_Ashlands_RichAshSoilVolcanic</driesTo>
 	</TerrainDef>
