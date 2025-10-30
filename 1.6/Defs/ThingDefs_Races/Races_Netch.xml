@@ -157,7 +157,7 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBull</texPath>
-					<drawSize>1.9</drawSize>
+					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBetty</texPath>
@@ -183,11 +183,120 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBull</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBetty</texPath>
 					<drawSize>2.2</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_NetchRetching]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NetchThingBase">
+		<defName>Mashed_Ashlands_NetchRetching</defName>
+		<label>retching netch</label>
+		<description>A subspecies of the common netch, typically found in ashland regions with high levels of thermal activity. Retching netch suppliment their diet by scraping sulphur off of surfaces near thermal pools. This sulphur rich diet has given their levitation gas a very distinctive rancid smell, and causes them to periodically secrete chemfuel as a byproduct.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NetchRetchingFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_NetchRetchingUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>6</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<deathAction>
+				<workerClass>Mashed_Ashlands.DeathActionWorker_RotStinkCloud</workerClass>
+			</deathAction>
+			<baseBodySize>2</baseBodySize>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NetchRetching" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NetchRetching</defName>
+		<label>retching netch</label>
+		<labelMale>retching netch bull</labelMale>
+		<labelFemale>retching netch betty</labelFemale>
+		<race>Mashed_Ashlands_NetchRetching</race>
+		<combatPower>120</combatPower>
+		<immuneToTraps>true</immuneToTraps>
+		<ecoSystemWeight>0.7</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>retching netch calf</label>
+				<labelPlural>retching netch calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchCalfRetching</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchCalfRetching</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBullRetching</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBettyRetching</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBullRetching</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBettyRetching</texPath>
+					<drawSize>1.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBullRetching</texPath>
+					<drawSize>2.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBettyRetching</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBullRetching</texPath>
+					<drawSize>2.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBettyRetching</texPath>
+					<drawSize>1.9</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

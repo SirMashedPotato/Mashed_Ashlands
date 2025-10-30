@@ -256,6 +256,25 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchRetchingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_NetchRetchingFertilized</defName>
+		<label>retching netch egg (fert.)</label>
+		<description>A fertilised retching netch egg. If all goes well, it should hatch into a retching netch calf. It can be eaten raw, but it's much better cooked. As retching netch are rather protective of their eggs, retching netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(233,220,140)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>19</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NetchRetching</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixHoundFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixHoundFertilized</defName>
