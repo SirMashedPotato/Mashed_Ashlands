@@ -55,6 +55,29 @@
 		</weathersToAffect>
 		<weatherFrequencyOffset>10</weatherFrequencyOffset>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_CraterField]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_CraterField</defName>
+		<label>crater field</label>
+		<description>Volcanic activity has left this region scarred by numerous craters.</description>
+		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
+		<extraGenSteps>
+			<li>CratersLarge</li>
+			<li>CratersMedium</li>
+			<li>CratersSmall</li>
+		</extraGenSteps>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_DustAntHives_Increased</defName>
