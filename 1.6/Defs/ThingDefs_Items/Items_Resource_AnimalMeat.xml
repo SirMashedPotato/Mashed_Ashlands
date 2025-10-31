@@ -38,9 +38,8 @@
 		<label>crab meat</label>
 		<description>Tasty meat harvested from a crab native to the ashlands. Has a slightly ashy taste to it. Perfectly safe to consume raw.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Insect</texPath>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Mashed_Ashlands_MeatCrab</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(245,236,186)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>3</MarketValue>
