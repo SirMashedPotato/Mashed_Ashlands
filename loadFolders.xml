@@ -109,6 +109,5 @@
 		<li IfModActive="vanillaexpanded.recycling">1.6/LoadFolders/VE_Recycling</li>
 		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
 		<li IfModActive="m00nl1ght.geologicallandforms">1.6/LoadFolders/GeologicalLandforms</li>
-		<li IfModActiveAll="m00nl1ght.geologicallandforms,Ludeon.RimWorld.Odyssey">1.6/LoadFolders/GeologicalLandforms_Odyssey</li>
 	</v1.6>
 </loadFolders>
