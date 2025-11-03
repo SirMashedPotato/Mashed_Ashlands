@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaEgg]==========-->
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Mashed_Ashlands_KwamaEgg</defName>
+		<label>kwama egg</label>
+		<description>The large egg of a kwama, obtained from a within kwama nest. Practically a meal by itself, kwama eggs can be eaten raw, but are much nicer when cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KwamaEgg</texPath>
+			<drawSize>1.0</drawSize>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Mass>0.3</Mass>
+			<Nutrition>0.8</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>AnimalProduct</foodType>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsAnimalProduct</li>
+		</tradeTags>
+		<allowedArchonexusCount>25</allowedArchonexusCount>
+	</ThingDef>
+</Defs>

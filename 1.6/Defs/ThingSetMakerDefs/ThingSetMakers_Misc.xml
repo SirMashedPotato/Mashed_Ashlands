@@ -54,6 +54,20 @@
 						</fixedParams>
 					</thingSetMaker>
 				</li>
+				<!-- kwama egg -->
+				<li MayRequire="Ludeon.RimWorld.Odyssey">
+					<weight>0.3</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_KwamaEgg</li>
+								</thingDefs>
+							</filter>
+							<countRange>3~6</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
 			</options>
 		</root>
 	</ThingSetMakerDef>
