@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaChitin]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
+		<defName>Mashed_Ashlands_KwamaChitin</defName>
+		<label>kwama chitin</label>
+		<description>Chitin plates harvested from a large kwama. Tough and absorbent, but a poor insulator.</description>
+		<graphicData>
+			<color>(78,58,46)</color>
+			<texPath>Things/Item/Resource/Mashed_Ashlands_ChitinPlate</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<Flammability>0.6</Flammability>
+			<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.8</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(78,58,46)</color>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+			</statFactors>
+			<categories>
+				<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			</categories>
+		</stuffProps>
+	</ThingDef>
+</Defs>
