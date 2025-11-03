@@ -188,7 +188,7 @@
 	<!-- ==========[Mashed_Ashlands_NixOxChitin]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_LeatherBase">
 		<defName>Mashed_Ashlands_NixOxChitin</defName>
-		<label>nix-ox chitin</label>
+		<label>nix chitin</label>
 		<description>Chitin plates harvested from a nix-ox. Tough and absorbent, but a very poor insulator.</description>
 		<graphicData>
 			<color>(98,87,70)</color>
