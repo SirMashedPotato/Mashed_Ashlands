@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2836705802
+CRC: 2583486050
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 952e078aca46681977b7d2130f95f3a8
+    Hash: a26708aead62426d423be45d69835829
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 952e078aca46681977b7d2130f95f3a8
+    Hash: a26708aead62426d423be45d69835829
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -35,6 +35,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Immature/Mashed_Ashlands_LandCoralTree_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass/Mashed_Ashlands_CharredAshlandGrass_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_Dessicated_SiltStrider_south.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaCactus/Mashed_Ashlands_LavaCactus_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawShalkBrotherCrayfish/Mashed_Ashlands_RawShalkBrotherCrayfish_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchCalf_east.png
@@ -70,6 +71,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Mashed_Ashlands_Gene_PerfectAshResistance.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_SwampAshlands/Forest/Forest.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_TramaShrub/Mashed_Ashlands_TramaShrub_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_GlowingTubeCoral/Mashed_Ashlands_GlowingTubeCoral_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Dessicated_Daedroth_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_VolcanicBadlandAshlands/Forest/Forest.png
@@ -139,9 +141,11 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiCalf_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_DarklightTorchbugWallLamp/Mashed_Ashlands_DarklightTorchbugWallLamp_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholShein/Mashed_Ashlands_AlcoholShein_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_Dessicated_KwamaWorker_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaCactus/Mashed_Ashlands_LavaCactus_g.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_AshreedWater/Mashed_Ashlands_AshreedWater_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_MuckSpongePlant_Immature/Mashed_Ashlands_MuckSpongePlant_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorker_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_TramaMass/Mashed_Ashlands_TramaMass_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_LeaflessImmature/Mashed_Ashlands_LandCoralTree_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_CorkbulbPlant/Mashed_Ashlands_CorkbulbPlant_a.png
@@ -184,6 +188,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaCactus/Mashed_Ashlands_LavaCactus_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholSujamma/Mashed_Ashlands_AlcoholSujamma_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Mashed_Ashlands_Gene_PartialAshResistance.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_ExplorerSkeletonCave/Mashed_Ashlands_ExplorerSkeletonCave.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SwimmingSiltStrider_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholJazbayWine/Mashed_Ashlands_AlcoholJazbayWine_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMale_east.png
@@ -205,8 +210,8 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Leafless/Mashed_Ashlands_LandCoralTree_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawTench/Mashed_Ashlands_RawTench_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Immature/Mashed_Ashlands_TreeKwamacap_a.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish/Mashed_Ashlands_RawSlaughterfish_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldHighland_Immature/Mashed_Ashlands_TreeNetchShieldHighland_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawSlaughterfish/Mashed_Ashlands_RawSlaughterfish_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerOrange/Mashed_Ashlands_SporangiumFlowerOrange_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawIde/Mashed_Ashlands_RawIde_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_Ashlands/Hills/SmallHills.png
@@ -242,6 +247,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_VolcanicBasaltHillsAshlands/Hills/Impassable.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Stumps/Mashed_Ashlands_PetrifiedChopped/Mashed_Ashlands_PetrifiedChopped_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedGlowingParasolBush.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawArmourhead/Mashed_Ashlands_RawArmourhead_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBull_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_Dusttide.png
@@ -259,6 +265,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxCalfPack_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Vertical_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_XylariaDreamPowder/Mashed_Ashlands_XylariaDreamPowder_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggSoup/Mashed_Ashlands_KwamaEggSoup_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_GoldenSedgeFlower/Mashed_Ashlands_GoldenSedgeFlower_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant/Mashed_Ashlands_SomnaliusFern_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_DustplainAshlands/Hills/SmallHills.png
@@ -307,8 +314,9 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxPack_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Scamp/Mashed_Ashlands_Scamp_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_BlueEntoloma/Mashed_Ashlands_BlueEntoloma_e.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Stumps/Mashed_Ashlands_PetrifiedSmashed/Mashed_Ashlands_PetrifiedSmashed_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_KwamaEggSac/Mashed_Ashlands_KwamaEggSac_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_GlowingAshreed/Mashed_Ashlands_GlowingAshreed_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Stumps/Mashed_Ashlands_PetrifiedSmashed/Mashed_Ashlands_PetrifiedSmashed_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaScrib/Mashed_Ashlands_Dessicated_KwamaScrib_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_FoyadaFungus/Mashed_Ashlands_FoyadaFungus_f.png
@@ -359,8 +367,9 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawRainbowZander/Mashed_Ashlands_RawRainbowZander_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Dessicated_Rachnoid_south.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus/Mashed_Ashlands_AshlandFungus_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_CaveEntrance/Mashed_Ashlands_CaveEntranceBlocked.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOx_north.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus/Mashed_Ashlands_AshlandFungus_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxPack_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Dessicated_Shieldcrab_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Shalk_east.png
@@ -541,6 +550,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_AshenJazbayPrecursor/Mashed_Ashlands_AshenJazbayPrecursor_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholDagothBrandy/Mashed_Ashlands_AlcoholDagothBrandy_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Projectile/Mashed_Ashlands_DaedrothToxbloom_Thrown.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggSoup/Mashed_Ashlands_KwamaEggSoup_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Mashed_Ashlands_ParasolWoodLog/Mashed_Ashlands_ParasolWoodLog_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_DraggleTails/Mashed_Ashlands_DraggleTails_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth_east.png
@@ -558,9 +568,10 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_WickwheatPlant/Mashed_Ashlands_WickwheatPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkFungal_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_TeaChillshroom/Mashed_Ashlands_TeaChillshroom_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorkerPack_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_Bloatspore/Mashed_Ashlands_BloatsporePlant_c.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_ForestAshlands/Forest/Forest_Sparse.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_ChillshroomPlant/Mashed_Ashlands_ChillshroomPlant_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_ForestAshlands/Forest/Forest_Sparse.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder/Mashed_Ashlands_RawMouthbrooder_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Open_north.png
@@ -569,6 +580,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawOldManGar/Mashed_Ashlands_RawOldManGar_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_ComberryPrecursor/Mashed_Ashlands_ComberryPrecursor_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxGlowingCalf_north.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_Dessicated_KwamaWorker_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawThornyCatfish/Mashed_Ashlands_RawThornyCatfish_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerWhite/Mashed_Ashlands_SporangiumFlowerWhite_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant/Mashed_Ashlands_PetrifiedButtercake_a.png
@@ -617,6 +629,8 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Achievements/Mashed_AchievementAshlands_CollectDagothBrandy.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawMonkfish/Mashed_Ashlands_RawMonkfish_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_Ashlands/Hills/Impassable.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_CaveEntrance/Mashed_Ashlands_CaveEntrance.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggStew/Mashed_Ashlands_KwamaEggStew_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawPikeblenny/Mashed_Ashlands_RawPikeblenny_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawRicefish/Mashed_Ashlands_RawRicefish_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawResdaynianSailfin/Mashed_Ashlands_RawResdaynianSailfin_a.png
@@ -656,9 +670,10 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshPomegranate.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Wormmouth/Mashed_Ashlands_Wormmouth_southm.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly_south.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorkerPack_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Rachnoid_east.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabGlowingGlow_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeAshland/Mashed_Ashlands_TreeAshland_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabGlowingGlow_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NetchJelly/Mashed_Ashlands_NetchJelly_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami/Mashed_Ashlands_RawGourami_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Mashed_Ashlands_PurpleCrystalShard/Mashed_Ashlands_PurpleCrystalShard_c.png
@@ -698,6 +713,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus/Mashed_Ashlands_RawGhostOctopus_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen/Mashed_Ashlands_SporangiumFlowerGreen_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Chemicals/Mashed_Ashlands_XylariaDreamPowder/AddictionResistant.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Art/Mashed_Ashlands_KwamaEggSculptureSmall_m.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_MeadowAshlands/Hills/SmallHills.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_Bloatspore/Mashed_Ashlands_BloatsporePlant_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingPack_north.png
@@ -786,6 +802,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue/Mashed_Ashlands_SporangiumFlowerBlue_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_TubeCoralPink/Mashed_Ashlands_TubeCoralPink_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaCactus/Mashed_Ashlands_LavaCactus_d.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KamaEgg/Mashed_Ashlands_KamaEgg_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaBloom/Mashed_Ashlands_LavaBloom_h.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_MeadowRyePlant/Mashed_Ashlands_MeadowRye_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Mashed_Ashlands_Gene_FrailAshResistance.png
@@ -804,6 +821,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedGoldenReed.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchCalfGlowing_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_ChillshroomPlant/Mashed_Ashlands_ChillshroomPlant_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_Dessicated_KwamaWorker_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_LavaBloom/Mashed_Ashlands_LavaBloom_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedKreshweed.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_Dessicated_Vvardvark_east.png
@@ -833,6 +851,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkGlowing_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_BlightedBogAshlands/Forest/Forest_Dense.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxGlowingCalfGlow_north.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorker_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawRicefish/Mashed_Ashlands_RawRicefish_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Stumps/Mashed_Ashlands_PetrifiedChopped/Mashed_Ashlands_PetrifiedChopped_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_DaedrothPack_south.png
@@ -867,6 +886,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedPack_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature/Mashed_Ashlands_TreeEmperorParasol_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally/Mashed_Ashlands_RawTrevally_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_GoldKwamaEggSac/Mashed_Ashlands_GoldKwamaEggSac_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant/Mashed_Ashlands_SomnaliusFern_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus/Mashed_Ashlands_AshlandFungus_j.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_TorchbugWallLamp/Mashed_Ashlands_TorchbugWallLamp_MenuIcon.png
@@ -894,6 +914,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_HackleLoPlant/Mashed_Ashlands_HackleLoPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_Scuttle/Mashed_Ashlands_Scuttle_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_GrazelandAshlands/Hills/Impassable.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldHighland_Immature/Mashed_Ashlands_TreeNetchShieldHighland_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mushrooms/Mashed_Ashlands_LuminousRussula/Mashed_Ashlands_LuminousRussula_d.png
@@ -914,6 +935,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_GoldenReedPlant/Mashed_Ashlands_GoldenReedPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowing_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_TubeCoralTeal/Mashed_Ashlands_TubeCoralTeal_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggStew/Mashed_Ashlands_KwamaEggStew_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk/Mashed_Ashlands_PetrifiedGlowstalk_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedEmperorToxisol.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBullRetching_south.png
@@ -951,6 +973,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchCalf_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_FetcherflyLamp.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_Dessicated_Durzog_east.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_GoldKwamaEggSac/Mashed_Ashlands_GoldKwamaEggSac_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_KagoutiBull_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_CliffRacer/Mashed_Ashlands_CliffRacer_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Scuttler/Mashed_Ashlands_Scuttler_south.png
@@ -1017,6 +1040,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabBlue_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound_northm.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Mashed_Ashlands_VolcanicGlass/Mashed_Ashlands_VolcanicGlass_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingMaleGlow_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedMalePack_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap/Mashed_Ashlands_TreeMilkcap_c.png
@@ -1076,8 +1100,9 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBullGlowing_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxPack_south.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab/Mashed_Ashlands_RawJuvenileBlueSandcrab_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_KwamaEggSac/Mashed_Ashlands_KwamaEggSac_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Daedroth/Mashed_Ashlands_Daedroth_south.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawJuvenileBlueSandcrab/Mashed_Ashlands_RawJuvenileBlueSandcrab_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_DarklightTorchbugWallLamp/Mashed_Ashlands_DarklightWallLamp_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen/Mashed_Ashlands_SporangiumFlowerGreen_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly_east.png
@@ -1203,6 +1228,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_Dessicated_NixHound_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Dessicated_Shieldcrab_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_LilyPad/Mashed_Ashlands_LilyPad_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_GoldKwamaEggSac/Mashed_Ashlands_GoldKwamaEggSac_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Achievements/Mashed_AchievementAshlands_HarvestEmperorParasol.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature/Mashed_Ashlands_TreeNetchShieldVibrant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless/Mashed_Ashlands_TreeSpongecap_Leafless_b.png
@@ -1273,6 +1299,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_GuarPack_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Chemicals/Mashed_Ashlands_XylariaDreamPowder/AddictionImmune.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue/Mashed_Ashlands_SporangiumFlowerBlue_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorker_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Misc/Mashed_Ashlands_ParasolWoodBridgeProps_Right.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature/Mashed_Ashlands_TreeNetchShieldVibrant_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_GlowingTorchbugLamp.png
@@ -1287,6 +1314,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant/Mashed_Ashlands_TreeNetchShieldVibrant_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_GlowingScathecrawPlant/Mashed_Ashlands_GlowingScathecrawPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedNetchShieldVibrant.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Art/Mashed_Ashlands_KwamaEggSculptureSmall.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Durzog/Mashed_Ashlands_SwimmingDurzog_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawNetchHookEel/Mashed_Ashlands_RawNetchHookEel_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Scamp/Mashed_Ashlands_Scamp_north.png
@@ -1319,6 +1347,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus/Mashed_Ashlands_RawGhostOctopus_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_BlightedPetrifiedForestAshlands/Forest/Forest_Sparse.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed/Mashed_Ashlands_Ashreed_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggStew/Mashed_Ashlands_KwamaEggStew_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBetty_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Dessicated_Rachnoid_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_OgrimPack_north.png
@@ -1341,10 +1370,12 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_AshPomegranatePlant/Mashed_Ashlands_AshPomegranatePlant_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_VolcanicAshlands/Hills/Impassable.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_NetchJelly/Mashed_Ashlands_NetchJelly_a.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_CaveEntrance/Mashed_Ashlands_CaveEntranceSealed.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_ButtercakePlant/Mashed_Ashlands_Buttercake_c.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder/Mashed_Ashlands_RawMouthbrooder_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_CorkbulbRoot.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholShein/Mashed_Ashlands_AlcoholShein_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_KwamaEggSoup/Mashed_Ashlands_KwamaEggSoup_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawMouthbrooder/Mashed_Ashlands_RawMouthbrooder_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_AshlandGrass/Mashed_Ashlands_AshlandGrass_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami/Mashed_Ashlands_RawGourami_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawToadstoolTilapia/Mashed_Ashlands_RawToadstoolTilapia_c.png
@@ -1374,15 +1405,19 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixHound/Mashed_Ashlands_NixHound_southm.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Flowers/Mashed_Ashlands_AshlandPitcher/Mashed_Ashlands_Plant_AshlandPitcher_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedTramaShrub.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss/Mashed_Ashlands_KwamaMoss_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_ScuttleSoup/Mashed_Ashlands_ScuttleSoup_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_GlowingBryolux/Mashed_Ashlands_GlowingBryolux_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWorker/Mashed_Ashlands_KwamaWorkerPack_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Meal/Mashed_Ashlands_LavaFootSoup/Mashed_Ashlands_LavaFootSoup_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_GuarPack_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_GrazelandAshlands/Hills/SmallHills.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_SandcrabOrange_east.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KamaEgg/Mashed_Ashlands_KamaEgg_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedCorkbulb.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature/Mashed_Ashlands_TreeNetchShieldVibrant_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_KwamaEggSac/Mashed_Ashlands_KwamaEggSac_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Mashed_Ashlands_ParasolWoodLog/Mashed_Ashlands_ParasolWoodLog_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature/Mashed_Ashlands_TreeNetchShieldVibrant_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawGourami/Mashed_Ashlands_RawGourami_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_BlightedAshlands/Forest/Forest.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedEmperorParasol.png
@@ -1421,6 +1456,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholShein/Mashed_Ashlands_AlcoholShein_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_ParasolBush/Mashed_Ashlands_ParasolBush_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Coral/Mashed_Ashlands_GlowingLandCoralTree_Immature/Mashed_Ashlands_GlowingLandCoralTree_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_KamaEgg/Mashed_Ashlands_KamaEgg_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawSiltfish/Mashed_Ashlands_RawSiltfish_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawKreshweed.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldVibrant_Immature/Mashed_Ashlands_TreeNetchShieldVibrant_d.png
