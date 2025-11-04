@@ -204,6 +204,7 @@
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Comp_EggLayerMutant.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Comp_RotstinkEmitter.cs" />
     <Compile Include="ThingComp\Comp_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDestroy.cs" />
