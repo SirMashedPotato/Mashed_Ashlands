@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_AbandonedMine</defName>
+		<label>abandoned mine</label>		<!-- not actually visible, overriden with a translation -->
+		<description>This area contains an entrance to an abandoned mine. It may be re-opened to obtain the valuable materials left behind. The tunnels are highly unstable, and may experience frequent cave-ins.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_AbandonedMine</workerClass>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
+		<categories>
+			<li>Mashed_Ashlands_Undercave</li>
+		</categories>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_AbandonedMineEntrance</li>
+		</extraGenSteps>
+	</TileMutatorDef>
+</Defs>

@@ -19,6 +19,7 @@
 			or defName="Basin"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
+			<Mashed_Ashlands_AbandonedMine>0.05</Mashed_Ashlands_AbandonedMine>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -62,6 +63,7 @@
 			<Mashed_Ashlands_EbonyDeposits>0.1</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.1</Mashed_Ashlands_GlassDeposits>
 			<Mashed_Ashlands_FetcherflyHives_Increased>0.1</Mashed_Ashlands_FetcherflyHives_Increased>
+			<Mashed_Ashlands_AbandonedMine>0.05</Mashed_Ashlands_AbandonedMine>
 		</value>
 	</Operation>
 	<!-- ==========[Man made]==========-->

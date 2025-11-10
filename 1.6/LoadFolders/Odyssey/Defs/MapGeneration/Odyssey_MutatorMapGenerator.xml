@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisField]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
+		<order>900</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_AbandonedMineEntrance</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>5</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<count>1</count>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>3</radius>
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
 	<GenStepDef ParentName="Mashed_Ashlands_DustAntHivesBase">
 		<defName>Mashed_Ashlands_DustAntHives_Increased</defName>
