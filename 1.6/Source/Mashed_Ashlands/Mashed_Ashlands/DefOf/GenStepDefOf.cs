@@ -11,5 +11,10 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(GenStepDefOf));
         }
         public static GenStepDef SteamGeysers;
+
+        [MayRequireOdyssey]
+        public static GenStepDef Mashed_Ashlands_AbandonedMine_EbonyLumps;
+        [MayRequireOdyssey]
+        public static GenStepDef Mashed_Ashlands_AbandonedMine_GlassLumps;
     }
 }

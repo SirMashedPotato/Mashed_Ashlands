@@ -17,12 +17,6 @@ namespace Mashed_Ashlands
             }
         }
 
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            //Scribe_Defs.Look(ref layout, "layout");
-        }
-
         protected override Map GeneratePocketMapInt()
         {
             mineType = TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
@@ -31,20 +25,27 @@ namespace Mashed_Ashlands
 
         protected override IEnumerable<GenStepWithParams> GetExtraGenSteps()
         {
+            foreach(GenStepWithParams genStep in base.GetExtraGenSteps()) 
+            { 
+                yield return genStep; 
+            }
+
             switch (mineType)
             {
                 case TileMutatorWorker_AbandonedMine.MineType.Ebony:
-                    yield return 
+                    Log.Message(mineType);
+                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumps, new GenStepParams());
                     break;
+
                 case TileMutatorWorker_AbandonedMine.MineType.Glass:
+                    Log.Message(mineType);
+                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumps, new GenStepParams());
                     break;
+
                 case TileMutatorWorker_AbandonedMine.MineType.Kwama:
+                    Log.Message(mineType);
                     break;
             }
-
-            //return base.GetExtraGenSteps();
         }
-
-        override 
     }
 }

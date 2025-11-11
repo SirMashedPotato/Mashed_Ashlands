@@ -44,4 +44,24 @@
 			<overrideBlotchesPer10kCells>0</overrideBlotchesPer10kCells>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumps]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_EbonyLumps</defName>
+		<order>300</order>
+		<genStep Class="GenStep_ScatterLumpsMineable">
+			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
+			<forcedLumpSize>6</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_GlassLumps]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_GlassLumps</defName>
+		<order>300</order>
+		<genStep Class="GenStep_ScatterLumpsMineable">
+			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
+			<forcedLumpSize>6</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
 </Defs>
