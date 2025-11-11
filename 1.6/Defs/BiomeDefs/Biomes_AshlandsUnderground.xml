@@ -4,6 +4,7 @@
 	<BiomeDef ParentName="Biome_Underground" Name="Mashed_Ashlands_AshlandsUndergroundBase">
 		<defName>Mashed_Ashlands_AshlandsUnderground</defName>
 		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties"/>
 			<li Class="Mashed_Ashlands.BiomeCaveProperties">
 				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
 				<cavePlants>
