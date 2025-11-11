@@ -44,15 +44,23 @@
 		<fillPercent>0.20</fillPercent>
 		<rotatable>false</rotatable>
 		<tickerType>Rare</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<Flammability>1.0</Flammability>
-			<MarketValue>50</MarketValue>
 		</statBases>
+		<killedLeavings>
+			<Mashed_Ashlands_Filth_KwamaSlime>6</Mashed_Ashlands_Filth_KwamaSlime>
+		</killedLeavings>
 		<building>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 			<claimable>true</claimable>
+			<destroySound>Hive_Spawn</destroySound>
 		</building>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -73,15 +81,13 @@
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaEggSac</texPath>
 		</graphicData>
+		<statBases>
+			<MarketValue>90</MarketValue>
+		</statBases>
+		<costList>
+			<Mashed_Ashlands_KwamaEgg>6</Mashed_Ashlands_KwamaEgg>
+		</costList>
 		<comps>
-			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
-				<guaranteedDrops>
-					<li>
-						<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>
-						<amountRange>3~6</amountRange>
-					</li>
-				</guaranteedDrops>
-			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(239,97,26,0)</glowColor>
@@ -96,15 +102,13 @@
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_GoldKwamaEggSac</texPath>
 		</graphicData>
+		<statBases>
+			<MarketValue>360</MarketValue>
+		</statBases>
+		<costList>
+			<Gold>3</Gold>
+		</costList>
 		<comps>
-			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
-				<guaranteedDrops>
-					<li>
-						<thingDef>Gold</thingDef>
-						<amountRange>12~24</amountRange>
-					</li>
-				</guaranteedDrops>
-			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(239,168,26,0)</glowColor>

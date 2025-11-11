@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public class AbandonedMineEntrance : MapPortal
     {
-        public TileMutatorWorker_AbandonedMine.MineType mineType;
+        public TileMutatorWorker_AbandonedMine.MineType MineType => TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
 
         public AbandonedMineEntrance()
         {
@@ -19,7 +19,6 @@ namespace Mashed_Ashlands
 
         protected override Map GeneratePocketMapInt()
         {
-            mineType = TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
             return base.GeneratePocketMapInt();
         }
 
@@ -30,20 +29,18 @@ namespace Mashed_Ashlands
                 yield return genStep; 
             }
 
-            switch (mineType)
+            switch (MineType)
             {
                 case TileMutatorWorker_AbandonedMine.MineType.Ebony:
-                    Log.Message(mineType);
                     yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumps, new GenStepParams());
                     break;
 
                 case TileMutatorWorker_AbandonedMine.MineType.Glass:
-                    Log.Message(mineType);
                     yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumps, new GenStepParams());
                     break;
 
                 case TileMutatorWorker_AbandonedMine.MineType.Kwama:
-                    Log.Message(mineType);
+                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_KwamaEggs, new GenStepParams());
                     break;
             }
         }
