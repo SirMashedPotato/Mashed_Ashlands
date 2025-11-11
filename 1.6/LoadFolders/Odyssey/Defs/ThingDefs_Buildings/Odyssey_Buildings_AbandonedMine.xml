@@ -7,7 +7,7 @@
 		<description>The entrance to a long-abandoned mine. It can be opened to access the caverns below.</description>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
-		<thingClass>Mashed_Ashlands.AbandonedMineEntrance</thingClass> <!-- TODO -->
+		<thingClass>Mashed_Ashlands.AbandonedMineEntrance</thingClass>
 		<rotatable>false</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
@@ -31,7 +31,7 @@
 			<expandHomeArea>false</expandHomeArea>
 		</building>
 		<portal>
-			<pocketMapGenerator>InsectLair</pocketMapGenerator> <!-- TODO -->
+			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator>
 			<exitDef>CaveExit</exitDef>
 			<!--<pocketMapSize>75</pocketMapSize>-->
 		</portal>

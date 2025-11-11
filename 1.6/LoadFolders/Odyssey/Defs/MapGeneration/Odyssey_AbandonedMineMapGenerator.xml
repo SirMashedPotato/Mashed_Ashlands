@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
+	<!-- ebony, glass, kwama eggs spawned based on mine type -->
+	<MapGeneratorDef>
+		<defName>Mashed_Ashlands_AbandonedMine</defName>
+		<label>abandoned mine</label>
+		<isUnderground>true</isUnderground>
+		<forceCaves>true</forceCaves>
+		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+		<disableCallAid>true</disableCallAid>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_AshlandsUnderground</biome>
+			<temperature>15</temperature>
+			<tileMutators>
+				<li>UndergroundCave</li>
+			</tileMutators>
+		</pocketMapProperties>
+		<genSteps>
+			<li>ElevationFertility</li>
+			<li>MutatorPostElevationFertility</li>
+			<li>Mashed_Ashlands_AbandonedMine_RocksFromGrid</li>
+			<li>Terrain</li>
+			<li>MutatorPostTerrain</li>
+			<!--<li>Underground_ScatterRuinsSimple</li>-->
+			<li>MutatorCriticalStructures</li>
+			<li>MutatorNonCriticalStructures</li>
+			<li>Mashed_Ashlands_DeadExplorer</li>			<!-- cave version-->
+			<li>RockChunks</li>
+			<li>PlaceCaveExit</li>
+			<!--<li>InsectLair_Cave</li>-->
+			<!--<li>InsectLair_GlowPods</li>-->
+			<li>Plants</li>			<!-- needs to be appropriate cave plants -->
+			<li>MutatorFinal</li>
+			<!-- cave ins -->
+			<li>Fog</li>
+		</genSteps>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_RocksFromGrid</defName>
+		<order>200</order>
+		<genStep Class="GenStep_RocksFromGrid">
+			<overrideBlotchesPer10kCells>0</overrideBlotchesPer10kCells>
+		</genStep>
+	</GenStepDef>
+</Defs>

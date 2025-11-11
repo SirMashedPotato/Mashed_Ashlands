@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -27,5 +28,23 @@ namespace Mashed_Ashlands
             mineType = TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
             return base.GeneratePocketMapInt();
         }
+
+        protected override IEnumerable<GenStepWithParams> GetExtraGenSteps()
+        {
+            switch (mineType)
+            {
+                case TileMutatorWorker_AbandonedMine.MineType.Ebony:
+                    yield return 
+                    break;
+                case TileMutatorWorker_AbandonedMine.MineType.Glass:
+                    break;
+                case TileMutatorWorker_AbandonedMine.MineType.Kwama:
+                    break;
+            }
+
+            //return base.GetExtraGenSteps();
+        }
+
+        override 
     }
 }
