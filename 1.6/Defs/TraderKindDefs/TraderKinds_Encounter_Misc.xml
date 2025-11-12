@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_MudcrabMerchantMeeting]==========-->
 	<TraderKindDef>
 		<defName>Mashed_Ashlands_MudcrabMerchant</defName>
 		<label>mudcrab merchant</label>
@@ -37,6 +38,53 @@
 			<li Class="Mashed_Ashlands.StockGenerator_BuyExpensive"/>
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>Drugs</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+	<!-- ==========[Mashed_Ashlands_ScribMerchant]==========-->
+	<TraderKindDef>
+		<defName>Mashed_Ashlands_ScribMerchant</defName>
+		<label>scrib merchant</label>
+		<stockGenerators>
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>30</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>
+				<countRange>600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_VolcanicEbony</thingDef>
+				<countRange>300</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_VolcanicGlass</thingDef>
+				<countRange>300</countRange>
+			</li>
+			<!-- Misc -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>	<!-- Replace -->
+				<countRange>1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef" MayRequire="thelastbulletbender.rwexploration">
+				<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
+				<countRange>1</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef> <!-- Replace -->
+				<countRange>1</countRange>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Drugs</tag>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsBuy>
+					<li>Mashed_Ashlands_AnimalKwama</li>
+				</tradeTagsBuy>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>

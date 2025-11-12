@@ -83,6 +83,18 @@ namespace Mashed_Ashlands
         {
             Thing thing = toGive.SplitOff(countToGive);
             thing.PreTraded(TradeAction.PlayerSells, playerNegotiator, this);
+
+            if (thing is Pawn p)
+            {
+                Caravan caravan = playerNegotiator.GetCaravan();
+                CaravanInventoryUtility.MoveAllInventoryToSomeoneElse(p, caravan.PawnsListForReading);
+                if (!p.RaceProps.Humanlike && !things.TryAdd(p, canMergeWithExistingStacks: false))
+                {
+                    p.Destroy();
+                }
+                return;
+            }
+
             Thing thing2 = TradeUtility.ThingFromStockToMergeWith(this, thing);
             if (thing2 != null)
             {

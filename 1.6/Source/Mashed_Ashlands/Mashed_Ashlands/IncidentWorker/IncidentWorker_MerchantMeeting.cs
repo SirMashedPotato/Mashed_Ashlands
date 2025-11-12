@@ -4,21 +4,24 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class IncidentWorker_MudcrabMerchantMeeting : IncidentWorker_AshlandsSpecific
+    public class IncidentWorker_MerchantMeeting : IncidentWorker_AshlandsSpecific
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            return base.CanFireNowSub(parms) && parms.target is Caravan;
+            IncidentProperties incidentProps = IncidentProperties.Get(def);
+            return base.CanFireNowSub(parms) && parms.target is Caravan && incidentProps != null && incidentProps.traderKindDef != null;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            IncidentProperties incidentProps = IncidentProperties.Get(def);
+
             Caravan caravan = (Caravan)parms.target;
             CameraJumper.TryJumpAndSelect(caravan);
             DiaNode diaNode = new DiaNode(def.letterText.Formatted(caravan.Name).Resolve().CapitalizeFirst());
-            Pawn bestPlayerNegotiator = BestCaravanPawnUtility.FindBestNegotiator(caravan, null, TraderKindDefOf.Mashed_Ashlands_MudcrabMerchant);
+            Pawn bestPlayerNegotiator = BestCaravanPawnUtility.FindBestNegotiator(caravan, null, incidentProps.traderKindDef);
 
-            TradeEncounter trader = new TradeEncounter(TraderKindDefOf.Mashed_Ashlands_MudcrabMerchant);
+            TradeEncounter trader = new TradeEncounter(incidentProps.traderKindDef);
 
             DiaOption diaOptionTrade = new DiaOption("CaravanMeeting_Trade".Translate())
             {

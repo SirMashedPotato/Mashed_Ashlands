@@ -17,18 +17,38 @@
 			<li>Mashed_Ashlands_AshBlight</li>
 		</letterHyperlinkHediffDefs>
 	</IncidentDef>
-	<!-- ==========[Mashed_Ashlands_MudcrabMerchantMeeting]==========-->
-	<IncidentDef>
-		<defName>Mashed_Ashlands_MudcrabMerchantMeeting</defName>
-		<label>mudcrab merchant meeting</label>
-		<workerClass>Mashed_Ashlands.IncidentWorker_MudcrabMerchantMeeting</workerClass>
-		<minRefireDays>33.3</minRefireDays>
+	<!-- ==========[Mashed_Ashlands_MerchantMeeting]==========-->
+	<IncidentDef Name="Mashed_Ashlands_MerchantMeeting" Abstract="True">
+		<workerClass>Mashed_Ashlands.IncidentWorker_MerchantMeeting</workerClass>
+		<minRefireDays>0.3</minRefireDays>
 		<targetTags>
 			<li>Caravan</li>
 			<li>Map_TempIncident</li>
 		</targetTags>
 		<category>Misc</category>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_MudcrabMerchantMeeting]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_MerchantMeeting">
+		<defName>Mashed_Ashlands_MudcrabMerchantMeeting</defName>
+		<label>mudcrab merchant meeting</label>
 		<letterLabel>Mudcrab merchant meeting</letterLabel>
 		<letterText>{0} has stumbled upon a peculiar mudcrab surrounded by several empty bottles of sujamma. The mudcrab scuttles over to a collection of crates, several of which are filled with silver, the rest with more alcohol. It seems the mudcrab wishes to trade with you.</letterText>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.IncidentProperties">
+				<traderKindDef>Mashed_Ashlands_MudcrabMerchant</traderKindDef>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_ScribMerchantMeeting]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_MerchantMeeting">
+		<defName>Mashed_Ashlands_ScribMerchantMeeting</defName>
+		<label>scrib merchant meeting</label>
+		<letterLabel>Scrib merchant meeting</letterLabel>
+		<letterText>{0} has stumbled upon a peculiar scrib surrounded by several empty bottles of skooma. The scrib begins to excitedly thump the ground, and then scuttles over to a collection of crates, some filled with rare volcanic glass, the rest overflowing with kwama eggs. It seems the scrib wishes to trade with you.</letterText>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.IncidentProperties">
+				<traderKindDef>Mashed_Ashlands_ScribMerchant</traderKindDef>
+			</li>
+		</modExtensions>
 	</IncidentDef>
 </Defs>

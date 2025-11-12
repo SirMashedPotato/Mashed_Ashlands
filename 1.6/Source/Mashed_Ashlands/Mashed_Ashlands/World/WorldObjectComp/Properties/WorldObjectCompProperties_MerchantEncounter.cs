@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 
 namespace Mashed_Ashlands
 {
@@ -6,7 +7,7 @@ namespace Mashed_Ashlands
     {
         public WorldObjectCompProperties_MerchantEncounter() => compClass = typeof(WorldObjectComp_MerchantEncounter);
 
-        public IncidentDef incidentDef;
+        public List<IncidentDef> incidentDefs;
         public float chance = 0.03f;
     }
 }

@@ -85,6 +85,7 @@
     <Compile Include="BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
     <Compile Include="BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="DefModExtension\IncidentProperties.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
     <Compile Include="GenStep\GenStep_ColumnarBasalt.cs" />
     <Compile Include="Classes\TerrainReplacer.cs" />
@@ -122,7 +123,6 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThinkTreeDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
-    <Compile Include="DefOf\TraderKindDefOf.cs" />
     <Compile Include="DefOf\WeatherDefOf.cs" />
     <Compile Include="Def\VolcanicConditionDef.cs" />
     <Compile Include="GameCondition\GameCondition_AshStorm.cs" />
@@ -151,7 +151,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_BlightedAnimalEnters.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
-    <Compile Include="IncidentWorker\IncidentWorker_MudcrabMerchantMeeting.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_MerchantMeeting.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveThoughtSeasonal.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />
