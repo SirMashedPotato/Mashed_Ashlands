@@ -19,7 +19,7 @@
 		<genSteps>
 			<li>ElevationFertility</li>
 			<li>MutatorPostElevationFertility</li>
-			<li>Mashed_Ashlands_AbandonedMine_RocksFromGrid</li>
+			<li>RocksFromGrid_NoMinerals</li>
 			<li>Terrain</li>
 			<li>MutatorPostTerrain</li>
 			<!-- Ebony/Glass lumps -->
@@ -38,14 +38,6 @@
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_RocksFromGrid</defName>
-		<order>200</order>
-		<genStep Class="GenStep_RocksFromGrid">
-			<overrideBlotchesPer10kCells>0</overrideBlotchesPer10kCells>
-		</genStep>
-	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumps]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMine_EbonyLumps</defName>
@@ -81,7 +73,7 @@
 					<indoorRuin>false</indoorRuin>
 					<filthDef>Mashed_Ashlands_Filth_KwamaSlime</filthDef>
 					<filthExpandBy>1</filthExpandBy>
-					<filthChance>0.3</filthChance>
+					<filthChance>0.1</filthChance>
 					<coveredCellsPer10Cells>1~2</coveredCellsPer10Cells>
 					<clusterRectRadius>1~3</clusterRectRadius>
 				</li>
