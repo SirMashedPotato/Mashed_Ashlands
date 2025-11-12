@@ -5,11 +5,11 @@ using Verse;
 namespace Mashed_Ashlands
 {
     [StaticConstructorOnStartup]
-    public class AbandonedMineEntrance : MapPortal
+    public class Building_AbandonedMineEntrance : MapPortal
     {
         public TileMutatorWorker_AbandonedMine.MineType MineType => TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
 
-        public AbandonedMineEntrance()
+        public Building_AbandonedMineEntrance()
         {
             if (!ModsConfig.OdysseyActive)
             {

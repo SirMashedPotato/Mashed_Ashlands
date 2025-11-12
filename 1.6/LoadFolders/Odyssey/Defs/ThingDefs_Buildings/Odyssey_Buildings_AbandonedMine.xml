@@ -7,7 +7,7 @@
 		<description>The entrance to a long-abandoned mine. It can be opened to access the caverns below.</description>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
-		<thingClass>Mashed_Ashlands.AbandonedMineEntrance</thingClass>
+		<thingClass>Mashed_Ashlands.Building_AbandonedMineEntrance</thingClass>
 		<rotatable>false</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
