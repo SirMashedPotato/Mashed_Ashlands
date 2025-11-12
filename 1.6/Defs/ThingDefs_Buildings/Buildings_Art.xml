@@ -38,4 +38,42 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSculptureSmall]==========-->
+	<ThingDef ParentName="SculptureBase">
+		<defName>Mashed_Ashlands_KwamaEggSculptureSmall</defName>
+		<label>small kwama egg sculpture</label>
+		<description>A kwama egg, on a pedestal, because that makes a really great piece of art. Hopefully the egg has been preserved properly, because if it hasn't...</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/Mashed_Ashlands_KwamaEggSculptureSmall</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>35</Beauty>
+			<WorkToMake>12000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+		</researchPrerequisites>
+		<costList>
+			<Mashed_Ashlands_KwamaEgg>1</Mashed_Ashlands_KwamaEgg>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<comps>
+			<li>
+				<compClass>Mashed_Ashlands.Comp_RotstinkEmitter</compClass>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

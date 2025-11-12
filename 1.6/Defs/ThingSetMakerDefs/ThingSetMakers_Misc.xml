@@ -55,7 +55,7 @@
 					</thingSetMaker>
 				</li>
 				<!-- kwama egg -->
-				<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<li>
 					<weight>0.3</weight>
 					<thingSetMaker Class="ThingSetMaker_StackCount">
 						<fixedParams>
@@ -135,6 +135,20 @@
 									<li>Mashed_Ashlands_VolcanicEbony</li>
 									<li>Mashed_Ashlands_VolcanicGlass</li>
 									<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+								</thingDefs>
+							</filter>
+							<countRange>10~25</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<!-- Kwama eggs -->
+				<li>
+					<weight>0.1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_KwamaEgg</li>
 								</thingDefs>
 							</filter>
 							<countRange>10~25</countRange>

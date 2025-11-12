@@ -4,6 +4,7 @@
 		<xpath>Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 		<value>
 			<li>Mashed_Ashlands_RawScathecraw</li>
+			<li>Mashed_Ashlands_KwamaEgg</li>
 		</value>
 	</Operation>
 </Patch>
