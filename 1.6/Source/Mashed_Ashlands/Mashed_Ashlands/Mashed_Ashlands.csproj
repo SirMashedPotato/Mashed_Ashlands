@@ -85,6 +85,7 @@
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="Biome\BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="Biome\GenStep\GenStep_CaveIns.cs" />
     <Compile Include="Biome\GenStep\GenStep_ColumnarBasalt.cs" />
     <Compile Include="Classes\TerrainReplacer.cs" />
     <Compile Include="Classes\TradeEncounter.cs" />
@@ -239,6 +240,7 @@
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SulphuricCaves.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_ThermalMudPools.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_ThermalPond.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_UndergroundMine.cs" />
     <Compile Include="Utility\CliffRacerTrackerUtility.cs" />
     <Compile Include="Utility\OnStartupUtility.cs" />
     <Compile Include="Utility\Utility.cs" />

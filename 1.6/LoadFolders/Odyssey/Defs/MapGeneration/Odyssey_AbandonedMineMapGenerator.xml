@@ -13,7 +13,7 @@
 			<biome>Mashed_Ashlands_AshlandsUnderground</biome>
 			<temperature>15</temperature>
 			<tileMutators>
-				<li>UndergroundCave</li>
+				<li>Mashed_Ashlands_UndergroundMine</li>
 			</tileMutators>
 		</pocketMapProperties>
 		<genSteps>
@@ -22,17 +22,19 @@
 			<li>Mashed_Ashlands_AbandonedMine_RocksFromGrid</li>
 			<li>Terrain</li>
 			<li>MutatorPostTerrain</li>
+			<!-- Ebony/Glass lumps -->
 			<!--<li>Underground_ScatterRuinsSimple</li>-->
 			<li>MutatorCriticalStructures</li>
 			<li>MutatorNonCriticalStructures</li>
-			<li>Mashed_Ashlands_DeadExplorer</li>			<!-- cave version-->
+			<li>Mashed_Ashlands_DeadExplorer</li>	<!-- TODO cave version-->
+			<li>Mashed_Ashlands_AbandonedMine_CaveIns</li>
+			<!-- Kwama eggs -->
 			<li>RockChunks</li>
 			<li>PlaceCaveExit</li>
 			<!--<li>InsectLair_Cave</li>-->
 			<!--<li>InsectLair_GlowPods</li>-->
 			<li>Plants</li>
 			<li>MutatorFinal</li>
-			<!-- cave ins -->
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
@@ -94,6 +96,15 @@
 				</li>
 				<li Class="ScatterValidator_AvoidUsedRects"/>
 			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_CaveIns]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_CaveIns</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
+			<caveInCountRange>9~13</caveInCountRange>
+			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
 </Defs>
