@@ -7,7 +7,6 @@
 		<label>abandoned mine</label>
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
-		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
 		<disableCallAid>true</disableCallAid>
 		<pocketMapProperties>
 			<biome>Mashed_Ashlands_AshlandsUnderground</biome>
