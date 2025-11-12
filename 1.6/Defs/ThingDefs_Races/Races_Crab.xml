@@ -76,6 +76,7 @@
 		</race>
 		<tradeTags>
 			<li>Mashed_Ashlands_AshlandAnimalCommon</li>
+			<li>Mashed_Ashlands_AnimalCrab</li>
 		</tradeTags>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Mudcrab]========== -->

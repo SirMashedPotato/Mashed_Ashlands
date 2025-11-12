@@ -39,6 +39,11 @@
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>Drugs</tag>
 			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsBuy>
+					<li>Mashed_Ashlands_AnimalCrab</li>
+				</tradeTagsBuy>
+			</li>
 		</stockGenerators>
 	</TraderKindDef>
 	<!-- ==========[Mashed_Ashlands_ScribMerchant]==========-->
@@ -65,7 +70,7 @@
 			</li>
 			<!-- Misc -->
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>	<!-- Replace -->
+				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>	<!-- TODO Replace -->
 				<countRange>1</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef" MayRequire="thelastbulletbender.rwexploration">
@@ -73,7 +78,7 @@
 				<countRange>1</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef> <!-- Replace -->
+				<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef> <!-- TODO Replace -->
 				<countRange>1</countRange>
 			</li>
 			<!-- Buying -->
