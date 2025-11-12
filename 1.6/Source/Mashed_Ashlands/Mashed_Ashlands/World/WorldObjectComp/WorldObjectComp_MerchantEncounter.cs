@@ -38,7 +38,6 @@ namespace Mashed_Ashlands
                         return;
                     }
 
-
                     foreach(IncidentDef incidentDef in Props.incidentDefs.InRandomOrder())
                     {
                         IncidentParms incidentParms = GetIncidentParms(caravan, incidentDef);
@@ -48,7 +47,6 @@ namespace Mashed_Ashlands
                             return;
                         }
                     }
-                    Log.Message("yergh");
                 }
             }
         }
