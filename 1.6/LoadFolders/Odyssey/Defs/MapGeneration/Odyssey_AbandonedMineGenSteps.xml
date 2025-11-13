@@ -20,6 +20,22 @@
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_DeadExplorerCave]==========-->
+	<GenStepDef ParentName="Mashed_Ashlands_DeadExplorerBase">
+		<defName>Mashed_Ashlands_DeadExplorerCave</defName>
+		<order>890</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_ExplorerSkeletonCave</thingDef>
+			<allowFoggedPositions>true</allowFoggedPositions>
+			<allowRoofed>true</allowRoofed>
+			<validators Inherit="False">
+				<li Class="ScattererValidator_Buildable">
+					<radius>1</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_CaveIns]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMine_CaveIns</defName>

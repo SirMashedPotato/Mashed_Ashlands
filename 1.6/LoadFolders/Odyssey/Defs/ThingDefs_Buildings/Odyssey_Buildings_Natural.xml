@@ -27,7 +27,7 @@
 		</building>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
-				<thingSetMakerDef>Mashed_Ashlands_ExplorerSkeletonExtraDrop</thingSetMakerDef>
+				<thingSetMakerDef>Mashed_Ashlands_ExplorerSkeletonExtraDrop</thingSetMakerDef> <!-- TODO replace -->
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>

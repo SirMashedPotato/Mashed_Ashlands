@@ -7,7 +7,7 @@
 		<genStep Class="Mashed_Ashlands.GenStep_ColumnarBasalt"/>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DeadExplorer]==========-->
-	<GenStepDef>
+	<GenStepDef Name="Mashed_Ashlands_DeadExplorerBase">
 		<defName>Mashed_Ashlands_DeadExplorer</defName>
 		<order>960</order>
 		<genStep Class="GenStep_ScatterThings">
