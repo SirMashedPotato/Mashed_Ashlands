@@ -24,6 +24,8 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeCaveProperties">
 				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
+				<gravelThreshold>0.25</gravelThreshold>
+				<waterThreshold>0.6</waterThreshold>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
