@@ -19,7 +19,20 @@ namespace Mashed_Ashlands
 
         protected override Map GeneratePocketMapInt()
         {
-            return base.GeneratePocketMapInt();
+            MapGeneratorDef mapGeneratorDef;
+
+            switch (MineType)
+            {
+                case TileMutatorWorker_AbandonedMine.MineType.Kwama:
+                    mapGeneratorDef = MapGeneratorDefOf.Mashed_Ashlands_AbandonedKwamaNest;
+                    break;
+
+                default:
+                    mapGeneratorDef = MapGeneratorDefOf.Mashed_Ashlands_AbandonedMine;
+                    break;
+            }
+
+            return PocketMapUtility.GeneratePocketMap(new IntVec3(def.portal.pocketMapSize, 1, def.portal.pocketMapSize), mapGeneratorDef, GetExtraGenSteps(), Map);
         }
 
         protected override IEnumerable<GenStepWithParams> GetExtraGenSteps()
@@ -40,7 +53,6 @@ namespace Mashed_Ashlands
                     break;
 
                 case TileMutatorWorker_AbandonedMine.MineType.Kwama:
-                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_KwamaEggs, new GenStepParams());
                     break;
             }
         }

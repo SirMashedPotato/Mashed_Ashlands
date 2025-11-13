@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
-	<!-- ebony, glass, kwama eggs spawned based on mine type -->
-	<MapGeneratorDef>
+	<MapGeneratorDef Name="Mashed_Ashlands_AbandonedMineBase">
 		<defName>Mashed_Ashlands_AbandonedMine</defName>
 		<label>abandoned mine</label>
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
 		<disableCallAid>true</disableCallAid>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_AshlandsUnderground</biome>
+			<biome>Mashed_Ashlands_UndergroundMine</biome>
 			<temperature>15</temperature>
 			<tileMutators>
 				<li>Mashed_Ashlands_UndergroundMine</li>
@@ -21,20 +20,27 @@
 			<li>RocksFromGrid_NoMinerals</li>
 			<li>Terrain</li>
 			<li>MutatorPostTerrain</li>
-			<!-- Ebony/Glass lumps -->
 			<!--<li>Underground_ScatterRuinsSimple</li>-->
 			<li>MutatorCriticalStructures</li>
 			<li>MutatorNonCriticalStructures</li>
 			<li>Mashed_Ashlands_DeadExplorer</li>	<!-- TODO cave version-->
 			<li>Mashed_Ashlands_AbandonedMine_CaveIns</li>
-			<!-- Kwama egg sacs -->
 			<li>RockChunks</li>
 			<li>PlaceCaveExit</li>
-			<!--<li>InsectLair_Cave</li>-->
-			<!--<li>InsectLair_GlowPods</li>-->
 			<li>Plants</li>
 			<li>MutatorFinal</li>
 			<li>Fog</li>
+		</genSteps>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_AbandonedMineBase">
+		<defName>Mashed_Ashlands_AbandonedKwamaNest</defName>
+		<label>abandoned kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_UndergroundKwamaNest</biome>
+		</pocketMapProperties>
+		<genSteps>
+			<li>Mashed_Ashlands_AbandonedMine_KwamaEggs</li>
 		</genSteps>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumps]==========-->
@@ -55,6 +61,15 @@
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
 			<forcedLumpSize>6</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_CaveIns]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_CaveIns</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
+			<caveInCountRange>9~13</caveInCountRange>
+			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaEggs]==========-->
@@ -87,15 +102,6 @@
 				</li>
 				<li Class="ScatterValidator_AvoidUsedRects"/>
 			</validators>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_CaveIns]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_CaveIns</defName>
-		<order>900</order>
-		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
-			<caveInCountRange>9~13</caveInCountRange>
-			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
 </Defs>

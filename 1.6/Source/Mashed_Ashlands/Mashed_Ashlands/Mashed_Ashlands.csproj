@@ -86,6 +86,7 @@
     <Compile Include="BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="DefModExtension\IncidentProperties.cs" />
+    <Compile Include="DefOf\MapGeneratorDefOf.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
     <Compile Include="GenStep\GenStep_ColumnarBasalt.cs" />
     <Compile Include="Classes\TerrainReplacer.cs" />

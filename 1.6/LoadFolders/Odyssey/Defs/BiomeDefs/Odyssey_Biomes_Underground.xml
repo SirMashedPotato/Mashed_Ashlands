@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandsUndergroundBase]==========-->
+	<BiomeDef ParentName="Biome_Underground" Name="Mashed_Ashlands_AshlandsUndergroundBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties"/>
+		</modExtensions>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish>1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish>1</Mashed_Ashlands_Fish_Slaughterfish>
+			</freshwater_Common>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish>1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish>1</Mashed_Ashlands_Fish_Slaughterfish>
+			</saltwater_Common>
+			<rareCatchesSetMaker>Mashed_Ashlands_RareFishingCatches_Ashland</rareCatchesSetMaker>
+		</fishTypes>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_UndergroundKwamaNest]==========-->
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsUndergroundBase">
+		<defName>Mashed_Ashlands_UndergroundKwamaNest</defName>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.25</Mashed_Ashlands_Plant_TreeKwamacap>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
+					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
+				</cavePlants>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_UndergroundMine]==========-->
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsUndergroundBase">
+		<defName>Mashed_Ashlands_UndergroundMine</defName>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.1</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
+				</cavePlants>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+</Defs>
