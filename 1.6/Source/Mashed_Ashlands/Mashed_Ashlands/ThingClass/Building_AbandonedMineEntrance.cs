@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Text;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -27,6 +26,8 @@ namespace Mashed_Ashlands
                 Destroy();
             }
         }
+
+        public override string Label => "Mashed_Ashlands_AbandonedMine_Entrance".Translate(("Mashed_Ashlands_AbandonedMine_" + MineType).Translate());
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {

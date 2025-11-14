@@ -41,11 +41,11 @@
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_Restorable">
 				<restoreAmount>6000</restoreAmount>
-				<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+				<requiredSkillDef>Construction</requiredSkillDef>
+				<requiredSkillLevel>6</requiredSkillLevel>
 				<effectRestoring>HackingTerminal</effectRestoring>
 				<restorationCompletedSound>AncientHatchOpened</restorationCompletedSound>
 				<notRestoredInspectString>Restore to enter.</notRestoredInspectString>
-				<restoredMessage>A {0_label} been restored.</restoredMessage>
 			</li>
 			<li Class="CompProperties_Sealable">
 				<sealTexPath>UI/Commands/FillInCaveEntrance</sealTexPath>
