@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
 		<label>abandoned mine entrance</label>
-		<description>The entrance to a long-abandoned mine. It can be opened to access the caverns below.</description>
+		<description>The entrance to a long-abandoned mine. It can be restored to access the caverns below.</description>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
 		<thingClass>Mashed_Ashlands.Building_AbandonedMineEntrance</thingClass>
@@ -39,15 +39,13 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Hackable"> <!-- TODO -->
-				<defence>39000</defence>
-				<effectHacking>HackingTerminal</effectHacking>
-				<lockoutDurationHoursRange>6~18</lockoutDurationHoursRange>
-				<showProgressAfterHackCompletion>false</showProgressAfterHackCompletion>
-				<notHackedInspectString>Hack to open.</notHackedInspectString>
-				<intellectualSkillPrerequisite>4</intellectualSkillPrerequisite>
-				<hackingCompletedSound>AncientHatchOpened</hackingCompletedSound>
-				<hackedMessage>{HACKER_labelShort} has finished hacking {SUBJECT_labelNoParenthesisDef}.</hackedMessage>
+			<li Class="Mashed_Ashlands.CompProperties_Restorable">
+				<restoreAmount>6000</restoreAmount>
+				<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+				<effectRestoring>HackingTerminal</effectRestoring>
+				<restorationCompletedSound>AncientHatchOpened</restorationCompletedSound>
+				<notRestoredInspectString>Restore to enter.</notRestoredInspectString>
+				<restoredMessage>A {0_label} been restored.</restoredMessage>
 			</li>
 			<li Class="CompProperties_Sealable">
 				<sealTexPath>UI/Commands/FillInCaveEntrance</sealTexPath>
@@ -55,7 +53,8 @@
 				<sealCommandDesc>Choose a colonist to permanently seal the entrance. Anything or anyone left below will be lost forever.</sealCommandDesc>
 				<cannotSealLabel>Cannot seal</cannotSealLabel>
 				<confirmSealText>Sealing the mine entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue?</confirmSealText>
-				<destroyPortal>true</destroyPortal>
+				<sealedInspectString>Permanently sealed.</sealedInspectString>
+    		    <cannotEnterLabel>Sealed</cannotEnterLabel>
 			</li>
 		</comps>
 		<inspectorTabs>

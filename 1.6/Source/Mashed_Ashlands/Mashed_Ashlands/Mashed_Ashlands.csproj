@@ -207,6 +207,7 @@
     <Compile Include="ThingComp\Comp_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Comp_EggLayerMutant.cs" />
     <Compile Include="ThingComp\Comp_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Comp_Restorable.cs" />
     <Compile Include="ThingComp\Comp_RotstinkEmitter.cs" />
     <Compile Include="ThingComp\Comp_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Comp_SpawnerOnDamage.cs" />
@@ -215,6 +216,7 @@
     <Compile Include="ThingComp\Properties\CompProperties_DropOnDestroy.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_EffecterAtNight.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_GasOnDestroy.cs" />
+    <Compile Include="ThingComp\Properties\CompProperties_Restorable.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SimpleItemProcessor.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDamage.cs" />
     <Compile Include="ThingComp\Properties\CompProperties_SpawnerOnDestroy.cs" />
