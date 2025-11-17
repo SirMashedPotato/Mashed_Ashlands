@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 4114656017
+CRC: 1980561432
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f3476f1b81573b0bacad6b5869cfe5f6
+    Hash: 2fa94cb89e0c53e2ed87fe248341fb8d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f3476f1b81573b0bacad6b5869cfe5f6
+    Hash: 2fa94cb89e0c53e2ed87fe248341fb8d
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -456,6 +456,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkGlowing_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_AshlandHayGrassPlant/Mashed_Ashlands_AshlandHayGrassPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_TreeEmperorToxisol/Mashed_Ashlands_TreeEmperorToxisol_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/UI/Designators/Mashed_Ashlands_Restore.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater/Mashed_Ashlands_RawCrabeater_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers/Mashed_Ashlands_LilyPad/Mashed_Ashlands_LilyPad_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Mashed_Ashlands_BlightcapPlant/Mashed_Ashlands_BlightcapPlant_a.png

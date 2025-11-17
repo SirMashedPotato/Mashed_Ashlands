@@ -11,7 +11,7 @@ namespace Mashed_Ashlands
     {
         private float restoreProgress = 0;
         private bool restored = false;
-        private static readonly Texture2D MarkForRestorationTexture = ContentFinder<Texture2D>.Get("UI/Designators/Mine"); // TODO
+        private static readonly Texture2D MarkForRestorationTexture = ContentFinder<Texture2D>.Get("UI/Designators/Mashed_Ashlands_Restore");
 
         public float ProgressPercent => restoreProgress / Props.restoreAmount;
 

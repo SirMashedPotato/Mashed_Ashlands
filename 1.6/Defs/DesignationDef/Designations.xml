@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_Restore]==========-->
 	<DesignationDef>
 		<defName>Mashed_Ashlands_Restore</defName>
-		<texturePath>UI/Designators/Mine</texturePath>		<!-- TODO -->
+		<texturePath>UI/Designators/Mashed_Ashlands_Restore</texturePath>
 		<targetType>Thing</targetType>
 	</DesignationDef>
 </Defs>
