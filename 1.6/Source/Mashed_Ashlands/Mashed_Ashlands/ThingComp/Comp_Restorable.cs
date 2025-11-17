@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -12,26 +11,26 @@ namespace Mashed_Ashlands
     {
         private float restoreProgress = 0;
         private bool restored = false;
-        private bool markedForRestoration = false;
-        private static readonly Texture2D MarkForRestorationTexture = ContentFinder<Texture2D>.Get("UI/Designators/Mine");
-        private static readonly Texture2D ForceRestoreTexture = ContentFinder<Texture2D>.Get("UI/Designators/Mine");
+        private static readonly Texture2D MarkForRestorationTexture = ContentFinder<Texture2D>.Get("UI/Designators/Mine"); // TODO
 
         public float ProgressPercent => restoreProgress / Props.restoreAmount;
 
         public bool IsRestored => restored;
 
+        public bool IsMarked => parent.Map.designationManager.DesignationOn(parent, DesignationDefOf.Mashed_Ashlands_Restore) != null;
+
         public CompProperties_Restorable Props => (CompProperties_Restorable)props;
 
-        public void RepairNow(float repairAmount)
+        public void ProgressRestoration(float repairAmount)
         {
             restoreProgress += repairAmount;
             if (restoreProgress >= Props.restoreAmount)
             {
-                CompleteRepair();
+                CompleteRestoration();
             }
         }
 
-        private void CompleteRepair()
+        private void CompleteRestoration()
         {
             if (restored)
             {
@@ -40,6 +39,7 @@ namespace Mashed_Ashlands
 
             restored = true;
             Messages.Message("Mashed_Ashlands_RestorationComplete".Translate(parent), parent, MessageTypeDefOf.PositiveEvent);
+            parent.Map.designationManager.TryRemoveDesignationOn(parent, DesignationDefOf.Mashed_Ashlands_Restore);
 
             if (parent.Spawned)
             {
@@ -55,6 +55,11 @@ namespace Mashed_Ashlands
                 return false;
             }
 
+            if (!IsMarked)
+            {
+                return false;
+            }
+
             if (!pawn.CanReach(parent, PathEndMode.ClosestTouch, Danger.Deadly))
             {
                 return "NoPath".Translate().CapitalizeFirst();
@@ -63,11 +68,6 @@ namespace Mashed_Ashlands
             if (pawn.skills == null || (Props.requiredSkillDef !=  null && pawn.skills.GetSkill(Props.requiredSkillDef).TotallyDisabled))
             {
                 return "IncapableOfCapacity".Translate(Props.requiredSkillDef.label);
-            }
-
-            if (pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
-            {
-                return "IncapableOfCapacity".Translate(PawnCapacityDefOf.Manipulation.label);
             }
 
             if (Props.requiredSkillDef != null && pawn.skills.GetSkill(Props.requiredSkillDef).Level < Props.requiredSkillLevel)
@@ -83,7 +83,6 @@ namespace Mashed_Ashlands
             base.PostExposeData();
             Scribe_Values.Look(ref restoreProgress, "restoreProgress", 0f);
             Scribe_Values.Look(ref restored, "restored", false);
-            Scribe_Values.Look(ref markedForRestoration, "markedForRestoration", false);
         }
 
         public override string CompInspectStringExtra()
@@ -111,16 +110,16 @@ namespace Mashed_Ashlands
 
             if (!IsRestored)
             {
-                yield return new Command_Toggle
+                yield return new Command_Action
                 {
                     defaultLabel = "Mashed_Ashlands_MarkForRestoration_Label".Translate(),
                     defaultDesc = "Mashed_Ashlands_MarkForRestoration_Description".Translate(parent),
                     icon = MarkForRestorationTexture,
                     hotKey = KeyBindingDefOf.Misc3,
-                    isActive = () => markedForRestoration,
-                    toggleAction = delegate
+                    Disabled = IsMarked,
+                    action = delegate
                     {
-                        markedForRestoration = !markedForRestoration;
+                        parent.Map.designationManager.AddDesignation(new Designation(parent, DesignationDefOf.Mashed_Ashlands_Restore));
                     }
                 };
 
@@ -131,7 +130,7 @@ namespace Mashed_Ashlands
                         defaultLabel = "DEV: Complete restoration",
                         action = delegate
                         {
-                            CompleteRepair();
+                            CompleteRestoration();
                         }
                     };
                 }

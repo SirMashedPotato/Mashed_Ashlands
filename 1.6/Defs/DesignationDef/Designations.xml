@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Restore]==========-->
+	<DesignationDef>
+		<defName>Mashed_Ashlands_Restore</defName>
+		<texturePath>UI/Designators/Mine</texturePath>		<!-- TODO -->
+		<targetType>Thing</targetType>
+	</DesignationDef>
+</Defs>

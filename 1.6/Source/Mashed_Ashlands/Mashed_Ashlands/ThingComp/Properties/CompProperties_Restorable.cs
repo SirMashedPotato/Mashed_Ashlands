@@ -8,6 +8,7 @@ namespace Mashed_Ashlands
         public float restoreAmount;
         public SkillDef requiredSkillDef;
         public int requiredSkillLevel;
+        public StatDef restoreStatDef;
         public EffecterDef effectRestoring;
         public SoundDef restorationCompletedSound;
         [MustTranslate]

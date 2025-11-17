@@ -40,10 +40,11 @@
 		</statBases>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_Restorable">
-				<restoreAmount>6000</restoreAmount>
+				<restoreAmount>60000</restoreAmount>
 				<requiredSkillDef>Construction</requiredSkillDef>
 				<requiredSkillLevel>6</requiredSkillLevel>
-				<effectRestoring>HackingTerminal</effectRestoring>
+				<restoreStatDef>ConstructionSpeed</restoreStatDef>
+				<effectRestoring>Repair</effectRestoring>
 				<restorationCompletedSound>AncientHatchOpened</restorationCompletedSound>
 				<notRestoredInspectString>Restore to enter.</notRestoredInspectString>
 			</li>
