@@ -45,7 +45,7 @@
 				<requiredSkillLevel>6</requiredSkillLevel>
 				<restoreStatDef>ConstructionSpeed</restoreStatDef>
 				<effectRestoring>Repair</effectRestoring>
-				<restorationCompletedSound>AncientHatchOpened</restorationCompletedSound>
+				<restorationCompletedSound>Building_Complete</restorationCompletedSound>
 				<notRestoredInspectString>Restore to enter.</notRestoredInspectString>
 			</li>
 			<li Class="CompProperties_Sealable">
