@@ -85,11 +85,7 @@ namespace Mashed_Ashlands
         /// </summary>
         public bool IsValidCell(IntVec3 c, Map map)
         {
-            if (c.GetFirstPawn(map) == null && c.GetFirstItem(map) == null && c.GetFirstBuilding(map) == null)
-            {
-                return true;
-            }
-            return false;
+            return Utility.CaveInCellValidator(map, c);
         }
 
         /// <summary>

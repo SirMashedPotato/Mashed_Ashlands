@@ -36,25 +36,14 @@ namespace Mashed_Ashlands
             Log.Warning("GenStep_CaveIns hit max tries of " + maxTries);
         }
 
-        private bool CellValidator(Map map, IntVec3 c)
+        public bool CellValidator(Map map, IntVec3 c)
         {
             if (c.DistanceToEdge(map) < 10)
             {
                 return false;
             }
 
-            if (!c.Standable(map))
-            {
-                return false;
-            }
-
-            c.TryGetFirstThing(map, out Thing thing);
-            if (thing != null && !(thing is Filth))
-            {
-                return false;
-            }
-
-            return true;
+           return Utility.CaveInCellValidator(map, c);
         }
     }
 }

@@ -161,6 +161,7 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
     <Compile Include="Jobs\WorkGiver\WorkGiver_Restore.cs" />
+    <Compile Include="MapComponent\CustomMapComponent\AbandonedMineMapComponent.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenActive.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenBlighted.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenDormant.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Settings\SettingsPage\SettingsPage_WorldGen.cs" />
     <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
     <Compile Include="ThingClass\Building_AbandonedMineEntrance.cs" />
+    <Compile Include="ThingClass\Spawner_CollapsingRockRoof.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="GenStep\GenStep_ScatterFetcherflyHives.cs" />
     <Compile Include="Harmony\Patches_CliffRacer.cs" />

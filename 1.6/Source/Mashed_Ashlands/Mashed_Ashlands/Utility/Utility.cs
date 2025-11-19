@@ -55,5 +55,21 @@ namespace Mashed_Ashlands
             WeatherDef curWeather = map.weatherManager.curWeather;
             return curWeather == WeatherDefOf.Mashed_Ashlands_DustStorm || curWeather == WeatherDefOf.Mashed_Ashlands_DustThunderstorm;
         }
+
+        public static bool CaveInCellValidator(Map map, IntVec3 c)
+        {
+            if (!c.Standable(map))
+            {
+                return false;
+            }
+
+            c.TryGetFirstThing(map, out Thing thing);
+            if (thing != null && !(thing is Filth))
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

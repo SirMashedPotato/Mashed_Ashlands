@@ -7,6 +7,9 @@
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
 		<disableCallAid>true</disableCallAid>
+		<customMapComponents>
+			<li>Mashed_Ashlands.AbandonedMineMapComponent</li>
+		</customMapComponents>
 		<pocketMapProperties>
 			<biome>Mashed_Ashlands_UndergroundMine</biome>
 			<temperature>15</temperature>
