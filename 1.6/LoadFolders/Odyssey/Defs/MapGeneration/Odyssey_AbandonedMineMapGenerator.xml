@@ -43,6 +43,8 @@
 			<biome>Mashed_Ashlands_UndergroundKwamaNest</biome>
 		</pocketMapProperties>
 		<genSteps>
+			<li>Mashed_Ashlands_AbandonedMine_KwamaScribs</li>
+			<li>Mashed_Ashlands_AbandonedMine_KwamaWorkers</li>
 			<li>Mashed_Ashlands_AbandonedMine_KwamaEggs</li>
 		</genSteps>
 	</MapGeneratorDef>

@@ -45,6 +45,26 @@
 			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaScribs]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_KwamaScribs</defName>
+		<order>951</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
+			<thingDef>Mashed_Ashlands_KwamaScrib</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaWorkers]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_KwamaWorkers</defName>
+		<order>952</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
+			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>0~3</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaEggs]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMine_KwamaEggs</defName>

@@ -29,7 +29,7 @@
 	<GenStepDef>
 		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>
 		<order>900</order>
-		<genStep Class="Mashed_Ashlands.GenStep_KwamaWorkers">
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
 			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<countPer10kCellsRange>0.3~0.6</countPer10kCellsRange>
