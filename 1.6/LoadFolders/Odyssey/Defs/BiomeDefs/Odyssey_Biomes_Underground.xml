@@ -27,14 +27,16 @@
 				<gravelThreshold>0.25</gravelThreshold>
 				<waterThreshold>0.6</waterThreshold>
 				<cavePlants>
+					<Mashed_Ashlands_Plant_KwamaMoss>0.25</Mashed_Ashlands_Plant_KwamaMoss>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
 					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
 					<Mashed_Ashlands_Plant_TreeKwamacap>0.25</Mashed_Ashlands_Plant_TreeKwamacap>
 					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.15</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.15</Mashed_Ashlands_Plant_GlowingCoprinus>
 					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
 					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
 				</cavePlants>
@@ -48,12 +50,13 @@
 			<li Class="Mashed_Ashlands.BiomeCaveProperties">
 				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
 				<cavePlants>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_PurpleCrystal>0.1</Mashed_Ashlands_Plant_PurpleCrystal>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.2</Mashed_Ashlands_Plant_PurpleCrystal>
 					<!-- Polluted plants -->
+					 <Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
 					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
 					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
 					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
