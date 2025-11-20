@@ -246,7 +246,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_KwamaThingBase">
 		<defName>Mashed_Ashlands_KwamaWorker</defName>
 		<label>kwama worker</label>
-		<description>One of the specialised forms of kwama. While usually found within kwama nests, they can occasionally be found wandering underground caverns. Effectively an armoured tube with legs, they can carry up to ten eggs at a time. Generally quite peaceful, they will leave defending the nest to the warriors.\n\n&lt;color=#E5E54C&gt;Tenders of the nest&lt;/color&gt;\nWorkers taught how to haul will also clean nearby filth.</description>
+		<description>One of the specialised forms of kwama. While usually found within kwama nests, they can occasionally be found wandering underground caverns, or rarely even above-ground. Effectively an armoured tube with legs, they can carry up to ten eggs at a time. Generally quite peaceful, they will leave defending the nest to the warriors.\n\n&lt;color=#E5E54C&gt;Tenders of the nest&lt;/color&gt;\nWorkers taught how to haul will also clean nearby filth.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<MarketValue>400</MarketValue>

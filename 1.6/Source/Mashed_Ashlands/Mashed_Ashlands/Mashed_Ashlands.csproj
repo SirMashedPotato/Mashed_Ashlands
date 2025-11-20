@@ -135,6 +135,7 @@
     <Compile Include="GameCondition\GameCondition_DenseAshClouds.cs" />
     <Compile Include="GameCondition\GameCondition_VolcanicMiasma.cs" />
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
+    <Compile Include="GenStep\GenStep_KwamaWorkers.cs" />
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
     <Compile Include="Harmony\Patch_ApplyBedThoughts.cs" />
     <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />

@@ -19,5 +19,6 @@ namespace Mashed_Ashlands
         public static PawnKindDef Mashed_Ashlands_Netch;
         public static PawnKindDef Mashed_Ashlands_NixHound;
         public static PawnKindDef Mashed_Ashlands_Shalk;
+        public static PawnKindDef Mashed_Ashlands_KwamaWorker;
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_VolcanicDebrisField]==========-->
+	<!-- ==========[Mashed_Ashlands_AbandonedMineEntrance]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
 		<order>900</order>
@@ -23,6 +23,16 @@
 				</li>
 				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_LostKwamaWorkers]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_KwamaWorkers">
+			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>0.3~0.6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->

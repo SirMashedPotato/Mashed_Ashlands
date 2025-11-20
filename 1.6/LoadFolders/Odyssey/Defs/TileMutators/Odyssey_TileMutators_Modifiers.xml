@@ -40,6 +40,17 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LostKwamaWorkers]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>
+		<label>lost kwama workers</label>
+		<description>This area is home to kwama workers that have been separated from their nest.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<minHilliness>LargeHills</minHilliness>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_LostKwamaWorkers</li>
+		</extraGenSteps>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_AshyMutator]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
 		<defName>Mashed_Ashlands_AshyMutator</defName>
