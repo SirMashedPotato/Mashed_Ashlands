@@ -88,9 +88,10 @@
 					<radius>3</radius>
 					<affordance>Heavy</affordance>
 				</li>
-				<li Class="ScattererValidator_NoNonNaturalEdifices">
-					<radius>3</radius>
+				<li Class="ScatterValidator_AvoidUsedRects">
+					<size>3,3</size>
 				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>
 		</genStep>
 	</GenStepDef>
