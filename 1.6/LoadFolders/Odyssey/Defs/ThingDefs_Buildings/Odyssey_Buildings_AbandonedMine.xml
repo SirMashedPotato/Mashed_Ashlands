@@ -34,7 +34,7 @@
 			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator> <!-- overriden in code -->
 			<exitDef>CaveExit</exitDef>
 			<enteredLetterLabel>unstable tunnels</enteredLetterLabel>
-			<enteredLetterText>The tunnels here have been rendered highly unstable due to seismic activity. Instability will gradually increase over time, periodically causing parts of the tunnels to collapse.</enteredLetterText>
+			<enteredLetterText>The tunnels here have been rendered highly unstable due to seismic activity. Instability will fluctuate over time, periodically causing parts of the tunnels to collapse.</enteredLetterText>
 			<enteredLetterDef>Mashed_Ashlands_VolcanoNegativeEvent</enteredLetterDef>
 		</portal>
 		<statBases>
