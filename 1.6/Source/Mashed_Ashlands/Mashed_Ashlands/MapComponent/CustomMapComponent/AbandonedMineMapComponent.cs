@@ -17,7 +17,7 @@ namespace Mashed_Ashlands
         private float instability;
         private FloatRange instabilityGainRange = new FloatRange(0f, 0.06f);
         private int checkInterval;
-        private IntRange checkIntervalRange = new IntRange(15000, 30000);
+        private IntRange checkIntervalRange = new IntRange(15000, 60000);
 
         public Map SourceMap => (map.Parent as PocketMapParent)?.sourceMap;
 

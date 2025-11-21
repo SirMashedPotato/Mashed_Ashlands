@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
 		<label>abandoned mine entrance</label>
-		<description>The entrance to a long-abandoned mine. It can be restored to access the caverns below.</description>
+		<description>The entrance to a long-abandoned mine. It can be restored to access the caverns below, though many of the tunnels may have since collapsed.</description>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
 		<thingClass>Mashed_Ashlands.Building_AbandonedMineEntrance</thingClass>
@@ -33,7 +33,9 @@
 		<portal>
 			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator> <!-- overriden in code -->
 			<exitDef>CaveExit</exitDef>
-			<!--<pocketMapSize>75</pocketMapSize>-->
+			<enteredLetterLabel>unstable tunnels</enteredLetterLabel>
+			<enteredLetterText>The tunnels here have been rendered highly unstable due to seismic activity. Instability will gradually increase over time, periodically causing parts of the tunnels to collapse.</enteredLetterText>
+			<enteredLetterDef>Mashed_Ashlands_VolcanoNegativeEvent</enteredLetterDef>
 		</portal>
 		<statBases>
 			<Flammability>0</Flammability>
