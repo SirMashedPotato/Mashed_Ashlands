@@ -4,8 +4,10 @@
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
 		<order>900</order>
-		<genStep Class="GenStep_ScatterThings">
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterWithTerrain">
 			<thingDef>Mashed_Ashlands_AbandonedMineEntrance</thingDef>
+			<terrainDef>Mashed_Ashlands_Basalt_Rough</terrainDef>
+			<terrainGridSize>33</terrainGridSize>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<clearSpaceSize>30</clearSpaceSize>
 			<terrainValidationRadius>5</terrainValidationRadius>
@@ -18,8 +20,8 @@
 					<radius>3</radius>
 					<affordance>Heavy</affordance>
 				</li>
-				<li Class="ScattererValidator_NoNonNaturalEdifices">
-					<radius>3</radius>
+				<li Class="ScatterValidator_AvoidUsedRects">
+					<size>5,5</size>
 				</li>
 				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>
