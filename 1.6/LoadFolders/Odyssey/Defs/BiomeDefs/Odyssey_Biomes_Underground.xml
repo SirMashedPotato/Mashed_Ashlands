@@ -5,6 +5,7 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties"/>
 		</modExtensions>
+		<gravelTerrain>Mashed_Ashlands_RichAshGravel</gravelTerrain>
 		<!-- Fishing -->
 		<fishTypes>
 			<freshwater_Common>
@@ -23,7 +24,6 @@
 		<defName>Mashed_Ashlands_UndergroundKwamaNest</defName>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeCaveProperties">
-				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
 				<gravelThreshold>0.25</gravelThreshold>
 				<waterThreshold>0.6</waterThreshold>
 				<cavePlants>
@@ -48,7 +48,6 @@
 		<defName>Mashed_Ashlands_UndergroundMine</defName>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeCaveProperties">
-				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>

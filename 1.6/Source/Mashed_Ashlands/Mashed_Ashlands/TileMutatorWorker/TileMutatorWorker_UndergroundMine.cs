@@ -22,7 +22,7 @@ namespace Mashed_Ashlands
         public override void GeneratePostTerrain(Map map)
         {
             BiomeCaveProperties props = BiomeCaveProperties.Get(map.Biome);
-            if (props == null || props.useDefaultCaveGen || props.caveGravelReplacer == null)
+            if (props == null || props.useDefaultCaveGen)
             {
                 base.GeneratePostTerrain(map);
                 return;
@@ -44,7 +44,7 @@ namespace Mashed_Ashlands
                     }
                     else if (num2 > props.gravelThreshold)
                     {
-                        map.terrainGrid.SetTerrain(allCell, props.caveGravelReplacer);
+                        map.terrainGrid.SetTerrain(allCell, map.BiomeAt(allCell).gravelTerrain);
                     }
                 }
             }
