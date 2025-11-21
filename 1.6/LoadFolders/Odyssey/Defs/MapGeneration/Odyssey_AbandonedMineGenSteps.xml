@@ -10,6 +10,16 @@
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumpLarge]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_EbonyLumpLarge</defName>
+		<order>303</order>
+		<genStep Class="GenStep_ScatterLumpsMineable">
+			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
+			<forcedLumpSize>30</forcedLumpSize>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedMine_GlassLumps]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_AbandonedMine_GlassLumps</defName>
@@ -18,6 +28,16 @@
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
 			<forcedLumpSize>6</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine_GlassLumpLarge]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_AbandonedMine_GlassLumpLarge</defName>
+		<order>303</order>
+		<genStep Class="GenStep_ScatterLumpsMineable">
+			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
+			<forcedLumpSize>30</forcedLumpSize>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DeadExplorerCave]==========-->

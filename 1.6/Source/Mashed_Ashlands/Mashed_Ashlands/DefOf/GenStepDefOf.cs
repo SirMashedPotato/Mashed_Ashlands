@@ -15,6 +15,10 @@ namespace Mashed_Ashlands
         [MayRequireOdyssey]
         public static GenStepDef Mashed_Ashlands_AbandonedMine_EbonyLumps;
         [MayRequireOdyssey]
+        public static GenStepDef Mashed_Ashlands_AbandonedMine_EbonyLumpLarge;
+        [MayRequireOdyssey]
         public static GenStepDef Mashed_Ashlands_AbandonedMine_GlassLumps;
+        [MayRequireOdyssey]
+        public static GenStepDef Mashed_Ashlands_AbandonedMine_GlassLumpLarge;
     }
 }

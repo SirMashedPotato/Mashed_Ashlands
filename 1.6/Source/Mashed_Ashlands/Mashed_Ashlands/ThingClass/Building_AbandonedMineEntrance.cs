@@ -97,10 +97,12 @@ namespace Mashed_Ashlands
             {
                 case TileMutatorWorker_AbandonedMine.MineType.Ebony:
                     yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumps, new GenStepParams());
+                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumpLarge, new GenStepParams());
                     break;
 
                 case TileMutatorWorker_AbandonedMine.MineType.Glass:
                     yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumps, new GenStepParams());
+                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumpLarge, new GenStepParams());
                     break;
 
                 case TileMutatorWorker_AbandonedMine.MineType.Kwama:
