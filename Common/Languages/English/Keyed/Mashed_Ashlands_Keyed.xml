@@ -65,8 +65,8 @@
 	<Mashed_Ashlands_RestorationRequirement>{0} needed: {1} </Mashed_Ashlands_RestorationRequirement>
 	<Mashed_Ashlands_RestorationProgress>Restoration progress: {0}</Mashed_Ashlands_RestorationProgress>
 	<!-- ==========[Abandoned Mine]==========-->
-	<Mashed_Ashlands_AbandonedMine_Entrance>{0} entrance</Mashed_Ashlands_AbandonedMine_Entrance>
-	<Mashed_Ashlands_AbandonedMine_CaveIn>parts of the {0} are caving in.</Mashed_Ashlands_AbandonedMine_CaveIn>
+	<Mashed_Ashlands_Undercave_Entrance>{0} entrance</Mashed_Ashlands_Undercave_Entrance>
+	<Mashed_Ashlands_Undercave_CaveIn>parts of the {0} are caving in.</Mashed_Ashlands_Undercave_CaveIn>
 	<!-- ==========[Misc]==========-->
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>

@@ -5,7 +5,7 @@ using Verse;
 namespace Mashed_Ashlands
 {
     [StaticConstructorOnStartup]
-    public class Building_AbandonedMineEntrance : MapPortal
+    public class Building_UndercaveEntrance : MapPortal
     {
         public UndercaveTypeDef UndercaveTypeDef
         {
@@ -36,7 +36,7 @@ namespace Mashed_Ashlands
         private Comp_Restorable Restorable => restorable ?? (restorable = GetComp<Comp_Restorable>());
         private CompSealable Sealable => sealable ?? (sealable = GetComp<CompSealable>());
 
-        public Building_AbandonedMineEntrance()
+        public Building_UndercaveEntrance()
         {
             if (!ModsConfig.OdysseyActive)
             {
@@ -44,7 +44,7 @@ namespace Mashed_Ashlands
             }
         }
 
-        public override string Label => "Mashed_Ashlands_AbandonedMine_Entrance".Translate(UndercaveTypeDef.label);
+        public override string Label => "Mashed_Ashlands_Undercave_Entrance".Translate(UndercaveTypeDef.label);
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
