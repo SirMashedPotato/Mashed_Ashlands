@@ -4,15 +4,20 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class TileMutatorWorker_AbandonedMine : TileMutatorWorker
+    public class TileMutatorWorker_UndercaveEntrance : TileMutatorWorker
     {
-        public TileMutatorWorker_AbandonedMine(TileMutatorDef def) : base(def)
+        public TileMutatorWorker_UndercaveEntrance(TileMutatorDef def) : base(def)
         {
         }
 
         public override string GetLabel(PlanetTile tile)
         {
             return GetMineType(tile).label;
+        }
+
+        public override string GetDescription(PlanetTile tile)
+        {
+            return base.GetDescription(tile) + "\n\n" + GetMineType(tile).description;
         }
 
         public static UndercaveTypeDef GetMineType(PlanetTile tile)

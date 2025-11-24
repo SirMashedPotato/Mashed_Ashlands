@@ -13,7 +13,7 @@
 			<Mashed_Ashlands_AncientLavaFlow Required="True"/>
 			<SteamGeysers_Increased> 0.25</SteamGeysers_Increased>
 			<Stockpile>0.05</Stockpile>
-			<Mashed_Ashlands_AbandonedMine>0.05</Mashed_Ashlands_AbandonedMine>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<AnimalHabitat>0.05</AnimalHabitat>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
 			<PlantLife_Increased>0.05</PlantLife_Increased>
@@ -111,7 +111,7 @@
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Stockpile>0.05</Stockpile>
-			<Mashed_Ashlands_AbandonedMine>0.05</Mashed_Ashlands_AbandonedMine>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<MineralRich>0.03</MineralRich>
 			<FoggyMutator>0.05</FoggyMutator>
 			<WindyMutator>0.05</WindyMutator>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
-	<MapGeneratorDef Name="Mashed_Ashlands_AbandonedMineBase">
-		<defName>Mashed_Ashlands_AbandonedMine</defName>
-		<label>abandoned mine</label>
+	<!-- ==========[Mashed_Ashlands_UndercaveBase]==========-->
+	<MapGeneratorDef Name="Mashed_Ashlands_UndercaveBase" Abstract="True">
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
 		<disableCallAid>true</disableCallAid>
-		<customMapComponents>
-			<li>Mashed_Ashlands.AbandonedMineMapComponent</li>
-		</customMapComponents>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_UndergroundMine</biome>
 			<temperature>15</temperature>
 			<tileMutators>
 				<li>Mashed_Ashlands_UndergroundMine</li>
@@ -23,11 +17,9 @@
 			<li>RocksFromGrid_NoMinerals</li>
 			<li>Terrain</li>
 			<li>MutatorPostTerrain</li>
-			<!--<li>Underground_ScatterRuinsSimple</li>-->
 			<li>MutatorCriticalStructures</li>
 			<li>MutatorNonCriticalStructures</li>
 			<li>Mashed_Ashlands_DeadExplorerCave</li>
-			<li>Mashed_Ashlands_AbandonedMine_CaveIns</li>
 			<li>RockChunks</li>
 			<li>PlaceCaveExit</li>
 			<li>Plants</li>
@@ -35,17 +27,31 @@
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveBase" Name="Mashed_Ashlands_AbandonedMineBase">
+		<defName>Mashed_Ashlands_AbandonedMine</defName>
+		<label>abandoned mine</label>
+		<customMapComponents>
+			<li>Mashed_Ashlands.UnstableTunnelsMapComponent</li>
+		</customMapComponents>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_UndergroundMine</biome>
+		</pocketMapProperties>
+		<genSteps>
+			<li>Mashed_Ashlands_Undercave_CaveIns</li>
+		</genSteps>
+	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_AbandonedKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_AbandonedMineBase" Name="Mashed_Ashlands_AbandonedKwamaNestBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_AbandonedMineBase" Name="Mashed_Ashlands_KwamaNestBase">
 		<defName>Mashed_Ashlands_AbandonedKwamaNest</defName>
 		<label>abandoned kwama nest</label>
 		<pocketMapProperties>
 			<biome>Mashed_Ashlands_UndergroundKwamaNest</biome>
 		</pocketMapProperties>
 		<genSteps>
-			<li>Mashed_Ashlands_AbandonedMine_KwamaScribs</li>
-			<li>Mashed_Ashlands_AbandonedMine_KwamaWorkers</li>
-			<li>Mashed_Ashlands_AbandonedMine_KwamaEggs</li>
+			<li>Mashed_Ashlands_Undercave_KwamaScribs</li>
+			<li>Mashed_Ashlands_Undercave_KwamaWorkers</li>
+			<li>Mashed_Ashlands_Undercave_KwamaEggs</li>
 		</genSteps>
 	</MapGeneratorDef>
 </Defs>

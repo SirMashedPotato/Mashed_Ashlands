@@ -34,6 +34,6 @@ namespace Mashed_Ashlands
         public static ThingDef Mashed_Ashlands_MineableEbony;
         public static ThingDef Mashed_Ashlands_MineableGlass;
         [MayRequireOdyssey]
-        public static ThingDef Mashed_Ashlands_AbandonedMineEntrance;
+        public static ThingDef Mashed_Ashlands_UndercaveEntrance;
     }
 }

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AbandonedMineEntrance]==========-->
+	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
 	<ThingDef ParentName="BuildingBase">
-		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
-		<label>abandoned mine entrance</label>
-		<description>The entrance to a long-abandoned mine. It can be restored to access the caverns below, though many of the tunnels may have since collapsed.</description>
+		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
+		<label>undercave entrance</label>
+		<description>An entrance leading deep underground. It must be restored before the caverns below can be safely accessed.</description>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
-		<thingClass>Mashed_Ashlands.Building_AbandonedMineEntrance</thingClass>
+		<thingClass>Mashed_Ashlands.Building_UndercaveEntrance</thingClass>
 		<rotatable>false</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
@@ -31,11 +31,8 @@
 			<expandHomeArea>false</expandHomeArea>
 		</building>
 		<portal>
-			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator> <!-- overriden in code -->
+			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator>			<!-- overriden in code -->
 			<exitDef>CaveExit</exitDef>
-			<enteredLetterLabel>unstable tunnels</enteredLetterLabel>
-			<enteredLetterText>The tunnels here have been rendered highly unstable due to seismic activity. Instability will fluctuate over time, periodically causing parts of the tunnels to collapse.</enteredLetterText>
-			<enteredLetterDef>Mashed_Ashlands_VolcanoNegativeEvent</enteredLetterDef>
 		</portal>
 		<statBases>
 			<Flammability>0</Flammability>
@@ -52,12 +49,12 @@
 			</li>
 			<li Class="CompProperties_Sealable">
 				<sealTexPath>UI/Commands/FillInCaveEntrance</sealTexPath>
-				<sealCommandLabel>Seal mine entrance</sealCommandLabel>
+				<sealCommandLabel>Seal cave entrance</sealCommandLabel>
 				<sealCommandDesc>Choose a colonist to permanently seal the entrance. Anything or anyone left below will be lost forever.</sealCommandDesc>
 				<cannotSealLabel>Cannot seal</cannotSealLabel>
-				<confirmSealText>Sealing the mine entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue?</confirmSealText>
+				<confirmSealText>Sealing the cave entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue?</confirmSealText>
 				<sealedInspectString>Permanently sealed.</sealedInspectString>
-    		    <cannotEnterLabel>Sealed</cannotEnterLabel>
+				<cannotEnterLabel>Sealed</cannotEnterLabel>
 			</li>
 		</comps>
 		<inspectorTabs>

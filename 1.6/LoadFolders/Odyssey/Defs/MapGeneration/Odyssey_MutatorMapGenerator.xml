@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AbandonedMineEntrance]==========-->
+	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMineEntrance</defName>
+		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
 		<order>900</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterWithTerrain">
-			<thingDef>Mashed_Ashlands_AbandonedMineEntrance</thingDef>
+			<thingDef>Mashed_Ashlands_UndercaveEntrance</thingDef>
 			<terrainDef>Mashed_Ashlands_Basalt_Rough</terrainDef>
 			<terrainGridSize>33</terrainGridSize>
 			<spotMustBeStandable>true</spotMustBeStandable>

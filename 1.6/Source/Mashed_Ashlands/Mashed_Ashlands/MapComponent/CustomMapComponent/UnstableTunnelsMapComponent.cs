@@ -7,10 +7,10 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    public class AbandonedMineMapComponent : CustomMapComponent
+    public class UnstableTunnelsMapComponent : CustomMapComponent
     {
         public PocketMapExit mineExit;
-        public Building_AbandonedMineEntrance mineEntrance;
+        public Building_UndercaveEntrance mineEntrance;
 
         private static IntRange caveInCountRange = new IntRange(1,3);
         private static IntRange caveInSizeRange = new IntRange(10, 20);
@@ -22,7 +22,7 @@ namespace Mashed_Ashlands
 
         public Map SourceMap => (map.Parent as PocketMapParent)?.sourceMap;
 
-        public AbandonedMineMapComponent(Map map) : base(map)
+        public UnstableTunnelsMapComponent(Map map) : base(map)
         {
             instability = instabilityGainRange.RandomInRange;
             checkInterval = checkIntervalRange.RandomInRange;
@@ -32,7 +32,7 @@ namespace Mashed_Ashlands
         {
             base.MapGenerated();
 
-            mineEntrance = SourceMap?.listerThings?.ThingsOfDef(ThingDefOf.Mashed_Ashlands_AbandonedMineEntrance).FirstOrDefault() as Building_AbandonedMineEntrance;
+            mineEntrance = SourceMap?.listerThings?.ThingsOfDef(ThingDefOf.Mashed_Ashlands_UndercaveEntrance).FirstOrDefault() as Building_UndercaveEntrance;
             if (mineEntrance == null)
             {
                 Log.Warning("Abandoned mine entrance was not found after generating undercave, if this map was created via dev tools you can ignore this");
@@ -61,7 +61,7 @@ namespace Mashed_Ashlands
 
                 if (instability >= 1f)
                 {
-                    Messages.Message("Mashed_Ashlands_AbandonedMine_CaveIn".Translate(mineEntrance.UndercaveTypeDef), mineExit, MessageTypeDefOf.NegativeEvent);
+                    Messages.Message("Mashed_Ashlands_Undercave_CaveIn".Translate(mineEntrance.UndercaveTypeDef), mineExit, MessageTypeDefOf.NegativeEvent);
                     TriggerCaveIn();
                     instability = 0f;
                 }

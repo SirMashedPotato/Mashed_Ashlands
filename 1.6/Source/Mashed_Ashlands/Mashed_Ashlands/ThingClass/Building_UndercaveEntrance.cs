@@ -13,7 +13,7 @@ namespace Mashed_Ashlands
             {
                 if(undercaveTypeDef == null)
                 {
-                    undercaveTypeDef = TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
+                    undercaveTypeDef = TileMutatorWorker_UndercaveEntrance.GetMineType(Map.Tile);
                 }
 
                 return undercaveTypeDef;
@@ -106,6 +106,18 @@ namespace Mashed_Ashlands
                     yield return new GenStepWithParams(genStepDef, new GenStepParams());
                 }
             }
+        }
+
+        public override void OnEntered(Pawn pawn)
+        {
+            if (!beenEntered)
+            {
+                if (!UndercaveTypeDef.enterLabel.NullOrEmpty())
+                {
+                    Find.LetterStack.ReceiveLetter(UndercaveTypeDef.enterLabel, UndercaveTypeDef.enterDescription, UndercaveTypeDef.enterLetterDef ?? LetterDefOf.Mashed_Ashlands_VolcanoNegativeEvent, exit);
+                }
+            }
+            base.OnEntered(pawn);
         }
 
         public override IEnumerable<Gizmo> GetGizmos()

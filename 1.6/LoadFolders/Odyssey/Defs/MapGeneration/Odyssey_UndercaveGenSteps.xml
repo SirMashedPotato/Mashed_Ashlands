@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumps]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_EbonyLumps]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_EbonyLumps</defName>
+		<defName>Mashed_Ashlands_Undercave_EbonyLumps</defName>
 		<order>300</order>
 		<genStep Class="GenStep_ScatterLumpsMineable">
 			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
@@ -10,9 +10,9 @@
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_EbonyLumpLarge]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_EbonyLumpLarge]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_EbonyLumpLarge</defName>
+		<defName>Mashed_Ashlands_Undercave_EbonyLumpLarge</defName>
 		<order>303</order>
 		<genStep Class="GenStep_ScatterLumpsMineable">
 			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
@@ -20,9 +20,9 @@
 			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_GlassLumps]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_GlassLumps]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_GlassLumps</defName>
+		<defName>Mashed_Ashlands_Undercave_GlassLumps</defName>
 		<order>300</order>
 		<genStep Class="GenStep_ScatterLumpsMineable">
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
@@ -30,9 +30,9 @@
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_GlassLumpLarge]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_GlassLumpLarge]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_GlassLumpLarge</defName>
+		<defName>Mashed_Ashlands_Undercave_GlassLumpLarge</defName>
 		<order>303</order>
 		<genStep Class="GenStep_ScatterLumpsMineable">
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
@@ -56,18 +56,18 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_CaveIns]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_CaveIns]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_CaveIns</defName>
+		<defName>Mashed_Ashlands_Undercave_CaveIns</defName>
 		<order>900</order>
 		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
 			<caveInCountRange>9~13</caveInCountRange>
 			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaScribs]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaScribs]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_KwamaScribs</defName>
+		<defName>Mashed_Ashlands_Undercave_KwamaScribs</defName>
 		<order>951</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
 			<thingDef>Mashed_Ashlands_KwamaScrib</thingDef>
@@ -75,9 +75,9 @@
 			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaWorkers]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaWorkers]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_KwamaWorkers</defName>
+		<defName>Mashed_Ashlands_Undercave_KwamaWorkers</defName>
 		<order>952</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
 			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
@@ -85,9 +85,9 @@
 			<countPer10kCellsRange>0~3</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine_KwamaEggs]==========-->
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaEggs]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_AbandonedMine_KwamaEggs</defName>
+		<defName>Mashed_Ashlands_Undercave_KwamaEggs</defName>
 		<order>960</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<groups>

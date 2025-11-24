@@ -87,7 +87,6 @@
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="DefModExtension\IncidentProperties.cs" />
     <Compile Include="DefOf\DesignationDefOf.cs" />
-    <Compile Include="DefOf\MapGeneratorDefOf.cs" />
     <Compile Include="Def\UndercaveTypeDef.cs" />
     <Compile Include="GenStep\GenStep_ScatterWithTerrain.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
@@ -164,7 +163,7 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
     <Compile Include="Jobs\WorkGiver\WorkGiver_Restore.cs" />
-    <Compile Include="MapComponent\CustomMapComponent\AbandonedMineMapComponent.cs" />
+    <Compile Include="MapComponent\CustomMapComponent\UnstableTunnelsMapComponent.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenActive.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenBlighted.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenDormant.cs" />
@@ -184,7 +183,7 @@
     <Compile Include="Settings\SettingsPage\SettingsPage_OtherConditions.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_WorldGen.cs" />
     <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
-    <Compile Include="ThingClass\Building_AbandonedMineEntrance.cs" />
+    <Compile Include="ThingClass\Building_UndercaveEntrance.cs" />
     <Compile Include="ThingClass\Spawner_CollapsingRockRoof.cs" />
     <Compile Include="ThingClass\Gas_FetcherflySwarm.cs" />
     <Compile Include="GenStep\GenStep_ScatterFetcherflyHives.cs" />
@@ -240,7 +239,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Scathes.cs" />
-    <Compile Include="TileMutatorWorker\TileMutatorWorker_AbandonedMine.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_UndercaveEntrance.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_Springs.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_AncientLavaFlow.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_SludgePond.cs" />
