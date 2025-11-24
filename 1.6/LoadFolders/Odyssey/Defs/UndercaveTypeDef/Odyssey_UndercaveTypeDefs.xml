@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AbandonedMineEbony]==========-->
+	<Mashed_Ashlands.UndercaveTypeDef>
+		<defName>Mashed_Ashlands_AbandonedMineEbony</defName>
+		<label>abandoned ebony mine</label>
+		<description>todo</description>
+		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedMine</undercaveGeneratorDef>
+		<extraGenStepDefs>
+			<li>Mashed_Ashlands_AbandonedMine_EbonyLumps</li>
+			<li>Mashed_Ashlands_AbandonedMine_EbonyLumpLarge</li>
+		</extraGenStepDefs>
+	</Mashed_Ashlands.UndercaveTypeDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedMineGlass]==========-->
+	<Mashed_Ashlands.UndercaveTypeDef>
+		<defName>Mashed_Ashlands_AbandonedMineGlass</defName>
+		<label>abandoned malachite mine</label>
+		<description>todo</description>
+		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedMine</undercaveGeneratorDef>
+		<extraGenStepDefs>
+			<li>Mashed_Ashlands_AbandonedMine_GlassLumps</li>
+			<li>Mashed_Ashlands_AbandonedMine_GlassLumpLarge</li>
+		</extraGenStepDefs>
+	</Mashed_Ashlands.UndercaveTypeDef>
+	<!-- ==========[Mashed_Ashlands_AbandonedKwamaNest]==========-->
+	<Mashed_Ashlands.UndercaveTypeDef>
+		<defName>Mashed_Ashlands_AbandonedKwamaNest</defName>
+		<label>abandoned kwama egg mine</label>
+		<description>todo</description>
+		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedKwamaNest</undercaveGeneratorDef>
+	</Mashed_Ashlands.UndercaveTypeDef>
+</Defs>

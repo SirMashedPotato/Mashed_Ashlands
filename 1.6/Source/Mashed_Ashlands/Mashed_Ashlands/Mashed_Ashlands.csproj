@@ -88,6 +88,7 @@
     <Compile Include="DefModExtension\IncidentProperties.cs" />
     <Compile Include="DefOf\DesignationDefOf.cs" />
     <Compile Include="DefOf\MapGeneratorDefOf.cs" />
+    <Compile Include="Def\UndercaveTypeDef.cs" />
     <Compile Include="GenStep\GenStep_ScatterWithTerrain.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
     <Compile Include="GenStep\GenStep_ColumnarBasalt.cs" />

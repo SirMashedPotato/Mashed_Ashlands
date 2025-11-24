@@ -10,6 +10,7 @@ namespace Mashed_Ashlands
     public class AbandonedMineMapComponent : CustomMapComponent
     {
         public PocketMapExit mineExit;
+        public Building_AbandonedMineEntrance mineEntrance;
 
         private static IntRange caveInCountRange = new IntRange(1,3);
         private static IntRange caveInSizeRange = new IntRange(10, 20);
@@ -21,8 +22,6 @@ namespace Mashed_Ashlands
 
         public Map SourceMap => (map.Parent as PocketMapParent)?.sourceMap;
 
-        public TileMutatorWorker_AbandonedMine.MineType MineType => TileMutatorWorker_AbandonedMine.GetMineType(SourceMap.Tile);
-
         public AbandonedMineMapComponent(Map map) : base(map)
         {
             instability = instabilityGainRange.RandomInRange;
@@ -32,6 +31,14 @@ namespace Mashed_Ashlands
         public override void MapGenerated()
         {
             base.MapGenerated();
+
+            mineEntrance = SourceMap?.listerThings?.ThingsOfDef(ThingDefOf.Mashed_Ashlands_AbandonedMineEntrance).FirstOrDefault() as Building_AbandonedMineEntrance;
+            if (mineEntrance == null)
+            {
+                Log.Warning("Abandoned mine entrance was not found after generating undercave, if this map was created via dev tools you can ignore this");
+                return;
+            }
+
             mineExit = map.listerThings.ThingsOfDef(RimWorld.ThingDefOf.CaveExit).FirstOrDefault() as PocketMapExit;
             if (mineExit == null)
             {
@@ -54,7 +61,7 @@ namespace Mashed_Ashlands
 
                 if (instability >= 1f)
                 {
-                    Messages.Message("Mashed_Ashlands_AbandonedMine_CaveIn".Translate(("Mashed_Ashlands_AbandonedMine_" + MineType ?? "err").Translate()), mineExit, MessageTypeDefOf.NegativeEvent);
+                    Messages.Message("Mashed_Ashlands_AbandonedMine_CaveIn".Translate(mineEntrance.UndercaveTypeDef), mineExit, MessageTypeDefOf.NegativeEvent);
                     TriggerCaveIn();
                     instability = 0f;
                 }
@@ -92,6 +99,7 @@ namespace Mashed_Ashlands
             base.ExposeData();
             Scribe_Values.Look(ref instability, "instability", 0f);
             Scribe_Values.Look(ref checkInterval, "checkInterval", 60000);
+            Scribe_References.Look(ref mineEntrance, "mineEntrance");
             Scribe_References.Look(ref mineExit, "mineExit");
         }
     }

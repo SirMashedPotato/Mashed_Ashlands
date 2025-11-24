@@ -7,7 +7,24 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public class Building_AbandonedMineEntrance : MapPortal
     {
-        public TileMutatorWorker_AbandonedMine.MineType MineType => TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
+        public UndercaveTypeDef UndercaveTypeDef
+        {
+            get
+            {
+                if(undercaveTypeDef == null)
+                {
+                    undercaveTypeDef = TileMutatorWorker_AbandonedMine.GetMineType(Map.Tile);
+                }
+
+                return undercaveTypeDef;
+            }
+            set
+            {
+                undercaveTypeDef = value;
+            }
+        }
+
+        private UndercaveTypeDef undercaveTypeDef = null;
 
         private Comp_Restorable restorable;
         private CompSealable sealable;
@@ -27,7 +44,7 @@ namespace Mashed_Ashlands
             }
         }
 
-        public override string Label => "Mashed_Ashlands_AbandonedMine_Entrance".Translate(("Mashed_Ashlands_AbandonedMine_" + MineType).Translate());
+        public override string Label => "Mashed_Ashlands_AbandonedMine_Entrance".Translate(UndercaveTypeDef.label);
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -71,18 +88,7 @@ namespace Mashed_Ashlands
         protected override Map GeneratePocketMapInt()
         {
             MapGeneratorDef mapGeneratorDef;
-
-            switch (MineType)
-            {
-                case TileMutatorWorker_AbandonedMine.MineType.Kwama:
-                    mapGeneratorDef = MapGeneratorDefOf.Mashed_Ashlands_AbandonedKwamaNest;
-                    break;
-
-                default:
-                    mapGeneratorDef = MapGeneratorDefOf.Mashed_Ashlands_AbandonedMine;
-                    break;
-            }
-
+            mapGeneratorDef = UndercaveTypeDef.undercaveGeneratorDef;
             return PocketMapUtility.GeneratePocketMap(new IntVec3(def.portal.pocketMapSize, 1, def.portal.pocketMapSize), mapGeneratorDef, GetExtraGenSteps(), Map);
         }
 
@@ -93,20 +99,12 @@ namespace Mashed_Ashlands
                 yield return genStep; 
             }
 
-            switch (MineType)
+            if (!UndercaveTypeDef.extraGenStepDefs.NullOrEmpty())
             {
-                case TileMutatorWorker_AbandonedMine.MineType.Ebony:
-                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumps, new GenStepParams());
-                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_EbonyLumpLarge, new GenStepParams());
-                    break;
-
-                case TileMutatorWorker_AbandonedMine.MineType.Glass:
-                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumps, new GenStepParams());
-                    yield return new GenStepWithParams(GenStepDefOf.Mashed_Ashlands_AbandonedMine_GlassLumpLarge, new GenStepParams());
-                    break;
-
-                case TileMutatorWorker_AbandonedMine.MineType.Kwama:
-                    break;
+                foreach(GenStepDef genStepDef in UndercaveTypeDef.extraGenStepDefs)
+                {
+                    yield return new GenStepWithParams(genStepDef, new GenStepParams());
+                }
             }
         }
 
@@ -116,6 +114,12 @@ namespace Mashed_Ashlands
             {
                 yield return gizmo;
             }
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Defs.Look(ref undercaveTypeDef, "undercaveMapType");
         }
     }
 }
