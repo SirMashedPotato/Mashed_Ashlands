@@ -6,6 +6,8 @@ namespace Mashed_Ashlands
     public class UndercaveTypeDef : Def
     {
         [MustTranslate]
+        public string mutatorExtraDescription;
+        [MustTranslate]
         public string enterLabel;
         [MustTranslate]
         public string enterDescription;

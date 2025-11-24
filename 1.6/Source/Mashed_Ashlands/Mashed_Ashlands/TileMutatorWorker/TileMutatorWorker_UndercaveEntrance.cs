@@ -17,7 +17,7 @@ namespace Mashed_Ashlands
 
         public override string GetDescription(PlanetTile tile)
         {
-            return base.GetDescription(tile) + "\n\n" + GetMineType(tile).description;
+            return base.GetDescription(tile) + " " + GetMineType(tile).mutatorExtraDescription;
         }
 
         public static UndercaveTypeDef GetMineType(PlanetTile tile)

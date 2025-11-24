@@ -11,6 +11,7 @@
 		<defName>Mashed_Ashlands_AbandonedMineEbony</defName>
 		<label>abandoned ebony mine</label>
 		<description>An old ebony mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable ebony left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<mutatorExtraDescription>The tunnels are rich in volcanic ebony, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedMine</undercaveGeneratorDef>
 		<extraGenStepDefs>
 			<li>Mashed_Ashlands_Undercave_EbonyLumps</li>
@@ -22,6 +23,7 @@
 		<defName>Mashed_Ashlands_AbandonedMineGlass</defName>
 		<label>abandoned malachite mine</label>
 		<description>An old malachite mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable malachite left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<mutatorExtraDescription>The tunnels are rich in volcanic malachite, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedMine</undercaveGeneratorDef>
 		<extraGenStepDefs>
 			<li>Mashed_Ashlands_Undercave_GlassLumps</li>
@@ -33,6 +35,7 @@
 		<defName>Mashed_Ashlands_AbandonedKwamaNest</defName>
 		<label>abandoned kwama egg mine</label>
 		<description>An old kwama egg mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable kwama eggs left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<mutatorExtraDescription>The tunnels are filled with kwama eggs, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_AbandonedKwamaNest</undercaveGeneratorDef>
 	</Mashed_Ashlands.UndercaveTypeDef>
 </Defs>
