@@ -104,7 +104,7 @@
 		<defName>Mashed_Ashlands_FetcherflyHive</defName>
 		<label>fetcherfly hive</label>
 		<description>A fetcherfly hive. Lone fetcherfly emit a noticeable amount of heat, enough to singe anyone they come in contact with. A swarm of fetcherfly can easily burn someone alive. A hive full of fetcherfly can turn enclosed spaces into death-traps.\n\nFetcherfly will periodically swarm near the hive in small numbers, or in far greater numbers if the hive is disturbed.</description>
-		<thingClass>Mineable</thingClass>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_FetcherflyHive</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -120,12 +120,14 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<rotatable>false</rotatable>
-		<mineable>true</mineable>
 		<pathfinderDangerous>true</pathfinderDangerous>
 		<pathCost>42</pathCost>
 		<costList>
 			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
 		</costList>
+		<killedLeavings>
+			<Mashed_Ashlands_FetcherflyHiveCore>1</Mashed_Ashlands_FetcherflyHiveCore>
+		</killedLeavings>
 		<researchPrerequisites>
 			<li>Mashed_Ashlands_AshSurvival_Fetcherfly</li>
 		</researchPrerequisites>
@@ -136,15 +138,15 @@
 			<Beauty>-10</Beauty>
 		</statBases>
 		<building>
-			<mineablePreventMeteorite>true</mineablePreventMeteorite>
 			<isInert>true</isInert>
 			<deconstructible>false</deconstructible>
+			<displayAttackToDestroyOnInspectPane>true</displayAttackToDestroyOnInspectPane>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
 			<destroyShakeAmount>0</destroyShakeAmount>
 			<claimable>false</claimable>
 		</building>
 		<designationCategory>Misc</designationCategory>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
