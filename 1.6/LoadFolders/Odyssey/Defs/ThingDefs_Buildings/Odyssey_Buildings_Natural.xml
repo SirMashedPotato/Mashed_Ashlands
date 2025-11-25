@@ -106,7 +106,7 @@
 			<MarketValue>360</MarketValue>
 		</statBases>
 		<costList>
-			<Gold>3</Gold>
+			<Gold>30</Gold>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Glower">
