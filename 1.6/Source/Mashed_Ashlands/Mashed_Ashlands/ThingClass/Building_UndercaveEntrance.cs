@@ -46,6 +46,8 @@ namespace Mashed_Ashlands
 
         public override string Label => "Mashed_Ashlands_Undercave_Entrance".Translate(UndercaveTypeDef.label);
 
+        public override string DescriptionFlavor => base.DescriptionFlavor + "\n\n" + UndercaveTypeDef.description;
+
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
