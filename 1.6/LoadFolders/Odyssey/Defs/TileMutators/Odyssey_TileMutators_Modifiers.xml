@@ -219,7 +219,7 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicDebrisField]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_VolcanicDebrisField</defName>
-		<label>volcanic debris field</label>
+		<label>debris field</label>
 		<description>There is volcanic debris in this area, which can be mined for rare, or possibly not-so-rare, resources.</description>
 		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
 		<extraGenSteps>
