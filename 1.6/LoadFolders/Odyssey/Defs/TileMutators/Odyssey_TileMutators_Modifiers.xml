@@ -143,6 +143,8 @@
 			<li>Mashed_Ashlands_StriderShells_Increased</li>
 		</extraGenSteps>
 		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
