@@ -87,6 +87,7 @@
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
     <Compile Include="DefModExtension\IncidentProperties.cs" />
     <Compile Include="DefOf\DesignationDefOf.cs" />
+    <Compile Include="DefOf\TileMutatorDefOf.cs" />
     <Compile Include="Def\UndercaveTypeDef.cs" />
     <Compile Include="GenStep\GenStep_ScatterWithTerrain.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
@@ -157,6 +158,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_MerchantMeeting.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_SiltStriderCrossing.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveThoughtSeasonal.cs" />
     <Compile Include="Jobs\JobDriver\JobDriver_Restore.cs" />
     <Compile Include="Jobs\JobGiver\JobGiver_Clean.cs" />

@@ -24,6 +24,8 @@
 			<AncientUplink>0.02</AncientUplink>
 			<MineralRich>0.05</MineralRich>
 			<ObsidianDeposits>0.1</ObsidianDeposits>
+			<ObsidianDeposits>0.1</ObsidianDeposits>
+			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
 			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
@@ -45,6 +47,7 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
 			<MineralRich>0.05</MineralRich>
+			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
@@ -58,6 +61,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_StriderGraveyard</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_StriderShells_Increased Required="True"/>
+			<Mashed_Ashlands_StriderCrossing>0.06</Mashed_Ashlands_StriderCrossing>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>

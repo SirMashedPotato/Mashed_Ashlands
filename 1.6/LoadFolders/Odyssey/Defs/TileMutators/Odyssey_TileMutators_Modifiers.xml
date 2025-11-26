@@ -51,6 +51,14 @@
 			<li>Mashed_Ashlands_LostKwamaWorkers</li>
 		</extraGenSteps>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_StriderCrossing]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_StriderCrossing</defName>
+		<label>strider crossing</label>
+		<description>This area is frequented by wandering silt striders.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<coastSidesRange>0</coastSidesRange>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_AshyMutator]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
 		<defName>Mashed_Ashlands_AshyMutator</defName>

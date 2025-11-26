@@ -8,7 +8,7 @@
 		</targetTags>
 	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_SiltStriderPasses]==========-->
-	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident" Name="Mashed_Ashlands_SiltStriderPassesBase">
 		<defName>Mashed_Ashlands_SiltStriderPasses</defName>
 		<label>silt strider pass</label>
 		<category>Misc</category>
