@@ -19,8 +19,8 @@
 			or defName="Basin"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
-			<Mashed_Ashlands_EbonyDeposits>0.03</Mashed_Ashlands_EbonyDeposits>
-			<Mashed_Ashlands_GlassDeposits>0.03</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 			<Mashed_Ashlands_UndercaveEntrance>0.06</Mashed_Ashlands_UndercaveEntrance>
 			<Mashed_Ashlands_LostKwamaWorkers>0.03</Mashed_Ashlands_LostKwamaWorkers>
 		</value>

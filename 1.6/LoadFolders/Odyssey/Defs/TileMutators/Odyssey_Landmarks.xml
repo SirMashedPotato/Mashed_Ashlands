@@ -24,8 +24,8 @@
 			<AncientUplink>0.02</AncientUplink>
 			<MineralRich>0.05</MineralRich>
 			<ObsidianDeposits>0.1</ObsidianDeposits>
-			<Mashed_Ashlands_EbonyDeposits>0.15</Mashed_Ashlands_EbonyDeposits>
-			<Mashed_Ashlands_GlassDeposits>0.15</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_Dusttide]==========-->
@@ -121,8 +121,8 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<ArcheanTrees>0.01</ArcheanTrees>
-			<Mashed_Ashlands_EbonyDeposits>0.01</Mashed_Ashlands_EbonyDeposits>
-			<Mashed_Ashlands_GlassDeposits>0.01</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
 		<comboLandmarkMutators>
 			<Valley>0.1</Valley>
