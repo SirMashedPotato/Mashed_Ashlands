@@ -136,8 +136,6 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricSprings</workerClass>
 		<biomeWhitelist>
-			<!-- Blighted -->
-			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
