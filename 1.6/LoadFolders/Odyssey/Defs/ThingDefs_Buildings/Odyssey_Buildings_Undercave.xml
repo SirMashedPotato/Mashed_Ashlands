@@ -31,7 +31,7 @@
 			<expandHomeArea>false</expandHomeArea>
 		</building>
 		<portal>
-			<pocketMapGenerator>Mashed_Ashlands_AbandonedMine</pocketMapGenerator>			<!-- overridden in code -->
+			<pocketMapGenerator>Mashed_Ashlands_UnstableMine</pocketMapGenerator>			<!-- overridden in code -->
 			<exitDef>CaveExit</exitDef>
 		</portal>
 		<statBases>

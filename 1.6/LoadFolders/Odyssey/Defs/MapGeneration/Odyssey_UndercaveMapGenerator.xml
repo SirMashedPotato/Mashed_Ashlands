@@ -27,10 +27,10 @@
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedMine]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveBase" Name="Mashed_Ashlands_AbandonedMineBase">
-		<defName>Mashed_Ashlands_AbandonedMine</defName>
-		<label>abandoned mine</label>
+	<!-- ==========[Mashed_Ashlands_UnstableMine]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveBase">
+		<defName>Mashed_Ashlands_UnstableMine</defName>
+		<label>unstable mine</label>
 		<customMapComponents>
 			<li>Mashed_Ashlands.UnstableTunnelsMapComponent</li>
 		</customMapComponents>
@@ -41,14 +41,18 @@
 			<li>Mashed_Ashlands_Undercave_CaveIns</li>
 		</genSteps>
 	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_AbandonedKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_AbandonedMineBase" Name="Mashed_Ashlands_KwamaNestBase">
-		<defName>Mashed_Ashlands_AbandonedKwamaNest</defName>
-		<label>abandoned kwama nest</label>
+	<!-- ==========[Mashed_Ashlands_UnstableKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveBase">
+		<defName>Mashed_Ashlands_UnstableKwamaNest</defName>
+		<label>unstable kwama nest</label>
+		<customMapComponents>
+			<li>Mashed_Ashlands.UnstableTunnelsMapComponent</li>
+		</customMapComponents>
 		<pocketMapProperties>
 			<biome>Mashed_Ashlands_UndergroundKwamaNest</biome>
 		</pocketMapProperties>
 		<genSteps>
+			<li>Mashed_Ashlands_Undercave_CaveIns</li>
 			<li>Mashed_Ashlands_Undercave_KwamaScribs</li>
 			<li>Mashed_Ashlands_Undercave_KwamaWorkers</li>
 			<li>Mashed_Ashlands_Undercave_KwamaEggs</li>
