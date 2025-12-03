@@ -20,7 +20,7 @@
 	<!-- ==========[Mashed_Ashlands_MerchantMeeting]==========-->
 	<IncidentDef Name="Mashed_Ashlands_MerchantMeeting" Abstract="True">
 		<workerClass>Mashed_Ashlands.IncidentWorker_MerchantMeeting</workerClass>
-		<minRefireDays>0.3</minRefireDays>
+		<minRefireDays>33</minRefireDays>
 		<targetTags>
 			<li>Caravan</li>
 			<li>Map_TempIncident</li>

@@ -7,6 +7,7 @@ namespace Mashed_Ashlands
     public class WorldObjectComp_MerchantEncounter : WorldObjectComp
     {
         private const int tickInterval = GenDate.TicksPerDay / 2;
+
         public WorldObjectCompProperties_MerchantEncounter Props => (WorldObjectCompProperties_MerchantEncounter)props;
 
         public override void CompTickInterval(int delta)

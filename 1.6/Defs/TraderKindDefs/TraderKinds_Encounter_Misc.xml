@@ -70,15 +70,11 @@
 			</li>
 			<!-- Misc -->
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>	<!-- TODO Replace -->
+				<thingDef>Mashed_Ashlands_AshlandJournal</thingDef>
 				<countRange>1</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef" MayRequire="thelastbulletbender.rwexploration">
 				<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
-				<countRange>1</countRange>
-			</li>
-			<li Class="StockGenerator_SingleDef">
-				<thingDef>Mashed_Ashlands_FetcherflyHiveCore</thingDef> <!-- TODO Replace -->
 				<countRange>1</countRange>
 			</li>
 			<!-- Buying -->
@@ -87,9 +83,14 @@
 				<tag>Drugs</tag>
 			</li>
 			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+					<li>Mashed_Ashlands_AnimalKwamaWorker</li>
+				</tradeTagsSell>
 				<tradeTagsBuy>
 					<li>Mashed_Ashlands_AnimalKwama</li>
 				</tradeTagsBuy>
+				<kindCountRange>1</kindCountRange>
+				<countRange>3</countRange>
 			</li>
 		</stockGenerators>
 	</TraderKindDef>

@@ -341,6 +341,9 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<soundEating>Insectoid_Eat</soundEating>
 		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AnimalKwamaWorker</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_KwamaWorker</defName>
