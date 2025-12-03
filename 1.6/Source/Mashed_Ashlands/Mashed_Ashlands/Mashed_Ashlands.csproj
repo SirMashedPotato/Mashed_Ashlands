@@ -165,6 +165,7 @@
     <Compile Include="Jobs\JobGiver\JobGiver_Insult.cs" />
     <Compile Include="Jobs\ThinkNode\ThinkNode_ConditionalScampInsulting.cs" />
     <Compile Include="Jobs\WorkGiver\WorkGiver_Restore.cs" />
+    <Compile Include="MapComponent\CustomMapComponent\DangerousTunnelsMapComponent.cs" />
     <Compile Include="MapComponent\CustomMapComponent\UnstableTunnelsMapComponent.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenActive.cs" />
     <Compile Include="Settings\SettingsPage\SubPages\SettingsTab_WorldGenBlighted.cs" />

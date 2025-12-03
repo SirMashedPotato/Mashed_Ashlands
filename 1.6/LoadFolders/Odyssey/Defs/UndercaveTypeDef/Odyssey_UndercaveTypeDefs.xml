@@ -9,8 +9,8 @@
 	<!-- ==========[Mashed_Ashlands_UnstableMineEbony]==========-->
 	<Mashed_Ashlands.UndercaveTypeDef ParentName="Mashed_Ashlands_UnstableMineBase">
 		<defName>Mashed_Ashlands_UnstableMineEbony</defName>
-		<label>abandoned ebony mine</label>
-		<description>An old ebony mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable ebony left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<label>unstable ebony mine</label>
+		<description>An old ebony mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable ebony left behind, though many of the tunnels may have since collapsed. Periodic seismic activity may cause further cave-ins.</description>
 		<mutatorExtraDescription>The tunnels are rich in volcanic ebony, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_UnstableMine</undercaveGeneratorDef>
 		<extraGenStepDefs>
@@ -21,8 +21,8 @@
 	<!-- ==========[Mashed_Ashlands_UnstableMineGlass]==========-->
 	<Mashed_Ashlands.UndercaveTypeDef ParentName="Mashed_Ashlands_UnstableMineBase">
 		<defName>Mashed_Ashlands_UnstableMineGlass</defName>
-		<label>abandoned malachite mine</label>
-		<description>An old malachite mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable malachite left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<label>unstable malachite mine</label>
+		<description>An old malachite mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable malachite left behind, though many of the tunnels may have since collapsed. Periodic seismic activity may cause further cave-ins.</description>
 		<mutatorExtraDescription>The tunnels are rich in volcanic malachite, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_UnstableMine</undercaveGeneratorDef>
 		<extraGenStepDefs>
@@ -33,9 +33,15 @@
 	<!-- ==========[Mashed_Ashlands_UnstableKwamaNest]==========-->
 	<Mashed_Ashlands.UndercaveTypeDef ParentName="Mashed_Ashlands_UnstableMineBase">
 		<defName>Mashed_Ashlands_UnstableKwamaNest</defName>
-		<label>abandoned kwama egg mine</label>
-		<description>An old kwama egg mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable kwama eggs left behind, though many of the tunnels may have since collapsed. Periodic seismic activy may cause further cave-ins.</description>
+		<label>unstable kwama egg mine</label>
+		<description>An old kwama egg mine that was abandoned due to increasing instability. The entrance may be restored to obtain the valuable kwama eggs left behind, though many of the tunnels may have since collapsed. Periodic seismic activity may cause further cave-ins.</description>
 		<mutatorExtraDescription>The tunnels are filled with kwama eggs, though are unstable due to seismic activity.</mutatorExtraDescription>
 		<undercaveGeneratorDef>Mashed_Ashlands_UnstableKwamaNest</undercaveGeneratorDef>
+	</Mashed_Ashlands.UndercaveTypeDef>
+	<!-- ==========[Mashed_Ashlands_SunkenMineBase]==========-->
+	<Mashed_Ashlands.UndercaveTypeDef Name="Mashed_Ashlands_SunkenMineBase" Abstract="True">
+		<enterLabel>sunken tunnels</enterLabel>
+		<enterDescription>The tunnels of this mine have been rendered highly dangerous due to volcanic activity. Several pools have lava have formed over time, and may periodically spread due to increases in activity.</enterDescription>
+		<enterLetterDef>Mashed_Ashlands_VolcanoNegativeEvent</enterLetterDef>
 	</Mashed_Ashlands.UndercaveTypeDef>
 </Defs>
