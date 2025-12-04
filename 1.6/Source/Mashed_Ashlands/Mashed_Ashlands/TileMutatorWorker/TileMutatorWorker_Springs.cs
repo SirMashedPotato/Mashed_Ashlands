@@ -46,7 +46,5 @@ namespace Mashed_Ashlands
                 }
             }
         }
-
-        
     }
 }

@@ -10,7 +10,7 @@ namespace Mashed_Ashlands
 
         protected override float MinTunnelWidth => 2.6f;
 
-        protected override float WidthOffsetPerCell => 0.0001f;
+        protected override float WidthOffsetPerCell => 0.001f;
 
         public TileMutatorWorker_UndergroundMine(TileMutatorDef def) : base(def)
         {
