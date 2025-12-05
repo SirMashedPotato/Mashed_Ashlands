@@ -172,6 +172,7 @@
 				<Beauty>2</Beauty>
 				<Flammability>0.2</Flammability>
 			</statFactors>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
 		</stuffProps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
