@@ -6,7 +6,7 @@
 		<order>300</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
 			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
-			<forcedLumpSize>6</forcedLumpSize>
+			<forcedLumpSize>7</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
@@ -16,7 +16,7 @@
 		<order>300</order>
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
-			<forcedLumpSize>6</forcedLumpSize>
+			<forcedLumpSize>7</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
@@ -41,7 +41,7 @@
 		<defName>Mashed_Ashlands_Undercave_CaveIns</defName>
 		<order>900</order>
 		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
-			<caveInCountRange>9~13</caveInCountRange>
+			<caveInCountRange>10~15</caveInCountRange>
 			<caveInSizeRange>15~30</caveInSizeRange>
 		</genStep>
 	</GenStepDef>
