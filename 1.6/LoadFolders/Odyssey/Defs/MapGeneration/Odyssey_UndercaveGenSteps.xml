@@ -43,6 +43,7 @@
 		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
 			<caveInCountRange>10~15</caveInCountRange>
 			<caveInSizeRange>15~30</caveInSizeRange>
+			<minSpacing>13</minSpacing>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_Undercave_KwamaScribs]==========-->
