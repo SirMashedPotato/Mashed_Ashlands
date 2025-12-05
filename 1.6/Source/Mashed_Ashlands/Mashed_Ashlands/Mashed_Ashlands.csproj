@@ -89,6 +89,7 @@
     <Compile Include="DefOf\DesignationDefOf.cs" />
     <Compile Include="DefOf\TileMutatorDefOf.cs" />
     <Compile Include="Def\UndercaveTypeDef.cs" />
+    <Compile Include="GenStep\GenStep_ScatterLumpsShallow.cs" />
     <Compile Include="GenStep\GenStep_ScatterWithTerrain.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
     <Compile Include="GenStep\GenStep_ColumnarBasalt.cs" />

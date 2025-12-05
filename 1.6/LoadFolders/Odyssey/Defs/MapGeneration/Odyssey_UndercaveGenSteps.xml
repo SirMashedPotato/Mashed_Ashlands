@@ -4,40 +4,20 @@
 	<GenStepDef>
 		<defName>Mashed_Ashlands_Undercave_EbonyLumps</defName>
 		<order>300</order>
-		<genStep Class="GenStep_ScatterLumpsMineable">
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
 			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
 			<forcedLumpSize>6</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_Undercave_EbonyLumpLarge]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_Undercave_EbonyLumpLarge</defName>
-		<order>303</order>
-		<genStep Class="GenStep_ScatterLumpsMineable">
-			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
-			<forcedLumpSize>30</forcedLumpSize>
-			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_Undercave_GlassLumps]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_Undercave_GlassLumps</defName>
 		<order>300</order>
-		<genStep Class="GenStep_ScatterLumpsMineable">
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
 			<forcedLumpSize>6</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_Undercave_GlassLumpLarge]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_Undercave_GlassLumpLarge</defName>
-		<order>303</order>
-		<genStep Class="GenStep_ScatterLumpsMineable">
-			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
-			<forcedLumpSize>30</forcedLumpSize>
-			<countPer10kCellsRange>3~6</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DeadExplorerCave]==========-->
