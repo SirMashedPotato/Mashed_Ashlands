@@ -17,7 +17,6 @@
 			<allowFoggedPositions>false</allowFoggedPositions>
 			<allowRoofed>false</allowRoofed>
 			<count>1</count>
-			<clearSpaceSize>30</clearSpaceSize>
 			<terrainValidationRadius>3</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
