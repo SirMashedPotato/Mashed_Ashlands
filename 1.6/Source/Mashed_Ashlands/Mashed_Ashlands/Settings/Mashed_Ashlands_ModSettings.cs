@@ -258,7 +258,6 @@ namespace Mashed_Ashlands
         private static readonly bool Mashed_Ashlands_AshcanoJoy_def = true;
 
         //world gen
-
         private static readonly bool Mashed_Ashlands_EnableSettingBeforeWorldGen_def = true;
         private static readonly bool Mashed_Ashlands_EnableDormantVolcano_def = true;
         private static readonly int Mashed_Ashlands_NumberOfDormantVolcano_def = 3;
@@ -356,7 +355,7 @@ namespace Mashed_Ashlands
         //other conditions
         private static readonly bool Mashed_Ashlands_MiasmaAffectsCaravan_def = true;
 
-        private static readonly bool Mashed_Ashlands_EarthquakeShake_def = true;
+        private static readonly bool Mashed_Ashlands_EarthquakeShake_def = false;
         private static readonly bool Mashed_Ashlands_EarthquakeCollapseMountains_def = true;
         private static readonly bool Mashed_Ashlands_EarthquakeDamageBuildings_def = true;
         private static readonly bool Mashed_Ashlands_EarthquakeDamageBuildingsNonPlayer_def = false;

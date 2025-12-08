@@ -18,7 +18,7 @@ namespace Mashed_Ashlands
                 {
                     if (Find.CurrentMap == affectedMaps[i])
                     {
-                        Find.CameraDriver.shaker.SetMinShake(3);
+                        Find.CameraDriver.shaker.SetMinShake(0.3f);
                         break;
                     }
                 }
@@ -38,7 +38,7 @@ namespace Mashed_Ashlands
                         {
                             if (Rand.Value < 0.01f && IsValidCell(c, map))
                             {
-                                RoofCollapserImmediate.DropRoofInCells(c, map);
+                                GenSpawn.Spawn(ThingDefOf.Mashed_Ashlands_CollapsingRockRoof, c, map, WipeMode.FullRefund);
                             }
                             else
                             {
