@@ -34,4 +34,20 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
+	<!-- ==========[Stockpile]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="Stockpile"]/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="Stockpile"]</xpath>
+			<value>
+				<categories/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Stockpile"]/categories</xpath>
+		<value>
+			<li>Mashed_Ashlands_Undercave</li>
+		</value>
+	</Operation>
 </Patch>

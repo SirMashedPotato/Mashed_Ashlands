@@ -13,6 +13,7 @@
 			<Mashed_Ashlands_AncientLavaFlow Required="True"/>
 			<SteamGeysers_Increased> 0.25</SteamGeysers_Increased>
 			<Stockpile>0.05</Stockpile>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<AnimalHabitat>0.05</AnimalHabitat>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
 			<PlantLife_Increased>0.05</PlantLife_Increased>
@@ -23,8 +24,10 @@
 			<AncientUplink>0.02</AncientUplink>
 			<MineralRich>0.05</MineralRich>
 			<ObsidianDeposits>0.1</ObsidianDeposits>
-			<Mashed_Ashlands_EbonyDeposits>0.15</Mashed_Ashlands_EbonyDeposits>
-			<Mashed_Ashlands_GlassDeposits>0.15</Mashed_Ashlands_GlassDeposits>
+			<ObsidianDeposits>0.1</ObsidianDeposits>
+			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_Dusttide]==========-->
@@ -44,6 +47,7 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
 			<MineralRich>0.05</MineralRich>
+			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
@@ -57,6 +61,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_StriderGraveyard</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_StriderShells_Increased Required="True"/>
+			<Mashed_Ashlands_StriderCrossing>0.06</Mashed_Ashlands_StriderCrossing>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
@@ -110,6 +115,7 @@
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Stockpile>0.05</Stockpile>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<MineralRich>0.03</MineralRich>
 			<FoggyMutator>0.05</FoggyMutator>
 			<WindyMutator>0.05</WindyMutator>
@@ -119,8 +125,8 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<ArcheanTrees>0.01</ArcheanTrees>
-			<Mashed_Ashlands_EbonyDeposits>0.01</Mashed_Ashlands_EbonyDeposits>
-			<Mashed_Ashlands_GlassDeposits>0.01</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
 		<comboLandmarkMutators>
 			<Valley>0.1</Valley>

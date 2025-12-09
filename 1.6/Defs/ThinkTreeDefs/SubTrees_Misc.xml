@@ -56,6 +56,45 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+	<!-- ==========[Mashed_Ashlands_KwamaThinkTreeExtension]========== -->
+	<ThinkTreeDef>
+		<defName>Mashed_Ashlands_KwamaThinkTreeExtension</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalPawnKind">
+			<pawnKind>Mashed_Ashlands_KwamaWorker</pawnKind>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalHasFaction">
+					<subNodes>
+						<!-- Trained behaviour: Clean -->
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>1.5</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_ConditionalRequireCapacities">
+									<requiredCapacities>
+										<li>Manipulation</li>
+									</requiredCapacities>
+									<subNodes>
+										<li Class="ThinkNode_ConditionalTrainableCompleted">
+											<trainable>Haul</trainable>
+											<subNodes>
+												<li Class="ThinkNode_Tagger">
+													<tagToGive>TrainedAnimalBehavior</tagToGive>
+													<subNodes>
+														<li Class="Mashed_ashlands.JobGiver_Clean"/>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 	<!-- ==========[Mashed_Ashlands_ScampThinkTreeExtension]========== -->
 	<ThinkTreeDef>
 		<defName>Mashed_Ashlands_ScampThinkTreeExtension</defName>

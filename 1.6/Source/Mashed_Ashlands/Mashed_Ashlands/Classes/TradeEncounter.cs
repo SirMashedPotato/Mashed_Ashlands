@@ -26,10 +26,7 @@ namespace Mashed_Ashlands
             {
                 for (int i = 0; i < things.Count; i++)
                 {
-                    if (!(things[i] is Pawn))
-                    {
-                        yield return things[i];
-                    }
+                    yield return things[i];
                 }
             }
         }
@@ -66,6 +63,17 @@ namespace Mashed_Ashlands
             Caravan caravan = playerNegotiator.GetCaravan();
             Thing thing = toGive.SplitOff(countToGive);
             thing.PreTraded(TradeAction.PlayerBuys, playerNegotiator, this);
+
+            if (toGive is Pawn pawn)
+            {
+                caravan.AddPawn(pawn, addCarriedPawnToWorldPawnsIfAny: true);
+                if (!pawn.IsWorldPawn() && caravan.Spawned)
+                {
+                    Find.WorldPawns.PassToWorld(pawn);
+                }
+                return;
+            }
+
             Pawn pawn2 = CaravanInventoryUtility.FindPawnToMoveInventoryTo(thing, caravan.PawnsListForReading, null);
             if (pawn2 == null)
             {
@@ -83,6 +91,18 @@ namespace Mashed_Ashlands
         {
             Thing thing = toGive.SplitOff(countToGive);
             thing.PreTraded(TradeAction.PlayerSells, playerNegotiator, this);
+
+            if (thing is Pawn p)
+            {
+                Caravan caravan = playerNegotiator.GetCaravan();
+                CaravanInventoryUtility.MoveAllInventoryToSomeoneElse(p, caravan.PawnsListForReading);
+                if (!p.RaceProps.Humanlike && !things.TryAdd(p, canMergeWithExistingStacks: false))
+                {
+                    p.Destroy();
+                }
+                return;
+            }
+
             Thing thing2 = TradeUtility.ThingFromStockToMergeWith(this, thing);
             if (thing2 != null)
             {

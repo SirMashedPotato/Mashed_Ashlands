@@ -31,7 +31,7 @@
 			</li>
 		</modExtensions>
 		<animalDensity>3.5</animalDensity>
-		<plantDensity>1</plantDensity>
+		<plantDensity>1.2</plantDensity>
 		<foragedFood>Mashed_Ashlands_RawMeadowRye</foragedFood>
 		<!-- Fishing -->
 		<fishTypes>
@@ -89,8 +89,8 @@
 		<wildPlants>
 			<!-- Ground covers -->
 			<Plant_TallGrass>8</Plant_TallGrass>
-			<Plant_Grass>12</Plant_Grass>
-			<Mashed_Ashlands_Plant_AshlandGrass>15</Mashed_Ashlands_Plant_AshlandGrass>
+			<Plant_Grass>16</Plant_Grass>
+			<Mashed_Ashlands_Plant_AshlandGrass>8</Mashed_Ashlands_Plant_AshlandGrass>
 			<Mashed_Ashlands_Plant_AshlandDuneGrass>2</Mashed_Ashlands_Plant_AshlandDuneGrass>
 			<Mashed_Ashlands_Plant_AshlandFungus>2</Mashed_Ashlands_Plant_AshlandFungus>
 			<Mashed_Ashlands_Plant_Ashreed>0.2</Mashed_Ashlands_Plant_Ashreed>
@@ -104,9 +104,9 @@
 			<Plant_Bush>0.1</Plant_Bush>
 			<Mashed_Ashlands_Plant_Kreshweed>0.05</Mashed_Ashlands_Plant_Kreshweed>
 			<!-- Aesthetic plants -->
-			<Mashed_Ashlands_MeadowFlowerBlue>1.5</Mashed_Ashlands_MeadowFlowerBlue>
-			<Mashed_Ashlands_MeadowFlowerRed>1.5</Mashed_Ashlands_MeadowFlowerRed>
-			<Mashed_Ashlands_Plant_AshenHeatherFlower>0.1</Mashed_Ashlands_Plant_AshenHeatherFlower>
+			<Mashed_Ashlands_MeadowFlowerBlue>3</Mashed_Ashlands_MeadowFlowerBlue>
+			<Mashed_Ashlands_MeadowFlowerRed>3</Mashed_Ashlands_MeadowFlowerRed>
+			<Mashed_Ashlands_Plant_AshenHeatherFlower>0.3</Mashed_Ashlands_Plant_AshenHeatherFlower>
 			<Mashed_Ashlands_Plant_WillowFlower>0.1</Mashed_Ashlands_Plant_WillowFlower>
 			<Mashed_Ashlands_Plant_Stoneflower>0.1</Mashed_Ashlands_Plant_Stoneflower>
 			<Mashed_Ashlands_Plant_Glowstalk>0.1</Mashed_Ashlands_Plant_Glowstalk>
@@ -131,10 +131,10 @@
 			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_TramaMass>
 			<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_WasteSponge>
 			<!-- Polluted aesthetic plants -->
-			<Mashed_Ashlands_Plant_SporangiumFlowerGreen MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_SporangiumFlowerGreen>
-			<Mashed_Ashlands_Plant_SporangiumFlowerBlue MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_SporangiumFlowerBlue>
-			<Mashed_Ashlands_Plant_SporangiumFlowerOrange MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_SporangiumFlowerOrange>
-			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
+			<Mashed_Ashlands_Plant_SporangiumFlowerGreen MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_Plant_SporangiumFlowerGreen>
+			<Mashed_Ashlands_Plant_SporangiumFlowerBlue MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_Plant_SporangiumFlowerBlue>
+			<Mashed_Ashlands_Plant_SporangiumFlowerOrange MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_SporangiumFlowerOrange>
+			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<Mashed_Ashlands_Plant_GlowingGlowstalk MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingGlowstalk>
 			<!-- Polluted aquatic plants -->
 			<Mashed_Ashlands_Plant_GlowingAshreedWater MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingAshreedWater>

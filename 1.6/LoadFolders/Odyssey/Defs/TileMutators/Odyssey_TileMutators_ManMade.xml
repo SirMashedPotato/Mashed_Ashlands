@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
+		<label>undercave entrance</label>		<!-- not actually visible, overriden with a translation -->
+		<description>This area contains an entrance leading deep underground.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_UndercaveEntrance</workerClass>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
+		<categories>
+			<li>Mashed_Ashlands_Undercave</li>
+		</categories>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_UndercaveEntrance</li>
+		</extraGenSteps>
+	</TileMutatorDef>
+</Defs>

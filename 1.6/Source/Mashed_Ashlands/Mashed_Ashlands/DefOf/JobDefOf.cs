@@ -11,5 +11,6 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(JobDefOf));
         }
         public static JobDef Mashed_Ashlands_FeedFromAshlandFlower;
+        public static JobDef Mashed_Ashlands_Restore;
     }
 }

@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterWithTerrain">
+			<thingDef>Mashed_Ashlands_UndercaveEntrance</thingDef>
+			<terrainDef>Mashed_Ashlands_Basalt_Rough</terrainDef>
+			<terrainGridSize>33</terrainGridSize>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>5</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<count>1</count>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScatterValidator_AvoidUsedRects">
+					<size>5,5</size>
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_LostKwamaWorkers]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
+			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>0.3~0.6</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
 	<GenStepDef ParentName="Mashed_Ashlands_DustAntHivesBase">
 		<defName>Mashed_Ashlands_DustAntHives_Increased</defName>

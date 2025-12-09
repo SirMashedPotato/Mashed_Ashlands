@@ -136,9 +136,6 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricSprings</workerClass>
 		<biomeWhitelist>
-			<!-- Blighted -->
-			<li>Mashed_Ashlands_BlightedAshlands</li>
-			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
@@ -186,6 +183,7 @@
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</biomeWhitelist>
 		<preventsPondGeneration>true</preventsPondGeneration>

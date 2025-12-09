@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
+		<label>undercave entrance</label>
+		<description>An entrance leading deep underground. It must be restored before the caverns below can be safely accessed.</description>
+		<size>(3,3)</size>
+		<useHitPoints>false</useHitPoints>
+		<thingClass>Mashed_Ashlands.Building_UndercaveEntrance</thingClass>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_CaveEntrance/Mashed_Ashlands_CaveEntranceBlocked</texPath>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<passability>Impassable</passability>
+		<holdsRoof>true</holdsRoof>
+		<destroyable>false</destroyable>
+		<building>
+			<isEdifice>true</isEdifice>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<portal>
+			<pocketMapGenerator>Mashed_Ashlands_UnstableMine</pocketMapGenerator>			<!-- overridden in code -->
+			<exitDef>CaveExit</exitDef>
+		</portal>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_Restorable">
+				<restoreAmount>60000</restoreAmount>
+				<requiredSkillDef>Construction</requiredSkillDef>
+				<requiredSkillLevel>6</requiredSkillLevel>
+				<restoreStatDef>ConstructionSpeed</restoreStatDef>
+				<effectRestoring>Repair</effectRestoring>
+				<restorationCompletedSound>Building_Complete</restorationCompletedSound>
+				<notRestoredInspectString>Restore to enter.</notRestoredInspectString>
+			</li>
+			<li Class="CompProperties_Sealable">
+				<sealTexPath>UI/Commands/FillInCaveEntrance</sealTexPath>
+				<sealCommandLabel>Seal cave entrance</sealCommandLabel>
+				<sealCommandDesc>Choose a colonist to permanently seal the entrance. Anything or anyone left below will be lost forever.</sealCommandDesc>
+				<cannotSealLabel>Cannot seal</cannotSealLabel>
+				<confirmSealText>Sealing the cave entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue?</confirmSealText>
+				<sealedInspectString>Permanently sealed.</sealedInspectString>
+				<cannotEnterLabel>Sealed</cannotEnterLabel>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_ContentsMapPortal</li>
+		</inspectorTabs>
+	</ThingDef>
+</Defs>

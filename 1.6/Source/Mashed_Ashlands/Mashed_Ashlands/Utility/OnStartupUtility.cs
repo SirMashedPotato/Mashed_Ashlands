@@ -21,6 +21,8 @@ namespace Mashed_Ashlands
         public static HashSet<ThingDef> alternateStimulisAnimals = new HashSet<ThingDef> { };
         public static HashSet<ThingDef> glowOverlayAnimals = new HashSet<ThingDef> { };
 
+        public static HashSet<UndercaveTypeDef> randomUndercaveTypes = new HashSet<UndercaveTypeDef> { };
+
         static OnStartupUtility()
         {
             FillAnimalsLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null).ToList());
@@ -28,6 +30,7 @@ namespace Mashed_Ashlands
             FillPlantLists(DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.IsPlant).ToList());
             ModifyFlowerFeederLinks();
             ModifyRockTerrainDefs();
+            randomUndercaveTypes = DefDatabase<UndercaveTypeDef>.AllDefsListForReading.Where(x => x.naturallyGenerates).ToHashSet();
         }
 
         public static void FillAnimalsLists(List<ThingDef> pawnDefs)

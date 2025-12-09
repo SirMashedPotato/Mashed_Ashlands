@@ -13,7 +13,10 @@
 		<xpath>Defs/WorldObjectDef[defName="Caravan"]/comps</xpath>
 		<value>
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_MerchantEncounter">
-				<incidentDef>Mashed_Ashlands_MudcrabMerchantMeeting</incidentDef>
+				<incidentDefs>
+					<li>Mashed_Ashlands_MudcrabMerchantMeeting</li>
+					<li>Mashed_Ashlands_ScribMerchantMeeting</li>
+				</incidentDefs>
 			</li>
 		</value>
 	</Operation>

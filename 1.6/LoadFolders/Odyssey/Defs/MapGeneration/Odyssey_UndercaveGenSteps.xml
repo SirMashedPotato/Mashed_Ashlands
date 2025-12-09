@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Undercave_EbonyLumps]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_EbonyLumps</defName>
+		<order>300</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
+			<forcedDefToScatter>Mashed_Ashlands_MineableEbony</forcedDefToScatter>
+			<forcedLumpSize>7</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_GlassLumps]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_GlassLumps</defName>
+		<order>300</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
+			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
+			<forcedLumpSize>7</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_DeadExplorerCave]==========-->
+	<GenStepDef ParentName="Mashed_Ashlands_DeadExplorerBase">
+		<defName>Mashed_Ashlands_DeadExplorerCave</defName>
+		<order>890</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_ExplorerSkeletonCave</thingDef>
+			<allowFoggedPositions>true</allowFoggedPositions>
+			<allowRoofed>true</allowRoofed>
+			<validators Inherit="False">
+				<li Class="ScattererValidator_Buildable">
+					<radius>1</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_CaveIns]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_CaveIns</defName>
+		<order>900</order>
+		<genStep Class="Mashed_Ashlands.GenStep_CaveIns">
+			<caveInCountRange>10~15</caveInCountRange>
+			<caveInSizeRange>15~30</caveInSizeRange>
+			<minSpacing>13</minSpacing>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaScribs]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_KwamaScribs</defName>
+		<order>951</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
+			<thingDef>Mashed_Ashlands_KwamaScrib</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>3~6</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaWorkers]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_KwamaWorkers</defName>
+		<order>952</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterAnimals">
+			<thingDef>Mashed_Ashlands_KwamaWorker</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>0~3</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_KwamaEggs]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_KwamaEggs</defName>
+		<order>960</order>
+		<genStep Class="GenStep_ScatterGroup">
+			<groups>
+				<li>
+					<things>
+						<Mashed_Ashlands_KwamaEggSac>1</Mashed_Ashlands_KwamaEggSac>
+						<Mashed_Ashlands_GoldKwamaEggSac>0.06</Mashed_Ashlands_GoldKwamaEggSac>
+					</things>
+					<spawnAtCenter>Mashed_Ashlands_KwamaEggSac</spawnAtCenter>
+					<indoorRuin>false</indoorRuin>
+					<filthDef>Mashed_Ashlands_Filth_KwamaSlime</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.1</filthChance>
+					<coveredCellsPer10Cells>1~2</coveredCellsPer10Cells>
+					<clusterRectRadius>1~3</clusterRectRadius>
+				</li>
+			</groups>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+			<minSpacing>6</minSpacing>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>1</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScatterValidator_AvoidUsedRects"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
+</Defs>

@@ -1,5 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaMealFineBase]==========-->
+	<ThingDef ParentName="MealFineBase" Name="Mashed_Ashlands_KwamaMealFineBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconForStackCount>-1</uiIconForStackCount>
+		<rotatable>false</rotatable>
+		<possessionCount>2</possessionCount>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsMeal</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSoup]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_KwamaMealFineBase">
+		<defName>Mashed_Ashlands_KwamaEggSoup</defName>
+		<label>kwama egg soup</label>
+		<description>A fine soup, made using a kwama egg, a small assortment of vegetables, and with a shard of kwama egg shell as a spoon. Quite filling, and somewhat energising.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Mashed_Ashlands_KwamaEggSoup</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggStew]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_KwamaMealFineBase">
+		<defName>Mashed_Ashlands_KwamaEggStew</defName>
+		<label>kwama egg stew</label>
+		<description>A fine stew, made using a kwama egg, a small assortment of meat, and with a shard of kwama egg shell as a spoon.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Mashed_Ashlands_KwamaEggStew</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_LavaFootSoup]==========-->
 	<ThingDef ParentName="MealLavishBase">
 		<defName>Mashed_Ashlands_LavaFootSoup</defName>

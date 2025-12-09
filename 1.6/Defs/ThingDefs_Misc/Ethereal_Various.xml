@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CollapsingRockRoof]==========-->
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>Mashed_Ashlands_CollapsingRockRoof</defName>
+		<label>collapsing rock roof</label>
+		<thingClass>Mashed_Ashlands.Spawner_CollapsingRockRoof</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<alwaysFlee>true</alwaysFlee>
+		<building>
+			<groundSpawnerSustainedEffecter>Mashed_Ashlands_CollapsingRockRoof</groundSpawnerSustainedEffecter>
+			<groundSpawnerCompleteEffecter>EmergencePointComplete2X2</groundSpawnerCompleteEffecter>
+		</building>
+	</ThingDef>
+</Defs>

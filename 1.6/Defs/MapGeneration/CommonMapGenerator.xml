@@ -7,7 +7,7 @@
 		<genStep Class="Mashed_Ashlands.GenStep_ColumnarBasalt"/>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_DeadExplorer]==========-->
-	<GenStepDef>
+	<GenStepDef Name="Mashed_Ashlands_DeadExplorerBase">
 		<defName>Mashed_Ashlands_DeadExplorer</defName>
 		<order>960</order>
 		<genStep Class="GenStep_ScatterThings">
@@ -17,7 +17,6 @@
 			<allowFoggedPositions>false</allowFoggedPositions>
 			<allowRoofed>false</allowRoofed>
 			<count>1</count>
-			<clearSpaceSize>30</clearSpaceSize>
 			<terrainValidationRadius>3</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
@@ -88,9 +87,10 @@
 					<radius>3</radius>
 					<affordance>Heavy</affordance>
 				</li>
-				<li Class="ScattererValidator_NoNonNaturalEdifices">
-					<radius>3</radius>
+				<li Class="ScatterValidator_AvoidUsedRects">
+					<size>3,3</size>
 				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
 			</validators>
 		</genStep>
 	</GenStepDef>
