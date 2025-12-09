@@ -33,6 +33,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
