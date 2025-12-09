@@ -7,6 +7,11 @@ namespace Mashed_Ashlands
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
+            if (!ModsConfig.OdysseyActive)
+            {
+                return false;
+            }
+
             if (parms.target is Map map)
             {
                 if (map.TileInfo.mutatorsNullable.NullOrEmpty() || !map.TileInfo.Mutators.Contains(TileMutatorDefOf.Mashed_Ashlands_StriderCrossing))
