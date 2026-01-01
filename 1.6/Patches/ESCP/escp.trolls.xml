@@ -6,12 +6,14 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+				<!-- ==========[ESCP_TrollFungal]========== -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="ESCP_TrollFungal"]/comps/li[@Class="CompProperties_Shearable"]/woolDef</xpath>
 					<value>
 						<woolDef>Mashed_Ashlands_RawAshFungus</woolDef>
 					</value>
 				</li>
+				<!-- ==========[Mashed_Ashlands_AshResistance]========== -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[@Name="ESCP_TrollThingBase"]/statBases</xpath>
 					<value>
