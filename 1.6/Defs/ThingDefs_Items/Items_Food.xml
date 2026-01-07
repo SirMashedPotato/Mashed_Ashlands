@@ -16,7 +16,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_KwamaMealFineBase">
 		<defName>Mashed_Ashlands_KwamaEggSoup</defName>
 		<label>kwama egg soup</label>
-		<description>A fine soup, made using a kwama egg, a small assortment of vegetables, and with a shard of kwama egg shell as a spoon. Quite filling, and somewhat energising.</description>
+		<description>A fine soup, made using a kwama egg, a small assortment of vegetables, and with a shard of kwama egg shell as a spoon. The perfect dish to get the most out of a kwama egg.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/Mashed_Ashlands_KwamaEggSoup</texPath>
 		</graphicData>
@@ -30,7 +30,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_KwamaMealFineBase">
 		<defName>Mashed_Ashlands_KwamaEggStew</defName>
 		<label>kwama egg stew</label>
-		<description>A fine stew, made using a kwama egg, a small assortment of meat, and with a shard of kwama egg shell as a spoon.</description>
+		<description>A fine stew, made using a kwama egg, a small assortment of meat, and with a shard of kwama egg shell as a spoon. The perfect dish to get the most out of a kwama egg.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/Mashed_Ashlands_KwamaEggStew</texPath>
 		</graphicData>
@@ -44,7 +44,7 @@
 	<ThingDef ParentName="MealLavishBase">
 		<defName>Mashed_Ashlands_LavaFootSoup</defName>
 		<label>lava foot soup</label>
-		<description>A lavishly made soup, typically made to the dawn of a new year, and relatively quick to make in bulk. Grants a bigger mood buff when consumed in the final days of the year.</description>
+		<description>A lavishly made soup, typically made near the dawn of a new year, and relatively quick to make in bulk. Grants a bigger mood buff when consumed in the final days of the year.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/Mashed_Ashlands_LavaFootSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
