@@ -47,7 +47,7 @@
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Sandcrab/Mashed_Ashlands_Dessicated_Shieldcrab</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shieldcrab/Mashed_Ashlands_Dessicated_Shieldcrab</texPath>
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
