@@ -15,7 +15,18 @@ namespace Mashed_Ashlands
             }
         }
 
-        public int WildPopulation => wildPopulation;
+        public int WildPopulation
+        {
+            get
+            {
+                return wildPopulation;
+            }
+            set
+            {
+                wildPopulation = value;
+            }
+        }
+
         public bool Extinct => extinct;
 
         public override void ExposeData()

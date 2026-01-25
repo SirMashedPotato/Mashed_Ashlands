@@ -29,6 +29,14 @@ namespace Mashed_Ashlands
             }
         }
 
+        public static void SetProgress(int population)
+        {
+            if (GetWorld(out World world))
+            {
+                world.GetComponent<WorldComp_CliffRacerTracker>().WildPopulation = population;
+            }
+        }
+
         public static int WildPopulation()
         {
             if (GetWorld(out World world))

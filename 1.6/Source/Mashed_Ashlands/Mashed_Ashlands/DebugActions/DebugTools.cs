@@ -71,5 +71,16 @@ namespace Mashed_Ashlands
             WorldGenStep_AshlandBiomesLate.DebugGenerate(Find.World.info.seedString, PlanetLayer.Selected);
             Find.World.renderer.RegenerateAllLayersNow();
         }
+
+        [DebugAction(
+            category = Category,
+            name = "Reset wild cliff racer population",
+            allowedGameStates = AllowedGameStates.PlayingOnWorld,
+            actionType = DebugActionType.Action
+            )]
+        private static void ResetCliffRacerPopulation()
+        {
+            CliffRacerTrackerUtility.SetProgress(Mashed_Ashlands_ModSettings.CliffRacerWildPopulation);
+        }
     }
 }
