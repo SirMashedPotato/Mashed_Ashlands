@@ -86,6 +86,34 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_TaintedSea]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_TaintedSea</defName>
+		<label>tainted sea</label>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedSea</workerClass>
+		<description>The coastal waters here have been boiled by volcanic activity, turning the sea an ominious red colour, and decimating fish.</description>
+		<categories>
+			<li>Mashed_Ashlands_Coast</li>
+			<li>Fish</li>
+		</categories>
+		<priority>1</priority>
+		<genOrder>1000</genOrder>
+		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+		<coastSidesRange>1~6</coastSidesRange>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<fishPopulationFactor>0</fishPopulationFactor>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SludgePond</defName>

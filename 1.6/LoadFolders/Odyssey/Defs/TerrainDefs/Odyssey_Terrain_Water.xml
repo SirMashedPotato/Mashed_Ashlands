@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_WaterShallowTaintedOcean]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_WaterShallowTaintedOcean</defName>
+		<label>shallow tainted ocean water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowTaintedWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowTaintedWaterRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>396</renderPrecedence>
+		<driesTo>Mashed_Ashlands_ScorchedAshSoilVolcanic</driesTo>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Other</waterBodyType>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+		<meltSnowRadius>3</meltSnowRadius>
+		<heatPerTick>0.006</heatPerTick>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_WaterDeepTaintedOcean]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_WaterDeepTaintedOcean</defName>
+		<label>deep tainted ocean water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepTaintedWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepTaintedWaterRampPolluted</pollutedTexturePath>
+		<renderPrecedence>397</renderPrecedence>
+		<driesTo>Mashed_Ashlands_ScorchedAshSoilVolcanic</driesTo>
+		<waterBodyType>Other</waterBodyType>
+		<gravshipReplacementTerrain>Mashed_Ashlands_WaterShallowTaintedOcean</gravshipReplacementTerrain>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+	<meltSnowRadius>3</meltSnowRadius>
+	<heatPerTick>0.006</heatPerTick>
+	</TerrainDef>
+</Defs>
