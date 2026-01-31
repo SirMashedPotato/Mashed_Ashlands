@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Undercave_AdamantiumLumps]==========-->
+	<GenStepDef MayRequire="escp.morrowrim.adamantium">
+		<defName>Mashed_Ashlands_Undercave_AdamantiumLumps</defName>
+		<order>300</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
+			<forcedDefToScatter>MorrowRim_MineableAdamantium</forcedDefToScatter>
+			<forcedLumpSize>5</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_Undercave_EbonyLumps]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_Undercave_EbonyLumps</defName>
@@ -17,6 +27,16 @@
 		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
 			<forcedDefToScatter>Mashed_Ashlands_MineableGlass</forcedDefToScatter>
 			<forcedLumpSize>7</forcedLumpSize>
+			<countPer10kCellsRange>30~60</countPer10kCellsRange>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_Undercave_GoldLumps]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_Undercave_GoldLumps</defName>
+		<order>300</order>
+		<genStep Class="Mashed_Ashlands.GenStep_ScatterLumpsShallow">
+			<forcedDefToScatter>MineableGold</forcedDefToScatter>
+			<forcedLumpSize>5</forcedLumpSize>
 			<countPer10kCellsRange>30~60</countPer10kCellsRange>
 		</genStep>
 	</GenStepDef>
