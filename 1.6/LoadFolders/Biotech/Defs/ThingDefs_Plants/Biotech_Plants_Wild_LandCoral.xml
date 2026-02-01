@@ -6,7 +6,7 @@
 		<label>glowing tube coral</label>
 		<description>Tube coral mutated by exposure to high levels of pollution. It has adapted to collect nutrients from airborne pollution.</description>
 		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_GlowingTubeCoral</texPath>
+			<texPath>Things/Plant/Groundcovers_Coral/Mashed_Ashlands_GlowingTubeCoral</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -24,11 +24,11 @@
 		<label>glowing land coral</label>
 		<description>Mutated land coral found in ashland regions with high levels of pollution. It has adapted to collect nutrients directly from polluted air, reducing its reliance on ash storms, and allowing it to grow faster. However the skeleton it forms is comparatively more porous, and less sturdy, and thus yields less usable material when harvested.</description>
 		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_GlowingLandCoralTree</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingLandCoralTree</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
-			<immatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_GlowingLandCoralTree_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingLandCoralTree_Immature</immatureGraphicPath>
 			<growDays>20</growDays>
 			<harvestYield>14</harvestYield>
 		</plant>

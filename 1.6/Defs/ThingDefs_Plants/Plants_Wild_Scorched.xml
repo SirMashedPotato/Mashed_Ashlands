@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
 		<label>charred ashland grass</label>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_CharredAshlandGrass</texPath>
 		</graphicData>
 		<statBases>
 			<Nutrition>0.3</Nutrition>
@@ -29,7 +29,7 @@
 		<label>scorched bush</label>
 		<description>A scorched bush, covered in numerous thorns and pointy ends. Provides nothing of practical use.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ScorchedBush</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_ScorchedBush</texPath>
 			<drawSize>1.15</drawSize>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>

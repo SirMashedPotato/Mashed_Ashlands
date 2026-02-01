@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_ChoppedToxisolStump</defName>
 		<label>chopped toxisol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ToxisolChopped</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_ToxisolChopped</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SmashedToxisolStump]==========-->
@@ -13,7 +13,7 @@
 		<defName>Mashed_Ashlands_SmashedToxisolStump</defName>
 		<label>smashed toxisol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ToxisolSmashed</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_ToxisolSmashed</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

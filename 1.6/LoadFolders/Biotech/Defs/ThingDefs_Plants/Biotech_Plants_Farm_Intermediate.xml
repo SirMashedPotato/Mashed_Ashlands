@@ -10,7 +10,7 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingParasolBush</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingParasolBush</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -44,7 +44,7 @@
 		<passability>Impassable</passability>
 		<fillPercent>0.1</fillPercent>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TramaMass</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_TramaMass</texPath>
 			<shadowData>
 				<volume>(0.2, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.0)</offset>
@@ -72,7 +72,7 @@
 		<label>glowing scathecraw plant</label>
 		<description>A highly mutated scathecraw, typically found growing in polluted ashland regions. Its ability to thrive on polluted ash has allowed it to grow larger than the regular scathecraw, while at the same time barely affecting the flesh of the leaves. Can only grow on ash rich ground that has been sufficiently polluted.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingScathecrawPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingScathecrawPlant</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>

@@ -6,7 +6,7 @@
 		<label>glowing coprinus tree</label>
 		<description>A mutated glowing coprinus, grows larger than normal. While it offers nothing of practical use, most find it quite beautiful, and it does emit a faint gloomy glow.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GiantGlowingCoprinus</texPath>
+			<texPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantGlowingCoprinus</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>15</Beauty>
@@ -23,7 +23,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
-			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -38,7 +38,7 @@
 		<label>ashland fungus tree</label>
 		<description>Highly mutated ashland fungus, causing it to grow significantly larger than usual. Even at this size, the stem is still too soft to be used as a building material.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GiantAshlandFungus</texPath>
+			<texPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantAshlandFungus</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>5</Beauty>

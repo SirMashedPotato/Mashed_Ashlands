@@ -11,7 +11,7 @@
 			<Flammability>0.1</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_PetrifiedFungus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_PetrifiedFungus</texPath>
 		</graphicData>
 		<plant>
 			<pollution>Any</pollution>
@@ -60,7 +60,7 @@
 		<label>petrified glowstalk</label>
 		<description>A semi-petrified glowstalk, its bulb almost completely turned to stone. It still manages to emit a faint light, even in this state. It doesn't even attract torchbugs at night anymore, not that there's likely to be many left in this petrified wasteland.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
 		</graphicData>
 		<statBases>
 			<Nutrition>0.15</Nutrition>
@@ -96,7 +96,7 @@
 			<Flammability>0.1</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_PetrifiedButtercakePlant</texPath>
 		</graphicData>
 		<plant>
 			<pollution>Any</pollution>

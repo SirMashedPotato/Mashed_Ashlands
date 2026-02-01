@@ -6,7 +6,7 @@
 		<label>glowing ashreed</label>
 		<description>A mutated species of wild grass adapted for life in polluted ashland regions. Often found growing near sources of polluted water.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingAshreed</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_GlowingAshreed</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -29,7 +29,7 @@
 		<label>glowing bryolux</label>
 		<description>A green moss that thrives in highly polluted caves. It emits a sickly green glow, and is covered in sticky tangled fibers, which slows anyone walking over it.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingBryolux</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_GlowingBryolux</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -52,7 +52,7 @@
 			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingEntoloma</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_GlowingEntoloma</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -82,7 +82,7 @@
 			<BeautyOutdoors>4</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingRussula</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_GlowingRussula</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -112,7 +112,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingCoprinus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_GlowingCoprinus</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
