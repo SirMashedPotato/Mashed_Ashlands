@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshyMutator]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_AshyMutator</defName>
+		<label>ashy</label>
+		<description>The breeze constantly releases ash over this region. Ash fall is much more common here.</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Mashed_Ashlands_Ashfall</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DustyMutator]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_DustyMutator</defName>
+		<label>dusty</label>
+		<description>There's so much dust here that even the faintest breeze can whip up a dust storm. Dust storms are much more common here.</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Mashed_Ashlands_DustStorm</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<biomeWhitelist>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DusttideMutator]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_DusttideMutator</defName>
+		<label>dusttide</label>
+		<description>Copious amounts of dust and metallic particulate ensure even the slightest breeze results in an electrified dust storm. Dust thunderstorms are much more common here.</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Mashed_Ashlands_DustThunderstorm</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<biomeWhitelist>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricAtmosphereMutator]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_SulphuricAtmosphereMutator</defName>
+		<label>sulphuric atmosphere</label>
+		<description>Frequent volcanic activity ensures the atmosphere here has plenty of sulphuric dioxide in it. sulphuric rain is much more common here</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Mashed_Ashlands_SulphuricRain</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<biomeWhitelist>
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+</Defs>

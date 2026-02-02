@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_LostKwamaWorkers]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>
+		<label>lost kwama workers</label>
+		<description>This area is home to kwama workers that have been separated from their nest.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<minHilliness>LargeHills</minHilliness>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_LostKwamaWorkers</li>
+		</extraGenSteps>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_StriderCrossing]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_StriderCrossing</defName>
+		<label>strider crossing</label>
+		<description>This area is frequented by wandering silt striders.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<coastSidesRange>0</coastSidesRange>
+	</TileMutatorDef>
+</Defs>

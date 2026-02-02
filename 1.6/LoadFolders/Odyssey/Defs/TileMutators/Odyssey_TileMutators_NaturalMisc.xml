@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AncientLavaFlow]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_AncientLavaFlow</defName>
+		<label>ancient lava flow</label>
+		<description>This region once experienced lava flows when the nearby volcano was still active. The lava flows have since solidifed.</description>
+		<categories>
+			<li>Lake</li>
+			<li>Mountain</li>
+		</categories>
+		<priority>3</priority>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_AncientLavaFlow</workerClass>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<maxHilliness>SmallHills</maxHilliness>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+</Defs>
