@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Crater]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_MeteorCrater"
+			or defName="VEE_ResurgentCaldera"
+			or defName="VEE_CraterLake"
+			or defName="VEE_ToxicCrater"
+			or defName="VEE_Volcano"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_UndercaveEntrance>0.06</Mashed_Ashlands_UndercaveEntrance>
+			<Mashed_Ashlands_LostKwamaWorkers>0.03</Mashed_Ashlands_LostKwamaWorkers>
+		</value>
+	</Operation>
+	<!-- ==========[Volcano]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_Volcano"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_AshyMutator>0.06</Mashed_Ashlands_AshyMutator>
+			<Mashed_Ashlands_DustyMutator>0.06</Mashed_Ashlands_DustyMutator>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.06</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<Mashed_Ashlands_FetcherflyHives_Increased>0.03</Mashed_Ashlands_FetcherflyHives_Increased>
+			<Mashed_Ashlands_VolcanicDebrisField>0.03</Mashed_Ashlands_VolcanicDebrisField>
+		</value>
+	</Operation>
+	<!-- ==========[Island]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_LoneIsland"
+			or defName="VEE_LoneIslandWithLake"
+			or defName="VEE_LoneIslandWithMountain"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_BasaltCoast>0.1</Mashed_Ashlands_BasaltCoast>
+			<Mashed_Ashlands_LandCoral>0.2</Mashed_Ashlands_LandCoral>
+			<Mashed_Ashlands_LandCoralVolcanic>0.2</Mashed_Ashlands_LandCoralVolcanic>
+		</value>
+	</Operation>
+	<!-- ==========[Coral Reef]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_CoralReef"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_LandCoral>0.4</Mashed_Ashlands_LandCoral>
+			<Mashed_Ashlands_LandCoralVolcanic>0.4</Mashed_Ashlands_LandCoralVolcanic>
+		</value>
+	</Operation>
+	<!-- ==========[Mountain]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_RockRidge"
+			or defName="VEE_JaggedRocks"
+			or defName="VEE_SerpentineCanyons"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_SulphuricCaves>0.15</Mashed_Ashlands_SulphuricCaves>
+			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
+			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
+			<Mashed_Ashlands_UndercaveEntrance>0.06</Mashed_Ashlands_UndercaveEntrance>
+			<Mashed_Ashlands_LostKwamaWorkers>0.03</Mashed_Ashlands_LostKwamaWorkers>
+		</value>
+	</Operation>
+	<!-- ==========[Sinkholes]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="VEE_Sinkholes"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_UndercaveEntrance>0.06</Mashed_Ashlands_UndercaveEntrance>
+			<Mashed_Ashlands_LostKwamaWorkers>0.03</Mashed_Ashlands_LostKwamaWorkers>
+		</value>
+	</Operation>
+</Patch>

@@ -102,6 +102,7 @@
 		<!-- Mods-->
 		<li IfModActive="vanillaexpanded.achievements">1.6/LoadFolders/VE_Achievements</li>
 		<li IfModActive="vanillaexpanded.vcooke">1.6/LoadFolders/VE_Cooking</li>
+		<li IfModActive="vanillaexpanded.vexploratione">1.6/LoadFolders/VE_Landmarks</li>
 		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.6/LoadFolders/SYR_ProcessorFramework</li>
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.6/LoadFolders/SeedsPleaseLite</li>
 		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.6/LoadFolders/MorrowRim_SoundPatch</li>
