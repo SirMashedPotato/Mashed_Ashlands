@@ -12,6 +12,7 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<weathersToAffect>
 			<li>Mashed_Ashlands_Ashfall</li>
+			<li>Mashed_Ashlands_FoggyAshfall</li>
 		</weathersToAffect>
 		<weatherFrequencyOffset>10</weatherFrequencyOffset>
 	</TileMutatorDef>
@@ -63,6 +64,7 @@
 		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
 		<weathersToAffect>
 			<li>Mashed_Ashlands_SulphuricRain</li>
+			<li>Mashed_Ashlands_FoggySulphuricRain</li>
 		</weathersToAffect>
 		<weatherFrequencyOffset>10</weatherFrequencyOffset>
 		<biomeWhitelist>
