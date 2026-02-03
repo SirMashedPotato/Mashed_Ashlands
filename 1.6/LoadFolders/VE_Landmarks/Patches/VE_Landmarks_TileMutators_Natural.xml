@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[VEE_SaltPlains]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_SaltPlains"]/biomeWhitelist</xpath>
+		<value>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[VEE_ContaminatedReservoir]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedReservoir"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedReservoir"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- ==========[VEE_ContaminatedRiver]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedRiver"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedRiver"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- ==========[VEE_ContaminatedCoast]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedCoast"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_ContaminatedCoast"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- ==========[VEE_AlluvialFan]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_AlluvialFan"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_AlluvialFan"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- ==========[VEE_StagnantRivulet]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_StagnantRivulet"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_StagnantRivulet"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_StagnantRivulet"]/biomeBlacklist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[VEE_GravelBeach]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_GravelBeach"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_GravelBeach"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<!-- ==========[VEE_Cenotes]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_Cenotes"]/biomeBlacklist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>
