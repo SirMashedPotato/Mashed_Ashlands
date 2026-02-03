@@ -8,10 +8,10 @@
 		<thingClass>Plant</thingClass>
 		<modExtensions Inherit="False"/>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol</texPath>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorToxisol</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorToxisol_Immature</immatureGraphicPath>
 			<pollution>PollutedOnly</pollution>
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
@@ -39,7 +39,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TreeWeepingMouldcap</texPath>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>-2</Beauty>
@@ -56,7 +56,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_TreeWeepingMouldcap_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

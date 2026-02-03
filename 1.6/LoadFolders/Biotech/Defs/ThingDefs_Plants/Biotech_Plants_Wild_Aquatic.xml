@@ -21,7 +21,7 @@
 		<label>glowing draggle-tails</label>
 		<description>A mutated species of the common draggle-tails, adapted for life in highly polluted ashland regions. They produce an ominous glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingDraggleTails</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_GlowingDraggleTails</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>

@@ -20,7 +20,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_AshlandHayGrassPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_AshlandHayGrassPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<pathCost>14</pathCost>
@@ -62,7 +62,7 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ButtercakePlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_ButtercakePlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
@@ -99,7 +99,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ChillshroomPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_ChillshroomPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
@@ -140,11 +140,11 @@
 			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ComberryPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_ComberryPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_ComberryPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/FoodPlants/Mashed_Ashlands_ComberryPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -183,7 +183,7 @@
 			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_MarshmerrowPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_MarshmerrowPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
@@ -226,10 +226,10 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_MuckSpongePlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_MuckSpongePlant</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_MuckSpongePlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_MuckSpongePlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<growMinGlow>-0.01</growMinGlow>
@@ -266,11 +266,11 @@
 			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SaltricePlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_SaltricePlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_SaltricePlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/FoodPlants/Mashed_Ashlands_SaltricePlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -314,11 +314,11 @@
 			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_WickwheatPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_WickwheatPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_WickwheatPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/FoodPlants/Mashed_Ashlands_WickwheatPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>

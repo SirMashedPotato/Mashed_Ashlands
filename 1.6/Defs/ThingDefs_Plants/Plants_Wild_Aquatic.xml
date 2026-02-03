@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_Plant_AshreedWater</defName>
 		<modExtensions Inherit="false"/>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_Ashreed</texPath>
 		</graphicData>
 		<plant>
 			<wildTerrainTags>
@@ -34,7 +34,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_DraggleTails</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_DraggleTails</texPath>
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<plant>
@@ -79,7 +79,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_LilyPad</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_LilyPad</texPath>
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<plant>

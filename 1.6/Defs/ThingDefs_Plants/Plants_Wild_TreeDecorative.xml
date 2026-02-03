@@ -17,7 +17,7 @@
 		<label>mauve dusk cap tree</label>
 		<description>A large fungal tree, solely found growing in regions with ash rich ground. While it offers nothing of practical use, most find it incredibly beautiful.</description>
 		<graphicData>
-			<texPath>Things/Plant/Trees/Mashed_Ashlands_DuskCapMauve</texPath>
+			<texPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>30</Beauty>
@@ -32,7 +32,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
-			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

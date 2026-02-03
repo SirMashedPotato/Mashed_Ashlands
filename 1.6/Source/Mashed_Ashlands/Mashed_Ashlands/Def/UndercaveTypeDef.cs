@@ -14,9 +14,8 @@ namespace Mashed_Ashlands
         public LetterDef enterLetterDef;
         public MapGeneratorDef undercaveGeneratorDef;
         public List<GenStepDef> extraGenStepDefs;
-        public int weight = 1;
+        public float weight = 1f;
         public bool naturallyGenerates = true;
-
 
         public override IEnumerable<string> ConfigErrors()
         {

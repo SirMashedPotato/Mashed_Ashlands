@@ -20,11 +20,11 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_AshYamPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_AshYamPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_AshYamPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/FoodPlants/Mashed_Ashlands_AshYamPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -62,7 +62,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_CorkbulbPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_CorkbulbPlant</texPath>
 		</graphicData>
 		<plant>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -95,7 +95,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_HackleLoPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_HackleLoPlant</texPath>
 		</graphicData>
 		<plant>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
@@ -136,7 +136,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_InkCapPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_InkCapPlant</texPath>
 		</graphicData>
 		<pathCost>10</pathCost>
 		<plant>
@@ -177,11 +177,11 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_KreshweedPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_KreshweedPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_KreshweedPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_KreshweedPlant_Immature</immatureGraphicPath>
 			<fertilitySensitivity>1</fertilitySensitivity>
 			<fertilityMin>0.8</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -214,7 +214,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ParasolBush</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_ParasolBush</texPath>
 			<shadowData>
 				<volume>(0.2, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.0)</offset>
@@ -258,7 +258,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TramaShrub</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_TramaShrub</texPath>
 			<shadowData>
 				<volume>(0.2, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.0)</offset>
@@ -310,7 +310,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ScathecrawPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_ScathecrawPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>

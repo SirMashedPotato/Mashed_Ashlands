@@ -51,7 +51,7 @@
 			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshenHeatherFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshenHeatherFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -81,7 +81,7 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_AshlandPitcher</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshlandPitcher</texPath>
 		</graphicData>
 		<plant>
 			<visualSizeRange>0.4~0.7</visualSizeRange>
@@ -109,7 +109,7 @@
 			<BeautyOutdoors>10</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_BlackAntherFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_BlackAntherFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -136,7 +136,7 @@
 			<BeautyOutdoors>15</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_GoldenSedgeFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_GoldenSedgeFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
@@ -165,7 +165,7 @@
 			<BeautyOutdoors>20</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_HornLilyFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_HornLilyFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
@@ -196,7 +196,7 @@
 			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaBloom</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_LavaBloom</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -229,7 +229,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_LavaCactus</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_LavaCactus</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -265,7 +265,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_MeadowFlowerBlue</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -281,7 +281,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_MeadowFlowerBase">
 		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
@@ -303,7 +303,7 @@
 			<BeautyOutdoors>20</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NirthflyFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_NirthflyFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
@@ -332,7 +332,7 @@
 			<BeautyOutdoors>15</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_NobleSedgeFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_NobleSedgeFlower</texPath>
 		</graphicData>
 		<plant>
 			<lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
@@ -364,7 +364,7 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_Stoneflower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_Stoneflower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -390,7 +390,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Flowers/Mashed_Ashlands_WillowFlower</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_WillowFlower</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>

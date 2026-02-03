@@ -32,7 +32,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_AshlandFungus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_AshlandFungus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>2.5</growDays>
@@ -62,7 +62,7 @@
 			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_BlueEntoloma</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_BlueEntoloma</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
@@ -85,7 +85,7 @@
 			<Flammability>0.2</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_FoyadaFungus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_FoyadaFungus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3</growDays>
@@ -108,7 +108,7 @@
 			<BeautyOutdoors>4</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_LuminousRussula</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_LuminousRussula</texPath>
 		</graphicData>
 		<plant>
 			<growDays>4.6</growDays>
@@ -136,7 +136,7 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_VioletCoprinus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_VioletCoprinus</texPath>
 		</graphicData>
 		<plant>
 			<growDays>3.8</growDays>

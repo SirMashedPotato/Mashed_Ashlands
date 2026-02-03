@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_EbonyDeposits]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_EbonyDeposits</defName>
+		<label>ebony deposits</label>
+		<description>This area has deposits of volcanic ebony, which can be mined for ebony glass.</description>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
+		<minHilliness>SmallHills</minHilliness>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_EbonyDeposits</workerClass>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_GlassDeposits]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_GlassDeposits</defName>
+		<label>malachite deposits</label>
+		<description>This area has deposits of volcanic malachite, which can be mined for malachite glass.</description>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
+		<minHilliness>SmallHills</minHilliness>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_GlassDeposits</workerClass>
+	</TileMutatorDef>
+</Defs>

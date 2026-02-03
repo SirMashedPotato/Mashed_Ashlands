@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Prevent entirely for ashland biomes]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[ defName="VEE_NaturalAerie"
+			or defName="VEE_DomesticatedEscapees"
+			or defName="VEE_NobleSteeds"
+			or defName="VEE_Megafauna"
+			or defName="VEE_Fertility_Reduced"
+			or defName="VEE_VolcanicRichSoil"
+			or defName="VEE_CalmBasin"
+			or defName="VEE_DustBowl"
+			or defName="VEE_SulfuricLake"
+			or defName="VEE_SulfuricRiver"
+			or defName="VEE_FloodPlains"
+			or defName="VEE_ContaminatedReservoir"
+			or defName="VEE_ContaminatedRiver"
+			or defName="VEE_ContaminatedCoast"
+			or defName="VEE_AlluvialFan"
+			or defName="VEE_GravelBeach"
+			or defName="VEE_BasaltCape"
+			or defName="VEE_BombardedSurface"
+			or defName="Plant_Rice"
+			]/biomeBlacklist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>

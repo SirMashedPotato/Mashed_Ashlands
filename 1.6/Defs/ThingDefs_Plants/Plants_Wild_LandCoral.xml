@@ -6,7 +6,7 @@
 		<label>tube coral</label>
 		<description>A small form of land coral that grows a sturdy tube. The polyps collect nutrients from airborne ash, as well as eggs from the larger land coral.</description>
 		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_TubeCoralPink</texPath>
+			<texPath>Things/Plant/Groundcovers_Coral/Mashed_Ashlands_TubeCoralPink</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>3</Beauty>
@@ -31,7 +31,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TubeCoralTreeBase">
 		<defName>Mashed_Ashlands_Plant_TubeCoralTeal</defName>
 		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_TubeCoralTeal</texPath>
+			<texPath>Things/Plant/Groundcovers_Coral/Mashed_Ashlands_TubeCoralTeal</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_LandCoralTree]==========-->
@@ -40,7 +40,7 @@
 		<label>ashland land coral</label>
 		<description>Large land coral, sometimes found growing in coastal regions with ash rich ground. Like many types of coral, it creates an exterior skeleton out of calcium carbonate, though strangely the skeleton formed by this species of coral is virtually identical in structure and appearance to marble. The polyps that emerge from the openings in the skeleton consume nutrients gathered from airborne ash.</description>
 		<graphicData>
-			<texPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_LandCoralTree</texPath>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
 				<offset>(-0.03,0,-0.44)</offset>
@@ -53,9 +53,9 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
-			<leaflessGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Leafless</leaflessGraphicPath>
-			<immatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_Immature</immatureGraphicPath>
-			<leaflessImmatureGraphicPath>Things/Plant/Coral/Mashed_Ashlands_LandCoralTree_LeaflessImmature</leaflessImmatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_LandCoralTree_Leafless</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_LandCoralTree_Immature</immatureGraphicPath>
+			<leaflessImmatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_LandCoralTree_LeaflessImmature</leaflessImmatureGraphicPath>
 			<sowTags Inherit="False"/>
 			<wildTerrainTags>
 				<li>Mashed_Ashlands_CoralSand</li>

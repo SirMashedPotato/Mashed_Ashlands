@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshPlantGrove]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_AshPlantGrove</defName>
+		<label>ash plant grove</label>
+		<description>This area contains a large number of {0}.</description>
+		<workerClass>TileMutatorWorker_PlantGrove</workerClass>
+		<categories>
+			<li>WildPlants</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.02</chanceOnNonLandmarkTile>
+		<plantDensityRange>0.3~4</plantDensityRange>
+		<pollutionRange>0~0.25</pollutionRange>
+		<plantKinds>
+			<li>Mashed_Ashlands_Plant_AshYam</li>
+			<li>Mashed_Ashlands_Plant_Corkbulb</li>
+			<li>Mashed_Ashlands_Plant_TramaShrub</li>
+			<li>Mashed_Ashlands_Plant_Scathecraw</li>
+			<li>Mashed_Ashlands_Plant_AshPomegranate</li>
+			<li>Mashed_Ashlands_Plant_TreeEmperorParasol</li>
+			<li>Mashed_Ashlands_Plant_TreeNetchShield</li>
+			<li>Mashed_Ashlands_Plant_TreeWeepingLeathercap</li>
+		</plantKinds>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+</Defs>

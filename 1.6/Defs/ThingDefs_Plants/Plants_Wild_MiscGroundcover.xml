@@ -19,7 +19,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_Ashreed</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_Ashreed</texPath>
 		</graphicData>
 		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
 		<plant>

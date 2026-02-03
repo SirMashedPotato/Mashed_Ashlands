@@ -36,7 +36,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -51,7 +51,7 @@
 		<label>ashland dune grass</label>
 		<description>A species of wild grass adapted for life in the ashlands. Can grow anywhere there is a little light and ash rich sand.</description>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
 		<statBases>
 			<Nutrition>0.4</Nutrition>
@@ -73,7 +73,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_AshlandDuneGrassBase">
 		<defName>Mashed_Ashlands_Plant_AshlandDuneGrassDark</defName>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrassDark</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandDuneGrassDark</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

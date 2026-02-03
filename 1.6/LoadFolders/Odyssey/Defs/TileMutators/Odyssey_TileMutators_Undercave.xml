@@ -14,4 +14,15 @@
 			<li>Mashed_Ashlands_UndercaveEntrance</li>
 		</extraGenSteps>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_UndergroundMine]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_UndergroundMine</defName>
+		<label>underground mine</label>
+		<categories>
+			<li>Caves</li>
+		</categories>
+		<priority>5</priority>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_UndergroundMine</workerClass>
+		<genOrder>-100</genOrder>		<!-- After mountain but before other terrain gen -->
+	</TileMutatorDef>
 </Defs>

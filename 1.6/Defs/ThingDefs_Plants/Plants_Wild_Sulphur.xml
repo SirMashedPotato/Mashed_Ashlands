@@ -11,7 +11,7 @@
 			<Flammability>0.2</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_SulphurFungus</texPath>
 		</graphicData>
 		<plant>
 			<sowTags Inherit="False"/>
@@ -30,7 +30,7 @@
 		<label>sulphuric coprinus tree</label>
 		<description>A large fungal tree, solely found growing around sulphur pools. While it offers nothing of practical use, most find it incredibly beautiful.</description>
 		<graphicData>
-			<texPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus</texPath>
+			<texPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>20</Beauty>
@@ -47,7 +47,7 @@
 			<visualSizeRange>1.3~2.4</visualSizeRange>
 			<harvestWork>600</harvestWork>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
-			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
