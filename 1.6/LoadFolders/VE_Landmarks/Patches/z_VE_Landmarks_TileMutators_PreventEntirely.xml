@@ -2,16 +2,12 @@
 <Patch>
 	<!-- ==========[Prevent entirely for ashland biomes]==========-->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[
-			<!-- TileMutators_Animals -->
-			defName="VEE_NaturalAerie"
+		<xpath>Defs/TileMutatorDef[ defName="VEE_NaturalAerie"
 			or defName="VEE_DomesticatedEscapees"
 			or defName="VEE_NobleSteeds"
 			or defName="VEE_Megafauna"
-			<!-- TileMutators_Geological -->
 			or defName="VEE_Fertility_Reduced"
 			or defName="VEE_VolcanicRichSoil"
-			<!-- TileMutators_Natural -->
 			or defName="VEE_CalmBasin"
 			or defName="VEE_DustBowl"
 			or defName="VEE_SulfuricLake"
@@ -23,9 +19,7 @@
 			or defName="VEE_AlluvialFan"
 			or defName="VEE_GravelBeach"
 			or defName="VEE_BasaltCape"
-			<!-- TileMutators_ManMade -->
 			or defName="VEE_BombardedSurface"
-			<!-- TileMutators_Plants -->
 			or defName="Plant_Rice"
 			]/biomeBlacklist</xpath>
 		<value>
