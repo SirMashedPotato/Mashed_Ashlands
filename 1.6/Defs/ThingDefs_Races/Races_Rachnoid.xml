@@ -92,7 +92,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_RachnoidThingBase">
 		<defName>Mashed_Ashlands_Pyrantula</defName>
 		<label>pyrantula</label>
-		<description>A relatively large species of spider, often found in highly volcanically active ashland regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body. The vibrant silk cocoon that covers most of their body also contains highly flammable gas, that the pyrantula can release and ignite when threatened.\n\n&lt;color=#E5E54C&gt;Flame Discharge&lt;/color&gt;\nPyrantulas are able to periodically release flame explosions when damaged.</description>
+		<description>A relatively large species of spider, often found in highly volcanically active ashland regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body. This vibrant silk cocoon also contains highly flammable gas, that the pyrantula can release and ignite when threatened.\n\n&lt;color=#E5E54C&gt;Flame Discharge&lt;/color&gt;\nPyrantulas are able to periodically release flame explosions when damaged.</description>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
@@ -207,7 +207,7 @@
 				<label>mandibles</label>
 				<capacities>
 					<li>Bite</li>
-					<li>Mashed_Ashlands_BurnBite</li>
+					<li>ToxicBite</li>
 				</capacities>
 				<power>5</power>
 				<cooldownTime>2</cooldownTime>
