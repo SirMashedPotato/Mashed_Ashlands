@@ -48,4 +48,16 @@
 		<driesTo/>
 		<floodTerrain>Mashed_Ashlands_SulphuricFloodwater</floodTerrain>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_VolcanicWaterBase">
+		<defName>Mashed_Ashlands_VolcanicFloodwater</defName>
+		<label>volcanic floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
 </Defs>
