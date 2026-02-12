@@ -23,6 +23,9 @@
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 			<Mashed_Ashlands_UndercaveEntrance>0.06</Mashed_Ashlands_UndercaveEntrance>
 			<Mashed_Ashlands_LostKwamaWorkers>0.03</Mashed_Ashlands_LostKwamaWorkers>
+			<Mashed_Ashlands_AshFertile>0.05</Mashed_Ashlands_AshFertile>
+			<Mashed_Ashlands_AshRocky>0.05</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_AshSandy>0.05</Mashed_Ashlands_AshSandy>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -72,6 +75,15 @@
 	<!-- ==========[Man made]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/LandmarkDef[@Name="BaseRuins"
+			or @Name="AbandonedColonyLandmarkBase"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_AshFertile>0.05</Mashed_Ashlands_AshFertile>
+			<Mashed_Ashlands_AshRocky>0.05</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_AshSandy>0.05</Mashed_Ashlands_AshSandy>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[@Name="BaseRuins"
 			or @Name="AbandonedColonyLandmarkBase"]/comboLandmarkMutators</xpath>
 		<value>
 			<Mashed_Ashlands_DusttideMutator>0.02</Mashed_Ashlands_DusttideMutator>
@@ -79,6 +91,15 @@
 			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
 			<Mashed_Ashlands_ThermalMudPools>0.02</Mashed_Ashlands_ThermalMudPools>
 			<Mashed_Ashlands_ThermalPond>0.02</Mashed_Ashlands_ThermalPond>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/LandmarkDef[defName="AncientQuarry"
+			or @Name="AncientStructureBase"]/mutatorChances</xpath>
+		<value>
+			<Mashed_Ashlands_AshFertile>0.05</Mashed_Ashlands_AshFertile>
+			<Mashed_Ashlands_AshRocky>0.05</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_AshSandy>0.05</Mashed_Ashlands_AshSandy>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshFertile]==========-->
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>Mashed_Ashlands_AshFertile</defName>
+		<label>fertile ash</label>
+		<description>This area contains more fertile ash than normal.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
+						<min>0.64</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_AshRocky]==========-->
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>Mashed_Ashlands_AshRocky</defName>
+		<label>rocky ash</label>
+		<description>Large patches of rocky ash are scattered throughout this area.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<overrideLakeBeachTerrain>Mashed_Ashlands_AshScree</overrideLakeBeachTerrain>
+		<overrideRiverbankTerrain>Mashed_Ashlands_AshScree</overrideRiverbankTerrain>
+		<overrideMudTerrain>Mashed_Ashlands_AshScree</overrideMudTerrain>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_AshScree</terrain>
+						<min>0.64</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_AshSandy]==========-->
+	<TileMutatorDef ParentName="BasePatch">
+		<defName>Mashed_Ashlands_AshSandy</defName>
+		<label>sandy ash</label>
+		<description>Large patches of sandy ash are scattered throughout this area.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<overrideLakeBeachTerrain>Mashed_Ashlands_AshSand</overrideLakeBeachTerrain>
+		<overrideRiverbankTerrain>Mashed_Ashlands_AshSand</overrideRiverbankTerrain>
+		<overrideMudTerrain>Mashed_Ashlands_AshSand</overrideMudTerrain>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_AshSand</terrain>
+						<min>0.64</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	</TileMutatorDef>
+</Defs>
