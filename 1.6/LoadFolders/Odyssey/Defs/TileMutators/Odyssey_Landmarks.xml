@@ -200,6 +200,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalMudPools</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_ThermalMudPools Required="True"/>
+			<Mashed_Ashlands_AshMuddy>0.03</Mashed_Ashlands_AshMuddy>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
@@ -213,6 +214,7 @@
 			<Mashed_Ashlands_ThermalPond Required="True"/>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
+			<Mashed_Ashlands_AshMuddy>0.03</Mashed_Ashlands_AshMuddy>
 		</mutatorChances>
 	</LandmarkDef>
 </Defs>
