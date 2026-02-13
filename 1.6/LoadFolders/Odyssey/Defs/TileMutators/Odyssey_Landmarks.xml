@@ -50,6 +50,51 @@
 			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeBase]==========-->
+	<LandmarkDef Name="Mashed_Ashlands_DryLakeBase" Abstract="true">
+		<label>desiccated lake</label>
+		<drawScale>0.7</drawScale>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.2</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_DryLake</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_StriderShells_Increased>0.05</Mashed_Ashlands_StriderShells_Increased>
+			<Stockpile>0.05</Stockpile>
+			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<SunnyMutator>0.25</SunnyMutator>
+			<WetClimate>0</WetClimate>
+			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
+			<AncientUplink>0.02</AncientUplink>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.1</Junkyard>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_DryLake]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
+		<defName>Mashed_Ashlands_DryLake</defName>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_DryLake</iconTexturePath>
+		<mutatorChances>
+			<Mashed_Ashlands_DryLake Required="True"/>
+			<Mashed_Ashlands_DustyMutator>0.05</Mashed_Ashlands_DustyMutator>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
+		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_DryLakeBlighted</iconTexturePath>
+		<mutatorChances>
+			<Mashed_Ashlands_DryLakeBlighted Required="True"/>
+		</mutatorChances>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
+		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_DryLakeVolcanic</iconTexturePath>
+		<mutatorChances>
+			<Mashed_Ashlands_DryLakeVolcanic Required="True"/>
+			<Mashed_Ashlands_FetcherflyHives_Increased>0.05</Mashed_Ashlands_FetcherflyHives_Increased>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_StriderGraveyard</defName>
@@ -136,7 +181,7 @@
 		</comboLandmarkMutators>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
-	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase"> 
+	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
 		<defName>Mashed_Ashlands_SulphuricSprings</defName>
 		<label>sulphuric springs</label>
 		<iconTexturePath>World/Landmarks/Mashed_Ashlands_SulphuricSprings</iconTexturePath>

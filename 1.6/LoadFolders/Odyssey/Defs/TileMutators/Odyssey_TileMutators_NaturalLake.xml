@@ -1,5 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_DryLake]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut" Name="Mashed_Ashlands_DryLakeBaseMut">
+		<defName>Mashed_Ashlands_DryLake</defName>
+		<label>desiccated lake</label>
+		<description>The remains of a former lake.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLake</workerClass>
+		<priority>2</priority>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+		</biomeWhitelist>
+		<coastSidesRange>0~0</coastSidesRange>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut" >
+		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
+		<label>desiccated lake</label>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeBlighted</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut" >
+		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
+		<label>desiccated lake</label>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeVolcanic</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SludgePond</defName>

@@ -243,6 +243,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_AshStormLover.cs" />
     <Compile Include="ThoughtWorker\ThoughtWorker_Scathes.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_DryLake.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_DryLakeBlighted.cs" />
+    <Compile Include="TileMutatorWorker\TileMutatorWorker_DryLakeVolcanic.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_TaintedSea.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_UndercaveEntrance.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_Springs.cs" />

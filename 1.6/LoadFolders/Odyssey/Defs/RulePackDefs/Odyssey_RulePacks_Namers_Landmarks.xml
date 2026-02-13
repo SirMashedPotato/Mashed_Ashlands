@@ -17,6 +17,20 @@
 	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
 	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_DryLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s desiccated lake</li>
+				<li>terrain_word(p=2)->desiccated lake</li>
+				<li>terrain_word(p=2)->barren lake</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
