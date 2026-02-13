@@ -28,6 +28,16 @@
 			<li>Mashed_Ashlands_MossyAshSoil</li>
 		</tags>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_CrackedAshSoil]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
+		<defName>Mashed_Ashlands_CrackedAshSoil</defName>
+		<label>cracked ash</label>
+		<texturePath>Terrain/Surfaces/AshRegular/Mashed_Ashlands_CrackedAshSoil</texturePath>
+		<fertility>0.1</fertility>
+		<tags>
+			<li>Mashed_Ashlands_AshCracked</li>
+		</tags>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_GrazelandSoil]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_AshRegularBase">
 		<defName>Mashed_Ashlands_GrazelandSoil</defName>
