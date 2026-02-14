@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- ==========[AnimalHabitat]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="AnimalHabitat"]/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="AnimalHabitat"]</xpath>
+			<value>
+				<categories/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="AnimalHabitat"]/categories</xpath>
+		<value>
+			<li>Mashed_Ashlands_AnimalHabitat</li>
+		</value>
+	</Operation>
 	<!-- ==========[PlantLife_Increased]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="PlantLife_Increased"]/biomeBlacklist</xpath>

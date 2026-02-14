@@ -15,6 +15,7 @@
 			<Stockpile>0.05</Stockpile>
 			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<AnimalHabitat>0.05</AnimalHabitat>
+			<Mashed_Ashlands_CliffRacerHabitat>0.01</Mashed_Ashlands_CliffRacerHabitat>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
 			<PlantLife_Increased>0.05</PlantLife_Increased>
 			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
@@ -59,6 +60,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_DryLake</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_StriderShells_Increased>0.05</Mashed_Ashlands_StriderShells_Increased>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Stockpile>0.05</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
@@ -107,6 +109,7 @@
 		<mutatorChances>
 			<Mashed_Ashlands_StriderShells_Increased Required="True"/>
 			<Mashed_Ashlands_StriderCrossing>0.06</Mashed_Ashlands_StriderCrossing>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
@@ -145,6 +148,7 @@
 		<mutatorChances>
 			<Mashed_Ashlands_SulphuricPond Required="True"/>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.1</Mashed_Ashlands_SulphuricAtmosphereMutator>
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
@@ -170,6 +174,7 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<ArcheanTrees>0.01</ArcheanTrees>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
@@ -212,6 +217,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalPond</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_ThermalPond Required="True"/>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
 			<Mashed_Ashlands_AshMuddy>0.03</Mashed_Ashlands_AshMuddy>
