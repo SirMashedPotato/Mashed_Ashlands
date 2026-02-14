@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AshFertile]==========-->
+	<!-- ==========[Mashed_Ashlands_BasePatch]==========-->
 	<TileMutatorDef ParentName="BasePatch" Name="Mashed_Ashlands_BasePatch" Abstract="true">
 		<categories>
 			<li>Mashed_Ashlands_TerrainPatch</li>
@@ -11,7 +11,7 @@
 	<TileMutatorDef ParentName="Mashed_Ashlands_BasePatch">
 		<defName>Mashed_Ashlands_AshMuddy</defName>
 		<label>muddy ash</label>
-		<description>This area contains more muddy ash than normal.</description>
+		<description>Large patches of muddy ash are scattered throughout this area.</description>
 		<biomeWhitelist>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
@@ -74,6 +74,7 @@
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
