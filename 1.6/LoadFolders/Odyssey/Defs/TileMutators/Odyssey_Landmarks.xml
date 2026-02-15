@@ -59,7 +59,6 @@
 		<commonality>0.2</commonality>
 		<nameMaker>Mashed_Ashlands_NamerLandmark_DryLake</nameMaker>
 		<mutatorChances>
-			<Mashed_Ashlands_StriderShells_Increased>0.05</Mashed_Ashlands_StriderShells_Increased>
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Stockpile>0.05</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
@@ -70,6 +69,9 @@
 			<AncientUplink>0.02</AncientUplink>
 			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.1</Junkyard>
 		</mutatorChances>
+		<comboLandmarkMutators>
+			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
+		</comboLandmarkMutators>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_DryLake]==========-->
 	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
