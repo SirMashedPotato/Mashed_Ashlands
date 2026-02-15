@@ -63,11 +63,11 @@
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_TaintedSea]==========-->
-	<!--<TileMutatorDef>
+	<TileMutatorDef>
 		<defName>Mashed_Ashlands_TaintedSea</defName>
 		<label>tainted sea</label>
-		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedSea</workerClass>
 		<description>The coastal waters here have been boiled by volcanic activity, turning the sea an ominious red colour, and decimating fish.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedSea</workerClass>
 		<categories>
 			<li>Mashed_Ashlands_Coast</li>
 			<li>Fish</li>
@@ -76,11 +76,11 @@
 		<genOrder>1000</genOrder>
 		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
 		<biomeWhitelist>
-			Blighted
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
-			Volcanic
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -89,5 +89,5 @@
 		<coastSidesRange>1~6</coastSidesRange>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<fishPopulationFactor>0</fishPopulationFactor>
-	</TileMutatorDef>-->
+	</TileMutatorDef>
 </Defs>

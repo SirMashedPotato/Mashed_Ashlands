@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_WaterShallowTaintedOcean]==========-->
-	<TerrainDef ParentName="WaterShallowBase">
+	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_TaintedWaterBase">
 		<defName>Mashed_Ashlands_WaterShallowTaintedOcean</defName>
 		<label>shallow tainted ocean water</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowTaintedWaterRamp</texturePath>
@@ -16,6 +16,7 @@
 		</tags>
 		<meltSnowRadius>3</meltSnowRadius>
 		<heatPerTick>0.006</heatPerTick>
+		<floodTerrain>Mashed_Ashlands_TaintedFloodwater</floodTerrain>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_WaterDeepTaintedOcean]==========-->
 	<TerrainDef ParentName="WaterDeepBase">
@@ -30,7 +31,8 @@
 		<tags>
 			<li>Ocean</li>
 		</tags>
-	<meltSnowRadius>3</meltSnowRadius>
-	<heatPerTick>0.006</heatPerTick>
+		<meltSnowRadius>3</meltSnowRadius>
+		<heatPerTick>0.006</heatPerTick>
+		<floodTerrain>Mashed_Ashlands_TaintedFloodwater</floodTerrain>
 	</TerrainDef>
 </Defs>
