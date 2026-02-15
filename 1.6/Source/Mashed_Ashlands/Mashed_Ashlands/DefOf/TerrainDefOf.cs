@@ -13,10 +13,12 @@ namespace Mashed_Ashlands
 
         public static TerrainDef Mashed_Ashlands_CrackedAshSoil;
         public static TerrainDef Mashed_Ashlands_AshSand;
+        public static TerrainDef Mashed_Ashlands_CoralSand;
         public static TerrainDef Mashed_Ashlands_CrackedAshSoilBlighted;
         public static TerrainDef Mashed_Ashlands_AshSandBlighted;
         public static TerrainDef Mashed_Ashlands_CrackedAshSoilVolcanic;
         public static TerrainDef Mashed_Ashlands_AshSandVolcanic;
+        public static TerrainDef Mashed_Ashlands_CoralSandVolcanic;
 
         public static TerrainDef Mashed_Ashlands_SulphuricSand;
         public static TerrainDef Mashed_Ashlands_ShallowSulphuricWater;
@@ -27,6 +29,7 @@ namespace Mashed_Ashlands
         public static TerrainDef Mashed_Ashlands_AshMud;
         public static TerrainDef Mashed_Ashlands_ThermalMud;
 
+        public static TerrainDef Mashed_Ashlands_ShallowVolcanicOceanWater;
         [MayRequireOdyssey]
         public static TerrainDef Mashed_Ashlands_WaterShallowTaintedOcean;
         [MayRequireOdyssey]

@@ -29,6 +29,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_LandCoralOasis]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_LandCoralOasis</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s coral oasis</li>
+				<li>terrain_word(p=2)->coral oasis</li>
+				<li>terrain_word(p=2)->coral grove</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>

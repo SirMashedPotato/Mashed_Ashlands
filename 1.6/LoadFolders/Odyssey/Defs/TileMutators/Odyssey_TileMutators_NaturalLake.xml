@@ -17,7 +17,7 @@
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
-	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut" >
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
 		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
 		<label>desiccated lake</label>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeBlighted</workerClass>
@@ -27,7 +27,7 @@
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
-	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut" >
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
 		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
 		<label>desiccated lake</label>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeVolcanic</workerClass>
@@ -36,6 +36,39 @@
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LandCoralOasis]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralMutatorBase" Name="Mashed_Ashlands_LandCoralOasisBase">
+		<defName>Mashed_Ashlands_LandCoralOasis</defName>
+		<label>land coral oasis</label>
+		<description>Land coral can be found growing around bodies of sea water.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LandCoralOasis</workerClass>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<coastSidesRange>1~4</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LandCoralOasisVolcanic]==========-->
+	<!--<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralOasisBase">
+		<defName>Mashed_Ashlands_LandCoralOasisVolcanic</defName>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LandCoralOasisVolcanic</workerClass>
+		<biomeWhitelist Inherit="false">
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>-->
 	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SludgePond</defName>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_LandCoralMutatorBase]==========-->
+	<TileMutatorDef Name="Mashed_Ashlands_LandCoralMutatorBase" Abstract="true">
+		<additionalWildPlants>
+			<Mashed_Ashlands_Plant_TubeCoralPink>1</Mashed_Ashlands_Plant_TubeCoralPink>
+			<Mashed_Ashlands_Plant_TubeCoralTeal>1</Mashed_Ashlands_Plant_TubeCoralTeal>
+			<Mashed_Ashlands_Plant_LandCoralTree>3</Mashed_Ashlands_Plant_LandCoralTree>
+			<Mashed_Ashlands_Plant_GlowingTubeCoral MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_Plant_GlowingTubeCoral>
+			<Mashed_Ashlands_Plant_GlowingLandCoralTree MayRequire="Ludeon.RimWorld.Biotech">3</Mashed_Ashlands_Plant_GlowingLandCoralTree>
+		</additionalWildPlants>
+	</TileMutatorDef>
+</Defs>
