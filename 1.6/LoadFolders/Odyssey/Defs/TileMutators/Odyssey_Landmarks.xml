@@ -257,7 +257,8 @@
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Mashed_Ashlands_AshPlantGrove>0.05</Mashed_Ashlands_AshPlantGrove>
-			<Mashed_Ashlands_AshMuddy>0.03</Mashed_Ashlands_AshMuddy>
+			<Mashed_Ashlands_AshRocky>0.03</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_AshSandy>0.03</Mashed_Ashlands_AshSandy>
 		</mutatorChances>
 	</LandmarkDef>
 </Defs>
