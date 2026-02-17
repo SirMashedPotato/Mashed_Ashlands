@@ -99,6 +99,32 @@
 			<Mashed_Ashlands_FetcherflyHives_Increased>0.05</Mashed_Ashlands_FetcherflyHives_Increased>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_MiasmicPools]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_MiasmicPools</defName>
+		<label>miasmic pools</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_MiasmicPools</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.1</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_MiasmicPools</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_Miasmic Required="True"/>
+			<Fish_Decreased>0.75</Fish_Decreased>
+			<AnimalLife_Decreased>0.5</AnimalLife_Decreased>
+			<PlantLife_Increased>0.25</PlantLife_Increased>
+			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
+			<FoggyMutator>0.05</FoggyMutator>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.05</Mashed_Ashlands_SulphuricAtmosphereMutator>
+			<DryGround>0</DryGround>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Mashed_Ashlands_ThermalMudPools>0.1</Mashed_Ashlands_ThermalMudPools>
+			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
+		</comboLandmarkMutators>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_LandCoralOasis]==========-->
 	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
 		<defName>Mashed_Ashlands_LandCoralOasis</defName>
@@ -172,6 +198,7 @@
 			<Fish_Decreased>0.5</Fish_Decreased>
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<Mashed_Ashlands_Miasmic>0.03</Mashed_Ashlands_Miasmic>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->

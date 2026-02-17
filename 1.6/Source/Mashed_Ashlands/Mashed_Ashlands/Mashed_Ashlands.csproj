@@ -158,6 +158,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_MerchantMeeting.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_MiasmicEruption.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_SiltStriderCrossing.cs" />
     <Compile Include="IngestionOutcomeDoer\IngestionOutcomeDoer_GiveThoughtSeasonal.cs" />

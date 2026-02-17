@@ -84,6 +84,7 @@
 			<Mashed_Ashlands_AshMuddy>0.05</Mashed_Ashlands_AshMuddy>
 			<Mashed_Ashlands_AshRocky>0.05</Mashed_Ashlands_AshRocky>
 			<Mashed_Ashlands_AshSandy>0.05</Mashed_Ashlands_AshSandy>
+			<Mashed_Ashlands_Miasmic>0.03</Mashed_Ashlands_Miasmic>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -95,6 +96,7 @@
 			<Mashed_Ashlands_SulphuricSprings>0.02</Mashed_Ashlands_SulphuricSprings>
 			<Mashed_Ashlands_ThermalMudPools>0.02</Mashed_Ashlands_ThermalMudPools>
 			<Mashed_Ashlands_ThermalPond>0.02</Mashed_Ashlands_ThermalPond>
+			<Mashed_Ashlands_Miasmic>0.03</Mashed_Ashlands_Miasmic>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">

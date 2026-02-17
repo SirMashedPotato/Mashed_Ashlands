@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using Verse;
 
 namespace Mashed_Ashlands
 {
@@ -11,6 +10,8 @@ namespace Mashed_Ashlands
             DefOfHelper.EnsureInitializedInCtor(typeof(TileMutatorDefOf));
         }
 
+        [MayRequireOdyssey]
+        public static TileMutatorDef Mashed_Ashlands_Miasmic;
         [MayRequireOdyssey]
         public static TileMutatorDef Mashed_Ashlands_StriderCrossing;
     }

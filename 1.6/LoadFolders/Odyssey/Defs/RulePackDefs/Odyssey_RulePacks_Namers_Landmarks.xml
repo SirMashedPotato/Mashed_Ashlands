@@ -29,6 +29,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s dusttide</li>
+				<li>terrain_word(p=2)->dusttide</li>
+				<li>terrain_word(p=2)->dust wastes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmark_LandCoralOasis]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_LandCoralOasis</defName>
@@ -43,17 +57,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_MiasmicPools]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
+		<defName>Mashed_Ashlands_NamerLandmark_MiasmicPools</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name(p=0.2)->[NamePerson]'s dusttide</li>
-				<li>terrain_word(p=2)->dusttide</li>
-				<li>terrain_word(p=2)->dust wastes</li>
+				<li>r_name(p=0.2)->[NamePerson]'s demise</li>
+				<li>r_name(p=0.2)->[NamePerson]'s doom</li>
+				<li>r_name(p=0.2)->[NamePerson]'s folly</li>
+				<li>terrain_word(p=2)->miasmic pools</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

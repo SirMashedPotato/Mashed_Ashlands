@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1870658632
+CRC: 2774566121
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bee3d70e4eb27e99947c3683c7c5a4ee
+    Hash: 6f7dd3e0c608eb519f07ccca2660375f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: bee3d70e4eb27e99947c3683c7c5a4ee
+    Hash: 6f7dd3e0c608eb519f07ccca2660375f
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -794,6 +794,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_HackleLoPlant/Mashed_Ashlands_HackleLoPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_BlueEntoloma/Mashed_Ashlands_BlueEntoloma_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_BlackAntherFlower/Mashed_Ashlands_BlackAntherFlower_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_MiasmicPools.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Coral/Mashed_Ashlands_TubeCoralTeal/Mashed_Ashlands_TubeCoralTeal_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Icons/Genes/Mashed_Ashlands_Gene_FrailAshResistance.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingScathecrawPlant/Mashed_Ashlands_GlowingScathecrawPlant_b.png
@@ -875,6 +876,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant/Mashed_Ashlands_SomnaliusFern_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_MarshmerrowPlant/Mashed_Ashlands_MarshmerrowPlant_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees_Stumps/Mashed_Ashlands_ParasolSmashed/Mashed_Ashlands_ParasolSmashed_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_SulphuricLake.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandDuneGrass/Mashed_Ashlands_AshlandDuneGrass_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_TorchbugWallLamp/Mashed_Ashlands_TorchbugWallLamp_MenuIcon.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxGlowingCalfPack_south.png
