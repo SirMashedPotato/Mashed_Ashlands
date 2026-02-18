@@ -56,6 +56,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Immature</immatureGraphicPath>
 			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_LeaflessImmature</leaflessImmatureGraphicPath>
@@ -118,6 +119,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_Immature</immatureGraphicPath>
 			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap_LeaflessImmature</leaflessImmatureGraphicPath>
@@ -143,6 +145,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_Immature</immatureGraphicPath>
 			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield_LeaflessImmature</leaflessImmatureGraphicPath>
@@ -196,6 +199,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_Immature</immatureGraphicPath>
 			<leaflessImmatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap_LeaflessImmature</leaflessImmatureGraphicPath>
@@ -231,6 +235,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Immature</immatureGraphicPath>
 			<maxGrowthTemperature>90</maxGrowthTemperature>

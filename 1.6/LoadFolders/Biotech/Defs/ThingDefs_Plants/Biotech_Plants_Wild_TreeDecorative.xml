@@ -23,6 +23,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantCoprinus_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 		</plant>
 		<comps>
@@ -55,6 +56,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantAshlandFungus_Snowy</snowOverlayGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

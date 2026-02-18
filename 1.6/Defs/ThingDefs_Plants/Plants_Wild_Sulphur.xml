@@ -47,6 +47,7 @@
 			<visualSizeRange>1.3~2.4</visualSizeRange>
 			<harvestWork>600</harvestWork>
 			<completelyIgnoreFertility>true</completelyIgnoreFertility>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantCoprinus_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>

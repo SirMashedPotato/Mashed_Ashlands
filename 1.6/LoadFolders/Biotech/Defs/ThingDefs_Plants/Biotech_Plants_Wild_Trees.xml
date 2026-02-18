@@ -56,6 +56,7 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
+			<snowOverlayGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap_Snowy</snowOverlayGraphicPath>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap_Immature</immatureGraphicPath>
 		</plant>
 	</ThingDef>
