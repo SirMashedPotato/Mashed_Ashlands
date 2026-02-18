@@ -100,6 +100,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_SulphuricLake]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_SulphuricLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s sulphuric lake</li>
+				<li>terrain_word(p=2)->sulphuric lake</li>
+				<li>terrain_word->seething lake</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmark_SulphuricPond]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_SulphuricPond</defName>

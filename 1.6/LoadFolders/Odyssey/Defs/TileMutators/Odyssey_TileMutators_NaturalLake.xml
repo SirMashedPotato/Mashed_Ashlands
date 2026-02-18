@@ -86,6 +86,26 @@
 		</biomeWhitelist>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricLake]==========-->
+	 <TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_SulphuricLake</defName>
+		<label>sulphuric lake</label>
+		<description>A large body of suphuric water.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricLake</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SulphuricPond</defName>
