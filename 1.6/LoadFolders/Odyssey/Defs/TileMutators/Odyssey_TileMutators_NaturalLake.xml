@@ -19,7 +19,7 @@
 	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
 		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
-		<label>desiccated lake</label>
+		<label>blighted desiccated lake</label>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeBlighted</workerClass>
 		<biomeWhitelist Inherit="false">
 			<!-- Blighted -->
@@ -29,7 +29,7 @@
 	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
 		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
-		<label>desiccated lake</label>
+		<label>volcanic desiccated lake</label>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeVolcanic</workerClass>
 		<biomeWhitelist Inherit="false">
 			<!-- Volcanic -->
