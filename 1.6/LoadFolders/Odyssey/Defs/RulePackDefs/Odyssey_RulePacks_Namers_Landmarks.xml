@@ -43,16 +43,16 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmark_LandCoralOasis]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_LandCoralPools]==========-->
 	<RulePackDef>
-		<defName>Mashed_Ashlands_NamerLandmark_LandCoralOasis</defName>
+		<defName>Mashed_Ashlands_NamerLandmark_LandCoralPools</defName>
 		<include>
 			<li>WorldFeatureNamerCommon</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name(p=0.2)->[NamePerson]'s coral oasis</li>
-				<li>terrain_word(p=2)->coral oasis</li>
+				<li>r_name(p=0.2)->[NamePerson]'s coral pools</li>
+				<li>terrain_word(p=2)->coral pools</li>
 				<li>terrain_word(p=2)->coral grove</li>
 			</rulesStrings>
 		</rulePack>

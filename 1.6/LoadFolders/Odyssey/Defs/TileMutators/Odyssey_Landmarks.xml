@@ -125,32 +125,33 @@
 			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
 		</comboLandmarkMutators>
 	</LandmarkDef>
-	<!-- ==========[Mashed_Ashlands_LandCoralOasis]==========-->
+	<!-- ==========[Mashed_Ashlands_LandCoralPools]==========-->
 	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
-		<defName>Mashed_Ashlands_LandCoralOasis</defName>
-		<label>land coral oasis</label>
-		<iconTexturePath>World/Landmarks/Mashed_Ashlands_LandCoralOasis</iconTexturePath>
+		<defName>Mashed_Ashlands_LandCoralPools</defName>
+		<label>land coral pools</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_LandCoralPools</iconTexturePath>
 		<commonality>0.1</commonality>
-		<nameMaker>Mashed_Ashlands_NamerLandmark_LandCoralOasis</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_LandCoralPools</nameMaker>
 		<mutatorChances>
-			<Mashed_Ashlands_LandCoralOasis Required="True"/>
+			<Mashed_Ashlands_LandCoralPools Required="True"/>
 			<Mashed_Ashlands_LandCoral>0.5</Mashed_Ashlands_LandCoral>
 			<Fish_Increased>0.25</Fish_Increased>
 			<AnimalLife_Increased>0.05</AnimalLife_Increased>
 			<PlantLife_Increased>0.05</PlantLife_Increased>
 			<Mashed_Ashlands_AshyMutator>0.1</Mashed_Ashlands_AshyMutator>
 			<WindyMutator>0.05</WindyMutator>
+			<PlantLife_Decreased>0</PlantLife_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
-	<!-- ==========[Mashed_Ashlands_LandCoralOasisVolcanic]==========-->
+	<!-- ==========[Mashed_Ashlands_LandCoralPoolsVolcanic]==========-->
 	<!--<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
-		<defName>Mashed_Ashlands_LandCoralOasisVolcanic</defName>
-		<label>land coral oasis</label>
-		<iconTexturePath>World/Landmarks/Mashed_Ashlands_LandCoralOasisVolcanic</iconTexturePath>
+		<defName>Mashed_Ashlands_LandCoralPoolsVolcanic</defName>
+		<label>land coral pools</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_LandCoralPoolsVolcanic</iconTexturePath>
 		<commonality>0.05</commonality>
-		<nameMaker>Mashed_Ashlands_NamerLandmark_LandCoralOasis</nameMaker>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_LandCoralPools</nameMaker>
 		<mutatorChances>
-			<Mashed_Ashlands_LandCoralOasisVolcanic Required="True"/>
+			<Mashed_Ashlands_LandCoralPoolsVolcanic Required="True"/>
 			<Mashed_Ashlands_LandCoralVolcanic>0.5</Mashed_Ashlands_LandCoralVolcanic>
 			<Fish_Increased>0.15</Fish_Increased>
 			<AnimalLife_Increased>0.03</AnimalLife_Increased>

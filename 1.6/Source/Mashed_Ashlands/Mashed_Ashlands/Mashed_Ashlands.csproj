@@ -248,8 +248,8 @@
     <Compile Include="TileMutatorWorker\Lake\TileMutatorWorker_DryLake.cs" />
     <Compile Include="TileMutatorWorker\Lake\TileMutatorWorker_DryLakeBlighted.cs" />
     <Compile Include="TileMutatorWorker\Lake\TileMutatorWorker_DryLakeVolcanic.cs" />
-    <Compile Include="TileMutatorWorker\Springs\TileMutatorWorker_LandCoralOasis.cs" />
-    <Compile Include="TileMutatorWorker\Springs\TileMutatorWorker_LandCoralOasisVolcanic.cs" />
+    <Compile Include="TileMutatorWorker\Springs\TileMutatorWorker_LandCoralPools.cs" />
+    <Compile Include="TileMutatorWorker\Springs\TileMutatorWorker_LandCoralPoolsVolcanic.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_TaintedSea.cs" />
     <Compile Include="TileMutatorWorker\TileMutatorWorker_UndercaveEntrance.cs" />
     <Compile Include="TileMutatorWorker\Springs\TileMutatorWorker_Springs.cs" />
