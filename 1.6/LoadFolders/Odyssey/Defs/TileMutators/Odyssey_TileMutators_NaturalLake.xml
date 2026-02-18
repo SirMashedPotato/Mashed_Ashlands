@@ -15,6 +15,7 @@
 		</biomeWhitelist>
 		<coastSidesRange>0~0</coastSidesRange>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<preventsPondGeneration>true</preventsPondGeneration>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
