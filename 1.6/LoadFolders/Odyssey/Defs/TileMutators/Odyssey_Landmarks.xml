@@ -59,6 +59,7 @@
 		<commonality>0.2</commonality>
 		<nameMaker>Mashed_Ashlands_NamerLandmark_DryLake</nameMaker>
 		<mutatorChances>
+			<DryGround/>
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Stockpile>0.05</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
