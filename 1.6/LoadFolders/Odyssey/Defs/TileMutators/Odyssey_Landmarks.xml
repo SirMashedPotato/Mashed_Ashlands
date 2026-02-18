@@ -86,6 +86,7 @@
 	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
 		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
 		<iconTexturePath>World/Landmarks/Mashed_Ashlands_DryLakeBlighted</iconTexturePath>
+		<commonality>0.1</commonality>
 		<mutatorChances>
 			<Mashed_Ashlands_DryLakeBlighted Required="True"/>
 		</mutatorChances>
@@ -94,9 +95,11 @@
 	<LandmarkDef ParentName="Mashed_Ashlands_DryLakeBase">
 		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
 		<iconTexturePath>World/Landmarks/Mashed_Ashlands_DryLakeVolcanic</iconTexturePath>
+		<commonality>0.1</commonality>
 		<mutatorChances>
 			<Mashed_Ashlands_DryLakeVolcanic Required="True"/>
 			<Mashed_Ashlands_FetcherflyHives_Increased>0.05</Mashed_Ashlands_FetcherflyHives_Increased>
+			<Mashed_Ashlands_VolcanicDebrisField>0.05</Mashed_Ashlands_VolcanicDebrisField>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_MiasmicPools]==========-->
