@@ -32,8 +32,8 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
-			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Snowy</snowOverlayGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

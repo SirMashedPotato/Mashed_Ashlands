@@ -23,8 +23,8 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
-			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantCoprinus_Snowy</snowOverlayGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantSulphuricCoprinus_Leafless</leaflessGraphicPath>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_GiantCoprinus_Snowy</snowOverlayGraphicPath>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
