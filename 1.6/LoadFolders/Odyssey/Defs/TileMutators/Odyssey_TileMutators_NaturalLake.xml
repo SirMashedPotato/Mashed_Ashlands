@@ -71,6 +71,34 @@
 			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>-->
+	<!-- ==========[Mashed_Ashlands_LavaPools]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_LavaPools</defName>
+		<label>lava pools</label>
+		<description>Small bodies of molten rock are present in this area.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LavaPools</workerClass>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SludgePond</defName>

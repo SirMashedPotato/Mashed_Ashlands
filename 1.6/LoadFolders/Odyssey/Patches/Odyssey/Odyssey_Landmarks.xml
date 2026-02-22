@@ -68,6 +68,8 @@
 		<xpath>Defs/LandmarkDef[@Name="BaseLavaLake" 
 			or defName="LavaFlow"]/mutatorChances</xpath>
 		<value>
+			<Mashed_Ashlands_AshyMutator>0.1</Mashed_Ashlands_AshyMutator>
+			<Mashed_Ashlands_AshFertile>0.05</Mashed_Ashlands_AshFertile>
 			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 			<Mashed_Ashlands_FetcherflyHives_Increased>0.1</Mashed_Ashlands_FetcherflyHives_Increased>

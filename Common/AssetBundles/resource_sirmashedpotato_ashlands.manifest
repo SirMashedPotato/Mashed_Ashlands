@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2801447844
+CRC: 3659327850
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f5056fa1d345a0569ed2b6286a52b72d
+    Hash: 65609f0d7ce1fa551c5b1193271d6344
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f5056fa1d345a0569ed2b6286a52b72d
+    Hash: 65609f0d7ce1fa551c5b1193271d6344
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -445,6 +445,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkGlowing_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/UI/Designators/Mashed_Ashlands_Restore.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshlandPitcher/Mashed_Ashlands_Plant_AshlandPitcher_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_LavaPools.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater/Mashed_Ashlands_RawCrabeater_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_ScathecrawPlant/Mashed_Ashlands_ScathecrawPlant_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_MeadowFlowerRed/Mashed_Ashlands_MeadowFlowerRed_d.png

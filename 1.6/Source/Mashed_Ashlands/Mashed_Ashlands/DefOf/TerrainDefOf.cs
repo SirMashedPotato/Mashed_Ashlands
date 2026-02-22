@@ -12,6 +12,7 @@ namespace Mashed_Ashlands
         }
 
         public static TerrainDef Mashed_Ashlands_CrackedAshSoil;
+        public static TerrainDef Mashed_Ashlands_ScorchedAshSoilVolcanic;
         public static TerrainDef Mashed_Ashlands_AshSand;
         public static TerrainDef Mashed_Ashlands_CoralSand;
         public static TerrainDef Mashed_Ashlands_CrackedAshSoilBlighted;

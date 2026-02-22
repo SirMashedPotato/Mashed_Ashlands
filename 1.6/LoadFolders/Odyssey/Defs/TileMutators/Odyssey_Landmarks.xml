@@ -64,6 +64,7 @@
 			<Stockpile>0.05</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<Mashed_Ashlands_DustyMutator>0.05</Mashed_Ashlands_DustyMutator>
 			<SunnyMutator>0.25</SunnyMutator>
 			<WetClimate>0</WetClimate>
 			<Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.02</Pollution_Increased>
@@ -164,6 +165,18 @@
 			<WindyMutator>0.05</WindyMutator>
 		</mutatorChances>
 	</LandmarkDef>-->
+	<!-- ==========[Mashed_Ashlands_LavaPools]==========-->
+	<LandmarkDef ParentName="BaseLavaLake">
+		<defName>Mashed_Ashlands_LavaPools</defName>
+		<label>lava pools</label>
+		<drawScale>0.8</drawScale>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_LavaPools</iconTexturePath>
+		<commonality>0.1</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_LavaPools</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_LavaPools Required="True"/>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_StriderGraveyard</defName>
