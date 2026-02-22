@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkAncientLavaFlow]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_AncientLavaFlow]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_AncientLavaFlow</defName>
 		<include>
@@ -15,7 +15,7 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_DryLake]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_DryLake</defName>
 		<include>
@@ -29,7 +29,7 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_Dusttide]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
 		<include>
@@ -72,7 +72,7 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkStriderGraveyard]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_StriderGraveyard]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_StriderGraveyard</defName>
 		<include>

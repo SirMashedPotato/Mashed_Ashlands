@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 553168879
+CRC: 2801447844
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cf3d7765f7b4a4119445ada2c5503dee
+    Hash: f5056fa1d345a0569ed2b6286a52b72d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: cf3d7765f7b4a4119445ada2c5503dee
+    Hash: f5056fa1d345a0569ed2b6286a52b72d
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -918,6 +918,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_GrazelandAshlands/Hills/Impassable.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldHighland_Immature/Mashed_Ashlands_TreeNetchShieldHighland_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_BlightedAshlands.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_EmperorCrabShell.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedInkCap.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_Ashlands.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawSleeperCoffinfish/Mashed_Ashlands_RawSleeperCoffinfish_a.png
