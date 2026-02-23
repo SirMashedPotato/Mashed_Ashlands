@@ -3,6 +3,8 @@
 	<!-- ==========[Mashed_Ashlands_AshDeposit]==========-->
 	<TileMutatorDef ParentName="GL_LandformBase">
 		<defName>Mashed_Ashlands_AshDeposit</defName>
+		<label>ash deposit</label>
+		<description>A small deposit of ash, allowing the natural growth of ashland native plants.</description>
 		<categories>
 			<li>Mashed_Ashlands_AshDeposit</li>
 		</categories>
@@ -10,6 +12,8 @@
 	<!-- ==========[Mashed_Ashlands_BlightedAshDeposit]==========-->
 	<TileMutatorDef ParentName="GL_LandformBase">
 		<defName>Mashed_Ashlands_BlightedAshDeposit</defName>
+		<label>blighted ash deposit</label>
+		<description>A small deposit of blighted ash, allowing the natural growth of ashland native plants.</description>
 		<categories>
 			<li>Mashed_Ashlands_AshDeposit</li>
 		</categories>
@@ -17,6 +21,8 @@
 	<!-- ==========[Mashed_Ashlands_RichAshDeposit]==========-->
 	<TileMutatorDef ParentName="GL_LandformBase">
 		<defName>Mashed_Ashlands_RichAshDeposit</defName>
+		<label>rich ash deposit</label>
+		<description>A small deposit of rich ash, allowing the natural growth of ashland native plants.</description>
 		<categories>
 			<li>Mashed_Ashlands_AshDeposit</li>
 		</categories>
@@ -24,6 +30,8 @@
 	<!-- ==========[Mashed_Ashlands_VolcanicAshDeposit]==========-->
 	<TileMutatorDef ParentName="GL_LandformBase">
 		<defName>Mashed_Ashlands_VolcanicAshDeposit</defName>
+		<label>volcanic ash deposit</label>
+		<description>A small deposit of volcanic ash, allowing the natural growth of ashland native plants.</description>
 		<categories>
 			<li>Mashed_Ashlands_AshDeposit</li>
 		</categories>
