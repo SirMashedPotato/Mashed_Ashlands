@@ -23,6 +23,8 @@ namespace Mashed_Ashlands
                         radius: Props.radius,
                         damType: Props.damageDef,
                         damAmount: Props.damageAmount,
+                        postExplosionGasType: Props.gasType ?? null,
+                        postExplosionGasAmount: Props.gasAmount,
                         instigator: p,
                         ignoredThings: new List<Thing> { p },
                         damageFalloff: true
