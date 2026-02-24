@@ -79,6 +79,7 @@
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicBadlandAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicBasaltHillsAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicCoralCoastAshlands.cs" />
+    <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicGroveAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicSulphurPitsAshlands.cs" />
     <Compile Include="BiomeWorker\Blighted\BiomeWorker_BlightedBogAshlands.cs" />
     <Compile Include="BiomeWorker\Thriving\BiomeWorker_ForestAshlands.cs" />
