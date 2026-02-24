@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_SteamPuffFleck]========== -->
-	<FleckDef ParentName="FleckBase_Thrown">
+	<FleckDef ParentName="FleckBase_Thrown" Name="Mashed_Ashlands_SteamPuffFleckBase">
 		<defName>Mashed_Ashlands_SteamPuffFleck</defName>
 		<graphicData>
 			<texPath>Things/Mote/AirPuff</texPath>
@@ -11,5 +11,12 @@
 		<fadeInTime>1</fadeInTime>
 		<solidTime>2</solidTime>
 		<fadeOutTime>1</fadeOutTime>
+	</FleckDef>
+	<!-- ==========[Mashed_Ashlands_SteamPuffAltFleck]========== -->
+	<FleckDef ParentName="Mashed_Ashlands_SteamPuffFleck">
+		<defName>Mashed_Ashlands_SteamPuffAltFleck</defName>
+		<graphicData>
+			<color>1,1,1,0.3</color>
+		</graphicData>
 	</FleckDef>
 </Defs>

@@ -16,6 +16,15 @@
 		</tags>
 		<meltSnowRadius>3</meltSnowRadius>
 		<heatPerTick>0.006</heatPerTick>
+		<throwFleckChance>0.1</throwFleckChance>
+		<fleckData>
+			<fleck>Mashed_Ashlands_SteamPuffAltFleck</fleck>
+			<velocitySpeedRange>0.2~0.4</velocitySpeedRange>
+			<velocityAngleRange>0~360</velocityAngleRange>
+			<rotationSpeedRange>0</rotationSpeedRange>
+			<solidTicksRange>4~8</solidTicksRange>
+			<scaleRange>4~8</scaleRange>
+		</fleckData>
 		<floodTerrain>Mashed_Ashlands_TaintedFloodwater</floodTerrain>
 	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_WaterDeepTaintedOcean]==========-->
@@ -33,6 +42,15 @@
 		</tags>
 		<meltSnowRadius>3</meltSnowRadius>
 		<heatPerTick>0.006</heatPerTick>
+		<throwFleckChance>0.2</throwFleckChance>
+		<fleckData>
+			<fleck>Mashed_Ashlands_SteamPuffAltFleck</fleck>
+			<velocitySpeedRange>0.2~0.4</velocitySpeedRange>
+			<velocityAngleRange>0~360</velocityAngleRange>
+			<rotationSpeedRange>0</rotationSpeedRange>
+			<solidTicksRange>5~10</solidTicksRange>
+			<scaleRange>6~12</scaleRange>
+		</fleckData>
 		<floodTerrain>Mashed_Ashlands_TaintedFloodwater</floodTerrain>
 	</TerrainDef>
 </Defs>
