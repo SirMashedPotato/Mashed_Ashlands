@@ -13,7 +13,7 @@
 		<fadeOutTime>1</fadeOutTime>
 	</FleckDef>
 	<!-- ==========[Mashed_Ashlands_SteamPuffAltFleck]========== -->
-	<FleckDef ParentName="Mashed_Ashlands_SteamPuffFleck">
+	<FleckDef ParentName="Mashed_Ashlands_SteamPuffFleckBase">
 		<defName>Mashed_Ashlands_SteamPuffAltFleck</defName>
 		<graphicData>
 			<color>1,1,1,0.3</color>
