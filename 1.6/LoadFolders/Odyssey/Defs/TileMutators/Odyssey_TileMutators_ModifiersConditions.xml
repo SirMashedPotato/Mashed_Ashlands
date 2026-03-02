@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Miasmic]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_Miasmic</defName>
+		<label>miasmic</label>
+		<description>A large buildup of volcanic miasma can be found trapped underwater here. Tectonic activity will periodically disturb the miasma, bathing the area in toxic gasses for a few days.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			 <li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<!-- Volcanic -->
+			 <li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+</Defs>

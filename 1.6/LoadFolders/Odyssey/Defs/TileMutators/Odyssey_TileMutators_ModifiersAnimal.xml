@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_CliffRacerHabitat]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_CliffRacerHabitat</defName>
+		<label>cliff racer congregation</label>
+		<description>This area is used as a nesting grounds by cliff racers. Their increased presence has driven away larger animals.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_CliffRacerHabitat</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<minHilliness>SmallHills</minHilliness>
+		<animalDensityRange>0.6~10</animalDensityRange>
+		<categories>
+			<li>Mashed_Ashlands_AnimalHabitat</li>
+			<li>AnimalLife</li>
+			<li>VEE_AnimalDensities</li>
+		</categories>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LostKwamaWorkers]==========-->
 	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
 		<defName>Mashed_Ashlands_LostKwamaWorkers</defName>

@@ -265,6 +265,12 @@
 		<riverbankTerrain>Mashed_Ashlands_AshRiverbankBlighted</riverbankTerrain>
 		<mudTerrain>Mashed_Ashlands_AshMudBlighted</mudTerrain>
 		<gravelTerrain>Mashed_Ashlands_AshGravelBlighted</gravelTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowVolcanicWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepVolcanicWater</waterDeepTerrain>
+		<oceanShallowTerrain>Mashed_Ashlands_ShallowVolcanicOceanWater</oceanShallowTerrain>
+		<oceanDeepTerrain>Mashed_Ashlands_DeepVolcanicOceanWater</oceanDeepTerrain>
+		<waterMovingShallowTerrain>Mashed_Ashlands_ShallowMovingVolcanicWater</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>Mashed_Ashlands_DeepMovingVolcanicWater</waterMovingChestDeepTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
 		<!-- Misc -->
 		<settlementSelectionWeight>0.3</settlementSelectionWeight>
@@ -332,6 +338,12 @@
 		<riverbankTerrain>Mashed_Ashlands_AshRiverbankVolcanic</riverbankTerrain>
 		<mudTerrain>Mashed_Ashlands_AshMudVolcanic</mudTerrain>
 		<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowVolcanicWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepVolcanicWater</waterDeepTerrain>
+		<oceanShallowTerrain>Mashed_Ashlands_ShallowVolcanicOceanWater</oceanShallowTerrain>
+		<oceanDeepTerrain>Mashed_Ashlands_DeepVolcanicOceanWater</oceanDeepTerrain>
+		<waterMovingShallowTerrain>Mashed_Ashlands_ShallowMovingVolcanicWater</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>Mashed_Ashlands_DeepMovingVolcanicWater</waterMovingChestDeepTerrain>
 		<riverbankSizeRange>6~8</riverbankSizeRange>
 		<!-- Fishing -->
 		<fishTypes>

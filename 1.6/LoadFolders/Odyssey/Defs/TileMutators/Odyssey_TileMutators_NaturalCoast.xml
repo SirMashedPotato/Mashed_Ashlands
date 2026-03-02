@@ -17,7 +17,7 @@
 		<overrideLakeBeachTerrain>Mashed_Ashlands_Basalt_Rough</overrideLakeBeachTerrain>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LandCoral]==========-->
-	<TileMutatorDef Name="Mashed_Ashlands_LandCoralBase">
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralMutatorBase" Name="Mashed_Ashlands_LandCoralCoastBase">
 		<defName>Mashed_Ashlands_LandCoral</defName>
 		<label>land coral</label>
 		<workerClass>TileMutatorWorker_Patches</workerClass>
@@ -30,13 +30,6 @@
 		<coastSidesRange>1~6</coastSidesRange>
 		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSand</overrideCoastalBeachTerrain>
 		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSand</overrideLakeBeachTerrain>
-		<additionalWildPlants>
-			<Mashed_Ashlands_Plant_TubeCoralPink>1</Mashed_Ashlands_Plant_TubeCoralPink>
-			<Mashed_Ashlands_Plant_TubeCoralTeal>1</Mashed_Ashlands_Plant_TubeCoralTeal>
-			<Mashed_Ashlands_Plant_LandCoralTree>3</Mashed_Ashlands_Plant_LandCoralTree>
-			<Mashed_Ashlands_Plant_GlowingTubeCoral MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_Plant_GlowingTubeCoral>
-			<Mashed_Ashlands_Plant_GlowingLandCoralTree MayRequire="Ludeon.RimWorld.Biotech">3</Mashed_Ashlands_Plant_GlowingLandCoralTree>
-		</additionalWildPlants>
 		<biomeWhitelist>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
@@ -51,7 +44,7 @@
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LandCoralVolcanic]==========-->
-	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralBase">
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralCoastBase">
 		<defName>Mashed_Ashlands_LandCoralVolcanic</defName>
 		<overrideCoastalBeachTerrain>Mashed_Ashlands_CoralSandVolcanic</overrideCoastalBeachTerrain>
 		<overrideLakeBeachTerrain>Mashed_Ashlands_CoralSandVolcanic</overrideLakeBeachTerrain>
@@ -63,11 +56,11 @@
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_TaintedSea]==========-->
-	<!--<TileMutatorDef>
+	<TileMutatorDef>
 		<defName>Mashed_Ashlands_TaintedSea</defName>
 		<label>tainted sea</label>
-		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedSea</workerClass>
 		<description>The coastal waters here have been boiled by volcanic activity, turning the sea an ominious red colour, and decimating fish.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedSea</workerClass>
 		<categories>
 			<li>Mashed_Ashlands_Coast</li>
 			<li>Fish</li>
@@ -76,11 +69,11 @@
 		<genOrder>1000</genOrder>
 		<chanceOnNonLandmarkTile>0.06</chanceOnNonLandmarkTile>
 		<biomeWhitelist>
-			Blighted
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
-			Volcanic
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -89,5 +82,5 @@
 		<coastSidesRange>1~6</coastSidesRange>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<fishPopulationFactor>0</fishPopulationFactor>
-	</TileMutatorDef>-->
+	</TileMutatorDef>
 </Defs>

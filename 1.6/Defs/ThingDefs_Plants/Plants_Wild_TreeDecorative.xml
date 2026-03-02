@@ -33,6 +33,7 @@
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
+			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Snowy</snowOverlayGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

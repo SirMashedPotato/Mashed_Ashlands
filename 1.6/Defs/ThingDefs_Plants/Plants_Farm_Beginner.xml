@@ -234,6 +234,7 @@
 			<fertilityMin>1</fertilityMin>
 			<topWindExposure>0.2</topWindExposure>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
+			<snowOverlayGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_ParasolBush_Snowy</snowOverlayGraphicPath>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_TramaShrub]==========-->

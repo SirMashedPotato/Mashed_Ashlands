@@ -78,6 +78,20 @@
 			<MarketValue>13</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_RachnoidGlowingFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_InsectEggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_RachnoidGlowingUnfertilized</defName>
+		<label>glowing rachnoid egg (unfert.)</label>
+		<description>An unfertilised glowing rachnoid egg. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(109,141,109)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_SandcrabGlowingUnfertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_SandcrabGlowingUnfertilized</defName>

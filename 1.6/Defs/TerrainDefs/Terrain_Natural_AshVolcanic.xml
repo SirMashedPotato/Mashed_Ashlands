@@ -22,7 +22,7 @@
 		<defName>Mashed_Ashlands_CrackedAshSoilVolcanic</defName>
 		<label>cracked volcanic ash</label>
 		<texturePath>Terrain/Surfaces/AshVolcanic/Mashed_Ashlands_CrackedAshSoilVolcanic</texturePath>
-		<fertility>0.4</fertility>
+		<fertility>0.1</fertility>
 		<tags>
 			<li>Mashed_Ashlands_AshCracked</li>
 		</tags>

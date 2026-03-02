@@ -41,6 +41,7 @@
 				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_RichAshSoil</li>
 					<li>Mashed_Ashlands_MossyAshSoil</li>
+					<li>Mashed_Ashlands_CoralSand</li>
 					<li>Mashed_Ashlands_SulphuricSand</li>
 				</disallowedTerrainDefsForWild>
 			</li>

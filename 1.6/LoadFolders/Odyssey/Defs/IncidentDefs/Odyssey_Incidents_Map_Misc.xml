@@ -1,5 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_MiasmicEruption]==========-->
+	<IncidentDef>
+		<defName>Mashed_Ashlands_MiasmicEruption</defName>
+		<label>miasmic eruption</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Mashed_Ashlands.IncidentWorker_MiasmicEruption</workerClass>
+		<gameCondition>Mashed_Ashlands_VolcanicMiasma</gameCondition>
+		<letterLabel>miasmic eruption</letterLabel>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>2</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<earliestDay>15</earliestDay>
+		<durationDays>1~3</durationDays>
+	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_SiltStriderCrossing]==========-->
 	<IncidentDef ParentName="Mashed_Ashlands_SiltStriderPassesBase">
 		<defName>Mashed_Ashlands_SiltStriderCrossing</defName>

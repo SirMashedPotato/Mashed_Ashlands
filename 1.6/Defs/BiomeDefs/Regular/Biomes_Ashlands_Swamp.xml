@@ -71,7 +71,6 @@
 		<terrainPatchMakers>
 			<li>
 				<perlinFrequency>0.04</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>MarshyTerrain</terrain>
@@ -93,19 +92,7 @@
 				</thresholds>
 			</li>
 			<li>
-				<!-- Used for tile mutators that disable ponds, so the map is still vaguely swampy -->
-				<perlinFrequency>0.04</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>MarshyTerrain</terrain>
-						<min>0.32</min>
-						<max>999</max>
-					</li>
-				</thresholds>
-			</li>
-			<li>
 				<perlinFrequency>0.027</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>Mashed_Ashlands_RichAshSoil</terrain>
@@ -136,7 +123,6 @@
 			</li>
 			<li>
 				<perlinFrequency>0.035</perlinFrequency>
-				<isPond>true</isPond>
 				<thresholds>
 					<li>
 						<terrain>MarshyTerrain</terrain>

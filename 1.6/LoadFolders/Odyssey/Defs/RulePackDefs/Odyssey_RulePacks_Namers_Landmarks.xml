@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkAncientLavaFlow]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_AncientLavaFlow]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_AncientLavaFlow</defName>
 		<include>
@@ -15,7 +15,21 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkDusttide]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_DryLake]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_DryLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s desiccated lake</li>
+				<li>terrain_word(p=2)->desiccated lake</li>
+				<li>terrain_word(p=2)->barren lake</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_Dusttide]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_Dusttide</defName>
 		<include>
@@ -29,7 +43,49 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	<!-- ==========[Mashed_Ashlands_NamerLandmarkStriderGraveyard]==========-->
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_LandCoralPools]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_LandCoralPools</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s coral pools</li>
+				<li>terrain_word(p=2)->coral pools</li>
+				<li>terrain_word(p=2)->coral grove</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_LavaPools]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_LavaPools</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s lava pools</li>
+				<li>terrain_word(p=2)->lava pools</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_MiasmicPools]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_MiasmicPools</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s demise</li>
+				<li>r_name(p=0.2)->[NamePerson]'s doom</li>
+				<li>r_name(p=0.2)->[NamePerson]'s folly</li>
+				<li>terrain_word(p=2)->miasmic pools</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_StriderGraveyard]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_StriderGraveyard</defName>
 		<include>
@@ -54,6 +110,20 @@
 				<li>r_name(p=0.2)->[NamePerson]'s sludge pond</li>
 				<li>terrain_word(p=2)->sludge pond</li>
 				<li>terrain_word->blighted pond</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_SulphuricLake]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_SulphuricLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s sulphuric lake</li>
+				<li>terrain_word(p=2)->sulphuric lake</li>
+				<li>terrain_word->seething lake</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

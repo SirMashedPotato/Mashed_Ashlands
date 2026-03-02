@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ShallowVolcanicWater]==========-->
+	<TerrainDef ParentName="WaterShallow" Name="Mashed_Ashlands_VolcanicWaterBase">
+		<defName>Mashed_Ashlands_ShallowVolcanicWater</defName>
+		<label>shallow volcanic water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRampPolluted</pollutedTexturePath>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepVolcanicWater]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_DeepVolcanicWater</defName>
+		<label>deep volcanic water</label>
+		<renderPrecedence>395</renderPrecedence>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRampPolluted</pollutedTexturePath>
+		<forcePassableByFlyingPawns>true</forcePassableByFlyingPawns>
+		<gravshipReplacementTerrain>Mashed_Ashlands_ShallowVolcanicWater</gravshipReplacementTerrain>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ShallowVolcanicOceanWater]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_ShallowVolcanicOceanWater</defName>
+		<label>shallow volcanic ocean water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>396</renderPrecedence>
+		<driesTo>Gravel</driesTo>
+		<canFreeze>false</canFreeze>
+		<waterBodyType>Saltwater</waterBodyType>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepVolcanicOceanWater]==========-->
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>Mashed_Ashlands_DeepVolcanicOceanWater</defName>
+		<label>deep volcanic ocean water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRampPolluted</pollutedTexturePath>
+		<renderPrecedence>397</renderPrecedence>
+		<waterBodyType>Saltwater</waterBodyType>
+		<gravshipReplacementTerrain>Mashed_Ashlands_ShallowVolcanicOceanWater</gravshipReplacementTerrain>
+		<tags>
+			<li>Ocean</li>
+		</tags>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ShallowMovingVolcanicWater]==========-->
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>Mashed_Ashlands_ShallowMovingVolcanicWater</defName>
+		<label>shallow moving volcanic water</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowVolcanicWaterRampPolluted</pollutedTexturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>398</renderPrecedence>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+			<li>WaterFreshShallow</li>
+			<li>WaterFreshShallowMoving</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_DeepMovingVolcanicWater]==========-->
+	<TerrainDef ParentName="WaterChestDeepBase">
+		<defName>Mashed_Ashlands_DeepMovingVolcanicWater</defName>
+		<label>chest-deep moving volcanic water</label>
+		<renderPrecedence>399</renderPrecedence>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRamp</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepVolcanicWaterRampPolluted</pollutedTexturePath>
+		<affordances>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>River</li>
+		</tags>
+		<waterDepthShaderParameters>
+			<_UseWaterOffset>1</_UseWaterOffset>
+		</waterDepthShaderParameters>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_VolcanicFloodwater</floodTerrain>
+	</TerrainDef>
+</Defs>

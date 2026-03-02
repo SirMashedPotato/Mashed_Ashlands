@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using RimWorld.Planet;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -7,6 +8,15 @@ namespace Mashed_Ashlands
     {
         public TileMutatorWorker_TaintedSea(TileMutatorDef def) : base(def)
         {
+        }
+
+        public override bool IsValidTile(PlanetTile tile, PlanetLayer layer)
+        {
+            if (Find.World.LakeDirectionAt(tile).IsValid)
+            {
+                return false;
+            }
+            return base.IsValidTile(tile, layer);
         }
 
         public override void GeneratePostTerrain(Map map)
