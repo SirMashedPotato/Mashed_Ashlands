@@ -4,8 +4,11 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
@@ -14,10 +17,12 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
 		<value>
-			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
@@ -26,6 +31,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="ToxicLake"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 		</value>
@@ -34,7 +40,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
@@ -43,23 +51,34 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[Plateau]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Plateau"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -69,17 +88,21 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Cliffs"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -90,14 +113,18 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 		</value>
 	</Operation>
@@ -105,17 +132,21 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="TerraformingScar"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -126,17 +157,21 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[@Name="BaseCoastMut"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
 			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -147,11 +182,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="CoastalAtoll"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
@@ -160,7 +198,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[@Name="BaseLavaLakeMut"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -171,7 +216,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="LavaFlow"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -182,7 +234,10 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Marshy"]/biomeWhitelist</xpath>
 		<value>
+			<!-- Regular -->
+			 <li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 		</value>
