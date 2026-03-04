@@ -220,6 +220,7 @@
 			<Mashed_Ashlands_Miasmic>0.03</Mashed_Ashlands_Miasmic>
 			<Marshy>0</Marshy>
 		</mutatorChances>
+		<comboLandmarkMutators Inerit="false"/>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SulphuricLake]==========-->
 	<LandmarkDef>
@@ -270,6 +271,7 @@
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
 			<Marshy>0</Marshy>
 		</mutatorChances>
+		<comboLandmarkMutators Inerit="false"/>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_SpringsBase]==========-->
 	<LandmarkDef Name="Mashed_Ashlands_SpringsBase" Abstract="true">
@@ -342,5 +344,6 @@
 			<Mashed_Ashlands_AshSandy>0.03</Mashed_Ashlands_AshSandy>
 			<Marshy>0</Marshy>
 		</mutatorChances>
+		<comboLandmarkMutators Inerit="false"/>
 	</LandmarkDef>
 </Defs>
