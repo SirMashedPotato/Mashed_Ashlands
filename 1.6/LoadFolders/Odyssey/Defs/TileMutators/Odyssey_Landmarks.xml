@@ -175,6 +175,7 @@
 		<nameMaker>Mashed_Ashlands_NamerLandmark_LavaPools</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_LavaPools Required="True"/>
+			<Marshy>0</Marshy>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
@@ -288,6 +289,7 @@
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<AnimalHabitat>0.15</AnimalHabitat>
 			<ArcheanTrees>0.01</ArcheanTrees>
+			<Marshy>0</Marshy>
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Mashed_Ashlands_EbonyDeposits>0.06</Mashed_Ashlands_EbonyDeposits>
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
