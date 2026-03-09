@@ -45,6 +45,10 @@
 				<glowColor>(239,97,26,0)</glowColor>
 			</li>
 		</comps>
+		<plant>
+			<sowWork IsNull="true"/>
+			<sowTags Inherit="false"/>
+		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_PurpleCrystal]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
