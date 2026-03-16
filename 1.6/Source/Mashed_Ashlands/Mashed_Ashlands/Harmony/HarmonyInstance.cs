@@ -24,6 +24,11 @@ namespace Mashed_Ashlands
                 harmony.Patch(AccessTools.Method(AccessTools.TypeByName("Building_Beehouse"), "CheckRainLevels"), prefix: new HarmonyMethod(typeof(Compat_AlphaBees), nameof(Compat_AlphaBees.RimBees_Beehouse_AshStormPatch)));
             }
 
+            if (ModsConfig.IsActive("andromeda.niceplantsmenu"))
+            {
+                harmony.Patch(AccessTools.Method(AccessTools.TypeByName("Dialog_PlantBrowser"), "SewAvailable"), postfix: new HarmonyMethod(typeof(Compat_NicePlantsMenu), nameof(Compat_NicePlantsMenu.NicePlantsMenu_PlantBrowser_SewAvailable)));
+            }
+
             ///Patching in support for SeedsPlease Lite, otherwise seeds are required to select plants, but never used when sowing them
             if (ModsConfig.IsActive("owlchemist.seedspleaselite") || ModsConfig.IsActive("evyatar108.seedspleaseliteredux"))
             {

@@ -16,15 +16,21 @@ namespace Mashed_Ashlands
         {
             if (__result && obj is Zone)
             {
-                if (obj is Zone_GrowingAsh)
-                {
-                    __result = plantDef.plant.sowTags.Contains("Mashed_Ashlands_Ash");
-                }
-                else if (Mashed_Ashlands_ModSettings.OnlySowOnAsh)
-                {
-                    __result = !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive");
-                }
+                __result = CanSowPlantInZone(plantDef, obj as Zone);
             }
+        }
+        public static bool CanSowPlantInZone(ThingDef plantDef, Zone zone)
+        {
+            if (zone is Zone_GrowingAsh)
+            {
+                return plantDef.plant.sowTags.Contains("Mashed_Ashlands_Ash");
+            }
+            else if (Mashed_Ashlands_ModSettings.OnlySowOnAsh)
+            {
+                return !plantDef.plant.sowTags.Contains("Mashed_Ashlands_AshExclusive");
+            }
+
+            return true;
         }
     }
 }

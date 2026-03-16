@@ -141,6 +141,7 @@
     <Compile Include="Gene\ConditionalStatAffecter\ConditionalStatAffecter_InAshStorm.cs" />
     <Compile Include="GenStep\GenStep_ScatterAnimals.cs" />
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
+    <Compile Include="Harmony\Compat_NicePlantsMenu.cs" />
     <Compile Include="Harmony\Patch_ApplyBedThoughts.cs" />
     <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
