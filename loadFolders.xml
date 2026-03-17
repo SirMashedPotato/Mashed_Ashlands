@@ -110,5 +110,6 @@
 		<li IfModActive="vanillaexpanded.recycling">1.6/LoadFolders/VE_Recycling</li>
 		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
 		<li IfModActive="m00nl1ght.geologicallandforms">1.6/LoadFolders/GeologicalLandforms</li>
+		<li IfModActive="dankpyon.medieval.overhaul">1.6/LoadFolders/MedievalOverhaul</li>
 	</v1.6>
 </loadFolders>

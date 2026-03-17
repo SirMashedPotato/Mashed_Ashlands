@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ==========[DankPyon_CraftSugar_]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="DankPyon_CraftSugar_Manual" or defName="DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Mashed_Ashlands_RawMarshmerrow</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="DankPyon_CraftSugar_Manual" or defName="DankPyon_CraftSugar" or defName="DankPyon_CraftSugarBulk"]/ingredients/li/filter/thingDefs[li="DankPyon_Sugarcane"]</xpath>
+		<value>
+			<li>Mashed_Ashlands_RawMarshmerrow</li>
+		</value>
+	</Operation>
+</Patch>
