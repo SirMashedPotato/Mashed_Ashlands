@@ -4,7 +4,30 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/MedievalOverhaul.SeperateHideList[defName="WhiteList"]/blackListLeathers</xpath>
 		<value>
+			<li>Mashed_Ashlands_ParasolWoodLog</li>
+			<li>Mashed_Ashlands_StriderChitin</li>
+			<li>Mashed_Ashlands_KwamaChitin</li>
 			<li>Mashed_Ashlands_NetchLeather</li>
+			<li>Mashed_Ashlands_NixLeather</li>
+			<li>Mashed_Ashlands_NixOxChitin</li>
+			<li>Mashed_Ashlands_RachnoidSilk</li>
+			<li>Mashed_Ashlands_ShalkChitin</li>
+		</value>
+	</Operation>
+	<!-- ==========[MedievalOverhaul.HideGraphicList]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MedievalOverhaul.HideGraphicList[defName="HideGraphicList"]/scaleHidesRaceDef</xpath>
+		<value>
+			<li>Mashed_Ashlands_Daedroth</li>
+			<li>Mashed_Ashlands_Ogrim</li>
+			<li>Mashed_Ashlands_Durzog</li>
+			<li>Mashed_Ashlands_Guar</li>
+			<li>Mashed_Ashlands_Kagouti</li>
+			<li>Mashed_Ashlands_Alit</li>
+			<li>Mashed_Ashlands_CliffRacer</li>
+			<li>Mashed_Ashlands_Rotumbo</li>
+			<li>Mashed_Ashlands_Scuttler</li>
+			<li>Mashed_Ashlands_Wormmouth</li>
 		</value>
 	</Operation>
 </Patch>
