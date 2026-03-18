@@ -94,6 +94,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -124,6 +125,7 @@
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">

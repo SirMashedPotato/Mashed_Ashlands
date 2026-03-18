@@ -19,6 +19,8 @@
 			<growDays>8</growDays>
 			<harvestYield>6</harvestYield>
 			<harvestedThingDef>Mashed_Ashlands_RawGlowingAshFungus</harvestedThingDef>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
 			<harvestTag>Standard</harvestTag>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
