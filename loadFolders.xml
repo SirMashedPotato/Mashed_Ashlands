@@ -111,5 +111,6 @@
 		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
 		<li IfModActive="m00nl1ght.geologicallandforms">1.6/LoadFolders/GeologicalLandforms</li>
 		<li IfModActive="dankpyon.medieval.overhaul">1.6/LoadFolders/MedievalOverhaul</li>
+		<li IfModActive="andromeda.niceplantsmenu">1.6/LoadFolders/NicePlantsMenu</li>
 	</v1.6>
 </loadFolders>

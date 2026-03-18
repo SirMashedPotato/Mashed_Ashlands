@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KreshToCloth]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_KreshToCloth</defName>
+		<ingredientDefName>Mashed_Ashlands_KreshCloth</ingredientDefName>
+		<productDefName>Cloth</productDefName>
+		<productCount>20</productCount>
+		<ingredientCount>10</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_KreshToMOLinen]==========-->
+	<NicePlantsMenu.TrackingRecipeDef MayRequire="dankpyon.medieval.overhaul">
+		<defName>Mashed_Ashlands_KreshToMOLinen</defName>
+		<ingredientDefName>Mashed_Ashlands_KreshCloth</ingredientDefName>
+		<productDefName>DankPyon_Linen</productDefName>
+		<productCount>10</productCount>
+		<ingredientCount>10</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_MuckToMedicine]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_MuckToMedicine</defName>
+		<ingredientDefName>Mashed_Ashlands_RawMuck</ingredientDefName>
+		<productDefName>MedicineHerbal</productDefName>
+		<productCount>10</productCount>
+		<ingredientCount>5</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+</Defs>
