@@ -9,6 +9,7 @@
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_DuskCapMauve]==========-->
@@ -31,7 +32,6 @@
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
-			<purpose>Beauty</purpose>
 			<leaflessGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Leafless</leaflessGraphicPath>
 			<snowOverlayGraphicPath>Things/Plant/Trees_Decorative/Mashed_Ashlands_DuskCapMauve_Snowy</snowOverlayGraphicPath>
 		</plant>
