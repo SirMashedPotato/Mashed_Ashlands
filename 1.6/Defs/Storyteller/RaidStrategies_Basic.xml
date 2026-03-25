@@ -19,6 +19,15 @@
 					</points>
 				</selectionWeightPerPointsCurve>
 			</li>
+			<li MayRequire="vr.fantasy.biotech">
+				<faction>VR_Construct</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(500, 0)</li>
+						<li>(1000, 0.25)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
 		</selectionWeightCurvesPerFaction>
 		<pointsFactorCurve>
 			<points>
