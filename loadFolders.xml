@@ -80,7 +80,7 @@
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">Legacy/SeedsPleaseLiteTextures</li>
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.5/LoadFolders/SeedsPleaseLite</li>
 		<!-- MorrowRim Sound Patch -->
-		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.5/LoadFolders/MorrowRim_SoundPatch</li>
+		<li IfModActive="escp.morrowrim.soundpatch">1.5/LoadFolders/MorrowRim_SoundPatch</li>
 		<!-- Exploration Mode -->
 		<li IfModActive="thelastbulletbender.rwexploration">1.5/LoadFolders/ExplorationMode</li>
 		<!-- VE Recycling -->
@@ -105,7 +105,7 @@
 		<li IfModActive="vanillaexpanded.vexploratione">1.6/LoadFolders/VE_Landmarks</li>
 		<li IfModActive="syrchalis.processor.framework,vr.processor.framework">1.6/LoadFolders/SYR_ProcessorFramework</li>
 		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.6/LoadFolders/SeedsPleaseLite</li>
-		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.6/LoadFolders/MorrowRim_SoundPatch</li>
+		<li IfModActive="escp.morrowrim.soundpatch">1.6/LoadFolders/MorrowRim_SoundPatch</li>
 		<li IfModActive="thelastbulletbender.rwexploration">1.6/LoadFolders/ExplorationMode</li>
 		<li IfModActive="vanillaexpanded.recycling">1.6/LoadFolders/VE_Recycling</li>
 		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
