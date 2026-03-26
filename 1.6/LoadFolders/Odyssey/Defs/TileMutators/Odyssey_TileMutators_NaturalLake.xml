@@ -64,14 +64,14 @@
 		<coastSidesRange>1~4</coastSidesRange>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LandCoralPoolsVolcanic]==========-->
-	<!--<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralPoolsBase">
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralPoolsBase">
 		<defName>Mashed_Ashlands_LandCoralPoolsVolcanic</defName>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_LandCoralPoolsVolcanic</workerClass>
 		<biomeWhitelist Inherit="false">
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
-	</TileMutatorDef>-->
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LavaPools]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_LavaPools</defName>
