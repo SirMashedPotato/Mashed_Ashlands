@@ -42,8 +42,13 @@
 			<freshwater_Uncommon>
 				<Mashed_Ashlands_Fish_Gourami MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Gourami>
 				<Mashed_Ashlands_Fish_Mouthbrooder MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Mouthbrooder>
+				<Mashed_Ashlands_Fish_ToadstoolTilapia MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ToadstoolTilapia>
 			</freshwater_Uncommon>
 		</fishTypes>
+		<!-- Weather -->
+		<baseWeatherCommonalities>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+		</baseWeatherCommonalities>
 		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
@@ -94,6 +99,7 @@
 			<!-- Ground covers -->
 			<Plant_Grass>6</Plant_Grass>
 			<Mashed_Ashlands_Plant_CharredAshlandGrass>10</Mashed_Ashlands_Plant_CharredAshlandGrass>
+			<Mashed_Ashlands_Plant_AshlandDuneGrassDark>0.2</Mashed_Ashlands_Plant_AshlandDuneGrassDark>
 			<Mashed_Ashlands_Plant_AshlandFungus>0.2</Mashed_Ashlands_Plant_AshlandFungus>
 			<!-- Nutrition plants -->
 			<Mashed_Ashlands_Plant_AshYam>0.05</Mashed_Ashlands_Plant_AshYam>
@@ -118,9 +124,9 @@
 			<!-- Trees -->
 			<Plant_TreeCecropia>0.2</Plant_TreeCecropia>
 			<Plant_TreePalm>0.4</Plant_TreePalm>
-			<Mashed_Ashlands_Plant_TreeNetchShieldVibrant>0.6</Mashed_Ashlands_Plant_TreeNetchShieldVibrant>
+			<Mashed_Ashlands_Plant_TreeNetchShield>0.6</Mashed_Ashlands_Plant_TreeNetchShield>
 			<Mashed_Ashlands_Plant_TreeMilkcap>0.2</Mashed_Ashlands_Plant_TreeMilkcap>
-			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.1</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
+			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.4</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
 			<Mashed_Ashlands_BurnedStumpPermanent>0.05</Mashed_Ashlands_BurnedStumpPermanent>
@@ -141,10 +147,11 @@
 			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_TramaMass>
 			<!-- Polluted aesthetic plants -->
 			<Mashed_Ashlands_Plant_SporangiumFlowerOrange MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_Plant_SporangiumFlowerOrange>
+			<Mashed_Ashlands_Plant_SporangiumFlowerWhite MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_SporangiumFlowerWhite>
 			<!-- Polluted aquatic plants -->
 			<Mashed_Ashlands_Plant_GlowingAshreedWater MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingAshreedWater>
 			<!-- Polluted trees -->
-			 <Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.8</Mashed_Ashlands_GiantAshlandFungus>
+			<Mashed_Ashlands_GiantAshlandFungus MayRequire="Ludeon.RimWorld.Biotech">0.8</Mashed_Ashlands_GiantAshlandFungus>
 			<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.6</Mashed_Ashlands_GiantGlowingCoprinus>
 			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
 			<Mashed_Ashlands_Plant_TreeWeepingMouldcap MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_TreeWeepingMouldcap>
@@ -154,16 +161,17 @@
 			<!-- prey animals -->
 			<Mashed_Ashlands_BantamGuar>0.1</Mashed_Ashlands_BantamGuar>
 			<Mashed_Ashlands_Scuttler>0.3</Mashed_Ashlands_Scuttler>
-			<Mashed_Ashlands_AshHopper>0.2</Mashed_Ashlands_AshHopper>
+			<Mashed_Ashlands_AshHopper>0.1</Mashed_Ashlands_AshHopper>
+			<Mashed_Ashlands_Vvardvark>0.2</Mashed_Ashlands_Vvardvark>
 			<!-- herd animals -->
 			<Mashed_Ashlands_Thunderbug>0.1</Mashed_Ashlands_Thunderbug>
 			<Mashed_Ashlands_Firebug>0.05</Mashed_Ashlands_Firebug>
 			<Mashed_Ashlands_Shalk>0.1</Mashed_Ashlands_Shalk>
 			<Mashed_Ashlands_ShalkFungal>0.2</Mashed_Ashlands_ShalkFungal>
 			<Mashed_Ashlands_NixOx>0.1</Mashed_Ashlands_NixOx>
-			<Mashed_Ashlands_Netch>0.2</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Netch>0.3</Mashed_Ashlands_Netch>
 			<Mashed_Ashlands_Guar>0.3</Mashed_Ashlands_Guar>
-			<Mashed_Ashlands_Rotumbo>0.3</Mashed_Ashlands_Rotumbo>
+			<Mashed_Ashlands_Rotumbo>0.2</Mashed_Ashlands_Rotumbo>
 			<Mashed_Ashlands_Wormmouth>0.1</Mashed_Ashlands_Wormmouth>
 			<!-- predators -->
 			<Mashed_Ashlands_NixHound>0.3</Mashed_Ashlands_NixHound>
