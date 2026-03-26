@@ -16,8 +16,7 @@ namespace Mashed_Ashlands
                 return -100f;
             }
 
-            return 100f;
-            return (JungleBiomeWorker(biome, tile, planetTile) + ExtraBiomeWorker(biome, tile, planetTile)) / 2f;
+            return JungleBiomeWorker(biome, tile, planetTile);
         }
     }
 }
