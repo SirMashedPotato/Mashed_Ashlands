@@ -22,6 +22,17 @@
 		<canFreeze>false</canFreeze>
 		<driesTo/>
 	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicThermalMudFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ThermalMudVolcanicBase">
+		<defName>Mashed_Ashlands_ThermalMudVolcanicFloodwater</defName>
+		<label>volcanic mud floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
 	<TerrainDef ParentName="Mashed_Ashlands_MarshBase">
 		<defName>Mashed_Ashlands_MarshFloodwater</defName>

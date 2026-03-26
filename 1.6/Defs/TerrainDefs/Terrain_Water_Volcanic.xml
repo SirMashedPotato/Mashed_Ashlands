@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_ThermalMudVolcanic]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ThermalMudBase" Name="Mashed_Ashlands_ThermalMudVolcanicBase">
+		<defName>Mashed_Ashlands_ThermalMudVolcanic</defName>
+		<label>volcanic thermal mud</label>
+		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_VolcanicThermalMudRamp</texturePath>
+		<driesTo>Mashed_Ashlands_RichAshSoilVolcanic</driesTo>
+		<floodTerrain MayRequire="Ludeon.RimWorld.Odyssey">Mashed_Ashlands_ThermalMudVolcanicFloodwater</floodTerrain>
+		<heatPerTick>0.004</heatPerTick>
+	</TerrainDef>
 	<!-- ==========[Mashed_Ashlands_ShallowVolcanicWater]==========-->
 	<TerrainDef ParentName="WaterShallow" Name="Mashed_Ashlands_VolcanicWaterBase">
 		<defName>Mashed_Ashlands_ShallowVolcanicWater</defName>

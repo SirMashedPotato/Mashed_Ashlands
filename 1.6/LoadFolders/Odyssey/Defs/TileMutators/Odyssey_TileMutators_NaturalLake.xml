@@ -191,7 +191,7 @@
 		<coastSidesRange>0~0</coastSidesRange>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
-	<TileMutatorDef>
+	<TileMutatorDef Name="Mashed_Ashlands_ThermalMudPoolsBase">
 		<defName>Mashed_Ashlands_ThermalMudPools</defName>
 		<label>thermal mud pools</label>
 		<description>Bodies of thermally heated mud are present in this area.</description>
@@ -215,6 +215,16 @@
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPoolsVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_ThermalMudPoolsBase">
+		<defName>Mashed_Ashlands_ThermalMudPoolsVolcanic</defName>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalMudPoolsVolcanic</workerClass>
+		<biomeWhitelist Inherit="False">
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
 	<TileMutatorDef ParentName="BaseLakeMut">

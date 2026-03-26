@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3305179385
+CRC: 1125970328
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 704a49f4b4c81ca9af050546cfa81aad
+    Hash: d95db1e0bc877fa1baa22f7dc17b8a8b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 704a49f4b4c81ca9af050546cfa81aad
+    Hash: d95db1e0bc877fa1baa22f7dc17b8a8b
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -1193,6 +1193,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Achievements/Mashed_AchievementAshlands_BondNetch.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerOrange/Mashed_Ashlands_SporangiumFlowerOrange_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SiltStrider/Mashed_Ashlands_SiltStriderPack_north.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Surfaces/Water/Mashed_Ashlands_VolcanicThermalMudRamp.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingParasolBush/Mashed_Ashlands_GlowingParasolBush_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandGrass/Mashed_Ashlands_AshlandGrass_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Vertical_east.png
@@ -1493,6 +1494,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_ComberryPlant/Mashed_Ashlands_ComberryPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_AshenJazbayPrecursor/Mashed_Ashlands_AshenJazbayPrecursor_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawShalkBrotherCrayfish/Mashed_Ashlands_RawShalkBrotherCrayfish_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_ThermalMudPoolsVolcanic.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedAshYam.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_AshYamPlant_Immature/Mashed_Ashlands_AshYamPlant_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeSpongecap/Mashed_Ashlands_TreeSpongecap_a.png

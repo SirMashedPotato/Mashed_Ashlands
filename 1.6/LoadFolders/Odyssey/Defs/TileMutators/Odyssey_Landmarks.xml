@@ -328,6 +328,18 @@
 			<Fish_Decreased>0.25</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPoolsVolcanic]==========-->
+	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
+		<defName>Mashed_Ashlands_ThermalMudPoolsVolcanic</defName>
+		<label>volcanic thermal mud pools</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_ThermalMudPoolsVolcanic</iconTexturePath>
+		<commonality>0.15</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_ThermalMudPools</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_ThermalMudPoolsVolcanic Required="True"/>
+			<Fish_Decreased>0.25</Fish_Decreased>
+		</mutatorChances>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
 	<LandmarkDef ParentName="BaseLake">
 		<defName>Mashed_Ashlands_ThermalPond</defName>
