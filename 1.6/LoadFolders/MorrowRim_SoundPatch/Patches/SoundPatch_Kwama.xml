@@ -50,4 +50,29 @@
 			<soundAngry>MorrowRim_KwamaScrib_Angry</soundAngry>
 		</value>
 	</Operation>
+	<!-- ==========[Mashed_Ashlands_KwamaWorker]========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaWorker"]/race/lifeStageAges/li/soundWounded</xpath>
+		<value>
+			<soundWounded>MorrowRim_KwamaWorker_Wounded</soundWounded>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaWorker"]/race/lifeStageAges/li/soundDeath</xpath>
+		<value>
+			<soundDeath>MorrowRim_KwamaWorker_Death</soundDeath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaWorker"]/race/lifeStageAges/li/soundCall</xpath>
+		<value>
+			<soundCall>MorrowRim_KwamaWorker_Call</soundCall>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaWorker"]/race/lifeStageAges/li/soundAngry</xpath>
+		<value>
+			<soundAngry>MorrowRim_KwamaWorker_Angry</soundAngry>
+		</value>
+	</Operation>
 </Patch>
