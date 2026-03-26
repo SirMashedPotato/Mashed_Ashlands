@@ -30,6 +30,7 @@
 		<xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath>
 		<value>
 			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[WildPlants]==========-->
@@ -40,6 +41,7 @@
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[MineralRich]==========-->
@@ -63,6 +65,7 @@
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -76,6 +79,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -90,6 +94,7 @@
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[WindyMutator]==========-->
@@ -118,6 +123,7 @@
 			<li>Mashed_Ashlands_DustplainAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[DryGround]==========-->
@@ -132,6 +138,8 @@
 			 <li>Mashed_Ashlands_ForestAshlands</li>
 			 <li>Mashed_Ashlands_MeadowAshlands</li>
 			 <li>Mashed_Ashlands_ForestAshlands</li>
+			 <!-- Volcanic -->
+			  <li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[ObsidianDeposits]==========-->
@@ -152,6 +160,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>

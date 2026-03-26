@@ -36,6 +36,18 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanicGroveAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanicGroveAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->grove</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerVolcanicSulphurPitsAshlands</defName>

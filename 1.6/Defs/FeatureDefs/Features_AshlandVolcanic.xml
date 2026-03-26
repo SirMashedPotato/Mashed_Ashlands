@@ -30,6 +30,16 @@
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerVolcanicBasaltHillsAshlands</nameMaker>
 	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicGroveAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_VolcanicGroveAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerVolcanicGroveAshlands</nameMaker>
+	</FeatureDef>
 	<!-- ==========[Mashed_Ashlands_VolcanicSulphurPitsAshlandss]==========-->
 	<FeatureDef>
 		<defName>Mashed_Ashlands_VolcanicSulphurPitsAshlandss</defName>

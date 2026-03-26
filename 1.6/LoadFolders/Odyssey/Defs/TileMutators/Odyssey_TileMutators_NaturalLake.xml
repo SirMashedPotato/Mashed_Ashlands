@@ -36,6 +36,7 @@
 		<biomeWhitelist Inherit="false">
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_LandCoralPools]==========-->
@@ -94,6 +95,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
@@ -133,6 +135,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
@@ -157,6 +160,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 	</TileMutatorDef>
@@ -180,6 +184,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 		<preventsPondGeneration>true</preventsPondGeneration>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
@@ -232,6 +237,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 	</TileMutatorDef>

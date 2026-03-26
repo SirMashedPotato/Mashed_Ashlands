@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3894554282
+CRC: 3305179385
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 273c99bc4682bce4e5621aa8de36f431
+    Hash: 704a49f4b4c81ca9af050546cfa81aad
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 273c99bc4682bce4e5621aa8de36f431
+    Hash: 704a49f4b4c81ca9af050546cfa81aad
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -1238,6 +1238,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_Bloatspore/Mashed_Ashlands_BloatsporePlant_d.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_VolcanicGroveAshlands.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_BlueEntoloma/Mashed_Ashlands_BlueEntoloma_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawSiltfish/Mashed_Ashlands_RawSiltfish_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_LuminousRussula/Mashed_Ashlands_LuminousRussula_b.png
@@ -1533,10 +1534,10 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_MudcrabGlowing_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_ScathecrawPlant/Mashed_Ashlands_ScathecrawPlant_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap/Mashed_Ashlands_TreeWeepingMouldcap_a.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_MeadowRyePrecursor/Mashed_Ashlands_MeadowRyePrecursor_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_RachnoidGlowingGlow_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_DryLakeBlighted.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_GlowingCoprinus/Mashed_Ashlands_GlowingCoprinus_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_MeadowRyePrecursor/Mashed_Ashlands_MeadowRyePrecursor_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Grass/Mashed_Ashlands_CharredAshlandGrass/Mashed_Ashlands_CharredAshlandGrass_e.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Open_east.png
 Dependencies: []
