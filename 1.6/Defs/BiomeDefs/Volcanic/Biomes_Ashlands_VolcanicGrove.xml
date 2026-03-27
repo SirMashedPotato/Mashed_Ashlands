@@ -110,7 +110,7 @@
 			<!-- Resource plants -->
 			<Mashed_Ashlands_Plant_Kreshweed>0.05</Mashed_Ashlands_Plant_Kreshweed>
 			<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-			<Mashed_Ashlands_Plant_ParasolBush>0.05</Mashed_Ashlands_Plant_ParasolBush>
+			<Mashed_Ashlands_Plant_ParasolBush>0.1</Mashed_Ashlands_Plant_ParasolBush>
 			<Mashed_Ashlands_Plant_Chillshroom>0.05</Mashed_Ashlands_Plant_Chillshroom>
 			<Mashed_Ashlands_Plant_TramaShrub>0.2</Mashed_Ashlands_Plant_TramaShrub>
 			<!-- Aesthetic plants -->
@@ -119,14 +119,14 @@
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
 			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
 			<Mashed_Ashlands_Plant_AshlandFernGreen>0.2</Mashed_Ashlands_Plant_AshlandFernGreen>
-			<Mashed_Ashlands_Plant_Glowstalk>0.03</Mashed_Ashlands_Plant_Glowstalk>
 			<!-- Aquatic plants -->
 			<Mashed_Ashlands_Plant_AshreedWater>0.2</Mashed_Ashlands_Plant_AshreedWater>
 			<!-- Trees -->
 			<Plant_TreeCecropia>0.2</Plant_TreeCecropia>
 			<Plant_TreePalm>0.4</Plant_TreePalm>
 			<Mashed_Ashlands_Plant_TreeNetchShield>0.6</Mashed_Ashlands_Plant_TreeNetchShield>
-			<Mashed_Ashlands_Plant_TreeMilkcap>0.2</Mashed_Ashlands_Plant_TreeMilkcap>
+			<Mashed_Ashlands_Plant_TreeMilkcap>0.1</Mashed_Ashlands_Plant_TreeMilkcap>
+			<Mashed_Ashlands_Plant_TreeSpongecap>0.1</Mashed_Ashlands_Plant_TreeSpongecap>
 			<Mashed_Ashlands_Plant_TreeWeepingLeathercap>0.2</Mashed_Ashlands_Plant_TreeWeepingLeathercap>
 			<Mashed_Ashlands_Plant_TreeEmperorParasol>0.4</Mashed_Ashlands_Plant_TreeEmperorParasol>
 			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
