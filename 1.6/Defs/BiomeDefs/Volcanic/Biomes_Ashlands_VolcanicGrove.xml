@@ -17,7 +17,7 @@
 					<PackedDirt>Mashed_Ashlands_PackedAshVolcanic</PackedDirt>
 				</roadReplacers>
 			</li>
-			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">				<!-- todo -->
+			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">	
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
 				<materialRandomRotation>false</materialRandomRotation>
@@ -119,6 +119,7 @@
 			<Mashed_Ashlands_Plant_FoyadaFungus>0.1</Mashed_Ashlands_Plant_FoyadaFungus>
 			<Mashed_Ashlands_Plant_FireFern>0.05</Mashed_Ashlands_Plant_FireFern>
 			<Mashed_Ashlands_Plant_AshlandFernGreen>0.2</Mashed_Ashlands_Plant_AshlandFernGreen>
+			<Mashed_Ashlands_Plant_Glowstalk>0.03</Mashed_Ashlands_Plant_Glowstalk>
 			<!-- Aquatic plants -->
 			<Mashed_Ashlands_Plant_AshreedWater>0.2</Mashed_Ashlands_Plant_AshreedWater>
 			<!-- Trees -->
