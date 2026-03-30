@@ -29,7 +29,8 @@
 				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
 			</li>
 		</modExtensions>
-		<forageability>0.25</forageability>
+		<forageability>0.10</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
 		<animalDensity>0.4</animalDensity>
 		<plantDensity>0.08</plantDensity>
 		<!-- Fishing -->
