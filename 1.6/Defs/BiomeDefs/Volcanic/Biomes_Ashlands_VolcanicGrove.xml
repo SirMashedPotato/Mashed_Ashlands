@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsVolcanicBase">
 		<defName>Mashed_Ashlands_VolcanicGroveAshlands</defName>
 		<label>volcanic grove</label>
-		<description>A relatively hopsitable microclimate and pockets of rich volcanic ash have allowed flora to flourish here, despite the region being highly volcanically active. The abundance of flora in turns attracts a wide range of fauna.</description>
+		<description>A relatively hopsitable climate and pockets of rich volcanic ash have allowed flora to flourish here, despite the region being highly volcanically active. The abundance of flora in turns attracts a wide range of fauna.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicGroveAshlands</workerClass>
 		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicGroveAshlands</texture>
 		<modExtensions>
