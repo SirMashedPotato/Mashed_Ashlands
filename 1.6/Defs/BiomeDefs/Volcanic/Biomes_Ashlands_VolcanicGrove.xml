@@ -30,6 +30,8 @@
 				<biomeEmissionRate>0.6</biomeEmissionRate>
 			</li>
 		</modExtensions>
+		<forageability>0.75</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshFungus</foragedFood>
 		<animalDensity>3</animalDensity>
 		<plantDensity>0.8</plantDensity>
 		<!-- Fishing -->
