@@ -45,6 +45,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicGroveAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicGroveAshlands);
+            listing_Standard.Gap();
+
             /*
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanicCoralCoastAshlands".Translate(), ref settings.Mashed_Ashlands_EnableVolcanicCoralCoastAshlands);
             listing_Standard.Gap();
