@@ -44,6 +44,13 @@
 			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
+	<!-- ==========[WildTropicalPlants]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WildTropicalPlants"]/biomeWhitelist</xpath>
+		<value>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</value>
+	</Operation>
 	<!-- ==========[MineralRich]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="MineralRich"]/resourceBlacklist</xpath>

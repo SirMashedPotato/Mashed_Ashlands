@@ -82,6 +82,7 @@
 			or @Name="AbandonedColonyLandmarkBase"]/mutatorChances</xpath>
 		<value>
 			<Mashed_Ashlands_CliffRacerHabitat>0.06</Mashed_Ashlands_CliffRacerHabitat>
+			<Mashed_Ashlands_AshPlantGrove>0.06</Mashed_Ashlands_AshPlantGrove>
 			<Mashed_Ashlands_AshFertile>0.05</Mashed_Ashlands_AshFertile>
 			<Mashed_Ashlands_AshMuddy>0.05</Mashed_Ashlands_AshMuddy>
 			<Mashed_Ashlands_AshRocky>0.05</Mashed_Ashlands_AshRocky>
