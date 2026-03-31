@@ -140,6 +140,10 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestedThingDef>WoodLog</harvestedThingDef>
 			<harvestYield>3</harvestYield>
+			<harvestTag>Wood</harvestTag>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowMinSkill>8</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
