@@ -86,6 +86,8 @@
     <Compile Include="BiomeWorker\Regular\BiomeWorker_GrazelandAshlands.cs" />
     <Compile Include="BiomeWorker\Regular\BiomeWorker_SwampAshlands.cs" />
     <Compile Include="BiomeWorker\Volcanic\BiomeWorker_VolcanicAshlands.cs" />
+    <Compile Include="CompUse\CompUseEffect_SpawnPawn.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectSpawnPawn.cs" />
     <Compile Include="DefModExtension\IncidentProperties.cs" />
     <Compile Include="DefOf\DesignationDefOf.cs" />
     <Compile Include="DefOf\TileMutatorDefOf.cs" />

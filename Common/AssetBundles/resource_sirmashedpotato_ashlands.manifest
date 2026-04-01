@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3782756723
+CRC: 2243884572
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3f2ae36ce3c63950bde9aaba79458e1f
+    Hash: f892d2758d2dee898b9c980251d233be
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 3f2ae36ce3c63950bde9aaba79458e1f
+    Hash: f892d2758d2dee898b9c980251d233be
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -1412,6 +1412,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchCalf_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_SwampAshlands/Hills/SmallHills.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Rotumbo/Mashed_Ashlands_RotumboPack_south.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Special/Mashed_Ashlands_SigilStone.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeEmperorToxisol/Mashed_Ashlands_TreeEmperorToxisol_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeWeepingLeathercap_Leafless/Mashed_Ashlands_TreeWeepingLeathercap_Leafless_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Vvardvark/Mashed_Ashlands_VvardvarkMossy_east.png

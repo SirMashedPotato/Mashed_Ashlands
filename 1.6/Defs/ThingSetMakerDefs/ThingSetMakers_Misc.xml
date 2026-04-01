@@ -68,6 +68,20 @@
 						</fixedParams>
 					</thingSetMaker>
 				</li>
+				<!-- rare single items -->
+				<li>
+					<weight>0.03</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>Mashed_Ashlands_FlawedSigilStone</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
 			</options>
 		</root>
 	</ThingSetMakerDef>
