@@ -69,6 +69,23 @@
 			<li>Mashed_Ashlands_AshlandsAlcohol</li>
 		</tradeTags>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholCraftedBase]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase" Name="Mashed_Ashlands_AlcoholCraftedBase" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Brewing</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>Brewery</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<soundWorking>Recipe_Brewing</soundWorking>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<productCount>6</productCount>
+			<workAmount>1000</workAmount>
+		</recipeMaker>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_AlcoholHighBase]==========-->
 	<HediffDef Name="Mashed_Ashlands_AlcoholHighBase" Abstract="True">
 		<hediffClass>Hediff_Alcohol</hediffClass>
