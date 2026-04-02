@@ -45,6 +45,10 @@
 		<defName>Mashed_Ashlands_ComberryPrecursor</defName>
 		<label>comberry precursor</label>
 		<description>An alcohol precursor made from comberry. This substance needs to ferment in a fermenting barrel before it becomes drinkable shein.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholShein</ThingDef>
+			<ThingDef>Mashed_Ashlands_SheinFermentingBarrel</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_ComberryPrecursor</texPath>
 		</graphicData>
@@ -65,6 +69,10 @@
 		<defName>Mashed_Ashlands_AshenJazbayPrecursor</defName>
 		<label>jazbay precursor</label>
 		<description>An alcohol precursor made from ashen jazbay grapes. This substance needs to ferment in a fermenting barrel before it becomes drinkable emberbrand wine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholJazbayWine</ThingDef>
+			<ThingDef>Mashed_Ashlands_JazbayFermentingBarrel</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_AshenJazbayPrecursor</texPath>
 		</graphicData>
@@ -85,6 +93,10 @@
 		<defName>Mashed_Ashlands_MeadowRyePrecursor</defName>
 		<label>meadow rye precursor</label>
 		<description>An alcohol precursor made from meadow rye. This substance needs to ferment in a fermenting barrel before it becomes drinkable flin.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholFlin</ThingDef>
+			<ThingDef>Mashed_Ashlands_FlinFermentingBarrel</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_MeadowRyePrecursor</texPath>
 		</graphicData>
@@ -105,6 +117,10 @@
 		<defName>Mashed_Ashlands_SaltricePrecursor</defName>
 		<label>saltrice precursor</label>
 		<description>An alcohol precursor made from saltrice. This substance needs to ferment in a fermenting barrel before it becomes drinkable mazte.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholMazte</ThingDef>
+			<ThingDef>Mashed_Ashlands_MazteFermentingBarrel</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_SaltricePrecursor</texPath>
 		</graphicData>
@@ -125,6 +141,10 @@
 		<defName>Mashed_Ashlands_WickwheatPrecursor</defName>
 		<label>wickwheat precursor</label>
 		<description>An alcohol precursor made from wickwheat. This substance needs to ferment in a fermenting barrel before it becomes drinkable sujamma.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholSujamma</ThingDef>
+			<ThingDef>Mashed_Ashlands_SujammaFermentingBarrel</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_WickwheatPrecursor</texPath>
 		</graphicData>
