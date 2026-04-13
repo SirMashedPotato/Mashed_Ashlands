@@ -26,6 +26,7 @@
 		<biomeWhitelist Inherit="false">
 			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
@@ -85,6 +86,7 @@
 		<biomeWhitelist>
 			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
