@@ -146,7 +146,7 @@
 	<TileMutatorDef ParentName="BaseLakeMut">
 		<defName>Mashed_Ashlands_SulphuricPond</defName>
 		<label>sulphuric pond</label>
-		<description>A small body of suphuric water.</description>
+		<description>A small body of sulphuric water.</description>
 		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricPond</workerClass>
 		<categories>
 			<li>Groundwater</li>
