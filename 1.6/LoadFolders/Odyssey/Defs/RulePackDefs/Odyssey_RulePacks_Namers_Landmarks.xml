@@ -157,6 +157,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_TaintedLake]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_TaintedLake</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s tainted lake</li>
+				<li>terrain_word(p=2)->tainted lake</li>
+				<li>terrain_word->boiled lake</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmarkThermalMudPools]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_ThermalMudPools</defName>

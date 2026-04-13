@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2164587045
+CRC: 2907065210
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 26ab8940a990b2800f7290dc441999a8
+    Hash: 4cfe6b44aca152a3ad09808a829a9790
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 26ab8940a990b2800f7290dc441999a8
+    Hash: 4cfe6b44aca152a3ad09808a829a9790
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -289,6 +289,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Misc/Mashed_Ashlands_GlowingDraggleTails/Mashed_Ashlands_GlowingDraggleTails_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawPilgrimGoby/Mashed_Ashlands_RawPilgrimGoby_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawThornyCatfish/Mashed_Ashlands_RawThornyCatfish_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/World/Landmarks/Mashed_Ashlands_TaintedLake.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBettyGlowingGlow_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Book/Mashed_Ashlands_AshlandJournal/Mashed_Ashlands_AshlandJournal_Open_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedGlowingMalePack_east.png

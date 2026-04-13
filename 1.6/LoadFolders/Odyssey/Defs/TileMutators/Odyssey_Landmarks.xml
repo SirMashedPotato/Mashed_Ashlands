@@ -316,6 +316,37 @@
 			<Fish_Decreased>0.25</Fish_Decreased>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_TaintedLake]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_TaintedLake</defName>
+		<label>tainted lake</label>
+		<drawScale>0.7</drawScale>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_TaintedLake</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.15</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_TaintedLake</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_TaintedLake Required="True"/>
+			<SteamGeysers_Increased>0.3</SteamGeysers_Increased>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
+			<PlantLife_Decreased>0.06</PlantLife_Decreased>
+			<AnimalLife_Decreased>0.06</AnimalLife_Decreased>
+			<Stockpile>0.05</Stockpile>
+			<Mashed_Ashlands_AshFertile>0.03</Mashed_Ashlands_AshFertile>
+			<Mashed_Ashlands_AshRocky>0.03</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<InsectMegahive>0.01</InsectMegahive>
+			<AncientUplink>0.02</AncientUplink>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Mashed_Ashlands_Miasmic>0.1</Mashed_Ashlands_Miasmic>
+			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
+		</comboLandmarkMutators>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
 	<LandmarkDef ParentName="Mashed_Ashlands_SpringsBase">
 		<defName>Mashed_Ashlands_ThermalMudPools</defName>

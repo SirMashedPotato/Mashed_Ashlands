@@ -190,6 +190,27 @@
 		<canSpawnOnRiver>false</canSpawnOnRiver>
 		<coastSidesRange>0~0</coastSidesRange>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_TaintedLake]==========-->
+	 <TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_TaintedLake</defName>
+		<label>tainted lake</label>
+		<description>A large body of water that has been boiled by volcanic activity.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedLake</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
 	<TileMutatorDef Name="Mashed_Ashlands_ThermalMudPoolsBase">
 		<defName>Mashed_Ashlands_ThermalMudPools</defName>
