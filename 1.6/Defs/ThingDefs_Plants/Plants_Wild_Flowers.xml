@@ -30,6 +30,36 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_AshenDaylilyFlowerOrange]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+		<defName>Mashed_Ashlands_Plant_AshenDaylilyFlowerOrange</defName>
+		<label>ashen daylily</label>
+		<description>A particularly resilient strain of daylily that can be found growing in certain ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+				<disallowedTerrainDefsForWild>
+					<li>Mashed_Ashlands_AshSandVolcanic</li>
+					<li>Mashed_Ashlands_CoralSandVolcanic</li>
+					<li>Mashed_Ashlands_SulphuricSand</li>
+				</disallowedTerrainDefsForWild>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshenDaylilyFlowerOrange</texPath>
+		</graphicData>
+		<plant>
+			<maxMeshCount>9</maxMeshCount>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+			</sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_AshenHeatherFlower]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
 		<defName>Mashed_Ashlands_Plant_AshenHeatherFlower</defName>
