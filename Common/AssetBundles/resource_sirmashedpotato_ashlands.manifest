@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3567150772
+CRC: 1334039618
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ad7d70eb4e19a0c56dcf380c4277d74b
+    Hash: b50362d705014056627016a4554d77a8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: ad7d70eb4e19a0c56dcf380c4277d74b
+    Hash: b50362d705014056627016a4554d77a8
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -480,6 +480,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees_Stumps/Mashed_Ashlands_ParasolChopped/Mashed_Ashlands_ParasolChopped_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_ParasolBush/Mashed_Ashlands_ParasolBush_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawPikeblenny/Mashed_Ashlands_RawPikeblenny_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Mote/Mashed_Ashlands_DaedraSummonFleck.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_PetrifiedFernPlant/Mashed_Ashlands_PetrifiedFernPlant_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_OgrimPack_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_VolcanicAshlands/Hills/SmallHills.png

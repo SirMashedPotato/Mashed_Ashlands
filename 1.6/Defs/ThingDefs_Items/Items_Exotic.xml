@@ -84,14 +84,15 @@
 				<useJob>UseItem</useJob>
 				<useLabel>Activate {0_label}</useLabel>
 				<showUseGizmo>true</showUseGizmo>
-				<useDuration>132</useDuration>
+				<useDuration>666</useDuration>
 			</li>
-			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="Mashed_Ashlands.CompProperties_UseEffectSpawnPawn">
 				<pawnKindDef>Mashed_Ashlands_Smolgrim</pawnKindDef>
 			</li>
 			<li Class="CompProperties_UseEffectArtifact">
 				<sound>Thunder_OnMap</sound>
+				<warmupEffecter>Mashed_Ashlands_DaedraSummon</warmupEffecter>
 			</li>
 		</comps>
 	</ThingDef>
