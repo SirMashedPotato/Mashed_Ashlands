@@ -67,20 +67,6 @@
 			<texPath>Things/Plant/Ferns/Mashed_Ashlands_AshlandFernGreenPlant</texPath>
 		</graphicData>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FernBase">
-		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
-		<label>ashland somnalius fern</label>
-		<description>A small fern that can often be found growing in humid ashland regions.</description>
-		<statBases>
-			<Beauty>3</Beauty>
-			<BeautyOutdoors>3</BeautyOutdoors>
-			<Flammability>0.8</Flammability>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant</texPath>
-		</graphicData>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_FireFern]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_FireFern</defName>
@@ -103,5 +89,42 @@
 		<plant>
 			<maxGrowthTemperature>90</maxGrowthTemperature>
 		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_GrandmotherHibiscus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_GrandmotherHibiscus</defName>
+		<label>garndmother hibiscus fern</label>
+		<description>A small fern-like flowering plant that can often be found growing in more tropical ashland regions.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.PlantProperties">
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>6</Beauty>
+			<BeautyOutdoors>6</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_GrandmotherHibiscusPlant</texPath>
+		</graphicData>
+		<plant>
+			<visualSizeRange>0.8~1.4</visualSizeRange>
+			<fertilityMin>0.8</fertilityMin>
+		</plant>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_SomnaliusFern]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FernBase">
+		<defName>Mashed_Ashlands_Plant_SomnaliusFern</defName>
+		<label>ashland somnalius fern</label>
+		<description>A small fern that can often be found growing in humid ashland regions.</description>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Ferns/Mashed_Ashlands_SomnaliusFernPlant</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>
