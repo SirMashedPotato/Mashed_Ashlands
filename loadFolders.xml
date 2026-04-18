@@ -110,7 +110,6 @@
 		<li IfModActive="escp.morrowrim.soundpatch">1.6/LoadFolders/MorrowRim_SoundPatch</li>
 		<li IfModActive="thelastbulletbender.rwexploration">1.6/LoadFolders/ExplorationMode</li>
 		<li IfModActive="vanillaexpanded.recycling">1.6/LoadFolders/VE_Recycling</li>
-		<li IfModActive="owlchemist.cherrypicker,owlchemist.cherrypicker.tmpfix">1.6/LoadFolders/CherryPicker</li>
 		<li IfModActive="m00nl1ght.geologicallandforms">1.6/LoadFolders/GeologicalLandforms</li>
 		<li IfModActive="dankpyon.medieval.overhaul">1.6/LoadFolders/MedievalOverhaul</li>
 		<li IfModActive="andromeda.niceplantsmenu">1.6/LoadFolders/NicePlantsMenu</li>
