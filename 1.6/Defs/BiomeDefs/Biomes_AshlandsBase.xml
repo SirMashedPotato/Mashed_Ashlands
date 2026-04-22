@@ -299,6 +299,7 @@
 			<DryThunderstorm>1</DryThunderstorm>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
 			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<ToxRain MayRequire="Ludeon.RimWorld.Odyssey">0.3</ToxRain>
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
