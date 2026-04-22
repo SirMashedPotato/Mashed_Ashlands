@@ -54,7 +54,7 @@
 	<WeatherDef Name="Mashed_Ashlands_DustStormBase">
 		<defName>Mashed_Ashlands_DustStorm</defName>
 		<label>dust storm</label>
-		<description>Intense winds have picked up copious amounts of loose dust. The accuracy of ranged weapons is reduced, and people are slowed down. But at least everyone can still breathe. </description>
+		<description>Intense winds have picked up copious amounts of loose dust. The accuracy of ranged weapons is reduced, and people are slowed down. But at least everyone can still breathe.</description>
 		<windSpeedFactor>1.5</windSpeedFactor>
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Neutral</favorability>
