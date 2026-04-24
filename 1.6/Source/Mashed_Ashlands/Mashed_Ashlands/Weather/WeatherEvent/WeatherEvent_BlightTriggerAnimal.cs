@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace Mashed_Ashlands
@@ -30,7 +31,7 @@ namespace Mashed_Ashlands
                 }
                 if (!validTargets.NullOrEmpty())
                 {
-                    BlightAnimal(validTargets.RandomElementByWeight(x => x.RaceProps.manhunterOnDamageChance));
+                    BlightAnimal(validTargets.RandomElementByWeightWithFallback(x => x.RaceProps.manhunterOnDamageChance, validTargets.RandomElement()));
                 }
             }
         }
