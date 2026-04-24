@@ -9,7 +9,7 @@
 			<li>Ambient_Wind_Clear</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>WeatherOverlay_SnowGentle</li>
+			<li>Mashed_Ashlands.WeatherOverlay_Ashfall</li>
 		</overlayClasses>
 		<!-- Colors are Overcast -->
 		<skyColorsDay>

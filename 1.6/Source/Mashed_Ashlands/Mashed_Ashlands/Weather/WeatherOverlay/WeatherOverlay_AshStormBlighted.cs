@@ -4,6 +4,7 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
+    [StaticConstructorOnStartup]
     public class WeatherOverlay_AshStormBlighted : WeatherOverlayDualPanner
     {
         private static readonly Material SnowLayer = MatLoader.LoadMat("Weather/SnowOverlayWorld");
