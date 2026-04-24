@@ -4,19 +4,18 @@ using Verse;
 
 namespace Mashed_Ashlands
 {
-    [StaticConstructorOnStartup]
-    public class WeatherOverlay_AshStorm : WeatherOverlayDualPanner
+    public class WeatherOverlay_AshStormBlighted : WeatherOverlayDualPanner
     {
         private static readonly Material SnowLayer = MatLoader.LoadMat("Weather/SnowOverlayWorld");
         private static readonly Material FogLayer = MatLoader.LoadMat("Weather/FogOverlayWorld");
 
-        public static readonly Color snowColour = new Color(0.45f, 0.41f, 0.41f, 1f);
-        public static readonly Color fogColour = new Color(0.25f, 0.21f, 0.21f, 1f);
+        public static readonly Color snowColour = new Color(0.28f, 0.08f, 0.05f, 1f);
+        public static readonly Color fogColour = new Color(0.18f, 0.08f, 0.05f, 1f);
 
         private static readonly ComplexCurve speedCurve = new ComplexCurve(
-            new UnityEngine.Keyframe(0f, 0f), 
-            new UnityEngine.Keyframe(1f, 1f), 
-            new UnityEngine.Keyframe(2f, 1.15f), 
+            new UnityEngine.Keyframe(0f, 0f),
+            new UnityEngine.Keyframe(1f, 1f),
+            new UnityEngine.Keyframe(2f, 1.15f),
             new UnityEngine.Keyframe(3f, 1.3f));
 
         private readonly TexturePannerSpeedCurve snowLayerPanner1 = new TexturePannerSpeedCurve(SnowLayer, "_MainTex", speedCurve, new Vector2(1f, 1f), 0.095f);

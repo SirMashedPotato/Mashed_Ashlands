@@ -92,6 +92,7 @@
     <Compile Include="DefOf\DesignationDefOf.cs" />
     <Compile Include="DefOf\TileMutatorDefOf.cs" />
     <Compile Include="Def\UndercaveTypeDef.cs" />
+    <Compile Include="GameCondition\GameCondition_AshStormBlighted.cs" />
     <Compile Include="GenStep\GenStep_ScatterLumpsShallow.cs" />
     <Compile Include="GenStep\GenStep_ScatterWithTerrain.cs" />
     <Compile Include="GenStep\GenStep_CaveIns.cs" />
@@ -284,6 +285,7 @@
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />
+    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormBlighted.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_DustStorm.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />
