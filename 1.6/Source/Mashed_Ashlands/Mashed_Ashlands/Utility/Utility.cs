@@ -37,7 +37,7 @@ namespace Mashed_Ashlands
         ///And then check for each individual def I guess
         public static bool MapHasAshStorm(Map map)
         {
-            return map.gameConditionManager.ActiveConditions.Any((GameCondition x) => x.def.conditionClass == typeof(GameCondition_AshStorm));
+            return map.gameConditionManager.ActiveConditions.Any(x => x.def.conditionClass == typeof(GameCondition_AshStorm) || x.def.conditionClass == typeof(GameCondition_AshStormBlighted));
         }
 
         public static bool MapHasOtherUnsafeCondition(Map map)
