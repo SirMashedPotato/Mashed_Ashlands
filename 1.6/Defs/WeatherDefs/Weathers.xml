@@ -128,7 +128,7 @@
 			<li>Ambient_Rain</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>WeatherOverlay_Rain</li>
+			<li>Mashed_Ashlands.WeatherOverlay_SulphuricRain</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>
