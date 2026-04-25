@@ -7,8 +7,8 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public class WeatherOverlay_DustStorm : SkyOverlay
     {
-        private static readonly Material SnowLayer1 = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
-        private static readonly Material SnowLayer2 = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
+        private static readonly Material SnowLayer1 = MatLoader.LoadMat("Weather/SnowOverlayWorld");
+        private static readonly Material SnowLayer2 = MatLoader.LoadMat("Weather/SnowOverlayWorld");
 
         private static readonly ComplexCurve speedCurve = new ComplexCurve(
             new UnityEngine.Keyframe(0f, 0f),

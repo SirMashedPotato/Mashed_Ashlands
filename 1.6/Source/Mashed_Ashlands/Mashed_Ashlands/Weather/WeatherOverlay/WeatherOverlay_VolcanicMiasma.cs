@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public class WeatherOverlay_VolcanicMiasma : WeatherOverlayDualPanner
 	{
-        private static readonly Material MiasmaOverlayWorld = MatLoader.LoadMat("Weather/FogOverlayWorld", -1);
+        private static readonly Material MiasmaOverlayWorld = MatLoader.LoadMat("Weather/FogOverlayWorld");
 
         public WeatherOverlay_VolcanicMiasma()
 		{
