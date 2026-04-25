@@ -5,13 +5,10 @@ using Verse;
 namespace Mashed_Ashlands
 {
     [StaticConstructorOnStartup]
-    public class WeatherOverlay_DustStorm : WeatherOverlayDualPanner
+    public class WeatherOverlay_DustStorm : SkyOverlay
     {
         private static readonly Material SnowLayer1 = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
         private static readonly Material SnowLayer2 = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
-
-        public static readonly Color snowColour1 = new Color(0.8f, 0.8f, 0.8f, 1f);
-        public static readonly Color snowColour2 = new Color(0.8f, 0.8f, 0.8f, 0.6f);
 
         private static readonly ComplexCurve speedCurve = new ComplexCurve(
             new UnityEngine.Keyframe(0f, 0f),
@@ -33,8 +30,8 @@ namespace Mashed_Ashlands
 
         public override void SetOverlayColor(Color color)
         {
-            SnowLayer1.color = snowColour1;
-            SnowLayer2.color = snowColour2;
+            SnowLayer1.color = color;
+            SnowLayer2.color = color;
         }
 
         public override void TickOverlay(Map map, float lerpFactor)

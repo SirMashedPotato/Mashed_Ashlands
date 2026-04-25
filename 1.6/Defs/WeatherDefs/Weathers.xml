@@ -9,31 +9,31 @@
 			<li>Ambient_Wind_Clear</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>Mashed_Ashlands.WeatherOverlay_Ashfall</li>
+			<li>WeatherOverlay_SnowGentle</li>
 		</overlayClasses>
 		<!-- Colors are Overcast -->
 		<skyColorsDay>
 			<sky>(0.8,0.8,0.8)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(1,1,1)</overlay>
+			<overlay>(0.25,0.21,0.21)</overlay>
 			<saturation>0.8</saturation>
 		</skyColorsDay>
 		<skyColorsDusk>
 			<sky>(1,1,1)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(1,1,1)</overlay>
+			<overlay>(0.25,0.21,0.21)</overlay>
 			<saturation>0.8</saturation>
 		</skyColorsDusk>
 		<skyColorsNightEdge>
 			<sky>(0.35,0.40,0.45)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(1,1,1)</overlay>
+			<overlay>(0.25,0.21,0.21)</overlay>
 			<saturation>0.8</saturation>
 		</skyColorsNightEdge>
 		<skyColorsNightMid>
 			<sky>(0.35,0.40,0.45)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(1,1,1)</overlay>
+			<overlay>(0.25,0.21,0.21)</overlay>
 			<saturation>0.8</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
@@ -128,7 +128,7 @@
 			<li>Ambient_Rain</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>Mashed_Ashlands.WeatherOverlay_SulphuricRain</li>
+			<li>WeatherOverlay_Rain</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>
@@ -141,25 +141,25 @@
 		<skyColorsDay>
 			<sky>(0.8,0.8,0.8)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.7,0.7,0.7)</overlay>
+			<overlay>(0.9,1,0.7)</overlay>
 			<saturation>0.9</saturation>
 		</skyColorsDay>
 		<skyColorsDusk>
 			<sky>(1,1,1)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.6,0.6,0.6)</overlay>
+			<overlay>(0.8,0.9,0.6)</overlay>
 			<saturation>0.9</saturation>
 		</skyColorsDusk>
 		<skyColorsNightEdge>
 			<sky>(0.35,0.40,0.45)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
+			<overlay>(0.7,0.8,0.5)</overlay>
 			<saturation>0.9</saturation>
 		</skyColorsNightEdge>
 		<skyColorsNightMid>
 			<sky>(0.35,0.40,0.45)</sky>
 			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
+			<overlay>(0.7,0.8,0.5)</overlay>
 			<saturation>0.9</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>

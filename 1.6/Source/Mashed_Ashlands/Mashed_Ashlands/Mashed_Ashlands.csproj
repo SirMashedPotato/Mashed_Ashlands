@@ -284,11 +284,9 @@
     <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
-    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_Ashfall.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStormBlighted.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_DustStorm.cs" />
-    <Compile Include="Weather\WeatherOverlay\WeatherOverlay_SulphuricRain.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_VolcanicMiasma.cs" />
     <Compile Include="World\WorldComp\WorldComp_CliffRacerTracker.cs" />
     <Compile Include="World\WorldGenStep\Biomes\WorldGenStep_AshlandBiomes.cs" />
