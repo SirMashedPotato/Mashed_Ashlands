@@ -303,6 +303,7 @@
 			<!-- Ashland weather -->
 			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
 			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_BlightedAshfall>1</Mashed_Ashlands_BlightedAshfall>
 		</baseWeatherCommonalities>
 	</BiomeDef>
 	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
