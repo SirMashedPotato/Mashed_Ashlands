@@ -23,6 +23,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/LandmarkDef[defName="VEE_Volcano"]/mutatorChances</xpath>
 		<value>
+			<Mashed_Ashlands_LingeringAshClouds>0.06</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.06</Mashed_Ashlands_AshyMutator>
 			<Mashed_Ashlands_DustyMutator>0.06</Mashed_Ashlands_DustyMutator>
 			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.06</Mashed_Ashlands_SulphuricAtmosphereMutator>

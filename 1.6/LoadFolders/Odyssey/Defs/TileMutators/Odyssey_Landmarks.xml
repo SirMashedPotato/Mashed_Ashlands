@@ -63,6 +63,7 @@
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<Stockpile>0.05</Stockpile>
 			<AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+			<Mashed_Ashlands_LingeringAshClouds>0.03</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
 			<Mashed_Ashlands_DustyMutator>0.05</Mashed_Ashlands_DustyMutator>
 			<SunnyMutator>0.25</SunnyMutator>
@@ -176,6 +177,7 @@
 		<mutatorChances>
 			<Mashed_Ashlands_LavaPools Required="True"/>
 			<Marshy>0</Marshy>
+			<Mashed_Ashlands_LingeringAshClouds>0.03</Mashed_Ashlands_LingeringAshClouds>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_StriderGraveyard]==========-->
@@ -193,6 +195,7 @@
 			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
 			<SteamGeysers_Increased>0.25</SteamGeysers_Increased>
 			<Fish_Decreased>0.25</Fish_Decreased>
+			<Mashed_Ashlands_LingeringAshClouds>0.03</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
 			<WindyMutator>0.05</WindyMutator>
 			<Stockpile>0.02</Stockpile>
@@ -334,6 +337,7 @@
 			<Stockpile>0.05</Stockpile>
 			<Mashed_Ashlands_AshFertile>0.03</Mashed_Ashlands_AshFertile>
 			<Mashed_Ashlands_AshRocky>0.03</Mashed_Ashlands_AshRocky>
+			<Mashed_Ashlands_LingeringAshClouds>0.06</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
 			<FoggyMutator>0.05</FoggyMutator>
 			<SunnyMutator>0.05</SunnyMutator>
