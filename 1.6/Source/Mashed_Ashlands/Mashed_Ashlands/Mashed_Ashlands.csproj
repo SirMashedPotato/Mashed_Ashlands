@@ -282,6 +282,7 @@
     <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanEventWorker_VolcanicMiasma.cs" />
     <Compile Include="VolcanicEventWorker\Caravan\CaravanVolcanicEventWorker.cs" />
+    <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightstormFlash.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerAnimal.cs" />
     <Compile Include="Weather\WeatherEvent\WeatherEvent_BlightTriggerPlant.cs" />
     <Compile Include="Weather\WeatherOverlay\WeatherOverlay_AshStorm.cs" />
