@@ -88,7 +88,13 @@
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="Mashed_Ashlands.CompProperties_UseEffectSpawnPawn">
-				<pawnKindDef>Mashed_Ashlands_Smolgrim</pawnKindDef>
+				<pawnKindDefs>
+					<li>Mashed_Ashlands_Daedroth</li>
+					<li>Mashed_Ashlands_Ogrim</li>
+					<li>Mashed_Ashlands_Smolgrim</li>
+				</pawnKindDefs>
+				<extraHediffChance>0.3</extraHediffChance>
+				<extraHediff>AlcoholAddiction</extraHediff>
 			</li>
 			<li Class="CompProperties_UseEffectArtifact">
 				<sound>Thunder_OnMap</sound>
