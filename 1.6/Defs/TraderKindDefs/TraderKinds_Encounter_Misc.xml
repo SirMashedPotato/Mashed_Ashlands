@@ -78,6 +78,11 @@
 				<thingDef>Mashed_Ashlands_FlawedSigilStone</thingDef>
 				<countRange>1</countRange>
 			</li>
+			<li Class="Mashed_Ashlands.StockGenerator_SingleDefWithStuff" MayRequire="Ludeon.RimWorld.Ideology">
+				<thingDef>Drum</thingDef>
+				<stuffDef>Mashed_Ashlands_GuarLeather</stuffDef>
+				<countRange>1</countRange>
+			</li>
 			<!-- Buying -->
 			<li Class="Mashed_Ashlands.StockGenerator_BuyExpensive"/>
 			<li Class="StockGenerator_Animals">

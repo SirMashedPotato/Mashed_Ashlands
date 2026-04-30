@@ -192,6 +192,7 @@
     <Compile Include="Settings\SettingsPage\SettingsPage_Incidents.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_OtherConditions.cs" />
     <Compile Include="Settings\SettingsPage\SettingsPage_WorldGen.cs" />
+    <Compile Include="StockGenerator\AshlandsStockGenerator_SingleDefWithStuff.cs" />
     <Compile Include="StockGenerator\StockGenerator_BuyExpensive.cs" />
     <Compile Include="ThingClass\Building_UndercaveEntrance.cs" />
     <Compile Include="ThingClass\Spawner_CollapsingRockRoof.cs" />
