@@ -26,7 +26,7 @@ namespace Mashed_Ashlands
             }
 
             BiomeCaveProperties props = null;
-
+            /*
             if (ModsConfig.OdysseyActive && !___map.TileInfo.mutatorsNullable.NullOrEmpty())
             {
                 foreach (TileMutatorDef mutatorDef in ___map.TileInfo.mutatorsNullable)
@@ -43,7 +43,7 @@ namespace Mashed_Ashlands
 
                 }
             }
-
+            */
             if (props == null)
             {
                 props = BiomeCaveProperties.GetProps(___map, c);
@@ -112,7 +112,7 @@ namespace Mashed_Ashlands
             }
 
             BiomeCaveProperties props = null;
-
+            /*
             if (ModsConfig.OdysseyActive)
             {
                 foreach (TileMutatorDef mutatorDef in ___map.TileInfo.mutatorsNullable)
@@ -129,7 +129,7 @@ namespace Mashed_Ashlands
 
                 }
             }
-
+            */
             if (props == null)
             {
                 props = BiomeCaveProperties.GetProps(___map, c);
