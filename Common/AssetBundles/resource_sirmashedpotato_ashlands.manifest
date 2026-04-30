@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2052363686
+CRC: 1097578891
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 49eb714f5c636cf17e7d2f2f3c8e45c2
+    Hash: f06f026045be02cb295f65f81f96dd77
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 49eb714f5c636cf17e7d2f2f3c8e45c2
+    Hash: f06f026045be02cb295f65f81f96dd77
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -1259,7 +1259,6 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshenHeatherFlower/Mashed_Ashlands_AshenHeatherFlower_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_SwampJelly/Mashed_Ashlands_SwampJelly_north.png
-- Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Surfaces/Water/Mashed_Ashlands_TaintedLake.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_Bloatspore/Mashed_Ashlands_BloatsporePlant_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_VolcanicGroveAshlands.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_BlueEntoloma/Mashed_Ashlands_BlueEntoloma_e.png
