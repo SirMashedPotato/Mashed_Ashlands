@@ -69,6 +69,10 @@
 		<weatherThought>Mashed_Ashlands_OutsideInBlightStorm</weatherThought>
 		<eventMakers>
 			<li>
+				<averageInterval>1800</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightstormFlash</eventClass>
+			</li>
+			<li>
 				<averageInterval>16000</averageInterval>
 				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerAnimal</eventClass>
 			</li>
