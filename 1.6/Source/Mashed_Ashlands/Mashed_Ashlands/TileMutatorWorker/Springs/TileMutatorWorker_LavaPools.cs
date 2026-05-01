@@ -23,6 +23,7 @@ namespace Mashed_Ashlands
                 }
                 else if (value > EdgeThreshold)
                 {
+                    map.terrainGrid.SetTerrain(allCell, RimWorld.TerrainDefOf.VolcanicRock);
                     map.terrainGrid.SetTerrain(allCell, RimWorld.TerrainDefOf.CooledLava);
                 }
             }
