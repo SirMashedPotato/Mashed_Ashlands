@@ -56,7 +56,7 @@
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_SulphuricAtmosphereMutator</defName>
 		<label>sulphuric atmosphere</label>
-		<description>Frequent volcanic activity ensures the atmosphere here has plenty of sulphuric dioxide in it. sulphuric rain is much more common here</description>
+		<description>Frequent volcanic activity ensures the atmosphere here has plenty of sulphur dioxide in it. sulphuric rain is much more common here</description>
 		<categories>
 			<li>Weather</li>
 		</categories>
