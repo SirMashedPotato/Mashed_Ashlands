@@ -52,6 +52,10 @@
 		<defName>Mashed_Ashlands_MazteFermentingBarrel</defName>
 		<label>mazte fermenting barrel</label>
 		<description>A barrel for fermenting mazte from saltrice precursor. This will take 4 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholMazte</ThingDef>
+			<ThingDef>Mashed_Ashlands_SaltricePrecursor</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<colorTwo>(191,172,140)</colorTwo>
 		</graphicData>
@@ -89,6 +93,10 @@
 		<defName>Mashed_Ashlands_SujammaFermentingBarrel</defName>
 		<label>sujamma fermenting barrel</label>
 		<description>A barrel for fermenting sujamma from wickwheat precursor. This will take 10 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholSujamma</ThingDef>
+			<ThingDef>Mashed_Ashlands_WickwheatPrecursor</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<colorTwo>(204,199,184)</colorTwo>
 		</graphicData>
@@ -126,6 +134,10 @@
 		<defName>Mashed_Ashlands_SheinFermentingBarrel</defName>
 		<label>shein fermenting barrel</label>
 		<description>A barrel for fermenting shein from comberry precursor. This will take 14 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholShein</ThingDef>
+			<ThingDef>Mashed_Ashlands_ComberryPrecursor</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<colorTwo>(226,141,139)</colorTwo>
 		</graphicData>
@@ -163,6 +175,10 @@
 		<defName>Mashed_Ashlands_FlinFermentingBarrel</defName>
 		<label>flin fermenting barrel</label>
 		<description>A barrel for fermenting flin from meadow rye precursor. This will take 20 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholFlin</ThingDef>
+			<ThingDef>Mashed_Ashlands_MeadowRyePrecursor</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<colorTwo>(189,213,201)</colorTwo>
 		</graphicData>
@@ -200,6 +216,10 @@
 		<defName>Mashed_Ashlands_JazbayFermentingBarrel</defName>
 		<label>jazbay wine fermenting barrel</label>
 		<description>A barrel for fermenting jazbay wine from ashen jazbay precursor. This will take 20 days to complete, and will only progress if the temperature is within an acceptable range.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_AlcoholJazbayWine</ThingDef>
+			<ThingDef>Mashed_Ashlands_AshenJazbayPrecursor</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<colorTwo>(186,150,214)</colorTwo>
 		</graphicData>

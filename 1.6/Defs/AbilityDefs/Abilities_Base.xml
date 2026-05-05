@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_BloomAbility]==========-->
 	 <AbilityGroupDef>
 		<defName>Mashed_Ashlands_BloomAbility</defName>
-		<cooldownTicks>180000</cooldownTicks>
+		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
 	<!-- ==========[Mashed_Ashlands_LobBase]==========-->
 	<AbilityDef Name="Mashed_Ashlands_LobBase" Abstract="True">
@@ -29,11 +29,13 @@
 		</verbProperties>
 	</AbilityDef>
 	<!-- ==========[Mashed_Ashlands_LobThrownBase]==========-->
-	<ThingDef ParentName="BaseGrenadeProjectile" Name="Mashed_Ashlands_LobThrownBase" Abstract="True">
+	<ThingDef ParentName="BaseBullet" Name="Mashed_Ashlands_LobThrownBase" Abstract="True">
+		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
+			<speed>20</speed>
 			<explosionRadius>1.9</explosionRadius>
 		</projectile>
 	</ThingDef>

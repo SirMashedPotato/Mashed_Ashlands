@@ -1,23 +1,45 @@
-﻿using UnityEngine;
+﻿using LudeonTK;
+using UnityEngine;
 using Verse;
 
 namespace Mashed_Ashlands
 {
     [StaticConstructorOnStartup]
-    public class WeatherOverlay_DustStorm : WeatherOverlayDualPanner
+    public class WeatherOverlay_DustStorm : SkyOverlay
     {
-        private static readonly Material DustStormWorld = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);
+        private static readonly Material SnowLayer1 = MatLoader.LoadMat("Weather/SnowOverlayWorld");
+        private static readonly Material SnowLayer2 = MatLoader.LoadMat("Weather/SnowOverlayWorld");
 
-        public WeatherOverlay_DustStorm()
+        private static readonly ComplexCurve speedCurve = new ComplexCurve(
+            new UnityEngine.Keyframe(0f, 0f),
+            new UnityEngine.Keyframe(1f, 1f),
+            new UnityEngine.Keyframe(2f, 1.15f),
+            new UnityEngine.Keyframe(3f, 1.3f));
+
+        private readonly TexturePannerSpeedCurve snowLayer1Panner1 = new TexturePannerSpeedCurve(SnowLayer1, "_MainTex", speedCurve, new Vector2(1f, 1f), 0.095f);
+        private readonly TexturePannerSpeedCurve snowLayer1Panner2 = new TexturePannerSpeedCurve(SnowLayer1, "_MainTex2", speedCurve, new Vector2(1f, 1f), 0.095f);
+
+        private readonly TexturePannerSpeedCurve snowLayer2Panner1 = new TexturePannerSpeedCurve(SnowLayer2, "_MainTex", speedCurve, new Vector2(1f, 1f), 0.065f);
+        private readonly TexturePannerSpeedCurve snowLayer2Panner2 = new TexturePannerSpeedCurve(SnowLayer2, "_MainTex2", speedCurve, new Vector2(1f, 1f), 0.065f);
+
+        public override void DrawOverlay(Map map)
         {
-            worldOverlayMat = DustStormWorld;
-            worldOverlayPanSpeed1 = 0.5f;
-            worldOverlayPanSpeed2 = 0.5f;
-            worldPanDir1 = new Vector2(1f, 1f);
-            worldPanDir2 = new Vector2(1f, 1f);
-            worldPanDir1.Normalize();
-            worldPanDir2.Normalize();
+            SkyOverlay.DrawWorldOverlay(map, SnowLayer1);
+            SkyOverlay.DrawWorldOverlay(map, SnowLayer2);
         }
-        public override void SetOverlayColor(Color color) => base.SetOverlayColor(new Color(104f, 95f, 97f));
+
+        public override void SetOverlayColor(Color color)
+        {
+            SnowLayer1.color = color;
+            SnowLayer2.color = color;
+        }
+
+        public override void TickOverlay(Map map, float lerpFactor)
+        {
+            snowLayer1Panner1.Tick();
+            snowLayer1Panner2.Tick();
+            snowLayer2Panner1.Tick();
+            snowLayer2Panner2.Tick();
+        }
     }
 }

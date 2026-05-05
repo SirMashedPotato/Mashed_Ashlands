@@ -25,12 +25,30 @@ namespace Mashed_Ashlands
                 return true;
             }
 
-            if (!OnStartupUtility.restrictedTerrainPlantsBiomes.Contains(___map.BiomeAt(c)))
+            BiomeCaveProperties props = null;
+            /*
+            if (ModsConfig.OdysseyActive && !___map.TileInfo.mutatorsNullable.NullOrEmpty())
             {
-                return true;
+                foreach (TileMutatorDef mutatorDef in ___map.TileInfo.mutatorsNullable)
+                {
+                    props = BiomeCaveProperties.Get(mutatorDef);
+                    if (props != null && !props.cavePlants.NullOrEmpty())
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        props = null;
+                    }
+
+                }
+            }
+            */
+            if (props == null)
+            {
+                props = BiomeCaveProperties.GetProps(___map, c);
             }
 
-            BiomeCaveProperties props = BiomeCaveProperties.GetProps(___map, c);
             if (props != null && !props.cavePlants.NullOrEmpty())
             {
                 outPlants.Clear();
@@ -88,16 +106,41 @@ namespace Mashed_Ashlands
             }
 
             RoofDef roof = c.GetRoof(___map);
-            if (roof != null && roof.isNatural)
+            if (roof == null || !roof.isNatural)
             {
-                BiomeCaveProperties props = BiomeCaveProperties.GetProps(___map, c);
-                if (props != null && !props.cavePlants.NullOrEmpty())
+                return;
+            }
+
+            BiomeCaveProperties props = null;
+            /*
+            if (ModsConfig.OdysseyActive)
+            {
+                foreach (TileMutatorDef mutatorDef in ___map.TileInfo.mutatorsNullable)
                 {
-                    BiomePlantRecord plantRecord = props.cavePlants.Find(x => x.plant == plantDef);
-                    if (plantRecord != null)
+                    props = BiomeCaveProperties.Get(mutatorDef);
+                    if (props != null && !props.cavePlants.NullOrEmpty())
                     {
-                        __result = plantRecord.commonality;
+                        break;
                     }
+                    else
+                    {
+                        props = null;
+                    }
+
+                }
+            }
+            */
+            if (props == null)
+            {
+                props = BiomeCaveProperties.GetProps(___map, c);
+            }
+
+            if (props != null && !props.cavePlants.NullOrEmpty())
+            {
+                BiomePlantRecord plantRecord = props.cavePlants.Find(x => x.plant == plantDef);
+                if (plantRecord != null)
+                {
+                    __result = plantRecord.commonality;
                 }
             }
         }

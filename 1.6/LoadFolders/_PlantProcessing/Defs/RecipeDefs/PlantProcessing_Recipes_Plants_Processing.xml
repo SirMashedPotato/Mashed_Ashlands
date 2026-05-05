@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_MakeClothFromKresh]==========-->
-	<RecipeDef ParentName="ProcessRaw" Name="Mashed_Ashlands_ProcessRawKreshweedBase">
+	<RecipeDef ParentName="Mashed_Ashlands_WeaveBase" Name="Mashed_Ashlands_ProcessRawKreshweedBase">
 		<defName>Mashed_Ashlands_ProcessRawKreshweed</defName>
 		<label>weave kresh cloth</label>
 		<description>Weave 20 raw kreshweed into 20 kresh cloth.</description>
@@ -26,12 +26,6 @@
 		<skillRequirements>
 			<Crafting>4</Crafting>
 		</skillRequirements>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_SpinningWheel</li>
-		</recipeUsers>
 		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
 	</RecipeDef>
 	<!-- ==========[Mashed_Ashlands_ProcessRawKreshweedBulk]==========-->
@@ -111,7 +105,7 @@
 		<description>Process 20 corkbulb root into 5 wood.</description>
 		<recipeUsers Inherit="False">
 			<li>CraftingSpot</li>
-			<li>SeedExtractionSpot</li>
+			<li MayRequire="evyatar108.seedspleaseliteredux">SeedExtractionSpot</li>
 		</recipeUsers>
 		<ingredients>
 			<li>

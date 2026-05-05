@@ -52,4 +52,54 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_FlawedSigilStone]========== -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_FlawedSigilStone</defName>
+		<label>flawed sigil stone</label>
+		<description>A mysterious crystalline orb. You can sense a great power slumbering within.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Ashlands_SigilStone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Medieval</techLevel>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandsExotic</li>
+		</tradeTags>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Activate {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>666</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="Mashed_Ashlands.CompProperties_UseEffectSpawnPawn">
+				<pawnKindDefs>
+					<li>Mashed_Ashlands_Daedroth</li>
+					<li>Mashed_Ashlands_Ogrim</li>
+					<li>Mashed_Ashlands_Smolgrim</li>
+				</pawnKindDefs>
+				<extraHediffChance>0.3</extraHediffChance>
+				<extraHediff>AlcoholAddiction</extraHediff>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>Thunder_OnMap</sound>
+				<warmupEffecter>Mashed_Ashlands_DaedraSummon</warmupEffecter>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholEmberbrandWine]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholCraftedBase">
+		<defName>Mashed_Ashlands_AlcoholEmberbrandWine</defName>
+		<label>emberbrand wine</label>
+		<description>A wine made from jazbay wine, with a few extra ingredients added to it, greatly enhancing its potency. Consumption helps one forget about their troubles, but makes them grow tired much faster. As emberbrand wine is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_EmberbrandWineHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_AlcoholEmberbrandWine</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_EmberbrandWineHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Cooking>6</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_AlcoholJazbayWine>6</Mashed_Ashlands_AlcoholJazbayWine>
+			<Mashed_Ashlands_RawAshPomegranate>6</Mashed_Ashlands_RawAshPomegranate>
+			<Mashed_Ashlands_RawXylariaSpores>3</Mashed_Ashlands_RawXylariaSpores>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_EmberbrandWineHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_AlcoholHighBase">
+		<defName>Mashed_Ashlands_EmberbrandWineHigh</defName>
+		<label>emberbrand wine consumption</label>
+		<description>Emberbrand wine in the bloodstream. Helps one forget about their troubles, but makes them grow tired much faster.</description>
+		<stages>
+			<li>
+				<label>empowered</label>
+				<statFactors>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_EmberbrandWineHigh]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_EmberbrandWineHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Mashed_Ashlands_EmberbrandWineHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>drunk on emberbrand wine</label>
+				<description>I could really go for a nice nap right about now.</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

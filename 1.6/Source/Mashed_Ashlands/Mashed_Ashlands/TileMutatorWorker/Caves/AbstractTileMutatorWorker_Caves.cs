@@ -4,19 +4,19 @@ using Verse.Noise;
 
 namespace Mashed_Ashlands
 {
-    public class TileMutatorWorker_SulphuricCaves : TileMutatorWorker_Caves
+    public abstract class AbstractTileMutatorWorker_Caves : TileMutatorWorker_Caves
     {
         private static readonly FloatRange LakeRadius = new FloatRange(10f, 15f);
         private static readonly FloatRange LakeSquash = new FloatRange(1f, 1.25f);
         private const float LakeNoiseFrequency = 0.03f;
         private const float LakeNoiseStrength = 5f;
         private const float LakeChancePerCell = 0.005f;
-        private const float WaterThreshold = 0.8f;
-        private const float SandThreshold = 0.5f;
 
-        public TileMutatorWorker_SulphuricCaves(TileMutatorDef def) : base(def)
+        public AbstractTileMutatorWorker_Caves(TileMutatorDef def) : base(def)
         {
         }
+
+        public abstract void SetTerrain(float num, Map map, IntVec3 item);
 
         public override void GeneratePostTerrain(Map map)
         {
@@ -46,17 +46,13 @@ namespace Mashed_Ashlands
                     if (!(num < 0.5f))
                     {
                         item.GetEdifice(map)?.Destroy();
-                        if (num > WaterThreshold)
-                        {
-                            map.terrainGrid.SetTerrain(item, TerrainDefOf.Mashed_Ashlands_ShallowSulphuricWater);
-                        }
-                        else if (num > SandThreshold)
-                        {
-                            map.terrainGrid.SetTerrain(item, TerrainDefOf.Mashed_Ashlands_SulphuricSand);
-                        }
+                        SetTerrain(num, map, item);
+
+                       
                     }
                 }
             }
+
         }
     }
 }

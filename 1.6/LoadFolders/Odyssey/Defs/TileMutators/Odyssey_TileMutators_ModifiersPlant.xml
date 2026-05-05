@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AshPlantGrove]==========-->
-	<TileMutatorDef>
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
 		<defName>Mashed_Ashlands_AshPlantGrove</defName>
 		<label>ash plant grove</label>
 		<description>This area contains a large number of {0}.</description>
-		<workerClass>TileMutatorWorker_PlantGrove</workerClass>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_AshPlantGrove</workerClass>
 		<categories>
 			<li>WildPlants</li>
 		</categories>
@@ -13,31 +13,29 @@
 		<plantDensityRange>0.3~4</plantDensityRange>
 		<pollutionRange>0~0.25</pollutionRange>
 		<plantKinds>
+			<!-- Plants -->
 			<li>Mashed_Ashlands_Plant_AshYam</li>
 			<li>Mashed_Ashlands_Plant_Corkbulb</li>
+			<li>Mashed_Ashlands_Plant_HackleLo</li>
 			<li>Mashed_Ashlands_Plant_TramaShrub</li>
 			<li>Mashed_Ashlands_Plant_Scathecraw</li>
+			<li>Mashed_Ashlands_Plant_AshlandHayGrass</li>
+			<li>Mashed_Ashlands_Plant_Buttercake</li>
+			<li>Mashed_Ashlands_Plant_Chillshroom</li>
+			<li>Mashed_Ashlands_Plant_Comberry</li>
+			<li>Mashed_Ashlands_Plant_Wickwheat</li>
+			<li>Mashed_Ashlands_Plant_AshenJazbay</li>
+			<li>Mashed_Ashlands_Plant_MeadowRye</li>
+			<!-- Trees -->
+			<li>Mashed_Ashlands_Plant_ParasolBush</li>
 			<li>Mashed_Ashlands_Plant_AshPomegranate</li>
 			<li>Mashed_Ashlands_Plant_TreeEmperorParasol</li>
+			<li>Mashed_Ashlands_Plant_TreeMilkcap</li>
 			<li>Mashed_Ashlands_Plant_TreeNetchShield</li>
+			<li>Mashed_Ashlands_Plant_TreeNetchShieldHighland</li>
+			<li>Mashed_Ashlands_Plant_TreeNetchShieldVibrant</li>
+			<li>Mashed_Ashlands_Plant_TreeSpongecap</li>
 			<li>Mashed_Ashlands_Plant_TreeWeepingLeathercap</li>
 		</plantKinds>
-		<biomeWhitelist>
-			<!-- Regular -->
-			<li>Mashed_Ashlands_Ashlands</li>
-			<li>Mashed_Ashlands_DustplainAshlands</li>
-			<li>Mashed_Ashlands_GrazelandAshlands</li>
-			<li>Mashed_Ashlands_HighlandAshlands</li>
-			<li>Mashed_Ashlands_SwampAshlands</li>
-			<!-- Thriving -->
-			<li>Mashed_Ashlands_ForestAshlands</li>
-			<li>Mashed_Ashlands_MarshAshlands</li>
-			<li>Mashed_Ashlands_MeadowAshlands</li>
-			<!-- Volcanic -->
-			<li>Mashed_Ashlands_VolcanicAshlands</li>
-			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
-			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
-			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
-		</biomeWhitelist>
 	</TileMutatorDef>
 </Defs>

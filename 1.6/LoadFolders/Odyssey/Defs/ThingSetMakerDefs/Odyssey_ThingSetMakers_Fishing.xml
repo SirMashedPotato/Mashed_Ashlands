@@ -51,20 +51,11 @@
 					<thingSetMaker Class="ThingSetMaker_StackCount">
 						<fixedParams>
 							<filter>
-								<thingDefs>
-									<li>Mashed_Ashlands_AlcoholDagothBrandy</li>
-									<li>Mashed_Ashlands_AlcoholFlin</li>
-									<li>Mashed_Ashlands_AlcoholGreef</li>
-									<li>Mashed_Ashlands_AlcoholJazbayWine</li>
-									<li>Mashed_Ashlands_AlcoholMazte</li>
-									<li>Mashed_Ashlands_AlcoholShein</li>
-									<li>Mashed_Ashlands_AlcoholSujamma</li>
-									<li>Mashed_Ashlands_BugMusk</li>
+								<tradeTagsToAllow>
+									<li>Mashed_Ashlands_AshlandsAlcohol</li>
+									<li>Mashed_Ashlands_AshlandsMusk</li>
 									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma</li>
-									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma_DoubleDistilled</li>
-									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skooma_Spoiled</li>
-									<li MayRequire="escp.morrowrim.moonsugarandskooma">MorrowRim_Skoomax</li>
-								</thingDefs>
+								</tradeTagsToAllow>
 							</filter>
 							<countRange>5~15</countRange>
 						</fixedParams>

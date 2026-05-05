@@ -13,6 +13,8 @@
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[Pond]==========-->
@@ -29,6 +31,8 @@
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<li>Mashed_Ashlands_MarshAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[ToxicLake]==========-->
@@ -49,6 +53,8 @@
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[HotSprings]==========-->
@@ -65,6 +71,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[Plateau]==========-->
@@ -86,6 +93,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[Cliffs]==========-->
@@ -110,6 +118,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -130,6 +139,7 @@
 			<li>Mashed_Ashlands_MeadowAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[TerraformingScar]==========-->
@@ -154,6 +164,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -179,6 +190,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -196,6 +208,8 @@
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<!-- ==========[BaseLavaLakeMut]==========-->
@@ -213,6 +227,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -231,6 +246,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>
@@ -244,6 +260,8 @@
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -274,6 +292,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</value>
 	</Operation>

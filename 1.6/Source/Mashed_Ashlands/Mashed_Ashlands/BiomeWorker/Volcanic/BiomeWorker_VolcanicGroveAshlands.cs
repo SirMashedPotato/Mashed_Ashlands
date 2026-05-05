@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
     {
         public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null)
         {
-            if (!Mashed_Ashlands_ModSettings.EnableVolcanicBadlandsAshlands) //todo
+            if (!Mashed_Ashlands_ModSettings.EnableVolcanicGroveAshlands)
             {
                 return -100f;
             }

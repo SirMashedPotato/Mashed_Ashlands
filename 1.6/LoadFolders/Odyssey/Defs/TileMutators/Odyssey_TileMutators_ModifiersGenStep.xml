@@ -21,6 +21,7 @@
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DustAntHives_Increased]==========-->
@@ -56,6 +57,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
@@ -93,6 +95,7 @@
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>

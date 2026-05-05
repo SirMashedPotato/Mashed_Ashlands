@@ -2,7 +2,6 @@
 using RimWorld.Planet;
 using System.Collections.Generic;
 using RimWorld;
-using System.Linq;
 
 namespace Mashed_Ashlands
 {

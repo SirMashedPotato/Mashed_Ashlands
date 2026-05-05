@@ -1,5 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_LingeringAshClouds]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_LingeringAshClouds</defName>
+		<label>lingering ash clouds</label>
+		<description>Large ash clouds constantly linger over this region, blocking sunlight and reducing the local temperature.</description>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<additionalGameConditions>
+			<li>Mashed_Ashlands_DenseAshCloudsLingering</li>
+		</additionalGameConditions>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_Miasmic]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_Miasmic</defName>

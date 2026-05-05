@@ -15,5 +15,7 @@ namespace Mashed_Ashlands
         public static HediffDef Mashed_Ashlands_AshInEyes;
         public static HediffDef Mashed_Ashlands_AshBlight;
         public static HediffDef Mashed_Ashlands_XylariaDreamPowderHigh;
+
+        public static HediffDef AlcoholAddiction;
     }
 }

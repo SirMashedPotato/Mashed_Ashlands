@@ -21,6 +21,8 @@
 			<!-- Thriving -->
 			<li>Mashed_Ashlands_ForestAshlands</li>
 			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			 <li>Mashed_Ashlands_VolcanicGroveAshlands</li>
 		</biomeWhitelist>
 		<coastSidesRange>0~0</coastSidesRange>
 	</TileMutatorDef>

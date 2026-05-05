@@ -29,6 +29,8 @@ namespace Mashed_Ashlands
         public static TerrainDef Mashed_Ashlands_BlightedSludge;
         public static TerrainDef Mashed_Ashlands_AshMud;
         public static TerrainDef Mashed_Ashlands_ThermalMud;
+        public static TerrainDef Mashed_Ashlands_AshMudVolcanic;
+        public static TerrainDef Mashed_Ashlands_ThermalMudVolcanic;
 
         public static TerrainDef Mashed_Ashlands_ShallowVolcanicOceanWater;
         [MayRequireOdyssey]

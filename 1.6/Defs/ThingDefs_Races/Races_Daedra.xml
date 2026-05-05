@@ -212,7 +212,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_Ogrim]========== -->
-	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase">
+	<ThingDef ParentName="Mashed_Ashlands_DaedraReptileThingBase" Name="Mashed_Ashlands_OgrimBase">
 		<defName>Mashed_Ashlands_Ogrim</defName>
 		<label>vagrant ogrim</label>
 		<description>An enormous reptile-like beast that can rarely be found wandering the ashlands, though they never seem to stay in one area for long. Ogrim are quite slow, in multiple ways. What they lack in intelligence they make up for in excess with durability and strength. If one decides to tackle an vagrant ogrim, they best be prepared for their blows to bounce off without even leaving a scratch.\n\nSome cultures believe vagrant ogrim are the remnants of an eccentric scientists attempt at making a living weapon. While others believe they are the descendants of otherworldly beings from another realm.\n\n&lt;color=#E5E54C&gt;Belly Drum&lt;/color&gt;\nVagrant ogrim are able to slap their belly, kicking their metabolism into overdrive, and causing wounds to rapidly heal. This ability can be manually activated.</description>
@@ -366,6 +366,144 @@
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
 					<drawSize>2.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_Smolgrim]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_OgrimBase">
+		<defName>Mashed_Ashlands_Smolgrim</defName>
+		<label>vagrant smolgrim</label>
+		<description>Vagrant ogrim are terrifying beasts, rightfully feared by anyone unlucky enough to encounter one. Blows to their tough hide simply bounce off, not even leaving a bruise. They tower above all who dare face them, and those that are stupid enough to, swiftly realise their mistake.\n\nThis one is smol.\n\n&lt;color=#E5E54C&gt;Belly Drum&lt;/color&gt;\nVagrant ogrim are able to slap their belly, kicking their metabolism into overdrive, and causing wounds to rapidly heal. This ability can be manually activated.</description>
+		<statBases>
+			<MoveSpeed>3.0</MoveSpeed>
+		</statBases>
+		<uiIconScale>0.65</uiIconScale>
+		<tools Inherit="False">
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>mouth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>10</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>30</baseHealthScale>
+			<baseHungerRate>1</baseHungerRate>
+			<useMeatFrom>Mashed_Ashlands_Ogrim</useMeatFrom>
+		</race>
+		<tradeTags Inherit="False"/>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_Smolgrim</defName>
+		<label>vagrant smolgrim</label>
+		<race>Mashed_Ashlands_Smolgrim</race>
+		<combatPower>500</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<abilities>
+			<li>Mashed_Ashlands_OgrimBellyDrum</li>
+		</abilities>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<label>vagrant smolgrim spawn</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>0.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>0.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Ogrim</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Ogrim/Mashed_Ashlands_Dessicated_Ogrim</texPath>
+					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

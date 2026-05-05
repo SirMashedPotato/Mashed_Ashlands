@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using Verse;
+using Verse.AI;
 
 namespace Mashed_Ashlands
 {
@@ -41,10 +42,23 @@ namespace Mashed_Ashlands
             }
         }
 
+        /// <summary>
+        /// Letter sent here because otherwise a letter isn't sent when wild animals are affected
+        /// </summary>
         private void StartMentalState()
         {
-            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Mashed_Ashlands_BlightedPermanent, "CausedByHediff".Translate(def.LabelCap),
-                forced: true, forceWake: true, transitionSilently: true);
+            if (pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Mashed_Ashlands_BlightedPermanent, "CausedByHediff".Translate(def.LabelCap),
+                forced: true, forceWake: true, transitionSilently: true))
+            {
+                MentalState mentalState = pawn.mindState.mentalStateHandler.CurState;
+                TaggedString beginLetterText = mentalState.GetBeginLetterText();
+                if (!beginLetterText.NullOrEmpty())
+                {
+                    string text = (MentalStateDefOf.Mashed_Ashlands_BlightedPermanent.beginLetterLabel ?? ((string)MentalStateDefOf.Mashed_Ashlands_BlightedPermanent.LabelCap)).CapitalizeFirst() + ": " + pawn.LabelShortCap;
+                    beginLetterText += "\n\n" + "CausedByHediff".Translate(def.LabelCap);
+                    Find.LetterStack.ReceiveLetter(text, beginLetterText, MentalStateDefOf.Mashed_Ashlands_BlightedPermanent.beginLetterDef, pawn);
+                }
+            }
         }
 
         private void SpreadToPlant()

@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_WaterShallowTaintedOcean]==========-->
 	<TerrainDef ParentName="WaterShallowBase" Name="Mashed_Ashlands_TaintedWaterBase">
 		<defName>Mashed_Ashlands_WaterShallowTaintedOcean</defName>
-		<label>shallow tainted ocean water</label>
+		<label>shallow tainted water</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowTaintedWaterRamp</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_ShallowTaintedWaterRampPolluted</pollutedTexturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
@@ -30,7 +30,7 @@
 	<!-- ==========[Mashed_Ashlands_WaterDeepTaintedOcean]==========-->
 	<TerrainDef ParentName="WaterDeepBase">
 		<defName>Mashed_Ashlands_WaterDeepTaintedOcean</defName>
-		<label>deep tainted ocean water</label>
+		<label>deep tainted water</label>
 		<texturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepTaintedWaterRamp</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/Water/Mashed_Ashlands_DeepTaintedWaterRampPolluted</pollutedTexturePath>
 		<renderPrecedence>397</renderPrecedence>

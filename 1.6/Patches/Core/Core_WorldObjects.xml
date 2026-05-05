@@ -15,6 +15,7 @@
 			<li Class="Mashed_Ashlands.WorldObjectCompProperties_MerchantEncounter">
 				<incidentDefs>
 					<li>Mashed_Ashlands_MudcrabMerchantMeeting</li>
+					<li>Mashed_Ashlands_ScampMerchantMeeting</li>
 					<li>Mashed_Ashlands_ScribMerchantMeeting</li>
 				</incidentDefs>
 			</li>

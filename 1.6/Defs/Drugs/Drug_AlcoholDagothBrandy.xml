@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AlcoholDagothBrandy]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase">
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholCraftedBase">
 		<defName>Mashed_Ashlands_AlcoholDagothBrandy</defName>
 		<label>dagoth brandy</label>
 		<description>A brandy distilled from a mixture of shein, and various ingredients of questionable safety. Consumption helps to open ones mind to the unseen, but also greatly drains consciousness, and as such it should be consumed with caution. As Dagoth brandy is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
@@ -25,21 +25,11 @@
 		</ingestible>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Brewing</li>
 				<li>Mashed_Ashlands_AshSurvival_Advanced</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Cooking>6</Cooking>
 			</skillRequirements>
-			<recipeUsers>
-				<li>Brewery</li>
-			</recipeUsers>
-			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-			<workSkill>Cooking</workSkill>
-			<soundWorking>Recipe_Brewing</soundWorking>
-			<bulkRecipeCount>4</bulkRecipeCount>
-			<productCount>6</productCount>
-			<workAmount>1000</workAmount>
 		</recipeMaker>
 		<costList>
 			<Mashed_Ashlands_AlcoholShein>6</Mashed_Ashlands_AlcoholShein>

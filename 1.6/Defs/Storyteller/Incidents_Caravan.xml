@@ -39,6 +39,18 @@
 			</li>
 		</modExtensions>
 	</IncidentDef>
+	<!-- ==========[Mashed_Ashlands_ScampMerchantMeeting]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_MerchantMeeting">
+		<defName>Mashed_Ashlands_ScampMerchantMeeting</defName>
+		<label>scamp merchant meeting</label>
+		<letterLabel>Scamp merchant meeting</letterLabel>
+		<letterText>{0} has stumbled upon a peculiar scamp surrounded by numerous empty bottles of alcohol, and several empty bottles of skooma. The scamp takes a brief respite from excitedly banging away at its guarskin drum to point towards a collection of crates. Several of the crates are filled with silver, the rest with more alcohol. It seems the scamp wishes to trade with you.</letterText>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.IncidentProperties">
+				<traderKindDef>Mashed_Ashlands_ScampMerchant</traderKindDef>
+			</li>
+		</modExtensions>
+	</IncidentDef>
 	<!-- ==========[Mashed_Ashlands_ScribMerchantMeeting]==========-->
 	<IncidentDef ParentName="Mashed_Ashlands_MerchantMeeting">
 		<defName>Mashed_Ashlands_ScribMerchantMeeting</defName>

@@ -4,7 +4,7 @@
 	<AbilityDef ParentName="Mashed_Ashlands_LobBase">
 		<defName>Mashed_Ashlands_DaedrothFirebloom</defName>
 		<label>firebloom</label>
-		<description>Make the daedroth form a firebloom in its hand out of psychic energy, and then lob it at a target. The firebloom explodes on impact, setting fire to anything nearby.</description>
+		<description>Make the daedroth form a firebloom in its hand out of psychic energy, and then launch it at a target. The firebloom explodes on impact, setting fire to anything nearby.</description>
 		<iconPath>UI/Abilities/Mashed_Ashlands_DaedrothFirebloom</iconPath>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">
@@ -28,7 +28,7 @@
 	<AbilityDef ParentName="Mashed_Ashlands_LobBase">
 		<defName>Mashed_Ashlands_DaedrothShockbloom</defName>
 		<label>shockbloom</label>
-		<description>Make the daedroth form a shockbloom in its hand out of psychic energy, and then lob it at a target. The shockbloom explodes on impact, overloading any circuitry nearby.</description>
+		<description>Make the daedroth form a shockbloom in its hand out of psychic energy, and then launch it at a target. The shockbloom explodes on impact, overloading any circuitry nearby.</description>
 		<iconPath>UI/Abilities/Mashed_Ashlands_DaedrothShockbloom</iconPath>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">

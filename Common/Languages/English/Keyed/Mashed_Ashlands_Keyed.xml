@@ -71,4 +71,6 @@
 	<Mashed_Ashlands_RedMountain>red mountain</Mashed_Ashlands_RedMountain>
 	<Mashed_Ashlands_PawnIsBlind>{0} is incapable of sight</Mashed_Ashlands_PawnIsBlind>
 	<Mashed_Ashlands_NoUndiscoveredVolcano>you have discovered all volcanos</Mashed_Ashlands_NoUndiscoveredVolcano>
+	<Mashed_Ashlands_PlantField>{0} fields</Mashed_Ashlands_PlantField>
+	<Mashed_Ashlands_SummonedDaedra>the {0_label} used by {1_label} has summoned a {2_label}. The {0_label} crumbles to dust.</Mashed_Ashlands_SummonedDaedra>
 </LanguageData>
