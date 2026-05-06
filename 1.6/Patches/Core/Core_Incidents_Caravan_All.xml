@@ -24,6 +24,7 @@
 			<Mashed_Ashlands_VolcanicAshlands>40</Mashed_Ashlands_VolcanicAshlands>
 			<Mashed_Ashlands_VolcanicBadlandAshlands>40</Mashed_Ashlands_VolcanicBadlandAshlands>
 			<Mashed_Ashlands_VolcanicBasaltHillsAshlands>40</Mashed_Ashlands_VolcanicBasaltHillsAshlands>
+			<Mashed_Ashlands_VolcanicGroveAshlands>30</Mashed_Ashlands_VolcanicGroveAshlands>
 			<Mashed_Ashlands_VolcanicSulphurPitsAshlands>40</Mashed_Ashlands_VolcanicSulphurPitsAshlands>
 		</value>
 	</Operation>
@@ -49,6 +50,7 @@
 			<Mashed_Ashlands_VolcanicAshlands>60</Mashed_Ashlands_VolcanicAshlands>
 			<Mashed_Ashlands_VolcanicBadlandAshlands>60</Mashed_Ashlands_VolcanicBadlandAshlands>
 			<Mashed_Ashlands_VolcanicBasaltHillsAshlands>60</Mashed_Ashlands_VolcanicBasaltHillsAshlands>
+			<Mashed_Ashlands_VolcanicGroveAshlands>30</Mashed_Ashlands_VolcanicGroveAshlands>
 			<Mashed_Ashlands_VolcanicSulphurPitsAshlands>60</Mashed_Ashlands_VolcanicSulphurPitsAshlands>
 		</value>
 	</Operation>
