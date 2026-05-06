@@ -36,4 +36,17 @@
 		<texPath>Achievements/Mashed_AchievementAshlands_BuildFetcherflyHive</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_EggSculptureLegendary]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_EggSculptureLegendary</defName>
+		<label>Now This is Art</label>
+		<description>Build a legendary small kwama egg sculpture</description>
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>Mashed_Ashlands_KwamaEggSculptureSmall</def>
+			<quality>Legendary</quality>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_EggSculptureLegendary</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
 </Defs>

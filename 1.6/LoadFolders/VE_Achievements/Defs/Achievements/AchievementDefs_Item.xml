@@ -36,6 +36,18 @@
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectDagothBrandy</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_CollectEmberbrandWine]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectEmberbrandWine</defName>
+		<label>Emberbrand Wine Collector</label>
+		<description>Have a total of 333 bottles of Emberbrand Wine</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_AlcoholEmberbrandWine</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectEmberbrandWine</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Mashed_AchievementAshlands_CollectFlin]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_CollectFlin</defName>
@@ -107,5 +119,29 @@
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_CollectSujamma</texPath>
 		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_CollectKwamaEgg]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectKwamaEgg</defName>
+		<label>Kwama Egg Collector</label>
+		<description>Collect 333 Kwama Eggs</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_KwamaEgg</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectKwamaEgg</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_CollectKwamaEggAgain]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectKwamaEggAgain</defName>
+		<label>Kwama Egg Hoarder</label>
+		<description>Collect 666 Kwama Eggs</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_KwamaEgg</def>
+			<count>666</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectKwamaEggAgain</texPath>
+		<points>30</points>
 	</AchievementsExpanded.AchievementDef>
 </Defs>
