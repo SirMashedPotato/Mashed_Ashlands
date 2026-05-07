@@ -3,7 +3,6 @@
 	<!-- ==========[Mashed_Ashlands_NetchThingBase]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_CnidarianThingBase" Name="Mashed_Ashlands_NetchThingBase" Abstract="True">
 		<statBases>
-			<MoveSpeed>3.0</MoveSpeed>
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>

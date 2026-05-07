@@ -8,14 +8,12 @@
 				<hasFat>false</hasFat>
 			</li>
 		</modExtensions>
-		<comps>
-			<li Class="VEF.AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
-		</comps>
 		<statBases>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
-			<MoveSpeed>2.2</MoveSpeed>
+			<MoveSpeed>1.5</MoveSpeed>
+			<MaxFlightTime>30</MaxFlightTime>
 			<MarketValue>60</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
