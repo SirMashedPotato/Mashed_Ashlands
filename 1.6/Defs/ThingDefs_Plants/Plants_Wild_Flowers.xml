@@ -101,7 +101,7 @@
 		<description>A species of pitcher plant adapted for life in the ashlands. Often found growing in swamps.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
-				<ashlandFlowerPlant>true</ashlandFlowerPlant>	
+				<ashlandFlowerPlant>true</ashlandFlowerPlant>
 				<disallowedTerrainDefsForWild>
 					<li>Mashed_Ashlands_AshSand</li>
 				</disallowedTerrainDefsForWild>
@@ -207,8 +207,8 @@
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
-		<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_FlowerBase">
+	<!-- ==========[Mashed_Ashlands_LavaBloom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FlowerBase" Name="Mashed_Ashlands_LavaBloomBase">
 		<defName>Mashed_Ashlands_LavaBloom</defName>
 		<label>lava bloom</label>
 		<description>A vibrant red flower that can often be found growing in rich volcanic ash.</description>
@@ -225,7 +225,7 @@
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>
 			<Flammability>0.2</Flammability>
-			<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_LavaBloom</texPath>
@@ -314,6 +314,15 @@
 		<defName>Mashed_Ashlands_MeadowFlowerRed</defName>
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_MeadowFlowerRed</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_NightBloom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_LavaBloomBase">
+		<defName>Mashed_Ashlands_NightBloom</defName>
+		<label>night bloom</label>
+		<description>A dull purple flower that can often be found growing in high in the hills of volcanically active ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_NightBloom</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_Nirthflyflower]==========-->
