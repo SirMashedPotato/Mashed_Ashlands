@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 960507264
+CRC: 4219233043
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 617869fb230376224a286340393de40b
+    Hash: e4976eed2e61961d7e604ee88bb9e5d8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 617869fb230376224a286340393de40b
+    Hash: e4976eed2e61961d7e604ee88bb9e5d8
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -348,6 +348,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShield/Mashed_Ashlands_TreeNetchShield_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_TramaShrub/Mashed_Ashlands_TramaShrub_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees_Stumps/Mashed_Ashlands_PetrifiedSmashed/Mashed_Ashlands_PetrifiedSmashed_c.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingScathecrawPlant/Mashed_Ashlands_GlowingScathecrawPlant_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Misc/Mashed_Ashlands_TorchbugWallLamp/Mashed_Ashlands_TorchbugWallLamp_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Building/Natural/Mashed_Ashlands_StriderShell/Mashed_Ashlands_StriderShell_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_ForestAshlands.png
@@ -710,6 +711,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedSpongeCap.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeNetchShieldHighland/Mashed_Ashlands_TreeNetchShieldHighland_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_GlowingCoprinus/Mashed_Ashlands_GlowingCoprinus_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_GlowingScathecrawPlant/Mashed_Ashlands_GlowingScathecrawPlant_d.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_AshlandFungus/Mashed_Ashlands_AshlandFungus_h.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_AshYamPlant_Immature/Mashed_Ashlands_AshYamPlant_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/WorldMaterials/BiomesKit/Mashed_Ashlands_BlightedPetrifiedForestAshlands/Forest/Forest_Dense.png
