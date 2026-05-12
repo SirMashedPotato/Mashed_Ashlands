@@ -114,7 +114,7 @@
 			<growDays>4.6</growDays>
 			<visualSizeRange>0.15~0.35</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 			<purpose>Beauty</purpose>
@@ -166,7 +166,7 @@
 			<growDays>3.8</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Beginner</li>
+				<li>Mashed_Ashlands_AshSowing_Intermediate</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 			<purpose>Beauty</purpose>
