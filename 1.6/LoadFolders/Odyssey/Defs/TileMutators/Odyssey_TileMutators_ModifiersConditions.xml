@@ -31,6 +31,21 @@
 			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_PersistentVolcanicHeat]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_PersistentVolcanicHeat</defName>
+		<label>persistent volcanic heat</label>
+		<description>This region suffers from increased volcanic activity, permanently increasing the local temperature.</description>
+		<chanceOnNonLandmarkTile>0.03</chanceOnNonLandmarkTile>
+		<additionalGameConditions>
+			<li>Mashed_Ashlands_VolcanicHeatPersistent</li>
+		</additionalGameConditions>
+		<biomeWhitelist>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_Miasmic]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_Miasmic</defName>

@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
+	<!-- ==========[Mashed_Ashlands_DenseAshCloudsLingering]==========-->
 	<GameConditionDef ParentName="Mashed_Ashlands_DenseAshCloudsBase">
 		<defName>Mashed_Ashlands_DenseAshCloudsLingering</defName>
 		<label>lingering ash clouds</label>
 		<description>Lingering ash clouds from a nearby volcano fill the sky, blocking sunlight, and reducing the local temperature.</description>
+	</GameConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicHeatPersistent]==========-->
+	<GameConditionDef ParentName="Mashed_Ashlands_VolcanicHeatBase">
+		<defName>Mashed_Ashlands_VolcanicHeatPersistent</defName>
+		<label>persistent volcanic heat</label>
+		<description>Increased volcanic activity increases the local temperature.</description>
 	</GameConditionDef>
 </Defs>
