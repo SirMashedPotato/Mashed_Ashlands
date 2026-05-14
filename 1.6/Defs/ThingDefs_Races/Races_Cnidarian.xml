@@ -14,6 +14,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 			<MoveSpeed>1.5</MoveSpeed>
 			<MaxFlightTime>30</MaxFlightTime>
+			<FlightCooldown>10</FlightCooldown>
 			<MarketValue>60</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>

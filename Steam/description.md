@@ -68,8 +68,8 @@ A: You really shouldn't.
 [*]Mostly inspired by the Elder Scrolls series by Bethesda Studios, with a heavy focus on Morrowind
 [*]Somewhat inspired by the Fallout series, also by Bethesda Studios
 [*]Slightly inspired by the Monster Hunter series by Capcom
-[*]Seed bag texture used for SeedsPlease Lite support by CitizenKanye
-[*]Several preview images use ReGrowth mods by Helixien
+[*]Mountain textures used for World Map Beautification Project support by m0nka.
+[*]Ash deposits preview image uses ReGrowth mods by Helixien
 [*]Most of the nix steed art done by pphhyy
 [*]Thanks to Aludis and Star~Verse for providing feedback
 [*]And to Ranger Rick for being neat
