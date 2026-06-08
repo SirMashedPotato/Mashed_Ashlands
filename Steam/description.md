@@ -1,10 +1,10 @@
+[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Ashlands.png[/img]
+A completely remade version of the original MorrowRim mod, made to a much higher standard, and with significantly more experience under my belt. There is a wealth of new content added, and several features from some of my other MorrowRim mods have been incorporated. The mod itself is entirely focused on the ashland biomes, with all content included being tied to them in some way. 
+
+This mod adds several biomes inspired by the region of Vvardenfell from The Elder Scrolls III: Morrowind, including animals, plants, weather, and assorted extras directly from The Elder Scrolls III: Morrowind, as well as volcanos on the world map.
+[hr][/hr]
 [url=https://discord.gg/cRWRAgnKP9][img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Discord_Bits/main/Mashed_DiscordBanner.png[/img][/url]
 [url=https://github.com/SirMashedPotato/Mashed_Ashlands][img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Discord_Bits/main/Mashed_GithubBanner.png[/img][/url]
-[hr][/hr]
-[img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Ashlands.png[/img]
-A completely remade version of the original MorrowRim mod, made to a much higher standard, and with significantly more experience under my belt. There is a wealth of new content added, and several features from some of my other MorrowRim mods have been incorporated. The mod itself is entirely focused on the ashland biomes, with all content included being tied to them in some way.
-
-For those with no knowledge of the original mod, this adds several biomes based on the region of Vvardenfell from The Elder Scrolls III: Morrowind, including animals, plants, weather, and assorted extras directly from The Elder Scrolls III: Morrowind.
 [hr][/hr]
 [img]https://raw.githubusercontent.com/SirMashedPotato/Mashed_Ashlands/main/Steam/Banner_Volcano.png[/img]
 Volcanos are a new type of world object that generate on impassable mountain tiles during world generation. Volcanos form the centre of ashland regions, and are the source of ash storms, as well as other volcanic conditions. 
