@@ -10,8 +10,10 @@
 					<xpath>Defs/VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef[defName="VCE_SandyGrowZoneTerrains"]/allowedTerrains</xpath>
 					<value>
 						<li>Mashed_Ashlands_AshSand</li>
+						<li>Mashed_Ashlands_CoralSand</li>
 						<li>Mashed_Ashlands_RichAshSand</li>
 						<li>Mashed_Ashlands_AshSandVolcanic</li>
+						<li>Mashed_Ashlands_CoralSandVolcanic</li>
 						<li>Mashed_Ashlands_RichAshSandVolcanic</li>
 						<li>Mashed_Ashlands_AshSandBlighted</li>
 					</value>
@@ -21,10 +23,11 @@
 					<value>
 						<li>Mashed_Ashlands_ShallowMarsh</li>
 						<li>Mashed_Ashlands_DeepMarsh</li>
+						<li>Mashed_Ashlands_ShallowVolcanicWater</li>
+						<li>Mashed_Ashlands_ShallowMovingVolcanicWater</li>
 					</value>
 				</li>
 			</operations>
 		</match>
 	</Operation>
 </Patch>
-
