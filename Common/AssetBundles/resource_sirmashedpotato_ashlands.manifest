@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 28747414
+CRC: 4018621189
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f2a1b169eb78091d58b4863f550fe157
+    Hash: ffeb3ea00a30085feb870a85aca772e6
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f2a1b169eb78091d58b4863f550fe157
+    Hash: ffeb3ea00a30085feb870a85aca772e6
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -780,6 +780,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_GlowingNetchJelly/Mashed_Ashlands_GlowingNetchJelly_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater/Mashed_Ashlands_RawCrabeater_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_PetrifiedFungus/Mashed_Ashlands_PetrifiedFungus_g.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Terrain/Biomes/Mashed_Ashlands_BlightedScarAshlands.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxCalf_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeMilkcap/Mashed_Ashlands_TreeMilkcap_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Kagouti/Mashed_Ashlands_Kagouti_east.png

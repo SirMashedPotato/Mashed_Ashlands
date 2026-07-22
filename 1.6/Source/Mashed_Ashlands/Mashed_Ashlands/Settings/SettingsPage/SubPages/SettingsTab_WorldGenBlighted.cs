@@ -44,6 +44,9 @@ namespace Mashed_Ashlands
 
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedPetrifiedForestAshlands);
             listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableBlightedScarAshlands".Translate(), ref settings.Mashed_Ashlands_EnableBlightedScarAshlands);
+            listing_Standard.Gap();
         }
     }
 }

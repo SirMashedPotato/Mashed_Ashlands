@@ -17,6 +17,7 @@
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedBogAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
@@ -41,9 +42,13 @@
 			<li>Mashed_Ashlands_VolcanicHeatPersistent</li>
 		</additionalGameConditions>
 		<biomeWhitelist>
+			<!-- Blighted -->
+			 <li>Mashed_Ashlands_BlightedScarAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
 		</biomeWhitelist>
 	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_Miasmic]==========-->

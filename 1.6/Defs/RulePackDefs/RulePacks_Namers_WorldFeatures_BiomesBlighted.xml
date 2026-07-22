@@ -36,4 +36,16 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerBlightedScarAshlands]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerBlightedScarAshlands</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>terrain_word(p=10)->scar</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

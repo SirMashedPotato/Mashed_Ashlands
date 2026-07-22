@@ -69,6 +69,7 @@
     <Compile Include="Alert\Alert_CliffRacerTracker.cs" />
     <Compile Include="BiomeWorker\AshlandBiomeWorker.cs" />
     <Compile Include="BiomeWorker\Blighted\BiomeWorker_BlightedPetrifiedForestAshlands.cs" />
+    <Compile Include="BiomeWorker\Blighted\BiomeWorker_BlightedScarAshlands.cs" />
     <Compile Include="BiomeWorker\Regular\BiomeWorker_CoralCoastAshlands.cs" />
     <Compile Include="BiomeWorker\Regular\BiomeWorker_DustplainAshlands.cs" />
     <Compile Include="BiomeWorker\Regular\BiomeWorker_HighlandAshlands.cs" />
