@@ -35,8 +35,7 @@
 		<baseWeatherCommonalities>
 		</baseWeatherCommonalities>
 		<!-- Terrain overrides -->
-		<lakeBeachTerrain>Mashed_Ashlands_AshMudBlighted</lakeBeachTerrain>
-		<riverbankTerrain>Mashed_Ashlands_AshMudBlighted</riverbankTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshGravelBlighted</riverbankTerrain>
 		<!-- Terrain -->
 		<terrainsByFertility>
 			<li>
