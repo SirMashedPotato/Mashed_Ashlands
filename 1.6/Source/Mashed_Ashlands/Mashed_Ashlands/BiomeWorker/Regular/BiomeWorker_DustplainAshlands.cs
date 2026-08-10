@@ -7,16 +7,13 @@ namespace Mashed_Ashlands
     {
         public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null)
         {
-            if (!Mashed_Ashlands_ModSettings.EnableDustplainAshlands)
+            if ((Mashed_Ashlands_ModSettings.EnableDustplainAshlands && tile.PrimaryBiome == BiomeDefOf.Mashed_Ashlands_Ashlands) ||
+                (Mashed_Ashlands_ModSettings.EnableDustplainAshlandsThriving && tile.PrimaryBiome == BiomeDefOf.Mashed_Ashlands_ForestAshlands))
             {
-                return -100f;
-            }
-            if (tile.PrimaryBiome != BiomeDefOf.Mashed_Ashlands_Ashlands)
-            {
-                return -100f;
+                return AridBiomeWorker(biome, tile, planetTile);
             }
 
-            return AridBiomeWorker(biome, tile, planetTile);
+            return -100f;
         }
     }
 }

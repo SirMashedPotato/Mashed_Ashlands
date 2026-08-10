@@ -39,6 +39,9 @@ namespace Mashed_Ashlands
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableForestAshlands".Translate(), ref settings.Mashed_Ashlands_EnableForestAshlands, "Mashed_Ashlands_BaseBiome_Tooltip".Translate());
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableDustplainAshlands".Translate() + " (" + WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct.LabelCap + ")", ref settings.Mashed_Ashlands_EnableDustplainAshlandsThriving);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableMarshAshlands".Translate(), ref settings.Mashed_Ashlands_EnableMarshAshlands);
             listing_Standard.Gap();
 
