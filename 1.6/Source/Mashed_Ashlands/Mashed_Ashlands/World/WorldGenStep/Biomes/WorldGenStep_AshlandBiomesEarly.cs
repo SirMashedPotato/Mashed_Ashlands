@@ -19,7 +19,7 @@ namespace Mashed_Ashlands
             List<WorldObject> worldVolcanos = WorldGenUtility.GetWorldVolcanosForLayer(layer);
             foreach (WorldObject volcano in worldVolcanos)
             {
-                layer.Filler.FloodFill(volcano.Tile, (PlanetTile planetTile) => true, delegate (PlanetTile planetTile, int dist)
+                layer.Filler.FloodFill(volcano.Tile, planetTile => true, delegate (PlanetTile planetTile, int dist)
                 {
                     Tile tile = layer.Tiles[planetTile];
                     if (PreventAshlandOverride.Get(tile.PrimaryBiome) != null)
