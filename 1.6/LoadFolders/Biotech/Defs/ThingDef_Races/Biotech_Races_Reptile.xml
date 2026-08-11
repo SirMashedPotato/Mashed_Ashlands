@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Guar]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_GuarThingBase">
+		<defName>Mashed_Ashlands_GuarGlowing</defName>
+		<label>glowing guar</label>
+		<description>Bopp Bipp.\n\n&lt;color=#E5E54C&gt;Toxic saliva&lt;/color&gt;\nThe saliva of glowing guar is highly toxic, bites and scratches are capable of inflicting toxic buildup.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_GuarGlowingFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_GuarGlowingUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<tools Inherit="false">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>ScratchToxic</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
+			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
+			<useMeatFrom>Mashed_Ashlands_Guar</useMeatFrom>
+		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_GuarGlowing</defName>
+		<label>glowing guar</label>
+		<race>Mashed_Ashlands_GuarGlowing</race>
+		<combatPower>130</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>2~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>glowing guar calf</label>
+				<labelPlural>glowing guar calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_GuarGlowing</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_GuarGlowing</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_GuarGlowing</texPath>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<drawSize>2.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

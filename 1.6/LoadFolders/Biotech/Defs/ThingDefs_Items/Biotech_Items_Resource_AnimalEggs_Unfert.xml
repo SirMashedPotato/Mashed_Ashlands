@@ -13,6 +13,20 @@
 			<MarketValue>8</MarketValue>
 		</statBases>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_GuarFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
+		<defName>Mashed_Ashlands_Egg_GuarGlowingUnfertilized</defName>
+		<label>glowing guar egg (unfert.)</label>
+		<description>An unfertilised glowing guar egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(118,144,109)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+		</statBases>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_MudcrabGlowingUnfertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_EggUnfertBase">
 		<defName>Mashed_Ashlands_Egg_MudcrabGlowingUnfertilized</defName>
