@@ -44,6 +44,14 @@
 					<key>Mashed_Ashlands_Toxbug</key>
 					<value>1</value>
 				</li>
+				<li>
+					<key>Mashed_Ashlands_RachnoidGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_GuarGlowing</key>
+					<value>1</value>
+				</li>
 			</kindDefs>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_GlowingAnimalTamer</texPath>
@@ -91,6 +99,14 @@
 				</li>
 				<li>
 					<key>Mashed_Ashlands_Toxbug</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_RachnoidGlowing</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_GuarGlowing</key>
 					<value>1</value>
 				</li>
 			</kindDefs>
