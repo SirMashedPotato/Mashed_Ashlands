@@ -16,7 +16,17 @@ namespace Mashed_Ashlands
                 return null;
             }
             PawnKindLifeStage curKindLifeStage = pawn.ageTracker.CurKindLifeStage;
-            Graphic graphic = ((pawn.gender == Gender.Female && curKindLifeStage.femaleGraphicData != null) ? curKindLifeStage.femaleGraphicData.Graphic : curKindLifeStage.bodyGraphicData.Graphic);
+            Graphic graphic;
+
+            if (pawn.DrawNonHumanlikeSwimmingGraphic)
+            {
+                graphic = (pawn.gender == Gender.Female && curKindLifeStage.femaleSwimmingGraphicData != null) ? curKindLifeStage.femaleSwimmingGraphicData.Graphic : curKindLifeStage.swimmingGraphicData.Graphic;
+            }
+            else
+            {
+                graphic = (pawn.gender == Gender.Female && curKindLifeStage.femaleGraphicData != null) ? curKindLifeStage.femaleGraphicData.Graphic : curKindLifeStage.bodyGraphicData.Graphic;
+            }
+
             return GraphicDatabase.Get<Graphic_Multi>(graphic.path + "Glow", ShaderDatabase.TransparentPostLight, graphic.drawSize, Color.white);
         }
     }
