@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1462083876
+CRC: 4054813724
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4d32c630f160119f1e5eb3360fa9e030
+    Hash: 0261de393f8d6883a19e3ac33655011b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 4d32c630f160119f1e5eb3360fa9e030
+    Hash: 0261de393f8d6883a19e3ac33655011b
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -119,6 +119,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol_Leafless/Mashed_Ashlands_TreeEmperorParasol_Leafless_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_TeaTramaRoot/Mashed_Ashlands_TeaTramaRoot_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Coral/Mashed_Ashlands_GlowingTubeCoral/Mashed_Ashlands_GlowingTubeCoral_b.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrabGlowingGlow_south.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Drug/Mashed_Ashlands_AlcoholEmberbrandWine/Mashed_Ashlands_AlcoholEmberbrandWine_c.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_PetrifiedFernPlant/Mashed_Ashlands_PetrifiedFernPlant_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/ResourcePlants/Mashed_Ashlands_TramaShrub/Mashed_Ashlands_TramaShrub_f.png
@@ -427,6 +428,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Guar_northm.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_NixSteed/Mashed_Ashlands_NixSteedPack_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawAshPomegranate.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrabGlowingGlow_north.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Seed/Mashed_Ashlands_SeedMilkcap.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Coral/Mashed_Ashlands_GlowingTubeCoral/Mashed_Ashlands_GlowingTubeCoral_f.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_LeaflessImmature/Mashed_Ashlands_TreeKwamacap_a.png
@@ -1191,6 +1193,7 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Ferns/Mashed_Ashlands_SloughFernPlant/Mashed_Ashlands_SloughFern_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_AshenDaylilyFlowerOrange/Mashed_Ashlands_AshenDaylilyFlowerOrange_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/AlcoholPrecursor/Mashed_Ashlands_AshenJazbayPrecursor/Mashed_Ashlands_AshenJazbayPrecursor_a.png
+- Assets/Data/sirmashedpotato.ashlands/Textures/Things/Pawn/Animal/Mashed_Ashlands_Mudcrab/Mashed_Ashlands_SwimmingMudcrabGlowingGlow_east.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Item/Resource/Fish/Mashed_Ashlands_RawFoyadaHopper/Mashed_Ashlands_RawFoyadaHopper_b.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_NirthflyFlower/Mashed_Ashlands_NirthflyFlower_a.png
 - Assets/Data/sirmashedpotato.ashlands/Textures/Things/Plant/Trees/Mashed_Ashlands_TreeEmperorParasol/Mashed_Ashlands_TreeEmperorParasol_d.png
