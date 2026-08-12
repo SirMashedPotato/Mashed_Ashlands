@@ -4,12 +4,16 @@
 	<ThingDef ParentName="Mashed_Ashlands_GuarThingBase">
 		<defName>Mashed_Ashlands_GuarGlowing</defName>
 		<label>glowing guar</label>
-		<description>Bopp Bipp.\n\n&lt;color=#E5E54C&gt;Toxic saliva&lt;/color&gt;\nThe saliva of glowing guar is highly toxic, bites and scratches are capable of inflicting toxic buildup.</description>
+		<description>Bopp Bipp TODO.\n\n&lt;color=#E5E54C&gt;Toxic saliva&lt;/color&gt;\nThe saliva of glowing guar is highly toxic, bites and scratches are capable of inflicting toxic buildup.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.AnimalProperties">
 				<glowOverlay>true</glowOverlay>
 			</li>
 		</modExtensions>
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_GuarGlowingFertilized</eggFertilizedDef>
