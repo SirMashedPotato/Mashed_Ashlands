@@ -93,6 +93,11 @@
 		<defName>Mashed_Ashlands_Pyrantula</defName>
 		<label>pyrantula</label>
 		<description>A relatively large species of spider, often found in highly volcanically active ashland regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body. This vibrant silk cocoon also contains highly flammable gas, that the pyrantula can release and ignite when threatened.\n\n&lt;color=#E5E54C&gt;Flame Discharge&lt;/color&gt;\nPyrantulas are able to periodically release flame explosions when damaged.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
+		</modExtensions>
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
