@@ -95,6 +95,26 @@
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
+				<perlinFrequency>0.027</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_Basalt_Rough</terrain>
+						<min>0.4</min>
+						<max>0.6</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_Basalt_RoughHewn</terrain>
+						<min>0.6</min>
+						<max>0.8</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_Lava</terrain>
+						<min>0.8</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
 				<perlinFrequency>0.035</perlinFrequency>
 				<thresholds>
 					<li>
