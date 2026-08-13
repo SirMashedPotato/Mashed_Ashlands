@@ -6,7 +6,7 @@ namespace Mashed_Ashlands
     {
         public override bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)
         {
-            if (base.CanDrawNow(node, parms) && !parms.Portrait && parms.pawn.RaceProps.Animal && !parms.pawn.Dead)
+            if (base.CanDrawNow(node, parms) && parms.pawn.RaceProps.Animal && !parms.pawn.Dead)
             {
                 return OnStartupUtility.glowOverlayAnimals.Contains(parms.pawn.def);
             }
