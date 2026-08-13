@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_GuarThingBase">
 		<defName>Mashed_Ashlands_GuarGlowing</defName>
 		<label>glowing guar</label>
-		<description>A subspecies of the common guar that has adapted to life in polluted regions. Their highly modified respiratory system allows glowing guar to absorb nutrients from environmental pollution. Excess toxins are released in their saliva, causing it to become highly acidic.\n\n&lt;color=#E5E54C&gt;Acidic saliva&lt;/color&gt;\nBites from a glowing guar will often leave acidic saliva behind, burning the target.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing guar can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<description>A subspecies of the common guar that has adapted to life in polluted regions. Their highly modified respiratory system allows glowing guar to absorb nutrients from environmental pollution. Excess toxins are released in their saliva, causing it to become highly acidic.\n\n&lt;color=#E5E54C&gt;Acidic saliva&lt;/color&gt;\nBites from a glowing guar may inflict acid burns.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing guar can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.AnimalProperties">
 				<glowOverlay>true</glowOverlay>
