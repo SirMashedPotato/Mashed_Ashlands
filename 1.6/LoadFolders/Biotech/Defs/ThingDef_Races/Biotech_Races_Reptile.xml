@@ -4,15 +4,20 @@
 	<ThingDef ParentName="Mashed_Ashlands_GuarThingBase">
 		<defName>Mashed_Ashlands_GuarGlowing</defName>
 		<label>glowing guar</label>
-		<description>Bopp Bipp TODO.\n\n&lt;color=#E5E54C&gt;Toxic saliva&lt;/color&gt;\nThe saliva of glowing guar is highly toxic, bites and scratches are capable of inflicting toxic buildup.</description>
+		<description>A subspecies of the common guar that has adapted to life in polluted regions. Their highly modified respiratory system allows glowing guar to absorb nutrients from environmental pollution. Excess toxins are released in their saliva, causing it to become highly acidic.\n\n&lt;color=#E5E54C&gt;Acidic saliva&lt;/color&gt;\nBites from a glowing guar will often leave acidic saliva behind, burning the target.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing guar can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.AnimalProperties">
 				<glowOverlay>true</glowOverlay>
 			</li>
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
 		</modExtensions>
 		<statBases>
+			<MarketValue>350</MarketValue>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
@@ -43,7 +48,6 @@
 			</li>
 		</tools>
 		<race>
-			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
 			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
 			<useMeatFrom>Mashed_Ashlands_Guar</useMeatFrom>
 		</race>
