@@ -41,15 +41,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.5</chanceFactor>
-			</li>
 		</tools>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -127,6 +118,17 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_Guar" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_Guar</defName>
