@@ -15,9 +15,16 @@ namespace Mashed_Ashlands
                 {
                     foreach (IntVec3 cell in map.AllCells)
                     {
-                        if (map.thingGrid.ThingAt(cell, ThingDefOf.Mashed_Ashlands_Basalt) != null && cell.UsesOutdoorTemperature(map))
+                        if (map.thingGrid.ThingAt(cell, ThingDefOf.Mashed_Ashlands_Basalt) != null)
                         {
-                            GenSpawn.Spawn(ThingDefOf.Mashed_Ashlands_ColumnarBasalt, cell, map, WipeMode.Vanish);
+                            foreach(IntVec3 c in GenAdj.CellsAdjacent8Way(cell, Rot4.North, IntVec2.One))
+                            {
+                                if (c.InBounds(map) && c.GetEdifice(map) == null)
+                                {
+                                    GenSpawn.Spawn(ThingDefOf.Mashed_Ashlands_ColumnarBasalt, cell, map, WipeMode.Vanish);
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
