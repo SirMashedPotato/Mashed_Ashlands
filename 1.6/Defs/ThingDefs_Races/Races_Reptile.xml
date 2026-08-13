@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Alit</defName>
 		<label>alit</label>
-		<description>A large bipedal reptile native to ashland regions, closely related to the kagouti and guar. Tough scales, powerful legs, and a menacing bacteria-filled maw, make alit dangerous beasts to face in combat. Even then, alit prefer going after prey that won't fight back, and occasionally dig around in the ash for corkbulb roots.\n\nThose foolish enough to tame one, and lucky enough to succeed, will quickly find out that alit aren't exactly intelligent.</description>
+		<description>A large bipedal reptile native to ashland regions, closely related to the kagouti and guar. Tough scales, powerful legs, and a menacing bacteria-filled maw, make alit dangerous beasts to face in combat. Even then, alit prefer going after prey that won't fight back, and occasionally dig around in the ash for corkbulb roots.\n\nThose foolish enough to tame one, and lucky enough to succeed, will quickly find out that alit aren't exactly intelligent.\n\n&lt;color=#E5E54C&gt;Toxic saliva&lt;/color&gt;\nBites from an alit may inflict toxic buildup.</description>
 		<statBases>
 			<ToxicResistance>0.6</ToxicResistance>
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
@@ -706,7 +706,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Mashed_Ashlands_Wormmouth</defName>
 		<label>wormmouth</label>
-		<description>A large bipedal reptile typically found in arid ashland regions, closely related to the alit and kagouti. While not the most dangerous beast, its body is covered in heavy armour plating, and its mouth is filled with acidic saliva. Luckily the wormmouth prefers to scavenge for food, and will eat just about anything it can find.</description>
+		<description>A large bipedal reptile typically found in arid ashland regions, closely related to the alit and kagouti. While not the most dangerous beast, its body is covered in heavy armour plating, and its mouth is filled with acidic saliva. Luckily the wormmouth prefers to scavenge for food, and will eat just about anything it can find.\n\n&lt;color=#E5E54C&gt;Acidic saliva&lt;/color&gt;\nBites from a wormmouth may inflict acid burns.</description>
 		<statBases>
 			<ToxicResistance>0.6</ToxicResistance>
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
