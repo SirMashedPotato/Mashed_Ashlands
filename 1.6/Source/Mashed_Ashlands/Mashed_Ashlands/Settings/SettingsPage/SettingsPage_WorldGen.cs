@@ -25,22 +25,22 @@ namespace Mashed_Ashlands
                 curTab = SettingsTab.General;
             }, () => curTab == SettingsTab.General));
 
-            tabs.Add(new TabRecord(WorldObjectDefOf.Mashed_Ashlands_VolcanoDormant.label.CapitalizeFirst(), delegate
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageDormantVolcano".Translate(), delegate
             {
                 curTab = SettingsTab.Dormant;
             }, () => curTab == SettingsTab.Dormant));
 
-            tabs.Add(new TabRecord(WorldObjectDefOf.Mashed_Ashlands_VolcanoExtinct.label.CapitalizeFirst(), delegate
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageExtinctVolcano".Translate(), delegate
             {
                 curTab = SettingsTab.Extinct;
             }, () => curTab == SettingsTab.Extinct));
 
-            tabs.Add(new TabRecord(WorldObjectDefOf.Mashed_Ashlands_VolcanoActive.label.CapitalizeFirst(), delegate
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageActiveVolcano".Translate(), delegate
             {
                 curTab = SettingsTab.Active;
             }, () => curTab == SettingsTab.Active));
 
-            tabs.Add(new TabRecord(WorldObjectDefOf.Mashed_Ashlands_VolcanoBlighted.label.CapitalizeFirst(), delegate
+            tabs.Add(new TabRecord("Mashed_Ashlands_PageBlightedVolcano".Translate(), delegate
             {
                 curTab = SettingsTab.Blighted;
             }, () => curTab == SettingsTab.Blighted));

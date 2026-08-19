@@ -7,18 +7,22 @@
 	<Mashed_Ashlands_PagePreWorldGenLittlePlanet>My Little Planet has been detected. If you use a smaller world size you will want to disable all Ashlands settings that scale based on world coverage, and manually tweak the settings here to your preference.</Mashed_Ashlands_PagePreWorldGenLittlePlanet>
 	<Mashed_Ashlands_EnableSettingBeforeWorldGen>Display the Ashland World Gen. settings page before world generation.</Mashed_Ashlands_EnableSettingBeforeWorldGen>
 	<!-- dormant volcano -->
+	<Mashed_Ashlands_PageDormantVolcano>Dormant Volcano</Mashed_Ashlands_PageDormantVolcano>
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
 	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>The ashlands biome will only generate near dormant volcanos. As such, disabling this will also prevent the ashlands from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
 	<Mashed_Ashlands_NumberOfDormantVolcano>The number of dormant volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfDormantVolcano>
 	<!-- active volcano -->
+	<Mashed_Ashlands_PageActiveVolcano>Active Volcano</Mashed_Ashlands_PageActiveVolcano>
 	<Mashed_Ashlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</Mashed_Ashlands_EnableActiveVolcano>
 	<Mashed_Ashlands_EnableActiveVolcano_Tooltip>The volcanic ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the volcanic ashlands from generating.</Mashed_Ashlands_EnableActiveVolcano_Tooltip>
 	<Mashed_Ashlands_NumberOfActiveVolcano>The number of active volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfActiveVolcano>
 	<!-- blighted volcano -->
+	<Mashed_Ashlands_PageBlightedVolcano>Blighted Volcano</Mashed_Ashlands_PageBlightedVolcano>
 	<Mashed_Ashlands_EnableBlightedVolcano>Enable the generation of blighted volcanos on the world map</Mashed_Ashlands_EnableBlightedVolcano>
 	<Mashed_Ashlands_EnableBlightedVolcano_Tooltip>The blighted ashlands biome will only generate near active volcanos. As such, disabling this will also prevent the blighted ashlands from generating.</Mashed_Ashlands_EnableBlightedVolcano_Tooltip>
 	<Mashed_Ashlands_NumberOfBlightedVolcano>The number of blighted volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfBlightedVolcano>
 	<!-- extinct volcano -->
+	<Mashed_Ashlands_PageExtinctVolcano>Extinct Volcano</Mashed_Ashlands_PageExtinctVolcano>
 	<Mashed_Ashlands_EnableExtinctVolcano>Enable the generation of extinct volcanos on the world map</Mashed_Ashlands_EnableExtinctVolcano>
 	<Mashed_Ashlands_EnableExtinctVolcano_Tooltip>The ashland forest biome will only generate near extinct volcanos. As such, disabling this will also prevent ashland forest from generating.</Mashed_Ashlands_EnableExtinctVolcano_Tooltip>
 	<Mashed_Ashlands_NumberOfExtinctVolcano>The number of extinct volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfExtinctVolcano>
