@@ -2,7 +2,6 @@
 <Defs>
 	<!-- ==========[Mashed_Ashlands_AshlandsMapIncident]==========-->
 	<IncidentDef Name="Mashed_Ashlands_AshlandsMapIncident" Abstract="True">
-		<defName>Mashed_Ashlands_AshlandsMapIncident</defName>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
