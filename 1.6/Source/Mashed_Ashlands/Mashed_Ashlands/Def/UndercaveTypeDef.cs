@@ -16,6 +16,8 @@ namespace Mashed_Ashlands
         public List<GenStepDef> extraGenStepDefs;
         public float weight = 1f;
         public bool naturallyGenerates = true;
+        [NoTranslate]
+        public string undercaveCategory = "";
 
         public override IEnumerable<string> ConfigErrors()
         {

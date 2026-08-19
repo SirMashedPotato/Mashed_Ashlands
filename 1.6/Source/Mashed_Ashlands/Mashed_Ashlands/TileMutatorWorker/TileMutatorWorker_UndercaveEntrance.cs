@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
 using Verse;
+using System.Linq;
 
 namespace Mashed_Ashlands
 {
@@ -23,7 +24,7 @@ namespace Mashed_Ashlands
         public static UndercaveTypeDef GetMineType(PlanetTile tile)
         {
             Rand.PushState(tile.tileId);
-            UndercaveTypeDef result = OnStartupUtility.randomUndercaveTypes.RandomElementByWeight(x => x.weight);
+            UndercaveTypeDef result = OnStartupUtility.randomUndercaveTypes.Where(x => x.undercaveCategory == "").RandomElementByWeight(x => x.weight);
             Rand.PopState();
             return result;
         }

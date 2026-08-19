@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_UndercaveEntrance]==========-->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" Name="Mashed_Ashlands_UndercaveEntranceBase">
 		<defName>Mashed_Ashlands_UndercaveEntrance</defName>
 		<label>undercave entrance</label>
 		<description>An entrance leading deep underground. It must be restored before the caverns below can be safely accessed.</description>

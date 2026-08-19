@@ -7,7 +7,7 @@ namespace Mashed_Ashlands
     [StaticConstructorOnStartup]
     public class Building_UndercaveEntrance : MapPortal
     {
-        public UndercaveTypeDef UndercaveTypeDef
+        public virtual UndercaveTypeDef UndercaveTypeDef
         {
             get
             {
