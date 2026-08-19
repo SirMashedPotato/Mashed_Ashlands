@@ -8,7 +8,7 @@
 	<Mashed_Ashlands_EnableSettingBeforeWorldGen>Display the Ashland World Gen. settings page before world generation.</Mashed_Ashlands_EnableSettingBeforeWorldGen>
 	<!-- dormant volcano -->
 	<Mashed_Ashlands_EnableDormantVolcano>Enable the generation of dormant volcanos on the world map</Mashed_Ashlands_EnableDormantVolcano>
-	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>Many of the ashland biomes will only generate near dormant volcanos. As such, disabling this will also prevent those from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
+	<Mashed_Ashlands_EnableDormantVolcano_Tooltip>The ashlands biome will only generate near dormant volcanos. As such, disabling this will also prevent the ashlands from generating.</Mashed_Ashlands_EnableDormantVolcano_Tooltip>
 	<Mashed_Ashlands_NumberOfDormantVolcano>The number of dormant volcanos that are generated: ({0} volcano/s)</Mashed_Ashlands_NumberOfDormantVolcano>
 	<!-- active volcano -->
 	<Mashed_Ashlands_EnableActiveVolcano>Enable the generation of active volcanos on the world map</Mashed_Ashlands_EnableActiveVolcano>
