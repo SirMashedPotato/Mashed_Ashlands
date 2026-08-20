@@ -40,6 +40,10 @@ namespace Mashed_Ashlands
 
         public GameCondition EnforceConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)
         {
+            if (map.GameConditionManager.ActiveConditions.Any(x => x.def == conditionDef && (preventConditionStacking || x.Permanent)))
+            {
+                return null;
+            }
             GameCondition gameCondition = GetConditionInstance(ref causedConditions, map, conditionDef, preventConditionStacking);
             if (gameCondition == null)
             {

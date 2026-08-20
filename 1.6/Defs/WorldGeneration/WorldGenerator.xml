@@ -36,4 +36,10 @@
 		<order>117</order>
 		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_AshlandBiomesLate"/>
 	</WorldGenStepDef>
+	<!-- ==========[Mashed_Ashlands_VolcanoRemoval]==========-->
+	<WorldGenStepDef>
+		<defName>Mashed_Ashlands_VolcanoRemoval</defName>
+		<order>450</order>
+		<worldGenStep Class="Mashed_Ashlands.WorldGenStep_VolcanoRemoval"/>
+	</WorldGenStepDef>
 </Defs>

@@ -146,6 +146,7 @@
     <Compile Include="Harmony\Compat_AlphaBees.cs" />
     <Compile Include="Harmony\Compat_NicePlantsMenu.cs" />
     <Compile Include="Harmony\Patch_ApplyBedThoughts.cs" />
+    <Compile Include="Harmony\Patch_BiomeConditionMapComponent.cs" />
     <Compile Include="Harmony\SettlementProximityGoodwillUtility_Patch.cs" />
     <Compile Include="Harmony\Patch_CompTerrainPumpDry.cs" />
     <Compile Include="Harmony\Patch_MentalBreakWorker_RunWild.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="IncidentWorker\IncidentWorker_BlightedAnimalEnters.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_BlightedCaravanAmbush.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_DaedrothPasses.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_MakeGameConditionVolcanoless.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_MerchantMeeting.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_MiasmicEruption.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_OgrimPasses.cs" />

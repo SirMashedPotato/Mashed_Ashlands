@@ -10,10 +10,13 @@ namespace Mashed_Ashlands
 
         public override void GenerateFresh(string seed, PlanetLayer layer)
         {
-            List<WorldObject> volcanos = WorldGenUtility.GetWorldVolcanosForLayer(layer);
-            foreach (WorldObject volcano in volcanos)
+            if (Mashed_Ashlands_ModSettings.EnableVolcanoRemoval)
             {
-                volcano.Destroy();
+                List<WorldObject> volcanos = WorldGenUtility.GetWorldVolcanosForLayer(layer);
+                foreach (WorldObject volcano in volcanos)
+                {
+                    volcano.Destroy();
+                }
             }
         }
     }

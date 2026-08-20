@@ -57,6 +57,11 @@
 	<Mashed_Ashlands_EnableVolcanicBadlandsAshlands>Enable the generation of the volcanic badlands sub-biome.</Mashed_Ashlands_EnableVolcanicBadlandsAshlands>
 	<Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>Enable the generation of the volcanic basalt hills sub-biome.</Mashed_Ashlands_EnableVolcanicBasaltHillsAshlands>
 	<Mashed_Ashlands_EnableVolcanicGroveAshlands>Enable the generation of the volcanic grove sub-biome.</Mashed_Ashlands_EnableVolcanicGroveAshlands>
+	<!-- Volcano removal -->
+	<Mashed_Ashlands_EnableVolcanoRemoval>Generate ashlands without volcanos.</Mashed_Ashlands_EnableVolcanoRemoval>
+	<Mashed_Ashlands_EnableVolcanoRemoval_Tooltip>If this is enabled, volcanos are only used for the generation of ashland biomes, and are removed before world generation is finalised.\n\nAll settings related to volcano and ashland biome generation will still affect the generation of ashland regions.</Mashed_Ashlands_EnableVolcanoRemoval_Tooltip>
+	<Mashed_Ashlands_EnableVolcanoRemovalChanges>Enable additional volcano removal related changes.</Mashed_Ashlands_EnableVolcanoRemovalChanges>
+	<Mashed_Ashlands_EnableVolcanoRemovalChanges_Tooltip>If this is enabled, certain additional changes are made in an attempt to preserve the intended design of ashland biomes:\n\n - Ash storms (incl. blighted and metallic) are able to occur through incidents.\n - Blighted ashland biomes will generate with a permanent dense ash clouds condition.\n - Volcanic ashland biomes will generate with a permanent volcanic heat condition.\n\nNOTE\nWhile this is intended to be used with the above setting, it can be enabled independant of it.</Mashed_Ashlands_EnableVolcanoRemovalChanges_Tooltip>
 	<!-- Other features -->
 	<Mashed_Ashlands_EnableCoastalVolcano>[Experimental] Enable generation of coastal volcanoes.</Mashed_Ashlands_EnableCoastalVolcano>
 	<Mashed_Ashlands_EnableCoastalVolcano_Tooltip>If this is enabled, islands can generate in the ocean near the coast, with a volcano at the centre.</Mashed_Ashlands_EnableCoastalVolcano_Tooltip>

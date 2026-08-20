@@ -57,6 +57,15 @@ namespace Mashed_Ashlands
 
         public static void DoSettings(ref Listing_Standard listing_Standard, Mashed_Ashlands_ModSettings settings)
         {
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanoRemoval".Translate(), ref settings.Mashed_Ashlands_EnableVolcanoRemoval, "Mashed_Ashlands_EnableVolcanoRemoval_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableVolcanoRemovalChanges".Translate(), ref settings.Mashed_Ashlands_EnableVolcanoRemovalChanges, "Mashed_Ashlands_EnableVolcanoRemovalChanges_Tooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("Mashed_Ashlands_EnableCoastalVolcano".Translate(), ref settings.Mashed_Ashlands_EnableCoastalVolcano, "Mashed_Ashlands_EnableCoastalVolcano_Tooltip".Translate());
             listing_Standard.Gap();
 

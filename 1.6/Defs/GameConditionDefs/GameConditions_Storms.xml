@@ -9,6 +9,8 @@
 		<descriptionFuture>an intense ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
 		<endMessage>The winds begin to calm. The ash storm has ended.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<!-- Only used for an optional setting -->
+		<letterText>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region.</letterText>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<allowUnderground>false</allowUnderground>
@@ -30,6 +32,8 @@
 		<descriptionFuture>an intense blighted ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
 		<endMessage>The winds begin to calm. The blighted ash storm has ended.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<!-- Only used for an optional setting -->
+		<letterText>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm carries blight. Wild animals may be driven mad, and crops may become blighted.</letterText>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<allowUnderground>false</allowUnderground>
@@ -51,6 +55,8 @@
 		<descriptionFuture>an intense metallic ash storm will converge on the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
 		<endMessage>The winds begin to calm. The metallic ash storm has ended.</endMessage>
 		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<!-- Only used for an optional setting -->
+		<letterText>Intense winds carrying a dense wall of ash, caused by nearby volcanic activity. Ash slowly asphyxiates anything caught outside unprepared, and damages plants ill-adapted for the region. This ash storm is full of metallic particles. Friction between them will cause frequent lightning strikes.</letterText>
 		<canBePermanent>true</canBePermanent>
 		<preventRain>true</preventRain>
 		<allowUnderground>false</allowUnderground>

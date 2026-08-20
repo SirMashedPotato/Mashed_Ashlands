@@ -16,6 +16,7 @@ namespace Mashed_Ashlands
         public List<TerrainReplacer> roadReplacers;
         public bool increasePollutedFertility = true;
         public bool restrictPlantsToTerrain = true;
+        public GameConditionDef optionalPermanentCondition;
 
         /* general use */
         public List<TerrainReplacer> dryToReplacers;

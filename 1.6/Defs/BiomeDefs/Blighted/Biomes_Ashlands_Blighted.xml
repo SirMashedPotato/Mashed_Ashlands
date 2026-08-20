@@ -18,6 +18,7 @@
 				<roadReplacers>
 					<PackedDirt>Mashed_Ashlands_PackedAshBlighted</PackedDirt>
 				</roadReplacers>
+				<optionalPermanentCondition>Mashed_Ashlands_DenseAshClouds</optionalPermanentCondition>
 			</li>
 			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">
 				<forested>true</forested>
