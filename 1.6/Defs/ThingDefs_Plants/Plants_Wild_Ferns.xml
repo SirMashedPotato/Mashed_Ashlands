@@ -93,7 +93,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_GrandmotherHibiscus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_FernBase">
 		<defName>Mashed_Ashlands_Plant_GrandmotherHibiscus</defName>
-		<label>garndmother hibiscus fern</label>
+		<label>grandmother hibiscus fern</label>
 		<description>A small fern-like flowering plant that can often be found growing in more tropical ashland regions.</description>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.PlantProperties">
