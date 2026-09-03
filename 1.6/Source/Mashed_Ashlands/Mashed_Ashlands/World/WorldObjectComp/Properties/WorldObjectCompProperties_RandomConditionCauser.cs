@@ -8,7 +8,6 @@ namespace Mashed_Ashlands
     {
         public WorldObjectCompProperties_RandomConditionCauser() => compClass = typeof(WorldObjectComp_RandomConditionCauser);
 
-        public bool preventConditionStacking = true;
         public List<PotentialConditions> potentialConditions;
     }
 

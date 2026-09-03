@@ -24,30 +24,25 @@ namespace Mashed_Ashlands
 
         private WorldGrid worldGrid = null;
 
-        public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)
+        public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map)
         {
-            if (!causedConditions.TryGetValue(map, out GameCondition activeCondition) && preventConditionStacking)
-            {
-                activeCondition = map.GameConditionManager.GetActiveCondition(conditionDef);
-                if (activeCondition != null)
-                {
-                    causedConditions.Add(map, activeCondition);
-                    SetupCondition(activeCondition, map);
-                }
-            }
-            return activeCondition;
+            causedConditions.TryGetValue(map, out GameCondition activeCondition);
+            return activeCondition ?? null;
         }
 
-        public GameCondition EnforceConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef, bool preventConditionStacking)
+        public GameCondition EnforceConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef)
         {
-            if (map.GameConditionManager.ActiveConditions.Any(x => x.def == conditionDef && (preventConditionStacking || x.Permanent)))
-            {
-                return null;
-            }
-            GameCondition gameCondition = GetConditionInstance(ref causedConditions, map, conditionDef, preventConditionStacking);
+            GameCondition gameCondition = GetConditionInstance(ref causedConditions, map);
             if (gameCondition == null)
             {
-                gameCondition = CreateConditionOn(ref causedConditions, map, conditionDef);
+                if (map.GameConditionManager.ActiveConditions.Any(x => x.def == conditionDef))
+                {
+                    return null;
+                }
+                else
+                {
+                    gameCondition = CreateConditionOn(ref causedConditions, map, conditionDef);
+                }
             }
             else
             {

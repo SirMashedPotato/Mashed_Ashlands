@@ -188,7 +188,7 @@ namespace Mashed_Ashlands
                             {
                                 if (ParentVolcano.InAoE(map.Tile, conditionCategory))
                                 {
-                                    EnforceConditionOn(ref causedConditions, map, currentConditionDef.conditionDef, Props.preventConditionStacking);
+                                    EnforceConditionOn(ref causedConditions, map, currentConditionDef.conditionDef);
                                 }
                             }
                             if (caravanFlag)
@@ -277,7 +277,7 @@ namespace Mashed_Ashlands
             {
                 return "Condition ticks left: " + conditionTicksLeft + "(~" + conditionTicksLeft.TicksToDays().ToString("0.0") + " days)" + "\nGrace ticks left: " + graceTicksLeft + "(~" + graceTicksLeft.TicksToDays().ToString("0.0") + " days)";
             }
-            if (currentConditionDef != null && !currentConditionDef.isNullCondition)
+            if (currentConditionDef != null && !currentConditionDef.isNullCondition && conditionTicksLeft > 0)
             {
                 return "Mashed_Ashlands_VolcanoTriggeredCondition".Translate(conditionCategory, currentConditionDef.label);
             }

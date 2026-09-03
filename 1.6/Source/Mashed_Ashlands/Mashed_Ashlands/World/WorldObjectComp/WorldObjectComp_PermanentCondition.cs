@@ -26,7 +26,7 @@ namespace Mashed_Ashlands
                         }
                         if (ParentVolcano.InAoE(map.Tile, ParentVolcano.Category))
                         {
-                            EnforceConditionOn(ref causedConditions, map, Props.volcanicConditionDef.conditionDef, Props.preventConditionStacking);
+                            EnforceConditionOn(ref causedConditions, map, Props.volcanicConditionDef.conditionDef);
                         }
                     }
                 }
