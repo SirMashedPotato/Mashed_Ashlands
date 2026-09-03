@@ -87,6 +87,10 @@
 						<weight>3</weight>
 					</li>
 					<li>
+						<volcanicConditionDef>Mashed_Ashlands_VolcanicHeat</volcanicConditionDef>
+						<weight>1</weight>
+					</li>
+					<li>
 						<volcanicConditionDef>Mashed_Ashlands_VolcanicDebrisRain</volcanicConditionDef>
 						<weight>1</weight>
 					</li>
