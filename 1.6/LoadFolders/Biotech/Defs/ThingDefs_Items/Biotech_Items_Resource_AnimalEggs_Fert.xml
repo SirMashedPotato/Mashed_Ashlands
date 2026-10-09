@@ -35,7 +35,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>4</hatcherDaystoHatch>
-				<hatcherPawn>Mashed_Ashlands_Guar</hatcherPawn>
+				<hatcherPawn>Mashed_Ashlands_GuarGlowing</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
