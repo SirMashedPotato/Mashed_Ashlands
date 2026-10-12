@@ -1,0 +1,16 @@
+﻿using Verse;
+
+namespace Mashed_Ashlands
+{
+	public class CompProperties_DischargeOnDamage : CompProperties
+	{
+		public CompProperties_DischargeOnDamage() => compClass = typeof(Comp_DischargeOnDamage);
+
+		public DamageDef damageDef;
+        public int damageAmount = 1;
+        public GasType? gasType = null;
+		public int gasAmount = 255;
+        public float radius = 3;
+		public int cooldownTicks = 500;
+	}
+}
