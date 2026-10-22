@@ -11,7 +11,6 @@ namespace Mashed_Ashlands
         public Mashed_Ashlands_Mod(ModContentPack contentPack) : base(contentPack)
         {
             settings = GetSettings<Mashed_Ashlands_ModSettings>();
-            Log.Message("[Mashed's Ashlands] version " + Content.ModMetaData.ModVersion);
         }
 
         private enum SettingsTab : byte
