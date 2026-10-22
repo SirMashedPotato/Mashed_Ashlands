@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholJazbayWine]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase">
+		<defName>Mashed_Ashlands_AlcoholJazbayWine</defName>
+		<label>jazbay wine</label>
+		<description>A wine made from fermenting ashen jazbay grapes. Consumption helps one forget about their troubles, but makes them grow tired faster. As jazbay wine is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_JazbayWineHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_AlcoholJazbayWine</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_JazbayWineHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_JazbayWineHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_AlcoholHighBase">
+		<defName>Mashed_Ashlands_JazbayWineHigh</defName>
+		<label>jazbay wine consumption</label>
+		<description>Jazbay wine in the bloodstream. Helps one forget about their troubles, but makes them grow tired faster.</description>
+		<stages>
+			<li>
+				<label>empowered</label>
+				<statFactors>
+					<RestFallRateFactor>1.3</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_JazbayWineHigh]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_JazbayWineHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Mashed_Ashlands_JazbayWineHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>drunk on jazbay wine</label>
+				<description>I could go for a nice nap right about now.</description>
+				<baseMoodEffect>13</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

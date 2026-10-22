@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Rachnoid]==========-->
+	<BodyDef>
+		<defName>Mashed_Ashlands_Rachnoid</defName>
+		<label>rachnoid like</label>
+		<corePart>
+			<def>Mashed_Ashlands_Cephalothorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Mashed_Ashlands_Abdomen</def>
+					<coverage>0.3</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>InsectHeart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Pronotum</def>
+					<coverage>0.08</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>InsectHead</def>
+							<coverage>0.65</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.2</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>large left eye</customLabel>
+									<coverage>0.05</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>large right eye</customLabel>
+									<coverage>0.06</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>small left eye</customLabel>
+									<coverage>0.04</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>small right eye</customLabel>
+									<coverage>0.04</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>middle eye</customLabel>
+									<coverage>0.04</coverage>
+								</li>
+								<li>
+									<def>InsectNostril</def>
+									<coverage>0.06</coverage>
+								</li>
+								<li>
+									<def>InsectMouth</def>
+									<customLabel>chelicerae</customLabel>
+									<coverage>0.08</coverage>
+									<groups>
+										<li>Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Mashed_Ashlands_InsectArm</def>
+					<customLabel>left pedipalp</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Mashed_Ashlands_LeftPedipalpAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>Mashed_Ashlands_InsectArm</def>
+					<customLabel>right pedipalp</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li>Mashed_Ashlands_RightPedipalpAttackTool</li>
+					</groups>
+				</li>
+				
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>left front leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>right front leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>left back leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>right back leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GlowingNetchJelly]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_NetchJellyBase">
+		<defName>Mashed_Ashlands_GlowingNetchJelly</defName>
+		<label>glowing netch jelly</label>
+		<description>A jelly like substance 'milked' from a glowing netch. While it has an odd metallic taste to it, it's just as safe to consume as normal netch jelly... which isn't exactly the safest thing to eat raw itself.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_GlowingNetchJelly</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

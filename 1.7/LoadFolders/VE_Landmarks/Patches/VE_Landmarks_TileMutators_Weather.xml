@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[VEE_RagingWind]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_RagingWind"]/biomeWhitelist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[VEE_RottenStench]==========-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TileMutatorDef[defName="VEE_RottenStench"]/biomeBlacklist</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TileMutatorDef[defName="VEE_RottenStench"]</xpath>
+			<value>
+				<biomeBlacklist/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_RottenStench"]/biomeBlacklist</xpath>
+		<value>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[VEE_FertileRains]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_FertileRains"]/biomeBlacklist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[VEE_MoreSolarPower]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="VEE_MoreSolarPower"]/biomeBlacklist</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</value>
+	</Operation>
+</Patch>

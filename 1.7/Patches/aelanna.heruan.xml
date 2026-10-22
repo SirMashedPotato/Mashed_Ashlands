@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Heruan Race</li>
+			<li>Heruan, Keepers of Memories</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Heruan_Helmet"]/equippedStatOffsets</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

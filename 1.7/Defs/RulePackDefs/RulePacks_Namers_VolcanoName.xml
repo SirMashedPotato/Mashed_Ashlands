@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoCommon]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanoCommon</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>volcano(p=10)->Mountain</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoActive]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanoActive</defName>
+		<include>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor->smouldering</li>
+				<li>descriptor->infernal</li>
+				<li>descriptor->charred</li>
+				<li>descriptor->searing</li>
+				<li>descriptor->scorching</li>
+				<li>descriptor->blazing</li>
+				<li>descriptor->boiling</li>
+				<li>descriptor->seething</li>
+				<li>descriptor->stygian</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoBlighted]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanoBlighted</defName>
+		<include>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor->blighted</li>
+				<li>descriptor->tainted</li>
+				<li>descriptor->corrupted</li>
+				<li>descriptor->defiled</li>
+				<li>descriptor->desolate</li>
+				<li>descriptor->ruined</li>
+				<li>descriptor->damned</li>
+				<li>descriptor->wretched</li>
+				<li>descriptor->accursed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoDormant]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanoDormant</defName>
+		<include>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[narrative_name] [volcano]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerVolcanoExtinct]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerVolcanoExtinct</defName>
+		<include>
+			<li>Mashed_Ashlands_NamerVolcanoCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[descriptor] [narrative_name] [volcano]</li>
+				<li>descriptor(p=2)->overgrown</li>
+				<li>descriptor(p=1)->ancient</li>
+				<li>descriptor(p=1)->verdant</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

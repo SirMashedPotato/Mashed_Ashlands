@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TileBasalt]==========-->
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>Mashed_Ashlands_TileBasalt</defName>
+		<label>basalt tile</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_FlagstoneBasalt]==========-->
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>Mashed_Ashlands_FlagstoneBasalt</defName>
+		<label>basalt flagstone</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>4</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+</Defs>

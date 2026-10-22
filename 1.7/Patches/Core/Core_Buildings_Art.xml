@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ArtBuildingBase"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath>
+		<value>
+			<li>Mashed_Ashlands_KwamaEggSculptureSmall</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_XylariaDreamPowder]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_XylariaDreamPowder</defName>
+		<ingredientDefName>Mashed_Ashlands_RawXylariaSpores</ingredientDefName>
+		<productDefName>Mashed_Ashlands_XylariaDreamPowder</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+</Defs>

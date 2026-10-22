@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BurnBite]==========-->
+	<DamageDef ParentName="Bite">
+		<defName>Mashed_Ashlands_BurnBite</defName>
+		<label>burn bite</label>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	<!-- ==========[Mashed_Ashlands_SwampBite]==========-->
+	<DamageDef ParentName="Bite">
+		<defName>Mashed_Ashlands_SwampBite</defName>
+		<label>swamp bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>Mashed_Ashlands_SwampFever</hediff>
+				<severityPerDamageDealt>0.001</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<!-- ==========[Mashed_Ashlands_DrainingStab]==========-->
+	<DamageDef>
+		<defName>Mashed_Ashlands_DrainingStab</defName>
+		<label>draining stab</label>
+		<workerClass>Mashed_Ashlands.DamageWorker_DrainingStab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+	</DamageDef>
+</Defs>

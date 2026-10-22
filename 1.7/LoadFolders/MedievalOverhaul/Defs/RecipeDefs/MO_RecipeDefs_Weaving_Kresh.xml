@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KreshToMOLinen]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_WeaveBase" Name="Mashed_Ashlands_MakeMOLinenFromKreshBase">
+		<defName>Mashed_Ashlands_KreshToMOLinen</defName>
+		<label>weave kresh cloth into linen</label>
+		<description>Weave 10 kresh cloth into 10 linen.</description>
+		<jobString>Weaving kresh.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_KreshCloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_KreshCloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</products>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Beginner</li>
+			<li>DankPyon_TextileSpinning</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_KreshToMOLinenBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeMOLinenFromKreshBase">
+		<defName>Mashed_Ashlands_KreshToMOLinenBulk</defName>
+		<label>weave kresh cloth into linen x4</label>
+		<description>Weave 40 kresh cloth into 40 linen.</description>
+		<workAmount>1800</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_KreshCloth</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<DankPyon_Linen>40</DankPyon_Linen>
+		</products>
+	</RecipeDef>
+</Defs>

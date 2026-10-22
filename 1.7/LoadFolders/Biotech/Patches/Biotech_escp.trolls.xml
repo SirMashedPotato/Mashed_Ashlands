@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ESCP - Trolls</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="ESCP_TrollGlowing"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ESCP_TrollGlowing"]</xpath>
+						<value>
+							<comps/>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ESCP_TrollGlowing"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Shearable">
+							<woolDef>Mashed_Ashlands_RawGlowingAshFungus</woolDef>
+							<shearIntervalDays>6.0</shearIntervalDays>
+							<woolAmount>14</woolAmount>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ESCP_TrollGlowing"]/statBases</xpath>
+					<value>
+						<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

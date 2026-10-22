@@ -1,0 +1,129 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedBlightcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedBlightcap</defName>
+		<label>blightcap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedBlightcap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_Blightcap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_Blightcap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedToxYam]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedToxYam</defName>
+		<label>tox yam seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedToxYam</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_ToxYam</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_ToxYam</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedGlowingParasolBush]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedGlowingParasolBush</defName>
+		<label>glowing parasol bush spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedGlowingParasolBush</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_GlowingParasolBush</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_GlowingParasolBush</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedGlowingScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedGlowingScathecraw</defName>
+		<label>glowing scathecraw seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedGlowingScathecraw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_GlowingScathecraw</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_GlowingScathecraw</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedWasteSponge]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedProductionBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedWasteSponge</defName>
+		<label>waste sponge spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedWasteSponge</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_WasteSponge</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_WasteSponge</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedEmperorToxisol]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedEmperorToxisol</defName>
+		<label>emperor toxisol spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedEmperorToxisol</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeEmperorToxisol</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeEmperorToxisol</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedWeepingMouldcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedTreeBase" MayRequire="ludeon.rimworld.biotech">
+		<defName>Mashed_Ashlands_SeedWeepingMouldcap</defName>
+		<label>weeping mouldcap spores</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedWeepingMouldcap</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_TreeWeepingMouldcap</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_TreeWeepingMouldcap</li>
+				</sources>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

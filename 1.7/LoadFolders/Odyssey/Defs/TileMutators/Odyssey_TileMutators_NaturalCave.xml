@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SulphuricCaves]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_AshlandMutatorBase">
+		<defName>Mashed_Ashlands_SulphuricCaves</defName>
+		<label>sulphuric caves</label>
+		<description>Bodies of sulphuric water can be found within caves in this area.</description>
+		<categories>
+			<li>Caves</li>
+			<li>Groundwater</li>
+		</categories>
+		<priority>2</priority>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricCaves</workerClass>
+		<genOrder>-100</genOrder>
+		<preventGenSteps>
+			<li>CaveHives</li>
+		</preventGenSteps>
+	</TileMutatorDef>
+</Defs>

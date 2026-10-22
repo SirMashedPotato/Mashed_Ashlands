@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_HeadCrest]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_HeadCrest</defName>
+		<label>head crest</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<bleedRate>0.5</bleedRate>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Wing]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Wing</defName>
+		<label>wing</label>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Sail]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Sail</defName>
+		<label>sail</label>
+		<frostbiteVulnerability>4</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_InsectArm]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_InsectArm</defName>
+		<label>arm</label>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Abdomen]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+	</BodyPartDef>
+	<!-- ==========[Mashed_Ashlands_Cephalothorax]==========-->
+	<BodyPartDef>
+		<defName>Mashed_Ashlands_Cephalothorax</defName>
+		<label>cephalothorax</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+	</BodyPartDef>
+</Defs>

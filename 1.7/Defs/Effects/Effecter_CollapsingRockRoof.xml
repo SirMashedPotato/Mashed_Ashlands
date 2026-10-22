@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CollapsingRockRoof]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_CollapsingRockRoof</defName>
+		<maintainTicks>60</maintainTicks>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<chancePerTick>0.03</chancePerTick>
+				<fleckDef>DustPuffThick</fleckDef>
+				<burstCount>2~3</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>1</positionRadius>
+				<positionOffset>(0, 0, 2)</positionOffset>
+				<scale>1~3</scale>
+				<angle>0~360</angle>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+				<rotationRate>-20~20</rotationRate>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

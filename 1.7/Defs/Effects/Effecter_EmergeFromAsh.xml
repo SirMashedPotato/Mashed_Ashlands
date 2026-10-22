@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_EmergeFromAsh]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_EmergeFromAsh</defName>
+		<maintainTicks>60</maintainTicks>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<chancePeriodTicks>7</chancePeriodTicks>
+				<lifespanMaxTicks>14</lifespanMaxTicks>
+				<chancePerTick>.3</chancePerTick>
+				<fleckDef>DustPuffThick</fleckDef>
+				<burstCount>2~3</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0</positionRadius>
+				<positionOffset>(0, 0, 0)</positionOffset>
+				<scale>1~2</scale>
+				<absoluteAngle>True</absoluteAngle>
+				<rotationRate>0</rotationRate>
+				<rotation>0</rotation>
+				<speed>0</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>ThrownDebris</fleckDef>
+				<burstCount>10~12</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>.5</positionRadius>
+				<positionOffset>(0, 0, 0)</positionOffset>
+				<scale>0.5~1</scale>
+				<angle>0~360</angle>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+				<absoluteAngle>false</absoluteAngle>
+				<rotationRate>30~50</rotationRate>
+				<rotation>0</rotation>
+				<speed>-3~3</speed>
+			</li>
+		</children>
+	</EffecterDef>
+	<!-- ==========[Mashed_Ashlands_EmergeFromAshLarge]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_EmergeFromAshLarge</defName>
+		<maintainTicks>60</maintainTicks>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<chancePeriodTicks>7</chancePeriodTicks>
+				<lifespanMaxTicks>14</lifespanMaxTicks>
+				<chancePerTick>1</chancePerTick>
+				<fleckDef>DustPuffThick</fleckDef>
+				<burstCount>2~3</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>0</positionRadius>
+				<positionOffset>(0, 0, 0)</positionOffset>
+				<scale>5~7</scale>
+				<absoluteAngle>True</absoluteAngle>
+				<rotationRate>0</rotationRate>
+				<rotation>0</rotation>
+				<speed>0</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>ThrownDebris</fleckDef>
+				<burstCount>10~12</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>.75</positionRadius>
+				<positionOffset>(0, 0, 0)</positionOffset>
+				<scale>1~1.5</scale>
+				<angle>0~360</angle>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+				<absoluteAngle>false</absoluteAngle>
+				<rotationRate>30~50</rotationRate>
+				<rotation>0</rotation>
+				<speed>-3~3</speed>
+			</li>
+		</children>
+	</EffecterDef>
+	<!-- ==========[Mashed_Ashlands_AshCloud]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_AshCloud</defName>
+		<maintainTicks>120</maintainTicks>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Interact_GraveDig</soundDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>DustPuffThick</fleckDef>
+				<burstCount>1~2</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<positionRadius>.75</positionRadius>
+				<positionOffset>(0, 0, 0)</positionOffset>
+				<scale>4~10</scale>
+				<angle>0~360</angle>
+				<fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+				<absoluteAngle>false</absoluteAngle>
+				<rotationRate>30~50</rotationRate>
+				<rotation>0</rotation>
+				<speed>-3~3</speed>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BiomeDef[defName="SeaIce" or defName="IceSheet"]</xpath>
+		<value>
+			<li Class="Mashed_Ashlands.PreventAshlandOverride"/>
+		</value>
+	</Operation>
+</Patch>

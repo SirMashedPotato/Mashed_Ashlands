@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_DeathAsh]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_DeathAsh</defName>
+		<label>Breathing Is Overrated Anyway</label>
+		<description>Have a pawn die from ash buildup for the first time</description>
+		<tracker Class="AchievementsExpanded.HediffDeathTracker">
+			<def>Mashed_Ashlands_AshBuildup</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_DeathAsh</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

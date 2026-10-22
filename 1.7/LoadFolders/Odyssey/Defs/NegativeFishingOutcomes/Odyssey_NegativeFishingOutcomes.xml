@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CrabeaterEscape]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_CrabeaterEscape</defName>
+		<fishType>Mashed_Ashlands_Fish_Crabeater</fishType>
+		<letterLabel>Hungry crabeater</letterLabel>
+		<letterText>While pulling in a crabeater, {PAWN_nameDef} narrowly avoided losing several fingers, dropping {PAWN_possessive} catch in the process.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_FoyadaHopperEscape]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_FoyadaHopperEscape</defName>
+		<fishType>Mashed_Ashlands_Fish_FoyadaHopper</fishType>
+		<letterLabel>Colossal fish</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} hooked something absolutely massive. After a very brief fight, the line snapped, causing {PAWN_objective} to lose {PAWN_possessive} catch.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_MarshAnglerEscape]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_MarshAnglerEscape</defName>
+		<fishType>Mashed_Ashlands_Fish_MarshAngler</fishType>
+		<letterLabel>Blinding catch</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} hooked something absolutely massive. Before {PAWN_objective} could even start to reel in the beast {PAWN_nameDef} was blinded by a bright flash of light, causing {PAWN_objective} to lose {PAWN_possessive} catch.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_MonkfishAttack]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_MonkfishAttack</defName>
+		<fishType>Mashed_Ashlands_Fish_Monkfish</fishType>
+		<letterLabel>Monkfish attack</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} was attacked by a large monkfish and was grabbed by its gaping maw. The fish escaped.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Bite</damageDef>
+		<damageAmountRange>6~12</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_OldManGarEscape]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_OldManGarEscape</defName>
+		<fishType>Mashed_Ashlands_Fish_OldManGar</fishType>
+		<letterLabel>Giant gar</letterLabel>
+		<letterText>While attempting to reel in a fish, {PAWN_nameDef} witnessed a giant old man gar burst out of the water, stealing {PAWN_possessive} catch in the process.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_SailfinAttack]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_SailfinAttack</defName>
+		<fishType>Mashed_Ashlands_Fish_ResdaynianSailfin</fishType>
+		<letterLabel>Sailfin attack</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} was attacked by a giant Resdaynian sailfin and was skewered by its spear-like snout. The fish escaped.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Stab</damageDef>
+		<damageAmountRange>6~12</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_SmallSlaughterfishBite]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_SmallSlaughterfishBite</defName>
+		<fishType>Mashed_Ashlands_Fish_SmallSlaughterfish</fishType>
+		<letterLabel>Small Slaughterfish bite</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} got too close to the water and was nibbled by a small slaughterfish!\n\nThe fish escaped.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Bite</damageDef>
+		<damageAmountRange>1~3</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_SlaughterfishBite]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_SlaughterfishBite</defName>
+		<fishType>Mashed_Ashlands_Fish_Slaughterfish</fishType>
+		<letterLabel>Slaughterfish bite</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} got too close to the water and was bitten by a slaughterfish!\n\nThe fish escaped.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Bite</damageDef>
+		<damageAmountRange>4~6</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_SlaughterfishAttack]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_SlaughterfishAttack</defName>
+		<fishType>Mashed_Ashlands_Fish_Slaughterfish</fishType>
+		<letterLabel>Slaughterfish attack</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} got too close to the water and was swarmed by a school of slaughterfish!\n\nThe fish managed to escape.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Bite</damageDef>
+		<damageAmountRange>6~15</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+	<!-- ==========[Mashed_Ashlands_TrevallyAttack]==========-->
+	<NegativeFishingOutcomeDef>
+		<defName>Mashed_Ashlands_TrevallyAttack</defName>
+		<fishType>Mashed_Ashlands_Fish_Trevally</fishType>
+		<letterLabel>Trevally attack</letterLabel>
+		<letterText>While fishing, {PAWN_nameDef} was attacked by a large trevally and was knocked over by it. The fish escaped.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<damageDef>Blunt</damageDef>
+		<damageAmountRange>6~12</damageAmountRange>
+	</NegativeFishingOutcomeDef>
+</Defs>

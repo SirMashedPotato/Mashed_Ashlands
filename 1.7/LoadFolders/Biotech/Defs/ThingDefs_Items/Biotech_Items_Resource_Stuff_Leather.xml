@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MouldLeather]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>Mashed_Ashlands_MouldLeather</defName>
+		<label>mould leather</label>
+		<description>A leathery material harvested from a fungal tree, somewhat looks like it's made out of mould. Not as protective as fungal leather.</description>
+		<graphicData>
+			<color>(149,159,61)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(149,159,61)</color>
+			<commonality>0</commonality>
+		</stuffProps>
+	</ThingDef>
+</Defs>

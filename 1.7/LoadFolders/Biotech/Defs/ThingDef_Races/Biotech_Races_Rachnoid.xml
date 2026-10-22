@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RachnoidGlowing]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_RachnoidThingBase">
+		<defName>Mashed_Ashlands_RachnoidGlowing</defName>
+		<label>glowing rachnoid</label>
+		<description>A larger subspecies of rachnoid that has adapted to life in polluted regions. Unlike most species of spiders, rachnoids only use four of their legs for movement, the other four are used to form a silk cocoon over their body. This cocoon slowly fills with a highly toxic gas, that the glowing rachnoid can release when threatened.\n\n&lt;color=#E5E54C&gt;Tox Gas Discharge&lt;/color&gt;\nGlowing rachnoid are able to periodically release clouds of tox gas when damaged.\n\n&lt;color=#E5E54C&gt;Pollution Absorption&lt;/color&gt;\nGlowing rachnoid can absorb nutrients from environmental pollution, decreasing their hunger fall rate.</description>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.AnimalProperties">
+				<glowOverlay>true</glowOverlay>
+			</li>
+			<li Class="Mashed_Ashlands.PollutionProperties">
+				<alternativePollutionStimulis>Mashed_Ashlands_PollutionAbsorption</alternativePollutionStimulis>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_RachnoidGlowingFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>Mashed_Ashlands_Egg_RachnoidGlowingUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_DischargeOnDamage">
+				<damageDef>Smoke</damageDef>
+				<damageAmount>10</damageAmount>
+				<gasType>ToxGas</gasType>
+				<gasAmount>100</gasAmount>
+				<radius>2</radius>
+				<cooldownTicks>6000</cooldownTicks>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<race>
+			<baseBodySize>0.6</baseBodySize>
+			<maxPreyBodySize>0.5</maxPreyBodySize>
+			<fleshType>Mashed_Ashlands_FleshGlowing</fleshType>
+			<bloodDef>Mashed_Ashlands_Filth_GlowingBlood</bloodDef>
+		</race>
+		<tradeTags>
+			<li>Mashed_Ashlands_AshlandAnimalGlowing</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_RachnoidGlowing</defName>
+		<label>glowing rachnoid</label>
+		<race>Mashed_Ashlands_RachnoidGlowing</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_RachnoidGlowing</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Dessicated_Rachnoid</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_RachnoidGlowing</texPath>
+					<drawSize>1.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Dessicated_Rachnoid</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_RachnoidGlowing</texPath>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Rachnoid/Mashed_Ashlands_Dessicated_Rachnoid</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

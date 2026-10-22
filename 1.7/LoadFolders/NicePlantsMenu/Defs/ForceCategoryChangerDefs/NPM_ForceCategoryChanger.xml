@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FCC_FoodForAnimal]==========-->
+	<NicePlantsMenu.ForceCategoryChanger>
+		<defName>Mashed_Ashlands_FCC_FoodForAnimal</defName>
+		<plantDefNames>
+			<li>Mashed_Ashlands_Plant_AshlandGrass</li>
+			<li>Mashed_Ashlands_Plant_AshlandFungus</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_GlowingEntoloma</li>
+		</plantDefNames>
+		<category>FoodForAnimal</category>
+	</NicePlantsMenu.ForceCategoryChanger>
+	<!-- ==========[Mashed_Ashlands_FCC_Tree]==========-->
+	<NicePlantsMenu.ForceCategoryChanger>
+		<defName>Mashed_Ashlands_FCC_Tree</defName>
+		<plantDefNames>
+			<li>Mashed_Ashlands_Plant_Corkbulb</li>
+			<li>Mashed_Ashlands_Plant_GoldenReed</li>
+		</plantDefNames>
+		<category>Tree</category>
+	</NicePlantsMenu.ForceCategoryChanger>
+</Defs>

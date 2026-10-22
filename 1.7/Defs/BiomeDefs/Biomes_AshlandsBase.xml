@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshlandsBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<!-- The non-standard biome workers I use cause it to default and get locked to disabled otherwise -->
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<allowLandforms>true</allowLandforms>
+				<allowBiomeTransitions>true</allowBiomeTransitions>
+				<disallowedLandforms>
+					<li>Mashed_Ashlands_AshDeposit</li>
+					<li>Mashed_Ashlands_BlightedAshDeposit</li>
+					<li>Mashed_Ashlands_RichAshDeposit</li>
+					<li>Mashed_Ashlands_VolcanicAshDeposit</li>
+				</disallowedLandforms>
+			</li>
+		</modExtensions>
+		<!-- World generation -->
+		<extraRockTypes>
+			<li>Mashed_Ashlands_Basalt</li>
+		</extraRockTypes>
+		<!-- Map generation -->
+		<geyserCountFactor>1.2</geyserCountFactor>
+		<extraGenSteps>
+			<li>Mashed_Ashlands_ColumnarBasalt</li>
+			<li>Mashed_Ashlands_DeadExplorer</li>
+		</extraGenSteps>
+		<!-- Misc -->
+		<settlementSelectionWeight>0.6</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<diseaseMtbDays>60</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_OrganDecay</diseaseInc>
+				<commonality>10</commonality>
+			</li>
+		</diseases>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Slaughterfish>
+			</freshwater_Common>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_SmallSlaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SmallSlaughterfish>
+				<Mashed_Ashlands_Fish_Slaughterfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Slaughterfish>
+			</saltwater_Common>
+			<rareCatchesSetMaker MayRequire="ludeon.rimworld.odyssey">Mashed_Ashlands_RareFishingCatches_Ashland</rareCatchesSetMaker>
+		</fishTypes>
+		<!-- Weather -->
+		<baseWeatherCommonalities>
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+		</baseWeatherCommonalities>
+		<!-- Animals -->
+		<wildAnimals>
+			<!-- prey animals -->
+			<Boomrat>0.05</Boomrat>
+			<Rat>0.6</Rat>
+			<Mashed_Ashlands_KwamaScrib>0.3</Mashed_Ashlands_KwamaScrib>
+			<Mashed_Ashlands_KwamaForager>0.2</Mashed_Ashlands_KwamaForager>
+			<!-- Special -->
+			<Mashed_Ashlands_Scamp>0.06</Mashed_Ashlands_Scamp>
+			<JE_JagothGrr MayRequire="sarg.jorisexperience">0.06</JE_JagothGrr>
+			<!-- botchjob.profaned -->
+			<BotchJob_UndeadColossus MayRequire="botchjob.profaned">0.01</BotchJob_UndeadColossus>
+			<BotchJob_Ghoul MayRequire="botchjob.profaned">0.03</BotchJob_Ghoul>
+			<BotchJob_Wraith MayRequire="botchjob.profaned">0.03</BotchJob_Wraith>
+			<BotchJob_Skeleton MayRequire="botchjob.profaned">0.03</BotchJob_Skeleton>
+			<BotchJob_UndeadWarg MayRequire="botchjob.profaned">0.03</BotchJob_UndeadWarg>
+			<BotchJob_UndeadHorse MayRequire="botchjob.profaned">0.03</BotchJob_UndeadHorse>
+			<BotchJob_UndeadCat MayRequire="botchjob.profaned">0.03</BotchJob_UndeadCat>
+			<BotchJob_UndeadDragon MayRequire="botchjob.profaned">0.01</BotchJob_UndeadDragon>
+		</wildAnimals>
+		<pollutionWildAnimals>
+			<Rat>0.6</Rat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<Mashed_Ashlands_Shieldcrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</Mashed_Ashlands_Shieldcrab>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Mashed_Ashlands_Guar</li>
+			<li>Mashed_Ashlands_Rotumbo</li>
+			<li>Mashed_Ashlands_NixOx</li>
+			<li>Mashed_Ashlands_NixSteed</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsRegularBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsRegularBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.1</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
+				</cavePlants>
+			</li>
+		</modExtensions>
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.75</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshYams</foragedFood>
+		<maxFishPopulation>480</maxFishPopulation>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSand</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSand</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbank</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_Crabeater MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Crabeater>
+				<Mashed_Ashlands_Fish_WeepingPygmyShark MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_WeepingPygmyShark>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_GhostOctopus MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_GhostOctopus>
+				<Mashed_Ashlands_Fish_ResdaynianSailfin MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_ResdaynianSailfin>
+			</saltwater_Uncommon>
+		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabBlue>0.1</Mashed_Ashlands_SandcrabBlue>
+		</coastalWildAnimals>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsThrivingBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsThrivingBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_RichAshGravel</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
+				</cavePlants>
+			</li>
+		</modExtensions>
+		<!-- Foraging/fishing/plants -->
+		<forageability>1</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshFungus</foragedFood>
+		<maxFishPopulation>540</maxFishPopulation>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSand</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSand</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbank</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMud</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravel</gravelTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_MustardEel MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_MustardEel>
+				<Mashed_Ashlands_Fish_TelvannisCephalopod MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_TelvannisCephalopod>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_Monkfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Monkfish>
+				<Mashed_Ashlands_Fish_Pikeblenny MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Pikeblenny>
+			</saltwater_Uncommon>
+		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabBlue>0.1</Mashed_Ashlands_SandcrabBlue>
+		</coastalWildAnimals>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsBlightedBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsBlightedBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_AshGravel</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.05</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingCoprinus>
+				</cavePlants>
+			</li>
+		</modExtensions>
+		<settleWarning>The land here has been ravaged by blight storms. There is little arable land, and other sources of food are scarce.</settleWarning>
+		<!-- Disables -->
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<canAutoChoose>false</canAutoChoose>
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.1</forageability>
+		<foragedFood>Mashed_Ashlands_RawScathecraw</foragedFood>
+		<maxFishPopulation>60</maxFishPopulation>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+			<li>Mashed_Ashlands_StriderShells</li>
+		</extraGenSteps>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSandBlighted</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshGravelBlighted</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbankBlighted</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMudBlighted</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravelBlighted</gravelTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowVolcanicWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepVolcanicWater</waterDeepTerrain>
+		<oceanShallowTerrain>Mashed_Ashlands_ShallowVolcanicOceanWater</oceanShallowTerrain>
+		<oceanDeepTerrain>Mashed_Ashlands_DeepVolcanicOceanWater</oceanDeepTerrain>
+		<waterMovingShallowTerrain>Mashed_Ashlands_ShallowMovingVolcanicWater</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>Mashed_Ashlands_DeepMovingVolcanicWater</waterMovingChestDeepTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Misc -->
+		<settlementSelectionWeight>0.3</settlementSelectionWeight>
+		<movementDifficulty>1.5</movementDifficulty>
+		<diseaseMtbDays>40</diseaseMtbDays>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<!-- Fishing -->
+		<fishTypes>
+			<freshwater_Uncommon>
+				<Mashed_Ashlands_Fish_Siltfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Siltfish>
+			</freshwater_Uncommon>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_FiremouthGuiyu MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_FiremouthGuiyu>
+				<Mashed_Ashlands_Fish_Oanna MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Oanna>
+				<Mashed_Ashlands_Fish_SleeperCoffinfish MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_SleeperCoffinfish>
+			</saltwater_Uncommon>
+		</fishTypes>
+		<!-- Weather -->
+		<baseWeatherCommonalities Inherit="False">
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>0.1</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<ToxRain MayRequire="Ludeon.RimWorld.Odyssey">0.3</ToxRain>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>4</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_BlightedAshfall>1</Mashed_Ashlands_BlightedAshfall>
+		</baseWeatherCommonalities>
+	</BiomeDef>
+	<!-- ==========[Mashed_Ashlands_AshlandsVolcanicBase]==========-->
+	<BiomeDef Name="Mashed_Ashlands_AshlandsVolcanicBase" ParentName="Mashed_Ashlands_AshlandsBase" Abstract="True">
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>Mashed_Ashlands_RichAshGravelVolcanic</caveGravelReplacer>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_Bloatspore>0.05</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.15</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingCoprinus>
+				</cavePlants>
+			</li>
+		</modExtensions>
+		<!-- Disables -->
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<!-- Foraging/fishing/plants -->
+		<forageability>0.5</forageability>
+		<foragedFood>Mashed_Ashlands_RawAshPomegranate</foragedFood>
+		<maxFishPopulation>240</maxFishPopulation>
+		<wildPlantRegrowDays>30</wildPlantRegrowDays>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_FetcherflyHives</li>
+		</extraGenSteps>
+		<!-- Terrain overrides -->
+		<coastalBeachTerrain>Mashed_Ashlands_AshSandVolcanic</coastalBeachTerrain>
+		<lakeBeachTerrain>Mashed_Ashlands_AshSandVolcanic</lakeBeachTerrain>
+		<riverbankTerrain>Mashed_Ashlands_AshRiverbankVolcanic</riverbankTerrain>
+		<mudTerrain>Mashed_Ashlands_AshMudVolcanic</mudTerrain>
+		<gravelTerrain>Mashed_Ashlands_AshGravelVolcanic</gravelTerrain>
+		<waterShallowTerrain>Mashed_Ashlands_ShallowVolcanicWater</waterShallowTerrain>
+		<waterDeepTerrain>Mashed_Ashlands_DeepVolcanicWater</waterDeepTerrain>
+		<oceanShallowTerrain>Mashed_Ashlands_ShallowVolcanicOceanWater</oceanShallowTerrain>
+		<oceanDeepTerrain>Mashed_Ashlands_DeepVolcanicOceanWater</oceanDeepTerrain>
+		<waterMovingShallowTerrain>Mashed_Ashlands_ShallowMovingVolcanicWater</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>Mashed_Ashlands_DeepMovingVolcanicWater</waterMovingChestDeepTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<!-- Fishing -->
+		<fishTypes>
+			<saltwater_Common>
+				<Mashed_Ashlands_Fish_AkaviriWrasse MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_AkaviriWrasse>
+				<Mashed_Ashlands_Fish_Armourhead MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Armourhead>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Mashed_Ashlands_Fish_FiremouthGuiyu MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_FiremouthGuiyu>
+				<Mashed_Ashlands_Fish_Trevally MayRequire="ludeon.rimworld.odyssey">1</Mashed_Ashlands_Fish_Trevally>
+			</saltwater_Uncommon>
+		</fishTypes>
+		<!-- Animals -->
+		<coastalWildAnimals>
+			<Mashed_Ashlands_SandcrabOrange>0.1</Mashed_Ashlands_SandcrabOrange>
+		</coastalWildAnimals>
+		<!-- Map generation -->
+		<geyserCountFactor>2</geyserCountFactor>
+		<!-- Misc -->
+		<settlementSelectionWeight>0.3</settlementSelectionWeight>
+		<movementDifficulty>2</movementDifficulty>
+		<diseaseMtbDays>40</diseaseMtbDays>
+		<soundsAmbient Inherit="False">
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<!-- Weather -->
+		<baseWeatherCommonalities Inherit="False">
+			<!-- Vanilla Weather -->
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>0.5</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>0.5</RainyThunderstorm>
+			<FoggyRain>0.5</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>8</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>2</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_SulphuricRain>0.5</Mashed_Ashlands_SulphuricRain>
+			<Mashed_Ashlands_FoggySulphuricRain>0.5</Mashed_Ashlands_FoggySulphuricRain>
+		</baseWeatherCommonalities>
+	</BiomeDef>
+</Defs>

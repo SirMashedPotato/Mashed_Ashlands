@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
+		<value>
+			<li>Mashed_Ashlands_ParasolWoodLog</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Mashed_Ashlands_ParasolWoodLog</li>
+		</value>
+	</Operation>
+</Patch>

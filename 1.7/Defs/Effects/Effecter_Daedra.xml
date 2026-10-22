@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DaedraSummon]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_DaedraSummon</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<scale>0.3~0.4</scale>
+				<chancePerTick>0.06</chancePerTick>
+				<positionRadius>1.3</positionRadius>
+				<fleckDef>Mashed_Ashlands_DaedraSummonFleck</fleckDef>
+				<speed>0.3~0.3</speed>
+				<angle>10~80</angle>
+				<rotation>0</rotation>
+			</li>
+		</children>
+	</EffecterDef>
+	<!-- ==========[Mashed_Ashlands_DaedraSummonFleck]==========-->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Mashed_Ashlands_DaedraSummonFleck</defName>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+			<texPath>Things/Mote/Mashed_Ashlands_DaedraSummonFleck</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0.25</fadeInTime>
+		<solidTime>0.5</solidTime>
+		<fadeOutTime>0.25</fadeOutTime>
+	</FleckDef>
+	<!-- ==========[Mashed_Ashlands_OgrimBellyDrumWarmup]==========-->
+	<EffecterDef>
+		<defName>Mashed_Ashlands_OgrimBellyDrumWarmup</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<spawnLocType>OnTarget</spawnLocType>
+				<scale>1</scale>
+				<ticksBetweenMotes>40</ticksBetweenMotes>
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+				<soundDef>Pawn_Melee_BigBash_HitPawn</soundDef>
+				<intermittentSoundInterval>40</intermittentSoundInterval>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

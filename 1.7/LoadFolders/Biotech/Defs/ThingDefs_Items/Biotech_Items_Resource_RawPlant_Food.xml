@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RawBlightcap]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawBlightcap</defName>
+		<label>blightcap fungus</label>
+		<description>Raw blightcap fungus. Disgusting, and not very pleasant to eat.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawBlightcap</texPath>
+		</graphicData>
+		<ingestible>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawGlowingAshFungus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawGlowingAshFungus</defName>
+		<label>glowing ash fungus</label>
+		<description>Raw flesh from a glowing ashland fungus. Ignoring the strange metallic taste, glowing ash fungus is perfectly safe to eat... when cooked at least.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawGlowingAshFungus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_RawToxYams]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
+		<defName>Mashed_Ashlands_RawToxYams</defName>
+		<label>tox yams</label>
+		<description>Raw tox yams. Ignoring the strange metallic taste, tox yam is perfectly safe to eat... when cooked at least.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawToxYams</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[LavaEmergence]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="LavaEmergence"]/allowedBiomes</xpath>
+		<value>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+		</value>
+	</Operation>
+	<!-- ==========[LavaFlow]==========-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="LavaFlow"]/allowedBiomes</xpath>
+		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</value>
+	</Operation>
+</Patch>

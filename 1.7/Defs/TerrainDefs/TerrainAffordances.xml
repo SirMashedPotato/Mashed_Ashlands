@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_GrowAsh]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_GrowAsh</defName>
+		<label>growable ash</label>
+		<order>3000</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[Mashed_Ashlands_GrowSulphur]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_GrowSulphur</defName>
+		<label>growable sulphur</label>
+		<order>3000</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[Mashed_Ashlands_PackableAsh]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_PackableAsh</defName>
+		<label>packable ash</label>
+		<order>3100</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[Mashed_Ashlands_PackableAshVolcanic]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_PackableAshVolcanic</defName>
+		<label>packable volcanic ash</label>
+		<order>3100</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[Mashed_Ashlands_PackableAshBlighted]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_PackableAshBlighted</defName>
+		<label>packable blighted ash</label>
+		<order>3100</order>
+	</TerrainAffordanceDef>
+	<!-- ==========[Mashed_Ashlands_AshCastle]==========-->
+	<TerrainAffordanceDef>
+		<defName>Mashed_Ashlands_AshCastle</defName>
+		<label>ashcanoable</label>
+		<order>3500</order>
+	</TerrainAffordanceDef>
+</Defs>

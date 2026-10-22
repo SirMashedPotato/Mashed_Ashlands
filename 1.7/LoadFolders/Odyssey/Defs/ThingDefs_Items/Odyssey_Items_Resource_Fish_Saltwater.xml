@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Fish_AkaviriWrasse]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_AkaviriWrasse</defName>
+		<label>akaviri wrasse</label>
+		<description>A rare species of wrasse, rarely found in the oceanic waters around ashland regions. Many believe the Akaviri wrasse is originally from a far off, and very strange, land.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawAkaviriWrasse</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Armourhead]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Armourhead</defName>
+		<label>armourhead</label>
+		<description>Often found in reefs near volcanically active ashland regions, they have several large spines along their back, that can make handling them somewhat risky.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawArmourhead</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Crabeater]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Crabeater</defName>
+		<label>crabeater</label>
+		<description>A primitive and heavily armoured fish, the jaws of the crabeater are designed specifically for crushing shell. Quite common in the oceanic waters near ashlands, due to the abundance of crabs that can be found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawCrabeater</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_FiremouthGuiyu]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_FiremouthGuiyu</defName>
+		<label>firemouth guiyu</label>
+		<description>An incredibly primitive fish, solely found in oceanic waters near ashland regions. Unlike most fish found in these waters, the firemouth guiyu will often travel to the tainted waters around blighted volcanos, where they are believed to spawn.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawFiremouthGuiyu</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_GhostOctopus]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_GhostOctopus</defName>
+		<label>ghost octopus</label>
+		<description>A small species of octopus usually only found in deep water. Ghost octopus are a fairly common sight in the large coral reefs found around ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawGhostOctopus</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Monkfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Monkfish</defName>
+		<label>monkfish</label>
+		<description>Monkfish can grow rather large, especially of the coast of ashland regions. While rather hideous, monkfish is considered to be quite a delicacy by many. Some locals have tales of enormous monkfish swallowing ill-prepared anglers whole.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMonkfish</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_MustardEel]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_MustardEel</defName>
+		<label>mustard eel</label>
+		<description>Often found along the coast in ashland regions, mustard eel tend to hide in muddy sediments, likely to help them avoid slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawMustardEel</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Oanna]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Oanna</defName>
+		<label>oanna</label>
+		<description>A primative ray-like fish, only found in found in the tainted oceans around blighted ashland regions. Unlike most aquatic life in these waters, the oanna is actually rather peaceful.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawOanna</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Pikeblenny]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Pikeblenny</defName>
+		<label>pikeblenny</label>
+		<description>A strange little fish, rarely found in the oceanic waters around ashland regions. Their small size allows them to hide in tight crevices, keeping them safe from slaughterfish.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawPikeblenny</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_ResdaynianSailfin]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_ResdaynianSailfin</defName>
+		<label>Resdaynian sailfin</label>
+		<description>A species of sailfish, rarely found in the oceanic waters around ashland regions. Considered quite a trophy.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Adept/Mashed_Ashlands_RawResdaynianSailfin</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_SleeperCoffinfish]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_SleeperCoffinfish</defName>
+		<label>sleeper coffinfish</label>
+		<description>A rather rotund, and quite small, fish. The sleeper coffinfish is almost solely found in the tainted oceans around blighted ashland regions, making it one of the few aquatic species found there.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawSleeperCoffinfish</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>6</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_TelvannisCephalopod]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_TelvannisCephalopod</defName>
+		<label>Telvannis cephalopod</label>
+		<description>This particular species of cephalopod can often be found in the waters around Port Telvannis, although they have also been found further abroad in warmer waters.\n\nMembers of Great House Telvanni can often be found wearing the hollowed out shell of larger Telvannis cephalopod as a helmet. The process of preparing these shells is said to take years to master.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTelvannisCephalopod</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_Trevally]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_Trevally</defName>
+		<label>trevally</label>
+		<description>Large predatory fish that can often be found in the oceanic waters around ashland regions, especially in areas with large cephalopod populations.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawTrevally</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<Mass>1.5</Mass>
+			<MarketValue>30</MarketValue>
+		</statBases>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Fish_WeepingPygmyShark]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_FishBase">
+		<defName>Mashed_Ashlands_Fish_WeepingPygmyShark</defName>
+		<label>weeping pygmy shark</label>
+		<description>One of the smallest species of shark. This particular species is almost solely found in the nutrient rich waters near ashland regions.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Fish/Mashed_Ashlands_RawWeepingPygmyShark</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

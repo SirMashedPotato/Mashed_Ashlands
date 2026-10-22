@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_EmergeFromAsh]==========-->
+	<PawnsArrivalModeDef>
+		<defName>Mashed_Ashlands_EmergeFromAsh</defName>
+		<workerClass>Mashed_Ashlands.PawnsArrivalModeWorker_EmergeFromAsh</workerClass>
+		<textEnemy>Several {0} are emerging from the ash.</textEnemy>
+		<textWillArrive>{0_pawnsPluralDef} will emerge from the ash.</textWillArrive>
+		<selectionWeightCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 -->
+			</points>
+		</selectionWeightCurve>
+	</PawnsArrivalModeDef>
+</Defs>

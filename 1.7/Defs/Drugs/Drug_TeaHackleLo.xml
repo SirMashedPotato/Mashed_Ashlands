@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TeaHackleLo]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_TeaBase">
+		<defName>Mashed_Ashlands_TeaHackleLo</defName>
+		<label>hackle-lo tea</label>
+		<description>An invigorating tea brewed using hackle-lo leaves. While it has a somewhat bitter taste, it does help to fight back fatigue.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_TeaHackleLoHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_TeaHackleLo</texPath>
+		</graphicData>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_TeaHackleLoHigh</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>Mashed_Ashlands_AshSurvival_Beginner</researchPrerequisite>
+			<skillRequirements>
+				<Cooking>3</Cooking>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Mashed_Ashlands_RawHackleLo>3</Mashed_Ashlands_RawHackleLo>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_TeaHackleLoHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_TeaHighBase">
+		<defName>Mashed_Ashlands_TeaHackleLoHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>hackle-lo tea</label>
+		<description>An invigorating tea brewed using hackle-lo leaves. While it has a somewhat bitter taste, it does help to fight back fatigue.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.9</RestFallRateFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

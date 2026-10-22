@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HistoryEventDef>
+		<defName>Mashed_Ashlands_CliffRacerExtinction</defName>
+		<label>cliff racer extinction</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>Mashed_Ashlands_CliffRacerReturn</defName>
+		<label>cliff racer return</label>
+	</HistoryEventDef>
+</Defs>

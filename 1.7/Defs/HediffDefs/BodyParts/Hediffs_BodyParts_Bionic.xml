@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ProstheticAshFilter]==========-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Mashed_Ashlands_BionicAshFilter</defName>
+		<label>bionic ash filter</label>
+		<labelNoun>a bionic ash filter</labelNoun>
+		<description>An installed bionic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_BionicAshFilter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Mashed_Ashlands_BionicAshFilter</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_ProstheticAshFilter]==========-->
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>Mashed_Ashlands_BionicAshFilter</defName>
+		<label>bionic ash filter</label>
+		<description>A bionic implant typically installed into the sinuses. Contains an advanced filtration system that cleanses undesirable particles before they accumulate in the lungs. Particularly useful when travelling during ash storms.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Mashed_Ashlands_Install_BionicAshFilter</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_ProstheticAshFilter]==========-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>Mashed_Ashlands_Install_BionicAshFilter</defName>
+		<label>install bionic ash filter</label>
+		<description>Install a bionic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_BionicAshFilter</ThingDef>
+			<HediffDef>Mashed_Ashlands_BionicAshFilter</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic ash filter.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_BionicAshFilter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_BionicAshFilter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Mashed_Ashlands_BionicAshFilter</addsHediff>
+	</RecipeDef>
+</Defs>
