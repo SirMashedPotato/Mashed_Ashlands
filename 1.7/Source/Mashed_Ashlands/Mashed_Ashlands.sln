@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mashed_Ashlands", "Mashed_Ashlands\Mashed_Ashlands.csproj", "{2BBF9E5C-8338-485E-8C21-2F255F1020CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mashed_Ashlands_ExplorationMode", "Mashed_Ashlands_ExplorationMode\Mashed_Ashlands_ExplorationMode.csproj", "{3AD3D9F1-835F-4C7B-9017-725F9183ECE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2BBF9E5C-8338-485E-8C21-2F255F1020CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BBF9E5C-8338-485E-8C21-2F255F1020CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BBF9E5C-8338-485E-8C21-2F255F1020CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD3D9F1-835F-4C7B-9017-725F9183ECE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD3D9F1-835F-4C7B-9017-725F9183ECE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD3D9F1-835F-4C7B-9017-725F9183ECE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD3D9F1-835F-4C7B-9017-725F9183ECE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
