@@ -34,7 +34,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites>
@@ -48,7 +48,7 @@
 		<defName>Mashed_Ashlands_Plant_CharredAshlandGrass</defName>
 		<label>charred ashland grass</label>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_CharredAshlandGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_CharredAshlandGrass</texPath>
 		</graphicData>
 		<plant>
 			<maxMeshCount>4</maxMeshCount>
@@ -68,7 +68,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_AshlandDuneGrass</texPath>
+			<texPath>Things/Plant/Groundcovers_Grass/Mashed_Ashlands_AshlandDuneGrass</texPath>
 		</graphicData>
 		<plant>
 			<sowTags Inherit="False"/>

@@ -8,7 +8,7 @@
 		<thingClass>Mashed_Ashlands.Plant_SecondaryDrop</thingClass>
 		<modExtensions Inherit="False"/>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TreeEmperorToxisol</texPath>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeEmperorToxisol</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -44,7 +44,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_TreeWeepingMouldcap</texPath>
+			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeWeepingMouldcap</texPath>
 		</graphicData>
 		<statBases>
 			<Beauty>-2</Beauty>

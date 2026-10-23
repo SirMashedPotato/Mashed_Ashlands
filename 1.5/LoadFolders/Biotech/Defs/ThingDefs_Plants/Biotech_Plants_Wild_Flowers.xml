@@ -19,7 +19,7 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -38,7 +38,7 @@
 		<defName>Mashed_Ashlands_Plant_SporangiumFlowerBlue</defName>
 		<label>blue sporangium flower</label>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerOrange]==========-->
@@ -46,7 +46,7 @@
 		<defName>Mashed_Ashlands_Plant_SporangiumFlowerOrange</defName>
 		<label>orange sporangium flower</label>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerOrange</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerOrange</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerWhite]==========-->
@@ -54,7 +54,7 @@
 		<defName>Mashed_Ashlands_Plant_SporangiumFlowerWhite</defName>
 		<label>white sporangium flower</label>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

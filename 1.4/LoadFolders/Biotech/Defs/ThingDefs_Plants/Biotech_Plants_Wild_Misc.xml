@@ -6,7 +6,7 @@
 		<label>glowing glowstalk</label>
 		<description>A highly mutated subspecies of the common glowstalk, solely found growing in regions with ash rich ground, and high levels of pollution. The normally quite soothing glow is replaced by an eerie glow that is quite unsettling.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_GlowingGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_GlowingGlowstalk</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>

@@ -19,7 +19,7 @@
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerGreen</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
@@ -37,14 +37,14 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
 		<defName>Mashed_Ashlands_Plant_SporangiumFlowerBlue</defName>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerBlue</texPath>
 		</graphicData>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_SporangiumFlowerWhite]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_SporangiumFlowerBase">
 		<defName>Mashed_Ashlands_Plant_SporangiumFlowerWhite</defName>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
+			<texPath>Things/Plant/Groundcovers_Flowers/Mashed_Ashlands_SporangiumFlowerWhite</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>
