@@ -27,7 +27,7 @@
             <Private>False</Private>
         </Reference>
         <Reference Include="RimworldExplorationMode">
-            <HintPath>I:\SteamLibrary\steamapps\workshop\content\294100\2941608795\1.6\Assemblies\RimworldExplorationMode.dll</HintPath>
+            <HintPath>I:\SteamLibrary\steamapps\workshop\content\294100\2941608795\1.7\Assemblies\RimworldExplorationMode.dll</HintPath>
             <Private>False</Private>
         </Reference>
 
