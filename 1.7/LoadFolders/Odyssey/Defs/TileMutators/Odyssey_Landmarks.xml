@@ -31,6 +31,31 @@
 			<Mashed_Ashlands_GlassDeposits>0.06</Mashed_Ashlands_GlassDeposits>
 		</mutatorChances>
 	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_AshVortex]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_AshVortex</defName>
+		<label>ash vortex</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_AshVortex</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.1</commonality>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_AshVortex</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_EternalAshStorm Required="True"/>
+			<Fish_Decreased>0.25</Fish_Decreased>
+			<AnimalLife_Decreased>0.6</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.8</PlantLife_Decreased>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
+			<MineralRich>0.05</MineralRich>
+			<Mashed_Ashlands_CliffRacerHabitat>0.03</Mashed_Ashlands_CliffRacerHabitat>
+			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
+		</mutatorChances>
+		<comboLandmarkMutators>
+			<Mashed_Ashlands_ThermalMudPools>0.1</Mashed_Ashlands_ThermalMudPools>
+			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
+		</comboLandmarkMutators>
+	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_Dusttide]==========-->
 	<LandmarkDef>
 		<defName>Mashed_Ashlands_Dusttide</defName>

@@ -15,6 +15,20 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- ==========[Mashed_Ashlands_NamerLandmark_AshVortex]==========-->
+	<RulePackDef>
+		<defName>Mashed_Ashlands_NamerLandmark_AshVortex</defName>
+		<include>
+			<li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=0.2)->[NamePerson]'s eternal ash storm</li>
+				<li>r_name(p=0.2)->[NamePerson]'s ash vortex</li>
+				<li>terrain_word(p=2)->ash vortex</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	<!-- ==========[Mashed_Ashlands_NamerLandmark_DryLake]==========-->
 	<RulePackDef>
 		<defName>Mashed_Ashlands_NamerLandmark_DryLake</defName>
