@@ -107,6 +107,66 @@
 			<saturation>0.8</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
+	<!-- ==========[Mashed_Ashlands_BlightStorm]==========-->
+	<WeatherDef>
+		<defName>Mashed_Ashlands_BlightStorm</defName>
+		<label>blight storm</label>
+		<description>A blight storm has descended over the area, turning the sky an ominious red. Strong wind slows movement, and may carry ash blight. Wild animals may be driven mad, and unroofed crops may become blighted.</description>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<windSpeedOffset>1.5</windSpeedOffset>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+		<favorability>VeryBad</favorability>
+		<letterLabel>blight storm</letterLabel>
+		<letterText>A blight storm has descended over the area. Wild animals may be driven mad, and unroofed crops may become blighted.</letterText>
+		<letterDef>Mashed_Ashlands_VolcanoNegativeEvent</letterDef>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>Mashed_Ashlands_OutsideInBlightStorm</weatherThought>
+		<eventMakers>
+			<li>
+				<averageInterval>1800</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightstormFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>32000</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerAnimal</eventClass>
+			</li>
+			<li>
+				<averageInterval>40000</averageInterval>
+				<eventClass>Mashed_Ashlands.WeatherEvent_BlightTriggerPlant</eventClass>
+			</li>
+		</eventMakers>
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.9,0.7,0.7)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.28,0.08,0.05)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.28,0.08,0.05)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.45,0.30,0.35)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.28,0.08,0.05)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.45,0.30,0.35)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.28,0.08,0.05)</overlay>
+			<saturation>0.8</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
 	<!-- ==========[Mashed_Ashlands_DustStorm]==========-->
 	<WeatherDef Name="Mashed_Ashlands_DustStormBase">
 		<defName>Mashed_Ashlands_DustStorm</defName>

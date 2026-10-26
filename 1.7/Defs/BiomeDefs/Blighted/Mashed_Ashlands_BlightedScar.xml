@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
+		<defName>Mashed_Ashlands_BlightedScarAshlands</defName>
+		<label>blighted scar</label>
+		<description>todo.</description>
+		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedScarAshlands</workerClass>
+		<texture>World/Biomes/Mashed_Ashlands_BlightedScarAshlands</texture>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<lateLoader>true</lateLoader>
+				<increasePollutedFertility>false</increasePollutedFertility>
+				<dryToReplacers>
+					<Gravel>Mashed_Ashlands_AshGravelBlighted</Gravel>
+					<Soil>Mashed_Ashlands_AshSoilBlighted</Soil>
+				</dryToReplacers>
+				<roadReplacers>
+					<PackedDirt>Mashed_Ashlands_PackedAshBlighted</PackedDirt>
+				</roadReplacers>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls" MayRequireAnyOf="zal.wmbp,regrowth.botr.core">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestDenseAbove>500</forestDenseAbove>
+				<forestSparseBelow>300</forestSparseBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
+		</modExtensions>
+		<settleWarning>Most of the ground here is either basalt or lava, leaving only pockets of low-fertility soil. Clear skies are a rare sight here, and blight is a constant threat.</settleWarning>
+		<animalDensity>0.3</animalDensity>
+		<plantDensity>0.06</plantDensity>
+		<!-- Weather -->
+		<baseWeatherCommonalities Inherit="false">
+			<!-- Vanilla Weather -->
+			<Clear>5</Clear>
+			<Fog>1</Fog>
+			<DryThunderstorm>1</DryThunderstorm>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">6</Overcast>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">3</Windy>
+			<ToxRain MayRequire="Ludeon.RimWorld.Odyssey">0.3</ToxRain>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>13</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>3</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_BlightedAshfall>3</Mashed_Ashlands_BlightedAshfall>
+			<Mashed_Ashlands_BlightStorm>6</Mashed_Ashlands_BlightStorm>
+			<Mashed_Ashlands_SulphuricRain>0.3</Mashed_Ashlands_SulphuricRain>
+			<Mashed_Ashlands_FoggySulphuricRain>0.3</Mashed_Ashlands_FoggySulphuricRain>
+		</baseWeatherCommonalities>
+		<!-- World generation -->
+		<forceRockTypes>
+			<li>Mashed_Ashlands_Basalt</li>
+		</forceRockTypes>
+		<!-- Map generation -->
+		<extraGenSteps>
+			<li>Mashed_Ashlands_BasaltFormationsSmall</li>
+			<li>Mashed_Ashlands_BasaltFormationsClustered</li>
+		</extraGenSteps>
+		<!-- Terrain overrides -->
+		<riverbankTerrain>Mashed_Ashlands_Basalt_Rough</riverbankTerrain>
+		<gravelTerrain>Mashed_Ashlands_Basalt_RoughHewn</gravelTerrain>
+		<!-- Terrain -->
+		<terrainsByFertility>
+			<li>
+				<terrain>Mashed_Ashlands_Lava</terrain>
+				<min>-999</min>
+				<max>0.2</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_Basalt_RoughHewn</terrain>
+				<min>0.2</min>
+				<max>0.35</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_Basalt_Rough</terrain>
+				<min>0.35</min>
+				<max>0.5</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_CrackedAshSoilBlighted</terrain>
+				<min>0.5</min>
+				<max>0.65</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshGravelBlighted</terrain>
+				<min>0.65</min>
+				<max>0.8</max>
+			</li>
+			<li>
+				<terrain>Mashed_Ashlands_AshSoilBlighted</terrain>
+				<min>0.8</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.027</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Mashed_Ashlands_Basalt_Rough</terrain>
+						<min>0</min>
+						<max>0.3</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_Basalt_RoughHewn</terrain>
+						<min>0.3</min>
+						<max>0.5</max>
+					</li>
+					<li>
+						<terrain>Mashed_Ashlands_Lava</terrain>
+						<min>0.5</min>
+						<max>99</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<wildPlants>
+			<!-- Ground covers -->
+			<!-- Nutrition plants -->
+			<Mashed_Ashlands_Plant_Scathecraw>0.2</Mashed_Ashlands_Plant_Scathecraw>
+			<!-- Resource plants -->
+			<Mashed_Ashlands_Plant_TramaShrub>0.5</Mashed_Ashlands_Plant_TramaShrub>
+			<!-- Aesthetic plants -->
+			<!-- Trees -->
+			<Mashed_Ashlands_BurnedParasolStumpPermanent>0.05</Mashed_Ashlands_BurnedParasolStumpPermanent>
+			<Mashed_Ashlands_BurnedStumpPermanent>0.05</Mashed_Ashlands_BurnedStumpPermanent>
+			<!-- ==========[Pollution]========== -->
+			<!-- Polluted ground covers -->
+			<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.5</Mashed_Ashlands_GlowingEntoloma>
+			<!-- Polluted nutrition plants -->
+			<Mashed_Ashlands_Plant_GlowingScathecraw MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingScathecraw>
+			<!-- Polluted resource plants -->
+			<Mashed_Ashlands_Plant_TramaMass MayRequire="Ludeon.RimWorld.Biotech">1</Mashed_Ashlands_Plant_TramaMass>
+			<!-- Polluted trees -->
+		</wildPlants>
+		<wildAnimals>
+			<!-- prey animals -->
+			<Mashed_Ashlands_Scuttler>0.1</Mashed_Ashlands_Scuttler>
+			<Mashed_Ashlands_AshHopper>0.3</Mashed_Ashlands_AshHopper>
+			<!-- herd animals -->
+			<Mashed_Ashlands_Firebug>0.2</Mashed_Ashlands_Firebug>
+			<Mashed_Ashlands_Shalk>0.3</Mashed_Ashlands_Shalk>
+			<Mashed_Ashlands_Netch>0.1</Mashed_Ashlands_Netch>
+			<Mashed_Ashlands_Rotumbo>0.1</Mashed_Ashlands_Rotumbo>
+			<Mashed_Ashlands_Wormmouth>0.2</Mashed_Ashlands_Wormmouth>
+			<!-- predators -->
+			 <Mashed_Ashlands_Pyrantula>0.2</Mashed_Ashlands_Pyrantula>
+			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
+			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+			<!-- ESCP Trolls -->
+			<ESCP_TrollBarren MayRequire="escp.trolls">0.04</ESCP_TrollBarren>
+			<ESCP_TrollHill MayRequire="escp.trolls">0.025</ESCP_TrollHill>
+			<ESCP_TrollCave MayRequire="escp.trolls">0.025</ESCP_TrollCave>
+			<ESCP_TrollUdyrfrykte MayRequire="escp.trolls">0.005</ESCP_TrollUdyrfrykte>
+			<!-- ESCP Spriggan-->
+			<ESCP_Spriggan_Burnt MayRequire="escp.spriggan">0.02</ESCP_Spriggan_Burnt>
+			<!-- special -->
+		</wildAnimals>
+		<pollutionWildAnimals>
+			<Mashed_Ashlands_AshHopperGlowing MayRequire="Ludeon.RimWorld.Biotech">0.4</Mashed_Ashlands_AshHopperGlowing>
+			<Mashed_Ashlands_NetchGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_NetchGlowing>
+			<Mashed_Ashlands_GuarGlowing MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GuarGlowing>
+			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
+		</pollutionWildAnimals>
+	</BiomeDef>
+</Defs>

@@ -32,4 +32,14 @@
 		</rootBiomes>
 		<nameMaker>Mashed_Ashlands_NamerBlightedPetrifiedForestAshlands</nameMaker>
 	</FeatureDef>
+	<!-- ==========[Mashed_Ashlands_BlightedScarAshlands]==========-->
+	<FeatureDef>
+		<defName>Mashed_Ashlands_BlightedScarAshlands</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>443</order>
+		<rootBiomes>
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
+		</rootBiomes>
+		<nameMaker>Mashed_Ashlands_NamerBlightedScarAshlands</nameMaker>
+	</FeatureDef>
 </Defs>
