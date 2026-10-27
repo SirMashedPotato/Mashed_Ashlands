@@ -4,6 +4,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="VEE_SteamGeysers_Decreased"]/biomeBlacklist</xpath>
 		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_HighlandAshlands</li>
 			<!-- Volcanic -->

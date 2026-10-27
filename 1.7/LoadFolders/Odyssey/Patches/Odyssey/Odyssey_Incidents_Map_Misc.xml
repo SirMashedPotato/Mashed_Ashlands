@@ -4,6 +4,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName="LavaEmergence"]/allowedBiomes</xpath>
 		<value>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
 			<!-- Volcanic -->
 			<li>Mashed_Ashlands_VolcanicAshlands</li>
 			<li>Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
@@ -16,6 +18,7 @@
 			<!-- Blighted -->
 			<li>Mashed_Ashlands_BlightedAshlands</li>
 			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
 			<!-- Regular -->
 			<li>Mashed_Ashlands_Ashlands</li>
 			<li>Mashed_Ashlands_DustplainAshlands</li>
