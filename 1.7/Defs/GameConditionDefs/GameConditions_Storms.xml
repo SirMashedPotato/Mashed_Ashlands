@@ -16,6 +16,7 @@
 		<allowUnderground>false</allowUnderground>
 		<preventNeutralVisitors>true</preventNeutralVisitors>
 		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<preventShuttleLaunch>true</preventShuttleLaunch>
 		<weatherDef>Mashed_Ashlands_VolcanicWind</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStormBlighted</li>
@@ -39,6 +40,7 @@
 		<allowUnderground>false</allowUnderground>
 		<preventNeutralVisitors>true</preventNeutralVisitors>
 		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<preventShuttleLaunch>true</preventShuttleLaunch>
 		<weatherDef>Mashed_Ashlands_VolcanicWindBlight</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
@@ -62,6 +64,7 @@
 		<allowUnderground>false</allowUnderground>
 		<preventNeutralVisitors>true</preventNeutralVisitors>
 		<pennedAnimalsSeekShelter>true</pennedAnimalsSeekShelter>
+		<preventShuttleLaunch>true</preventShuttleLaunch>
 		<weatherDef>Mashed_Ashlands_VolcanicWindThunder</weatherDef>
 		<exclusiveConditions>
 			<li>Mashed_Ashlands_AshStorm</li>
