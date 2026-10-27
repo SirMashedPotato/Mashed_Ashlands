@@ -16,6 +16,28 @@
 		</weathersToAffect>
 		<weatherFrequencyOffset>10</weatherFrequencyOffset>
 	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_BlightedAtmosphereMutator]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_BlightedAtmosphereMutator</defName>
+		<label>blighted atmosphere</label>
+		<description>Frequent volcanic activity ensures the atmosphere here has plenty of ash blight in it. Blight storms are much more common here</description>
+		<categories>
+			<li>Weather</li>
+		</categories>
+		<workerClass>TileMutatorWorker_IncreaseWeatherFrequency</workerClass>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<weathersToAffect>
+			<li>Mashed_Ashlands_BlightStorm</li>
+		</weathersToAffect>
+		<weatherFrequencyOffset>10</weatherFrequencyOffset>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<li>Mashed_Ashlands_BlightedScarAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
 	<!-- ==========[Mashed_Ashlands_DustyMutator]==========-->
 	<TileMutatorDef>
 		<defName>Mashed_Ashlands_DustyMutator</defName>

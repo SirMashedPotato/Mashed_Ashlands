@@ -38,6 +38,7 @@
 		<iconTexturePath>World/Landmarks/Mashed_Ashlands_AshVortex</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
 		<commonality>0.1</commonality>
+		<drawAboveRoads>true</drawAboveRoads>
 		<nameMaker>Mashed_Ashlands_NamerLandmark_AshVortex</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_EternalAshStorm Required="True"/>
@@ -52,7 +53,30 @@
 			<Mashed_Ashlands_StriderCrossing>0.03</Mashed_Ashlands_StriderCrossing>
 		</mutatorChances>
 		<comboLandmarkMutators>
-			<Mashed_Ashlands_ThermalMudPools>0.1</Mashed_Ashlands_ThermalMudPools>
+			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	<!-- ==========[Mashed_Ashlands_BlightedAshVortex]==========-->
+	<LandmarkDef>
+		<defName>Mashed_Ashlands_BlightedAshVortex</defName>
+		<label>blight vortex</label>
+		<iconTexturePath>World/Landmarks/Mashed_Ashlands_BlightedAshVortex</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.1</commonality>
+		<drawAboveRoads>true</drawAboveRoads>
+		<nameMaker>Mashed_Ashlands_NamerLandmark_BlightedAshVortex</nameMaker>
+		<mutatorChances>
+			<Mashed_Ashlands_EternalBlightedAshStorm Required="True"/>
+			<Fish_Decreased>0.8</Fish_Decreased>
+			<AnimalLife_Decreased>0.8</AnimalLife_Decreased>
+			<PlantLife_Decreased>0.6</PlantLife_Decreased>
+			<Stockpile>0.02</Stockpile>
+			<AncientUplink>0.02</AncientUplink>
+			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
+			<MineralRich>0.05</MineralRich>
+			<Mashed_Ashlands_CliffRacerHabitat>0.06</Mashed_Ashlands_CliffRacerHabitat>
+		</mutatorChances>
+		<comboLandmarkMutators>
 			<Mashed_Ashlands_StriderShells_Increased>0.1</Mashed_Ashlands_StriderShells_Increased>
 		</comboLandmarkMutators>
 	</LandmarkDef>
@@ -117,6 +141,7 @@
 		<commonality>0.1</commonality>
 		<mutatorChances>
 			<Mashed_Ashlands_DryLakeBlighted Required="True"/>
+			<Mashed_Ashlands_BlightedAtmosphereMutator>0.03</Mashed_Ashlands_BlightedAtmosphereMutator>
 		</mutatorChances>
 	</LandmarkDef>
 	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
@@ -137,6 +162,7 @@
 		<iconTexturePath>World/Landmarks/Mashed_Ashlands_MiasmicPools</iconTexturePath>
 		<atlasSize>(2, 2)</atlasSize>
 		<commonality>0.1</commonality>
+		<drawAboveRoads>true</drawAboveRoads>
 		<nameMaker>Mashed_Ashlands_NamerLandmark_MiasmicPools</nameMaker>
 		<mutatorChances>
 			<Mashed_Ashlands_Miasmic Required="True"/>
@@ -148,6 +174,7 @@
 			<AncientUplink>0.02</AncientUplink>
 			<Mashed_Ashlands_UndercaveEntrance>0.05</Mashed_Ashlands_UndercaveEntrance>
 			<FoggyMutator>0.05</FoggyMutator>
+			<Mashed_Ashlands_BlightedAtmosphereMutator>0.03</Mashed_Ashlands_BlightedAtmosphereMutator>
 			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.05</Mashed_Ashlands_SulphuricAtmosphereMutator>
 			<DryGround>0</DryGround>
 		</mutatorChances>
@@ -222,6 +249,8 @@
 			<Fish_Decreased>0.25</Fish_Decreased>
 			<Mashed_Ashlands_LingeringAshClouds>0.03</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<Mashed_Ashlands_BlightedAtmosphereMutator>0.03</Mashed_Ashlands_BlightedAtmosphereMutator>
+			<Mashed_Ashlands_SulphuricAtmosphereMutator>0.03</Mashed_Ashlands_SulphuricAtmosphereMutator>
 			<WindyMutator>0.05</WindyMutator>
 			<Stockpile>0.02</Stockpile>
 			<AncientUplink>0.02</AncientUplink>
@@ -245,6 +274,7 @@
 			<Fish_Decreased>0.5</Fish_Decreased>
 			<AnimalLife_Decreased>0.05</AnimalLife_Decreased>
 			<PlantLife_Decreased>0.03</PlantLife_Decreased>
+			<Mashed_Ashlands_BlightedAtmosphereMutator>0.03</Mashed_Ashlands_BlightedAtmosphereMutator>
 			<Mashed_Ashlands_Miasmic>0.03</Mashed_Ashlands_Miasmic>
 			<Marshy>0</Marshy>
 		</mutatorChances>
@@ -364,6 +394,7 @@
 			<Mashed_Ashlands_AshRocky>0.03</Mashed_Ashlands_AshRocky>
 			<Mashed_Ashlands_LingeringAshClouds>0.06</Mashed_Ashlands_LingeringAshClouds>
 			<Mashed_Ashlands_AshyMutator>0.05</Mashed_Ashlands_AshyMutator>
+			<Mashed_Ashlands_BlightedAtmosphereMutator>0.03</Mashed_Ashlands_BlightedAtmosphereMutator>
 			<FoggyMutator>0.05</FoggyMutator>
 			<SunnyMutator>0.05</SunnyMutator>
 			<WetClimate>0.05</WetClimate>
