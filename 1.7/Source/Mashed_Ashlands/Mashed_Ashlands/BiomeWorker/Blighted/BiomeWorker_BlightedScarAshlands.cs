@@ -7,10 +7,10 @@ namespace Mashed_Ashlands
     {
         public override float GetScore_Main(BiomeDef biome, Tile tile, PlanetTile planetTile, WorldObject sourceObject = null)
         {
-            /*if (!Mashed_Ashlands_ModSettings.EnableBlightedScarAshlands)
+            if (!Mashed_Ashlands_ModSettings.EnableBlightedScarAshlands)
             {
                 return -100f;
-            }*/
+            }
             if (tile.PrimaryBiome != BiomeDefOf.Mashed_Ashlands_BlightedAshlands)
             {
                 return -100f;
