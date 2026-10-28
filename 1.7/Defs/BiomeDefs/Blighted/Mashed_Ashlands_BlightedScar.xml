@@ -3,7 +3,7 @@
 	<BiomeDef ParentName="Mashed_Ashlands_AshlandsBlightedBase">
 		<defName>Mashed_Ashlands_BlightedScarAshlands</defName>
 		<label>blighted scar</label>
-		<description>todo.</description>
+		<description>A mountainous wasteland of basalt and lava, with very little arable soil. Proximity to a blighted volcano ensures blight storms are a constant threat. Not many would dare settle here.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_BlightedScarAshlands</workerClass>
 		<texture>World/Biomes/Mashed_Ashlands_BlightedScarAshlands</texture>
 		<modExtensions>
@@ -31,8 +31,12 @@
 			</li>
 		</modExtensions>
 		<settleWarning>Most of the ground here is either basalt or lava, leaving only pockets of low-fertility soil. Clear skies are a rare sight here, and blight is a constant threat.</settleWarning>
+		<!-- Foraging/fishing/plants/animals -->
 		<animalDensity>0.3</animalDensity>
 		<plantDensity>0.06</plantDensity>
+		<forageability>0</forageability>
+		<maxFishPopulation>30</maxFishPopulation>
+		<wildPlantRegrowDays>60</wildPlantRegrowDays>
 		<!-- Weather -->
 		<baseWeatherCommonalities Inherit="false">
 			<!-- Vanilla Weather -->
@@ -148,7 +152,7 @@
 			<Mashed_Ashlands_Rotumbo>0.1</Mashed_Ashlands_Rotumbo>
 			<Mashed_Ashlands_Wormmouth>0.2</Mashed_Ashlands_Wormmouth>
 			<!-- predators -->
-			 <Mashed_Ashlands_Pyrantula>0.2</Mashed_Ashlands_Pyrantula>
+			<Mashed_Ashlands_Pyrantula>0.2</Mashed_Ashlands_Pyrantula>
 			<Mashed_Ashlands_Kagouti>0.1</Mashed_Ashlands_Kagouti>
 			<Mashed_Ashlands_Alit>0.1</Mashed_Ashlands_Alit>
 			<Mashed_Ashlands_CliffRacer>0.4</Mashed_Ashlands_CliffRacer>
