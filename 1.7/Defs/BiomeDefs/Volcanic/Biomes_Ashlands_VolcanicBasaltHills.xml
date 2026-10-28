@@ -44,8 +44,24 @@
 			</freshwater_Uncommon>
 		</fishTypes>
 		<!-- Weather -->
-		<baseWeatherCommonalities>
-			<Windy MayRequire="Ludeon.RimWorld.Odyssey">2</Windy>
+		<baseWeatherCommonalities Inherit="false">
+			<!-- Vanilla Weather -->
+			<Clear>8</Clear>
+			<Fog>1</Fog>
+			<Rain>0.5</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>0.5</RainyThunderstorm>
+			<FoggyRain>0.5</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">6</Overcast>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">3</Windy>
+			<!-- Ashland weather -->
+			<Mashed_Ashlands_Ashfall>12</Mashed_Ashlands_Ashfall>
+			<Mashed_Ashlands_FoggyAshfall>3</Mashed_Ashlands_FoggyAshfall>
+			<Mashed_Ashlands_SulphuricRain>0.5</Mashed_Ashlands_SulphuricRain>
+			<Mashed_Ashlands_FoggySulphuricRain>0.5</Mashed_Ashlands_FoggySulphuricRain>
 		</baseWeatherCommonalities>
 		<!-- World generation -->
 		<forceRockTypes>
