@@ -16,7 +16,7 @@
 		</nullifyingTraits>
 		<nullifyingGenes>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
 	</ThoughtDef>
@@ -98,7 +98,7 @@
 		</nullifyingTraits>
 		<nullifyingGenes>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">MorrowRim_Gene_AshMoodResistance</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshMoodResistance</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Mashed_Ashlands_AshResistance_Perfect</li>
 		</nullifyingGenes>
 	</ThoughtDef>
