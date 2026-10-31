@@ -97,7 +97,7 @@
 	</GeneDef>
 	<!-- ==========[Mashed_Ashlands_AshMoodResistance]==========-->
 	<GeneDef ParentName="Mashed_Ashlands_GeneBase">
-		<defName>MorrowRim_Gene_AshMoodResistance</defName> <!-- TODO RENAME -->
+		<defName>MorrowRim_Gene_AshMoodResistance</defName>
 		<label>antiash skin</label>
 		<labelShortAdj>ash-chafing</labelShortAdj>
 		<description>Carriers of this gene have special sweat glands across their body, preventing ash from building up in unpleasant places during an ash storm.</description>

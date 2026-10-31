@@ -186,7 +186,6 @@
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
-		<!-- TODO potentially requires a special thing to cure it -->
 		<ingredients>
 			<li>
 				<filter>
