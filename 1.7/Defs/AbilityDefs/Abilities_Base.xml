@@ -15,6 +15,7 @@
 		<hostile>true</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+		<aiCanUse>true</aiCanUse>
 		<statBases>
 			<Ability_EffectRadius>1.9</Ability_EffectRadius>
 		  </statBases>
@@ -41,22 +42,16 @@
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SelfBuffBase]==========-->
 	<AbilityDef Name="Mashed_Ashlands_SelfBuffBase" Abstract="True">
-		<jobDef>CastAbilityOnThing</jobDef>
-		<targetRequired>False</targetRequired>
-		<canUseAoeToGetTargets>false</canUseAoeToGetTargets>
-		<stunTargetWhileCasting>true</stunTargetWhileCasting>
-		<showPsycastEffects>false</showPsycastEffects>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-		<statBases>
-			<Ability_EffectRadius>0</Ability_EffectRadius>
-		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupTime>1.5</warmupTime>
-			<range>0</range>
 			<drawAimPie>false</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>
+			<warmupTime>1.5</warmupTime>
+			<targetable>false</targetable>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>

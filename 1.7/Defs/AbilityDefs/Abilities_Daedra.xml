@@ -56,8 +56,7 @@
 		<cooldownTicksRange>180000</cooldownTicksRange>
 		<warmupStartSound>Pawn_Melee_BigBash_HitPawn</warmupStartSound>
 		<warmupEffecter>Mashed_Ashlands_OgrimBellyDrumWarmup</warmupEffecter>
-		<hostile>false</hostile>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
 		<statBases>
 			<Ability_Duration>130</Ability_Duration>
 		</statBases>
