@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DryLake]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut" Name="Mashed_Ashlands_DryLakeBaseMut">
+		<defName>Mashed_Ashlands_DryLake</defName>
+		<label>desiccated lake</label>
+		<description>The remains of a former lake.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLake</workerClass>
+		<priority>2</priority>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+		</biomeWhitelist>
+		<coastSidesRange>0~0</coastSidesRange>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<preventsPondGeneration>true</preventsPondGeneration>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeBlighted]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
+		<defName>Mashed_Ashlands_DryLakeBlighted</defName>
+		<label>blighted desiccated lake</label>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeBlighted</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_DryLakeVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_DryLakeBaseMut">
+		<defName>Mashed_Ashlands_DryLakeVolcanic</defName>
+		<label>volcanic desiccated lake</label>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_DryLakeVolcanic</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LandCoralPools]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralMutatorBase" Name="Mashed_Ashlands_LandCoralPoolsBase">
+		<defName>Mashed_Ashlands_LandCoralPools</defName>
+		<label>land coral pools</label>
+		<description>Land coral can be found growing around bodies of sea water.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LandCoralPools</workerClass>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<coastSidesRange>1~4</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LandCoralPoolsVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_LandCoralPoolsBase">
+		<defName>Mashed_Ashlands_LandCoralPoolsVolcanic</defName>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LandCoralPoolsVolcanic</workerClass>
+		<biomeWhitelist Inherit="false">
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_LavaPools]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_LavaPools</defName>
+		<label>lava pools</label>
+		<description>Small bodies of molten rock are present in this area.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_LavaPools</workerClass>
+		<biomeWhitelist>
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SludgePond]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_SludgePond</defName>
+		<label>sludge pond</label>
+		<description>A small body of blighted sludge.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SludgePond</workerClass>
+		<categories>
+			<li>Groundwater</li>
+		</categories>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedBogAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricLake]==========-->
+	 <TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_SulphuricLake</defName>
+		<label>sulphuric lake</label>
+		<description>A large body of suphuric water.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricLake</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+			<li>Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricPond]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_SulphuricPond</defName>
+		<label>sulphuric pond</label>
+		<description>A small body of sulphuric water.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricPond</workerClass>
+		<categories>
+			<li>Groundwater</li>
+		</categories>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricSprings]==========-->
+	<TileMutatorDef>
+		<defName>Mashed_Ashlands_SulphuricSprings</defName>
+		<label>sulphuric springs</label>
+		<description>Bodies of sulphuric water are present in this area.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_SulphuricSprings</workerClass>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_TaintedLake]==========-->
+	 <TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_TaintedLake</defName>
+		<label>tainted lake</label>
+		<description>A large body of water that has been boiled by volcanic activity.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_TaintedLake</workerClass>
+		<biomeWhitelist Inherit="false">
+			<!-- Blighted -->
+			<li>Mashed_Ashlands_BlightedAshlands</li>
+			<li>Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPools]==========-->
+	<TileMutatorDef Name="Mashed_Ashlands_ThermalMudPoolsBase">
+		<defName>Mashed_Ashlands_ThermalMudPools</defName>
+		<label>thermal mud pools</label>
+		<description>Bodies of thermally heated mud are present in this area.</description>
+		<categories>
+			<li>Lake</li>
+		</categories>
+		<chanceOnNonLandmarkTile>0.01</chanceOnNonLandmarkTile>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalMudPools</workerClass>
+		<biomeWhitelist>
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<li>Mashed_Ashlands_SwampAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MarshAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+		</biomeWhitelist>
+		<preventsPondGeneration>true</preventsPondGeneration>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+		<coastSidesRange>0~0</coastSidesRange>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudPoolsVolcanic]==========-->
+	<TileMutatorDef ParentName="Mashed_Ashlands_ThermalMudPoolsBase">
+		<defName>Mashed_Ashlands_ThermalMudPoolsVolcanic</defName>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalMudPoolsVolcanic</workerClass>
+		<biomeWhitelist Inherit="False">
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+	</TileMutatorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalPond]==========-->
+	<TileMutatorDef ParentName="BaseLakeMut">
+		<defName>Mashed_Ashlands_ThermalPond</defName>
+		<label>thermal pond</label>
+		<description>A small body of naturally heated water.</description>
+		<workerClass>Mashed_Ashlands.TileMutatorWorker_ThermalPond</workerClass>
+		<label>thermal pond</label>
+		<categories>
+			<li>Groundwater</li>
+		</categories>
+		<biomeWhitelist Inherit="false">
+			<!-- Regular -->
+			<li>Mashed_Ashlands_Ashlands</li>
+			<li>Mashed_Ashlands_DustplainAshlands</li>
+			<li>Mashed_Ashlands_GrazelandAshlands</li>
+			<li>Mashed_Ashlands_HighlandAshlands</li>
+			<!-- Thriving -->
+			<li>Mashed_Ashlands_ForestAshlands</li>
+			<li>Mashed_Ashlands_MeadowAshlands</li>
+			<!-- Volcanic -->
+			<li>Mashed_Ashlands_VolcanicBadlandAshlands</li>
+			<li>Mashed_Ashlands_VolcanicGroveAshlands</li>
+		</biomeWhitelist>
+		<canSpawnOnRiver>false</canSpawnOnRiver>
+	</TileMutatorDef>
+</Defs>

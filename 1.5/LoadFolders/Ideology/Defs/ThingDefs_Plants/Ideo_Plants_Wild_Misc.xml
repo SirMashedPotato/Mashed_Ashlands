@@ -6,7 +6,7 @@
 		<label>darkshade glowstalk</label>
 		<description>A rare strain of glowstalk, that emits a strange pale-blue light. While they can very rarely be found growing in caves in ashland regions, some have figured out to grow it almost wherever they please. They are only able to grow in ash rich ground, and as such are not often grown outside of the ashlands.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
 		</graphicData>
 		<plant>
 			<growMinGlow>0</growMinGlow>

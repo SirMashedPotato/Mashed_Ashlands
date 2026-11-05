@@ -22,18 +22,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Reference Include="Assembly-CSharp">
-            <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\Assembly-CSharp.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
-        <Reference Include="UnityStubs">
-            <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\UnityStubs.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
-        
-    </ItemGroup>
-
-    <ItemGroup>
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.4985-unstable" />
         <PackageReference Include="Lib.Harmony" Version="3.0.0-rc.2" />
     </ItemGroup>
 

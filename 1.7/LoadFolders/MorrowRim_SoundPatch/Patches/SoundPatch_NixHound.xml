@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ==========[Mashed_Ashlands_NixHoundThingBase]========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_NixHoundThingBase"]/race/lifeStageAges/li/soundWounded</xpath>
+		<value>
+			<soundWounded>MorrowRim_NixHound_Wounded</soundWounded>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_NixHoundThingBase"]/race/lifeStageAges/li/soundDeath</xpath>
+		<value>
+			<soundDeath>MorrowRim_NixHound_Death</soundDeath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_NixHoundThingBase"]/race/lifeStageAges/li/soundCall</xpath>
+		<value>
+			<soundCall>MorrowRim_NixHound_Call</soundCall>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_NixHoundThingBase"]/race/lifeStageAges/li/soundAngry</xpath>
+		<value>
+			<soundAngry>MorrowRim_NixHound_Angry</soundAngry>
+		</value>
+	</Operation>
+</Patch>

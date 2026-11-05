@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Tile_MorbidBasalt]==========-->
+	<TerrainDef ParentName="MorbidStoneTile">
+		<defName>Mashed_Ashlands_Tile_MorbidBasalt</defName>
+		<label>morbid basalt tile</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_Tile_SpikecoreBasalt]==========-->
+	<TerrainDef ParentName="SpikecoreStoneTile">
+		<defName>Mashed_Ashlands_Tile_SpikecoreBasalt</defName>
+		<label>basalt spikecore tile</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_Tile_TotemicBasalt]==========-->
+	<TerrainDef ParentName="TotemicStoneTile">
+		<defName>Mashed_Ashlands_Tile_TotemicBasalt</defName>
+		<label>totemic basalt tile</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+</Defs>

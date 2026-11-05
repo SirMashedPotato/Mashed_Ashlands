@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_FineTileBasalt]==========-->
+	<TerrainDef ParentName="FineTileStoneBase">
+		<defName>Mashed_Ashlands_FineTileBasalt</defName>
+		<label>fine basalt tile</label>
+		<color>(106,104,105)</color>
+		<costList>
+			<Mashed_Ashlands_BlocksBasalt>20</Mashed_Ashlands_BlocksBasalt>
+		</costList>
+	</TerrainDef>
+</Defs>

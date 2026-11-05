@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AshStormLover]==========-->
+	<GeneDef ParentName="Mashed_Ashlands_GeneBase">
+		<defName>Mashed_Ashlands_AshStormLover</defName>
+		<label>ash storm lover</label>
+		<labelShortAdj>ash-resistant</labelShortAdj>
+		<description>Carriers of this gene become unreasonably happy while they are outside during an ash storm.</description>
+		<iconPath>UI/Icons/Genes/Mashed_Ashlands_Gene_AshStormLover</iconPath>
+		<displayCategory>Mood</displayCategory>
+		<displayOrderInCategory>31</displayOrderInCategory>
+		<forcedTraits>
+			<li>
+				<def>Mashed_Ashlands_AshStormLover</def>
+			</li>
+		</forcedTraits>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>ash</symbol>
+					<weight>2</weight>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_NullCondition]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_NullCondition</defName>
+		<label>volcanic inactivity</label>
+		<description>The volcano goes, relatively, silent.</description>
+		<baseDurationDays>0</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+		<isNullCondition>true</isNullCondition>
+		<sendLetter>false</sendLetter>
+		<sendEndMessage>false</sendEndMessage>
+		<countAsIncident>false</countAsIncident>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_AshStorm]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_AshStorm</defName>
+		<label>ash storm</label>
+		<conditionDef>Mashed_Ashlands_AshStorm</conditionDef>
+		<baseDurationDays>0.5~5</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+		<caravanVolcanicEventWorkers>
+			<li Class="Mashed_Ashlands.CaravanEventWorker_AshStorm"/>
+		</caravanVolcanicEventWorkers>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_AshStormBlighted]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_AshStormBlighted</defName>
+		<label>blighted ash storm</label>
+		<conditionDef>Mashed_Ashlands_AshStormBlighted</conditionDef>
+		<baseDurationDays>1~5</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+		<caravanVolcanicEventWorkers>
+			<li Class="Mashed_Ashlands.CaravanEventWorker_AshStorm"/>
+			<li Class="Mashed_Ashlands.CaravanEventWorker_BlightedCaravanAmbush">
+				<incidentDef>Mashed_Ashlands_BlightedCaravanAmbush</incidentDef>
+			</li>
+		</caravanVolcanicEventWorkers>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_AshStorm_Metallic]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_AshStormMetallic</defName>
+		<label>metallic ash storm</label>
+		<conditionDef>Mashed_Ashlands_AshStormMetallic</conditionDef>
+		<baseDurationDays>1~5</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+		<caravanVolcanicEventWorkers>
+			<li Class="Mashed_Ashlands.CaravanEventWorker_AshStorm"/>
+		</caravanVolcanicEventWorkers>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_DenseAshClouds]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_DenseAshClouds</defName>
+		<label>dense ash clouds</label>
+		<conditionDef>Mashed_Ashlands_DenseAshClouds</conditionDef>
+		<baseDurationDays>3~10</baseDurationDays>
+		<baseGraceDays>1~5</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_DenseAshCloudsImpenetrable]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_DenseAshCloudsImpenetrable</defName>
+		<label>impenetrable ash clouds</label>
+		<conditionDef>Mashed_Ashlands_DenseAshCloudsImpenetrable</conditionDef>
+		<baseDurationDays>3~15</baseDurationDays>
+		<baseGraceDays>1~5</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_PsychicEruption]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_PsychicEruption</defName>
+		<label>psychic eruption</label>
+		<conditionDef>Mashed_Ashlands_PsychicEruption</conditionDef>
+		<baseDurationDays>3~6</baseDurationDays>
+		<baseGraceDays>5~15</baseGraceDays>
+		<minVolcanoCategory>6</minVolcanoCategory>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicDebrisRain]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_VolcanicDebrisRain</defName>
+		<label>volcanic debris rain</label>
+		<conditionDef>Mashed_Ashlands_VolcanicDebrisRain</conditionDef>
+		<baseDurationDays>0.1~0.3</baseDurationDays>
+		<baseGraceDays>1~5</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicEarthquake]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_VolcanicEarthquake</defName>
+		<label>volcanic earthquake</label>
+		<conditionDef>Mashed_Ashlands_VolcanicEarthquake</conditionDef>
+		<baseDurationDays>0.1~0.3</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicHeat]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_VolcanicHeat</defName>
+		<label>volcanic heat</label>
+		<conditionDef>Mashed_Ashlands_VolcanicHeat</conditionDef>
+		<baseDurationDays>3~15</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicHeatIntense]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_VolcanicHeatIntense</defName>
+		<label>intense volcanic heat</label>
+		<conditionDef>Mashed_Ashlands_VolcanicHeatIntense</conditionDef>
+		<baseDurationDays>3~15</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+	</Mashed_Ashlands.VolcanicConditionDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicMiasma]==========-->
+	<Mashed_Ashlands.VolcanicConditionDef>
+		<defName>Mashed_Ashlands_VolcanicMiasma</defName>
+		<label>volcanic miasma</label>
+		<conditionDef>Mashed_Ashlands_VolcanicMiasma</conditionDef>
+		<baseDurationDays>1~5</baseDurationDays>
+		<baseGraceDays>2~10</baseGraceDays>
+		<caravanVolcanicEventWorkers>
+			<li Class="Mashed_Ashlands.CaravanEventWorker_VolcanicMiasma"/>
+		</caravanVolcanicEventWorkers>
+	</Mashed_Ashlands.VolcanicConditionDef>
+</Defs>

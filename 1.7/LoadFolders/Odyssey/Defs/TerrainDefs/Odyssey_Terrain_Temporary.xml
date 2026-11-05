@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_BlightedSludgeFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_BlightedSludgeBase">
+		<defName>Mashed_Ashlands_BlightedSludgeFloodwater</defName>
+		<label>sludge floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMudFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ThermalMudBase">
+		<defName>Mashed_Ashlands_ThermalMudFloodwater</defName>
+		<label>mud floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicThermalMudFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_ThermalMudVolcanicBase">
+		<defName>Mashed_Ashlands_ThermalMudVolcanicFloodwater</defName>
+		<label>volcanic mud floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_MarshFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_MarshBase">
+		<defName>Mashed_Ashlands_MarshFloodwater</defName>
+		<label>marsh floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+		<floodTerrain>Mashed_Ashlands_MarshFloodwater</floodTerrain>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_SulphuricWaterBase">
+		<defName>Mashed_Ashlands_SulphuricFloodwater</defName>
+		<label>sulphuric floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_TaintedFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_TaintedWaterBase">
+		<defName>Mashed_Ashlands_TaintedFloodwater</defName>
+		<label>tainted floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<driesTo/>
+	</TerrainDef>
+	<!-- ==========[Mashed_Ashlands_VolcanicFloodwater]==========-->
+	<TerrainDef ParentName="Mashed_Ashlands_VolcanicWaterBase">
+		<defName>Mashed_Ashlands_VolcanicFloodwater</defName>
+		<label>volcanic floodwater</label>
+		<temporary>true</temporary>
+		<tags>
+			<li>Flood</li>
+		</tags>
+		<canFreeze>false</canFreeze>
+		<driesTo/>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Caverns</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/BiomeDef[defName="BMT_CrystalCaverns" or defName="BMT_EarthenDepths" or defName="BMT_FungalForest"]</xpath>
+			<value>
+				<li Class="Mashed_Ashlands.PreventAshlandOverride"/>
+			</value>
+		</match>
+	</Operation>
+</Patch>

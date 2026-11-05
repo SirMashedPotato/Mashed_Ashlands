@@ -10,7 +10,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolBurned</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_ParasolBurned</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
 			<shadowData>
@@ -28,7 +28,7 @@
 		<defName>Mashed_Ashlands_ChoppedParasolStump</defName>
 		<label>chopped parasol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolChopped</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_ParasolChopped</texPath>
 		</graphicData>
 		<plant>
 			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
@@ -40,7 +40,7 @@
 		<defName>Mashed_Ashlands_ChoppedPetrifiedStump</defName>
 		<label>chopped petrified stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedChopped</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_PetrifiedChopped</texPath>
 		</graphicData>
 		<plant>
 			<harvestYield>1</harvestYield>
@@ -51,7 +51,7 @@
 		<defName>Mashed_Ashlands_SmashedParasolStump</defName>
 		<label>smashed parasol stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_ParasolSmashed</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_ParasolSmashed</texPath>
 		</graphicData>
 		<plant>
 			<harvestedThingDef>Mashed_Ashlands_ParasolWoodLog</harvestedThingDef>
@@ -63,7 +63,7 @@
 		<defName>Mashed_Ashlands_SmashedPetrifiedStump</defName>
 		<label>smashed petrified stump</label>
 		<graphicData>
-			<texPath>Things/Plant/Stumps/Mashed_Ashlands_PetrifiedSmashed</texPath>
+			<texPath>Things/Plant/Trees_Stumps/Mashed_Ashlands_PetrifiedSmashed</texPath>
 		</graphicData>
 		<plant>
 			<harvestYield>1</harvestYield>

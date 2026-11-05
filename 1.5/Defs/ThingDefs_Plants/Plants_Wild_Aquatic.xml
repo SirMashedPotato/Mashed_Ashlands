@@ -28,7 +28,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_DraggleTails</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_DraggleTails</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>
@@ -83,7 +83,7 @@
 			<Mashed_Ashlands_AshResistance>0.9</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_LilyPad</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_LilyPad</texPath>
 		</graphicData>
 		<hideAtSnowDepth>0.6</hideAtSnowDepth>
 		<plant>

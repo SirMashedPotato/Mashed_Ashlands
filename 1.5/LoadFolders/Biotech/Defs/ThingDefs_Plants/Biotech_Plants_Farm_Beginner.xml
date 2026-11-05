@@ -19,7 +19,7 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_BlightcapPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_BlightcapPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
@@ -51,10 +51,10 @@
 		<label>tox yam plant</label>
 		<description>A variety of the ash yam, adapted to grow in highly toxic environments. Provides a comparatively smaller yield than the regular ash yam, as much of the outer flesh is completely inedible. They are only able to grow in ash rich ground that has been sufficiently polluted.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ToxYamPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_ToxYamPlant</texPath>
 		</graphicData>
 		<plant>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_ToxYamPlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/FoodPlants/Mashed_Ashlands_ToxYamPlant_Immature</immatureGraphicPath>
 			<pollution>PollutedOnly</pollution>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<fertilityMin>0.5</fertilityMin>

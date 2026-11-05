@@ -75,7 +75,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -89,7 +89,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -103,7 +103,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_GuarGlowing</texPath>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Guar/Mashed_Ashlands_Dessicated_Guar</texPath>
 					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

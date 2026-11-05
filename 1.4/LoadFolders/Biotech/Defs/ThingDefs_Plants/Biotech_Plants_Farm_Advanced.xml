@@ -9,13 +9,13 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_WasteSpongePlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_WasteSpongePlant</texPath>
 		</graphicData>
 		<plant>
 			<pollution>PollutedOnly</pollution>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
-			<immatureGraphicPath>Things/Plant/Mashed_Ashlands_WasteSpongePlant_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_WasteSpongePlant_Immature</immatureGraphicPath>
 			<harvestedThingDef>Wastepack</harvestedThingDef>
 			<harvestYield>5</harvestYield>
 			<blockAdjacentSow>false</blockAdjacentSow>

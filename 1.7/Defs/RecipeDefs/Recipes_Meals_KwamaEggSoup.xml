@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSoupBase]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase" Name="Mashed_Ashlands_KwamaEggSoupBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+		</defaultIngredientFilter>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Intermediate</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSoup]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_KwamaEggSoupBase">
+		<defName>Mashed_Ashlands_CookKwamaEggSoup</defName>
+		<label>cook kwama egg soup</label>
+		<description>Cook two servings of a filling soup using a kwama egg, and some vegetables.</description>
+		<jobString>Cooking 2 kwama egg soup.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_KwamaEgg</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mashed_Ashlands_KwamaEggSoup>2</Mashed_Ashlands_KwamaEggSoup>
+		</products>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_CookKwamaEggSoupBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_KwamaEggSoupBase">
+		<defName>Mashed_Ashlands_CookKwamaEggSoupBulk</defName>
+		<label>cook kwama egg soup x4</label>
+		<description>Cook eight servings of a filling soup using 4 kwama eggs, and some vegetables.</description>
+		<jobString>Cooking 8 kwama egg soup.</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_KwamaEgg</li>
+					</thingDefs>
+				</filter>
+				<count>3.2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mashed_Ashlands_KwamaEggSoup>8</Mashed_Ashlands_KwamaEggSoup>
+		</products>
+	</RecipeDef>
+</Defs>

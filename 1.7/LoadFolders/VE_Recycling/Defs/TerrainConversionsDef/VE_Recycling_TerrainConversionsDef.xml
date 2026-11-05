@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaRecyclingExpanded.TerrainConversionsDef>
+		<defName>Mashed_Ashlands_RecyclingTerrainConversions</defName>
+		<terrainConversions>
+			<!-- Regular -->
+			<li>
+				<terrainToConvert>Mashed_Ashlands_GrazelandSoil</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_AshSoil</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshSoil</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshSoil</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_MossyAshSoil</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshSoil</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshGravel</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshGravel</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshSand</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshSand</terrainToConvertTo>
+			</li>
+			<!-- Volcanic -->
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshSoilVolcanic</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshSoilVolcanic</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshGravelVolcanic</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshGravelVolcanic</terrainToConvertTo>
+			</li>
+			<li>
+				<terrainToConvert>Mashed_Ashlands_AshSandVolcanic</terrainToConvert>
+				<terrainToConvertTo>Mashed_Ashlands_RichAshSandVolcanic</terrainToConvertTo>
+			</li>
+		</terrainConversions>
+	</VanillaRecyclingExpanded.TerrainConversionsDef>
+</Defs>

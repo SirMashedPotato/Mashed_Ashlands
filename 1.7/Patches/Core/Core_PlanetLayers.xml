@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PlanetLayerDef[defName="Surface"]/worldGenSteps</xpath>
+		<value>
+			<li>Mashed_Ashlands_VolcanoDormant</li>
+			<li>Mashed_Ashlands_VolcanoActive</li>
+			<li>Mashed_Ashlands_VolcanoBlighted</li>
+			<li>Mashed_Ashlands_VolcanoExtinct</li>
+			<li>Mashed_Ashlands_AshlandBiomesEarly</li>
+			<li>Mashed_Ashlands_AshlandBiomesLate</li>
+		</value>
+	</Operation>
+</Patch>

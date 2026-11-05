@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SimpleMeal_AshYam]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_SimpleMeal_AshYam</defName>
+		<ingredientDefName>Mashed_Ashlands_RawAshYams</ingredientDefName>
+		<productDefName>MealSimple</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>10</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+</Defs>

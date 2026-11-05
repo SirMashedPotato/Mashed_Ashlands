@@ -11,7 +11,7 @@
 			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_Glowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_Glowstalk</texPath>
 		</graphicData>
 		<plant>
 			<growMinGlow>-0.01</growMinGlow>
@@ -50,7 +50,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_PetrifiedGlowstalk</texPath>
 		</graphicData>
 		<statBases>
 			<Nutrition>0.15</Nutrition>
@@ -78,7 +78,7 @@
 		<label>scorched bush</label>
 		<description>A scorched bush, covered in numerous thorns and pointy ends. Provides nothing of practical use.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_ScorchedBush</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_ScorchedBush</texPath>
 			<drawSize>1.15</drawSize>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -106,7 +106,7 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_Stinkcap</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_Stinkcap</texPath>
 		</graphicData>
 		<plant>
 			<growMinGlow>-0.01</growMinGlow>

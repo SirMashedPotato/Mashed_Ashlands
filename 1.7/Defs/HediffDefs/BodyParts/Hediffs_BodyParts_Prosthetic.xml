@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ProstheticAshFilter]==========-->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Mashed_Ashlands_ProstheticAshFilter</defName>
+		<label>prosthetic ash filter</label>
+		<labelNoun>a prosthetic ash filter</labelNoun>
+		<description>An installed prosthetic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_ProstheticAshFilter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Mashed_Ashlands_ProstheticAshFilter</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Mashed_Ashlands_AshResistance>0.5</Mashed_Ashlands_AshResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[Mashed_Ashlands_ProstheticAshFilter]==========-->
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>Mashed_Ashlands_ProstheticAshFilter</defName>
+		<label>prosthetic ash filter</label>
+		<description>A fairly simple prosthetic, typically installed into the sinuses. A rudimentary filtration system prevents most larger particles from entering further into the respiratory system. Particularly useful when travelling during ash storms.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>Mashed_Ashlands_Install_ProstheticAshFilter</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Install_ProstheticAshFilter]==========-->
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Mashed_Ashlands_Install_ProstheticAshFilter</defName>
+		<label>install prosthetic ash filter</label>
+		<description>Install a prosthetic ash filter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_ProstheticAshFilter</ThingDef>
+			<HediffDef>Mashed_Ashlands_ProstheticAshFilter</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic ash filter.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_ProstheticAshFilter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_ProstheticAshFilter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Mashed_Ashlands_ProstheticAshFilter</addsHediff>
+	</RecipeDef>
+</Defs>

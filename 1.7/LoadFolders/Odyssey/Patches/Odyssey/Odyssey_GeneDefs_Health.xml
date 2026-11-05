@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="VacuumResistance_Total"]/statOffsets</xpath>
+		<value>
+			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="VacuumResistance_Total"]/exclusionTags</xpath>
+		<value>
+			<li>Mashed_Ashlands_AshResistance</li>
+		</value>
+	</Operation>
+</Patch>

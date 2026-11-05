@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_TeaChillshroom]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_TeaChillshroom</defName>
+		<ingredientDefName>Mashed_Ashlands_RawChillshroom</ingredientDefName>
+		<productDefName>Mashed_Ashlands_TeaChillshroom</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_TeaHackleLo]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_TeaHackleLo</defName>
+		<ingredientDefName>Mashed_Ashlands_RawHackleLo</ingredientDefName>
+		<productDefName>Mashed_Ashlands_TeaHackleLo</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_TeaMarshmerrow]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_TeaMarshmerrow</defName>
+		<ingredientDefName>Mashed_Ashlands_RawMarshmerrow</ingredientDefName>
+		<productDefName>Mashed_Ashlands_TeaMarshmerrow</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_TeaParasolMoss]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_TeaParasolMoss</defName>
+		<ingredientDefName>Mashed_Ashlands_RawEmperorParasolMoss</ingredientDefName>
+		<productDefName>Mashed_Ashlands_TeaParasolMoss</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_TeaTramaRoot]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_TeaTramaRoot</defName>
+		<ingredientDefName>Mashed_Ashlands_RawTramaRoot</ingredientDefName>
+		<productDefName>Mashed_Ashlands_TeaTramaRoot</productDefName>
+		<productCount>1</productCount>
+		<ingredientCount>3</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+</Defs>

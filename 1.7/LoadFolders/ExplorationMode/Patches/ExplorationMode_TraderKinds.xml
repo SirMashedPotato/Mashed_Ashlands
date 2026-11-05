@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Mashed_Ashlands_VolcanoMap</thingDef>
+				<countRange>-19~1</countRange> <!-- 1 in 20 chance -->
+			</li>
+		</value>
+	</Operation>
+</Patch>

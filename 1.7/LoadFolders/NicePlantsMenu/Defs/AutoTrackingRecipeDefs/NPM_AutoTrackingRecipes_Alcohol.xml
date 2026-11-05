@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholFlin]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholFlin</defName>
+		<ingredientDefName>Mashed_Ashlands_RawMeadowRye</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholFlin</productDefName>
+		<productCount>5</productCount>
+		<ingredientCount>25</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholGreef]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholGreef</defName>
+		<ingredientDefName>Mashed_Ashlands_RawComberry</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholGreef</productDefName>
+		<productCount>8</productCount>
+		<ingredientCount>50</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholJazbayWine]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholJazbayWine</defName>
+		<ingredientDefName>Mashed_Ashlands_RawAshenJazbay</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholJazbayWine</productDefName>
+		<productCount>5</productCount>
+		<ingredientCount>25</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholMazte]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholMazte</defName>
+		<ingredientDefName>Mashed_Ashlands_RawSaltrice</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholMazte</productDefName>
+		<productCount>5</productCount>
+		<ingredientCount>25</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholShein]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholShein</defName>
+		<ingredientDefName>Mashed_Ashlands_RawComberry</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholShein</productDefName>
+		<productCount>5</productCount>
+		<ingredientCount>25</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+	<!-- ==========[Mashed_Ashlands_AlcoholSujamma]==========-->
+	<NicePlantsMenu.TrackingRecipeDef>
+		<defName>Mashed_Ashlands_AlcoholSujamma</defName>
+		<ingredientDefName>Mashed_Ashlands_RawWickwheat</ingredientDefName>
+		<productDefName>Mashed_Ashlands_AlcoholSujamma</productDefName>
+		<productCount>5</productCount>
+		<ingredientCount>25</ingredientCount>
+	</NicePlantsMenu.TrackingRecipeDef>
+</Defs>

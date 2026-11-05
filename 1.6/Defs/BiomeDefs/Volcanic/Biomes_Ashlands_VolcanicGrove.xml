@@ -5,7 +5,7 @@
 		<label>volcanic grove</label>
 		<description>A relatively hospitable climate and pockets of rich volcanic ash have allowed flora to flourish here, despite the region being highly volcanically active. The abundance of flora in turns attracts a wide range of fauna.</description>
 		<workerClass>Mashed_Ashlands.BiomeWorker_VolcanicGroveAshlands</workerClass>
-		<texture>Terrain/Biomes/Mashed_Ashlands_VolcanicGroveAshlands</texture>
+		<texture>World/Biomes/Mashed_Ashlands_VolcanicGroveAshlands</texture>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<lateLoader>true</lateLoader>

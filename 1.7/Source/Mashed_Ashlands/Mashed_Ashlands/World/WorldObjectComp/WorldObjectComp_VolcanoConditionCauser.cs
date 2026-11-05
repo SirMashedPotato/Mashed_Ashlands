@@ -22,12 +22,12 @@ namespace Mashed_Ashlands
             }
         }
 
-        private WorldGrid worldGrid = null;
+        private WorldGrid worldGrid;
 
         public GameCondition GetConditionInstance(ref Dictionary<Map, GameCondition> causedConditions, Map map)
         {
             causedConditions.TryGetValue(map, out GameCondition activeCondition);
-            return activeCondition ?? null;
+            return activeCondition;
         }
 
         public GameCondition EnforceConditionOn(ref Dictionary<Map, GameCondition> causedConditions, Map map, GameConditionDef conditionDef)
@@ -39,10 +39,15 @@ namespace Mashed_Ashlands
                 {
                     return null;
                 }
-                else
+
+                foreach (GameCondition otherCondition in map.GameConditionManager.ActiveConditions)
                 {
-                    gameCondition = CreateConditionOn(ref causedConditions, map, conditionDef);
+                    if (!conditionDef.CanCoexistWith(otherCondition.def))
+                    {
+                        return null;
+                    }
                 }
+                gameCondition = CreateConditionOn(ref causedConditions, map, conditionDef);
             }
             else
             {

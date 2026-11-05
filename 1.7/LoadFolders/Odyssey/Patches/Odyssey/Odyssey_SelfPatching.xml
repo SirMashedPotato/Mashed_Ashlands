@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BiomeDef/terrainsByFertility/li/terrain[text()="Mashed_Ashlands_Lava"]</xpath>
+		<value>
+			<terrain>LavaDeep</terrain>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BiomeDef/terrainPatchMakers/li/thresholds/li/terrain[text()="Mashed_Ashlands_Lava"]</xpath>
+		<value>
+			<terrain>LavaDeep</terrain>
+		</value>
+	</Operation>
+</Patch>

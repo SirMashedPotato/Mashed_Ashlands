@@ -12,7 +12,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_DarkshadeGlowstalk</texPath>
 		</graphicData>
 		<plant>
 			<sowResearchPrerequisites Inherit="False">

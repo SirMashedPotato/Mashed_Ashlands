@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ==========[Crafting wood logs]==========-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Mashed_Ashlands_MakeWoodFromCorkbulb"]/products/WoodLog</xpath>
+		<value>
+			<DankPyon_RawWood>5</DankPyon_RawWood>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Mashed_Ashlands_MakeWoodFromCorkbulbBulk"]/products/WoodLog</xpath>
+		<value>
+			<DankPyon_RawWood>20</DankPyon_RawWood>
+		</value>
+	</Operation>
+	<!-- ==========[DankPyon_SpinFlax]==========-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ProcessorFramework.ProcessDef[defName="DankPyon_SpinFlax"]/ingredientFilter/thingDefs/li[text()="Mashed_Ashlands_KreshCloth"]</xpath>
+		<value>
+			<li>Mashed_Ashlands_RawKreshweed</li>
+		</value>
+	</Operation>
+</Patch>

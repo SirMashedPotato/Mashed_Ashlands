@@ -6,7 +6,7 @@
 		<label>parasol wood bridge</label>
 		<description>A flat wooden surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
 		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
-		<bridgePropsPath>Terrain/Misc/Mashed_Ashlands_ParasolWoodBridgeProps</bridgePropsPath> <!-- TODO some kind of texture issue, occurs with vanilla bridge props when not used from asset pack-->
+		<bridgePropsPath>Terrain/Misc/Mashed_Ashlands_ParasolWoodBridgeProps</bridgePropsPath>
 		<color>(146,137,89)</color>
 		<uiIconPath>Terrain/Surfaces/Mashed_Ashlands_ParasolBridge_MenuIcon</uiIconPath>
 		<affordances>

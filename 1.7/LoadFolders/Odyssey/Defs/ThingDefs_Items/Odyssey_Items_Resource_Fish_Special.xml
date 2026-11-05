@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ClockworkFish]==========-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Mashed_Ashlands_ClockworkFish</defName>
+		<label>clockwork fish</label>
+		<description>An intricately crafted clockwork contraption, made in the semblance of a fish. While it doesn't seem to serve any practical purpose, some are willing to part ways with a rather generous amount of silver for these.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Mashed_Ashlands_ClockworkFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1</Mass>
+			<MarketValue>335</MarketValue>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

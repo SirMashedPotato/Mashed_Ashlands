@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_WadedThroughSludge]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_WadedThroughSludge</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>waded through sludge</label>
+				<description>I just waded through blighted sludge. I smell terrible, my boots are ruined, and I'm pretty sure there were bones in there.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_SulphuricWater]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_SulphuricWater</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>sulphuric water</label>
+				<description>I don't smell great, but I do feel rejuvenated!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- ==========[Mashed_Ashlands_ThermalMud]==========-->
+	<ThoughtDef>
+		<defName>Mashed_Ashlands_ThermalMud</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>thermal mud</label>
+				<description>I sure am dirty, but I do feel rejuvenated!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

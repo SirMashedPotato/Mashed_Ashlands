@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThinkTreeDef[defName="Animal"]/thinkRoot/subNodes/li[treeDef="MentalStateCritical"]</xpath>
+		<value>
+			<li Class="ThinkNode_Subtree">
+				<treeDef>Mashed_Ashlands_MentalStateCritical</treeDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

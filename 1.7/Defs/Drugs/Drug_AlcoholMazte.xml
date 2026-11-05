@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_AlcoholMazte]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_AlcoholBase">
+		<defName>Mashed_Ashlands_AlcoholMazte</defName>
+		<label>mazte</label>
+		<description>A brew made from fermenting saltrice. Consumption provides one with enhanced manipulation, or at least the illusion of it, whilst also draining consciousness. As mazte is alcoholic, excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Mashed_Ashlands_MazteHigh</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Mashed_Ashlands_AlcoholMazte</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Mashed_Ashlands_MazteHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_MazteHigh]==========-->
+	<HediffDef ParentName="Mashed_Ashlands_AlcoholHighBase">
+		<defName>Mashed_Ashlands_MazteHigh</defName>
+		<label>mazte consumption</label>
+		<description>Mazte in the bloodstream. Provides the illusion of enhanced manipulation, but drains consciousness.</description>
+		<stages>
+			<li>
+				<label>empowered</label>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.4</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>Mashed_Ashlands_Floor_PackedAsh</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Mashed_Ashlands_Building_TorchbugLamp</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Mashed_Ashlands_AshlandFermentingBarrel</defName>
+	</DesignatorDropdownGroupDef>
+</Defs>

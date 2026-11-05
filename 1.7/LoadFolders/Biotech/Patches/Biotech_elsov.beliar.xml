@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Beliar Xenotype</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="BX_Beliar"]/genes</xpath>
+					<value>
+						<li>Mashed_Ashlands_AshResistance_Perfect</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

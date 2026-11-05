@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Japanese Cuisine</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "EJC_CookOnigiri" or  defName="EJC_CookOnigiriBulk"
+										or defName="EJC_CookKatsudon" or defName="EJC_CookKatsudonBulk"
+										or defName="EJC_CookCurryRice" or defName="EJC_CookCurryRiceBulk"
+										or defName="EJC_CookUnajuu" or defName="EJC_CookUnajuuBulk"]/ingredients/li/filter/thingDefs[li="RawRice"]</xpath>
+					<value>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

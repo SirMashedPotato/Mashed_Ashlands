@@ -15,7 +15,7 @@
 			<Beauty>-2</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_Bloatspore</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_Bloatspore</texPath>
 		</graphicData>
 		<plant>
 			<growOptimalGlow>0</growOptimalGlow>
@@ -42,7 +42,7 @@
 			<Mashed_Ashlands_AshResistance>1</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant</texPath>
+			<texPath>Things/Plant/ResourcePlants/Mashed_Ashlands_PurpleCrystalPlant</texPath>
 		</graphicData>
 		<plant>
 			<pollution>Any</pollution>
@@ -60,7 +60,7 @@
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>1.2~2.6</visualSizeRange>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<pollutedGraphicPath>Things/Plant/Mashed_Ashlands_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
+			<pollutedGraphicPath>Things/Plant/ResourcePlants/Mashed_Ashlands_PurpleCrystalPlant_Polluted</pollutedGraphicPath>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">

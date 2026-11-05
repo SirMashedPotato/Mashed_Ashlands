@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_CookLavaFootSoup]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookLavaFootSoup</defName>
+		<label>cook lava foot soup</label>
+		<description>Cook two servings of lava foot soup using ash yams, saltrice, scrib jelly, and flour.</description>
+		<jobString>Cooking 2 lava foot soup.</jobString>
+		<workAmount>750</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawAshYams</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_ScribJelly</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>flour</customSummary>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawAshYams</li>
+				<li>Mashed_Ashlands_ScribJelly</li>
+				<li>Mashed_Ashlands_RawSaltrice</li>
+				<li>Mashed_Ashlands_RawMeadowRye</li>
+				<li>Mashed_Ashlands_RawWickwheat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Mashed_Ashlands_LavaFootSoup>2</Mashed_Ashlands_LavaFootSoup>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>9</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_CookLavaFootSoupBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_CookMealBase">
+		<defName>Mashed_Ashlands_CookLavaFootSoupBulk</defName>
+		<label>cook lava foot soup x4</label>
+		<description>Cook 8 servings of lava foot soup ash yams, saltrice, scrib jelly, and flour.</description>
+		<jobString>Cooking 8 lava foot soup.</jobString>
+		<workAmount>1450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawAshYams</li>
+					</thingDefs>
+				</filter>
+				<count>1.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_ScribJelly</li>
+					</thingDefs>
+				</filter>
+				<count>1.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawSaltrice</li>
+					</thingDefs>
+				</filter>
+				<count>1.2</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>flour</customSummary>
+					<thingDefs>
+						<li>Mashed_Ashlands_RawMeadowRye</li>
+						<li>Mashed_Ashlands_RawWickwheat</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RawAshYams</li>
+				<li>Mashed_Ashlands_ScribJelly</li>
+				<li>Mashed_Ashlands_RawSaltrice</li>
+				<li>Mashed_Ashlands_RawMeadowRye</li>
+				<li>Mashed_Ashlands_RawWickwheat</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Mashed_Ashlands_LavaFootSoup>8</Mashed_Ashlands_LavaFootSoup>
+		</products>
+		<researchPrerequisite>Mashed_Ashlands_AshSurvival_Advanced</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>9</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

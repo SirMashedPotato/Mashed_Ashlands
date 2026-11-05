@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_RachnoidSilkToMOSilk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_WeaveBase" Name="Mashed_Ashlands_MakeMOSilkFromRachnoidSilkBase">
+		<defName>Mashed_Ashlands_RachnoidSilkToMOSilk</defName>
+		<label>weave rachnoid silk into silk</label>
+		<description>Weave 10 rachnoid silk into 10 silk.</description>
+		<jobString>Weaving rachnoid silk.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RachnoidSilk</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mashed_Ashlands_RachnoidSilk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Silk>10</DankPyon_Silk>
+		</products>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_AshSurvival_Intermediate</li>
+			<li>DankPyon_Silk</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_RachnoidSilkToMOSilkBulk]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MakeMOSilkFromRachnoidSilkBase">
+		<defName>Mashed_Ashlands_RachnoidSilkToMOSilkBulk</defName>
+		<label>weave rachnoid silk into silk x4</label>
+		<description>Weave 40 rachnoid silk into 40 silk.</description>
+		<workAmount>1800</workAmount>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mashed_Ashlands_RachnoidSilk</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products Inherit="False">
+			<DankPyon_Silk>40</DankPyon_Silk>
+		</products>
+	</RecipeDef>
+</Defs>

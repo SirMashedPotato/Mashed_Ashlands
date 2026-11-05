@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_HarvestEmperorParasol]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_HarvestEmperorParasol</defName>
+		<label>Emperors no Longer</label>
+		<description>Harvest 333 emperor parasol trees</description>
+		<tracker Class="AchievementsExpanded.PlantTracker">
+			<def>Mashed_Ashlands_Plant_TreeEmperorParasol</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_HarvestEmperorParasol</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

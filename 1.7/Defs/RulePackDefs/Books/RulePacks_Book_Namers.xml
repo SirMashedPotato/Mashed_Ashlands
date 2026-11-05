@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>Mashed_Ashlands_Namer_AshlandJournal</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- General -->
+				<li>title->[authored_title]</li>
+				<li>title->[regular_title]</li>
+				<!-- non-Authored Books -->
+				<li>regular_title->[regular_gen]</li>
+				<li>regular_gen->[journalDescription] Notes on [subject_primary]</li>
+				<li>regular_gen->[journalDescription] Notes on [subject_secondary]</li>
+				<!-- Authored Books -->
+				<li>authored_title->[author_gen]</li>
+				<li>author_gen->[ANYPAWN_nameIndef]'s Notes on [subject_primary]</li>
+				<li>author_gen->[ANYPAWN_nameIndef]'s Notes on [subject_secondary]</li>
+				<!-- Journal description -->
+				<li>journalDescription->weathered</li>
+				<li>journalDescription->torn</li>
+				<li>journalDescription->burnt</li>
+				<li>journalDescription->charred</li>
+				<li>journalDescription->bloodied</li>
+				<li>journalDescription->ripped</li>
+				<li>journalDescription->dusty</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
