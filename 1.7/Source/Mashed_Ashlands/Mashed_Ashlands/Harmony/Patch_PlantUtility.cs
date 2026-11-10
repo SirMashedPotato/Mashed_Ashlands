@@ -14,9 +14,9 @@ namespace Mashed_Ashlands
     {
         public static void Postfix(ThingDef plantDef, object obj, ref bool __result)
         {
-            if (__result && obj is Zone)
+            if (__result && obj is Zone zone)
             {
-                __result = CanSowPlantInZone(plantDef, obj as Zone);
+                __result = CanSowPlantInZone(plantDef, zone);
             }
         }
         public static bool CanSowPlantInZone(ThingDef plantDef, Zone zone)
