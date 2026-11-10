@@ -172,5 +172,7 @@
 		<li IfModActive="dankpyon.medieval.overhaul">1.7/LoadFolders/MedievalOverhaul</li>
 		<!-- Nice Plants Menu -->
 		<li IfModActive="andromeda.niceplantsmenu">1.7/LoadFolders/NicePlantsMenu</li>
+		<!-- Alpha Memes -->
+		<li IfModActive="sarg.alphamemes">1.7/LoadFolders/AlphaMemes</li>
 	</v1.7>
 </loadFolders>

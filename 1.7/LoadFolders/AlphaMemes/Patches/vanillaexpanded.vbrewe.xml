@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Brewing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlphaMemes.TeaDefs[defName = "AM_TeaDefs"]/normalTeas</xpath>
+					<value>
+						<li>Mashed_Ashlands_TeaChillshroom</li>
+						<li>Mashed_Ashlands_TeaMarshmerrow</li>
+						<li>Mashed_Ashlands_TeaHackleLo</li>
+						<li>Mashed_Ashlands_TeaParasolMoss</li>
+						<li>Mashed_Ashlands_TeaTramaRoot</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
