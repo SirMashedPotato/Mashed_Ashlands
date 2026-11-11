@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Cooking Expanded - Sushi</li>
+			<li>Vanilla Cooking Expanded - Sushi</li> <!-- TODO ADD CRAB MEAT -->
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
