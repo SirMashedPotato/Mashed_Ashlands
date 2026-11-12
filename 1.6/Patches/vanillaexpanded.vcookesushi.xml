@@ -8,26 +8,29 @@
 			<operations>
 				<!-- ==========[Abstract defs]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[@Name = "VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>Defs/RecipeDef[
+						@Name="VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"
+						]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawSaltrice</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[@Name = "VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<xpath>Defs/RecipeDef[
+						@Name="VCE_CookSushiMealBase" or @Name="VCE_CookFineSushiMealBase" or @Name="VCE_CookGourmetSushiMealBase"
+						]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawSaltrice</li>
 					</value>
 				</li>
 				<!-- ==========[Specific defs]==========-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName = "VCE_CookChirashizushiSimple" or  defName="VCE_CookChirashizushiSimpleBulk"
-										or defName="VCE_CookNorimakiSimple" or defName="VCE_CookNorimakiSimpleBulk"
-										or defName="VCE_CookUramakiFine" or defName="VCE_CookUramakiFineBulk"
-										or defName="VCE_CookNigiriFine" or defName="VCE_CookNigiriFineBulk"
-										or defName="VCE_CookTemakiLavish" or defName="VCE_CookFutomakiLavishBulk"
-										or defName="VCE_CookFutomakiLavish" or defName="VCE_CookTemakiLavishBulk"
-										or defName="VCE_CookGunkanmakiGourmet" or defName="VCE_CookOshizushiiGourmet"]/ingredients/li/filter/thingDefs[li="RawRice"]</xpath>
+					<xpath>Defs/RecipeDef[
+						defName="VCE_CookSushi_Simple" or defName="VCE_CookSushi_Simple_Bulk" or
+						defName="VCE_CookSushi_Fine" or defName="VCE_CookSushi_Fine_Bulk" or
+						defName="VCE_CookSushi_Lavish" or defName="VCE_CookSushi_Lavish_Bulk" or
+						defName="VCE_CookSushi_Gourmet"
+						]/ingredients/li/filter/thingDefs[li="RawRice"]</xpath>
 					<value>
 						<li>Mashed_Ashlands_RawSaltrice</li>
 					</value>
@@ -36,4 +39,3 @@
 		</match>
 	</Operation>
 </Patch>
-
